@@ -1,0 +1,105 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u3-08">
+
+Una reazione chimica all'**equilibrio** è come una bilancia ferma: i reagenti che si trasformano in prodotti e i prodotti che tornano reagenti vanno alla **stessa velocità**, quindi tutto sembra immobile. Il **principio di Le Chatelier** ci dice una cosa semplice: se "disturbi" questa bilancia (cambiando qualcosa), il sistema **reagisce per ridurre il disturbo** e ritrovare la calma. In pratica si **sposta** da una parte o dall'altra.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> dai un disturbo all'equilibrio e lui si difende. Reagisce sempre nel verso che <strong>annulla in parte</strong> quel disturbo. Se aggiungi qualcosa, lui ne consuma; se togli qualcosa, lui ne produce.</div>
+
+<Diagram caption="La bilancia dell'equilibrio: il sistema si sposta per ristabilire la calma" code={`flowchart LR
+  R["REAGENTI<br/>(lato sinistro)"] -->|"reazione"| P["PRODOTTI<br/>(lato destro)"]
+  P -->|"reazione inversa"| R
+  D["Disturbo<br/>(cambio qualcosa)"] --> S["Il sistema si SPOSTA<br/>per ridurre il disturbo"]`} />
+
+## Le 3 cose che possono spostare l'equilibrio
+
+Ci sono solo **tre tipi di disturbo** da ricordare: **concentrazione**, **pressione** e **temperatura**. Vediamoli uno alla volta, con calma.
+
+<Diagram caption="Cosa fa spostare la bilancia dell'equilibrio" code={`flowchart TB
+  E["Equilibrio chimico<br/>(bilancia ferma)"] --> C["1. Cambio la CONCENTRAZIONE"]
+  E --> P["2. Cambio la PRESSIONE / il volume"]
+  E --> T["3. Cambio la TEMPERATURA"]
+  C --> X["L'equilibrio si SPOSTA<br/>a destra o a sinistra"]
+  P --> X
+  T --> X`} />
+
+## 1) Concentrazione: la regola dell'affollamento
+
+Pensa a una stanza con due porte. Da una parte i **reagenti**, dall'altra i **prodotti**. Se **aggiungi** persone (cioè aggiungi una sostanza) da un lato, quel lato è troppo affollato: il sistema spinge la gente verso l'altro lato per alleggerire.
+
+- Aggiungi **reagenti** → la bilancia si sposta **verso i prodotti** (a destra) per consumarli.
+- Aggiungi **prodotti** → la bilancia si sposta **verso i reagenti** (a sinistra).
+- Se invece **togli** una sostanza, il sistema cerca di **rifarla**: si sposta verso il lato che la produce.
+
+**Aggancio al corpo umano:** il tuo sangue trasporta ossigeno grazie all'**emoglobina**, che lega l'ossigeno in un equilibrio. Nei polmoni c'è tanto ossigeno (alta concentrazione): l'equilibrio si sposta in modo che l'emoglobina lo **catturi**. Nei muscoli, dove l'ossigeno scarseggia, l'equilibrio si sposta nel verso opposto e l'emoglobina lo **rilascia**. È Le Chatelier che lavora dentro di te a ogni respiro.
+
+## 2) Pressione: vince chi occupa meno spazio (solo per i gas)
+
+Questa regola vale **solo per i gas**. Immagina di **schiacciare** un palloncino: aumenti la pressione. Il sistema reagisce spostandosi verso il lato con **meno molecole di gas**, perché meno molecole occupano meno spazio e quindi "abbassano" la pressione.
+
+- **Aumenti** la pressione (schiacci) → l'equilibrio va verso il lato con **meno molecole** di gas.
+- **Diminuisci** la pressione (lasci espandere) → l'equilibrio va verso il lato con **più molecole** di gas.
+
+Se i due lati hanno **lo stesso numero** di molecole di gas, la pressione **non sposta** nulla.
+
+## 3) Temperatura: il calore è un "ingrediente"
+
+Per la temperatura il trucco è trattare il **calore come se fosse una sostanza** scritta nella reazione.
+
+- In una reazione che **libera calore** (esotermica), il calore sta tra i **prodotti**. Se **scaldi**, è come aggiungere prodotti: l'equilibrio si sposta **indietro**, verso i reagenti.
+- In una reazione che **assorbe calore** (endotermica), il calore sta tra i **reagenti**. Se **scaldi**, è come aggiungere reagenti: l'equilibrio si sposta **avanti**, verso i prodotti.
+
+In poche parole: **scaldi** → la reazione va nel verso che **assorbe** calore; **raffreddi** → va nel verso che lo **libera**. La temperatura è l'unico disturbo che cambia davvero il "punto di bilancia" del sistema.
+
+## Guarda il video
+
+<YouTube id="WxggC7rGHkQ" title="Equilibrio chimico: il principio di Le Chatelier — La Chimica per Tutti" />
+
+<VideoVisto id="chim-u3-08" />
+
+## Da ricordare
+
+- L'equilibrio è una **bilancia ferma**: se la disturbi, lei si sposta per **ridurre il disturbo**.
+- **Concentrazione**: aggiungi una sostanza → l'equilibrio si sposta **dal lato opposto** (per consumarla); la togli → si sposta **verso** quel lato (per rifarla).
+- **Pressione** (solo gas): aumenti la pressione → l'equilibrio va dove ci sono **meno molecole** di gas.
+- **Temperatura**: **scaldi** → la reazione va nel verso che **assorbe** calore; **raffreddi** → nel verso che lo **libera**.
+- Esempio nel corpo: l'**emoglobina** prende e rilascia ossigeno proprio seguendo questa regola.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="In una reazione all'equilibrio aggiungi altri reagenti. Dove si sposta l'equilibrio?"
+  opzioni={["verso i prodotti, per consumare i reagenti aggiunti", "verso i reagenti", "non si sposta", "la reazione si ferma"]}
+  corretta={0}
+  spiegazione="Aggiungere reagenti è un disturbo: il sistema reagisce consumandoli, quindi si sposta verso i prodotti (a destra)."
+/>
+
+<Quiz
+  domanda="Hai una reazione tra gas: a sinistra ci sono 3 molecole di gas, a destra 1 sola. Se aumenti la pressione, dove va l'equilibrio?"
+  opzioni={["verso sinistra (3 molecole)", "verso destra (1 molecola)", "non cambia", "dipende dalla concentrazione"]}
+  corretta={1}
+  spiegazione="Aumentando la pressione il sistema va verso il lato con meno molecole di gas: qui è il lato destro (1 molecola), che occupa meno spazio."
+/>
+
+<Quiz
+  domanda="Una reazione è esotermica (libera calore). Se la riscaldi, l'equilibrio:"
+  opzioni={["si sposta verso i prodotti", "si sposta verso i reagenti", "resta uguale", "smette di esistere"]}
+  corretta={1}
+  spiegazione="Nelle reazioni esotermiche il calore è come un prodotto. Scaldando aggiungi calore, quindi l'equilibrio si sposta indietro, verso i reagenti."
+/>
+
+<Esercizio
+  problema="Considera l'equilibrio dei gas: N2 + 3 H2 che danno 2 NH3 (ammoniaca). A sinistra ci sono 4 molecole di gas in totale (1 di N2 + 3 di H2), a destra 2 (le 2 di NH3). Per ottenere PIÙ ammoniaca, conviene aumentare o diminuire la pressione? Perché?"
+  soluzione="Conviene AUMENTARE la pressione. Aumentando la pressione l'equilibrio si sposta verso il lato con meno molecole di gas: il lato destro ha 2 molecole contro le 4 di sinistra, quindi il sistema si sposta verso destra producendo più ammoniaca (NH3). È esattamente quello che si fa nell'industria per produrre ammoniaca."
+/>
+
+</section>
+
+</RisorsaLayout>

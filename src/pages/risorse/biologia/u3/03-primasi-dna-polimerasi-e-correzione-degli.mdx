@@ -1,0 +1,73 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-03">
+
+## Il problema: la DNA polimerasi non parte da zero
+
+Immagina di dover scrivere un testo su un foglio bianco. Molte persone non riescono a iniziare dal nulla: hanno bisogno di un incipit già scritto da cui continuare. La **DNA polimerasi** funziona esattamente così: **non può iniziare a sintetizzare DNA partendo dal nulla**. Ha bisogno di un punto di partenza già pronto, detto **primer**.
+
+Entra in scena la **primasi**: un enzima speciale che sintetizza un breve tratto di **RNA** (circa 10 nucleotidi) complementare al filamento stampo. Questo trattino di RNA fa da "innesco" — ovvero da primer — e la DNA polimerasi può agganciarsi lì e continuare ad aggiungere nucleotidi di DNA.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La primasi scrive le prime righe in RNA; la DNA polimerasi continua il testo in DNA.</div>
+
+## Come lavora la DNA polimerasi
+
+La DNA polimerasi aggiunge nucleotidi **sempre in direzione 5' → 3'** (dal capo 5' al capo 3'). Pensa a una catena: puoi attaccare nuovi anelli solo a un'estremità specifica.
+
+Sul filamento che scorre nella direzione giusta (filamento guida o **leading strand**) la polimerasi lavora in modo continuo, come uno scrittore che avanza senza mai alzare la penna.
+
+Sul filamento opposto (filamento in ritardo o **lagging strand**) invece la polimerasi deve procedere "a balzi": produce tratti corti detti **frammenti di Okazaki**, ciascuno preceduto da un proprio primer di RNA.
+
+Alla fine, i primer di RNA vengono rimossi e i buchi vengono riempiti con DNA vero; i frammenti vengono poi uniti dalla **DNA ligasi**.
+
+## Il correttore di bozze: il proofreading
+
+Quando scrivi velocemente fai errori di battitura. La DNA polimerasi inserisce un nucleotide sbagliato circa **1 volta ogni 100 000** aggiunte. Sembra raro, ma su un genoma di miliardi di basi sarebbe catastrofico.
+
+Per questo la DNA polimerasi ha un meccanismo di **proofreading** (correzione di bozze): ha una seconda funzione enzimatica, detta **attività esonucleasica 3' → 5'**, che le permette di "tornare indietro", riconoscere il nucleotide appaiato male, tagliarlo via e reinserire quello corretto.
+
+Grazie al proofreading il tasso di errore finale scende a circa **1 errore ogni 10 000 000** di nucleotidi. Un correttore di bozze molto efficiente.
+
+<Diagram caption="Dalla primasi al prodotto finito: le tappe dell'innesco e della sintesi del DNA" code={`flowchart TB
+  A["Elicasi apre la doppia elica<br/>e crea la forcella di replicazione"] --> B["Primasi sintetizza un primer di RNA<br/>(~10 nucleotidi) sul filamento stampo"]
+  B --> C["DNA polimerasi III si aggancia al primer<br/>e aggiunge nucleotidi di DNA 5'→3'"]
+  C --> D["Leading strand: sintesi continua<br/>Lagging strand: frammenti di Okazaki"]
+  D --> E["DNA polimerasi I rimuove i primer di RNA<br/>e riempie i buchi con DNA"]
+  E --> F["DNA ligasi unisce i frammenti<br/>→ filamento continuo completato"]`} />
+
+<Diagram caption="Il proofreading: come la DNA polimerasi corregge i propri errori" code={`flowchart LR
+  A["DNA polimerasi inserisce<br/>un nucleotide nuovo"] --> B{"Appaiamento<br/>corretto?"}
+  B -- "Sì" --> C["Sintesi continua<br/>nella direzione 5'→3'"]
+  B -- "No" --> D["Attività esonucleasica 3'→5':<br/>taglia il nucleotide sbagliato"]
+  D --> E["DNA polimerasi inserisce<br/>il nucleotide corretto"]
+  E --> C`} />
+
+## Guarda il video
+<YouTube id="UzytcWWdy9s" title="la Replicazione del DNA - 2 - costruire il nuovo DNA con la primasi e la polimerasi" />
+<VideoVisto id="bio-u3-03" />
+
+## Da ricordare
+- La **primasi** sintetizza un breve primer di RNA perché la DNA polimerasi non può partire da zero: ha bisogno di un'estremità 3'-OH libera a cui aggiungere nucleotidi.
+- La **DNA polimerasi** aggiunge nucleotidi solo in direzione 5'→3'; sul lagging strand lavora a tratti (frammenti di Okazaki), ciascuno con il proprio primer.
+- Il **proofreading** è l'attività esonucleasica 3'→5' della DNA polimerasi: riconosce e rimuove i nucleotidi inseriti per errore, abbassando il tasso di errore da 1/100 000 a 1/10 000 000.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Perché la DNA polimerasi ha bisogno di un primer per iniziare la sintesi?" opzioni={["Perché il primer fornisce energia sotto forma di ATP","Perché la DNA polimerasi può aggiungere nucleotidi solo a un'estremità 3'-OH già esistente, non partire da zero","Perché il primer stabilizza la doppia elica e impedisce alla elicasi di riaprirla","Perché senza il primer la DNA polimerasi non riesce a riconoscere i nucleotidi liberi"]} corretta={1} spiegazione="La DNA polimerasi può solo allungare un filamento esistente: catalizza l'aggiunta di un nuovo nucleotide all'estremità 3'-OH di un filamento già presente. La primasi fornisce questo punto di partenza sintetizzando un breve tratto di RNA." />
+
+<Quiz domanda="In quale direzione aggiunge nucleotidi la DNA polimerasi?" opzioni={["3' → 5'","In entrambe le direzioni contemporaneamente","5' → 3'","La direzione dipende dal tipo di filamento (guida o in ritardo)"]} corretta={2} spiegazione="La DNA polimerasi aggiunge sempre nucleotidi in direzione 5' → 3': il nuovo nucleotide viene attaccato all'estremità 3'-OH del filamento nascente. Questa regola vale sia sul leading strand sia sul lagging strand." />
+
+<Quiz domanda="In cosa consiste il proofreading della DNA polimerasi?" opzioni={["È l'attività della DNA ligasi che sigilla i nick (tagli) tra i frammenti di Okazaki","È la capacità della elicasi di verificare che le basi siano aperte correttamente prima della sintesi","È l'attività esonucleasica 3'→5' della DNA polimerasi che rimuove nucleotidi inseriti per errore e li sostituisce con quelli corretti","È il controllo effettuato dalla primasi prima di sintetizzare il primer di RNA"]} corretta={2} spiegazione="Il proofreading è una funzione intrinseca della DNA polimerasi: grazie alla sua attività esonucleasica nella direzione 3'→5', l'enzima 'torna indietro', taglia il nucleotide mal appaiato e lo sostituisce con quello corretto, riducendo drasticamente il tasso di errore." />
+
+<Esercizio problema="Sul filamento stampo è presente la sequenza (3'→5'): 3'-ATCGGCTA-5'. La primasi sintetizza un primer di RNA complementare. Scrivi la sequenza del primer di RNA (5'→3') e spiega poi come si comporta la DNA polimerasi dopo il primer." soluzione="Il primer di RNA complementare, letto 5'→3', è: 5'-UAGCCGAU-3' (in RNA la T diventa U). Dopo aver sintetizzato il primer, la primasi si stacca. La DNA polimerasi III si aggancia all'estremità 3'-OH del primer e inizia ad aggiungere nucleotidi di DNA in direzione 5'→3', continuando a leggere il filamento stampo in direzione 3'→5'. In un secondo momento la DNA polimerasi I rimuoverà il primer di RNA e riempirà il tratto con DNA; infine la DNA ligasi salderà il nuovo tratto al resto del filamento." />
+
+</section>
+
+</RisorsaLayout>

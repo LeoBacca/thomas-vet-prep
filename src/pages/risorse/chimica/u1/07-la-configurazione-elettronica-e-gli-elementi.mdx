@@ -1,0 +1,98 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-07">
+
+Ogni atomo ha tanti **elettroni** che gli girano intorno. Ma non stanno a caso: si sistemano secondo un ordine preciso. La **configurazione elettronica** è semplicemente la "mappa" che dice **dove** si trovano questi elettroni. Saperla scrivere ti fa capire perché un atomo si lega con un altro, ed è la base di tutta la chimica del corpo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina un cinema. Gli elettroni sono gli spettatori e si riempiono prima le file davanti (più vicine allo schermo), poi quelle dietro. La configurazione elettronica è la lista di "chi siede in quale fila".</div>
+
+## Come si sistemano gli elettroni
+
+Gli elettroni occupano dei "contenitori" chiamati **orbitali**, raggruppati in **livelli** (le file del cinema). Le regole sono semplici:
+
+- Si riempie **prima** il livello più vicino al nucleo (quello a energia più bassa), poi i successivi. È come riempire un bicchiere: l'acqua va prima sul fondo.
+- Ogni tipo di orbitale ha un numero massimo di posti: l'orbitale **s** tiene **2** elettroni, l'orbitale **p** ne tiene **6**.
+- I livelli si chiamano con un numero (1, 2, 3...) e gli orbitali con una lettera (s, p, d, f).
+
+Per scrivere la configurazione segui l'ordine di riempimento e, accanto a ogni orbitale, metti **in alto** quanti elettroni ci hai messo. Esempio: l'idrogeno ha 1 elettrone, quindi la sua configurazione è **1s¹**. L'ossigeno ne ha 8: **1s² 2s² 2p⁴**.
+
+<Diagram caption="Scrivere la configurazione passo passo (esempio: ossigeno, 8 elettroni)" code={`flowchart TB
+  A["Conto gli elettroni<br/>(es. ossigeno = 8)"] --> B["Riempio 1s<br/>max 2 posti → 1s²"]
+  B --> C["Restano 6 elettroni<br/>Riempio 2s → 2s²"]
+  C --> D["Restano 4 elettroni<br/>Riempio 2p → 2p⁴"]
+  D --> E["Configurazione finale<br/>1s² 2s² 2p⁴"]`} />
+
+L'ordine in cui si riempiono i primi orbitali, dal più basso al più alto, è questo:
+
+<Diagram caption="Ordine di riempimento dei primi orbitali (dal più vicino al nucleo)" code={`flowchart LR
+  S1["1s<br/>(2 posti)"] --> S2["2s<br/>(2 posti)"]
+  S2 --> P2["2p<br/>(6 posti)"]
+  P2 --> S3["3s<br/>(2 posti)"]
+  S3 --> P3["3p<br/>(6 posti)"]`} />
+
+## Perché conta: gli atomi della vita
+
+Il tuo corpo, e quello di ogni animale che curerai da veterinario, è fatto quasi tutto da **6 atomi**. Si ricordano con la sigla **CHONPS**:
+
+- **C — Carbonio**: è lo "scheletro" di tutte le molecole della vita (zuccheri, grassi, proteine, DNA). Senza carbonio non esiste la chimica biologica.
+- **H — Idrogeno** e **O — Ossigeno**: insieme formano l'**acqua** (H₂O), di cui siamo fatti per circa il 60%. L'ossigeno serve anche per **respirare** e produrre energia nelle cellule.
+- **N — Azoto**: entra nelle **proteine** e nel **DNA**. Muscoli e anticorpi sono pieni di azoto.
+- **P — Fosforo**: forma la "spina dorsale" del **DNA** e la molecola dell'energia, l'**ATP**. È anche nelle ossa.
+- **S — Zolfo**: tiene insieme certe proteine, dando loro la forma giusta per funzionare.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> CHONPS = Carbonio, Idrogeno, Ossigeno, aZoto (N), Fosforo, zolfo (S). Sono pochissimi atomi, ma con loro la natura costruisce TUTTO il corpo, come pochi mattoni LEGO che fanno mille forme diverse.</div>
+
+Perché proprio questi e non altri? Perché la loro configurazione elettronica li rende bravissimi a **fare legami** con altri atomi. Il carbonio, per esempio, ha gli elettroni giusti per legarsi fino a 4 volte: per questo costruisce catene lunghissime, come quelle delle proteine.
+
+## Guarda il video
+
+<YouTube id="OdW42kkErO8" title="LA CHIMICA FACILE - L'atomo e la configurazione elettronica (spiegazione per principianti)" />
+
+<VideoVisto id="chim-u1-07" />
+
+## Da ricordare
+
+- La **configurazione elettronica** è la mappa di dove stanno gli elettroni in un atomo.
+- Si riempie **prima** il livello più vicino al nucleo (energia più bassa), poi i successivi.
+- L'orbitale **s** tiene **2** elettroni, l'orbitale **p** ne tiene **6**. L'apice indica quanti elettroni hai messo (es. 2p⁴).
+- Esempio: ossigeno (8 elettroni) → **1s² 2s² 2p⁴**.
+- Gli atomi della vita sono **CHONPS**: Carbonio, Idrogeno, Ossigeno, aZoto, Fosforo, zolfo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quanti elettroni può contenere al massimo un orbitale di tipo s?"
+  opzioni={["1", "2", "6", "8"]}
+  corretta={1}
+  spiegazione="L'orbitale s tiene al massimo 2 elettroni. L'orbitale p ne tiene invece 6."
+/>
+
+<Quiz
+  domanda="Quale orbitale si riempie per primo?"
+  opzioni={["2p, perché è il più grande", "1s, perché è il più vicino al nucleo (energia più bassa)", "3s, a caso", "Si riempiono tutti insieme"]}
+  corretta={1}
+  spiegazione="Si parte sempre dal livello a energia più bassa, cioè il più vicino al nucleo: l'1s. È come riempire un bicchiere partendo dal fondo."
+/>
+
+<Quiz
+  domanda="Cosa rappresenta la sigla CHONPS?"
+  opzioni={["Una formula matematica", "I 6 atomi più importanti del corpo: Carbonio, Idrogeno, Ossigeno, aZoto, Fosforo, zolfo", "Un tipo di orbitale", "Un'unità di misura"]}
+  corretta={1}
+  spiegazione="CHONPS sono i 6 atomi di cui è fatto quasi tutto il corpo: C, H, O, N (azoto), P (fosforo), S (zolfo)."
+/>
+
+<Esercizio
+  problema="Scrivi la configurazione elettronica del carbonio, che ha 6 elettroni. Procedi a passi: riempi prima 1s, poi 2s, poi quello che resta in 2p."
+  soluzione="Metto 2 elettroni in 1s (1s²): restano 4. Metto 2 elettroni in 2s (2s²): restano 2. Gli ultimi 2 vanno in 2p (2p²). Configurazione finale: 1s² 2s² 2p². Proprio questi elettroni esterni permettono al carbonio di fare 4 legami ed essere lo scheletro delle molecole della vita."
+/>
+
+</section>
+
+</RisorsaLayout>

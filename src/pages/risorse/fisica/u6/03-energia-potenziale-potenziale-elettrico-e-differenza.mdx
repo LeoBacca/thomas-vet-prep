@@ -1,0 +1,99 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u6-03">
+
+## Cos'è l'energia potenziale elettrica?
+
+Immagina di tenere una pallina in alto: ha energia potenziale gravitazionale perché il campo gravitazionale "vuole" tirarla verso il basso. In elettricità funziona uguale.
+
+Una carica elettrica vicino ad altre cariche ha **energia potenziale elettrica**: è l'energia accumulata per via della sua posizione nel campo elettrico.
+
+- Se la carica viene **lasciata libera**, il campo elettrico la mette in moto: l'energia potenziale si trasforma in energia cinetica.
+- Più la carica è "in salita" rispetto al campo, più ha energia potenziale.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'energia potenziale elettrica è l'energia che una carica "ha in serbo" per via di dove si trova nel campo elettrico — come una pallina tenuta in alto prima di lasciarla cadere.</div>
+
+---
+
+## Cos'è il potenziale elettrico?
+
+L'energia potenziale dipende anche da quanto è grande la carica. Per confrontare punti diversi nello spazio senza dipendere dalla carica, i fisici usano il **potenziale elettrico** (simbolo **V**).
+
+Il potenziale in un punto è:
+
+**V = Ep / q**
+
+dove **Ep** è l'energia potenziale elettrica e **q** è la carica di prova.
+
+In pratica: il potenziale è l'energia potenziale per unità di carica. Si misura in **Volt (V)**.
+
+- Un punto ad alto potenziale è come una collina alta: una carica positiva tende a "scendere" verso i punti a potenziale minore.
+- Un punto a basso potenziale è come una valle.
+
+---
+
+## Cos'è la differenza di potenziale (ddp)?
+
+Nella pratica non si misura il potenziale assoluto di un punto, ma la **differenza di potenziale** tra due punti A e B:
+
+**ΔV = V_A − V_B**
+
+Si misura in **Volt (V)**. Viene anche chiamata **tensione**.
+
+Questo è il concetto che usi ogni giorno:
+- Una batteria AA da 1,5 V mantiene una differenza di potenziale di 1,5 V tra i suoi poli.
+- La corrente elettrica scorre perché esiste una ddp: le cariche si muovono dal punto ad alto potenziale a quello a basso potenziale (come l'acqua che scende da una collina).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La differenza di potenziale (Volt) è la "spinta" che il campo elettrico dà alle cariche per farle muovere — come il dislivello tra due punti che fa scorrere l'acqua.</div>
+
+---
+
+## Schema: da energia potenziale a potenziale a ddp
+
+<Diagram caption="Dal concetto di energia potenziale al potenziale elettrico e alla differenza di potenziale" code={`flowchart TB
+  A["Carica q in un campo elettrico"] --> B["Ha energia potenziale elettrica Ep"]
+  B --> C["Potenziale elettrico V = Ep / q<br/>(energia per unità di carica, in Volt)"]
+  C --> D["Differenza di potenziale ΔV = V_A − V_B<br/>(tensione tra due punti)"]
+  D --> E["Le cariche si muovono: nasce la corrente elettrica"]`} />
+
+---
+
+## Schema: analogia con l'acqua
+
+<Diagram caption="Analogia idraulica: l'acqua scorre per dislivello, le cariche scorrono per differenza di potenziale" code={`flowchart LR
+  A["Serbatoio in alto<br/>(alto potenziale V_A)"] --> B["Tubo<br/>(filo conduttore)"]
+  B --> C["Serbatoio in basso<br/>(basso potenziale V_B)"]
+  D["Dislivello = ΔV (Volt)"] -.-> B
+  E["Flusso d'acqua = corrente elettrica"] -.-> B`} />
+
+---
+
+## Guarda il video
+<YouTube id="Raq7f3AyWx8" title="Il potenziale elettrico e la differenza di potenziale - Spiegazione ed esempi" />
+<VideoVisto id="fis-u6-03" />
+
+## Da ricordare
+- L'**energia potenziale elettrica** è l'energia che una carica possiede per via della sua posizione nel campo elettrico.
+- Il **potenziale elettrico** (V) è l'energia potenziale divisa per la carica: V = Ep / q; si misura in Volt.
+- La **differenza di potenziale** (ddp o tensione) è ΔV = V_A − V_B: è la "spinta" che mette in moto le cariche e fa scorrere la corrente.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una carica di 2 C si trova in un punto dove ha energia potenziale elettrica di 10 J. Qual è il potenziale elettrico in quel punto?" opzioni={["0,2 V","5 V","20 V","12 V"]} corretta={1} spiegazione="Il potenziale elettrico si calcola come V = Ep / q = 10 J / 2 C = 5 V. Il Volt è proprio il Joule per Coulomb." />
+
+<Quiz domanda="La differenza di potenziale tra i poli di una batteria indica:" opzioni={["La quantità di carica contenuta nella batteria","La massa della batteria","La spinta disponibile per far muovere le cariche nel circuito","L'energia totale della batteria indipendentemente dalla carica"]} corretta={2} spiegazione="La ddp (tensione) misura la 'spinta' che il campo elettrico esercita sulle cariche: è ciò che mette in moto la corrente nel circuito. Non dice quanta carica c'è, ma con quanta forza viene spinta." />
+
+<Quiz domanda="Una carica positiva libera di muoversi in un campo elettrico tende a spostarsi:" opzioni={["Verso i punti a potenziale più alto","Verso i punti a potenziale più basso","In direzione perpendicolare al campo","Rimane ferma indipendentemente dal campo"]} corretta={1} spiegazione="Una carica positiva si comporta come una pallina su una collina: tende a 'scendere' verso i punti a potenziale minore, dove ha meno energia potenziale. È il campo elettrico a spingerla in quella direzione." />
+
+<Esercizio problema="Tra il punto A e il punto B di un circuito c'è una differenza di potenziale di 12 V. Una carica di 3 C si sposta da A a B. Quanta energia potenziale elettrica cede la carica durante questo spostamento?" soluzione="La differenza di potenziale è ΔV = V_A − V_B = 12 V. L'energia ceduta dalla carica è: ΔEp = q × ΔV = 3 C × 12 V = 36 J. La carica cede 36 Joule di energia potenziale, che vengono convertiti in un'altra forma di energia (ad esempio calore o luce) nel circuito." />
+
+</section>
+
+</RisorsaLayout>

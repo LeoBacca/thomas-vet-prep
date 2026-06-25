@@ -1,0 +1,113 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-10">
+
+Una **soluzione tampone** è un liquido speciale che tiene il **pH quasi fermo**: anche se aggiungi un po' di acido o un po' di base, il pH cambia pochissimo. È come un ammortizzatore di un'auto: la strada è piena di buche, ma tu dentro l'abitacolo senti solo piccoli scossoni. Il tampone fa lo stesso con l'acidità.
+
+Questo conta tantissimo in medicina e veterinaria: il **sangue** è una soluzione tampone. Il nostro corpo lavora bene solo se il pH del sangue resta intorno a **7,4**. Se cambiasse di poco, staremmo male. Il tampone è il guardiano che lo tiene stabile.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un tampone è una coppia di "spugne" che lavorano in squadra: una spugna assorbe gli acidi (gli ioni H+), l'altra assorbe le basi (gli ioni OH-). Così il pH resta quasi sempre lo stesso.</div>
+
+## Di cosa è fatto un tampone
+
+Un tampone è sempre fatto da **due ingredienti che lavorano insieme**:
+
+- un **acido debole** (la spugna che cattura le **basi**, cioè gli OH-),
+- la sua **base coniugata** (la spugna che cattura gli **acidi**, cioè gli H+).
+
+"Coniugata" vuol dire semplicemente che sono **parenti stretti**: la base coniugata è quello che resta dell'acido dopo che ha ceduto un H+. Sono come due facce della stessa medaglia.
+
+Quando arriva un nemico, la spugna giusta entra in azione:
+
+- se arriva **acido in più** (tanti H+), la **base coniugata** li acchiappa,
+- se arriva **base in più** (tanti OH-), l'**acido debole** li neutralizza.
+
+In tutti e due i casi il pH si muove appena. Le due spugne si dividono il lavoro.
+
+<Diagram caption="Le due spugne del tampone assorbono acidi e basi" code={`flowchart TB
+  T["TAMPONE = acido debole + base coniugata"] --> A["Acido debole<br/>(la spugna anti-base)"]
+  T --> B["Base coniugata<br/>(la spugna anti-acido)"]
+  H["Arriva acido in piu (H+)"] --> B
+  B --> R1["H+ assorbito → pH quasi fermo"]
+  O["Arriva base in piu (OH-)"] --> A
+  A --> R2["OH- assorbito → pH quasi fermo"]`} />
+
+## L'equazione di Henderson-Hasselbalch
+
+Bello sapere che il pH resta stabile. Ma a **quale valore** si stabilizza? Per scoprirlo si usa una formula con un nome lungo e difficile, ma in realtà semplicissima da usare: l'**equazione di Henderson-Hasselbalch**.
+
+Si scrive così (la leggiamo a parole tra un attimo):
+
+`pH = pKa + log([base coniugata] / [acido debole])`
+
+Non spaventarti, traduciamola pezzo per pezzo:
+
+- **pKa** è un numero **fisso** che dipende solo da quale acido debole stai usando. Pensalo come il "punto di riposo" naturale di quel tampone. Lo trovi nelle tabelle.
+- **[base coniugata]** e **[acido debole]** sono le **quantità** (concentrazioni) dei due ingredienti nella tua soluzione. Le parentesi quadre vogliono dire "quanto ce n'è".
+- **log** è una funzione della calcolatrice. Ti serve solo sapere una cosa magica: se le due quantità sono **uguali**, la loro divisione fa 1, e `log(1) = 0`. Quindi in quel caso **pH = pKa**. Comodissimo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la formula dice una cosa intuitiva: se hai <strong>tanta base coniugata</strong> il pH sale (più basico), se hai <strong>tanto acido debole</strong> il pH scende (più acido). E se ne hai <strong>la stessa quantità</strong>, il pH è esattamente uguale al pKa.</div>
+
+<Diagram caption="Cosa decide il pH finale del tampone" code={`flowchart LR
+  C["Confronto le quantita dei due ingredienti"] --> U["Stessa quantita<br/>→ pH = pKa"]
+  C --> P["Piu base coniugata<br/>→ pH piu alto (basico)"]
+  C --> A["Piu acido debole<br/>→ pH piu basso (acido)"]`} />
+
+## Perché conta per il corpo e per la veterinaria
+
+Il sangue degli animali e dell'uomo usa un tampone famoso: la coppia **acido carbonico** e **bicarbonato**. È il sistema che tiene il pH del sangue a circa 7,4. Quando un animale respira o quando i suoi reni filtrano, in fondo stanno regolando proprio le quantità di questi due ingredienti per non far cambiare il pH.
+
+Per questo, quando in clinica si fa un esame del sangue (l'emogasanalisi), si guardano proprio questi valori: dicono se il tampone del corpo sta reggendo o se l'animale è in difficoltà. Capire il tampone vuol dire capire come il corpo si difende. Non male per una formula sola.
+
+## Guarda il video
+
+<YouTube id="SnieSnjkeaE" title="Le soluzioni tampone — La Chimica per Tutti" />
+
+<VideoVisto id="chim-u4-10" />
+
+## Da ricordare
+
+- Un **tampone** mantiene il **pH quasi costante** anche se aggiungi un po' di acido o di base.
+- È fatto da una coppia: **acido debole + base coniugata** (parenti stretti).
+- La **base coniugata** assorbe gli **acidi (H+)**; l'**acido debole** assorbe le **basi (OH-)**.
+- La formula `pH = pKa + log([base coniugata] / [acido debole])` ti dice a quale pH si stabilizza.
+- Se le due quantità sono **uguali**, allora **pH = pKa**. Il **sangue** è un tampone naturale a pH circa 7,4.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="A cosa serve una soluzione tampone?"
+  opzioni={["Ad aumentare sempre il pH", "A tenere il pH quasi costante quando aggiungi un po' di acido o base", "A togliere tutta l'acqua", "A colorare la soluzione"]}
+  corretta={1}
+  spiegazione="Il tampone è un 'ammortizzatore' del pH: assorbe acidi e basi e fa cambiare il pH solo di pochissimo."
+/>
+
+<Quiz
+  domanda="Da quali due ingredienti è fatto un tampone?"
+  opzioni={["Due acidi forti", "Un acido debole e la sua base coniugata", "Solo acqua pura", "Un metallo e un sale"]}
+  corretta={1}
+  spiegazione="Servono un acido debole (assorbe le basi, gli OH-) e la sua base coniugata (assorbe gli acidi, gli H+). Lavorano in squadra."
+/>
+
+<Quiz
+  domanda="Nell'equazione di Henderson-Hasselbalch, se la base coniugata e l'acido debole sono nella stessa quantità, quanto vale il pH?"
+  opzioni={["pH = 0", "pH = 7 sempre", "pH = pKa", "Non si può sapere"]}
+  corretta={2}
+  spiegazione="Se le quantità sono uguali, la loro divisione fa 1 e log(1) = 0, quindi pH = pKa. È il caso più semplice da ricordare."
+/>
+
+<Esercizio
+  problema="Un tampone ha pKa = 4,7. Nella soluzione la quantità di base coniugata è uguale alla quantità di acido debole. Quanto vale il pH? (Suggerimento: usa pH = pKa + log(base/acido) e ricorda che log(1) = 0.)"
+  soluzione="Le due quantità sono uguali, quindi base diviso acido fa 1. Il log di 1 è 0. Allora pH = pKa + 0 = 4,7. Il pH del tampone è 4,7."
+/>
+
+</section>
+
+</RisorsaLayout>

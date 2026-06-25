@@ -1,0 +1,94 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-20">
+
+## Che cosa significa "ripiegare" una proteina?
+
+Quando il ribosoma assembla una proteina, produce una catena lineare di aminoacidi — come una collana di perle. Ma una catena dritta non funziona: la proteina deve **piegarsi in una forma tridimensionale precisa** per svolgere il suo compito.
+
+Questo processo si chiama **folding** (ripiegamento). La forma finale dipende dalle attrazioni e repulsioni tra i vari aminoacidi della catena: alcuni si attraggono, altri si respingono, finché la proteina "collassa" nella sua struttura più stabile.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> una proteina è come un origami — lo stesso foglio può diventare mille forme, ma solo una forma è quella "giusta" per funzionare.</div>
+
+## Perché il folding può andare storto?
+
+L'interno della cellula è un ambiente affollato e caotico: proteine, acqua, ioni, tutto mescolato insieme. Una catena di aminoacidi appena sintetizzata rischia di:
+
+- **aggrovigliarsi su se stessa** nel modo sbagliato
+- **attaccarsi ad altre catene** prima di aver finito di piegarsi
+- formare **aggregati inutili o tossici**
+
+Questo è il problema del **misfolding** (ripiegamento scorretto).
+
+## Le proteine chaperon: i "supervisori" del folding
+
+Per evitare il misfolding, la cellula usa delle proteine speciali chiamate **chaperon** (o chaperone molecolari). Il nome viene dalla parola francese per "accompagnatrice" — proprio come una chaperon accompagna e sorveglia.
+
+Gli chaperon **non determinano** la forma finale della proteina: quella è scritta nella sequenza di aminoacidi. Invece, il loro compito è:
+
+1. **Riconoscere** le regioni idrofobiche (che "odiano" l'acqua) esposte nella catena non ancora ripiegata
+2. **Legare** temporaneamente la catena per tenerla "occupata" e isolata dagli altri
+3. **Rilasciarla** in un ambiente protetto dove può piegarsi correttamente
+4. **Ripetere** il ciclo se il ripiegamento non è riuscito al primo tentativo
+
+Le due famiglie principali di chaperon sono:
+- **Hsp70**: si lega a regioni idrofobiche corte, come un "tutore" che tiene ferma la catena durante la sintesi
+- **Hsp60 (chaperonine)**: formano una "gabbia" molecolare dentro la quale la proteina si ripiega al riparo dall'ambiente cellulare
+
+Il prefisso **Hsp** sta per *Heat Shock Protein* — proteine di shock termico — perché la loro produzione aumenta quando la cellula è sotto stress (calore, tossine, ecc.).
+
+<Diagram caption="Il ciclo degli chaperon Hsp70: come accompagnano il ripiegamento di una proteina" code={`flowchart TB
+  A["Ribosoma sintetizza<br/>la catena di aminoacidi"] --> B["Hsp70 riconosce<br/>le regioni idrofobiche esposte"]
+  B --> C["Hsp70 si lega alla catena<br/>e la protegge dall'aggregazione"]
+  C --> D["ATP fornisce energia:<br/>Hsp70 rilascia la catena"]
+  D --> E{"La proteina<br/>si è ripiegata<br/>correttamente?"}
+  E -- "Sì" --> F["Proteina funzionale<br/>pronta all'uso"]
+  E -- "No" --> B`} />
+
+<Diagram caption="Confronto tra folding corretto e misfolding con le relative conseguenze" code={`flowchart LR
+  A["Catena di aminoacidi<br/>appena sintetizzata"] --> B["Folding corretto<br/>(con aiuto chaperon)"]
+  A --> C["Misfolding<br/>(senza chaperon o stress)"]
+  B --> D["Proteina con forma<br/>tridimensionale corretta"]
+  B --> E["Funzione biologica<br/>svolta normalmente"]
+  C --> F["Proteina mal ripiegata<br/>o aggregata"]
+  C --> G["Perdita di funzione<br/>o effetto tossico"]
+  G --> H["Esempi: Alzheimer,<br/>Parkinson, fibrosi cistica"]`} />
+
+## Quando il misfolding causa malattie
+
+Se troppe proteine si ripiegano male, la cellula si trova in difficoltà. I principali esiti del misfolding sono:
+
+- **Perdita di funzione**: la proteina non riesce a fare il suo lavoro (esempio: nella fibrosi cistica, una proteina canale mal ripiegata viene degradata prima di raggiungere la membrana)
+- **Aggregazione tossica**: le proteine mal ripiegate si uniscono formando aggregati insolubili che danneggiano le cellule. Questo meccanismo è alla base di malattie neurodegenerative come **Alzheimer** (aggregati di proteina tau e amiloide-beta) e **Parkinson** (aggregati di alfa-sinucleina)
+
+La cellula ha un sistema di controllo qualità: le proteine irrecuperabili vengono etichettate con **ubiquitina** e degradate dal **proteasoma** (una specie di "tritacarne" molecolare).
+
+## Guarda il video
+<YouTube id="U_ulz6FQTVw" title="Il ripiegamento delle proteine? (Teoria del folding)" />
+<VideoVisto id="bio-u3-20" />
+
+## Da ricordare
+- Il **folding** è il ripiegamento della catena di aminoacidi in una struttura 3D funzionale; la forma corretta è indispensabile per la funzione della proteina.
+- Gli **chaperon molecolari** (Hsp70, Hsp60) assistono il folding proteggendo la catena dall'aggregazione, senza però determinarne la struttura finale.
+- Il **misfolding** causa perdita di funzione o formazione di aggregati tossici, alla base di malattie come Alzheimer, Parkinson e fibrosi cistica.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è il ruolo principale delle proteine chaperon nel folding proteico?" opzioni={["Determinare la sequenza di aminoacidi della proteina","Sintetizzare la proteina al posto del ribosoma","Proteggere la catena polipeptidica dall'aggregazione durante il ripiegamento","Degradare le proteine mal ripiegate nel proteasoma"]} corretta={2} spiegazione="Gli chaperon non determinano la struttura finale della proteina (quella dipende dalla sequenza di aminoacidi) né la sintetizzano: il loro compito è legarsi alle regioni idrofobiche esposte per evitare che la catena si aggreghi con altre proteine prima di riuscire a piegarsi correttamente." />
+
+<Quiz domanda="Cosa indica il termine 'misfolding'?" opzioni={["La sintesi di una proteina con aminoacidi sbagliati","Il ripiegamento scorretto di una proteina in una struttura non funzionale o tossica","La degradazione di una proteina da parte del proteasoma","Il trasporto di una proteina dal ribosoma al Golgi"]} corretta={1} spiegazione="Il misfolding è il ripiegamento scorretto: la sequenza di aminoacidi può essere corretta, ma la proteina assume una forma tridimensionale sbagliata. Questo può causare perdita di funzione o formazione di aggregati tossici." />
+
+<Quiz domanda="In quale malattia neurodegenerativa gli aggregati di alfa-sinucleina mal ripiegata giocano un ruolo centrale?" opzioni={["Fibrosi cistica","Alzheimer","Parkinson","Diabete di tipo 1"]} corretta={2} spiegazione="Nella malattia di Parkinson, la proteina alfa-sinucleina si misfolda e si aggrega formando i cosiddetti 'corpi di Lewy' nei neuroni. Nell'Alzheimer invece sono coinvolti aggregati di proteina tau e peptide amiloide-beta. La fibrosi cistica riguarda una proteina canale (CFTR), non un aggregato neuronale." />
+
+<Esercizio problema="Una cellula produce la proteina X, ma questa non riesce mai a raggiungere la sua destinazione finale e viene invece degradata rapidamente. Il ricercatore scopre che la proteina X ha una mutazione che la fa misfolding. Spiega il percorso che porta alla sua degradazione, citando le molecole coinvolte." soluzione="La proteina X, dopo la sintesi al ribosoma, si ripiega in modo scorretto a causa della mutazione. Il sistema di controllo qualità della cellula riconosce la struttura anomala (spesso tramite gli stessi chaperon che tentano invano di assisterla). Una volta identificata come irrecuperabile, la proteina X viene etichettata con catene di ubiquitina (ubiquitinazione). Questo segnale dirige la proteina verso il proteasoma, un complesso proteico che la degrada in frammenti di aminoacidi. Il risultato finale è la perdita di funzione della proteina X, poiché non arriva mai alla sua destinazione." />
+
+</section>
+
+</RisorsaLayout>

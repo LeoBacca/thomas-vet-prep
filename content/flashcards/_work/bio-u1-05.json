@@ -1,0 +1,10 @@
+{
+ "id": "bio-u1-05",
+ "titolo": "Ciclo di un virus animale ed entrata/uscita dalla cellula",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "05-ciclo-di-un-virus-animale-ed",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/biologia/u1/05-ciclo-di-un-virus-animale-ed.mdx",
+ "examQuestions": []
+}

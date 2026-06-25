@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-17-1",
+    "topicId": "fis-u2-17",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: in assenza di attrito, quando una pallina rotola giù da uno scivolo e poi risale dall'altra parte, arriva alla stessa altezza da cui è partita.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Senza attrito l'energia meccanica (Ec + Ep) si conserva: tutta l'energia potenziale che aveva in cima si trasforma in cinetica in fondo, e poi torna tutta in potenziale in risalita. È come uno scambio di monete tra due tasche — il totale nel portafoglio non cambia mai.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-17-2",
+    "topicId": "fis-u2-17",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Una montagna russa è ferma in cima al loop (punto più alto). Scende e arriva in fondo (punto più basso). Cosa succede alla sua energia cinetica e a quella potenziale?",
+    "choices": [
+      "Quella cinetica aumenta, quella potenziale diminuisce, e la somma rimane uguale",
+      "Entrambe aumentano, perché la velocità cresce",
+      "Quella cinetica diminuisce, quella potenziale aumenta",
+      "Entrambe rimangono costanti durante la discesa"
+    ],
+    "answer": 0,
+    "explain": "Scendendo l'altezza (h) cala → l'Ep = mgh cala. Ma la velocità cresce → l'Ec = ½mv² cresce. Le due variazioni si compensano perfettamente: la somma E_mec = Ec + Ep non cambia. Immagina di spostare soldi da una tasca all'altra: il portafoglio resta pieno.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-17-3",
+    "topicId": "fis-u2-17",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Un cane (massa 10 kg) è fermo in cima a una rampa alta 5 m. Senza attrito, qual è la sua velocità in fondo alla rampa? Spiega passo per passo usando la conservazione dell'energia meccanica. (usa g = 10 m/s²)",
+    "answer": "In cima il cane è fermo, quindi Ec₁ = 0. Tutta l'energia è potenziale: Ep₁ = m × g × h = 10 × 10 × 5 = 500 J. L'energia meccanica totale vale 500 J. In fondo h = 0, quindi Ep₂ = 0 e tutta l'energia è diventata cinetica: Ec₂ = 500 J. Uso la formula: ½ × m × v² = 500 → v² = (2 × 500) / 10 = 100 → v = 10 m/s. Il cane arriva in fondo a 10 m/s. Nota: la massa si cancella nei conti — un cane piccolo e uno grosso arriverebbero alla stessa velocità (se non c'è attrito).",
+    "explain": "Schema: Ep₁ = Ec₂ → mgh = ½mv² → v = √(2gh). La massa non compare nel risultato finale.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-17-4",
+    "topicId": "fis-u2-17",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Marco lancia verso l'alto una biglia (traiettoria a parabola). Enrico lascia cadere un'altra biglia identica direttamente a terra (traiettoria verticale). Le biglie partono dalla stessa altezza e, trascurando l'aria, quando sono a 1 mm dal suolo si può affermare che:",
+    "choices": [
+      "la variazione di energia cinetica rispetto al lancio è uguale per entrambe le biglie",
+      "la velocità della biglia di Marco è uguale a quella di Enrico",
+      "la variazione di energia potenziale della biglia di Marco è maggiore di quella di Enrico",
+      "l'energia meccanica totale della biglia di Marco è uguale a quella della biglia di Enrico",
+      "la forza sulla biglia di Marco è maggiore di quella su Enrico durante il moto"
+    ],
+    "answer": 0,
+    "explain": "La risposta giusta è la prima. La conservazione dell'energia ci dice: ΔEc = −ΔEp. Entrambe le biglie partono dalla stessa altezza e arrivano quasi a terra (stessa Δh), quindi la loro Ep cala della stessa quantità e la loro Ec aumenta della stessa quantità: la VARIAZIONE di energia cinetica è uguale per entrambe. Le trappole: 'velocità uguale' (opzione 2) è sbagliata — la biglia di Marco è stata lanciata con una sua velocità iniziale, quindi a 1 mm dal suolo va più veloce di quella di Enrico (che è stata solo lasciata cadere da ferma); è la VARIAZIONE di Ec a essere uguale, non la velocità. 'ΔEp di Marco maggiore' (opzione 3) è sbagliata: partono dalla stessa altezza e finiscono alla stessa altezza, quindi la variazione di Ep è identica. 'Energia meccanica totale uguale' (opzione 4) è sbagliata: Enrico lascia cadere la biglia da ferma (E_mec = mgh), mentre Marco la lancia con una velocità iniziale, aggiungendo energia cinetica (E_mec = mgh + ½mv₀²); quindi la biglia di Marco ha più energia meccanica, non la stessa. 'Forza maggiore su Marco' (opzione 5) è il filler: l'unica forza in gioco è la gravità, identica per due biglie identiche.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-17-5",
+    "topicId": "fis-u2-17",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un oggetto si muove con energia cinetica E su un piano orizzontale, poi sale su un piano inclinato liscio (senza attrito). Quando la velocità sul piano inclinato è diventata la metà di quella iniziale, quanto vale la sua energia potenziale?",
+    "choices": [
+      "3E/4",
+      "E/2",
+      "E/4",
+      "E/8",
+      "E"
+    ],
+    "answer": 0,
+    "explain": "Sul piano orizzontale: Ec = ½mv² = E, Ep = 0 → E_mec totale = E. Sul piano inclinato la velocità è v/2, quindi la nuova Ec = ½m(v/2)² = ½m·v²/4 = E/4. Per conservazione dell'energia: E_mec = Ec + Ep → E = E/4 + Ep → Ep = E − E/4 = 3E/4. Trappola 'E/2': chi divide E per 2 confonde la velocità dimezzata con l'energia dimezzata — ma l'Ec dipende da v², quindi dimezzare v vuol dire ridurre Ec a un quarto, non a metà. 'E/4': chi dimentica di sottrare da E e pensa che Ep = Ec nuova. 'E/8': near-miss senza senso fisico. 'E': chi pensa che l'energia potenziale sia pari a tutta E (come se Ec fosse zero), ma non lo è perché la velocità è v/2, non zero.",
+    "tags": ["prova d'esame"]
+  }
+]

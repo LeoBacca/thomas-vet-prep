@@ -1,0 +1,67 @@
+{
+ "id": "chim-u1-25",
+ "titolo": "Lo stato gassoso e le leggi dei gas (Boyle, Charles, Gay-Lussac)",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "25-lo-stato-gassoso-e-le-leggi",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/chimica/u1/25-lo-stato-gassoso-e-le-leggi.mdx",
+ "examQuestions": [
+  {
+   "year": "2015",
+   "q": "Il propano reagisce con l'ossigeno secondo la reazione indicata di seguito: C3H8(g) + 5 O2(g) -> 3 CO2(g) + 4 H2O(g). Se 100 cm3 di propano vengono miscelati con 900 cm3 di ossigeno, qual è il volume di gas totale che rimarrà alla fine della reazione, assumendo che i volumi di tutti i gas siano misurati alla stessa temperatura e pressione?",
+   "choices": [
+    "1100 cm3",
+    "700 cm3",
+    "300 cm3",
+    "1300 cm3",
+    "1700 cm3"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2020",
+   "q": "Quale, tra i cambiamenti elencati, non fa aumentare la pressione di un gas all'interno di un contenitore?",
+   "choices": [
+    "Aumentare il volume del contenitore",
+    "Aumentare la temperatura e diminuire il volume del contenitore",
+    "Aumentare la temperatura",
+    "Aggiungere altre moli di questo gas",
+    "Nessuna delle altre risposte è corretta"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Le reazioni di combustione elencate di seguito vengono condotte tutte nelle medesime condizioni di volume e temperatura costanti. Se ciascuna reazione giunge a completamento a partire da 0,1 mol di combustibile, quale di esse determinerà il maggior decremento della pressione (cioè la maggiore diminuzione del numero di moli gassose)?",
+   "choices": [
+    "C10H16 (l) + 14 O2 (g) -> 10 CO2 (g) + 8 H2O (l)",
+    "C7H6O3 (s) + 7 O2 (g) -> 7 CO2 (g) + 3 H2O (l)",
+    "C10H8 (s) + 12 O2 (g) -> 10 CO2 (g) + 4 H2O (l)",
+    "C6H6 (l) + 15/2 O2 (g) -> 6 CO2 (g) + 3 H2O (l)",
+    "C14H10 (s) + 33/2 O2 (g) -> 14 CO2 (g) + 5 H2O (l)"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "La legge di Gay-Lussac afferma che \"a volume costante la pressione esercitata da un gas è...\"?",
+   "choices": [
+    "Direttamente proporzionale alla sua temperatura assoluta",
+    "Inversamente proporzionale alla sua temperatura assoluta",
+    "Direttamente proporzionale alla sua temperatura espressa in gradi Celsius",
+    "Inversamente proporzionale alla sua temperatura espressa in gradi Celsius",
+    "Indipendente dalla sua temperatura"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

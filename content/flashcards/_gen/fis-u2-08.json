@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-08-1",
+    "topicId": "fis-u2-08",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: massa e peso sono la stessa cosa. Se porto un sacco di 10 kg sulla Luna, la sua massa cambia perche la gravita lunare e diversa.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. La massa e la 'quantita di materia' del sacco: rimane sempre 10 kg, sia sulla Terra che sulla Luna che nello spazio. Il PESO e la forza con cui la gravita tira quel sacco verso il basso (P = m x g). Sulla Luna g e circa 6 volte piu piccolo, quindi il sacco pesa molto meno, ma la sua massa non cambia di un grammo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-08-2",
+    "topicId": "fis-u2-08",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Allunghi una molla e la lasci andare: lei torna indietro spingendoti la mano. Secondo la legge di Hooke, se allunghi la molla il DOPPIO, la forza con cui ti spinge indietro e...",
+    "choices": [
+      "il doppio",
+      "quattro volte tanto",
+      "uguale, non cambia",
+      "la meta"
+    ],
+    "answer": 0,
+    "explain": "La legge di Hooke dice F = k x x: la forza elastica e proporzionale all'allungamento x. Se raddoppi x, raddoppi F. Semplice come una bilancia a molla: doppio peso, doppia estensione. Nella pratica veterinaria questo principio e alla base di dinamometri e di certi dispositivi ortopedici.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-08-3",
+    "topicId": "fis-u2-08",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Descrivi almeno QUATTRO tipi di forza che hai studiato (peso, attrito, tensione, elastica/Hooke). Per ciascuno: come si chiama, e una forza a distanza o di contatto, e cosa fa in pratica? Fai almeno un esempio concreto.",
+    "answer": "1) FORZA PESO (P = m x g): e la forza con cui la Terra attira ogni oggetto verso il basso. E una forza a DISTANZA (agisce senza toccare). Esempio: un cane di 30 kg ha un peso di 30 x 9,8 = 294 N che la Terra esercita su di lui in ogni momento. 2) ATTRITO (F = mu x N): e una forza di CONTATTO che si oppone al movimento o al tentativo di muoversi. Esistono attrito statico (tiene fermo) e cinetico (frena il moto gia avviato). Esempio: quando un gatto si ferma sul pavimento senza scivolare, e l'attrito statico a tenerlo fermo. 3) TENSIONE: e la forza trasmessa lungo una fune, una corda o un tendine. E una forza di CONTATTO. Esempio: quando il chirurgo veterinario usa un filo di sutura per chiudere una ferita, il filo e in tensione e trasmette la forza che tiene i lembi uniti. 4) FORZA ELASTICA (F = k x x, legge di Hooke): e la forza con cui una molla (o qualsiasi corpo elastico) si oppone alla deformazione e vuole tornare alla posizione di riposo. E di CONTATTO. Esempio: un peso appeso a una molla di costante k = 49 N/m che si allunga di 8 cm ha una forza elastica di 49 x 0,08 = 3,92 N che bilancia il peso.",
+    "explain": "Da ricordare: peso (a distanza, P = mg); attrito (contatto, frena); tensione (contatto, lungo funi/tendini); elastica (contatto, F = kx, opposta allo spostamento).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-08-4",
+    "topicId": "fis-u2-08",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Nina porta la sua borraccia (1 kg d'acqua) al Polo Nord, Elena la porta all'equatore. Le borracce sono sigillate e non perdono nulla. Arrivate a destinazione, cosa si puo dire del PESO delle due borracce?",
+    "choices": [
+      "Il peso della borraccia di Elena e minore di quello della borraccia di Nina",
+      "Il peso della borraccia di Nina e minore di quello della borraccia di Elena",
+      "Il peso delle due borracce e esattamente lo stesso",
+      "La massa della borraccia di Elena e diminuita rispetto alla partenza",
+      "Il peso dipende dal periodo dell'anno in cui si effettua la misura"
+    ],
+    "answer": 0,
+    "explain": "Il peso e P = m x g. La massa dell'acqua non cambia (la borraccia e sigillata), ma g non e identico ovunque sulla Terra: ai poli la Terra e leggermente schiacciata, quindi la superficie e piu vicina al centro e g e un pochino piu alto. All'equatore la distanza dal centro e maggiore e g e leggermente piu bassa. Risultato: la borraccia di Elena (all'equatore) pesa MENO di quella di Nina (al Polo). Trappola 'peso uguale' (opzione C): sbagliata perche confonde massa (invariante) con peso (dipende da g). Trappola 'massa diminuita' (opzione D): impossibile, la borraccia e sigillata, la massa non cambia. Trappola 'dipende dal periodo' (opzione E): un filler fuori tema, l'asse terrestre inclina le stagioni ma non cambia g in modo rilevante.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-08-5",
+    "topicId": "fis-u2-08",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un corpo di massa 400 g viene appeso a una molla con costante elastica k = 49 N/m. Quanto si allunga la molla nella posizione di equilibrio? (usa g = 9,8 m/s²)",
+    "choices": [
+      "8 cm",
+      "5 cm",
+      "20 cm",
+      "12,5 cm",
+      "40,8 cm"
+    ],
+    "answer": 0,
+    "explain": "All'equilibrio la forza elastica bilancia il peso: k x x = m x g. Prima converti la massa: 400 g = 0,4 kg. Sostituisci: 49 x x = 0,4 x 9,8 = 3,92 N. Quindi x = 3,92 / 49 = 0,08 m = 8 cm. La risposta giusta e 8 cm. Trappola '12,5 cm': si ottiene invertendo la frazione, cioe facendo 49 / 3,92 = 12,5 invece di 3,92 / 49: ricorda che l'allungamento e peso diviso k, non k diviso peso. Trappola '5 cm', '20 cm' e '40,8 cm': sono errori di conversione (massa lasciata in grammi) o di calcolo, e danno numeri fuori scala. Regola d'oro: converti sempre la massa in kg e ricorda x = m x g / k.",
+    "tags": ["prova d'esame"]
+  }
+]

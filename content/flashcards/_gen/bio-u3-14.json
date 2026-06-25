@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u3-14-1",
+    "topicId": "bio-u3-14",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: quando la cellula trascrive un gene, ottiene direttamente un mRNA pronto per costruire proteine, senza dover tagliare nulla.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'RNA appena prodotto si chiama pre-mRNA e contiene sia gli esoni (parti utili) sia gli introni (pezzi inutili da eliminare). Lo splicing deve prima tagliare gli introni e unire gli esoni, come il montaggio di un film: si buttano le scene tagliate e si incollano quelle buone per ottenere l'mRNA maturo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-14-2",
+    "topicId": "bio-u3-14",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Cos'e' lo splicing alternativo? Immagina di avere un mazzo di 5 carte (gli esoni) e di poter costruire mani diverse ogni volta.",
+    "choices": [
+      "La cellula sceglie combinazioni diverse di esoni da unire, ottenendo piu proteine diverse dallo stesso gene",
+      "La cellula produce trascritti primari diversi copiando in modo diverso il DNA ogni volta",
+      "Lo spliceosoma taglia il gene nel DNA, eliminando gli introni una volta per tutte",
+      "Il ribosoma salta alcuni codoni durante la traduzione, producendo proteine piu corte"
+    ],
+    "answer": 0,
+    "explain": "Con lo splicing alternativo la stessa sequenza di pre-mRNA puo essere 'montata' in modi diversi: si includono o si escludono certi esoni, generando mRNA diversi e quindi proteine diverse. E per questo che 20.000 geni umani producono piu di 100.000 proteine diverse. La trappola piu comune e confondere 'trascritti primari diversi' con 'mRNA diversi dallo stesso trascritto': lo splicing avviene dopo la trascrizione, non durante.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-14-3",
+    "topicId": "bio-u3-14",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Cos'e' un ribozima e perche lo spliceosoma e considerato tale? Spiega anche cosa sono gli introni autocatalitici e cosa suggeriscono sull'origine della vita.",
+    "answer": "Un ribozima e una molecola di RNA che si comporta come un enzima, cioe catalizza reazioni chimiche da solo. Di solito gli enzimi sono proteine, ma in alcuni casi e l'RNA a fare il lavoro chimico. Lo spliceosoma e considerato un ribozima perche, anche se contiene anche proteine (che servono da impalcatura), sono gli snRNA (i piccoli RNA interni, in particolare U2 e U6) a eseguire davvero il taglio degli introni e la giunzione degli esoni. Le proteine reggono la struttura, ma il 'coltello molecolare' e l'RNA. Esistono poi anche introni autocatalitici (gruppo I e gruppo II) che si rimuovono da soli, senza nessuna proteina di aiuto: sono ribozimi puri. Questo ha un significato evolutivo enorme: suggerisce che, prima che comparissero le proteine, la vita fosse governata dall'RNA ('mondo a RNA'). L'RNA poteva sia portare informazioni genetiche sia catalizzare reazioni: un precursore primitivo di DNA + proteine.",
+    "explain": "Da ricordare: ribozima = RNA con attivita catalitica. Nello spliceosoma sono gli snRNA (non le proteine) a catalizzare il taglio. Gli introni autocatalitici supportano l'ipotesi del 'RNA world'.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-14-4",
+    "topicId": "bio-u3-14",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Attraverso lo splicing alternativo una cellula puo:",
+    "choices": [
+      "produrre proteine diverse dallo stesso trascritto primario",
+      "produrre trascritti primari diversi dallo stesso gene",
+      "produrre dallo stesso mRNA proteine diverse durante la traduzione",
+      "amplificare regioni specifiche del DNA",
+      "riparare i danni del DNA su singolo filamento"
+    ],
+    "answer": 0,
+    "explain": "Lo splicing alternativo agisce sul pre-mRNA (trascritto primario): combinando esoni diversi si ottengono mRNA maturi diversi e, di conseguenza, proteine diverse. La risposta B e la trappola piu insidiosa: 'trascritti primari diversi dallo stesso gene' e sbagliata perche la trascrizione produce sempre lo stesso pre-mRNA; e lo splicing successivo che lo 'monta' in modi diversi. La risposta C ('dallo stesso mRNA') e quasi giusta ma sottilmente errata: le diverse proteine si ottengono da mRNA distinti, non dalla traduzione dello stesso identico mRNA. Le risposte D ed E (amplificare il DNA, riparare il DNA) sono completamente fuori tema: non c'entrano nulla con lo splicing.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-14-5",
+    "topicId": "bio-u3-14",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "In ingegneria genetica il cDNA (DNA complementare) si ottiene a partire dall'mRNA con la trascrittasi inversa. Questa tecnica e particolarmente utile quando si lavora con geni di organismi eucarioti perche:",
+    "choices": [
+      "i geni degli eucarioti non possono essere isolati dal nucleo",
+      "i geni degli eucarioti sono formati da triplette diverse da quelle dei procarioti",
+      "il DNA degli eucarioti contiene oltre agli esoni anche gli introni non codificanti",
+      "i procarioti non sono attaccati da virus che possiedono la trascrittasi inversa",
+      "negli eucarioti l'informazione passa normalmente dall'RNA al DNA"
+    ],
+    "answer": 2,
+    "explain": "Nei geni eucariotici ci sono introni intrecciati agli esoni: se si prendesse il DNA genomico direttamente, si otterrebbero anche le sequenze non codificanti (introni). Partendo invece dall'mRNA maturo (dal quale gli introni sono gia stati rimossi dallo splicing) e convertendolo in cDNA con la trascrittasi inversa, si ottiene solo la parte codificante, pronta per essere espressa anche in batteri (che non hanno lo spliceosoma). Le trappole: 'non possono essere isolati' e falso (si isolano eccome); 'triplette diverse' e falso (il codice genetico e universale); 'l'informazione passa dall RNA al DNA' e sbagliata (e un evento eccezionale che avviene solo con retrovirus, non la norma negli eucarioti); 'i procarioti non sono attaccati da quei virus' e un filler fuori tema.",
+    "tags": ["prova d'esame"]
+  }
+]

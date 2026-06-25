@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u6-10-1",
+    "topicId": "fis-u6-10",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: l'esperimento di Oersted dimostrò che una corrente elettrica in un filo genera un campo magnetico attorno al filo stesso.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Nel 1820 Oersted notò che ogni volta che accendeva il filo elettrico, l'ago di una bussola vicina si girava. Immagina il filo come un rubinetto: appena passa la corrente, attorno al filo nasce un 'vortice magnetico' fatto di cerchi concentrici. Più sei lontano, più i cerchi sono deboli.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-10-2",
+    "topicId": "fis-u6-10",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "open",
+    "q": "Una particella carica si muove dentro un campo magnetico. Quando la forza di Lorentz è zero? Quando è massima? Cosa fa questa forza alla velocità della particella?",
+    "answer": "La forza di Lorentz è F = q·v·B·sin(θ), dove θ è l'angolo tra la velocità e il campo magnetico B. È ZERO quando la particella si muove parallela a B (θ = 0°, perché sin(0°) = 0): la carica non sente nulla. È MASSIMA quando la particella si muove perpendicolare a B (θ = 90°, sin(90°) = 1): F = q·v·B. La forza di Lorentz è sempre perpendicolare alla direzione del moto, quindi curva la traiettoria della particella ma non ne cambia la velocità (il modulo rimane lo stesso, solo la direzione cambia).",
+    "explain": "Parallelo a B → F = 0. Perpendicolare a B → F massima = qvB. La forza di Lorentz curva ma non accelera la carica.",
+    "tags": ["risposta aperta"]
+  }
+]

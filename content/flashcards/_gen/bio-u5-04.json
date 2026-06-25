@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u5-04-1",
+    "topicId": "bio-u5-04",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: a riposo, l'interno di un neurone è POSITIVO rispetto all'esterno.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. A riposo l'interno è NEGATIVO: circa -70 mV. Pensa alla membrana come a una batteria con il polo negativo dentro e quello positivo fuori. È la pompa sodio-potassio che mantiene questo squilibrio, consumando energia (ATP).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-04-2",
+    "topicId": "bio-u5-04",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Durante il potenziale d'azione, la DEPOLARIZZAZIONE avviene perché...",
+    "choices": [
+      "Il sodio (Na⁺) entra nella cellula attraverso i canali aperti, rendendo l'interno positivo",
+      "Il potassio (K⁺) entra nella cellula, rendendo l'interno positivo",
+      "Il sodio (Na⁺) esce dalla cellula, rendendo l'interno negativo",
+      "La pompa sodio-potassio smette di funzionare"
+    ],
+    "answer": 0,
+    "explain": "Si aprono i canali del sodio: il Na⁺ entra in massa (fuori ce n'è tanto, e l'interno era negativo, quindi è attirato doppiamente). L'interno passa da -70 mV a circa +30 mV: questa è la depolarizzazione. Il potassio interviene dopo, nella fase di ripolarizzazione. La pompa sodio-potassio è sempre attiva e serve a mantenere il riposo, non a fare il segnale.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-04-3",
+    "topicId": "bio-u5-04",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Descrivi in ordine le 4 fasi del potenziale d'azione: per ognuna, quale ione si muove e in quale direzione, e come cambia il valore del potenziale?",
+    "answer": "1. DEPOLARIZZAZIONE: lo stimolo apre i canali del Na⁺. Il sodio entra nella cellula (attirato dalla carica negativa interna e dall'alta concentrazione esterna). Il potenziale sale da -70 mV fino a circa +30 mV: l'interno diventa positivo. 2. RIPOLARIZZAZIONE: i canali del Na⁺ si chiudono e si aprono i canali del K⁺. Il potassio esce dalla cellula (ora l'interno è positivo e spinge fuori il K⁺ carico positivo). Il potenziale ridiscende verso -70 mV. 3. IPERPOLARIZZAZIONE: il K⁺ esce ancora un pochino di troppo. Il potenziale scende sotto il valore di riposo, per esempio a -80 mV. È una fase transitoria. 4. RITORNO AL RIPOSO: la pompa Na⁺/K⁺ riporta tutto in ordine, espellendo 3 Na⁺ e facendo entrare 2 K⁺ per ogni ciclo, finché si ristabiliscono i -70 mV di partenza.",
+    "explain": "Schema da ricordare: stimolo → Na⁺ entra (depol.) → K⁺ esce (ripol.) → K⁺ esce ancora un po' (iperpol.) → pompa ripristina il riposo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-04-4",
+    "topicId": "bio-u5-04",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale dei seguenti valori è più vicino al PICCO del potenziale d'azione in un tipico neurone sensoriale umano?",
+    "choices": [
+      "+40 mV",
+      "-30 mV",
+      "0 mV",
+      "-70 mV",
+      "+110 mV"
+    ],
+    "answer": 0,
+    "explain": "Il picco del potenziale d'azione è intorno a +30/+40 mV: durante la depolarizzazione il Na⁺ entra e l'interno diventa positivo, arrivando a circa +30-40 mV. Trappola '-70 mV': è il potenziale di RIPOSO, non il picco (confonde i due valori fondamentali). Trappola '0 mV': è il punto di passaggio, il momento in cui il potenziale attraversa lo zero, ma non è il picco. Trappola '-30 mV': valore negativo vicino al riposo, non ha senso come picco della depolarizzazione (è un 'opposto plausibile'). Trappola '+110 mV': troppo alto, supera il valore reale di circa tre volte (filler fuori scala).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-04-5",
+    "topicId": "bio-u5-04",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un neurone motorio conduce i segnali più velocemente se il suo assone è mielinizzato. Come funziona esattamente questa accelerazione?",
+    "choices": [
+      "Il segnale 'salta' da un nodo di Ranvier al successivo (conduzione saltatoria), invece di percorrere tutto l'assone punto per punto",
+      "La guaina mielinica è ininterrotta e conduce l'elettricità come un filo di rame",
+      "I nodi di Ranvier aumentano la resistenza e rallentano il segnale, ma la mielina lo amplifica",
+      "Le ramificazioni dendritiche aumentano la velocità del segnale lungo l'assone",
+      "L'assone mielinizzato aumenta il valore soglia di depolarizzazione, riducendo i tempi di attivazione"
+    ],
+    "answer": 0,
+    "explain": "La guaina mielinica NON è ininterrotta: è intervallata dai nodi di Ranvier, piccole zone scoperte. Il potenziale d'azione si rigenera SOLO nei nodi, saltando da uno all'altro (conduzione saltatoria), e per questo va molto più veloce che percorrere tutta la membrana centimetro per centimetro. Trappola 'guaina ininterrotta che conduce come rame': sbagliata in due punti — la guaina non è continua (ci sono i nodi) e la mielina è isolante, non conduttrice. Trappola 'i nodi rallentano il segnale': è l'opposto esatto, sono proprio i nodi che permettono il salto e l'accelerazione. Trappola 'ramificazioni dendritiche': i dendriti ricevono segnali in entrata, non centrano con la velocità di propagazione lungo l'assone. Trappola 'aumento del valore soglia': alzare la soglia renderebbe il neurone meno reattivo, non più veloce.",
+    "tags": ["prova d'esame"]
+  }
+]

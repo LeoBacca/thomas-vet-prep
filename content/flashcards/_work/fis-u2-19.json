@@ -1,0 +1,10 @@
+{
+ "id": "fis-u2-19",
+ "titolo": "Centro di massa",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "19-centro-di-massa",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u2/19-centro-di-massa.mdx",
+ "examQuestions": []
+}

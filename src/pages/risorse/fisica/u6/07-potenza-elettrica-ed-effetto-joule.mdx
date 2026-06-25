@@ -1,0 +1,93 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u6-07">
+
+## Cos'è la potenza elettrica?
+
+Quando la corrente scorre in un circuito, l'energia elettrica viene "consumata" in qualche forma. La **potenza elettrica** misura quanto velocemente viene consumata quell'energia.
+
+Pensa a una lampadina: una da 100 W consuma energia più in fretta di una da 10 W. La potenza si misura in **watt (W)**.
+
+La formula è semplice:
+
+**P = V · I**
+
+Dove:
+- **P** = potenza in watt (W)
+- **V** = tensione in volt (V)
+- **I** = corrente in ampere (A)
+
+Usando la legge di Ohm (V = R · I) si può riscrivere anche così:
+
+**P = R · I²** oppure **P = V² / R**
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La potenza è quanta energia elettrica viene "bruciata" ogni secondo. Più alta è la potenza, più in fretta consumi energia (e più paghi in bolletta).</div>
+
+---
+
+## Cos'è l'effetto Joule?
+
+Quando la corrente scorre dentro un filo o una resistenza, gli elettroni sbattono contro gli atomi del materiale. Questi urti fanno vibrare gli atomi e producono **calore**.
+
+Questo riscaldamento si chiama **effetto Joule**, dal nome del fisico James Joule che lo studiò nell'Ottocento.
+
+Lo vedi ogni giorno:
+- Il **filo di un tostapane** diventa rovente
+- Il **cellulare si scalda** mentre lo carichi
+- La **lampadina a incandescenza** illuminava proprio grazie al calore del filamento
+
+Più alta è la resistenza del materiale, più calore viene prodotto a parità di corrente.
+
+---
+
+## Energia dissipata nel tempo
+
+La potenza dice quanto veloce avviene il consumo. Per sapere quanta **energia totale** viene dissipata in un tempo t, basta moltiplicare:
+
+**E = P · t = R · I² · t**
+
+L'energia si misura in **joule (J)** oppure, per la bolletta della luce, in **kilowattora (kWh)**: 1 kWh = 3 600 000 J.
+
+---
+
+<Diagram caption="Relazione tra tensione, corrente, resistenza e potenza in un circuito" code={`flowchart TB
+  A["Tensione V (volt)"] --> C["Potenza P = V · I (watt)"]
+  B["Corrente I (ampere)"] --> C
+  C --> D["Energia dissipata<br/>E = P · t (joule)"]
+  D --> E["Calore prodotto<br/>nella resistenza<br/>— Effetto Joule"]`} />
+
+<Diagram caption="Come nasce l'effetto Joule dentro un conduttore" code={`flowchart LR
+  A["Corrente entra<br/>nel conduttore"] --> B["Elettroni si muovono<br/>e urtano gli atomi"]
+  B --> C["Gli atomi vibrano<br/>più velocemente"]
+  C --> D["Il materiale<br/>si scalda"]
+  D --> E["Calore disperso<br/>nell'ambiente"]`} />
+
+## Guarda il video
+<YouTube id="KUbM-hLe8ik" title="La potenza, l'effetto Joule e il kilowattora - Spiegazione e esempi" />
+<VideoVisto id="fis-u6-07" />
+
+## Da ricordare
+- La potenza elettrica (P = V · I = R · I²) misura quanta energia viene consumata al secondo in un circuito.
+- L'effetto Joule è il calore prodotto ogni volta che la corrente scorre in una resistenza: gli elettroni urtano gli atomi e li fanno vibrare.
+- L'energia totale dissipata è E = P · t; nella vita quotidiana si misura in kilowattora (kWh).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una resistenza di 10 Ω è attraversata da una corrente di 2 A. Qual è la potenza dissipata?" opzioni={["5 W","20 W","40 W","100 W"]} corretta={2} spiegazione="Si usa P = R · I² = 10 · (2)² = 10 · 4 = 40 W. Attenzione: la corrente va elevata al quadrato prima di moltiplicare per R." />
+
+<Quiz domanda="Qual è il fenomeno fisico alla base del riscaldamento di un filo percorso da corrente?" opzioni={["Effetto fotoelettrico","Effetto Joule","Induzione elettromagnetica","Effetto Hall"]} corretta={1} spiegazione="L'effetto Joule è proprio il riscaldamento causato dagli urti tra gli elettroni in moto e gli atomi del conduttore. Gli altri fenomeni sono processi diversi." />
+
+<Quiz domanda="Se una stufa elettrica ha una potenza di 1000 W e rimane accesa per 2 ore, quanta energia consuma?" opzioni={["500 J","2000 J","2 kWh","1 kWh"] } corretta={2} spiegazione="E = P · t = 1000 W · 2 h = 2000 Wh = 2 kWh. Ricorda: 1 kWh = 1000 W per 1 ora, ed è l'unità usata in bolletta." />
+
+<Esercizio problema="Un ferro da stiro ha una resistenza di 50 Ω ed è collegato a una tensione di 230 V. Calcola: (a) la corrente che lo attraversa, (b) la potenza assorbita, (c) l'energia consumata in 30 minuti." soluzione="(a) Dalla legge di Ohm: I = V / R = 230 / 50 = 4,6 A. (b) P = V · I = 230 · 4,6 = 1058 W ≈ 1060 W. In alternativa P = V² / R = 230² / 50 = 52900 / 50 = 1058 W. (c) t = 30 min = 1800 s. E = P · t = 1058 · 1800 = 1 904 400 J ≈ 1,9 MJ. In kWh: E = 1058 W · 0,5 h = 529 Wh ≈ 0,53 kWh." />
+
+</section>
+
+</RisorsaLayout>

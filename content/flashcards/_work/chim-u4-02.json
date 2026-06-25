@@ -1,0 +1,137 @@
+{
+ "id": "chim-u4-02",
+ "titolo": "La teoria di Brønsted-Lowry (coppie coniugate) e cenni su Lewis",
+ "materia": "chimica",
+ "unita": 4,
+ "slug": "02-la-teoria-di-br-nsted-lowry",
+ "freq": 9,
+ "risorseMdx": "src/pages/risorse/chimica/u4/02-la-teoria-di-br-nsted-lowry.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Indicare una coppia coniugata acido-base nella seguente reazione: CN- + H2O = HCN + OH-",
+   "choices": [
+    "H2O, OH-",
+    "CN-, H2O",
+    "HCN, OH-",
+    "H2O, HCN",
+    "CN-, OH-"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2013",
+   "q": "Quale delle seguenti sostanze puo comportarsi sia da acido che da base secondo Bronsted-Lowry?",
+   "choices": [
+    "H2PO4-",
+    "CO3 2-",
+    "NH4+",
+    "CH4",
+    "H3O+"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2013",
+   "q": "Nella reazione H2SO4 + H2O -> H3O+ + HSO4-, quale delle seguenti combinazioni di specie chimiche e una coppia acido-base coniugata?",
+   "choices": [
+    "H2O e H3O+",
+    "H2SO4 e H2O",
+    "H3O+ e HSO4-",
+    "H2SO4 e H3O+",
+    "H2O e HSO4-"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2015",
+   "q": "Tutte le equazioni sottostanti descrivono reazioni acido-base. In quale delle reazioni il composto sottolineato (il primo reagente) si comporta da acido di Lewis e non da acido di Brønsted-Lowry?",
+   "choices": [
+    "NH3 + BCl3 -> H3NBCl3",
+    "NH3 + H2O -> NH4+ + OH^-",
+    "CH3COOH + NaOH -> CH3COONa + H2O",
+    "[Cu(H2O)6]^2+ + H2O -> [Cu(H2O)5OH]^+ + H3O+",
+    "HNO3 + H2SO4 -> H2NO3+ + HSO4^-"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Quale dei seguenti composti non è anfotero (cioè non può comportarsi sia da acido sia da base)?",
+   "choices": [
+    "SO4^2-",
+    "HCO3^-",
+    "H2O",
+    "NH3",
+    "H2PO4^-"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Si consideri la seguente reazione: H2CO3 + PH3 -> HCO3- + PH4+. Quale tra le seguenti è una coppia acido-base coniugata?",
+   "choices": [
+    "H2CO3, HCO3-",
+    "H2CO3, PH3",
+    "PH3, HCO3-",
+    "H2CO3, PH4+",
+    "HCO3-, PH4+"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Il composto AlCl3 è formato da un atomo di alluminio e tre atomi di cloro legati tra loro da legami covalenti. Poiché l'alluminio è nel gruppo 13 possiamo supporre che AlCl3 sia:",
+   "choices": [
+    "un acido secondo Lewis",
+    "una base secondo Lewis",
+    "un acido secondo Arrhenius",
+    "l'acido coniugato di una base azotata",
+    "nessuna delle altre possibilità è corretta"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "In base alla teoria di Brønsted-Lowry, l'acqua è una molecola:",
+   "choices": [
+    "anfotera",
+    "solo acida",
+    "solo basica",
+    "né acida né basica",
+    "nessuna delle altre risposte è corretta"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Quale tra i seguenti composti è un acido secondo la teoria di Lewis?",
+   "choices": [
+    "AlCl3",
+    "NCl3",
+    "PCl5",
+    "CaCl2",
+    "CCl4"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

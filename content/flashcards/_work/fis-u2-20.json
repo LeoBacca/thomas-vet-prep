@@ -1,0 +1,25 @@
+{
+ "id": "fis-u2-20",
+ "titolo": "Corpo rigido, momento torcente, equilibrio rotazionale e leve nel corpo umano",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "20-corpo-rigido-momento-torcente-equilibrio-rotazionale",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u2/20-corpo-rigido-momento-torcente-equilibrio-rotazionale.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Luglio",
+   "q": "Una forza di 20 N è applicata perpendicolarmente ad un'asta, lunga 1,5 m in una delle sue estremità. Qual è il momento torcente sull'asta se il suo asse di rotazione è perpendicolare all'asta stessa e passa per l'altra estremità?",
+   "choices": [
+    "30 Nm",
+    "13,3 Nm",
+    "0,075 Nm",
+    "30 N",
+    "13,3 N"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fc-chim-u7-02-1",
+    "topicId": "chim-u7-02",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Un amminoacido in soluzione a pH neutro esiste come zwitterione. Cosa significa?",
+    "choices": [
+      "Ha una carica + e una carica - contemporaneamente, ma la carica totale e zero",
+      "E completamente privo di qualsiasi carica, come una molecola apolare",
+      "Ha solo una carica positiva perche il gruppo -NH2 ha catturato un H+",
+      "Ha solo una carica negativa perche il gruppo -COOH ha ceduto il suo H+"
+    ],
+    "answer": 0,
+    "explain": "Lo zwitterione e come una calamita: un polo + (il gruppo -NH3+) e un polo - (il gruppo -COO-) sulla stessa molecola. Le due cariche si cancellano: totale zero. Non e 'assenza di carica' ma 'due cariche opposte che si bilanciano'.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-chim-u7-02-2",
+    "topicId": "chim-u7-02",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Un amminoacido semplice ha pKa1 = 2 (gruppo -COOH) e pKa2 = 10 (gruppo -NH3+). A che pH ha carica totale zero? Come si calcola e come cambia la carica se si abbassa il pH fino a 1?",
+    "answer": "Il pH in cui la carica totale e zero si chiama punto isoelettrico (pI). Si calcola come media dei due pKa: pI = (2 + 10) / 2 = 6. A pH 6 l'amminoacido e uno zwitterione (carica = 0). Se si abbassa il pH fino a 1 (ambiente molto acido, pieno di H+), il gruppo -COO- cattura un H+ e diventa -COOH perdendo la carica negativa. Resta solo la carica positiva del gruppo -NH3+: la molecola diventa positiva (+1).",
+    "explain": "pI = (pKa1 + pKa2) / 2. Al pI: carica zero (zwitterione). In ambiente acido (pH < pI): carica positiva. In ambiente basico (pH > pI): carica negativa.",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

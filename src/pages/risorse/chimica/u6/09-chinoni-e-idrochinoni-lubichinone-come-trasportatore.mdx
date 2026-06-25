@@ -1,0 +1,83 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u6-09">
+
+Un **chinone** e il suo **idrochinone** sono come due facce della stessa molecola. Il chinone ha due ossigeni "doppi" (due gruppi C=O su un anello); l'idrochinone ha gli stessi ossigeni, ma ognuno tiene attaccato un atomo di idrogeno (due gruppi O-H). Per passare da una forma all'altra basta **aggiungere o togliere elettroni** (e idrogeni). Per questo li chiamiamo una **coppia redox**: due molecole legate da uno scambio di elettroni.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il chinone è la versione "scarica" e l'idrochinone è la versione "carica" della stessa molecola. Come una batteria che si carica quando prende elettroni e si scarica quando li cede.</div>
+
+<Diagram caption="La coppia chinone / idrochinone: una si trasforma nell'altra scambiando elettroni" code={`flowchart LR
+  Q["CHINONE<br/>(forma ossidata)<br/>due C=O"] -->|"acquista 2 elettroni<br/>+ 2 idrogeni"| H["IDROCHINONE<br/>(forma ridotta)<br/>due O-H"]
+  H -->|"cede 2 elettroni<br/>+ 2 idrogeni"| Q`} />
+
+## Ossidato e ridotto: due parole da tenere a mente
+
+In chimica si dice che una molecola si **riduce** quando **acquista** elettroni, e si **ossida** quando li **cede**. Sembra strano (ridurre = guadagnare?), ma è solo il nome storico.
+
+Per la nostra coppia funziona così:
+
+- Il **chinone** è la forma **ossidata** (ha "poco": ha ceduto gli elettroni).
+- L'**idrochinone** è la forma **ridotta** (ha "tanto": ha acquistato gli elettroni).
+
+L'analogia più semplice è una **spugna**: l'idrochinone è la spugna piena d'acqua (carica di elettroni), il chinone è la spugna strizzata (li ha rilasciati). E la spugna può fare avanti e indietro infinite volte: prende elettroni, li porta da un'altra parte, li molla, e torna a prenderne di nuovi.
+
+<Diagram caption="Chi acquista si riduce, chi cede si ossida" code={`flowchart TB
+  C["Coppia redox"] --> R["RIDUZIONE<br/>acquista elettroni<br/>chinone diventa idrochinone"]
+  C --> O["OSSIDAZIONE<br/>cede elettroni<br/>idrochinone diventa chinone"]`} />
+
+## L'ubichinone (coenzima Q): il trasportatore del nostro corpo
+
+Nel tuo corpo c'è un chinone famosissimo: l'**ubichinone**, chiamato anche **coenzima Q** (o **CoQ10**). Il nome "ubichinone" viene da "ubiquo", cioè *presente ovunque*: sta in tutte le cellule.
+
+Il coenzima Q vive dentro i **mitocondri**, le piccole "centrali elettriche" delle cellule. Lì avviene la **respirazione cellulare**: il modo con cui ricavi energia dal cibo che mangi. In questa catena gli elettroni passano di mano in mano, come un testimone in una **staffetta**, e ogni passaggio libera un po' di energia.
+
+Il coenzima Q fa proprio il **fattorino**: prende gli elettroni da una proteina, si trasforma in **ubichinolo** (la sua forma idrochinone, "carica"), si sposta nella membrana del mitocondrio, e li consegna alla proteina successiva tornando ubichinone. Avanti e indietro, milioni di volte.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il coenzima Q è un taxi per elettroni dentro i mitocondri. Si carica (ubichinolo), li trasporta, li scarica (ubichinone) e torna a prenderne altri. Senza questo taxi non ricaveresti energia dal cibo.</div>
+
+Perché conta per medicina e veterinaria? Quell'energia (chiamata **ATP**) serve a far battere il cuore, contrarre i muscoli, far funzionare cervello e reni. Il **CoQ10** è anche un integratore noto, studiato per cuore e muscoli, proprio perché sta al centro di questa staffetta energetica.
+
+## Da ricordare
+
+- **Chinone** e **idrochinone** sono la stessa molecola in due forme: una **ossidata** e una **ridotta**.
+- **Ridursi** = acquistare elettroni (chinone diventa idrochinone). **Ossidarsi** = cederli (idrochinone diventa chinone).
+- È una **coppia redox**: può fare avanti e indietro tante volte, come una spugna che si bagna e si strizza.
+- L'**ubichinone (coenzima Q / CoQ10)** è un chinone presente in tutte le cellule.
+- Nei **mitocondri** fa da **trasportatore di elettroni** nella **respirazione cellulare**, e così aiuta a produrre energia (ATP).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Passando da chinone a idrochinone, la molecola:"
+  opzioni={["cede elettroni (si ossida)", "acquista elettroni (si riduce)", "non scambia nulla", "diventa un altro elemento"]}
+  corretta={1}
+  spiegazione="L'idrochinone è la forma ridotta: per arrivarci il chinone deve acquistare elettroni (e idrogeni). Acquistare elettroni si chiama riduzione."
+/>
+
+<Quiz
+  domanda="L'ubichinone (coenzima Q) si trova soprattutto:"
+  opzioni={["nel sangue come zucchero", "nei mitocondri delle cellule", "nelle ossa", "solo nei capelli"]}
+  corretta={1}
+  spiegazione="Il coenzima Q vive nella membrana dei mitocondri, le centrali energetiche della cellula, dove trasporta elettroni durante la respirazione cellulare."
+/>
+
+<Quiz
+  domanda="Qual è il ruolo del coenzima Q nella respirazione cellulare?"
+  opzioni={["produrre acqua dal nulla", "trasportare elettroni da una proteina all'altra", "colorare le cellule", "bloccare l'energia"]}
+  corretta={1}
+  spiegazione="Fa da fattorino: si carica di elettroni (diventa ubichinolo), li trasporta e li consegna, tornando ubichinone. Questo passaggio aiuta a produrre energia (ATP)."
+/>
+
+<Esercizio
+  problema="Un coenzima Q ha appena consegnato i suoi elettroni alla proteina successiva della catena. In quale delle due forme si trova ora, ossidata o ridotta? E come si chiama questa forma?"
+  soluzione="Avendo ceduto gli elettroni, si trova nella forma ossidata, cioè il chinone: è di nuovo l'ubichinone. Adesso è 'scarico' e pronto a tornare indietro a prendere nuovi elettroni."
+/>
+
+</section>
+
+</RisorsaLayout>

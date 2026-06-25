@@ -1,0 +1,88 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-20">
+
+Dentro a una molecola gli atomi sono tenuti insieme da legami **forti**. Ma anche tra una molecola e l'altra c'è un'attrazione: queste sono le **interazioni deboli**. Sono come dei piccoli magneti delicati che fanno "appiccicare" le molecole vicine. Sembrano poca cosa, eppure tengono insieme l'acqua e perfino il tuo DNA.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> i legami forti tengono insieme i pezzi <strong>dentro</strong> una molecola. Le interazioni deboli tengono insieme una molecola <strong>con</strong> le sue vicine. Deboli sì, ma quando sono tante, contano tantissimo.</div>
+
+## Il legame a idrogeno: una calamita delicata
+
+Pensa a una molecola d'acqua: una **O** (ossigeno) in mezzo e due **H** (idrogeno) ai lati. L'ossigeno è un po' "egoista": tira verso di sé gli elettroni, cioè le cariche negative. Così l'ossigeno diventa un pochino **negativo** e gli idrogeni un pochino **positivi**.
+
+Ora ricorda la regola delle calamite: il **più** attira il **meno**. Quindi l'idrogeno (positivo) di una molecola si attacca all'ossigeno (negativo) della molecola vicina. Questo "aggancio" si chiama **legame a idrogeno**.
+
+<Diagram caption="Il legame a idrogeno tra molecole d'acqua: l'H positivo di una si aggancia all'O negativo dell'altra" code={`flowchart LR
+  A["Molecola 1<br/>O (un po' negativo)<br/>H H (un po' positivi)"] -.->|"legame a idrogeno"| B["Molecola 2<br/>O (un po' negativo)<br/>H H (un po' positivi)"]
+  B -.->|"legame a idrogeno"| C["Molecola 3<br/>O (un po' negativo)<br/>H H (un po' positivi)"]`} />
+
+Ogni singolo aggancio è fragile: si forma e si rompe in continuazione, velocissimo. Ma siccome ce ne sono moltissimi tutti insieme, il risultato è una "rete" robusta. È grazie a questa rete che l'acqua è liquida a temperatura ambiente, mentre altre molecole simili (più leggere e senza legami a idrogeno) sarebbero gas.
+
+<div class="callout">💡 <strong>Aggancio biomedico:</strong> il tuo <strong>DNA</strong> è fatto da due filamenti avvolti a spirale. Cosa li tiene uniti? Proprio i legami a idrogeno tra le "lettere" del codice (A con T, C con G). Sono abbastanza forti da custodire le informazioni, ma abbastanza deboli da poter essere "aperti" quando la cellula deve leggerli o copiarli. Perfetto, no?</div>
+
+## Le forze di van der Waals: l'attrazione più timida
+
+C'è un'attrazione ancora più debole del legame a idrogeno: le **forze di van der Waals**. Funzionano anche tra molecole che non hanno una parte "più" e una parte "meno" fisse.
+
+Come? Gli elettroni dentro una molecola si muovono di continuo. Per un istante possono ammucchiarsi più da un lato, rendendo quel lato un pelino negativo e l'altro un pelino positivo. Questo squilibrio momentaneo attira la molecola vicina, e così via. È un'attrazione che va e viene, come un battito di ciglia.
+
+<Diagram caption="Dalla più debole alla più forte: van der Waals, legame a idrogeno, legame forte" code={`flowchart TB
+  D["Forze di van der Waals<br/>(la più DEBOLE)"] --> H["Legame a idrogeno<br/>(debole ma più forte)"]
+  H --> F["Legame chimico forte<br/>(dentro la molecola)"]`} />
+
+Più una molecola è grande, più ha elettroni, più queste forze diventano evidenti. Sono il motivo per cui certe sostanze sono liquide o solide invece che gassose.
+
+<div class="callout">💡 <strong>Aggancio biomedico:</strong> le forze di van der Waals aiutano i grassi (lipidi) a stare uniti nelle <strong>membrane delle cellule</strong>, le "pareti" che racchiudono ogni cellula del corpo. Anche tanti farmaci si "incastrano" nel loro bersaglio grazie a queste micro-attrazioni.</div>
+
+## Guarda il video
+
+<YouTube id="JlHbwin2L6U" title="Legame a idrogeno e legami intermolecolari — spiegazione semplice" />
+
+<VideoVisto id="chim-u1-20" />
+
+## Da ricordare
+
+- Le **interazioni deboli** legano una molecola alle sue **vicine**, non i pezzi dentro la molecola.
+- Il **legame a idrogeno**: un idrogeno un po' positivo si attacca a un atomo molto negativo (come l'ossigeno) di un'altra molecola.
+- Singolarmente sono deboli, ma **tante insieme** diventano una rete robusta (per questo l'acqua è liquida).
+- Le **forze di van der Waals** sono ancora più deboli e nascono da squilibri momentanei degli elettroni.
+- In biologia sono fondamentali: tengono unito il **DNA** e le **membrane delle cellule**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Le interazioni deboli legano:"
+  opzioni={["gli atomi dentro una stessa molecola", "una molecola alle molecole vicine", "solo i metalli", "soltanto i gas"]}
+  corretta={1}
+  spiegazione="Le interazioni deboli (legame a idrogeno e van der Waals) attraggono molecole diverse tra loro. I legami forti, invece, tengono insieme gli atomi dentro la singola molecola."
+/>
+
+<Quiz
+  domanda="Nel legame a idrogeno, l'idrogeno (un po' positivo) viene attratto da:"
+  opzioni={["un altro idrogeno positivo", "un atomo molto negativo come l'ossigeno", "il nucleo del sole", "niente, sta da solo"]}
+  corretta={1}
+  spiegazione="Vale la regola delle calamite: il più attira il meno. L'H positivo di una molecola si aggancia all'atomo negativo (es. ossigeno) di un'altra."
+/>
+
+<Quiz
+  domanda="Cosa tiene uniti i due filamenti del DNA?"
+  opzioni={["la colla", "legami a idrogeno tra le lettere del codice", "le forze di gravità", "i raggi del sole"]}
+  corretta={1}
+  spiegazione="I due filamenti del DNA sono tenuti insieme da legami a idrogeno: abbastanza forti da custodire le informazioni, abbastanza deboli da potersi aprire quando serve."
+/>
+
+<Esercizio
+  problema="Spiega con parole tue perché l'acqua è liquida a temperatura ambiente, anche se ogni singolo legame a idrogeno è debole."
+  soluzione="Perché i legami a idrogeno, anche se deboli presi uno per uno, sono moltissimi e agiscono tutti insieme. Formano una specie di rete che tiene le molecole d'acqua vicine e attaccate, e questo basta a mantenere l'acqua allo stato liquido invece che gassoso."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,101 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-18">
+
+## Cos'è la quantità di moto?
+
+Immagina di prendere a calcio un pallone da calcio e poi una palla da bowling con la stessa forza. La palla da bowling è molto più difficile da fermare, anche se le colpisci allo stesso modo. Perché? Perché ha più **quantità di moto**.
+
+La quantità di moto (simbolo **p**) dipende da due cose: la **massa** dell'oggetto e la sua **velocità**.
+
+La formula è semplicissima:
+
+**p = m × v**
+
+- **m** = massa (in kg)
+- **v** = velocità (in m/s)
+- **p** = quantità di moto (in kg·m/s)
+
+Un camion che va piano può avere la stessa quantità di moto di una pallottola che va velocissima: massa grande compensa velocità bassa, e viceversa.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La quantità di moto misura quanto è "difficile fermare" un oggetto in moto. Più è pesante e veloce, più è grande.</div>
+
+---
+
+## Cos'è l'impulso?
+
+Quando una forza agisce su un oggetto per un certo tempo, cambia la sua quantità di moto. Questo "colpo" si chiama **impulso** (simbolo **J**).
+
+**J = F × Δt**
+
+Dove:
+- **F** = forza applicata (in N)
+- **Δt** = tempo per cui la forza agisce (in s)
+
+E vale anche:
+
+**J = Δp = p_finale − p_iniziale**
+
+Esempio pratico: quando un portiere para un pallone, applica una forza per una frazione di secondo. Quella forza nel tempo cambia la quantità di moto del pallone (lo ferma o lo devia).
+
+---
+
+## Conservazione della quantità di moto
+
+Questa è la parte più importante. In un sistema chiuso (cioè dove non agiscono forze esterne), la **quantità di moto totale rimane costante**.
+
+Prima dell'urto = Dopo l'urto
+
+**m₁ × v₁ + m₂ × v₂ = m₁ × v₁' + m₂ × v₂'**
+
+Esempio: due biglie che si scontrano. Prima la biglia A va veloce e la biglia B è ferma. Dopo l'urto, la biglia A rallenta e la biglia B parte. La quantità di moto totale non cambia.
+
+### Tipi di urto
+
+- **Urto elastico**: le biglie rimbalzano e si conserva anche l'energia cinetica. Esempio: biglie da biliardo.
+- **Urto anelastico**: i due oggetti si attaccano insieme dopo l'urto. Esempio: due vagoni ferroviari che si agganciano. La quantità di moto si conserva, ma l'energia cinetica no (si perde in calore, suono, deformazione).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> In un urto, ciò che uno perde in quantità di moto, l'altro lo guadagna. Il totale non cambia mai (se non ci sono forze esterne).</div>
+
+---
+
+<Diagram caption="Relazione tra forza, impulso e quantità di moto" code={`flowchart TB
+  A["Forza F applicata<br/>per un tempo Δt"] --> B["Impulso J = F × Δt"]
+  B --> C["Variazione della quantità di moto<br/>Δp = p_finale − p_iniziale"]
+  C --> D["Nuova velocità dell'oggetto"]`} />
+
+<Diagram caption="Conservazione della quantità di moto in un urto" code={`flowchart LR
+  A["Prima dell'urto<br/>p_tot = m₁v₁ + m₂v₂"] --> B["URTO"]
+  B --> C["Dopo l'urto<br/>p_tot = m₁v₁' + m₂v₂'"]
+  A2["Urto elastico"] --> D["Rimbalzano<br/>si conserva anche<br/>energia cinetica"]
+  A3["Urto anelastico"] --> E["Si attaccano<br/>energia cinetica<br/>si perde in parte"]`} />
+
+## Guarda il video
+<YouTube id="dZaz2yDXATE" title="La quantità di moto, la sua conservazione ed il Teorema dell'impulso - Spiegazione ed esempi" />
+<VideoVisto id="fis-u2-18" />
+
+## Da ricordare
+- La quantità di moto è **p = m × v**: più un oggetto è pesante e veloce, più è difficile fermarlo.
+- L'impulso **J = F × Δt** misura quanto una forza cambia la quantità di moto di un oggetto.
+- In assenza di forze esterne, la quantità di moto totale di un sistema si **conserva** sempre, sia negli urti elastici che in quelli anelastici.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una palla da 0,5 kg si muove a 4 m/s. Qual è la sua quantità di moto?" opzioni={["1 kg·m/s","2 kg·m/s","4 kg·m/s","0,5 kg·m/s"]} corretta={1} spiegazione="p = m × v = 0,5 kg × 4 m/s = 2 kg·m/s. Moltiplichi semplicemente massa per velocità." />
+
+<Quiz domanda="In un urto anelastico tra due oggetti isolati (senza forze esterne), cosa si conserva?" opzioni={["Solo l'energia cinetica","Solo la quantità di moto","Sia la quantità di moto che l'energia cinetica","Né la quantità di moto né l'energia cinetica"]} corretta={1} spiegazione="Negli urti anelastici la quantità di moto totale si conserva sempre (purché non ci siano forze esterne), ma l'energia cinetica no: una parte si trasforma in calore, suono o deformazione." />
+
+<Quiz domanda="Una forza di 10 N agisce su un oggetto per 3 secondi. Qual è l'impulso trasferito?" opzioni={["3,3 kg·m/s","13 kg·m/s","30 kg·m/s","0,3 kg·m/s"]} corretta={2} spiegazione="J = F × Δt = 10 N × 3 s = 30 N·s = 30 kg·m/s. L'impulso è semplicemente forza moltiplicata per il tempo di applicazione." />
+
+<Esercizio problema="Un pattinatore di 60 kg fermo su una pista lancia una palla da 2 kg a 10 m/s in avanti. Con quale velocità il pattinatore si muove all'indietro dopo il lancio? (Considera il sistema pattinatore+palla isolato.)" soluzione="Prima del lancio tutto è fermo: p_totale = 0. Per conservazione della quantità di moto, anche dopo deve essere 0. Quindi: m_pattinatore × v_pattinatore + m_palla × v_palla = 0. 60 × v + 2 × 10 = 0. 60v = −20. v = −20/60 ≈ −0,33 m/s. Il segno meno indica che il pattinatore si muove nella direzione opposta alla palla, con velocità di circa 0,33 m/s." />
+
+</section>
+
+</RisorsaLayout>

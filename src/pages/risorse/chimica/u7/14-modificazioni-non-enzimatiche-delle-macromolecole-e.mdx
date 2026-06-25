@@ -1,0 +1,102 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-14">
+
+Le tue cellule sono piene di **macromolecole**: le proteine, il DNA, i grassi delle membrane. Sono come i mattoni e le tubature del corpo. A volte queste molecole si **rovinano da sole**, senza che nessun enzima lo decida: si chiamano **modificazioni non enzimatiche**. In pratica sono **danni accidentali**, come una macchia che compare sul muro senza che tu l'abbia disegnata.
+
+Il principale responsabile di questi danni è una molecola "dispettosa": il **radicale libero**. In questa pagina vediamo come fa danni e chi lo ferma: gli **antiossidanti**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un radicale libero è una molecola a cui manca un pezzettino (un elettrone). Per stare bene lo <strong>ruba</strong> alla molecola vicina e così la rovina. L'antiossidante è il "buono" che regala il pezzettino al radicale, così questo si calma e smette di rubare.</div>
+
+## Cos'è un radicale libero (e perché è "dispettoso")
+
+Pensa agli elettroni come a delle persone che stanno bene **in coppia**. Una molecola normale ha tutti i suoi elettroni accoppiati: è tranquilla e stabile.
+
+Un **radicale libero** è una molecola che ha un elettrone **spaiato**, cioè single e scontento. Per trovare un compagno **strappa** un elettrone alla prima molecola che incontra. Ma così facendo crea un **nuovo** radicale (quella derubata!), che a sua volta ne deruberà un'altra. Parte una **reazione a catena**, come il primo birillo del domino che ne fa cadere tanti altri.
+
+Da dove arrivano? Spesso nascono normalmente quando le cellule "bruciano" cibo e ossigeno per fare energia (nei mitocondri). Altri arrivano da fumo, smog, raggi del sole. Un po' di radicali è normale; il problema è quando sono **troppi**: questa situazione si chiama **stress ossidativo**.
+
+<Diagram caption="Il radicale libero ruba un elettrone e fa partire la catena; l'antiossidante la ferma" code={`flowchart LR
+  R["Radicale libero<br/>(ha un elettrone spaiato)"] -->|"ruba un elettrone"| M["Macromolecola sana<br/>(proteina, DNA, grasso)"]
+  M --> D["Macromolecola danneggiata<br/>= nuovo radicale"]
+  D -->|"reazione a catena"| D2["altri danni..."]
+  A["Antiossidante"] -->|"dona l'elettrone<br/>e lo neutralizza"| R`} />
+
+## I due danni tipici: ossidazione e deaminazione
+
+I radicali liberi rovinano le macromolecole in modi diversi. Due esempi importanti:
+
+- **Ossidazione**: "ossidare" è la stessa cosa che fa arrugginire il ferro o fa diventare marrone una mela tagliata lasciata all'aria. Nel corpo, i radicali **ossidano** i grassi delle membrane cellulari (le rendono rancide come olio andato a male) e le proteine, che smettono di funzionare.
+- **Deaminazione**: vuol dire **togliere un gruppo amminico** (un pezzetto fatto di azoto e idrogeno, scritto NH2) da una molecola. Quando capita su una "lettera" del **DNA**, quella lettera può essere letta male: è come un errore di battitura nel manuale di istruzioni della cellula. Se l'errore non viene corretto, può portare a **mutazioni**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ossidazione = la molecola "arrugginisce". Deaminazione = al DNA viene cancellata una letterina (il pezzetto NH2) e il testo cambia significato.</div>
+
+**Perché conta per medicina e veterinaria?** Lo stress ossidativo è coinvolto nell'**invecchiamento**, in molte malattie del cuore, nel diabete e nei tumori, sia nelle persone sia negli animali. Capire i radicali liberi aiuta a capire perché certe cellule si ammalano e perché una buona alimentazione (ricca di antiossidanti) protegge la salute.
+
+## Gli antiossidanti: i "pompieri" che spengono la catena
+
+L'antiossidante è una molecola generosa: **regala** un elettrone al radicale libero senza diventare lui stesso pericoloso. Così ferma il domino. Ecco i tre da ricordare:
+
+- **Glutatione**: è l'antiossidante che la cellula **si fabbrica da sola**, il suo pompiere "di casa" sempre pronto. Lavora dentro la cellula, nella parte acquosa.
+- **Vitamina E**: si scioglie nei grassi, quindi fa la guardia proprio **nelle membrane cellulari** (che sono fatte di grassi). Protegge i grassi dall'irrancidire. La prendi con cibi come olio, frutta secca, semi.
+- **Carotenoidi**: sono i pigmenti **colorati** (arancione, rosso, giallo) di carote, pomodori, peperoni. Il più famoso è il beta-carotene (quello arancione della carota). Anche loro spengono i radicali.
+
+Un dettaglio bello: gli antiossidanti spesso **lavorano in squadra**. La vitamina E spegne un radicale e si "consuma" un po'; poi altri antiossidanti la **ricaricano**, così può tornare al lavoro. Come una staffetta.
+
+<Diagram caption="Tre antiossidanti e dove lavorano nella cellula" code={`flowchart TB
+  AO["Antiossidanti<br/>(donano un elettrone)"] --> G["Glutatione<br/>prodotto dalla cellula stessa<br/>agisce nella parte acquosa"]
+  AO --> E["Vitamina E<br/>solubile nei grassi<br/>protegge le membrane"]
+  AO --> C["Carotenoidi<br/>pigmenti colorati di frutta e verdura<br/>es. beta-carotene"]`} />
+
+## Guarda il video
+
+<YouTube id="YbjSBmEJtNw" title="Cosa sono i radicali liberi e perché fanno male — spiegazione semplice" />
+
+<VideoVisto id="chim-u7-14" />
+
+## Da ricordare
+
+- Un **radicale libero** ha un elettrone **spaiato**: ruba elettroni e fa partire una **reazione a catena** di danni.
+- Troppi radicali = **stress ossidativo**, legato a invecchiamento e molte malattie (uomo e animali).
+- Due danni tipici: **ossidazione** (la molecola "arrugginisce") e **deaminazione** (al DNA viene tolto il pezzetto NH2, possibili mutazioni).
+- Gli **antiossidanti** donano l'elettrone al radicale e lo **neutralizzano**, fermando la catena.
+- Tre da ricordare: **glutatione** (fatto dalla cellula), **vitamina E** (protegge le membrane di grasso), **carotenoidi** (i pigmenti colorati di frutta e verdura).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Perché un radicale libero è 'dispettoso' e fa danni?"
+  opzioni={["Perché è troppo grande per entrare nelle cellule", "Perché ha un elettrone spaiato e lo ruba alle molecole vicine", "Perché è un enzima che taglia le proteine", "Perché abbassa la temperatura della cellula"]}
+  corretta={1}
+  spiegazione="Ha un elettrone spaiato e per 'accoppiarlo' strappa un elettrone alla molecola vicina, danneggiandola e creando un nuovo radicale: parte la reazione a catena."
+/>
+
+<Quiz
+  domanda="Cosa fa un antiossidante quando incontra un radicale libero?"
+  opzioni={["Gli ruba altri elettroni", "Gli dona un elettrone e lo neutralizza, fermando la catena", "Lo ingrandisce", "Lo trasforma in DNA"]}
+  corretta={1}
+  spiegazione="L'antiossidante regala l'elettrone mancante al radicale senza diventare a sua volta pericoloso: così spegne la reazione a catena, come un pompiere."
+/>
+
+<Quiz
+  domanda="Quale di questi è l'antiossidante che la cellula si fabbrica da sola?"
+  opzioni={["Vitamina E", "Beta-carotene", "Glutatione", "Acqua"]}
+  corretta={2}
+  spiegazione="Il glutatione è prodotto dalla cellula stessa ed è il suo antiossidante 'di casa'. Vitamina E e carotenoidi invece li introduciamo con il cibo."
+/>
+
+<Esercizio
+  problema="Spiega con parole tue cos'è la 'deaminazione' del DNA e perché è un problema. Usa l'immagine di un manuale di istruzioni."
+  soluzione="Deaminazione vuol dire togliere un pezzetto (il gruppo amminico NH2) da una 'lettera' del DNA. Il DNA è il manuale di istruzioni della cellula: se a una lettera viene tolto quel pezzetto, la lettera può essere letta in modo sbagliato, come un errore di battitura nel manuale. Se l'errore non viene corretto, le istruzioni cambiano e si può avere una mutazione, cioè una cellula che funziona male."
+/>
+
+</section>
+
+</RisorsaLayout>

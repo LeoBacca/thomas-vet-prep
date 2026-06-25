@@ -1,0 +1,67 @@
+{
+ "id": "chim-u1-06",
+ "titolo": "Riempimento degli orbitali: Pauli, Hund e Aufbau",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "06-riempimento-degli-orbitali-pauli-hund-e",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/chimica/u1/06-riempimento-degli-orbitali-pauli-hund-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "Quale tra le seguenti configurazioni elettroniche è corretta?",
+   "choices": [
+    "1s2 2s2 2p6 3s2 3p6 4s2",
+    "1s2 2s2 2p6 2d4",
+    "1s2 2s2 2p6 3s4 3p2",
+    "1s2 2s2 2p6 3s2 3p7",
+    "1s2 2s2 2p8 3s2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2019",
+   "q": "\"Se più elettroni occupano orbitali degeneri, essi si distribuiscono con spin paralleli, sul numero massimo possibile di tali orbitali\". Quest'affermazione è nota come:",
+   "choices": [
+    "regola di Hund",
+    "principio di esclusione di Pauli",
+    "principio di Aufbau",
+    "modello di Bohr",
+    "regola dell'ottetto"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Lo ione Gd3+, avente configurazione elettronica [Xe]4f7, ha proprietà paramagnetiche che lo rendono adatto per la produzione di mezzi di contrasto per applicazioni in diagnostica. Da cosa dipendono tali proprietà?",
+   "choices": [
+    "Dall'elevato numero di elettroni spaiati che caratterizzano lo stato fondamentale dello ione Gd3+",
+    "Dal valore inusualmente elevato della carica dello ione Gd3+",
+    "Dalla capacità dello ione Gd3+ di contrastare efficacemente l'azione degli ioni OH- presenti nei fluidi biologici",
+    "Dalla capacità dello ione Gd3+ di contrastare efficacemente l'azione dei radicali OH- presenti nei fluidi biologici",
+    "Dal rapido decadimento dello ione Gd3+ a dare Xe3+ come prodotto di decadimento, con contestuale emissione di particelle ed elettroni"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Quanti elettroni di un atomo neutro di fosforo (Z=15) occupano orbitali di tipo p?",
+   "choices": [
+    "9",
+    "3",
+    "6",
+    "5",
+    "2"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

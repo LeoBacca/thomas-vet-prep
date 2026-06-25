@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u7-09-1",
+    "topicId": "bio-u7-09",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: la donna nasce gia con tutti i suoi ovociti 'in pausa', mentre l'uomo produce spermatozoi freschi ogni giorno dalla puberta per tutta la vita.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Gli ovociti primari sono gia pronti prima della nascita, bloccati in profase I, come libri sullo scaffale aperti uno al mese. I testicoli invece funzionano come una fabbrica continua: milioni di nuovi spermatozoi ogni giorno. Questa differenza spiega perche l'aneuploidia da errori nella meiosi femminile aumenta con l'eta della madre (gli ovociti restano 'in pausa' per decenni).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-09-2",
+    "topicId": "bio-u7-09",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Durante la meiosi i cromosomi devono separarsi in modo preciso. Se due cromosomi non si separano — fenomeno detto non-disgiunzione — cosa succede ai gameti prodotti?",
+    "choices": [
+      "Si formano gameti con un cromosoma in piu o in meno rispetto al normale",
+      "I gameti muoiono immediatamente e non possono fecondare",
+      "I gameti acquisiscono il doppio di tutti i cromosomi (diploidi invece di aploidi)",
+      "Nulla: l'errore viene corretto prima che la cellula si divida"
+    ],
+    "answer": 0,
+    "explain": "La non-disgiunzione manda entrambi i cromosomi omologhi nella stessa cellula figlia: una cellula si ritrova con n+1 cromosomi, l'altra con n-1. Se uno di questi gameti anomali feconda un gamete normale, il figlio avra un cromosoma di troppo (trisomia, es. sindrome di Down con 3 copie del cromosoma 21) o uno di meno (monosomia). Non c'e un meccanismo automatico di correzione: l'errore persiste.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-09-3",
+    "topicId": "bio-u7-09",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "open",
+    "q": "Confronta spermatogenesi e oogenesi: quanti gameti funzionanti si ottengono da una singola cellula di partenza in ciascun processo, e perche c'e questa differenza?",
+    "answer": "Dalla spermatogenesi: 1 spermatocita primario (2n) fa la meiosi I → 2 spermatociti secondari (n), ognuno fa la meiosi II → 4 spermatidi (n) che maturano in 4 spermatozoi funzionanti. Tutti e quattro sono utili. Dall'oogenesi: 1 ovocita primario (2n) fa la meiosi I → 1 ovocita secondario (n) + 1 primo globulo polare (si scarta); l'ovocita secondario fa la meiosi II (solo se avviene la fecondazione) → 1 ovulo maturo (n) + 1 secondo globulo polare (si scarta). Risultato: solo 1 cellula uovo funzionante. La differenza sta nel fatto che le divisioni della femmina sono asimmetriche: la cellula uovo raccoglie quasi tutto il citoplasma e le riserve nutritive, mentre i globuli polari, piccolissimi e privi di risorse, vengono scartati. Questo garantisce all'uovo tutto il materiale necessario per sostenere le prime divisioni dell'embrione.",
+    "explain": "Regola rapida da ricordare: spermatogenesi 1→4 (tutti funzionanti); oogenesi 1→1 (piu 2-3 globuli polari di scarto).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u7-09-4",
+    "topicId": "bio-u7-09",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Nella donna, la meiosi a carico delle cellule germinali:",
+    "choices": [
+      "si completa solo dopo la fecondazione",
+      "si svolge per intero nell'ovaio a partire dalla puberta",
+      "si svolge per intero nell'ovaio prima della nascita",
+      "ha inizio al momento della maturazione del follicolo ovarico",
+      "avviene al momento dell'immissione dello sperma nelle vie genitali femminili"
+    ],
+    "answer": 0,
+    "explain": "Risposta corretta: si completa solo dopo la fecondazione. Ecco la cronologia esatta: gli ovociti primari si bloccano in profase I prima della nascita; ogni mese alla puberta uno riprende e completa la meiosi I → ovocita secondario (bloccato in metafase II); la meiosi II si completa SOLO se arriva uno spermatozoo a fecondare. Trappola 'per intero a partire dalla puberta': la meiosi NON si completa tutta alla puberta, si sblocca solo la meiosi I. Trappola 'per intero prima della nascita': prima della nascita gli ovociti si bloccano in pausa, non completano nulla. Trappola 'al momento della maturazione del follicolo': la meiosi NON inizia in quel momento (era gia iniziata prima della nascita, bloccata in profase I); alla maturazione del follicolo la meiosi solo riprende, e comunque non si completa tutta. Trappola 'all'immissione dello sperma': e troppo precoce, lo sperma deve raggiungere e penetrare l'ovocita.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u7-09-5",
+    "topicId": "bio-u7-09",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "La spermatogenesi e l'oogenesi si differenziano per diversi aspetti. Quale delle seguenti affermazioni e FALSA?",
+    "choices": [
+      "Lo spermatogonio e presente solo nell'embrione, mentre l'oogonio e presente nell'ovaio fino al rilascio dal follicolo maturo",
+      "Da una singola cellula germinale la spermatogenesi produce quattro spermatozoi, l'oogenesi produce un solo ovulo",
+      "La spermatogenesi si completa quasi sempre in modo continuo, mentre l'oogenesi si arresta temporaneamente allo stadio di ovocita secondario",
+      "La spermatogenesi coinvolge contemporaneamente moltissimi spermatogoni, mentre l'oogenesi porta a maturazione di solito un solo ovocita primario alla volta",
+      "Dopo la puberta la spermatogenesi continua per tutta la vita, mentre l'oogenesi si arresta alla menopausa"
+    ],
+    "answer": 0,
+    "explain": "L'affermazione FALSA e la prima: gli spermatogoni NON sono presenti solo nell'embrione — sono nelle pareti dei tubuli seminiferi e producono nuovi spermatociti continuamente per tutta la vita del maschio. Sono invece gli OOGONI a moltiplicarsi solo durante lo sviluppo fetale e a non rinnovarsi dopo la nascita. Tutte le altre affermazioni sono corrette: la spermatogenesi produce davvero 4 spermatozoi funzionanti (contro 1 ovulo); l'oogenesi si blocca in metafase II fino alla fecondazione; la maturazione degli ovociti e ciclica (di solito uno al mese); e dopo la menopausa non ci sono piu ovociti disponibili.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,122 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-28">
+
+## Cos'è il citoscheletro (in breve)
+
+Dentro ogni cellula c'è una sorta di "impalcatura" proteica: il **citoscheletro**. È fatto di tre tipi di filamenti:
+
+1. **Microfilamenti di actina** — sottili, danno forma e permettono il movimento
+2. **Microtubuli** — tubolari, fanno da "binari" per il trasporto interno
+3. **Filamenti intermedi** — robusti e stabili, danno resistenza meccanica
+
+Questa scheda si concentra sui filamenti intermedi.
+
+---
+
+## Cosa sono i filamenti intermedi
+
+Il nome viene dal diametro: circa **10 nm**, intermedio tra microfilamenti (~7 nm) e microtubuli (~25 nm).
+
+Sono fatti da **proteine fibrose** che si avvolgono a spirale le une sulle altre, come fili di una corda. Risultato: una struttura molto resistente alla trazione, quasi come un cavo d'acciaio biologico.
+
+**Caratteristica chiave:** non sono polarizzati (non hanno un'estremità + e una –) e sono molto più stabili degli altri filamenti — non si smontano e rimontano di continuo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> i filamenti intermedi sono le "funi portanti" della cellula — non si muovono, ma tengono tutto al suo posto anche quando la cellula viene compressa o stirata.</div>
+
+---
+
+## I principali tipi di filamenti intermedi
+
+Le proteine che li compongono variano a seconda del tipo di cellula:
+
+| Proteina | Dove si trova | Funzione principale |
+|---|---|---|
+| **Cheratine** (tipo I e II) | Cellule epiteliali (pelle, unghie, capelli) | Resistenza meccanica dell'epidermide |
+| **Vimentina** | Fibroblasti, cellule muscolari lisce | Supporto strutturale generale |
+| **Desmina** | Cellule muscolari striate e cardiache | Mantiene allineati i sarcomeri |
+| **GFAP** | Astrociti (cellule del sistema nervoso) | Supporto nel tessuto nervoso |
+| **Neurofilamenti** | Neuroni | Danno diametro e resistenza agli assoni |
+| **Lamine** (A, B, C) | Interno del nucleo di tutte le cellule | Formano la lamina nucleare |
+
+---
+
+## La cheratina: filamenti intermedi dell'epidermide
+
+Le cheratine sono le proteine più abbondanti nelle cellule epiteliali. Si assemblano in fasci detti **tonofilamenti** che attraversano il citoplasma e si ancorano ai **desmosomi** — strutture di giunzione tra una cellula e l'altra.
+
+Questo crea una rete continua che si estende da cellula a cellula: quando la pelle viene stirata, la forza si distribuisce su molte cellule senza strapparne nessuna.
+
+Nelle cellule dello strato corneo (la pelle morta esterna), la cheratina riempie l'intera cellula, che si appiattisce e si trasforma in una squama impermeabile — ecco perché la pelle è resistente e impermeabile.
+
+<Diagram caption="Come i tonofilamenti di cheratina collegano le cellule epiteliali attraverso i desmosomi" code={`flowchart LR
+  A["Cellula epiteliale 1<br/>(cheratina nel citoplasma)"] -- "tonofilamenti<br/>ancorati al" --> B["Desmosoma<br/>(proteina di giunzione)"]
+  B -- "tonofilamenti<br/>entrano nella" --> C["Cellula epiteliale 2<br/>(cheratina nel citoplasma)"]
+  B -- "ancoraggio anche a" --> D["Emidesmosoma<br/>(verso membrana basale)"]
+  D --> E["Membrana basale<br/>(matrice extracellulare)"]`} />
+
+---
+
+## La lamina nucleare: il citoscheletro del nucleo
+
+Tutte le cellule eucariotiche hanno, all'interno del nucleo, una rete di filamenti intermedi appiattita contro la faccia interna dell'involucro nucleare: si chiama **lamina nucleare**.
+
+È fatta di proteine chiamate **lamine** (tipi A, B e C). Formano una griglia regolare, come una rete da pesca, che svolge tre ruoli fondamentali:
+
+1. **Struttura** — dà forma al nucleo e lo protegge dalla compressione
+2. **Organizzazione della cromatina** — il DNA si àncora alla lamina in punti precisi, aiutando a regolare quali geni sono attivi
+3. **Regolazione della divisione cellulare** — durante la mitosi la lamina si dissolve (le lamine vengono fosforilate) e poi si riassembla dopo la divisione
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la lamina nucleare è come l'armatura interna di un casco — protegge il "cervello" della cellula (il DNA) e lo organizza in modo ordinato.</div>
+
+---
+
+## Come il citoscheletro è tutto connesso
+
+I tre tipi di filamenti non lavorano da soli: sono collegati tra loro e con l'esterno attraverso proteine "adattatrici":
+
+- **LINC complex** (Linker of Nucleoskeleton and Cytoskeleton): proteine transmembrana che attraversano l'involucro nucleare e collegano la lamina nucleare all'interno con i filamenti intermedi, i microtubuli e i microfilamenti all'esterno
+- **Desmosomi** e **emidesmosomi**: collegano i filamenti intermedi di cellule vicine e alla matrice extracellulare
+- **Proteine associate ai microtubuli (MAP)** e **proteine associate all'actina**: connettono i filamenti intermedi agli altri elementi del citoscheletro
+
+<Diagram caption="Connessioni del citoscheletro: dalla lamina nucleare alla matrice extracellulare" code={`flowchart TB
+  A["Lamina nucleare<br/>(lamine A, B, C)"] -- "LINC complex<br/>(attraverso involucro nucleare)" --> B["Filamenti intermedi<br/>nel citoplasma"]
+  B -- "proteine adattatrici" --> C["Microfilamenti di actina"]
+  B -- "proteine adattatrici" --> D["Microtubuli"]
+  B -- "desmosomi" --> E["Filamenti intermedi<br/>della cellula vicina"]
+  B -- "emidesmosomi" --> F["Membrana basale<br/>(matrice extracellulare)"]
+  C -- "ancoraggio" --> G["Membrana plasmatica"]
+  D -- "ancoraggio" --> G`} />
+
+---
+
+## Guarda il video
+<YouTube id="8M9EOLLQ3qU" title="Citoscheletro, desmosomi e filamenti intermedi della cellula — Marco Franzoni" />
+<VideoVisto id="bio-u5-28" />
+
+## Da ricordare
+
+- I filamenti intermedi (~10 nm) sono le strutture più stabili del citoscheletro: forniscono resistenza meccanica e non si smontano continuamente come gli altri filamenti.
+- Le **cheratine** sono i filamenti intermedi delle cellule epiteliali; si ancorano ai desmosomi formando reti che resistono a stiramento e pressione su tutta la superficie.
+- La **lamina nucleare** (fatta di lamine A, B, C) riveste l'interno del nucleo, lo protegge, organizza il DNA e si dissolve/riassembla durante la divisione cellulare.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è il diametro approssimativo dei filamenti intermedi?" opzioni={["3–5 nm","7 nm","10 nm","25 nm"]} corretta={2} spiegazione="I filamenti intermedi misurano circa 10 nm di diametro — ecco perché si chiamano 'intermedi': stanno tra i microfilamenti di actina (~7 nm) e i microtubuli (~25 nm)." />
+
+<Quiz domanda="Quale proteina forma la lamina nucleare?" opzioni={["Cheratina","Vimentina","Tubulina","Lamina"]} corretta={3} spiegazione="La lamina nucleare è formata dalle lamine (A, B e C), una famiglia specifica di filamenti intermedi presenti solo all'interno del nucleo, dove rivestono la faccia interna dell'involucro nucleare." />
+
+<Quiz domanda="Cosa succede alle lamine durante la mitosi?" opzioni={["Rimangono intatte per proteggere il DNA","Vengono fosforilate e si depolimerizzano, permettendo la dissoluzione dell'involucro nucleare","Si trasformano in microtubuli per formare il fuso","Si spostano nel citoplasma e diventano vimentina"]} corretta={1} spiegazione="Durante la mitosi, le lamine vengono fosforilate (aggiunta di un gruppo fosfato). Questa modifica chimica ne causa la depolimerizzazione: la lamina si dissolve, l'involucro nucleare si frammenta e il DNA diventa accessibile per la divisione. Alla fine della mitosi il processo si inverte." />
+
+<Esercizio problema="Una persona ha una mutazione nella proteina desmoplachina, componente dei desmosomi. Quali conseguenze ti aspetti sulla resistenza meccanica dell'epidermide e perché?" soluzione="I desmosomi sono le strutture di giunzione che ancorano i tonofilamenti di cheratina tra cellule epiteliali adiacenti. Se la desmoplachina è difettosa, l'ancoraggio tra i filamenti intermedi di cheratina e il desmosoma è compromesso. Risultato: la rete continua di cheratina che si estende da cellula a cellula si interrompe. L'epidermide perde resistenza alla trazione e allo stiramento — le cellule si staccano l'una dall'altra molto più facilmente sotto stress meccanico (si parla di acantolisi). Malattie simili esistono davvero: il pemfigo è causato da anticorpi contro le proteine dei desmosomi e produce vesciche cutanee." />
+
+</section>
+
+</RisorsaLayout>

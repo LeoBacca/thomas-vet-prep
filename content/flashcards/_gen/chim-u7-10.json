@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u7-10-1",
+    "topicId": "chim-u7-10",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: il fosfolipide si chiama 'anfipatico' perché ha una testa che ama l'acqua e due code che la odiano.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. 'Anfipatico' vuol dire 'due nature in una': la testa contiene un gruppo fosfato polare (idrofila, amica dell'acqua), mentre le due code sono catene di grasso apolari (idrofobe, che fuggono dall'acqua). Proprio come il sapone: una parte si attacca all'acqua, l'altra al grasso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-10-2",
+    "topicId": "chim-u7-10",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Metti tanti fosfolipidi in acqua. Da soli si dispongono in un doppio strato — la membrana cellulare. Dove finiscono le code grasse?",
+    "choices": [
+      "Al centro, nascoste una contro l'altra, lontane dall'acqua",
+      "All'esterno, a contatto con l'acqua",
+      "Si sciolgono nell'acqua perché sono piccole",
+      "Si legano al colesterolo e affondano"
+    ],
+    "answer": 0,
+    "explain": "Le code odiano l'acqua, quindi si nascondono al centro del doppio strato, una contro l'altra. Le teste (che amano l'acqua) restano rivolte verso l'acqua sia fuori sia dentro la cellula. Questa disposizione si forma da sola, senza che nessuno la costruisca: è la membrana che avvolge ogni cellula del nostro corpo e di quello degli animali.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-10-3",
+    "topicId": "chim-u7-10",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Spiega con parole tue: quali sono le tre funzioni principali del colesterolo nel corpo? Perché dire che il colesterolo è solo 'il nemico' è sbagliato?",
+    "answer": "Il colesterolo ha tre ruoli fondamentali: 1) Nelle membrane cellulari si infila tra i fosfolipidi e regola la fluidità, come un termostato — impedisce che la membrana sia troppo rigida o troppo molle. 2) È il mattone di partenza per costruire gli ormoni steroidei: testosterone, estrogeni e cortisolo. Senza colesterolo non si producono questi ormoni. 3) Nella pelle, con l'aiuto del sole, viene trasformato in vitamina D, indispensabile per ossa sane. Dire che il colesterolo è solo un nemico è sbagliato perché è indispensabile per la vita: il problema è quando ce n'è troppo nel sangue, non la sua semplice presenza.",
+    "explain": "Da ricordare: colesterolo = regola fluidità membrane + precursore ormoni steroidei (testosterone, estrogeni, cortisolo) + precursore vitamina D.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u7-10-4",
+    "topicId": "chim-u7-10",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Gli steroidi (come il colesterolo) si classificano tra:",
+    "choices": [
+      "le vitamine idrosolubili",
+      "i lipidi",
+      "gli zuccheri",
+      "le proteine strutturali",
+      "gli acidi nucleici"
+    ],
+    "answer": 1,
+    "explain": "Gli steroidi sono lipidi. La loro struttura è caratteristica: quattro anelli fusi, diversa dalle code lunghe dei fosfolipidi, ma comunque una molecola grassa, quindi lipidica. Trappole: 'vitamine idrosolubili' è l'opposto esatto — il colesterolo è idrofobo (non si scioglie in acqua); 'zuccheri' è un termine scambiato, i glicolipidi hanno uno zucchero attaccato ma il colesterolo no; 'proteine strutturali' e 'acidi nucleici' sono filler fuori tema, classi di molecole completamente diverse.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u7-10-5",
+    "topicId": "chim-u7-10",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sugli sfingolipidi è CORRETTA?",
+    "choices": [
+      "Sono lipidi abbondanti nelle guaine dei nervi, dove funzionano da isolante per il segnale nervoso",
+      "Sono lipidi con uno zucchero attaccato, usati come etichette di riconoscimento sulla membrana",
+      "Sono la forma di riserva energetica dei grassi, stoccata nel tessuto adiposo",
+      "Sono il precursore degli ormoni steroidei come testosterone ed estrogeni",
+      "Formano il doppio strato della membrana grazie alla loro testa polare con il glicerolo"
+    ],
+    "answer": 0,
+    "explain": "Gli sfingolipidi sono abbondanti nelle guaine che avvolgono i nervi: funzionano come la plastica isolante intorno a un filo elettrico e permettono al segnale nervoso di viaggiare veloce. Trappola 'lipidi con zucchero': quella è la definizione dei GLICOLIPIDI, un termine scambiato con sfingolipidi. Trappola 'riserva energetica': quella funzione appartiene ai trigliceridi, non ai lipidi complessi di membrana. Trappola 'precursore degli ormoni steroidei': quello è il ruolo del COLESTEROLO. L'ultima trappola descrive genericamente un fosfolipide con lo schema sbagliato: gli sfingolipidi usano la sfingosina come spina dorsale, non il glicerolo.",
+    "tags": ["prova d'esame"]
+  }
+]

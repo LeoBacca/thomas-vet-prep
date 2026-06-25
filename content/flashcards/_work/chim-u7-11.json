@@ -1,0 +1,25 @@
+{
+ "id": "chim-u7-11",
+ "titolo": "Basi azotate, nucleosidi e nucleotidi; l'importanza dell'ATP",
+ "materia": "chimica",
+ "unita": 7,
+ "slug": "11-basi-azotate-nucleosidi-e-nucleotidi-limportanza",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u7/11-basi-azotate-nucleosidi-e-nucleotidi-limportanza.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "In una molecola di ATP sono presenti:",
+   "choices": [
+    "due legami ad alta energia",
+    "tre legami ad alta energia",
+    "un legame ad alta energia",
+    "un solo legame pirofosforico",
+    "due legami fosfomonoestere"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

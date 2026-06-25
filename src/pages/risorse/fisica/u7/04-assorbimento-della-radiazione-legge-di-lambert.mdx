@@ -1,0 +1,89 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u7-04">
+
+## Cos'è l'assorbimento della radiazione?
+
+Quando un fascio di luce attraversa un materiale (per esempio una soluzione colorata), parte della luce viene **assorbita** dal materiale e parte lo attraversa. La luce che esce è quindi meno intensa di quella che è entrata.
+
+Pensa a un bicchiere di succo di arancia: più è denso e più è spesso il bicchiere, meno luce ci passa attraverso.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Più la soluzione è concentrata e più è spessa, meno luce riesce a passare.</div>
+
+## I due fattori che contano
+
+Due cose determinano quanta luce viene assorbita:
+
+1. **La concentrazione** della sostanza (quanta "roba" c'è sciolta)
+2. **Lo spessore** dello strato che la luce deve attraversare (il cammino ottico)
+
+Più alta è la concentrazione, più molecole ci sono sul percorso della luce. Più è spesso lo strato, più lungo è il tragitto e più molecole si incontrano.
+
+## La legge di Lambert-Beer
+
+La **legge di Lambert-Beer** unisce questi due fattori in una formula:
+
+**A = ε · c · l**
+
+Dove:
+- **A** = Assorbanza (quanta luce viene assorbita, senza unità di misura)
+- **ε** (epsilon) = coefficiente di estinzione molare (dipende dalla sostanza e dalla lunghezza d'onda usata)
+- **c** = concentrazione della soluzione (in mol/L)
+- **l** = lunghezza del cammino ottico, cioè lo spessore della cuvetta (in cm)
+
+L'assorbanza è anche definita come il logaritmo del rapporto tra la luce entrata e la luce uscita:
+
+**A = log(I₀ / I)**
+
+dove **I₀** è l'intensità iniziale e **I** è l'intensità dopo aver attraversato la soluzione.
+
+## Trasmittanza e assorbanza
+
+Spesso si usa anche la **trasmittanza** (T), che indica la frazione di luce che passa:
+
+**T = I / I₀**
+
+Il legame con l'assorbanza è: **A = -log(T)**
+
+Se T = 1 (tutta la luce passa), A = 0. Se la luce si dimezza, A = 0,30. Più assorbe, più A cresce.
+
+<Diagram caption="Come la luce viene assorbita attraversando una soluzione" code={`flowchart LR
+  A["Luce in entrata<br/>intensità I₀"] --> B["Soluzione<br/>concentrazione c<br/>spessore l"]
+  B --> C["Luce in uscita<br/>intensità I"]
+  B --> D["Energia assorbita<br/>dalle molecole"]`} />
+
+<Diagram caption="Relazione tra i fattori nella legge di Lambert-Beer" code={`flowchart TB
+  A["Assorbanza A"] --> B["A = ε · c · l"]
+  B --> C["ε: coefficiente<br/>della sostanza"]
+  B --> D["c: concentrazione<br/>della soluzione"]
+  B --> E["l: spessore<br/>del campione"]`} />
+
+## Guarda il video
+<YouTube id="UIKJOO39bnw" title="ALCHEMY ON PILLS - La legge di Lambert-Beer" />
+<VideoVisto id="fis-u7-04" />
+
+## Da ricordare
+- La legge di Lambert-Beer dice che l'assorbanza è proporzionale sia alla concentrazione che allo spessore dello strato attraversato: A = ε · c · l
+- Maggiore è la concentrazione (o lo spessore), minore è la luce che riesce a passare
+- L'assorbanza si misura con uno spettrofotometro e si usa per calcolare la concentrazione di sostanze in soluzione
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Secondo la legge di Lambert-Beer, se raddoppio la concentrazione di una soluzione (a parità di spessore), l'assorbanza..." opzioni={["Si dimezza","Rimane uguale","Raddoppia","Diventa zero"]} corretta={2} spiegazione="L'assorbanza è direttamente proporzionale alla concentrazione (A = ε·c·l). Se c raddoppia e tutto il resto resta uguale, anche A raddoppia." />
+
+<Quiz domanda="Qual è il simbolo usato per indicare l'assorbanza nella legge di Lambert-Beer?" opzioni={["T","I","A","ε"]} corretta={2} spiegazione="A sta per assorbanza. T è la trasmittanza, I è l'intensità della luce, ε (epsilon) è il coefficiente di estinzione molare." />
+
+<Quiz domanda="Una soluzione ha trasmittanza T = 0,01 (cioè passa solo l'1% della luce). Quanto vale l'assorbanza?" opzioni={["A = 0,01","A = 1","A = 2","A = 100"]} corretta={2} spiegazione="A = -log(T) = -log(0,01) = -(-2) = 2. Quando passa solo l'1% della luce, l'assorbanza vale 2." />
+
+<Esercizio problema="Una soluzione ha un coefficiente di estinzione molare ε = 500 L/(mol·cm), una concentrazione c = 0,002 mol/L e la cuvetta ha spessore l = 1 cm. Calcola l'assorbanza A." soluzione="Usando la legge di Lambert-Beer: A = ε · c · l = 500 × 0,002 × 1 = 1,0. L'assorbanza è 1,0 (valore adimensionale)." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,53 @@
+{
+ "id": "chim-u5-03",
+ "titolo": "Tipi di idrocarburi e regole di nomenclatura IUPAC",
+ "materia": "chimica",
+ "unita": 5,
+ "slug": "03-tipi-di-idrocarburi-e-regole-di",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/chimica/u5/03-tipi-di-idrocarburi-e-regole-di.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "Come si chiama il gruppo alchilico che ha formula -CH2CH2CH3?",
+   "choices": [
+    "Propile",
+    "Pronano",
+    "Propene",
+    "Propanale",
+    "Propino"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2014",
+   "q": "Qual è il nome sistematico IUPAC del composto organico con formula: CCl2HCF2CClFH?",
+   "choices": [
+    "1,1,3-tricloro-2,2,3-trifluoropropano",
+    "2,2,3-trifluoro-1,1,3-tricloropropano",
+    "1,1,3-trifluoro-2,2,3-tricloropropano",
+    "2,2,3-tricloro-1,1,3-trifluoropropano",
+    "1,1,3-trifluoro-1,2,2-tricloropropano"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Tra i composti organici, i più semplici sono:",
+   "choices": [
+    "gli idrocarburi",
+    "le molecole di idrogeno",
+    "gli esteri",
+    "gli eteri",
+    "gli epossidi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "id": "fis-u5-10",
+ "titolo": "Entropia",
+ "materia": "fisica",
+ "unita": 5,
+ "slug": "10-entropia",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u5/10-entropia.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Maggio",
+   "q": "Quanto vale la variazione di entropia nella fusione di una massa di 1 kg di ferro a pressione atmosferica (noto che il calore latente di fusione è l=234,5 kJ/kg e la temperatura di fusione è 1536°C)?",
+   "choices": [
+    "circa 130 J/K",
+    "circa 153 J/K",
+    "circa 130 J/°C",
+    "circa 1300 J/K",
+    "circa 1530 J/°C"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u5-10">
+
+Gli **alcheni** sono molecole fatte di carbonio e idrogeno che hanno una cosa speciale: un **doppio legame** tra due atomi di carbonio. Pensa a un legame normale come a una stretta di mano fra due carboni. Nel doppio legame le mani che si stringono sono **due** invece di una. Questo doppio legame è una zona "ricca di elettroni" e per questo è molto **reattivo**: gli alcheni hanno voglia di reagire. Contano perché sono i mattoni di partenza di tantissime reazioni della chimica organica, e perché molecole con doppi legami sono ovunque nel nostro corpo (per esempio nei grassi insaturi e nella vitamina A).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il doppio legame è come un elastico teso fra due carboni. È pieno di energia e di elettroni, quindi attira chi cerca elettroni e si fa "aprire" facilmente. Aprirlo è la base dell'addizione elettrofila.</div>
+
+## Com'è fatto un alchene (il doppio legame)
+
+Un singolo legame è una corda sola: tiene uniti i due carboni ma li lascia girare liberamente. Il **doppio legame** è fatto di due parti:
+
+- un legame **sigma**, robusto, come una corda tesa dritta tra i due carboni;
+- un legame **pi greco** (si scrive "pi"), più debole e "spalmato" sopra e sotto, come una nuvoletta di elettroni.
+
+Quella nuvoletta del legame pi è la parte che si rompe facilmente. È lì che avvengono le reazioni. Inoltre il doppio legame **blocca la rotazione**: i due carboni non possono più girare, restano fermi come una cerniera incollata. Per questo gli alcheni sono molecole "piatte e rigide" nella zona del doppio legame.
+
+## I dieni coniugati
+
+"Di-ene" vuol dire **due doppi legami** nella stessa molecola. Quando questi due doppi legami sono messi in un modo particolare, alternati a un legame singolo (doppio, singolo, doppio), si chiamano **dieni coniugati**.
+
+Immagina i doppi legami come due magneti. Se sono lontani, ognuno fa per sé. Ma se sono **alternati** nel modo giusto, le loro nuvolette di elettroni si "tengono per mano" e si spalmano su tutta la zona: gli elettroni diventano **liberi di muoversi** lungo la catena. Questo rende il diene coniugato più **stabile** e con proprietà speciali.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> coniugato = doppio, singolo, doppio in fila. Gli elettroni non restano fermi, scorrono. È lo stesso trucco che, nel nostro occhio, permette al retinale (un parente della vitamina A) di assorbire la luce e farci vedere.</div>
+
+## L'addizione elettrofila
+
+Questa è la reazione tipica degli alcheni. Smontiamo il nome:
+
+- **Elettrofilo** vuol dire "amante degli elettroni". È una specie chimica che ha **bisogno di elettroni** (per esempio la parte H+ di un acido).
+- **Addizione** vuol dire "aggiunta": due pezzi nuovi si **aggiungono** ai due carboni del doppio legame.
+
+Cosa succede, passo per passo:
+
+1. L'elettrofilo (poveretto, ha fame di elettroni) si avvicina al doppio legame, che invece di elettroni è pieno.
+2. La nuvoletta del legame pi si apre e regala una coppia di elettroni all'elettrofilo. Si forma così un intermedio instabile (un **carbocatione**, cioè un carbonio con carica positiva, che è "scomodo" e vuole sistemarsi subito).
+3. Arriva il secondo pezzo, di solito un **nucleofilo** (cioè "amante dei nuclei", carico negativo) che si attacca al carbonio positivo.
+
+Risultato: il doppio legame è sparito, è diventato un singolo legame, e ai due carboni si sono aggiunti due pezzi nuovi. Pensa a un libro chiuso (il doppio legame) che si **apre** e ospita due segnalibri, uno per pagina.
+
+<Diagram caption="Addizione elettrofila: il doppio legame si apre e accoglie due pezzi nuovi" code={`flowchart TB
+  A["Alchene<br/>C=C (doppio legame, ricco di elettroni)"] --> B["Arriva l'elettrofilo E+<br/>(cerca elettroni)"]
+  B --> C["Il legame pi si apre<br/>e regala elettroni a E+"]
+  C --> D["Intermedio instabile<br/>carbocatione (carbonio con carica +)"]
+  D --> E["Arriva il nucleofilo Nu-<br/>(carico negativo)"]
+  E --> F["Prodotto: solo legame singolo C-C<br/>con E e Nu aggiunti ai due carboni"]`} />
+
+<Diagram caption="Prima e dopo: cosa cambia nel legame" code={`flowchart LR
+  P["PRIMA<br/>C=C doppio legame<br/>(pi greco aperto)"] -->|"addizione di E e Nu"| Q["DOPO<br/>C-C legame singolo<br/>(due pezzi nuovi attaccati)"]`} />
+
+## Guarda il video
+
+<YouTube id="iAP9Tpoi9-E" title="Addizione elettrofila degli alcheni — meccanismo spiegato passo passo" />
+
+<VideoVisto id="chim-u5-10" />
+
+## Da ricordare
+
+- Un **alchene** è una molecola col **doppio legame** tra due carboni (C=C): è una zona ricca di elettroni e molto reattiva.
+- Il doppio legame è fatto da un legame **sigma** (robusto) più un legame **pi** (debole): è il pi che si apre nelle reazioni e che blocca la rotazione.
+- I **dieni coniugati** hanno due doppi legami alternati (doppio, singolo, doppio): gli elettroni si spalmano e la molecola è più stabile.
+- Nell'**addizione elettrofila** il doppio legame si apre: prima arriva l'**elettrofilo** (cerca elettroni), si forma un **carbocatione**, poi arriva il **nucleofilo**.
+- Alla fine il doppio legame diventa singolo e ai due carboni si aggiungono due pezzi nuovi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Che cosa caratterizza un alchene?"
+  opzioni={["Solo legami singoli tra i carboni", "Un doppio legame tra due atomi di carbonio", "La presenza di azoto", "L'assenza di idrogeno"]}
+  corretta={1}
+  spiegazione="L'alchene si riconosce per il doppio legame carbonio-carbonio (C=C), la zona ricca di elettroni che lo rende reattivo."
+/>
+
+<Quiz
+  domanda="In un diene coniugato i due doppi legami sono disposti come?"
+  opzioni={["Doppio, doppio, di seguito", "Doppio, singolo, doppio (alternati)", "Tutti separati e lontanissimi", "Uno solo, non due"]}
+  corretta={1}
+  spiegazione="Coniugato significa doppi legami alternati a un legame singolo (doppio-singolo-doppio). Così gli elettroni si spalmano e la molecola è più stabile."
+/>
+
+<Quiz
+  domanda="Nell'addizione elettrofila, chi attacca per primo il doppio legame?"
+  opzioni={["Il nucleofilo, carico negativo", "L'elettrofilo, che cerca elettroni", "Un altro alchene", "Nessuno: il legame resta intatto"]}
+  corretta={1}
+  spiegazione="Prima arriva l'elettrofilo (amante degli elettroni): il doppio legame, ricco di elettroni, gliene regala una coppia e si forma il carbocatione. Poi arriva il nucleofilo."
+/>
+
+<Esercizio
+  problema="Spiega con parole tue perché, dopo un'addizione elettrofila, il doppio legame non c'è più. Cosa rimane al suo posto?"
+  soluzione="Nel doppio legame ci sono due parti: il legame sigma e il legame pi. Durante l'addizione il legame pi si apre per regalare i suoi elettroni all'elettrofilo. Una volta aperto, quegli elettroni vengono usati per attaccare i due pezzi nuovi (elettrofilo e nucleofilo) ai due carboni. Resta quindi solo il legame sigma: cioè un legame singolo C-C, con due nuovi gruppi attaccati. Il doppio è diventato singolo."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,94 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-13">
+
+Un **legame chimico** è la "colla" che tiene uniti gli atomi. Quasi tutto ciò che ti circonda (l'acqua, l'aria, il tuo corpo) non è fatto di atomi sparsi e da soli, ma di atomi **legati** insieme. La domanda è: perché si legano? La risposta è semplice: perché **stando insieme stanno meglio** che da soli.
+
+"Stare meglio" in chimica vuol dire una cosa precisa: avere **meno energia**. In natura tutto tende verso la situazione di **energia più bassa**, cioè la più **stabile**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> una pallina su una collina rotola sempre verso il fondo della valle, dove è più stabile. Gli atomi fanno lo stesso: si legano per "scendere" verso l'energia minima.</div>
+
+## Energia bassa = più stabile
+
+Pensa a una biglia in cima a una salita. È in una posizione "scomoda": al minimo tocco rotola giù. Quando arriva in fondo alla valle, invece, si ferma e ci resta: è **stabile**.
+
+Per gli atomi è uguale. Due atomi separati sono come la biglia in cima: hanno tanta energia e sono "scomodi". Quando si legano, **rilasciano energia** e finiscono nella valle, in una posizione stabile. Per questo motivo formare un legame **libera energia**, mentre per spezzarlo bisogna **darne**.
+
+<Diagram caption="Tutto in natura tende all'energia più bassa, cioè alla situazione più stabile" code={`flowchart TB
+  A["Atomi separati<br/>energia ALTA<br/>(poco stabili)"] -->|"si avvicinano<br/>e si legano"| B["Atomi legati<br/>energia BASSA<br/>(stabili)"]
+  B --> C["Energia liberata<br/>durante il legame"]`} />
+
+## La curva dell'energia: due atomi che si avvicinano
+
+Immagina due atomi che, partendo da lontano, si avvicinano poco a poco. Possiamo seguire la loro **energia** passo dopo passo:
+
+- **Molto lontani**: quasi non si sentono. L'energia è circa zero.
+- **Si avvicinano**: iniziano ad attrarsi. L'energia **scende**: è una buona notizia, vuol dire più stabilità.
+- **Distanza giusta**: l'energia tocca il **punto più basso**. Qui il legame è fatto. Questa distanza si chiama **lunghezza di legame**.
+- **Troppo vicini**: ora i due nuclei (entrambi positivi) si **respingono** con forza. L'energia risale di colpo.
+
+Il fondo della valle è il punto di equilibrio: gli atomi restano lì, a quella distanza, perché è dove stanno più comodi.
+
+<Diagram caption="Curva dell'energia: scende fino al minimo (legame stabile), poi risale se gli atomi sono troppo vicini" code={`flowchart LR
+  L["Atomi lontani<br/>energia circa zero"] --> A["Si avvicinano<br/>energia che SCENDE"]
+  A --> M["Distanza giusta<br/>MINIMO di energia<br/>= legame stabile"]
+  M --> V["Troppo vicini<br/>i nuclei si respingono<br/>energia che RISALE"]`} />
+
+## Perché questo conta in biologia e medicina
+
+Questa idea è ovunque nel corpo. Le **proteine**, il **DNA** e le **membrane** delle tue cellule esistono grazie a legami chimici che le tengono in forma. Anche l'**acqua**, che è la maggior parte del tuo corpo, è fatta di atomi legati (idrogeno e ossigeno).
+
+C'è di più: quando il tuo corpo "brucia" lo zucchero per ricavare energia, in realtà sta **rompendo** e **rifacendo** legami chimici. L'energia che ti tiene in piedi, ti fa respirare e battere il cuore arriva proprio da qui. Capire i legami è il primo passo per capire come funziona la vita.
+
+## Guarda il video
+
+<YouTube id="ArYROkQ2fAk" title="Legami chimici: introduzione — perché e come gli atomi si legano" />
+
+<VideoVisto id="chim-u1-13" />
+
+## Da ricordare
+
+- Un **legame chimico** è ciò che tiene uniti gli atomi.
+- Gli atomi si legano perché così raggiungono **energia più bassa**, cioè sono più **stabili**.
+- In natura tutto tende all'energia minima (come la biglia che rotola nella valle).
+- Esiste una **distanza ideale** (lunghezza di legame): è il punto di minima energia; troppo vicini, i nuclei si **respingono**.
+- Formare un legame **libera energia**; spezzarlo richiede **energia**. Questi scambi sono alla base di tutta la biologia.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Perché due atomi si legano tra loro?"
+  opzioni={["Per aumentare la loro energia", "Per raggiungere un'energia più bassa ed essere più stabili", "Perché sono dello stesso colore", "Per caso, senza un motivo"]}
+  corretta={1}
+  spiegazione="Gli atomi si legano perché legati hanno meno energia che separati: l'energia più bassa vuol dire situazione più stabile."
+/>
+
+<Quiz
+  domanda="Nella curva dell'energia, il punto più basso (il minimo) corrisponde a:"
+  opzioni={["atomi infinitamente lontani", "la distanza ideale del legame stabile", "atomi che si respingono", "energia massima"]}
+  corretta={1}
+  spiegazione="Il minimo della curva è il fondo della valle: lì gli atomi sono alla distanza giusta e formano un legame stabile (la lunghezza di legame)."
+/>
+
+<Quiz
+  domanda="Cosa succede se i due atomi si avvicinano troppo, oltre la distanza ideale?"
+  opzioni={["L'energia continua a scendere", "Non succede niente", "I nuclei positivi si respingono e l'energia risale", "Si fondono in un solo atomo"]}
+  corretta={2}
+  spiegazione="Entrambi i nuclei sono positivi: troppo vicini si respingono con forza, quindi l'energia risale di colpo. Per questo esiste una distanza di equilibrio."
+/>
+
+<Esercizio
+  problema="Spiega con l'analogia della biglia e della valle perché formare un legame libera energia."
+  soluzione="Una biglia in cima alla salita ha tanta energia; rotolando in fondo alla valle la perde e si ferma nel punto più stabile. Allo stesso modo due atomi separati hanno energia alta: quando si legano 'scendono' verso l'energia minima e l'energia in eccesso viene liberata. Ecco perché formare un legame libera energia, mentre spezzarlo (risalire la valle) richiede energia."
+/>
+
+</section>
+
+</RisorsaLayout>

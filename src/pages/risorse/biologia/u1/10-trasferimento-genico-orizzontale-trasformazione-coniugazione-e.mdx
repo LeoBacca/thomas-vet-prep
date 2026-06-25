@@ -1,0 +1,100 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-10">
+
+## Che cos'è il trasferimento genico orizzontale?
+
+I batteri si riproducono per scissione binaria: un batterio si divide in due copie identiche. Ma a volte un batterio riesce a **passare del DNA a un altro batterio già adulto**, senza aspettare la riproduzione. Questo si chiama **trasferimento genico orizzontale** (TGO).
+
+Pensa a due persone che si scambiano un foglio di appunti: non sono parenti, non si sono riprodotte, eppure una passa informazioni all'altra. Nei batteri succede la stessa cosa con i geni.
+
+Il TGO è importantissimo perché è uno dei motivi principali per cui i batteri sviluppano resistenza agli antibiotici: un batterio "immune" può condividere quel vantaggio con i vicini.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il trasferimento genico orizzontale è lo "scambio di appunti" tra batteri: permette di acquisire nuovi geni senza riprodursi, e spiega come si diffonde la resistenza agli antibiotici.</div>
+
+---
+
+## I tre meccanismi
+
+### 1. Trasformazione
+
+Il batterio **assorbe direttamente frammenti di DNA libero** presenti nell'ambiente circostante (rilasciati da altri batteri morti o lisati).
+
+- Il DNA libero entra nella cellula attraverso la membrana.
+- Il batterio deve essere in uno stato chiamato **competenza**: una fase in cui è "aperto" ad accettare DNA esterno.
+- Se il frammento è compatibile, si integra nel cromosoma batterico.
+
+**Analogia:** È come trovare per terra un foglio di istruzioni e usarlo per imparare qualcosa di nuovo.
+
+---
+
+### 2. Coniugazione
+
+Due batteri si mettono in **contatto fisico diretto** tramite una struttura chiamata **pilo sessuale** (un tubicino proteico). Attraverso questo ponte, uno dei due (il **donatore**) trasferisce una copia del proprio **plasmide** (un piccolo anello di DNA extra rispetto al cromosoma principale) all'altro (il **ricevente**).
+
+- Serve il contatto diretto tra i due batteri.
+- Il donatore possiede il **fattore F** (fattore di fertilità), che gli permette di formare il pilo.
+- Il ricevente acquisisce nuovi geni, spesso di resistenza agli antibiotici.
+
+**Analogia:** È come due persone che si stringono la mano e durante la stretta si passano un bigliettino segreto.
+
+---
+
+### 3. Trasduzione
+
+Il DNA viene trasportato da un batterio all'altro **tramite un virus batterico**, detto **batteriofago** (o fago). Il fago infetta un batterio, ne copia il DNA, poi infetta un altro batterio portando con sé geni del primo.
+
+- Il fago entra nel batterio 1 e accidentalmente impacchetta un pezzo di DNA batterico invece del proprio.
+- Quando infetta il batterio 2, gli consegna quel DNA "di contrabbando".
+- Esistono due tipi: **trasduzione generalizzata** (qualsiasi gene può essere trasportato) e **trasduzione specializzata** (solo certi geni specifici).
+
+**Analogia:** Il fago è come un corriere distratto che, invece di consegnare il pacco giusto, prende per errore la roba del vicino e la porta al destinatario sbagliato.
+
+---
+
+<Diagram caption="I tre meccanismi di trasferimento genico orizzontale nei batteri" code={`flowchart TB
+  A["Batterio donatore"] -->|"1. TRASFORMAZIONE<br/>DNA libero nell'ambiente"| B["Frammento di DNA<br/>rilasciato"]
+  B -->|"assorbito da"| C["Batterio ricevente<br/>(competente)"]
+
+  D["Batterio F+ (donatore)"] -->|"2. CONIUGAZIONE<br/>pilo sessuale"| E["Plasmide<br/>trasferito"]
+  E -->|"entra in"| F["Batterio F- (ricevente)"]
+
+  G["Batterio 1"] -->|"3. TRASDUZIONE<br/>il fago infetta"| H["Batteriofago<br/>(virus)"]
+  H -->|"porta DNA a"| I["Batterio 2<br/>(nuovo ospite)"]`} />
+
+<Diagram caption="Dettaglio della coniugazione: come avviene il trasferimento del plasmide" code={`flowchart LR
+  A["Batterio donatore F+<br/>ha il plasmide F"] -->|"forma il pilo sessuale"| B["Pilo sessuale<br/>(tubicino proteico)"]
+  B -->|"si aggancia a"| C["Batterio ricevente F-<br/>non ha il plasmide"]
+  A -->|"replica e trasferisce"| D["Copia del plasmide F"]
+  D -->|"entra nel ricevente"| C
+  C -->|"diventa"| E["Batterio F+<br/>ora ha il plasmide"]`} />
+
+## Guarda il video
+<YouTube id="ngzp94ox0OY" title="I batteri: trasduzione, trasformazione, coniugazione" />
+<VideoVisto id="bio-u1-10" />
+
+## Da ricordare
+- **Trasformazione:** il batterio assorbe DNA libero dall'ambiente (serve essere in stato di competenza).
+- **Coniugazione:** due batteri si toccano fisicamente e uno passa un plasmide all'altro tramite il pilo sessuale.
+- **Trasduzione:** un batteriofago (virus) fa da "corriere" e porta DNA da un batterio all'altro; è il meccanismo più indiretto dei tre.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="In quale meccanismo di trasferimento genico un virus batterico trasporta DNA da un batterio all'altro?" opzioni={["Trasformazione","Coniugazione","Trasduzione","Scissione binaria"]} corretta={2} spiegazione="La trasduzione è il meccanismo in cui un batteriofago (virus batterico) infetta un batterio, impacchetta accidentalmente del suo DNA, e lo consegna a un secondo batterio quando lo infetta." />
+
+<Quiz domanda="Cosa si intende per 'competenza' in un batterio?" opzioni={["La capacità di formare il pilo sessuale","Uno stato in cui il batterio è in grado di assorbire DNA esterno dall'ambiente","La presenza di un plasmide contenente il fattore F","La capacità di produrre batteriofagi"]} corretta={1} spiegazione="La competenza è uno stato fisiologico in cui il batterio è in grado di captare e incorporare frammenti di DNA libero presenti nell'ambiente esterno. È necessaria per la trasformazione." />
+
+<Quiz domanda="Quale struttura è indispensabile per la coniugazione batterica?" opzioni={["Il ribosoma 70S","Il batteriofago","Il pilo sessuale","Il flagello"]} corretta={2} spiegazione="Il pilo sessuale è un tubicino proteico che il batterio donatore (F+) proietta verso il ricevente (F-) per stabilire un contatto fisico e trasferire il plasmide. Senza di esso la coniugazione non può avvenire." />
+
+<Esercizio problema="Un batterio risulta resistente a un antibiotico. Dopo qualche ora, anche altri batteri della stessa coltura, che inizialmente erano sensibili, diventano resistenti. Proponi un meccanismo di trasferimento genico orizzontale che potrebbe spiegare questo fenomeno, e descrivi brevemente i passaggi chiave." soluzione="Il meccanismo più probabile è la coniugazione. Il batterio resistente possiede un plasmide che porta il gene di resistenza. Attraverso il pilo sessuale, entra in contatto diretto con i batteri vicini (sensibili). Il plasmide viene replicato e una copia viene trasferita ai riceventi. I nuovi batteri, ora F+, possono a loro volta trasferire il plasmide ad altri, diffondendo rapidamente la resistenza nell'intera coltura. Non si esclude anche la trasformazione (i batteri morti rilasciano DNA di resistenza che altri assorbono), ma la velocità e l'efficienza della diffusione suggeriscono la coniugazione come meccanismo principale." />
+
+</section>
+
+</RisorsaLayout>

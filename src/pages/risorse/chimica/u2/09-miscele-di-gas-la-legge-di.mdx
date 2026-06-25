@@ -1,0 +1,106 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-09">
+
+L'aria che respiri non è un gas solo: è un **mix** di tanti gas diversi, tutti mescolati insieme. C'è soprattutto azoto, poi ossigeno, una piccola parte di anidride carbonica e altri. Ognuno di questi gas spinge un po' sulle pareti del recipiente che lo contiene (per esempio i tuoi polmoni). La **legge di Dalton** ci dice una cosa molto semplice: la spinta totale è solo la **somma** delle singole spinte.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> in una miscela di gas ogni gas si comporta come se fosse da solo. La pressione totale è la somma delle pressioni dei singoli gas. Come un conto al ristorante: il totale è la somma di quello che ha preso ciascuno.</div>
+
+<Diagram caption="La pressione totale è la somma delle pressioni parziali dei singoli gas" code={`flowchart LR
+  O2["Pressione dell'ossigeno<br/>(O2)"] --> TOT["PRESSIONE TOTALE<br/>della miscela"]
+  N2["Pressione dell'azoto<br/>(N2)"] --> TOT
+  CO2["Pressione dell'anidride carbonica<br/>(CO2)"] --> TOT`} />
+
+## Cos'è la pressione parziale
+
+Immagina una stanza piena di persone. Se togliessi tutti tranne i tuoi amici, loro occuperebbero comunque tutta la stanza e farebbero comunque rumore. La **pressione parziale** di un gas è proprio questo: è la pressione che quel gas farebbe **se fosse da solo** nello stesso recipiente, alla stessa temperatura.
+
+In una miscela ogni gas non si accorge degli altri. L'ossigeno spinge per conto suo, l'azoto spinge per conto suo. La somma di tutte queste spinte è la **pressione totale**.
+
+In formula la legge di Dalton si scrive così:
+
+`P totale = P(O2) + P(N2) + P(CO2) + ...`
+
+Si legge: la pressione totale è uguale alla pressione parziale del primo gas, più quella del secondo, più quella del terzo, e così via.
+
+## Quanto pesa ogni gas nella miscela
+
+Più un gas è abbondante, più alta è la sua pressione parziale. Se un gas è la metà della miscela, fa la metà della pressione totale. Se è un decimo, fa un decimo della pressione totale.
+
+L'aria che respiriamo è fatta più o meno così:
+
+- **azoto (N2)**: circa il 78 per cento → la sua pressione parziale è la più grande
+- **ossigeno (O2)**: circa il 21 per cento → quello che ci serve per vivere
+- **anidride carbonica (CO2) e altri**: circa l'1 per cento
+
+A livello del mare la pressione totale dell'aria è circa 760 mmHg (millimetri di mercurio). Quindi l'ossigeno, che è circa il 21 per cento, ha una pressione parziale di circa 160 mmHg. È un numero che vale la pena ricordare.
+
+## Perché conta per il corpo (medicina e veterinaria)
+
+Qui arriva la parte più bella per chi studia veterinaria o medicina. **Il tuo corpo lavora con le pressioni parziali, non con le percentuali.**
+
+L'ossigeno passa dai polmoni al sangue solo perché la sua pressione parziale nell'aria che entra è **maggiore di** quella nel sangue: il gas si sposta sempre dalla zona dove spinge di più verso quella dove spinge di meno. È come l'acqua che scende sempre verso il basso.
+
+Confronta l'aria che entra (inspirata) con quella che esce (espirata):
+
+- **Aria inspirata**: tanto ossigeno, pochissima anidride carbonica.
+- **Aria espirata**: meno ossigeno (una parte è andata nel sangue) e molta più anidride carbonica (il corpo l'ha prodotta ed eliminata).
+
+<Diagram caption="Aria inspirata contro aria espirata: cambiano le pressioni parziali" code={`flowchart TB
+  IN["ARIA INSPIRATA<br/>tanto O2 - poca CO2"] --> POL["POLMONI<br/>scambio dei gas con il sangue"]
+  POL --> OUT["ARIA ESPIRATA<br/>meno O2 - molta piu CO2"]`} />
+
+Ecco perché in alta montagna si fa fatica a respirare: lassù la pressione totale è più bassa, quindi anche la pressione parziale dell'ossigeno è più bassa, e ne arriva meno al sangue. Stessa percentuale di ossigeno nell'aria (sempre 21 per cento), ma spinge di meno. È anche il motivo per cui in ospedale si dà ossigeno puro: aumentando la sua pressione parziale, se ne fa entrare di più nel sangue.
+
+## Guarda il video
+
+<YouTube id="kQ10s6epC7g" title="Legge di Dalton delle pressioni parziali — spiegazione semplice" />
+
+<VideoVisto id="chim-u2-09" />
+
+## Da ricordare
+
+- Una **miscela di gas** è un mix di gas diversi; ognuno spinge per conto suo.
+- **Pressione parziale** = la pressione che un gas farebbe se fosse da solo nel recipiente.
+- **Legge di Dalton**: la pressione totale è la **somma** delle pressioni parziali → `P totale = P(O2) + P(N2) + P(CO2) + ...`
+- Più un gas è abbondante, più grande è la sua pressione parziale.
+- Il corpo scambia i gas seguendo le pressioni parziali: l'ossigeno entra nel sangue perché lì spinge di più; l'aria espirata ha meno O2 e più CO2.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa dice la legge di Dalton sulla pressione di una miscela di gas?"
+  opzioni={["La pressione totale è la media delle pressioni dei gas", "La pressione totale è la somma delle pressioni parziali dei singoli gas", "Tutti i gas hanno la stessa pressione", "La pressione totale è quella del gas più abbondante"]}
+  corretta={1}
+  spiegazione="La pressione totale è la somma delle pressioni parziali: ogni gas contribuisce con la sua spinta, come le voci di un conto che si sommano."
+/>
+
+<Quiz
+  domanda="Cos'è la pressione parziale di un gas in una miscela?"
+  opzioni={["La pressione di tutti i gas insieme", "La pressione che il gas farebbe se fosse da solo nel recipiente", "Una pressione sempre uguale a zero", "Il peso del gas"]}
+  corretta={1}
+  spiegazione="La pressione parziale è la spinta che quel gas eserciterebbe se occupasse da solo lo stesso volume, alla stessa temperatura."
+/>
+
+<Quiz
+  domanda="Rispetto all'aria inspirata, l'aria che espiriamo contiene:"
+  opzioni={["più ossigeno e meno anidride carbonica", "meno ossigeno e più anidride carbonica", "solo anidride carbonica", "la stessa identica composizione"]}
+  corretta={1}
+  spiegazione="Nei polmoni una parte di ossigeno passa nel sangue, mentre l'anidride carbonica prodotta dal corpo viene eliminata: l'aria espirata ha quindi meno O2 e più CO2."
+/>
+
+<Esercizio
+  problema="Una miscela di gas è chiusa in un recipiente. L'ossigeno ha una pressione parziale di 160 mmHg, l'azoto di 590 mmHg e l'anidride carbonica di 10 mmHg. Quanto vale la pressione totale?"
+  soluzione="Per la legge di Dalton la pressione totale è la somma delle pressioni parziali: 160 + 590 + 10 = 760 mmHg. È proprio la pressione dell'aria a livello del mare."
+/>
+
+</section>
+
+</RisorsaLayout>

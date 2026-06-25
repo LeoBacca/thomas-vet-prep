@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u6-05-1",
+    "topicId": "chim-u6-05",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: il 'segreto' di un'ammina, cio che la rende basica e nucleofila, e il doppietto di elettroni libero sull'azoto.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il doppietto libero e come una 'mano libera' sempre pronta: se afferra un H+ l'ammina si comporta da base; se attacca un carbonio si comporta da nucleofilo. Stessa coppia di elettroni, due usi diversi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-05-2",
+    "topicId": "chim-u6-05",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Un'ammina ha due carboni (R) e un idrogeno attaccati al suo azoto. Come si classifica?",
+    "choices": [
+      "Ammina primaria, perche ha un idrogeno",
+      "Ammina secondaria, perche ha due carboni attaccati all'azoto",
+      "Ammina terziaria, perche la somma di carboni e idrogeni e tre",
+      "Ammina quaternaria, perche ha sia carboni sia idrogeni"
+    ],
+    "answer": 1,
+    "explain": "Nelle ammine si contano i CARBONI (R) attaccati all'azoto, non gli idrogeni. Due carboni = secondaria (R2-NH). Attenzione: negli alcoli si guarda il carbonio vicino all'OH; nelle ammine si guarda l'azoto e si contano i suoi R. Trucco: 1 carbonio = primaria, 2 = secondaria, 3 = terziaria.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-05-3",
+    "topicId": "chim-u6-05",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "open",
+    "q": "Spiega con parole tue: cosa sono le nitrosammine, come si formano e perche sono importanti in medicina veterinaria?",
+    "answer": "Le nitrosammine sono molecole che si formano quando certe ammine reagiscono con i nitriti. I nitriti sono conservanti usati spesso nelle carni lavorate e nei salumi. Quando ammine e nitriti si incontrano (per esempio nello stomaco durante la digestione), possono combinarsi e dare origine alle nitrosammine. Il problema e che molte nitrosammine sono cancerogene, cioe aumentano il rischio di sviluppare tumori. Questo e il motivo per cui si consiglia di non esagerare con i salumi e le carni conservate, sia per gli esseri umani sia negli alimenti degli animali. In veterinaria e importante conoscerle perche anche i mangimi possono contenere nitriti come conservanti.",
+    "explain": "Formula da ricordare: ammine + nitriti → nitrosammine (spesso cancerogene). Fonte: conservanti in carni lavorate/mangimi.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u6-05-4",
+    "topicId": "chim-u6-05",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Le ammine primarie e secondarie sono basiche. Qual e il motivo corretto?",
+    "choices": [
+      "Perche l'azoto ha un doppietto elettronico libero disponibile ad afferrare un H+",
+      "Perche hanno atomi di idrogeno legati all'azoto, che cedono H+ all'ambiente",
+      "Perche il doppietto non condiviso stabilizza il gruppo amminico senza reagire con nulla",
+      "Perche possono formare anidridi con gli acidi carbossilici",
+      "Perche l'azoto e elettronegativo e attira gli elettroni del legame C-N"
+    ],
+    "answer": 0,
+    "explain": "Corretta: il doppietto libero sull'azoto e la 'calamita' che cattura gli H+ acidi → basicita. Trappola B (opposto esatto): avere H attaccati all'azoto farebbe pensare a un acido (cede H+), ma e sbagliato: qui e l'azoto che PRENDE H+, non lo cede. Trappola C (misconcezione): il doppietto NON 'sta fermo' → e proprio lui che reagisce. Trappola D (fuori tema): le ammine non danno anidridi, quella e una reazione degli acidi carbossilici. Trappola E: l'elettronegativita dell'azoto e un fatto reale ma NON spiega la basicita.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u6-05-5",
+    "topicId": "chim-u6-05",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "La colina e un'ammina presente nel nostro corpo. Quale delle seguenti affermazioni sulla colina e CORRETTA?",
+    "choices": [
+      "E un precursore dell'acetilcolina, il messaggero chimico che trasmette il segnale dai nervi ai muscoli",
+      "E cancerogena perche reagisce con i nitriti dei salumi",
+      "E un'ammina inutile per il corpo, presente solo come scarto",
+      "Si trova solo nei vegetali e manca completamente negli alimenti di origine animale",
+      "Serve esclusivamente come mattone delle membrane cellulari e non ha ruolo nella trasmissione nervosa"
+    ],
+    "answer": 0,
+    "explain": "Corretta: la colina serve a costruire l'acetilcolina, il neurotrasmettitore che porta il segnale 'contraggi!' dai nervi ai muscoli; e anche un mattone delle membrane cellulari. Trappola B (scambio di termini): le nitrosammine sono cancerogene, non la colina. Trappola C (informazione falsa): la colina e utilissima, non uno scarto. Trappola D (opposto): la colina si trova soprattutto in alimenti animali come uova e fegato. Trappola E (mezza verita): la colina ha ENTRAMBE le funzioni, non solo quella di membrana.",
+    "tags": ["prova d'esame"]
+  }
+]

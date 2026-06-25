@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u7-03-1",
+    "topicId": "fis-u7-03",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: la luce e un flusso continuo di energia, come l'acqua che scorre, quindi un fotone puo avere qualsiasi quantita di energia.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. La luce arriva in pacchetti indivisibili chiamati fotoni. Non puoi avere 'mezzo fotone', come non puoi avere mezzo euro in moneta. L'energia non e continua ma quantizzata: ogni fotone porta esattamente E = h·f, ne di piu ne di meno.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u7-03-2",
+    "topicId": "fis-u7-03",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "open",
+    "q": "Usando la formula E = h·f, spiega perche i raggi X sono piu pericolosi della luce rossa. Che ruolo ha la frequenza?",
+    "answer": "La formula E = h·f dice che l'energia di un fotone dipende direttamente dalla sua frequenza f (h e la costante di Planck, un numero fisso). I raggi X hanno una frequenza molto piu alta della luce rossa: quindi ogni loro fotone trasporta molta piu energia. E questa energia elevata che rende i raggi X pericolosi per i tessuti biologici. La luce rossa, al contrario, ha frequenza bassa, quindi fotoni poco energetici e innocui per la pelle. Pensa alle onde del mare: onde rapide e corte (alta frequenza) sono piu violente di onde lente e lunghe.",
+    "explain": "Da ricordare: in E = h·f, piu alta e la frequenza, piu energetico e il fotone. Viola > verde > rosso in termini di energia per fotone.",
+    "tags": ["risposta aperta"]
+  }
+]

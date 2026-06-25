@@ -1,0 +1,100 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-09">
+
+La tavola periodica non è un elenco a caso: gli elementi sono messi in ordine, e man mano che ti sposti certe caratteristiche cambiano in modo regolare. Queste caratteristiche si chiamano **proprietà periodiche**. Le quattro più importanti sono: **raggio atomico** (quanto è grande l'atomo), **energia di ionizzazione** (quanta forza serve per strappargli un elettrone), **affinità elettronica** (quanto gli piace prendere un elettrone) ed **elettronegatività** (quanto tira a sé gli elettroni quando si lega a un altro atomo).
+
+La buona notizia: non devi imparare 118 elementi a memoria. Ti basta capire **due direzioni di movimento** sulla tavola, e tutto il resto viene da sé.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina la tavola come una griglia. Muovendoti verso <strong>destra</strong> o verso <strong>l'alto</strong>, l'atomo diventa più "tirchio e aggressivo" con gli elettroni: più piccolo, più li trattiene e più li ruba. Muovendoti verso <strong>sinistra</strong> o verso il <strong>basso</strong>, diventa più "grande e generoso": li lascia andare facilmente.</div>
+
+<Diagram caption="Le frecce di andamento sulla tavola periodica: dove ogni proprietà aumenta" code={`flowchart TB
+  T["TAVOLA PERIODICA"] --> R["Lungo il PERIODO<br/>(da sinistra verso destra)"]
+  T --> G["Lungo il GRUPPO<br/>(dall'alto verso il basso)"]
+  R --> RA["Raggio atomico DIMINUISCE<br/>Ionizzazione, affinita ed elettronegativita AUMENTANO"]
+  G --> GA["Raggio atomico AUMENTA<br/>Ionizzazione, affinita ed elettronegativita DIMINUISCONO"]`} />
+
+<Diagram caption="Verso quale angolo punta ogni proprieta" code={`flowchart LR
+  A["Angolo in BASSO a SINISTRA<br/>(es. il francio)"] -->|"atomi grandi, mollano gli elettroni"| B["Raggio MASSIMO"]
+  C["Angolo in ALTO a DESTRA<br/>(es. fluoro e ossigeno)"] -->|"atomi piccoli, trattengono e rubano"| D["Ionizzazione, affinita<br/>ed elettronegativita MASSIME"]`} />
+
+## Il raggio atomico: quanto è grande l'atomo
+
+Il **raggio atomico** dice quanto è "largo" un atomo, cioè quanto sono lontani gli elettroni esterni dal nucleo (il centro).
+
+Pensa al nucleo come a una **calamita** al centro e agli elettroni come a delle **biglie di ferro** intorno. Due cose cambiano la dimensione:
+
+- **Scendendo lungo un gruppo** (in basso) l'atomo aggiunge nuovi "gusci" di elettroni, come le bucce di una cipolla. Più bucce metti, più grande diventa la cipolla. Quindi **il raggio aumenta**.
+- **Spostandoti verso destra lungo un periodo**, la calamita centrale diventa più forte (più protoni nel nucleo) ma gli elettroni restano sullo stesso guscio. La calamita più forte li tira più vicino, e l'atomo si **rimpicciolisce**. Quindi **il raggio diminuisce**.
+
+Questo conta anche in biologia: ioni di dimensioni diverse, come **sodio e potassio**, passano attraverso "porte" diverse nelle membrane delle nostre cellule. È proprio la dimensione a decidere chi entra dove, ed è alla base di come funzionano i nervi e il battito del cuore.
+
+## Ionizzazione e affinità: strappare o regalare elettroni
+
+L'**energia di ionizzazione** è la "fatica" che devi fare per strappare via un elettrone all'atomo. Se l'atomo è piccolo e tiene gli elettroni vicini alla calamita, fai tanta fatica: energia di ionizzazione **alta**. Se è grande e li tiene lontani, basta poco: energia **bassa**.
+
+L'**affinità elettronica** è il contrario, vista dall'altro lato: quanta "gioia" prova l'atomo nel ricevere un elettrone in regalo. Gli atomi piccoli in alto a destra (come il cloro) sono felicissimi di prendere elettroni.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ionizzazione = quanto è difficile <strong>togliergli</strong> un elettrone. Affinità = quanto è contento di <strong>riceverne</strong> uno. Entrambe sono alte nello stesso angolo: in alto a destra.</div>
+
+## L'elettronegatività: chi vince il tiro alla fune
+
+L'**elettronegatività** è forse la più utile da ricordare. Quando due atomi si legano, condividono degli elettroni: è come se tirassero la stessa **fune**. L'elettronegatività misura **quanto forte tira** ciascun atomo.
+
+- Atomo molto elettronegativo (in alto a destra, come l'**ossigeno** o il **fluoro**): tira forte, si tiene gli elettroni più vicini.
+- Atomo poco elettronegativo (in basso a sinistra, come il **sodio**): tira piano, lascia che l'altro vinca.
+
+Questo spiega una cosa fondamentale per la vita: nell'**acqua** (H2O) l'ossigeno è molto più elettronegativo dell'idrogeno, quindi tira gli elettroni dalla sua parte. Risultato: l'acqua diventa una piccola "calamita" (è una molecola **polare**). Proprio per questo l'acqua scioglie sali, zuccheri e trasporta sostanze nel nostro sangue. Senza questa differenza di elettronegatività, il corpo non potrebbe funzionare.
+
+## Guarda il video
+
+<YouTube id="nI3lAtaP2lY" title="Proprietà della Tavola Periodica degli Elementi — Lezioni di Chimica" />
+
+<VideoVisto id="chim-u1-09" />
+
+## Da ricordare
+
+- Le **4 proprietà periodiche**: raggio atomico, energia di ionizzazione, affinità elettronica, elettronegatività.
+- **Raggio atomico**: aumenta scendendo (gruppo) e verso sinistra; diminuisce verso destra (periodo).
+- **Ionizzazione, affinità ed elettronegatività** vanno tutte nello **stesso senso**: aumentano verso destra e verso l'alto.
+- L'angolo **in alto a destra** (fluoro, ossigeno) è quello degli atomi piccoli, "aggressivi", che trattengono e rubano elettroni.
+- L'**elettronegatività** spiega perché l'acqua è polare e quindi può sciogliere e trasportare sostanze nel corpo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Spostandoti da sinistra verso destra lungo un periodo, il raggio atomico:"
+  opzioni={["aumenta", "diminuisce", "resta uguale", "prima aumenta poi diminuisce"]}
+  corretta={1}
+  spiegazione="Verso destra il nucleo ha più protoni (calamita più forte) ma gli elettroni restano sullo stesso guscio: vengono tirati più vicino e l'atomo si rimpicciolisce."
+/>
+
+<Quiz
+  domanda="Quale angolo della tavola contiene gli atomi con elettronegatività e affinità più alte?"
+  opzioni={["in basso a sinistra", "in alto a destra (come fluoro e ossigeno)", "al centro", "in basso a destra"]}
+  corretta={1}
+  spiegazione="In alto a destra ci sono gli atomi piccoli che trattengono forte i loro elettroni e ne attirano altri: massima ionizzazione, affinità ed elettronegatività."
+/>
+
+<Quiz
+  domanda="L'energia di ionizzazione è:"
+  opzioni={["l'energia che si libera prendendo un elettrone", "la fatica necessaria per strappare via un elettrone all'atomo", "la grandezza dell'atomo", "il numero di protoni"]}
+  corretta={1}
+  spiegazione="È quanto costa, in energia, togliere un elettrone. È alta quando l'atomo è piccolo e tiene gli elettroni vicini al nucleo."
+/>
+
+<Esercizio
+  problema="Tra sodio (Na, in basso a sinistra) e cloro (Cl, in alto a destra), quale dei due ha il raggio atomico più grande e quale tira più forte gli elettroni in un legame (elettronegatività più alta)?"
+  soluzione="Il sodio ha il raggio più grande, perché si trova più a sinistra e più in basso. Il cloro ha l'elettronegatività più alta, perché è in alto a destra: tira forte gli elettroni. Per questo, quando si legano, il cloro 'vince il tiro alla fune' e si forma il comune sale da cucina (NaCl)."
+/>
+
+</section>
+
+</RisorsaLayout>

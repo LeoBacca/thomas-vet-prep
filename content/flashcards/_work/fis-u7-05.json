@@ -1,0 +1,10 @@
+{
+ "id": "fis-u7-05",
+ "titolo": "Radioattività e decadimenti (alfa, beta, gamma), emivita",
+ "materia": "fisica",
+ "unita": 7,
+ "slug": "05-radioattivita-e-decadimenti-alfa-beta-gamma",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u7/05-radioattivita-e-decadimenti-alfa-beta-gamma.mdx",
+ "examQuestions": []
+}

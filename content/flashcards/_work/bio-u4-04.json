@@ -1,0 +1,277 @@
+{
+ "id": "bio-u4-04",
+ "titolo": "Le leggi di Mendel: segregazione e assortimento indipendente",
+ "materia": "biologia",
+ "unita": 4,
+ "slug": "04-le-leggi-di-mendel-segregazione-e",
+ "freq": 19,
+ "risorseMdx": "src/pages/risorse/biologia/u4/04-le-leggi-di-mendel-segregazione-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Incrociando due piante di pisello si ottengono 50% di piante a colore rosso e 50% di piante a colore bianco. Quali possono essere i probabili genotipi dei genitori?",
+   "choices": [
+    "Aa e aa",
+    "AA e aa",
+    "Aa e Aa",
+    "aa e aa",
+    "AA e Aa"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2006",
+   "q": "In un tipo di pianta il carattere \"fiore rosso\" (R) è dominante rispetto al carattere \"fiore giallo\" (r). Una pianta a fiori rossi, selezionata per molte generazioni, viene incrociata con una pianta a fiori gialli, pure selezionata per molte generazioni. Quali saranno i possibili risultati di tale incrocio?",
+   "choices": [
+    "Tutte piante a fiori rossi",
+    "Tutte piante a fiori gialli",
+    "50% di piante a fiori gialli e 50% di piante a fiori rossi",
+    "75% di piante a fiori rossi e 25% di piante a fiori gialli",
+    "75% di piante a fiori gialli e 25% di piante a fiori rossi"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2007",
+   "q": "Un albino è una persona che non ha pigmenti nella pelle. Il carattere è dovuto alla presenza dell'allele recessivo a. Un maschio di colorito normale figlio di genitori e nonni normali sposa una donna normale con un genitore albino. Qual è la probabilità che il loro primo figlio sia albino?",
+   "choices": [
+    "Praticamente nulla",
+    "25%",
+    "50%",
+    "75%",
+    "100%"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2007",
+   "q": "Due genitori, fenotipicamente normali, hanno un primo figlio affetto da una malattia autosomica recessiva. Quale sarà la probabilità che un secondo figlio sia sano?",
+   "choices": [
+    "75%",
+    "50%",
+    "100%",
+    "0%",
+    "25%"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2008",
+   "q": "La fibrosi cistica o mucoviscidosi è una malattia autosomica recessiva che comporta un'eccessiva secrezione di muco, denso e vischioso, da parte dei polmoni, del pancreas, dell'intestino. La sua incidenza è di 1:2000, mentre i portatori sani sono il 5% della popolazione. Due genitori entrambi portatori del gene alterato hanno probabilità di avere un figlio maschio affetto da mucoviscidosi pari a:",
+   "choices": [
+    "25%",
+    "2%",
+    "5%",
+    "75%",
+    "0,2%"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2009",
+   "q": "Per determinare se il genotipo di una pianta di pisello a seme giallo è omozigote dominante (YY) o eterozigote (Yy), bisogna effettuare un test-cross con piante aventi genotipo:",
+   "choices": [
+    "yy",
+    "y",
+    "Y",
+    "YY",
+    "Yy"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2010",
+   "q": "Nei topi il colore nero della pelliccia è dominante sul bianco. Dall'accoppiamento di un maschio bianco con una femmina nera omozigote:",
+   "choices": [
+    "è impossibile la nascita di un figlio maschio bianco",
+    "il 50% dei figli maschi sarà bianco",
+    "il 50% delle figlie femmine sarà bianco",
+    "tutti i figli maschi saranno bianchi",
+    "il 25% dei figli sarà bianco indipendentemente dal sesso"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2011",
+   "q": "Dalle leggi di Mendel è possibile trarre tutte le seguenti conclusioni tranne una:",
+   "choices": [
+    "si formano con maggior frequenza gameti con alleli dominanti",
+    "gli alleli di un gene segregano con uguale frequenza nei gameti",
+    "un carattere dipende da una coppia di alleli",
+    "la segregazione di una coppia di alleli non influenza la segregazione di altre coppie di alleli",
+    "gli alleli di un gene si separano durante la formazione dei gameti"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2012",
+   "q": "Dall'incrocio tra due individui eterozigoti per un carattere genetico autosomico recessivo, che impedisce lo sviluppo embrionale dell'omozigote recessivo, con quale probabilità si avranno, alla nascita, individui omozigoti dominanti?",
+   "choices": [
+    "1/3",
+    "1/4",
+    "1/2",
+    "3/4",
+    "0"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2012",
+   "q": "\"Ogni individuo possiede nelle cellule somatiche due alleli per ciascun carattere autosomico, ma nei suoi gameti se ne riscontra uno solo.\" Ciò è dovuto:",
+   "choices": [
+    "alla segregazione",
+    "all'epistasi",
+    "all'eredità poligenica",
+    "ai caratteri multiallelici",
+    "all'assortimento indipendente"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2013",
+   "q": "Nelle piante di lattuga, un gene controlla la produzione di clorofilla. L'allele recessivo non porta alla produzione di clorofilla, indispensabile per consentire alla pianta di svilupparsi. Qual e la percentuale di piante adulte che saranno omozigoti dominanti ottenuta da un incrocio tra due eterozigoti per tale gene?",
+   "choices": [
+    "33%",
+    "25%",
+    "50%",
+    "67%",
+    "75%"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2014",
+   "q": "In un incrocio, l'individuo 1 ha genotipo AABBdd e l'individuo 2 ha genotipo aabbDD. Quale percentuale della loro progenie avrà fenotipo identico all'individuo 1, sapendo che i geni A, B e D sono a dominanza completa?",
+   "choices": [
+    "0%",
+    "75%",
+    "50%",
+    "33%",
+    "100%"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2015",
+   "q": "In un incrocio diibrido, alcuni dei discendenti hanno un fenotipo diverso rispetto a quello dei genitori. Quale delle seguenti affermazioni può spiegare il manifestarsi di questo fenotipo? 1. È avvenuta una mutazione. 2. I genitori sono entrambi eterozigoti per entrambi i geni. 3. Un genitore è eterozigote per entrambi i geni e l'altro genitore è omozigote recessivo per entrambi i geni.",
+   "choices": [
+    "Tutte",
+    "Solo 1 e 2",
+    "Solo 1 e 3",
+    "Solo 2 e 3",
+    "Solo 1"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2016",
+   "q": "Dall'incrocio tra due individui con genotipo Aa, quali genotipi e con quali probabilità si potranno avere in F1?",
+   "choices": [
+    "25% AA, 50% Aa, 25% aa",
+    "100% aa",
+    "100% AA",
+    "50% Aa, 50% aa",
+    "50% AA, 25% Aa, 25% aa"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2016",
+   "q": "Una pianta di pisello appartenente a una linea pura per semi lisci e verdi (RRyy) viene incrociata con una pianta di pisello appartenente a una linea pura per semi rugosi e gialli (rrYY). Quale dei seguenti genotipi si avrà nella generazione F1?",
+   "choices": [
+    "RrYy",
+    "RRYY",
+    "rrYY",
+    "RRyy",
+    "rryy"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2018",
+   "q": "Quanti tipi diversi di gameti sono prodotti da un individuo con genotipo AABbCc nel caso di geni indipendenti?",
+   "choices": [
+    "4",
+    "2",
+    "6",
+    "8",
+    "5"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2019",
+   "q": "Nei topi l'allele che determina il pelo nero (B) è dominante su quello che determina il pelo marrone (b) e l'allele che determina la coda corta (T) è dominante su quello che determina la coda lunga (t). Sapendo che i due geni responsabili del colore e della lunghezza del pelo non sono associati, con quale probabilità dall'incrocio di due individui con genotipo rispettivamente Bbtt e BbTt si otterranno individui con pelo nero e coda corta?",
+   "choices": [
+    "3/8",
+    "3/4",
+    "1/2",
+    "9/16",
+    "3/16"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2022",
+   "q": "Si considerino i seguenti incroci: 1. AA x aa; 2. Aa x Aa; 3. AA x Aa; 4. Aa x aa. Scegliere l'opzione che riporta solo gli incroci con probabilità nulla di avere figli con fenotipo recessivo.",
+   "choices": [
+    "1 e 3",
+    "1 e 2",
+    "1 e 4",
+    "3 e 4",
+    "2 e 4"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Se una pianta con fiori rosa (RR) viene incrociata con una pianta con fiori bianchi (rr), qual è la probabilità che la loro progenie abbia fiori rosa?",
+   "choices": [
+    "100%",
+    "75%",
+    "50%",
+    "25%",
+    "0%"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

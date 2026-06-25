@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fc-chim-u4-11-1",
+    "topicId": "chim-u4-11",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: un tampone nel sangue funziona come un ammortizzatore, cioè assorbe sia gli acidi in eccesso che le basi in eccesso, tenendo il pH quasi fermo vicino a 7,4.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 0,
+    "explain": "Vero. Un tampone è una coppia di sostanze: una cattura l'acido in arrivo, l'altra cattura la base. Risultato: il pH del sangue non si muove quasi per niente, restando tra 7,35 e 7,45. I tamponi principali del corpo sono bicarbonato (nel sangue), fosfato (nelle cellule e urine) e proteine come l'emoglobina.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-chim-u4-11-2",
+    "topicId": "chim-u4-11",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "Un cane respira affannosamente dopo una corsa: butta fuori molta CO2. Spiega cosa succede all'equilibrio CO2-bicarbonato nel sangue e se il pH sale o scende. Come si chiama la condizione se il pH supera 7,45?",
+    "answer": "La CO2 nel sangue fa parte dell'equilibrio: CO2 + H2O → bicarbonato + H+ (ione acido). Se si butta fuori molta CO2, quel lato 'acido' dell'equilibrio diminuisce: il sangue perde acidità, quindi il pH sale. Se sale sopra 7,45 si chiama alcalosi (in questo caso respiratoria). Il meccanismo opposto vale per l'acidosi: se la CO2 si accumula (respiro lento o bloccato), aumenta l'acido e il pH scende sotto 7,35.",
+    "explain": "Meno CO2 = meno acido = pH sale = alcalosi. Più CO2 = più acido = pH scende = acidosi. I polmoni controllano la CO2 in modo veloce (minuti); i reni controllano il bicarbonato in modo lento (ore-giorni).",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

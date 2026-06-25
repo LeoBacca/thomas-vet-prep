@@ -1,0 +1,109 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-11">
+
+Il **DNA** è il manuale di istruzioni del nostro corpo. Ma di cosa è fatto, in pratica? È fatto di tanti "mattoncini" uguali tra loro nello schema: si chiamano **nucleotidi**. Capire com'è fatto un nucleotide vuol dire capire di cosa sono fatti DNA e RNA, e anche l'**ATP**, cioè la "pila" che dà energia a ogni cellula.
+
+Partiamo dal pezzo più piccolo e saliamo, un passo alla volta.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un nucleotide è come un mattoncino LEGO fatto di 3 pezzi incastrati: una <strong>base azotata</strong> + uno <strong>zucchero</strong> + un <strong>fosfato</strong>. Tanti mattoncini in fila = DNA.</div>
+
+<Diagram caption="Un nucleotide è fatto di 3 pezzi incastrati" code={`flowchart LR
+  B["Base azotata<br/>(la 'lettera')"] --> N["NUCLEOTIDE"]
+  Z["Zucchero<br/>(ribosio o desossiribosio)"] --> N
+  F["Fosfato"] --> N`} />
+
+## Le basi azotate: le "lettere" del codice
+
+Una **base azotata** è una piccola molecola che contiene azoto (per questo si chiama "azotata"). Sono come le **lettere** di un alfabeto: cambiando l'ordine cambia il messaggio.
+
+Le basi sono 5 e si dividono in due famiglie:
+
+- **Purine** (più grandi): **adenina (A)** e **guanina (G)**.
+- **Pirimidine** (più piccole): **citosina (C)**, **timina (T)** e **uracile (U)**.
+
+Nel **DNA** usiamo A, G, C, T. Nell'**RNA** la timina (T) è sostituita dall'uracile (U). Un trucco per ricordarle: pensa a "AGCT" come le iniziali di una parola che ti inventi tu.
+
+Perché conta in medicina e veterinaria? Perché tutto il **codice genetico** di un cane, di un gatto o di un essere umano è scritto solo con queste poche lettere. Anche molti **farmaci antitumorali e antivirali** funzionano "fingendosi" basi sbagliate per bloccare la copia del DNA.
+
+## Dalla base al nucleoside, poi al nucleotide
+
+Ora costruiamo il mattoncino aggiungendo i pezzi, uno alla volta. È più facile di quanto sembri:
+
+- **Base + zucchero = nucleoside.** Hai attaccato la "lettera" allo zucchero. Manca ancora il fosfato.
+- **Nucleoside + fosfato = nucleotide.** Aggiungi il fosfato e il mattoncino è completo.
+
+In una parola: il **nucleoside** è il nucleotide *senza* fosfato. Aggiungi il fosfato e diventa **nucleotide**, pronto per entrare nel DNA.
+
+<Diagram caption="Si costruisce per passi: base → nucleoside → nucleotide" code={`flowchart LR
+  B["Base azotata"] --> NS["NUCLEOSIDE<br/>(base + zucchero)"]
+  Z["Zucchero"] --> NS
+  NS --> NT["NUCLEOTIDE<br/>(nucleoside + fosfato)"]
+  F["Fosfato"] --> NT`} />
+
+## L'ATP: la "pila ricaricabile" della cellula
+
+L'**ATP** (adenosina trifosfato) è un nucleotide speciale. È fatto come gli altri (base adenina + zucchero ribosio), ma invece di **un** fosfato ne ha **tre** in fila. Ed è proprio qui che si nasconde l'energia.
+
+I legami che tengono uniti gli ultimi due fosfati sono **legami ad alta energia**: immagina una molla compressa. Quando la cellula stacca l'ultimo fosfato, la molla scatta e **libera energia** subito utilizzabile. L'ATP diventa **ADP** (con due fosfati). Poi il corpo lo "ricarica" riattaccando il fosfato, come una pila ricaricabile.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ATP carico → stacca un fosfato → libera energia → diventa ADP (scarico) → si ricarica di nuovo. Avanti e indietro, tutto il giorno.</div>
+
+<Diagram caption="L'ATP libera energia staccando il fosfato all'estremità" code={`flowchart LR
+  A["ATP<br/>Adenina + Ribosio + 3 fosfati<br/>(carico)"] -->|"stacca 1 fosfato<br/>= LIBERA ENERGIA"| B["ADP<br/>Adenina + Ribosio + 2 fosfati<br/>(scarico)"]
+  B -->|"riattacca il fosfato<br/>= RICARICA"| A`} />
+
+Perché è così importante per chi studia medicina o veterinaria? Perché **ogni** cosa che fa il corpo costa energia: muovere un muscolo, far battere il cuore, digerire, far ragionare il cervello. Quell'energia arriva quasi sempre dall'ATP. Quando senti dire che "il corpo brucia zuccheri", in fondo significa che li usa per **produrre ATP**.
+
+## Guarda il video
+
+<YouTube id="3PndXnAiBnY" title="Nucleotidi ed ATP — spiegazione semplice (Agora Scienze Biomediche)" />
+
+<VideoVisto id="chim-u7-11" />
+
+## Da ricordare
+
+- Un **nucleotide** = **base azotata + zucchero + fosfato** (3 pezzi).
+- Le **basi** sono le "lettere": A, G (purine), C, T, U (pirimidine). Nel DNA c'è la T, nell'RNA c'è la U.
+- **Base + zucchero = nucleoside**; **nucleoside + fosfato = nucleotide**.
+- L'**ATP** è un nucleotide con **3 fosfati** e legami ad alta energia: è la "pila" che dà energia alla cellula.
+- Stacca un fosfato → l'ATP libera energia e diventa **ADP**; poi si ricarica.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Da quali 3 pezzi è fatto un nucleotide?"
+  opzioni={["base azotata + zucchero + fosfato", "solo due basi azotate", "zucchero + grasso + proteina", "acqua + sale + zucchero"]}
+  corretta={0}
+  spiegazione="Un nucleotide è il 'mattoncino' fatto da base azotata, zucchero e fosfato incastrati insieme."
+/>
+
+<Quiz
+  domanda="Qual è la differenza tra un nucleoside e un nucleotide?"
+  opzioni={["sono la stessa cosa", "il nucleoside non ha il fosfato; il nucleotide sì", "il nucleotide non ha lo zucchero", "il nucleoside ha tre fosfati"]}
+  corretta={1}
+  spiegazione="Base + zucchero = nucleoside. Se aggiungi anche il fosfato diventa nucleotide. Quindi il nucleoside è il nucleotide senza fosfato."
+/>
+
+<Quiz
+  domanda="Perché l'ATP è importante per la cellula?"
+  opzioni={["serve a colorare il sangue", "è la principale fonte di energia pronta all'uso", "tiene insieme le ossa", "serve solo nelle piante"]}
+  corretta={1}
+  spiegazione="L'ATP ha legami ad alta energia tra i fosfati: staccando un fosfato libera energia subito utilizzabile per ogni attività del corpo."
+/>
+
+<Esercizio
+  problema="L'ATP ha tre fosfati. La cellula ne stacca uno per ottenere energia. Come si chiama la molecola che resta e che cosa è stato liberato?"
+  soluzione="Resta l'ADP (adenosina difosfato), cioè la molecola con due fosfati. Staccando il fosfato è stata liberata energia, che la cellula usa subito. Poi l'ADP può essere 'ricaricato' di nuovo ad ATP riattaccando un fosfato."
+/>
+
+</section>
+
+</RisorsaLayout>

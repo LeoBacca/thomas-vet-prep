@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u6-09-1",
+    "topicId": "fis-u6-09",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: un condensatore immagazzina carica elettrica tra due piastre metalliche separate da un isolante, un po' come un serbatoio d'acqua che accumuli e poi rilasci liquido.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il condensatore funziona proprio come un serbatoio: lo 'riempi' collegandolo a una batteria (una piastra si carica positivamente, l'altra negativamente), poi lo 'svuoti' quando serve energia. La capacita C = Q/V misura quanta carica riesce a contenere per ogni volt di tensione.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-09-2",
+    "topicId": "fis-u6-09",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Hai due condensatori identici da 6 µF. Li colleghi in PARALLELO (ai due stessi punti del circuito). Che succede alla capacita equivalente rispetto ai singoli?",
+    "choices": [
+      "Aumenta: C_eq = C1 + C2 = 12 µF",
+      "Diminuisce: C_eq diventa 3 µF (meta di ciascuno)",
+      "Resta uguale: C_eq = 6 µF",
+      "E impossibile calcolarla senza conoscere la tensione"
+    ],
+    "answer": 0,
+    "explain": "In parallelo le capacita si sommano direttamente: C_eq = C1 + C2 = 6 + 6 = 12 µF. Immagina due serbatoi affiancati: il volume totale e la somma. La risposta 'meta di ciascuno' descrive invece la serie, non il parallelo: attenzione a non confondere i due casi!",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-09-3",
+    "topicId": "fis-u6-09",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra condensatori in SERIE e in PARALLELO: come cambia la capacita equivalente nei due casi, e perche in serie risulta sempre piu piccola?",
+    "answer": "In PARALLELO le capacita si sommano: C_eq = C1 + C2. Come due serbatoi affiancati, il volume totale cresce. In SERIE invece si usa la formula dei reciproci: 1/C_eq = 1/C1 + 1/C2. Questo da sempre un C_eq MINORE di ciascuno dei due condensatori. Perche? Perche in serie la stessa carica deve passare da un condensatore all'altro (il collo di bottiglia e quello con capacita minore): e come due serbatoi collegati in fila attraverso un tubo stretto, quello piu stretto limita tutto il flusso. Esempio: due condensatori da 3 µF in serie danno 1/(1/3+1/3) = 1,5 µF; gli stessi in parallelo danno 6 µF.",
+    "explain": "Serie: 1/C_eq = 1/C1 + 1/C2 → C_eq piu piccolo. Parallelo: C_eq = C1 + C2 → C_eq piu grande.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u6-09-4",
+    "topicId": "fis-u6-09",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Due condensatori uguali, ciascuno con capacita 80 µF, vengono collegati in parallelo. Qual e la capacita totale del sistema?",
+    "choices": [
+      "160 µF",
+      "40 µF",
+      "80 µF",
+      "400 µF",
+      "64 µF"
+    ],
+    "answer": 0,
+    "explain": "In parallelo le capacita si sommano direttamente: C_eq = 80 + 80 = 160 µF. La risposta '40 µF' e la trappola opposta: e il risultato della serie (1/C_eq = 1/80 + 1/80 = 2/80 → C_eq = 40 µF), non del parallelo. '80 µF' e la trappola di chi pensa che non cambi nulla. '400 µF' e un valore inventato senza senso fisico. '64 µF' e un filler fuori tema. Regola: parallelo → somma diretta, serie → somma di reciproci.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u6-09-5",
+    "topicId": "fis-u6-09",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Due condensatori con capacita 12 µF e 4 µF sono collegati in SERIE. Qual e la loro capacita equivalente?",
+    "choices": [
+      "3 µF",
+      "0,33 µF",
+      "16 µF",
+      "8 µF",
+      "4 µF"
+    ],
+    "answer": 0,
+    "explain": "In serie: 1/C_eq = 1/12 + 1/4 = 1/12 + 3/12 = 4/12, quindi C_eq = 12/4 = 3 µF. E sempre minore del condensatore piu piccolo (4 µF): se ottieni un risultato piu grande dei singoli, hai sbagliato formula. '16 µF' e la trappola opposta: e la somma diretta C1 + C2, valida per il parallelo non per la serie. '0,33 µF' confonde C_eq con 1/C_eq (restituisce il reciproco invece del valore finale). '8 µF' e la media aritmetica: non ha nulla a che fare con i condensatori. '4 µF' coincide con il condensatore piu piccolo: plausibile ma sbagliato, la serie riduce sempre ulteriormente.",
+    "tags": ["prova d'esame"]
+  }
+]

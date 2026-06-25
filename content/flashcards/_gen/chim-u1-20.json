@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-20-1",
+    "topicId": "chim-u1-20",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Qual è la differenza tra un legame forte e un'interazione debole (come il legame a idrogeno)?",
+    "choices": [
+      "Il legame forte tiene insieme i pezzi DENTRO una molecola, l'interazione debole tiene una molecola attaccata a quelle vicine",
+      "Sono la stessa identica cosa con due nomi diversi",
+      "Il legame forte unisce molecole diverse, l'interazione debole unisce gli atomi dentro la molecola",
+      "Le interazioni deboli esistono solo nei metalli"
+    ],
+    "answer": 0,
+    "explain": "Immagina un treno: i bulloni che tengono insieme i pezzi di un singolo vagone sono i legami forti (DENTRO la molecola). I ganci che attaccano un vagone all'altro sono le interazioni deboli (TRA molecole vicine). Sono cose diverse: ecco perché la risposta che dice 'la stessa cosa' o che inverte i due ruoli è sbagliata.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-20-2",
+    "topicId": "chim-u1-20",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: nel legame a idrogeno un atomo di idrogeno un po' positivo viene attratto da un atomo molto negativo (come l'ossigeno) di un'altra molecola.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Vale la regola delle calamite: il piu attira il meno. L'ossigeno tira a se le cariche negative e diventa un po' negativo, lasciando gli idrogeni un po' positivi; cosi l'H positivo di una molecola si aggancia all'O negativo di quella vicina. E lo stesso aggancio che tiene uniti i due filamenti del tuo DNA.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-20-3",
+    "topicId": "chim-u1-20",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Ogni singolo legame a idrogeno e debole e si rompe in un attimo. Allora come fa l'acqua a restare liquida a temperatura ambiente, invece di evaporare subito come un gas?",
+    "answer": "Perche i legami a idrogeno, anche se deboli presi uno per uno, sono moltissimi e agiscono tutti insieme. Ogni molecola d'acqua si aggancia a piu vicine formando una specie di rete: i singoli ganci si rompono e si riformano in continuazione, ma nell'insieme la rete resta robusta e tiene le molecole vicine e attaccate. Per separarle del tutto (cioe per far bollire l'acqua) serve parecchia energia, quindi a temperatura ambiente l'acqua resta liquida. Molecole simili ma senza legami a idrogeno, alla stessa temperatura, sarebbero invece gassose.",
+    "explain": "Idea chiave: tante forze deboli insieme valgono come una forza forte. E la 'forza del gruppo'.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-20-4",
+    "topicId": "chim-u1-20",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Perche l'ammoniaca (NH₃) bolle a una temperatura molto piu alta (−33 °C) della fosfina (PH₃, −88 °C), anche se le due molecole hanno una forma simile?",
+    "choices": [
+      "Perche la NH₃ forma facilmente legami a idrogeno tra le sue molecole, mentre la PH₃ quasi no",
+      "Perche la NH₃ NON forma legami a idrogeno, mentre la PH₃ si",
+      "Perche la NH₃ e un composto ionico, mentre la PH₃ e un composto molecolare",
+      "Perche la NH₃ e una molecola molto piu pesante della PH₃",
+      "Perche la NH₃ e un metallo che conduce corrente"
+    ],
+    "answer": 0,
+    "explain": "L'azoto (N) e molto negativo, quindi nella NH₃ gli idrogeni un po' positivi si agganciano agli azoti delle molecole vicine: tanti legami a idrogeno = serve piu energia per separarle = bolle piu in alto. Il fosforo (P) e molto meno negativo, quindi la PH₃ non forma quasi legami a idrogeno. La risposta che dice il contrario (NH₃ no, PH₃ si) e l'opposto esatto, una trappola. 'Ionico' e sbagliato: la NH₃ e una molecola, non un sale. E attenzione: la NH₃ e in realta piu LEGGERA della PH₃, quindi il peso non c'entra (anzi, gioca contro). Il 'metallo' e un filler fuori tema.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-20-5",
+    "topicId": "chim-u1-20",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un atomo di idrogeno legato a quale di questi gruppi di elementi puo agganciarsi (donare un legame a idrogeno) a una molecola vicina?",
+    "choices": [
+      "Sodio e cloro",
+      "Ossigeno, azoto, fluoro",
+      "Ossigeno, azoto, boro",
+      "Tutti i metalli",
+      "Cloro e alluminio"
+    ],
+    "answer": 1,
+    "explain": "Il legame a idrogeno si forma solo quando l'H e legato a un atomo MOLTO negativo (molto elettronegativo): i 'tre campioni' sono ossigeno, azoto e fluoro. 'Ossigeno, azoto, boro' e la trappola furba: i primi due sono giusti ma il boro non e abbastanza negativo, quindi tutta la risposta cade. Sodio, cloro e alluminio (e i metalli in generale) non sono abbastanza negativi: sono distrattori. Regola: H-bond solo con O, N, F.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u5-20-1",
+    "topicId": "bio-u5-20",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: l'endocitosi in fase fluida e selettiva, cioe la cellula sceglie quali molecole inghiottire dal liquido esterno.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'endocitosi in fase fluida e ASPECIFICA: la cellula inghiotte liquido extracellulare con tutto quello che contiene, senza scegliere nulla. E come bere un sorso d'acqua di fiume — prendi tutto il contenuto, non puoi selezionare solo quello che vuoi. La versione selettiva e l'endocitosi mediata da recettori.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-20-2",
+    "topicId": "bio-u5-20",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Nell'endocitosi mediata da recettori, cosa succede al recettore del ferro (transferrina) dopo che il ferro e stato rilasciato nell'endosoma?",
+    "choices": [
+      "Viene degradato nei lisosomi insieme alla transferrina",
+      "Rimane intrappolato nell'endosoma per sempre",
+      "Torna sulla membrana plasmatica per essere riutilizzato",
+      "Viene secreto all'esterno della cellula"
+    ],
+    "answer": 2,
+    "explain": "Il recettore per la transferrina viene riciclato: una volta che il pH acido dell'endosoma fa staccare il ferro, la proteina trasportatrice (ora chiamata apotransferrina, cioe senza ferro) torna in superficie insieme al recettore, pronta per un altro giro. E come un camion che scarica la merce al deposito e poi torna al punto di partenza a caricare di nuovo. Diverso dal recettore dell'EGF, che invece viene distrutto insieme al suo ligando.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-20-3",
+    "topicId": "bio-u5-20",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Un farmaco blocca l'acidificazione degli endosomi (cioe impedisce che il pH al loro interno diventi acido). Cosa succederebbe all'internalizzazione della transferrina e all'utilizzo del ferro da parte della cellula?",
+    "answer": "Senza pH acido nell'endosoma, il ferro non riesce a staccarsi dalla transferrina: la separazione ligando-recettore richiede proprio un ambiente acido. Il ferro non verrebbe quindi rilasciato nel citoplasma e la cellula non potrebbe utilizzarlo, anche se la transferrina e abbondante nel liquido extracellulare. Inoltre il recettore non potrebbe essere riciclato correttamente, perche la separazione dal ligando e necessaria perche il recettore torni sulla membrana: nel tempo, il numero di recettori disponibili sulla superficie cellulare diminuirebbe. Il risultato finale e una carenza di ferro intracellulare funzionale, nonostante la disponibilita esterna.",
+    "explain": "Punto chiave: il pH acido dell'endosoma e il meccanismo che 'sgancia' il ferro dalla transferrina e permette il riciclo del recettore. Bloccare l'acidificazione interrompe entrambi i passaggi.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-20-4",
+    "topicId": "bio-u5-20",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "L'introduzione di gocce di liquido all'interno della cellula mediante la formazione di vescicole per invaginazione della membrana plasmatica prende il nome di:",
+    "choices": [
+      "Pinocitosi",
+      "Fagocitosi",
+      "Osmosi",
+      "Adsorbimento",
+      "Imbibizione"
+    ],
+    "answer": 0,
+    "explain": "La pinocitosi (dal greco 'pinein' = bere) e esattamente questo: la membrana si incurva verso l'interno e forma piccole vescicole che contengono liquido extracellulare. E l'altro nome dell'endocitosi in fase fluida. Trappole: la FAGOCITOSI riguarda l'inglobamento di particelle solide (batteri, detriti), non liquido — e il termine che si scambia piu spesso con la pinocitosi. L'OSMOSI e il passaggio d'acqua attraverso una membrana semipermeabile, senza formazione di vescicole. Adsorbimento e imbibizione sono processi fisici completamente diversi, facilmente scartabili.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-20-5",
+    "topicId": "bio-u5-20",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale affermazione descrive correttamente il destino del recettore per EGF (fattore di crescita epidermico) dopo l'endocitosi, e perche e diverso da quello del recettore LDL?",
+    "choices": [
+      "Sia il recettore EGF che il recettore LDL vengono degradati nei lisosomi: e il modo normale di smaltire i recettori usati",
+      "Il recettore LDL viene degradato nei lisosomi perche il colesterolo e tossico; il recettore EGF viene riciclato",
+      "Il recettore EGF viene degradato nei lisosomi insieme all'EGF per spegnere il segnale di crescita; il recettore LDL invece viene riciclato",
+      "Entrambi i recettori vengono riciclati: la differenza e solo nella velocita del processo",
+      "Il recettore EGF viene secreto all'esterno della cellula; il recettore LDL viene degradato"
+    ],
+    "answer": 2,
+    "explain": "Il recettore dell'EGF e un caso speciale: sia il ligando sia il recettore finiscono nel lisosoma e vengono degradati. Questo 'spegne' il segnale di proliferazione cellulare — se il recettore fosse riciclato, la cellula riceverebbe segnali di crescita in modo incontrollato (e il tipo di alterazione alla base di certi tumori). Il recettore LDL, al contrario, viene riciclato sulla membrana per continuare a captare colesterolo. Trappole: l'opzione A e l'opposto esatto — fa sembrare la degradazione la norma per entrambi, mentre e l'eccezione. L'opzione B inverte i due recettori. L'opzione D dice che entrambi vengono riciclati, ignorando la via di degradazione dell'EGFR.",
+    "tags": ["prova d'esame"]
+  }
+]

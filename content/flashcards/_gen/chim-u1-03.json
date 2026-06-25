@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-03-1",
+    "topicId": "chim-u1-03",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Cosa decide QUALE elemento è un atomo (se è idrogeno, carbonio, ossigeno...)?",
+    "choices": [
+      "Il numero di neutroni nel nucleo",
+      "Il numero di protoni nel nucleo (il numero atomico Z)",
+      "Il peso totale dell'atomo in grammi",
+      "Il numero di elettroni persi o acquistati"
+    ],
+    "answer": 1,
+    "explain": "È il numero di protoni (Z) la 'carta d'identità' dell'elemento: 1 protone = idrogeno, 6 = carbonio, 8 = ossigeno. Cambi i protoni e cambi l'elemento. I neutroni cambiano solo il peso (fanno gli isotopi), non l'identità.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-03-2",
+    "topicId": "chim-u1-03",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: due isotopi dello stesso elemento (es. carbonio-12 e carbonio-14) si comportano chimicamente allo stesso modo.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Gli isotopi hanno lo stesso numero di protoni (e quindi di elettroni): sono come cani della stessa razza, uno un po' più pesante. Il comportamento chimico dipende dagli elettroni, che sono uguali; cambia solo il peso del nucleo (qualche neutrone in più o in meno).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-03-3",
+    "topicId": "chim-u1-03",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "L'ossigeno ha numero atomico Z = 8. Un suo atomo (neutro) ha numero di massa A = 16. Quanti protoni, elettroni e neutroni ha? E un atomo di ossigeno con A = 18 come si chiama rispetto al primo?",
+    "answer": "Protoni = Z = 8. Elettroni = 8, perché in un atomo neutro gli elettroni sono tanti quanti i protoni. Neutroni = A − Z = 16 − 8 = 8. L'atomo con A = 18 ha sempre Z = 8 (è sempre ossigeno, stesso numero di protoni), ma neutroni = 18 − 8 = 10: ha 2 neutroni in più. È quindi un isotopo del primo, chiamato ossigeno-18.",
+    "explain": "Da ricordare: protoni = Z, neutroni = A − Z, e gli isotopi hanno stesso Z ma A diverso.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-03-4",
+    "topicId": "chim-u1-03",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "L'isotopo carbonio-14, usato per datare ossa e reperti antichi, ha numero atomico 6 e numero di massa 14. Da quante particelle è fatto il suo atomo?",
+    "choices": [
+      "6 protoni, 7 neutroni, 6 elettroni",
+      "6 protoni, 8 neutroni, 6 elettroni",
+      "8 protoni, 6 neutroni, 8 elettroni",
+      "7 protoni, 7 neutroni, 7 elettroni",
+      "6 protoni, 8 neutroni, 8 elettroni"
+    ],
+    "answer": 1,
+    "explain": "Protoni = Z = 6 (è carbonio, sempre 6). Neutroni = A − Z = 14 − 6 = 8. Elettroni = 6 (atomo neutro, come i protoni). Le trappole: '6 protoni, 7 neutroni' è il carbonio-13, non il 14 (neutroni sbagliati di poco); '8 protoni...' confonde Z con i neutroni (8 è il numero di neutroni, non di protoni!); '7 protoni' cambierebbe l'elemento (sarebbe azoto, non carbonio). L'ultima sbaglia gli elettroni: in un atomo neutro sono uguali ai protoni, quindi 6 non 8.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-03-5",
+    "topicId": "chim-u1-03",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Gli isotopi 235 e 239 di uno stesso elemento (l'uranio, Z = 92) sono diversi perché il primo (235) possiede:",
+    "choices": [
+      "quattro neutroni in meno",
+      "quattro neutroni in più",
+      "quattro protoni in meno",
+      "due protoni e due neutroni in meno",
+      "una temperatura di fusione più alta"
+    ],
+    "answer": 0,
+    "explain": "Sono isotopi: stesso elemento, quindi STESSO numero di protoni (92). L'unica cosa che può cambiare sono i neutroni. Neutroni = A − Z: per il 235 sono 235 − 92 = 143, per il 239 sono 239 − 92 = 147. Differenza = 4 neutroni, e il 235 (A minore) ne ha 4 in meno. Le trappole: 'quattro neutroni in più' è l'opposto esatto (inverte il verso); 'quattro protoni in meno' è sbagliato perché se cambiano i protoni non sono più isotopi (sarebbe un altro elemento); 'due protoni e due neutroni in meno' cambia comunque i protoni (stessa trappola); la temperatura di fusione è un filler fuori tema, non c'entra con cosa distingue gli isotopi.",
+    "tags": ["prova d'esame"]
+  }
+]

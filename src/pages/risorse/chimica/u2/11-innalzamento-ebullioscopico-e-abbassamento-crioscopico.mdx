@@ -1,0 +1,97 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-11">
+
+L'acqua pura bolle a 100 °C e congela a 0 °C. Ma se ci sciogli dentro qualcosa, per esempio del sale o dello zucchero, questi due numeri **cambiano**: la soluzione bolle a una temperatura un po' **più alta** e congela a una temperatura un po' **più bassa**. È lo stesso motivo per cui in inverno si butta il sale sul ghiaccio per scioglierlo.
+
+Questi due effetti hanno un nome: **innalzamento ebullioscopico** (la temperatura di ebollizione che sale) e **abbassamento crioscopico** (la temperatura di congelamento che scende). Difficili da dire, semplici da capire.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> appena "sporchi" l'acqua sciogliendoci dentro qualcosa, l'acqua fa più fatica a bollire (bolle più tardi, a temperatura più alta) e fa più fatica a congelare (congela più tardi, a temperatura più bassa).</div>
+
+## Perché succede: il soluto "intralcia"
+
+Immagina le molecole d'acqua come tante persone in una stanza che vogliono uscire dalla porta. **Bollire** vuol dire scappare via dalla superficie e diventare vapore. **Congelare** vuol dire mettersi in ordine, ferme e in fila, per formare il ghiaccio.
+
+Adesso sciogli del sale nell'acqua. Le particelle di sale sono come **estranei sparsi in mezzo alla folla**: stanno in mezzo e danno fastidio.
+
+- Per **bollire**, le molecole d'acqua devono uscire, ma gli estranei in superficie le ostacolano. Quindi devi scaldare di più: serve **più temperatura** per far bollire. Ecco l'innalzamento ebullioscopico.
+- Per **congelare**, le molecole d'acqua devono mettersi in fila ordinata, ma gli estranei rovinano la fila. Quindi devi raffreddare di più: serve **meno temperatura** per congelare. Ecco l'abbassamento crioscopico.
+
+<Diagram caption="Acqua pura contro soluzione: come cambiano i due punti" code={`flowchart TB
+  A["Acqua pura"] --> A1["Congela a 0 °C"]
+  A --> A2["Bolle a 100 °C"]
+  B["Soluzione<br/>(acqua + soluto sciolto)"] --> B1["Congela SOTTO 0 °C<br/>(abbassamento crioscopico)"]
+  B --> B2["Bolle SOPRA 100 °C<br/>(innalzamento ebullioscopico)"]`} />
+
+## Conta quante particelle, non quali
+
+Ecco la cosa più importante e più sorprendente: a questi due effetti **non interessa che cosa** hai sciolto, ma solo **quante particelle** ci sono in giro. Sono come un buttafuori che conta le teste senza guardare in faccia nessuno.
+
+Per questo si chiamano **proprietà colligative**: dipendono dal **numero** di particelle disciolte, non dal loro tipo.
+
+Attenzione a un dettaglio utile: alcune sostanze, sciogliendosi, si **spezzano** in più pezzi. Il sale da cucina (NaCl) in acqua si divide in due particelle (Na+ e Cl-). Lo zucchero invece resta tutto intero, una particella sola. Quindi, a parità di quantità, il sale "disturba" il doppio dello zucchero: più particelle, effetto più forte.
+
+<Diagram caption="Più particelle disciolte = effetto più forte" code={`flowchart LR
+  Z["Zucchero<br/>resta 1 pezzo"] --> ZE["Effetto piccolo"]
+  S["Sale NaCl<br/>si spezza in 2 pezzi"] --> SE["Effetto doppio"]`} />
+
+## Perché conta per medicina e veterinaria
+
+Questo non è un gioco da chimici: succede dentro al corpo, di te e degli animali.
+
+- **Il sangue ha una concentrazione precisa di particelle disciolte** (sali, zuccheri). Per questo le flebo che si attaccano in vena sono "fisiologiche": hanno la stessa concentrazione del sangue. Se sbagli concentrazione, le cellule si gonfiano o si raggrinziscono.
+- **L'antigelo nei radiatori delle auto** sfrutta proprio l'abbassamento crioscopico: aggiungi una sostanza all'acqua così non congela d'inverno. Alcuni animali in natura fanno la stessa cosa nel sangue per non congelare al freddo.
+- **Sale sulle strade ghiacciate**: il sale abbassa il punto di congelamento dell'acqua sotto 0 °C, così il ghiaccio si scioglie anche se fa freddo. Stesso identico principio.
+
+## Guarda il video
+
+<YouTube id="uhUB2Q0U590" title="Abbassamento crioscopico e innalzamento ebullioscopico — spiegazione" />
+
+<VideoVisto id="chim-u2-11" />
+
+## Da ricordare
+
+- Sciogliere qualcosa nell'acqua la fa **bollire più tardi** (temperatura più alta) e **congelare più tardi** (temperatura più bassa).
+- **Innalzamento ebullioscopico** = il punto di ebollizione sale. **Abbassamento crioscopico** = il punto di congelamento scende.
+- Sono **proprietà colligative**: conta **quante** particelle hai sciolto, non **quali**.
+- Una sostanza che si spezza in più pezzi (come il sale NaCl) fa effetto **più forte** di una che resta intera (come lo zucchero).
+- Esempi quotidiani: il **sale sul ghiaccio** delle strade e l'**antigelo** delle auto.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa succede al punto di ebollizione dell'acqua se ci sciogli dentro del sale?"
+  opzioni={["resta a 100 °C", "diventa più alto di 100 °C", "diventa più basso di 100 °C", "l'acqua non bolle più"]}
+  corretta={1}
+  spiegazione="Sciogliendo un soluto, la soluzione bolle a una temperatura più alta: è l'innalzamento ebullioscopico. Le particelle disciolte ostacolano l'uscita delle molecole d'acqua, quindi serve più calore."
+/>
+
+<Quiz
+  domanda="Perché si butta il sale sulle strade ghiacciate d'inverno?"
+  opzioni={["perché il sale scalda", "perché abbassa il punto di congelamento, così il ghiaccio si scioglie", "perché alza il punto di ebollizione", "perché il sale brucia il ghiaccio"]}
+  corretta={1}
+  spiegazione="Il sale provoca l'abbassamento crioscopico: l'acqua salata congela sotto 0 °C, quindi il ghiaccio si scioglie anche con il freddo."
+/>
+
+<Quiz
+  domanda="Le proprietà colligative dipendono da:"
+  opzioni={["il tipo di sostanza sciolta", "il colore della soluzione", "il numero di particelle sciolte", "la temperatura della stanza"]}
+  corretta={2}
+  spiegazione="Dipendono solo dal numero di particelle disciolte, non da quali sono. Per questo, a parità di quantità, il sale (che si spezza in 2) fa più effetto dello zucchero (che resta 1)."
+/>
+
+<Esercizio
+  problema="Hai due bicchieri d'acqua identici. Nel primo sciogli un cucchiaino di zucchero (che resta in 1 pezzo), nel secondo un cucchiaino di sale NaCl (che si spezza in 2 pezzi). Quale dei due congelerà a temperatura più bassa?"
+  soluzione="Quello con il sale. Il sale si divide in 2 particelle, quindi a parità di quantità mette in giro il doppio delle particelle rispetto allo zucchero. Più particelle disciolte = abbassamento crioscopico più forte = congela a temperatura più bassa."
+/>
+
+</section>
+
+</RisorsaLayout>

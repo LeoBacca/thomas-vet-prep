@@ -1,0 +1,179 @@
+{
+ "id": "chim-u1-09",
+ "titolo": "Le proprietà periodiche (raggio, ionizzazione, affinità, elettronegatività)",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "09-le-proprieta-periodiche-raggio-ionizzazione-affinita",
+ "freq": 12,
+ "risorseMdx": "src/pages/risorse/chimica/u1/09-le-proprieta-periodiche-raggio-ionizzazione-affinita.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Nella tavola periodica degli elementi il potenziale di ionizzazione:",
+   "choices": [
+    "decresce progressivamente procedendo dall'alto verso il basso lungo un gruppo",
+    "cresce progressivamente procedendo dall'alto verso il basso lungo un gruppo",
+    "resta invariato",
+    "è maggiore nei metalli rispetto ai non metalli",
+    "decresce all'interno dei primi tre gruppi, resta invariato negli altri"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2007",
+   "q": "Tra l'atomo neutro Ne e lo ione Na+ è:",
+   "choices": [
+    "più piccolo lo ione Na+",
+    "più piccolo l'atomo Ne",
+    "impossibile prevedere chi è più piccolo",
+    "più piccolo Ne ma ha massa maggiore",
+    "più piccolo Ne ma ha massa minore"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2008",
+   "q": "Si definisce elettronegatività la capacità di un elemento di:",
+   "choices": [
+    "attirare gli elettroni di legame",
+    "attirare verso il nucleo i suoi elettroni più esterni",
+    "cedere energia all'interno di un legame",
+    "respingere gli elettroni di legame",
+    "assorbire energia di legame"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2013",
+   "q": "Quale delle seguenti configurazioni elettroniche rende l'atomo neutro che la possiede piu facilmente ionizzabile?",
+   "choices": [
+    "1s2 2s2 2p5",
+    "1s2 2s2 2p2",
+    "1s2 2s2 2p3",
+    "1s2 2s2 2p4",
+    "1s2 2s2 2p6"
+   ],
+   "correct": 1,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2013",
+   "q": "Il sodio (Na) precede il potassio (K) nel Gruppo 1 della tavola periodica. Quale/i delle seguenti affermazioni e/sono corretta/e relativamente a questi due elementi? 1. Un atomo di sodio e piu grande di un atomo di potassio. 2. Il potassio e piu reattivo del sodio. 3. Entrambi formano ioni 2+ in composti presenti in natura. 4. Entrambi hanno una configurazione elettronica esterna s2p1.",
+   "choices": [
+    "Solo la 2",
+    "Solo la 1",
+    "Solo la 3",
+    "Solo la 4",
+    "1 e 2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2014",
+   "q": "Qual è l'affermazione corretta relativa al Periodo 3 della Tavola Periodica andando da sinistra a destra, da Na a Cl?",
+   "choices": [
+    "I raggi atomici diminuiscono",
+    "Il carattere metallico aumenta",
+    "Vengono progressivamente riempiti gli orbitali 3d",
+    "Il numero di livelli elettronici occupati aumenta",
+    "L'elettronegatività diminuisce"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2014",
+   "q": "La tabella riporta le energie di ionizzazione successive di un elemento del Periodo 3 della Tavola Periodica degli Elementi. A quale gruppo della Tavola Periodica appartiene questo elemento?",
+   "choices": [
+    "Gruppo 14",
+    "Gruppo 1",
+    "Gruppo 2",
+    "Gruppo 13",
+    "Gruppo 15"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2015",
+   "q": "Il sodio ha numero atomico 11 e il magnesio 12. Lo ione Na+ è più grande dello ione Mg2+. Quale delle seguenti affermazioni spiega la differenza di grandezza tra gli ioni?",
+   "choices": [
+    "L'atomo di magnesio ha una carica nucleare maggiore dell'atomo di sodio",
+    "Lo ione sodio ha più elettroni dello ione magnesio",
+    "Lo ione magnesio ha meno orbitali dello ione sodio",
+    "L'atomo di sodio è più elettronegativo dell'atomo di magnesio",
+    "L'atomo di sodio acquista un solo elettrone"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2019",
+   "q": "Considerando gli elementi della tavola periodica, a partire dal secondo periodo, quale delle seguenti affermazioni è corretta?",
+   "choices": [
+    "I gas nobili hanno raggio atomico minore di quello del metallo alcalino dello stesso periodo",
+    "I metalli alcalino-terrosi hanno energia di seconda ionizzazione minore di quella di prima ionizzazione",
+    "Il carattere metallico diminuisce in ogni gruppo procedendo dall'alto verso il basso",
+    "I semimetalli sono elementi di transizione",
+    "L'elettronegatività è la variazione di energia potenziale dovuta all'aggiunta di un elettrone a un atomo neutro"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2020",
+   "q": "L'energia di prima ionizzazione del magnesio (12Mg) è superiore a quella dell'alluminio (13Al). Qual è il motivo di questo comportamento?",
+   "choices": [
+    "Rimuovendo un elettrone dall'alluminio si ottiene uno ione con un sottolivello pieno",
+    "L'alluminio è meno elettronegativo del magnesio",
+    "Il raggio atomico dell'alluminio è superiore a quello del magnesio",
+    "L'alluminio possiede più protoni del magnesio",
+    "L'alluminio possiede più neutroni del magnesio"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "H, Li e Na hanno energie di prima ionizzazione via via decrescenti. Il motivo di questo comportamento è che:",
+   "choices": [
+    "l'energia di prima ionizzazione è una proprietà periodica",
+    "l'elettronegatività di H in scala di Pauling (2,20) è maggiore di quella di Li (0,98), la quale a sua volta è maggiore di quella di Na (0,93)",
+    "l'affinità elettronica di H (-73 kJ/mol) è più negativa di quella di Li (-60 kJ/mol), la quale a sua volta è più negativa di quella di Na (-53 kJ/mol)",
+    "per ionizzarsi, H, Li e Na devono acquisire elettroni che occuperanno orbitali 1s, 2s e 3s, rispettivamente",
+    "il potenziale di ionizzazione diminuisce lungo un periodo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Quale tra i seguenti elementi non si trova mai in natura allo stato elementare, ma solo sotto forma di composti?",
+   "choices": [
+    "Sodio",
+    "Carbonio",
+    "Argento",
+    "Azoto",
+    "Argon"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

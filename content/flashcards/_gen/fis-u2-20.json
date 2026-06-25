@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-20-1",
+    "topicId": "fis-u2-20",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: quando spingi una porta vicino al cardine (perno), il momento torcente e piu grande rispetto a quando la spingi lontano dal cardine con la stessa forza.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il momento torcente e M = F × d: piu sei LONTANO dal perno, maggiore e d e quindi maggiore il momento. Spingi vicino al cardine → piccolo d → piccolo M → la porta gira a fatica. Per questo il pomello e sempre dall'altra parte rispetto al cardine.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-20-2",
+    "topicId": "fis-u2-20",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Nel corpo umano, quando il bicipite flette il braccio, siamo di fronte a una leva di quale genere? E cosa si guadagna rispetto a cosa si 'paga'?",
+    "choices": [
+      "Leva di 3° genere: il muscolo lavora vicino al gomito (fulcro) e deve esercitare forza elevata, ma il movimento e veloce e ampio",
+      "Leva di 1° genere: il fulcro e tra la forza muscolare e il peso, come una bilancia",
+      "Leva di 2° genere: il peso e tra il fulcro e il muscolo, come quando ci si alza sulla punta dei piedi",
+      "Non e una leva: il bicipite spinge direttamente, non ruota attorno a un punto fisso"
+    ],
+    "answer": 0,
+    "explain": "Leva di 3°: fulcro = gomito, forza = bicipite (inserzione vicina al gomito), resistenza = peso in mano (lontano). Distanza muscolo-fulcro piccola → il muscolo deve tirare CON MOLTA FORZA per un effetto piccolo. Compenso: velocita e ampiezza del movimento sono grandi. E la leva piu comune nel corpo degli animali.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-20-3",
+    "topicId": "fis-u2-20",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Hai una bilancia a bracci (una sbarra sul fulcro). A sinistra, a 0,4 m dal centro, appendi un peso di 20 N. A destra vuoi appendere un peso di 16 N. A che distanza dal fulcro lo devi mettere per avere equilibrio? Spiega il ragionamento usando il concetto di momento torcente.",
+    "answer": "Per l'equilibrio rotazionale la somma dei momenti torcenti deve essere zero: il momento orario (destro) deve uguagliare il momento antiorario (sinistro). Momento sinistro = 20 N × 0,4 m = 8 N·m. Momento destro = 16 N × d. Uguaglio: 16 × d = 8 → d = 8 / 16 = 0,5 m. Il peso di 16 N va appeso a 0,5 m dal fulcro sul lato destro. Logica: il peso minore (16 N < 20 N) deve stare PIU LONTANO dal fulcro per compensare il momento maggiore del lato sinistro. Stessa logica di due bambini sull'altalena: il piu leggero si sposta verso l'esterno.",
+    "explain": "Chiave: equilibrio rotazionale ↔ Σ momenti = 0 ↔ M_sx = M_dx ↔ F1×d1 = F2×d2. Peso minore → distanza maggiore.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-20-4",
+    "topicId": "fis-u2-20",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Una forza di 20 N e applicata perpendicolarmente a un'asta lunga 1,5 m, in una delle sue estremita. L'asse di rotazione passa per l'altra estremita. Qual e il momento torcente sull'asta?",
+    "choices": [
+      "30 N·m",
+      "13,3 N·m",
+      "0,075 N·m",
+      "30 N",
+      "13,3 N"
+    ],
+    "answer": 0,
+    "explain": "M = F × d = 20 N × 1,5 m = 30 N·m. Trappole: 13,3 N·m viene da 20/1,5 (hai diviso invece di moltiplicare — errore classico di chi confonde la formula). 0,075 N·m e assurdo (1,5/20 = quasi zero). 30 N e 13,3 N sono valori numericamente plausibili ma con unita sbagliate: il momento torcente si misura in N·m, NON in N (la forza da sola non dice nulla sulla rotazione).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-20-5",
+    "topicId": "fis-u2-20",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sull'equilibrio rotazionale di un corpo rigido e CORRETTA?",
+    "choices": [
+      "Il corpo deve essere necessariamente fermo: se ruota, anche a velocita costante, NON e in equilibrio rotazionale",
+      "La somma di tutti i momenti torcenti attorno al fulcro deve essere zero",
+      "La somma di tutte le forze applicate al corpo deve essere zero",
+      "I momenti torcenti in senso orario devono essere individualmente uguali a quelli antiorari",
+      "Il fulcro deve trovarsi sempre al centro geometrico del corpo"
+    ],
+    "answer": 1,
+    "explain": "Corretta la B: equilibrio rotazionale ↔ Σ momenti = 0 (momenti orari = antiorari in totale). Trappole: A e sbagliata perche un corpo che ruota a velocita COSTANTE E in equilibrio rotazionale (come un ventilatore a regime). C riguarda l'equilibrio TRASLAZIONALE (forze), non rotazionale: sono condizioni diverse e indipendenti. D e quasi giusta ma sbagliata: non serve che ogni coppia sia uguale, basta che la SOMMA TOTALE sia zero. E e falsa: il fulcro puo stare ovunque (es. porta: il cardine e sul bordo, non al centro).",
+    "tags": ["prova d'esame"]
+  }
+]

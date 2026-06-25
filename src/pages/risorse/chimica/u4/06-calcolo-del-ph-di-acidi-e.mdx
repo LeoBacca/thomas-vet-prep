@@ -1,0 +1,109 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-06">
+
+Il **pH** è un numero che ti dice quanto una soluzione è **acida** o **basica**. Va da **0 a 14**: più è basso, più è acido (come il succo di limone); più è alto, più è basico (come il sapone); a metà, intorno a **7**, è neutro (l'acqua pura). Calcolare il pH vuol dire trovare quel numero partendo da quanto acido o base abbiamo sciolto nell'acqua.
+
+Questo conta tantissimo nel corpo: il nostro sangue deve restare quasi sempre a **pH 7,4**. Se si sposta anche solo di poco, stiamo male. Il succo gastrico dello stomaco, invece, è acidissimo (pH intorno a 1-2) e serve a digerire.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il pH è il "termometro" dell'acidità. La formula base è una sola: pH = -log[H+], cioè conti quanti ioni H+ (gli "ioni dell'acidità") ci sono nell'acqua.</div>
+
+L'unica differenza, quando calcoli il pH, è **forte o debole**. Pensa a due persone che entrano in piscina: una si tuffa tutta subito (acido **forte**: si dissocia al 100%), l'altra entra solo con i piedi (acido **debole**: si dissocia solo un pochino). Questo cambia il modo di fare il conto.
+
+<Diagram caption="I passaggi per calcolare il pH, a seconda del tipo di soluzione" code={`flowchart TB
+  S["Soluzione: acido o base?"] --> A["ACIDO"]
+  S --> B["BASE"]
+  A --> AF["Forte: dissocia al 100%<br/>[H+] = concentrazione<br/>pH = -log[H+]"]
+  A --> AD["Debole: dissocia poco<br/>[H+] = radice di (Ka x C)<br/>pH = -log[H+]"]
+  B --> BF["Forte: dissocia al 100%<br/>[OH-] = concentrazione<br/>pOH = -log[OH-]<br/>pH = 14 - pOH"]
+  B --> BD["Debole: dissocia poco<br/>[OH-] = radice di (Kb x C)<br/>pOH = -log[OH-]<br/>pH = 14 - pOH"]`} />
+
+## Acidi e basi FORTI: il conto facile
+
+Un acido **forte** (come l'acido cloridrico HCl) si scioglie completamente in acqua: ogni molecola libera il suo ione H+. È come versare zucchero in un tè caldo e mescolare: si scioglie tutto.
+
+Quindi la concentrazione di ioni H+ è **uguale** alla concentrazione dell'acido che hai messo. Il conto è diretto:
+
+- **pH = -log[H+]**
+
+Esempio: se hai HCl a concentrazione 0,01 (cioè 10^-2), allora [H+] = 0,01 e pH = 2.
+
+Per una **base forte** (come la soda NaOH) succede la stessa cosa, ma libera ioni OH- (gli "ioni della basicità"). Allora:
+
+- prima calcoli **pOH = -log[OH-]**
+- poi **pH = 14 - pOH**
+
+<div class="callout">💡 <strong>In parole semplici:</strong> con i forti non devi pensare troppo: la concentrazione che hai messo è già la concentrazione di ioni. Calcola il logaritmo e hai finito.</div>
+
+## Acidi e basi DEBOLI: si dissociano solo un po'
+
+Un acido **debole** (come l'acido acetico, quello dell'aceto) NON libera tutti i suoi H+: ne libera solo una piccola parte. È come quella persona che entra in piscina solo con i piedi. Per questo non possiamo dire che [H+] sia uguale alla concentrazione di partenza: sarebbe troppo.
+
+Per sapere "quanto poco" si dissocia, usiamo un numero chiamato **Ka** (la costante che misura la forza dell'acido: più è piccola, più l'acido è debole). La formula diventa:
+
+- **[H+] = radice quadrata di (Ka per C)** dove C è la concentrazione iniziale
+- poi come sempre **pH = -log[H+]**
+
+Per una **base debole** (come l'ammoniaca) è lo stesso ragionamento, ma con la **Kb** e con gli ioni OH-:
+
+- **[OH-] = radice quadrata di (Kb per C)**
+- poi **pOH = -log[OH-]** e infine **pH = 14 - pOH**
+
+Questo è molto rilevante in medicina: i **sistemi tampone** del sangue (come il bicarbonato) sono fatti proprio di acidi e basi deboli. Sono deboli **apposta**: così reagiscono "con calma" e tengono il pH del sangue stabile a 7,4, senza farlo oscillare troppo.
+
+<Diagram caption="Forte contro debole: cosa cambia nel conto" code={`flowchart LR
+  F["ACIDO FORTE<br/>dissocia al 100%"] --> FC["[H+] = C<br/>(uguale alla concentrazione)"]
+  D["ACIDO DEBOLE<br/>dissocia poco"] --> DC["[H+] = radice di (Ka x C)<br/>(serve la Ka)"]`} />
+
+## Guarda il video
+
+<YouTube id="IRhoznUhxeU" title="Calcolare il pH: acidi e basi forti e deboli — La Chimica per Tutti" />
+
+<VideoVisto id="chim-u4-06" />
+
+## Da ricordare
+
+- Il **pH** misura l'acidità: va da 0 (acidissimo) a 14 (basicissimo), 7 è neutro.
+- Formula base sempre uguale: **pH = -log[H+]**.
+- **Forti**: si dissociano al 100%, quindi [H+] (o [OH-]) è uguale alla concentrazione messa.
+- **Deboli**: si dissociano poco, quindi [H+] = radice di (Ka per C) e [OH-] = radice di (Kb per C).
+- Per le **basi** calcoli prima il **pOH** e poi fai **pH = 14 - pOH**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa significa un pH basso, per esempio pH = 2?"
+  opzioni={["la soluzione è basica", "la soluzione è neutra", "la soluzione è molto acida", "non si può calcolare"]}
+  corretta={2}
+  spiegazione="Più il pH è basso (vicino a 0), più la soluzione è acida. pH 2 è molto acido, come il succo gastrico dello stomaco."
+/>
+
+<Quiz
+  domanda="Per un acido FORTE, la concentrazione di ioni H+ è:"
+  opzioni={["uguale alla concentrazione dell'acido messo", "sempre zero", "la radice quadrata della concentrazione", "uguale a 14"]}
+  corretta={0}
+  spiegazione="L'acido forte si dissocia al 100%, quindi ogni molecola libera il suo H+: [H+] è uguale alla concentrazione iniziale."
+/>
+
+<Quiz
+  domanda="Per calcolare il pH di una BASE forte, dopo aver trovato il pOH devi:"
+  opzioni={["fare pH = pOH", "fare pH = 14 - pOH", "fare pH = pOH + 14", "non serve il pOH"]}
+  corretta={1}
+  spiegazione="Per le basi calcoli prima il pOH dagli ioni OH-, poi usi pH = 14 - pOH per arrivare al pH."
+/>
+
+<Esercizio
+  problema="Hai una soluzione di acido cloridrico (HCl, un acido forte) a concentrazione 0,001 (cioè 10^-3). Quanto vale il pH?"
+  soluzione="L'HCl è forte, quindi si dissocia al 100% e [H+] = 0,001 = 10^-3. Allora pH = -log(10^-3) = 3. La soluzione è acida (pH = 3)."
+/>
+
+</section>
+
+</RisorsaLayout>

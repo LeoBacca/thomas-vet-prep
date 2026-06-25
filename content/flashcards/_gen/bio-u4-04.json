@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u4-04-1",
+    "topicId": "bio-u4-04",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Una pianta ha genotipo Gg (un allele G dominante e uno g recessivo). Quando forma i gameti (ovuli o polline), cosa finisce in ciascun gamete?",
+    "choices": [
+      "Entrambi gli alleli insieme, Gg",
+      "Un solo allele: metà dei gameti porta G, metà porta g",
+      "Sempre e solo l'allele dominante G",
+      "Due copie dell'allele recessivo, gg"
+    ],
+    "answer": 1,
+    "explain": "È la prima legge di Mendel (segregazione): i due alleli si separano quando si formano i gameti, e ogni gamete ne riceve uno solo. È come avere in mano due carte e darne una sola per volta: metà dei gameti riceve la carta G, metà la carta g.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-04-2",
+    "topicId": "bio-u4-04",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: la seconda legge di Mendel (assortimento indipendente) dice che il gene per il colore del seme e quello per la forma del seme si distribuiscono nei gameti in modo indipendente, qualunque sia la loro posizione sui cromosomi.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'assortimento indipendente vale con certezza solo se i due geni stanno su cromosomi diversi (o molto distanti sullo stesso cromosoma). Se sono vicini sullo stesso cromosoma, tendono a viaggiare insieme (linkage) e il rapporto classico 9:3:3:1 non si osserva. È come lanciare due monete separate: i risultati sono indipendenti solo se le monete non sono incollate.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-04-3",
+    "topicId": "bio-u4-04",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "open",
+    "q": "Incroci due piante Gg x Gg (entrambe a semi gialli, ma portatrici dell'allele verde g). Disegna mentalmente il quadrato di Punnett: quali genotipi escono, in quale rapporto, e quale rapporto di colori (fenotipo) ti aspetti?",
+    "answer": "Ogni genitore produce due tipi di gamete: G e g. Combinandoli nel quadrato di Punnett 2x2 si ottengono 1 GG, 2 Gg, 1 gg, cioè il rapporto genotipico 1:2:1. Per il fenotipo: GG e Gg mostrano entrambi il giallo (G domina su g), quindi 3 piante su 4 sono gialle e 1 su 4 è verde. Il rapporto fenotipico atteso è 3 gialli : 1 verde (3:1), il classico risultato dell'incrocio tra due eterozigoti.",
+    "explain": "Da ricordare: Aa x Aa da' sempre 1:2:1 di genotipo e 3:1 di fenotipo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u4-04-4",
+    "topicId": "bio-u4-04",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "L'albinismo dipende dall'allele recessivo a (chi è albino è aa). Un uomo di colorito normale, figlio di genitori e nonni tutti normali, sposa una donna normale che ha però un genitore albino. Qual è la probabilità che il loro primo figlio sia albino?",
+    "choices": [
+      "50%, perché un genitore della coppia ha un parente albino",
+      "Praticamente nulla",
+      "25%, come in ogni incrocio tra portatori",
+      "100%, perché l'allele albino è presente in famiglia",
+      "Dipende dal sesso del figlio"
+    ],
+    "answer": 1,
+    "explain": "Per essere albino il figlio deve ricevere a da entrambi i genitori. La donna è di sicuro portatrice (Aa): suo padre albino (aa) le ha passato per forza un a. Ma l'uomo viene da una famiglia tutta normale: non c'è ragione di pensare che porti l'allele a, quindi è quasi certamente AA e non puo' trasmettere a. Senza la a dal padre, il figlio non puo' essere aa: probabilita' praticamente nulla. Le trappole: il 25% (opposto della giusta) vale solo se ENTRAMBI i genitori sono portatori Aa, ma qui l'uomo non lo è; il 50% e il 100% confondono 'avere un parente albino' con 'trasmettere la malattia'; il sesso non c'entra perche' il gene è autosomico.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u4-04-5",
+    "topicId": "bio-u4-04",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Quanti tipi diversi di gameti puo' produrre un individuo con genotipo AABbCc, sapendo che i tre geni stanno su cromosomi diversi (sono indipendenti)?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "2",
+      "3"
+    ],
+    "answer": 0,
+    "explain": "Conta solo i geni eterozigoti, perche' solo loro danno gameti diversi. AA è omozigote: da' sempre A (1 sola scelta). Bb da' B o b (2 scelte). Cc da' C o c (2 scelte). Si moltiplicano le scelte: 1 x 2 x 2 = 4 tipi di gamete (ABC, ABc, AbC, Abc). Le trappole: 8 = 2x2x2 (sbagliato perche' tratta anche AA come eterozigote); 6 = 2+2+2 (errore tipico: sommare invece di moltiplicare); 2 considera un solo gene; 3 conta i geni anziche' le combinazioni.",
+    "tags": ["prova d'esame"]
+  }
+]

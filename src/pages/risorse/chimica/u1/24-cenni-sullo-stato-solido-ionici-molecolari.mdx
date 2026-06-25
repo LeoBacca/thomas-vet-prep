@@ -1,0 +1,89 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-24">
+
+Un **solido** è una sostanza dove le particelle stanno ferme e ben ordinate, una accanto all'altra, come i mattoncini di un muro. Ma non tutti i solidi sono uguali: dipende da **cosa** tiene "incollate" tra loro quelle particelle. Quella "colla" cambia tutto, e spiega perché il sale si scioglie nell'acqua, perché il diamante è durissimo e perché un cucchiaio di metallo conduce il calore.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> per capire un solido, chiediti una cosa sola: <strong>chi tiene insieme le particelle?</strong> La risposta divide i solidi in 4 famiglie.</div>
+
+I solidi che hanno questa struttura ordinata e ripetuta si chiamano **cristallini**: le particelle formano un disegno regolare che si ripete uguale in tutte le direzioni, e questo disegno si chiama **reticolo**. Vediamo le 4 famiglie a confronto.
+
+<Diagram caption="Le 4 famiglie di solido, divise per chi tiene insieme le particelle" code={`flowchart TB
+  S["SOLIDO<br/>chi tiene insieme le particelle?"] --> I["IONICO<br/>ioni + e ioni -<br/>(es. sale da cucina)"]
+  S --> M["MOLECOLARE<br/>molecole con forze deboli<br/>(es. ghiaccio, zucchero)"]
+  S --> C["COVALENTE<br/>atomi legati in rete fissa<br/>(es. diamante)"]
+  S --> ME["METALLICO<br/>atomi in un mare di elettroni<br/>(es. ferro, rame)"]`} />
+
+## Solidi ionici e solidi molecolari
+
+**Solidi ionici.** Sono fatti di **ioni**: particelle con carica elettrica, alcune positive (+) e alcune negative (-). Cariche opposte si attraggono fortissimo, quindi si dispongono in modo ordinato alternandosi: +, -, +, -, come le caselle bianche e nere di una scacchiera. L'esempio perfetto è il **sale da cucina** (cloruro di sodio). Sono solidi **duri** ma **fragili**, hanno una temperatura di fusione **alta** e, sciolti in acqua, **conducono la corrente** (perché gli ioni si liberano). Aggancio biomedico: gli ioni del sale, come **sodio** e **cloro**, una volta nel corpo regolano l'acqua, i nervi e i muscoli. Sono gli stessi ioni della **flebo** (soluzione fisiologica).
+
+**Solidi molecolari.** Qui le particelle sono **molecole** intere (come l'acqua, H2O, o lo zucchero). Le molecole sono tenute insieme da forze **deboli**, quasi delle "calamite leggere". Risultato: sono solidi **morbidi**, si sciolgono o fondono a temperatura **bassa**. Pensa al **ghiaccio**: basta poco calore (anche solo la mano) per scioglierlo. Anche **burro** e **cioccolato** sono solidi molecolari, ed è per questo che si squagliano facilmente.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ionico = pugno forte tra cariche + e - (duro, fonde caldo). Molecolare = abbraccio debole tra molecole (morbido, fonde freddo).</div>
+
+## Solidi covalenti e solidi metallici
+
+**Solidi covalenti.** Qui gli atomi sono legati l'uno all'altro da legami **fortissimi** che formano una **rete unica e continua**, come una rete da pesca dove ogni nodo è attaccato saldamente agli altri. L'esempio re è il **diamante**: tutti gli atomi di carbonio legati tra loro. Per questo è il materiale **più duro** che conosciamo e fonde solo a temperature altissime. Sono come un unico, gigantesco "blocco" senza punti deboli.
+
+**Solidi metallici.** Immagina tante palline (gli atomi del metallo) immerse in un **"mare" di elettroni** liberi che scorrono tra loro. Quegli elettroni liberi sono il segreto: rendono i metalli capaci di **condurre l'elettricità e il calore**, di essere **lucidi** e di **piegarsi senza rompersi** (li puoi martellare in lamine o tirare in fili). È per questo che il manico metallico di una pentola scotta in fretta. Aggancio biomedico: il **ferro** è un metallo fondamentale nel sangue (dentro l'emoglobina, trasporta l'ossigeno), e lo strumentario veterinario in **acciaio** sfrutta proprio resistenza e conducibilità dei metalli.
+
+<Diagram caption="Confronto rapido: come sono fatti e come si comportano i 4 reticoli" code={`flowchart LR
+  I["IONICO<br/>scacchiera di ioni + e -<br/>duro, fragile, fonde caldo<br/>in acqua conduce"]
+  M["MOLECOLARE<br/>molecole con forze deboli<br/>morbido, fonde freddo"]
+  C["COVALENTE<br/>rete unica di atomi legati<br/>durissimo, fonde caldissimo"]
+  ME["METALLICO<br/>atomi in mare di elettroni<br/>lucido, conduce, si piega"]`} />
+
+## Come si riconoscono nella pratica
+
+Non serve un laboratorio per indovinare il tipo di solido: bastano poche domande semplici.
+
+- Si scioglie facilmente con poco calore (come burro o ghiaccio)? Probabile **molecolare**.
+- È duro e fragile, e sciolto in acqua conduce la corrente (come il sale)? **Ionico**.
+- È lucido, conduce calore e corrente, e si piega senza spezzarsi? **Metallico**.
+- È durissimo e quasi impossibile da fondere (come il diamante)? **Covalente**.
+
+## Da ricordare
+
+- La domanda chiave è sempre: **chi tiene insieme le particelle?** Da lì nascono le **4 famiglie**.
+- **Ionico**: ioni + e - alternati; duro, fragile, fonde a temperatura **alta**, in acqua conduce (es. **sale**).
+- **Molecolare**: molecole con forze **deboli**; morbido, fonde a temperatura **bassa** (es. **ghiaccio**, zucchero).
+- **Covalente**: rete unica di atomi con legami fortissimi; **durissimo** e fonde caldissimo (es. **diamante**).
+- **Metallico**: atomi in un "mare" di elettroni; **lucido**, conduce calore e corrente, si **piega** (es. **ferro**, rame).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Il sale da cucina è un solido duro e fragile che, sciolto in acqua, conduce la corrente. Di che tipo di solido si tratta?"
+  opzioni={["molecolare", "ionico", "covalente", "metallico"]}
+  corretta={1}
+  spiegazione="È ionico: fatto di ioni positivi e negativi alternati. In acqua gli ioni si liberano e conducono la corrente."
+/>
+
+<Quiz
+  domanda="Quale tipo di solido conduce calore e corrente, è lucido e si può piegare in lamine o fili senza spezzarsi?"
+  opzioni={["ionico", "molecolare", "metallico", "covalente"]}
+  corretta={2}
+  spiegazione="È il solido metallico: il 'mare' di elettroni liberi spiega conducibilità, lucentezza e malleabilità."
+/>
+
+<Quiz
+  domanda="Il ghiaccio e il burro fondono con poco calore. A quale famiglia appartengono?"
+  opzioni={["solidi molecolari", "solidi ionici", "solidi covalenti", "solidi metallici"]}
+  corretta={0}
+  spiegazione="Sono molecolari: le molecole sono tenute insieme da forze deboli, quindi basta poco calore per fonderli."
+/>
+
+<Esercizio
+  problema="Hai un solido sconosciuto. È durissimo (graffia il vetro), non si scioglie in acqua, non conduce la corrente e fonde solo a temperature altissime. Di che tipo di solido si tratta, e qual è l'esempio più famoso?"
+  soluzione="È un solido covalente: gli atomi sono legati in una rete unica con legami fortissimi, perciò è durissimo e fonde a temperature altissime, senza condurre la corrente. L'esempio più famoso è il diamante."
+/>
+
+</section>
+
+</RisorsaLayout>

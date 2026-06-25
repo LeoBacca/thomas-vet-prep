@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u3-04-1",
+    "topicId": "fis-u3-04",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: quando immergi un oggetto in un liquido, il liquido esercita su di esso una spinta verso l'ALTO uguale al peso del liquido che l'oggetto ha spostato.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero: e' il principio di Archimede. Immagina di entrare in piscina: ti senti piu' leggero perche' l'acqua ti spinge su. Quella spinta (F = rho × g × V) e' uguale al peso del liquido che hai 'fatto spostare' col tuo corpo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-04-2",
+    "topicId": "fis-u3-04",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Un pezzo di legno (densita' 600 kg/m³) viene messo in acqua (densita' 1000 kg/m³). Cosa succede?",
+    "choices": [
+      "Affonda, perche' il legno e' un solido",
+      "Rimane sospeso a meta' liquido",
+      "Galleggia in superficie",
+      "Dipende dalla forma del pezzo"
+    ],
+    "answer": 2,
+    "explain": "La regola d'oro e' confrontare le densita': il legno (600 kg/m³) e' MENO denso dell'acqua (1000 kg/m³). La spinta di Archimede supera il suo peso, quindi sale e galleggia. Se fosse ferro (7800 kg/m³) affonderebbe. La forma non c'entra: e' la densita' media che decide.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-04-3",
+    "topicId": "fis-u3-04",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "open",
+    "q": "Una nave e' fatta di ferro, eppure galleggia. Il ferro ha densita' circa 7800 kg/m³, molto maggiore dell'acqua (1000 kg/m³). Come e' possibile? Spiega il ragionamento usando il concetto di densita' media.",
+    "answer": "Il trucco e' che la nave non e' un blocco pieno di ferro massiccio: e' cava, piena d'aria. La densita' media si calcola come massa totale divisa volume totale. La massa e' quella del ferro dello scafo; il volume totale pero' include anche tutto lo spazio interno riempito d'aria, che e' enorme. Aggiungendo quel grande volume alla formula, la densita' media della nave (ferro + aria) scende ben sotto 1000 kg/m³. Quando la densita' media e' minore di quella dell'acqua, la spinta di Archimede supera il peso e la nave galleggia. Se il ferro fosse massiccio la densita' media sarebbe 7800 kg/m³ e affondrebbe subito.",
+    "explain": "Idea chiave: e' la DENSITA' MEDIA dell'intero oggetto (non del solo materiale) che decide se galleggia. La forma cava abbassa la densita' media includendo aria nel volume totale.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u3-04-4",
+    "topicId": "fis-u3-04",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Galleggi in un lago facendo il morto. Noti che 3/4 del tuo corpo sono sott'acqua e 1/4 emerge. Qual e' la tua densita' media? (densita' acqua = 1 g/cm³)",
+    "choices": [
+      "0,75 g/cm³",
+      "1,33 g/cm³",
+      "0,25 g/cm³",
+      "1 g/cm³",
+      "1,33 g/m³"
+    ],
+    "answer": 0,
+    "explain": "Quando un corpo galleggia con una frazione sommersa, la sua densita' media e' uguale a quella del liquido moltiplicata per la frazione immersa: rho_corpo = rho_acqua × (V_sommerso / V_totale) = 1 × (3/4) = 0,75 g/cm³. Trappola 1,33 g/cm³: e' l'inverso (3/4 capovolto: 4/3), come se la densita' fosse maggiore dell'acqua, ma allora affonderesti. Trappola 0,25 g/cm³: e' la frazione che EMERGE (1/4), non quella immersa. Trappola 1 g/cm³: significherebbe densita' uguale all'acqua, ma allora staresti sospeso a meta', non con 1/4 fuori. 1,33 g/m³ e' la stessa trappola della prima ma con unita' sbagliate (g/m³ invece di g/cm³): controlla sempre le unita'!",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u3-04-5",
+    "topicId": "fis-u3-04",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Un parallelepipedo di legno galleggia in una vaschetta d'acqua distillata. Poi si scioglie del sale nell'acqua. Cosa succede alla linea di galleggiamento del legno?",
+    "choices": [
+      "Il legno SALE leggermente: la sua parte immersa diminuisce",
+      "Il legno SCENDE leggermente: la sua parte immersa aumenta",
+      "Il legno rimane esattamente nella stessa posizione",
+      "Il legno affonda completamente",
+      "Non si puo' prevedere senza conoscere la quantita' di sale"
+    ],
+    "answer": 0,
+    "explain": "Aggiungendo sale l'acqua diventa piu' densa (pesa di piu' per lo stesso volume). La spinta di Archimede e' F = rho_liquido × g × V_immerso: se rho_liquido sale, serve un V_immerso piu' piccolo per bilanciare lo stesso peso del legno. Risultato: il legno si solleva, la parte immersa diminuisce, e il legno SALE rispetto alla linea precedente. Trappola 'scende': e' l'opposto esatto, confonde l'effetto del sale. Trappola 'rimane': ignora che la densita' dell'acqua e' cambiata. 'Affonda completamente': il legno ha densita' minore dell'acqua salata (ancora piu' densa), quindi figuriamoci se affonda. 'Non si puo' prevedere': e' falso, la fisica ci dice con certezza la direzione del cambiamento anche senza sapere la quantita' esatta di sale.",
+    "tags": ["prova d'esame"]
+  }
+]

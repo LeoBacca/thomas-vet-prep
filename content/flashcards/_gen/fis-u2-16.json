@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u2-16-1",
+    "topicId": "fis-u2-16",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: un sasso tenuto in mano a 3 m da terra non ha energia, perche e fermo e non si sta muovendo.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'energia potenziale gravitazionale (Ep = m·g·h) e energia 'in pausa': e gia immagazzinata nella posizione, anche se l'oggetto e immobile. Come un elastico teso tenuto fermo — non si muove, ma l'energia c'e gia.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-16-2",
+    "topicId": "fis-u2-16",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Una molla con costante elastica k = 200 N/m viene compressa di 0,1 m. Quanto vale la sua energia potenziale elastica? E se la comprimo il doppio (0,2 m), quanto diventa? Che conclusione puoi trarre sulla formula?",
+    "answer": "Con x = 0,1 m: Ep = 1/2 · k · x² = 1/2 × 200 × (0,1)² = 100 × 0,01 = 1 J. Con x = 0,2 m (doppia compressione): Ep = 1/2 × 200 × (0,2)² = 100 × 0,04 = 4 J. Conclusione: raddoppiando la deformazione l'energia NON raddoppia, quadruplica. Questo perche nella formula compare x² (x al quadrato): se x diventa 2x, il quadrato diventa (2x)² = 4x², quindi l'energia si moltiplica per 4.",
+    "explain": "La chiave e il quadrato di x nella formula Ep = 1/2·k·x²: raddoppiare la deformazione quadruplica l'energia (diverso dall'energia gravitazionale dove h compare al primo grado).",
+    "tags": ["risposta aperta"]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u6-04-1",
+    "topicId": "fis-u6-04",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: quando avvicini un oggetto carico a una sbarra metallica (senza toccarla), le cariche della sbarra si ridistribuiscono internamente — questo si chiama induzione elettrostatica.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Le cariche libere del metallo 'sentono' il campo elettrico dell'oggetto vicino e migrano: le cariche di segno opposto si avvicinano, quelle dello stesso segno si allontanano. La sbarra rimane neutra in totale, ma si separa internamente. Nei dielettrici (isolanti) invece non ci sono cariche libere: gli atomi si deformano (polarizzazione), ma nessuno si sposta da un atomo all'altro.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-04-2",
+    "topicId": "fis-u6-04",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "open",
+    "q": "Qual e la differenza tra cosa succede in un conduttore e cosa succede in un dielettrico quando li metti in un campo elettrico esterno? Descrivi il meccanismo di ciascuno con parole tue.",
+    "answer": "In un conduttore (es. rame) ci sono elettroni 'liberi' che possono spostarsi da un atomo all'altro. Quando arriva un campo elettrico esterno, questi elettroni migrano fisicamente: si accumulano da un lato, lasciando l'altro lato carico positivamente. Il fenomeno si chiama induzione elettrostatica. La sbarra resta neutra in totale, ma le cariche si sono separate spazialmente. In un dielettrico (es. vetro, gomma) gli elettroni sono 'incollati' ai loro atomi e non possono spostarsi. Pero il campo elettrico deforma ogni singolo atomo: la nuvola di elettroni si sposta leggermente verso il polo positivo esterno, mentre il nucleo resta quasi fermo. Cosi ogni atomo diventa un piccolo dipolo (un polo + e un polo -). Il materiale si dice polarizzato. Sulla sua superficie compaiono cariche di polarizzazione, anche se internamente e ancora neutro.",
+    "explain": "Conduttore → induzione (cariche libere si spostano fisicamente). Dielettrico → polarizzazione (atomi si deformano, nessuna carica libera).",
+    "tags": ["risposta aperta"]
+  }
+]

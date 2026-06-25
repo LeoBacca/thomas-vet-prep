@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u5-05-1",
+    "topicId": "fis-u5-05",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: la conduzione termica avviene perche le molecole calde si spostano fisicamente da un posto all'altro trascinando il calore con se.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Nella conduzione le molecole NON si spostano fisicamente: restano al loro posto e si passano l'energia vibrando, come una fila di persone che si passano un oggetto di mano in mano. E la CONVEZIONE invece a spostare fisicamente il fluido.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-05-2",
+    "topicId": "fis-u5-05",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un veterinario mette un termometro di acciaio in bocca a un cane. Il termometro si scalda rapidamente. Poi si avvicina a una lampada a infrarossi per scaldare un cucciolo appena nato: il cucciolo si scalda senza toccare la lampada. Quale coppia di meccanismi descrive i due casi?",
+    "choices": [
+      "Conduzione per il termometro, irraggiamento per il cucciolo",
+      "Convezione per il termometro, conduzione per il cucciolo",
+      "Irraggiamento per il termometro, convezione per il cucciolo",
+      "Conduzione per entrambi"
+    ],
+    "answer": 0,
+    "explain": "Il termometro di acciaio (solido) si scalda per conduzione: le molecole calde della bocca del cane vibrano e passano energia alle molecole del metallo, una dopo l'altra. La lampada a infrarossi scalda il cucciolo tramite irraggiamento: emette onde elettromagnetiche (infrarosse) che viaggiano attraverso l'aria e vengono assorbite dal corpo del cucciolo, senza nessun contatto fisico.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-05-3",
+    "topicId": "fis-u5-05",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "open",
+    "q": "Spiega con parole tue i tre meccanismi di trasmissione del calore. Per ognuno di' in quale 'mezzo' funziona e da' un esempio concreto della vita quotidiana (o veterinaria).",
+    "answer": "1) CONDUZIONE: avviene nei solidi (e in parte nei liquidi fermi). Le molecole NON si spostano, si passano energia vibrando come una staffetta. I metalli conducono bene (es. cucchiaio di acciaio che si scalda nel te caldo), mentre legno e plastica conducono male (per questo il manico delle pentole e di plastica). 2) CONVEZIONE: avviene nei fluidi (liquidi e gas). Qui le molecole si spostano fisicamente: il fluido caldo diventa meno denso e sale, quello freddo piu denso scende, si scalda e risale — un ciclo continuo. Esempio: l'acqua che bolle in pentola si muove dall'alto in basso e viceversa; i radiatori di casa scaldano l'aria che sale e mescola l'ambiente. 3) IRRAGGIAMENTO: l'unico che non ha bisogno di materia. Il calore viaggia come onde elettromagnetiche (infrarosse) e puo attraversare anche il vuoto. Esempio: il calore del Sole arriva sulla Terra attraversando milioni di km di vuoto spaziale; davanti al caminetto si sente caldo in faccia senza toccare nulla. Tutti i corpi emettono radiazione termica: i corpi scuri assorbono e emettono di piu, quelli chiari e lucidi riflettono.",
+    "explain": "Conduzione = solidi, molecole ferme che si passano energia. Convezione = fluidi, fluido che si muove in cicli. Irraggiamento = onde EM, funziona anche nel vuoto.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u5-05-4",
+    "topicId": "fis-u5-05",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Qual e il processo che coinvolge il trasferimento di energia tra due corpi tramite l'emissione e l'assorbimento di onde elettromagnetiche?",
+    "choices": [
+      "Irraggiamento",
+      "Conduzione",
+      "Convezione",
+      "Evaporazione",
+      "Sublimazione"
+    ],
+    "answer": 0,
+    "explain": "L'irraggiamento e l'unico meccanismo che usa onde elettromagnetiche (infrarosse) per trasportare calore — e l'unico che funziona anche nel vuoto totale, come dimostra il calore del Sole che arriva sulla Terra. La conduzione (opzione B) usa vibrazioni molecola-molecola nei solidi. La convezione (C) usa il movimento fisico del fluido. Evaporazione (D) e sublimazione (E) sono cambiamenti di stato, non meccanismi di trasmissione del calore.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u5-05-5",
+    "topicId": "fis-u5-05",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sull'irraggiamento termico e FALSA?",
+    "choices": [
+      "Funziona solo se c'e un mezzo materiale tra i due corpi (aria, acqua o solido)",
+      "Il calore viaggia sotto forma di onde elettromagnetiche",
+      "Tutti i corpi, anche quelli a temperatura ambiente, emettono radiazione termica",
+      "I corpi scuri assorbono piu radiazione di quelli chiari e lucidi",
+      "E il meccanismo con cui il calore del Sole raggiunge la Terra"
+    ],
+    "answer": 0,
+    "explain": "L'affermazione falsa e la A: l'irraggiamento NON ha bisogno di materia — e proprio il suo tratto distintivo rispetto agli altri due meccanismi. Puo attraversare il vuoto assoluto (il Sole ce lo dimostra ogni giorno). Le opzioni B, C, D ed E sono tutte vere secondo quanto spiegato nelle Risorse: il calore viaggia come onde EM (B), ogni corpo emette radiazione termica (C), i corpi scuri assorbono di piu (D, per questo in estate si veste di bianco), e il riscaldamento solare e irraggiamento (E). La trappola classica e confondere irraggiamento con convezione, che invece richiede un fluido.",
+    "tags": ["prova d'esame"]
+  }
+]

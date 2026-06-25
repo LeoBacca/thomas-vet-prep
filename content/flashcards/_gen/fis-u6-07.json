@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u6-07-1",
+    "topicId": "fis-u6-07",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: la potenza elettrica misura quanta energia viene consumata ogni secondo in un circuito.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. La potenza (P) è il 'quanto veloce bruci energia': 100 W vuol dire 100 joule al secondo. La formula è P = V · I (o equivalentemente R · I²). Una lampadina da 100 W scarica la batteria del tuo telefono molto prima di una da 5 W, perché consuma energia 20 volte più in fretta.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-07-2",
+    "topicId": "fis-u6-07",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Quando la corrente scorre in un filo, gli elettroni sbattono contro gli atomi del materiale e il filo si scalda. Questo fenomeno si chiama:",
+    "choices": [
+      "Effetto Joule",
+      "Effetto fotoelettrico",
+      "Induzione elettromagnetica",
+      "Effetto Hall"
+    ],
+    "answer": 0,
+    "explain": "È l'effetto Joule: gli elettroni in moto urtano gli atomi del conduttore, li fanno vibrare più velocemente e il materiale si scalda. Lo vedi ogni giorno: il filamento del tostapane, il cavo del caricabatterie del cellulare, le vecchie lampadine a incandescenza. Più alta è la resistenza del filo, più calore viene prodotto a parità di corrente. Gli altri fenomeni (fotoelettrico, induzione, effetto Hall) sono processi completamente diversi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-07-3",
+    "topicId": "fis-u6-07",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "open",
+    "q": "Un ferro da stiro ha resistenza R = 50 Ω ed è collegato a 230 V. Calcola: (a) la corrente che lo attraversa, (b) la potenza assorbita, (c) l'energia consumata in 30 minuti. Scrivi la formula usata per ciascun passo.",
+    "answer": "(a) Dalla legge di Ohm: I = V / R = 230 / 50 = 4,6 A. (b) Potenza: P = V · I = 230 · 4,6 = 1058 W ≈ 1060 W. In alternativa P = V² / R = 230² / 50 = 52900 / 50 = 1058 W. (c) Converto il tempo: 30 min = 1800 s. Energia: E = P · t = 1058 · 1800 = 1 904 400 J ≈ 1,9 MJ. In kilowattora: E = 1058 W · 0,5 h = 529 Wh ≈ 0,53 kWh.",
+    "explain": "Sequenza da ricordare: prima Ohm (I = V/R), poi potenza (P = V·I), poi energia (E = P·t). Attenzione all'unità del tempo: se P è in watt, t deve essere in secondi per avere E in joule.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u6-07-4",
+    "topicId": "fis-u6-07",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Matteo acquista un trapano da collegare alla rete domestica (220 V). L'etichetta indica una potenza di 0,66 kW. Quale corrente circola nel trapano?",
+    "choices": [
+      "3 A",
+      "66 A",
+      "3 mA",
+      "333 A",
+      "0,33 A"
+    ],
+    "answer": 0,
+    "explain": "Prima converti la potenza: 0,66 kW = 660 W. Poi usa P = V · I → I = P / V = 660 / 220 = 3 A. ✔ Le trappole: '3 mA' nasce dal dimenticare di convertire i kilowatt in watt: si fa 0,66 / 220 = 0,003 A = 3 mA. È la trappola delle unità più comune, ma una corrente da milliampere è roba da elettronica di precisione, non da un trapano. '66 A' compare se si fa 660 / 10 o si sbagliano gli zeri nella divisione: è un valore enorme, impossibile per una presa domestica. '333 A' compare se si divide la tensione per la potenza (220 / 0,66) invece del contrario: oltre a essere il rapporto rovesciato, è una corrente assurda. '0,33 A' nasce mescolando le cifre, per esempio 66 / 200: numericamente vicino ma ottenuto con dati sbagliati. Regola: controlla SEMPRE le unità (kW → W) e l'ordine della divisione (P / V) prima di fare il conto.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u6-07-5",
+    "topicId": "fis-u6-07",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Una stufetta elettrica assorbe 2 kW alla tensione di 200 V (corrente continua). Se si raddoppia la tensione portandola a 400 V mantenendo la stessa resistenza, la nuova potenza assorbita sarà:",
+    "choices": [
+      "4 volte la potenza di prima (4P = 8 kW)",
+      "2 volte la potenza di prima (2P = 4 kW)",
+      "Uguale a prima (P = 2 kW)",
+      "La metà di prima (P/2 = 1 kW)",
+      "La potenza al quadrato (P² = 4 MW)"
+    ],
+    "answer": 0,
+    "explain": "La formula chiave è P = V² / R. Se la resistenza resta uguale e la tensione raddoppia (da 200 a 400 V), la potenza cresce come il QUADRATO della tensione: (400/200)² = 2² = 4. Quindi la nuova potenza è 4 × 2 kW = 8 kW. Trappola '2P': chi pensa che raddoppiare V raddoppi P sta usando P = V/R (sbagliato) invece di P = V²/R. Trappola 'P uguale': chi crede erroneamente che la potenza non cambi se la resistenza è fissa. 'P/2' è l'opposto esatto: suggerisce che la potenza scenda quando la tensione sale — il contrario di quello che accade. 'P²' confonde la potenza con la tensione e mescola le unità in modo assurdo: è il filler fuori tema.",
+    "tags": ["prova d'esame"]
+  }
+]

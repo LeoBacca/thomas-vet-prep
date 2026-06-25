@@ -1,0 +1,117 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u3-06">
+
+## Cos'è un flusso?
+
+Quando un fluido (acqua, sangue, aria) si muove all'interno di un tubo o di un vaso, si parla di **flusso**. Immagina l'acqua che scorre in un tubo del rubinetto: quella è l'immagine perfetta di un flusso.
+
+Il flusso può essere **stazionario** oppure **variabile nel tempo**. In fisica, ci concentriamo quasi sempre sul flusso stazionario, quello in cui le caratteristiche del fluido (velocità, pressione) non cambiano nel tempo in un dato punto — come l'acqua che scorre regolarmente in un fiume tranquillo.
+
+---
+
+## La portata: quanto fluido passa?
+
+La **portata** (simbolo Q) risponde alla domanda: *quanta quantità di fluido attraversa una sezione del tubo in un secondo?*
+
+Si calcola così:
+
+**Q = A · v**
+
+dove:
+- **A** = area della sezione trasversale del tubo (in m²)
+- **v** = velocità del fluido (in m/s)
+
+Il risultato Q si esprime in **m³/s** (metri cubi al secondo).
+
+Esempio pratico: se il tuo tubo ha una sezione di 0,01 m² e l'acqua scorre a 2 m/s, la portata è Q = 0,01 × 2 = **0,02 m³/s**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la portata è come "quanti secchi d'acqua passano ogni secondo" in un punto del tubo.</div>
+
+---
+
+## L'equazione di continuità: il tubo si stringe, l'acqua accelera
+
+Se il tubo si restringe, il fluido deve accelerare per mantenere la stessa portata. Questo è il principio dell'**equazione di continuità**:
+
+**A₁ · v₁ = A₂ · v₂**
+
+Sezione grande → velocità bassa. Sezione piccola → velocità alta.
+
+Lo vedi ogni giorno: quando metti il pollice sul rubinetto e stringi il foro, il getto d'acqua diventa molto più veloce. Il foro è più piccolo, la velocità aumenta per mantenere la stessa portata.
+
+---
+
+## I tre tipi di moto dei fluidi
+
+### 1. Moto stazionario
+Il fluido scorre e le sue proprietà (velocità, pressione) non cambiano nel tempo in ogni punto. È il caso ideale che si studia in fisica di base.
+
+### 2. Moto laminare
+Il fluido si muove in **strati paralleli** che scivolano uno sull'altro senza mescolarsi. È un moto ordinato, silenzioso, come il sangue nei capillari o l'acqua che scorre lentamente in un tubo sottile. Le particelle seguono linee regolari chiamate **linee di flusso**.
+
+### 3. Moto turbolento
+Quando la velocità supera un certo limite, il moto diventa **caotico e disordinato**: si formano vortici e gorghi. Pensa al torrente di montagna dopo un temporale, oppure al sangue in un'arteria ristretta (stenosi). È meno efficiente e dissipa più energia.
+
+---
+
+## Come capire quale regime c'è? Il numero di Reynolds
+
+Il **numero di Reynolds** (Re) è un numero puro (senza unità) che indica in quale regime si trova il flusso:
+
+- **Re < 2000** → moto laminare
+- **2000 < Re < 4000** → zona di transizione (instabile)
+- **Re > 4000** → moto turbolento
+
+Re dipende dalla velocità del fluido, dalla densità, dalla viscosità e dalla dimensione del tubo. In veterinaria e medicina è importante: il sangue in condizioni normali scorre in modo laminare, ma in caso di patologie può diventare turbolento (e si sentono i soffi cardiaci!).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> laminare = tutto ordinato in file, turbolento = caos con vortici. Il numero di Reynolds dice quale dei due si ha.</div>
+
+---
+
+<Diagram caption="Portata e flusso in un tubo con sezione variabile" code={`flowchart LR
+  A["Sezione larga<br/>A1 grande<br/>v1 piccola"] --> B["Strozzatura<br/>A2 piccola<br/>v2 grande"]
+  B --> C["Sezione larga<br/>A3 grande<br/>v3 piccola"]
+  style A fill:#cce5ff,stroke:#3399ff
+  style B fill:#ffcccc,stroke:#ff4444
+  style C fill:#cce5ff,stroke:#3399ff`} />
+
+<Diagram caption="Confronto tra moto laminare e moto turbolento" code={`flowchart TB
+  A["Flusso di fluido"] --> B{"Velocita bassa?<br/>Re minore 2000"}
+  B -- "SI" --> C["Moto LAMINARE<br/>Strati paralleli<br/>Nessun vortice"]
+  B -- "NO" --> D{"Re maggiore 4000?"}
+  D -- "SI" --> E["Moto TURBOLENTO<br/>Vortici e caos<br/>Dissipazione energia"]
+  D -- "NO" --> F["Zona di transizione<br/>Regime instabile"]
+  style C fill:#ccffcc,stroke:#33aa33
+  style E fill:#ffcccc,stroke:#ff4444
+  style F fill:#ffffcc,stroke:#aaaa00`} />
+
+## Guarda il video
+<YouTube id="AkO_mcBQbfg" title="Equazione di continuità, legge di Leonardo, fluidodinamica — La Fisica Che Ci Piace" />
+<VideoVisto id="fis-u3-06" />
+
+## Da ricordare
+- La **portata Q = A · v** misura il volume di fluido che passa per sezione nell'unità di tempo; se il tubo si stringe, la velocità aumenta (equazione di continuità).
+- Il moto **laminare** è ordinato e a strati; il moto **turbolento** è caotico con vortici, e si verifica ad alte velocità.
+- Il **numero di Reynolds** (Re) distingue i regimi: Re minore di 2000 è laminare, Re maggiore di 4000 è turbolento.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un tubo ha sezione A = 0,02 m² e il fluido scorre a v = 3 m/s. Qual è la portata Q?" opzioni={["Q = 0,006 m³/s","Q = 0,06 m³/s","Q = 0,6 m³/s","Q = 6 m³/s"]} corretta={1} spiegazione="Q = A · v = 0,02 m² × 3 m/s = 0,06 m³/s. Ricorda: portata = area × velocità." />
+
+<Quiz domanda="In un tubo, la sezione si dimezza passando da un tratto largo a uno stretto. Cosa succede alla velocità del fluido?" opzioni={["Rimane uguale","Si dimezza","Raddoppia","Diventa zero"] } corretta={2} spiegazione="Per l'equazione di continuità A1·v1 = A2·v2: se A si dimezza, v deve raddoppiare per mantenere costante la portata Q." />
+
+<Quiz domanda="Un fluido scorre con numero di Reynolds Re = 5000. In quale regime si trova?" opzioni={["Moto laminare (Re minore di 2000)","Zona di transizione (2000-4000)","Moto turbolento (Re maggiore di 4000)","Moto stazionario, non classificabile"] } corretta={2} spiegazione="Re = 5000 supera la soglia di 4000: il flusso è turbolento. Il moto turbolento è disordinato, con vortici e maggiore dissipazione di energia." />
+
+<Esercizio problema="Un'arteria ha sezione trasversale di 4 cm² (= 0,0004 m²) e il sangue vi scorre a 0,25 m/s. L'arteria si restringe a causa di una placca fino a una sezione di 1 cm² (= 0,0001 m²). Calcola: (a) la portata nell'arteria sana, (b) la velocità del sangue nella zona ristretta." soluzione="(a) Q = A · v = 0,0004 m² × 0,25 m/s = 0,0001 m³/s = 1 × 10⁻⁴ m³/s. (b) Per l'equazione di continuità la portata rimane la stessa: Q = A2 · v2, quindi v2 = Q / A2 = 0,0001 / 0,0001 = 1 m/s. Il sangue quadruplica la sua velocità nella zona ristretta. Questo aumento di velocità (e la turbolenza che può seguire) è alla base dei soffi cardiaci." />
+
+</section>
+
+</RisorsaLayout>

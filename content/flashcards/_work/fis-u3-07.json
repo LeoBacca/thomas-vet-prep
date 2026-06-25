@@ -1,0 +1,10 @@
+{
+ "id": "fis-u3-07",
+ "titolo": "Equazione di continuità",
+ "materia": "fisica",
+ "unita": 3,
+ "slug": "07-equazione-di-continuita",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u3/07-equazione-di-continuita.mdx",
+ "examQuestions": []
+}

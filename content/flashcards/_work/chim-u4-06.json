@@ -1,0 +1,151 @@
+{
+ "id": "chim-u4-06",
+ "titolo": "Calcolo del pH di acidi e basi (forti e deboli)",
+ "materia": "chimica",
+ "unita": 4,
+ "slug": "06-calcolo-del-ph-di-acidi-e",
+ "freq": 10,
+ "risorseMdx": "src/pages/risorse/chimica/u4/06-calcolo-del-ph-di-acidi-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2008",
+   "q": "In una titolazione di 25 ml di una soluzione di HCl (acido cloridrico) sono stati utilizzati 11,5 ml di NaOH (idrossido di sodio) 0,2 M. Qual è la concentrazione della soluzione di HCl?",
+   "choices": [
+    "0,092 M",
+    "1 M",
+    "0,2 M",
+    "0,02 M",
+    "0,0092 M"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2009",
+   "q": "Il pH di una soluzione acquosa 0,01 N di un acido forte è:",
+   "choices": [
+    "2,0",
+    "0,0",
+    "0,1",
+    "0,2",
+    "1,0"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2010",
+   "q": "Quale delle seguenti soluzioni è quella più basica?",
+   "choices": [
+    "NaOH 1 M",
+    "KOH 0,1 M",
+    "KOH 0,01 M",
+    "NaOH 10^-3 M",
+    "LiOH 10^-4 M"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2011",
+   "q": "Quale delle seguenti soluzioni ha pH minore?",
+   "choices": [
+    "NaOH 10^-4 M",
+    "NaOH 0,1 M",
+    "NaOH 0,01 M",
+    "NaOH 10^-3 M",
+    "NaOH 1 M"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2012",
+   "q": "Il pH di una soluzione 0,1 M di HBr è pari a:",
+   "choices": [
+    "1,0",
+    "0,1",
+    "7,0",
+    "14,0",
+    "2,5"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2012",
+   "q": "Quante moli di HCl sono necessarie per preparare 500 ml di una soluzione a pH = 3?",
+   "choices": [
+    "5 x 10^-4",
+    "10^3",
+    "5 x 10^3",
+    "5 x 10^-2",
+    "10^-3"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2019",
+   "q": "Quale delle seguenti soluzioni consente di neutralizzare 500 mL di una soluzione di Ca(OH)2 1 M?",
+   "choices": [
+    "250 mL di HCl 4 M",
+    "500 mL di H2SO4 2 M",
+    "500 mL di HCl 1 M",
+    "250 mL di H2SO4 1 M",
+    "250 mL di HCl 2 M"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2020",
+   "q": "In un matraccio contenente 400 mL di acqua distillata, vengono trasferiti 25 mL di una soluzione 0,4 M di NaOH e 75 mL di una soluzione 0,2 M di HCl. Quale tra i seguenti è il valore corretto del pH della soluzione risultante?",
+   "choices": [
+    "2",
+    "12",
+    "4",
+    "1",
+    "7"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2022",
+   "q": "Volendo preparare 10 L di soluzione di NaOH (massa molare: 40 g/mol) a pH 12, in quale di questi modi si può procedere?",
+   "choices": [
+    "Sciogliere 4 g di NaOH in 10 L di soluzione acquosa",
+    "Sciogliere 40 g di NaOH in 10 L di soluzione acquosa",
+    "Sciogliere 0,1 g di NaOH in 10 L di soluzione acquosa",
+    "Prelevare 10 mL da una soluzione di NaOH 1 M e diluirli fino a 10 L",
+    "Sciogliere 0,4 g di NaOH in 10 L di soluzione acquosa"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Il pH di una soluzione acquosa di HBr è pari a 2. Se la soluzione viene diluita 100 volte il suo pH diventa approssimativamente pari a?",
+   "choices": [
+    "4",
+    "2 + 10^-2",
+    "0,02",
+    "7",
+    "Non varia"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "id": "fis-u3-04",
+ "titolo": "Principio di Archimede e galleggiamento",
+ "materia": "fisica",
+ "unita": 3,
+ "slug": "04-principio-di-archimede-e-galleggiamento",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/fisica/u3/04-principio-di-archimede-e-galleggiamento.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "Un parallelepipedo di legno galleggia in una vaschetta piena d'acqua distillata. Nella vaschetta viene successivamente disciolto del sale da cucina. Indicate quale affermazione descrive più adeguatamente ciò che accade dopo lo scioglimento del sale nell'acqua:",
+   "choices": [
+    "Il parallelepipedo sale leggermente rispetto alla linea di galleggiamento precedente",
+    "Il parallelepipedo scende leggermente rispetto alla linea di galleggiamento precedente",
+    "Il parallelepipedo rimane nella stessa posizione occupata precedentemente",
+    "Il parallelepipedo affonda completamente nell'acqua",
+    "Non vi sono dati sufficienti per fare una previsione attendibile"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2012",
+   "q": "Un lastrone di ghiaccio è appena sufficiente a sostenere un orso bianco di massa pari a 300 kg. Assumendo per il ghiaccio una densità pari a 0,9 volte quella dell'acqua distillata e che l'acqua in cui galleggia il lastrone sia assimilabile ad acqua distillata, qual è il volume del lastrone?",
+   "choices": [
+    "circa 3 m^3",
+    "circa 3 x 10^3 m^3",
+    "circa 3,33 x 10^3 m^3",
+    "circa 3,33 x 10^4 m^3",
+    "circa 3 x 10^2 m^3"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2022",
+   "q": "Dopo il test, vi godete un meritato riposo facendo il morto in un lago. Galleggiando, un quarto del volume del vostro corpo emerge e tre quarti sono sommersi. Qual è la densità media del vostro corpo? (densità dell'acqua 1 g/cm^3)",
+   "choices": [
+    "0,75 g/cm3",
+    "1,33 g/cm3",
+    "1,33 g/m3",
+    "1 g/cm3",
+    "0,25 g/cm3"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

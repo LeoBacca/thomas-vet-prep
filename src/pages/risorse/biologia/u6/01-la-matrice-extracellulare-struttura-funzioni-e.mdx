@@ -1,0 +1,134 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u6-01">
+
+## Cos'è la matrice extracellulare?
+
+Immagina le cellule del tuo corpo come mattoni di una casa. I mattoni da soli non bastano: servono il cemento, le travi, i cavi che li tengono insieme e in posizione. Quella "impalcatura" che si trova **fuori dalle cellule** si chiama **matrice extracellulare** (ECM, dall'inglese *extracellular matrix*).
+
+La ECM non è solo un riempitivo passivo: è una struttura attiva che comunica con le cellule, le supporta e le guida.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La matrice extracellulare è lo "scheletro esterno" attorno alle cellule — le sostiene, le collega e manda loro segnali su cosa fare.</div>
+
+---
+
+## Composizione: di cosa è fatta?
+
+La ECM è composta da due grandi famiglie di molecole, tutte prodotte e secrete dalle cellule stesse.
+
+### 1. Fibre proteiche (la struttura portante)
+
+- **Collagene** — è la proteina più abbondante del corpo dei mammiferi. Forma lunghe fibre resistenti alla trazione, come funi. Tiene i tessuti insieme e impedisce che si strappino.
+- **Elastina** — forma fibre elastiche, come un elastico. Permette ai tessuti (pelle, polmoni, vasi sanguigni) di allungarsi e tornare alla forma originale.
+- **Fibronectina e laminina** — sono proteine "ponte": collegano le fibre della ECM alle cellule. La laminina è fondamentale nelle membrane basali (il "pavimento" su cui siedono gli epiteli).
+
+### 2. Proteoglicani e glicosaminoglicani (la "gelatina")
+
+I **proteoglicani** sono proteine con lunghe catene di zuccheri attaccate (i **glicosaminoglicani**, o GAG). Formano una specie di gel idratato che:
+- occupa lo spazio tra le fibre,
+- trattiene acqua (turgore dei tessuti),
+- intrappola e concentra i fattori di crescita,
+- funge da ammortizzatore nelle cartilagini.
+
+Il più noto GAG è l'**acido ialuronico**, usato anche in medicina estetica proprio perché trattiene moltissima acqua.
+
+---
+
+## Funzioni della ECM
+
+La matrice extracellulare svolge molti ruoli contemporaneamente:
+
+1. **Supporto meccanico** — regge fisicamente le cellule, come l'impalcatura regge un edificio.
+2. **Ancoraggio cellulare** — le cellule si aggrappano alla ECM tramite recettori chiamati **integrine** (proteine di membrana). Senza ancoraggio, molte cellule vanno in apoptosi (morte programmata).
+3. **Segnalazione** — la ECM immagazzina fattori di crescita e li rilascia al momento giusto. Inoltre, quando le integrine si legano alla ECM, avviano cascate di segnali interni alla cellula (trasduzione del segnale).
+4. **Migrazione cellulare** — durante lo sviluppo embrionale e la guarigione delle ferite, le cellule usano la ECM come "binario" per muoversi nella direzione giusta.
+5. **Filtrazione** — nelle membrane basali dei reni e dei capillari, la ECM decide cosa passa e cosa no.
+
+---
+
+## Come le cellule "sentono" la matrice: le integrine
+
+Le **integrine** sono recettori transmembrana (attraversano la membrana cellulare). Hanno:
+- un'estremità **fuori dalla cellula** che si lega alla ECM (es. al collagene o alla fibronectina),
+- un'estremità **dentro la cellula** che si collega al citoscheletro (actina).
+
+Questo doppio aggancio fa sì che le informazioni meccaniche dall'esterno arrivino direttamente al nucleo. Una cellula "sente" se la matrice è morbida o rigida e si comporta di conseguenza — un fenomeno chiamato **meccanosensing**.
+
+---
+
+## Rimodellamento della ECM: le MMP
+
+La ECM non è permanente: viene continuamente degradata e ricostruita. Le principali responsabili della degradazione sono le **metalloproteinasi della matrice** (MMP, *matrix metalloproteinases*). Sono enzimi che tagliano i componenti della ECM (soprattutto il collagene).
+
+Le MMP sono fondamentali in:
+- **cicatrizzazione delle ferite** (smontano la vecchia ECM per ricostruirne una nuova),
+- **sviluppo embrionale** (le cellule devono migrare liberamente),
+- **angiogenesi** (formazione di nuovi vasi sanguigni).
+
+Il problema: nelle cellule tumorali, le MMP sono spesso sovraespresse. Questo permette alle cellule cancerose di "bucare" la ECM e invadere altri tessuti (metastasi).
+
+Le MMP vengono controllate da inibitori naturali chiamati **TIMP** (*Tissue Inhibitors of Metalloproteinases*). L'equilibrio MMP/TIMP determina se la ECM viene degradata o no.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le MMP sono come demolitori controllati — smontano la matrice dove serve. Se lavorano troppo (come nei tumori), le cellule sfuggono di controllo.</div>
+
+---
+
+## Diagramma 1 — Componenti della ECM e loro ruolo
+
+<Diagram caption="Componenti principali della matrice extracellulare e loro funzione" code={`flowchart TB
+  ECM["Matrice extracellulare (ECM)"]
+  ECM --> F["Fibre proteiche"]
+  ECM --> P["Proteoglicani e GAG"]
+  ECM --> G["Glicoproteine di adesione"]
+  F --> C["Collagene<br/>resistenza alla trazione"]
+  F --> E["Elastina<br/>elasticità dei tessuti"]
+  P --> A["Acido ialuronico<br/>trattiene acqua, ammortizza"]
+  G --> FN["Fibronectina<br/>collega ECM alle cellule"]
+  G --> L["Laminina<br/>membrane basali"]`} />
+
+---
+
+## Diagramma 2 — Ciclo di rimodellamento della ECM
+
+<Diagram caption="Rimodellamento della matrice extracellulare: dal segnale alla degradazione e ricostruzione" code={`flowchart LR
+  S["Segnale<br/>(ferita, sviluppo, infiammazione)"]
+  S --> M["Attivazione MMP<br/>(metalloproteinasi)"]
+  M --> D["Degradazione ECM<br/>(collagene tagliato)"]
+  D --> R["Migrazione cellulare<br/>e riparazione tessuto"]
+  R --> N["Nuova ECM sintetizzata<br/>dai fibroblasti"]
+  N --> I["TIMP bloccano MMP<br/>fine del rimodellamento"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="jvU7Vd8mAwE" title="Come fa una cellula a stare ferma? Matrice extracellulare e TESSUTO CONNETTIVO" />
+<VideoVisto id="bio-u6-01" />
+
+---
+
+## Da ricordare
+
+- La ECM è composta da **collagene** (resistenza), **elastina** (elasticità), **proteoglicani** (gel idratato) e **glicoproteine di adesione** (fibronectina, laminina) — ognuno con un ruolo specifico.
+- Le **integrine** sono i recettori che collegano ECM e citoscheletro, trasmettendo segnali meccanici dentro la cellula.
+- Le **MMP** degradano la ECM per permettere riparazione e migrazione; nei tumori la loro iperattività favorisce le metastasi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione principale del collagene nella matrice extracellulare?" opzioni={["Formare un gel idratato che ammortizza gli urti","Conferire resistenza alla trazione e tenere i tessuti insieme","Permettere l'elasticità di pelle e vasi sanguigni","Collegare la ECM direttamente al nucleo cellulare"]} corretta={1} spiegazione="Il collagene forma fibre ad alta resistenza meccanica — come funi — che resistono alle forze di trazione. L'ammortizzazione è compito dei proteoglicani, l'elasticità è dell'elastina, e il collegamento al nucleo avviene indirettamente tramite le integrine e il citoscheletro." />
+
+<Quiz domanda="Cosa sono le integrine?" opzioni={["Enzimi che degradano il collagene nella matrice","Glicosaminoglicani che trattengono acqua nella ECM","Recettori transmembrana che collegano la ECM al citoscheletro interno","Inibitori delle metalloproteinasi della matrice"]} corretta={2} spiegazione="Le integrine sono proteine di membrana con un dominio extracellulare che si lega alla ECM (es. fibronectina, collagene) e uno intracellulare che interagisce con l'actina del citoscheletro. Questa connessione permette la trasduzione del segnale meccanico dall'esterno verso l'interno della cellula." />
+
+<Quiz domanda="Perché l'iperattivazione delle MMP è pericolosa nei tumori?" opzioni={["Perché blocca la sintesi del collagene e indebolisce la ECM","Perché degrada eccessivamente la ECM permettendo alle cellule tumorali di invadere altri tessuti","Perché impedisce alle cellule di ancorarsi tramite le integrine","Perché aumenta la produzione di acido ialuronico favorendo l'edema"]} corretta={1} spiegazione="Le metalloproteinasi della matrice (MMP) tagliano i componenti della ECM. Nei tumori la loro sovraespressione smonta la barriera extracellulare, aprendo la strada alle cellule cancerose verso i vasi sanguigni e i tessuti vicini: è uno dei meccanismi chiave delle metastasi." />
+
+<Esercizio problema="Spiega con parole tue la differenza tra collagene ed elastina, e fai un esempio di tessuto in cui ciascuna proteina è particolarmente importante." soluzione="Il collagene forma fibre rigide e resistenti allo stiramento: è abbondante in tendini (collegano muscolo a osso) e ossa, dove serve resistenza meccanica. L'elastina forma fibre flessibili che si comportano come un elastico: è abbondante in pelle, polmoni e pareti delle arterie, dove il tessuto deve deformarsi e poi tornare alla forma originale." />
+
+</section>
+
+</RisorsaLayout>

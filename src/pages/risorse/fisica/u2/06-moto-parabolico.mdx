@@ -1,0 +1,128 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-06">
+
+## Cos'è il moto parabolico?
+
+Quando lanci una palla in diagonale, essa non va solo in avanti e non cade solo in basso: fa tutte e due le cose insieme. La traiettoria che percorre è una **parabola**, e il moto si chiama appunto **moto parabolico** (o moto del proiettile).
+
+L'idea chiave è questa: il moto parabolico **non è un moto unico e complicato**. È la **somma di due moti semplici** che avvengono contemporaneamente, in modo del tutto indipendente l'uno dall'altro.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> orizzontalmente la palla va a velocità costante (come una macchina in rettilineo), verticalmente cade accelerando per la gravità (come una palla lasciata cadere). I due moti si sommano e il risultato è la parabola.</div>
+
+---
+
+## I due moti che si sommano
+
+### Moto orizzontale — velocità costante
+
+Sul piano orizzontale non c'è nessuna forza che spinge o frena il proiettile (ignoriamo l'aria). Quindi la velocità orizzontale **rimane sempre la stessa** dall'inizio alla fine. È un **moto rettilineo uniforme**.
+
+- Velocità orizzontale: `vx = v0 · cos(θ)` (costante)
+- Spazio percorso: `x = vx · t`
+
+### Moto verticale — caduta con gravità
+
+Verso il basso agisce la gravità (g ≈ 9,8 m/s²), che accelera il proiettile verso il basso. È identico a un oggetto lanciato verso l'alto e poi ricaduto: un **moto uniformemente accelerato**.
+
+- Velocità verticale iniziale: `vy0 = v0 · sin(θ)`
+- Velocità verticale in ogni istante: `vy = vy0 - g · t`
+- Quota in ogni istante: `y = vy0 · t - ½ · g · t²`
+
+---
+
+## Perché la traiettoria è una parabola?
+
+Se elimini il tempo dalle due equazioni di posizione (x e y), ottieni una relazione del tipo:
+
+`y = A · x + B · x²`
+
+Questa è l'equazione di una **parabola**. La forma ad arco che vedi è la conseguenza matematica dei due moti combinati.
+
+---
+
+<Diagram caption="Il moto parabolico come somma di due moti indipendenti" code={`flowchart TB
+  A["Lancio iniziale<br/>velocità v0, angolo θ"] --> B["Componente orizzontale<br/>vx = v0·cos(θ)"]
+  A --> C["Componente verticale<br/>vy0 = v0·sin(θ)"]
+  B --> D["Moto rettilineo uniforme<br/>nessuna forza orizzontale"]
+  C --> E["Moto uniformemente accelerato<br/>gravità g verso il basso"]
+  D --> F["Traiettoria parabolica"]
+  E --> F`} />
+
+<Diagram caption="Le fasi del moto: salita, apice e discesa" code={`flowchart LR
+  A["Lancio<br/>vy positiva, vx costante"] --> B["Apice<br/>vy = 0, altezza massima"]
+  B --> C["Discesa<br/>vy negativa, vx costante"]
+  C --> D["Arrivo<br/>stessa altezza del lancio<br/>se terreno piano"]`} />
+
+---
+
+## Grandezze importanti
+
+- **Gittata (R):** distanza orizzontale totale percorsa. È massima quando l'angolo di lancio è 45°.
+- **Altezza massima (H):** raggiunta quando la velocità verticale si annulla (vy = 0).
+- **Tempo di volo (T):** durata totale del moto, si calcola dalla componente verticale.
+
+---
+
+## Guarda il video
+<YouTube id="Wf9zZyPKTL0" title="Il moto parabolico - Spiegazione, formule ed esempi. (The Blackboard)" />
+<VideoVisto id="fis-u2-06" />
+
+## Da ricordare
+- Il moto parabolico è la **somma di due moti indipendenti**: uniforme in orizzontale, uniformemente accelerato in verticale.
+- Le due componenti **non si influenzano**: la gravità agisce solo sul verticale, non cambia la velocità orizzontale.
+- La **gittata è massima a 45°** di angolo di lancio (con terreno piano e senza aria).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un proiettile viene lanciato orizzontalmente (angolo = 0°) da un tavolo. Quale delle seguenti affermazioni è corretta durante il volo?"
+  opzioni={[
+    "La velocità orizzontale aumenta man mano che scende",
+    "La velocità verticale rimane costante durante tutta la caduta",
+    "La velocità orizzontale rimane costante, quella verticale aumenta per la gravità",
+    "Entrambe le componenti della velocità aumentano a causa della gravità"
+  ]}
+  corretta={2}
+  spiegazione="In assenza di attrito, nessuna forza agisce orizzontalmente: vx resta costante. La gravità agisce solo verticalmente, quindi vy aumenta (il proiettile accelera verso il basso). Questa è la caratteristica fondamentale del moto parabolico."
+/>
+
+<Quiz
+  domanda="A quale angolo di lancio la gittata (distanza orizzontale) di un proiettile è massima, su terreno piano e senza attrito dell'aria?"
+  opzioni={[
+    "30°",
+    "45°",
+    "60°",
+    "90°"
+  ]}
+  corretta={1}
+  spiegazione="La formula della gittata è R = (v0² · sin(2θ)) / g. Il seno è massimo quando il suo argomento è 90°, cioè quando 2θ = 90°, quindi θ = 45°. A 90° il proiettile va dritto verso l'alto e ricade nello stesso punto (gittata zero)."
+/>
+
+<Quiz
+  domanda="In cima alla traiettoria parabolica (punto più alto, apice), cosa si può dire della velocità del proiettile?"
+  opzioni={[
+    "La velocità è zero: il proiettile si ferma un istante",
+    "Solo la componente verticale è zero; quella orizzontale è ancora presente",
+    "Solo la componente orizzontale è zero; quella verticale è ancora presente",
+    "Entrambe le componenti sono al massimo in quel punto"
+  ]}
+  corretta={1}
+  spiegazione="All'apice il proiettile ha finito di salire: vy = 0. Ma la componente orizzontale vx non cambia mai (nessuna forza orizzontale), quindi il proiettile si muove ancora in avanti. La velocità totale in quel punto è uguale a vx, non a zero."
+/>
+
+<Esercizio
+  problema="Una palla viene lanciata orizzontalmente da una finestra alta 5 m con velocità orizzontale di 10 m/s. Dopo quanti secondi tocca terra? Quanto lontano dal muro cade? (usa g = 10 m/s²)"
+  soluzione="Verticale: la palla parte con vy0 = 0 e cade di 5 m. Usando y = ½·g·t²: 5 = ½·10·t² → t² = 1 → t = 1 s. Orizzontale: x = vx·t = 10·1 = 10 m. La palla tocca terra dopo 1 secondo, a 10 m dal muro."
+/>
+
+</section>
+
+</RisorsaLayout>

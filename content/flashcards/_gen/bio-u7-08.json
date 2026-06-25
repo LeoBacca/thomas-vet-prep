@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u7-08-1",
+    "topicId": "bio-u7-08",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "A cosa serve la meiosi e che cosa produce alla fine?",
+    "choices": [
+      "A produrre i gameti (ovuli e spermatozoi): 4 cellule con META' dei cromosomi della cellula di partenza",
+      "A far crescere e riparare i tessuti del corpo: 2 cellule identiche alla madre",
+      "A copiare il DNA senza dividere la cellula",
+      "A produrre cellule con il DOPPIO dei cromosomi della madre"
+    ],
+    "answer": 0,
+    "explain": "La meiosi serve a fabbricare i gameti (cellule sessuali). Da una cellula nascono 4 cellule, ognuna con META' dei cromosomi (corredo aploide, n). Pensa a tagliare un mazzo di carte in due: ognuno dei due genitori mette la sua meta', cosi' alla fecondazione si torna al numero giusto. Far crescere e riparare i tessuti con 2 cellule identiche e' invece il compito della mitosi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-08-2",
+    "topicId": "bio-u7-08",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: il crossing over avviene nella Profase I e serve a creare combinazioni di geni nuove, aumentando la variabilita' genetica.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Nella Profase I i cromosomi omologhi (uno dal padre, uno dalla madre) si 'abbracciano' e si scambiano pezzi nei punti detti chiasmi. E' come due matite intrecciate che si scambiano un pezzo di colore: nascono cromosomi con mix di geni mai visti prima. Per questo ogni gamete e' unico ed e' uno dei motori della variabilita'.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-08-3",
+    "topicId": "bio-u7-08",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "open",
+    "q": "Spiega con parole tue: perche' la meiosi DEVE dimezzare il numero di cromosomi, mentre la mitosi lo mantiene uguale?",
+    "answer": "La meiosi serve a fare i gameti (ovulo e spermatozoo). Alla fecondazione due gameti si fondono e i loro patrimoni genetici si sommano: se ogni gamete avesse il corredo completo (2n, cioe' 46 nell'uomo), la cellula uovo fecondata ne avrebbe il doppio (92), e a ogni generazione raddoppierebbe. Per questo la meiosi dimezza prima (ogni gamete ha n = 23): cosi' 23 + 23 = 46 e il numero resta stabile di generazione in generazione. La mitosi invece serve a crescita e riparazione: deve fare copie identiche del corpo, quindi mantiene lo stesso numero di cromosomi (2n) nelle cellule figlie.",
+    "explain": "Concetto chiave: dimezzare in meiosi serve a compensare il raddoppio che avviene con la fecondazione.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u7-08-4",
+    "topicId": "bio-u7-08",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "In quale momento avviene il crossing over?",
+    "choices": [
+      "Durante l'anafase della meiosi II",
+      "Durante la profase della meiosi I",
+      "Durante la metafase della mitosi",
+      "Durante l'anafase della mitosi",
+      "Durante la profase della mitosi"
+    ],
+    "answer": 1,
+    "explain": "La giusta e' la profase della meiosi I: solo li' i cromosomi omologhi si appaiano e possono scambiarsi pezzi (chiasmi). 'Anafase della meiosi II' e' la trappola dell'opposto: nella meiosi II gli omologhi sono gia' separati, quindi non c'e' nessuno con cui scambiare. Le tre opzioni con 'mitosi' sono fuori tema: nella mitosi non avviene MAI il crossing over, perche' gli omologhi non si appaiano. Ricorda: crossing over = appaiamento degli omologhi = solo Profase I.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u7-08-5",
+    "topicId": "bio-u7-08",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "La meiosi e' composta da:",
+    "choices": [
+      "due divisioni riduzionali (entrambe dimezzano i cromosomi)",
+      "una divisione equazionale seguita da una riduzionale",
+      "una divisione riduzionale seguita da una equazionale",
+      "una sola divisione con una nuova duplicazione del DNA tra le due fasi",
+      "una fase di fotosintesi e una di respirazione"
+    ],
+    "answer": 2,
+    "explain": "La giusta e' 'riduzionale poi equazionale': nella meiosi I si separano gli omologhi e il numero di cromosomi si DIMEZZA (riduzionale, da 2n a n); nella meiosi II si separano i cromatidi fratelli senza cambiare il numero (equazionale, come una mitosi). 'Equazionale poi riduzionale' e' la trappola dell'ordine invertito. 'Due riduzionali' e' falso: solo la prima dimezza, sennò resterebbero pochissimi cromosomi. 'Nuova duplicazione del DNA tra le due fasi' e' la trappola classica: il DNA si duplica UNA sola volta, prima della meiosi, e NON di nuovo tra le due divisioni. La fotosintesi/respirazione e' un riempitivo fuori tema.",
+    "tags": ["prova d'esame"]
+  }
+]

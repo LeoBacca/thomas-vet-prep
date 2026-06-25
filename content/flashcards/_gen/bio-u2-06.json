@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u2-06-1",
+    "topicId": "bio-u2-06",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: la maggior parte del DNA umano (circa il 98%) serve a costruire proteine.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Solo circa il 2% del DNA umano codifica proteine. Il restante 98% comprende sequenze regolatrici, introni, sequenze ripetute e trasposoni — non è spazzatura inutile, ma buona parte ha funzioni che stiamo ancora studiando.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u2-06-2",
+    "topicId": "bio-u2-06",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Nel genoma umano, i geni per gli istoni (proteine che avvolgono il DNA) e per gli rRNA appartengono a quale categoria di sequenze?",
+    "choices": [
+      "Sequenze a copia singola, come il gene dell'insulina",
+      "Sequenze moderatamente ripetute (decine-migliaia di copie)",
+      "Sequenze altamente ripetute (milioni di copie), come quelle ai telomeri",
+      "Pseudogeni non funzionanti"
+    ],
+    "answer": 1,
+    "explain": "Istoni e rRNA servono in grandissime quantità in tempi brevi (quando la cellula si duplica o costruisce ribosomi). Per questo ne esistono decine o migliaia di copie nel genoma: categoria 'moderatamente ripetuta'. I geni a copia singola (come insulina) codificano proteine di cui basta una ricetta. Le sequenze altamente ripetute (milioni di copie) si trovano ai centromeri e telomeri e non codificano nulla.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u2-06-3",
+    "topicId": "bio-u2-06",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega con parole tue cosa sono le 'famiglie geniche' e perché esistono. Fai almeno un esempio concreto tratto dall'organismo dei vertebrati.",
+    "answer": "Una famiglia genica è un gruppo di geni simili, nati quando nel corso dell'evoluzione un gene ancestrale si è duplicato più volte e le copie si sono un po' diversificate. Pensa a una famiglia di cucchiai: stesso stampo di origine, ma c'è il cucchiaino da caffè, quello da minestra, quello da dessert — tutti simili ma con funzioni leggermente diverse. L'esempio più classico sono le globine: il gene ancestrale della globina si è duplicato dando origine alle alfa-globine (cromosoma 16), beta-globine (cromosoma 11), gamma-globine (emoglobina fetale) e altri. Questo permette di avere un'emoglobina leggermente diversa nelle fasi embrionale, fetale e adulta — adattata alle diverse esigenze di trasporto dell'ossigeno. Alcune copie di una famiglia genica smettono di funzionare e diventano 'pseudogeni': copie rotte che il genoma conserva come un fossile.",
+    "explain": "Da ricordare: famiglie geniche = duplicazione + diversificazione evolutiva. Le globine sono l'esempio da citare all'esame.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u2-06-4",
+    "topicId": "bio-u2-06",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Per 'libreria genomica' si intende:",
+    "choices": [
+      "L'insieme dei frammenti di DNA ottenuti dal genoma di un organismo e inseriti in opportuni vettori",
+      "L'insieme di tutti gli mRNA estratti dalle cellule di un organismo in un dato momento",
+      "L'insieme di tutte le proteine producibili da un organismo grazie allo splicing alternativo",
+      "L'insieme delle sequenze nucleotidiche del genoma conservate in banche dati elettroniche",
+      "L'insieme di tutti i geni condivisi dagli organismi della stessa specie"
+    ],
+    "answer": 0,
+    "explain": "La libreria genomica è una raccolta fisica: il DNA genomico viene tagliato in frammenti e ogni frammento viene inserito in un vettore (es. plasmide o fago) per poterlo clonare e studiare. Trappole da evitare: la risposta D descrive una banca dati bioinformatica (non una libreria fisica); la risposta B descrive invece una libreria di cDNA (fatta partendo dagli mRNA, quindi solo i geni espressi in quel momento, non tutto il genoma); la risposta C riguarda il proteoma, non il genoma. La E confonde il genoma di specie con quello di un singolo individuo.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u2-06-5",
+    "topicId": "bio-u2-06",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sul genoma umano è FALSA?",
+    "choices": [
+      "Le sequenze altamente ripetute si trovano principalmente ai centromeri e ai telomeri e non codificano proteine",
+      "I geni per gli rRNA sono presenti in molte copie perché la cellula ne ha bisogno in grande quantità",
+      "Le sequenze a copia singola comprendono la maggior parte dei geni che codificano proteine",
+      "Gli pseudogeni sono copie di geni che non producono più una proteina funzionante",
+      "Circa il 50% del DNA umano codifica direttamente proteine"
+    ],
+    "answer": 4,
+    "explain": "La risposta E è falsa: solo circa il 2% del DNA umano codifica proteine, non il 50%. Questa è la trappola classica — molti pensano che la maggior parte del DNA 'debba' servire a qualcosa di diretto. Tutte le altre affermazioni sono corrette: le sequenze ripetute stanno ai centromeri/telomeri (A), gli rRNA richiedono molte copie (B), le proteine vengono perlopiù da geni a copia singola (C), e gli pseudogeni sono copie non funzionanti (D).",
+    "tags": ["prova d'esame"]
+  }
+]

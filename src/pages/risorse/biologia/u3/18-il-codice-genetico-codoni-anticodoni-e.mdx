@@ -1,0 +1,113 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-18">
+
+## Il codice genetico: cos'è e perché esiste
+
+Il DNA contiene le istruzioni per costruire le proteine. Ma c'è un problema: il DNA è scritto in un "alfabeto" di 4 lettere (le basi azotate A, T, C, G), mentre le proteine sono costruite con un alfabeto di 20 amminoacidi. Come si passa dall'uno all'altro? Con il **codice genetico**.
+
+Il codice genetico è un sistema di corrispondenza: dice quale amminoacido corrisponde a ogni tripletta di basi sull'mRNA. È come un dizionario che traduce dal linguaggio dei nucleotidi al linguaggio degli amminoacidi.
+
+---
+
+## Che cos'è un codone?
+
+Quando il DNA viene trascritto, si produce un filamento di **mRNA** (RNA messaggero). Su questo filamento, ogni gruppo di **3 basi consecutive** si chiama **codone**.
+
+Esempio: la sequenza `AUG-CGU-AAA` contiene 3 codoni:
+- `AUG` → metionina (è anche il codone di inizio)
+- `CGU` → arginina
+- `AAA` → lisina
+
+Con 4 basi e triplette da 3, si ottengono 4³ = **64 combinazioni possibili**. Più che sufficienti per codificare 20 amminoacidi.
+
+---
+
+## Che cos'è un anticodone?
+
+Il tRNA (RNA di trasporto) è la molecola che porta fisicamente gli amminoacidi al ribosoma durante la traduzione. Ogni tRNA ha una zona di 3 basi complementari al codone dell'mRNA: questa zona si chiama **anticodone**.
+
+Funziona come due pezzi di puzzle che si incastrano:
+- il codone sull'mRNA "espone" la sua sequenza
+- l'anticodone del tRNA si appaia in modo complementare e antiparallelo
+
+Esempio: codone `AUG` — anticodone `UAC`.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il codone è la "parola" sull'mRNA; l'anticodone è la "chiave" sul tRNA che riconosce quella parola e porta con sé il giusto amminoacido.</div>
+
+---
+
+## I codoni speciali: inizio e stop
+
+Non tutti i 64 codoni codificano un amminoacido:
+
+- **AUG** = codone di **inizio** (start). Segnala al ribosoma dove cominciare la traduzione. Codifica anche la metionina.
+- **UAA, UAG, UGA** = codoni di **stop**. Non codificano nessun amminoacido: dicono al ribosoma "fermati, la proteina è finita".
+
+I rimanenti 61 codoni codificano i 20 amminoacidi.
+
+---
+
+## Le proprietà del codice genetico
+
+Il codice genetico ha quattro proprietà fondamentali:
+
+**1. È a triplette (triplettare)**
+Ogni amminoacido è codificato da una sequenza di 3 basi, non di 1 o 2.
+
+**2. È non sovrapposto e letto senza spazi**
+I codoni si leggono uno dopo l'altro, in blocchi di 3, senza saltarne nessuno e senza che si sovrappongano. Come leggere una frase senza spazi ma tagliandola ogni 3 lettere: `ILCA NES ÈBU ONA`.
+
+**3. È degenerato (o ridondante)**
+La stessa parola "degenerato" suona strana, ma significa semplicemente che **più codoni possono codificare lo stesso amminoacido**. Per esempio, la leucina è codificata da ben 6 codoni diversi. È una sicurezza: se cambia l'ultima base di un codone, spesso l'amminoacido rimane lo stesso. Questo protegge da molte mutazioni.
+
+**4. È (quasi) universale**
+Lo stesso codice genetico viene usato da batteri, funghi, piante, animali e virus. `AUG` significa metionina sia in un batterio sia in un elefante. Questo è una prova potente dell'origine comune di tutta la vita. Esistono pochissime eccezioni (ad es. nei mitocondri), ma la regola generale vale per tutti gli organismi.
+
+---
+
+<Diagram caption="Dal codone dell'mRNA all'amminoacido: il percorso di traduzione" code={`flowchart TB
+  A["DNA<br/>(sequenza di basi)"] --> B["Trascrizione"]
+  B --> C["mRNA<br/>(sequenza di codoni)"]
+  C --> D["Ribosoma legge il codone<br/>(es. AUG, CGU, AAA...)"]
+  D --> E["tRNA con anticodone complementare<br/>si appaia al codone"]
+  E --> F["tRNA porta l'amminoacido<br/>corrispondente"]
+  F --> G["Catena polipeptidica<br/>(proteina in costruzione)"]`} />
+
+<Diagram caption="Le proprietà del codice genetico" code={`flowchart LR
+  A["Codice genetico"] --> B["A triplette<br/>(3 basi = 1 codone)"]
+  A --> C["Non sovrapposto<br/>(lettura continua, senza salti)"]
+  A --> D["Degenerato<br/>(più codoni → stesso amminoacido)"]
+  A --> E["Universale<br/>(uguale in quasi tutti gli organismi)"]
+  D --> F["Es. leucina:<br/>6 codoni diversi"]
+  E --> G["AUG = metionina<br/>nei batteri, piante, animali"]`} />
+
+## Guarda il video
+<YouTube id="tWe4JxiMrmU" title="La traduzione: Codoni e anticodoni, il tRNA" />
+<VideoVisto id="bio-u3-18" />
+
+## Da ricordare
+- Un **codone** è una tripletta di basi sull'mRNA; 61 codoni codificano amminoacidi, 3 sono codoni di stop, 1 (AUG) è il codone di inizio.
+- L'**anticodone** è la sequenza complementare sul tRNA che riconosce il codone e porta l'amminoacido giusto.
+- Il codice genetico è **degenerato** (più codoni per lo stesso amminoacido) e **universale** (vale per quasi tutti gli esseri viventi).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un codone è composto da quante basi azotate?" opzioni={["1 base", "2 basi", "3 basi", "4 basi"]} corretta={2} spiegazione="Un codone è una tripletta: esattamente 3 basi consecutive sull'mRNA. Con 4 basi e gruppi di 3 si ottengono 64 combinazioni, abbastanza per codificare i 20 amminoacidi più i segnali di start e stop." />
+
+<Quiz domanda="Cosa si intende quando si dice che il codice genetico è 'degenerato'?" opzioni={["Il codice genetico è rotto o difettoso", "Più codoni diversi possono codificare lo stesso amminoacido", "Un codone può codificare più amminoacidi diversi", "Il codice cambia da specie a specie"]} corretta={1} spiegazione="'Degenerato' (o ridondante) significa che diversi codoni codificano lo stesso amminoacido — non il contrario. Per esempio la leucina è codificata da 6 codoni diversi. Questa proprietà protegge l'organismo da alcune mutazioni." />
+
+<Quiz domanda="Quale delle seguenti affermazioni sull'universalità del codice genetico è corretta?" opzioni={["Ogni specie ha un codice genetico completamente diverso", "Il codice genetico è identico in tutti gli organismi senza eccezioni", "Il codice genetico è quasi lo stesso in tutti gli organismi, con pochissime eccezioni", "Solo i mammiferi condividono lo stesso codice genetico"]} corretta={2} spiegazione="Il codice genetico è quasi universale: vale per batteri, funghi, piante e animali. Esistono rarissime eccezioni, ad esempio nei mitocondri, ma la regola generale è valida per la stragrande maggioranza degli esseri viventi." />
+
+<Esercizio problema="Hai questo tratto di mRNA: 5'-AUG-CGU-UAA-3'. Quanti amminoacidi verranno incorporati nella proteina? Qual è il ruolo di ciascun codone?" soluzione="Il codone AUG è il codone di inizio: segnala dove partire e incorpora il primo amminoacido (metionina). CGU è un codone che codifica l'arginina: viene incorporato come secondo amminoacido. UAA è un codone di stop: non incorpora nessun amminoacido, ma dice al ribosoma di fermarsi. La proteina prodotta sarà quindi un dipeptide: Met-Arg (metionina-arginina)." />
+
+</section>
+
+</RisorsaLayout>

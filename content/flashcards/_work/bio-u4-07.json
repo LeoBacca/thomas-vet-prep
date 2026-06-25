@@ -1,0 +1,25 @@
+{
+ "id": "bio-u4-07",
+ "titolo": "Espressione modulata dall'ambiente: penetranza, espressività, caratteri poligenici, imprinting",
+ "materia": "biologia",
+ "unita": 4,
+ "slug": "07-espressione-modulata-dallambiente-penetranza-espressivita-caratteri",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u4/07-espressione-modulata-dallambiente-penetranza-espressivita-caratteri.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "In un caso di eredità poligenica, i geni A, B, C controllano tutti la produzione di un pigmento di colore rosso. A quale dei genotipi riportati corrisponde la massima produzione di colore?",
+   "choices": [
+    "AaBBCc",
+    "aaBBcc",
+    "aabbCc",
+    "AaBbCc",
+    "AAbbCc"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-fis-u1-04-1",
+    "topicId": "fis-u1-04",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Tagli a meta un blocco di ghiaccio. La sua temperatura cambia? E la sua massa?",
+    "choices": [
+      "La temperatura resta uguale; la massa si dimezza",
+      "La temperatura si dimezza; la massa si dimezza",
+      "La temperatura resta uguale; la massa resta uguale",
+      "La temperatura raddoppia; la massa si dimezza"
+    ],
+    "answer": 0,
+    "explain": "Il 'taglio a meta' e il test per distinguere estensive da intensive. La temperatura non dipende da quanta roba hai: e intensiva, resta uguale. La massa invece dipende dalla quantita di materia: e estensiva, si dimezza. Pensa alla pentola e alla tazza: l'acqua e a 100 gradi in entrambe (temperatura = intensiva), ma la pentola pesa di piu (massa = estensiva).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u1-04-2",
+    "topicId": "fis-u1-04",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra grandezza estensiva e grandezza intensiva. Fai un esempio per ciascuna e descrivi il 'test del taglio a meta'.",
+    "answer": "Una grandezza ESTENSIVA dipende da quanta materia hai: se raddoppi la materia, la grandezza raddoppia. Esempi: massa, volume, energia. Una grandezza INTENSIVA non dipende dalla quantita: puoi avere un litro o un ettolitro d'acqua, la temperatura e la densita restano le stesse. Esempi: temperatura, densita, pressione. Il test del 'taglio a meta': immagina di dividere l'oggetto in due parti uguali. Se la grandezza si dimezza → e estensiva (la massa di mezzo blocco e meta di quella intera). Se resta uguale → e intensiva (la temperatura di meta pentola d'acqua bollente e sempre 100 gradi).",
+    "explain": "Intensiva = non cambia con la quantita (temperatura, densita, pressione). Estensiva = cambia con la quantita (massa, volume, energia). Test: taglia a meta → si dimezza (estensiva) o resta uguale (intensiva).",
+    "tags": ["risposta aperta"]
+  }
+]

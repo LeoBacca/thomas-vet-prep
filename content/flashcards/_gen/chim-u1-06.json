@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-06-1",
+    "topicId": "chim-u1-06",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: secondo il principio di Pauli, in una stessa 'casella' (orbitale) possono stare al massimo 2 elettroni, e devono avere spin opposti (uno freccia su, uno freccia giù).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Pensa a una poltrona a due posti: ci stanno due persone, ma devono mettersi in verso opposto per starci entrambe. Lo stesso vale per gli elettroni: massimo 2 per casella, e devono 'girare' in verso opposto (spin ↑ e ↓). Mai due frecce nello stesso verso nella stessa casella.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-06-2",
+    "topicId": "chim-u1-06",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Hai 3 elettroni da sistemare in 3 caselle che stanno alla stessa altezza (stessa energia). Come li metti, secondo la regola di Hund?",
+    "choices": [
+      "Due nella prima casella e uno nella seconda, lasciando la terza vuota",
+      "Tutti e tre nella prima casella",
+      "Una freccia in ciascuna delle tre caselle, tutte con spin su",
+      "Prima le caselle di destra, poi quelle di sinistra"
+    ],
+    "answer": 2,
+    "explain": "Hund dice: prima una freccia in ogni casella (tutti spin up), poi se avanzano elettroni si torna a completare. Gli elettroni sono tutti carichi negativamente e si respingono, quindi preferiscono stare ognuno per conto suo finché c'è posto libero. Questo vale ad esempio per gli elettroni 3p del fosforo o i 2p dell'azoto.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-06-3",
+    "topicId": "chim-u1-06",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue le tre regole che governano il riempimento degli orbitali (Aufbau, Pauli, Hund) e di' a cosa serve sapere la configurazione elettronica di un atomo.",
+    "answer": "Aufbau: si riempie sempre partendo dall'orbitale a energia più bassa verso quelli più alti (ordine: 1s, 2s, 2p, 3s, 3p, 4s, 3d...), come l'acqua che riempie prima il fondo di un bicchiere. Pauli: in ogni orbitale (casella) ci stanno al massimo 2 elettroni, e devono avere spin opposti (↑ e ↓): come due persone su una poltrona a due posti, ci devono stare in verso opposto. Hund: quando ci sono più caselle alla stessa energia (es. i tre orbitali p), si mette prima una sola freccia in ciascuna (tutte con spin su), e solo dopo si aggiunge la seconda freccia; gli elettroni si respingono e preferiscono stare da soli. Sapere la configurazione elettronica serve perché il modo in cui sono disposti gli elettroni decide come quell'atomo si comporta: quanti legami forma, quanto è reattivo, se è un radicale libero. In veterinaria, ad esempio, il ferro dell'emoglobina lega l'ossigeno proprio grazie a come sono disposti i suoi elettroni d.",
+    "explain": "Da ricordare: Aufbau = dal basso; Pauli = max 2 per casella (spin opposti); Hund = prima uno per casella.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-06-4",
+    "topicId": "chim-u1-06",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale tra le seguenti configurazioni elettroniche è CORRETTA per un atomo neutro?",
+    "choices": [
+      "1s² 2s² 2p⁶ 3s² 3p⁶ 4s²",
+      "1s² 2s² 2p⁶ 2d⁴",
+      "1s² 2s² 2p⁶ 3s⁴ 3p²",
+      "1s² 2s² 2p⁶ 3s² 3p⁷",
+      "1s² 2s² 2p⁸ 3s²"
+    ],
+    "answer": 0,
+    "explain": "La prima è corretta: rispetta l'ordine Aufbau (1s → 2s → 2p → 3s → 3p → 4s), Pauli (nessun orbitale supera 2 elettroni per casella) e i massimi consentiti (s max 2, p max 6). Le trappole: '2d⁴' è impossibile perché il sottolivello d non esiste al secondo livello (solo dal terzo in poi); '3s⁴' viola Pauli (l'orbitale s ha solo 2 posti, mai 4); '3p⁷' supera il massimo di 6 elettroni negli orbitali p; '2p⁸' supera anch'esso il massimo di 6. In esame la trappola più comune è mettere troppi elettroni in un sottolivello: conta sempre il massimo (s=2, p=6, d=10).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-06-5",
+    "topicId": "chim-u1-06",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quanti elettroni di un atomo neutro di fosforo (P, Z=15) occupano orbitali di tipo p?",
+    "choices": [
+      "9",
+      "3",
+      "6",
+      "5",
+      "2"
+    ],
+    "answer": 0,
+    "explain": "Configurazione del fosforo: 1s² 2s² 2p⁶ 3s² 3p³. Gli orbitali p sono il 2p e il 3p: 6 elettroni nel 2p + 3 elettroni nel 3p = 9 in totale. La trappola più comune è rispondere '3' (conta solo il 3p dell'ultimo livello e dimentica il 2p), oppure '6' (conta solo il 2p pieno e dimentica il 3p). '5' confonde il numero di elettroni p con il numero atomico meno i livelli s (errore di conteggio). '2' è fuori tema (massimo di un orbitale s). Regola: cerca TUTTI i sottolivelli p nella configurazione, non solo l'ultimo.",
+    "tags": ["prova d'esame"]
+  }
+]

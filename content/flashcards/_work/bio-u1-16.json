@@ -1,0 +1,95 @@
+{
+ "id": "bio-u1-16",
+ "titolo": "Gli enzimi: concetti di base e classi principali",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "16-gli-enzimi-concetti-di-base-e",
+ "freq": 6,
+ "risorseMdx": "src/pages/risorse/biologia/u1/16-gli-enzimi-concetti-di-base-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Gli enzimi possono accelerare una reazione:",
+   "choices": [
+    "abbassando l'energia di attivazione",
+    "modificando la variazione di energia libera della reazione",
+    "rendendo spontanea una reazione endoergonica",
+    "rendendo più stabili le molecole del substrato",
+    "fornendo energia"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2012",
+   "q": "In seguito alla somministrazione di un farmaco antagonista la cui molecola è complementare al sito attivo di un enzima, la quantità di prodotto della reazione enzimatica sarà probabilmente:",
+   "choices": [
+    "diminuita perché il farmaco compete con il substrato",
+    "diminuita perché il farmaco si lega al substrato",
+    "aumentata perché il farmaco favorisce il legame tra enzima e substrato",
+    "aumentata perché il farmaco funziona da cofattore",
+    "invariata perché i farmaci non attraversano mai la membrana cellulare"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2015",
+   "q": "Quale delle seguenti affermazioni sull'ATPasi presente negli esseri umani è vera? 1. È costituita da aminoacidi uniti da legami peptidici, formatisi attraverso idrolisi. 2. Catalizza l'idrolisi di ATP in modo da produrre energia. 3. È codificata in ogni cellula nucleata del corpo che contiene DNA ed è sintetizzata dai ribosomi.",
+   "choices": [
+    "Solo 2 e 3",
+    "Solo 1 e 2",
+    "Solo 1",
+    "Tutte",
+    "Nessuna"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2015",
+   "q": "Quale delle seguenti affermazioni NON descrive le caratteristiche dell'enzima umano pepsina?",
+   "choices": [
+    "Funziona in modo ottimale in condizioni alcaline",
+    "È costituito da aminoacidi",
+    "Contiene legami peptidici",
+    "Contiene legami non peptidici",
+    "Contiene una struttura ad alfa-elica"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Si definisce zimogeno un precursore inattivo di un enzima. Esso, infatti, richiede la rottura di uno o più legami peptidici specifici per divenire un enzima attivo. Tale attivazione può avvenire per opera di enzimi specifici che fanno parte della famiglia delle:",
+   "choices": [
+    "proteasi",
+    "diesterasi",
+    "fragmentasi",
+    "isomerasi",
+    "proenzimasi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "A quale classe di enzimi appartengono le deidrogenasi?",
+   "choices": [
+    "ossidoreduttasi",
+    "ligasi",
+    "isomerasi",
+    "transferasi",
+    "liasi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

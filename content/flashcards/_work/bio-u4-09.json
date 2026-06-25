@@ -1,0 +1,39 @@
+{
+ "id": "bio-u4-09",
+ "titolo": "Alterazioni del numero dei cromosomi: aneuploidia e poliploidia (trisomia 21)",
+ "materia": "biologia",
+ "unita": 4,
+ "slug": "09-alterazioni-del-numero-dei-cromosomi-aneuploidia",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/biologia/u4/09-alterazioni-del-numero-dei-cromosomi-aneuploidia.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Le aneuploidie possono risultare da:",
+   "choices": [
+    "non disgiunzione",
+    "mutazione per delezione di singola base",
+    "mutazioni per sostituzioni di singola base",
+    "espansione di specifiche triplette",
+    "disgiunzione"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2017",
+   "q": "La sindrome di Down può essere determinata da:",
+   "choices": [
+    "mancata disgiunzione del cromosoma 21 durante la meiosi",
+    "trisomia del cromosoma 13",
+    "trisomia del cromosoma 22",
+    "monosomia del cromosoma 21",
+    "presenza di cromosomi X soprannumerari"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

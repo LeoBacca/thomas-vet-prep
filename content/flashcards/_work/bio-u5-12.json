@@ -1,0 +1,53 @@
+{
+ "id": "bio-u5-12",
+ "titolo": "Catena di trasporto degli elettroni, sintesi di ATP e bilancio energetico",
+ "materia": "biologia",
+ "unita": 5,
+ "slug": "12-catena-di-trasporto-degli-elettroni-sintesi",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/biologia/u5/12-catena-di-trasporto-degli-elettroni-sintesi.mdx",
+ "examQuestions": [
+  {
+   "year": "2015",
+   "q": "Quale delle seguenti affermazioni NON rappresenta in modo corretto la respirazione aerobica e le reazioni della fase luce indipendente della fotosintesi?",
+   "choices": [
+    "O2 è usato nella respirazione aerobica ed è prodotto nelle reazioni della fase luce indipendente",
+    "CO2 è prodotto nella respirazione aerobica ed è usato nelle reazioni della fase luce indipendente",
+    "ATP è prodotto nella respirazione aerobica ed è usato nelle reazioni della fase luce indipendente",
+    "La respirazione aerobica e le reazioni della fase luce indipendente possono avvenire contemporaneamente",
+    "L'idrogeno può essere aggiunto e rimosso da un coenzima nella respirazione aerobica, ma può solo essere rimosso da un coenzima nelle reazioni della fase luce indipendente"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2019",
+   "q": "Nella fosforilazione ossidativa qual è l'accettore finale degli elettroni della catena respiratoria?",
+   "choices": [
+    "O2",
+    "H2O",
+    "NAD+",
+    "CO2",
+    "ADP"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "In quale parte della cellula animale avviene la fosforilazione ossidativa?",
+   "choices": [
+    "Mitocondrio",
+    "Perossisoma",
+    "Lisosoma",
+    "Citoplasma",
+    "Vacuolo"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

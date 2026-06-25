@@ -1,0 +1,120 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-19">
+
+## Cos'è l'RNA?
+
+L'**RNA** (acido ribonucleico) è una molecola che lavora come "assistente" del DNA. Il DNA è il manuale di istruzioni custodito nel nucleo della cellula; l'RNA è chi legge quelle istruzioni e le porta dove servono.
+
+Struttura in breve:
+- È un filamento **singolo** (il DNA ne ha due, l'RNA uno solo).
+- È fatto di **nucleotidi**, ognuno con: uno zucchero (ribosio), un gruppo fosfato e una base azotata (A, U, G, C — nota: al posto della T del DNA, l'RNA usa **U**, uracile).
+- È più corto e meno stabile del DNA: viene prodotto, usato e poi degradato.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il DNA è il libro di ricette, l'RNA è il foglietto che il cuoco porta in cucina per seguire una ricetta specifica.</div>
+
+---
+
+## RNA codificante vs non codificante
+
+Gli RNA si dividono in due grandi famiglie:
+
+| Famiglia | Cosa fa | Esempi |
+|---|---|---|
+| **RNA codificante** | Porta l'informazione per costruire una proteina | mRNA |
+| **RNA non codificante** | Non costruisce proteine, ma regola e aiuta | tRNA, rRNA, miRNA, snRNA… |
+
+Il termine "codificante" significa che la sequenza di basi dell'RNA può essere **tradotta** in una sequenza di amminoacidi (cioè in una proteina).
+
+---
+
+## I tipi principali di RNA
+
+### 1. mRNA — RNA messaggero (codificante)
+- Copia la sequenza di un gene dal DNA (**trascrizione**) e la porta al ribosoma.
+- È l'unico RNA che viene **tradotto** in proteina.
+- Analogia: è il **messaggio vocale** che porta l'ordine dal capo (DNA) all'operaio (ribosoma).
+
+### 2. tRNA — RNA di trasferimento (non codificante)
+- Trasporta i **singoli amminoacidi** al ribosoma durante la sintesi proteica.
+- Ha una forma a "L" caratteristica: a un'estremità c'è l'amminoacido, all'altra c'è l'**anticodone** che si accoppia con il codone dell'mRNA.
+- Analogia: è il **fattorino** che porta i mattoni (amminoacidi) uno per uno al cantiere (ribosoma).
+
+### 3. rRNA — RNA ribosomiale (non codificante)
+- È il componente strutturale e catalitico del **ribosoma**.
+- Nei ribosomi eucarioti ci sono più tipi di rRNA (28S, 18S, 5.8S, 5S).
+- Analogia: è la **struttura stessa del cantiere**, non solo un operaio.
+
+### 4. Altri RNA non codificanti importanti
+- **miRNA** (micro RNA): piccole molecole che "spengono" (silenziano) certi geni, riducendo la produzione di specifiche proteine.
+- **snRNA** (small nuclear RNA): partecipano allo **splicing**, cioè al taglio e incollaggio dell'mRNA prima che esca dal nucleo.
+- **lncRNA** (long non-coding RNA): RNA lunghi con funzioni regolatrici varie, ancora in fase di studio.
+
+---
+
+<Diagram caption="Classificazione dei tipi di RNA e loro funzioni principali" code={`flowchart TB
+  A["RNA"] --> B["RNA codificante"]
+  A --> C["RNA non codificante"]
+  B --> D["mRNA<br/>porta il messaggio genetico<br/>al ribosoma"]
+  C --> E["tRNA<br/>trasporta gli amminoacidi"]
+  C --> F["rRNA<br/>forma il ribosoma"]
+  C --> G["miRNA<br/>regola l'espressione genica"]
+  C --> H["snRNA<br/>splicing del pre-mRNA"]`} />
+
+<Diagram caption="Dal gene alla proteina: il ruolo dei diversi RNA" code={`flowchart LR
+  A["DNA nel nucleo"] -->|"trascrizione"| B["pre-mRNA"]
+  B -->|"splicing<br/>(snRNA)"| C["mRNA maturo"]
+  C -->|"esce dal nucleo"| D["Ribosoma<br/>(rRNA + proteine)"]
+  D -->|"traduzione"| F["Proteina"]
+  E["tRNA<br/>porta amminoacidi"] -->|"consegna<br/>amminoacidi"| D
+  G["miRNA"] -->|"blocca o degrada"| C`} />
+
+---
+
+## Guarda il video
+<YouTube id="nyuYpusEpB0" title="RNA - Citoplasmatici - mRNA, tRNA, rRNA" />
+<VideoVisto id="bio-u1-19" />
+
+## Da ricordare
+- L'RNA è a filamento singolo e contiene uracile (U) al posto della timina (T).
+- Solo l'**mRNA** è codificante: viene tradotto in proteina; tutti gli altri RNA (tRNA, rRNA, miRNA…) sono non codificanti.
+- tRNA, rRNA e miRNA non producono proteine ma sono indispensabili per costruirle o regolarne la produzione.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale tipo di RNA porta l'informazione genetica dal nucleo al ribosoma per essere tradotta in proteina?"
+  opzioni={["tRNA (RNA di trasferimento)", "rRNA (RNA ribosomiale)", "mRNA (RNA messaggero)", "miRNA (micro RNA)"]}
+  corretta={2}
+  spiegazione="L'mRNA (RNA messaggero) è l'unico RNA codificante: copia la sequenza del gene dal DNA e la porta al ribosoma dove viene tradotta in proteina. tRNA e rRNA aiutano la traduzione ma non portano il messaggio genetico da tradurre."
+/>
+
+<Quiz
+  domanda="Quale affermazione descrive correttamente il tRNA?"
+  opzioni={["Forma la struttura del ribosoma", "Trasporta i singoli amminoacidi al ribosoma durante la sintesi proteica", "Porta l'informazione genica dal DNA al ribosoma", "Silenzia l'espressione dei geni bersaglio"]}
+  corretta={1}
+  spiegazione="Il tRNA è l'RNA di trasferimento: la sua funzione è consegnare amminoacidi specifici al ribosoma durante la traduzione. Ogni tRNA porta un amminoacido e possiede un anticodone che si accoppia al codone dell'mRNA."
+/>
+
+<Quiz
+  domanda="Un RNA che NON viene mai tradotto in proteina è detto:"
+  opzioni={["RNA codificante", "RNA messaggero", "RNA non codificante", "mRNA maturo"]}
+  corretta={2}
+  spiegazione="Gli RNA non codificanti (tRNA, rRNA, miRNA, snRNA, lncRNA ecc.) non vengono mai tradotti in proteine. Solo l'mRNA è RNA codificante, perché la sua sequenza viene letta dai ribosomi per produrre una proteina."
+/>
+
+<Esercizio
+  problema="Immagina che nella cellula venga bloccata completamente la produzione di rRNA. Cosa succede alla sintesi proteica e perché?"
+  soluzione="Se non viene prodotto rRNA, non si formano nuovi ribosomi (o i ribosomi esistenti non vengono rinnovati). Senza ribosomi la traduzione dell'mRNA si ferma e la cellula non riesce più a produrre nuove proteine. Le funzioni cellulari dipendenti dalle proteine (enzimi, struttura, segnalazione) verrebbero compromesse. Questo mostra che rRNA, pur essendo non codificante, è assolutamente indispensabile per la sintesi proteica."
+/>
+
+</section>
+
+</RisorsaLayout>

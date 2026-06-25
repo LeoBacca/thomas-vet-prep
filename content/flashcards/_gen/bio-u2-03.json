@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u2-03-1",
+    "topicId": "bio-u2-03",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: l'eucromatina e la forma 'aperta' della cromatina, dove i geni sono attivi e vengono trascritti in RNA.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Eucromatina = libro aperto: il DNA e poco compatto, accessibile agli enzimi che leggono i geni, quindi la trascrizione e ON. Al contrario, l'eterocromatina e compatta come un libro chiuso: i geni sono silenziati (trascrizione OFF).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u2-03-2",
+    "topicId": "bio-u2-03",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "La metilazione del DNA silenzia un gene. Su quale 'lettera' del DNA viene aggiunto il gruppo metile (–CH₃), e in quale punto della sequenza?",
+    "choices": [
+      "Sulla citosina (C), nei siti CpG (dove C e seguita da G)",
+      "Sulla guanina (G), nei siti GpC",
+      "Sull'adenina (A), in qualsiasi posizione",
+      "Sugli istoni, non sul DNA stesso"
+    ],
+    "answer": 0,
+    "explain": "Il gruppo metile viene aggiunto sulla citosina (C) nei dinucleotidi CpG. E come mettere un lucchetto su quella lettera: blocca le proteine che leggono il gene e richiama proteine che compattano la cromatina, silenziando il gene. Attenzione: le modifiche agli istoni esistono (acetilazione, ecc.) ma la METILAZIONE avviene sul DNA stesso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u2-03-3",
+    "topicId": "bio-u2-03",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "open",
+    "q": "Una cellula staminale si trasforma in cellula muscolare. Molti geni che erano accesi nella cellula staminale vengono spenti e restano spenti per sempre. Usando eucromatina, eterocromatina e metilazione del DNA, spiega: (1) come avviene il silenziamento, (2) perche si mantiene nelle cellule figlie.",
+    "answer": "1) Come avviene il silenziamento: durante la differenziazione, gli enzimi DNMT aggiungono gruppi metile (–CH₃) sulle citosine dei siti CpG nei promotori dei geni da spegnere. Questo richiama proteine repressori che compattano la cromatina: quella zona passa da eucromatina (aperta, geni accesi) a eterocromatina (chiusa, geni spenti). Il gene diventa inaccessibile agli enzimi della trascrizione. 2) Perche si mantiene nelle cellule figlie: quando la cellula si divide e replica il DNA, il filamento figlio neo-sintetizzato e inizialmente non metilato. Ma gli enzimi DNMT di mantenimento riconoscono il filamento parentale gia metilato e aggiungono subito il metile anche sul filamento figlio, nel medesimo sito CpG. In questo modo il pattern di metilazione si trasmette fedelmente a ogni cellula figlia. Questo meccanismo si chiama epigenetico: non cambia la sequenza del DNA, ma decide se il gene viene letto o no, ed e ereditabile.",
+    "explain": "Parole chiave: DNMT aggiunge –CH₃ su CpG → eterocromatina → gene silenziato. Dopo la replicazione, DNMT di mantenimento riconosce il filamento parentale metilato e metila anche quello figlio: ecco perche il silenziamento e stabile.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u2-03-4",
+    "topicId": "bio-u2-03",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Nei gatti, il gene per il colore arancio del pelo sta sul cromosoma X. Le gatte eterozigoti (un X con allele arancio + un X con allele nero) non sono nere, ma hanno chiazze nere E arancio. Come si spiega?",
+    "choices": [
+      "Nelle femmine, un cromosoma X scelto a caso viene inattivato in ogni cellula durante lo sviluppo: le cellule con X-arancio inattivo mostrano nero, quelle con X-nero inattivo mostrano arancio",
+      "In certe zone della pelle l'allele arancio domina quello nero",
+      "I due alleli sono codominanti: si esprimono entrambi nella stessa cellula contemporaneamente",
+      "Ci sono altri geni che interferiscono con questa coppia di alleli",
+      "Nelle femmine, un cromosoma X viene perso casualmente durante lo sviluppo"
+    ],
+    "answer": 0,
+    "explain": "La risposta e l'inattivazione del cromosoma X (eterocromatina facoltativa = corpuscolo di Barr). In ogni cellula della gatta, uno dei due X viene inattivato a caso e trasformato in eterocromatina: quel X viene silenziato per sempre in quella cellula e in tutte le sue discendenti. Le cellule in cui e inattivato l'X con l'allele arancio esprimono il nero; quelle in cui e inattivato l'X con l'allele nero esprimono l'arancio. Le chiazze nascono perche le cellule clonali (che discendono dalla stessa cellula con la stessa inattivazione) si raggruppano durante lo sviluppo. Trappole: 'codominanza' sarebbe vera se la stessa cellula esprimesse entrambi i colori, ma qui ogni cellula ne esprime uno solo; 'perdita del cromosoma' e sbagliata (il cromosoma non si perde, si silenzia); 'altri geni' non spiega il pattern a chiazze casuali; 'dominanza locale' non e un meccanismo reale.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u2-03-5",
+    "topicId": "bio-u2-03",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sulla metilazione del DNA e CORRETTA?",
+    "choices": [
+      "La metilazione cambia la sequenza del DNA (sostituisce una citosina con un'altra base)",
+      "La metilazione e irreversibile: una volta aggiunto, il gruppo metile non puo essere rimosso",
+      "La metilazione aggiunge un gruppo –CH₃ sulle citosine nei siti CpG, silenzia il gene e si trasmette alle cellule figlie senza alterare la sequenza del DNA",
+      "La metilazione avviene solo durante la replicazione del DNA, mai durante la differenziazione",
+      "La metilazione attiva i geni aumentando l'accessibilita della cromatina"
+    ],
+    "answer": 2,
+    "explain": "L'affermazione corretta e la C: la metilazione aggiunge –CH₃ sulle citosine dei siti CpG, silenzia il gene (trasforma eucromatina in eterocromatina) ed e ereditabile alle cellule figlie tramite gli enzimi DNMT di mantenimento — tutto senza toccare la sequenza del DNA. Le trappole: 'cambia la sequenza' e l'opposto esatto del concetto di epigenetica; 'irreversibile' e falso (la metilazione puo essere rimossa da enzimi demetilasi, ed e proprio questa reversibilita che la rende un meccanismo di regolazione flessibile); 'solo durante la replicazione' e falso (avviene anche nella differenziazione); 'attiva i geni' e l'opposto esatto: la metilazione SPEGNE i geni.",
+    "tags": ["prova d'esame"]
+  }
+]

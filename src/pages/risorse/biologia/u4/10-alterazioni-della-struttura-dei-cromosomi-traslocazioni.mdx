@@ -1,0 +1,97 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u4-10">
+
+## Cosa sono le alterazioni strutturali dei cromosomi?
+
+I cromosomi sono come lunghe "collane di perle" fatte di DNA. A volte, durante la replicazione o per effetto di agenti esterni (radiazioni, sostanze chimiche), questa collana si rompe e si riattacca nel modo sbagliato. Il risultato è un **riarrangiamento strutturale**: la sequenza delle perle (geni) cambia rispetto all'originale.
+
+Questi errori non cambiano il **numero** dei cromosomi (quello è un altro problema), ma cambiano la loro **struttura interna**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Immagina di strappare una pagina di libro, tagliarne un pezzo, e rincollarlo al contrario, in un posto sbagliato, o di toglierne un pezzo del tutto. Il libro esiste ancora, ma alcune frasi sono cambiate, perse o ripetute.</div>
+
+---
+
+## I 4 tipi principali di riarrangiamento
+
+### 1. Delezione — "si perde un pezzo"
+
+Un segmento di cromosoma viene semplicemente eliminato. I geni contenuti in quel tratto scompaiono.
+
+**Esempio reale:** la sindrome del cri du chat è causata dalla delezione di un pezzo del cromosoma 5.
+
+---
+
+### 2. Inserzione (o Duplicazione) — "un pezzo si raddoppia o si sposta"
+
+Un segmento viene copiato una seconda volta (duplicazione) oppure un pezzo di un cromosoma si inserisce in un altro punto del genoma (inserzione).
+
+La duplicazione può essere **vantaggiosa** nel corso dell'evoluzione: la copia extra può acquisire funzioni nuove.
+
+---
+
+### 3. Inversione — "un pezzo si rimette al contrario"
+
+Un segmento si stacca e si reinserisce nello stesso cromosoma, ma **girato al contrario** (come se togliessi una fetta dal panino e la rimettessi capovolta).
+
+Esistono due tipi:
+- **Pericentrica**: il segmento capovolto include il centromero.
+- **Paracentrica**: il segmento capovolto NON include il centromero.
+
+Di solito il portatore di un'inversione è **fenotipicamente normale** (i geni ci sono tutti), ma può avere problemi nella meiosi e quindi figli con cromosomi sbilanciati.
+
+---
+
+### 4. Traslocazione — "un pezzo cambia cromosoma"
+
+Un segmento si stacca da un cromosoma e si attacca a un **cromosoma diverso**.
+
+- **Traslocazione reciproca**: due cromosomi si scambiano un pezzo a vicenda. Il portatore ha tutti i geni, solo in posizione diversa — spesso è sano ma può trasmettere combinazioni sbilanciate ai figli.
+- **Traslocazione robertsoniana**: due cromosomi acrocentrici (con il centromero quasi in punta) si fondono insieme. Esempio famoso: alcune forme di sindrome di Down sono causate da una traslocazione robertsoniana sul cromosoma 21.
+
+---
+
+<Diagram caption="I 4 tipi di riarrangiamento strutturale cromosomico" code={`flowchart TB
+  A["Cromosoma normale<br/>A - B - C - D - E"] --> B["DELEZIONE<br/>si perde un segmento<br/>A - B - D - E (C mancante)"]
+  A --> C["DUPLICAZIONE<br/>un segmento si raddoppia<br/>A - B - C - C - D - E"]
+  A --> D["INVERSIONE<br/>un segmento si capovolge<br/>A - B - D - C - E (C-D invertiti)"]
+  A --> E["TRASLOCAZIONE<br/>un segmento cambia cromosoma<br/>Il pezzo C-D finisce su un altro cromosoma"]`} />
+
+<Diagram caption="Traslocazione reciproca: come funziona lo scambio tra due cromosomi" code={`flowchart LR
+  A["Cromosoma 1<br/>segmenti: P - Q - R"] -- "si rompe" --> B["Cromosoma 1 senza R<br/>P - Q"]
+  C["Cromosoma 2<br/>segmenti: X - Y - Z"] -- "si rompe" --> D["Cromosoma 2 senza Z<br/>X - Y"]
+  B -- "acquisisce Z" --> E["Cromosoma 1 modificato<br/>P - Q - Z"]
+  D -- "acquisisce R" --> F["Cromosoma 2 modificato<br/>X - Y - R"]
+  E --> G["Portatore: fenotipo spesso normale<br/>tutti i geni presenti, ma riorganizzati"]
+  F --> G`} />
+
+## Guarda il video
+<YouTube id="AIhamHaQafU" title="ANOMALIE nella STRUTTURA dei CROMOSOMI: duplicazione, inversione, delezione e traslocazione" />
+<VideoVisto id="bio-u4-10" />
+
+## Da ricordare
+
+- Le alterazioni strutturali cambiano la **forma interna** dei cromosomi (non il numero): delezione, inserzione/duplicazione, inversione, traslocazione.
+- Il **portatore** di un riarrangiamento bilanciato (inversione o traslocazione reciproca) è spesso sano, ma rischia di trasmettere cromosomi sbilanciati ai figli.
+- La traslocazione robertsoniana è un caso speciale in cui due cromosomi si fondono; è alla base di alcune forme di sindrome di Down ereditaria.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un individuo nasce con un cromosoma a cui manca un segmento interno. Di quale tipo di riarrangiamento si tratta?" opzioni={["Traslocazione reciproca","Inversione pericentrica","Delezione","Duplicazione"]} corretta={2} spiegazione="La delezione è la perdita di un segmento cromosomico. Se manca un pezzo, si tratta proprio di una delezione." />
+
+<Quiz domanda="Due cromosomi non omologhi si rompono e si scambiano i frammenti a vicenda. Come si chiama questo evento?" opzioni={["Inversione paracentrica","Traslocazione reciproca","Delezione terminale","Duplicazione in tandem"]} corretta={1} spiegazione="Quando due cromosomi diversi si scambiano pezzi si parla di traslocazione reciproca. Entrambi i cromosomi risultano modificati, ma il materiale genetico totale è conservato." />
+
+<Quiz domanda="Un segmento cromosomico si stacca e si reinserisce nello stesso cromosoma, ma orientato in senso opposto. Quale riarrangiamento descrive questa situazione?" opzioni={["Traslocazione robertsoniana","Inserzione","Inversione","Delezione interstiziale"]} corretta={2} spiegazione="L'inversione è esattamente questo: il segmento rimane nello stesso cromosoma ma viene rimesso al contrario. Se coinvolge il centromero si chiama pericentrica, altrimenti paracentrica." />
+
+<Esercizio problema="Un individuo portatore di una traslocazione robertsoniana tra i cromosomi 14 e 21 ha un cariotipo con 45 cromosomi invece di 46, eppure è fenotipicamente normale. Come è possibile? E quali rischi corre la sua discendenza?" soluzione="Nella traslocazione robertsoniana, i due cromosomi acrocentrici (14 e 21) si fondono in un unico cromosoma ibrido. Il numero totale scende a 45, ma il materiale genetico è quasi completo (si perdono solo le regioni ribosomiali, che esistono in molte copie). Quindi il portatore è sano. Il rischio per i figli nasce dalla meiosi: la distribuzione del cromosoma 14/21 fuso può produrre cellule uovo o spermatozoi con una copia extra del cromosoma 21 (trisomia 21), che causa la sindrome di Down. Il rischio è maggiore rispetto alla forma spontanea (non ereditaria) della sindrome." />
+
+</section>
+
+</RisorsaLayout>

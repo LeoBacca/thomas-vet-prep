@@ -1,0 +1,10 @@
+{
+ "id": "fis-u5-03",
+ "titolo": "Calore, capacità termica e calore specifico",
+ "materia": "fisica",
+ "unita": 5,
+ "slug": "03-calore-capacita-termica-e-calore-specifico",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u5/03-calore-capacita-termica-e-calore-specifico.mdx",
+ "examQuestions": []
+}

@@ -1,0 +1,39 @@
+{
+ "id": "bio-u1-10",
+ "titolo": "Trasferimento genico orizzontale: trasformazione, coniugazione e trasduzione",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "10-trasferimento-genico-orizzontale-trasformazione-coniugazione-e",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/biologia/u1/10-trasferimento-genico-orizzontale-trasformazione-coniugazione-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2017",
+   "q": "Individuare l'affermazione FALSA.",
+   "choices": [
+    "I batteri possono scambiarsi materiale genetico mediante trasmigrazione, partenogenesi e coniugazione",
+    "Le cellule batteriche sono generalmente circondate da una parete cellulare",
+    "Alcune specie di batteri effettuano la fotosintesi",
+    "Gli archeobatteri e gli eubatteri sono organismi procariotici",
+    "I batteri si possono riprodurre per scissione binaria"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2020",
+   "q": "I plasmidi sono:",
+   "choices": [
+    "piccoli frammenti circolari di DNA batterico",
+    "piccoli frammenti circolari di DNA virale",
+    "piccoli frammenti lineari di DNA batterico",
+    "piccoli frammenti lineari di DNA virale",
+    "batteri anaerobici"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

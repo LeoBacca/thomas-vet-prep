@@ -1,0 +1,119 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-17">
+
+## Che cos'è la traduzione?
+
+La **traduzione** è il processo con cui la cellula legge l'mRNA e costruisce una proteina.
+
+Pensa al DNA come a un libro di ricette scritto in un linguaggio segreto. La **trascrizione** fa una copia di quella ricetta (l'mRNA). La **traduzione** è quando il cuoco (il ribosoma) legge la copia e assembla il piatto (la proteina) unendo gli ingredienti giusti (gli aminoacidi).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La traduzione è come seguire una ricetta: l'mRNA è la ricetta, il ribosoma è il cuoco, i tRNA sono i camerieri che portano gli ingredienti, e la proteina è il piatto finito.</div>
+
+---
+
+## I tre attori principali dell'RNA
+
+Ci sono tre tipi di RNA che lavorano insieme durante la traduzione:
+
+### 1. mRNA — l'RNA messaggero
+- È la "copia" del gene, uscita dal nucleo verso il citoplasma.
+- Porta la sequenza di **codoni**: triplette di 3 basi azotate che codificano per un aminoacido (es. AUG = metionina).
+- È il nastro che scorre attraverso il ribosoma.
+
+### 2. rRNA — l'RNA ribosomiale
+- È il componente strutturale e catalitico del **ribosoma**.
+- Non porta istruzioni, ma *è* la macchina che legge le istruzioni.
+- Catalizza la formazione del legame peptidico tra gli aminoacidi.
+
+### 3. tRNA — l'RNA di trasporto
+- È il "traduttore" fisico: ha un **anticodone** da un lato (si appaia al codone dell'mRNA) e porta l'**aminoacido** corrispondente dall'altro lato.
+- Funziona come un adattatore: da un lato legge il linguaggio dei nucleotidi, dall'altro porta il linguaggio degli aminoacidi.
+
+---
+
+## L'aminoacil-tRNA: il tRNA "carico"
+
+Prima di entrare nel ribosoma, ogni tRNA deve essere **caricato** con il suo aminoacido. Questo avviene grazie a enzimi chiamati **aminoacil-tRNA sintetasi** (uno per ogni tipo di aminoacido).
+
+- Il tRNA carico si chiama **aminoacil-tRNA**.
+- Il legame tra aminoacido e tRNA richiede energia (ATP).
+- Esistono circa 20 tipi diversi di aminoacil-tRNA sintetasi, una per ogni aminoacido.
+
+---
+
+## Il ribosoma: la macchina della traduzione
+
+Il ribosoma è composto da **due subunità** (piccola e grande) fatte di rRNA + proteine.
+
+Ha tre siti interni importanti:
+
+- **Sito A (Aminoacilico):** qui entra il nuovo aminoacil-tRNA.
+- **Sito P (Peptidil):** qui si trova il tRNA con la catena polipeptidica in crescita.
+- **Sito E (Exit/uscita):** qui il tRNA scarico esce dal ribosoma.
+
+---
+
+## Le tre fasi della traduzione
+
+### Inizio (Iniziazione)
+- La subunità piccola del ribosoma si lega all'mRNA, vicino al codone di inizio **AUG**.
+- Il primo aminoacil-tRNA (porta metionina, anticodone che si appaia ad AUG) si posiziona nel sito P.
+- Si unisce la subunità grande: il ribosoma è pronto.
+
+### Allungamento (Elongazione)
+- Un nuovo aminoacil-tRNA entra nel sito A e si appaia al codone successivo.
+- Si forma il **legame peptidico** tra i due aminoacidi (catalizzato dall'rRNA).
+- Il ribosoma scorre avanti di un codone: il tRNA scarico passa da P a E ed esce, quello dal sito A si sposta in P.
+- Il ciclo si ripete per ogni codone.
+
+### Termine (Terminazione)
+- Il ribosoma incontra un **codone di stop** (UAA, UAG, UGA): nessun tRNA lo riconosce.
+- Arriva un **fattore di rilascio** che libera la catena polipeptidica.
+- Le subunità del ribosoma si dissociano dall'mRNA.
+
+---
+
+<Diagram caption="Gli attori della traduzione e i loro ruoli" code={`flowchart TB
+  A["DNA<br/>(archivio)"] -->|trascrizione| B["mRNA<br/>(messaggio con codoni)"]
+  B -->|entra nel| C["Ribosoma<br/>(fatto di rRNA + proteine)"]
+  D["Aminoacido libero"] -->|caricato da| E["Aminoacil-tRNA sintetasi"]
+  E --> F["Aminoacil-tRNA<br/>(tRNA carico)"]
+  F -->|entra nel sito A| C
+  C -->|forma legame peptidico| G["Catena polipeptidica<br/>(proteina in crescita)"]
+  C -->|tRNA scarico esce da| H["Sito E — tRNA libero"]`} />
+
+<Diagram caption="Le tre fasi della traduzione: iniziazione, elongazione, terminazione" code={`flowchart LR
+  A["INIZIAZIONE<br/>Ribosoma si assembla<br/>su mRNA al codone AUG<br/>entra Met-tRNA nel sito P"] --> B["ELONGAZIONE<br/>Nuovo aminoacil-tRNA entra in A<br/>Legame peptidico formato<br/>Ribosoma scorre avanti<br/>tRNA scarico esce da E"]
+  B -->|"si ripete per ogni codone"| B
+  B -->|"arriva un codone di stop"| C["TERMINAZIONE<br/>Codone di stop UAA/UAG/UGA<br/>Fattore di rilascio libera<br/>la proteina<br/>Ribosoma si dissocia"]`} />
+
+## Guarda il video
+<YouTube id="5MkDIrGVc8o" title="SINTESI PROTEICA: RNA messaggero e Trascrizione, RNA ribosomiale ed RNA di Trasporto" />
+<VideoVisto id="bio-u3-17" />
+
+## Da ricordare
+- L'mRNA porta i **codoni** (triplette), il tRNA porta l'**anticodone** e l'aminoacido: il ribosoma fa incontrare i due.
+- Il ribosoma ha tre siti: **A** (entra il nuovo tRNA), **P** (cresce la catena), **E** (esce il tRNA scarico).
+- La traduzione si divide in tre fasi: **inizio** (AUG), **allungamento** (ciclo per ogni codone), **termine** (codone di stop).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione del tRNA durante la traduzione?" opzioni={["Catalizza la formazione del legame peptidico","Trasporta l'aminoacido al ribosoma e si appaia al codone dell'mRNA","Costituisce la struttura del ribosoma","Copia il DNA in RNA"]} corretta={1} spiegazione="Il tRNA è l'adattatore tra il linguaggio dei codoni (nucleotidi) e il linguaggio degli aminoacidi. Ha un anticodone che si appaia al codone dell'mRNA e porta l'aminoacido corrispondente nel sito A del ribosoma." />
+
+<Quiz domanda="In quale sito del ribosoma entra il nuovo aminoacil-tRNA durante l'elongazione?" opzioni={["Sito E","Sito P","Sito A","Sito D"]} corretta={2} spiegazione="Il sito A (Aminoacidil) è il sito di ingresso: ogni nuovo aminoacil-tRNA si posiziona qui e si appaia al codone esposto. Poi la catena polipeptidica viene trasferita da P ad A, e il ribosoma scorre avanti." />
+
+<Quiz domanda="Quale codone segnala l'inizio della traduzione e quale aminoacido porta?" opzioni={["UAA — acido aspartico","AUG — metionina","GUG — valina","UGG — triptofano"]} corretta={1} spiegazione="AUG è il codone di inizio universale. Codifica per la metionina (Met). Il primo aminoacil-tRNA che si posiziona nel sito P del ribosoma porta sempre metionina, che in molti organismi viene poi rimossa dalla proteina matura." />
+
+<Esercizio problema="Hai un frammento di mRNA con la sequenza: 5'-AUG-GCU-UAC-UGA-3'. Quanti aminoacidi avrà la proteina prodotta? Motiva la risposta." soluzione="La proteina avrà 3 aminoacidi. AUG codifica per Met (ed è il codone di inizio), GCU codifica per Alanina, UAC codifica per Tirosina. UGA è un codone di stop: non inserisce nessun aminoacido ma segnala la fine della traduzione. La catena è quindi: Met-Ala-Tyr (3 aminoacidi)." />
+
+</section>
+
+</RisorsaLayout>

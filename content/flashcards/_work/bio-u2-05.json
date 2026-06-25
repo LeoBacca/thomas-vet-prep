@@ -1,0 +1,25 @@
+{
+ "id": "bio-u2-05",
+ "titolo": "Modificazioni degli istoni ed epigenetica (l'esempio dell'acetilazione)",
+ "materia": "biologia",
+ "unita": 2,
+ "slug": "05-modificazioni-degli-istoni-ed-epigenetica-lesempio",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u2/05-modificazioni-degli-istoni-ed-epigenetica-lesempio.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Le modificazioni epigenetiche:",
+   "choices": [
+    "non determinano cambiamenti nella sequenza del DNA",
+    "determinano cambiamenti nella sequenza di DNA",
+    "esistono soltanto nell'uomo",
+    "riguardano soltanto le cellule germinali",
+    "non esistono nei mammiferi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

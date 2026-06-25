@@ -1,0 +1,82 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-15">
+
+## Cos'è una forza conservativa?
+
+Immagina di lanciare una palla in aria. La gravità la frena mentre sale, poi la accelera mentre scende. Alla fine, quando la palla torna al punto di partenza, ha la stessa energia cinetica di prima. La gravità ha "restituito" tutta l'energia che aveva "preso".
+
+Questo è il segno di una **forza conservativa**: il lavoro che compie dipende solo dal punto di partenza e dal punto di arrivo, **non dal percorso** fatto nel mezzo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Una forza conservativa è come un conto in banca senza commissioni — quello che depositi ti viene sempre restituito per intero.</div>
+
+**Esempi di forze conservative:**
+- Gravità (peso)
+- Forza elastica di una molla
+- Forza elettrica (coulombiana)
+
+---
+
+## Cos'è una forza non conservativa?
+
+Ora immagina di spingere una scatola sul pavimento da A a B, e poi di riportarla da B ad A. Hai fatto fatica in entrambe le direzioni: **l'attrito ti ha tolto energia ogni volta**, senza restituirtela.
+
+Con una forza non conservativa il lavoro dipende dal percorso. Più strada fai, più energia perdi — e quell'energia se ne va sotto forma di calore. Non la recuperi più.
+
+**Esempi di forze non conservative:**
+- Attrito
+- Resistenza dell'aria
+- Forze di smorzamento
+
+---
+
+## La differenza chiave: energia o calore?
+
+Le forze conservative "trasformano" energia (da cinetica a potenziale e viceversa) senza perderla. Le forze non conservative invece **dissipano** energia: la convertono in calore, rumore, deformazione — forme che non puoi riutilizzare per il moto.
+
+Per questo in fisica si dice che le forze conservative **conservano l'energia meccanica totale**, mentre quelle non conservative la riducono.
+
+<Diagram caption="Forza conservativa: l'energia va e torna" code={`flowchart TB
+  A["Palla lanciata in alto<br/>Energia cinetica alta"] --> B["Punta massima<br/>Energia cinetica zero<br/>Energia potenziale alta"]
+  B --> C["Palla tornata in basso<br/>Energia cinetica alta di nuovo"]
+  C --> D["Energia meccanica totale:<br/>sempre uguale"]`} />
+
+<Diagram caption="Forza non conservativa: l'attrito dissipa energia" code={`flowchart LR
+  A["Scatola in A<br/>Energia iniziale E"] --> B["Percorso 1<br/>Attrito lavora"]
+  A --> C["Percorso 2 più lungo<br/>Attrito lavora di più"]
+  B --> D["Scatola in B<br/>Energia rimasta E1"]
+  C --> E["Scatola in B<br/>Energia rimasta E2<br/>E2 minore di E1"]
+  D --> F["Energia persa come calore"]
+  E --> F`} />
+
+---
+
+## Guarda il video
+<YouTube id="187I6X5YQ6s" title="Le forze conservative e non conservative [lezione di fisica]" />
+<VideoVisto id="fis-u2-15" />
+
+## Da ricordare
+- Una forza **conservativa** (es. gravità) compie un lavoro che dipende solo da inizio e fine percorso, non dal cammino: l'energia meccanica si conserva.
+- Una forza **non conservativa** (es. attrito) compie un lavoro che dipende dal percorso: più strada si fa, più energia si perde come calore.
+- Il lavoro totale su un percorso chiuso è **zero** per le forze conservative, **diverso da zero** per quelle non conservative.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un oggetto viene spostato da A a B lungo due percorsi diversi. Il lavoro compiuto dalla forza è lo stesso su entrambi i percorsi. Di che tipo di forza si tratta?" opzioni={["Forza di attrito", "Forza conservativa", "Forza non conservativa", "Forza di smorzamento"]} corretta={1} spiegazione="Il fatto che il lavoro non dipenda dal percorso è la definizione stessa di forza conservativa. L'attrito e le forze di smorzamento invece producono lavori diversi a seconda della lunghezza del percorso." />
+
+<Quiz domanda="Una palla cade da un'altezza h e torna su fino alla stessa altezza h (nessun attrito). Cosa si può dire dell'energia meccanica totale?" opzioni={["È diminuita perché la gravità ha lavorato", "È aumentata perché la palla si è mossa", "È rimasta uguale perché la gravità è una forza conservativa", "È diminuita a causa della resistenza dell'aria"]} corretta={2} spiegazione="In assenza di attrito e resistenza dell'aria, la gravità (forza conservativa) conserva l'energia meccanica totale: l'energia potenziale e cinetica si scambiano ma la somma rimane costante." />
+
+<Quiz domanda="Quale delle seguenti affermazioni descrive correttamente una forza non conservativa?" opzioni={["Il lavoro su un percorso chiuso è sempre zero", "L'energia meccanica del sistema rimane costante", "Il lavoro dipende dal percorso seguito, non solo dai punti di inizio e fine", "La forza trasforma energia cinetica in potenziale senza perdite"]} corretta={2} spiegazione="La caratteristica distintiva di una forza non conservativa è che il lavoro da lei compiuto dipende dal percorso. Su un percorso chiuso il lavoro è diverso da zero, e parte dell'energia meccanica viene dissipata (ad esempio come calore)." />
+
+<Esercizio problema="Una scatola da 5 kg viene spinta su un piano orizzontale con attrito da A a B (distanza 3 m) e poi riportata da B ad A lungo lo stesso percorso. Il coefficiente di attrito cinetico è 0,2 e g = 10 m/s². Calcola il lavoro totale compiuto dall'attrito sull'intero percorso di andata e ritorno." soluzione="La forza di attrito è: F_attrito = μ × m × g = 0,2 × 5 × 10 = 10 N. Il lavoro dell'attrito si oppone sempre al moto, quindi su ogni tratto è negativo: W = -F_attrito × d = -10 × 3 = -30 J per ogni tratto. Sul percorso totale (andata + ritorno = 6 m): W_totale = -10 × 6 = -60 J. Il lavoro totale è -60 J (negativo perché l'attrito sottrae sempre energia). Questo dimostra che l'attrito è una forza non conservativa: su un percorso chiuso il lavoro non è zero." />
+
+</section>
+
+</RisorsaLayout>

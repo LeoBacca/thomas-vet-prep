@@ -1,0 +1,122 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-13">
+
+## Cosa sono i carboidrati?
+
+I carboidrati (detti anche **glucidi** o **zuccheri**) sono molecole formate da tre elementi: **carbonio (C)**, **idrogeno (H)** e **ossigeno (O)**. La formula di base è semplice: per ogni atomo di carbonio ci sono due di idrogeno e uno di ossigeno — come se fosse "carbonio + acqua", da cui il nome *idrato di carbonio*.
+
+Pensali come i **mattoni energetici** del corpo: quando mangi pane, pasta o frutta, stai ingerendo carboidrati. Le cellule li usano come carburante principale.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> I carboidrati sono lo zucchero della vita — forniscono energia rapida, formano strutture resistenti e aiutano le cellule a comunicare tra loro.</div>
+
+---
+
+## Tre tipi principali: dalla molecola più piccola alla più grande
+
+I carboidrati si classificano in base a quante "unità zucchero" contengono.
+
+**1. Monosaccaridi — il mattone base**
+
+Sono i carboidrati più semplici: una sola unità. Non si possono spezzare ulteriormente. Il più importante è il **glucosio** (C₆H₁₂O₆), il "carburante universale" delle cellule. Altri esempi: fruttosio (nella frutta) e galattosio (nel latte).
+
+**2. Disaccaridi — due mattoni uniti**
+
+Due monosaccaridi si uniscono con un legame chimico chiamato **legame glicosidico** (immaginalo come un gancio tra due vagoni di un treno). Esempi:
+- **Saccarosio** = glucosio + fruttosio (lo zucchero da cucina)
+- **Lattosio** = glucosio + galattosio (lo zucchero del latte)
+
+**3. Polisaccaridi — catene lunghe di mattoni**
+
+Tanti monosaccaridi uniti in una lunga catena. Sono le forme di **riserva** o di **struttura**:
+- **Amido** — riserva nei vegetali (pane, pasta, patate)
+- **Glicogeno** — riserva negli animali (nel fegato e nei muscoli)
+- **Cellulosa** — struttura delle pareti delle cellule vegetali (la fibra che non digeriamo)
+
+---
+
+## Funzioni dei carboidrati nella cellula
+
+I carboidrati non servono solo come energia. Hanno ruoli diversi:
+
+- **Energia immediata** — il glucosio entra subito nella respirazione cellulare
+- **Riserva energetica** — amido (piante) e glicogeno (animali) immagazzinano glucosio per dopo
+- **Struttura** — la cellulosa forma le pareti delle cellule vegetali, la chitina forma l'esoscheletro degli insetti
+- **Riconoscimento cellulare** — brevi catene di zuccheri sulla superficie delle cellule fungono da "etichette" (il gruppo sanguigno dipende da queste!)
+
+---
+
+<Diagram caption="Classificazione dei carboidrati: dal monosaccaride al polisaccaride" code={`flowchart TB
+  A["CARBOIDRATI<br/>(C, H, O)"] --> B["Monosaccaridi<br/>(1 unità)"]
+  A --> C["Disaccaridi<br/>(2 unità)"]
+  A --> D["Polisaccaridi<br/>(tante unità)"]
+  B --> B1["Glucosio<br/>→ carburante cellulare"]
+  B --> B2["Fruttosio<br/>→ nella frutta"]
+  B --> B3["Galattosio<br/>→ nel latte"]
+  C --> C1["Saccarosio<br/>= glucosio + fruttosio"]
+  C --> C2["Lattosio<br/>= glucosio + galattosio"]
+  D --> D1["Amido<br/>→ riserva nei vegetali"]
+  D --> D2["Glicogeno<br/>→ riserva negli animali"]
+  D --> D3["Cellulosa<br/>→ struttura pareti vegetali"]`} />
+
+<Diagram caption="Ruoli dei carboidrati nell'organismo: da dove arrivano e dove vanno" code={`flowchart LR
+  A["Carboidrati<br/>ingeriti (cibo)"] --> B["Digestione:<br/>spezzati in glucosio"]
+  B --> C["Glucosio nel sangue<br/>(glicemia)"]
+  C --> D["Usato subito<br/>→ energia (ATP)"]
+  C --> E["Salvato nei muscoli<br/>→ glicogeno muscolare"]
+  C --> F["Salvato nel fegato<br/>→ glicogeno epatico"]
+  F --> G["Liberato quando<br/>serve energia extra"]
+  E --> G`} />
+
+---
+
+## Guarda il video
+<YouTube id="lLueoRLJgIY" title="I CARBOIDRATI - i monosaccaridi" />
+<VideoVisto id="bio-u1-13" />
+
+---
+
+## Da ricordare
+
+- I carboidrati sono molecole di C, H, O classificate in monosaccaridi (1 unità), disaccaridi (2 unità) e polisaccaridi (catene lunghe).
+- Il glucosio è il monosaccaride più importante: è il carburante diretto delle cellule; amido e glicogeno ne sono le forme di riserva.
+- I carboidrati non fanno solo energia: cellulosa e chitina sono strutturali, e alcune catene di zuccheri servono da "etichette" per il riconoscimento tra cellule.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è la formula generale che accomuna tutti i monosaccaridi?"
+  opzioni={["CₙH₂ₙOₙ", "CₙHₙO₂ₙ", "CₙH₂ₙO₂", "C₂ₙHₙOₙ"]}
+  corretta={0}
+  spiegazione="La formula generale dei monosaccaridi è CₙH₂ₙOₙ: per ogni carbonio ci sono 2 idrogeni e 1 ossigeno. Il glucosio, per esempio, è C₆H₁₂O₆, che segue esattamente questo schema con n=6."
+/>
+
+<Quiz
+  domanda="Il lattosio è un disaccaride formato da:"
+  opzioni={["Glucosio + fruttosio", "Glucosio + galattosio", "Fruttosio + galattosio", "Due molecole di glucosio"]}
+  corretta={1}
+  spiegazione="Il lattosio (lo zucchero del latte) è formato dall'unione di glucosio e galattosio tramite un legame glicosidico. Chi è intollerante al lattosio non produce abbastanza lattasi, l'enzima che spezza questo legame."
+/>
+
+<Quiz
+  domanda="Quale polisaccaride viene usato dagli animali (incluso l'uomo) per immagazzinare glucosio?"
+  opzioni={["Cellulosa", "Amido", "Chitina", "Glicogeno"]}
+  corretta={3}
+  spiegazione="Il glicogeno è la forma di riserva del glucosio negli animali, depositata principalmente nel fegato e nei muscoli. Le piante usano invece l'amido per lo stesso scopo. La cellulosa e la chitina sono polisaccaridi strutturali."
+/>
+
+<Esercizio
+  problema="Un atleta prima di una gara mangia una pasta con pane. Spiega, usando i termini corretti (polisaccaridi, amido, digestione, glucosio, glicogeno), cosa succede a quei carboidrati dal momento in cui vengono ingeriti fino a quando forniscono energia ai muscoli durante la corsa."
+  soluzione="La pasta e il pane contengono amido, un polisaccaride fatto di tante molecole di glucosio unite. Durante la digestione, enzimi come l'amilasi spezzano i legami glicosidici dell'amido, liberando glucosio. Il glucosio passa nel sangue e viene distribuito alle cellule. Una parte viene usata subito per produrre energia (ATP) tramite la respirazione cellulare. La parte in eccesso viene convertita in glicogeno e depositata nei muscoli e nel fegato. Durante la corsa, quando la domanda energetica sale, il glicogeno muscolare viene ri-convertito in glucosio e bruciato per dare energia ai muscoli."
+/>
+
+</section>
+
+</RisorsaLayout>

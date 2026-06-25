@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u5-10-1",
+    "topicId": "bio-u5-10",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: la glicolisi avviene nel citoplasma (citosol) della cellula e non ha bisogno di ossigeno per funzionare.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. La glicolisi non ha bisogno dei mitocondri né dell'ossigeno: lavora nel citoplasma. È una delle reazioni più antiche della vita, usata anche da organismi senza ossigeno. Questo spiega perché i muscoli del tuo cane possono continuare a produrre un po' di energia anche durante uno sforzo intenso, quando l'ossigeno scarseggia.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-10-2",
+    "topicId": "bio-u5-10",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Immagina il glucosio come una banconota da 10 euro. La glicolisi è come spezzarla per avere spiccioli. Qual è il bilancio netto di 'spiccioli' (ATP) che si ricavano da 1 molecola di glucosio?",
+    "choices": [
+      "2 ATP netti (si producono 4, ma se ne spendono 2 per 'attivare' il glucosio)",
+      "4 ATP netti (tutti quelli prodotti nella fase di rendimento)",
+      "38 ATP netti (come nell'intera respirazione cellulare)",
+      "0 ATP: la glicolisi consuma energia senza produrla"
+    ],
+    "answer": 0,
+    "explain": "La glicolisi ha due fasi: prima 'investe' 2 ATP per attivare il glucosio e spezzarlo a metà; poi 'guadagna' 4 ATP e 2 NADH. Il guadagno netto è 4 − 2 = 2 ATP. I 38 ATP si ottengono solo completando l'intera respirazione cellulare nei mitocondri: la glicolisi da sola ne dà solo 2.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-10-3",
+    "topicId": "bio-u5-10",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Un cane corre a tutta velocità per alcuni secondi e i suoi muscoli cominciano a produrre lattato. Spiega: perché il muscolo 'sceglie' il lattato invece di continuare la respirazione aerobica? Che ruolo ha la glicolisi?",
+    "answer": "Durante uno sforzo molto intenso i muscoli consumano ossigeno più velocemente di quanto il sangue riesca a portarne. Senza ossigeno il piruvato (il prodotto finale della glicolisi) non può entrare nei mitocondri per produrre altri ATP. Allora la cellula converte il piruvato in lattato attraverso la fermentazione lattica. Questo serve a rigenerare il NAD+ (che si 'consuma' durante la glicolisi e deve essere riciclato) così da permettere alla glicolisi di andare avanti e produrre almeno i 2 ATP netti di cui il muscolo ha disperatamente bisogno. In breve: il lattato non è uno spreco, è una strategia di sopravvivenza rapida in assenza di ossigeno.",
+    "explain": "Da ricordare: in anaerobiosi il piruvato → lattato; questo serve a riciclare il NAD+ e far continuare la glicolisi.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-10-4",
+    "topicId": "bio-u5-10",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quali fasi del metabolismo del glucosio RICHIEDONO (consumano) ATP invece di produrlo?",
+    "choices": [
+      "La glicolisi (nella sua prima fase di investimento energetico)",
+      "Il ciclo di Krebs",
+      "La catena di trasporto degli elettroni",
+      "La fosforilazione ossidativa",
+      "L'ossidazione del piruvato a CO2"
+    ],
+    "answer": 0,
+    "explain": "La glicolisi è l'unica tra queste che SPENDE ATP (2 molecole nella fase di investimento iniziale, per attivare il glucosio). Poi le recupera con abbondanza nella fase di rendimento (4 ATP), quindi il bilancio finale è positivo (+2 netti). Il ciclo di Krebs, la catena di trasporto degli elettroni e la fosforilazione ossidativa producono ATP, non lo consumano. L'ossidazione del piruvato fa lo stesso. La trappola è pensare che 'glicolisi = solo produzione di energia': in realtà si deve prima investire per poi guadagnare di più.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-10-5",
+    "topicId": "bio-u5-10",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale delle seguenti molecole è un prodotto DIRETTO della glicolisi nell'essere umano?",
+    "choices": [
+      "NAD ridotto (NADH)",
+      "Acqua (H2O)",
+      "Lattato",
+      "RuBP (ribulosio bifosfato)",
+      "CO2"
+    ],
+    "answer": 0,
+    "explain": "La glicolisi produce direttamente 2 piruvati, 2 ATP netti e 2 NADH (NAD ridotto). Il NADH è un 'portatore di elettroni' che poi va nei mitocondri. Il lattato è la trappola più insidiosa: è il destino successivo del piruvato in assenza di ossigeno, NON un prodotto diretto della glicolisi. L'acqua e la CO2 si producono nelle fasi successive (catena respiratoria e ciclo di Krebs), non nella glicolisi. Il RuBP è un composto della fotosintesi vegetale, non del catabolismo del glucosio: filler fuori tema.",
+    "tags": ["prova d'esame"]
+  }
+]

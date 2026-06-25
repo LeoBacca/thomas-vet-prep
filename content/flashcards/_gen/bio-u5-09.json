@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u5-09-1",
+    "topicId": "bio-u5-09",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: il mitocondrio ha DUE membrane — una esterna liscia e una interna ripiegata a formare le creste.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. La doppia membrana e la firma del mitocondrio. La membrana interna si ripiega a fisarmonica (creste mitocondriali): piu creste = piu superficie = piu ATP. Le cellule muscolari del cuore, che bruciano energia senza sosta, hanno mitocondri particolarmente ricchi di creste.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-09-2",
+    "topicId": "bio-u5-09",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Il Ciclo di Krebs avviene in quale parte del mitocondrio?",
+    "choices": [
+      "Nella matrice mitocondriale (il liquido interno)",
+      "Sulle creste della membrana interna",
+      "Nello spazio intermembrana",
+      "Sulla membrana esterna"
+    ],
+    "answer": 0,
+    "explain": "La matrice e il 'brodo' dentro al mitocondrio, delimitato dalla membrana interna. Li avviene il Ciclo di Krebs. Le creste della membrana interna ospitano invece la catena di trasporto degli elettroni e l'ATP sintasi (il passo finale che produce la maggior parte dell'ATP).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-09-3",
+    "topicId": "bio-u5-09",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Immagina che il mitocondrio di una cellula muscolare venga 'appiattito': la sua membrana interna perde tutte le creste e diventa completamente liscia. Cosa succede alla produzione di ATP e perche?",
+    "answer": "Senza creste la membrana interna ha una superficie molto piu piccola. Su quella superficie sono inserite le proteine della catena di trasporto degli elettroni e le molecole di ATP sintasi (la 'turbina' che produce ATP). Meno superficie = meno ATP sintasi = molto meno ATP prodotto per unita di tempo. La cellula muscolare, che ha un fabbisogno energetico altissimo (deve contrarsi continuamente), andrebbe in crisi energetica: non riuscirebbe a sostenere le contrazioni. Per questo le cellule piu attive hanno mitocondri con creste particolarmente fitte e numerose.",
+    "explain": "Le creste aumentano la superficie della membrana interna → piu ATP sintasi attive → piu ATP. Senza creste la cellula produce molta meno energia.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-09-4",
+    "topicId": "bio-u5-09",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "I processi del metabolismo energetico della cellula eucariotica si svolgono per la maggior parte:",
+    "choices": [
+      "Nel mitocondrio",
+      "Nel nucleo",
+      "Nel lisosoma",
+      "Nell'apparato di Golgi",
+      "Nel reticolo endoplasmatico"
+    ],
+    "answer": 0,
+    "explain": "Il mitocondrio e la centrale energetica della cellula: e qui che avvengono il Ciclo di Krebs, la catena di trasporto degli elettroni e la sintesi della maggior parte dell'ATP. Il nucleo custodisce il DNA ma non produce energia. Il lisosoma e l'apparato di Golgi hanno funzioni di degradazione e smistamento delle proteine — completamente diverse. Il reticolo endoplasmatico serve alla sintesi e al trasporto di proteine e lipidi.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-09-5",
+    "topicId": "bio-u5-09",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sul DNA mitocondriale (mtDNA) e CORRETTA?",
+    "choices": [
+      "E circolare, privo di istoni, e si eredita quasi esclusivamente dalla madre",
+      "E lineare come il DNA nucleare e si eredita in parti uguali da entrambi i genitori",
+      "E circolare ma avvolto da istoni, esattamente come il DNA nel nucleo",
+      "Contiene migliaia di geni che codificano per tutte le proteine mitocondriali",
+      "E assente: i mitocondri non possiedono un proprio DNA"
+    ],
+    "answer": 0,
+    "explain": "Il mtDNA e circolare (come il DNA batterico, non lineare come quello nucleare) e privo di istoni. Si eredita quasi solo dalla madre perche i mitocondri dell'uovo si trasferiscono al figlio, mentre quelli dello spermatozoo vengono eliminati dopo la fecondazione. Contiene solo 37 geni (non migliaia), di cui 13 codificano proteine. La trappola 'avvolto da istoni come nel nucleo' e una classica confusione: la mancanza di istoni e proprio una delle prove che i mitocondri discendono da antichi batteri (teoria endosimbiotica).",
+    "tags": ["prova d'esame"]
+  }
+]

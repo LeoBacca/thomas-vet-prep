@@ -1,0 +1,84 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u3-02">
+
+## Cos'è la pressione idrostatica?
+
+Immagina di tuffarti in piscina. Più scendi in profondità, più senti le orecchie che "si tappano". Quella sensazione di schiacciamento è la **pressione idrostatica**: la forza che il liquido esercita su tutto ciò che ci si trova immerso.
+
+La pressione idrostatica esiste perché sopra di te c'è una colonna d'acqua. Più è alta quella colonna, più pesa, e più spinge su di te.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Più vai in profondità, più acqua hai sopra la testa, e più quella acqua ti schiaccia.</div>
+
+## La Legge di Stevino
+
+Simon Stevino, fisico del 1500, ha messo tutto questo in una formula:
+
+**P = P₀ + ρ · g · h**
+
+Dove:
+- **P** è la pressione totale nel punto considerato
+- **P₀** è la pressione sulla superficie del liquido (di solito quella atmosferica)
+- **ρ** (rho) è la densità del liquido — quanto "pesa" un litro di quel liquido
+- **g** è l'accelerazione di gravità (≈ 9,81 m/s²)
+- **h** è la profondità — quanto sei sceso sotto la superficie
+
+In pratica: la pressione cresce in modo **lineare** con la profondità. Scendi il doppio? La pressione aumenta del doppio (oltre alla pressione di partenza).
+
+## Cosa dipende e cosa NON dipende dalla pressione
+
+La pressione idrostatica dipende da:
+- la **profondità h** — più scendi, più cresce
+- la **densità ρ** del liquido — nel mercurio la pressione sale più in fretta che nell'acqua
+- la **gravità g** — su Marte la pressione crescerebbe più lentamente
+
+La pressione idrostatica **NON** dipende da:
+- la forma del contenitore
+- la quantità totale di liquido
+- la larghezza o la sezione del recipiente
+
+Questo si chiama **paradosso idrostatico**: un bicchierone largo e un tubo stretto, alla stessa profondità, hanno la stessa pressione.
+
+<Diagram caption="Come la pressione aumenta con la profondità secondo la Legge di Stevino" code={`flowchart TB
+  A["Superficie del liquido<br/>Pressione = P₀ (atmosferica)"]
+  B["Profondità h = 1 m<br/>Pressione = P₀ + ρ·g·1"]
+  C["Profondità h = 2 m<br/>Pressione = P₀ + ρ·g·2"]
+  D["Profondità h = 3 m<br/>Pressione = P₀ + ρ·g·3"]
+  A --> B --> C --> D`} />
+
+<Diagram caption="Cosa influenza la pressione idrostatica e cosa no" code={`flowchart LR
+  P["Pressione idrostatica P"]
+  SI["Dipende da:<br/>profondità h<br/>densità ρ<br/>gravità g"]
+  NO["NON dipende da:<br/>forma del contenitore<br/>quantità di liquido<br/>sezione del recipiente"]
+  SI --> P
+  NO -. "non cambia P" .-> P`} />
+
+## Guarda il video
+<YouTube id="eE_nV006Td4" title="Legge di Stevino - Spiegazione Semplice & Dimostrazione" />
+<VideoVisto id="fis-u3-02" />
+
+## Da ricordare
+- La pressione idrostatica aumenta con la profondità: ogni metro in più aggiunge ρ·g di pressione
+- La formula è P = P₀ + ρ·g·h, dove h è la profondità misurata dalla superficie
+- La pressione non dipende dalla forma del contenitore, ma solo da profondità e densità del liquido
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un sub scende a 10 m di profondità nel mare (ρ = 1025 kg/m³, g = 9,81 m/s², P₀ = 101 325 Pa). Quale grandezza NON influenza la pressione che sente il sub?" opzioni={["La profondità a cui si trova","La densità dell'acqua marina","La forma della baia in cui nuota","L'accelerazione di gravità"]} corretta={2} spiegazione="La pressione idrostatica dipende da profondità, densità e gravità (P = P₀ + ρ·g·h). La forma del contenitore — in questo caso la baia — non entra nella formula e non cambia la pressione." />
+
+<Quiz domanda="In un lago d'acqua dolce (ρ = 1000 kg/m³, g = 10 m/s²) la pressione alla profondità di 5 m è P₀ + 50 000 Pa. Se raddoppi la profondità a 10 m, quanto vale la pressione aggiuntiva rispetto a P₀?" opzioni={["25 000 Pa","50 000 Pa","100 000 Pa","200 000 Pa"]} corretta={2} spiegazione="La parte idrostatica è ρ·g·h = 1000 × 10 × 10 = 100 000 Pa. Raddoppiando h si raddoppia anche la pressione aggiuntiva rispetto alla superficie." />
+
+<Quiz domanda="Due recipienti contengono acqua (stessa densità): uno è un secchio largo, l'altro è un tubo stretto. Entrambi sono alti 30 cm. Qual è la pressione sul fondo?" opzioni={["Più alta nel secchio largo, perché contiene più acqua","Più alta nel tubo stretto, perché l'acqua è compressa","Uguale in entrambi, perché la profondità h è la stessa","Dipende dalla quantità totale di acqua contenuta"]} corretta={2} spiegazione="Questo è il paradosso idrostatico: la pressione dipende solo da h, ρ e g, non dalla forma o dal volume del contenitore. Stessa altezza d'acqua = stessa pressione sul fondo." />
+
+<Esercizio problema="Una piscina è piena d'acqua (ρ = 1000 kg/m³). La pressione atmosferica vale P₀ = 100 000 Pa e g = 10 m/s². Calcola la pressione totale sul fondo della piscina, che è a 2 m di profondità." soluzione="Applica la Legge di Stevino: P = P₀ + ρ·g·h = 100 000 + 1000 × 10 × 2 = 100 000 + 20 000 = 120 000 Pa. La pressione sul fondo è 120 000 Pa, cioè 1,2 volte la pressione atmosferica." />
+
+</section>
+
+</RisorsaLayout>

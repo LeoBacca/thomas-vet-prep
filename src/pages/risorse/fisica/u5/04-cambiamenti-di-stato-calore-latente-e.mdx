@@ -1,0 +1,111 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u5-04">
+
+## Cosa sono i cambiamenti di stato?
+
+La materia esiste in tre stati principali: **solido**, **liquido** e **gassoso**. Quando fornisci o togli calore a una sostanza, puoi farla passare da uno stato all'altro. Questi passaggi si chiamano **cambiamenti di stato** (o transizioni di fase).
+
+Ecco i sei passaggi possibili:
+
+- **Fusione** — da solido a liquido (es. ghiaccio che si scioglie)
+- **Solidificazione** — da liquido a solido (es. acqua che congela)
+- **Vaporizzazione** — da liquido a gas (es. acqua che bolle)
+- **Condensazione** — da gas a liquido (es. vapore che diventa goccioline)
+- **Sublimazione** — da solido a gas direttamente (es. la naftalina)
+- **Brinamento (deposizione)** — da gas a solido direttamente (es. la brina sul vetro)
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Durante un cambiamento di stato la temperatura NON cambia, anche se continui ad aggiungere calore. Tutta l'energia serve a rompere (o formare) i legami tra le molecole.</div>
+
+## Perché la temperatura non cambia durante il passaggio di stato?
+
+Immagina di stare sciogliendo del burro in padella. Finché il burro è ancora mezzo solido, anche se continui a scaldare, la temperatura si "ferma" a un certo valore. Solo quando tutto il burro è diventato liquido la temperatura torna a salire.
+
+Questo succede perché l'energia che stai fornendo non va ad "agitare" le molecole (che è ciò che causa l'aumento di temperatura), ma a **spezzare i legami** che le tengono ferme nella struttura solida.
+
+## Cos'è il calore latente?
+
+Il **calore latente** è la quantità di calore che devi fornire (o togliere) per far cambiare stato a 1 kg di una sostanza, **senza che la temperatura cambi**.
+
+La formula è:
+
+**Q = m · L**
+
+Dove:
+- **Q** = calore scambiato (in Joule)
+- **m** = massa della sostanza (in kg)
+- **L** = calore latente specifico (in J/kg), che dipende dalla sostanza e dal tipo di passaggio
+
+Esistono due tipi principali:
+- **Calore latente di fusione** (L_f): per passare da solido a liquido
+- **Calore latente di vaporizzazione** (L_v): per passare da liquido a gas
+
+Per l'acqua, per esempio:
+- L_f = 334 000 J/kg (circa 334 kJ/kg)
+- L_v = 2 260 000 J/kg (circa 2260 kJ/kg)
+
+Il calore latente di vaporizzazione è molto più grande di quello di fusione: ci vuole molta più energia per trasformare acqua liquida in vapore che per sciogliere il ghiaccio.
+
+## Cos'è la calorimetria?
+
+La **calorimetria** è la misura degli scambi di calore tra corpi o durante i cambiamenti di stato. Si usa il **calorimetro**, un contenitore isolato termicamente.
+
+Il principio di base è: **il calore ceduto da un corpo caldo = il calore assorbito dal corpo freddo** (se il sistema è isolato).
+
+**Q_ceduto = Q_assorbito**
+
+Quando ci sono cambiamenti di stato di mezzo, bisogna sommare i contributi:
+1. Il calore per variare la temperatura (Q = m · c · ΔT)
+2. Il calore latente per il cambio di stato (Q = m · L)
+
+<Diagram caption="I sei cambiamenti di stato della materia" code={`flowchart TB
+  S["SOLIDO"]
+  L["LIQUIDO"]
+  G["GAS"]
+  S -->|"Fusione<br/>(assorbe calore)"| L
+  L -->|"Solidificazione<br/>(cede calore)"| S
+  L -->|"Vaporizzazione<br/>(assorbe calore)"| G
+  G -->|"Condensazione<br/>(cede calore)"| L
+  S -->|"Sublimazione<br/>(assorbe calore)"| G
+  G -->|"Brinamento<br/>(cede calore)"| S`} />
+
+<Diagram caption="Come cambia la temperatura dell'acqua mentre si riscalda: le zone piatte sono i cambiamenti di stato" code={`flowchart LR
+  A["Ghiaccio<br/>sotto 0 °C<br/>(temperatura sale)"]
+  B["Fusione<br/>a 0 °C<br/>(temperatura fissa)"]
+  C["Acqua liquida<br/>0 - 100 °C<br/>(temperatura sale)"]
+  D["Vaporizzazione<br/>a 100 °C<br/>(temperatura fissa)"]
+  E["Vapore acqueo<br/>sopra 100 °C<br/>(temperatura sale)"]
+  A -->|"aggiungo calore"| B
+  B -->|"aggiungo calore"| C
+  C -->|"aggiungo calore"| D
+  D -->|"aggiungo calore"| E`} />
+
+## Guarda il video
+<YouTube id="6FnWgjaIPkE" title="LEZIONI di FISICA! Cambiamenti di stato fisica, passaggi di stato, calore latente" />
+<VideoVisto id="fis-u5-04" />
+
+## Da ricordare
+- Durante un cambiamento di stato la temperatura rimane costante: tutta l'energia serve a rompere o formare i legami molecolari, non ad aumentare l'agitazione termica.
+- Il calore latente si calcola con Q = m · L; quello di vaporizzazione dell'acqua è circa 7 volte più grande di quello di fusione.
+- In calorimetria, il calore ceduto dai corpi caldi uguaglia quello assorbito dai corpi freddi; se c'è un cambio di stato, devi aggiungere il termine m · L al bilancio.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Stai scaldando un cubetto di ghiaccio. Quando raggiunge 0 °C, cosa succede alla temperatura mentre il ghiaccio si scioglie?" opzioni={["Continua a salire normalmente","Rimane a 0 °C finché tutto il ghiaccio è fuso","Scende leggermente prima di risalire","Supera subito i 10 °C"]} corretta={1} spiegazione="Durante la fusione tutta l'energia fornita serve a rompere i legami nel reticolo cristallino del ghiaccio, non ad aumentare la temperatura. La temperatura rimane a 0 °C finché tutto il ghiaccio è diventato acqua liquida." />
+
+<Quiz domanda="Quanto calore serve per sciogliere completamente 2 kg di ghiaccio a 0 °C? (Calore latente di fusione dell'acqua: L_f = 334 000 J/kg)" opzioni={["167 000 J","334 000 J","668 000 J","1 336 000 J"]} corretta={2} spiegazione="Q = m · L_f = 2 kg × 334 000 J/kg = 668 000 J. Si moltiplica semplicemente la massa per il calore latente specifico." />
+
+<Quiz domanda="Quale grandezza fisica rimane costante durante un cambiamento di stato, a pressione costante?" opzioni={["La massa della sostanza","La pressione atmosferica","La temperatura della sostanza","Il volume della sostanza"]} corretta={2} spiegazione="A pressione costante, durante un cambiamento di stato la temperatura rimane costante (es. 0 °C per la fusione del ghiaccio, 100 °C per l'ebollizione dell'acqua). Il calore fornito viene usato interamente per il cambio di stato." />
+
+<Esercizio problema="Hai 500 g di acqua liquida a 100 °C. Quanti Joule occorrono per trasformarla completamente in vapore alla stessa temperatura? (Calore latente di vaporizzazione dell'acqua: L_v = 2 260 000 J/kg)" soluzione="Converti la massa: m = 500 g = 0,5 kg. Applica la formula: Q = m · L_v = 0,5 kg × 2 260 000 J/kg = 1 130 000 J = 1130 kJ. Serve più di un milione di joule solo per vaporizzare mezzo litro d'acqua: ecco perché il vapore è così energetico e pericoloso!" />
+
+</section>
+
+</RisorsaLayout>

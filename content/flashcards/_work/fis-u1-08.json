@@ -1,0 +1,39 @@
+{
+ "id": "fis-u1-08",
+ "titolo": "Operazioni tra vettori (somma, differenza, prodotto scalare e vettoriale)",
+ "materia": "fisica",
+ "unita": 1,
+ "slug": "08-operazioni-tra-vettori-somma-differenza-prodotto",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/fisica/u1/08-operazioni-tra-vettori-somma-differenza-prodotto.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Luglio",
+   "q": "Due vettori hanno modulo rispettivamente pari a 10 e 5 e formano tra loro un angolo di 45 gradi. Quanto vale il prodotto scalare tra i due vettori?",
+   "choices": [
+    "35,4",
+    "50",
+    "11,2",
+    "45",
+    "25,8"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Determinare quale delle seguenti affermazioni relative al prodotto vettoriale tra due vettori è falsa:",
+   "choices": [
+    "il prodotto vettoriale gode della proprietà commutativa",
+    "il prodotto vettoriale dà come risultato un vettore",
+    "il prodotto vettoriale tra due vettori paralleli è nullo",
+    "il modulo del prodotto vettoriale è proporzionale al seno dell'angolo tra i due vettori",
+    "la direzione del prodotto vettoriale è perpendicolare alle direzioni dei due vettori"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

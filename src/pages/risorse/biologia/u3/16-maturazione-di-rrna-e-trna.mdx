@@ -1,0 +1,107 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-16">
+
+## Cosa sono rRNA e tRNA?
+
+Prima di parlare di maturazione, ricordiamo chi sono i protagonisti.
+
+**rRNA (RNA ribosomiale):** è il componente strutturale del ribosoma, la "macchina" che costruisce le proteine. Senza rRNA, non ci sono ribosomi; senza ribosomi, non si producono proteine.
+
+**tRNA (RNA di trasporto):** è il "corriere" che porta gli amminoacidi al ribosoma durante la sintesi proteica. Ogni tRNA riconosce un codone specifico dell'mRNA e porta il mattone giusto al momento giusto.
+
+Entrambi vengono trascritti come molecole immature — chiamate **precursori** — che devono essere "rifinite" prima di poter lavorare. Questo processo si chiama **maturazione** (o processamento).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> rRNA e tRNA nascono come bozze grezze. La maturazione è come la revisione di un testo: si taglia, si modifica, si rifinisce finché la molecola è pronta per fare il suo lavoro.</div>
+
+---
+
+## Maturazione dell'rRNA
+
+Nei mammiferi (e negli eucarioti in generale), i geni per l'rRNA si trovano nel **nucleolo** (una zona speciale del nucleo). L'RNA polimerasi I trascrive un unico grande precursore chiamato **pre-rRNA 45S** (nei procarioti si chiama 30S).
+
+Questo precursore è enorme e contiene, nascosti al suo interno, tre diversi rRNA maturi:
+
+- **18S** — va nella subunità piccola del ribosoma (40S)
+- **5.8S** — va nella subunità grande (60S)
+- **28S** — va nella subunità grande (60S)
+
+L'**rRNA 5S** è un'eccezione: viene trascritto separatamente da RNA polimerasi III, fuori dal nucleolo.
+
+### Come avviene il taglio?
+
+Il pre-rRNA 45S viene tagliato in passi successivi da specifici enzimi (**endonucleasi** = enzimi che tagliano dentro una catena). Le sequenze inutili tra i tre rRNA si chiamano **ITS** (sequenze interne di spaziatura) e vengono eliminate.
+
+Un ruolo fondamentale lo svolgono gli **snoRNA** (small nucleolar RNA = piccoli RNA nucleolari). Gli snoRNA funzionano come guide: riconoscono sequenze specifiche del pre-rRNA e dirigono lì gli enzimi di taglio o di modifica.
+
+<Diagram caption="Processamento del pre-rRNA 45S negli eucarioti" code={`flowchart TB
+  A["RNA Polimerasi I<br/>trascrive nel nucleolo"] --> B["pre-rRNA 45S<br/>(precursore immaturo)"]
+  B --> C["Taglio da endonucleasi<br/>guidate da snoRNA"]
+  C --> D["rRNA 18S<br/>(subunità piccola 40S)"]
+  C --> E["rRNA 5.8S<br/>(subunità grande 60S)"]
+  C --> F["rRNA 28S<br/>(subunità grande 60S)"]
+  G["RNA Polimerasi III<br/>(fuori dal nucleolo)"] --> H["rRNA 5S<br/>(subunità grande 60S)"]
+  D --> I["Ribosoma assemblato<br/>nel nucleolo → esportato"]
+  E --> I
+  F --> I
+  H --> I`} />
+
+---
+
+## Maturazione del tRNA
+
+I geni del tRNA vengono trascritti dall'**RNA polimerasi III** come precursori, chiamati **pre-tRNA**. Il pre-tRNA ha delle "appendici" extra a entrambe le estremità che devono essere rimosse.
+
+### I passaggi principali
+
+1. **Taglio all'estremità 5':** un enzima speciale chiamato **RNasi P** rimuove la sequenza leader in eccesso prima del tRNA. L'RNasi P è un ribozima: cioè è un RNA con attività enzimatica (l'RNA che fa da enzima!).
+
+2. **Taglio all'estremità 3':** un'altra endonucleasi taglia la coda in eccesso dopo il tRNA.
+
+3. **Aggiunta del CCA al 3':** ogni tRNA maturo deve terminare con la sequenza **CCA-OH** all'estremità 3'. È qui che si attacca l'amminoacido. Questa sequenza viene aggiunta da un enzima apposito (la **tRNA nucleotidiltransferasi**) — non è codificata dal DNA!
+
+4. **Modifiche chimiche delle basi:** molte basi del tRNA vengono modificate chimicamente (per esempio in pseudouridina o inosina). Queste modifiche aiutano il tRNA a ripiegarsi e a stabilizzare la sua forma caratteristica "a foglia di trifoglio".
+
+5. **Splicing (negli eucarioti):** alcuni pre-tRNA contengono un introne (un pezzo da eliminare) che deve essere rimosso prima che il tRNA diventi funzionale.
+
+<Diagram caption="Tappe di maturazione di un pre-tRNA" code={`flowchart TB
+  A["Gene tRNA trascritto<br/>da RNA Polimerasi III"] --> B["pre-tRNA<br/>(con sequenza leader 5' e coda 3' in eccesso)"]
+  B --> C["RNasi P taglia<br/>l'estremità 5'"]
+  C --> D["Endonucleasi taglia<br/>l'estremità 3'"]
+  D --> E["Aggiunta di CCA-OH<br/>al 3' (da tRNA nucleotidiltransferasi)"]
+  E --> F["Modifiche chimiche<br/>delle basi (es. pseudouridina)"]
+  F --> G["Splicing dell'introne<br/>(se presente)"]
+  G --> H["tRNA maturo<br/>pronto a trasportare amminoacidi"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="rNbyrbSNwxY" title="Trascrizione del DNA e maturazione dell'RNA" />
+<VideoVisto id="bio-u3-16" />
+
+## Da ricordare
+
+- Il pre-rRNA 45S è il precursore degli rRNA 18S, 5.8S e 28S: viene tagliato nel nucleolo grazie agli snoRNA che guidano gli enzimi.
+- La maturazione del tRNA richiede tagli alle estremità, aggiunta del CCA-OH al 3' e modifiche chimiche delle basi; l'RNasi P è un ribozima che esegue il taglio in 5'.
+- Sia rRNA che tRNA nascono come precursori immaturi: senza maturazione non possono svolgere la loro funzione nel ribosoma o nel trasporto degli amminoacidi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è il precursore comune degli rRNA 18S, 5.8S e 28S negli eucarioti?" opzioni={["pre-rRNA 5S","pre-rRNA 45S","pre-mRNA 7S","pre-tRNA 30S"]} corretta={1} spiegazione="Il pre-rRNA 45S è il grande precursore trascritto nel nucleolo da RNA polimerasi I. Viene poi tagliato in tre rRNA maturi: 18S, 5.8S e 28S. L'rRNA 5S è trascritto separatamente da RNA polimerasi III." />
+
+<Quiz domanda="Cosa aggiunge la tRNA nucleotidiltransferasi al tRNA in maturazione?" opzioni={["Una sequenza leader in 5'","Un introne interno","La sequenza CCA-OH all'estremità 3'","Un cappuccio 7-metilguanosina"]} corretta={2} spiegazione="Ogni tRNA maturo deve terminare con CCA-OH al 3': è il sito dove si lega l'amminoacido. Questa sequenza non è codificata dal DNA ma viene aggiunta post-trascrizionalmente dalla tRNA nucleotidiltransferasi." />
+
+<Quiz domanda="Gli snoRNA (small nucleolar RNA) svolgono quale funzione nel processamento del pre-rRNA?" opzioni={["Codificano per proteine ribosomiali","Guidano gli enzimi di taglio e modifica verso sequenze specifiche del pre-rRNA","Formano il cappuccio 5' del pre-rRNA","Portano gli amminoacidi al ribosoma"]} corretta={1} spiegazione="Gli snoRNA sono piccoli RNA del nucleolo che funzionano da guide: riconoscono sequenze specifiche nel pre-rRNA e indirizzano lì gli enzimi che tagliano o modificano chimicamente la molecola." />
+
+<Esercizio problema="Un pre-tRNA appena trascritto non viene processato correttamente: l'RNasi P non funziona. Che conseguenza ha questo difetto sulla molecola di tRNA?" soluzione="L'RNasi P è responsabile del taglio dell'estremità 5' del pre-tRNA, rimuovendo la sequenza leader in eccesso. Se l'RNasi P non funziona, il tRNA mantiene la coda extra in 5' e non raggiunge la sua forma matura. Un tRNA immaturo non può essere caricato con l'amminoacido corretto né riconoscere il codone sull'mRNA: la sintesi proteica risulta bloccata o gravemente compromessa." />
+
+</section>
+
+</RisorsaLayout>

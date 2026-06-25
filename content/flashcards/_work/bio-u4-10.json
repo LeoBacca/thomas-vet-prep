@@ -1,0 +1,25 @@
+{
+ "id": "bio-u4-10",
+ "titolo": "Alterazioni della struttura dei cromosomi (traslocazioni, inversioni, delezioni, inserzioni)",
+ "materia": "biologia",
+ "unita": 4,
+ "slug": "10-alterazioni-della-struttura-dei-cromosomi-traslocazioni",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u4/10-alterazioni-della-struttura-dei-cromosomi-traslocazioni.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "L'analisi del cariotipo di un uomo fenotipicamente normale permette di evidenziare se egli:",
+   "choices": [
+    "è portatore di una traslocazione cromosomica bilanciata",
+    "è eterozigote per una malattia dovuta a una mutazione genica",
+    "avrà un figlio con cariotipo normale",
+    "è affetto da una malattia ereditaria legata al sesso",
+    "è figlio di genitori eterozigoti per mutazioni geniche"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

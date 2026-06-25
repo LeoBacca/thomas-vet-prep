@@ -1,0 +1,111 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-08">
+
+La **tavola periodica** è la "mappa" di tutti i mattoncini con cui è fatto l'universo: gli **elementi** (idrogeno, ossigeno, ferro, carbonio…). Non è un elenco disordinato. È organizzata con un'idea precisa, e quando la capisci la tavola smette di farti paura: diventa uno strumento che ti **dice in anticipo** come si comporta un elemento.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la tavola periodica è come uno scaffale di supermercato. Le cose simili stanno vicine. Se sai dove si trova un elemento, sai già che "tipo" è, senza doverlo studiare a memoria.</div>
+
+<Diagram caption="Le due direzioni della tavola: righe (periodi) e colonne (gruppi)" code={`flowchart TB
+  T["Tavola periodica"] --> P["PERIODI = le 7 righe orizzontali"]
+  T --> G["GRUPPI = le 18 colonne verticali"]
+  P --> Pd["Stessa riga = stesso numero di livelli (gusci)"]
+  G --> Gd["Stessa colonna = stessi elettroni esterni → comportamento simile"]`} />
+
+## Gli elementi sono in ordine: il numero atomico
+
+Ogni elemento ha un suo numero d'identità: il **numero atomico**. È semplicemente quanti **protoni** ci sono nel suo nucleo. L'idrogeno ha 1, l'elio 2, il litio 3… e così via.
+
+Nella tavola gli elementi sono messi in fila **da quello con meno protoni a quello con più protoni**. Come i numeri civici lungo una strada: 1, 2, 3, 4… in ordine crescente. Niente buchi, niente salti.
+
+## I periodi: le 7 righe
+
+I **periodi** sono le **righe orizzontali**. Ce ne sono **7**.
+
+Per capirli serve un'immagine: gli elettroni di un atomo stanno disposti in **livelli**, un po' come i **gusci di una cipolla**, uno dentro l'altro. Ecco la regola facile:
+
+- il numero del periodo (la riga) ti dice **quanti gusci** ha quell'atomo.
+- riga 1 → 1 guscio. riga 2 → 2 gusci. riga 3 → 3 gusci, e così via.
+
+Quindi scendendo lungo la tavola gli atomi diventano "più grandi", perché aggiungono gusci.
+
+## I gruppi: le 18 colonne
+
+I **gruppi** sono le **colonne verticali**. Ce ne sono **18**.
+
+Questa è la parte più utile di tutte. Gli elementi della **stessa colonna** hanno lo **stesso numero di elettroni nell'ultimo guscio** (gli elettroni "esterni", detti **elettroni di valenza**). E sono proprio quelli esterni a decidere come un elemento **reagisce** con gli altri.
+
+Risultato: gli elementi della stessa colonna si **assomigliano** nel comportamento. È come una famiglia: stesso "carattere chimico". Per questo i gruppi si chiamano anche **famiglie**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> stessa colonna = stessa "personalità chimica". Il sodio e il potassio sono nella stessa colonna, e infatti nel tuo corpo fanno lavori parecchio simili.</div>
+
+Qualche famiglia famosa, giusto per orientarti:
+
+- prima colonna a sinistra → **metalli alcalini** (molto reattivi: sodio, potassio…).
+- ultima colonna a destra → **gas nobili** (pigrissimi, quasi non reagiscono con nessuno).
+
+**Perché conta per medicina e veterinaria:** il **sodio (Na)** e il **potassio (K)** sono della stessa famiglia e regolano i segnali dei nervi e il battito del cuore. Il **calcio (Ca)** serve a ossa e muscoli. Il **ferro (Fe)** trasporta l'ossigeno nel sangue. Sono tutti elementi della tavola: conoscerne la posizione ti aiuta a capire perché un esame del sangue misura proprio quei valori.
+
+## I blocchi: da dove arriva la forma "a scalini"
+
+La tavola ha quella forma strana, con due torri ai lati e un blocco largo al centro, per un motivo: rispecchia **dove** finiscono gli ultimi elettroni di ogni atomo. Queste zone si chiamano **blocchi** e prendono il nome dal tipo di "stanza" (orbitale) che si sta riempiendo: blocco **s**, blocco **p**, blocco **d** e blocco **f**.
+
+Non devi impararli a memoria adesso. Ti basta l'idea: **la forma della tavola è il disegno della configurazione elettronica**. Periodo, gruppo e blocco sono tre modi di leggere la stessa cosa: come sono sistemati gli elettroni.
+
+<Diagram caption="Periodo, gruppo e blocco: tre informazioni legate agli elettroni" code={`flowchart LR
+  E["Configurazione elettronica<br/>(come sono disposti gli elettroni)"] --> P["PERIODO<br/>= numero di gusci"]
+  E --> G["GRUPPO<br/>= elettroni esterni (valenza)"]
+  E --> B["BLOCCO s, p, d, f<br/>= ultimo orbitale riempito"]`} />
+
+## Guarda il video
+
+<YouTube id="uC8Se2HTpxg" title="Tavola periodica: periodi e gruppi spiegati in modo semplice — Biologia con Giulia" />
+
+<VideoVisto id="chim-u1-08" />
+
+## Da ricordare
+
+- Gli elementi sono ordinati per **numero atomico** crescente (= numero di protoni), come i numeri civici di una strada.
+- I **periodi** sono le **7 righe**: il numero della riga dice quanti **gusci** (livelli) ha l'atomo.
+- I **gruppi** sono le **18 colonne**: stessa colonna = stessi **elettroni esterni** = comportamento chimico simile (sono "famiglie").
+- I **blocchi** (s, p, d, f) spiegano la forma della tavola e dipendono dall'ultimo orbitale riempito.
+- Posizione nella tavola e **configurazione elettronica** sono la stessa storia raccontata in due modi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Nella tavola periodica, i GRUPPI sono:"
+  opzioni={["le righe orizzontali", "le colonne verticali", "i colori degli elementi", "i numeri in basso"]}
+  corretta={1}
+  spiegazione="I gruppi sono le 18 colonne verticali. Gli elementi della stessa colonna hanno gli stessi elettroni esterni e quindi un comportamento simile."
+/>
+
+<Quiz
+  domanda="Cosa hanno in comune due elementi della stessa colonna (stesso gruppo)?"
+  opzioni={["lo stesso numero di protoni", "lo stesso peso esatto", "lo stesso numero di elettroni esterni (di valenza)", "lo stesso colore"]}
+  corretta={2}
+  spiegazione="Stessa colonna = stesso numero di elettroni nell'ultimo guscio. Sono proprio quelli a decidere il comportamento chimico, perciò gli elementi della stessa famiglia si assomigliano."
+/>
+
+<Quiz
+  domanda="In base a cosa sono ordinati gli elementi nella tavola periodica?"
+  opzioni={["in ordine alfabetico", "per numero atomico crescente (numero di protoni)", "dal più pesante al più leggero", "a caso"]}
+  corretta={1}
+  spiegazione="Sono in fila per numero atomico crescente: 1, 2, 3, 4… come i numeri civici lungo una strada, senza salti."
+/>
+
+<Esercizio
+  problema="Il sodio (Na) e il potassio (K) si trovano nella stessa colonna, la prima a sinistra. Cosa puoi prevedere sul loro comportamento chimico, e perché questo è interessante per chi studia veterinaria?"
+  soluzione="Essendo nella stessa colonna (stesso gruppo) hanno lo stesso numero di elettroni esterni, quindi si comportano in modo simile: sono entrambi molto reattivi e formano ioni positivi. È interessante perché nel corpo degli animali (e nostro) sodio e potassio lavorano insieme per far funzionare i segnali nervosi e il battito cardiaco: la loro somiglianza chimica si riflette nei ruoli che svolgono nell'organismo."
+/>
+
+</section>
+
+</RisorsaLayout>

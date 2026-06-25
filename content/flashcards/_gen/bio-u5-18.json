@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-bio-u5-18-1",
+    "topicId": "bio-u5-18",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: nella fibrosi cistica da mutazione ΔF508, la proteina CFTR non viene MAI sintetizzata — quindi non esiste proprio nella cellula.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. La proteina CFTR ΔF508 viene sintetizzata regolarmente, ma ha una piccola piega scorretta. Il problema e che l'ERAD (il 'trituratore' della cellula) la riconosce come difettosa e la degrada prima che raggiunga la membrana. E' come un prodotto che esce dalla catena di montaggio ma viene scartato dal controllo qualita — esiste, ma non arriva mai al cliente. Quella proteina, se arrivasse in membrana, funzionerebbe ancora in parte.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-18-2",
+    "topicId": "bio-u5-18",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Un negozio di e-commerce ha un magazzino con un sistema di controllo qualita molto rigido. Usando questa analogia, spiega in 3 passi come funziona l'ERAD quando una proteina mal ripiegata si trova nel RER. Poi di' cosa c'entra tutto questo con la fibrosi cistica.",
+    "answer": "L'ERAD funziona in 3 passi: 1) RICONOSCIMENTO — i chaperone molecolari (i 'controllori qualita' del magazzino) esaminano la proteina e la marcano come difettosa. 2) RETROTRANSLOCAZIONE — la proteina viene fisicamente estratta dal RER e spinta nel citoplasma (come ritirare il pacco difettoso dalla scaffalatura e portarlo all'ufficio resi). 3) UBIQUITINAZIONE + PROTEASOMA — la proteina riceve il cartellino 'da buttare' (ubiquitina) e viene distrutta dal proteasoma (il trituratore del magazzino). Collegamento con la fibrosi cistica: la mutazione ΔF508 produce una proteina CFTR con solo una piccola piega sbagliata — se arrivasse sulla membrana cellulare funzionerebbe ancora in parte come canale del cloro. Ma l'ERAD e troppo severo: la intercetta e la degrada quasi tutta. Risultato: nelle cellule polmonari non ci sono abbastanza canali CFTR, il muco diventa denso e si accumulano batteri. La malattia e in gran parte causata da un controllo qualita eccessivamente rigido, non da una proteina del tutto rotta.",
+    "explain": "Chiave: ERAD = riconosci → estrai → ubiquitina → proteasoma. Fibrosi cistica = ERAD butta via una proteina che avrebbe ancora funzione parziale.",
+    "tags": ["risposta aperta"]
+  }
+]

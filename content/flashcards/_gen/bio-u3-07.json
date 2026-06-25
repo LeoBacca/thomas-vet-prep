@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u3-07-1",
+    "topicId": "bio-u3-07",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: il promotore e una sequenza di DNA che si trova a monte del gene e permette all'RNA polimerasi di sapere dove iniziare a trascrivere.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il promotore e il 'tasto play' del gene: e una sequenza di DNA subito prima (a monte, in direzione 5') del gene. Senza di esso l'RNA polimerasi non sa dove attaccarsi e il gene rimane silenzioso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-07-2",
+    "topicId": "bio-u3-07",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Cosa significa che un enhancer e un elemento 'in cis'?",
+    "choices": [
+      "E una proteina che viaggia da un cromosoma all'altro per attivare il gene",
+      "E una sequenza di DNA che agisce solo sul gene che si trova sullo stesso cromosoma",
+      "E un enzima che taglia il DNA per avvicinare il gene al promotore",
+      "E un elemento che agisce su tutti i geni della cellula contemporaneamente"
+    ],
+    "answer": 1,
+    "explain": "Pensa all'interruttore sul muro (in cis): accende solo la lampada di quella stanza, non quelle delle altre. Un elemento in cis e una sequenza di DNA che agisce SOLO sul gene dello stesso cromosoma. Diversamente, le proteine (fattori di trascrizione, in trans) sono come un telecomando: prodotte altrove, arrivano a qualsiasi gene.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-07-3",
+    "topicId": "bio-u3-07",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Una mutazione distrugge la TATA box di un gene. Cosa succede alla trascrizione di quel gene e perche?",
+    "answer": "La TATA box e la sequenza chiave del promotore minimo (core promotore), situata circa 25-30 basi prima dell'inizio della trascrizione (sito +1). Su di essa si assemblano i fattori di trascrizione generali, che formano il complesso di pre-inizio a cui poi si aggancia l'RNA polimerasi II. Se la TATA box e distrutta, i fattori di trascrizione non riescono piu a legarsi correttamente in quel punto, l'RNA polimerasi non si aggancia e la trascrizione di quel gene viene drasticamente ridotta o del tutto abolita. Anche se enhancer e silencer sono intatti, non possono fare nulla: manca la 'piattaforma di lancio'.",
+    "explain": "Punto chiave: TATA box = piattaforma di assemblaggio del complesso di pre-inizio. Senza di essa l'RNA polimerasi II non parte.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-07-4",
+    "topicId": "bio-u3-07",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Quale dei seguenti elementi genetici e presente nel DNA di un gene eucariotico?",
+    "choices": [
+      "Il promotore",
+      "Un cap all'estremita 5' dell'mRNA",
+      "Una coda di poliA all'estremita 3' dell'mRNA",
+      "L'operatore (tipico dei procarioti)",
+      "Una sequenza di poliT all'estremita 3' del DNA"
+    ],
+    "answer": 0,
+    "explain": "Il promotore e una sequenza di DNA e fa parte del gene eucariotico: e l'elemento in cis che indica dove inizia la trascrizione. Le altre opzioni sono trappole: il cap 5' e la coda poliA sono aggiunte all'mRNA DOPO la trascrizione (modifiche post-trascrizionali), non sono nel DNA del gene. L'operatore e un elemento tipico dei PROCARIOTI (sistema lac operon), non degli eucarioti. La sequenza poliT nel DNA non ha questo ruolo regolativo.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-07-5",
+    "topicId": "bio-u3-07",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Un enhancer si trova a 50.000 basi di distanza dal suo gene bersaglio. Come puo comunque aumentarne la trascrizione?",
+    "choices": [
+      "Non puo: gli enhancer devono essere entro 100 basi dal promotore per funzionare",
+      "L'enhancer produce una proteina che viaggia lungo il DNA fino al promotore",
+      "Il DNA si piega nello spazio, avvicinando fisicamente l'enhancer al promotore",
+      "L'enhancer sposta il gene verso di se lungo il cromosoma",
+      "L'enhancer aumenta la velocita di replicazione del DNA in quel tratto"
+    ],
+    "answer": 2,
+    "explain": "Il DNA non e un filo rigido: si piega e si compatta nello spazio. Questa flessibilita permette a un enhancer lontano di avvicinarsi fisicamente al promotore. Le proteine legate all'enhancer possono cosi interagire con il complesso di pre-inizio e stimolare la trascrizione. L'opzione A e l'opposto esatto: e proprio la caratteristica piu sorprendente degli enhancer che possono agire a grande distanza. Le opzioni B e D confondono elementi in cis (sequenze di DNA) con proteine mobili o con movimenti fisici del gene.",
+    "tags": ["prova d'esame"]
+  }
+]

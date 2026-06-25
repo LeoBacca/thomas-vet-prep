@@ -1,0 +1,117 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u5-03">
+
+Un **idrocarburo** è una molecola fatta solo di due tipi di atomi: **carbonio (C)** e **idrogeno (H)**. Niente altro. Pensa al carbonio come ai mattoncini che si attaccano fra loro per formare catene, e all'idrogeno come ai tappi che chiudono i posti liberi. Cambiando il modo in cui i mattoncini si legano nascono famiglie diverse di idrocarburi. Capirle è importante perché tantissime molecole del nostro corpo (grassi, vitamine, ormoni) sono costruite proprio su scheletri di carbonio.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> tutti gli idrocarburi sono fatti solo di C e H. Quello che cambia è <strong>come</strong> i carboni si tengono per mano: con una mano sola (legame singolo) oppure con due o tre mani (legami doppi e tripli).</div>
+
+## Saturi o insaturi: quante "mani" si danno i carboni
+
+Immagina due persone che si tengono per mano. Possono darsi **una mano** (legame singolo), **due mani** (legame doppio) o **tre mani** (legame triplo). Negli idrocarburi succede la stessa cosa fra atomi di carbonio.
+
+- **Saturi**: i carboni si danno solo **una mano** (tutti legami singoli). "Saturo" vuol dire **pieno**: ogni carbonio ha già tutto l'idrogeno che può tenere. Sono gli **alcani**.
+- **Insaturi**: da qualche parte c'è un **legame doppio** (due mani) o **triplo** (tre mani). Sono gli **alcheni** (un doppio legame) e gli **alchini** (un triplo legame).
+
+Un trucco facile per ricordare i nomi: la parte finale del nome ti dice la famiglia.
+
+- finisce in **-ano** → alc**ano** → solo legami singoli (saturo)
+- finisce in **-ene** → alc**ene** → c'è un doppio legame
+- finisce in **-ino** → alch**ino** → c'è un triplo legame
+
+<div class="callout">💡 <strong>In parole semplici:</strong> guarda la <strong>fine</strong> del nome. -ANO = pieno, tranquillo. -ENE = un doppio legame. -INO = un triplo legame. Più legami multipli = molecola più "vivace" e reattiva.</div>
+
+Aggancio biomedico: i **grassi saturi** (quelli del burro) hanno catene di carbonio "piene", tutte mani singole, e a temperatura ambiente sono solidi. I **grassi insaturi** (l'olio d'oliva) hanno dei doppi legami che "piegano" la catena, e restano liquidi. È esattamente la differenza fra alcani e alcheni applicata al cibo e al nostro corpo.
+
+## L'albero degli idrocarburi
+
+Mettiamo ordine con uno schema ad albero. Prima li dividiamo in **catena aperta** (i carboni formano una fila o un ramo, come una collana slacciata) e **ciclici** (i carboni si chiudono in **anello**, come una collana allacciata).
+
+<Diagram caption="Le grandi famiglie degli idrocarburi" code={`flowchart TB
+  H["IDROCARBURI<br/>(solo C e H)"] --> AP["Catena aperta"]
+  H --> CI["Ciclici (ad anello)"]
+  AP --> AL["Alcani<br/>solo legami singoli<br/>SATURI (-ano)"]
+  AP --> AE["Alcheni<br/>un doppio legame<br/>INSATURI (-ene)"]
+  AP --> AI["Alchini<br/>un triplo legame<br/>INSATURI (-ino)"]
+  CI --> CC["Cicloalcani<br/>anello di soli C"]
+  CI --> AR["Aromatici<br/>anello speciale, es. benzene"]`} />
+
+Due famiglie meritano una parola in più:
+
+- **Ciclici**: la catena si chiude su sé stessa formando un **anello**. Se l'anello è fatto solo di carbonio si chiama **cicloalcano**. Se nell'anello c'è anche un atomo diverso (per esempio azoto N o ossigeno O) si chiama **eterociclico** ("etero" vuol dire "diverso"). Questo conta tantissimo in medicina: gli anelli eterociclici sono dappertutto, dal **DNA** (le sue "lettere" sono anelli con azoto) alla **caffeina** ai farmaci.
+- **Aromatici**: sono anelli speciali, il capofila è il **benzene** (un anello di 6 carboni molto stabile). "Aromatici" è solo un nome storico legato all'odore: non profumano per forza. Sono molto stabili e si trovano in molte molecole biologiche.
+
+<Diagram caption="Aperti, ciclici, eterociclici: la forma dello scheletro" code={`flowchart LR
+  A["Catena APERTA<br/>(collana slacciata)"] --> B["Catena CICLICA<br/>(anello chiuso)"]
+  B --> C["Eterociclico<br/>(anello con un atomo<br/>diverso da C, es. N o O)"]`} />
+
+## Dare il nome con la nomenclatura IUPAC
+
+La **IUPAC** è l'organizzazione che ha fissato le regole per dare i nomi alle molecole, così che in tutto il mondo si capiscano allo stesso modo. È come il "vocabolario ufficiale" della chimica. Per gli idrocarburi semplici bastano 3 passaggi.
+
+1. **Conta i carboni** della catena più lunga. Il numero dà la prima parte del nome (la radice):
+   - 1 C = met- , 2 C = et- , 3 C = prop- , 4 C = but- , 5 C = pent-
+   - (dal 5 in poi sono i numeri greci: pent, es, ept, ott...)
+2. **Guarda i legami** e scegli la desinenza (la fine): **-ano** se sono tutti singoli, **-ene** se c'è un doppio, **-ino** se c'è un triplo.
+3. **Numera** i carboni partendo dal lato più vicino al legame doppio o triplo, e indica con un numero dove inizia. Esempio: but-2-ene vuol dire catena di 4 carboni (but) con un doppio legame (ene) che parte dal carbonio numero 2.
+
+Qualche esempio per fissare le idee:
+
+- 1 carbonio, legami singoli → **met + ano** = **metano** (il gas dei fornelli)
+- 2 carboni, un doppio legame → **et + ene** = **etene** (chiamato anche etilene, fa maturare la frutta)
+- 2 carboni, un triplo legame → **et + ino** = **etino** (l'acetilene del cannello da saldatura)
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il nome IUPAC è come un indirizzo. La <strong>radice</strong> (met, et, prop, but...) ti dice <strong>quanti carboni</strong>; la <strong>desinenza</strong> (-ano, -ene, -ino) ti dice <strong>che tipo di legame</strong>; il <strong>numero</strong> ti dice <strong>dove</strong>.</div>
+
+## Guarda il video
+
+<YouTube id="XGbQwCspsRY" title="Gli idrocarburi: proprietà e classificazione — spiegazione semplice" />
+
+<VideoVisto id="chim-u5-03" />
+
+## Da ricordare
+
+- Un **idrocarburo** è fatto solo di **carbonio (C)** e **idrogeno (H)**.
+- **Saturi** = solo legami singoli (**alcani**, -ano). **Insaturi** = c'è un doppio (**alcheni**, -ene) o triplo (**alchini**, -ino).
+- **Ciclici** = la catena si chiude ad **anello**; **eterociclici** = nell'anello c'è un atomo diverso da C (come N o O, fondamentali nel DNA e nei farmaci).
+- **Aromatici** = anelli speciali e stabili, capofila il **benzene**.
+- Nome **IUPAC**: radice (quanti C) + desinenza (-ano/-ene/-ino) + numero (dove sta il legame multiplo).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un idrocarburo che ha SOLO legami singoli tra i carboni si dice:"
+  opzioni={["insaturo", "saturo (alcano)", "aromatico", "eterociclico"]}
+  corretta={1}
+  spiegazione="Solo legami singoli = saturo, cioè 'pieno'. Sono gli alcani, con desinenza -ano (es. metano)."
+/>
+
+<Quiz
+  domanda="Il nome finisce in '-ene'. Cosa ti dice questa desinenza?"
+  opzioni={["che è ciclico", "che ha un triplo legame", "che ha un doppio legame (alchene)", "che è fatto solo di idrogeno"]}
+  corretta={2}
+  spiegazione="La desinenza -ene indica un doppio legame: è un alchene, quindi un idrocarburo insaturo."
+/>
+
+<Quiz
+  domanda="Un anello di carbonio in cui compare anche un atomo di azoto (N) si chiama:"
+  opzioni={["alcano", "aromatico puro", "eterociclico", "alchino"]}
+  corretta={2}
+  spiegazione="'Etero' vuol dire diverso: un anello con un atomo diverso dal carbonio (come N o O) è eterociclico. Questi anelli sono comunissimi nel DNA e nei farmaci."
+/>
+
+<Esercizio
+  problema="Una molecola ha una catena di 3 atomi di carbonio e tutti legami singoli. Come si chiama secondo la IUPAC? Spiega come arrivi al nome."
+  soluzione="Si chiama PROPANO. Passo 1: 3 carboni → radice 'prop'. Passo 2: tutti legami singoli → è saturo → desinenza '-ano'. Unendo: prop + ano = propano (è il gas delle bombole)."
+/>
+
+</section>
+
+</RisorsaLayout>

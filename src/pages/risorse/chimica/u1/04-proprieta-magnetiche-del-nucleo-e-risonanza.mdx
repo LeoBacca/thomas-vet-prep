@@ -1,0 +1,95 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-04">
+
+Hai presente la **risonanza magnetica**, quella macchina dell'ospedale dove ti fanno entrare dentro un grande tubo? Funziona grazie a una cosa sorprendente: il **nucleo** di certi atomi del tuo corpo si comporta come una **mini calamita**. In questa pagina capiamo, senza formule difficili, perché succede e come i medici lo sfruttano per "vedere dentro" il corpo senza tagliare nulla.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> alcuni nuclei di atomi sono come piccolissime calamite che girano su sé stesse. Se le metti dentro una grande calamita, si mettono in riga. La risonanza magnetica "parla" con queste mini calamite e usa la loro risposta per fare una foto del tuo interno.</div>
+
+<Diagram caption="Il nucleo come piccola calamita (spin) dentro un campo magnetico" code={`flowchart TB
+  N["Nucleo di certi atomi<br/>(es. idrogeno)"] --> S["Gira su sé stesso<br/>= 'spin'"]
+  S --> C["Si comporta come<br/>una mini calamita"]
+  C --> B["Lo metto in un grande<br/>campo magnetico"]
+  B --> A["Le mini calamite<br/>si mettono in riga"]`} />
+
+## Perché il nucleo è come una calamita
+
+Dentro ogni atomo c'è un **nucleo**, fatto di protoni e neutroni. In alcuni atomi questo nucleo **gira su sé stesso**, un po' come una trottola. Questa rotazione si chiama **spin**.
+
+Ecco il punto chiave: una cosa che gira ed è carica elettricamente crea un **piccolo campo magnetico**. In pratica diventa una **calamita microscopica**. Pensa a una bussola: è una piccola calamita che ha un suo nord e un suo sud. Allo stesso modo, il nucleo "magnetico" ha un suo verso.
+
+Non tutti i nuclei fanno questo. Il più importante per noi è quello dell'**idrogeno**, che è semplicissimo: un solo protone. E l'idrogeno è ovunque nel corpo, perché il corpo è pieno d'**acqua** (H₂O) e di grassi, e l'acqua è fatta proprio di idrogeno e ossigeno. Ecco perché la risonanza magnetica vede così bene i tessuti molli.
+
+## Cosa succede dentro la macchina
+
+Da soli, questi minuscoli magneti nel corpo puntano in tutte le direzioni a caso, e i loro effetti si annullano. Quando entri nella macchina della risonanza, succede questo:
+
+- C'è una **calamita gigante e potentissima**. Mette quasi tutte le mini calamite **in riga**, come succede ai trucioli di ferro vicino a una calamita.
+- La macchina invia un **breve segnale** (un'onda radio). Le mini calamite ricevono energia e si **spostano** dalla loro posizione.
+- Quando il segnale finisce, le mini calamite **tornano** nella posizione di prima. Tornando, **rimandano indietro un segnale**.
+
+La parola "risonanza" significa proprio questo: le mini calamite rispondono solo a un segnale con il **ritmo giusto** per loro, un po' come quando spingi un'altalena al momento giusto e va sempre più in alto.
+
+<Diagram caption="Come la macchina ottiene il segnale dai nuclei" code={`flowchart LR
+  R["Nuclei in riga<br/>nel campo magnetico"] -->|"arriva un'onda radio"| M["I nuclei si spostano<br/>(ricevono energia)"]
+  M -->|"l'onda finisce"| T["Tornano indietro e<br/>rimandano un segnale"]
+  T --> F["Il computer usa il segnale<br/>per fare l'immagine"]`} />
+
+## Perché conta in medicina e veterinaria
+
+Tessuti diversi (muscolo, grasso, cervello, un tumore) contengono **quantità diverse di acqua** e quindi di idrogeno. Il segnale che rimandano è leggermente diverso. Il computer raccoglie tutti questi segnali e li trasforma in un'**immagine dettagliata** dell'interno del corpo.
+
+Il bello è che la risonanza magnetica **non usa raggi X**: non c'è radiazione pericolosa come nella radiografia. Per questo è preziosa, sia in medicina umana sia in veterinaria, per studiare cervello, articolazioni e organi molli di una persona o di un animale senza fargli del male.
+
+## Guarda il video
+
+<YouTube id="_TkIEyIoO38" title="La risonanza magnetica spiegata semplice — Fisica e medicina (INFN)" />
+
+<VideoVisto id="chim-u1-04" />
+
+## Da ricordare
+
+- Il nucleo di certi atomi **gira su sé stesso** (spin) e per questo si comporta come una **mini calamita**.
+- Il nucleo più importante è quello dell'**idrogeno**, che nel corpo è ovunque perché siamo pieni d'**acqua**.
+- Dentro la macchina una **calamita gigante** mette i nuclei in riga, poi un'onda radio li fa rispondere: questa risposta è la **risonanza**.
+- Il segnale di ritorno viene trasformato dal computer in un'**immagine** dell'interno del corpo.
+- La risonanza magnetica **non usa raggi X**, quindi è sicura: utilissima in medicina e veterinaria.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Perché il nucleo di certi atomi si comporta come una piccola calamita?"
+  opzioni={["Perché è fatto di ferro", "Perché gira su sé stesso (spin) ed è carico", "Perché è molto pesante", "Perché è freddo"]}
+  corretta={1}
+  spiegazione="Una carica che gira (lo 'spin' del nucleo) crea un piccolo campo magnetico: il nucleo diventa una mini calamita, un po' come l'ago di una bussola."
+/>
+
+<Quiz
+  domanda="Qual è il nucleo più importante per la risonanza magnetica del corpo, e perché?"
+  opzioni={["Il ferro, perché è magnetico", "L'oro, perché è prezioso", "L'idrogeno, perché il corpo è pieno d'acqua", "L'ossigeno, perché respiriamo"]}
+  corretta={2}
+  spiegazione="L'idrogeno è semplice (un solo protone) ed è ovunque nel corpo, perché siamo pieni d'acqua (H2O) e di grassi che contengono idrogeno."
+/>
+
+<Quiz
+  domanda="Rispetto alla radiografia, un grande vantaggio della risonanza magnetica è che:"
+  opzioni={["È più veloce di tutto", "Non usa raggi X, quindi non c'è radiazione pericolosa", "Funziona senza elettricità", "Si può fare a casa"]}
+  corretta={1}
+  spiegazione="La risonanza usa campi magnetici e onde radio, non raggi X: per questo è particolarmente sicura per studiare i tessuti molli."
+/>
+
+<Esercizio
+  problema="Un veterinario deve studiare il cervello di un cane, un tessuto molle e ricco d'acqua, senza usare radiazioni. Spiega con parole tue perché la risonanza magnetica è adatta a questo caso."
+  soluzione="Il cervello è pieno d'acqua, quindi di idrogeno, e l'idrogeno è proprio il nucleo che la risonanza magnetica 'sente' meglio: dà un segnale chiaro e un'immagine dettagliata dei tessuti molli. Inoltre la risonanza non usa raggi X, quindi non espone il cane a radiazioni pericolose. Per questo è la scelta giusta per guardare il cervello in modo sicuro."
+/>
+
+</section>
+
+</RisorsaLayout>

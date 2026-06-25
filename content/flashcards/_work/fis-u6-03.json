@@ -1,0 +1,53 @@
+{
+ "id": "fis-u6-03",
+ "titolo": "Energia potenziale, potenziale elettrico e differenza di potenziale",
+ "materia": "fisica",
+ "unita": 6,
+ "slug": "03-energia-potenziale-potenziale-elettrico-e-differenza",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/fisica/u6/03-energia-potenziale-potenziale-elettrico-e-differenza.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Un sistema di cariche è costituito da due cariche puntiformi uguali ed opposte collocate ad una certa distanza tra di loro. Cosa si può dire del potenziale elettrico generato da un tale sistema?",
+   "choices": [
+    "È dato dalla somma dei potenziali elettrici prodotti dalle singole cariche",
+    "È dato dalla differenza dei potenziali elettrici prodotti dalle singole cariche",
+    "È dappertutto nullo perché le due cariche sono uguali ed opposte",
+    "È dato dal valor medio dei potenziali generati dalle singole cariche",
+    "È identico a quello di una carica puntiforme di valore pari a metà della carica negativa"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2010",
+   "q": "Gli squali sono dotati di organi in grado di rilevare debolissimi campi elettrici, sino a valori di 1 microV/m. A che distanza dovremmo porre due piani conduttori paralleli a cui applichiamo una differenza di potenziale di 1,5 mV per avere campi elettrici dell'ordine di quelli rilevati da uno squalo?",
+   "choices": [
+    "1,5 km",
+    "1,5 m",
+    "1,5 mm",
+    "15 microm",
+    "1,5 microm"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Cosa sono le superfici equipotenziali in un campo elettrico?",
+   "choices": [
+    "Le superfici in cui il potenziale elettrico è costante",
+    "Le superfici in cui il campo magnetico è costante",
+    "Le superfici con cariche elettriche isolate",
+    "Le superfici dove il campo elettrico è massimo",
+    "Le superfici dove il campo elettrico è minimo"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

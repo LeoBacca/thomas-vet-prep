@@ -1,0 +1,101 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u5-06">
+
+## Cos'è il primo principio della termodinamica?
+
+Il primo principio della termodinamica è semplicemente il **principio di conservazione dell'energia** applicato al calore.
+
+In parole povere: l'energia non si crea e non si distrugge, si trasforma.
+
+Se fornisci energia a un sistema (per esempio un gas in un cilindro), quella energia deve andare da qualche parte. Può fare due cose:
+- **aumentare l'energia interna** del sistema (cioè "scalda" le molecole)
+- **compiere lavoro** verso l'esterno (per esempio spingere un pistone)
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Tutto il calore che dai a un sistema o fa aumentare la sua temperatura, o viene usato per muovere qualcosa — oppure entrambe le cose insieme.</div>
+
+---
+
+## I tre protagonisti
+
+Per capire il principio devi tenere in testa tre grandezze:
+
+- **Q — Calore**: l'energia che entra (o esce) dal sistema sotto forma di calore. Positivo se entra, negativo se esce.
+- **W — Lavoro**: l'energia che il sistema scambia con l'esterno compiendo lavoro meccanico (ad esempio spingere un pistone). Positivo se il sistema compie lavoro sull'esterno.
+- **ΔU — Variazione di energia interna**: quanto è cambiata l'energia "nascosta" dentro il sistema (l'agitazione delle molecole).
+
+---
+
+## La formula
+
+Il primo principio si scrive così:
+
+**ΔU = Q − W**
+
+Ovvero:
+
+> La variazione di energia interna = calore assorbito − lavoro compiuto
+
+**Esempio pratico:** Immagina una pentola a pressione (il sistema è il gas dentro).
+- Accendi il fuoco sotto → stai fornendo calore Q al gas.
+- Il gas si scalda → aumenta la sua energia interna ΔU.
+- Se il coperchio si solleva un po' → il gas compie lavoro W.
+- Il bilancio: ΔU = Q − W.
+
+---
+
+## Tre casi tipici
+
+**1. Sistema isolato (Q = 0 e W = 0)**
+Nessun calore entra, nessun lavoro compiuto → ΔU = 0, l'energia interna non cambia.
+
+**2. Trasformazione isocora (volume costante, W = 0)**
+Il gas è in un contenitore rigido: non può espandersi, quindi non compie lavoro.
+Tutto il calore fornito va ad aumentare l'energia interna: ΔU = Q.
+
+**3. Espansione libera (gas che si espande senza fare lavoro utile e senza scambiare calore)**
+Q = 0, W = 0 → ΔU = 0. L'energia interna non varia.
+
+---
+
+<Diagram caption="Il bilancio energetico del primo principio" code={`flowchart TB
+  Q["Calore Q<br/>entra nel sistema"] --> SIS["Sistema<br/>(gas, liquido...)"]
+  SIS --> DU["Aumento energia<br/>interna ΔU<br/>(sistema si scalda)"]
+  SIS --> W["Lavoro W<br/>compiuto verso l'esterno<br/>(es. spinge un pistone)"]`} />
+
+<Diagram caption="I tre casi principali del primo principio" code={`flowchart LR
+  A["Contenitore rigido<br/>W = 0"] --> A2["Tutto Q diventa ΔU<br/>ΔU = Q"]
+  B["Gas che si espande<br/>W maggiore di 0"] --> B2["ΔU = Q - W<br/>parte del calore<br/>fa lavoro"]
+  C["Sistema isolato<br/>Q = 0, W = 0"] --> C2["ΔU = 0<br/>energia interna<br/>costante"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="UC3BAgG2eC4" title="Primo principio della termodinamica (Gianlorenzo Bussetti)" />
+<VideoVisto id="fis-u5-06" />
+
+## Da ricordare
+- Il primo principio è la conservazione dell'energia: ΔU = Q − W.
+- Il calore assorbito da un sistema si divide tra aumento di energia interna e lavoro compiuto verso l'esterno.
+- Se il volume è costante (W = 0), tutto il calore diventa energia interna; se invece il gas si espande, parte dell'energia serve a fare lavoro.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un gas assorbe 500 J di calore e compie 200 J di lavoro sull'esterno. Qual è la variazione di energia interna?" opzioni={["ΔU = 700 J","ΔU = 300 J","ΔU = −300 J","ΔU = −500 J"]} corretta={1} spiegazione="Si applica ΔU = Q − W = 500 J − 200 J = 300 J. Il gas assorbe più di quanto 'spende' in lavoro, quindi la sua energia interna aumenta di 300 J." />
+
+<Quiz domanda="Un gas è contenuto in un recipiente rigido (volume costante). Gli viene fornito calore Q = 400 J. Quanto vale il lavoro compiuto dal gas?" opzioni={["W = 400 J","W = 0 J","W = −400 J","Non si può sapere"]} corretta={1} spiegazione="A volume costante il gas non può espandersi, quindi non compie lavoro: W = 0. Tutto il calore fornito aumenta l'energia interna (ΔU = 400 J)." />
+
+<Quiz domanda="Quale delle seguenti affermazioni descrive correttamente il primo principio della termodinamica?" opzioni={["L'energia interna di un sistema isolato aumenta sempre nel tempo","Il calore non può mai essere convertito in lavoro","La variazione di energia interna è uguale al calore assorbito meno il lavoro compiuto dal sistema","Il lavoro compiuto su un sistema è sempre uguale al calore ceduto"]} corretta={2} spiegazione="Il primo principio afferma esattamente ΔU = Q − W: la variazione di energia interna è uguale al calore assorbito meno il lavoro compiuto dal sistema verso l'esterno." />
+
+<Esercizio problema="Un motore a gas assorbe 1200 J di calore durante una trasformazione. Se l'energia interna del gas aumenta di 800 J, quanto lavoro ha compiuto il gas verso l'esterno?" soluzione="Dalla formula ΔU = Q − W ricaviamo W = Q − ΔU = 1200 J − 800 J = 400 J. Il gas ha compiuto 400 J di lavoro verso l'esterno (per esempio spingendo un pistone). Il bilancio funziona: 800 J rimangono come aumento di energia interna, 400 J escono come lavoro meccanico, totale 1200 J = tutto il calore assorbito." />
+
+</section>
+
+</RisorsaLayout>

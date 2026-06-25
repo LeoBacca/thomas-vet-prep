@@ -1,0 +1,39 @@
+{
+ "id": "fis-u2-13",
+ "titolo": "Potenza",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "13-potenza",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/fisica/u2/13-potenza.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Durante un trasloco abbiamo la necessità di sollevare un pianoforte dalla strada sino a una finestra posta a una altezza di 15 m. Sapendo che il pianoforte ha una massa di 400 kg, quanto impiegherà, come minimo, un motore di 1 kW a portare il pianoforte dalla strada alla finestra?",
+   "choices": [
+    "circa 1 minuto",
+    "circa 6 secondi",
+    "circa 10 minuti",
+    "alcune ore",
+    "poco più di un'ora"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2022",
+   "q": "In un allevamento intensivo di galline, in ogni gabbia è presente una lampada della potenza di 20 W. Assumendo che la luce venga tenuta accesa per 16 ore al giorno, quanta energia viene approssimativamente consumata ogni giorno da ciascuna gabbia?",
+   "choices": [
+    "1,15 MJ",
+    "1,15 kJ",
+    "320 kWh",
+    "320 kJ",
+    "320 J"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

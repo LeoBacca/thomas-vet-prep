@@ -1,0 +1,165 @@
+{
+ "id": "bio-u7-08",
+ "titolo": "La meiosi, il crossing over e le differenze con la mitosi",
+ "materia": "biologia",
+ "unita": 7,
+ "slug": "08-la-meiosi-il-crossing-over-e",
+ "freq": 11,
+ "risorseMdx": "src/pages/risorse/biologia/u7/08-la-meiosi-il-crossing-over-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Individuare l'affermazione ERRATA. In uno stesso individuo:",
+   "choices": [
+    "tutte le cellule hanno lo stesso numero di cromosomi",
+    "alcune cellule hanno la metà dei cromosomi",
+    "alcune cellule hanno perso i cromosomi",
+    "le cellule somatiche hanno una quantità doppia di geni",
+    "le cellule sessuali hanno uno solo dei due cromosomi omologhi"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2009",
+   "q": "Indicare con quale modalità avviene la riproduzione nella specie umana:",
+   "choices": [
+    "per via gamica",
+    "per scissione binaria",
+    "per partenogenesi",
+    "per via agamica",
+    "per gemmazione"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2016",
+   "q": "Quando avviene il crossing over?",
+   "choices": [
+    "Durante la profase meiotica I",
+    "Durante l'anafase meiotica II",
+    "Durante la metafase mitotica",
+    "Durante l'anafase mitotica",
+    "Durante la profase mitotica"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2017",
+   "q": "In merito al processo della meiosi, quale delle seguenti affermazioni è ERRATA?",
+   "choices": [
+    "Le cellule figlie sono genotipicamente identiche alla cellula madre",
+    "Assicura la variabilità delle specie",
+    "Il numero dei cromosomi nelle cellule figlie è dimezzato rispetto alla cellula madre",
+    "Non avviene il crossing-over in profase II",
+    "Prevede una sola duplicazione del DNA"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2018",
+   "q": "Lo Zonkey è un ibrido sterile che nasce dall'incrocio di una zebra maschio (Equus quagga con numero cromosomico 2n=44) e un'asina (Equus asinus con numero cromosomico 2n=62). Qual è il numero di cromosomi presenti nelle cellule somatiche dell'ibrido?",
+   "choices": [
+    "53",
+    "44",
+    "62",
+    "106",
+    "44, nel 50% circa delle cellule, e 62 nelle restanti"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2019",
+   "q": "Durante la gametogenesi umana, quanti cromatidi e quanti cromosomi sono presenti in un oocita secondario alla metafase della seconda divisione meiotica?",
+   "choices": [
+    "46 cromatidi e 23 cromosomi",
+    "46 cromatidi e 46 cromosomi",
+    "23 cromatidi e 46 cromosomi",
+    "23 cromatidi e 23 cromosomi",
+    "92 cromatidi e 46 cromosomi"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2019",
+   "q": "Quale tra le seguenti affermazioni riguardanti la riproduzione sessuata negli organismi eucarioti superiori (animali e piante) NON è corretta?",
+   "choices": [
+    "In alcune specie può avvenire per gemmazione",
+    "La fecondazione può essere esterna o interna",
+    "In alcune specie può avvenire per autofecondazione",
+    "Prevede la produzione di cellule aploidi",
+    "Implica una divisione meiotica"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2020",
+   "q": "La variabilità all'interno di una specie che si riproduce per via sessuale può essere ricondotta a tutti i processi elencati ad eccezione di:",
+   "choices": [
+    "selezione naturale",
+    "crossing-over",
+    "mutazioni geniche",
+    "segregazione casuale dei cromosomi omologhi",
+    "mutazioni cromosomiche"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Una cellula si divide e dà origine a due cellule figlie geneticamente differenti tra loro. Questo è vero:",
+   "choices": [
+    "dopo la meiosi I",
+    "sempre",
+    "se la cellula si divide per mitosi",
+    "solo per i procarioti",
+    "se la cellula si divide per scissione binaria"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Quali caratteristiche, fra quelle sottoelencate, sono comuni a mitosi e meiosi? 1. Avviene in seguito a duplicazione del DNA; 2. I cromatidi fratelli rimangono identici; 3. Si ha separazione dei centromeri; 4. Si ha formazione di chiasmi",
+   "choices": [
+    "1 e 3",
+    "1 e 2",
+    "2 e 4",
+    "2 e 3",
+    "3 e 4"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "La meiosi è composta da:",
+   "choices": [
+    "una divisione riduzionale seguita da una divisione equazionale",
+    "una divisione equazionale seguita da una divisione riduzionale",
+    "due divisioni riduzionali",
+    "due divisioni tra cui si interpone una fase di duplicazione del DNA",
+    "una fase di sintesi e una fase di separazione"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u4-05">
+
+## Cos'è l'intensità di un'onda?
+
+Quando un altoparlante suona, produce un'onda sonora. Quella stessa onda trasporta **energia**. Ma quanta energia arriva davvero alle tue orecchie? Dipende da quanta potenza la sorgente emette e da **quanto sei lontano**.
+
+L'**intensità** (simbolo **I**) è la quantità di energia che attraversa un'area nell'unità di tempo. In pratica è la **potenza trasportata dall'onda per unità di superficie**:
+
+- Formula: **I = P / A**
+- **P** = potenza della sorgente (in watt, W)
+- **A** = area su cui si distribuisce l'energia (in m²)
+- **I** si misura in **W/m²**
+
+<div class="callout">💡 <strong>In parole semplici:</strong> l'intensità è come la "concentrazione" di energia dell'onda. Più sei lontano dalla sorgente, più quell'energia si spalma su un'area grande — e quindi ne ricevi meno.</div>
+
+## Come si espande un'onda nello spazio
+
+Immagina di urlare in mezzo a un campo aperto. Il suono non va solo in avanti: si espande **in tutte le direzioni**, come una sfera che cresce. Questa è la chiave per capire la legge dell'inverso del quadrato.
+
+La superficie di una sfera è **4πr²** (dove r è il raggio, cioè la distanza dalla sorgente). Più ti allontani, più grande è la sfera su cui si distribuisce la stessa potenza P. Quindi l'intensità è:
+
+**I = P / (4πr²)**
+
+<Diagram caption="Come l'energia si distribuisce su sfere sempre più grandi al crescere della distanza" code={`flowchart LR
+  S["Sorgente<br/>(potenza P)"] --> R1["Distanza r<br/>Intensità I"]
+  S --> R2["Distanza 2r<br/>Intensità I/4"]
+  S --> R3["Distanza 3r<br/>Intensità I/9"]`} />
+
+## La legge dell'inverso del quadrato
+
+Se raddoppi la distanza dalla sorgente, l'area su cui si distribuisce l'energia diventa **4 volte più grande** (2² = 4). Quindi l'intensità diventa **4 volte più piccola**.
+
+Se triplichi la distanza → l'area è 9 volte più grande → l'intensità è **9 volte più piccola**.
+
+La regola generale è:
+
+**Se la distanza si moltiplica per n → l'intensità si divide per n²**
+
+<Diagram caption="Effetto del raddoppio della distanza sull'intensità" code={`flowchart TB
+  A["Distanza doppia (x2)"] --> B["Area 4 volte più grande<br/>(2² = 4)"]
+  B --> C["Intensità 4 volte più piccola<br/>(I diventa I/4)"]
+  D["Distanza tripla (x3)"] --> E["Area 9 volte più grande<br/>(3² = 9)"]
+  E --> F["Intensità 9 volte più piccola<br/>(I diventa I/9)"]`} />
+
+## Guarda il video
+<YouTube id="kROvxHtcGKw" title="La Legge dell'inverso del quadrato spiegata in modo semplice! — Mario Festa" />
+<VideoVisto id="fis-u4-05" />
+
+## Da ricordare
+- L'intensità è la **potenza per unità di area**: I = P / A, si misura in W/m².
+- Le onde si espandono come sfere: l'area cresce con il quadrato della distanza (r²).
+- **Legge dell'inverso del quadrato**: se la distanza raddoppia, l'intensità si riduce a **un quarto** (1/4).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Se raddoppi la distanza da una sorgente sonora, l'intensità diventa:"
+  opzioni={["la metà", "un quarto", "un terzo", "uguale"]}
+  corretta={1}
+  spiegazione="L'intensità segue la legge dell'inverso del quadrato: raddoppiando la distanza (×2), l'intensità si divide per 2² = 4, quindi diventa un quarto."
+/>
+
+<Quiz
+  domanda="Come si misura l'intensità di un'onda?"
+  opzioni={["Watt (W)", "Watt al metro quadro (W/m²)", "Newton (N)", "Joule (J)"]}
+  corretta={1}
+  spiegazione="L'intensità I è potenza per unità di area: I = P/A, quindi si misura in W/m²."
+/>
+
+<Quiz
+  domanda="Una sorgente emette onde in tutte le direzioni. Se ti sposti da 1 m a 3 m di distanza, l'intensità:"
+  opzioni={["si riduce di 3 volte", "si riduce di 6 volte", "si riduce di 9 volte", "rimane uguale"]}
+  corretta={2}
+  spiegazione="La distanza si moltiplica per 3, quindi l'intensità si divide per 3² = 9. Diventa un nono dell'originale."
+/>
+
+<Esercizio
+  problema="Una sorgente sonora emette una potenza di 100 W in modo uniforme in tutte le direzioni. Calcola l'intensità a 2 m di distanza (usa π ≈ 3,14)."
+  soluzione="Area della sfera a r = 2 m: A = 4πr² = 4 × 3,14 × 4 ≈ 50,3 m². Intensità: I = P/A = 100 / 50,3 ≈ 2 W/m²."
+/>
+
+</section>
+
+</RisorsaLayout>

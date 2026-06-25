@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u6-02-1",
+    "topicId": "bio-u6-02",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "mc",
+    "q": "Cos'e un'integrina e a cosa serve? Pensa a un bullone che attraversa un muro.",
+    "choices": [
+      "Una proteina di membrana che collega la matrice extracellulare (fuori dalla cellula) al citoscheletro di actina (dentro la cellula), trasmettendo anche segnali chimici",
+      "Un enzima che sintetizza la fibronectina all'interno del nucleo cellulare",
+      "Un canale ionico che pompa calcio attraverso la membrana plasmatica",
+      "Una proteina ribosomiale che costruisce il citoscheletro durante la divisione cellulare"
+    ],
+    "answer": 0,
+    "explain": "L'integrina e come un bullone che attraversa la membrana: da un lato avvita la cellula alla matrice (legando la fibronectina), dall'altro aggancia i cavi interni (actina). Non e solo un'ancora fisica: attiva anche segnali di sopravvivenza. Senza integrine la cellula si stacca e muore per apoptosi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u6-02-2",
+    "topicId": "bio-u6-02",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "open",
+    "q": "Una cellula epiteliale viene staccata dalla sua matrice extracellulare. Descrivi cosa succede, partendo dall'integrina fino al destino finale della cellula, e spiega perche questo meccanismo e utile per l'organismo.",
+    "answer": "Quando la cellula si stacca, le integrine perdono il contatto con la fibronectina della matrice. Senza questo legame, l'integrina non si attiva e non recluta la chinasi FAK. FAK non si fosforila, quindi le cascate di segnalazione a valle (RAS, PI3K, MAPK) non partono. Il nucleo non riceve piu i segnali di sopravvivenza, e la cellula attiva l'apoptosi (morte programmata). Questo e utile: impedisce alle cellule di sopravvivere e proliferare in luoghi sbagliati del corpo (es. in circolo), ed e uno dei meccanismi che normalmente blocca la diffusione tumorale.",
+    "explain": "Chiave: no fibronectina → no integrina attiva → no FAK → no segnali di sopravvivenza → apoptosi. L'ancoraggio alla matrice non e solo fisico, e un vero 'permesso di vivere'.",
+    "tags": ["risposta aperta"]
+  }
+]

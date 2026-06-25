@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u5-13-1",
+    "topicId": "bio-u5-13",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "I mitocondri si dividono (fissione) e si fondono (fusione) continuamente. Quale proteina forma l'anello che 'strangola' il mitocondrio e lo divide in due?",
+    "choices": [
+      "DRP1, una proteina citosolica che si assembla sulla membrana esterna formando un anello che si stringe",
+      "OPA1, che si trova sulla membrana interna e taglia il mitocondrio",
+      "MFN1, che aggancia due mitocondri tra loro per unirli",
+      "TOM, il complesso che importa le proteine nella membrana esterna"
+    ],
+    "answer": 0,
+    "explain": "DRP1 e la 'pinza' della fissione: parte dal citoplasma, si attacca alla membrana esterna e forma un anello che si stringe come un cappio finche il mitocondrio si spezza. OPA1 fa l'opposto (aiuta la fusione della membrana interna). MFN1/MFN2 agganciano due mitocondri per fonderli.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-13-2",
+    "topicId": "bio-u5-13",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Il mitocondrio ha il proprio DNA, eppure ha bisogno di importare proteine dal citoplasma. Spiega perche e descrivi quale complesso e il 'portone d'ingresso' obbligatorio per tutte le proteine che entrano.",
+    "answer": "Il mtDNA umano codifica solo 13 proteine, ma il mitocondrio ne usa circa 1.500. Le restanti ~1.487 sono prodotte dai ribosomi nel citoplasma e devono essere importate. Il complesso TOM (Translocase of the Outer Membrane), situato sulla membrana esterna, e il portone universale: qualunque proteina citoplasmatica diretta al mitocondrio deve passare prima per il TOM. Dopo, a seconda della destinazione finale, viene instradata verso TIM23 (matrice o ancoraggio alla membrana interna), TIM22 (proteine carrier multi-transmembrana nella membrana interna), SAM (proteine beta-barrel della membrana esterna) o OXA (inserimento nella membrana interna dalla parte della matrice).",
+    "explain": "TOM e l'unico ingresso obbligatorio per tutte le proteine citoplasmatiche; poi TIM23/TIM22/SAM/OXA le smistate a seconda di dove devono andare.",
+    "tags": ["risposta aperta"]
+  }
+]

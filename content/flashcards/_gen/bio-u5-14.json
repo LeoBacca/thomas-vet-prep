@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u5-14-1",
+    "topicId": "bio-u5-14",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: il perossisoma ha DUE membrane, come il mitocondrio.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il perossisoma ha UNA sola membrana lipidica, non due. Il mitocondrio invece ne ha due (membrana esterna + interna). Pensa al perossisoma come a un sacchetto di plastica (una parete), mentre il mitocondrio è un thermos (doppia parete).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-14-2",
+    "topicId": "bio-u5-14",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Il perossisoma produce H₂O₂ (acqua ossigenata) durante il suo lavoro. Come fa a non avvelenarsi?",
+    "choices": [
+      "La pompa fuori dalla cellula tramite la membrana",
+      "La neutralizza subito con la catalasi, che la trasforma in acqua + ossigeno (2 H₂O₂ → 2 H₂O + O₂)",
+      "La spedisce al mitocondrio che la brucia",
+      "La converte in glucosio per riusarla come energia"
+    ],
+    "answer": 1,
+    "explain": "La catalasi è il 'pompiere' del perossisoma: appena si forma H₂O₂ (veleno), la catalasi la distrugge all'istante trasformandola in acqua e ossigeno, due sostanze innocue. È una delle reazioni più veloci della biologia. In veterinaria, la stessa catalasi è presente nel sangue degli animali e spiega perché l'acqua ossigenata spuma sul pelo ferito: incontra la catalasi nei tessuti e libera ossigeno gassoso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-14-3",
+    "topicId": "bio-u5-14",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Un neonato ha muscoli molli, convulsioni, problemi visivi e accumulo di acidi grassi molto lunghi nel sangue. La biopsia del fegato mostra 'sacchetti' simili a perossisomi ma vuoti, senza enzimi dentro. Qual è la diagnosi probabile e cosa è andato storto a livello molecolare?",
+    "answer": "La diagnosi probabile è la sindrome di Zellweger. Il problema molecolare è una mutazione in uno o più geni PEX (che producono le proteine chiamate peroxine). Le peroxine sono i 'costruttori' del perossisoma: senza di loro, il perossisoma non riesce ad assemblare la sua attrezzatura interna. La cellula forma la membrana del perossisoma (per questo si vedono i 'sacchetti') ma non riesce a importarci dentro gli enzimi, quindi rimane vuoto e non funziona. Le conseguenze sono tre: 1) gli acidi grassi a catena molto lunga non vengono tagliati a pezzi e si accumulano nel sangue; 2) la sintesi dei plasmalogeni è bloccata, quindi la guaina mielinica dei nervi non si forma e si hanno gravi danni neurologici (convulsioni, problemi visivi); 3) si accumulano intermedi tossici nel fegato, reni e cervello.",
+    "explain": "Chiave: mutazioni in geni PEX → peroxine difettose → perossisomi vuoti ('membrane fantasma') → accumulo acidi grassi lunghi + mielina assente → danni neurologici gravi.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-14-4",
+    "topicId": "bio-u5-14",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Oltre al mitocondrio, quale altro organulo cellulare è un grande consumatore di ossigeno?",
+    "choices": [
+      "Perossisoma",
+      "Lisosoma",
+      "Reticolo endoplasmatico liscio",
+      "Apparato del Golgi",
+      "Reticolo endoplasmatico rugoso"
+    ],
+    "answer": 0,
+    "explain": "Il perossisoma usa ossigeno per le sue reazioni ossidative (beta-ossidazione degli acidi grassi, detossificazione dell'alcol, ecc.) ed è il secondo grande consumatore di O₂ nella cellula dopo il mitocondrio. Le trappole: il lisosoma digerisce con enzimi idrolitici, NON usa ossigeno; il reticolo endoplasmatico liscio fa sintesi di lipidi e detossifica parzialmente ma non è un grande consumatore di O₂ come il perossisoma; l'apparato del Golgi smista e modifica proteine, non ossida; il REL rugoso sintetizza proteine. Solo perossisoma e mitocondrio sono 'divoratori' di ossigeno.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-14-5",
+    "topicId": "bio-u5-14",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Come arrivano le proteine enzimatiche DENTRO il perossisoma? Quale affermazione è CORRETTA?",
+    "choices": [
+      "Vengono sintetizzate direttamente dai ribosomi attaccati alla membrana del perossisoma",
+      "Vengono sintetizzate dai ribosomi liberi nel citoplasma e importate grazie a segnali PTS1 o PTS2 riconosciuti dalle peroxine",
+      "Vengono codificate dal DNA del perossisoma e sintetizzate al suo interno",
+      "Arrivano dal reticolo endoplasmatico rugoso via vescicole di trasporto, come per il Golgi",
+      "Vengono importate direttamente dal nucleo senza passare per il citoplasma"
+    ],
+    "answer": 1,
+    "explain": "Il perossisoma NON ha DNA proprio e NON ha ribosomi: tutte le sue proteine sono sintetizzate dai ribosomi liberi nel citoplasma. Ogni proteina 'destinata' al perossisoma porta un segnale, il più comune è PTS1 (il tripeptide SKL all'estremità C-terminale), riconosciuto dal recettore PEX5. Il complesso PEX5 + proteina si aggancia al poro PEX14/PEX17 sulla membrana e la proteina viene rilasciata nella matrice. Le trappole: 'ribosomi sulla membrana del perossisoma' = confonde con il reticolo endoplasmatico rugoso; 'DNA proprio del perossisoma' = confonde con il mitocondrio, che invece HA il suo DNA; 'via Golgi' = percorso per lisosomi e secrezione, non per perossisomi; 'dal nucleo direttamente' = fuori tema.",
+    "tags": ["prova d'esame"]
+  }
+]

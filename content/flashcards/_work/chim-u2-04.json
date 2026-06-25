@@ -1,0 +1,25 @@
+{
+ "id": "chim-u2-04",
+ "titolo": "Gli elettroliti e il loro ruolo nei fluidi biologici",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "04-gli-elettroliti-e-il-loro-ruolo",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u2/04-gli-elettroliti-e-il-loro-ruolo.mdx",
+ "examQuestions": [
+  {
+   "year": "2016",
+   "q": "Quale dei seguenti composti è un elettrolita?",
+   "choices": [
+    "Nitrato di potassio",
+    "Glucosio",
+    "Esano",
+    "Butano",
+    "Fenolo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

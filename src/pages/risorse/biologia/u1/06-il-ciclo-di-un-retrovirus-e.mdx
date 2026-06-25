@@ -1,0 +1,100 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-06">
+
+## Cos'è un retrovirus?
+
+Un retrovirus è un tipo speciale di virus il cui materiale genetico è fatto di **RNA**, non di DNA come il nostro. Il nome "retro" viene dal latino e significa "al contrario": questi virus fanno esattamente il contrario di quello che siamo abituati a vedere in biologia.
+
+Di norma, l'informazione genetica scorre così:
+
+> DNA → RNA → Proteina
+
+Un retrovirus **inverte** il primo passaggio: parte dall'RNA e lo converte in DNA. L'esempio più famoso di retrovirus è **HIV**, il virus che causa l'AIDS.
+
+---
+
+## La trascrittasi inversa: lo strumento chiave
+
+La **trascrittasi inversa** (o transcrittasi inversa) è un enzima — cioè una proteina che fa da attrezzo molecolare — che il retrovirus porta con sé dentro la cellula.
+
+Il suo lavoro è uno solo: **leggere l'RNA virale e costruire una copia di DNA** a partire da esso.
+
+Pensa a un nastro di cassetta: di solito registri dalla partitura (DNA) al nastro (RNA). La trascrittasi inversa fa il contrario: prende il nastro e ricostruisce la partitura.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La trascrittasi inversa è il "traduttore al contrario" del virus: converte il messaggio RNA in DNA, così il virus può nascondersi dentro il nostro genoma.</div>
+
+---
+
+## Il ciclo del retrovirus, passo dopo passo
+
+Ecco come HIV (o qualsiasi retrovirus) infetta una cellula e si replica:
+
+**1. Attacco e ingresso**
+Il virus si avvicina alla cellula bersaglio (nel caso di HIV, un globulo bianco chiamato linfocita T-CD4). Le proteine del suo involucro esterno (l'**envelope**) si agganciano a recettori specifici sulla membrana cellulare, come una chiave in una serratura. Poi si fonde con la membrana e inietta il contenuto dentro la cellula.
+
+**2. Trascrizione inversa**
+Una volta dentro, la trascrittasi inversa converte l'RNA virale in **DNA a doppio filamento** (dsDNA). Questo passaggio avviene nel citoplasma.
+
+**3. Integrazione nel genoma**
+Il DNA virale appena sintetizzato entra nel nucleo della cellula. Qui un altro enzima virale, l'**integrasi**, lo inserisce fisicamente nel DNA cromosomico dell'ospite. Da questo momento il DNA virale si chiama **provirus** e fa parte del genoma della cellula, come se ci fosse sempre stato.
+
+**4. Trascrizione e traduzione**
+Quando la cellula si attiva, trascrive il provirus proprio come farebbe con i propri geni: produce RNA virale. Quell'RNA viene tradotto nei ribosomi della cellula per produrre le proteine del virus.
+
+**5. Assemblaggio e gemmazione**
+Le nuove proteine virali si assemblano insieme a nuove copie di RNA virale. Il nuovo virione (particella virale) "gemma" dalla membrana cellulare, portandosi via un pezzo di membrana come involucro esterno, e va ad infettare altre cellule.
+
+---
+
+<Diagram caption="Il ciclo replicativo di un retrovirus (es. HIV)" code={`flowchart TB
+  A["1. Il retrovirus si aggancia<br/>ai recettori della cellula bersaglio"] --> B["2. Fusione con la membrana:<br/>RNA virale entra nel citoplasma"]
+  B --> C["3. Trascrittasi inversa:<br/>RNA virale → DNA a doppio filamento"]
+  C --> D["4. Il DNA virale entra nel nucleo"]
+  D --> E["5. Integrasi: DNA virale<br/>inserito nel DNA dell'ospite<br/>(= PROVIRUS)"]
+  E --> F["6. La cellula trascrive il provirus:<br/>produce RNA virale e proteine virali"]
+  F --> G["7. Assemblaggio: nuovi virioni<br/>si formano e gemmano fuori"]
+  G --> H["8. Nuovi virus liberi<br/>infettano altre cellule"]`} />
+
+<Diagram caption="Dettaglio della trascrizione inversa: dall'RNA al DNA integrato" code={`flowchart LR
+  A["RNA virale<br/>(singolo filamento)"] --> B["Trascrittasi inversa:<br/>sintesi del filamento di DNA"]
+  B --> C["RNA-DNA ibrido<br/>(intermedio)"]
+  C --> D["Degradazione dell'RNA<br/>da parte della RNasi H<br/>(attività della trascrittasi inversa)"]
+  D --> E["DNA a doppio filamento<br/>(dsDNA)"]
+  E --> F["Integrasi taglia<br/>il DNA cromosomico"]
+  F --> G["PROVIRUS integrato<br/>nel genoma dell'ospite"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="lvAFbEB-El8" title="CICLO VITALE DEL VIRUS HIV" />
+<VideoVisto id="bio-u1-06" />
+
+---
+
+## Da ricordare
+
+- I retrovirus portano il loro genoma come **RNA** e usano la **trascrittasi inversa** per convertirlo in DNA prima di entrare nel nucleo.
+- Una volta integrato nel DNA dell'ospite, il DNA virale si chiama **provirus** e resta lì permanentemente, anche nelle cellule figlie.
+- Il ciclo comprende: attacco → ingresso → trascrizione inversa → integrazione → trascrizione/traduzione → assemblaggio → gemmazione.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione principale della trascrittasi inversa nei retrovirus?" opzioni={["Degradare il DNA dell'ospite per fare spazio al virus","Convertire l'RNA virale in DNA a doppio filamento","Tradurre le proteine virali nei ribosomi","Tagliare il DNA cromosomico per integrare il provirus"]} corretta={1} spiegazione="La trascrittasi inversa legge l'RNA virale e sintetizza una copia di DNA a doppio filamento. È questa l'azione 'al contrario' che dà il nome ai retrovirus. L'integrazione è invece compito dell'integrasi." />
+
+<Quiz domanda="Come si chiama il DNA virale dopo che è stato inserito nel cromosoma della cellula ospite?" opzioni={["Capside","Envelope","Provirus","Virione"]} corretta={2} spiegazione="Una volta integrato nel genoma dell'ospite, il DNA virale prende il nome di provirus. Capside ed envelope sono parti strutturali del virione; virione è la particella virale completa." />
+
+<Quiz domanda="In quale ordine avvengono i passaggi nel ciclo di HIV?" opzioni={["Integrazione → trascrizione inversa → gemmazione → attacco","Attacco → trascrizione inversa → integrazione → gemmazione","Traduzione → attacco → trascrizione inversa → integrazione","Gemmazione → integrazione → attacco → trascrizione inversa"]} corretta={1} spiegazione="Il ciclo corretto è: attacco alla cellula, ingresso, trascrizione inversa (RNA→DNA), integrazione nel genoma (provirus), poi trascrizione e traduzione delle proteine virali, infine assemblaggio e gemmazione di nuovi virus." />
+
+<Esercizio problema="Spiega con parole tue perché i farmaci antiretrovirali che bloccano la trascrittasi inversa sono utili contro HIV. Cosa succederebbe al ciclo del virus se questo enzima non funzionasse?" soluzione="Se la trascrittasi inversa è bloccata, il virus non riesce a convertire il suo RNA in DNA. Senza DNA, non può integrare il provirus nel nucleo della cellula ospite. Senza il provirus, la cellula non produce nuove proteine virali né nuovi virioni. Il ciclo replicativo si interrompe al secondo passaggio e il virus non si diffonde. Questo è il meccanismo di farmaci come la zidovudina (AZT): si inseriscono nel processo di sintesi del DNA e bloccano la trascrittasi inversa, impedendo la replicazione del virus." />
+
+</section>
+
+</RisorsaLayout>

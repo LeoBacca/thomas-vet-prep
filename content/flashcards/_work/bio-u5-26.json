@@ -1,0 +1,39 @@
+{
+ "id": "bio-u5-26",
+ "titolo": "I microfilamenti di actina: polimerizzazione (ATP, Arp2/3), miosine e proteine accessorie (distrofina, sarcomero)",
+ "materia": "biologia",
+ "unita": 5,
+ "slug": "26-i-microfilamenti-di-actina-polimerizzazione-atp",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/biologia/u5/26-i-microfilamenti-di-actina-polimerizzazione-atp.mdx",
+ "examQuestions": [
+  {
+   "year": "2012",
+   "q": "Quale tra i seguenti NON è un fattore coinvolto direttamente nel ciclo di contrazione di un sarcomero?",
+   "choices": [
+    "Microtubuli",
+    "Ioni calcio",
+    "ATP",
+    "Miosina",
+    "Actina"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Quale proteina, tra quelle appartenenti al citoscheletro sotto riportate, organizza l'anello contrattile della citodieresi nelle cellule eucariotiche?",
+   "choices": [
+    "Actina",
+    "Dineina",
+    "Tubulina",
+    "Cheratina",
+    "Chinesina"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

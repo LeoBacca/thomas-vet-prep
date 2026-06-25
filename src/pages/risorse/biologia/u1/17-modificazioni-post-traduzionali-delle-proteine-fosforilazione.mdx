@@ -1,0 +1,116 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-17">
+
+## Cosa sono le modificazioni post-traduzionali?
+
+Immagina di comprare un mobile IKEA: il pezzo esce dalla fabbrica, ma a casa lo assembli, lo vernichi, magari ci avviti delle rotelle. La proteina fa lo stesso: viene prodotta dal ribosoma (questo è la "traduzione"), ma poi subisce una serie di **modifiche** prima di essere davvero pronta al lavoro.
+
+Queste modifiche si chiamano **modificazioni post-traduzionali** (MPT): "post" significa "dopo", "traduzionali" si riferisce alla traduzione (cioè la costruzione della proteina). In pratica, la cellula aggiunge o toglie piccoli gruppi chimici alla proteina per cambiarle la forma, la posizione o l'attività.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le modificazioni post-traduzionali sono come le personalizzazioni che fai a un oggetto appena uscito di fabbrica — cambiano come funziona e dove va a lavorare.</div>
+
+## Perché servono?
+
+Con le MPT la cellula riesce a:
+- **Accendere o spegnere** una proteina al momento giusto
+- **Indirizzarla** nel posto giusto (nucleo, membrana, fuori dalla cellula…)
+- **Renderla stabile** o farla durare poco (e poi smaltirla)
+- **Farla interagire** con altre molecole
+
+Un solo gene produce una sola proteina, ma grazie alle MPT quella stessa proteina può avere decine di versioni diverse, ognuna con compiti diversi.
+
+## Le quattro modificazioni principali
+
+### 1. Fosforilazione
+
+La **fosforilazione** significa: aggiungere un gruppo fosfato (PO₄) a un certo punto della proteina.
+
+Chi lo fa? Enzimi chiamati **chinasi** (o kinasi). Chi lo toglie? Enzimi chiamati **fosfatasi**.
+
+Dove si attacca il fosfato? Di solito sugli amminoacidi serina, treonina o tirosina.
+
+L'effetto pratico è che il fosfato carico negativamente cambia la forma della proteina e ne altera l'attività. È il meccanismo più usato per **regolare** processi cellulari come la divisione cellulare, la risposta agli ormoni, il metabolismo.
+
+Esempio concreto: quando bevi un caffè e sale l'adrenalina, la fosforilazione attiva enzimi che liberano glucosio dal glicogeno nel fegato. È letteralmente la leva che accende il metabolismo.
+
+### 2. Acetilazione
+
+L'**acetilazione** significa: aggiungere un gruppo acetile (CH₃CO) a un amminoacido, di solito la **lisina**.
+
+Chi la fa? Enzimi chiamati **acetil-transferasi**. Chi la toglie? Le **deacetilasi**.
+
+È importantissima sugli **istoni**, le proteine che avvolgono il DNA: quando gli istoni vengono acetilati, il DNA si "allarga" e i geni diventano leggibili. Quando invece l'acetile viene tolto, il DNA si compatta e i geni si spengono.
+
+L'acetilazione modifica anche molte altre proteine: cambia la loro stabilità (spesso le proteine non acetilate vengono smaltite prima) e le loro interazioni.
+
+### 3. Glicosilazione
+
+La **glicosilazione** significa: aggiungere degli **zuccheri** (o catene di zuccheri) alla proteina.
+
+Si divide in due tipi:
+- **N-glicosilazione**: lo zucchero si attacca all'azoto (N) dell'amminoacido asparagina. Avviene nel reticolo endoplasmatico.
+- **O-glicosilazione**: lo zucchero si attacca all'ossigeno (O) di serina o treonina. Avviene nel Golgi.
+
+A cosa serve? Moltissime cose:
+- Aiuta la proteina a **piegarsi** nella forma giusta
+- La protegge dalla **degradazione** (gli zuccheri fanno da scudo)
+- È fondamentale per il **riconoscimento cellulare** (le cellule si "annusano" tramite i glicani in superficie)
+- Tutte le proteine **secrete** fuori dalla cellula e quelle di membrana sono glicosilate
+
+### 4. Lipidazione
+
+La **lipidazione** significa: aggiungere un **lipide** (una molecola grassa) alla proteina.
+
+I lipidi sono idrofobi (fuggono dall'acqua), quindi una proteina con un lipide attaccato tende ad **ancorarsi alle membrane** cellulari, che sono fatte di doppio strato lipidico.
+
+Tipi principali:
+- **Miristoilazione** e **palmitoilazione**: catene di acidi grassi aggiunte a glicina o cisteina
+- **Prenilazione**: aggiunta di gruppi isoprenoidici
+- **Ancora GPI**: un lipide complesso che ancora la proteina alla membrana plasmatica esterna
+
+Esempio: le proteine Ras (coinvolte nel controllo della divisione cellulare e nei tumori) devono essere prenilate per funzionare — senza questo lipide non si ancorano alla membrana e non mandano segnali.
+
+---
+
+<Diagram caption="Le quattro modificazioni post-traduzionali principali: cosa si aggiunge e dove agisce" code={`flowchart TB
+  P["Proteina appena sintetizzata<br/>(dal ribosoma)"]
+  P --> F["Fosforilazione<br/>+ gruppo fosfato PO₄<br/>su Ser, Thr o Tyr<br/>→ Accende/spegne attività"]
+  P --> A["Acetilazione<br/>+ gruppo acetile CH₃CO<br/>su Lisina<br/>→ Regola geni (istoni) e stabilità"]
+  P --> G["Glicosilazione<br/>+ catena di zuccheri<br/>su Asn (N-) o Ser/Thr (O-)<br/>→ Stabilizza, riconoscimento cellulare"]
+  P --> L["Lipidazione<br/>+ catena lipidica<br/>su Gly o Cys<br/>→ Ancoraggio alle membrane"]`} />
+
+<Diagram caption="La fosforilazione: ciclo di attivazione e disattivazione di una proteina" code={`flowchart LR
+  A["Proteina<br/>INATTIVA"] -- "Chinasi<br/>+ ATP → ADP" --> B["Proteina<br/>FOSFORILATA<br/>(ATTIVA)"]
+  B -- "Fosfatasi<br/>+ H₂O" --> A
+  B --> C["Effetto biologico:<br/>divisione cellulare,<br/>metabolismo,<br/>risposta ormonale"]`} />
+
+## Guarda il video
+<YouTube id="f5-1XCgajFg" title="Le modifiche post traduzionali delle proteine" />
+<VideoVisto id="bio-u1-17" />
+
+## Da ricordare
+- Le modificazioni post-traduzionali avvengono **dopo** la sintesi e cambiano forma, funzione o localizzazione della proteina
+- **Fosforilazione** (chinasi/fosfatasi) = interruttore on/off dell'attività proteica; **glicosilazione** = stabilità e riconoscimento cellulare; **acetilazione** = regolazione genica (istoni); **lipidazione** = ancoraggio alle membrane
+- La stessa proteina può avere modifiche diverse in momenti diversi: questo moltiplica enormemente le possibilità di controllo cellulare senza dover produrre nuove proteine
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un enzima chiamato 'chinasi' è responsabile di quale modificazione post-traduzionale?" opzioni={["Glicosilazione","Acetilazione","Fosforilazione","Lipidazione"]} corretta={2} spiegazione="Le chinasi (o kinasi) sono esattamente gli enzimi che aggiungono un gruppo fosfato (PO₄) a una proteina, cioè effettuano la fosforilazione. Le fosfatasi, invece, rimuovono il fosfato." />
+
+<Quiz domanda="Quale modificazione post-traduzionale è fondamentale per ancorare una proteina alla membrana plasmatica?" opzioni={["Acetilazione","Fosforilazione","Glicosilazione","Lipidazione"]} corretta={3} spiegazione="La lipidazione aggiunge una catena lipidica (idrofoba) alla proteina. Siccome le membrane cellulari sono fatte di doppio strato lipidico, questa catena grassa funge da 'gancio' che tiene la proteina ancorata alla membrana." />
+
+<Quiz domanda="L'acetilazione degli istoni (le proteine che avvolgono il DNA) porta a quale effetto?" opzioni={["Il DNA si compatta e i geni vengono silenziati","Il DNA si allarga e i geni diventano più accessibili per la trascrizione","La proteina viene degradata dal proteasoma","La proteina viene esportata fuori dalla cellula"]} corretta={1} spiegazione="Quando gli istoni vengono acetilati, la loro carica positiva diminuisce e l'interazione con il DNA (carico negativamente) si allenta. Il DNA si apre e i geni diventano leggibili dai macchinari di trascrizione — l'acetilazione è quindi un segnale di attivazione genica." />
+
+<Esercizio problema="Una proteina è coinvolta nella risposta cellulare all'insulina. Sai che esiste in due stati: uno attivo e uno inattivo. Dopo un pasto, la cellula deve attivarla rapidamente e poi spegnerla altrettanto rapidamente. Quale tipo di modificazione post-traduzionale è più adatta a questo scopo e perché?" soluzione="La fosforilazione è perfetta per questo ruolo. È reversibile (la chinasi la aggiunge, la fosfatasi la toglie), rapida, e non richiede di sintetizzare o degradare l'intera proteina. Questo la rende il meccanismo ideale per un interruttore on/off veloce come quello necessario nella risposta all'insulina dopo un pasto." />
+
+</section>
+
+</RisorsaLayout>

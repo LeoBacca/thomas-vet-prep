@@ -1,0 +1,67 @@
+{
+ "id": "fis-u2-07",
+ "titolo": "Moto circolare uniforme e accelerazione centripeta",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "07-moto-circolare-uniforme-e-accelerazione-centripeta",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/fisica/u2/07-moto-circolare-uniforme-e-accelerazione-centripeta.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Una fionda è costituita da un sasso vincolato a percorrere 3 giri al secondo lungo una circonferenza di raggio L = 1,5 m per mezzo di una corda rigida. Quando il sasso viene svincolato dalla corda la sua velocità sarà:",
+   "choices": [
+    "di circa 28 m/s",
+    "di 3 m/s",
+    "di 4,5 m/s",
+    "diversa per sassi di massa diversa",
+    "pari alla velocità del suono"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2008",
+   "q": "Un giradischi si muove a 45 giri al minuto. Per calcolare la velocità angolare in radianti/secondo, quale dei seguenti calcoli è CORRETTO?",
+   "choices": [
+    "velocità angolare = (45 x 2π) / 60 = 4,7 radianti/secondo",
+    "velocità angolare = (45 x 2π) / 360 = 0,8 radianti/secondo",
+    "velocità angolare = 45 / 60 = 0,75 radianti/secondo",
+    "velocità angolare = (45 x 2π) / 180 = 1,6 radianti/secondo",
+    "manca il valore del raggio del disco per poter eseguire il conto"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2017",
+   "q": "Un disco con diametro pari a 40 cm è in rotazione attorno all'asse ortogonale al disco e passante per il suo centro. Se un punto posizionato sul bordo si muove alla velocità di 28,8 km/h, quale sarà la sua velocità angolare?",
+   "choices": [
+    "40 rad/s",
+    "20 rad/s",
+    "72 rad/s",
+    "3,2 rad/s",
+    "11,52 rad/s"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2020",
+   "q": "Qual è la forza centripeta necessaria per far muovere un corpo di massa m = 3,0 kg su di una circonferenza di raggio r = 2,0 m con una velocità v = 4,0 m/s?",
+   "choices": [
+    "24 N",
+    "12 N",
+    "5 N",
+    "2,4 N",
+    "6 N"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "calcolo"
+  }
+ ]
+}

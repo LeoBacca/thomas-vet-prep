@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-28-1",
+    "topicId": "chim-u1-28",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: l'ebollizione e l'evaporazione sono la stessa cosa — entrambe avvengono su tutta la massa del liquido.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'evaporazione avviene solo in SUPERFICIE, in silenzio, a qualsiasi temperatura (come i panni stesi che si asciugano). L'ebollizione invece avviene in TUTTO il liquido, con le bolle che salgono, e solo a una certa temperatura. Sono due fenomeni diversi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-28-2",
+    "topicId": "chim-u1-28",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Il sudore evaporando ti raffredda. Qual e la spiegazione chimica corretta?",
+    "choices": [
+      "L'evaporazione assorbe calore dalla pelle, che quindi si raffredda",
+      "L'evaporazione aggiunge calore alla pelle, che quindi si raffredda per contrasto",
+      "Il sudore e freddo di suo, quindi abbassa la temperatura della pelle",
+      "L'evaporazione libera ossigeno che raffredda i tessuti"
+    ],
+    "answer": 0,
+    "explain": "Per passare da liquido a vapore ogni molecola d'acqua deve 'staccarsi' dalle vicine: ci vuole energia (il calore di evaporazione). Questa energia viene PRESA dalla pelle, che percio si raffredda. E lo stesso principio del cane che ansima: evapora acqua dalla lingua e si abbassa la temperatura corporea. L'evaporazione non aggiunge calore — lo porta via.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-28-3",
+    "topicId": "chim-u1-28",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue cos'e la pressione di vapore e perche i polmoni producono il surfattante. Collega i due concetti.",
+    "answer": "La pressione di vapore e la 'spinta' che il vapore esercita quando si trova in equilibrio con il suo liquido in un contenitore chiuso: tante particelle escono (evaporano) quante ne rientrano (condensano). Questo equilibrio dinamico si raggiunge a una certa pressione, che cresce con la temperatura. I liquidi che evaporano facilmente (come l'acetone) hanno una pressione di vapore alta e si chiamano volatili. Il collegamento con i polmoni: gli alveoli (le minuscole sacche dell'aria nei polmoni) sono rivestiti da un film d'acqua. L'acqua ha tensione superficiale, cioe la superficie si comporta come una pelle elastica che tenderebbe a far collassare (sgonfiare) gli alveoli a ogni espirazione. I polmoni producono il surfattante, una sostanza che abbassa la tensione superficiale dell'acqua e tiene gli alveoli aperti. I bimbi e gli animali nati prematuri non hanno ancora abbastanza surfattante e faticano a respirare: questo mostra quanto il concetto di tensione superficiale sia centrale in medicina e veterinaria.",
+    "explain": "Da ricordare: pressione di vapore = spinta del vapore all'equilibrio, cresce con la temperatura. Tensione superficiale = pelle elastica dell'acqua; il surfattante la abbassa per tenere aperti gli alveoli.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-28-4",
+    "topicId": "chim-u1-28",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "L'acqua puo bollire a 70 °C?",
+    "choices": [
+      "Si, diminuendo la pressione esterna del sistema",
+      "Si, quando se ne scalda una quantita piccolissima",
+      "Si, aumentando la pressione esterna del sistema",
+      "No, l'acqua bolle solamente a 100 °C",
+      "No, l'acqua puo bollire a temperature diverse da 100 °C ma sempre piu alte di 100 °C"
+    ],
+    "answer": 0,
+    "explain": "Un liquido bolle quando la sua pressione di vapore PAREGGIA la pressione esterna. A 100 °C al livello del mare l'acqua bolle perche la sua pressione di vapore raggiunge la pressione atmosferica standard. Se ABBASSI la pressione esterna (come in montagna, o in laboratorio con una pompa), basta una pressione di vapore piu piccola per pareggiarla: quella pressione si raggiunge gia a 70 °C o anche meno. Trappola 'aumentando la pressione': e l'opposto esatto — aumentare la pressione fa salire il punto di ebollizione (principio della pentola a pressione, non abbassarlo). Trappola 'quantita piccolissima': la quantita non cambia la temperatura di ebollizione, e una misconcezione. Trappola 'solo 100 °C': e falso, 100 °C vale solo a pressione atmosferica standard. Trappola 'sempre piu di 100 °C': e ancora l'opposto, confonde diminuzione con aumento di pressione.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-28-5",
+    "topicId": "chim-u1-28",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sulla pressione di vapore di un liquido e CORRETTA?",
+    "choices": [
+      "La pressione di vapore aumenta all'aumentare della temperatura",
+      "La pressione di vapore diminuisce all'aumentare della temperatura",
+      "La pressione di vapore e uguale per tutti i liquidi alla stessa temperatura",
+      "La pressione di vapore non cambia mai, e una costante universale",
+      "La pressione di vapore dipende solo dal volume del contenitore"
+    ],
+    "answer": 0,
+    "explain": "Piu scaldi, piu particelle hanno energia sufficiente per scappare dalla superficie del liquido: la pressione di vapore AUMENTA con la temperatura. Per questo in montagna basta scaldare meno per far bollire l'acqua: la pressione esterna e piu bassa, quindi la pressione di vapore la pareggia gia a una temperatura inferiore a 100 gradi. Trappola 'diminuisce': e l'opposto esatto, il classico errore di invertire il verso. Trappola 'uguale per tutti i liquidi': e falsa — l'acetone e molto piu volatile dell'acqua, ha una pressione di vapore molto piu alta alla stessa temperatura. Trappola 'costante universale': e falsa, dipende fortemente dalla temperatura e dalla sostanza. Trappola 'volume del contenitore': il volume non determina la pressione di vapore all'equilibrio — quella dipende solo dalla sostanza e dalla temperatura.",
+    "tags": ["prova d'esame"]
+  }
+]

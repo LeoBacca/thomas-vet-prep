@@ -1,0 +1,25 @@
+{
+ "id": "bio-u7-04",
+ "titolo": "Danno al DNA, p53, proto-oncogeni, oncosoppressori e virus oncogeni",
+ "materia": "biologia",
+ "unita": 7,
+ "slug": "04-danno-al-dna-p53-proto-oncogeni",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u7/04-danno-al-dna-p53-proto-oncogeni.mdx",
+ "examQuestions": [
+  {
+   "year": "2014",
+   "q": "Una mutazione che converte un proto-oncogene in oncogene è causa diretta di:",
+   "choices": [
+    "cancro",
+    "diabete",
+    "fibrosi cistica",
+    "influenza",
+    "resistenza agli antibiotici"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

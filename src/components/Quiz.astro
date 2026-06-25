@@ -1,0 +1,13 @@
+---
+interface Props { domanda: string; opzioni: string[]; corretta: number; spiegazione?: string; }
+const { domanda, opzioni, corretta, spiegazione } = Astro.props;
+---
+<div class="quiz" data-correct={String(corretta)}>
+  <p class="domanda">{domanda}</p>
+  <div class="opzioni">
+    {opzioni.map((o, i) => (
+      <button type="button" class="opt" data-i={String(i)}>{o}</button>
+    ))}
+  </div>
+  {spiegazione && <div class="spiegazione" hidden>{spiegazione}</div>}
+</div>

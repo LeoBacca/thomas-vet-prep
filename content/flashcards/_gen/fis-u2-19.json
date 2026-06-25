@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u2-19-1",
+    "topicId": "fis-u2-19",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: il centro di massa di un oggetto si trova sempre all'interno dell'oggetto stesso (dove c'e materia).",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il centro di massa e il punto 'medio pesato' di un sistema, ma non e detto che ci sia materia li. Per un anello, il CM e al centro del foro — nel vuoto. Cio che conta e come e distribuita la massa, non la presenza fisica di materia in quel punto.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-19-2",
+    "topicId": "fis-u2-19",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Due palline su una retta: la pallina A pesa 2 kg ed e in x = 0 m, la pallina B pesa 6 kg ed e in x = 4 m. Dove si trova il centro di massa? E se le due palline si scontrano senza che nessuna forza esterna agisca sul sistema, cosa succede al centro di massa durante l'urto?",
+    "answer": "Posizione del CM: x_CM = (m1·x1 + m2·x2) / (m1 + m2) = (2·0 + 6·4) / (2 + 6) = 24 / 8 = 3,0 m. Il CM si trova a 3,0 m, piu vicino alla pallina piu pesante (B, a 4 m) — e sempre cosi: il CM 'tira' verso le masse maggiori. Durante l'urto: poiche non ci sono forze esterne nette sul sistema, il centro di massa continua a muoversi alla stessa velocita (o rimane fermo se era fermo). I corpi si scontrano e cambiano velocita tra loro, ma il CM va avanti indisturbato, come se non fosse successo niente.",
+    "explain": "Formula CM: x_CM = somma(mi·xi) / somma(mi). Senza forze esterne il CM non accelera mai: mantiene velocita costante (o resta fermo).",
+    "tags": ["risposta aperta"]
+  }
+]

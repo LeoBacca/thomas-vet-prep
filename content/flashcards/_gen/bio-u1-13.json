@@ -1,0 +1,73 @@
+[
+  {
+    "id": "fc-bio-u1-13-1",
+    "topicId": "bio-u1-13",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "I carboidrati si classificano in base a quante 'unità zucchero' contengono. Un carboidrato fatto da UNA sola unità, che non si può spezzare ulteriormente, come si chiama?",
+    "choices": ["Monosaccaride", "Disaccaride", "Polisaccaride", "Amminoacido"],
+    "answer": 0,
+    "explain": "Mono- vuol dire 'uno': il monosaccaride e il mattone base, una sola unita zucchero (es. il glucosio). Due unita unite formano un disaccaride (es. lo zucchero da cucina), tante unite formano un polisaccaride (es. l'amido). L'amminoacido invece e il mattone delle proteine, non degli zuccheri.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-13-2",
+    "topicId": "bio-u1-13",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Le piante immagazzinano il glucosio di riserva sotto forma di amido; gli animali (uomo compreso) lo immagazzinano nel fegato e nei muscoli sotto forma di...",
+    "choices": ["Cellulosa", "Glicogeno", "Saccarosio", "Chitina"],
+    "answer": 1,
+    "explain": "Pensa al glicogeno come al 'salvadanaio di zucchero' degli animali, tenuto in fegato e muscoli per quando serve energia. L'amido fa lo stesso lavoro ma nelle piante. La cellulosa e la chitina invece sono polisaccaridi di STRUTTURA (sostegno), non di riserva; il saccarosio e solo un disaccaride, lo zucchero da cucina.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-13-3",
+    "topicId": "bio-u1-13",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Un atleta mangia un piatto di pasta prima della gara. Racconta cosa succede a quei carboidrati, dal piatto fino all'energia per i muscoli, usando le parole: amido, polisaccaride, glucosio, glicogeno.",
+    "answer": "La pasta contiene amido, un polisaccaride formato da tante molecole di glucosio unite in catena. Durante la digestione, degli enzimi spezzano i legami della catena e liberano il glucosio. Il glucosio passa nel sangue (glicemia) e arriva alle cellule: una parte viene bruciata subito per produrre energia (ATP), la parte in eccesso viene salvata sotto forma di glicogeno nel fegato e nei muscoli. Durante la corsa, quando serve piu energia, il glicogeno viene ri-trasformato in glucosio e usato dai muscoli.",
+    "explain": "Filo logico da ricordare: amido (riserva vegetale) → spezzato in glucosio → usato subito o salvato come glicogeno (riserva animale).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-13-4",
+    "topicId": "bio-u1-13",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Amido, cellulosa e glicogeno: cosa hanno in comune dal punto di vista chimico?",
+    "choices": [
+      "Sono sostanze di riserva tipiche solo delle cellule vegetali",
+      "Sono polimeri del glucosio con diversi gradi di ramificazione",
+      "Contengono carbonio, idrogeno, ossigeno e azoto",
+      "Sono tutti monosaccaridi a una sola unita",
+      "Hanno tutti e tre solo funzione di sostegno e struttura"
+    ],
+    "answer": 1,
+    "explain": "Tutti e tre sono lunghe catene (polimeri) della stessa unita, il glucosio, che cambiano solo per quanto sono ramificate. Le trappole: 'riserva solo vegetale' e falso perche il glicogeno e animale (opposto/scambio); 'con azoto' e falso perche i carboidrati hanno solo C, H, O (l'azoto N e nelle proteine); 'monosaccaridi a una sola unita' e l'esatto contrario (sono poli-, tante unita); 'solo sostegno' e falso perche amido e glicogeno sono di riserva, non strutturali.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-13-5",
+    "topicId": "bio-u1-13",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale tra queste affermazioni sui polisaccaridi e corretta?",
+    "choices": [
+      "La cellulosa ha soprattutto la funzione di riserva energetica",
+      "Dall'idrolisi (rottura) dell'amido si ottengono molecole di fruttosio",
+      "Il glicogeno e una forma di riserva del glucosio negli animali",
+      "Il glicogeno e fatto di glucosio tenuto insieme da legami a idrogeno",
+      "I polisaccaridi sono formati da carbonio, idrogeno, ossigeno e ferro"
+    ],
+    "answer": 2,
+    "explain": "Giusta: il glicogeno e la riserva di glucosio degli animali (fegato e muscoli). Le trappole: la cellulosa NON e riserva, e di STRUTTURA (opposto esatto); l'amido spezzato da glucosio, non fruttosio (termine scambiato: il fruttosio e un monosaccaride a parte); il glicogeno e tenuto insieme da legami glicosidici veri e propri, non da deboli legami a idrogeno (misconcezione); il ferro e fuori tema, i carboidrati sono solo C, H, O.",
+    "tags": ["prova d'esame"]
+  }
+]

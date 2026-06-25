@@ -1,0 +1,108 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-10">
+
+## Cos'è la trascrizione eucariotica?
+
+La **trascrizione** è il processo con cui una cellula legge un gene del DNA e produce una molecola di RNA. Negli eucarioti (cioè nelle cellule con nucleo, come le nostre) questo processo è più complicato che nei batteri: ci vogliono **tre macchine diverse** (le RNA polimerasi) e una serie di **proteine di supporto** (i fattori di trascrizione).
+
+Pensa al DNA come a un archivio di ricette. La trascrizione è come fotocopiare una ricetta per portarla in cucina (il ribosoma). Ma negli eucarioti non basta avere la fotocopiatrice: ci vogliono dei tecnici specializzati che accendono la macchina giusta e la puntano sul punto giusto del documento.
+
+---
+
+## Le tre RNA polimerasi
+
+Negli eucarioti esistono **tre RNA polimerasi** diverse, ognuna con un compito specifico:
+
+| Polimerasi | Dove lavora | Cosa produce |
+|---|---|---|
+| **RNA pol I** | Nucleolo | rRNA (RNA ribosomiale, parte del ribosoma) |
+| **RNA pol II** | Nucleo | mRNA (RNA messaggero, porta le istruzioni per le proteine) |
+| **RNA pol III** | Nucleo | tRNA e piccoli RNA (incluso 5S rRNA) |
+
+La più importante per la produzione di proteine è la **RNA pol II**, perché produce i messaggi (mRNA) che vengono poi tradotti in proteine.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Immagina tre fotocopiatrici in ufficio: una copia solo i manuali tecnici (rRNA), una copia le lettere operative (mRNA), una copia i post-it e le etichette (tRNA e piccoli RNA). Ognuna ha il suo lavoro.</div>
+
+---
+
+## Il promotore e la TATA box
+
+Prima che una RNA polimerasi possa iniziare a trascrivere un gene, deve sapere **dove iniziare**. Questo punto si chiama **promotore**: è una sequenza di DNA subito prima del gene, che funziona come un "segnale di partenza".
+
+All'interno del promotore riconosciuto dalla RNA pol II c'è quasi sempre una sequenza particolare chiamata **TATA box**. Si chiama così perché è ricca delle basi azotate **T** (timina) e **A** (adenina): la sequenza tipica è **TATAAAA**.
+
+La TATA box si trova circa **25-30 basi prima** del punto in cui inizia la trascrizione (chiamato sito di inizio, o +1).
+
+---
+
+## I fattori generali di trascrizione
+
+La RNA pol II da sola **non riesce** a legarsi al DNA e partire. Ha bisogno di una squadra di proteine di appoggio chiamate **fattori generali di trascrizione** (abbreviati TFII + una lettera: TFIIA, TFIIB, TFIID, TFIIE, TFIIF, TFIIH).
+
+Questi fattori si assemblano sul promotore uno dopo l'altro, come i pezzi di un ponteggio, formando il **complesso di preinizio** (PIC).
+
+Ecco l'ordine di assemblaggio:
+
+1. **TFIID** si lega per primo alla TATA box. Contiene una subunità chiamata **TBP** (TATA-Binding Protein) che riconosce e piega il DNA in quel punto.
+2. **TFIIA** e **TFIIB** stabilizzano il complesso e aiutano a posizionare la polimerasi.
+3. **RNA pol II + TFIIF** entrano nel complesso.
+4. **TFIIE** e **TFIIH** completano il ponteggio. TFIIH in particolare ha un'attività elicasica (apre il DNA) e fosforila la polimerasi per farla partire.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> I fattori generali di trascrizione sono come la troupe che prepara il set prima che l'attore principale (RNA pol II) entri in scena. TFIID è il primo ad arrivare e segna il punto esatto sul copione (la TATA box).</div>
+
+---
+
+## Diagramma 1 — Le tre RNA polimerasi e i loro prodotti
+
+<Diagram caption="Le tre RNA polimerasi degli eucarioti: localizzazione e prodotto" code={`flowchart TB
+  A["DNA eucariotico"] --> B["RNA Polimerasi I<br/>nel nucleolo"]
+  A --> C["RNA Polimerasi II<br/>nel nucleo"]
+  A --> D["RNA Polimerasi III<br/>nel nucleo"]
+  B --> E["rRNA<br/>(componente del ribosoma)"]
+  C --> F["mRNA pre-maturo<br/>(poi tradotto in proteina)"]
+  D --> G["tRNA, 5S rRNA<br/>e piccoli RNA"]`} />
+
+---
+
+## Diagramma 2 — Assemblaggio del complesso di preinizio sul promotore
+
+<Diagram caption="Ordine di assemblaggio dei fattori generali di trascrizione sulla TATA box" code={`flowchart TB
+  A["Promotore del gene<br/>(DNA)"] --> B["TFIID si lega<br/>alla TATA box<br/>tramite TBP"]
+  B --> C["TFIIA e TFIIB<br/>stabilizzano il complesso"]
+  C --> D["RNA Pol II + TFIIF<br/>entrano nel complesso"]
+  D --> E["TFIIE e TFIIH<br/>completano il PIC"]
+  E --> F["TFIIH apre il DNA<br/>e fosforila RNA Pol II"]
+  F --> G["Inizio della trascrizione<br/>(elongazione)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="hFqFJuhMAro" title="Trascrizione — Agora Scienze Biomediche" />
+<VideoVisto id="bio-u3-10" />
+
+## Da ricordare
+- Negli eucarioti ci sono tre RNA polimerasi: pol I (rRNA), pol II (mRNA), pol III (tRNA e piccoli RNA).
+- La TATA box è una sequenza del promotore ricca di T e A, posta circa 25–30 basi prima del sito di inizio, dove si assembla il complesso di preinizio.
+- I fattori generali di trascrizione (TFIID, TFIIB, TFIIF, TFIIE, TFIIH…) si montano in sequenza sul promotore per permettere alla RNA pol II di partire.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale RNA polimerasi produce l'mRNA negli eucarioti?" opzioni={["RNA polimerasi I","RNA polimerasi II","RNA polimerasi III","RNA polimerasi IV"]} corretta={1} spiegazione="La RNA polimerasi II è responsabile della sintesi degli mRNA, che poi vengono tradotti in proteine. La pol I produce gli rRNA ribosomiali e la pol III produce i tRNA e i piccoli RNA." />
+
+<Quiz domanda="Qual è la funzione della TATA box?" opzioni={["Codifica una proteina strutturale del ribosoma","Fornisce il segnale di stop alla trascrizione","È una sequenza del promotore dove si lega TFIID per avviare l'assemblaggio del complesso di preinizio","Segnala il punto in cui avviene lo splicing dell'mRNA"]} corretta={2} spiegazione="La TATA box è una sequenza ricca di T e A nel promotore, posta circa 25–30 basi prima del sito di inizio. La subunità TBP di TFIID la riconosce e si lega, dando il via all'assemblaggio di tutti gli altri fattori generali di trascrizione." />
+
+<Quiz domanda="Quale fattore generale di trascrizione si lega PER PRIMO alla TATA box?" opzioni={["TFIIB","TFIIH","TFIIA","TFIID"]} corretta={3} spiegazione="TFIID è il primo fattore ad arrivare: la sua subunità TBP (TATA-Binding Protein) riconosce e si lega alla TATA box, piegando il DNA e creando la piattaforma su cui si assembleranno tutti gli altri fattori e infine la RNA pol II." />
+
+<Esercizio problema="Immagina di dover costruire il complesso di preinizio su un promotore che NON contiene la TATA box. Cosa succederebbe all'assemblaggio dei fattori di trascrizione? Riesci a pensare a un modo alternativo con cui la cellula potrebbe comunque avviare la trascrizione in assenza di questa sequenza?" soluzione="Senza TATA box, TFIID non può legarsi tramite TBP in quella posizione, e l'assemblaggio ordinato dei fattori di trascrizione viene compromesso. Tuttavia, molti geni eucarioti (soprattutto quelli espressi sempre, i cosiddetti 'housekeeping genes') hanno promotori senza TATA box. In questi casi la cellula usa altri elementi del promotore (come la sequenza Initiator, INR, o l'elemento DPE) e altre subunità di TFIID chiamate TAF (TBP-Associated Factors) che riconoscono questi elementi alternativi, permettendo ugualmente l'assemblaggio del complesso di preinizio e l'avvio della trascrizione." />
+
+</section>
+
+</RisorsaLayout>

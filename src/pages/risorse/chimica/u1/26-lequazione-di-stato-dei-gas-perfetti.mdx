@@ -1,0 +1,109 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-26">
+
+Un **gas** è fatto di tantissime particelle che volano in giro e sbattono contro le pareti del contenitore. L'**equazione di stato dei gas perfetti** è una sola formuletta che mette in relazione le 4 cose che descrivono un gas: quanto **spinge** (pressione), quanto **spazio** occupa (volume), **quante** particelle ci sono (moli) e quanto è **caldo** (temperatura). Si scrive così: **PV = nRT**. Conta tanto perché i tuoi polmoni sono proprio dei contenitori di gas, e questa formula spiega come fai a respirare.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> PV = nRT è la "carta d'identità" di un gas. Se conosci 3 di quelle 4 cose, la formula ti dice la quarta. È come una ricetta: cambi un ingrediente e gli altri si aggiustano.</div>
+
+<Diagram caption="Il polmone è un contenitore di gas: vale PV = nRT" code={`flowchart TB
+  L["Il polmone = un contenitore di gas (aria)"] --> EQ["PV = nRT"]
+  EQ --> P["P = Pressione<br/>quanto l'aria spinge sulle pareti"]
+  EQ --> V["V = Volume<br/>quanto spazio occupa l'aria"]
+  EQ --> N["n = moli<br/>quante particelle d'aria ci sono"]
+  EQ --> T["T = Temperatura<br/>quanto è calda l'aria"]`} />
+
+## Cosa sono quelle lettere
+
+Andiamo con calma, una lettera alla volta. Niente paura.
+
+- **P (pressione)**: le particelle del gas sbattono contro le pareti e le spingono. Più sbattono, più alta è la pressione. Come quando gonfi un palloncino: l'aria dentro spinge sulla gomma.
+- **V (volume)**: lo spazio che il gas ha a disposizione. Un palloncino piccolo ha poco volume, uno grande ne ha tanto.
+- **n (moli)**: è solo un modo per dire **quante** particelle ci sono. Una mole è semplicemente un "pacco" da un numero enorme di particelle (6,022x10^23), come "una dozzina" sono 12 uova. Più aria soffi dentro, più moli hai.
+- **R (costante)**: è un numero fisso, sempre lo stesso, che fa quadrare i conti. Non devi capirlo, devi solo metterlo nella formula. Vale circa 0,0821 (in litri, atmosfere e kelvin).
+- **T (temperatura)**: quanto è caldo il gas. Attenzione: nella formula va sempre in **kelvin** (i gradi "scientifici"), non in gradi normali.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> P, V, n e T sono come quattro amici su un'altalena. Se uno si muove, gli altri reagiscono per tenere l'equilibrio. R è solo l'altalena che li tiene collegati.</div>
+
+## Come "leggere" la formula
+
+La cosa più utile non è imparare la formula a memoria, ma capire **cosa succede se cambi una cosa**. Tieni R fissa (è sempre uguale) e ragiona così:
+
+- Se **scaldi** il gas (T sale) e il volume non può cambiare, la **pressione sale**. Per questo una bomboletta lasciata al sole può scoppiare: dentro la temperatura sale e la pressione spinge sempre di più.
+- Se **schiacci** il gas (volume V scende), la **pressione sale**. Come quando tappi una siringa col dito e premi: l'aria dentro spinge di più.
+- Se **aggiungi** particelle (n sale) nello stesso spazio, la **pressione sale**. Più gente sale sull'autobus, più ti senti pigiato.
+
+<Diagram caption="Se cambi una cosa, le altre reagiscono (R resta fissa)" code={`flowchart LR
+  T["Scaldo il gas<br/>(T sale)"] --> PR["A volume fisso<br/>la Pressione SALE"]
+  VOL["Schiaccio il gas<br/>(Volume scende)"] --> PR2["La Pressione SALE"]
+  MOL["Aggiungo particelle<br/>(n sale)"] --> PR3["La Pressione SALE"]`} />
+
+## E la respirazione? Qui entra il corpo
+
+Ecco il bello: **respiri grazie a questa formula**. I tuoi polmoni sono contenitori di gas, e tu controlli il **volume**.
+
+Quando **inspiri**, un muscolo (il **diaframma**, sotto i polmoni) si abbassa e il torace si allarga: il **volume** dei polmoni **aumenta**. Se il volume aumenta, la **pressione dentro scende** (sono amici dell'altalena: uno sale, l'altro scende). Ora dentro il polmone c'è meno pressione che fuori, e l'aria entra da sola, dall'alta verso la bassa pressione. Esattamente come l'acqua scende dal pieno al vuoto.
+
+Quando **espiri** è il contrario: il diaframma risale, il **volume diminuisce**, la **pressione dentro sale** sopra quella esterna, e l'aria esce.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> non "tiri" l'aria dentro come una cannuccia. La fai entrare facendo <strong>più spazio</strong> nei polmoni: più volume → meno pressione → l'aria entra da sola.</div>
+
+Lo stesso ragionamento spiega lo **scambio dei gas**: nei polmoni l'ossigeno passa dove ce n'è di più (l'aria che respiri) a dove ce n'è di meno (il sangue), e l'anidride carbonica fa il viaggio inverso. I gas si spostano sempre dalla pressione alta a quella bassa, e PV = nRT è la base per capire queste pressioni. Per un veterinario è fondamentale: serve a capire la respirazione degli animali, l'anestesia con i gas e perché un animale a quote alte (dove l'aria "spinge" meno) respira con più fatica.
+
+<Diagram caption="Inspirazione: più volume nei polmoni, meno pressione, l'aria entra" code={`flowchart TB
+  D["Il diaframma si abbassa"] --> VV["Il VOLUME dei polmoni aumenta"]
+  VV --> PP["La PRESSIONE dentro scende"]
+  PP --> AA["L'aria entra da sola<br/>(dalla pressione alta fuori<br/>alla bassa dentro)"]`} />
+
+## Guarda il video
+
+<YouTube id="9nJVg6AqHbE" title="Equazione di stato dei gas perfetti PV=nRT con esempio di applicazione" />
+
+<VideoVisto id="chim-u1-26" />
+
+## Da ricordare
+
+- La formula è **PV = nRT**: lega pressione, volume, moli (quante particelle) e temperatura.
+- **R** è una costante fissa; la **T** va sempre in **kelvin**.
+- P, V, n e T si "aggiustano" a vicenda: se ne cambi una, le altre reagiscono.
+- A volume fisso, **più caldo → più pressione**. A temperatura fissa, **meno volume → più pressione**.
+- **Respiri** così: il diaframma allarga i polmoni → più volume → meno pressione → l'aria entra da sola.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Nella formula PV = nRT, la lettera n indica:"
+  opzioni={["la pressione", "quante particelle di gas ci sono (moli)", "la temperatura", "il nome del gas"]}
+  corretta={1}
+  spiegazione="n è il numero di moli, cioè quante particelle di gas ci sono. Una mole è un 'pacco' enorme di particelle, come una dozzina sono 12 uova."
+/>
+
+<Quiz
+  domanda="Scaldi un gas dentro un contenitore rigido (il volume non può cambiare). Cosa succede alla pressione?"
+  opzioni={["scende", "sale", "resta uguale", "sparisce"]}
+  corretta={1}
+  spiegazione="A volume fisso, se la temperatura sale anche la pressione sale: per questo una bomboletta al sole può scoppiare."
+/>
+
+<Quiz
+  domanda="Quando INSPIRI, il diaframma si abbassa e il volume dei polmoni aumenta. Cosa succede alla pressione dentro i polmoni e perché entra l'aria?"
+  opzioni={["la pressione sale e l'aria esce", "la pressione dentro scende, così l'aria entra da sola dall'esterno", "non cambia niente", "il volume non c'entra con la respirazione"]}
+  corretta={1}
+  spiegazione="Più volume significa meno pressione dentro. Essendoci meno pressione dentro che fuori, l'aria entra da sola, dall'alta verso la bassa pressione."
+/>
+
+<Esercizio
+  problema="Hai una siringa piena d'aria con la punta tappata col dito. Spingi lo stantuffo verso il basso, dimezzando lo spazio (il volume) a disposizione dell'aria. Senza fare conti, di' se la pressione dell'aria dentro la siringa aumenta o diminuisce, e collega la risposta alla formula PV = nRT."
+  soluzione="La pressione AUMENTA. La temperatura resta circa uguale, le moli (n) sono sempre le stesse e R è fissa: quindi il prodotto P x V deve restare costante. Se il volume V diventa più piccolo, la pressione P deve diventare più grande per compensare. È lo stesso motivo per cui senti più resistenza man mano che schiacci: l'aria spinge indietro sempre di più."
+/>
+
+</section>
+
+</RisorsaLayout>

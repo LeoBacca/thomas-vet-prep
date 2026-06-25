@@ -1,0 +1,97 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-10">
+
+Gli atomi non amano stare da soli e "incompleti". Hanno una specie di **desiderio**: vogliono avere **8 elettroni** nel loro strato più esterno (l'ultimo "anello" di elettroni). Quando ci riescono, sono **felici e stabili**. Questa è la **regola dell'ottetto**: "ottetto" vuol dire proprio **otto**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina che ogni atomo abbia un parcheggio esterno con 8 posti. L'atomo sta tranquillo solo quando quei posti sono tutti pieni. Per riempirli è disposto a dare via, prendere o condividere elettroni con altri atomi.</div>
+
+<Diagram caption="L'atomo è stabile quando ha 8 elettroni nello strato esterno (come i gas nobili)" code={`flowchart LR
+  A["Atomo<br/>strato esterno NON pieno"] -->|"cerca elettroni"| B["Atomo con 8 elettroni esterni<br/>(ottetto completo)"]
+  B --> C["STABILE e felice<br/>(come un gas nobile)"]`} />
+
+## Perché proprio 8? Il segreto dei gas nobili
+
+In fondo alla tabella periodica c'è una colonna di atomi "tranquilli": i **gas nobili** (come elio, neon, argon). Sono speciali perché **non reagiscono quasi mai** con nessuno: se ne stanno per conto loro, soddisfatti.
+
+Il motivo? Hanno già **8 elettroni** nello strato esterno (l'elio ne ha 2, ma è un caso a parte più piccolo). Sono il modello da imitare: **l'atomo perfetto e completo**.
+
+Tutti gli altri atomi sono un po' "invidiosi" e cercano di **assomigliare al gas nobile più vicino**. Per farlo riempiono il loro ottetto. È come voler copiare il compagno di classe che ha già finito il compito.
+
+<Diagram caption="Ogni atomo vuole imitare il gas nobile: arrivare a 8 elettroni esterni" code={`flowchart TB
+  G["Gas nobili<br/>8 elettroni esterni"] --> M["Sono il MODELLO<br/>stabili, non reagiscono"]
+  X["Altri atomi<br/>ottetto incompleto"] -->|"imitano il gas nobile"| Y["Prendono, cedono<br/>o condividono elettroni"]
+  Y --> Z["Raggiungono 8 elettroni esterni<br/>= stabilita"]`} />
+
+## Come fa un atomo a riempire l'ottetto?
+
+Ci sono tre modi, come quando ti mancano (o ti avanzano) figurine per completare l'album:
+
+- **Cedere** elettroni: se gliene avanzano pochi, li regala via.
+- **Prendere** elettroni: se gliene mancano pochi, se li fa dare.
+- **Condividere** elettroni: due atomi mettono in comune elettroni, così **entrambi** arrivano a 8 (come due amici che condividono la merenda per stare bene tutti e due).
+
+Proprio per riempire l'ottetto gli atomi **si uniscono** tra loro: nascono così i **legami chimici**. Senza questa "voglia di 8", non esisterebbero le molecole.
+
+## Perché conta per medicina e veterinaria
+
+Tutto il corpo, tuo e di un animale, è fatto di molecole tenute insieme da legami chimici. E quei legami esistono perché gli atomi inseguono l'ottetto.
+
+- L'**acqua** (H2O) che bevi: l'ossigeno condivide elettroni con due idrogeni per completarsi.
+- Il **sale da cucina** (cloruro di sodio): il sodio cede un elettrone, il cloro lo prende, ed entrambi raggiungono l'ottetto. Gli ioni sodio e cloro sono fondamentali per i nervi e i muscoli, sia umani che animali.
+- Le grandi molecole della vita (proteine, DNA, zuccheri) reggono solo grazie a questa regola.
+
+Capire l'ottetto è il primo passo per capire **perché le sostanze del corpo si formano e funzionano**.
+
+## Guarda il video
+
+<YouTube id="NfuTnI13DLM" title="La regola dell'ottetto: perché si formano i legami tra gli atomi — spiegazione semplice" />
+
+<VideoVisto id="chim-u1-10" />
+
+## Da ricordare
+
+- **Ottetto** = **8 elettroni** nello strato esterno dell'atomo.
+- Gli atomi cercano l'ottetto perché così diventano **stabili**.
+- Il modello da imitare sono i **gas nobili**, che hanno già 8 elettroni esterni e non reagiscono.
+- Per completare l'ottetto un atomo può **cedere**, **prendere** o **condividere** elettroni: così nascono i **legami chimici**.
+- Tutte le molecole del corpo (acqua, sale, proteine) esistono grazie a questa "voglia di 8".
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa vuol dire 'regola dell'ottetto'?"
+  opzioni={["Gli atomi vogliono 8 protoni", "Gli atomi tendono ad avere 8 elettroni nello strato esterno", "Gli atomi pesano 8 grammi", "Gli atomi si legano sempre a 8 altri atomi"]}
+  corretta={1}
+  spiegazione="'Ottetto' significa otto: gli atomi tendono ad avere 8 elettroni nello strato piu esterno, perche cosi diventano stabili."
+/>
+
+<Quiz
+  domanda="Perche i gas nobili (come neon e argon) quasi non reagiscono mai?"
+  opzioni={["Perche sono pesanti", "Perche hanno gia 8 elettroni nello strato esterno (sono completi)", "Perche non hanno elettroni", "Perche sono freddi"]}
+  corretta={1}
+  spiegazione="I gas nobili hanno gia l'ottetto completo: essendo gia stabili e 'soddisfatti', non hanno bisogno di legarsi ad altri atomi."
+/>
+
+<Quiz
+  domanda="Quali sono i modi in cui un atomo puo completare il suo ottetto?"
+  opzioni={["Solo prendere elettroni", "Cedere, prendere o condividere elettroni", "Cambiare colore", "Aumentare di peso"]}
+  corretta={1}
+  spiegazione="Un atomo puo regalare via elettroni, prenderne dagli altri, oppure condividerli: in tutti e tre i casi punta ad arrivare a 8 elettroni esterni."
+/>
+
+<Esercizio
+  problema="All'atomo di cloro manca un solo elettrone per arrivare a 8 nello strato esterno. Secondo la regola dell'ottetto, cosa gli conviene fare per diventare stabile?"
+  soluzione="Gli conviene PRENDERE un elettrone da un altro atomo. Cosi passa da 7 a 8 elettroni esterni e completa l'ottetto, diventando stabile. (E proprio quello che succede quando il cloro si lega al sodio nel sale da cucina.)"
+/>
+
+</section>
+
+</RisorsaLayout>

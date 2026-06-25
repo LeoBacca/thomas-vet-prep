@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u1-03-1",
+    "topicId": "fis-u1-03",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: se converti una misura in un'unita piu piccola (es. da metri a centimetri), il numero diventa piu grande.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Immagina di misurare una stanza con un metro da sarto: se usi metri ottieni un numero piccolo (es. 3 m); se usi centimetri conti molti piu pezzetti (300 cm). La quantita reale non cambia, ma il numero sale. Regola: unita piu piccola → numero piu grande (e viceversa).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u1-03-2",
+    "topicId": "fis-u1-03",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "open",
+    "q": "Cos'e l'ordine di grandezza di un numero e a cosa serve? Fai un esempio con 0,0042.",
+    "answer": "L'ordine di grandezza e la potenza di 10 piu vicina a quel numero. Serve a stimare al volo, senza fare calcoli precisi: ti dice 'siamo nell'ordine dei millesimi? dei milioni?' Per 0,0042: lo scrivo in notazione scientifica → 4,2 × 10⁻³. La potenza di 10 e 10⁻³, quindi l'ordine di grandezza di 0,0042 e 10⁻³ (millesimi). In pratica e come chiedere: 'quanto e grande, a spanne?'",
+    "explain": "Ordine di grandezza = potenza di 10 piu vicina. Si trova scrivendo il numero come A × 10^n (con 1 ≤ A < 10): l'esponente n e l'ordine di grandezza.",
+    "tags": ["risposta aperta"]
+  }
+]

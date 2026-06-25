@@ -1,0 +1,39 @@
+{
+ "id": "chim-u1-17",
+ "titolo": "Legami σ e π: legami semplici, doppi e tripli",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "17-legami-e-legami-semplici-doppi-e",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u1/17-legami-e-legami-semplici-doppi-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2014",
+   "q": "Quale/i delle seguenti affermazioni è/sono corretta/e relativamente ai legami carbonio-carbonio? 1. L'energia di legame cresce nell'ordine C-C, C=C, C≡C; 2. La lunghezza del legame C-C è doppia rispetto a quella del legame C=C; 3. Nel legame C=C gli atomi di carbonio condividono quattro elettroni",
+   "choices": [
+    "Solo 1 e 3",
+    "Solo 3",
+    "Solo 1 e 2",
+    "Solo 2 e 3",
+    "Solo 1"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "I legami tripli sono legami formati da:",
+   "choices": [
+    "da un legame σ e da due legami π",
+    "tre legami dativi",
+    "due legami ionici ed un legame covalente omopolare",
+    "due legami covalenti polari e un legame omopolare",
+    "due legami σ e un legame π"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "definizione"
+  }
+ ]
+}

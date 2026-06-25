@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u6-09-1",
+    "topicId": "bio-u6-09",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "mc",
+    "q": "Un ormone arriva sulla superficie della cellula ma non puo entrare dentro. Cosa fa la cellula per trasmettere il segnale all'interno?",
+    "choices": [
+      "Produce un 'secondo messaggero' interno (come il cAMP) che porta il segnale nel citoplasma e lo amplifica",
+      "L'ormone viene inghiottito per endocitosi e porta il messaggio direttamente al nucleo",
+      "Il recettore di membrana si stacca e nuota fino al nucleo",
+      "Non succede nulla: il segnale si ferma fuori dalla cellula"
+    ],
+    "answer": 0,
+    "explain": "L'ormone e il 'primo messaggero': resta fuori come chi suona il campanello. All'interno nascono i 'secondi messaggeri' (cAMP, Ca²⁺, IP3) che portano la notizia e la amplificano a cascata. Un segnale debolissimo fuori diventa una risposta potente dentro.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u6-09-2",
+    "topicId": "bio-u6-09",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "open",
+    "q": "Quando la luce colpisce i bastoncelli della retina, che cosa succede al cGMP e perche questo porta un segnale elettrico al cervello? Descrivi la sequenza in 4-5 passaggi.",
+    "answer": "1) La luce colpisce la rodopsina (recettore GPCR nei bastoncelli) e la attiva. 2) La rodopsina attiva la trasducina (una proteina G specializzata). 3) La trasducina attiva la fosfodiesterasi, un enzima che degrada il cGMP (secondo messaggero). 4) Il calo di cGMP provoca la chiusura dei canali ionici per il Na⁺ nella membrana. 5) Meno sodio entra nella cellula: la cellula si iperpolarizza e genera un segnale elettrico che parte verso il cervello. La potenza sta nell'amplificazione: un singolo fotone di luce puo chiudere centinaia di canali ionici.",
+    "explain": "Schema chiave: luce → rodopsina → trasducina → fosfodiesterasi → calo cGMP → chiusura canali Na⁺ → iperpolarizzazione → segnale al cervello. La desensitizzazione (fosforilazione del recettore + arrestina) spiega perche gli occhi si adattano dopo il buio.",
+    "tags": ["risposta aperta"]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fc-bio-u1-18-1", "topicId": "bio-u1-18", "materia": "biologia", "unita": 1, "type": "mc",
+    "q": "Un nucleotide è il 'mattoncino Lego' con cui è costruito il DNA. Da quali tre pezzi è formato?",
+    "choices": ["Solo da una base azotata", "Da uno zucchero, un gruppo fosfato e una base azotata", "Da due zuccheri uniti tra loro", "Da una proteina, un grasso e uno zucchero"],
+    "answer": 1,
+    "explain": "Ogni nucleotide ha sempre tre pezzi incollati insieme: uno zucchero a 5 carboni (il desossiribosio nel DNA), un gruppo fosfato (il 'gancio' che collega un mattoncino al successivo) e una base azotata (A, T, C o G, la parte che porta l'informazione). Tolto anche solo uno dei tre, non è più un nucleotide.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-18-2", "topicId": "bio-u1-18", "materia": "biologia", "unita": 1, "type": "tf",
+    "q": "Vero o falso: nel DNA l'Adenina (A) si può appaiare indifferentemente con qualsiasi altra base.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Le basi si incastrano come pezzi di puzzle, con una regola fissa (complementarità di Chargaff): A va SEMPRE con T (2 legami idrogeno) e G va SEMPRE con C (3 legami idrogeno). Non si possono scambiare: è questa regola che permette al DNA di copiarsi in modo fedele.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-18-3", "topicId": "bio-u1-18", "materia": "biologia", "unita": 1, "type": "open",
+    "q": "Immagina di 'aprire' la doppia elica come una cerniera e di guardare un solo filamento del DNA. Perché, conoscendo le basi di quel filamento, puoi indovinare con certezza tutte le basi dell'altro filamento?",
+    "answer": "Perché i due filamenti non sono indipendenti: sono complementari. Ogni base ha una sola 'compagna' possibile, secondo la regola di Chargaff: A si appaia solo con T, e G solo con C. Quindi se leggo un filamento (per esempio A-T-C-G) so automaticamente che di fronte ci sarà la sequenza speculare T-A-G-C. È come avere lo stampo di una chiave: la sua forma decide esattamente la forma della chiave complementare. Proprio per questo, quando la cellula deve duplicare il DNA, ogni filamento fa da stampo per ricostruire l'altro, e si ottengono due copie identiche.",
+    "explain": "Da ricordare: i due filamenti sono complementari (A-T, G-C), quindi uno determina sempre l'altro. È la base della copia fedele del DNA.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-18-4", "topicId": "bio-u1-18", "materia": "biologia", "unita": 1, "type": "mc",
+    "q": "In un DNA a doppia elica la Timina (T) è il 34% delle basi. Qual è la percentuale di Citosina (C)?",
+    "choices": ["34%", "16%", "66%", "32%", "Il colesterolo non contiene azoto"],
+    "answer": 1,
+    "explain": "Regola di Chargaff: A=T e G=C. Se T=34%, allora anche A=34%, quindi A+T = 68%. Il resto, 100-68 = 32%, è diviso a metà tra G e C, perciò C = 16%. Le trappole: '34%' è la classica confusione (T e C non sono una coppia, quindi NON sono uguali); '32%' è il totale di G+C, non la sola C (la near-miss che dimentica di dividere a metà); '66%' inverte il conto (è circa A+T, non C); l'ultima opzione e' un filler fuori tema sul colesterolo.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-18-5", "topicId": "bio-u1-18", "materia": "biologia", "unita": 1, "type": "mc",
+    "q": "Il DNA nel suo insieme ha una carica elettrica negativa. Quale sua parte è responsabile di questa carica?",
+    "choices": ["Le basi azotate", "Il gruppo fosfato", "Lo zucchero desossiribosio", "I legami idrogeno tra le basi", "Il glucosio del sangue"],
+    "answer": 1,
+    "explain": "La carica negativa viene dai gruppi fosfato, che fanno parte dello scheletro esterno (zucchero-fosfato) e portano cariche negative. Le trappole: 'le basi azotate' portano l'informazione ma non la carica netta (e' lo scambio di termine classico); 'lo zucchero' fa solo da struttura, e' neutro (la near-miss, perche' sta nello scheletro accanto al fosfato); 'i legami idrogeno' tengono uniti i due filamenti ma non sono cariche; 'il glucosio del sangue' e' un filler fuori tema che nemmeno fa parte del DNA.",
+    "tags": ["prova d'esame"]
+  }
+]

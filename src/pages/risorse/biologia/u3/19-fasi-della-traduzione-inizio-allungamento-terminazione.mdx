@@ -1,0 +1,102 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-19">
+
+## Cos'è la traduzione?
+
+La **traduzione** è il processo con cui la cellula legge il messaggio scritto nell'mRNA e lo trasforma in una **proteina**. È come seguire una ricetta: l'mRNA è il foglio con le istruzioni, i **ribosomi** sono i cuochi, e i **tRNA** portano gli ingredienti (gli amminoacidi).
+
+Il risultato finale è una catena di amminoacidi, cioè una proteina.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La traduzione legge il codice dell'mRNA (fatto di triplette, i <em>codoni</em>) e costruisce la proteina amminoacido per amminoacido — come leggere le parole di una ricetta e aggiungere un ingrediente alla volta.</div>
+
+---
+
+## Le tre fasi della traduzione
+
+### 1. Inizio (Iniziazione)
+
+- Il ribosoma si assembla attorno all'mRNA, in corrispondenza di una sequenza speciale chiamata **5'UTR** (la regione non tradotta all'inizio).
+- Il ribosoma trova il **codone di inizio: AUG**, che codifica per la metionina (il primo amminoacido di quasi tutte le proteine).
+- Arriva il primo **tRNA** con la metionina. La macchina è pronta a partire.
+
+### 2. Allungamento (Elongazione)
+
+- Il ribosoma si sposta lungo l'mRNA un codone alla volta, da 5' a 3'.
+- Ogni volta che legge un codone, arriva il tRNA giusto che porta l'amminoacido corrispondente.
+- I due amminoacidi vengono uniti da un **legame peptidico** (un aggancio chimico).
+- La catena proteica cresce un amminoacido alla volta.
+
+### 3. Terminazione
+
+- Il ribosoma incontra uno dei tre **codoni di stop**: UAA, UAG o UGA.
+- Nessun tRNA riconosce questi codoni: arrivano invece proteine speciali chiamate **fattori di rilascio**.
+- La catena proteica viene liberata e il ribosoma si smonta.
+
+---
+
+## Le regioni UTR: le parti "non tradotte" dell'mRNA
+
+L'mRNA non è fatto solo dal messaggio da tradurre. Ai suoi due estremi ci sono regioni che **non vengono tradotte in proteine**, ma hanno un ruolo cruciale di **regolazione**.
+
+| Regione | Posizione | Funzione principale |
+|---|---|---|
+| **5'UTR** (Untranslated Region) | Prima del codone AUG | Aiuta il ribosoma ad agganciarsi e trovare il punto di inizio; può accelerare o frenare la traduzione |
+| **3'UTR** (Untranslated Region) | Dopo il codone di stop | Regola la stabilità dell'mRNA (quanto dura) e la sua traduzione; sede di legame per microRNA e proteine regolatrici |
+
+In pratica: la 5'UTR dice "qui si inizia", la 3'UTR dice "quanto a lungo restare attivo e produrre proteine".
+
+---
+
+## Diagramma 1 — Le tre fasi della traduzione
+
+<Diagram caption="Le tre fasi della traduzione: inizio, allungamento e terminazione" code={`flowchart TB
+  A["5'UTR: il ribosoma si aggancia all'mRNA"] --> B["INIZIO<br/>Riconoscimento codone AUG<br/>Arrivo tRNA con metionina"]
+  B --> C["ALLUNGAMENTO<br/>Il ribosoma avanza codone per codone<br/>Ogni tRNA porta l'amminoacido giusto<br/>Si formano legami peptidici"]
+  C --> D["TERMINAZIONE<br/>Il ribosoma incontra un codone di stop<br/>UAA, UAG o UGA<br/>Arrivano i fattori di rilascio"]
+  D --> E["La proteina viene liberata<br/>Il ribosoma si smonta"]
+  F["3'UTR: regola stabilità e durata dell'mRNA"] --> E`} />
+
+---
+
+## Diagramma 2 — Struttura dell'mRNA e ruolo delle UTR
+
+<Diagram caption="Struttura dell'mRNA maturo: le regioni UTR e la sequenza codificante" code={`flowchart LR
+  A["5' Cap<br/>(cappuccio protettivo)"] --> B["5'UTR<br/>Regione non tradotta<br/>Aiuta il ribosoma<br/>a trovare l'inizio"]
+  B --> C["AUG<br/>Codone di inizio"]
+  C --> D["Sequenza codificante<br/>Serie di codoni<br/>→ amminoacidi"]
+  D --> E["Codone di stop<br/>UAA / UAG / UGA"]
+  E --> F["3'UTR<br/>Regione non tradotta<br/>Regola stabilità<br/>e quantità di proteina"]
+  F --> G["Coda poli-A<br/>(protezione)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="fVwANEo3PTM" title="La traduzione: dall'RNA alle proteine 🧬" />
+<VideoVisto id="bio-u3-19" />
+
+## Da ricordare
+- La traduzione ha tre fasi: **inizio** (ribosoma + AUG), **allungamento** (catena cresce codone per codone), **terminazione** (codone di stop → proteina liberata).
+- Le **UTR** sono le parti dell'mRNA che non vengono tradotte ma regolano quando, quanto e per quanto tempo la proteina viene prodotta.
+- Il codone **AUG** segna sempre l'inizio; **UAA, UAG, UGA** segnano sempre la fine.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale codone segna l'inizio della traduzione?" opzioni={["UAA","UGA","AUG","UAG"]} corretta={2} spiegazione="AUG è il codone di inizio: il ribosoma lo riconosce come punto di partenza e il tRNA porta il primo amminoacido, la metionina. UAA, UAG e UGA sono invece codoni di stop." />
+
+<Quiz domanda="Cosa succede quando il ribosoma incontra un codone di stop durante la traduzione?" opzioni={["Arriva un tRNA speciale con un amminoacido raro","Il ribosoma torna indietro a rileggere l'mRNA","Arrivano i fattori di rilascio e la proteina viene liberata","La cellula distrugge l'mRNA immediatamente"]} corretta={2} spiegazione="I codoni di stop (UAA, UAG, UGA) non vengono riconosciuti da nessun tRNA. Arrivano proteine specifiche chiamate fattori di rilascio che liberano la catena proteica dal ribosoma." />
+
+<Quiz domanda="Qual è il ruolo principale della regione 3'UTR dell'mRNA?" opzioni={["Aiutare il ribosoma a trovare il codone AUG","Codificare per gli ultimi amminoacidi della proteina","Regolare la stabilità dell'mRNA e la quantità di proteina prodotta","Formare il cappuccio protettivo in 5'"]} corretta={2} spiegazione="La 3'UTR si trova dopo il codone di stop e non viene tradotta in proteina. Contiene sequenze che controllano per quanto tempo l'mRNA rimane intatto e attivo nella cellula, influenzando quanta proteina viene prodotta." />
+
+<Esercizio problema="Un mRNA ha questa sequenza (semplificata): 5'UTR — AUG — CAA — GGU — UAA — 3'UTR. Quanti amminoacidi avrà la proteina prodotta? Quali codoni vengono tradotti e quale no?" soluzione="Vengono tradotti tre codoni: AUG (metionina), CAA e GGU. Il codone UAA è un codone di stop: viene riconosciuto ma NON tradotto in amminoacido. La proteina avrà quindi 3 amminoacidi. Le regioni 5'UTR e 3'UTR non vengono mai tradotte." />
+
+</section>
+
+</RisorsaLayout>

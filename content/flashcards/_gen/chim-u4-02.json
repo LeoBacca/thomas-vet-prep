@@ -1,0 +1,61 @@
+[
+  {
+    "id": "fc-chim-u4-02-1",
+    "topicId": "chim-u4-02",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Secondo Brønsted-Lowry, immagina due amici a tavola: uno passa il sale, l'altro lo prende. Se al posto del sale c'è uno ione H+, chi è l'ACIDO?",
+    "choices": ["Chi PRENDE lo ione H+", "Chi DONA (regala) lo ione H+", "Chi sta a guardare senza scambiare niente", "Chi dona una coppia di elettroni"],
+    "answer": 1,
+    "explain": "Per Brønsted-Lowry l'acido è il donatore: regala lo ione H+ (un protone). La base è chi lo prende (il ricevente). 'Dona elettroni' è invece la definizione di base secondo Lewis, una teoria diversa: qui guardiamo lo scambio di H+, non di elettroni.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-02-2",
+    "topicId": "chim-u4-02",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: due sostanze formano una coppia coniugata quando sono identiche tranne che per UN solo ione H+ (uno ce l'ha, l'altro l'ha appena ceduto).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Una coppia coniugata sono due 'gemelli' che differiscono solo per un H+. Pensa a un mazzo di chiavi: chi lo dona (acido) resta con le mani vuote ma pronto a riprenderlo (base coniugata). Esempio: acido acetico → ione acetato, sua base coniugata.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-02-3",
+    "topicId": "chim-u4-02",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "L'acqua (H2O) secondo Brønsted-Lowry viene chiamata 'anfotera'. Spiega con parole tue cosa vuol dire e perché può comportarsi sia da acido sia da base.",
+    "answer": "Anfotera vuol dire che la stessa molecola può fare entrambi i ruoli: a volte DONA uno ione H+ (si comporta da acido) e a volte ACCETTA uno ione H+ (si comporta da base), a seconda di chi ha davanti. L'acqua è il caso classico: con una base più forte di lei dona un H+ e diventa OH⁻; con un acido più forte accetta un H+ e diventa H3O+. È come una persona che a tavola, a seconda della situazione, ora passa il sale e ora lo riceve.",
+    "explain": "Da ricordare: anfotero = può sia donare sia accettare H+. L'acqua ne è l'esempio tipico.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u4-02-4",
+    "topicId": "chim-u4-02",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "In questa reazione l'acido dona un H+ e la base lo accetta: H2CO3 + PH3 → HCO3⁻ + PH4+. Quale di queste è una COPPIA coniugata (due gemelli che differiscono per un solo H+)?",
+    "choices": ["H2CO3 e PH3", "H2CO3 e HCO3⁻", "PH3 e HCO3⁻", "H2CO3 e PH4+", "HCO3⁻ e PH4+"],
+    "answer": 1,
+    "explain": "Una coppia coniugata differisce per UN solo H+. H2CO3 perde un H+ e diventa HCO3⁻: ecco la coppia (acido e sua base coniugata). Trappole: 'H2CO3 e PH3' sono i due reagenti, ma sono un acido e una base diversi, non una coppia coniugata (differiscono per molto più di un H+). 'HCO3⁻ e PH4+' sono i due prodotti, di nuovo specie diverse. 'H2CO3 e PH4+' mette insieme un reagente con il prodotto sbagliato. Il trucco è seguire la SINGOLA molecola e vedere chi diventa: H2CO3 → HCO3⁻, PH3 → PH4+.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u4-02-5",
+    "topicId": "chim-u4-02",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Una sostanza ANFOTERA può comportarsi sia da acido sia da base (dona O accetta H+). Quale dei seguenti NON è anfotero?",
+    "choices": ["H2O", "HCO3⁻", "SO4²⁻", "H2PO4⁻", "NH3"],
+    "answer": 2,
+    "explain": "Per essere anfotero devi poter sia donare sia accettare un H+. SO4²⁻ in pratica non ha più H+ da donare (è un acido già del tutto 'scaricato'): può solo accettare, quindi NON è anfotero. Trappole: H2O è l'esempio anfotero classico; HCO3⁻ e H2PO4⁻ stanno 'a metà strada' (hanno ancora un H+ da cedere ma possono anche accettarne) → entrambi anfoteri. NH3 può accettare un H+ (→ NH4+) ma può anche cederne uno (→ NH2⁻), quindi si considera anfotero. Il filler-distrattore da scartare è quello che SEMBRA simile ma è 'a fondo corsa' e quindi non gioca in entrambe le direzioni.",
+    "tags": ["prova d'esame"]
+  }
+]

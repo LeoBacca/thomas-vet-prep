@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u6-04-1",
+    "topicId": "chim-u6-04",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: il tiolo e l'alcol sono molto simili, l'unica differenza e che nel tiolo lo zolfo prende il posto dell'ossigeno (il gruppo diventa -SH invece di -OH).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il tiolo e proprio un 'alcol con lo zolfo': stesso schema, ma al posto dell'ossigeno c'e lo zolfo (S), che sta subito sotto l'ossigeno nella tavola periodica. Il gruppo caratteristico e -SH. Per questo i due si assomigliano ma si comportano in modo diverso (lo zolfo e piu grosso e forma i ponti disolfuro).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-04-2",
+    "topicId": "chim-u6-04",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "In un etere l'ossigeno e in mezzo a due 'pezzi' di molecola (R-O-R). Rispetto all'alcol (R-OH), perche l'etere e molto meno reattivo?",
+    "choices": [
+      "Perche nell'etere manca la H sull'ossigeno, quindi non puo formare legami a idrogeno forti ne reagire facilmente",
+      "Perche l'etere non contiene ossigeno",
+      "Perche l'etere ha un anello chiuso che lo rende rigido",
+      "Perche l'etere ha lo zolfo al posto dell'ossigeno"
+    ],
+    "answer": 0,
+    "explain": "Nell'alcol c'e un -OH: quella H e un punto 'attivo' che forma legami a idrogeno e partecipa a molte reazioni. Nell'etere l'ossigeno e imbrigliato in mezzo a due catene, senza H: e come un ponte chiuso alle due estremita, nessuno ci passa. Per questo l'etere reagisce poco ed e un ottimo solvente di laboratorio. Nota biomedica: molti anestetici sono eteri o parenti degli eteri proprio perche sono stabili e non aggressivi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-04-3",
+    "topicId": "chim-u6-04",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "open",
+    "q": "Spiega con parole tue: che cos'e un epossido, perche e cosi reattivo e quali sono le due facce di questa reattivita (una utile e una pericolosa)?",
+    "answer": "Un epossido e un etere speciale in cui l'ossigeno e chiuso dentro un anello a tre atomi (due carboni + un ossigeno). Un triangolo e una forma geometrica molto tesa: in chimica significa che i legami sono forzati a stare in una posizione scomoda, come un elastico tirato al massimo. Appena trova un partner, l'anello si apre di scatto e reagisce. Faccia utile: le colle epossidiche (le resine a due componenti) sfruttano proprio questa apertura per indurirsi e incollare quasi tutto. Faccia pericolosa: nel corpo, alcune sostanze tossiche (come certi prodotti del fumo) vengono trasformate per sbaglio dal nostro metabolismo in epossidi che possono aprirsi e legarsi al DNA, danneggiandolo e potenzialmente causando mutazioni.",
+    "explain": "Da ricordare: anello a 3 = molto teso = molto reattivo. Reattivita utile (colle) ma anche pericolosa (danno al DNA).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u6-04-4",
+    "topicId": "chim-u6-04",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "La formula generale R-O-R' e caratteristica di quale classe di composti organici?",
+    "choices": [
+      "Degli eteri",
+      "Degli alcoli",
+      "Delle aldeidi",
+      "Dei tioli",
+      "Degli esteri"
+    ],
+    "answer": 0,
+    "explain": "R-O-R' e la firma degli eteri: un ossigeno in mezzo a due catene carboniose, senza nessun altro gruppo. Trappola 'alcoli': gli alcoli hanno la formula R-OH (l'ossigeno e legato a una H, non a un secondo pezzo di carbonio). Trappola 'tioli': i tioli hanno R-SH, con lo ZOLFO non l'ossigeno. 'Aldeidi' e 'esteri' hanno schemi completamente diversi (il carbonile C=O, rispettivamente R-CHO e R-CO-O-R'): non c'entrano con l'etere semplice. La chiave: vedi ossigeno tra DUE catene carboniose? E un etere.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u6-04-5",
+    "topicId": "chim-u6-04",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sugli eteri e CORRETTA?",
+    "choices": [
+      "Contengono un atomo di ossigeno legato a due atomi di carbonio",
+      "Non contengono atomi di ossigeno",
+      "Sono derivati degli acidi carbossilici",
+      "Devono contenere un gruppo ossidrilico (-OH)",
+      "Si ottengono per condensazione di un alcol e di un acido carbossilico"
+    ],
+    "answer": 0,
+    "explain": "Un etere ha per definizione un ossigeno in mezzo a due pezzi di carbonio (R-O-R'): la prima opzione descrive esattamente questo. 'Non contengono ossigeno' e l'opposto esatto: l'ossigeno e proprio il cuore dell'etere. 'Derivati degli acidi carbossilici' e una trappola: gli acidi carbossilici danno gli esteri (R-CO-O-R') e altri composti, non gli eteri semplici. 'Gruppo ossidrilico -OH' e il tratto degli ALCOLI, non degli eteri: nell'etere l'ossigeno non ha nessuna H. 'Condensazione di alcol e acido' e il processo che forma gli esteri, di nuovo non gli eteri. Ricorda: etere = O tra due C, niente H sull'ossigeno.",
+    "tags": ["prova d'esame"]
+  }
+]

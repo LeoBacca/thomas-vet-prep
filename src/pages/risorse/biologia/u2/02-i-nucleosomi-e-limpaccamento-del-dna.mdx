@@ -1,0 +1,123 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u2-02">
+
+## Il problema: due metri di DNA in un nucleo microscopico
+
+Immagina di dover infilare una matassa di spago lunga 2 metri dentro una pallina da ping-pong. Sembra impossibile, eppure è esattamente quello che fa ogni cellula del tuo corpo con il DNA.
+
+Il DNA di una singola cellula umana è lungo circa **2 metri** ma deve stare in un nucleo di circa **6 micrometri** di diametro (un centesimo di millimetro). Per riuscirci, la cellula avvolge e compatta il DNA in modo progressivo, un po' come si arrotola un cavo usando degli astucci sempre più grandi.
+
+Il sistema di impaccamento si basa su proteine speciali chiamate **istoni**.
+
+---
+
+## Cosa sono gli istoni?
+
+Gli **istoni** sono proteine con carica positiva. Il DNA, invece, ha carica negativa (per via dei gruppi fosfato dello scheletro). Cariche opposte si attraggono: il DNA si avvolge naturalmente attorno agli istoni proprio come un filo si avvolge attorno a una bobina.
+
+Esistono cinque tipi principali di istoni, indicati con le lettere **H2A, H2B, H3, H4** (detti istoni del core) e **H1** (istone linker, con funzione diversa che vedremo tra poco).
+
+---
+
+## Il nucleosoma: l'unità di base
+
+Il primo livello di impaccamento è il **nucleosoma**.
+
+Un nucleosoma è composto da:
+- **8 istoni del core**: due copie di H2A, H2B, H3 e H4, che si assemblano a formare un disco chiamato **ottamero istonico**.
+- **~147 paia di basi di DNA** che si avvolgono attorno a questo disco per circa 1,65 giri.
+
+Pensa al nucleosoma come a un rocchetto da cucito e al DNA come al filo che ci si arrotola sopra.
+
+Tra un nucleosoma e l'altro c'è un piccolo tratto di DNA libero chiamato **DNA linker** (o di collegamento), lungo circa 20-80 paia di basi.
+
+Visti al microscopio elettronico, i nucleosomi sembrano **perle di una collana**: questa struttura è spesso chiamata proprio "beads on a string" (perle su un filo) e corrisponde alla **fibra da 11 nm** (diametro di circa 11 nanometri).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un nucleosoma = DNA avvolto attorno a 8 proteine (istoni). È la prima "bobina" che accorcia e compatta il filo di DNA.</div>
+
+---
+
+## Il ruolo dell'istone H1 e la fibra da 30 nm
+
+Fin qui abbiamo la collana di perle: è già un buon inizio, ma non basta. Occorre compattare ulteriormente.
+
+Qui entra in gioco **H1**, l'istone linker. H1 non fa parte dell'ottamero: si lega al DNA linker (il tratto di DNA tra una perla e l'altra) e "stringe" i nucleosomi tra loro, come chi raccoglie i nodi di una collana tirandoli insieme.
+
+Questo fa sì che i nucleosomi si avvicinino e si dispongano a spirale, formando la cosiddetta **fibra da 30 nm** (diametro di 30 nanometri). La struttura assomiglia a una molla elicoidale: i nucleosomi si impilano uno sopra l'altro in una spirale regolare di circa 6 nucleosomi per giro.
+
+Il passaggio da 11 nm a 30 nm riduce ulteriormente la lunghezza del DNA di circa **6 volte**.
+
+---
+
+## I livelli di compattamento: dal DNA al cromosoma
+
+La fibra da 30 nm non è il livello finale. Nei cromosomi in mitosi il DNA si compatta ancora di più, attraverso ulteriori anelli e domini radiali, fino ad arrivare al **cromosoma metafasico** (quello a forma di X che vedi nelle immagini), dove il DNA è compattato di circa **10.000 volte** rispetto alla sua lunghezza originale.
+
+Riassumendo i livelli:
+
+1. **DNA nudo** → doppia elica (2 nm di diametro)
+2. **Collana di perle** (nucleosomi + DNA linker) → fibra da 11 nm
+3. **Fibra solenoide** (con H1) → fibra da 30 nm
+4. **Anelli radiali e domini** → ~300 nm
+5. **Cromosoma metafasico condensato** → ~700 nm
+
+<Diagram caption="Come il DNA si avvolge sui nucleosomi e si compatta progressivamente" code={`flowchart TB
+  A["DNA nudo (doppia elica, 2 nm)<br/>~2 metri in ogni cellula"]
+  B["Nucleosoma<br/>DNA avvolto attorno<br/>all'ottamero di 8 istoni (H2A, H2B, H3, H4)"]
+  C["Collana di perle (fibra 11 nm)<br/>nucleosomi + DNA linker"]
+  D["Istone H1 si lega al DNA linker<br/>e stringe i nucleosomi"]
+  E["Fibra da 30 nm (solenoide)<br/>~6 nucleosomi per giro di spirale"]
+  F["Anelli radiali e domini<br/>300 nm"]
+  G["Cromosoma metafasico condensato<br/>~700 nm — compattamento ~10 000x"]
+  A --> B --> C --> D --> E --> F --> G`} />
+
+<Diagram caption="Struttura dettagliata del nucleosoma e ruolo dell'istone H1" code={`flowchart LR
+  subgraph OCT["Ottamero istonico (core)"]
+    H2A["H2A x2"]
+    H2B["H2B x2"]
+    H3["H3 x2"]
+    H4["H4 x2"]
+  end
+  DNA["~147 bp di DNA<br/>si avvolge attorno<br/>all'ottamero (1,65 giri)"]
+  LINK["DNA linker<br/>(tra un nucleosoma<br/>e il successivo)"]
+  H1["Istone H1<br/>lega il DNA linker<br/>e stringe la struttura"]
+  SOL["Fibra da 30 nm<br/>(solenoide)"]
+  DNA --> OCT
+  OCT --> LINK
+  LINK --> H1
+  H1 --> SOL`} />
+
+---
+
+## Guarda il video
+<YouTube id="TycpXr-zHkU" title="Il tuo DNA è impacchettato! (ed è lungo 2 metri) — DNA a colazione" />
+<VideoVisto id="bio-u2-02" />
+
+---
+
+## Da ricordare
+- Il **nucleosoma** è l'unità base dell'impaccamento: ~147 bp di DNA avvolti attorno a un ottamero di 8 istoni (H2A, H2B, H3, H4), formando la fibra da **11 nm**.
+- L'**istone H1** lega il DNA linker tra i nucleosomi e permette la formazione della fibra da **30 nm** (solenoide), riducendo ulteriormente la lunghezza del DNA.
+- Il DNA passa da doppia elica (2 nm) fino al cromosoma metafasico (~700 nm) attraverso livelli progressivi di compattamento, arrivando a una riduzione di circa **10 000 volte**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quante molecole di istone fanno parte del core dell'ottamero istonico di un singolo nucleosoma?" opzioni={["2 (una H2A e una H2B)","4 (una copia di H2A, H2B, H3 e H4)","8 (due copie di H2A, H2B, H3 e H4)","10 (due copie di tutti e cinque i tipi di istone)"]} corretta={2} spiegazione="Il core del nucleosoma è composto da 8 istoni: 2 copie di ognuno dei quattro tipi H2A, H2B, H3 e H4. L'istone H1 non fa parte del core ma si lega al DNA linker esterno." />
+
+<Quiz domanda="Qual è la funzione principale dell'istone H1 nella compattazione del DNA?" opzioni={["Fa parte dell'ottamero istonico e forma il core del nucleosoma","Si lega al DNA linker tra i nucleosomi e favorisce la formazione della fibra da 30 nm","Catalizza la sintesi di nuovi istoni durante la replicazione","Decompatta la cromatina per permettere la trascrizione"]} corretta={1} spiegazione="H1 è l'istone linker: non entra nel core (che contiene solo H2A, H2B, H3, H4), ma si lega al tratto di DNA tra un nucleosoma e l'altro (DNA linker), stringendo i nucleosomi in una spirale regolare e formando la fibra da 30 nm." />
+
+<Quiz domanda="Quante paia di basi di DNA si avvolgono attorno all'ottamero istonico in un singolo nucleosoma?" opzioni={["~30 paia di basi","~80 paia di basi","~147 paia di basi","~300 paia di basi"]} corretta={2} spiegazione="In un nucleosoma si avvolgono circa 147 paia di basi (bp) di DNA attorno all'ottamero, compiendo circa 1,65 giri. Il tratto di DNA tra nucleosomi adiacenti (linker) è aggiuntivo e variabile (20-80 bp)." />
+
+<Esercizio problema="Immagina di trovare un esperimento in cui si elimina chimicamente tutto l'istone H1 da una preparazione di cromatina. Che struttura otterresti? Come cambierebbe l'aspetto al microscopio elettronico rispetto alla cromatina normale?" soluzione="Senza istone H1, i nucleosomi non possono più essere stretti insieme in spirale: la fibra da 30 nm non si forma. Al microscopio elettronico si osserverebbe la struttura a 'collana di perle' (fibra da 11 nm), con i nucleosomi distanziati lungo il filo di DNA, senza la compattazione aggiuntiva del solenoide. La cromatina risulterebbe quindi più estesa e meno compatta." />
+
+</section>
+
+</RisorsaLayout>

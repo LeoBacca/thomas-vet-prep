@@ -1,0 +1,153 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-03">
+
+## Cos'è un virus?
+
+Un virus non è una cellula. Non mangia, non respira, non si riproduce da solo. È sostanzialmente un **pacchetto di istruzioni genetiche** avvolto in un involucro proteico. Per fare qualsiasi cosa — anche solo moltiplicarsi — ha bisogno di entrare in una cellula viva e "dirottarla".
+
+Immagina un virus come una chiavetta USB malevola: da sola non fa nulla, ma quando la inserisci in un computer (la cellula), installa un programma che produce copie di se stessa finché il computer non si rompe.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un virus è un parassita obbligato — non può vivere né replicarsi senza una cellula ospite. Non è vivo come un batterio, ma non è nemmeno un semplice composto chimico.</div>
+
+---
+
+## Le tre componenti fondamentali di un virus
+
+### 1. L'acido nucleico (il "codice")
+
+Ogni virus contiene o **DNA** o **RNA** (mai entrambi). Questo acido nucleico porta le istruzioni per costruire nuovi virus. Può essere:
+
+- **a singolo filamento** (come un nastro) o **a doppio filamento** (come una scala)
+- **lineare** (un lungo filo) o **circolare** (un anello)
+- **segmentato** (spezzato in più pezzi, come il virus dell'influenza)
+
+### 2. Il capside (il "guscio proteico")
+
+Il capside è il contenitore rigido che protegge l'acido nucleico. È fatto di tante unità proteiche identiche chiamate **capsomeri**, che si assemblano spontaneamente come i mattoncini di un Lego.
+
+La forma del capside determina la forma del virus:
+- **Icosaedrica** (poliedro con 20 facce triangolari, quasi sferica) — esempio: adenovirus
+- **Elicoidale** (a spirale, come un rotolo di monete) — esempio: virus del mosaico del tabacco
+- **Complessa** (forma irregolare o a testa+coda) — esempio: batteriofagi
+
+Il capside + l'acido nucleico insieme si chiamano **nucleocapside**.
+
+### 3. L'involucro (envelope) — non sempre presente
+
+Alcuni virus, detti **virus con envelope**, sono avvolti da una membrana lipidica che rubano dalla cellula ospite quando escono. Su questa membrana ci sono **glicoproteine** (proteine con zuccheri attaccati) che sporgono come spine — servono per agganciarsi alle cellule bersaglio.
+
+Virus senza envelope si chiamano **nudi** e sono in genere più resistenti nell'ambiente (resistono meglio a calore, detersivi ecc.).
+
+---
+
+## Come si classificano i virus animali?
+
+I virus si classificano in base a più criteri combinati. Il sistema più usato in virologia è la **classificazione di Baltimore**, che divide i virus in 7 classi in base al tipo di acido nucleico e al modo in cui producono l'mRNA (il messaggio che la cellula legge per costruire le proteine).
+
+I criteri principali sono:
+
+| Criterio | Esempi |
+|---|---|
+| Tipo di acido nucleico | DNA o RNA |
+| Numero di filamenti | Singolo (ss) o doppio (ds) |
+| Polarità dell'RNA | Senso + o senso − |
+| Presenza di envelope | Nudo o con involucro |
+| Forma del capside | Icosaedrica, elicoidale, complessa |
+
+Alcuni esempi pratici:
+- **Herpesviridae** — DNA a doppio filamento, con envelope (es. virus Herpes simplex)
+- **Influenzavirus** — RNA a singolo filamento, segmentato, con envelope
+- **Parvovirus** — DNA a singolo filamento, nudo, piccolo (il più piccolo virus animale noto)
+- **Retroviridae** — RNA che usa la trascrittasi inversa per copiare se stesso in DNA (es. HIV)
+
+---
+
+<Diagram caption="Struttura di un virus con envelope: componenti e loro funzione" code={`flowchart TB
+  A["Acido nucleico<br/>(DNA o RNA)<br/>Porta le istruzioni genetiche"]
+  B["Capside<br/>(proteico, fatto di capsomeri)<br/>Protegge l'acido nucleico"]
+  C["Nucleocapside<br/>(acido nucleico + capside)"]
+  D["Envelope<br/>(membrana lipidica rubata all'ospite)<br/>Presente solo in alcuni virus"]
+  E["Glicoproteine di superficie<br/>(es. emoagglutinina dell'influenza)<br/>Agganciano la cellula bersaglio"]
+  A --> C
+  B --> C
+  C --> D
+  D --> E`} />
+
+<Diagram caption="Classificazione dei virus animali: criteri principali e classi di esempi" code={`flowchart TB
+  ROOT["VIRUS ANIMALI"]
+  ROOT --> DNA["Genoma DNA"]
+  ROOT --> RNA["Genoma RNA"]
+  DNA --> dsDNA["DNA doppio filamento<br/>es. Herpesvirus, Adenovirus"]
+  DNA --> ssDNA["DNA singolo filamento<br/>es. Parvovirus"]
+  RNA --> dsRNA["RNA doppio filamento<br/>es. Reovirus"]
+  RNA --> ssRNA["RNA singolo filamento"]
+  ssRNA --> PLUS["Polarità positiva (+)<br/>es. Coronavirus, Picornavirus"]
+  ssRNA --> MINUS["Polarità negativa (−)<br/>es. Influenzavirus, Morbillivirus"]
+  ssRNA --> RETRO["Retroviridi (RNA → DNA)<br/>es. HIV"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="Dp7qCcPErKI" title="Virus: struttura, classificazione e replicazione - Lezioni di Biologia" />
+<VideoVisto id="bio-u1-03" />
+
+## Da ricordare
+
+- Un virus è composto da acido nucleico (DNA o RNA, mai entrambi) avvolto da un capside proteico; alcuni hanno anche un envelope lipidico con glicoproteine di superficie.
+- Il capside è fatto di capsomeri ed esiste in forma icosaedrica, elicoidale o complessa; insieme all'acido nucleico forma il nucleocapside.
+- I virus si classificano in base al tipo di acido nucleico, numero di filamenti, polarità (per gli RNA), presenza di envelope e forma del capside; la classificazione di Baltimore distingue 7 classi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale delle seguenti affermazioni sui virus è CORRETTA?"
+  opzioni={[
+    "I virus possono contenere sia DNA che RNA contemporaneamente",
+    "Il capside è composto da lipidi e protegge il materiale genetico",
+    "Un virus contiene o DNA o RNA, mai entrambi, avvolto da un capside proteico",
+    "I virus nudi sono quelli privi di acido nucleico"
+  ]}
+  corretta={2}
+  spiegazione="Ogni virus ha un solo tipo di acido nucleico (o DNA o RNA, mai entrambi). Il capside è fatto di proteine (capsomeri), non di lipidi. I virus 'nudi' sono semplicemente privi di envelope lipidico, ma hanno sempre l'acido nucleico."
+/>
+
+<Quiz
+  domanda="Cos'è l'envelope di un virus?"
+  opzioni={[
+    "Un secondo capside proteico che avvolge il primo",
+    "Una membrana lipidica derivata dalla cellula ospite, presente solo in alcuni virus",
+    "Il materiale genetico del virus",
+    "Un insieme di enzimi che il virus usa per replicarsi"
+  ]}
+  corretta={1}
+  spiegazione="L'envelope è una membrana lipidica che il virus 'ruba' alla membrana della cellula ospite quando fuoriesce. Non tutti i virus ce l'hanno: quelli senza envelope si chiamano 'nudi'. Sull'envelope ci sono glicoproteine importanti per il riconoscimento delle cellule bersaglio."
+/>
+
+<Quiz
+  domanda="Nella classificazione di Baltimore, i retrovirus (come HIV) si distinguono perché:"
+  opzioni={[
+    "Hanno un genoma a DNA doppio filamento circolare",
+    "Non hanno capside",
+    "Usano un enzima (trascrittasi inversa) per convertire il loro RNA in DNA",
+    "Sono gli unici virus con envelope"
+  ]}
+  corretta={2}
+  spiegazione="I retrovirus hanno genoma a RNA ma usano la trascrittasi inversa per produrre una copia in DNA, che viene poi integrata nel genoma della cellula ospite. Questo percorso inverso (RNA → DNA) è la caratteristica che dà il nome alla classe."
+/>
+
+<Esercizio
+  problema="Descrivi brevemente le tre componenti strutturali di un virus con envelope, specificando la funzione di ciascuna."
+  soluzione="1) Acido nucleico (DNA o RNA): porta le informazioni genetiche per costruire nuovi virus. 2) Capside: guscio proteico formato da capsomeri che protegge l'acido nucleico; insieme formano il nucleocapside. 3) Envelope: membrana lipidica derivata dalla cellula ospite che avvolge il nucleocapside; porta glicoproteine di superficie che permettono al virus di legarsi e penetrare nelle cellule bersaglio."
+/>
+
+</section>
+
+</RisorsaLayout>

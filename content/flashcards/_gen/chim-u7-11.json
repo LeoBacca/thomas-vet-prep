@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u7-11-1",
+    "topicId": "chim-u7-11",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Un nucleotide e il mattoncino del DNA. Da quanti pezzi e fatto e quali sono?",
+    "choices": [
+      "Tre pezzi: base azotata + zucchero + fosfato",
+      "Due pezzi: base azotata + fosfato (lo zucchero non c'e)",
+      "Un pezzo solo: la base azotata contiene tutto",
+      "Quattro pezzi: base + zucchero + fosfato + proteina"
+    ],
+    "answer": 0,
+    "explain": "Il nucleotide e come un mattoncino LEGO a tre parti incastrate: la BASE AZOTATA (la 'lettera' del codice), lo ZUCCHERO (il pezzo centrale) e il FOSFATO. Tutti e tre servono: mancane uno e non e piu un nucleotide. La proteina non c'entra — e un'altra famiglia di molecole.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-11-2",
+    "topicId": "chim-u7-11",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: nel DNA si usano le basi A, G, C e U, mentre nell'RNA la U e sostituita dalla T.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso — e al contrario. Nel DNA ci sono A, G, C e T (timina). Nell'RNA al posto della T c'e la U (uracile). Pensa cosi: il DNA e il 'libro originale' e usa la T; l'RNA e la 'copia di lavoro' e scambia la T con la U.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-11-3",
+    "topicId": "chim-u7-11",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Spiega con parole tue: cos'e l'ATP, come funziona come 'pila' della cellula, e cosa rimane dopo che la cellula ha usato la sua energia?",
+    "answer": "L'ATP (adenosina trifosfato) e un nucleotide speciale: ha la base adenina + lo zucchero ribosio + tre fosfati in fila. I legami tra gli ultimi due fosfati sono legami ad alta energia, come molle compresse. Quando la cellula ha bisogno di energia, stacca l'ultimo fosfato: la 'molla' scatta e libera energia subito utilizzabile per qualsiasi attivita (muovere muscoli, far battere il cuore, digerire). Dopo aver staccato quel fosfato, la molecola che rimane si chiama ADP (adenosina difosfato): ha solo due fosfati ed e la 'pila scarica'. La cellula poi la 'ricarica' riattaccando il fosfato grazie all'energia che arriva dai nutrienti (zuccheri, grassi), rigenerando ATP. Il ciclo si ripete continuamente.",
+    "explain": "Da ricordare: ATP (3 fosfati, carico) → stacca 1 fosfato + libera energia → ADP (2 fosfati, scarico) → si ricarica ad ATP.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u7-11-4",
+    "topicId": "chim-u7-11",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "In una molecola di ATP sono presenti:",
+    "choices": [
+      "due legami ad alta energia",
+      "tre legami ad alta energia",
+      "un legame ad alta energia",
+      "un solo legame pirofosforico",
+      "due legami fosfomonoestere"
+    ],
+    "answer": 0,
+    "explain": "L'ATP ha TRE fosfati in fila, ma i legami ad alta energia sono solo DUE: quello tra il primo e il secondo fosfato e quello tra il secondo e il terzo. Sono questi due 'morsetti' che immagazzinano l'energia. La trappola piu comune e rispondere 'tre legami' perche ci sono tre fosfati — ma non e il numero di fosfati a contare, e il numero di legami TRA i fosfati. 'Un legame' e l'opposto esatto (troppo pochi). Le ultime due opzioni riguardano tipi di legame fosfato diversi, non i legami ad alta energia veri e propri.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u7-11-5",
+    "topicId": "chim-u7-11",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Qual e la differenza tra un NUCLEOSIDE e un NUCLEOTIDE?",
+    "choices": [
+      "Il nucleotide ha il fosfato, il nucleoside no (nucleoside = base + zucchero)",
+      "Il nucleoside ha il fosfato, il nucleotide no",
+      "Sono la stessa cosa: i due nomi sono sinonimi",
+      "Il nucleotide ha tre basi azotate, il nucleoside ne ha solo una",
+      "Il nucleoside e fatto di RNA, il nucleotide e fatto di DNA"
+    ],
+    "answer": 0,
+    "explain": "Pensa alla costruzione a passi: BASE + ZUCCHERO = NUCLEOSIDE (manca ancora il fosfato). NUCLEOSIDE + FOSFATO = NUCLEOTIDE. Il fosfato e il pezzo che trasforma il nucleoside in nucleotide. Trappola 'al contrario' (opzione B): e l'errore piu diffuso, basta ricordare che il nuclEOtide finisce in 'eotide' come 'complETO'. 'Sono sinonimi' e falso: sono due livelli diversi della costruzione. Le ultime due opzioni mescolano concetti non pertinenti (basi multiple, DNA/RNA) e sono distrattori fuori tema.",
+    "tags": ["prova d'esame"]
+  }
+]

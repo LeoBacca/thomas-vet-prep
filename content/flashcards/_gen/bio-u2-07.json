@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u2-07-1",
+    "topicId": "bio-u2-07",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Il genoma umano contiene tantissime sequenze di DNA che si ripetono piu volte. Come si dividono in base a come sono disposte?",
+    "choices": [
+      "In tandem (una dietro l'altra, come vagoni di un treno) e intersperse (copie sparse in punti diversi del genoma, come la stessa frase ripetuta in capitoli diversi di un libro)",
+      "In codificanti (geni) e non codificanti (sequenze ripetute)",
+      "In nucleari (LINE e SINE) e citoplasmatiche (microsatelliti e minisatelliti)",
+      "In corte (meno di 100 basi) e lunghe (piu di 100 basi)"
+    ],
+    "answer": 0,
+    "explain": "La classificazione chiave e: TANDEM (copie in fila, stessa posizione — microsatelliti e minisatelliti) vs INTERSPERSE (copie sparse ovunque nel genoma — LINE, SINE, retrovirus endogeni). Non confondere con codificante/non-codificante, che e un'altra distinzione.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u2-07-2",
+    "topicId": "bio-u2-07",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega in poche parole: (1) perche i microsatelliti sono utili in ambito forense, e (2) come fanno i LINE a 'spostarsi' nel genoma (retrotrasposizione)?",
+    "answer": "1) I microsatelliti (STR) sono sequenze cortissime (1-6 basi) ripetute in tandem. Il numero di ripetizioni varia da persona a persona: ognuno ha una combinazione unica in decine di loci diversi. Confrontando il profilo STR di un campione biologico con quello di un sospettato si puo identificarlo con probabilita astronomicamente alta — e la base del DNA forense e dei test di paternita. 2) I LINE (es. LINE-1) si spostano tramite retrotrasposizione: prima vengono trascritti in RNA, poi la trascrittasi inversa (codificata dal LINE stesso) riconverte quell'RNA in DNA, e questo nuovo DNA viene inserito in un altro punto del genoma. Risultato: una copia in piu in una posizione nuova. E un meccanismo 'copia e incolla' che usa RNA come intermediario. I SINE (es. Alu) fanno la stessa cosa ma non hanno la propria trascrittasi inversa: la 'rubano' ai LINE.",
+    "explain": "Punti chiave: microsatelliti = variabilita individuale → identificazione; retrotrasposizione = DNA → RNA → DNA (trascrittasi inversa) → inserzione in nuovo sito.",
+    "tags": ["risposta aperta"]
+  }
+]

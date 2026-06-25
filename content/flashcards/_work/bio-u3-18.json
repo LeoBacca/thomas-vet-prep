@@ -1,0 +1,95 @@
+{
+ "id": "bio-u3-18",
+ "titolo": "Il codice genetico: codoni, anticodoni e sue proprietà",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "18-il-codice-genetico-codoni-anticodoni-e",
+ "freq": 6,
+ "risorseMdx": "src/pages/risorse/biologia/u3/18-il-codice-genetico-codoni-anticodoni-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Una catena di m-RNA contiene la tripletta UUU corrispondente all'informazione per l'amminoacido fenilalanina. L'anticodone di t-RNA capace di legare questo amminoacido sarà:",
+   "choices": [
+    "AAA",
+    "TTT",
+    "UUU",
+    "CCC",
+    "GGG"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2008",
+   "q": "La tripletta di nucleotidi AAT presente in una molecola di DNA subisce una mutazione, trasformandosi nella tripletta AAC. Ciò nonostante, dopo la traduzione, non si ha alcun cambiamento nella funzionalità della proteina che si forma. Ciò perché:",
+   "choices": [
+    "il codice del DNA è ridondante",
+    "l'mRNA ha corretto la mutazione",
+    "il tRNA della cellula trasporta solo l'amminoacido corrispondente alla tripletta AAT",
+    "la proteina, una volta formata, si corregge per poter svolgere la propria funzione",
+    "la proteina, una volta formata, subisce una mutazione inversa"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2009",
+   "q": "Indicare quale, tra quelli sottoelencati, è il numero minimo di basi azotate richiesto per formare un codone o tripletta, se esistessero 27 amminoacidi e il DNA contenesse solo 2 tipi di basi:",
+   "choices": [
+    "5",
+    "6",
+    "4",
+    "3",
+    "2"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2010",
+   "q": "Per una proteina formata da 150 amminoacidi, qual è il numero minimo di codoni che deve avere l'mRNA che l'ha prodotta?",
+   "choices": [
+    "150",
+    "50",
+    "450",
+    "300",
+    "75"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2013",
+   "q": "Sia data la seguente sequenza nucleotidica di quattro triplette del DNA che vengono trascritte: tripletta 1 = CGT, tripletta 2 = GCA, tripletta 3 = ATT, tripletta 4 = GCC. Durante la traduzione vengono utilizzati i tRNA per queste 4 triplette. Per quali triplette la sequenza degli anticodoni del tRNA e la stessa del DNA di origine?",
+   "choices": [
+    "2 e 4",
+    "1 e 2",
+    "2 e 3",
+    "1 e 4",
+    "1 e 3"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Cosa s'intende con il termine \"codone\" nel codice genetico?",
+   "choices": [
+    "Sequenza di tre nucleotidi",
+    "Sequenza di quattro nucleotidi",
+    "Sequenza di cinque nucleotidi",
+    "Sequenza di sei nucleotidi",
+    "Sequenza di sette nucleotidi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "id": "bio-u5-14",
+ "titolo": "I perossisomi: struttura, funzioni, biogenesi e patologie (sindrome di Zellweger)",
+ "materia": "biologia",
+ "unita": 5,
+ "slug": "14-i-perossisomi-struttura-funzioni-biogenesi-e",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u5/14-i-perossisomi-struttura-funzioni-biogenesi-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2022",
+   "q": "Oltre al mitocondrio, quale altro organulo cellulare è un grande consumatore di ossigeno?",
+   "choices": [
+    "Perossisoma",
+    "Lisosoma",
+    "Reticolo endoplasmatico liscio",
+    "Apparato del Golgi",
+    "Reticolo endoplasmatico rugoso"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

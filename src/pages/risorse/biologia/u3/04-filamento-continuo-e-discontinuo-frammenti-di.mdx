@@ -1,0 +1,92 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-04">
+
+## Il problema: la DNA polimerasi va in un solo senso
+
+Quando la cellula copia il DNA, usa un enzima chiamato **DNA polimerasi**. Questo enzima ha un limite preciso: può aggiungere nuovi nucleotidi **solo in direzione 5'→3'** (si legge "cinque primo verso tre primo"). È come una stampante che può scorrere il foglio soltanto da sinistra a destra: non può tornare indietro.
+
+Il problema è che la doppia elica del DNA ha i due filamenti orientati in direzioni **opposte** (uno va 5'→3', l'altro 3'→5'). Quando la forcella di replicazione si apre, i due filamenti template vengono esposti contemporaneamente — ma la polimerasi può lavorare comodamente solo su uno di essi.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La DNA polimerasi è come uno spazzaneve che può avanzare solo in avanti. Su un filamento va benissimo; sull'altro deve fare una manovra complicata — procedere a pezzetti, tornando sempre al punto di partenza.</div>
+
+## Il filamento continuo (leading strand)
+
+Uno dei due filamenti è orientato in modo che la polimerasi possa seguire la forcella di replicazione man mano che si apre. Su questo filamento la sintesi è **continua**: la polimerasi aggancia il primer di RNA iniziale e poi copia senza mai staccarsi fino alla fine. Questo filamento si chiama **filamento guida** (in inglese *leading strand*).
+
+## Il filamento discontinuo (lagging strand)
+
+L'altro filamento è orientato al contrario: la polimerasi dovrebbe correre nella direzione opposta all'apertura della forcella. La soluzione che la cellula ha trovato è sintetizzare questo filamento **a tratti**, uno alla volta, ogni volta che si espone un nuovo pezzo di template. Ogni tratto è lungo circa 100–200 nucleotidi (nelle cellule eucariote). Questo filamento si chiama **filamento lento** o **filamento discontinuo** (*lagging strand*).
+
+Ogni tratto viene chiamato **frammento di Okazaki**, dal nome dei ricercatori giapponesi Reiji e Tsuneko Okazaki che li scoprirono negli anni '60.
+
+## Come si forma un frammento di Okazaki
+
+Ogni frammento di Okazaki nasce con questi passaggi:
+
+1. **La primasi** posa un breve primer di RNA (circa 10 nucleotidi). Serve come "punto di appoggio" perché la DNA polimerasi non può partire da zero.
+2. **La DNA polimerasi III** (nei procarioti) o **DNA polimerasi delta** (negli eucarioti) aggiunge i nucleotidi di DNA subito dopo il primer, procedendo in direzione 5'→3' — cioè *allontanandosi* dalla forcella.
+3. Quando la polimerasi raggiunge il primer del frammento precedente, si ferma.
+
+Questo ciclo si ripete più volte mentre la forcella avanza: si crea così una serie di frammenti separati, ciascuno con un primer di RNA all'inizio.
+
+## Rimozione del primer di RNA e riempimento dei buchi
+
+A questo punto il filamento discontinuo è fatto di tanti pezzi con un tratto di RNA in testa. Questi primer di RNA devono essere rimossi perché l'RNA non è stabile come il DNA.
+
+- Nei **procarioti**: la **DNA polimerasi I** rimuove il primer di RNA mentre avanza (attività esonucleasica 5'→3') e contemporaneamente riempie il buco con DNA.
+- Negli **eucarioti**: l'enzima **RNasi H** e una nucleasi chiamata **FEN1** rimuovono il primer; poi la DNA polimerasi delta riempie il tratto mancante.
+
+Dopo questa fase, rimane ancora un piccolo "taglio" (*nick*) tra la fine di un frammento e l'inizio del successivo: i due pezzi di DNA sono accostati ma non ancora uniti chimicamente.
+
+## La DNA ligasi: il nastro adesivo finale
+
+L'ultimo passaggio è il compito della **DNA ligasi**. Questo enzima "incolla" i frammenti adiacenti formando un legame covalente (fosfodiesterico) tra il gruppo 3'-OH di un frammento e il gruppo 5'-fosfato del successivo. Il filamento discontinuo diventa così un filamento unico e continuo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Immagina i frammenti di Okazaki come tanti pezzi di nastro posti uno accanto all'altro su un tavolo. La DNA ligasi è il nastro adesivo che li unisce formando un unico lungo pezzo.</div>
+
+<Diagram caption="Panoramica della replicazione: filamento continuo e discontinuo alla forcella di replicazione" code={`flowchart LR
+  A["Forcella di replicazione<br/>(elicasi apre la doppia elica)"] --> B["Filamento guida<br/>(leading strand 5'→3')"]
+  A --> C["Filamento lento<br/>(lagging strand 3'→5' template)"]
+  B --> D["DNA pol III / delta<br/>sintesi CONTINUA"]
+  C --> E["Primasi posa primer di RNA"]
+  E --> F["DNA pol III / delta<br/>aggiunge DNA → frammento di Okazaki"]
+  F --> G["Nuovo primer → nuovo frammento"]
+  G --> F`} />
+
+<Diagram caption="Dal frammento grezzo al filamento continuo: rimozione del primer e ligatura" code={`flowchart TB
+  A["Frammenti di Okazaki<br/>con primer di RNA all'inizio"] --> B["RNasi H / DNA pol I<br/>rimuove i primer di RNA"]
+  B --> C["DNA polimerasi<br/>riempie i buchi con DNA"]
+  C --> D["Rimangono nick<br/>(tagli tra frammenti adiacenti)"]
+  D --> E["DNA ligasi<br/>sigilla i nick"]
+  E --> F["Filamento discontinuo completato<br/>(unico filamento continuo di DNA)"]`} />
+
+## Guarda il video
+<YouTube id="ZLu-jvlZxa0" title="la Replicazione del DNA - 3 - risolvere i frammenti di okazaki e completare la replicazione" />
+<VideoVisto id="bio-u3-04" />
+
+## Da ricordare
+- Il **filamento guida** è copiato in modo continuo perché ha lo stesso orientamento della forcella; il **filamento lento** è copiato a pezzetti (frammenti di Okazaki) perché ha orientamento opposto.
+- Ogni frammento di Okazaki inizia con un **primer di RNA** che viene poi rimosso e sostituito con DNA; i buchi residui vengono sigillati dalla **DNA ligasi**.
+- La DNA ligasi forma un legame covalente tra frammenti adiacenti: senza di essa il filamento discontinuo resterebbe spezzettato e il DNA sarebbe instabile.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Perché il filamento lento (lagging strand) viene sintetizzato in modo discontinuo?" opzioni={["Perché la DNA polimerasi non ha abbastanza energia per lavorare senza interruzioni","Perché la DNA polimerasi può aggiungere nucleotidi solo in direzione 5'→3', mentre il template del lagging strand corre in senso opposto alla forcella","Perché la primasi è troppo lenta e deve fermarsi spesso","Perché i nucleotidi liberi si esauriscono rapidamente vicino alla forcella"] } corretta={1} spiegazione="La DNA polimerasi può lavorare solo in direzione 5'→3'. Il filamento lento ha il template orientato 3'→5' in senso contrario all'avanzamento della forcella: l'unico modo per copiarlo è procedere a tratti, allontanandosi dalla forcella ogni volta e ricominciando da un nuovo primer." />
+
+<Quiz domanda="Cosa sono i frammenti di Okazaki?" opzioni={["Brevi sequenze di RNA usate come primer","Tratti di DNA sintetizzati in modo discontinuo sul filamento lento durante la replicazione","Enzimi che rimuovono i primer di RNA","Porzioni del filamento guida sintetizzate prima dell'apertura completa dell'elica"] } corretta={1} spiegazione="I frammenti di Okazaki sono segmenti di DNA (lunghi circa 100–200 nucleotidi negli eucarioti) sintetizzati sul filamento lento. Ciascuno inizia con un primer di RNA e viene poi unito agli altri dalla DNA ligasi." />
+
+<Quiz domanda="Qual è il ruolo della DNA ligasi nel completamento della replicazione?" opzioni={["Rimuove i primer di RNA dal filamento lento","Apre la doppia elica al livello della forcella di replicazione","Sigilla i nick (tagli) tra frammenti di Okazaki adiacenti formando un legame covalente","Aggiunge i nucleotidi di DNA dopo la rimozione del primer"] } corretta={2} spiegazione="Dopo che i primer di RNA sono stati rimossi e i buchi riempiti con DNA, restano dei nick (interruzioni nel backbone) tra frammenti adiacenti. La DNA ligasi forma un legame fosfodiesterico covalente tra il 3'-OH di un frammento e il 5'-fosfato del successivo, completando il filamento." />
+
+<Esercizio problema="Riordina i passaggi della sintesi del filamento discontinuo nel corretto ordine temporale: (1) DNA ligasi sigilla i nick; (2) DNA polimerasi riempie i buchi con DNA; (3) Primasi sintetizza un primer di RNA; (4) RNasi H / DNA polimerasi I rimuove i primer di RNA; (5) DNA polimerasi sintetizza un frammento di Okazaki a partire dal primer." soluzione="Ordine corretto: 3 → 5 → 4 → 2 → 1. Prima la primasi posa il primer (3), poi la DNA polimerasi estende il frammento di Okazaki (5). Quando tutti i frammenti sono stati sintetizzati, i primer vengono rimossi (4), i buchi riempiti con DNA (2) e infine la DNA ligasi unisce i frammenti (1)." />
+
+</section>
+
+</RisorsaLayout>

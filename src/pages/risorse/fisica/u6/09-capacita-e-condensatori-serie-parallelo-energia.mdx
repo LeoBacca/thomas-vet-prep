@@ -1,0 +1,212 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u6-09">
+
+## Cos'è un condensatore?
+
+Un **condensatore** è un componente elettrico che immagazzina carica elettrica, un po' come un piccolo serbatoio d'acqua: lo riempi, poi lo svuoti quando serve.
+
+È formato da due piastre metalliche parallele (chiamate **armature**) separate da un materiale isolante. Quando colleghi un condensatore a una batteria:
+- una piastra accumula carica **positiva**
+- l'altra accumula carica **negativa**
+- tra le due si crea un campo elettrico
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il condensatore è come una batteria ricaricabile istantanea — accumula energia elettrica e la rilascia in un lampo.</div>
+
+## Capacità elettrica
+
+La **capacità** (simbolo **C**) misura quanta carica riesce a contenere un condensatore per ogni volt di tensione applicata.
+
+La formula è:
+
+**C = Q / V**
+
+- **Q** = carica accumulata (in Coulomb)
+- **V** = tensione (in Volt)
+- **C** = capacità (in Farad, simbolo F)
+
+Un Farad è enorme nella pratica: si usano di solito microfarad (µF) o nanofarad (nF).
+
+<Diagram caption="Come funziona un condensatore piano" code={`flowchart TB
+  A["Batteria (tensione V)"] --> B["Piastra + (carica +Q)"]
+  A --> C["Piastra - (carica -Q)"]
+  B -- "Campo elettrico E<br/>tra le armature" --> C
+  B --> D["Capacità C = Q / V"]`} />
+
+## Condensatori in serie
+
+Quando metti due condensatori **in serie** (uno dietro l'altro nello stesso filo):
+- la **carica è uguale** su entrambi
+- la **tensione totale** è la somma delle tensioni sui singoli condensatori
+- la capacità equivalente si calcola con:
+
+**1/C_eq = 1/C1 + 1/C2**
+
+Risultato: la capacità equivalente è **minore** del condensatore più piccolo. È come due serbatoi collegati in fila: il collo di bottiglia è quello più stretto.
+
+## Condensatori in parallelo
+
+Quando metti due condensatori **in parallelo** (collegati agli stessi due punti del circuito):
+- la **tensione è uguale** su entrambi
+- la **carica totale** è la somma delle cariche sui singoli condensatori
+- la capacità equivalente si calcola con:
+
+**C_eq = C1 + C2**
+
+Risultato: la capacità equivalente è **maggiore**. È come due serbatoi affiancati: il volume totale è la somma.
+
+<Diagram caption="Condensatori in serie vs in parallelo" code={`flowchart LR
+  subgraph SER["Serie"]
+    direction LR
+    S1["C1"] -- "stessa Q<br/>tensioni sommano" --> S2["C2"]
+    S2 --> SE["C_eq minore di C1 e C2"]
+  end
+  subgraph PAR["Parallelo"]
+    direction TB
+    P1["C1"]
+    P2["C2"]
+    P1 -- "stessa V<br/>cariche sommano" --> PE["C_eq = C1 + C2"]
+    P2 --> PE
+  end`} />
+
+## Energia immagazzinata
+
+Un condensatore carico contiene energia elettrica. Le tre formule sono **equivalenti** (si ottengono l'una dall'altra usando Q = C · V):
+
+**E = ½ · C · V²** = **½ · Q · V** = **Q² / (2C)**
+
+Quale usare? Scegli quella in cui hai già i dati:
+- se conosci **C** e **V** → usa E = ½ · C · V²
+- se conosci **Q** e **V** → usa E = ½ · Q · V
+- se conosci **Q** e **C** → usa E = Q² / (2C)
+
+Punti chiave:
+- Raddoppiare la tensione **quadruplica** l'energia immagazzinata (c'è il quadrato: 2² = 4). Triplicarla la moltiplica per 9.
+- È questa energia che il condensatore rilascia quando si scarica (per esempio nel flash di una macchina fotografica o in un defibrillatore).
+- L'energia è espressa in **Joule (J)**: attento alle unità, devi convertire i µF in Farad (×10⁻⁶) prima di elevare al quadrato la tensione.
+
+## Cosa determina la capacità: area, distanza e dielettrico
+
+Finora abbiamo usato C = Q/V, che dice *cosa fa* il condensatore. Ma da cosa **dipende** la capacità di un condensatore piano? Dalla sua geometria e dal materiale isolante:
+
+**C = εr · ε₀ · A / d**
+
+- **A** = area delle armature → più grande l'area, più carica ci sta, più alta la capacità (C cresce con A)
+- **d** = distanza tra le armature → più sono vicine, più alta la capacità (C è inversamente proporzionale a d: se dimezzi d, raddoppi C)
+- **ε₀** = costante dielettrica del vuoto (un valore fisso)
+- **εr** = **costante dielettrica relativa** del materiale isolante tra le armature
+
+### Il ruolo del dielettrico
+
+Il **dielettrico** è il materiale isolante (vetro, plastica, ceramica…) inserito tra le armature. Inserirlo **aumenta la capacità**, e il motivo è preciso: il dielettrico **si polarizza**.
+
+Cosa succede: sotto l'azione del campo elettrico, le cariche dentro il dielettrico si spostano leggermente (le molecole si orientano). Questa polarizzazione genera un campo opposto che **riduce** il campo elettrico complessivo tra le armature. A parità di carica, un campo minore significa una tensione V minore, e poiché C = Q/V, se V scende a parità di Q allora **C aumenta**.
+
+<div class="callout">⚠️ <strong>Attenzione alle trappole d'esame:</strong> il dielettrico aumenta C perché <strong>si polarizza</strong> — NON perché aumenta il campo (al contrario, lo riduce), NON perché aumenta la tensione (la riduce), NON perché distanzia di più le armature. Il fatto che non faccia passare le cariche è vero ma è solo la sua funzione di isolante, non il motivo dell'aumento di capacità.</div>
+
+Un esempio tipico: un dielettrico con εr = 2 **raddoppia** la capacità rispetto allo stesso condensatore vuoto. Per ottenere lo stesso raddoppio senza dielettrico, dovresti agire sulla geometria: siccome C è inversamente proporzionale a d, per raddoppiare C devi **dimezzare la distanza** tra le armature.
+
+## Metodo passo-passo per i circuiti di condensatori
+
+I problemi d'esame chiedono quasi sempre la capacità equivalente, spesso con un trabocchetto sulle unità o sulla confusione serie/parallelo. Ecco il metodo sicuro.
+
+**Passo 1 — Uniforma le unità PRIMA di calcolare.** È l'errore numero uno. Se un dato è in µF e l'altro in pF (o nF), convertili tutti nella stessa unità. Promemoria: 1 µF = 1000 nF = 1 000 000 pF; quindi 3000 pF = 0,003 µF e 0,001 µF = 1000 pF.
+
+**Passo 2 — Riconosci serie o parallelo.** Stessa carica e tensioni che si sommano → serie. Stessa tensione e cariche che si sommano → parallelo.
+
+**Passo 3 — Applica la formula GIUSTA. Qui sta la trappola classica: per i condensatori serie e parallelo sono INVERTITI rispetto alle resistenze.**
+- **Parallelo:** C_eq = C₁ + C₂ (le capacità si SOMMANO — come le resistenze in serie)
+- **Serie:** 1/C_eq = 1/C₁ + 1/C₂ (i reciproci — come le resistenze in parallelo)
+
+**Passo 4 — Per due soli condensatori in serie** puoi usare la scorciatoia **C_eq = (C₁ · C₂) / (C₁ + C₂)** ("prodotto fratto somma"), più veloce dei reciproci.
+
+**Passo 5 — Controllo di plausibilità.** In serie il risultato deve essere **minore** del condensatore più piccolo; in parallelo deve essere **maggiore** del più grande. Se non torna, hai invertito le formule.
+
+<div class="callout">💡 <strong>Specchio resistenze ↔ condensatori:</strong> il parallelo di condensatori si comporta come la serie di resistenze (somma diretta), la serie di condensatori come il parallelo di resistenze (reciproci). Se ricordi le resistenze, basta che inverti.</div>
+
+## Guarda il video
+<YouTube id="2iYElXr_CcM" title="LA FISICA FACILE - I Condensatori" />
+<VideoVisto id="fis-u6-09" />
+
+## Da ricordare
+- Un condensatore immagazzina carica tra due piastre conduttrici separate da un isolante; la sua capacità è C = Q/V, misurata in Farad.
+- **Trappola da memorizzare:** per i condensatori serie e parallelo sono INVERTITI rispetto alle resistenze. In **parallelo** le capacità si sommano direttamente (C_eq = C₁ + C₂, risultato maggiore del più grande); in **serie** si sommano come reciproci (1/C_eq = 1/C₁ + 1/C₂, risultato minore del più piccolo). Per due soli in serie: C_eq = prodotto fratto somma.
+- Prima di calcolare, **uniforma le unità** (1 µF = 1 000 000 pF): è l'errore più frequente nei problemi serie/parallelo.
+- La capacità di un condensatore piano dipende dalla geometria e dal materiale: C = εr · ε₀ · A / d → cresce con l'**area**, cala con la **distanza** (dimezzare d raddoppia C).
+- Il **dielettrico** aumenta la capacità perché **si polarizza**: riduce il campo (e quindi V) tra le armature, e a parità di Q, se V scende allora C = Q/V sale. Un εr = 2 raddoppia C.
+- L'energia immagazzinata vale E = ½ · C · V² = ½ · Q · V = Q²/(2C): dipende dal **quadrato** della tensione, quindi raddoppiare V quadruplica l'energia.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un condensatore ha una capacità di 4 µF ed è collegato a una tensione di 10 V. Quanta carica accumula?"
+  opzioni={["0,4 µC", "4 µC", "40 µC", "400 µC"]}
+  corretta={2}
+  spiegazione="Si usa la formula Q = C · V = 4 µF × 10 V = 40 µC. Attenzione alle unità: µF × V = µC."
+/>
+
+<Quiz
+  domanda="Due condensatori da 6 µF ciascuno sono collegati in serie. Qual è la capacità equivalente?"
+  opzioni={["12 µF", "6 µF", "3 µF", "1 µF"]}
+  corretta={2}
+  spiegazione="In serie: 1/C_eq = 1/6 + 1/6 = 2/6, quindi C_eq = 3 µF. In serie la capacità equivalente è sempre minore di quella di ogni singolo condensatore."
+/>
+
+<Quiz
+  domanda="Quale formula descrive l'energia immagazzinata in un condensatore di capacità C carico a tensione V?"
+  opzioni={["E = C · V", "E = ½ · C · V²", "E = Q / V", "E = C² · V"]}
+  corretta={1}
+  spiegazione="L'energia immagazzinata è E = ½ · C · V². Raddoppiare la tensione quadruplica l'energia, non la raddoppia, proprio per il quadrato nella formula."
+/>
+
+<Esercizio
+  problema="Hai due condensatori: C1 = 3 µF e C2 = 6 µF collegati in parallelo, a una tensione di 12 V. Calcola la capacità equivalente, la carica totale accumulata e l'energia totale immagazzinata."
+  soluzione="In parallelo: C_eq = C1 + C2 = 3 + 6 = 9 µF. Carica totale: Q = C_eq · V = 9 µF × 12 V = 108 µC. Energia: E = ½ · C_eq · V² = ½ × 9×10⁻⁶ F × (12)² = ½ × 9×10⁻⁶ × 144 = 648×10⁻⁶ J = 648 µJ."
+/>
+
+<Esercizio
+  problema="Due condensatori, uno da 12 µF e uno da 4 µF, sono collegati in SERIE. Calcola la capacità equivalente, usando il metodo passo-passo, e verifica il risultato col controllo di plausibilità."
+  soluzione="Le unità sono già uniformi (entrambe in µF), quindi si passa direttamente al calcolo in serie. Metodo dei reciproci: 1/C_eq = 1/12 + 1/4. Riduci a denominatore comune 12: 1/12 + 3/12 = 4/12 = 1/3, quindi C_eq = 3 µF. Scorciatoia prodotto fratto somma: C_eq = (12 × 4) / (12 + 4) = 48 / 16 = 3 µF (stesso risultato). Controllo di plausibilità: 3 µF è minore del più piccolo dei due (4 µF) → corretto, in serie la capacità equivalente è sempre minore del condensatore più piccolo."
+/>
+
+<Esercizio
+  problema="Un condensatore da 0,001 µF e uno da 3000 pF sono collegati in serie. Calcola la capacità equivalente. (Suggerimento: parti dalle unità.)"
+  soluzione="Passo 1, uniforma le unità: 0,001 µF = 1000 pF; l'altro è già 3000 pF. Lavoriamo in pF. Passo 2-3, è una serie, quindi reciproci: 1/C_eq = 1/1000 + 1/3000. Denominatore comune 3000: 3/3000 + 1/3000 = 4/3000, quindi C_eq = 3000/4 = 750 pF. Convertendo: 750 pF = 0,00075 µF. Controllo: 750 pF è minore del più piccolo (1000 pF) → corretto. Nota: se NON avessi convertito le unità avresti sbagliato del tutto — è la trappola della domanda."
+/>
+
+<Esercizio
+  problema="Due condensatori piani sono uguali, entrambi di capacità C. Nel primo viene inserito un dielettrico di costante dielettrica relativa εr = 2. Come va modificata la distanza tra le armature del SECONDO (che resta vuoto) perché abbia la stessa capacità del primo?"
+  soluzione="Il dielettrico εr = 2 raddoppia la capacità del primo: diventa 2C. Per portare anche il secondo a 2C senza dielettrico bisogna agire sulla geometria. Dalla formula C = εr · ε₀ · A / d, la capacità è inversamente proporzionale alla distanza d. Per raddoppiare C bisogna quindi DIMEZZARE d. Risposta: la distanza tra le armature del secondo va dimezzata."
+/>
+
+<Quiz
+  domanda="Inserendo un dielettrico tra le armature di un condensatore, la sua capacità aumenta. Perché?"
+  opzioni={["Perché il dielettrico si polarizza, riducendo il campo e quindi la tensione tra le armature", "Perché aumenta la differenza di potenziale tra le due armature", "Perché aumenta l'intensità del campo elettrico tra le armature", "Perché il dielettrico distanzia maggiormente le due armature", "Perché il dielettrico non lascia passare le cariche elettriche"]}
+  corretta={0}
+  spiegazione="Il dielettrico si polarizza: le sue cariche si orientano e creano un campo opposto che RIDUCE il campo (e la tensione V) tra le armature. Poiché C = Q/V, a parità di carica una V minore dà una C maggiore. Le trappole: aumentare la tensione o il campo darebbe l'effetto OPPOSTO (C scenderebbe); il dielettrico non distanzia le armature; il fatto che non faccia passare le cariche è solo la sua funzione di isolante, non la causa dell'aumento di capacità."
+/>
+
+<Quiz
+  domanda="Un condensatore da 0,001 µF e uno da 3000 pF sono collegati in serie. La capacità equivalente vale:"
+  opzioni={["0,00075 µF", "0,004 µF", "3,001 µF", "0,00099 µF", "3001 µF"]}
+  corretta={0}
+  spiegazione="Prima si uniformano le unità: 0,001 µF = 1000 pF. In serie si usano i reciproci: 1/C_eq = 1/1000 + 1/3000 = 4/3000, da cui C_eq = 750 pF = 0,00075 µF. Le trappole: 0,004 µF e 3,001 µF nascono dal SOMMARE le capacità (formula del parallelo, sbagliata in serie); 3001 µF è la stessa somma con unità sballata. Ricorda: in serie il risultato è sempre minore del più piccolo (qui minore di 1000 pF)."
+/>
+
+<Quiz
+  domanda="Mettendo in parallelo due condensatori uguali da 80 µF ciascuno, la capacità totale vale:"
+  opzioni={["160 µF", "40 µF", "80 µF", "400 µF", "64 µF"]}
+  corretta={0}
+  spiegazione="In parallelo le capacità si SOMMANO: C_eq = 80 + 80 = 160 µF, maggiore di ogni singolo condensatore. La trappola principale è 40 µF: è il risultato che si otterrebbe applicando per errore la formula della SERIE (dove due uguali danno la metà), cioè confondendo condensatori e resistenze. Ricorda lo specchio: per i condensatori il parallelo somma, la serie dimezza."
+/>
+
+</section>
+
+</RisorsaLayout>

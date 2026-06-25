@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-bio-u6-08-1",
+    "topicId": "bio-u6-08",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: GEF e GAP fanno la stessa cosa — entrambi accendono il segnale nella proteina G sostituendo il GDP con il GTP.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. GEF accende il segnale (scambia GDP con GTP, come premere l'acceleratore). GAP lo spegne (accelera l'idrolisi del GTP in GDP, come premere il freno). Fanno l'opposto: insieme controllano durata e intensita della risposta cellulare.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u6-08-2",
+    "topicId": "bio-u6-08",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "open",
+    "q": "La proteina Ras e una piccola GTPasi. Spiega: (1) come funziona il suo interruttore ON/OFF, (2) quale proteina la accende e quale la spegne, (3) cosa succede se GAP smette di funzionare per una mutazione.",
+    "answer": "1) Ras funziona come un interruttore molecolare a due stati: e ATTIVA (ON) quando ha legato il GTP, e INATTIVA (OFF) quando ha legato il GDP. Quando e in stato ON trasmette segnali di crescita e divisione cellulare; quando e in stato OFF non segnala nulla. 2) GEF (Guanine nucleotide Exchange Factor) la accende: scambia il GDP con il GTP, portando Ras dallo stato OFF allo stato ON. GAP (GTPase-Activating Protein) la spegne: accelera l'idrolisi del GTP in GDP, riportando Ras allo stato OFF. 3) Se GAP non funziona, Ras non riesce a tornare allo stato OFF: rimane bloccata in stato ON con il GTP legato. Cio significa che invia in modo continuo e incontrollato segnali di proliferazione cellulare, anche in assenza di uno stimolo esterno. Questa e una delle cause piu comuni di cancro: la cellula si divide senza sosta perche il 'freno' molecolare e rotto.",
+    "explain": "Da ricordare: GEF = acceleratore (GDP → GTP, ON); GAP = freno (GTP → GDP, OFF). Ras bloccata ON per mutazione di GAP = segnale continuo di proliferazione → rischio cancro.",
+    "tags": ["risposta aperta"]
+  }
+]

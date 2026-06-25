@@ -1,0 +1,10 @@
+{
+ "id": "chim-u1-02",
+ "titolo": "Le particelle subatomiche: protoni, neutroni ed elettroni",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "02-le-particelle-subatomiche-protoni-neutroni-ed",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/chimica/u1/02-le-particelle-subatomiche-protoni-neutroni-ed.mdx",
+ "examQuestions": []
+}

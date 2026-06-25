@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u7-13-1",
+    "topicId": "chim-u7-13",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Un nucleotide — il mattoncino del DNA — è fatto di tre pezzi. Quali sono?",
+    "choices": [
+      "Zucchero (pentoso) + gruppo fosfato + base azotata",
+      "Aminoacido + gruppo fosfato + base azotata",
+      "Zucchero + proteina + base azotata",
+      "Glucosio + fosfato + lipide"
+    ],
+    "answer": 0,
+    "explain": "Il nucleotide è come un mattoncino LEGO con tre parti fisse: uno zucchero a 5 atomi di carbonio (il pentoso), un gruppo fosfato e una base azotata (la 'lettera' del codice: A, T, C, G o U). Aminoacidi e lipidi non entrano qui: quelli sono i mattoncini delle proteine e dei grassi, non del DNA.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-13-2",
+    "topicId": "chim-u7-13",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: nella doppia elica del DNA, le due catene polinucleotidiche sono tenute insieme da legami fosfodiestere tra le basi azotate.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. I legami fosfodiestere non tengono insieme le due catene: tengono insieme i nucleotidi DENTRO la stessa catena (la colla che unisce un mattoncino al successivo). Le due catene si tengono invece per mano grazie a legami a idrogeno tra le basi azotate al centro — A con T, C con G. Sono legami deboli apposta, così il DNA si può 'aprire come una zip' quando la cellula deve copiarlo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-13-3",
+    "topicId": "chim-u7-13",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Descrivi con parole tue: cos'è il legame fosfodiestere, dove si trova nello scheletro del DNA, e in cosa si differenzia il legame che tiene unite le due catene nella doppia elica?",
+    "answer": "Il legame fosfodiestere è la 'colla' che unisce un nucleotide al successivo all'interno della stessa catena. Funziona così: il gruppo fosfato di un nucleotide fa da ponte e si lega allo zucchero del nucleotide successivo, da entrambi i lati (per questo si dice 'di-estere': due legami estere, uno sopra e uno sotto). Il risultato è uno scheletro esterno che alterna sempre zucchero e fosfato, mentre le basi azotate (le 'lettere') sporgono verso l'interno, come i denti di una cerniera. Nella doppia elica del DNA ci sono DUE catene affiancate e attorcigliate: i due scheletri zucchero-fosfato fanno da corrimano (i bordi laterali della scala a chiocciola), e le basi delle due catene si toccano al centro formando i gradini. Queste coppie di basi (A con T, C con G) sono tenute insieme non da legami fosfodiestere, bensì da legami a idrogeno — legami più deboli, che permettono alla doppia elica di aprirsi quando la cellula deve leggere o copiare il DNA.",
+    "explain": "Legame fosfodiestere = colla tra nucleotidi della stessa catena (fosfato → zucchero successivo). Le due catene si tengono invece con legami a idrogeno tra le basi (A-T, C-G).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u7-13-4",
+    "topicId": "chim-u7-13",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Nella doppia elica del DNA le due catene polinucleotidiche sono unite tra loro:",
+    "choices": [
+      "da due o tre legami idrogeno tra coppie di basi (A-T ne fa 2, C-G ne fa 3)",
+      "da due legami idrogeno tra ogni coppia di basi, senza eccezioni",
+      "da tre legami idrogeno tra ogni coppia di basi, senza eccezioni",
+      "da legami fosfodiestere tra i residui di pentoso",
+      "da legami idrogeno tra i residui di pentoso"
+    ],
+    "answer": 0,
+    "explain": "Le due catene si tengono insieme con legami a idrogeno tra le basi azotate complementari. Non è un numero uguale per tutte: la coppia A-T forma 2 legami a idrogeno, la coppia C-G ne forma 3. La risposta giusta dice 'due o tre legami', riconoscendo questa differenza. Trappola 'sempre 2': vero solo per A-T, falso per C-G. Trappola 'sempre 3': vero solo per C-G, falso per A-T. Trappola 'legami fosfodiestere tra i pentosi': il legame fosfodiestere unisce i nucleotidi DENTRO la stessa catena (fosfato → zucchero del nucleotide successivo), non le due catene tra loro. Trappola 'legami a idrogeno tra i pentosi': i legami a idrogeno si formano tra le BASI azotate, non tra gli zuccheri.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u7-13-5",
+    "topicId": "chim-u7-13",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sulle differenze tra DNA e RNA è CORRETTA?",
+    "choices": [
+      "Il DNA ha il ribosio come zucchero e usa la base uracile (U); l'RNA ha il desossiribosio e usa la timina (T)",
+      "Il DNA è di solito a filamento singolo; l'RNA è a doppio filamento",
+      "Sia DNA che RNA usano la stessa base azotata al posto della timina",
+      "Il DNA ha il desossiribosio e usa la timina (T); l'RNA ha il ribosio e usa l'uracile (U)",
+      "La colla tra i nucleotidi è il legame fosfodiestere nel DNA ma non nell'RNA"
+    ],
+    "answer": 3,
+    "explain": "Le differenze chiave tra DNA e RNA sono tre: 1) lo zucchero — il DNA ha il desossiribosio (un ossigeno in meno), l'RNA ha il ribosio; 2) una base — nel DNA c'è la timina (T), nell'RNA al suo posto c'è l'uracile (U); 3) il numero di filamenti — il DNA è doppio, l'RNA di solito singolo. Trappola 'RNA ha desossiribosio e DNA ribosio': è l'opposto esatto, i due zuccheri sono invertiti. Trappola 'DNA filamento singolo': è l'opposto, il DNA è doppio e l'RNA singolo. Trappola 'usano la stessa base': no, DNA usa T e RNA usa U. Ultima trappola: il legame fosfodiestere tiene insieme i nucleotidi in ENTRAMBI, DNA e RNA — non è una differenza.",
+    "tags": ["prova d'esame"]
+  }
+]

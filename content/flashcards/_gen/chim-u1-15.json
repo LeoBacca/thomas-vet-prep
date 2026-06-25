@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-15-1",
+    "topicId": "chim-u1-15",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: nel legame ionico, un atomo CEDE uno o piu elettroni a un altro atomo, e i due diventano ioni di carica opposta che si attraggono come calamite.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Cede e prende: non c'e condivisione. Chi cede diventa positivo (es. Na+), chi prende diventa negativo (es. Cl-). Le cariche opposte si attraggono e formano il legame. Esempio dalla vita: il sale da cucina (NaCl) nasce esattamente cosi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-15-2",
+    "topicId": "chim-u1-15",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Perche gli atomi che formano un legame ionico cedono o prendono elettroni, invece di tenerli com'e? Scegli la spiegazione piu corretta.",
+    "choices": [
+      "Perche ogni atomo vuole avere l'ultimo guscio PIENO di elettroni (di solito 8): cedere o prendere e il modo piu rapido per arrivarci",
+      "Perche gli atomi hanno troppi elettroni e devono liberarsene sempre",
+      "Perche cedere elettroni abbassa il numero di protoni nel nucleo",
+      "Per produrre calore: il trasferimento di elettroni genera sempre energia termica"
+    ],
+    "answer": 0,
+    "explain": "La regola dell'ottetto: gli atomi sono 'felici' (stabili) con 8 elettroni esterni. Il sodio ne ha 1 di troppo: cederlo e piu facile che trovarne altri 7. Il cloro ne ha 7: prenderlo e piu facile che perderne 7. Entrambi vincono. Le altre risposte sono false: cedere elettroni non cambia i protoni (quelli restano fissi nel nucleo), e non tutti i legami ionici producono calore.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-15-3",
+    "topicId": "chim-u1-15",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra legame ionico e legame metallico. Cosa succede agli elettroni in ognuno dei due? Fai un esempio concreto per ciascuno.",
+    "answer": "Nel legame ionico un atomo CEDE uno o piu elettroni a un altro atomo specifico: nascono due ioni di carica opposta (uno positivo, uno negativo) che si attraggono. Gli elettroni passano da uno all'altro in modo definitivo. Esempio: il sodio cede 1 elettrone al cloro → Na+ e Cl- si attraggono → sale da cucina (NaCl). Nel sangue degli animali ci sono tantissimi Na+ e Cl- disciolti: servono per far funzionare nervi e muscoli. Nel legame metallico invece gli atomi NON regalano gli elettroni a un vicino preciso: li mettono tutti in comune in un 'mare' di elettroni liberi che scorrono tra gli ioni positivi del metallo. Gli elettroni appartengono a tutti, non a nessuno in particolare. Esempio: il rame di un filo elettrico o il ferro. Proprio questo mare di elettroni liberi spiega perche i metalli conducono corrente e calore: gli elettroni possono spostarsi facilmente.",
+    "explain": "Parola chiave: ionico = trasferimento a UN altro atomo (ioni fissi); metallico = elettroni liberi di muoversi tra tutti (mare).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-15-4",
+    "topicId": "chim-u1-15",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Il legame ionico e un legame:",
+    "choices": [
+      "di natura elettrostatica che si instaura tra ioni di segno opposto",
+      "che si instaura tra atomi metallici",
+      "apolare, senza differenza di carica tra i due atomi",
+      "in cui gli elettroni vengono condivisi equamente tra due atomi uguali",
+      "intermolecolare, cioe tra molecole gia formate"
+    ],
+    "answer": 0,
+    "explain": "Il legame ionico nasce dall'attrazione tra ioni di carica opposta (Na+ e Cl-): e una forza elettrostatica, come le calamite. Le trappole: 'tra atomi metallici' descrive il legame metallico, non quello ionico (opposto di contesto). 'Apolare' e l'opposto esatto: ci sono due cariche ben distinte, una positiva e una negativa, quindi e il legame piu polarizzato che esiste. 'Elettroni condivisi equamente' descrive il legame covalente puro, un'altra cosa. 'Intermolecolare' e fuori tema: il legame ionico e un legame vero tra ioni, non tra molecole.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-15-5",
+    "topicId": "chim-u1-15",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Tra quali delle seguenti coppie di elementi si forma un legame PREVALENTEMENTE IONICO?",
+    "choices": [
+      "S e O (zolfo e ossigeno)",
+      "H e C (idrogeno e carbonio)",
+      "Fe e Fe (ferro con ferro)",
+      "K e Cl (potassio e cloro)",
+      "Si e I (silicio e iodio)"
+    ],
+    "answer": 3,
+    "explain": "Il legame ionico si forma quando uno degli elementi e un metallo del gruppo I o II (molto propenso a cedere elettroni) e l'altro e un non-metallo del gruppo VII (molto propenso a prenderli). Il potassio (K, gruppo I) cede facilmente 1 elettrone al cloro (Cl, gruppo VII, che ne manca 1 per fare 8): si formano K+ e Cl-, legame ionico. Le trappole: S e O sono ENTRAMBI non-metalli → legame covalente (nessuno vuole cedere); H e C sono entrambi non-metalli → covalente; Fe e Fe e ferro puro con se stesso → legame metallico (non ionico!); Si e I sono entrambi non-metalli o semimetalli → covalente. La firma del legame ionico: un metallo del gruppo I/II + un non-metallo del gruppo VI/VII.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,10 @@
+{
+ "id": "fis-u7-04",
+ "titolo": "Assorbimento della radiazione (legge di Lambert-Beer)",
+ "materia": "fisica",
+ "unita": 7,
+ "slug": "04-assorbimento-della-radiazione-legge-di-lambert",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u7/04-assorbimento-della-radiazione-legge-di-lambert.mdx",
+ "examQuestions": []
+}

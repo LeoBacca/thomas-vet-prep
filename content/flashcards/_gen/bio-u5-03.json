@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u5-03-1",
+    "topicId": "bio-u5-03",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "La pompa Na⁺/K⁺-ATPasi, per ogni ciclo completo, sposta:",
+    "choices": [
+      "3 Na⁺ fuori dalla cellula e 2 K⁺ dentro, consumando 1 ATP",
+      "2 Na⁺ fuori dalla cellula e 3 K⁺ dentro, consumando 1 ATP",
+      "3 Na⁺ dentro la cellula e 2 K⁺ fuori, consumando 1 ATP",
+      "3 Na⁺ e 3 K⁺ in uscita, senza consumo di ATP"
+    ],
+    "answer": 0,
+    "explain": "Analogia: immagina la pompa come un cameriere che ogni viaggio porta 3 piatti sporchi fuori (Na⁺) e riporta 2 piatti puliti dentro (K⁺). Il 'carburante' per ogni viaggio e 1 molecola di ATP. Questo squilibrio ionico e fondamentale per il potenziale di membrana dei neuroni.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-03-2",
+    "topicId": "bio-u5-03",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Qual e la differenza principale tra una pompa ATPasi e un trasportatore ABC? Fai un esempio per ciascuno.",
+    "answer": "Entrambi usano l'idrolisi dell'ATP per spostare molecole contro gradiente, ma differiscono nel meccanismo e nei substrati tipici. Le pompe ATPasi si fosforilano (si 'attaccano' temporaneamente un gruppo fosfato dall'ATP) e cambiano forma per spostare ioni specifici: esempio classico la Na⁺/K⁺-ATPasi che espelle 3 Na⁺ e introduce 2 K⁺ per ciclo, mantenendo il potenziale di membrana. I trasportatori ABC invece hanno due domini NBD che legano l'ATP; l'idrolisi provoca un cambio conformazionale che apre il canale e spinge attraverso substrati molto piu vari (farmaci, lipidi, peptidi, ioni): esempio la P-glicoproteina (MDR1) che espelle i chemioterapici dalle cellule tumorali, o CFTR il cui difetto causa la fibrosi cistica.",
+    "explain": "In sintesi: ATPasi = fosforilazione della proteina, substrati ionici; ABC = domini NBD + cambio di forma, substrati molto vari. Entrambi usano ATP e vanno contro gradiente.",
+    "tags": ["risposta aperta"]
+  }
+]

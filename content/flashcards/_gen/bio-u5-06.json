@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u5-06-1",
+    "topicId": "bio-u5-06",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: l'involucro nucleare e formato da una sola membrana, come la membrana plasmatica della cellula.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'involucro nucleare ha DUE membrane sovrapposte (esterna e interna), separate da uno spazio detto spazio perinucleare. Pensa a un thermos: due pareti con uno spazio in mezzo. La membrana esterna e in continuita diretta con il reticolo endoplasmatico rugoso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-06-2",
+    "topicId": "bio-u5-06",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Il nucleolo e una struttura interna al nucleo. Qual e la sua funzione principale?",
+    "choices": [
+      "Produrre rRNA e assemblare le subunita dei ribosomi, che vengono poi esportate nel citoplasma",
+      "Replicare il DNA prima che la cellula si divida",
+      "Regolare il passaggio delle molecole attraverso i pori nucleari",
+      "Contenere e organizzare i condensati nucleari come i Corpi di Cajal"
+    ],
+    "answer": 0,
+    "explain": "Il nucleolo e la 'fabbrica dei ribosomi': produce l'rRNA e assembla le due subunita ribosomali, che escono poi dal nucleo attraverso i pori. Una cellula ghiandolare che secerne molte proteine ha un nucleolo grande e ben visibile. Non ha una membrana propria.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-06-3",
+    "topicId": "bio-u5-06",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Immagina di essere una grossa proteina appena sintetizzata nel citoplasma che deve entrare nel nucleo. Descrivi il percorso e i 'controlli' che devi superare. Poi spiega cosa succederebbe se invece di entrare dovessi uscire.",
+    "answer": "Per entrare nel nucleo devo prima avere una sequenza segnale chiamata NLS (Nuclear Localization Signal): e come un documento d'identita cucito su di me. Arrivo al poro nucleare (NPC, Nuclear Pore Complex), un enorme cancello fatto da circa 30 tipi di proteine chiamate nucleoporine. Le molecole piccole come acqua e ioni passano liberamente, ma io sono grande e devo essere riconosciuta. Una proteina chiamata importina legge il mio NLS, mi 'prende per mano' e mi trasporta attivamente attraverso il poro dentro il nucleo. Se invece dovessi uscire dal nucleo (come fa un mRNA appena trascritto), avrei un segnale diverso chiamato NES (Nuclear Export Signal), e sarei accompagnata da una proteina chiamata esportina che mi porta fuori verso il citoplasma.",
+    "explain": "I punti chiave: NLS = segnale di entrata, riconosciuto dall'importina. NES = segnale di uscita, riconosciuto dall'esportina. Il poro NPC non e un buco aperto: e un complesso selettivo fatto di nucleoporine. Dal nucleo escono principalmente mRNA e subunita ribosomali; entrano fattori di trascrizione e istoni.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-06-4",
+    "topicId": "bio-u5-06",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "La membrana nucleare esterna e strettamente collegata con quale delle seguenti strutture cellulari?",
+    "choices": [
+      "Reticolo endoplasmatico",
+      "Apparato del Golgi",
+      "Mitocondrio",
+      "Lisosoma",
+      "Flagello"
+    ],
+    "answer": 0,
+    "explain": "La membrana esterna dell'involucro nucleare e in continuita diretta con il reticolo endoplasmatico rugoso: sono di fatto la stessa membrana che si piega. Questa e la connessione strutturale diretta. Il Golgi (trappola classica: e anch'esso coinvolto nel traffico proteico) e collegato indirettamente al RE tramite vescicole, ma non ha continuita di membrana con l'involucro nucleare. Mitocondri, lisosomi e flagello non hanno nessun legame strutturale diretto con la membrana nucleare.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-06-5",
+    "topicId": "bio-u5-06",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "I condensati nucleari (es. Corpi di Cajal, Speckles) sono compartimenti specializzati dentro il nucleo. Quale delle seguenti affermazioni li descrive CORRETTAMENTE?",
+    "choices": [
+      "Sono privi di membrana propria e si formano per separazione di fase liquido-liquido",
+      "Sono circondati da una doppia membrana come il nucleo stesso",
+      "Sono strutture permanenti e stabili per tutta la vita della cellula",
+      "Contengono esclusivamente DNA e nessun tipo di RNA",
+      "Si trovano nel citoplasma, non all'interno del nucleo"
+    ],
+    "answer": 0,
+    "explain": "I condensati nucleari NON hanno membrana: si formano come goccioline d'olio nell'acqua (separazione di fase liquido-liquido), concentrando proteine e RNA per funzioni specifiche senza un contenitore rigido. Sono strutture DINAMICHE: si formano e si dissolvono secondo le necessita della cellula (quindi l'opzione 'permanenti' e una trappola). L'opzione 'doppia membrana' confonde con l'involucro nucleare. 'Solo DNA' e fuori tema: gli Speckles per esempio contengono fattori di splicing dell'RNA. 'Nel citoplasma' e falso: sono dentro il nucleo.",
+    "tags": ["prova d'esame"]
+  }
+]

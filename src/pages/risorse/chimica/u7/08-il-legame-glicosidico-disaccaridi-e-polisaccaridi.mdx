@@ -1,0 +1,93 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-08">
+
+Gli **zuccheri** semplici (come il **glucosio**) sono come singoli mattoncini Lego. Se ne attacchi due, ottieni un **disaccaride**; se ne attacchi tantissimi in fila, ottieni un **polisaccaride**. Il "gancio" che tiene uniti questi mattoncini si chiama **legame glicosidico**. Capirlo serve tantissimo in medicina e veterinaria: l'amido è il cibo, il glicogeno è la nostra scorta di energia, la cellulosa è la fibra che mangiano gli erbivori.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il legame glicosidico è la "colla" che unisce due zuccheri. Cambiando il tipo di colla e quanti mattoncini attacchi, ottieni cose diversissime: pane, scorta di energia o legno.</div>
+
+<Diagram caption="Due zuccheri si uniscono: nasce il legame glicosidico e si perde una molecola d'acqua" code={`flowchart LR
+  G1["Zucchero 1<br/>(glucosio)"] -->|"legame glicosidico"| L["Disaccaride"]
+  G2["Zucchero 2<br/>(glucosio)"] -->|"+ si stacca H2O (acqua)"| L`} />
+
+## Il legame glicosidico: la colla tra due zuccheri
+
+Quando due zuccheri si uniscono, succede una cosa curiosa: si **perde una goccia d'acqua**. È come incollare due fogli usando un po' di colla che "esce" fuori. Questo aggancio è il **legame glicosidico**.
+
+C'è un dettaglio che cambia tutto: l'orientamento del gancio. Può essere di tipo **alfa** o **beta**.
+
+- **Alfa**: il gancio punta "in basso". Lo usano gli zuccheri che il nostro corpo sa **digerire** (pane, pasta).
+- **Beta**: il gancio punta "in alto". Lo usa la **cellulosa**, che noi umani **non sappiamo digerire**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> stesso mattoncino (glucosio), ma se il gancio è girato in un modo (alfa) lo mangi, se è girato nell'altro (beta) ti passa attraverso. Per questo la verdura "fa fibra".</div>
+
+## I tre polisaccaridi da ricordare (amido, glicogeno, cellulosa)
+
+Sono tutti fatti dello **stesso mattoncino**, il glucosio. Cambia solo **come** sono attaccati.
+
+- **Amido**: è la **dispensa delle piante**. Sta in patate, pane, riso, pasta. Legami **alfa**, quindi noi lo digeriamo e ricaviamo energia.
+- **Glicogeno**: è la **dispensa degli animali** (anche tua!). È un amido molto più ramificato, come un albero pieno di rami. Lo teniamo nel **fegato** e nei **muscoli**: quando ti serve energia in fretta, il corpo "stacca" glucosio dai rami. Tanti rami = posso prenderne tanto, subito.
+- **Cellulosa**: è il **legno e la fibra** delle piante. Legami **beta**: catene dritte e rigide, fortissime. Noi non la digeriamo; gli erbivori (mucca, cavallo, coniglio) ci riescono solo grazie ai **batteri** nel loro intestino.
+
+<Diagram caption="Stesso mattoncino (glucosio), legame diverso: amido vs cellulosa" code={`flowchart TB
+  GLU["Glucosio<br/>(stesso mattoncino)"] --> AM["AMIDO<br/>legami alfa<br/>catene morbide e ramificate"]
+  GLU --> CE["CELLULOSA<br/>legami beta<br/>catene dritte e rigide"]
+  AM --> D["Lo DIGERIAMO → energia"]
+  CE --> F["NON lo digeriamo → fibra"]`} />
+
+## Un accenno utile per vet: i GAG
+
+Ci sono polisaccaridi speciali chiamati **GAG** (glicosamminoglicani). Non servono come scorta di energia: servono da **imbottitura e lubrificante** del corpo. Stanno nelle **cartilagini** e nei **liquidi delle articolazioni**, dove fanno da cuscinetto. Per questo certi integratori per cani e cavalli con problemi articolari contengono proprio sostanze legate ai GAG.
+
+## Guarda il video
+
+<YouTube id="AoqZWUY31R0" title="Biochimica strutturale: i carboidrati — zuccheri e polisaccaridi spiegati" />
+
+<VideoVisto id="chim-u7-08" />
+
+## Da ricordare
+
+- Il **legame glicosidico** è la "colla" che unisce due zuccheri; nel formarlo si **perde acqua**.
+- Legame **alfa** = digeribile (amido, glicogeno); legame **beta** = non digeribile (cellulosa = fibra).
+- **Amido** = scorta delle piante; **glicogeno** = scorta degli animali (fegato e muscoli), molto ramificato.
+- **Cellulosa** = fibra/legno: gli erbivori la usano solo grazie ai batteri intestinali.
+- I **GAG** sono polisaccaridi da "imbottitura": stanno in cartilagini e articolazioni.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa si forma (e cosa si perde) quando due zuccheri si uniscono con un legame glicosidico?"
+  opzioni={["Si forma un disaccaride e si perde una molecola d'acqua", "Si forma un grasso e si perde ossigeno", "Si forma un solo zucchero più grande senza perdere nulla", "Si forma una proteina"]}
+  corretta={0}
+  spiegazione="Unendo due zuccheri si crea un disaccaride e si stacca una molecola d'acqua: è la 'colla' che lascia uscire una goccia."
+/>
+
+<Quiz
+  domanda="Qual è la scorta di energia (glucosio) degli animali, conservata soprattutto in fegato e muscoli?"
+  opzioni={["L'amido", "La cellulosa", "Il glicogeno", "I GAG"]}
+  corretta={2}
+  spiegazione="Il glicogeno è la 'dispensa' animale: molto ramificato, sta nel fegato e nei muscoli per dare energia in fretta."
+/>
+
+<Quiz
+  domanda="Perché noi umani non riusciamo a digerire la cellulosa?"
+  opzioni={["Perché è fatta di un mattoncino diverso dal glucosio", "Perché ha legami beta che il nostro corpo non sa rompere", "Perché contiene grassi", "Perché è troppo dolce"]}
+  corretta={1}
+  spiegazione="La cellulosa è fatta di glucosio come l'amido, ma con legami beta: i nostri enzimi non li tagliano, così resta fibra."
+/>
+
+<Esercizio
+  problema="Una mucca mangia erba (piena di cellulosa) e ne ricava energia, mentre se la mangiassi tu non succederebbe. Spiega in parole semplici da cosa dipende questa differenza."
+  soluzione="La cellulosa ha legami beta che gli enzimi degli animali (mucca compresa) non sanno rompere da soli. La mucca però ospita nel suo stomaco dei batteri capaci di tagliare quei legami beta: sono loro a 'digerire' la cellulosa e a liberare il glucosio. Noi umani non abbiamo questi batteri specializzati nel posto giusto, quindi per noi la cellulosa resta solo fibra che attraversa l'intestino."
+/>
+
+</section>
+
+</RisorsaLayout>

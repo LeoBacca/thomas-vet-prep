@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-12-1",
+    "topicId": "chim-u1-12",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "La mole serve a contare le particelle (atomi, molecole). A quale oggetto di tutti i giorni assomiglia di piu?",
+    "choices": [
+      "Alla dozzina: un nome che indica sempre lo stesso numero fisso di cose",
+      "A un peso in grammi che cambia da sostanza a sostanza",
+      "Alla temperatura di una sostanza",
+      "Al colore di una sostanza"
+    ],
+    "answer": 0,
+    "explain": "La mole e solo un modo di contare 'a pacchi', come la dozzina vuol dire sempre 12. Una mole vuol dire sempre 6,022x10²³ particelle, qualunque sia la sostanza. Non e un peso (quello e la massa) ne una temperatura: e un NUMERO fisso di particelle.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-12-2",
+    "topicId": "chim-u1-12",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: il numero 6,022x10²³ (numero di Avogadro) e proprio il numero di particelle contenute in una mole di sostanza.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. 'Numero di Avogadro' e 'quante particelle ci sono in una mole' sono la stessa identica cosa: 6,022x10²³. E un numero fisso, come la dozzina e sempre 12, qualunque cosa tu stia contando.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-12-3",
+    "topicId": "chim-u1-12",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "L'acqua e H₂O e ha massa molecolare 18. Spiega perche, se metti 18 grammi d'acqua sulla bilancia, hai in mano esattamente una mole di molecole, cioe 6,022x10²³ molecole.",
+    "answer": "La massa molecolare si ottiene sommando i pesi degli atomi presi dalla tavola periodica: per l'acqua H₂O sono 2 idrogeni (2 x 1 = 2) piu 1 ossigeno (1 x 16 = 16), totale 18. Quel numero, espresso in grammi, e proprio quanto pesa una mole di quella sostanza. Quindi 18 grammi d'acqua corrispondono a 1 mole, cioe a 6,022x10²³ molecole. In pratica la bilancia diventa un 'contatore di particelle': peso una massa pari alla massa molecolare in grammi e so di avere esattamente un numero di Avogadro di molecole.",
+    "explain": "Da ricordare: la massa molecolare in grammi = massa di 1 mole. Per l'acqua: 18 g = 1 mole = 6,022x10²³ molecole.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-12-4",
+    "topicId": "chim-u1-12",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quante molecole sono contenute in 0,1 moli di ossigeno O₂? (numero di Avogadro = 6,02x10²³)",
+    "choices": [
+      "6,02x10²²",
+      "6,02x10²⁴",
+      "6,02x10²³",
+      "6,02x10⁻²²",
+      "0,1 molecole"
+    ],
+    "answer": 0,
+    "explain": "Numero di molecole = moli x numero di Avogadro = 0,1 x 6,02x10²³ = 6,02x10²² (lo zero virgola UNO sposta l'esponente da 23 a 22). Trappole: 6,02x10²³ e quante particelle ci sono in 1 mole intera, non in 0,1 (chi dimentica di moltiplicare per 0,1); 6,02x10²⁴ e l'opposto, e come se avessi MOLTIPLICATO per 10 invece che diviso; 6,02x10⁻²² ha l'esponente negativo, un numero piccolissimo che non ha senso per delle molecole; '0,1 molecole' confonde le MOLI con le molecole (0,1 e il numero di moli, non di molecole).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-12-5",
+    "topicId": "chim-u1-12",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quanti atomi di idrogeno sono presenti in una mole di acqua (H₂O)? (numero di Avogadro = 6,02x10²³)",
+    "choices": [
+      "1,204x10²⁴",
+      "6,02x10²³",
+      "3,01x10²³",
+      "2,12x10⁻¹⁵",
+      "18 atomi"
+    ],
+    "answer": 0,
+    "explain": "Una mole d'acqua = 6,02x10²³ MOLECOLE, ma ogni molecola H₂O contiene 2 atomi di idrogeno. Quindi gli atomi di H sono 2 x 6,02x10²³ = 1,204x10²⁴. Trappole: 6,02x10²³ e il numero di MOLECOLE (chi dimentica che ci sono 2 idrogeni per molecola); 3,01x10²³ e l'opposto, ha DIVISO per 2 invece di moltiplicare; 2,12x10⁻¹⁵ ha esponente negativo, e un numero ridicolmente piccolo per degli atomi; '18 atomi' confonde gli atomi con la massa molecolare dell'acqua (18 e il peso in grammi di una mole, non un conteggio di atomi).",
+    "tags": ["prova d'esame"]
+  }
+]

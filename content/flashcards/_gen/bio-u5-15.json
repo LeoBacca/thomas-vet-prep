@@ -1,0 +1,81 @@
+[
+  {
+    "id": "fc-bio-u5-15-1",
+    "topicId": "bio-u5-15",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Il reticolo endoplasmatico della cellula esiste in due versioni: rugoso (RER) e liscio (REL). Quale caratteristica visiva li distingue al microscopio?",
+    "choices": [
+      "Il RER ha ribosomi agganciati alla superficie esterna; il REL non ne ha",
+      "Il REL ha ribosomi agganciati alla superficie esterna; il RER non ne ha",
+      "Il RER è più grande del REL",
+      "Il REL produce proteine; il RER produce lipidi"
+    ],
+    "answer": 0,
+    "explain": "I ribosomi sono i 'puntini' che rendono la superficie del RER 'rugosa' al microscopio: sono i macchinari che sintetizzano le proteine. Il REL non ne ha, ed è per questo 'liscio'. La funzione segue la struttura: il RER fa proteine secretorie, il REL si occupa di lipidi, detossificazione e deposito del calcio.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-15-2",
+    "topicId": "bio-u5-15",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: l'apparato di Golgi è il 'centro di smistamento' della cellula — le proteine entrano da un lato (faccia cis), vengono modificate, ed escono dall'altro lato (faccia trans) verso la destinazione giusta.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 0,
+    "explain": "Vero. Pensa al Golgi come a un ufficio postale con un ingresso e un'uscita: i pacchi (proteine) arrivano dalla faccia cis (proveniente dal RER), vengono smistati, ricevono etichette (modifiche di zuccheri e fosfati) e poi escono dalla faccia trans verso lisosomi, membrana plasmatica o esocitosi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-15-3",
+    "topicId": "bio-u5-15",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Una cellula del pancreas deve produrre un enzima digestivo (per esempio la tripsina) e mandarlo fuori dalla cellula. Descrivi il percorso completo di questa proteina, dal momento in cui il ribosoma inizia a costruirla fino all'uscita dalla cellula. Quali organelli tocca e cosa succede in ognuno?",
+    "answer": "Il percorso completo è questo: 1) Il ribosoma legge l'mRNA nel citoplasma; la proteina ha un 'peptide segnale' che fa agganciare il ribosoma alla membrana del RER. 2) La proteina viene assemblata direttamente nel lume del RER, dove si ripiega nella forma tridimensionale corretta e riceve una prima aggiunta di zuccheri (glicosilazione). 3) Una vescicola di trasporto si stacca dal RER e trasporta la proteina fino alla faccia cis dell'apparato di Golgi, con cui fonde. 4) La proteina attraversa le cisterne del Golgi (cis → mediale → trans), ricevendo ulteriori modifiche agli zuccheri e marcature che indicano la sua destinazione. 5) Alla faccia trans viene impacchettata in una vescicola secretoria. 6) La vescicola si muove verso la membrana plasmatica, fonde con essa (esocitosi) e rilascia l'enzima all'esterno della cellula.",
+    "explain": "Percorso chiave: Ribosoma su RER → lume del RER (ripiegamento + prima glicosilazione) → vescicola → Golgi (cis → trans, modifiche) → vescicola secretoria → esocitosi.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-15-4",
+    "topicId": "bio-u5-15",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quali delle seguenti strutture cellulari vengono coinvolte nella SINTESI di glicoproteine destinate alla secrezione? 1. Apparato di Golgi; 2. Nucleo; 3. Centriolo; 4. Reticolo endoplasmatico rugoso (RER).",
+    "choices": [
+      "1 (Golgi), 2 (nucleo) e 4 (RER)",
+      "1 (Golgi), 2 (nucleo) e 3 (centriolo)",
+      "1 (Golgi), 3 (centriolo) e 4 (RER)",
+      "2 (nucleo), 3 (centriolo) e 4 (RER)",
+      "Tutte e quattro: 1, 2, 3 e 4"
+    ],
+    "answer": 0,
+    "explain": "Attenzione: la domanda chiede la SINTESI completa della glicoproteina, non solo il viaggio della proteina già pronta. Servono tre strutture. Il nucleo (2) contiene il DNA e produce l'mRNA con le istruzioni: senza di lui la proteina non esisterebbe, quindi va incluso. Il RER (4) sintetizza la catena proteica e aggiunge i primi zuccheri. Il Golgi (1) completa la modifica degli zuccheri e smista la proteina verso la secrezione. Il centriolo (3) serve solo alla divisione cellulare (forma il fuso mitotico): non c'entra con la sintesi, ed è la trappola da scartare. Errore tipico: dimenticare il nucleo perché 'non tocca la proteina' — ma fornisce le istruzioni, quindi è parte della sintesi. Risposta corretta: 1, 2 e 4.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-15-5",
+    "topicId": "bio-u5-15",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale organello cellulare è responsabile di modificare le proteine già sintetizzate — per esempio aggiungendo la parte glucidica (gli zuccheri) per formare glicoproteine — e di smistarle verso la destinazione giusta?",
+    "choices": [
+      "Mitocondrio",
+      "Apparato di Golgi",
+      "Lisosoma",
+      "Perossisoma",
+      "Reticolo endoplasmatico liscio (REL)"
+    ],
+    "answer": 1,
+    "explain": "L'apparato di Golgi è il 'laboratorio di finitura': riceve le proteine grezze dal RER e le modifica (aggiunge o rimuove zuccheri, aggiunge fosfati, taglia pezzi) prima di smistarle. Il mitocondrio è il filler fuori tema (produce ATP, non modifica proteine). Il lisosoma è la trappola più insidiosa: usa proteine già modificate per digerire materiale cellulare, ma non è lui a modificarle — le riceve già pronte dal Golgi. Il perossisoma neutralizza i radicali liberi (fuori tema). Il REL sintetizza lipidi e detossifica, ma non modifica proteine secretorie: quella è una funzione del RER e poi del Golgi, non del REL.",
+    "tags": ["prova d'esame"]
+  }
+]

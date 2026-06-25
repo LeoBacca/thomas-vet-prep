@@ -1,0 +1,92 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-05">
+
+Le **proteine** sono i "mattoni operai" del corpo: costruiscono i muscoli, trasportano l'ossigeno nel sangue, accelerano le reazioni (gli enzimi) e difendono dalle malattie (gli anticorpi). Ma una proteina non è una collana dritta e piatta: per **funzionare** deve **piegarsi** in una forma precisa nello spazio. Studiare i livelli strutturali vuol dire capire **come** una catena di amminoacidi diventa una macchina che lavora.
+
+Pensa a un filo di perline. Prima è solo una fila di perline (la sequenza). Poi quel filo si arrotola e si ripiega fino a diventare un oggetto tridimensionale con una forma sua. La forma finale decide cosa la proteina sa fare. Lo studiamo in **4 livelli**, dal più semplice al più complesso.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la proteina è un filo di perline (amminoacidi) che si piega in una forma 3D precisa. La <strong>forma</strong> decide la <strong>funzione</strong>: se la forma si rovina, la proteina smette di lavorare.</div>
+
+<Diagram caption="I 4 livelli: dalla sequenza alla proteina finita" code={`flowchart TB
+  P1["1. PRIMARIA<br/>sequenza di amminoacidi<br/>(il filo di perline)"] --> P2["2. SECONDARIA<br/>elica o foglietto<br/>(il filo si arrotola)"]
+  P2 --> P3["3. TERZIARIA<br/>ripiegamento 3D completo<br/>(forma finale di UNA catena)"]
+  P3 --> P4["4. QUATERNARIA<br/>più catene unite insieme<br/>(le subunità)"]`} />
+
+## I primi due livelli: la sequenza e i primi ripiegamenti
+
+La **struttura primaria** è semplicemente l'**ordine** degli amminoacidi nella catena, come le lettere in una parola. Cambiare anche un solo amminoacido può cambiare tutto: nell'**anemia falciforme** basta **un** amminoacido sbagliato nell'emoglobina per deformare i globuli rossi. Un dettaglio piccolissimo, una malattia seria.
+
+La **struttura secondaria** sono i primi ripiegamenti **locali** del filo. Il filo non resta dritto: in alcuni tratti si avvolge a spirale (l'**alfa-elica**, come il cordone del telefono), in altri si dispone a zig-zag affiancato (il **foglietto beta**, come una fisarmonica). A tenere insieme queste forme ci sono tanti **legami a idrogeno**: piccoli "agganci" deboli, ma in gran numero fanno una struttura solida.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> l'alfa-elica è come il filo a spirale del vecchio telefono; il foglietto beta è come la carta piegata a fisarmonica. Li tengono insieme tanti piccoli ganci (i legami a idrogeno).</div>
+
+## Il terzo e quarto livello: la forma 3D e le squadre di catene
+
+La **struttura terziaria** è la forma **tridimensionale completa** di **una** catena: tutte le eliche e i foglietti si ripiegano ulteriormente fino a formare un oggetto compatto, spesso a gomitolo. È qui che la proteina prende la sua forma definitiva e diventa capace di lavorare. Questa forma è tenuta ferma da diverse forze:
+
+- **interazioni deboli** tra i "bracci laterali" degli amminoacidi (legami a idrogeno, attrazioni tra cariche, e il fatto che le parti "che odiano l'acqua" si nascondono all'interno);
+- i **ponti disolfuro**: questi sono **legami forti** (non deboli) tra due atomi di zolfo. Funzionano come dei **bottoni automatici** che fissano saldamente due punti lontani della catena. I capelli ricci, per esempio, devono i loro ricci proprio ai ponti disolfuro.
+
+La **struttura quaternaria** esiste solo in **alcune** proteine: quando **più catene** già ripiegate (le **subunità**) si uniscono per lavorare in squadra. L'esempio più famoso è l'**emoglobina**, fatta da **4** subunità che insieme trasportano l'ossigeno nel sangue molto meglio di quanto farebbe una catena da sola.
+
+<Diagram caption="Quali forze tengono insieme la forma della proteina" code={`flowchart TB
+  F["Forze che stabilizzano la proteina"] --> D["Interazioni DEBOLI<br/>legami a idrogeno,<br/>attrazioni tra cariche,<br/>parti che fuggono l'acqua"]
+  F --> S["Ponti DISOLFURO<br/>legami FORTI tra due zolfi<br/>(come bottoni automatici)"]`} />
+
+## Quando la forma si rompe: la denaturazione
+
+Se scaldi troppo una proteina, o cambi l'acidità intorno, i legami deboli si spezzano e la proteina si **srotola**: perde la forma e quindi la funzione. Si chiama **denaturazione**. Lo vedi ogni mattina: l'albume dell'uovo è trasparente e liquido, ma in padella diventa bianco e solido. Le sue proteine si sono denaturate. In medicina è lo stesso motivo per cui la **febbre molto alta** è pericolosa: troppo calore può rovinare le proteine del corpo.
+
+## Guarda il video
+
+<YouTube id="UZRZ0BDTQzo" title="Struttura delle proteine: primaria, secondaria, terziaria, quaternaria — Pillole di Scienza" />
+
+<VideoVisto id="chim-u7-05" />
+
+## Da ricordare
+
+- I livelli sono **4**: **primaria** (sequenza), **secondaria** (elica o foglietto), **terziaria** (forma 3D di una catena), **quaternaria** (più catene unite).
+- La **forma decide la funzione**: se la forma si rovina, la proteina smette di funzionare.
+- La struttura secondaria e gran parte della terziaria sono tenute da **interazioni deboli**, soprattutto i **legami a idrogeno** (deboli ma tanti).
+- I **ponti disolfuro** sono **legami forti** tra due zolfi: fissano punti lontani della catena come bottoni automatici.
+- La struttura **quaternaria** c'è solo in alcune proteine (es. l'**emoglobina**, fatta di 4 subunità).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="La struttura primaria di una proteina è:"
+  opzioni={["la forma 3D finale", "la sequenza (l'ordine) degli amminoacidi", "l'unione di più catene", "l'alfa-elica"]}
+  corretta={1}
+  spiegazione="La primaria è solo l'ordine degli amminoacidi nella catena, come le lettere di una parola. La forma 3D arriva ai livelli successivi."
+/>
+
+<Quiz
+  domanda="L'alfa-elica e il foglietto beta appartengono alla struttura:"
+  opzioni={["primaria", "secondaria", "terziaria", "quaternaria"]}
+  corretta={1}
+  spiegazione="Sono i primi ripiegamenti locali del filo, tenuti dai legami a idrogeno: questa è la struttura secondaria."
+/>
+
+<Quiz
+  domanda="I ponti disolfuro sono:"
+  opzioni={["legami deboli a idrogeno", "legami forti tra due atomi di zolfo", "la sequenza degli amminoacidi", "subunità di una proteina"]}
+  corretta={1}
+  spiegazione="A differenza delle interazioni deboli, i ponti disolfuro sono legami forti tra due zolfi: fissano saldamente punti lontani della catena, come bottoni automatici."
+/>
+
+<Esercizio
+  problema="L'emoglobina è formata da 4 catene proteiche distinte che si uniscono per trasportare l'ossigeno. A quale livello strutturale corrisponde questa unione di più catene? E perché non tutte le proteine ce l'hanno?"
+  soluzione="Corrisponde alla struttura quaternaria, cioè l'unione di più catene (subunità) già ripiegate. Non tutte le proteine ce l'hanno perché molte funzionano benissimo con una sola catena (si fermano alla struttura terziaria): la quaternaria esiste solo quando servono più subunità che lavorano insieme, come nell'emoglobina con le sue 4 subunità."
+/>
+
+</section>
+
+</RisorsaLayout>

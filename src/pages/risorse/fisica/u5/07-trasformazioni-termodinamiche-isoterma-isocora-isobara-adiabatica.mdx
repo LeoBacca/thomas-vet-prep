@@ -1,0 +1,97 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u5-07">
+
+## Cosa sono le trasformazioni termodinamiche?
+
+Un gas in un contenitore ha tre grandezze principali: **pressione (P)**, **volume (V)** e **temperatura (T)**.
+Quando il gas cambia stato, almeno una di queste grandezze varia.
+
+A seconda di **quale grandezza rimane costante**, la trasformazione prende un nome diverso.
+Sono quattro le trasformazioni "canoniche" che devi conoscere.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ogni trasformazione termodinamica è come una ricetta: cambia qualcosa tenendo fermo qualcos'altro.</div>
+
+---
+
+## Le quattro trasformazioni
+
+### 1. Isoterma — temperatura costante (T = cost.)
+
+Il gas si espande o si comprime, ma la temperatura non cambia.
+Succede quando il processo è lentissimo e il gas può cedere o assorbire calore liberamente.
+
+- La pressione e il volume cambiano, ma sempre in modo che **P × V = costante** (legge di Boyle).
+- Sul grafico P-V appare come una **curva a forma di iperbole**.
+
+### 2. Isocora — volume costante (V = cost.)
+
+Il volume non cambia: il gas è dentro un contenitore rigido che non può espandersi.
+Se si scalda, la pressione aumenta; se si raffredda, la pressione scende.
+
+- Non c'è lavoro compiuto dal gas (non c'è movimento del pistone).
+- Tutta l'energia fornita va a cambiare la temperatura: **Q = ΔU**.
+
+### 3. Isobara — pressione costante (P = cost.)
+
+La pressione rimane uguale durante tutta la trasformazione.
+È quello che succede quando scaldiamo un palloncino libero: si gonfia mantenendo la pressione dell'aria esterna.
+
+- Il volume cambia proporzionalmente alla temperatura (legge di Charles).
+- Il gas compie lavoro spostando il pistone: **Q = ΔU + W**.
+
+### 4. Adiabatica — nessuno scambio di calore (Q = 0)
+
+Il gas non scambia calore con l'esterno: è come un contenitore perfettamente isolato.
+Se il gas si comprime, si scalda; se si espande, si raffredda — tutto usando la propria energia interna.
+
+- È più "ripida" dell'isoterma sul grafico P-V.
+- Esempio pratico: l'aria compressa in una pompa da bicicletta si scalda senza che ci sia tempo per cedere calore.
+
+---
+
+## Schema riassuntivo
+
+<Diagram caption="Le quattro trasformazioni termodinamiche canoniche: cosa rimane costante" code={`flowchart TB
+  A["Trasformazione<br/>termodinamica"] --> B["Isoterma<br/>T costante<br/>P × V = cost."]
+  A --> C["Isocora<br/>V costante<br/>Q = ΔU"]
+  A --> D["Isobara<br/>P costante<br/>Q = ΔU + W"]
+  A --> E["Adiabatica<br/>Q = 0<br/>ΔU = -W"]`} />
+
+<Diagram caption="Comportamento sul piano P-V: come appaiono le trasformazioni nel diagramma pressione-volume" code={`flowchart LR
+  G["Piano P-V"] --> H["Isoterma<br/>curva iperbole<br/>P × V = cost."]
+  G --> I["Isocora<br/>linea verticale<br/>V fisso"]
+  G --> J["Isobara<br/>linea orizzontale<br/>P fissa"]
+  G --> K["Adiabatica<br/>curva più ripida<br/>dell'isoterma"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="HrYrROD8i3M" title="FISICA Teoria#26 - TRASFORMAZIONI in TERMODINAMICA (Isoterma, Isocora, Isobara, Adiabatica, Ciclica)" />
+<VideoVisto id="fis-u5-07" />
+
+## Da ricordare
+- **ISO** significa "uguale": isoterma = T uguale, isocora = V uguale, isobara = P uguale.
+- Nell'**adiabatica** non entra né esce calore (Q = 0): il gas si scalda o raffredda da solo.
+- Sul grafico P-V: isocora è una retta verticale, isobara è orizzontale, isoterma e adiabatica sono curve (l'adiabatica è più ripida).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un gas si trova in un contenitore rigido e viene riscaldato. Di quale trasformazione si tratta?" opzioni={["Isoterma", "Isocora", "Isobara", "Adiabatica"]} corretta={1} spiegazione="Se il contenitore è rigido il volume non può cambiare: la trasformazione è isocora (V costante). La pressione aumenta con la temperatura." />
+
+<Quiz domanda="In quale trasformazione il gas non scambia calore con l'esterno?" opzioni={["Isoterma", "Isocora", "Isobara", "Adiabatica"]} corretta={3} spiegazione="Nella trasformazione adiabatica Q = 0: il sistema è perfettamente isolato termicamente. Tutta la variazione di energia interna è dovuta al lavoro." />
+
+<Quiz domanda="Un gas si espande lentamente in un cilindro mantenendo la pressione costante. Sul grafico P-V, questa trasformazione appare come:" opzioni={["Una curva a iperbole", "Una retta verticale", "Una retta orizzontale", "Una curva più ripida dell'isoterma"]} corretta={2} spiegazione="La trasformazione isobara (P costante) sul piano P-V è una retta orizzontale, perché la pressione non cambia mentre il volume varia." />
+
+<Esercizio problema="Un gas ideale subisce una trasformazione isocora. La temperatura iniziale è 300 K e quella finale è 600 K. Di quanto varia la pressione rispetto a quella iniziale?" soluzione="In una trasformazione isocora vale la legge di Gay-Lussac: P/T = costante. Quindi P2/P1 = T2/T1 = 600/300 = 2. La pressione finale è il doppio di quella iniziale: la pressione raddoppia." />
+
+</section>
+
+</RisorsaLayout>

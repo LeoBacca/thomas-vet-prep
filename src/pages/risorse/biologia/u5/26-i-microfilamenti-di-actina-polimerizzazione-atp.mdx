@@ -1,0 +1,144 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-26">
+
+## Cosa sono i microfilamenti?
+
+I microfilamenti sono i filamenti più sottili del citoscheletro: hanno un diametro di circa **7 nm** (nanometri).
+Sono fatti di una proteina chiamata **actina**.
+
+Pensa all'actina come a tante piccole perline identiche. Da sole, queste perline galleggiano libere nel citoplasma. Quando si uniscono testa-a-coda formano un lungo filo elicoidale: questo filo è il microfilamento.
+
+Il microfilamento ha una **polarità**, cioè i due capi sono diversi tra loro:
+- **Capo +** (detto "barbed end"): cresce velocemente, è il capo "attivo"
+- **Capo −** (detto "pointed end"): cresce lentamente o perde pezzi
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il microfilamento è come un treno che carica passeggeri (monomeri di actina) da un lato e li scarica dall'altro — questo movimento continuo si chiama "treadmilling".</div>
+
+---
+
+## Come si forma un microfilamento: la polimerizzazione
+
+Il processo con cui le perline di actina si uniscono a formare il filo si chiama **polimerizzazione**.
+
+Ogni perlina (chiamata **G-actina**, actina globulare) porta con sé una molecola di **ATP** (la "batteria" della cellula).
+Quando la perlina si attacca al filamento, l'ATP viene idrolizzato in **ADP**: la perlina "scarica" la sua batteria.
+
+### Tre fasi della polimerizzazione
+
+1. **Nucleazione** — le prime 2-3 perline si uniscono con fatica: è la fase più lenta ("seme" del filamento)
+2. **Allungamento** — il filamento cresce rapidamente aggiungendo G-actina al capo +
+3. **Steady state** — il guadagno al capo + bilancia la perdita al capo −: la lunghezza rimane costante, ma il filamento "scorre" (treadmilling)
+
+### Il complesso Arp2/3
+
+La cellula non aspetta che i filamenti nascano per caso. Usa un "iniziatore" chiamato **complesso Arp2/3** (formato da 7 proteine).
+
+Arp2/3 si aggancia su un filamento già esistente e fa partire un **ramo nuovo a 70°**. Risultato: una rete ramificata di filamenti, perfetta per spingere la membrana cellulare in avanti (es. nei pseudopodi durante la migrazione cellulare).
+
+<Diagram caption="Polimerizzazione dell'actina: dalle G-actina-ATP al treadmilling e alla ramificazione con Arp2/3" code={`flowchart TB
+  A["G-actina + ATP<br/>(monomero libero)"] --> B["Nucleazione<br/>(2-3 monomeri si uniscono: fase lenta)"]
+  B --> C["Allungamento al capo +<br/>(aggiunta rapida di G-actina-ATP)"]
+  C --> D["Idrolisi ATP → ADP<br/>(la perlina 'scarica' la batteria)"]
+  D --> E["Steady state / Treadmilling<br/>(guadagno capo + = perdita capo −)"]
+  C --> F["Arp2/3 si lega al filamento"]
+  F --> G["Nucleazione di un ramo a 70°<br/>(rete ramificata per la motilità)"]`} />
+
+---
+
+## Le miosine: i "motori" dell'actina
+
+Le **miosine** sono proteine motrici: usano l'energia dell'ATP per "camminare" lungo i filamenti di actina e trasportare carichi o generare forza.
+
+Esistono molti tipi di miosina. Le principali sono:
+
+| Tipo | Dove agisce | Cosa fa |
+|---|---|---|
+| **Miosina II** | Muscolo scheletrico, cellule non muscolari | Contrazione; scorrimento filamenti |
+| **Miosina I** | Microvilli intestinali, filopodi | Ancora filamenti alla membrana |
+| **Miosina V** | Neuroni, cellule secretorie | Trasporto di vescicole |
+
+La miosina II ha la forma di un bastone con due "teste" globulari. Le teste si legano all'actina, si piegano consumando ATP (il "colpo di remo") e si staccano. Ripetendo questo ciclo migliaia di volte al secondo, generano movimento.
+
+---
+
+## Il sarcomero: la macchina contrattile del muscolo
+
+Nel muscolo scheletrico i filamenti di actina e le miosine sono organizzati in modo preciso dentro un'unità chiamata **sarcomero**.
+
+Il sarcomero è la più piccola unità funzionale del muscolo. Tanti sarcomeri in fila formano una **miofibrilla**; tante miofibrille formano una fibra muscolare.
+
+Struttura del sarcomero:
+- **Filamenti sottili** = actina (+ troponina + tropomiosina)
+- **Filamenti spessi** = miosina II
+- **Disco Z** = ancora laterale dei filamenti di actina
+- **Zona H** = zona centrale dove ci sono solo filamenti spessi
+- **Banda I** = zona con solo filamenti sottili
+- **Banda A** = zona dove filamenti sottili e spessi si sovrappongono
+
+Durante la contrazione i filamenti di actina vengono trascinati verso il centro dal "remo" della miosina: i dischi Z si avvicinano e il sarcomero si accorcia (**teoria dello scorrimento dei filamenti**).
+
+<Diagram caption="Struttura del sarcomero e teoria dello scorrimento dei filamenti" code={`flowchart LR
+  Z1["Disco Z"] --> I1["Banda I<br/>(solo actina)"]
+  I1 --> A["Banda A<br/>(actina + miosina si sovrappongono)"]
+  A --> H["Zona H<br/>(solo miosina)"]
+  H --> M["Linea M<br/>(centro del sarcomero)"]
+  M --> H2["Zona H<br/>(solo miosina)"]
+  H2 --> A2["Banda A<br/>(actina + miosina)"]
+  A2 --> I2["Banda I<br/>(solo actina)"]
+  I2 --> Z2["Disco Z"]
+  A -- "Miosina tira actina → dischi Z si avvicinano" --> Z1`} />
+
+---
+
+## Proteine accessorie: distrofina e altre
+
+I microfilamenti non lavorano da soli. Una serie di proteine accessorie li organizzano, li stabilizzano e li collegano ad altre strutture.
+
+### Distrofina
+
+La **distrofina** è una proteina enorme (427 kDa) che forma un **ponte meccanico** tra:
+- il citoscheletro di actina all'interno della cellula muscolare
+- la matrice extracellulare all'esterno
+
+Senza distrofina la membrana del muscolo si rompe durante la contrazione. Questa è esattamente la causa della **distrofia muscolare di Duchenne**: una mutazione nel gene della distrofina fa sì che la proteina non venga prodotta.
+
+### Altre proteine accessorie importanti
+
+- **Cofilina**: taglia e depolimerizza i filamenti (li smonta) — bilancia la polimerizzazione
+- **Profilina**: tiene "pronte" le G-actina-ATP e le consegna al capo + per accelerare la crescita
+- **Filamin**: lega i filamenti tra loro formando reti tridimensionali
+- **Alpha-actinina**: ancora i filamenti ai dischi Z nel sarcomero
+- **Fimbrina / Villina**: impacchettano i filamenti in fasci paralleli (es. nei microvilli intestinali)
+
+---
+
+## Guarda il video
+<YouTube id="v-mEAeAiJbE" title="Actina e specializzazioni della membrana — Agora Scienze Biomediche" />
+<VideoVisto id="bio-u5-26" />
+
+## Da ricordare
+- I microfilamenti di actina si polimerizzano al capo + usando G-actina-ATP; il complesso Arp2/3 avvia rami a 70° per formare reti ramificate.
+- Le miosine sono motori molecolari che "camminano" sull'actina; la miosina II nel sarcomero genera la contrazione muscolare per scorrimento dei filamenti.
+- La distrofina collega actina alla matrice extracellulare; senza di essa le fibre muscolari si danneggiano (distrofia di Duchenne).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale estremità del microfilamento di actina cresce più rapidamente?" opzioni={["Il capo − (pointed end)","Il capo + (barbed end)","Entrambi i capi crescono alla stessa velocità","Il microfilamento non ha polarità"]} corretta={1} spiegazione="Il capo + (barbed end) aggiunge monomeri di G-actina-ATP molto più velocemente del capo −. Questa asimmetria è alla base del treadmilling." />
+
+<Quiz domanda="Qual è la funzione del complesso Arp2/3?" opzioni={["Tagliare i filamenti di actina per depolimerizzarli","Trasportare vescicole lungo i filamenti di actina","Nucleare nuovi filamenti a 70° su un filamento esistente, formando reti ramificate","Collegare i filamenti di actina alla membrana nucleare"]} corretta={2} spiegazione="Arp2/3 si lega a lato di un filamento esistente e avvia un ramo a circa 70°. Questo processo crea la rete ramificata di actina che spinge la membrana cellulare in avanti durante la migrazione." />
+
+<Quiz domanda="Cosa causa la distrofia muscolare di Duchenne?" opzioni={["Mancanza di miosina II nel sarcomero","Mutazione nel gene della distrofina che porta all'assenza della proteina","Eccesso di cofilina che depolimerizza tutti i filamenti","Difetto nel complesso Arp2/3 che impedisce la formazione di sarcomeri"]} corretta={1} spiegazione="La distrofina forma il ponte meccanico tra actina e matrice extracellulare. Senza di essa la membrana muscolare si lacera durante la contrazione. Nella distrofia di Duchenne una mutazione frameshift nel gene DMD impedisce la produzione della proteina funzionale." />
+
+<Esercizio problema="Descrivi con parole tue il treadmilling: cosa succede al capo + e al capo − di un microfilamento in condizioni di steady state? Perché questo meccanismo è utile per la cellula?" soluzione="In condizioni di steady state il capo + aggiunge monomeri di G-actina-ATP alla stessa velocità con cui il capo − perde monomeri di G-actina-ADP. La lunghezza totale rimane costante, ma i monomeri 'scorrono' attraverso il filamento dalla punta + alla punta −. Questo è utile perché permette alla cellula di rimodellare rapidamente il citoscheletro senza dover smontare e rimontare completamente i filamenti: basta spostare dove avviene la polimerizzazione per cambiare la forma della cellula o la direzione di migrazione." />
+
+</section>
+
+</RisorsaLayout>

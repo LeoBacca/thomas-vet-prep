@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u3-12-1",
+    "topicId": "bio-u3-12",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: l'RNA polimerasi II, per trascrivere un gene, si attacca da sola al DNA senza bisogno di aiuto.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'RNA polimerasi II non sa dove andare da sola: ha bisogno dei fattori di trascrizione generali (GTF) che la guidano al promotore (in particolare alla TATA box) e formano con lei il complesso di pre-inizio. E' come un camionista che non conosce la strada: il GPS (i GTF) lo porta al punto di partenza giusto.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-12-2",
+    "topicId": "bio-u3-12",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Durante l'allungamento, l'RNA polimerasi scorre lungo il filamento stampo del DNA e aggiunge nucleotidi uno alla volta al nuovo filamento di RNA. In quale direzione cresce il filamento di RNA?",
+    "choices": [
+      "Cresce in direzione 5'→3'",
+      "Cresce in direzione 3'→5'",
+      "Cresce in entrambe le direzioni contemporaneamente",
+      "La direzione dipende dal tipo di gene trascritto"
+    ],
+    "answer": 0,
+    "explain": "Il filamento di RNA cresce sempre 5'→3': ogni nuovo nucleotide viene aggiunto all'estremita 3'. Allo stesso tempo, l'RNA polimerasi legge il filamento stampo del DNA in direzione 3'→5'. E' una regola universale: tutti gli enzimi che sintetizzano acidi nucleici lavorano in questo verso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-12-3",
+    "topicId": "bio-u3-12",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Descrivi le tre fasi della trascrizione eucariotica (inizio, allungamento, terminazione). Per ognuna, indica il protagonista principale e l'evento chiave. Poi spiega perche la coda poli-A e il cap 5' sono importanti per l'mRNA.",
+    "answer": "INIZIO: i fattori di trascrizione generali (GTF) riconoscono il promotore, in particolare la TATA box (circa 25 basi prima del gene), e si assemblano formando il complesso di pre-inizio (PIC). L'RNA polimerasi II viene reclutata, il DNA viene aperto in una piccola bolla e la sintesi dell'RNA puo iniziare. ALLUNGAMENTO: l'RNA polimerasi II scorre lungo il filamento stampo in direzione 3'→5' e sintetizza il nuovo filamento di RNA nella direzione 5'→3', aggiungendo ribonucleotidi complementari (A→U, T→A, G→C, C→G; nell'RNA la timina e sostituita dall'uracile). La bolla di trascrizione avanza con l'enzima. Gia durante questa fase, all'estremita 5' dell'RNA nascente viene aggiunto il cap di 7-metilguanosina. TERMINAZIONE: quando l'RNA polimerasi trascrive la sequenza segnale AAUAAA, enzimi specifici tagliano l'mRNA in quel punto e aggiungono una coda di circa 200 adenine (coda poli-A) all'estremita 3'. Poi l'RNA polimerasi si stacca dal DNA. Perche cap e coda poli-A sono importanti: proteggono l'mRNA dalla degradazione da parte degli enzimi presenti nella cellula, e segnalano ai macchinari cellulari di esportare l'mRNA dal nucleo al citoplasma, dove potra essere tradotto in proteina.",
+    "explain": "Da ricordare: inizio = GTF + TATA box + PIC; allungamento = RNA pol II legge 3'→5', scrive 5'→3', cap 5' aggiunto subito; terminazione = segnale AAUAAA → taglio → coda poli-A → distacco.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-12-4",
+    "topicId": "bio-u3-12",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "La trascrizione del DNA produce:",
+    "choices": [
+      "Una molecola di RNA a singolo filamento",
+      "Una molecola di DNA a singolo filamento",
+      "Una proteina",
+      "Una molecola di DNA a doppio filamento",
+      "Una molecola di RNA a doppio filamento"
+    ],
+    "answer": 0,
+    "explain": "La trascrizione copia la sequenza di un gene in un filamento singolo di RNA (l'mRNA). Non produce un secondo filamento: la bolla di trascrizione si richiude man mano che l'RNA pol avanza, e il DNA originale torna a doppio filamento. La traduzione (non la trascrizione) produce le proteine. L'RNA a doppio filamento non e il prodotto diretto della trascrizione eucariotica standard.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-12-5",
+    "topicId": "bio-u3-12",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Un farmaco blocca la TATA box di un gene impedendo che qualsiasi proteina vi si leghi. Qual e la conseguenza piu diretta su quel gene?",
+    "choices": [
+      "L'RNA polimerasi II non viene reclutata al promotore e la trascrizione del gene non parte",
+      "La trascrizione parte normalmente ma l'mRNA viene degradato subito dopo",
+      "Il gene viene trascritto in direzione opposta, producendo un RNA antisenso",
+      "L'RNA polimerasi II si lega ugualmente al DNA ma non riesce ad allungarsi",
+      "La coda poli-A non viene aggiunta, ma la trascrizione avviene lo stesso"
+    ],
+    "answer": 0,
+    "explain": "La TATA box e il punto di aggancio del primo fattore di trascrizione (TFIID/TBP): se e bloccata, i GTF non si assemblano, il complesso di pre-inizio (PIC) non si forma e l'RNA polimerasi II non viene mai portata al sito di inizio. Il risultato e zero trascrizione. Le altre opzioni confondono fasi diverse: la degradazione dell'mRNA e la poliadenilazione avvengono DOPO l'inizio; l'RNA antisenso e la fallita allungamento sono meccanismi del tutto diversi.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fc-chim-u1-24-1",
+    "topicId": "chim-u1-24",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un solido e durissimo, fonde solo a temperature altissime e non conduce la corrente elettrica. A quale famiglia di solidi appartiene?",
+    "choices": [
+      "Solido ionico: fatto di ioni + e - alternati come una scacchiera",
+      "Solido molecolare: molecole tenute da forze deboli",
+      "Solido covalente: rete unica di atomi legati da legami fortissimi (es. diamante)",
+      "Solido metallico: atomi in un mare di elettroni liberi"
+    ],
+    "answer": 2,
+    "explain": "La chiave e la rete covalente: ogni atomo e legato agli altri con legami fortissimi, formando un unico blocco senza punti deboli. Per questo e durissimo e fonde solo a temperature altissime. Non conduce la corrente perche non ci sono elettroni o ioni liberi di muoversi. L'esempio piu famoso e il diamante.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-chim-u1-24-2",
+    "topicId": "chim-u1-24",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Descrivi le 4 famiglie di solidi cristallini: per ognuna di' chi tiene insieme le particelle, un esempio concreto e una proprieta caratteristica.",
+    "answer": "Le 4 famiglie si distinguono in base a chi tiene insieme le particelle nel reticolo cristallino. 1) IONICO: ioni positivi e negativi alternati come le caselle di una scacchiera, si attraggono fortissimo. Esempio: sale da cucina (NaCl). Proprieta: duro ma fragile, fonde a temperatura alta, in acqua conduce la corrente perche gli ioni si liberano. 2) MOLECOLARE: molecole intere tenute da forze deboli (come calamite leggere). Esempio: ghiaccio o burro. Proprieta: morbido, fonde a temperatura bassa, basta poco calore per scioglierlo. 3) COVALENTE: atomi legati tra loro da legami fortissimi che formano una rete unica e continua, come una rete da pesca senza punti deboli. Esempio: diamante. Proprieta: il piu duro che esiste, fonde solo a temperature altissime, non conduce la corrente. 4) METALLICO: atomi immersi in un mare di elettroni liberi che scorrono tra loro. Esempio: ferro, rame. Proprieta: conduce calore e corrente elettrica, e lucido, si piega senza rompersi (malleabile).",
+    "explain": "La domanda chiave e sempre: chi tiene insieme le particelle? Ioni: ionico. Molecole con forze deboli: molecolare. Rete di atomi legati: covalente. Atomi in mare di elettroni: metallico.",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

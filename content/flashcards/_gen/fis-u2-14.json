@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-14-1",
+    "topicId": "fis-u2-14",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: se raddoppi la velocità di un oggetto, la sua energia cinetica raddoppia.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'energia cinetica è Ec = ½mv². La velocità è al QUADRATO, quindi se v raddoppia, Ec quadruplica (diventa 4 volte più grande). Esempio: un'auto che passa da 10 m/s a 20 m/s non ha il doppio dell'energia cinetica, ma 4 volte tanta. Per questo frenare a velocità alta è molto più difficile.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-14-2",
+    "topicId": "fis-u2-14",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Cosa afferma il teorema dell'energia cinetica?",
+    "choices": [
+      "Il lavoro totale fatto su un oggetto è uguale alla variazione della sua energia cinetica",
+      "L'energia cinetica di un oggetto dipende solo dalla sua massa",
+      "Un oggetto fermo non può acquistare energia cinetica",
+      "Il lavoro è sempre uguale all'energia potenziale dell'oggetto"
+    ],
+    "answer": 0,
+    "explain": "Il teorema dice: L = ΔEc = Ec_finale − Ec_iniziale. In pratica: se spingi un oggetto (lavoro positivo), acquista velocità; se lo freni (lavoro negativo), rallenta. Pensa a uno skateboard: ogni spinta che dai si trasforma esattamente in energia di movimento.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-14-3",
+    "topicId": "fis-u2-14",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Un'auto da 1000 kg viaggia a 20 m/s e frena fino a fermarsi completamente. Quanto lavoro ha fatto la forza frenante? Il risultato è positivo o negativo? Perché?",
+    "answer": "Usiamo il teorema dell'energia cinetica: L = Ec_finale − Ec_iniziale. Prima calcoliamo Ec_iniziale = ½ · 1000 · 20² = ½ · 1000 · 400 = 200 000 J. L'auto si ferma, quindi Ec_finale = 0. Quindi L = 0 − 200 000 = −200 000 J. Il lavoro è NEGATIVO perché la forza frenante è diretta in senso opposto al moto: toglie energia all'auto invece di aggiungerla. In breve: lavoro positivo → l'oggetto accelera; lavoro negativo → l'oggetto rallenta o si ferma.",
+    "explain": "Punto chiave: L = ΔEc; se l'oggetto si ferma, tutta l'energia cinetica iniziale è stata 'tolta' (lavoro negativo). Non dimenticare di elevare la velocità al quadrato prima di moltiplicare.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-14-4",
+    "topicId": "fis-u2-14",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "L'energia cinetica di una moto di massa 300 kg che viaggia a 6 m/s è pari a:",
+    "choices": [
+      "1.800 J",
+      "5.400 J",
+      "900 J",
+      "10.800 J",
+      "2.700 J"
+    ],
+    "answer": 1,
+    "explain": "Formula: Ec = ½ · m · v² = ½ · 300 · 6² = ½ · 300 · 36 = ½ · 10 800 = 5 400 J. La risposta giusta è 5.400 J. Trappole: 10.800 J è il risultato di chi dimentica il ½ (calcola 300 · 36 senza dimezzare). 1.800 J è il risultato di chi non eleva al quadrato e dimentica il ½ (fa solo 300 · 6 = 1.800). 900 J è il risultato di chi mette il ½ ma non eleva al quadrato (½ · 300 · 6 = 900). 2.700 J non corrisponde a nessun calcolo coerente: è un filler. Ricorda sempre: prima il quadrato della velocità, poi moltiplica per la massa, poi dimezza.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-14-5",
+    "topicId": "fis-u2-14",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Su un oggetto inizialmente fermo viene fatto un lavoro totale di 50 J. Qual è la sua energia cinetica alla fine?",
+    "choices": [
+      "0 J, perché era fermo",
+      "100 J, perché il lavoro si raddoppia nella formula ½mv²",
+      "50 J, per il teorema dell'energia cinetica",
+      "25 J, perché bisogna dividere per 2 come nella formula",
+      "Dipende dalla massa dell'oggetto, non dal lavoro"
+    ],
+    "answer": 2,
+    "explain": "Per il teorema dell'energia cinetica: L = ΔEc = Ec_finale − Ec_iniziale. Partendo da fermo, Ec_iniziale = 0, quindi Ec_finale = L = 50 J. Il lavoro si trasforma interamente in energia cinetica. Trappole: 'Dipende dalla massa' è falso — il teorema dice che è il LAVORO a determinare la variazione di Ec, qualunque sia la massa. '25 J' confonde il ½ della formula (che serve per calcolare Ec da m e v, non per dimezzare il lavoro). '100 J' inverte la logica del ½mv², raddoppiando invece di usarlo correttamente. '0 J' ignora completamente il lavoro fatto.",
+    "tags": ["prova d'esame"]
+  }
+]

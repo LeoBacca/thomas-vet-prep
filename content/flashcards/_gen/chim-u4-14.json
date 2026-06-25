@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-chim-u4-14-1",
+    "topicId": "chim-u4-14",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: nella respirazione cellulare, l'ossigeno (O2) e l'accettore FINALE degli elettroni nella catena di trasporto, e si trasforma in acqua.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. L'ossigeno ha il potenziale piu alto di tutti i componenti della catena: 'tira' gli elettroni con piu forza. Prende gli elettroni all'ultimo gradino, si combina con gli ioni H+ e diventa acqua. Senza ossigeno la catena si blocca e la cellula rimane senza energia.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-14-2",
+    "topicId": "chim-u4-14",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "Cos'e la reazione di Fenton, cosa produce e perche e pericolosa per una cellula?",
+    "answer": "La reazione di Fenton avviene quando l'acqua ossigenata (H2O2) incontra il ferro a basso stato di ossidazione (Fe2+) all'interno della cellula. La reazione e: Fe2+ + H2O2 → Fe3+ + OH- + •OH. Il prodotto pericoloso e il radicale ossidrile (•OH): una specie chimica estremamente reattiva, come una 'scintilla impazzita'. Questo radicale libero attacca grassi, proteine e DNA, danneggiando le strutture della cellula. E una delle cause principali dello stress ossidativo, associato all'invecchiamento e a molte malattie. Per difendersi, il corpo tiene sotto stretto controllo il ferro libero e usa antiossidanti per neutralizzare i radicali prima che facciano danno.",
+    "explain": "La reazione di Fenton = Fe2+ + H2O2 → radicale ossidrile (•OH). Il radicale e pericoloso perche attacca DNA, grassi e proteine (stress ossidativo).",
+    "tags": ["risposta aperta"]
+  }
+]

@@ -1,0 +1,104 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-13">
+
+L'acqua nel corpo si sposta da sola, senza pompe, seguendo una regola semplice: va dove c'è **più roba disciolta** (sali, zuccheri…). Questo movimento spontaneo dell'acqua attraverso una membrana si chiama **osmosi**. Capirlo ti spiega perché un globulo rosso può gonfiarsi fino a scoppiare, o raggrinzirsi come un'uvetta, a seconda del liquido in cui lo metti.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> l'acqua è "attratta" dalla parte dove ci sono più cose disciolte. Si sposta verso il lato più "affollato" per diluirlo. Tutto qui.</div>
+
+## Osmolarità: contare quante particelle ci sono
+
+L'**osmolarità** misura **quante particelle disciolte** ci sono in un litro di soluzione. Non conta *cosa* sono (sale, zucchero…), conta solo **quante sono**. Più particelle = soluzione più "concentrata" = più "attira" l'acqua.
+
+Pensa a due stanze separate da una porta che fa passare solo le persone magre (l'acqua) ma non quelle robuste (i sali). Se in una stanza ci sono tante persone robuste, le persone magre tendono ad andare in quella stanza per "fare spazio". L'acqua fa lo stesso: va verso il lato più affollato di particelle.
+
+Una piccola nota di vocabolario, senza complicarti la vita:
+
+- **Osmolarità** = particelle per **litro di soluzione**.
+- **Osmolalità** = particelle per **chilogrammo di acqua** (solvente).
+
+Sono quasi la stessa cosa nelle soluzioni acquose diluite del corpo. Per ora ti basta ricordare: **misurano quante particelle ci sono in giro**.
+
+<Diagram caption="L'osmosi: l'acqua si sposta verso il lato con più particelle disciolte" code={`flowchart LR
+  A["Lato con POCHE<br/>particelle disciolte"] -->|"l'acqua va di qua"| B["Lato con TANTE<br/>particelle disciolte"]`} />
+
+## Iso, iper, ipo: tre parole, tre destini per la cellula
+
+Adesso confrontiamo il liquido **fuori** dalla cellula con quello **dentro**. Le tre parole chiave descrivono solo questo confronto:
+
+- **Isotonica** = stessa concentrazione dentro e fuori → l'acqua entra ed esce in pari quantità → la cellula sta **bene**.
+- **Ipertonica** = fuori c'è **più** roba disciolta che dentro → l'acqua **esce** dalla cellula → la cellula si **raggrinzisce**.
+- **Ipotonica** = fuori c'è **meno** roba disciolta che dentro → l'acqua **entra** nella cellula → la cellula si **gonfia** e può **scoppiare**.
+
+Un trucco per ricordarli: **iPER** ha la "E" come **Espelle** (l'acqua esce, la cellula si secca). **iPO** ha la "O" come **gOnfia** (l'acqua entra, la cellula si gonfia).
+
+<Diagram caption="Cosa succede a un globulo rosso nelle tre soluzioni" code={`flowchart TB
+  GR["Globulo rosso"] --> ISO["ISOTONICA<br/>(uguale dentro e fuori)<br/>acqua in pari → globulo NORMALE"]
+  GR --> IPER["IPERTONICA<br/>(piu sali fuori)<br/>acqua esce → globulo RAGGRINZITO"]
+  GR --> IPO["IPOTONICA<br/>(meno sali fuori)<br/>acqua entra → globulo GONFIO → SCOPPIA"]`} />
+
+## Perché conta in medicina e veterinaria
+
+Questo non è un dettaglio da libro: è una cosa che salva la vita. Quando si fa una **flebo** (la "fleboclisi" in ospedale), il liquido che entra in vena deve essere **isotonico** rispetto al sangue. La soluzione classica è la **fisiologica** (acqua con lo 0,9% di sale): ha la stessa osmolarità del sangue, così i globuli rossi restano sani.
+
+Cosa succederebbe sbagliando?
+
+- Iniettando **acqua pura** (ipotonica): l'acqua entrerebbe nei globuli rossi finché **scoppiano**. La rottura del globulo rosso si chiama **emolisi** ("emo" = sangue, "lisi" = rottura).
+- Iniettando una soluzione troppo salata (ipertonica): l'acqua uscirebbe dalle cellule, che si **raggrinzirebbero** e smetterebbero di funzionare.
+
+Lo stesso principio spiega l'**edema**, cioè il gonfiore dei tessuti: quando l'equilibrio dell'acqua tra dentro e fuori le cellule (e i vasi) si rompe, l'acqua si accumula dove non dovrebbe e la zona si gonfia. È sempre la stessa osmosi all'opera.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> nel sangue si mette dentro solo roba <strong>isotonica</strong>. Troppo poco sale fa scoppiare i globuli (emolisi), troppo sale li fa raggrinzire.</div>
+
+## Guarda il video
+
+<YouTube id="MsDRd7hEcYA" title="Soluzioni isotoniche e ipertoniche: le differenze spiegate semplici" />
+
+<VideoVisto id="chim-u2-13" />
+
+## Da ricordare
+
+- **Osmosi** = l'acqua si sposta da sola verso il lato con **più particelle disciolte**.
+- **Osmolarità/osmolalità** = misurano **quante particelle** ci sono disciolte (per litro di soluzione o per kg di acqua).
+- **Isotonica**: dentro = fuori → cellula **normale**.
+- **Ipertonica**: più sali fuori → acqua **esce** → cellula **raggrinzita**.
+- **Ipotonica**: meno sali fuori → acqua **entra** → cellula **gonfia**, fino all'**emolisi** (scoppio del globulo rosso).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="In quale soluzione un globulo rosso resta sano e normale?"
+  opzioni={["ipertonica", "isotonica", "ipotonica", "acqua pura"]}
+  corretta={1}
+  spiegazione="Nella soluzione isotonica la concentrazione è uguale dentro e fuori: l'acqua entra ed esce in pari quantità e il globulo mantiene la sua forma."
+/>
+
+<Quiz
+  domanda="Metti un globulo rosso in acqua pura (soluzione ipotonica). Cosa succede?"
+  opzioni={["si raggrinzisce", "non cambia nulla", "l'acqua entra e il globulo si gonfia fino a scoppiare (emolisi)", "diventa più salato"]}
+  corretta={2}
+  spiegazione="Fuori c'è meno roba disciolta che dentro, quindi l'acqua entra nel globulo: si gonfia e può rompersi. Questa rottura si chiama emolisi."
+/>
+
+<Quiz
+  domanda="Cosa misura l'osmolarità di una soluzione?"
+  opzioni={["la temperatura", "quante particelle sono disciolte per litro di soluzione", "il colore", "il peso del bicchiere"]}
+  corretta={1}
+  spiegazione="L'osmolarità conta quante particelle disciolte ci sono per litro di soluzione: piu particelle, piu la soluzione attira l'acqua."
+/>
+
+<Esercizio
+  problema="Un infermiere deve fare una flebo. Tra acqua distillata pura e soluzione fisiologica (acqua con 0,9% di sale, isotonica col sangue), quale deve usare per non danneggiare i globuli rossi? Spiega perché."
+  soluzione="Deve usare la soluzione fisiologica, perché è isotonica col sangue: l'acqua entra ed esce dai globuli rossi in pari quantità e le cellule restano sane. L'acqua pura sarebbe ipotonica: l'acqua entrerebbe nei globuli fino a farli scoppiare (emolisi)."
+/>
+
+</section>
+
+</RisorsaLayout>

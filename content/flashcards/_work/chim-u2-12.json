@@ -1,0 +1,25 @@
+{
+ "id": "chim-u2-12",
+ "titolo": "La pressione osmotica e l'osmosi; il fattore di van't Hoff",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "12-la-pressione-osmotica-e-losmosi-il",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u2/12-la-pressione-osmotica-e-losmosi-il.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Maggio",
+   "q": "Le costanti di dissociazione dell'acido acetico e dell'acido formico a 25°C sono rispettivamente 1,8 × 10^-5 M e 1,8 × 10^-4 M. Identificare la considerazione corretta.",
+   "choices": [
+    "Una soluzione 0,1 M di acido acetico presenta una pressione osmotica inferiore rispetto a quella mostrata da una soluzione 0,1 M di acido formico",
+    "Una soluzione 0,1 M di acido acetico presenta una pressione osmotica superiore rispetto a quella mostrata da una soluzione 0,1 M di acido formico",
+    "Una soluzione 0,1 M di acido acetico presenta una pressione di vapore superiore rispetto a quella mostrata da una soluzione 0,1 M di acido formico",
+    "In quanto ambedue acidi deboli, due soluzioni 0,1 M di acido acetico ed acido formico presentano gli stessi valori di proprietà colligative",
+    "Nessuna delle altre risposte è corretta"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  }
+ ]
+}

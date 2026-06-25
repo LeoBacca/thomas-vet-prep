@@ -1,0 +1,39 @@
+{
+ "id": "fis-u3-01",
+ "titolo": "Fluidi e solidi; pressione e densità",
+ "materia": "fisica",
+ "unita": 3,
+ "slug": "01-fluidi-e-solidi-pressione-e-densita",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/fisica/u3/01-fluidi-e-solidi-pressione-e-densita.mdx",
+ "examQuestions": [
+  {
+   "year": "2018",
+   "q": "Se una beuta viene riempita completamente con acqua a 4 °C, ha un peso di 240 g mentre se viene riempita completamente con glicole etilenico a 37 °C ha un peso di 260 g. Sapendo che la beuta pesa 40 g, qual è la densità del glicole etilenico a 37 °C, espressa in g/cm3?",
+   "choices": [
+    "1,10",
+    "1,08",
+    "0,92",
+    "0,91",
+    "2,20"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2018",
+   "q": "Su una superficie di 50 cm2 viene esercitata una pressione di 1,2x10^5 Pascal. Quanto vale la forza che agisce perpendicolarmente alla superficie?",
+   "choices": [
+    "600 N",
+    "3 N",
+    "6 N",
+    "60 N",
+    "300 N"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-12">
+
+Gli atomi e le molecole sono piccolissimi: in un cucchiaino d'acqua ce ne sono più di quante stelle ci siano nell'universo. Contarli uno a uno è impossibile. Per questo i chimici usano una "confezione" già contata: la **mole**. Esattamente come al supermercato non conti le uova una a una, ma compri una **dozzina** (cioè 12), in chimica non conti gli atomi uno a uno: ne prendi una **mole** alla volta.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la mole è solo un modo per dire "tantissime particelle, ma sempre lo stesso numero preciso". Una dozzina = 12 cose. Una mole = 6,022x10^23 cose. Cambia solo quanto è grande il numero.</div>
+
+<Diagram caption="La mole è una 'dozzina gigante': un numero fisso di particelle" code={`flowchart LR
+  D["1 dozzina<br/>= 12 cose<br/>(es. 12 uova)"] --> I["stessa idea,<br/>numero più grande"]
+  I --> M["1 mole<br/>= 6,022x10^23 particelle<br/>(atomi o molecole)"]`} />
+
+## La mole: una scatola da 6,022x10^23
+
+La parola **mole** spaventa, ma è solo un nome per un numero. Come "dozzina" vuol dire 12 e "decina" vuol dire 10, **mole** vuol dire **6,022x10^23** (un 6 seguito da 23 cifre: un numero enorme).
+
+Questo numero, 6,022x10^23, si chiama **numero di Avogadro** e si indica con N (o NA). È sempre lo stesso, qualunque cosa tu stia contando.
+
+- 1 mole di atomi = 6,022x10^23 atomi
+- 1 mole di molecole d'acqua = 6,022x10^23 molecole d'acqua
+- 1 mole di mele = 6,022x10^23 mele (ne servirebbero parecchi pianeti!)
+
+Si usa per gli atomi e non per le mele perché gli atomi sono così piccoli che, anche prendendone una mole intera, ci stanno in un pugno di mano.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> "numero di Avogadro" e "quante particelle ci sono in una mole" sono la stessa identica cosa: 6,022x10^23.</div>
+
+## La massa molecolare: quanto pesa una "confezione"
+
+Ogni atomo ha un suo peso, scritto nella **tavola periodica**: è la **massa atomica**. Per esempio l'idrogeno (H) pesa circa 1, il carbonio (C) circa 12, l'ossigeno (O) circa 16.
+
+La **massa molecolare** è semplicemente la **somma** dei pesi di tutti gli atomi che formano una molecola. È come fare la spesa: il peso totale del carrello è la somma del peso di ogni prodotto.
+
+Esempio con l'acqua, H2O (2 atomi di idrogeno + 1 di ossigeno):
+
+- 2 idrogeni → 2 x 1 = 2
+- 1 ossigeno → 1 x 16 = 16
+- **massa molecolare dell'acqua = 2 + 16 = 18**
+
+Il bello è questo: quel numero, 18, ti dice anche che **1 mole d'acqua pesa 18 grammi**. Quindi se sulla bilancia metti 18 grammi d'acqua, hai in mano esattamente 6,022x10^23 molecole. La bilancia diventa il tuo "contatore di atomi".
+
+<Diagram caption="Dalla formula alla massa di una mole: l'esempio dell'acqua" code={`flowchart TB
+  F["Molecola H2O"] --> H["2 idrogeni: 2 x 1 = 2"]
+  F --> O["1 ossigeno: 1 x 16 = 16"]
+  H --> S["Massa molecolare = 2 + 16 = 18"]
+  O --> S
+  S --> G["1 mole d'acqua pesa 18 grammi<br/>= 6,022x10^23 molecole"]`} />
+
+## Perché conta in medicina e veterinaria
+
+Questo non è un giochino da laboratorio: è alla base della **chimica del corpo**. Quando un medico o un veterinario controlla la **glicemia** (lo zucchero nel sangue) o gli **elettroliti** (sodio, potassio, calcio), sta in pratica contando **quante particelle** ci sono in un litro di sangue. Le analisi spesso usano proprio le moli: la glicemia si può esprimere in **millimoli per litro** (mmol/L).
+
+Anche il **dosaggio di un farmaco** parte da qui: per sapere quante molecole di principio attivo entrano in un animale, si ragiona in moli. Capire la mole, quindi, vuol dire capire il linguaggio con cui il corpo e la medicina misurano le sostanze.
+
+## Guarda il video
+
+<YouTube id="L6lmu7MsuA8" title="Moli e numero di Avogadro — spiegazione per principianti (HUB Scuola)" />
+
+<VideoVisto id="chim-u1-12" />
+
+## Da ricordare
+
+- La **mole** è solo un numero di particelle, come la dozzina è 12: una mole = **6,022x10^23**.
+- Quel numero, 6,022x10^23, si chiama **numero di Avogadro**.
+- La **massa molecolare** è la **somma** delle masse atomiche degli atomi della molecola (le trovi nella tavola periodica).
+- Quel numero, in **grammi**, è quanto pesa **1 mole** di quella sostanza (es. acqua = 18 → 1 mole pesa 18 g).
+- In medicina e veterinaria le sostanze nel sangue (zuccheri, sali) si misurano spesso in **moli** (o millimoli).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="A quante particelle corrisponde 1 mole di una sostanza?"
+  opzioni={["a 100 particelle", "a 12 particelle", "a 6,022x10^23 particelle", "dipende dalla sostanza"]}
+  corretta={2}
+  spiegazione="Una mole vale sempre 6,022x10^23 particelle, qualunque sia la sostanza. È un numero fisso, proprio come la dozzina vale sempre 12."
+/>
+
+<Quiz
+  domanda="Come si chiama il numero 6,022x10^23?"
+  opzioni={["numero di Avogadro", "numero di Newton", "numero atomico", "massa molare"]}
+  corretta={0}
+  spiegazione="6,022x10^23 è il numero di Avogadro: indica quante particelle ci sono in una mole."
+/>
+
+<Quiz
+  domanda="La massa molecolare di una molecola si ottiene così:"
+  opzioni={["moltiplicando le masse atomiche", "sommando le masse atomiche degli atomi che la compongono", "contando gli atomi", "guardando il colore"]}
+  corretta={1}
+  spiegazione="Si sommano le masse atomiche di tutti gli atomi della molecola, come si sommano i pesi dei prodotti nel carrello della spesa."
+/>
+
+<Esercizio
+  problema="Calcola la massa molecolare dell'anidride carbonica CO2 (1 atomo di carbonio C = 12 e 2 atomi di ossigeno O = 16 ciascuno). Quanti grammi pesa 1 mole di CO2?"
+  soluzione="Sommo le masse: carbonio 1 x 12 = 12; ossigeno 2 x 16 = 32. Massa molecolare = 12 + 32 = 44. Quindi 1 mole di CO2 pesa 44 grammi (e contiene 6,022x10^23 molecole)."
+/>
+
+</section>
+
+</RisorsaLayout>

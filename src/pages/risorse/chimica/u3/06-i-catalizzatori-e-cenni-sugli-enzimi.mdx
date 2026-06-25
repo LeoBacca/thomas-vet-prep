@@ -1,0 +1,99 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u3-06">
+
+Un **catalizzatore** è una sostanza che fa andare una reazione chimica **più in fretta**, senza consumarsi. Alla fine se lo ritrovi intatto, pronto a lavorare di nuovo. È un grande aiutante, ma non un ingrediente: non finisce nel prodotto finale.
+
+Perché conta? Perché molte reazioni utili, da sole, sono **lentissime**. Con il catalizzatore giusto diventano veloci. E nel tuo corpo questo è fondamentale: gli **enzimi** sono i catalizzatori biologici che mandano avanti la digestione, la respirazione e mille altre cose, ogni secondo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ogni reazione deve "scollinare" una piccola montagna di energia prima di partire. Il catalizzatore scava una <strong>scorciatoia più bassa</strong>: la montagna da superare diventa piccola, e la reazione parte molto più facilmente.</div>
+
+## La montagna da scollinare: l'energia di attivazione
+
+Immagina di dover spingere un masso oltre una collina per farlo rotolare giù dall'altra parte. Anche se in fondo lo aspetta una bella discesa, prima devi **spingerlo su fino alla cima**. Quella spinta iniziale è l'**energia di attivazione**: l'energia minima che serve per far **partire** la reazione.
+
+Se la collina è alta, pochi riescono a superarla e la reazione è lenta. Il catalizzatore non sposta il punto di partenza né quello di arrivo: **abbassa la collina**. Con una collina più bassa, tantissime particelle ce la fanno a passare, e la reazione corre.
+
+<Diagram caption="Profilo energetico: senza catalizzatore la barriera è alta, con il catalizzatore è più bassa" code={`flowchart LR
+  R["REAGENTI<br/>(partenza)"] --> B1["Barriera ALTA<br/>senza catalizzatore"]
+  B1 --> P["PRODOTTI<br/>(arrivo)"]
+  R --> B2["Barriera BASSA<br/>con catalizzatore"]
+  B2 --> P`} />
+
+Nota una cosa importante: il punto di partenza (reagenti) e il punto di arrivo (prodotti) **restano gli stessi**. Cambia solo **quanto è alta la collina in mezzo**. Il catalizzatore non cambia "dove arrivi", cambia solo **quanto è facile arrivarci**.
+
+## Cosa fa e cosa NON fa un catalizzatore
+
+Facciamo ordine con un'analogia. Il catalizzatore è come una **guida di montagna** che ti mostra un sentiero più basso e comodo. La guida:
+
+- ti fa arrivare prima (la reazione è **più veloce**);
+- **non viene consumata**: a fine giro è ancora lì, pronta per il gruppo dopo;
+- non decide la meta (non cambia **quali** prodotti ottieni, né quanto sono stabili).
+
+<Diagram caption="Le tre cose da sapere su un catalizzatore" code={`flowchart TB
+  C["CATALIZZATORE"] --> A["Abbassa l'energia di attivazione"]
+  C --> V["Rende la reazione PIÙ VELOCE"]
+  C --> N["NON si consuma:<br/>si ritrova intatto alla fine"]`} />
+
+## Gli enzimi: i catalizzatori del corpo
+
+Gli **enzimi** sono catalizzatori naturali, fatti quasi sempre di **proteine**, che lavorano dentro le cellule. Senza di loro, le reazioni della vita sarebbero così lente da essere inutili. Pensa alla digestione: un enzima della saliva, l'**amilasi**, comincia già in bocca a spezzare l'amido del pane in zuccheri più piccoli.
+
+La cosa bella degli enzimi è che sono **super selettivi**: ognuno lavora quasi solo su una sostanza precisa, come una **chiave** che entra solo nella **sua serratura**. La sostanza su cui l'enzima agisce si chiama **substrato**, e la zona dell'enzima dove avviene tutto si chiama **sito attivo**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un enzima è un catalizzatore con la "calamita giusta": riconosce il suo substrato come una chiave riconosce la sua serratura, e gli abbassa la collina da scollinare.</div>
+
+Perché ti interessa da futuro veterinario o medico? Perché tantissimi **farmaci** funzionano proprio agendo sugli enzimi: alcuni li **bloccano** per fermare una malattia, altri ne sfruttano l'azione. E quando in un'analisi del sangue trovi enzimi "fuori posto" (per esempio enzimi del fegato alti), spesso è il segnale che un organo è in sofferenza. Gli enzimi sono ovunque, nel corpo di un cane come nel tuo.
+
+## Guarda il video
+
+<YouTube id="mgk8pS0i6pk" title="Catalizzatori ed energia di attivazione spiegati semplice — Lezioni di chimica" />
+
+<VideoVisto id="chim-u3-06" />
+
+## Da ricordare
+
+- Un **catalizzatore** rende la reazione **più veloce** e **non si consuma**: alla fine lo ritrovi intatto.
+- Funziona **abbassando l'energia di attivazione**, cioè la "collina" da scollinare per far partire la reazione.
+- Non cambia i **reagenti** né i **prodotti**: cambia solo **quanto è facile** trasformare gli uni negli altri.
+- Gli **enzimi** sono i catalizzatori **biologici** (di solito proteine) che fanno funzionare il corpo.
+- Gli enzimi sono **selettivi**: ogni enzima agisce sul suo **substrato**, come una chiave nella sua serratura.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa fa un catalizzatore a una reazione chimica?"
+  opzioni={["La rende più lenta", "Abbassa l'energia di attivazione e la rende più veloce", "Cambia i prodotti finali", "Si consuma del tutto durante la reazione"]}
+  corretta={1}
+  spiegazione="Il catalizzatore abbassa la 'collina' da superare (l'energia di attivazione), quindi la reazione parte più facilmente ed è più veloce. Non cambia i prodotti e non si consuma."
+/>
+
+<Quiz
+  domanda="Dopo che la reazione è finita, il catalizzatore:"
+  opzioni={["è sparito, è diventato prodotto", "si ritrova intatto, pronto a lavorare ancora", "si trasforma in reagente", "diventa un enzima"]}
+  corretta={1}
+  spiegazione="Il catalizzatore non si consuma: aiuta la reazione e alla fine lo ritrovi com'era, pronto per la volta dopo. È come una guida di montagna che resta a disposizione del gruppo successivo."
+/>
+
+<Quiz
+  domanda="Gli enzimi sono:"
+  opzioni={["dei sali da cucina", "i catalizzatori biologici del corpo (di solito proteine)", "un tipo di vitamina senza funzione", "particelle che rallentano le reazioni"]}
+  corretta={1}
+  spiegazione="Gli enzimi sono catalizzatori naturali, fatti quasi sempre di proteine, che accelerano le reazioni dentro le cellule, come l'amilasi che inizia a digerire l'amido in bocca."
+/>
+
+<Esercizio
+  problema="Una reazione, da sola, ha una barriera energetica (collina) alta e procede lentissima. Aggiungiamo un catalizzatore adatto. Spiega con parole tue: cosa succede all'altezza della collina, alla velocità della reazione e ai prodotti finali?"
+  soluzione="Il catalizzatore abbassa l'altezza della collina, cioè l'energia di attivazione. Con una collina più bassa molte più particelle riescono a superarla, quindi la reazione diventa molto più veloce. I prodotti finali, invece, restano gli stessi: il catalizzatore cambia solo quanto è facile arrivarci, non quali sostanze ottieni. E a fine reazione il catalizzatore si ritrova intatto."
+/>
+
+</section>
+
+</RisorsaLayout>

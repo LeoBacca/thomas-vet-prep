@@ -1,0 +1,39 @@
+{
+ "id": "fis-u5-06",
+ "titolo": "Primo principio della termodinamica",
+ "materia": "fisica",
+ "unita": 5,
+ "slug": "06-primo-principio-della-termodinamica",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/fisica/u5/06-primo-principio-della-termodinamica.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "A partire da uno stato di equilibrio, una data quantità di gas perfetto compie una serie di trasformazioni, alcune anche irreversibili, sino a raggiungere un nuovo stato di equilibrio, ma senza mai scambiare calore con l'esterno. Si osserva che il volume finale è maggiore del volume iniziale. Quale delle seguenti deduzioni è corretta?",
+   "choices": [
+    "Non è possibile determinare univocamente i valori finali di temperatura e pressione",
+    "La pressione finale è sicuramente uguale a quella iniziale",
+    "La temperatura finale è sicuramente maggiore di quella iniziale, visto che abbiamo anche trasformazioni irreversibili",
+    "Non avendo scambiato calore, la temperatura finale è sicuramente uguale a quella iniziale",
+    "Non avendo scambiato calore ma avendo anche trasformazioni irreversibili, la temperatura finale sarà sicuramente maggiore o uguale a quella iniziale"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2022",
+   "q": "Un gas ideale a temperatura T e pressione P è inizialmente racchiuso in un contenitore di volume V. Aprendo una valvola, il gas viene fatto espandere liberamente in un secondo contenitore di ugual volume, inizialmente vuoto. Quanto vale la temperatura finale del gas, se i due contenitori sono isolati dall'ambiente?",
+   "choices": [
+    "T",
+    "T/2",
+    "2T",
+    "Non è possibile rispondere se non si conosce il volume V",
+    "Non è possibile rispondere se non si conosce la pressione P"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

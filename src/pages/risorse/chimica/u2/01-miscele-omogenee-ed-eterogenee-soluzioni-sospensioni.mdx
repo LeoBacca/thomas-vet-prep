@@ -1,0 +1,108 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-01">
+
+Una **miscela** (o miscuglio) è semplicemente due o più sostanze **mescolate insieme**, senza che diventino una cosa sola. Pensa a un caffè con lo zucchero, all'aria che respiri, al latte: sono tutte miscele. La domanda chiave è una sola: **si vedono i pezzi separati oppure no?** Da questa domanda nascono due grandi famiglie, e capirle ti serve tantissimo, perché il tuo corpo è pieno di miscele (sangue, urine, succhi digestivi).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> se la miscela ti sembra <strong>una cosa sola e uniforme</strong> (come l'acqua zuccherata), è <strong>omogenea</strong>. Se invece <strong>distingui i pezzi</strong> (come acqua e sabbia), è <strong>eterogenea</strong>.</div>
+
+<Diagram caption="Le due grandi famiglie di miscele e i loro tipi" code={`flowchart TB
+  M["Miscela<br/>(due o piu sostanze mescolate)"] --> O["OMOGENEA<br/>sembra una cosa sola"]
+  M --> E["ETEROGENEA<br/>si vedono i pezzi"]
+  O --> S["Soluzione<br/>(es. acqua e zucchero)"]
+  E --> SO["Sospensione<br/>(es. acqua e sabbia)"]
+  E --> CO["Colloide<br/>(es. latte)"]`} />
+
+## Miscele omogenee: le soluzioni
+
+In una miscela **omogenea** le sostanze sono mescolate così bene che **non distingui più i singoli pezzi**, nemmeno con un microscopio. Sembra tutto uguale dappertutto.
+
+L'esempio principale è la **soluzione**: una sostanza si **scioglie** dentro un'altra e sparisce alla vista. Quando metti lo zucchero nell'acqua e mescoli, lo zucchero non si vede più: l'acqua resta limpida. Quello è una soluzione.
+
+In una soluzione ci sono due ruoli:
+
+- il **solvente**: la sostanza che scioglie, di solito quella in quantità maggiore (nell'acqua zuccherata è l'**acqua**).
+- il **soluto**: la sostanza che viene sciolta, in quantità minore (è lo **zucchero**).
+
+Un trucco per riconoscere una soluzione: è **limpida** (la luce ci passa attraverso) e **non si separa** se la lasci ferma.
+
+**Aggancio biomedico:** il tuo **sangue** trasporta tantissime sostanze sciolte (zuccheri, sali, ossigeno): quella parte è una soluzione. Anche le **flebo** in ospedale sono soluzioni, di solito acqua con sali o glucosio sciolti dentro.
+
+## Miscele eterogenee: sospensioni e colloidi
+
+In una miscela **eterogenea** i pezzi **restano distinti**: li vedi a occhio nudo oppure con un microscopio. Ci sono due tipi utili da conoscere.
+
+**Sospensione.** I pezzi sono **grossi** e **galleggiano** o restano sparsi nel liquido, ma se lasci tutto fermo **si depositano sul fondo**. Pensa all'acqua con la sabbia: mescoli e diventa torbida, ma dopo un po' la sabbia cade giù. Anche certi **sciroppi** in farmacia dicono «agitare prima dell'uso»: sono sospensioni, il principio attivo si deposita e va rimescolato.
+
+**Colloide.** È la via di mezzo. I pezzi sono **piccolissimi** (molto più della sabbia, ma più grandi che in una soluzione): **non si depositano** sul fondo, però rendono la miscela **torbida**, non limpida. Il **latte** è un colloide: sembra uniforme, ma è pieno di minuscole goccioline di grasso sparse nell'acqua. Anche la **maionese**, la **gelatina** e la **nebbia** sono colloidi.
+
+Un colloide ha un trucco riconoscibile: se ci punti una **luce**, il raggio diventa **visibile** attraversandolo (come i fari di un'auto nella nebbia). In una soluzione vera, invece, la luce passa senza farsi vedere.
+
+**Aggancio biomedico:** il **citoplasma** dentro le cellule è un colloide, e così tante secrezioni del corpo. Capire la differenza tra «sciolto» e «sospeso» ti aiuta poi a capire come funzionano i farmaci e gli esami del sangue.
+
+<Diagram caption="Come riconoscere il tipo di miscela: limpida o torbida, si separa o no" code={`flowchart TB
+  D["La miscela e limpida?"] -->|"Si, limpida e stabile"| SOL["SOLUZIONE<br/>(omogenea)"]
+  D -->|"No, e torbida"| T["La lascio ferma:<br/>i pezzi si depositano?"]
+  T -->|"Si, cadono sul fondo"| SOSP["SOSPENSIONE<br/>(eterogenea)"]
+  T -->|"No, restano sparsi"| COLL["COLLOIDE<br/>(eterogenea)"]`} />
+
+## E gli aerosol?
+
+Finora abbiamo parlato di sostanze sparse in un **liquido**, ma una miscela può avere anche un **gas** di mezzo. Un **aerosol** è proprio questo: minuscole goccioline di liquido (o particelle solide) **sospese nell'aria**. È un colloide in cui la parte «che tiene tutto insieme» è un gas.
+
+Esempi di tutti i giorni: lo **spray** del deodorante, la **lacca**, la **nebbia**, il **fumo**.
+
+**Aggancio biomedico:** l'**aerosol** che si fa quando si è raffreddati funziona proprio così: trasforma il farmaco liquido in una nuvoletta di goccioline che respiri e che arrivano fino ai bronchi. Anche quando **starnutisci** produci un aerosol di goccioline: ecco perché i virus respiratori si diffondono nell'aria.
+
+## Guarda il video
+
+<YouTube id="lpTBL9cNqVg" title="I miscugli omogenei, eterogenei e colloidali — spiegazione semplice" />
+
+<VideoVisto id="chim-u2-01" />
+
+## Da ricordare
+
+- Una **miscela** è due o più sostanze mescolate; la domanda chiave è: **si vedono i pezzi separati o no?**
+- **Omogenea** = sembra una cosa sola e uniforme. L'esempio è la **soluzione** (limpida): un **soluto** sciolto in un **solvente**.
+- **Eterogenea** = i pezzi restano distinti. Due tipi: **sospensione** (pezzi grossi che si depositano) e **colloide** (pezzi piccolissimi che restano sparsi e rendono torbido).
+- Trucco rapido: **limpida e stabile** → soluzione; **torbida e si deposita** → sospensione; **torbida e non si deposita** → colloide.
+- Un **aerosol** è un colloide con il **gas** di mezzo (spray, nebbia, fumo, l'aerosol da raffreddore).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Sciogli del sale da cucina in un bicchiere d'acqua finché sparisce e l'acqua resta limpida. Che tipo di miscela hai ottenuto?"
+  opzioni={["una sospensione", "una soluzione (miscela omogenea)", "un colloide", "un aerosol"]}
+  corretta={1}
+  spiegazione="Il sale si scioglie e sparisce alla vista, l'acqua resta limpida e non si separa: e una soluzione, cioe una miscela omogenea. L'acqua e il solvente, il sale il soluto."
+/>
+
+<Quiz
+  domanda="Mescoli acqua e sabbia: diventa torbida, ma dopo un po' la sabbia cade sul fondo. Di che miscela si tratta?"
+  opzioni={["una soluzione", "una sospensione", "un colloide", "una sostanza pura"]}
+  corretta={1}
+  spiegazione="I pezzi sono grossi e, lasciando fermo il tutto, si depositano sul fondo: questa e la caratteristica della sospensione (miscela eterogenea)."
+/>
+
+<Quiz
+  domanda="Il latte sembra uniforme, ma e torbido e non si separa lasciandolo fermo. Come lo classifichi?"
+  opzioni={["soluzione", "sospensione", "colloide", "elemento puro"]}
+  corretta={2}
+  spiegazione="Il latte e un colloide: goccioline piccolissime di grasso restano sparse nell'acqua senza depositarsi, ma rendono il liquido torbido."
+/>
+
+<Esercizio
+  problema="Una flebo di soluzione fisiologica (acqua con sali sciolti) e uno sciroppo che riporta «agitare prima dell'uso». Per ciascuno dei due, di' se e una soluzione o una sospensione e spiega perche."
+  soluzione="La flebo e una SOLUZIONE: i sali sono completamente sciolti, il liquido e limpido e non si separa, quindi e omogenea. Lo sciroppo da agitare e una SOSPENSIONE: il principio attivo non e sciolto del tutto e si deposita sul fondo, percio va rimescolato prima dell'uso (e una miscela eterogenea)."
+/>
+
+</section>
+
+</RisorsaLayout>

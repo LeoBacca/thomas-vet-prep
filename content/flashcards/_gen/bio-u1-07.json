@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-07-1",
+    "topicId": "bio-u1-07",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Pensa a un batterio come a una piccola fortezza. La membrana plasmatica e la parete cellulare hanno due compiti diversi. Quale coppia li descrive meglio?",
+    "choices": [
+      "La membrana e la parete fanno entrambe la stessa identica cosa",
+      "La membrana decide cosa entra ed esce (come la pelle); la parete dà rigidità e forma (come le mura)",
+      "La parete decide cosa entra ed esce; la membrana dà rigidità e forma",
+      "La membrana produce energia; la parete trasporta il DNA"
+    ],
+    "answer": 1,
+    "explain": "La membrana plasmatica è il confine vivo della cellula: un doppio strato di fosfolipidi che controlla gli scambi, come la pelle. La parete, fatta di peptidoglicano, sta FUORI dalla membrana e dà rigidità, forma e protezione dagli urti, come le mura della fortezza. Sono due strutture diverse con due ruoli diversi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-07-2",
+    "topicId": "bio-u1-07",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: i pili (in particolare il pilo F) servono al batterio per muoversi nel liquido, come un'elica.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. A muovere il batterio è il FLAGELLO, un lungo filamento elicoidale che ruota come l'elica di un motore. I pili servono invece alla coniugazione: sono come un 'cavo USB' che collega due batteri per trasferirsi DNA (anche geni di resistenza agli antibiotici). Attenzione a non scambiare i ruoli: flagello = movimento, pilo = scambio di DNA.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-07-3",
+    "topicId": "bio-u1-07",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Un batterio Gram-negativo si muove attivamente in un liquido e riesce ad aggrapparsi alle cellule della vescica, causando un'infezione urinaria. Quali strutture esterne gli servono e a cosa serve ognuna?",
+    "answer": "Gli servono almeno tre cose. 1) La parete cellulare di peptidoglicano (sottile, più una membrana esterna aggiuntiva: è proprio questo che lo rende Gram-negativo) per avere forma e protezione. 2) I flagelli, i filamenti elicoidali che ruotano come eliche grazie al corpo basale e gli permettono di muoversi attivamente nel liquido. 3) Le fimbrie, appendici corte e numerose con cui si aggancia alle cellule della vescica: l'adesione è il primo passo dell'infezione. In più potrebbe avere una capsula gelatinosa per sfuggire al sistema immunitario.",
+    "explain": "Regola chiave: flagelli = movimento, fimbrie = adesione, capsula = difesa. Sono ruoli diversi, non confonderli.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-07-4",
+    "topicId": "bio-u1-07",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti strutture NON si trova in un batterio?",
+    "choices": [
+      "La capsula",
+      "Il nucleo vero e proprio (con involucro che racchiude il DNA)",
+      "La parete cellulare",
+      "Il citoplasma (citosol)",
+      "I ribosomi"
+    ],
+    "answer": 1,
+    "explain": "Il batterio è procariotico: NON ha un nucleo vero e proprio, il suo DNA flotta libero nel citoplasma. Tutte le altre strutture ci sono: capsula (gelatina esterna, facoltativa), parete (peptidoglicano), citoplasma e ribosomi (per fabbricare proteine). La trappola classica è pensare che 'cellula = nucleo': è proprio l'assenza del nucleo che distingue i procarioti. 'Parete' e 'citosol' sono lì apposta per farti dubitare, ma ci sono davvero.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-07-5",
+    "topicId": "bio-u1-07",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale di queste affermazioni sulla parete cellulare è FALSA?",
+    "choices": [
+      "Circonda (sta fuori dalla) la membrana cellulare",
+      "È una struttura molto comune nelle cellule animali",
+      "È presente nella maggior parte dei batteri",
+      "Serve a proteggere la cellula dagli agenti esterni",
+      "Mantiene la forma e dà rigidità alla cellula"
+    ],
+    "answer": 1,
+    "explain": "L'affermazione FALSA è che la parete sia comune nelle cellule animali: le cellule animali NON hanno parete, ce l'hanno batteri, funghi e piante. Tutte le altre frasi sono VERE: la parete sta fuori dalla membrana, è presente nella maggior parte dei batteri (peptidoglicano), protegge e dà forma. La trappola dell'opposto è 'sta fuori dalla membrana' (vera, ma uno potrebbe credere il contrario); l'altra trappola è scambiare 'animali' con 'batteri'. Ricorda: parete = batteri, funghi, piante; mai animali.",
+    "tags": ["prova d'esame"]
+  }
+]

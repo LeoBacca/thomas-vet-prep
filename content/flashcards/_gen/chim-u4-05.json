@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u4-05-1",
+    "topicId": "chim-u4-05",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: un acido forte in acqua si dissocia al 100%, liberando tutti i suoi ioni H+ in una sola direzione, senza tornare indietro.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. L'acido forte va in una sola direzione, come una freccia a senso unico: si rompe completamente. Non si ricostituisce mai. L'acido cloridrico dello stomaco (HCl) funziona proprio così: si dissocia tutto, per questo è così aggressivo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-05-2",
+    "topicId": "chim-u4-05",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Hai due acidi: uno con Ka = 0,00001 e uno con Ka = 0,5. Quale è più forte? E se invece guardi il pKa, quale sarà più basso?",
+    "choices": [
+      "Ka 0,5 è più forte; il suo pKa è più basso",
+      "Ka 0,00001 è più forte; il suo pKa è più basso",
+      "Ka 0,5 è più forte; il suo pKa è più alto",
+      "Sono ugualmente forti; il pKa è sempre uguale"
+    ],
+    "answer": 0,
+    "explain": "Con la Ka: grande = forte. Quindi Ka 0,5 è più forte. Con il pKa è al contrario: piccolo = forte. L'acido più forte ha Ka grande E pKa piccolo: sono due modi di dire la stessa cosa. Pensa alla classifica scolastica: il voto più alto (Ka) e la posizione più bassa (pKa, tipo '1° posto') indicano entrambi il migliore.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-05-3",
+    "topicId": "chim-u4-05",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "L'aceto (acido acetico) e l'acido cloridrico dello stomaco (HCl) sono entrambi acidi, ma si comportano in modo molto diverso. Spiega la differenza usando i concetti di dissociazione, Ka e freccia di equilibrio. Aggiungi perché questo conta in veterinaria.",
+    "answer": "L'HCl è un acido FORTE: si dissocia al 100% in acqua, liberando tutti i suoi H+. La reazione va in una sola direzione (freccia a senso unico). La sua Ka è enorme (molto maggiore di 1), ma di solito non si calcola nemmeno perché si dissocia e basta. Per questo lo stomaco è così aggressivo: tutti gli H+ sono liberi e subito disponibili per digerire. L'acido acetico (aceto) è un acido DEBOLE: si dissocia solo per circa l'1%, quasi tutto resta intero come molecola indissociata. Si crea un EQUILIBRIO tra la parte dissociata e quella che si riforma continuamente (doppia freccia ⇌). La sua Ka è piccola (per esempio 1,8 × 10⁻⁵), cioè pochi H+ liberi. Il pKa dell'aceto è circa 4,8 (alto = debole). In veterinaria e in medicina questo conta perché il nostro corpo è pieno di acidi e basi deboli che, lavorando in coppia, formano i sistemi tampone: tengono il pH del sangue stabile a circa 7,4. Se usassimo solo acidi forti, il pH cambierebbe di continuo e la vita sarebbe impossibile. Anche i farmaci spesso sono acidi o basi deboli: il loro pKa decide dove vengono assorbiti (stomaco o intestino).",
+    "explain": "Da ricordare: acido forte = freccia unica, Ka enorme, tutto ionizzato; acido debole = doppia freccia ⇌, Ka piccola, pKa alto, equilibrio parziale.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u4-05-4",
+    "topicId": "chim-u4-05",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Quale tra i seguenti è l'acido più debole?",
+    "choices": [
+      "CH3COOH (acido acetico, il comune aceto)",
+      "HCl (acido cloridrico, il succo gastrico)",
+      "HNO3 (acido nitrico)",
+      "H3PO4 (acido ortofosforico)",
+      "(COOH)2 (acido ossalico)"
+    ],
+    "answer": 0,
+    "explain": "HCl e HNO3 sono acidi FORTI: si dissociano al 100% in acqua. H3PO4 e (COOH)2 sono acidi deboli, ma hanno Ka più alte dell'acido acetico. Il CH3COOH (aceto) ha la Ka più bassa del gruppo (circa 1,8 × 10⁻⁵): si dissocia pochissimo, è il più debole. Trappola frequente: confondere 'acido debole' con 'acido non pericoloso'. Tutti questi sono acidi veri, ma la FORZA misura quanto si dissociano, non quanto bruciano. HCl e HNO3 sono forti perché liberano il 100% degli H+; il CH3COOH ne libera pochissimi, anche se entrambi contribuiscono all'acidità.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u4-05-5",
+    "topicId": "chim-u4-05",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "La sostanza A è un acido più forte della sostanza B. Cosa puoi dire della base coniugata di A rispetto alla base coniugata di B?",
+    "choices": [
+      "La base coniugata di A è una base più debole di quella di B",
+      "La base coniugata di A è una base più forte di quella di B",
+      "La base coniugata di A è un acido più debole di quella di B",
+      "La base coniugata di A è un acido più forte di quella di B",
+      "La base coniugata di A è uguale a quella di B, perché la forza acida non c'entra"
+    ],
+    "answer": 0,
+    "explain": "Regola fondamentale: più un acido è forte, più la sua base coniugata è debole, e viceversa. Pensa a una coppia: se l'acido 'molla' l'H+ facilmente (è forte), la base che resta non ha 'voglia' di riprenderselo (è debole). Se l'acido lo molla poco volentieri (è debole), la base coniugata vuole quell'H+ indietro (è forte). Trappole: 'base coniugata di A più forte' è l'opposto esatto (la classica inversione). 'Acido più debole' scambia il ruolo: si parla di base coniugata, non di acido. 'Acido più forte' è la doppia trappola: inverte sia il segno che il ruolo. 'Uguale' è il filler fuori tema: la forza acida determina esattamente la forza della base coniugata.",
+    "tags": ["prova d'esame"]
+  }
+]

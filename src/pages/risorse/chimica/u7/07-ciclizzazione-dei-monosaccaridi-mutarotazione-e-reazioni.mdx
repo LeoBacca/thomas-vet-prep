@@ -1,0 +1,106 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-07">
+
+Gli **zuccheri semplici** (i monosaccaridi, come il glucosio) di solito li disegniamo come una catena dritta. Ma c'è una sorpresa: quando si trovano sciolti nell'acqua, quella catena si **chiude su sé stessa** e forma un **anello**. Capire come e perché succede ci aiuta a capire molte cose del nostro corpo, perché il glucosio è proprio lo zucchero che bruciamo per avere energia.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina un bracciale aperto che si **aggancia** alle due estremità e diventa un cerchio. Il glucosio fa la stessa cosa: in acqua la catena si piega e si chiude ad anello.</div>
+
+## La ciclizzazione: la catena si chiude ad anello
+
+La molecola di glucosio in forma aperta ha due "pezzi" speciali alle sue estremità:
+
+- in cima un gruppo **aldeidico** (il carbonio C1, la "calamita" reattiva);
+- più in basso un gruppo **alcolico** (un ossidrile, cioè un -OH, sul carbonio C5).
+
+Questi due pezzi sono come due mani che si cercano. La molecola si piega, le due mani si stringono e si forma un **anello**. Il legame nuovo che si crea si chiama **emiacetale**. Nel glucosio l'anello ha 6 angoli (forma a "piranosio"), un po' come un esagono.
+
+<Diagram caption="Il glucosio aperto si chiude ad anello (emiacetale) ed è un equilibrio reversibile" code={`flowchart LR
+  A["Glucosio<br/>forma APERTA<br/>(catena dritta)"] -->|"le due estremita si agganciano"| B["Glucosio<br/>forma CICLICA<br/>(anello = emiacetale)"]
+  B -->|"l'anello si puo riaprire"| A`} />
+
+Nota la doppia freccia: è un **equilibrio**. La forma aperta e quella ad anello continuano a trasformarsi l'una nell'altra. In acqua, quasi tutto il glucosio sta in forma chiusa, ma una piccola parte è sempre aperta.
+
+## La mutarotazione: due versioni dell'anello
+
+Quando l'anello si chiude, il nuovo -OH che si forma sul carbonio C1 può finire in due posizioni diverse: **sotto** l'anello o **sopra** l'anello. Nascono così due "gemelli" leggermente diversi:
+
+- **alfa** (l'-OH punta in giù);
+- **beta** (l'-OH punta in su).
+
+Siccome l'anello si apre e si richiude di continuo, ogni volta che si richiude può uscire alfa o beta. Il risultato è che, partendo da uno solo dei due, dopo un po' nella soluzione li trovi **entrambi**, in proporzioni fisse. Questo lento "mescolamento" che porta all'equilibrio si chiama **mutarotazione**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> è come un dado che si rilancia in continuazione. Alla fine esce un po' di alfa e un po' di beta: la miscela si stabilizza sempre sulle stesse percentuali.</div>
+
+<Diagram caption="La mutarotazione: passando dalla forma aperta si ottengono alfa e beta" code={`flowchart TB
+  AL["alfa-glucosio<br/>(-OH in giu)"] -->|"l'anello si apre"| AP["Glucosio APERTO<br/>(catena)"]
+  AP -->|"l'anello si chiude"| BE["beta-glucosio<br/>(-OH in su)"]
+  BE -->|"si riapre"| AP
+  AP -->|"si richiude"| AL`} />
+
+**Perché conta in medicina e veterinaria.** Il nostro corpo non usa gli zuccheri a caso: gli enzimi (le proteine che lavorano le molecole) sanno distinguere alfa da beta. Per esempio l'amido (la nostra riserva di energia) è fatto di unità **alfa**, mentre la cellulosa (la fibra dell'erba e delle verdure) è fatta di unità **beta**. Noi digeriamo l'amido ma non la cellulosa: per questo una mucca, che ospita batteri speciali nello stomaco, mangia l'erba e noi no. Stessa molecola di base, ma alfa o beta cambia tutto.
+
+## Le reazioni dei monosaccaridi
+
+Avere quel gruppo aldeidico "calamita" rende gli zuccheri molto reattivi. Tre reazioni da conoscere:
+
+- **Ossidazione**: lo zucchero "perde elettroni" e il gruppo aldeidico diventa un acido. Uno zucchero capace di farlo si dice **zucchero riducente** (perché mentre lui si ossida, fa ridurre un'altra sostanza). È il principio di vecchi test per misurare il glucosio.
+- **Riduzione**: il contrario. L'aldeide acquista idrogeno e si trasforma in un alcol; nasce uno "zucchero-alcol" come il **sorbitolo**, usato nei chewing gum «senza zucchero».
+- **Reazione di Maillard**: quando uno zucchero incontra una proteina (o un amminoacido) e c'è **calore**, si attaccano insieme e si formano composti bruni e profumati. È la **doratura** della carne arrosto, del pane in crosta e del caffè tostato.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la reazione di Maillard è «zucchero + proteina + calore = colore dorato e profumo». È quello che rende buono il cibo rosolato.</div>
+
+**Aggancio biomedico.** La reazione di Maillard non avviene solo in padella: succede anche, lentissima, dentro di noi. Il glucosio del sangue si attacca alle proteine del corpo. L'**emoglobina glicata** (la famosa «HbA1c» che si misura ai diabetici) è proprio glucosio incollato all'emoglobina: più glucosio gira nel sangue, più alta è. Per questo è un esame chiave per tenere d'occhio il diabete.
+
+## Guarda il video
+
+<YouTube id="6L9Rj3-2Wjg" title="Struttura ciclica del glucosio: come e perché si forma l'anello" />
+
+<VideoVisto id="chim-u7-07" />
+
+## Da ricordare
+
+- **Ciclizzazione**: in acqua la catena del glucosio si chiude ad **anello**; il legame nuovo è un **emiacetale**. È un **equilibrio** (l'anello si apre e si richiude).
+- **Mutarotazione**: chiudendosi, l'anello può dare la forma **alfa** o **beta**; partendo da una sola, si arriva a una miscela fissa delle due.
+- Alfa o beta **cambia tutto**: amido (alfa) lo digeriamo, cellulosa (beta) no.
+- **Ossidazione** → zucchero riducente; **riduzione** → zucchero-alcol (es. sorbitolo).
+- **Maillard** = zucchero + proteina + calore → doratura; in versione lenta nel corpo dà l'**emoglobina glicata** (utile nel diabete).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Perché in acqua il glucosio passa dalla forma aperta a quella ad anello?"
+  opzioni={["Perche l'acqua spezza la molecola", "Perche il gruppo aldeidico (C1) e l'ossidrile (C5) si agganciano formando un emiacetale", "Perche evapora", "Perche cambia colore"]}
+  corretta={1}
+  spiegazione="Le due estremita reattive della catena (l'aldeide sul C1 e l'-OH sul C5) si uniscono e formano l'anello, con un legame chiamato emiacetale."
+/>
+
+<Quiz
+  domanda="Che cos'è la mutarotazione?"
+  opzioni={["La rottura definitiva dell'anello", "Il lento equilibrio tra le forme alfa e beta che si crea in soluzione", "La cottura dello zucchero", "Il cambiamento di sapore"]}
+  corretta={1}
+  spiegazione="L'anello si apre e si richiude di continuo: a ogni chiusura puo dare alfa o beta, percio in soluzione si arriva a una miscela fissa delle due forme."
+/>
+
+<Quiz
+  domanda="La reazione di Maillard avviene tra:"
+  opzioni={["due zuccheri al freddo", "uno zucchero e una proteina con il calore", "acqua e sale", "solo proteine"]}
+  corretta={1}
+  spiegazione="Maillard = zucchero + proteina (o amminoacido) + calore. Da la tipica doratura e l'aroma del cibo rosolato; in forma lenta avviene anche nel corpo (emoglobina glicata)."
+/>
+
+<Esercizio
+  problema="Amido e cellulosa sono fatti entrambi di tante unita di glucosio unite in anello. Perche noi digeriamo l'amido ma non la cellulosa? Collega la risposta alle forme alfa e beta."
+  soluzione="Dipende dal tipo di anello. L'amido e fatto di unita in forma ALFA, e i nostri enzimi sanno spezzare quel tipo di legame: cosi ricaviamo energia. La cellulosa e fatta di unita in forma BETA, e i nostri enzimi non riescono a tagliarla. Per questo per noi e 'fibra'. Erbivori come la mucca ci riescono solo grazie a batteri speciali nello stomaco. Stesso mattone (glucosio), ma alfa o beta cambia tutto."
+/>
+
+</section>
+
+</RisorsaLayout>

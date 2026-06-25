@@ -1,0 +1,89 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-19">
+
+## Cos'è il centro di massa?
+
+Immagina una bilancia a due piatti perfettamente in equilibrio. Il punto di appoggio è esattamente nel mezzo. Ora immagina di avere invece due palline di peso diverso collegate da un'asta leggera: il punto di equilibrio si sposta verso la pallina più pesante. Quel punto di equilibrio si chiama **centro di massa**.
+
+Il centro di massa (abbreviato **CM**) è un punto "virtuale" che rappresenta tutta la massa di un sistema come se fosse concentrata lì. Non è detto che ci sia materia in quel punto: per un anello, ad esempio, il centro di massa è al centro del foro.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il centro di massa è il punto "medio" di un sistema, pesato in base a quanto è pesante ogni parte. È lì che, ai fini del moto, si comporta come se tutta la massa fosse concentrata.</div>
+
+## Come si calcola?
+
+Per un sistema di due corpi lungo una retta, la formula è:
+
+**x_CM = (m₁ · x₁ + m₂ · x₂) / (m₁ + m₂)**
+
+Dove:
+- **m₁, m₂** sono le masse dei due corpi
+- **x₁, x₂** sono le loro posizioni
+- Il risultato è la posizione del centro di massa
+
+Se i corpi hanno la stessa massa, il CM è esattamente a metà. Se uno è più pesante, il CM si avvicina a quello più pesante.
+
+## Come si muove il centro di massa?
+
+Questa è la parte più importante. Anche se i pezzi di un sistema si muovono in modo complicato (si scontrano, esplodono, ruotano…), il **centro di massa segue sempre le stesse leggi di Newton**, come se fosse una singola particella con tutta la massa del sistema.
+
+Se la **forza esterna totale** è zero, il centro di massa va avanti a velocità costante — o rimane fermo.
+
+<Diagram caption="Come si trova il centro di massa tra due masse" code={`flowchart LR
+  A["Massa m1<br/>posizione x1"] -->|"contributo m1·x1"| C["Centro di massa<br/>x_CM"]
+  B["Massa m2<br/>posizione x2"] -->|"contributo m2·x2"| C
+  C --> D["x_CM = (m1·x1 + m2·x2)<br/>diviso (m1 + m2)"]`} />
+
+<Diagram caption="Il CM si muove come una particella sola: la forza totale esterna ne determina l'accelerazione" code={`flowchart TB
+  A["Sistema di corpi<br/>(si muovono, si scontrano...)"] --> B["Centro di massa"]
+  B --> C{"Forza esterna totale?"}
+  C -->|"F_tot = 0"| D["CM fermo o<br/>moto rettilineo uniforme"]
+  C -->|"F_tot diversa da 0"| E["CM accelera:<br/>a = F_tot diviso M_tot"]`} />
+
+## Guarda il video
+<YouTube id="o-Ui6RTg6rQ" title="Centro di massa — Francesco Bigolin" />
+<VideoVisto id="fis-u2-19" />
+
+## Da ricordare
+- Il centro di massa è il punto "medio" pesato di un sistema: si avvicina sempre alle masse più grandi.
+- Il CM si muove come se tutta la massa del sistema fosse concentrata lì e agissero solo le forze esterne.
+- Se non ci sono forze esterne, il CM non accelera: rimane fermo o va in linea retta a velocità costante.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Due palline sono su una retta: la pallina A pesa 2 kg ed è in x = 0 m, la pallina B pesa 6 kg ed è in x = 4 m. Dove si trova il centro di massa?"
+  opzioni={["x = 2,0 m", "x = 3,0 m", "x = 1,0 m", "x = 4,0 m"]}
+  corretta={1}
+  spiegazione="x_CM = (2·0 + 6·4) / (2+6) = 24/8 = 3,0 m. Il CM è più vicino alla pallina più pesante (B), che è a x = 4 m."
+/>
+
+<Quiz
+  domanda="Un sistema di corpi è isolato (nessuna forza esterna). I corpi si scontrano tra loro. Cosa fa il centro di massa del sistema durante l'urto?"
+  opzioni={["Accelera verso il corpo più pesante", "Continua a muoversi a velocità costante (o rimane fermo)", "Si ferma nel punto di contatto", "Si sposta verso il corpo più veloce"]}
+  corretta={1}
+  spiegazione="In assenza di forze esterne nette, la quantità di moto totale del sistema si conserva. Il centro di massa mantiene quindi la stessa velocità (o rimane fermo se era fermo), indipendentemente da come i corpi si urtano tra loro."
+/>
+
+<Quiz
+  domanda="Il centro di massa di un oggetto deve necessariamente trovarsi all'interno dell'oggetto stesso?"
+  opzioni={["Sì, è sempre dentro l'oggetto", "No, può trovarsi anche fuori dall'oggetto o in un punto vuoto", "Sì, ma solo per oggetti solidi", "No, è sempre all'esterno dell'oggetto"]}
+  corretta={1}
+  spiegazione="No. Per esempio, il centro di massa di un anello o di un ferro di cavallo si trova nel vuoto, al centro della figura. Ciò che conta è la distribuzione delle masse, non la presenza di materia in quel punto."
+/>
+
+<Esercizio
+  problema="Una sbarra leggera ha due pesi attaccati alle estremità: 3 kg a sinistra (x = 0 m) e 9 kg a destra (x = 6 m). Calcola la posizione del centro di massa. Da che lato si trova rispetto al centro geometrico della sbarra (x = 3 m)?"
+  soluzione="x_CM = (3·0 + 9·6) / (3+9) = 54/12 = 4,5 m. Il centro di massa è a 4,5 m, più vicino al peso da 9 kg. Si trova a destra del centro geometrico (3 m), verso il lato più pesante."
+/>
+
+</section>
+
+</RisorsaLayout>

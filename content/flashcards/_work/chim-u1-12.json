@@ -1,0 +1,207 @@
+{
+ "id": "chim-u1-12",
+ "titolo": "La mole, il numero di Avogadro e la massa molecolare",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "12-la-mole-il-numero-di-avogadro",
+ "freq": 14,
+ "risorseMdx": "src/pages/risorse/chimica/u1/12-la-mole-il-numero-di-avogadro.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Secondo Avogadro, volumi uguali di gas diversi, nelle stesse condizioni di temperatura e di pressione:",
+   "choices": [
+    "contengono sempre lo stesso numero di molecole",
+    "contengono sempre lo stesso numero di ioni",
+    "contengono lo stesso numero di molecole se queste contengono lo stesso numero di atomi",
+    "hanno la stessa massa",
+    "contengono un diverso numero di molecole"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2011",
+   "q": "Quanti atomi di idrogeno sono presenti in una mole di acqua?",
+   "choices": [
+    "1,204 x 10^24",
+    "1,1 x 10^15",
+    "2 x 10^5",
+    "6,02 x 10^23",
+    "2,12 x 10^-15"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2011",
+   "q": "A quante moli corrispondono 4,0 ml di un composto avente massa molecolare pari a 50 u.m.a. e densità 1,25 g/ml?",
+   "choices": [
+    "0,1",
+    "0,01",
+    "0,2",
+    "0,5",
+    "0,003"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2012",
+   "q": "Quante molecole sono contenute in 0,1 moli di O2?",
+   "choices": [
+    "6,02 x 10^22",
+    "6,02 x 10^24",
+    "6,02 x 10^-22",
+    "1,20 x 10^-24",
+    "1,20 x 10^23"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2012",
+   "q": "Qual è la massa corrispondente a 0,051 moli di un composto la cui massa molare è pari a 181,1 g/mol?",
+   "choices": [
+    "9,236 g",
+    "0,051 g",
+    "92,4 g",
+    "18,11 g",
+    "4,618 g"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2012",
+   "q": "Qual è la massa corrispondente a 6,02 x 10^23 atomi di elio (massa molare 4,003 g/mol)?",
+   "choices": [
+    "4,00 g",
+    "1,00 g",
+    "0,665 x 10^-23 g",
+    "24,1 x 10^23 g",
+    "1,5 x 10^23 g"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2014",
+   "q": "Un composto ha la seguente composizione percentuale in massa: 40,2 % K, 26,9 % Cr, 32,9 % O. Qual è la formula empirica di tale composto? [Massa atomica relativa: K = 39 u; Cr = 52 u; O = 16 u]",
+   "choices": [
+    "K2CrO4",
+    "KCrO2",
+    "KCrO4",
+    "K2Cr2O4",
+    "K2Cr2O7"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2016",
+   "q": "In che cosa consiste la massa atomica relativa di un atomo?",
+   "choices": [
+    "Nel rapporto tra la massa dell'atomo in esame e la dodicesima parte della massa dell'isotopo 12 del carbonio",
+    "Nella massa di un atomo espressa in grammi",
+    "Nel rapporto tra la massa dell'atomo in esame e la sedicesima parte della massa dell'isotopo 16 dell'ossigeno",
+    "Nella massa di una mole di atomi dell'elemento in esame",
+    "Nessuna delle altre alternative è corretta"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2017",
+   "q": "Qual è la massa molare del composto con formula C6H12O6?",
+   "choices": [
+    "180,16 g/mol",
+    "180,16 g",
+    "180,16 mol",
+    "180,16 M",
+    "180,16 m"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2017",
+   "q": "Un cucchiaino di sale da cucina contiene 25,00 g di NaCl. Sapendo che una mole di NaCl pesa 58,44 g il cucchiaino contiene:",
+   "choices": [
+    "0,428 moli",
+    "2,337 moli",
+    "0,043 moli",
+    "42,78 moli",
+    "4,278 moli"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2018",
+   "q": "Secondo il principio di Avogadro volumi uguali di gas diversi, misurati nelle stesse condizioni di pressione e temperatura:",
+   "choices": [
+    "contengono lo stesso numero di particelle",
+    "hanno la stessa massa",
+    "contengono sempre lo stesso numero di atomi",
+    "contengono sempre 6,02x10^23 particelle",
+    "contengono un numero di particelle proporzionale al numero atomico dei gas"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Per determinare la percentuale in peso di un elemento in un composto è necessario calcolare:",
+   "choices": [
+    "il rapporto tra il peso totale dell'elemento e il peso del composto, riferiti a una mole, moltiplicato per 100",
+    "il rapporto tra il peso molecolare dell'elemento e la somma dei pesi molecolari degli altri elementi presenti, moltiplicato per 100",
+    "il rapporto tra il numero di atomi dell'elemento e gli atomi totali nel composto, moltiplicato per 100",
+    "il peso dell'elemento contenuto in un litro di soluzione",
+    "il rapporto tra il numero di atomi dell'elemento e il peso totale del composto, moltiplicato per 100"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Come viene definita la mole?",
+   "choices": [
+    "La quantità di materia che contiene un numero di entità elementari uguale al numero di atomi presenti in 12 g di carbonio-12",
+    "La quantità di materia che contiene 12 grammi di carbonio",
+    "Il peso di un atomo di carbonio 12",
+    "Il peso di un numero di Avogadro di atomi di carbonio",
+    "Il volume di un numero di Avogadro di atomi di carbonio"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Cosa esprime il Numero di Avogadro?",
+   "choices": [
+    "Il numero di entità elementari contenute in una mole di sostanza",
+    "La densità di un gas ideale",
+    "Il numero di particelle contenute in un metro cubo di sostanza allo stato gassoso",
+    "Il numero di particelle in un kilogrammo di sostanza",
+    "Il numero di moli contenuti in un metro cubo di sostanza allo stato gassoso"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

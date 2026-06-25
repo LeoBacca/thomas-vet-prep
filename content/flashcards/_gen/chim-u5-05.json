@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fc-chim-u5-05-1",
+    "topicId": "chim-u5-05",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: una molecola chirale esiste in due versioni specchiate (enantiomeri) che NON si possono sovrapporre, proprio come la mano destra e la sinistra.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 0,
+    "explain": "Giusto. Chirale viene dal greco 'mano': la molecola e la sua immagine allo specchio sono diverse e non si sovrappongono mai. Le due versioni si chiamano enantiomeri. Di solito basta un carbonio con 4 gruppi tutti diversi (centro chirale) per generarle.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-chim-u5-05-2",
+    "topicId": "chim-u5-05",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "open",
+    "q": "Hai due enantiomeri dello stesso farmaco. Uno viene classificato R, l'altro S. Metti entrambi davanti a un raggio di luce polarizzata: uno ruota il piano della luce di +25 gradi. Di quanto lo ruota l'altro? E la classificazione R/S ti dice gia in quale direzione ruota la luce? Spiega.",
+    "answer": "L'altro enantiomero ruota la luce di -25 gradi (stessa intensita, verso opposto): i due enantiomeri sono come due viti identiche avvitate al contrario, deviano la luce della stessa quantita ma in direzioni opposte. Uno e destrogiro (+), l'altro e levogiro (-). No: R/S descrive la FORMA nello spazio (la si deduce guardando la struttura e assegnando le priorita ai 4 gruppi). Destrogiro/levogiro descrive invece cosa fa la molecola alla luce (si misura in laboratorio). Non c'e una regola fissa che le colleghi: un enantiomero R puo essere (+) oppure (-), dipende dalla molecola specifica.",
+    "explain": "R/S = forma nello spazio (si deduce). (+)/(-) = potere ottico, cioe direzione di rotazione della luce (si misura). Sono due proprieta indipendenti: non si puo sapere una dall'altra senza dati sperimentali.",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

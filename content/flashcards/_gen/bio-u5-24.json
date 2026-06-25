@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-bio-u5-24-1",
+    "topicId": "bio-u5-24",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: un microtubulo e un tubo cavo fatto di dimeri alfa-beta-tubulina, con un'estremita (+) che cresce velocemente e un'estremita (-) piu lenta ancorata al centrosoma.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Pensa a una cannuccia: le 'doghe' sono 13 protofilamenti fatti di mattoncini doppi (alfa + beta tubulina). L'estremita (+) e il capo 'vivo' che si allunga nel citoplasma; l'estremita (-) resta bloccata al centrosoma, la base di lancio della cellula.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-24-2",
+    "topicId": "bio-u5-24",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Un microtubulo sta crescendo velocemente, poi la crescita rallenta bruscamente. Cosa succede al GTP della beta-tubulina e al microtubulo nei momenti successivi? Nomina anche il processo che permette al microtubulo di ricominciare a crescere.",
+    "answer": "Mentre il microtubulo cresce veloce, all'estremita (+) si accumula un 'cappuccio' di dimeri con GTP fresco: questo lo rende stabile. Quando la crescita rallenta, i nuovi dimeri non arrivano abbastanza in fretta e il GTP gia presente viene idrolizzato in GDP (come una batteria che si scarica). I dimeri con GDP sono meno agganciati ai vicini: l'estremita (+) si destabilizza e il microtubulo si sfalda rapidamente — questo crollo improvviso si chiama CATASTROFE. Se nuovi dimeri con GTP fresco si legano prima che il microtubulo scompaia del tutto, la crescita riprende: questo salvataggio si chiama RESCUE (o salvataggio). L'intero ciclo crescita-catastrofe-salvataggio si chiama INSTABILITA DINAMICA e permette alla cellula di riorganizzare il citoscheletro molto in fretta.",
+    "explain": "Da ricordare: GTP fresco = cappuccio stabile = crescita. GTP idrolizzato in GDP = cappuccio perso = catastrofe. Il salvataggio puo rimettere in moto il microtubulo. Questo ciclo si chiama instabilita dinamica.",
+    "tags": ["risposta aperta"]
+  }
+]

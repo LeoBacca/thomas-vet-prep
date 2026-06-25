@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-chim-u6-10-1",
+    "topicId": "chim-u6-10",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Cos'e il gruppo carbossilico -COOH e da cosa e formato?",
+    "choices": [
+      "E formato da un carbonile (C=O) e un ossidrile (-OH) sullo stesso carbonio: insieme danno il gruppo che rende una molecola 'acida'",
+      "E un semplice gruppo -OH (ossidrile) attaccato a un carbonio qualsiasi",
+      "E formato da un atomo di carbonio legato solo a idrogeni, senza ossigeno",
+      "E lo stesso del gruppo carbonile C=O: sono nomi diversi per la stessa cosa"
+    ],
+    "answer": 0,
+    "explain": "Il gruppo -COOH e la 'firma' di tutti gli acidi carbossilici. Dentro la sigla ci sono due pezzi: C=O (carbonile) + -OH (ossidrile), attaccati allo stesso carbonio. Come due mattoncini che uniti formano un pezzo con superpoteri: quello di cedere facilmente un H+ e rendere la molecola acida.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-10-2",
+    "topicId": "chim-u6-10",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "open",
+    "q": "Perche un acido carbossilico si comporta da acido, cioe perche cede facilmente il suo H+? Spiega il ruolo della risonanza.",
+    "answer": "Un acido carbossilico cede l'H+ del gruppo -COOH in soluzione acquosa. Il motivo per cui lo fa volentieri sta in quello che succede DOPO: quando l'H+ se ne va, rimane lo ione carbossilato (-COO⁻) con una carica negativa. Questa carica non rimane ferma su un solo ossigeno: si 'spalma' in egual misura sui due ossigeni del gruppo (e' la risonanza). E' come uno zaino pesante retto da due persone invece di una sola: diviso in due pesa la meta' per ciascuno, cioe e' piu comodo e piu stabile. Poiche' la forma che resta dopo aver ceduto l'H+ (il carbossilato) e molto stabile, alla molecola 'conviene' perdere quell'H+: ecco perche' gli acidi carbossilici sono acidi.",
+    "explain": "Concetto chiave: il carbossilato (-COO⁻) e stabile perche' la carica negativa e divisa (risonanza) sui due ossigeni. Piu stabile e la forma scaricata, piu la molecola tende a cedere l'H+.",
+    "tags": ["risposta aperta"]
+  }
+]

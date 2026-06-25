@@ -1,0 +1,68 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import RelatedLinks from '@/components/RelatedLinks.astro';
+import { topics } from '@/data/all.js';
+import { isQuizTopic, quizTitle } from '@/data/quiz.js';
+
+interface Props { id: string; }
+const { id } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
+
+const t: any = topics.find((x: any) => x.id === id);
+if (!t) throw new Error(`RisorsaLayout: id non trovato nell'indice -> ${id}`);
+
+const prev: any = t.prev ? topics.find((x: any) => x.id === t.prev) : null;
+const next: any = t.next ? topics.find((x: any) => x.id === t.next) : null;
+const stars = '★'.repeat(t.difficolta) + '☆'.repeat(3 - t.difficolta);
+const correlati = [...new Set([...(t.prereq || []), ...(t.correlati || [])])];
+---
+<BaseLayout title={t.titolo}>
+  <nav class="breadcrumb">
+    <a href={u('risorse/')}>Risorse</a> ›
+    <a href={u(`risorse/${t.materiaKey}/`)}>{t.materia}</a> ›
+    Unità {t.unita}
+  </nav>
+
+  <h1>{t.titolo}</h1>
+  <p class="meta">Unità {t.unita} — {t.unitaTitolo} · Difficoltà <span class="stars">{stars}</span></p>
+
+  {isQuizTopic(id) && (
+    <p class="quiz-banner">
+      <span class="quiz-badge" title={quizTitle(id)}>📝 Argomento da quiz</span>
+      <span class="quiz-banner-text">{quizTitle(id)} — concentrati, è uscito agli esami.</span>
+    </p>
+  )}
+
+  <p class="obiettivo"><strong>Obiettivo:</strong> {t.obiettivo}</p>
+
+  <article class="contenuto">
+    <slot />
+  </article>
+
+  <div class="statobar">
+    <button
+      class="prog-toggle"
+      type="button"
+      data-prog-toggle
+      data-id={id}
+      data-flag="read"
+      data-on="Letto"
+      data-off="Segna come letto"
+      aria-pressed="false"
+    >
+      <span class="box"></span><span class="lbl">Segna come letto</span>
+    </button>
+  </div>
+
+  <RelatedLinks ids={correlati} title="Concetti collegati" />
+
+  <div class="prevnext">
+    {prev
+      ? <a href={u(prev.url)}><span class="lbl">‹ Precedente</span>{prev.titolo}</a>
+      : <span></span>}
+    {next
+      ? <a class="nx" href={u(next.url)}><span class="lbl">Successivo ›</span>{next.titolo}</a>
+      : <span></span>}
+  </div>
+</BaseLayout>

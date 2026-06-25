@@ -1,0 +1,25 @@
+{
+ "id": "bio-u3-06",
+ "titolo": "Il concetto e l'anatomia del gene (procariotico ed eucariotico); geni mono/policistronici",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "06-il-concetto-e-lanatomia-del-gene",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u3/06-il-concetto-e-lanatomia-del-gene.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "I geni che codificano per proteine degli eucarioti differiscono da quelli dei procarioti in quanto soltanto i primi:",
+   "choices": [
+    "contengono introni",
+    "sono a doppia elica",
+    "possiedono un promotore",
+    "vengono trascritti come RNA",
+    "vengono duplicati dalla DNA polimerasi"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

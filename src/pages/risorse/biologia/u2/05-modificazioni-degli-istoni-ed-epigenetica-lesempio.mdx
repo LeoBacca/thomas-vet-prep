@@ -1,0 +1,102 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u2-05">
+
+## Cosa sono gli istoni e perché contano
+
+Il DNA della cellula è lunghissimo — se lo srotolassi, misurerebbe quasi 2 metri. Eppure deve stare dentro un nucleo di pochi micrometri. Come fa? Si avvolge attorno a proteine speciali chiamate **istoni**, come il filo di un gomitolo attorno al rocchetto. Ogni "rocchetto" con il suo giro di DNA si chiama **nucleosoma**.
+
+Gli istoni non sono solo un supporto passivo. Hanno delle "code" — pezzetti che sporgono fuori dal nucleosoma — e queste code possono ricevere piccole etichette chimiche. Quelle etichette cambiano il comportamento del DNA: lo aprono o lo chiudono, permettendo o impedendo la lettura dei geni.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Gli istoni sono come rocchetti di filo. Le loro code sono come post-it: a seconda del post-it incollato, il gene sotto viene letto o ignorato.</div>
+
+## L'acetilazione: il post-it "apri-gene"
+
+Il meccanismo più studiato è l'**acetilazione** (dal gruppo chimico "acetile", -COCH₃). Succede così:
+
+1. Un enzima chiamato **HAT** (istone acetiltransferasi) aggancia un gruppo acetile a una lisina della coda istonica.
+2. Normalmente la coda dell'istone è carica positivamente (per via delle lisine) e quindi "abbraccia" il DNA, che è carico negativamente. Il gruppo acetile è neutro: quando viene agganciato alla lisina, cancella quella carica positiva.
+3. L'abbraccio si allenta: la cromatina si apre, i fattori di trascrizione possono avvicinarsi al gene e **il gene viene trascritto**.
+4. L'enzima opposto, **HDAC** (istone deacetilasi), toglie il gruppo acetile: la coda torna positiva, il DNA si richiude, il gene tace.
+
+Immagina un cassetto pieno di fogli. L'acetilazione è come togliere il lucchetto: il cassetto si apre e puoi leggere i documenti. La deacetilazione rimette il lucchetto.
+
+## Il codice istonico: molto più di un singolo interruttore
+
+L'acetilazione è solo una delle tante modifiche possibili. Le code istoniche possono anche essere:
+
+- **Metilate** (aggiunta di un gruppo metile): a seconda di dove avviene, può attivare o silenziare il gene.
+- **Fosforilate** (aggiunta di un gruppo fosfato): coinvolta soprattutto nella condensazione cromosomica durante la divisione cellulare.
+- **Ubiquitinate**: segnale spesso legato alla degradazione o alla riparazione del DNA.
+
+La combinazione di queste etichette su diversi punti delle code crea un vero e proprio **codice istonico**: un linguaggio chimico che dice alla cellula quali geni leggere, quando e quanto. Questo è il cuore dell'**epigenetica** — variazioni nell'espressione genica che non cambiano la sequenza del DNA, ma cambiano come viene "letta".
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il codice istonico è come una playlist musicale: i brani (geni) non cambiano, ma l'ordine e il volume con cui vengono suonati dipende dalle etichette sulle code degli istoni.</div>
+
+## Ereditabilità epigenetica
+
+Una cosa sorprendente: alcune di queste etichette vengono copiate anche quando la cellula si divide. I pattern di acetilazione e metilazione possono essere "ricordati" dalle cellule figlie. Questo è il motivo per cui cellule con lo stesso identico DNA si comportano in modo diverso — una cellula muscolare e una nervosa hanno lo stesso genoma, ma leggono geni diversi grazie a diversi pattern epigenetici.
+
+<Diagram caption="Ciclo di acetilazione/deacetilazione degli istoni e controllo della trascrizione genica" code={`flowchart TB
+  A["Cromatina compatta<br/>(gene silenzioso)"] -->|"HAT aggiunge<br/>gruppo acetile"| B["Code istoniche<br/>acetilate (-COCH₃)"]
+  B --> C["Cromatina rilassata<br/>(eucromatina)"]
+  C --> D["Fattori di trascrizione<br/>si legano al promotore"]
+  D --> E["RNA polimerasi trascrive<br/>il gene → mRNA"]
+  E -->|"HDAC rimuove<br/>il gruppo acetile"| A`} />
+
+<Diagram caption="Il codice istonico: combinazione di modifiche diverse sulle code degli istoni" code={`flowchart LR
+  subgraph CODA["Coda istonica (lisine, arginine...)"]
+    direction TB
+    K1["Lisina 9 (H3K9)<br/>metilata"] -->|"silenziamento"| R1["Gene OFF"]
+    K2["Lisina 4 (H3K4)<br/>metilata"] -->|"attivazione"| R2["Gene ON"]
+    K3["Lisina 27 (H3K27)<br/>acetilata"] -->|"attivazione"| R3["Gene ON"]
+    K4["Lisina 9 (H3K9)<br/>acetilata"] -->|"attivazione"| R4["Gene ON"]
+  end`} />
+
+## Guarda il video
+<YouTube id="arFwFXhGEZM" title="Epigenetica | Corso di Biologia Cellulare 2026" />
+<VideoVisto id="bio-u2-05" />
+
+## Da ricordare
+- Le **code istoniche** ricevono modifiche chimiche (acetilazione, metilazione, fosforilazione) che aprono o chiudono la cromatina senza cambiare la sequenza del DNA.
+- L'**acetilazione** (aggiunta di -COCH₃ da parte di HAT) neutralizza la carica positiva della coda, allentando l'abbraccio con il DNA e attivando la trascrizione; la **deacetilazione** (HDAC) fa il contrario.
+- La combinazione di tutte queste etichette forma il **codice istonico**, base molecolare dell'epigenetica ereditabile.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale enzima aggiunge un gruppo acetile alle code istoniche?"
+  opzioni={["HDAC (istone deacetilasi)", "HAT (istone acetiltransferasi)", "RNA polimerasi", "DNA metiltransferasi"]}
+  corretta={1}
+  spiegazione="HAT (istone acetiltransferasi) è l'enzima che trasferisce il gruppo acetile (-COCH₃) alle lisine delle code istoniche, aprendo la cromatina e favorendo la trascrizione. HDAC fa l'operazione inversa."
+/>
+
+<Quiz
+  domanda="Cosa succede alla cromatina quando le code istoniche vengono acetilate?"
+  opzioni={["La cromatina si compatta e il gene viene silenziato", "La cromatina si rilassa e il gene può essere trascritto", "Il DNA viene tagliato dagli enzimi di restrizione", "L'istone viene degradato nel proteasoma"]}
+  corretta={1}
+  spiegazione="L'acetilazione neutralizza la carica positiva delle code istoniche, riducendo l'attrazione elettrostatica con il DNA (carico negativamente). La cromatina si apre (eucromatina) e i fattori di trascrizione possono accedere al promotore del gene."
+/>
+
+<Quiz
+  domanda="Quale affermazione sull'epigenetica è corretta?"
+  opzioni={["L'epigenetica modifica la sequenza nucleotidica del DNA", "I cambiamenti epigenetici non possono mai essere ereditati dalla cellula figlia", "L'epigenetica regola l'espressione genica senza alterare la sequenza del DNA", "Solo l'acetilazione è considerata una modifica epigenetica"]}
+  corretta={2}
+  spiegazione="L'epigenetica studia i cambiamenti nell'espressione genica che non coinvolgono modifiche alla sequenza del DNA. I pattern epigenetici (acetilazione, metilazione) possono essere copiati durante la divisione cellulare e trasmessi alle cellule figlie."
+/>
+
+<Esercizio
+  problema="Una cellula viene trattata con un inibitore di HDAC (cioè un farmaco che blocca le deacetilasi). Cosa prevedi che succeda all'espressione dei geni in quella cellula? Spiega il meccanismo."
+  soluzione="Bloccando HDAC, i gruppi acetile non vengono più rimossi dalle code istoniche. Le code rimangono acetilate: la loro carica positiva resta neutralizzata, perciò non abbracciano più il DNA. La cromatina resta in stato rilassato (eucromatina) in modo prolungato. Il risultato è un aumento generalizzato della trascrizione genica, perché i promotori restano accessibili ai fattori di trascrizione e all'RNA polimerasi. Questo principio è usato in oncologia: alcuni farmaci inibitori di HDAC (come il vorinostat) riattivano geni oncosoppressori silenziati nelle cellule tumorali."
+/>
+
+</section>
+
+</RisorsaLayout>

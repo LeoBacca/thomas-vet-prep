@@ -1,0 +1,99 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u4-08">
+
+## Cosa sono i cromosomi?
+
+I **cromosomi** sono i "pacchetti" in cui il DNA viene arrotolato e compattato dentro il nucleo della cellula. Immagina di avere un gomitolo di filo lunghissimo: avvolgendolo attorno a bobine (le proteine **istoniche**), ottieni qualcosa di maneggiabile. Quel gomitolo compatto è il cromosoma.
+
+Ogni cromosoma ha:
+- una forma a **X** (quando è duplicato, cioè formato da due cromatidi fratelli uniti al **centromero**)
+- due "braccia": il braccio corto si chiama **p**, il braccio lungo si chiama **q**
+- una posizione del centromero che lo rende metacentrico, submetacentrico o acrocentrico (dipende da dove si trova il "nodo centrale")
+
+## Quanti cromosomi ha l'essere umano?
+
+Una cellula umana normale contiene **46 cromosomi**, organizzati in **23 coppie**.
+
+- 22 coppie sono **autosomi** (uguali in maschi e femmine)
+- 1 coppia sono i **cromosomi sessuali**: **XX** nella femmina, **XY** nel maschio
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Ogni cellula del tuo corpo ha 46 cromosomi — come avere 23 paia di calzini: ogni paio è formato da due calzini simili (uno ereditato dalla mamma, uno dal papà).</div>
+
+## Cosa significa "diploide"?
+
+Una cellula **diploide** (simbolo **2n**) ha due copie di ogni cromosoma. Negli esseri umani: 2n = 46.
+
+Una cellula **aploide** (simbolo **n**) ha una sola copia: n = 23. Sono aploidi i gameti (spermatozoi e ovociti). Quando si fondono durante la fecondazione, si torna a 46.
+
+## I cromosomi omologhi
+
+Due cromosomi **omologhi** sono quelli che formano una coppia: stessa lunghezza, centromero nella stessa posizione, stessi geni (anche se magari in versioni diverse — gli **alleli**). Uno viene dal padre, uno dalla madre.
+
+Non sono identici al 100%: possono avere alleli diversi. Sono come due edizioni dello stesso libro — stesso indice, testi leggermente diversi.
+
+## Il cariotipo
+
+Il **cariotipo** è la "fotografia ufficiale" di tutti i cromosomi di una cellula, disposti in ordine per numero e dimensione. Si ottiene così:
+
+1. Si prendono cellule in divisione (di solito linfociti del sangue)
+2. Si blocca la divisione in **metafase**, quando i cromosomi sono più visibili e compatti
+3. Si fotografano al microscopio
+4. Si ritagliano e si ordinano in coppie
+
+Il cariotipo normale umano si scrive **46,XX** (femmina) o **46,XY** (maschio).
+
+## Il bandeggio cromosomico
+
+Il **bandeggio** è una tecnica di colorazione che rivela strisce chiare e scure sui cromosomi. Le strisce si chiamano **bande** e ogni coppia di omologhi ha un pattern di bande unico — come un codice a barre.
+
+La tecnica più usata è il **bandeggio G** (con il colorante Giemsa): le bande scure corrispondono a regioni ricche di DNA non trascritto, le bande chiare a regioni più attive.
+
+A cosa serve? Permette di:
+- identificare con sicurezza ogni cromosoma
+- trovare **anomalie strutturali** (parti mancanti, invertite o duplicate)
+- diagnosticare sindromi genetiche come la sindrome di Down (trisomia 21)
+
+<Diagram caption="Organizzazione del DNA in cromosoma: dal doppio filetto al cromosoma visibile" code={`flowchart TB
+  A["DNA a doppia elica<br/>(filo lunghissimo)"] --> B["Avvolgimento attorno<br/>agli istoni (nucleosomi)"]
+  B --> C["Fibra cromatinica<br/>(collana di perle)"]
+  C --> D["Ulteriore compattamento<br/>in anse e spirali"]
+  D --> E["Cromosoma in metafase<br/>(forma a X visibile al microscopio)"]`} />
+
+<Diagram caption="Come si ottiene un cariotipo e a cosa serve il bandeggio" code={`flowchart LR
+  A["Prelievo cellule<br/>(es. linfociti)"] --> B["Coltura in vitro<br/>e blocco in metafase"]
+  B --> C["Colorazione con<br/>bandeggio G (Giemsa)"]
+  C --> D["Fotografia al microscopio<br/>dei cromosomi"]
+  D --> E["Disposizione in coppie<br/>per numero e dimensione"]
+  E --> F["Cariotipo 46,XX<br/>oppure 46,XY"]
+  F --> G["Identificazione anomalie<br/>(es. trisomia 21)"]`} />
+
+## Guarda il video
+<YouTube id="L7pt4iFua1c" title="Cromosomi, cromosomi omologhi, cromatidi e cariotipo" />
+<VideoVisto id="bio-u4-08" />
+
+## Da ricordare
+- Le cellule umane sono **diploidi** (2n = 46): 23 coppie di cromosomi, di cui 22 paia di autosomi + 1 paio di sessuali (XX o XY)
+- I **cromosomi omologhi** portano gli stessi geni ma possono avere alleli diversi; uno viene dalla madre, uno dal padre
+- Il **bandeggio G** colora i cromosomi con bande chiare e scure che fungono da "codice a barre", permettendo di identificare ogni coppia e individuare anomalie strutturali
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quanti cromosomi ha una cellula somatica umana normale?" opzioni={["23", "46", "48", "92"]} corretta={1} spiegazione="Le cellule somatiche (del corpo) sono diploidi: 2n = 46 cromosomi, organizzati in 23 coppie." />
+
+<Quiz domanda="Qual è la differenza tra una cellula diploide e una cellula aploide?" opzioni={["La cellula diploide ha il doppio dei geni rispetto all'aploide", "La cellula diploide ha due copie di ogni cromosoma, quella aploide ne ha una sola", "La cellula aploide si trova solo nei batteri", "La cellula diploide si divide per meiosi, quella aploide per mitosi"]} corretta={1} spiegazione="Diploide (2n) significa due copie di ogni cromosoma (46 nell'uomo); aploide (n) significa una sola copia (23 nell'uomo). I gameti — spermatozoi e ovociti — sono aploidi." />
+
+<Quiz domanda="A cosa serve il bandeggio G nel cariotipo?" opzioni={["Colorare il nucleo per distinguerlo dal citoplasma", "Produrre bande chiare e scure caratteristiche di ogni cromosoma, utili per identificarli e trovare anomalie", "Bloccare la cellula in metafase per fotografare i cromosomi", "Separare i cromosomi omologhi prima della meiosi"]} corretta={1} spiegazione="Il bandeggio G (con Giemsa) produce un pattern di bande unico per ogni coppia di cromosomi omologhi, come un codice a barre. Permette di identificare ogni cromosoma con certezza e di rilevare anomalie strutturali." />
+
+<Esercizio problema="Una cellula viene esaminata al microscopio dopo bandeggio G. Si contano 47 cromosomi invece di 46, e la coppia numero 21 ha tre cromosomi invece di due. Come si chiama questa condizione? Quale sindrome causa nell'uomo?" soluzione="La presenza di tre copie dello stesso cromosoma si chiama TRISOMIA. In questo caso, avere tre copie del cromosoma 21 causa la sindrome di Down (trisomia 21). Il cariotipo si scrive 47,XX+21 (femmina) o 47,XY+21 (maschio). Il bandeggio G permette di identificare con certezza qual è il cromosoma in eccesso." />
+
+</section>
+
+</RisorsaLayout>

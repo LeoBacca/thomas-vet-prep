@@ -1,0 +1,82 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u1-08">
+
+Con i vettori si fanno operazioni, ma con qualche regola in più rispetto ai numeri normali (perché contano anche direzione e verso).
+
+## Somma e differenza
+
+Per **sommare** due vettori ci sono due metodi equivalenti:
+
+- **Punta-coda**: attacchi la coda del secondo alla punta del primo; il vettore somma va dalla coda del primo alla punta del secondo.
+- **Regola del parallelogramma**: porti i due vettori alla stessa origine, costruisci il parallelogramma; il vettore somma è la **diagonale** che parte dall'origine comune.
+
+La **differenza** è l'altra diagonale del parallelogramma.
+
+<Diagram caption="Somma con la regola del parallelogramma" code={`flowchart TB
+  A["Due vettori con la stessa origine"] --> P["Costruisco il parallelogramma"]
+  P --> S["Vettore SOMMA = diagonale<br/>che esce dall'origine comune"]`} />
+
+## I due "prodotti" tra vettori
+
+Attenzione, sono due cose diverse:
+
+- **Prodotto scalare**: il risultato è un **numero**. Si scrive A · B e vale (modulo A) × (modulo B) × cos θ.
+- **Prodotto vettoriale**: il risultato è un **vettore** (perpendicolare ai due), di intensità (modulo A) × (modulo B) × sin θ.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> prodotto <strong>scalare</strong> → ti restituisce un <strong>numero</strong>. Prodotto <strong>vettoriale</strong> → ti restituisce un'altra <strong>freccia</strong>.</div>
+
+<Diagram caption="Scalare vs vettoriale: cosa ottieni" code={`flowchart TB
+  Pr["Prodotto tra due vettori"] --> SC["SCALARE (A · B)<br/>risultato = un NUMERO"]
+  Pr --> VE["VETTORIALE (A × B)<br/>risultato = un VETTORE perpendicolare"]`} />
+
+## Guarda il video
+
+<YouTube id="GAJkDbPxt9k" title="Somma vettoriale: punta-coda e parallelogramma — La Fisica Che Ci Piace" />
+
+<VideoVisto id="fis-u1-08" />
+
+## Da ricordare
+
+- Somma di vettori: **punta-coda** o **parallelogramma** (la diagonale).
+- Prodotto **scalare** → risultato **numero** (usa il coseno).
+- Prodotto **vettoriale** → risultato **vettore** perpendicolare (usa il seno).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Con la regola del parallelogramma, il vettore somma è:"
+  opzioni={["un lato del parallelogramma", "la diagonale uscente dall'origine comune", "un numero", "l'angolo tra i due vettori"]}
+  corretta={1}
+  spiegazione="È la diagonale del parallelogramma che parte dall'origine comune dei due vettori."
+/>
+
+<Quiz
+  domanda="Il prodotto SCALARE tra due vettori dà come risultato:"
+  opzioni={["un vettore", "un numero (scalare)", "un angolo", "una freccia"]}
+  corretta={1}
+  spiegazione="Per questo si chiama 'scalare': il risultato è un numero, non un vettore."
+/>
+
+<Quiz
+  domanda="Il prodotto VETTORIALE tra due vettori dà come risultato:"
+  opzioni={["un numero", "un vettore (perpendicolare ai due)", "una massa", "una temperatura"]}
+  corretta={1}
+  spiegazione="Il risultato è un nuovo vettore, perpendicolare al piano dei due di partenza."
+/>
+
+<Esercizio
+  problema="Due forze di uguale intensità ma opposte (una verso destra, una verso sinistra) agiscono sullo stesso punto. Quanto vale la forza risultante (la somma)?"
+  soluzione="Zero: due vettori uguali e opposti si annullano, quindi la risultante è nulla (il punto resta in equilibrio)."
+/>
+
+</section>
+
+</RisorsaLayout>

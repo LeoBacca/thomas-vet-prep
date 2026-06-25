@@ -1,0 +1,101 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-18">
+
+Le molecole non sono "piatte": hanno una **forma nello spazio**, proprio come un oggetto reale. Sapere la forma di una molecola è importante perché **la forma decide come la molecola si comporta**: come si attacca alle altre, se l'acqua è bagnata, come un farmaco entra nel suo "buco" giusto nel corpo. In questa pagina impari a prevedere quella forma partendo da una regola semplicissima.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> gli elettroni attorno a un atomo sono tutti negativi, quindi si <strong>respingono</strong> come calamite uguali. Per stare il più lontano possibile, si dispongono in modo ordinato nello spazio: ed è proprio questa disposizione a dare alla molecola la sua forma.</div>
+
+## La regola del "stare lontani"
+
+Immagina di gonfiare dei palloncini e legarli tutti per il nodo nello stesso punto. Cosa fanno? Si allargano da soli per non schiacciarsi a vicenda. Gli elettroni attorno all'atomo centrale fanno esattamente la stessa cosa: si spingono via l'uno dall'altro e si sistemano nella posizione più comoda.
+
+Per prevedere la forma basta **contare quanti gruppi di elettroni** ci sono attorno all'atomo centrale. Un "gruppo" è o un legame con un altro atomo, oppure una coppia di elettroni solitaria (che gli sta seduta sopra ma non lega nessuno). A seconda di quanti gruppi conti, l'atomo assume una diversa **ibridazione** (sp, sp2, sp3), e questo contatore ti dà direttamente la forma:
+
+- **2 gruppi** → forma **lineare** (ibridazione sp) → angolo di **180°**
+- **3 gruppi** → forma **triangolare piatta** (sp2) → angolo di **120°**
+- **4 gruppi** → forma **tetraedrica** (sp3) → angolo di **109,5°**
+
+<Diagram caption="Conta i gruppi di elettroni attorno all'atomo centrale: il numero ti dà la forma" code={`flowchart TB
+  C["Conta i gruppi di elettroni<br/>attorno all'atomo centrale"] --> D2["2 gruppi"]
+  C --> D3["3 gruppi"]
+  C --> D4["4 gruppi"]
+  D2 --> L["LINEARE (sp)<br/>angolo 180 gradi"]
+  D3 --> T["TRIANGOLARE piatta (sp2)<br/>angolo 120 gradi"]
+  D4 --> Q["TETRAEDRICA (sp3)<br/>angolo 109,5 gradi"]`} />
+
+## Le tre forme da conoscere: CO2, H2O, CH4
+
+Guardiamo tre molecole famose. Sono l'esempio perfetto perché le incontri ogni giorno (e dentro il tuo corpo).
+
+**CO2 (anidride carbonica) → lineare.** Il carbonio centrale è legato a 2 ossigeni e basta. Due gruppi → si mettono ai lati opposti, come le braccia aperte in croce: O = C = O, dritta come uno stuzzicadenti. Angolo **180°**. È il gas che espiri ad ogni respiro.
+
+**CH4 (metano) → tetraedrica.** Il carbonio è legato a 4 idrogeni. Quattro gruppi non possono stare tutti sullo stesso piano senza pestarsi: per stare lontani si dispongono come le **4 punte di una piramide a base triangolare** (un tetraedro), tipo il cono di una piramidina. Angolo **109,5°**. Questa forma del carbonio è la base di tutte le molecole della vita: zuccheri, grassi, proteine.
+
+**H2O (acqua) → angolare (a V).** L'ossigeno è legato a 2 idrogeni, ma ha anche **2 coppie di elettroni solitarie** appoggiate sopra. In totale 4 gruppi → la base sarebbe tetraedrica, ma noi "vediamo" solo i 2 idrogeni: il risultato è una forma a **V** piegata, angolo circa **104,5°**. Le coppie solitarie spingono più forte dei legami e schiacciano un po' l'angolo, ecco perché non è esattamente 109,5°.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> stessi 4 gruppi attorno all'atomo, ma se due gruppi sono coppie solitarie "invisibili" la molecola ci appare piegata. Proprio questa piega rende l'acqua una molecola <strong>polare</strong> (con un lato un po' più negativo), ed è il motivo per cui l'acqua scioglie sali, zuccheri e tante sostanze del nostro corpo.</div>
+
+<Diagram caption="Stesso modo di contare, tre forme diverse" code={`flowchart LR
+  CO2["CO2<br/>C con 2 legami"] --> Lin["LINEARE<br/>180 gradi"]
+  CH4["CH4<br/>C con 4 legami"] --> Tet["TETRAEDRICA<br/>109,5 gradi"]
+  H2O["H2O<br/>O con 2 legami<br/>+ 2 coppie solitarie"] --> Ang["ANGOLARE (a V)<br/>circa 104,5 gradi"]`} />
+
+## Perché conta in medicina e veterinaria
+
+La forma di una molecola non è un dettaglio da chimici: è ciò che fa funzionare il corpo. Un **farmaco** agisce solo se ha la forma giusta per incastrarsi nel suo bersaglio (un recettore o un enzima), come una chiave nella sua serratura. Se la forma è sbagliata, la chiave non gira e il farmaco non fa effetto.
+
+Anche le **proteine** si ripiegano in forme tridimensionali precise: cambia la forma, cambia (o si rompe) la funzione. E l'acqua, grazie alla sua forma angolare e polare, è il solvente in cui avvengono praticamente tutte le reazioni del sangue e delle cellule. Capire la geometria molecolare è il primo passo per capire la biochimica.
+
+## Guarda il video
+
+<YouTube id="7lR1tYt4tXA" title="Geometria molecolare: la teoria VSEPR — La Chimica per Tutti!" />
+
+<VideoVisto id="chim-u1-18" />
+
+## Da ricordare
+
+- Gli elettroni attorno all'atomo si **respingono** e si dispongono il più lontano possibile: questo dà la forma.
+- Conta i **gruppi di elettroni** (legami + coppie solitarie) attorno all'atomo centrale.
+- **2 gruppi → lineare (180°)**, **3 → triangolare (120°)**, **4 → tetraedrica (109,5°)**.
+- Le **coppie solitarie** spingono di più e piegano la molecola: per questo l'H2O è angolare (a V, circa 104,5°).
+- La forma decide il comportamento: polarità dell'acqua, incastro dei farmaci, funzione delle proteine.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quanti gruppi di elettroni attorno all'atomo centrale danno una forma tetraedrica?"
+  opzioni={["2 gruppi", "3 gruppi", "4 gruppi", "1 gruppo"]}
+  corretta={2}
+  spiegazione="Con 4 gruppi (ibridazione sp3) la disposizione più lontana possibile è il tetraedro, con angoli di 109,5°. È il caso del metano CH4."
+/>
+
+<Quiz
+  domanda="Che forma ha la molecola di CO2 (anidride carbonica)?"
+  opzioni={["angolare", "lineare", "tetraedrica", "triangolare"]}
+  corretta={1}
+  spiegazione="Il carbonio ha solo 2 gruppi (due legami con gli ossigeni): si mettono ai lati opposti, O=C=O dritta, angolo 180 gradi. Forma lineare."
+/>
+
+<Quiz
+  domanda="Perché l'acqua (H2O) è piegata a V e non lineare?"
+  opzioni={["perché l'ossigeno è pesante", "perché ha 2 coppie di elettroni solitarie che spingono", "perché ha 3 idrogeni", "perché è un gas"]}
+  corretta={1}
+  spiegazione="L'ossigeno ha 2 legami e 2 coppie solitarie: in totale 4 gruppi. Le coppie solitarie spingono più dei legami e piegano la molecola in una forma angolare (circa 104,5°)."
+/>
+
+<Esercizio
+  problema="Una molecola ha un atomo centrale legato a 3 atomi e nessuna coppia di elettroni solitaria. Quanti gruppi di elettroni ci sono? Che forma e che angolo prevedi?"
+  soluzione="I gruppi sono 3 (tre legami, zero coppie solitarie). Tre gruppi si dispongono su un piano a 120° l'uno dall'altro: la forma è triangolare piatta (trigonale planare), ibridazione sp2, angolo di legame 120°."
+/>
+
+</section>
+
+</RisorsaLayout>

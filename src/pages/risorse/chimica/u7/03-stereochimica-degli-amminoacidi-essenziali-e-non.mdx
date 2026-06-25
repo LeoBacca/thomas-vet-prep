@@ -1,0 +1,108 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-03">
+
+Gli **amminoacidi** sono i mattoncini con cui il corpo costruisce le **proteine** (i muscoli, gli enzimi, gli anticorpi). Quasi tutti possono esistere in **due versioni** che sono l'una l'**immagine allo specchio** dell'altra, come la tua mano destra e la tua mano sinistra. Sembrano uguali, ma non sono sovrapponibili. Studiare quale delle due versioni usa il corpo si chiama **stereochimica**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un amminoacido è come una mano. Esiste la versione "destra" e la versione "sinistra". Il nostro corpo, per costruire le proteine, usa quasi sempre solo la versione **sinistra**, chiamata **L**.</div>
+
+## Perché due versioni? L'atomo "chirale"
+
+Immagina il tuo amminoacido come un piccolo crocevia: al centro c'è un atomo di **carbonio** (lo chiamiamo carbonio alfa) e da lì partono **quattro strade diverse**:
+
+- un gruppo **amminico** (-NH2)
+- un gruppo **acido** (-COOH)
+- un atomo di **idrogeno** (-H)
+- la **catena laterale** R (la parte che cambia da un amminoacido all'altro)
+
+Quando un carbonio ha **quattro cose tutte diverse** attaccate, si chiama **carbonio chirale** ("chirale" viene dal greco e vuol dire proprio "mano"). E proprio come le mani, esistono **due disposizioni** possibili che sono immagini speculari. Una la chiamiamo **L** (da *laevus*, sinistra) e l'altra **D** (da *dexter*, destra).
+
+<Diagram caption="Il carbonio centrale con quattro gruppi diversi genera due versioni speculari" code={`flowchart TB
+  C["Carbonio centrale (alfa)<br/>4 gruppi tutti DIVERSI"] --> CH["È un carbonio CHIRALE"]
+  CH --> L["Versione L<br/>(la mano sinistra)"]
+  CH --> D["Versione D<br/>(la mano destra)"]`} />
+
+## Come si riconosce la versione L: la proiezione di Fischer
+
+Per disegnare in modo ordinato queste molecole si usa un trucco semplice inventato da un chimico di nome **Fischer**. Si fa così: si mette il gruppo **acido (-COOH) in alto** e la **catena R in basso**, in verticale. Ai lati, in orizzontale, restano il gruppo **amminico (-NH2)** e l'**idrogeno (-H)**.
+
+La regola da ricordare è una sola:
+
+- se il gruppo **amminico (-NH2)** sta a **sinistra**, è un amminoacido **L**;
+- se sta a **destra**, è un amminoacido **D**.
+
+Un modo facile per non sbagliare: "L come Left, e nella L il gruppo amminico è a Left (sinistra)". Quasi tutti gli amminoacidi del nostro corpo sono **L**.
+
+<Diagram caption="Proiezione di Fischer di un L-amminoacido: NH2 a sinistra" code={`flowchart TB
+  COOH["COOH (gruppo acido)<br/>-- in ALTO --"] --> CA["Carbonio centrale"]
+  NH2["NH2 (gruppo amminico) -- a SINISTRA"] --> CA
+  CA --> H["H (idrogeno) -- a destra"]
+  CA --> R["R (catena laterale)<br/>-- in BASSO --"]
+  CA --> NOTA["NH2 a SINISTRA = configurazione L"]`} />
+
+<div class="callout">💡 <strong>In parole semplici:</strong> disegna l'amminoacido con l'acido in alto e la catena R in basso. Se il gruppo -NH2 guarda a **sinistra**, hai una **L**. Ricorda: **L = Left = sinistra**.</div>
+
+Perché conta in medicina e veterinaria? I nostri **enzimi** (le macchinette che fanno funzionare il corpo) sono fatti su misura per la versione **L**, esattamente come un guanto sinistro entra solo nella mano sinistra. La versione D spesso il corpo non la riconosce o non la usa. Per questo i nostri muscoli e le nostre proteine sono costruiti praticamente solo con amminoacidi L.
+
+## Essenziali e non essenziali: quali deve mangiare il corpo
+
+Il corpo ha bisogno di **20 amminoacidi** per costruire tutte le sue proteine. Ma c'è una differenza importante:
+
+- **Non essenziali**: il corpo è capace di **costruirseli da solo**, partendo da altre sostanze. Sono come gli ingredienti che hai già in dispensa.
+- **Essenziali**: il corpo **NON riesce a fabbricarli** e quindi deve **prenderli dal cibo**. Sono come gli ingredienti che devi per forza andare a comprare.
+
+Attenzione: "essenziale" non vuol dire "più importante". Vuol dire solo "**essenziale prenderlo dalla dieta**", perché il corpo da solo non sa farlo. Negli esseri umani gli amminoacidi essenziali sono **9** (puoi ricordarli, ma per ora basta il concetto).
+
+In veterinaria questo è fondamentale: ogni specie ha la sua lista. Per esempio nel **gatto** la **taurina** è essenziale (il gatto non la produce a sufficienza) e se manca nella dieta si ammala. Ecco perché il cibo per gatti è diverso da quello per cani.
+
+<Diagram caption="Due famiglie di amminoacidi: chi li produce e chi li deve mangiare" code={`flowchart TB
+  AA["I 20 amminoacidi"] --> NE["NON essenziali<br/>il corpo li costruisce da solo"]
+  AA --> ES["ESSENZIALI<br/>il corpo non li sa fare"]
+  ES --> CIBO["Vanno presi dal CIBO (dieta)"]`} />
+
+## Da ricordare
+
+- Quasi tutti gli amminoacidi esistono in **due versioni speculari**, come la mano destra e la sinistra: si chiamano **D** e **L**.
+- Il nostro corpo usa quasi solo la versione **L**, perché gli enzimi sono fatti su misura per essa.
+- Nella **proiezione di Fischer** (acido in alto, R in basso): se il gruppo **-NH2 è a sinistra**, è un amminoacido **L** (L come Left, sinistra).
+- **Non essenziali** = il corpo se li fabbrica da solo. **Essenziali** = vanno presi dal cibo perché il corpo non li sa fare.
+- "Essenziale" non significa "più importante", ma "obbligatorio nella dieta".
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Nella proiezione di Fischer, dove si trova il gruppo amminico (-NH2) in un amminoacido di configurazione L?"
+  opzioni={["a destra", "a sinistra", "in alto", "in basso"]}
+  corretta={1}
+  spiegazione="L come Left (sinistra): in un L-amminoacido il gruppo -NH2 sta a sinistra. Acido (-COOH) in alto e catena R in basso."
+/>
+
+<Quiz
+  domanda="Cosa rende un carbonio 'chirale', cioè capace di dare due versioni speculari?"
+  opzioni={["avere quattro gruppi tutti diversi attaccati", "essere molto pesante", "trovarsi al centro della molecola", "avere due idrogeni uguali"]}
+  corretta={0}
+  spiegazione="Un carbonio è chirale quando ha quattro gruppi tutti diversi. Solo così esistono due disposizioni speculari non sovrapponibili, come le due mani."
+/>
+
+<Quiz
+  domanda="Un amminoacido 'essenziale' è quello che:"
+  opzioni={["il corpo costruisce da solo", "il corpo deve prendere dal cibo perché non sa fabbricarlo", "è sempre il più importante di tutti", "non serve alle proteine"]}
+  corretta={1}
+  spiegazione="Essenziale vuol dire 'essenziale nella dieta': il corpo non riesce a produrlo, quindi va assunto con il cibo. Non significa che sia più importante degli altri."
+/>
+
+<Esercizio
+  problema="Hai davanti un amminoacido disegnato con la proiezione di Fischer. In alto c'è il gruppo -COOH, in basso la catena R, e il gruppo -NH2 si trova sul lato sinistro. Di che configurazione si tratta, L o D? E il nostro corpo userà di solito questa versione?"
+  soluzione="Il gruppo -NH2 è a sinistra, quindi è la configurazione L (L come Left). Sì: è proprio la versione che il nostro corpo usa quasi sempre per costruire le proteine, perché i nostri enzimi sono fatti su misura per gli amminoacidi L."
+/>
+
+</section>
+
+</RisorsaLayout>

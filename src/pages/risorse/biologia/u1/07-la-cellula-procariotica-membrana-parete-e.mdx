@@ -1,0 +1,123 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-07">
+
+## Cos'è una cellula procariotica?
+
+I batteri sono cellule **procariotiche**: non hanno un nucleo vero e proprio (il DNA flotta libero nel citoplasma) e sono molto più piccole delle cellule dei nostri organi. Nonostante la semplicità, sono protette e attrezzate da una serie di strutture esterne che le aiutano a sopravvivere e a muoversi.
+
+Immagina la cellula procariotica come una piccola fortezza: ha mura, uno strato di malta intorno alle mura, e alcune strutture che sporgono verso l'esterno come antenne o eliche.
+
+---
+
+## La membrana plasmatica
+
+La **membrana plasmatica** è il confine vivo della cellula: separa il contenuto interno dall'ambiente esterno.
+
+È fatta da un **doppio strato di fosfolipidi** (molecole con una "testa" che ama l'acqua e una "coda" che la odia). Le proteine sono inserite in questo strato e svolgono funzioni importanti: trasportano sostanze, comunicano con l'esterno, producono energia.
+
+Tutte le cellule, procariotiche ed eucariotiche, hanno la membrana plasmatica. È la struttura più fondamentale.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La membrana è come la pelle della cellula — decide cosa entra e cosa esce, e non si buca facilmente.</div>
+
+---
+
+## La parete cellulare
+
+Fuori dalla membrana c'è la **parete cellulare**, una struttura rigida che dà forma alla cellula e la protegge dagli urti e dalle variazioni di pressione.
+
+Nei batteri la parete è fatta di **peptidoglicano** (o mureina): una rete intrecciata di zuccheri e peptidi (catene di amminoacidi) che forma un reticolo resistente, come una rete metallica.
+
+La struttura della parete è anche la base della distinzione tra:
+- **Gram-positivi**: parete spessa di peptidoglicano, colorazione viola al test di Gram.
+- **Gram-negativi**: parete sottile + membrana esterna aggiuntiva, colorazione rosa al test di Gram.
+
+---
+
+## La capsula
+
+Alcuni batteri producono, al di fuori della parete, uno strato gelatinoso chiamato **capsula**, fatto di polisaccaridi (catene di zuccheri).
+
+La capsula serve a:
+- **Sfuggire al sistema immunitario** dell'ospite (le cellule difensive fanno fatica ad agganciarsi)
+- **Attaccarsi alle superfici** (denti, tessuti, strumenti medici)
+- **Resistere alla disidratazione**
+
+I batteri con capsula sono spesso più pericolosi (es. *Streptococcus pneumoniae*).
+
+---
+
+## Le fimbrie e i pili
+
+Queste sono **appendici proteiche** corte e rigide che sporgono dalla superficie batterica. Si distinguono per funzione:
+
+**Fimbrie** (plurale di fimbria):
+- Molto numerose, corte e sottili
+- Servono ad **aderire** a superfici, tessuti o altri batteri
+- Fondamentali per l'inizio delle infezioni (es. batteri che colonizzano la vescica)
+
+**Pilo** (plurale: pili) — in particolare il **pilo F** o **pilo sessuale**:
+- Più lungo e robusto delle fimbrie
+- Serve per la **coniugazione batterica**: il trasferimento di DNA da un batterio a un altro (una specie di "accoppiamento" batterico)
+- Permette ai batteri di scambiarsi geni, anche quelli di resistenza agli antibiotici
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le fimbrie sono come uncini che aggrappano il batterio alle superfici; i pili sono come cavi USB per scambiare informazioni genetiche.</div>
+
+---
+
+## I flagelli
+
+Il **flagello** (plurale: flagelli) è un lungo filamento elicoidale che ruota come un'elica di un motore, spingendo il batterio nel liquido.
+
+È composto da tre parti:
+- **Filamento**: la parte lunga e elicoidale esterna, fatta di flagellina (una proteina)
+- **Uncino**: collega il filamento al corpo basale
+- **Corpo basale**: il "motore" incastrato nella membrana e nella parete, alimentato da un flusso di ioni H⁺
+
+I batteri possono avere uno o più flagelli, posizionati in modo diverso:
+- **Monotrico**: un solo flagello a un'estremità
+- **Anfitrico**: un flagello a ciascuna estremità
+- **Peritrico**: flagelli distribuiti intorno a tutta la cellula (es. *E. coli*)
+
+<Diagram caption="Struttura e funzione delle principali strutture esterne della cellula procariotica" code={`flowchart TB
+  A["CELLULA PROCARIOTICA"] --> B["Membrana plasmatica<br/>doppio strato fosfolipidico<br/>controlla gli scambi"]
+  A --> C["Parete cellulare<br/>peptidoglicano<br/>forma e protezione"]
+  C --> D["Capsula (facoltativa)<br/>polisaccaridi<br/>evasione immunitaria e adesione"]
+  A --> E["Fimbrie<br/>appendici corte e numerose<br/>adesione a superfici e tessuti"]
+  A --> F["Pili<br/>appendici lunghe<br/>trasferimento di DNA (coniugazione)"]
+  A --> G["Flagelli<br/>filamento elicoidale rotante<br/>movimento della cellula"]`} />
+
+<Diagram caption="Come è fatto un flagello batterico: le tre parti principali" code={`flowchart TB
+  F1["Filamento elicoidale<br/>proteina: flagellina<br/>parte visibile esterna"] --> F2["Uncino<br/>raccordo flessibile<br/>collega filamento e motore"]
+  F2 --> F3["Corpo basale<br/>motore ad anelli<br/>incastrato in membrana e parete<br/>alimentato da ioni H+"]
+  F3 --> F4["Risultato: rotazione<br/>spinge il batterio<br/>come un'elica"]`} />
+
+## Guarda il video
+<YouTube id="YwpTopxKStc" title="La cellula procariotica" />
+<VideoVisto id="bio-u1-07" />
+
+## Da ricordare
+- La **membrana plasmatica** è presente in tutte le cellule e controlla gli scambi; la **parete** (peptidoglicano) dà rigidità solo ai batteri.
+- **Capsula, fimbrie e pili** sono strutture di superficie che aiutano i batteri ad aderire, sopravvivere al sistema immunitario e scambiarsi DNA.
+- I **flagelli** sono motori molecolari che permettono al batterio di muoversi ruotando come un'elica, alimentati da un gradiente di ioni.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione principale della capsula nei batteri?" opzioni={["Produrre energia tramite respirazione cellulare","Permettere il movimento del batterio nel liquido","Proteggere il batterio dalla fagocitosi e aiutarlo ad aderire alle superfici","Sintetizzare proteine per la divisione cellulare"]} corretta={2} spiegazione="La capsula è uno strato di polisaccaridi esterno alla parete cellulare. Rende il batterio 'scivoloso' per le cellule immunitarie (difficile da fagocitare) e favorisce l'adesione a superfici come tessuti o denti." />
+
+<Quiz domanda="Da quale materiale è principalmente composta la parete cellulare batterica?" opzioni={["Fosfolipidi e colesterolo","Peptidoglicano (mureina)","Flagellina","Glicoproteina"]} corretta={1} spiegazione="La parete batterica è fatta di peptidoglicano, una rete di zuccheri legati da corti peptidi. Questa struttura è unica dei batteri e per questo è un bersaglio ideale per antibiotici come la penicillina." />
+
+<Quiz domanda="Qual è la differenza principale tra fimbrie e pili?" opzioni={["Le fimbrie servono al movimento, i pili all'adesione","Le fimbrie servono all'adesione, i pili al trasferimento di DNA tra batteri","Le fimbrie producono energia, i pili producono la capsula","Non c'è differenza: sono lo stesso organello con due nomi"]} corretta={1} spiegazione="Le fimbrie sono appendici corte e numerose usate per agganciarsi a superfici e tessuti. I pili (specialmente il pilo F) sono strutture più lunghe che formano un ponte tra due batteri per trasferire DNA durante la coniugazione." />
+
+<Esercizio problema="Un batterio viene identificato come Gram-negativo con movimento attivo in un liquido, capace di aderire alle cellule della vescica urinaria. Elenca le strutture esterne che DEVE necessariamente possedere per queste caratteristiche, e spiega brevemente il ruolo di ognuna." soluzione="1. Parete cellulare con peptidoglicano sottile + membrana esterna: caratteristica dei Gram-negativi, la membrana esterna contiene lipopolisaccaridi (LPS). 2. Flagelli: permettono il movimento attivo nel liquido grazie alla rotazione del corpo basale. 3. Fimbrie: permettono l'adesione alle cellule epiteliali della vescica, primo passo per l'infezione delle vie urinarie. Bonus: potrebbe avere anche una capsula per resistere alle difese immunitarie dell'ospite." />
+
+</section>
+
+</RisorsaLayout>

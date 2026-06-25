@@ -1,0 +1,108 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-06">
+
+Gli **elettroni** di un atomo non si sistemano a caso: si dispongono dentro gli **orbitali** seguendo tre regole precise. Sapere queste regole ti permette di scrivere la **configurazione elettronica**, cioè la "carta d'identità" di ogni elemento. Conta tanto, perché il modo in cui gli elettroni sono disposti decide come quell'atomo si comporta e con chi farà legami.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina un parcheggio a piani. Gli elettroni sono le auto. Si parte sempre dal piano più basso (più vicino all'uscita), e ogni posto può contenere al massimo 2 auto. Le tre regole ti dicono solo in che ordine riempire i posti.</div>
+
+Le tre regole hanno nomi un po' difficili, ma l'idea dietro è semplicissima:
+
+- **Aufbau** (= "costruzione"): si riempie sempre dal livello di **energia più bassa** verso l'alto.
+- **Pauli**: in ogni casella ci stanno **al massimo 2 elettroni**, e devono avere **spin opposti** (una freccia su e una giù).
+- **Hund**: se ci sono più caselle alla **stessa altezza**, prima si mette **una freccia in ognuna** (tutte su), poi si torna indietro a completarle.
+
+<Diagram caption="Le tre regole del riempimento, in una frase ciascuna" code={`flowchart TB
+  R["Come riempire gli orbitali"] --> A["AUFBAU<br/>parto dall'energia piu bassa"]
+  R --> P["PAULI<br/>max 2 elettroni per casella<br/>(spin opposti)"]
+  R --> H["HUND<br/>caselle uguali: prima una freccia in ognuna"]`} />
+
+## La regola di Pauli: massimo 2 per casella
+
+Ogni **orbitale** lo possiamo disegnare come una **casella**. Dentro una casella entrano al massimo **due elettroni**, e li disegniamo come due frecce: una che punta in su e una in giù. Quel "su" e "giù" è lo **spin**, una proprietà dell'elettrone (puoi pensarla come due elettroni che "girano" in verso opposto per stare comodi insieme).
+
+Due elettroni nella stessa casella devono per forza avere spin opposti: è come dire che in una poltrona da due posti non puoi sederti due volte nello stesso modo, dovete mettervi in versi diversi per starci entrambi.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> 1 casella = 1 orbitale = massimo 2 elettroni, e devono essere uno su (↑) e uno giù (↓). Mai due frecce nello stesso verso nella stessa casella.</div>
+
+## La regola di Hund: prima i posti vuoti
+
+Quando hai più caselle che si trovano allo **stesso livello di energia** (per esempio i tre orbitali "p"), non riempi subito la prima fino in fondo. Prima metti **una sola freccia in ciascuna casella**, tutte rivolte nello stesso verso (tutte su). Solo **dopo**, se ci sono ancora elettroni, torni indietro e aggiungi la seconda freccia (quella giù).
+
+Il motivo è intuitivo: gli elettroni hanno carica negativa e si respingono, come due calamite messe male. Quindi preferiscono **stare ognuno per conto suo** finché c'è posto, invece di stiparsi in due nella stessa casella.
+
+<Diagram caption="Esempio: 3 elettroni in 3 caselle p. Prima uno per casella (Hund), tutti con spin su" code={`flowchart LR
+  subgraph SBAGLIATO
+    X1["casella 1<br/>su giu"] --- X2["casella 2<br/>su"] --- X3["casella 3<br/>vuota"]
+  end
+  subgraph GIUSTO
+    G1["casella 1<br/>su"] --- G2["casella 2<br/>su"] --- G3["casella 3<br/>su"]
+  end`} />
+
+## L'ordine di riempimento (Aufbau)
+
+Aufbau dice solo questo: **riempi prima i livelli che costano meno energia**. È come riempire un bicchiere d'acqua, l'acqua va sempre prima sul fondo. L'ordine però non è perfettamente "1, 2, 3...", perché alcuni livelli si scavalcano. L'ordine giusto è questo:
+
+`1s 2s 2p 3s 3p 4s 3d 4p 5s ...`
+
+Non serve impararlo a memoria a forza: esiste uno schema a frecce in diagonale (la "regola delle diagonali") che te lo fa ricavare ogni volta. La cosa importante da capire è che si **sale per gradini di energia**, non per numero.
+
+<Diagram caption="Ordine in cui gli elettroni occupano gli orbitali (dal piu basso al piu alto)" code={`flowchart LR
+  A["1s"] --> B["2s"] --> C["2p"] --> D["3s"] --> E["3p"] --> F["4s"] --> G["3d"] --> H["4p"]`} />
+
+### Perche c'entra con medicina e veterinaria
+
+Sembra teoria astratta, ma è il fondamento di tutta la biochimica del corpo. Gli elettroni "spaiati" (quelli che secondo Hund restano da soli in una casella) rendono un atomo più reattivo: è il caso dei **radicali liberi**, molecole con elettroni spaiati che possono danneggiare le cellule (per questo si parla di **antiossidanti**). E il **ferro** dell'emoglobina, quello che trasporta l'ossigeno nel sangue tuo e di un cane, lega l'ossigeno proprio grazie a come sono disposti i suoi elettroni d. Capire il riempimento è il primo passo per capire perché un atomo fa quello che fa.
+
+## Guarda il video
+
+<YouTube id="-LYRfvTz-9k" title="La configurazione elettronica e le regole dell'Aufbau — La Chimica per Tutti!" />
+
+<VideoVisto id="chim-u1-06" />
+
+## Da ricordare
+
+- **Aufbau**: si riempie sempre dal livello di **energia più bassa** verso l'alto (ordine: 1s, 2s, 2p, 3s, 3p, 4s, 3d...).
+- **Pauli**: ogni casella (orbitale) contiene **al massimo 2 elettroni**, con **spin opposti** (↑ e ↓).
+- **Hund**: con più caselle alla stessa energia, prima **una freccia in ognuna**, poi si raddoppia.
+- Un orbitale = una **casella**; un elettrone = una **freccia**.
+- Gli elettroni si separano il più possibile perché, avendo carica negativa, **si respingono**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Secondo il principio di Pauli, quanti elettroni al massimo entrano in un singolo orbitale (una casella)?"
+  opzioni={["1", "2", "3", "8"]}
+  corretta={1}
+  spiegazione="Massimo 2 elettroni per casella, e devono avere spin opposti (uno su e uno giù)."
+/>
+
+<Quiz
+  domanda="Hai 3 elettroni da sistemare in 3 caselle alla stessa energia. Come li metti secondo la regola di Hund?"
+  opzioni={["due nella prima casella e uno nella seconda", "tutti e tre nella prima casella", "una freccia in ciascuna delle tre caselle", "non si possono mettere"]}
+  corretta={2}
+  spiegazione="Hund dice: prima una freccia in ogni casella (tutte con lo stesso spin), e solo dopo si raddoppia. Quindi una freccia per casella."
+/>
+
+<Quiz
+  domanda="Quale orbitale si riempie PRIMA, secondo l'ordine di Aufbau?"
+  opzioni={["il 3d prima del 4s", "il 4s prima del 3d", "non c'è un ordine", "prima sempre il numero più grande"]}
+  corretta={1}
+  spiegazione="Per l'ordine di energia il 4s ha energia più bassa del 3d, quindi si riempie prima il 4s. L'ordine 'salta' perché conta l'energia, non solo il numero."
+/>
+
+<Esercizio
+  problema="Scrivi la configurazione elettronica dell'azoto (N), che ha 7 elettroni, e di' quanti elettroni restano spaiati nel livello p."
+  soluzione="Riempiendo in ordine: 1s ha 2 elettroni, 2s ha 2 elettroni, restano 3 elettroni per il 2p. La configurazione è 1s2 2s2 2p3. Nel 2p ci sono 3 caselle: per la regola di Hund metto una freccia in ciascuna, quindi restano 3 elettroni spaiati."
+/>
+
+</section>
+
+</RisorsaLayout>

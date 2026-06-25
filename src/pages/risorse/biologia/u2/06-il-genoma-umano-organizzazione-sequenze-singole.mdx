@@ -1,0 +1,103 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u2-06">
+
+## Il genoma umano: cos'è e come è organizzato
+
+Il **genoma** è l'insieme completo del DNA di un organismo — tutte le istruzioni necessarie per costruire e far funzionare le cellule. Il genoma umano contiene circa **3 miliardi di paia di basi** distribuite su 23 paia di cromosomi.
+
+Immagina il genoma come una gigantesca biblioteca: 46 volumi (i cromosomi), ognuno pieno di testo. Ma attenzione — la maggior parte del testo non sono "ricette" (geni veri), ma ripetizioni, spazi vuoti, e frammenti con funzioni ancora in studio.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Solo circa il 2% del DNA umano contiene geni che codificano proteine. Il restante 98% è fatto di sequenze regolatrici, introni e sequenze ripetute — un tempo chiamato "DNA spazzatura", oggi sappiamo che molto di esso ha funzioni importanti.</div>
+
+---
+
+## Quante sequenze ci sono nel genoma?
+
+Quando gli scienziati hanno analizzato il DNA umano, hanno scoperto che le sequenze non sono tutte uguali: alcune sono presenti **una volta sola**, altre sono **copiate migliaia di volte**.
+
+In base a quante volte una sequenza è presente nel genoma, si distinguono tre grandi categorie:
+
+### 1. Sequenze a copia singola (o a bassa ripetizione)
+
+Sono sequenze presenti **una sola volta** (o pochissime volte) nel genoma. La maggior parte dei geni che codificano proteine rientra in questa categoria. Esempio: il gene che produce l'insulina.
+
+### 2. Sequenze moderatamente ripetute
+
+Sono sequenze presenti da **decine a qualche migliaio di copie**. In questa categoria troviamo:
+- I geni per gli **RNA ribosomiali** (rRNA) — servono molte copie perché la cellula ha bisogno di tanti ribosomi in fretta
+- I geni per gli **istoni** (proteine che avvolgono il DNA) — anche qui servono molte copie in poco tempo, durante la duplicazione del DNA
+- I **trasposoni** (sequenze mobili che si sono "copiate e incollate" nel genoma nel corso dell'evoluzione)
+
+### 3. Sequenze altamente ripetute
+
+Sono sequenze brevi (da 5 a 200 basi) ripetute **centinaia di migliaia o milioni di volte**. Non codificano proteine. Si trovano soprattutto nelle zone dei centromeri e dei telomeri. Esempio: la sequenza TTAGGG ripetuta ai telomeri.
+
+---
+
+## Le famiglie geniche: geni in famiglia
+
+Alcuni geni non sono solitari: esistono in **più copie simili** nello stesso genoma, formando una **famiglia genica**. Le copie si sono formate per duplicazione nel corso dell'evoluzione e poi si sono diversificate un po'.
+
+Pensa a una famiglia di cucchiai: stesso stampo di origine, ma con piccole differenze (uno è un cucchiaino da caffè, uno da minestra, uno da dessert). Tutti fanno cose simili ma non identiche.
+
+**Esempi di famiglie geniche nel genoma umano:**
+
+- **Globine** — i geni che codificano le catene dell'emoglobina (la proteina che trasporta l'ossigeno nel sangue). Esistono varianti espresse in momenti diversi della vita: emoglobina embrionale, fetale, adulta.
+- **Geni per gli istoni** — più copie, perché la cellula ha bisogno di produrne grandi quantità rapidamente.
+- **Geni per gli rRNA** — organizzati in cluster ripetuti su più cromosomi.
+
+Alcune copie di una famiglia genica non funzionano più: si chiamano **pseudogeni** — sono come ricette strappate che non si possono più leggere bene.
+
+---
+
+<Diagram caption="Organizzazione delle sequenze nel genoma umano: le tre categorie principali" code={`flowchart TB
+  A["Genoma umano<br/>~3 miliardi di paia di basi"] --> B["Sequenze a copia singola<br/>(~40-70% del genoma)<br/>es. gene dell'insulina"]
+  A --> C["Sequenze moderatamente ripetute<br/>(decine - migliaia di copie)<br/>es. geni rRNA, istoni, trasposoni"]
+  A --> D["Sequenze altamente ripetute<br/>(milioni di copie)<br/>es. sequenze ai telomeri e centromeri"]
+  B --> E["Codificano la maggior parte<br/>delle proteine"]
+  C --> F["Produzione massiccia di<br/>molecole strutturali essenziali"]
+  D --> G["Funzioni strutturali del cromosoma<br/>NON codificano proteine"]`} />
+
+<Diagram caption="Le famiglie geniche: dalle duplicazioni ai geni specializzati (esempio delle globine)" code={`flowchart LR
+  A["Gene ancestrale<br/>della globina"] --> B["Duplicazione<br/>nel corso dell'evoluzione"]
+  B --> C["Gene alfa-globina<br/>(cromosoma 16)"]
+  B --> D["Gene beta-globina<br/>(cromosoma 11)"]
+  B --> E["Gene gamma-globina<br/>(emoglobina fetale)"]
+  B --> F["Pseudogeni<br/>(copie non funzionanti)"]
+  C --> G["Emoglobina adulta"]
+  D --> G
+  E --> H["Emoglobina fetale<br/>(maggiore affinità per O2)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="CcMB3oBbzJY" title="Il genoma eucariotico" />
+<VideoVisto id="bio-u2-06" />
+
+## Da ricordare
+
+- Il genoma umano ha ~3 miliardi di paia di basi, ma solo il 2% circa codifica proteine; il resto comprende sequenze regolatrici, introni e sequenze ripetute.
+- Le sequenze del genoma si dividono in tre categorie: a copia singola (la maggior parte dei geni), moderatamente ripetute (rRNA, istoni) e altamente ripetute (centromeri, telomeri).
+- Le famiglie geniche sono gruppi di geni simili nati per duplicazione; un esempio classico sono le globine, con varianti specializzate per fasi diverse della vita.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale percentuale approssimativa del genoma umano codifica proteine?" opzioni={["Circa il 50%","Circa il 2%","Circa il 25%","Circa il 80%"]} corretta={1} spiegazione="Solo circa il 2% del DNA umano corrisponde a geni che codificano proteine. Il restante 98% include introni, sequenze regolatrici, sequenze ripetute e trasposoni." />
+
+<Quiz domanda="I geni per gli istoni e per gli rRNA appartengono a quale categoria di sequenze?" opzioni={["Sequenze a copia singola","Sequenze altamente ripetute (milioni di copie)","Sequenze moderatamente ripetute (decine-migliaia di copie)","Pseudogeni"]} corretta={2} spiegazione="I geni per gli istoni e per gli rRNA sono sequenze moderatamente ripetute: presenti in decine o migliaia di copie, perché la cellula ha bisogno di produrre grandi quantità di queste molecole in tempi brevi." />
+
+<Quiz domanda="Cosa sono gli pseudogeni?" opzioni={["Geni che codificano proteine di riserva","Copie non funzionanti di geni, relitti di duplicazioni evolutive","Geni presenti solo nelle cellule staminali","Sequenze regolatrici dei promotori"]} corretta={1} spiegazione="Gli pseudogeni sono copie di geni che hanno accumulato mutazioni nel corso dell'evoluzione e non producono più una proteina funzionale. Sono come 'ricette strappate' all'interno del genoma." />
+
+<Esercizio problema="Spiega con parole tue la differenza tra un gene a copia singola e un gene appartenente a una famiglia genica. Fai un esempio concreto per ciascuno." soluzione="Un gene a copia singola è presente una sola volta nel genoma e codifica una proteina specifica — ad esempio il gene dell'insulina, di cui esiste una sola copia funzionale per cellula. Un gene appartenente a una famiglia genica, invece, è uno dei tanti membri di un gruppo di geni simili, nati per duplicazioni ripetute nel corso dell'evoluzione. Un esempio classico è la famiglia delle globine: il gene ancestrale si è duplicato più volte dando origine a geni leggermente diversi (alfa-globina, beta-globina, gamma-globina), ognuno espresso in momenti diversi della vita (embrionale, fetale, adulta) e con caratteristiche leggermente diverse. Le copie che hanno perso la funzione si chiamano pseudogeni." />
+
+</section>
+
+</RisorsaLayout>

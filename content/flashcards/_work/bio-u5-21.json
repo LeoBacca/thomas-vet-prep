@@ -1,0 +1,53 @@
+{
+ "id": "bio-u5-21",
+ "titolo": "Endosomi, lisosomi, trasporto via mannosio-6-fosfato e malattie da accumulo",
+ "materia": "biologia",
+ "unita": 5,
+ "slug": "21-endosomi-lisosomi-trasporto-via-mannosio-6",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/biologia/u5/21-endosomi-lisosomi-trasporto-via-mannosio-6.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Quale tipo di cellule è più idoneo per lo studio dei lisosomi?",
+   "choices": [
+    "i granulociti neutrofili",
+    "le cellule degli stomi fogliari",
+    "le cellule muscolari lisce",
+    "le cellule cardiache",
+    "i globuli rossi"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2019",
+   "q": "Quale delle seguenti affermazioni che si riferiscono ai lisosomi NON è corretta?",
+   "choices": [
+    "Contengono enzimi ad azione perossidasica",
+    "Al loro interno il valore di pH è circa 5",
+    "Contengono enzimi idrolitici attivi",
+    "Sono prodotti dall'apparato di Golgi",
+    "Sono coinvolti nei processi di autofagia"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2020",
+   "q": "Quale dei seguenti accoppiamenti tra struttura cellulare e funzione svolta è corretto?",
+   "choices": [
+    "Lisosomi - Digestione cellulare",
+    "Reticolo endoplasmatico liscio - Sintesi delle proteine",
+    "Citoscheletro - Sintesi di RNA ribosomale",
+    "Apparato di Golgi - Movimento cellulare",
+    "Nucleolo - Respirazione cellulare"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

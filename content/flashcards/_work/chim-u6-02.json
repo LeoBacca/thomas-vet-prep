@@ -1,0 +1,39 @@
+{
+ "id": "chim-u6-02",
+ "titolo": "Alcoli e fenoli: struttura, proprietà e acidità del fenolo",
+ "materia": "chimica",
+ "unita": 6,
+ "slug": "02-alcoli-e-fenoli-struttura-proprieta-e",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u6/02-alcoli-e-fenoli-struttura-proprieta-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2022",
+   "q": "Quale tra le seguenti è la formula chimica del 2-metil-1-butanolo?",
+   "choices": [
+    "CH3CH2CH(CH3)CH2OH",
+    "CH3CH2CH(OH)CH2CH3",
+    "(CH3)2CHCH2CH2OH",
+    "CH3CH2CH2CH2CH2OH",
+    "(CH3)2CH-O-CH2CH3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Indicare quale delle seguenti sostanze è un alcol.",
+   "choices": [
+    "Trifluoroetanolo",
+    "Benzene",
+    "Cicloesanone",
+    "Propanale",
+    "Butene"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

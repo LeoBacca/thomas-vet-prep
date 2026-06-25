@@ -1,0 +1,107 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-29">
+
+Una sostanza come l'acqua può presentarsi in tre **stati**: solido (ghiaccio), liquido (acqua) e gassoso (vapore). Quale stato vediamo dipende da due cose: la **temperatura** (quanto è caldo) e la **pressione** (quanto l'aria spinge sopra). Un **diagramma di fase** è semplicemente una mappa che ti dice, per ogni combinazione di temperatura e pressione, in quale stato si trova la sostanza.
+
+Capirlo è utilissimo: spiega perché il ghiaccio si scioglie, perché l'acqua bolle in pentola e, soprattutto, perché il **sudore** ci rinfresca quando abbiamo caldo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il diagramma di fase è una cartina geografica. Invece di città e strade, ha tre "regioni": la zona del solido, quella del liquido e quella del gas. Il punto dove ti trovi (data temperatura, data pressione) ti dice in che regione sei, cioè in che stato è la sostanza.</div>
+
+<Diagram caption="Diagramma di fase dell'acqua: le tre regioni (solido, liquido, gas) separate dalle linee dei passaggi di stato" code={`flowchart TB
+  P["Diagramma di fase dell'acqua<br/>asse orizzontale = temperatura<br/>asse verticale = pressione"] --> S["Zona SOLIDA<br/>(ghiaccio)<br/>fa freddo"]
+  P --> L["Zona LIQUIDA<br/>(acqua)<br/>temperatura media"]
+  P --> G["Zona GASSOSA<br/>(vapore)<br/>fa caldo"]
+  S -->|"linea: fusione / solidificazione"| L
+  L -->|"linea: evaporazione / condensazione"| G
+  S -->|"linea: sublimazione"| G`} />
+
+## Come si legge la mappa
+
+Immagina di mettere un dito su un punto del diagramma. La sua posizione orizzontale è la **temperatura**, quella verticale è la **pressione**. Guardi in quale delle tre regioni è caduto il dito e sai subito lo stato: solido, liquido o gas.
+
+Le **linee** che separano le regioni sono i **passaggi di stato**. Sono i confini: lì, in quel preciso istante, la sostanza sta cambiando faccia. I passaggi principali sono:
+
+- **fusione**: da solido a liquido (il ghiaccio diventa acqua)
+- **solidificazione**: da liquido a solido (l'acqua diventa ghiaccio)
+- **evaporazione**: da liquido a gas (l'acqua diventa vapore)
+- **condensazione**: da gas a liquido (il vapore torna acqua, come la nebbiolina sullo specchio del bagno)
+- **sublimazione**: da solido direttamente a gas, saltando il liquido (è quello che fa il ghiaccio secco che "fuma")
+
+C'è poi un punto speciale, il **punto triplo**: l'unica combinazione di temperatura e pressione in cui ghiaccio, acqua e vapore convivono tutti e tre insieme.
+
+## Acqua e CO2: due mappe diverse
+
+Non tutte le sostanze hanno la stessa mappa. Un esempio famoso è il confronto tra **acqua** e **anidride carbonica (CO2)**.
+
+Nell'acqua, alla pressione normale (quella che abbiamo intorno a noi), il ghiaccio si scioglie in acqua liquida: la regione del liquido è facile da raggiungere. Per questo abbiamo laghi, fiumi e... siamo fatti per la maggior parte di acqua liquida.
+
+Nella CO2, invece, alla pressione normale il liquido **non esiste**: il solido (il ghiaccio secco) passa direttamente a gas, cioè **sublima**. Ecco perché il ghiaccio secco non bagna mai: non diventa pozzanghera, si trasforma subito in fumo. Per avere CO2 liquida serve una pressione molto più alta. La differenza tra le due sostanze sta tutta in dove sono disegnate le linee sulla mappa.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> stessa idea di mappa, ma regioni di forma diversa. Nell'acqua il liquido è facile; nella CO2, a pressione normale, il liquido è "fuori mappa" e si va dritti da solido a gas.</div>
+
+## L'evaporazione del sudore: come il corpo si raffredda
+
+Ed eccoci alla parte che riguarda il corpo. Quando hai caldo o corri, il corpo produce **sudore**: tante goccioline d'acqua sulla pelle. Quel sudore **evapora**, cioè passa da liquido a gas. E qui c'è il trucco: per evaporare, l'acqua ha **bisogno di energia**, e questa energia la prende sotto forma di **calore dalla tua pelle**.
+
+Pensa a quando esci dalla doccia bagnato: senti freddo, anche se in bagno fa caldo. È l'acqua sulla pelle che, evaporando, ti porta via calore. Il sudore funziona allo stesso modo, ed è il sistema di **termoregolazione** del corpo: un raffreddamento ad acqua naturale.
+
+Questo spiega anche perché nelle giornate **umide** si soffre di più il caldo. Se l'aria è già piena di vapore, il sudore fa fatica a evaporare, porta via meno calore, e tu ti senti appiccicoso e accaldato. Negli animali è interessante: il cane suda pochissimo dalla pelle, perciò **ansima** (respira veloce con la lingua fuori) per far evaporare l'acqua dalla bocca e dalle vie respiratorie. Stesso principio chimico, soluzione diversa.
+
+<Diagram caption="Perché il sudore rinfresca: l'evaporazione ruba calore alla pelle" code={`flowchart LR
+  A["Hai caldo:<br/>sudore (liquido) sulla pelle"] --> B["Per evaporare l'acqua<br/>assorbe calore"]
+  B --> C["Il calore arriva<br/>dalla tua pelle"]
+  C --> D["La pelle si raffredda:<br/>stai meglio"]`} />
+
+## Guarda il video
+
+<YouTube id="AgU5tln82pE" title="I diagrammi di fase spiegati in modo semplice — La Chimica Facile" />
+
+<VideoVisto id="chim-u1-29" />
+
+## Da ricordare
+
+- Il **diagramma di fase** è una mappa: per ogni temperatura e pressione ti dice se la sostanza è **solida, liquida o gas**.
+- Le **linee** sulla mappa sono i **passaggi di stato** (fusione, evaporazione, sublimazione...); il **punto triplo** è dove convivono tutti e tre gli stati.
+- **Acqua e CO2** hanno mappe diverse: a pressione normale l'acqua diventa liquida, mentre la CO2 **sublima** (solido direttamente a gas, come il ghiaccio secco).
+- Per **evaporare**, l'acqua ha bisogno di calore: lo prende dalla pelle, e così il **sudore ti raffredda** (termoregolazione).
+- Se l'aria è **umida**, il sudore evapora male e il caldo si sente di più.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Su un diagramma di fase, cosa ci dicono i due assi del grafico?"
+  opzioni={["Il colore e l'odore della sostanza", "La temperatura e la pressione", "Il peso e il volume", "Il numero di atomi"]}
+  corretta={1}
+  spiegazione="Gli assi sono temperatura (orizzontale) e pressione (verticale): combinandoli leggi in quale stato si trova la sostanza."
+/>
+
+<Quiz
+  domanda="Perché il sudore che evapora ci raffredda?"
+  opzioni={["Perché bagna la pelle", "Perché per evaporare assorbe calore dalla pelle", "Perché è più freddo della pelle", "Perché blocca il sole"]}
+  corretta={1}
+  spiegazione="Per passare da liquido a gas l'acqua ha bisogno di energia, e la prende come calore dalla pelle: così la pelle si raffredda."
+/>
+
+<Quiz
+  domanda="A pressione normale, il ghiaccio secco (CO2 solida) cosa fa?"
+  opzioni={["Si scioglie in liquido come l'acqua", "Passa direttamente a gas (sublima)", "Resta sempre solido", "Diventa più freddo e basta"]}
+  corretta={1}
+  spiegazione="Nella CO2, a pressione normale, il liquido non esiste: il solido sublima, cioè diventa gas senza passare dal liquido. Per questo non bagna mai."
+/>
+
+<Esercizio
+  problema="In una giornata molto umida fai sport e sudi tanto, ma il sudore resta sulla pelle e non ti senti rinfrescato. Spiega, con quello che hai imparato, perché succede."
+  soluzione="Il sudore rinfresca solo se evapora, perché evaporando ruba calore alla pelle. Se l'aria è già satura di vapore (umida), il sudore evapora con difficoltà: porta via poco calore e rimane sulla pelle. Risultato: ti senti accaldato e appiccicoso. In aria secca, invece, il sudore evapora in fretta e il raffreddamento funziona molto meglio."
+/>
+
+</section>
+
+</RisorsaLayout>

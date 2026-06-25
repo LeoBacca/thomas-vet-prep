@@ -1,0 +1,137 @@
+{
+ "id": "chim-u1-07",
+ "titolo": "La configurazione elettronica e gli elementi della vita",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "07-la-configurazione-elettronica-e-gli-elementi",
+ "freq": 9,
+ "risorseMdx": "src/pages/risorse/chimica/u1/07-la-configurazione-elettronica-e-gli-elementi.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Qual è la configurazione elettronica esterna del Calcio?",
+   "choices": [
+    "4s2",
+    "2s2",
+    "3s2",
+    "5s2",
+    "6s2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2011",
+   "q": "Quale tra i seguenti elementi è presente nella molecola della clorofilla?",
+   "choices": [
+    "Magnesio",
+    "Manganese",
+    "Ferro",
+    "Cobalto",
+    "Cadmio"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2014",
+   "q": "Un atomo ha la configurazione elettronica che termina in s2. Qual è il suo numero atomico?",
+   "choices": [
+    "12",
+    "3",
+    "6",
+    "8",
+    "10"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2016",
+   "q": "Quale tra le seguenti configurazioni elettroniche esterne è tipica degli atomi F, Cl e Br, appartenenti al gruppo degli alogeni?",
+   "choices": [
+    "s2p5",
+    "s2p6",
+    "s2",
+    "s2p3",
+    "s2p4"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2017",
+   "q": "La configurazione elettronica del Cloro (numero atomico 17) è rappresentata da:",
+   "choices": [
+    "1s2 2s2 2p6 3s2 3p5",
+    "1s2 2s2 2p6",
+    "1s2 2s2 2p3",
+    "1s2 2s2 2p6 3s3 3p4",
+    "1s2 2s2 2p6 3s2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2020",
+   "q": "Lo ione O2- ha la stessa configurazione elettronica:",
+   "choices": [
+    "Dello ione F-",
+    "Dello ione Ca2+",
+    "Dello ione S2-",
+    "Dell'atomo di Na",
+    "Dell'atomo di Mg"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Qual è la struttura elettronica fondamentale dello ione F(2-), cioè un atomo di fluoro (Z = 9) che ha acquistato due elettroni?",
+   "choices": [
+    "1s2 2s2 2p6 3s1",
+    "1s2 2s2 3s1 2p6",
+    "1s2 2s2 2p5 3s2",
+    "1s1 2s2 2p6",
+    "1s2 2s2 2p6 2d1"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "In quale delle seguenti serie tutte le specie sono isoelettroniche tra di loro?",
+   "choices": [
+    "N3-, O2-, F-",
+    "Cl, Cl-, Cl+",
+    "N, O-, F+",
+    "F-, Ne, Mg+",
+    "F-, Cl-, Br-"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Quale tra gli elementi elencati NON è un bioelemento?",
+   "choices": [
+    "He",
+    "N",
+    "Mg",
+    "Cu",
+    "Cl"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

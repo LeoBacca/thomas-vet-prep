@@ -1,0 +1,92 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-04">
+
+## Cos'è il potenziale di membrana?
+
+Ogni cellula ha una membrana plasmatica che separa l'interno dall'esterno. Ai due lati di questa membrana ci sono **ioni** (atomi con carica elettrica): sodio (Na⁺), potassio (K⁺), cloro (Cl⁻) e altri.
+
+La distribuzione di questi ioni **non è uguale** dentro e fuori. Il risultato è una differenza di carica elettrica tra interno ed esterno: questa differenza si chiama **potenziale di membrana**.
+
+> Lo puoi immaginare come una **batteria**: ha un polo positivo e uno negativo. La membrana cellulare funziona allo stesso modo.
+
+### A riposo: potenziale di membrana a riposo
+
+Quando la cellula non sta trasmettendo nessun segnale, si dice che è **a riposo**. In questo stato:
+
+- L'interno della cellula è **negativo** rispetto all'esterno.
+- Il valore tipico è **-70 mV** (millivolt) nei neuroni.
+- Questo valore si chiama **potenziale di riposo**.
+
+Come si mantiene? Grazie alla **pompa sodio-potassio**: una proteina nella membrana che consuma energia (ATP) per pompare fuori 3 ioni Na⁺ e far entrare 2 ioni K⁺. Questo squilibrio continuo mantiene l'interno negativo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La cellula a riposo è come una molla compressa — ha energia "immagazzinata" sotto forma di differenza di carica, pronta a essere usata.</div>
+
+---
+
+## Cos'è il potenziale d'azione?
+
+Il **potenziale d'azione** è un segnale elettrico rapido che si genera quando la cellula (soprattutto un neurone o una cellula muscolare) riceve uno stimolo abbastanza forte.
+
+È un processo "tutto o niente": o parte completamente, o non parte affatto. Non esiste un potenziale d'azione "a metà".
+
+### Le fasi del potenziale d'azione
+
+**1. Stimolo e depolarizzazione**
+Quando uno stimolo arriva, i canali del sodio (Na⁺) si aprono. Il Na⁺ entra in massa dentro la cellula (perché fuori ce n'è tanto e dentro è negativo). L'interno diventa meno negativo, poi addirittura **positivo** (arriva a circa +30 mV).
+
+**2. Ripolarizzazione**
+I canali del sodio si chiudono. Si aprono i canali del potassio (K⁺): il K⁺ esce dalla cellula. L'interno torna a essere negativo.
+
+**3. Iperpolarizzazione**
+Il K⁺ esce un po' troppo: l'interno scende sotto i -70 mV di partenza (es. -80 mV). È una fase transitoria.
+
+**4. Ritorno al riposo**
+La pompa sodio-potassio ristabilisce la distribuzione originale degli ioni. La cellula è pronta per un nuovo segnale.
+
+---
+
+<Diagram caption="Potenziale di membrana a riposo: ruolo della pompa sodio-potassio" code={`flowchart TB
+  A["Pompa Na⁺/K⁺ (usa ATP)"] -->|"espelle 3 Na⁺ verso l'esterno"| B["Esterno ricco di Na⁺<br/>(carica +)"]
+  A -->|"fa entrare 2 K⁺"| C["Interno ricco di K⁺<br/>(carica -)"]
+  B --> D["Differenza di carica:<br/>circa -70 mV"]
+  C --> D
+  D --> E["Potenziale di riposo<br/>mantenuto"]`} />
+
+<Diagram caption="Fasi del potenziale d'azione in un neurone" code={`flowchart LR
+  A["Riposo<br/>-70 mV"] -->|"stimolo abbastanza forte"| B["Depolarizzazione<br/>Na⁺ entra<br/>fino a +30 mV"]
+  B -->|"canali Na⁺ si chiudono<br/>canali K⁺ si aprono"| C["Ripolarizzazione<br/>K⁺ esce<br/>ritorno verso -70 mV"]
+  C -->|"K⁺ esce ancora un po'"| D["Iperpolarizzazione<br/>sotto -70 mV"]
+  D -->|"pompa Na⁺/K⁺ ripristina"| E["Ritorno al riposo<br/>-70 mV"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="wZNVN5VSN0E" title="Neuroni e Potenziali d'Azione - Lezioni di Biologia" />
+<VideoVisto id="bio-u5-04" />
+
+## Da ricordare
+- Il **potenziale di riposo** è circa -70 mV: l'interno della cellula è negativo rispetto all'esterno, mantenuto dalla pompa Na⁺/K⁺.
+- Il **potenziale d'azione** è un segnale "tutto o niente": passa da -70 mV a +30 mV (depolarizzazione) e poi torna al valore di riposo (ripolarizzazione).
+- La sequenza è sempre la stessa: stimolo → apertura canali Na⁺ → depolarizzazione → apertura canali K⁺ → ripolarizzazione → ritorno al riposo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è il valore tipico del potenziale di membrana a riposo in un neurone?" opzioni={["0 mV", "+30 mV", "-70 mV", "-10 mV"]} corretta={2} spiegazione="A riposo, l'interno del neurone è a circa -70 mV rispetto all'esterno. Questo valore è mantenuto dalla pompa sodio-potassio che espelle Na⁺ e fa entrare K⁺." />
+
+<Quiz domanda="Durante la depolarizzazione del potenziale d'azione, quale ione entra nella cellula causando l'inversione di carica?" opzioni={["Potassio (K⁺)", "Cloro (Cl⁻)", "Calcio (Ca²⁺)", "Sodio (Na⁺)"]} corretta={3} spiegazione="Durante la depolarizzazione si aprono i canali del sodio (Na⁺): il sodio entra in massa nella cellula, portando il potenziale da -70 mV fino a circa +30 mV." />
+
+<Quiz domanda="Il potenziale d'azione è definito 'tutto o niente'. Cosa significa?" opzioni={["Si genera solo di notte", "Può avere intensità variabile a seconda dello stimolo", "O si genera completamente o non si genera affatto", "Dura sempre esattamente 1 millisecondo"]} corretta={2} spiegazione="'Tutto o niente' significa che se lo stimolo supera la soglia, il potenziale d'azione parte sempre con la stessa ampiezza e forma. Non esiste un potenziale d'azione 'parziale'." />
+
+<Esercizio problema="Descrivi in ordine le 4 fasi del potenziale d'azione, indicando per ciascuna quale ione si muove e in quale direzione." soluzione="1. Depolarizzazione: i canali del Na⁺ si aprono, il sodio entra nella cellula → il potenziale sale da -70 mV a circa +30 mV. 2. Ripolarizzazione: i canali del Na⁺ si chiudono e quelli del K⁺ si aprono, il potassio esce dalla cellula → il potenziale scende verso -70 mV. 3. Iperpolarizzazione: il K⁺ continua a uscire brevemente → il potenziale scende sotto -70 mV (es. -80 mV). 4. Ritorno al riposo: la pompa Na⁺/K⁺ ripristina la distribuzione originale degli ioni e il potenziale torna a -70 mV." />
+
+</section>
+
+</RisorsaLayout>

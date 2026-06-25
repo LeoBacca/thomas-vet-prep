@@ -1,0 +1,112 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-13">
+
+Una **cella galvanica** (chiamata anche **pila**) è un piccolo apparecchio che trasforma una **reazione chimica** in **corrente elettrica**. In pratica è la nonna delle batterie che hai nel telefono e nel telecomando. L'idea geniale è questa: in certe reazioni alcuni atomi si "passano" elettroni; se costringiamo quegli elettroni a fare un giro lungo un filo prima di arrivare a destinazione, otteniamo corrente.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> in una reazione redox c'è chi <strong>regala</strong> elettroni e chi li <strong>riceve</strong>. Se li facciamo viaggiare lungo un filo invece che saltare da vicino, quel viaggio di elettroni È la corrente elettrica.</div>
+
+## Prima cosa: cos'è una reazione redox
+
+"Redox" è l'unione di due parole: **rid**uzione e **oss**idazione. Sono due cose che succedono sempre insieme, come due piatti di una bilancia.
+
+- **Ossidazione** = un atomo **perde** elettroni (li regala).
+- **Riduzione** = un atomo **acquista** elettroni (li riceve).
+
+Un trucco per ricordarlo: "chi si ossida regala, chi si riduce riceve". Gli elettroni che uno perde sono esattamente quelli che l'altro guadagna: niente si crea e niente si distrugge.
+
+<Diagram caption="In una redox gli elettroni passano da chi si ossida a chi si riduce" code={`flowchart LR
+  A["Atomo che si OSSIDA<br/>perde elettroni"] -->|"elettroni (e-)"| B["Atomo che si RIDUCE<br/>acquista elettroni"]`} />
+
+Nel corpo questa danza di elettroni è dappertutto. Quando le tue cellule "bruciano" lo zucchero per ricavare energia, fanno una lunga catena di reazioni redox: gli elettroni passano di molecola in molecola fino all'ossigeno che respiri. La pila usa lo stesso principio, solo in modo molto più semplice.
+
+## Come è fatta una pila: anodo, catodo e ponte salino
+
+Invece di mettere a contatto diretto chi regala e chi riceve elettroni, li teniamo **separati** in due vaschette (i due **becher**) e li colleghiamo con un filo. Così gli elettroni sono **obbligati** a passare dentro il filo per andare da una parte all'altra: ed è proprio quel passaggio che fa funzionare la lampadina.
+
+Le due "vaschette" si chiamano **semicelle**. In ciascuna c'è una barretta di metallo immersa in una soluzione. Le barrette sono gli **elettrodi**, e hanno due nomi precisi:
+
+- **Anodo**: è dove avviene l'**ossidazione** (qui il metallo regala elettroni). È il polo **negativo** della pila.
+- **Catodo**: è dove avviene la **riduzione** (qui arrivano gli elettroni e qualcosa li acquista). È il polo **positivo**.
+
+Un modo facile per non confonderli: **anodo e ossidazione** iniziano entrambi per vocale; **catodo e riduzione** li abbino come "il catodo cattura gli elettroni in arrivo".
+
+Manca un pezzo importante: il **ponte salino**. È un tubicino pieno di sali che unisce le due vaschette. Serve a tenere le due soluzioni **elettricamente in equilibrio**: man mano che la reazione va avanti, una soluzione tenderebbe a caricarsi troppo positiva e l'altra troppo negativa, e tutto si bloccherebbe. Il ponte salino fa passare ioni che riequilibrano le cariche, come una valvola di sfogo. Senza ponte salino la pila si spegne subito.
+
+<Diagram caption="Schema di una cella galvanica (pila): anodo, catodo e ponte salino" code={`flowchart LR
+  Anodo["ANODO (-)<br/>qui avviene l'OSSIDAZIONE<br/>il metallo regala elettroni"] -->|"elettroni nel filo"| Catodo["CATODO (+)<br/>qui avviene la RIDUZIONE<br/>gli elettroni arrivano"]
+  Anodo -.->|"ponte salino<br/>riequilibra le cariche"| Catodo`} />
+
+L'esempio classico è la **pila Daniell**: da una parte una barretta di **zinco** in soluzione, dall'altra una barretta di **rame**. Lo zinco si ossida (anodo, regala elettroni), gli ioni di rame si riducono (catodo, ricevono elettroni). Gli elettroni viaggiano dallo zinco al rame lungo il filo e producono una corrente di circa **1,1 volt**.
+
+## Chi regala e chi riceve? I potenziali redox standard
+
+Come facciamo a sapere, tra due metalli, **quale** si ossida e quale si riduce? Ci aiuta un numero chiamato **potenziale redox standard** (si misura in **volt**).
+
+Pensalo come una "voglia di prendersi gli elettroni". Ogni coppia di sostanze ha il suo numero, scritto in una tabella:
+
+- Un potenziale **alto** (molto positivo) = grande voglia di **prendere** elettroni → quella sostanza tende a **ridursi** (sarà il **catodo**).
+- Un potenziale **basso** (negativo) = poca voglia di prenderli, anzi li **molla** facilmente → quella sostanza tende a **ossidarsi** (sarà l'**anodo**).
+
+È come un braccio di ferro: vince (prende gli elettroni) chi ha il potenziale più alto. Lo zinco ha potenziale più basso del rame, quindi lo zinco "cede" e il rame "vince".
+
+La **tensione della pila** (quanti volt produce) si calcola con una sottrazione semplice:
+
+`E pila = E catodo - E anodo`
+
+Sottrai sempre il potenziale dell'anodo da quello del catodo. Se il risultato viene **positivo**, la pila funziona da sola e produce corrente. È lo stesso modo in cui i biologi descrivono la respirazione cellulare: gli elettroni scendono "a cascata" da molecole con potenziale basso verso l'ossigeno, che ha un potenziale altissimo ed è il "vincitore" finale che li raccoglie.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il potenziale è la "voglia di prendere elettroni". Chi ne ha di più diventa il <strong>catodo</strong> (si riduce); chi ne ha di meno diventa l'<strong>anodo</strong> (si ossida). I volt della pila = potenziale del catodo meno quello dell'anodo.</div>
+
+## Guarda il video
+
+<YouTube id="1i-XeazOKWw" title="La pila, la pila Daniell e la cella elettrolitica — spiegazione semplice" />
+
+<VideoVisto id="chim-u4-13" />
+
+## Da ricordare
+
+- Una **cella galvanica (pila)** trasforma una **reazione redox** in **corrente elettrica**: gli elettroni viaggiano nel filo.
+- **Anodo** = dove avviene l'**ossidazione** (regala elettroni), polo **negativo**.
+- **Catodo** = dove avviene la **riduzione** (riceve elettroni), polo **positivo**.
+- Il **ponte salino** riequilibra le cariche: senza di lui la pila si spegne.
+- Il **potenziale redox standard** dice chi prende gli elettroni; la tensione della pila è `E catodo - E anodo` e se è positiva la pila funziona.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="In una cella galvanica, all'anodo che cosa succede?"
+  opzioni={["avviene la riduzione", "avviene l'ossidazione (il metallo regala elettroni)", "non succede niente", "si forma il ponte salino"]}
+  corretta={1}
+  spiegazione="All'anodo avviene sempre l'ossidazione: il metallo perde elettroni e li manda nel filo. L'anodo è il polo negativo."
+/>
+
+<Quiz
+  domanda="A che cosa serve il ponte salino?"
+  opzioni={["a far passare gli elettroni nel filo", "a riequilibrare le cariche tra le due soluzioni", "a colorare la soluzione", "a riscaldare la pila"]}
+  corretta={1}
+  spiegazione="Il ponte salino fa passare ioni che riequilibrano le cariche delle due soluzioni. Senza di lui la pila si bloccherebbe subito."
+/>
+
+<Quiz
+  domanda="Tra due metalli, quale tende a RIDURSI (diventando il catodo)?"
+  opzioni={["quello con il potenziale redox più basso", "quello con il potenziale redox più alto", "sempre quello a sinistra", "non si può sapere"]}
+  corretta={1}
+  spiegazione="Potenziale più alto = più 'voglia' di prendere elettroni, quindi si riduce e fa da catodo. Il potenziale più basso si ossida (anodo)."
+/>
+
+<Esercizio
+  problema="Una pila Daniell usa lo zinco e il rame. Il potenziale del rame (catodo) è +0,34 V e quello dello zinco (anodo) è -0,76 V. Quanti volt produce la pila? La pila funziona da sola?"
+  soluzione="Si usa E pila = E catodo - E anodo = (+0,34) - (-0,76) = 0,34 + 0,76 = 1,10 V. Il risultato è positivo, quindi sì: la pila funziona da sola e produce circa 1,1 volt di corrente."
+/>
+
+</section>
+
+</RisorsaLayout>

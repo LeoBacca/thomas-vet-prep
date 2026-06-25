@@ -1,0 +1,120 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-06">
+
+## Il nucleo: il "quartier generale" della cellula
+
+Il nucleo è l'organello più grande della cellula animale. È la stanza dei comandi: contiene il DNA (le istruzioni per costruire e far funzionare tutto) e decide quando e come usarle.
+
+Non tutte le cellule hanno il nucleo: i batteri ne sono privi (si chiamano **procarioti**). Le cellule animali e vegetali invece sì (si chiamano **eucarioti**).
+
+---
+
+## L'involucro nucleare: il doppio muro di cinta
+
+Il nucleo non è a diretto contatto con il citoplasma. È avvolto da una struttura chiamata **involucro nucleare**, che è formata da **due membrane** sovrapposte (membrana esterna e membrana interna), separate da uno spazio stretto detto **spazio perinucleare**.
+
+Pensa a un thermos da caffè: ha due pareti con uno spazio d'aria in mezzo. L'involucro nucleare funziona allo stesso modo — isola e protegge il contenuto.
+
+La membrana esterna è collegata al **reticolo endoplasmatico rugoso** (l'altra fabbrica proteica della cellula): in pratica sono la stessa membrana che si piega su se stessa.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'involucro nucleare è come un doppio cancello che protegge il DNA e controlla chi entra e chi esce dal nucleo.</div>
+
+---
+
+## I pori nucleari e le nucleoporine: i cancelli sorvegliati
+
+Il doppio muro non è ermetico. È costellato di aperture chiamate **pori nucleari** — ogni cellula ne ha tra 2.000 e 4.000.
+
+Ogni poro non è un buco aperto: è un enorme complesso proteico detto **NPC** (Nuclear Pore Complex, complesso del poro nucleare), assemblato da circa **30 tipi diversi di proteine** chiamate **nucleoporine**.
+
+Come funziona il poro? Immagina un tornello all'ingresso di uno stadio con un buttafuori:
+- Le molecole piccole (acqua, ioni) passano liberamente.
+- Le molecole grandi (proteine, RNA) devono mostrare un "documento": una sequenza segnale chiamata **NLS** (Nuclear Localization Signal) per entrare, o **NES** (Nuclear Export Signal) per uscire.
+- Il buttafuori è una proteina chiamata **importina** (per l'entrata) o **esportina** (per l'uscita).
+
+Cosa passa dal nucleo verso fuori? Principalmente gli **mRNA** (messaggi copiati dal DNA da portare ai ribosomi) e le subunità ribosomali.
+
+Cosa entra nel nucleo? Proteine come i fattori di trascrizione, gli enzimi per copiare il DNA e gli istoni (le proteine attorno a cui si avvolge il DNA).
+
+---
+
+## Il nucleolo: la fabbrica dei ribosomi
+
+Dentro il nucleo, senza una membrana propria, c'è una zona più densa e scura al microscopio: il **nucleolo**.
+
+È la fabbrica dove vengono prodotti gli **rRNA** (RNA ribosomali) e dove si assemblano le due subunità dei ribosomi prima che vengano esportate nel citoplasma.
+
+Una cellula che produce molte proteine (come una cellula ghiandolare o un neurone) ha un nucleolo grande e ben visibile. Una cellula a riposo ce l'ha piccolo o quasi assente.
+
+---
+
+## I condensati nucleari: le goccioline organizzate
+
+Dentro il nucleo non c'è solo una zuppa disordinata di molecole. Esistono zone localizzate dove alcune proteine e RNA si concentrano temporaneamente, senza membrana, formando strutture liquido-simili chiamate **condensati nucleari** (o corpi nucleari).
+
+È come le goccioline d'olio nell'acqua: si separano spontaneamente senza un contenitore rigido. Questo fenomeno si chiama **separazione di fase liquido-liquido**.
+
+Esempi di condensati nucleari:
+- **Corpi di Cajal**: coinvolti nella maturazione degli RNA.
+- **Speckles nucleari**: depositi di fattori di splicing (elaborazione dell'RNA).
+- **Corpi PML**: regolazione della risposta al danno al DNA.
+
+Sono strutture dinamiche: si formano e si dissolvono a seconda delle necessità della cellula.
+
+---
+
+<Diagram caption="Struttura dell'involucro nucleare e del complesso del poro nucleare (NPC)" code={`flowchart TB
+  A["Citoplasma"] --> B["Membrana esterna<br/>(continua con il RE rugoso)"]
+  B --> C["Spazio perinucleare<br/>(tra le due membrane)"]
+  C --> D["Membrana interna<br/>(rivolta verso il nucleoplasma)"]
+  D --> E["Nucleoplasma<br/>(interno del nucleo)"]
+  B -- "apertura" --> F["Poro nucleare (NPC)<br/>~30 tipi di nucleoporine"]
+  D -- "apertura" --> F
+  F -- "molecole grandi<br/>con segnale NLS/NES" --> G["Importine ed esportine<br/>(trasporto attivo)"]
+  F -- "molecole piccole" --> H["Passaggio libero<br/>(diffusione)"]`} />
+
+<Diagram caption="Struttura interna del nucleo: nucleolo e condensati nucleari" code={`flowchart LR
+  N["NUCLEO"] --> INV["Involucro nucleare<br/>(doppia membrana + pori)"]
+  N --> NUC["Nucleolo<br/>(senza membrana propria)"]
+  N --> CROM["Cromatina<br/>(DNA + proteine)"]
+  N --> COND["Condensati nucleari<br/>(separazione di fase)"]
+  NUC --> rRNA["Produzione di rRNA<br/>e subunità ribosomali"]
+  rRNA --> ESP["Esportazione<br/>nel citoplasma"]
+  COND --> CAJ["Corpi di Cajal<br/>(maturazione RNA)"]
+  COND --> SPEC["Speckles<br/>(fattori di splicing)"]
+  COND --> PML["Corpi PML<br/>(risposta al danno DNA)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="Nn5DpuCszA0" title="Nucleo — Agora Scienze Biomediche" />
+<VideoVisto id="bio-u5-06" />
+
+---
+
+## Da ricordare
+- L'involucro nucleare è formato da **due membrane** con pori nucleari (NPC) composti da nucleoporine che regolano il traffico di molecole in entrata e uscita.
+- Il **nucleolo** è la zona interna al nucleo (senza membrana) dove si producono gli rRNA e si assemblano le subunità dei ribosomi.
+- I **condensati nucleari** sono compartimenti senza membrana formati per separazione di fase che concentrano proteine e RNA per funzioni specifiche (es. splicing, risposta al danno).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quante membrane formano l'involucro nucleare?" opzioni={["Una sola membrana lipidica","Due membrane con uno spazio perinucleare tra di esse","Tre membrane, come i mitocondri","Una membrana esterna e una rete proteica interna"]} corretta={1} spiegazione="L'involucro nucleare è formato da due membrane fosfolipidiche concentriche (esterna e interna) separate dallo spazio perinucleare. La membrana esterna è in continuità con il reticolo endoplasmatico rugoso." />
+
+<Quiz domanda="Qual è la funzione principale del nucleolo?" opzioni={["Replicare il DNA prima della divisione cellulare","Produrre rRNA e assemblare le subunità dei ribosomi","Regolare il trasporto attraverso i pori nucleari","Contenere i condensati nucleari di tipo PML"]} corretta={1} spiegazione="Il nucleolo è la fabbrica dei ribosomi: sintetizza l'rRNA (RNA ribosomale) e assembla le subunità del ribosoma, che vengono poi esportate nel citoplasma attraverso i pori nucleari." />
+
+<Quiz domanda="Come si chiama il segnale proteico che permette a una proteina di essere importata nel nucleo?" opzioni={["NES (Nuclear Export Signal)","NPC (Nuclear Pore Complex)","NLS (Nuclear Localization Signal)","rRNA (RNA ribosomale)"]} corretta={2} spiegazione="L'NLS (Nuclear Localization Signal) è una sequenza amminoacidica presente sulle proteine destinate al nucleo. Viene riconosciuta dalle importine, che le trasportano attivamente attraverso il poro nucleare. L'NES è invece il segnale per l'uscita." />
+
+<Esercizio problema="Un ricercatore osserva al microscopio elettronico una cellula con un nucleolo molto grande e molti pori nucleari ben visibili. Che tipo di attività metabolica sta probabilmente svolgendo questa cellula? Motiva la risposta collegando le strutture osservate alla loro funzione." soluzione="Un nucleolo grande indica che la cellula sta producendo molti ribosomi (quindi molto rRNA), il che significa che è in una fase di intensa sintesi proteica. I numerosi pori nucleari ben sviluppati confermano un intenso traffico di molecole tra nucleo e citoplasma: entrano fattori di trascrizione e proteine strutturali, escono mRNA e subunità ribosomali. Nel complesso, la cellula sta probabilmente fabbricando grandi quantità di proteine — tipico di cellule secretorie (es. cellule acinose del pancreas) o di cellule in rapida crescita." />
+
+</section>
+
+</RisorsaLayout>

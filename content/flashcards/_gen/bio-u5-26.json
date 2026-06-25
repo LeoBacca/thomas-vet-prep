@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u5-26-1",
+    "topicId": "bio-u5-26",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: il microfilamento di actina ha due capi identici — crescono alla stessa velocità e si comportano allo stesso modo.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il microfilamento ha POLARITÀ: il capo + (barbed end) aggiunge monomeri velocemente, il capo − (pointed end) li perde lentamente. È come un treno che carica da un lato e scarica dall'altro — questo scorrimento continuo si chiama treadmilling.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-26-2",
+    "topicId": "bio-u5-26",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Ogni monomero di actina (G-actina) porta con sé una molecola di ATP. Cosa succede a quell'ATP quando la perlina si attacca al filamento?",
+    "choices": [
+      "Viene rilasciato nell'ambiente senza cambiare",
+      "Viene idrolizzato in ADP: la perlina 'scarica la batteria'",
+      "Viene convertito in GTP per dare energia extra",
+      "Rimane intatto e serve per staccare la perlina dal filamento"
+    ],
+    "answer": 1,
+    "explain": "Quando la G-actina-ATP entra a far parte del filamento, l'ATP viene idrolizzato (spezzato) in ADP. È come una pila che si scarica: la perlina entra 'carica' e diventa 'scarica'. Questa differenza tra monomeri con ATP (al capo +) e monomeri con ADP (al capo −) è il motore del treadmilling.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-26-3",
+    "topicId": "bio-u5-26",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "La distrofina è una proteina enorme che collega il citoscheletro di actina alla matrice extracellulare. Spiega: perché questo 'ponte meccanico' è essenziale e cosa succede quando manca, come nella distrofia di Duchenne?",
+    "answer": "Durante la contrazione muscolare i filamenti di actina vengono trascinati dalle miosine e la fibra muscolare genera forza meccanica enorme. La distrofina forma un ponte che trasmette questa forza dal citoscheletro interno alla matrice extracellulare esterna, distribuendo il carico e proteggendo la membrana cellulare dal danno. Senza distrofina la membrana non regge le sollecitazioni della contrazione e si lacera ogni volta che il muscolo si contrae. Nella distrofia muscolare di Duchenne una mutazione nel gene DMD impedisce la produzione della distrofina funzionale: le fibre muscolari si rompono ripetutamente, vengono sostituite da tessuto fibroso e adiposo, e il muscolo perde progressivamente la sua funzione. Questo è particolarmente grave nei muscoli scheletrici e nel muscolo cardiaco.",
+    "explain": "Distrofina = ponte actina ↔ matrice extracellulare. Senza di essa la membrana muscolare si lacera durante la contrazione. Causa: mutazione gene DMD.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-26-4",
+    "topicId": "bio-u5-26",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale tra i seguenti NON è direttamente coinvolto nel ciclo di contrazione del sarcomero muscolare?",
+    "choices": [
+      "Ioni calcio (Ca²⁺)",
+      "ATP",
+      "Microtubuli",
+      "Miosina II",
+      "Actina (filamenti sottili)"
+    ],
+    "answer": 2,
+    "explain": "Nel sarcomero la contrazione dipende da: actina (filamenti sottili), miosina II (filamenti spessi, il 'remo' che genera forza), ATP (energia per ogni colpo di remo), ioni Ca²⁺ (il segnale che sblocca la troponina e avvia la contrazione). I microtubuli sono un'altra componente del citoscheletro, ma non fanno parte della macchina contrattile del sarcomero: quella usa esclusivamente i filamenti di actina e miosina. Trappola classica: 'microtubuli' suona 'del citoscheletro quindi del muscolo', ma nel sarcomero non ci sono.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-26-5",
+    "topicId": "bio-u5-26",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Durante la citodieresi (divisione del citoplasma alla fine della mitosi) si forma un anello contrattile che stringe la cellula madre in due. Quale proteina del citoscheletro organizza questo anello?",
+    "choices": [
+      "Tubulina (microtubuli del fuso mitotico)",
+      "Actina",
+      "Dineina (motore dei microtubuli)",
+      "Cheratina (filamenti intermedi)",
+      "Chinesina (trasporto sui microtubuli)"
+    ],
+    "answer": 1,
+    "explain": "L'anello contrattile della citodieresi è fatto di filamenti di actina associati alla miosina II: si stringe come un cappio tirando i due lembi della membrana fino a dividerli. Trappole: tubulina, dineina e chinesina sono tutti componenti dei MICROTUBULI (non dei microfilamenti); la dineina e la chinesina sono motori molecolari, ma dei microtubuli, non dell'anello contrattile. La cheratina è un filamento intermedio — niente a che fare con la divisione. Solo l'actina forma l'anello che taglia la cellula in due.",
+    "tags": ["prova d'esame"]
+  }
+]

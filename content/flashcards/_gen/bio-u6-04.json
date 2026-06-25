@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u6-04-1",
+    "topicId": "bio-u6-04",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "mc",
+    "q": "Le giunzioni occludenti (tight junctions) servono principalmente a…",
+    "choices": [
+      "Sigillare ermeticamente lo spazio tra le cellule, impedendo il passaggio di sostanze tra di esse",
+      "Aprire canali diretti tra le cellule per far passare ioni e segnali elettrici",
+      "Ancorare le cellule alla membrana basale tramite integrine",
+      "Tenere le cellule unite con adesione flessibile grazie alle caderine legate all'actina"
+    ],
+    "answer": 0,
+    "explain": "Le occludenti sono la 'cerniera lampo' tra cellule: tappano lo spazio intercellulare con claudine e occludine. Tutto deve passare dentro la cellula, non tra di esse. Le comunicanti fanno l'opposto: aprono tunnel (connessoni) per la comunicazione diretta.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u6-04-2",
+    "topicId": "bio-u6-04",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "open",
+    "q": "Un veterinario esamina un campione di pelle in cui le cellule epiteliali si staccano facilmente dalla struttura sottostante, ma rimangono attaccate tra loro. Quale tipo di giunzione e probabilmente danneggiato, e perche?",
+    "answer": "Sono danneggiati gli emidesmosomi. Questa giunzione collega le cellule epiteliali alla membrana basale (la 'fondamenta' su cui poggiano) tramite integrine ancorate ai filamenti intermedi. Se gli emidesmosomi non funzionano, le cellule si staccano dalla membrana basale pur restando unite tra di loro (le giunzioni laterali — aderenti, desmosomi — sono intatte). E esattamente quello che accade in alcune malattie bollose della pelle (es. pemfigoide bolloso), dove gli anticorpi attaccano le integrine degli emidesmosomi.",
+    "explain": "Emidesmosomi = ancoraggio cellula→membrana basale (integrine + filamenti intermedi). Desmosomi = ancoraggio cellula→cellula vicina (caderine + filamenti intermedi). Il dettaglio 'si staccano dalla struttura sottostante ma non tra loro' e il segnale chiave.",
+    "tags": ["risposta aperta"]
+  }
+]

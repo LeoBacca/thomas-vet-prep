@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u6-03-1",
+    "topicId": "bio-u6-03",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: le caderine sono proteine di membrana che per funzionare hanno bisogno di ioni calcio (Ca²⁺); senza calcio non riescono ad agganciarsi.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il nome 'caderina' viene proprio da 'calcio-dipendente'. Pensa a un moschettone che si apre se gli manca la molla: senza Ca²⁺ la struttura della caderina collassa e non si aggancia. Le IgCAM (es. N-CAM) invece funzionano anche senza calcio: questa e la differenza chiave da ricordare.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u6-03-2",
+    "topicId": "bio-u6-03",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "mc",
+    "q": "Le caderine formano legami 'omofilici'. Cosa significa in parole semplici?",
+    "choices": [
+      "La E-caderina si lega solo a un'altra E-caderina sulla cellula vicina — stesso tipo con stesso tipo",
+      "La E-caderina si lega a qualsiasi proteina di membrana della cellula vicina",
+      "Le caderine si legano solo alla matrice extracellulare, non ad altre cellule",
+      "Le caderine si legano a qualsiasi CAM purche ci sia calcio"
+    ],
+    "answer": 0,
+    "explain": "Omofilico = stesso tipo riconosce stesso tipo. Immagina un moschettone maschio che si aggancia solo a un altro moschettone maschio identico: la E-caderina (Epithelial) riconosce e si aggancia solo alla E-caderina di un'altra cellula. Cosi le cellule della pelle restano tra loro e non si mescolano con quelle del fegato. Questo e il meccanismo base della selezione cellulare e della formazione dei tessuti.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u6-03-3",
+    "topicId": "bio-u6-03",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "open",
+    "q": "Immagina che durante lo sviluppo embrionale una cellula staminale debba aggregarsi con le future cellule nervose. Quale tipo di caderina deve esprimere sulla sua superficie, e perche? Ragiona ad alta voce.",
+    "answer": "Deve esprimere la N-caderina (N = Neural), che e la caderina tipica delle cellule nervose e muscolari. Il ragionamento: le caderine formano legami omofilici, cioe si legano solo allo stesso tipo. Se la cellula staminale porta N-caderina, riconoscera e si leghera alle altre cellule che portano N-caderina — esattamente le cellule nervose. Se invece esprimesse E-caderina, si aggregherebbe con le cellule epiteliali (pelle, intestino) e finirebbe nel tessuto sbagliato. In piu, serve calcio (Ca²⁺) per stabilizzare il legame, e la parte interna della caderina si ancora al citoscheletro per rinforzare la connessione.",
+    "explain": "Concetto chiave: omofilico = stesso tipo si lega a stesso tipo. N-caderina per cellule nervose, E-caderina per cellule epiteliali, P-caderina per la placenta.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u6-03-4",
+    "topicId": "bio-u6-03",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "mc",
+    "q": "Un insieme di cellule unite a svolgere una medesima funzione costituisce:",
+    "choices": [
+      "un tessuto",
+      "un organo",
+      "un apparato",
+      "un organismo",
+      "un individuo"
+    ],
+    "answer": 0,
+    "explain": "Il tessuto e il primo livello di organizzazione sopra la singola cellula: cellule simili, con le stesse CAM, si riconoscono e si raggruppano formando un tessuto (es. il tessuto epiteliale e fatto di cellule che esprimono tutte E-caderina). Le trappole: 'organo' (opzione B) e un livello piu alto — e formato da piu tessuti insieme (es. il cuore contiene tessuto muscolare, nervoso e connettivo); 'apparato' (opzione C) e ancora piu su, piu organi coordinati (es. apparato digerente); 'organismo' e 'individuo' sono tutto l'animale — il livello massimo, non minimo.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u6-03-5",
+    "topicId": "bio-u6-03",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sulle molecole di adesione cellulare (CAM) e FALSA?",
+    "choices": [
+      "Le integrine collegano la cellula alla matrice extracellulare, non direttamente ad altre cellule",
+      "Le caderine funzionano tramite legame omofilico e dipendono dal calcio",
+      "Le IgCAM (come la N-CAM) richiedono calcio per funzionare, proprio come le caderine",
+      "Le selectine sono coinvolte nell'adesione dei globuli bianchi all'endotelio",
+      "Le CAM sono proteine transmembrana con una parte interna spesso agganciata al citoscheletro"
+    ],
+    "answer": 2,
+    "explain": "L'affermazione FALSA e la C: le IgCAM (come N-CAM) NON richiedono calcio — e proprio questo che le distingue dalle caderine. Caderine = calcio-dipendenti; IgCAM = calcio-indipendenti: e uno dei discriminatori piu testati in esame. Le trappole: A e vera (le integrine legano la cellula alla matrice extracellulare, non ad altre cellule); B e vera (omofilico + calcio = firma delle caderine); D e vera (le selectine guidano i leucociti a 'rotolare' lungo le pareti dei vasi durante l'infiammazione — importante in veterinaria); E e vera (la parte interna si ancora all'actina del citoscheletro, trasmettendo segnali meccanici).",
+    "tags": ["prova d'esame"]
+  }
+]

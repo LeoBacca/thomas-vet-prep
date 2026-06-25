@@ -1,0 +1,101 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-16">
+
+## Cos'è l'energia potenziale?
+
+L'energia potenziale è energia **immagazzinata**, pronta a essere usata. Non è visibile ora, ma è lì, in attesa.
+
+Pensa a un elastico teso: non si muove, ma se lo lasci andare scatta. Oppure a un sasso in cima a un muretto: fermo lì, ma se cade fa del lavoro. Quella capacità di fare lavoro **senza ancora muoversi** è l'energia potenziale.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'energia potenziale è energia "in pausa" — immagazzinata per posizione (gravitazionale) o per deformazione (elastica).</div>
+
+---
+
+## Energia potenziale gravitazionale
+
+Ogni oggetto sollevato da terra ha energia potenziale gravitazionale. Più è in alto, più ne ha. Più è pesante, più ne ha.
+
+La formula è:
+
+**Ep = m · g · h**
+
+- **m** = massa dell'oggetto (kg)
+- **g** = accelerazione di gravità (9,8 m/s²)
+- **h** = altezza rispetto a un punto di riferimento (m)
+
+Il risultato è in **Joule (J)**.
+
+Esempio: un libro di 1 kg tenuto a 2 m da terra ha Ep = 1 × 9,8 × 2 = **19,6 J** di energia potenziale gravitazionale.
+
+Quando lo lasci cadere, quell'energia si trasforma in energia cinetica (moto).
+
+<Diagram caption="Come l'altezza influenza l'energia potenziale gravitazionale" code={`flowchart TB
+  A["Oggetto in alto<br/>(h grande)"] --> B["Ep gravitazionale ALTA<br/>Ep = m·g·h"]
+  C["Oggetto in basso<br/>(h piccola)"] --> D["Ep gravitazionale BASSA<br/>Ep = m·g·h"]
+  B --> E["Se cade: energia cinetica alta"]
+  D --> F["Se cade: energia cinetica bassa"]`} />
+
+---
+
+## Energia potenziale elastica
+
+Una molla compressa o allungata immagazzina energia potenziale elastica. Più la deformi, più energia accumula.
+
+La formula è:
+
+**Ep = ½ · k · x²**
+
+- **k** = costante elastica della molla (N/m) — indica quanto è "rigida"
+- **x** = allungamento o compressione rispetto alla posizione naturale (m)
+- Il **quadrato** di x significa che raddoppiando la deformazione l'energia quadruplica!
+
+Esempio: una molla con k = 200 N/m compressa di 0,1 m ha Ep = ½ × 200 × 0,01 = **1 J**.
+
+<Diagram caption="Confronto tra molla a riposo e molla deformata" code={`flowchart LR
+  A["Molla a riposo<br/>x = 0"] --> B["Ep elastica = 0<br/>nessuna energia immagazzinata"]
+  C["Molla compressa<br/>x grande"] --> D["Ep elastica = ½·k·x²<br/>energia immagazzinata"]
+  D --> E["Lasciata libera:<br/>spinge l'oggetto"]`} />
+
+---
+
+## Confronto tra le due forme
+
+| | Gravitazionale | Elastica |
+|---|---|---|
+| Causa | Altezza | Deformazione |
+| Formula | m·g·h | ½·k·x² |
+| Esempio | Sasso su un muretto | Molla compressa |
+| Si trasforma in... | Energia cinetica cadendo | Energia cinetica quando scatta |
+
+---
+
+## Guarda il video
+<YouTube id="t2P7ShpT7gE" title="lezione di FISICA su ENERGIA POTENZIALE: formule, unità di misura e quesiti risolti" />
+<VideoVisto id="fis-u2-16" />
+
+## Da ricordare
+- L'energia potenziale gravitazionale dipende da massa e altezza: **Ep = m·g·h**
+- L'energia potenziale elastica dipende dalla deformazione della molla: **Ep = ½·k·x²**
+- Entrambe sono energia "in pausa": quando il sistema si muove, si trasformano in energia cinetica
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un gatto di massa 4 kg sale su un tavolo alto 1 m. Quanto vale la sua energia potenziale gravitazionale? (g = 10 m/s²)" opzioni={["4 J","10 J","40 J","400 J"]} corretta={2} spiegazione="Ep = m·g·h = 4 × 10 × 1 = 40 J. La massa moltiplicata per g (10 m/s²) e per l'altezza (1 m) dà 40 J." />
+
+<Quiz domanda="Una molla con costante elastica k = 100 N/m viene compressa di 0,2 m. Quanta energia potenziale elastica immagazzina?" opzioni={["1 J","2 J","4 J","20 J"]} corretta={1} spiegazione="Ep = ½·k·x² = ½ × 100 × (0,2)² = 50 × 0,04 = 2 J. Ricorda il fattore ½ e di elevare al quadrato la deformazione x." />
+
+<Quiz domanda="Se raddoppio l'altezza di un oggetto, la sua energia potenziale gravitazionale..." opzioni={["Rimane uguale","Si dimezza","Raddoppia","Quadruplica"]} corretta={2} spiegazione="Nella formula Ep = m·g·h, l'altezza h compare al primo grado. Raddoppiando h, anche Ep raddoppia. (Attenzione: nell'energia elastica invece conta x², quindi raddoppiare la deformazione quadruplica l'energia.)" />
+
+<Esercizio problema="Una palla da tennis di massa 0,06 kg viene lanciata verticalmente e raggiunge un'altezza di 5 m. Calcola l'energia potenziale gravitazionale in quel punto. Usa g = 10 m/s²." soluzione="Ep = m·g·h = 0,06 × 10 × 5 = 3 J. La palla immagazzina 3 Joule di energia potenziale gravitazionale quando si trova a 5 m da terra. Se ricade, tutta quell'energia si trasforma in energia cinetica (trascurando l'attrito dell'aria)." />
+
+</section>
+
+</RisorsaLayout>

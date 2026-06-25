@@ -1,0 +1,10 @@
+---
+// Diagramma "disegnato a mano" (estetica Excalidraw) reso da testo Mermaid.
+// Uso in MDX:  <Diagram caption="..." code={`graph LR; A-->B`} />
+interface Props { code: string; caption?: string; }
+const { code, caption } = Astro.props;
+---
+<figure class="diagram">
+  <pre class="mermaid">{code}</pre>
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>

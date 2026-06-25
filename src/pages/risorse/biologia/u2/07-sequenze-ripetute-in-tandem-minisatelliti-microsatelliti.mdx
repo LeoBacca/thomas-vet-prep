@@ -1,0 +1,162 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u2-07">
+
+## Il genoma non è solo "geni utili"
+
+Se potessi leggere tutto il DNA umano come un libro, scopriresti qualcosa di sorprendente: solo il 2% circa contiene istruzioni per costruire proteine. Il restante 98% è fatto in gran parte di **sequenze ripetute** — pezzi di DNA che si ripetono decine, centinaia o anche migliaia di volte.
+
+Non sono necessariamente "spazzatura": alcune regolano i geni, alcune si spostano nel genoma, alcune ci parlano della nostra storia evolutiva.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Immagina il genoma come un libro enorme. I geni sono i capitoli utili. Ma il libro è pieno di paragrafi ripetuti, alcuni in blocchi uno vicino all'altro, altri sparsi per tutto il libro. Questi sono le sequenze ripetute.</div>
+
+---
+
+## Due grandi famiglie di sequenze ripetute
+
+Le sequenze ripetute si dividono in due categorie principali, in base a come sono disposte nel DNA:
+
+1. **Ripetizioni in tandem** — copie dello stesso pezzo di DNA messe una di fila all'altra, come vagoni di un treno.
+2. **Ripetizioni intersperse** — copie sparse in punti diversi del genoma, come se avessi copiato e incollato la stessa frase in capitoli diversi del libro.
+
+---
+
+## Ripetizioni in tandem: minisatelliti e microsatelliti
+
+### Microsatelliti (o STR — Short Tandem Repeats)
+
+Sono sequenze molto corte, di solito **1-6 basi**, ripetute molte volte di seguito. Per esempio: `CA CA CA CA CA CA` oppure `ATG ATG ATG ATG`.
+
+- Si trovano dispersi in tutto il genoma
+- Il **numero di ripetizioni varia da persona a persona** — questo li rende un "codice a barre" unico per ogni individuo
+- Sono usatissimi nelle **analisi del DNA forense** (il test di paternità usa proprio gli STR!)
+
+### Minisatelliti (o VNTR — Variable Number of Tandem Repeats)
+
+Sono simili ai microsatelliti ma la sequenza ripetuta è più lunga: **10-100 basi**.
+
+- Anche qui il numero di ripetizioni varia tra individui
+- Storicamente furono la base del primo **DNA fingerprinting** (impronta genetica), usato per la prima volta in un caso giudiziario nel 1986
+
+<div class="callout">💡 <strong>Analogia:</strong> Pensa ai microsatelliti come a una parola corta ripetuta ("GO GO GO GO") e ai minisatelliti come a una frase un po' più lunga ripetuta ("FORZA NAPOLI FORZA NAPOLI FORZA NAPOLI"). Il numero di ripetizioni cambia da persona a persona — ed è proprio questo che li rende utili per identificare individui.</div>
+
+---
+
+## Ripetizioni intersperse: elementi mobili del DNA
+
+Queste sequenze sono sparse in tutto il genoma e la cosa più interessante è che molte di esse sono o erano in grado di **spostarsi** — cioè copiarsi e incollarsi altrove nel DNA. Per questo si chiamano **elementi trasponibili** o **trasposoni**.
+
+Il meccanismo principale è detto **retrotrasposizione**: l'elemento viene prima trascritto in RNA, poi quell'RNA viene convertito di nuovo in DNA (grazie a un enzima chiamato **trascrittasi inversa**) e inserito in un nuovo punto del genoma. È un meccanismo del tipo **"copia e incolla"**.
+
+### LINE (Long Interspersed Nuclear Elements)
+
+- Sono lunghi: fino a **6.000-8.000 basi**
+- Contengono istruzioni per la trascrittasi inversa (si "muovono" da soli)
+- L'elemento più diffuso nell'uomo è **LINE-1 (L1)**: occupa circa il **17% del genoma umano**
+- La maggior parte è ormai "inattiva" — mutazioni accumulate nel tempo le hanno disabilitate
+
+### SINE (Short Interspersed Nuclear Elements)
+
+- Sono più corti: **100-400 basi**
+- **Non** hanno la trascrittasi inversa propria — per spostarsi "parassitano" i LINE
+- Il più famoso è **Alu**, lungo circa 300 basi: occupa circa il **10% del genoma umano**
+- Il nome Alu viene dal sito di taglio dell'enzima di restrizione *Alu*I che li taglia
+
+### Retrovirus endogeni (ERV — Endogenous Retroviruses)
+
+- Sono i "fantasmi" di antichi virus che infettarono i nostri antenati milioni di anni fa
+- Il virus si integrò nel DNA delle cellule germinali (spermatozoi o ovociti) e da allora si tramanda di generazione in generazione
+- Costituiscono circa l'**8% del genoma umano**
+- La maggior parte è inattiva, ma alcuni hanno acquisito funzioni utili (per es. alcune proteine della placenta dei mammiferi derivano da proteine virali)
+
+<div class="callout">💡 <strong>In parole semplici:</strong> LINE e SINE sono come parassiti del DNA: si copiano e si incollano in nuovi punti del genoma. I retrovirus endogeni sono invece come tatuaggi lasciati da virus antichi — ormai parte di noi.</div>
+
+---
+
+## Schema riassuntivo delle categorie
+
+<Diagram caption="Classificazione delle sequenze ripetute del genoma umano" code={`flowchart TB
+  A["Sequenze ripetute del genoma"] --> B["In tandem<br/>(una accanto all'altra)"]
+  A --> C["Intersperse<br/>(sparse nel genoma)"]
+  B --> D["Microsatelliti / STR<br/>unità 1–6 bp<br/>usati in forense"]
+  B --> E["Minisatelliti / VNTR<br/>unità 10–100 bp<br/>DNA fingerprinting"]
+  C --> F["LINE<br/>lunghi 6–8 kb<br/>hanno trascrittasi inversa<br/>es. LINE-1: 17% genoma"]
+  C --> G["SINE<br/>corti 100–400 bp<br/>parassitano i LINE<br/>es. Alu: 10% genoma"]
+  C --> H["Retrovirus endogeni ERV<br/>relitti di antichi virus<br/>~8% del genoma umano"]`} />
+
+---
+
+## Il meccanismo di retrotrasposizione
+
+<Diagram caption="Come un elemento LINE si copia e incolla in un nuovo punto del genoma (retrotrasposizione)" code={`flowchart LR
+  A["DNA: elemento LINE<br/>nella posizione originale"] --> B["Trascrizione<br/>in RNA messaggero"]
+  B --> C["Traduzione:<br/>sintesi della<br/>Trascrittasi Inversa"]
+  C --> D["La Trascrittasi Inversa<br/>converte l'RNA<br/>in nuovo DNA"]
+  D --> E["Il nuovo DNA<br/>si integra in un<br/>nuovo sito del genoma"]
+  E --> F["Risultato: ora ci sono<br/>DUE copie del LINE<br/>in posizioni diverse"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="sGn5EM5j_bU" title="Genetica, Sequenze ripetute del genoma — Dr Francesca Galotti" />
+<VideoVisto id="bio-u2-07" />
+
+## Da ricordare
+
+- Le sequenze ripetute occupano la maggior parte del genoma umano e si dividono in **ripetizioni in tandem** (microsatelliti, minisatelliti) e **ripetizioni intersperse** (LINE, SINE, retrovirus endogeni).
+- I **microsatelliti e minisatelliti** variano in numero da individuo a individuo e sono usati come marcatori genetici in forense e medicina.
+- **LINE e SINE** sono elementi mobili che si spostano via retrotrasposizione (RNA intermedio); i **retrovirus endogeni** sono resti di virus antichi integrati nel nostro genoma.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è la differenza principale tra microsatelliti e minisatelliti?"
+  opzioni={[
+    "I microsatelliti si trovano solo nei cromosomi sessuali, i minisatelliti solo negli autosomi",
+    "I microsatelliti hanno unità ripetute di 1–6 bp, i minisatelliti hanno unità più lunghe di 10–100 bp",
+    "I microsatelliti codificano proteine, i minisatelliti no",
+    "I microsatelliti sono elementi mobili, i minisatelliti sono fissi"
+  ]}
+  corretta={1}
+  spiegazione="La distinzione è nella lunghezza dell'unità ripetuta: i microsatelliti (STR) hanno unità di 1–6 bp, mentre i minisatelliti (VNTR) hanno unità di 10–100 bp. Entrambi variano in numero di copie tra individui e nessuno dei due codifica normalmente proteine."
+/>
+
+<Quiz
+  domanda="Cosa distingue i LINE dai SINE tra gli elementi intersperse?"
+  opzioni={[
+    "I LINE sono più corti e si trovano solo vicino ai centromeri",
+    "I SINE contengono la trascrittasi inversa, i LINE no",
+    "I LINE contengono la trascrittasi inversa e si muovono autonomamente; i SINE sono più corti e dipendono dai LINE per trasporsi",
+    "I LINE e i SINE sono identici, differiscono solo per la posizione nel genoma"
+  ]}
+  corretta={2}
+  spiegazione="I LINE sono lunghi (fino a 6–8 kb) e contengono il gene per la trascrittasi inversa, quindi possono retrotrasporsi autonomamente. I SINE sono corti (100–400 bp), non hanno la propria trascrittasi inversa e 'parassitano' quella dei LINE per muoversi."
+/>
+
+<Quiz
+  domanda="Come si è integrato nel genoma umano un retrovirus endogeno (ERV)?"
+  opzioni={[
+    "Per ricombinazione omologa con il DNA mitocondriale",
+    "Un retrovirus ha infettato una cellula germinale di un antenato; il suo DNA si è integrato ed è stato trasmesso alle generazioni successive",
+    "Gli ERV si formano per duplicazione dei geni che codificano gli istoni",
+    "Gli ERV entrano nel genoma solo durante lo sviluppo embrionale, non per via ereditaria"
+  ]}
+  corretta={1}
+  spiegazione="I retrovirus endogeni sono relitti di infezioni retrovirali avvenute milioni di anni fa. Quando un retrovirus infettò una cellula germinale (spermatozoo o ovocita), il suo DNA si integrò nel genoma dell'ospite e fu ereditato da tutte le generazioni successive."
+/>
+
+<Esercizio
+  problema="Un laboratorio forense analizza il DNA di due campioni prelevati su una scena del crimine. Spiega perché confrontare il numero di ripetizioni in 10 loci microsatelliti diversi permette di identificare (o escludere) un sospettato con altissima probabilità."
+  soluzione="Ogni microsatellite (locus STR) ha un numero variabile di ripetizioni che differisce tra individui. La probabilità che due persone non imparentate abbiano lo stesso numero di ripetizioni a un singolo locus è già bassa; analizzando 10 loci indipendenti, le probabilità si moltiplicano tra loro (principio della probabilità combinata). Il risultato è che la probabilità di una coincidenza casuale diventa astronomicamente piccola (tipicamente 1 su miliardi), rendendo il profilo STR praticamente unico per ogni individuo (gemelli identici esclusi)."
+/>
+
+</section>
+
+</RisorsaLayout>

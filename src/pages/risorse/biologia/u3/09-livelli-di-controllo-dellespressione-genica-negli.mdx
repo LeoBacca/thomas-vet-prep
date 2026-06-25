@@ -1,0 +1,115 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-09">
+
+## Cos'è l'espressione genica?
+
+Ogni cellula del tuo corpo ha lo stesso DNA. Eppure una cellula del fegato fa cose completamente diverse da una cellula muscolare. Come è possibile?
+
+La risposta è che non tutti i geni vengono "accesi" sempre. La cellula decide **quali geni attivare, quando e quanto**. Questo processo si chiama **regolazione dell'espressione genica**.
+
+Pensa al DNA come a un ricettario enorme. Avere tutte le ricette non significa cucinarle tutte ogni giorno: scegli cosa preparare in base alla situazione.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'espressione genica è il processo con cui le informazioni nel DNA diventano proteine funzionanti. Regolarla significa decidere quali proteine produrre, in che quantità e in quale momento.</div>
+
+## Quattro livelli di controllo
+
+Negli eucarioti (organismi con cellule dotate di nucleo, come noi) il controllo avviene in **quattro momenti distinti** lungo la strada dal DNA alla proteina.
+
+Immaginala come una catena di montaggio con quattro stazioni di controllo qualità: se un prodotto non va bene, viene bloccato o modificato prima di arrivare alla fine.
+
+---
+
+## 1. Controllo trascrizionale
+
+È il più importante e avviene **prima ancora che si inizi a fare qualcosa**.
+
+La trascrizione è la copia del DNA in RNA messaggero (mRNA). Le cellule possono decidere se avviare questa copia oppure no, tramite proteine chiamate **fattori di trascrizione**.
+
+- Se i fattori di trascrizione giusti sono presenti → il gene viene copiato in mRNA.
+- Se sono assenti → il gene resta silenzioso.
+
+Esempio quotidiano: è come decidere se stampare un documento. Se non lo stampi, il testo resta solo nel computer e non produce niente.
+
+---
+
+## 2. Controllo post-trascrizionale
+
+L'mRNA appena prodotto non è ancora pronto: deve essere **lavorato prima di uscire dal nucleo**.
+
+Questa fase include:
+- **Splicing**: vengono rimossi i pezzi inutili (introni) e tenuti solo quelli utili (esoni). Con lo **splicing alternativo**, dallo stesso gene si possono ottenere mRNA diversi e quindi proteine diverse.
+- **Stabilità dell'mRNA**: alcune molecole di mRNA vengono degradate velocemente, altre durano a lungo. Più a lungo dura, più proteine vengono prodotte.
+- **microRNA (miRNA)**: piccole molecole di RNA che si legano all'mRNA e ne bloccano la traduzione o ne accelerano la degradazione.
+
+---
+
+## 3. Controllo traduzionale
+
+L'mRNA è uscito dal nucleo ed è nel citoplasma. Ora i ribosomi potrebbero tradurlo in proteina. Ma la cellula può **bloccare o rallentare anche questa fase**.
+
+Come avviene:
+- Proteine specifiche si legano all'mRNA e impediscono ai ribosomi di partire.
+- In alcune situazioni (stress cellulare, carenza di nutrienti) la traduzione di certi mRNA viene sospesa.
+
+Esempio quotidiano: hai la ricetta in mano, gli ingredienti sul tavolo, ma decidi di aspettare prima di cucinare.
+
+---
+
+## 4. Controllo post-traduzionale
+
+La proteina è stata prodotta, ma potrebbe non funzionare ancora. Questo livello riguarda **tutto ciò che succede alla proteina dopo che è stata costruita**.
+
+Comprende:
+- **Modificazioni chimiche**: aggiunta di gruppi fosfato (fosforilazione), zuccheri (glicosilazione) o altri gruppi che attivano o disattivano la proteina.
+- **Taglio proteolitico**: alcune proteine vengono tagliate per diventare attive (esempio: l'insulina viene prodotta come precursore inattivo e poi tagliata).
+- **Degradazione**: le proteine vecchie o difettose vengono smontate dal **proteasoma** (una specie di tritacarne molecolare).
+
+---
+
+<Diagram caption="I quattro livelli di controllo dell'espressione genica negli eucarioti" code={`flowchart TB
+  A["DNA nel nucleo"] --> B["1. Controllo TRASCRIZIONALE<br/>Fattori di trascrizione decidono<br/>se copiare il gene in mRNA"]
+  B --> C["mRNA grezzo (pre-mRNA)"]
+  C --> D["2. Controllo POST-TRASCRIZIONALE<br/>Splicing: rimozione degli introni<br/>Stabilità mRNA, miRNA"]
+  D --> E["mRNA maturo esce dal nucleo"]
+  E --> F["3. Controllo TRADUZIONALE<br/>I ribosomi possono essere bloccati<br/>prima di iniziare la sintesi"]
+  F --> G["Proteina appena sintetizzata"]
+  G --> H["4. Controllo POST-TRADUZIONALE<br/>Modificazioni chimiche, taglio,<br/>degradazione dal proteasoma"]
+  H --> I["Proteina attiva e funzionale"]`} />
+
+<Diagram caption="Lo splicing alternativo: dallo stesso gene, proteine diverse" code={`flowchart LR
+  A["Gene nel DNA<br/>Esone1 - Introne - Esone2 - Introne - Esone3"] --> B["Trascrizione: pre-mRNA"]
+  B --> C["Splicing variante A<br/>Esone1 + Esone2"]
+  B --> D["Splicing variante B<br/>Esone1 + Esone3"]
+  C --> E["Proteina A"]
+  D --> F["Proteina B"]`} />
+
+## Guarda il video
+<YouTube id="8x39mztTDnY" title="LA REGOLAZIONE GENICA NEGLI EUCARIOTI — Biologia con Giulia" />
+<VideoVisto id="bio-u3-09" />
+
+## Da ricordare
+- Il controllo dell'espressione genica avviene a **quattro livelli**: trascrizionale, post-trascrizionale, traduzionale e post-traduzionale.
+- Il controllo trascrizionale è il più "economico" per la cellula: blocca tutto prima ancora di iniziare; gli altri livelli permettono risposte più veloci e fini.
+- Lo splicing alternativo permette a un singolo gene di produrre più proteine diverse, aumentando enormemente la complessità degli eucarioti.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="A quale livello di controllo agisce lo splicing alternativo?" opzioni={["Controllo trascrizionale","Controllo post-trascrizionale","Controllo traduzionale","Controllo post-traduzionale"]} corretta={1} spiegazione="Lo splicing avviene sull'mRNA appena prodotto, prima che esca dal nucleo: è quindi un meccanismo post-trascrizionale. Permette di ottenere proteine diverse dallo stesso gene combinando esoni in modo diverso." />
+
+<Quiz domanda="Qual è la funzione principale dei fattori di trascrizione?" opzioni={["Tagliare la proteina dopo la sintesi","Degradare l'mRNA nel citoplasma","Regolare l'avvio della trascrizione del DNA in mRNA","Modificare chimicamente la proteina finita"]} corretta={2} spiegazione="I fattori di trascrizione sono proteine che si legano a specifiche sequenze del DNA vicino al gene e regolano se e quanto quel gene viene trascritto in mRNA. Sono il principale meccanismo di controllo trascrizionale." />
+
+<Quiz domanda="Il proteasoma è coinvolto in quale livello di controllo?" opzioni={["Post-traduzionale","Post-trascrizionale","Trascrizionale","Traduzionale"]} corretta={0} spiegazione="Il proteasoma è un complesso proteico che degrada le proteine danneggiate, mal ripiegate o che non servono più. Agisce sulle proteine già sintetizzate: è quindi un controllo post-traduzionale." />
+
+<Esercizio problema="Una cellula produce molta quantità di un certo mRNA, ma pochissima della proteina corrispondente. A quale livello (o livelli) potrebbe avvenire il blocco? Fai almeno due esempi concreti di meccanismi." soluzione="Se l'mRNA è abbondante ma la proteina è scarsa, il blocco avviene a valle della trascrizione. Possibili meccanismi: (1) Controllo traduzionale — proteine regolatrici si legano all'mRNA e impediscono ai ribosomi di iniziare la traduzione; (2) Controllo post-traduzionale — la proteina viene sintetizzata ma degradata rapidamente dal proteasoma prima di poter agire; (3) Controllo post-trascrizionale — microRNA (miRNA) si legano all'mRNA nel citoplasma e ne bloccano la traduzione o ne stimolano la degradazione. Tutti e tre i meccanismi spiegano perché mRNA alto non implica automaticamente proteina alta." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,105 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-27">
+
+Immagina una stanza piena di palline che rimbalzano in continuazione, senza mai fermarsi. È così che la **teoria cinetica dei gas** vede un gas: tante minuscole particelle in **movimento perpetuo**, che sbattono fra loro e contro le pareti. La parola "cinetica" viene dal greco e vuol dire proprio "del movimento".
+
+La cosa più importante è questa: la **temperatura** ci dice quanta **energia di movimento** hanno in media queste particelle. In pratica, più sono veloci, più il gas è caldo. Più sono lente, più è freddo. Scaldare un gas significa semplicemente fare correre più forte le sue particelle.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la temperatura è il "quanto si agitano" le particelle. Caldo = particelle che corrono veloci. Freddo = particelle che si muovono piano. La temperatura misura il movimento, niente di più.</div>
+
+<Diagram caption="Cos'è la temperatura secondo la teoria cinetica" code={`flowchart LR
+  G["Gas = tante particelle<br/>in movimento continuo"] --> V["Si muovono piu veloci"]
+  V --> T["Temperatura piu alta<br/>(piu caldo)"]
+  G --> L["Si muovono piu lente"]
+  L --> F["Temperatura piu bassa<br/>(piu freddo)"]`} />
+
+## La temperatura è movimento
+
+Quando misuri la febbre, stai misurando l'agitazione delle particelle del tuo corpo. Una temperatura più alta vuol dire che le molecole dentro di te si muovono e si urtano più velocemente.
+
+L'energia del movimento si chiama **energia cinetica**. La regola chiave della teoria cinetica è semplice:
+
+- temperatura alta = energia cinetica media alta = particelle veloci
+- temperatura bassa = energia cinetica media bassa = particelle lente
+
+C'è un punto limite, lo **zero assoluto** (circa meno 273 gradi Celsius, cioè 0 kelvin): è la temperatura più fredda possibile, quella in cui le particelle quasi si fermano del tutto. Non si può andare più in basso, perché non esiste un movimento più lento di "fermo".
+
+**Perché conta in medicina e veterinaria?** Il corpo umano e quello degli animali funzionano bene solo dentro una stretta finestra di temperatura. Le reazioni chimiche della vita (digestione, respirazione cellulare) hanno bisogno di particelle che si muovano alla "giusta velocità". Troppo freddo e tutto rallenta; troppo caldo (febbre alta) e le molecole delicate del corpo, come le proteine, si rovinano.
+
+## Non tutte le particelle vanno alla stessa velocità
+
+Ecco il punto che sorprende: in un gas le particelle **non** corrono tutte alla stessa velocità. Alcune vanno pianissimo, alcune velocissime, e la maggior parte sta in mezzo.
+
+Pensa a tante persone che corrono in un parco. Alcune camminano, alcune sprintano, ma la maggioranza tiene un'andatura media. Se conti quante persone vanno a ogni velocità, ottieni una **curva**: questa è la **distribuzione di Maxwell-Boltzmann**. Ti dice quante particelle vanno piano, quante medie e quante veloci.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la curva di Maxwell-Boltzmann è come un grafico delle "andature": pochissime particelle lentissime, pochissime velocissime, e una grande maggioranza a velocità media. La cima della curva è la velocità più comune.</div>
+
+## Cosa succede alla curva quando scaldi il gas
+
+Se scaldi il gas, le particelle in media corrono di più. La curva allora si **sposta verso destra** (verso le velocità più alte) e diventa **più bassa e più larga**: le velocità si "spalmano" su un intervallo più ampio.
+
+Il diagramma qui sotto confronta la stessa quantità di gas a una temperatura bassa e a una alta.
+
+<Diagram caption="La curva di Maxwell-Boltzmann a due temperature: cosa cambia" code={`flowchart TB
+  Start["Stesso gas, due temperature"] --> Bassa["Temperatura BASSA"]
+  Start --> Alta["Temperatura ALTA"]
+  Bassa --> B1["Curva alta e stretta"]
+  Bassa --> B2["Picco spostato a SINISTRA<br/>(velocita media piu bassa)"]
+  Alta --> A1["Curva bassa e larga"]
+  Alta --> A2["Picco spostato a DESTRA<br/>(velocita media piu alta)"]`} />
+
+Una cosa furba da notare: anche a bassa temperatura **qualche** particella va comunque molto veloce (la "coda" destra della curva). Questo spiega perché certe reazioni chimiche, e nel corpo certi processi, riescono ad avvenire: bastano le poche particelle abbastanza energiche da farle partire. Scaldando, quelle particelle veloci diventano molte di più, ed è per questo che la febbre o il calore accelerano le reazioni.
+
+## Guarda il video
+
+<YouTube id="exCKLd2vF84" title="Distribuzione di Maxwell-Boltzmann e teoria cinetica dei gas — spiegazione" />
+
+<VideoVisto id="chim-u1-27" />
+
+## Da ricordare
+
+- Un **gas** è fatto di particelle in **movimento continuo** che urtano fra loro e contro le pareti.
+- La **temperatura** misura la **velocità media** (l'energia cinetica media) delle particelle: caldo = veloci, freddo = lente.
+- Le particelle **non** vanno tutte alla stessa velocità: la **curva di Maxwell-Boltzmann** mostra quante vanno piano, medie e veloci.
+- Scaldando il gas la curva si sposta a **destra** e diventa più **bassa e larga** (velocità più alte e più varie).
+- Anche a bassa temperatura **alcune** particelle sono comunque molto veloci: è la "coda" della curva, importante per far partire le reazioni.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Secondo la teoria cinetica, che cos'è la temperatura di un gas?"
+  opzioni={["Il peso delle particelle", "Una misura della velocita media (energia cinetica) delle particelle", "Il numero di particelle nel recipiente", "Il colore del gas"]}
+  corretta={1}
+  spiegazione="La temperatura misura quanto velocemente si muovono in media le particelle: piu sono veloci, piu il gas e caldo."
+/>
+
+<Quiz
+  domanda="In un gas, le particelle si muovono:"
+  opzioni={["Tutte esattamente alla stessa velocita", "A velocita diverse: alcune lente, alcune veloci, la maggioranza in mezzo", "Sempre ferme", "Solo verso il basso"]}
+  corretta={1}
+  spiegazione="Le velocita sono distribuite: la curva di Maxwell-Boltzmann mostra proprio questa varieta, con una velocita media piu comune."
+/>
+
+<Quiz
+  domanda="Cosa succede alla curva di Maxwell-Boltzmann se aumenti la temperatura?"
+  opzioni={["Si sposta a sinistra e diventa piu alta", "Resta identica", "Si sposta a destra e diventa piu bassa e larga", "Sparisce del tutto"]}
+  corretta={2}
+  spiegazione="Scaldando, le particelle vanno in media piu veloci: il picco si sposta verso destra (velocita maggiori) e la curva si abbassa e si allarga."
+/>
+
+<Esercizio
+  problema="Hai dell'aria in una stanza fredda e la stessa aria in una stanza calda. In quale delle due le molecole d'aria si muovono in media piu velocemente, e perche?"
+  soluzione="Nella stanza calda. La temperatura piu alta significa energia cinetica media maggiore, quindi le molecole si muovono in media piu velocemente. Nella stanza fredda, con temperatura piu bassa, le stesse molecole si muovono in media piu lentamente."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u5-05-1",
+    "topicId": "bio-u5-05",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Ogni proteina porta nella sua sequenza aminoacidica un 'segnale di indirizzamento'. A che cosa serve questo segnale?",
+    "choices": [
+      "E come un codice postale: dice alla cellula in quale compartimento (nucleo, RE, mitocondrio...) deve essere consegnata la proteina",
+      "Serve a far capire ai ribosomi quando smettere di costruire la proteina",
+      "Indica alla proteina quanta energia usare per funzionare",
+      "Serve solo alle proteine dei lisosomi, le altre non ne hanno bisogno"
+    ],
+    "answer": 0,
+    "explain": "Tutte le proteine nascono nei ribosomi, ma devono raggiungere l'ufficio giusto nella cellula. Il segnale di indirizzamento e una specie di etichetta con l'indirizzo: la cellula lo legge e consegna la proteina al compartimento corretto.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-05-2",
+    "topicId": "bio-u5-05",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Descrivi il percorso di una proteina destinata ai lisosomi: da dove parte, chi la riconosce per prima, dove si ferma a ogni tappa e quale 'timbro' riceve per arrivare a destinazione.",
+    "answer": "La proteina inizia a essere costruita da un ribosoma nel citoplasma. Appena la sequenza segnale (tratto idrofobico all'inizio della catena) viene esposta, viene riconosciuta dalla particella SRP, che blocca momentaneamente la sintesi e trascina il ribosoma alla membrana del reticolo endoplasmatico (RE). La proteina entra nel lume del RE mentre viene ancora completata (co-traduzionalmente) e la sequenza segnale viene rimossa da un enzima chiamato peptidasi segnale. Dal RE la proteina passa tramite vescicole di trasporto all'apparato di Golgi, il centro di smistamento finale. Nel Golgi la proteina riceve un 'timbro' chimico specifico: un gruppo chiamato mannosio-6-fosfato. Questo bollino viene riconosciuto dai recettori delle vescicole dirette ai lisosomi, che portano la proteina a destinazione.",
+    "explain": "Percorso chiave: ribosoma → (SRP) → RE → Golgi → (mannosio-6-fosfato) → lisosoma. Il Golgi e il grande smistatore; il mannosio-6-fosfato e il 'bollino rosso' per i lisosomi.",
+    "tags": ["risposta aperta"]
+  }
+]

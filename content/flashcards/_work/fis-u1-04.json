@@ -1,0 +1,10 @@
+{
+ "id": "fis-u1-04",
+ "titolo": "Grandezze estensive e intensive",
+ "materia": "fisica",
+ "unita": 1,
+ "slug": "04-grandezze-estensive-e-intensive",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u1/04-grandezze-estensive-e-intensive.mdx",
+ "examQuestions": []
+}

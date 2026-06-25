@@ -1,0 +1,25 @@
+{
+ "id": "bio-u3-02",
+ "titolo": "Srotolamento del DNA: elicasi e topoisomerasi",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "02-srotolamento-del-dna-elicasi-e-topoisomerasi",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u3/02-srotolamento-del-dna-elicasi-e-topoisomerasi.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "Durante la duplicazione del DNA eucariote si formano le bolle di replica. Indicare quale enzima, tra quelli sottoelencati, determina la rottura dei legami ad idrogeno fra le basi azotate:",
+   "choices": [
+    "elicasi",
+    "DNA ligasi",
+    "DNA polimerasi",
+    "telomerasi",
+    "replicasi"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u6-07">
+
+## I recettori intracellulari: quando il segnale entra direttamente in casa
+
+Di solito i segnali chimici non riescono ad entrare nella cellula: la membrana plasmatica li blocca come un portiere. Ma alcune molecole sono abbastanza "scivolose" da attraversarla da sole — perché sono **liposolubili** (si sciolgono nei grassi, come si scioglierebbe un po' di burro in una padella calda).
+
+Per questi segnali speciali non servono recettori in superficie: il recettore sta **dentro la cellula**, nel citoplasma o direttamente nel nucleo.
+
+---
+
+## Chi sono i segnali liposolubili?
+
+I segnali che usano recettori intracellulari appartengono a due grandi famiglie:
+
+1. **Ormoni lipidici (steroidei e tiroidei)** — molecole derivate dal colesterolo o da aminoacidi, come estrogeni, testosterone, cortisolo, ormoni tiroidei. Attraversano la membrana e si legano a recettori nel citoplasma o nel nucleo.
+
+2. **Ossido nitrico (NO)** — un gas minuscolo prodotto da cellule vicine (per esempio dalle cellule dei vasi sanguigni). Attraversa la membrana in un batter d'occhio e si lega direttamente a un enzima bersaglio.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Gli ormoni lipidici entrano nella cellula come una chiave che apre la porta di casa invece di bussare dall'esterno. L'ossido nitrico è un gas che attraversa i muri.</div>
+
+---
+
+## Come funziona la via degli ormoni lipidici (es. testosterone)
+
+Immagina il testosterone come un passeggero VIP:
+
+1. Attraversa la membrana plasmatica senza chiedere permesso (è liposolubile).
+2. Nel citoplasma trova il suo **recettore nucleare** (una proteina specifica). Prima che arrivi l'ormone, questo recettore è "bloccato" da proteine inibitrici (heat shock proteins).
+3. Il testosterone si lega al recettore. Le proteine inibitrici si staccano e il complesso ormone-recettore è ora **attivo**.
+4. Il complesso entra nel nucleo e si lega a specifiche sequenze del DNA chiamate **elementi di risposta ormonale (HRE)**.
+5. Questo attiva o silenzia certi geni: la cellula produce nuove proteine o ne riduce la produzione.
+
+Il risultato finale: una **risposta lenta ma duratura** (ore o giorni), perché si devono costruire nuove proteine partendo dai geni.
+
+<Diagram caption="Via di segnalazione degli ormoni steroidei (es. testosterone)" code={`flowchart TB
+  A["Ormone steroideo (es. testosterone)<br/>nel liquido extracellulare"] --> B["Attraversa la membrana plasmatica<br/>(è liposolubile)"]
+  B --> C["Si lega al recettore nel citoplasma<br/>(le proteine inibitrici si staccano)"]
+  C --> D["Complesso ormone-recettore<br/>entra nel nucleo"]
+  D --> E["Si lega al DNA<br/>(sequenza HRE)"]
+  E --> F["Attivazione o silenziamento di geni"]
+  F --> G["Produzione di nuove proteine<br/>(risposta lenta e duratura)"]`} />
+
+---
+
+## Come funziona la via dell'ossido nitrico (NO)
+
+L'ossido nitrico è un segnale brevissimo: viene prodotto, agisce e si degrada in pochi secondi. Funziona così:
+
+1. Una cellula vicina (es. endoteliale nel vaso sanguigno) produce **NO** usando l'enzima **NOS** (NO sintasi), a partire dall'aminoacido arginina.
+2. L'NO, essendo un gas, diffonde liberamente attraverso le membrane della cellula bersaglio.
+3. Dentro la cellula bersaglio si lega a un enzima: la **guanilato ciclasi solubile**.
+4. Questo enzima si attiva e trasforma **GTP** in **cGMP** (un secondo messaggero).
+5. Il cGMP attiva delle proteinchinasi che rilassano le cellule muscolari lisce del vaso → il vaso si dilata (**vasodilatazione**).
+
+Curiosità: il Viagra funziona proprio bloccando la degradazione del cGMP, prolungando la vasodilatazione.
+
+<Diagram caption="Via di segnalazione dell'ossido nitrico (NO)" code={`flowchart TB
+  A["Cellula endoteliale produce NO<br/>tramite NOS (NO sintasi)"] --> B["NO diffonde attraverso la membrana<br/>(è un gas minuscolo)"]
+  B --> C["NO si lega alla guanilato ciclasi<br/>nella cellula bersaglio"]
+  C --> D["Guanilato ciclasi attivata<br/>converte GTP in cGMP"]
+  D --> E["cGMP attiva proteinchinasi"]
+  E --> F["Rilassamento del muscolo liscio<br/>del vaso sanguigno"]
+  F --> G["Vasodilatazione<br/>(risposta rapida, dura secondi)"]`} />
+
+---
+
+## I recettori accoppiati a canali ionici (recettori-canale)
+
+Questi recettori lavorano in modo completamente diverso: sono essi stessi dei **canali** nella membrana. Quando il segnale chimico (ligando) si lega, il canale si apre fisicamente e lascia passare ioni (Na+, K+, Ca2+, Cl-).
+
+Pensa a una porta a molla: il ligando è la mano che spinge, il canale è la porta. Appena la mano si stacca, la porta si richiude.
+
+**Caratteristiche principali:**
+- Risposta **istantanea** (millisecondi) — nessun secondo messaggero necessario.
+- Usati soprattutto nel **sistema nervoso** e nelle **giunzioni neuromuscolari**.
+- Esempio classico: il **recettore nicotinico dell'acetilcolina** — quando il neurotrasmettitore si lega, il canale si apre e gli ioni Na+ entrano, scatenando un segnale elettrico.
+
+**Come funziona:**
+1. Il ligando arriva e si lega al recettore sulla membrana.
+2. Il canale cambia forma (conformazione) e si apre.
+3. Gli ioni fluiscono secondo il loro gradiente elettrochimico.
+4. Cambia il potenziale di membrana della cellula.
+5. La risposta è immediata: contrazione muscolare, segnale nervoso, ecc.
+
+---
+
+## Confronto rapido tra i tre tipi
+
+| Tipo | Dove sta il recettore | Velocità | Esempio |
+|---|---|---|---|
+| Ormoni lipidici | Citoplasma / nucleo | Lenta (ore-giorni) | Testosterone, cortisolo |
+| Ossido nitrico | Enzima intracellulare | Rapida (secondi) | Vasodilatazione |
+| Recettori-canale | Membrana plasmatica | Istantanea (ms) | Acetilcolina nei muscoli |
+
+---
+
+## Guarda il video
+<YouTube id="U6omaPH0dTA" title="La RICEZIONE del SEGNALE e i RECETTORI - ligandi intracellulari ed extracellulari" />
+<VideoVisto id="bio-u6-07" />
+
+## Da ricordare
+- Gli ormoni lipidici (steroidi, tiroidei) entrano nella cellula, si legano a recettori nel citoplasma o nucleo e regolano direttamente i geni: risposta lenta ma duratura.
+- L'ossido nitrico (NO) è un gas che attraversa la membrana e attiva la guanilato ciclasi, producendo cGMP: causa vasodilatazione in pochi secondi.
+- I recettori-canale sono canali ionici che si aprono al legame del ligando: risposta istantanea, usati nei neuroni e nei muscoli.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Perché gli ormoni steroidei non hanno bisogno di un recettore sulla superficie della cellula?" opzioni={["Perché vengono prodotti già dentro la cellula","Perché sono liposolubili e attraversano direttamente la membrana plasmatica","Perché si legano ai recettori del nucleo delle cellule vicine","Perché vengono trasportati da proteine speciali che li portano nel nucleo senza entrare nella cellula"]} corretta={1} spiegazione="Gli ormoni steroidei sono liposolubili: si sciolgono nella membrana plasmatica (fatta di lipidi) e la attraversano liberamente. Trovano il loro recettore già dentro la cellula, nel citoplasma o nel nucleo." />
+
+<Quiz domanda="Qual è il secondo messaggero prodotto nella via dell'ossido nitrico (NO)?" opzioni={["AMP ciclico (cAMP)","Inositolo trifosfato (IP3)","GMP ciclico (cGMP)","Diacilglicerolo (DAG)"]} corretta={2} spiegazione="L'NO attiva la guanilato ciclasi solubile, che converte GTP in cGMP (GMP ciclico). Il cGMP è il secondo messaggero che porta avanti il segnale, attivando proteinchinasi e causando vasodilatazione." />
+
+<Quiz domanda="Qual è la caratteristica principale dei recettori accoppiati a canali ionici rispetto agli altri tipi di recettori?" opzioni={["Producono una risposta lenta perché devono attivare la trascrizione genica","Hanno una risposta istantanea perché aprono direttamente un canale ionico senza secondi messaggeri","Richiedono la sintesi di cGMP come secondo messaggero","Sono localizzati nel nucleo e regolano l'espressione genica"]} corretta={1} spiegazione="I recettori-canale sono essi stessi dei canali ionici: quando il ligando si lega, il canale si apre fisicamente e gli ioni attraversano la membrana in millisecondi. Non servono secondi messaggeri né trascrizione genica, per questo la risposta è istantanea." />
+
+<Esercizio problema="Un farmaco blocca tutti i recettori nucleari degli ormoni steroidei in una cellula muscolare. Cosa succede alla risposta cellulare agli ormoni steroidei come il testosterone? Perché la risposta sarebbe diversa se invece si bloccassero i recettori dell'acetilcolina (recettori-canale) nella stessa cellula?" soluzione="Se si bloccano i recettori nucleari degli ormoni steroidei, il testosterone entra ancora nella cellula (perché è liposolubile) ma non può più legarsi al recettore e quindi non può attivare la trascrizione dei geni bersaglio. La cellula non risponde: non produce le proteine normalmente indotte dal testosterone (es. proteine del muscolo). La risposta è assente perché tutta la via dipende da quel recettore nucleare. Se invece si bloccano i recettori-canale dell'acetilcolina, il segnale nervoso non riesce più ad aprire i canali ionici: gli ioni Na+ non entrano, il potenziale di membrana non cambia e il muscolo non si contrae. In questo caso la risposta è istantanea (o meglio: l'assenza di risposta è istantanea), perché il recettore-canale non ha bisogno di sintesi proteica. Questo mostra la differenza fondamentale: ormoni steroidei → risposta lenta via geni; recettori-canale → risposta istantanea via ioni." />
+
+</section>
+
+</RisorsaLayout>

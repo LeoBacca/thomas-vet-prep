@@ -1,0 +1,208 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u3-02">
+
+Una **reazione chimica** è quando alcune sostanze (i **reagenti**) si trasformano in altre sostanze (i **prodotti**). La scriviamo come una piccola "ricetta" con una freccia in mezzo. **Bilanciare** vuol dire fare in modo che, prima e dopo la freccia, ci sia lo **stesso numero di atomi** di ogni tipo. In natura nulla si crea e nulla si distrugge: gli atomi non spariscono e non spuntano dal nulla, si **riorganizzano** soltanto.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina di smontare dei mattoncini LEGO e rimontarli in un'altra forma. Il numero di mattoncini resta identico! Bilanciare una reazione è proprio contare i mattoncini (gli atomi) e assicurarsi che siano uguali a sinistra e a destra della freccia.</div>
+
+<Diagram caption="Una reazione: i reagenti si trasformano nei prodotti, ma gli atomi restano gli stessi" code={`flowchart LR
+  R["REAGENTI<br/>(le sostanze di partenza)"] -->|"reazione (la freccia)"| P["PRODOTTI<br/>(le sostanze finali)"]`} />
+
+## Cosa sono i coefficienti
+
+Per bilanciare **non** possiamo cambiare le formule delle sostanze (l'acqua è sempre H₂O, non possiamo inventarci H₃O). Possiamo solo mettere un **numero grande davanti** a una sostanza: questo numero si chiama **coefficiente** e dice **quante copie** di quella sostanza ci sono.
+
+Esempio: `2 H₂O` significa "due molecole d'acqua". Quel **2** moltiplica tutti gli atomi della formula. Quindi `2 H₂O` ha **4 atomi di idrogeno** (2 × 2) e **2 atomi di ossigeno** (2 × 1).
+
+<div class="callout">💡 <strong>Attenzione:</strong> il numero <strong>davanti</strong> (il coefficiente) si può cambiare. Il numero <strong>piccolo in basso</strong> dentro la formula (il pedice, come il 2 di H₂O) <strong>NON</strong> si tocca mai: fa parte dell'identità della sostanza.</div>
+
+## Bilanciamo passo passo: la combustione del metano
+
+Il **metano** (CH₄, il gas dei fornelli) brucia con l'**ossigeno** (O₂) e produce **anidride carbonica** (CO₂) e **acqua** (H₂O). Questa è una **combustione**: la stessa cosa che, nel nostro corpo, fanno le cellule quando "bruciano" gli zuccheri per darci energia. Partiamo dalla reazione non ancora bilanciata e sistemiamola un atomo per volta.
+
+<Diagram caption="Bilanciamento passo passo della combustione del metano" code={`flowchart TB
+  A["Partenza (NON bilanciata)<br/>CH4 + O2 → CO2 + H2O"] --> B["Passo 1: il carbonio (C)<br/>1 a sinistra, 1 a destra → gia a posto"]
+  B --> C["Passo 2: l'idrogeno (H)<br/>a sinistra 4, a destra solo 2<br/>metto un 2 davanti all'acqua: 2 H2O → ora 4 e 4"]
+  C --> D["Passo 3: l'ossigeno (O)<br/>a destra ora ce ne sono 4 (2 in CO2 + 2 nelle due H2O)<br/>metto un 2 davanti a O2: 2 O2 → ora 4 e 4"]
+  D --> E["Reazione BILANCIATA<br/>CH4 + 2 O2 → CO2 + 2 H2O"]`} />
+
+Il trucco è semplice: **conta gli atomi di un elemento per volta** e, dove ne mancano, aggiungi un coefficiente davanti finché i conti tornano. Conviene lasciare per ultimo l'**ossigeno**, perché spesso compare in più sostanze e si sistema da solo alla fine.
+
+## Perché conta in medicina e veterinaria
+
+Il nostro corpo è una grande fabbrica di reazioni chimiche, tutte **bilanciate**. La respirazione cellulare, per esempio, è proprio una combustione controllata: il glucosio reagisce con l'ossigeno e produce anidride carbonica e acqua, liberando l'energia che ci tiene vivi. Quando un veterinario calcola la **dose di un farmaco** o capisce come il corpo di un animale produce energia, sta usando lo stesso principio: gli atomi devono sempre **tornare**. Saper bilanciare è il primo passo per capire tutto questo.
+
+## Cosa si conserva (e cosa NO)
+
+Questa è una delle domande-trappola più classiche d'esame. In una reazione bilanciata, **cosa è davvero uguale prima e dopo la freccia?**
+
+- ✅ **Gli atomi di ogni elemento.** Se a sinistra ci sono 4 idrogeni, a destra ce ne devono essere 4. Vale elemento per elemento.
+- ✅ **La massa totale.** Visto che gli atomi sono gli stessi (e ogni atomo ha la sua massa), la massa dei reagenti è uguale alla massa dei prodotti. È la **legge di Lavoisier**: "nulla si crea, nulla si distrugge".
+- ❌ **Le moli NO.** Il numero di moli (cioè di molecole) può cambiare benissimo. Esempio: in `N₂ + 3 H₂ → 2 NH₃` partiamo da 4 molecole (1 + 3) e ne otteniamo 2. Gli atomi sono gli stessi, ma le molecole no.
+- ❌ **Gli "indici" (i pedici) NO.** I pedici sono parte della formula e non c'entrano col bilanciamento: confrontare "gli indici dei reagenti con quelli dei prodotti" non ha senso.
+- ❌ **I numeri di ossidazione NO.** In una reazione redox cambiano apposta: un elemento si ossida (sale) e un altro si riduce (scende).
+
+<div class="callout">💡 <strong>La frase da ricordare:</strong> in una reazione bilanciata sono uguali <strong>gli atomi di ogni elemento</strong> (e quindi la <strong>massa totale</strong>). NON le moli, NON gli indici, NON i numeri di ossidazione.</div>
+
+## Come verificare se una reazione è bilanciata
+
+Spesso l'esame ti dà più equazioni e chiede "**quale è quella bilanciata?**". Non devi rifare il bilanciamento da zero: ti basta **contare gli atomi** in quella scritta e vedere se i conti tornano. Metodo in 3 mosse:
+
+1. Fai una **tabella mentale**: per ogni elemento, quanti atomi a sinistra e quanti a destra?
+2. Ricorda di **moltiplicare** il pedice per il coefficiente davanti (es. `2 H₂O` → H: 2×2 = 4; O: 2×1 = 2).
+3. Se anche **un solo** elemento non torna, quella equazione **non** è bilanciata. Scartala e prova la successiva.
+
+Esempio: `4 NH₃ + 5 O₂ → 4 NO + 6 H₂O` è bilanciata?
+- N: a sinistra 4 (in 4 NH₃), a destra 4 (in 4 NO) → ✓
+- H: a sinistra 4×3 = 12, a destra 6×2 = 12 → ✓
+- O: a sinistra 5×2 = 10, a destra 4 (in 4 NO) + 6 (in 6 H₂O) = 10 → ✓
+
+Tutti tornano: **sì, è bilanciata.**
+
+## Trattare gli ioni poliatomici come un blocco
+
+Quando uno **stesso gruppo di atomi** (uno ione poliatomico) resta intatto da entrambi i lati della freccia, conviene contarlo **come un unico mattoncino**, senza spezzarlo nei singoli atomi. I gruppi più comuni:
+
+- **solfato** SO₄(2-), **solfito** SO₃(2-)
+- **fosfato** PO₄(3-)
+- **nitrato** NO₃(1-)
+- **carbonato** CO₃(2-), **idrossido** OH(1-)
+
+Esempio: `3 SO₂ + Ni₂O₃ → Ni₂(SO₃)₃`. Qui il gruppo **SO₃** compare nel prodotto. Contiamo:
+- **Ni**: a sinistra 2 (in Ni₂O₃), a destra 2 → ✓
+- **S**: a sinistra 3 (in 3 SO₂), a destra 3 (i tre SO₃) → ✓
+- **O**: a sinistra 3×2 + 3 = 9; a destra 3×3 = 9 → ✓
+
+Tutto torna. Trattare SO₃ come blocco rende il conteggio molto più rapido. **Attenzione:** vale solo finché il gruppo resta integro. In una reazione dove SO₄ viene "spezzato", devi tornare a contare gli atomi singoli.
+
+## Bilanciare per tentativi un caso difficile: una redox
+
+Prendiamo una reazione **redox** (ossido-riduzione) un po' cattiva, vista all'esame:
+
+`Cu + HNO₃ → Cu(NO₃)₂ + H₂O + NO`
+
+Qui l'azoto compare in **tre** posti a destra (nei nitrati, e nel NO) e l'ossigeno è ovunque: il classico caso in cui il "metti i coefficienti a occhio" non basta. Procediamo con ordine, lasciando ossigeno e idrogeno per ultimi.
+
+1. **Rame (Cu).** Mettiamo un coefficiente generico: diciamo `3 Cu` a sinistra e `3 Cu(NO₃)₂` a destra (il 3 viene dal bilancio degli elettroni della redox; qui accettiamolo e verifichiamo che funzioni).
+2. **Azoto (N).** A destra: `3 Cu(NO₃)₂` contiene 3×2 = 6 azoti nei nitrati, più gli azoti del NO. Se mettiamo `2 NO`, abbiamo 6 + 2 = **8 azoti** a destra. Quindi servono **8 HNO₃** a sinistra.
+3. **Idrogeno (H).** A sinistra: `8 HNO₃` = 8 idrogeni. A destra l'idrogeno sta solo nell'acqua: servono **4 H₂O** (4×2 = 8). ✓
+4. **Verifica dell'ossigeno (O).** A sinistra: 8×3 = **24**. A destra: 3×6 (nitrati) + 4 (acqua) + 2 (NO) = 18 + 4 + 2 = **24**. ✓
+
+Risultato bilanciato:
+
+`3 Cu + 8 HNO₃ → 3 Cu(NO₃)₂ + 4 H₂O + 2 NO`
+
+<div class="callout">💡 <strong>Strategia:</strong> nei casi difficili parti dall'elemento che compare in <strong>una sola</strong> sostanza per lato (qui il Cu), poi usa i conteggi per ricavare gli altri coefficienti. Lascia per ultimi ossigeno e idrogeno e usali come <strong>verifica finale</strong>: se tornano, hai bilanciato bene.</div>
+
+## Dal bilanciamento ai calcoli (stechiometria di base)
+
+I coefficienti non servono solo per "far tornare i conti": sono il **rapporto** con cui le sostanze reagiscono. Si leggono come **moli**. In `4 K + O₂ → 2 K₂O` il "4" e il "2" dicono: ogni **4 moli di K** producono **2 moli di K₂O** (rapporto 4 a 2, cioè 2 a 1).
+
+Il percorso è sempre lo stesso, in tre passi:
+
+<Diagram caption="I tre passi della stechiometria: dai grammi alle moli, dalle moli alle moli con i coefficienti, dalle moli ai grammi" code={`flowchart LR
+  A["grammi del dato<br/>(massa)"] -->|"diviso per la massa molare"| B["moli del dato"]
+  B -->|"rapporto dei coefficienti"| C["moli del cercato"]
+  C -->|"per la massa molare<br/>(se serve in grammi)"| D["risposta finale"]`} />
+
+Esempio: **da 39 g di potassio (K, massa molare 39 g/mol), quante moli di K₂O si ottengono** con `4 K + O₂ → 2 K₂O`?
+
+1. **Grammi → moli del dato.** 39 g ÷ 39 g/mol = **1 mol di K**.
+2. **Moli → moli col rapporto.** Dai coefficienti, 4 K danno 2 K₂O, cioè K₂O = K × (2/4) = K × 0,5. Quindi 1 mol K → 1 × 0,5 = **0,5 mol di K₂O**.
+3. **(Se servisse in grammi)** moltiplicheresti per la massa molare di K₂O. Qui la domanda chiede le moli, quindi la risposta è **0,5 mol**.
+
+Lo stesso schema risolve qualsiasi problema "quanti grammi / quante moli / che volume": prima **bilancia**, poi usa i **coefficienti come rapporto** tra le moli.
+
+## Guarda il video
+
+<YouTube id="iGISMmtbcsk" title="Bilanciamento di una reazione chimica — spiegazione semplice per principianti" />
+
+<VideoVisto id="chim-u3-02" />
+
+## Da ricordare
+
+- **Bilanciare** = avere lo **stesso numero di atomi** di ogni elemento prima e dopo la freccia (nulla si crea, nulla si distrugge).
+- In una reazione bilanciata sono uguali **gli atomi di ogni elemento** e la **massa totale**. NON le moli, NON gli "indici" (pedici), NON i numeri di ossidazione (trappola d'esame!).
+- Si cambiano solo i **coefficienti** (i numeri grandi davanti), **mai** i pedici dentro la formula.
+- Un coefficiente moltiplica **tutti** gli atomi della sua sostanza (es. `2 H₂O` = 4 H e 2 O).
+- Per **verificare** se è bilanciata: conta gli atomi elemento per elemento; se anche uno solo non torna, non lo è.
+- Gli **ioni poliatomici** che restano interi (SO₄, SO₃, PO₄, NO₃, CO₃, OH) si contano **come un blocco**.
+- Metodo: conta **un elemento per volta**, parti da chi compare in una sola sostanza per lato, lascia **ossigeno e idrogeno** come verifica finale.
+- I coefficienti sono il **rapporto in moli**: prima bilancia, poi calcola (grammi → moli → rapporto → risposta).
+- Esempio chiave: `CH₄ + 2 O₂ → CO₂ + 2 H₂O` (combustione, come la respirazione delle nostre cellule).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa vuol dire 'bilanciare' una reazione chimica?"
+  opzioni={["Cambiare le formule delle sostanze", "Avere lo stesso numero di atomi prima e dopo la freccia", "Eliminare i prodotti", "Aggiungere acqua a caso"]}
+  corretta={1}
+  spiegazione="Bilanciare significa che ogni tipo di atomo deve essere presente nello stesso numero tra reagenti e prodotti: gli atomi non si creano e non si distruggono, si riorganizzano soltanto."
+/>
+
+<Quiz
+  domanda="Per bilanciare una reazione possiamo cambiare:"
+  opzioni={["i pedici dentro la formula (es. il 2 di H₂O)", "i coefficienti, cioè i numeri grandi davanti alle sostanze", "il nome degli elementi", "il verso della freccia"]}
+  corretta={1}
+  spiegazione="Si possono cambiare solo i coefficienti (i numeri davanti). I pedici fanno parte dell'identità della sostanza e non si toccano mai."
+/>
+
+<Quiz
+  domanda="Quanti atomi di idrogeno (H) ci sono in '2 H₂O'?"
+  opzioni={["2", "3", "4", "6"]}
+  corretta={2}
+  spiegazione="Il coefficiente 2 moltiplica tutti gli atomi: 2 × 2 = 4 atomi di idrogeno. Ci sono anche 2 atomi di ossigeno."
+/>
+
+<Esercizio
+  problema="Bilancia questa reazione contando gli atomi: H₂ + O₂ → H₂O (formazione dell'acqua a partire da idrogeno e ossigeno)."
+  soluzione="Conta l'ossigeno: a sinistra ce ne sono 2 (in O₂), a destra solo 1 (in H₂O). Metti un 2 davanti all'acqua: H₂ + O₂ → 2 H₂O. Ora a destra hai 2 ossigeni (a posto) ma 4 idrogeni, mentre a sinistra ne hai solo 2. Metti un 2 davanti a H₂: la reazione bilanciata è 2 H₂ + O₂ → 2 H₂O. Controllo: 4 H e 2 O da entrambi i lati. Perfetto!"
+/>
+
+<Quiz
+  domanda="In una reazione chimica correttamente bilanciata, cosa risulta uguale tra reagenti e prodotti?"
+  opzioni={["Il numero di moli dei reagenti e quello dei prodotti", "Il numero di atomi di ogni elemento (e la massa totale)", "Gli indici (pedici) dei reagenti e quelli dei prodotti", "I numeri di ossidazione dei reagenti e quelli dei prodotti", "Il numero di molecole dei reagenti e quello dei prodotti"]}
+  corretta={1}
+  spiegazione="Bilanciare garantisce che gli ATOMI di ogni elemento siano uguali ai due lati, e di conseguenza la massa totale (legge di Lavoisier). Le moli e il numero di molecole possono benissimo cambiare (es. N₂ + 3 H₂ → 2 NH₃: da 4 molecole a 2). Gli 'indici' sono i pedici delle formule, non si confrontano. I numeri di ossidazione, in una redox, cambiano apposta."
+/>
+
+<Quiz
+  domanda="Indica l'UNICA equazione scritta in modo correttamente bilanciato (conta gli atomi di ogni elemento)."
+  opzioni={["3 SO₂ + Ni₂O₃ → Ni₂(SO₃)₃", "2 SO₂ + Ni₂O₃ → 2 Ni₂(SO₃)₃", "N₂ + 3 H₂ → 3 NH₃", "2 CaO → Ca + O₂", "3 KOH + 2 H₃PO₄ → K₃PO₄ + 3 H₂O"]}
+  corretta={0}
+  spiegazione="In 3 SO₂ + Ni₂O₃ → Ni₂(SO₃)₃: Ni 2=2, S 3=3, O a sinistra 3×2+3=9, a destra 3×3=9 → bilanciata (trattando SO₃ come blocco). La B ha 4 Ni a destra e 2 a sinistra. N₂ + 3 H₂ → 3 NH₃ ha 6 H a sinistra e 9 a destra (serve 2 NH₃). 2 CaO → Ca + O₂ ha 2 Ca a sinistra e 1 a destra. L'ultima ha 3 K a sinistra ma anche 3 a destra solo se ci fosse 1 K₃PO₄ con 1 H₃PO₄: con 2 H₃PO₄ il fosforo e i K non tornano."
+/>
+
+<Quiz
+  domanda="Combustione dell'acido solfidrico: 2 H₂S + 3 O₂ → 2 SO₂ + 2 H₂O. Se metti in un recipiente chiuso 10 mol di H₂S e 30 mol di O₂ e la combustione è completa, quante moli totali ci sono alla fine?"
+  opzioni={["35 mol", "20 mol", "40 mol", "10 mol", "55 mol"]}
+  corretta={0}
+  spiegazione="Servono 3 O₂ ogni 2 H₂S, cioè 1,5 O₂ per ogni H₂S. Con 10 mol di H₂S servono 15 mol di O₂: ne abbiamo 30, quindi l'O₂ è in eccesso e l'H₂S è il reagente limitante. Le 10 mol di H₂S producono 10 mol di SO₂ e 10 mol di H₂O, consumando 15 mol di O₂. Restano 30 − 15 = 15 mol di O₂. Totale: 15 (O₂ avanzato) + 10 (SO₂) + 10 (H₂O) = 35 mol. Nota: le moli NON si conservano, gli atomi sì."
+/>
+
+<Esercizio
+  problema="Verifica che questa reazione redox sia bilanciata contando OGNI elemento: 3 Cu + 8 HNO₃ → 3 Cu(NO₃)₂ + 4 H₂O + 2 NO."
+  soluzione="Cu: a sinistra 3, a destra 3 (in 3 Cu(NO₃)₂) → ok. H: a sinistra 8 (in 8 HNO₃), a destra 4×2 = 8 (in 4 H₂O) → ok. N: a sinistra 8 (in 8 HNO₃); a destra 3×2 = 6 nei nitrati di 3 Cu(NO₃)₂, più 2 nei 2 NO, totale 6 + 2 = 8 → ok. O: a sinistra 8×3 = 24; a destra 3×6 = 18 nei nitrati, + 4 nell'acqua, + 2 nei 2 NO, totale 18 + 4 + 2 = 24 → ok. Tutti gli elementi tornano: la reazione È bilanciata."
+/>
+
+<Esercizio
+  problema="Bilancia per tentativi la combustione del propano: C₃H₈ + O₂ → CO₂ + H₂O. Poi di' quante molecole di O₂ servono per ogni molecola di propano."
+  soluzione="Parti dal carbonio: 3 C a sinistra → servono 3 CO₂. Poi l'idrogeno: 8 H a sinistra → servono 4 H₂O (4×2 = 8). Ora conta l'ossigeno a destra: 3 CO₂ danno 6 O, 4 H₂O danno 4 O, totale 10 O. A sinistra l'ossigeno è in O₂, quindi servono 10/2 = 5 molecole di O₂. Reazione bilanciata: C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O. Controllo: C 3=3, H 8=8, O 10=10. Servono 5 molecole di O₂ per ogni molecola di propano."
+/>
+
+<Esercizio
+  problema="Mini-calcolo di stechiometria. Con la reazione 4 K + O₂ → 2 K₂O, quante moli di ossido di potassio (K₂O) si ottengono da 39 g di potassio metallico (massa molare del K = 39 g/mol), avendo ossigeno in eccesso?"
+  soluzione="Passo 1 (grammi → moli del dato): moli di K = 39 g ÷ 39 g/mol = 1 mol di K. Passo 2 (rapporto dei coefficienti): dall'equazione, 4 K → 2 K₂O, cioè moli di K₂O = moli di K × (2/4) = moli di K × 0,5. Quindi 1 mol K × 0,5 = 0,5 mol di K₂O. Risposta: 0,5 mol di K₂O. (L'ossigeno è in eccesso, quindi il potassio è il reagente limitante e detta la resa.)"
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,92 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-07">
+
+Un **acido** è una sostanza che, in acqua, libera particelle chiamate **ioni H+** (sono praticamente protoni). Finora forse hai pensato a un acido che cede **un solo** H+. Ma alcuni acidi ne hanno **più di uno** da dare: si chiamano **acidi poliprotici** ("poli" = molti, "proti" = protoni). In più impareremo gli **indicatori di pH**: sostanze colorate che cambiano colore per dirci se una soluzione è acida o no, come una piccola "spia" colorata.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un acido poliprotico è come una persona con più monete in tasca: le tira fuori una alla volta, non tutte insieme. Ogni H+ ceduto è una moneta. L'indicatore, invece, è un semaforo che cambia colore a seconda di quanto è acida la soluzione.</div>
+
+## Acidi con più H+ da cedere
+
+Pensa a un acido come a un portafoglio pieno di "monete H+". Alcuni acidi hanno una sola moneta, altri ne hanno due o tre.
+
+- **Acido monoprotico**: ha **1 solo H+** da cedere. Esempio: l'acido cloridrico, HCl (è anche quello del nostro stomaco).
+- **Acido diprotico**: ha **2 H+** da cedere. Esempio: l'acido solforico, H2SO4. Anche l'**acido carbonico** (H2CO3), che il nostro sangue usa di continuo, è diprotico.
+- **Acido triprotico**: ha **3 H+** da cedere. Esempio classico: l'**acido fosforico**, H3PO4.
+
+La cosa importante è questa: l'acido poliprotico **non** cede tutti gli H+ in una volta sola. Li cede **a tappe**, uno per volta. E ogni tappa è un po' più "difficile" della precedente: la prima moneta esce facile, la seconda con più fatica, la terza ancora di più. Il motivo, in parole semplici, è che dopo aver perso un H+ (che è positivo) la particella resta più negativa, e trattenere ancora più forte quello che le rimane.
+
+<Diagram caption="L'acido fosforico H3PO4 cede i suoi 3 H+ una tappa alla volta" code={`flowchart TB
+  A["H3PO4<br/>(ha 3 H+ da dare)"] -->|"cede il 1° H+<br/>(facile)"| B["H2PO4-"]
+  B -->|"cede il 2° H+<br/>(più difficile)"| C["HPO4 2-"]
+  C -->|"cede il 3° H+<br/>(ancora più difficile)"| D["PO4 3-"]`} />
+
+**Perché conta per medicina e veterinaria?** Il nostro corpo è pieno di acidi poliprotici che lavorano "a tappe". L'acido carbonico (H2CO3) e l'acido fosforico (H3PO4) sono i due grandi **tamponi** del sangue: aiutano a tenere il pH del sangue sempre vicino a 7,4, che è il valore giusto per vivere. Se il pH del sangue si sposta anche di poco, sono guai seri. Questi acidi, cedendo o riprendendo H+ a tappe, fanno da "ammortizzatori" e tengono tutto stabile.
+
+## Gli indicatori di pH: i colori che misurano l'acidità
+
+Un **indicatore di pH** è una sostanza colorata che **cambia colore** a seconda di quanto è acida o basica una soluzione. È come un termometro, ma invece di misurare il caldo, misura l'acidità (il pH).
+
+Ricorda il significato del **pH** in modo facile:
+
+- pH **minore di** 7 → soluzione **acida** (es. succo di limone, aceto, succo gastrico).
+- pH **uguale** a 7 → soluzione **neutra** (acqua pura).
+- pH **maggiore di** 7 → soluzione **basica** (es. sapone, bicarbonato).
+
+L'indicatore più famoso è la **cartina al tornasole**: una strisciolina di carta che immergi nella soluzione. Diventa **rossa** se la soluzione è acida e **blu** se è basica. È velocissima da usare e non serve nessuno strumento elettronico: basta guardare il colore.
+
+<Diagram caption="La cartina al tornasole cambia colore secondo il pH" code={`flowchart TB
+  S["Immergo la cartina<br/>nella soluzione"] --> R["Diventa ROSSA<br/>→ soluzione ACIDA<br/>(pH minore di 7)"]
+  S --> N["Resta neutra/viola<br/>→ soluzione NEUTRA<br/>(pH circa 7)"]
+  S --> B["Diventa BLU<br/>→ soluzione BASICA<br/>(pH maggiore di 7)"]`} />
+
+Esistono anche indicatori più precisi, come la **cartina universale**, che cambia in tanti colori diversi (dal rosso al verde al viola) e ti dà un numero di pH abbastanza preciso confrontando la striscia con una scala di colori. Un altro indicatore classico da laboratorio è la **fenolftaleina**: è trasparente in ambiente acido e diventa **rosa acceso** in ambiente basico.
+
+**Aggancio biomedico:** lo stesso principio dei colori che cambiano con il pH è usato negli esami delle urine. Le striscette che il medico o il veterinario immergono nell'urina hanno tanti quadratini colorati: alcuni servono proprio a misurare il **pH delle urine** col cambio di colore, esattamente come una cartina universale. Un pH anomalo può essere un primo segnale di problemi ai reni o di alcune infezioni.
+
+## Da ricordare
+
+- Un **acido poliprotico** può cedere **più di un H+** (es. H3PO4 ne cede 3).
+- Gli H+ vengono ceduti **a tappe**, uno alla volta: la prima cessione è facile, le successive sempre più difficili.
+- Mono = 1 H+ (HCl), di = 2 H+ (H2SO4, H2CO3), tri = 3 H+ (H3PO4).
+- Un **indicatore di pH** è una sostanza che **cambia colore** in base all'acidità.
+- La **cartina al tornasole** diventa **rossa** in acido e **blu** in base; pH minore di 7 = acido, 7 = neutro, maggiore di 7 = basico.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quanti ioni H+ può cedere l'acido fosforico H3PO4?"
+  opzioni={["uno solo", "due", "tre", "nessuno"]}
+  corretta={2}
+  spiegazione="Il 3 davanti alla H ti dice che ci sono 3 atomi di idrogeno cedibili: H3PO4 è un acido triprotico e cede 3 H+, una tappa alla volta."
+/>
+
+<Quiz
+  domanda="Una soluzione fa diventare ROSSA la cartina al tornasole. Com'è la soluzione?"
+  opzioni={["basica", "neutra", "acida", "non si può sapere"]}
+  corretta={2}
+  spiegazione="Il tornasole diventa rosso in ambiente acido (pH minore di 7) e blu in ambiente basico (pH maggiore di 7)."
+/>
+
+<Quiz
+  domanda="Cosa significa che un acido poliprotico cede i suoi H+ 'a tappe'?"
+  opzioni={["li cede tutti insieme in un istante", "li cede uno alla volta, e ogni volta è un po' più difficile", "non li cede mai", "li riprende subito dopo averli ceduti"]}
+  corretta={1}
+  spiegazione="Gli H+ escono uno per volta: la prima cessione è facile, le successive sono sempre più difficili perché la particella che resta diventa più negativa e trattiene più forte."
+/>
+
+<Esercizio
+  problema="Hai tre acidi: HCl, H2SO4 e H3PO4. Mettili in ordine dal numero MINORE al numero MAGGIORE di ioni H+ che possono cedere, e di' come si chiama ciascuno (mono, di o triprotico)."
+  soluzione="HCl cede 1 H+ → monoprotico. H2SO4 cede 2 H+ → diprotico. H3PO4 cede 3 H+ → triprotico. Quindi l'ordine dal minore al maggiore è: HCl (1), poi H2SO4 (2), poi H3PO4 (3). Il numerino scritto davanti alla H nella formula ti dice subito quanti H+ sono disponibili."
+/>
+
+</section>
+
+</RisorsaLayout>

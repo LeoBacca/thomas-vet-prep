@@ -1,0 +1,39 @@
+{
+ "id": "chim-u1-31",
+ "titolo": "Entropia ed energia libera di Gibbs: la spontaneità",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "31-entropia-ed-energia-libera-di-gibbs",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u1/31-entropia-ed-energia-libera-di-gibbs.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Luglio",
+   "q": "Una reazione avviene spontaneamente quando:",
+   "choices": [
+    "la somma della variazione di entropia dell'ambiente e del sistema è positiva",
+    "la variazione di entropia del sistema è minore di 0",
+    "la variazione di entropia dell'ambiente è maggiore di 0",
+    "la variazione di entropia dell'ambiente è minore di 0",
+    "la variazione di entropia del sistema è nulla"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Quale affermazione è vera per una reazione spontanea?",
+   "choices": [
+    "Ha sempre un ΔG negativo",
+    "È sempre endotermica",
+    "È sempre esotermica",
+    "Necessita sempre di un catalizzatore",
+    "Non necessita mai di un catalizzatore"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

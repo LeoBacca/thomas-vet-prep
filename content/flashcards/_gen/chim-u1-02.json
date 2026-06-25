@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-chim-u1-02-1",
+    "topicId": "chim-u1-02",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale particella subatomica ha carica positiva e si trova nel nucleo?",
+    "choices": [
+      "Il protone: carica positiva (+), sta nel nucleo insieme al neutrone",
+      "L'elettrone: carica negativa (-), gira fuori dal nucleo",
+      "Il neutrone: carica neutra (0), sta nel nucleo",
+      "L'orbitale: e la zona intorno al nucleo dove si trovano gli elettroni"
+    ],
+    "answer": 0,
+    "explain": "Trucco facile: Protone e Positivo iniziano entrambi con la P. Il nucleo contiene protoni (+) e neutroni (0); gli elettroni (-) girano fuori, negli orbitali. Le cariche opposte (+ e -) si attraggono, ed e questa attrazione che tiene gli elettroni agganciati all'atomo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-02-2",
+    "topicId": "chim-u1-02",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Descrivi la struttura di un atomo: dove si trovano le tre particelle subatomiche, che carica ha ognuna, e quale zona dell'atomo contiene quasi tutta la massa?",
+    "answer": "Un atomo e fatto di tre particelle. Al centro c'e il nucleo, piccolo ma pesantissimo: contiene i protoni (carica positiva +) e i neutroni (carica neutra 0). Intorno al nucleo ci sono gli elettroni (carica negativa -), che occupano zone dette orbitali: non percorsi precisi, ma 'nuvole' in cui e probabile trovare l'elettrone. Quasi tutta la massa dell'atomo e concentrata nel nucleo; gli elettroni sono leggerissimi. L'atomo e quasi tutto spazio vuoto: se fosse grande come uno stadio, il nucleo sarebbe una pallina al centro del campo e gli elettroni piccole mosche sugli spalti lontani. Gli elettroni restano agganciati perche le cariche opposte si attraggono: il nucleo positivo attira gli elettroni negativi.",
+    "explain": "Da ricordare: protone (+) e neutrone (0) nel nucleo (massa); elettrone (-) fuori, negli orbitali. Quasi tutto spazio vuoto. Cariche opposte si attraggono.",
+    "tags": ["risposta aperta"]
+  }
+]

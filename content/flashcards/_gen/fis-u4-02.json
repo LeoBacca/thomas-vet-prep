@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-fis-u4-02-1",
+    "topicId": "fis-u4-02",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Un'onda del mare torna nella stessa posizione ogni 4 secondi. Qual e il periodo T e la frequenza f di quest'onda?",
+    "choices": [
+      "T = 4 s e f = 0,25 Hz: il periodo e il tempo per un'oscillazione completa, la frequenza e quante oscillazioni avvengono in un secondo (f = 1/T)",
+      "T = 0,25 s e f = 4 Hz: periodo e frequenza sono la stessa cosa",
+      "T = 4 s e f = 4 Hz: il periodo e il tempo per un'oscillazione, la frequenza si misura allo stesso modo",
+      "T = 4 s e f = 8 Hz: la frequenza e il doppio del periodo"
+    ],
+    "answer": 0,
+    "explain": "Periodo T = tempo di un'oscillazione completa (qui 4 s). Frequenza f = 1/T = 1/4 = 0,25 Hz (cioe un quarto di oscillazione al secondo). Pensa a un'altalena: il periodo e quanto ci vuole per tornare al punto di partenza; la frequenza e quante volte ci riesci in un secondo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u4-02-2",
+    "topicId": "fis-u4-02",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "open",
+    "q": "Un'onda sonora ha lunghezza d'onda λ = 0,4 m e velocita di propagazione v = 340 m/s. Spiega cosa rappresentano λ e v, poi calcola la frequenza f dell'onda.",
+    "answer": "λ (lambda) e la lunghezza d'onda: la distanza tra due creste consecutive dell'onda, cioe la 'taglia spaziale' di un'oscillazione completa; si misura in metri. v e la velocita di propagazione: quanto veloce avanza il fronte dell'onda nello spazio; si misura in m/s. Per trovare la frequenza uso la formula v = λ · f, quindi f = v / λ = 340 / 0,4 = 850 Hz.",
+    "explain": "Formula chiave: v = λ · f. Da qui si ricava f = v/λ, λ = v/f, v = λ·f. Ricorda: λ e una distanza (m), f e quante oscillazioni al secondo (Hz), v e quanto veloce corre l'onda (m/s).",
+    "tags": ["risposta aperta"]
+  }
+]

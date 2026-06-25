@@ -1,0 +1,25 @@
+{
+ "id": "fis-u6-11",
+ "titolo": "Induzione elettromagnetica (legge di Faraday-Neumann-Lenz)",
+ "materia": "fisica",
+ "unita": 6,
+ "slug": "11-induzione-elettromagnetica-legge-di-faraday-neumann",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u6/11-induzione-elettromagnetica-legge-di-faraday-neumann.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Se avviciniamo rapidamente una potente calamita ad una spira formata da un filo di rame chiuso a cerchio, si può notare che:",
+   "choices": [
+    "nella spira viene indotta una circolazione di corrente elettrica",
+    "la spira si illumina",
+    "la spira si deforma trasformandosi in un'ellisse molto stretta e lunga",
+    "il rame dapprima neutro acquista una forte carica elettrica indotta",
+    "la spira inizia a ruotare con velocità costante intorno ad un suo diametro"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "applicazione"
+  }
+ ]
+}

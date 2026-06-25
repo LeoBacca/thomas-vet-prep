@@ -1,0 +1,221 @@
+{
+ "id": "chim-u4-12",
+ "titolo": "Le reazioni di ossido-riduzione (redox)",
+ "materia": "chimica",
+ "unita": 4,
+ "slug": "12-le-reazioni-di-ossido-riduzione-redox",
+ "freq": 15,
+ "risorseMdx": "src/pages/risorse/chimica/u4/12-le-reazioni-di-ossido-riduzione-redox.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Nell'elettrolisi dell'acqua i volumi di idrogeno ed ossigeno che si liberano agli elettrodi sono in un rapporto di:",
+   "choices": [
+    "2:1",
+    "3:1",
+    "1:1",
+    "1:2",
+    "1:3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2008",
+   "q": "Una specie si dice riducente quando:",
+   "choices": [
+    "cede elettroni",
+    "acquista elettroni",
+    "ossida un'altra specie",
+    "acquista ioni",
+    "si trasforma in un metallo"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2009",
+   "q": "Una reazione di ossidazione consiste nella:",
+   "choices": [
+    "perdita di elettroni",
+    "perdita di protoni",
+    "perdita di neutroni",
+    "acquisizione di elettroni",
+    "acquisizione di protoni"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2011",
+   "q": "In una reazione in cui PbCl2 si trasforma in PbCl4, si può affermare che:",
+   "choices": [
+    "il piombo si è ossidato",
+    "il piombo si è ridotto",
+    "entrambi gli elementi si sono ossidati",
+    "il cloro si è ossidato",
+    "il cloro si è ridotto"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2012",
+   "q": "Nella reazione di ossidoriduzione HBrO3 + H2S -> Br2 + S + H2O i coefficienti stechiometrici sono rispettivamente:",
+   "choices": [
+    "2 : 5 = 1 : 5 : 6",
+    "2 : 3 = 1 : 3 : 4",
+    "1 : 2 = 1 : 2 : 5",
+    "2 : 2 = 1 : 2 : 3",
+    "1 : 2 = 2 : 1 : 2"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2014",
+   "q": "Quale/i delle seguenti reazioni è/sono delle ossidoriduzioni? 1. Cl2(aq) + 2Br-(aq) -> Br2(aq) + 2Cl-(aq); 2. Cl2(aq) + H2O(l) -> H+Cl-(aq) + HOCl(aq); 3. H+Cl-(aq) + H2O(l) -> H3O+(aq) + Cl-(aq)",
+   "choices": [
+    "Solo 1 e 2",
+    "Solo 2",
+    "Solo 3",
+    "Solo 1 e 3",
+    "Solo 2 e 3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2015",
+   "q": "Data la seguente reazione di ossidoriduzione tra ioni ossalato (C2O4^2-) e ioni permanganato (MnO4^-) in soluzione acquosa acida: 5 C2O4^2-(aq) + 2 MnO4^-(aq) + 16 H+(aq) -> 10 CO2(g) + 2 Mn^2+(aq) + 8 H2O(l). Quale delle seguenti affermazioni è corretta?",
+   "choices": [
+    "Il carbonio viene ossidato",
+    "Il carbonio viene ridotto",
+    "L'idrogeno viene ridotto",
+    "L'idrogeno viene ossidato",
+    "Il manganese viene ossidato"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2016",
+   "q": "L'anione dicromato (in cui il cromo è presente come CrO4 2-, num. oss. +6) si trasforma nel catione Cr3+ e in questa reazione l'atomo di Cr:",
+   "choices": [
+    "passa da numero di ossidazione +6 a +3 e si riduce",
+    "passa da numero di ossidazione -2 a +3 e si ossida",
+    "passa da numero di ossidazione +4 a +3 e si riduce",
+    "passa da numero di ossidazione -2 a +3 e si riduce",
+    "passa da numero di ossidazione +6 a +3 e si ossida"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2017",
+   "q": "La reazione 2 KI + Br2 -> 2 KBr + I2 è una reazione di:",
+   "choices": [
+    "ossidoriduzione",
+    "decomposizione",
+    "dismutazione",
+    "addizione",
+    "combustione"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2019",
+   "q": "Quale affermazione riferita alla seguente equazione chimica, che deve essere bilanciata, è corretta? MnO2 + HCl -> MnCl2 + Cl2 + H2O",
+   "choices": [
+    "Sono necessarie 4 moli di HCl per ogni mole di MnO2",
+    "Si formano 2 moli di Cl2 per ogni mole di MnO2",
+    "Il cloro si riduce",
+    "Il manganese è l'agente riducente",
+    "È una reazione di dismutazione"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2019",
+   "q": "Qual è l'agente riducente nella reazione: piruvato + NADH + H+ -> etanolo + CO2 + NAD+?",
+   "choices": [
+    "NADH",
+    "Piruvato",
+    "Etanolo",
+    "CO2",
+    "H+"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2020",
+   "q": "Nel corso di una reazione chimica, il rame metallico reagisce con una soluzione acquosa di HClO4 per produrre Cu(ClO4)2 in soluzione acquosa e idrogeno allo stato gassoso che si libera nell'ambiente. In questa reazione la specie che si comporta da riducente è:",
+   "choices": [
+    "Il rame metallico",
+    "HClO4",
+    "Lo ione Cu2+",
+    "Cu(ClO4)2",
+    "L'idrogeno gassoso"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Se, operando in condizioni normali di temperatura e pressione, si immerge del potassio metallico in acqua deionizzata:",
+   "choices": [
+    "si verifica una reazione con produzione di KOH in soluzione acquosa e H2",
+    "si verifica una reazione il cui unico prodotto è KOH in soluzione acquosa",
+    "si verifica una reazione con produzione di KOH in soluzione acquosa e O2",
+    "la reazione che ha luogo non determina variazioni del pH della fase acquosa",
+    "la reazione che ha luogo determina l'abbassamento del pH della fase acquosa"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2022",
+   "q": "Nella reazione bilanciata 10 FeO + 2 HMnO4 -> 5 Fe2O3 + 2 MnO + H2O si ha che:",
+   "choices": [
+    "il ferro si ossida e il manganese si riduce",
+    "il manganese si ossida e il ferro si riduce",
+    "il manganese è il riducente e il ferro è l'ossidante",
+    "ferro e manganese non si scambiano elettroni perché non si tratta di una reazione di ossidoriduzione",
+    "il ferro si ossida e l'ossigeno si riduce"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2022",
+   "q": "I coefficienti stechiometrici della reazione a Fe2+ + b H+ + c MnO4- -> d Fe3+ + e Mn2+ + f H2O sono:",
+   "choices": [
+    "a = 5; b = 8; c = 1; d = 5; e = 1; f = 4",
+    "a = 5; b = 8; c = 3; d = 5; e = 3; f = 4",
+    "a = 2; b = 8; c = 1; d = 2; e = 1; f = 4",
+    "a = 6; b = 24; c = 1; d = 6; e = 1; f = 12",
+    "a = 4; b = 5; c = 3; d = 3; e = 1; f = 4"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  }
+ ]
+}

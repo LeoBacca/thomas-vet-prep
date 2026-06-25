@@ -1,0 +1,110 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-28">
+
+Un **liquido** è una via di mezzo tra il solido e il gas. Le sue particelle stanno vicine (come in un solido), ma possono **scivolare** una sull'altra (per questo un liquido prende la forma del recipiente). In questa pagina vediamo quattro parole che spaventano ma sono semplicissime: **ebollizione**, **calore di evaporazione**, **tensione superficiale** e **pressione di vapore**. Sono cose che vedi ogni giorno: l'acqua che bolle, una goccia di rugiada, il sudore che ti raffredda.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> in un liquido le particelle sono come persone in una discoteca affollata: stanno attaccate ma si muovono. Le più "energiche" ogni tanto saltano fuori (diventano vapore). Più scaldi, più persone hanno voglia di uscire.</div>
+
+## La pressione di vapore: il liquido che "evapora" anche da chiuso
+
+Metti dell'acqua in un barattolo e chiudilo. Le particelle più veloci scappano dalla superficie e diventano **vapore**. Ma essendo chiuso, il vapore non può andarsene: alcune particelle di vapore ricadono nel liquido. Dopo un po' si raggiunge un **equilibrio**: tante particelle escono, tante rientrano. Il numero non cambia più, ma il movimento continua (per questo si dice equilibrio **dinamico**).
+
+La **pressione di vapore** (o tensione di vapore) è la "spinta" che fa il vapore quando si è raggiunto questo equilibrio. È come la pressione di una piccola folla che preme contro il coperchio.
+
+Due cose importanti:
+
+- Più **scaldi**, più particelle hanno energia per uscire, quindi la pressione di vapore **aumenta**.
+- I liquidi che evaporano facilmente (come l'alcol o l'acetone) hanno una pressione di vapore **alta**: si dice che sono **volatili**.
+
+<Diagram caption="Equilibrio liquido-vapore in un contenitore chiuso: tante particelle escono, tante rientrano" code={`flowchart TB
+  C["Contenitore CHIUSO con liquido"] --> L["Liquido sul fondo"]
+  L -->|"evaporano (escono)"| V["Vapore sopra il liquido"]
+  V -->|"condensano (rientrano)"| L
+  V --> E["EQUILIBRIO dinamico<br/>uscite = rientri<br/>la pressione di vapore non cambia piu"]`} />
+
+## L'ebollizione: quando bollono TUTTE le bolle
+
+Tra **evaporazione** ed **ebollizione** c'è una differenza facile:
+
+- L'**evaporazione** avviene solo in **superficie**, in silenzio, a qualsiasi temperatura (i panni stesi si asciugano).
+- L'**ebollizione** avviene in **tutto** il liquido, con le bolle che salgono. Succede solo a una certa temperatura.
+
+Quando bolle un liquido? Quando la sua **pressione di vapore diventa uguale alla pressione esterna** (di solito quella dell'aria che ci sta sopra). A quel punto le bolle di vapore riescono a formarsi anche in fondo alla pentola e a risalire.
+
+Ecco perché in montagna l'acqua bolle prima (a meno di 100 gradi): lassù l'aria spinge di meno, quindi serve meno pressione di vapore per pareggiarla. In una pentola a pressione succede il contrario: l'aria spinge tanto, l'acqua bolle a più di 100 gradi e il cibo cuoce prima.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> bolle = quando la spinta del vapore dal di dentro pareggia la spinta dell'aria dal di fuori. Cambi la spinta esterna e cambi la temperatura di ebollizione.</div>
+
+## Calore di evaporazione: perché il sudore ti raffredda
+
+Per trasformare un liquido in vapore serve **energia**, anche se la temperatura non sale. Questa energia si chiama **calore di evaporazione** (o calore latente): serve a "staccare" le particelle che si tenevano per mano.
+
+Da dove arriva questa energia? Spesso dal corpo o dall'oggetto vicino, che quindi si **raffredda**. È esattamente quello che fa il **sudore**: evaporando dalla pelle, porta via calore e ti abbassa la temperatura. Il tuo corpo usa questo trucco di chimica per non surriscaldarsi. Anche i cani, che sudano poco, sfruttano lo stesso principio ansimando: fanno evaporare acqua dalla lingua e dalle vie respiratorie per raffreddarsi.
+
+## Tensione superficiale: la "pellicola" sulla superficie
+
+Guarda una goccia d'acqua: è tonda. Guarda un insetto che cammina sull'acqua senza affondare. Tutto merito della **tensione superficiale**.
+
+Dentro il liquido ogni particella è tirata da tutte le parti dalle vicine, quindi le spinte si annullano. Ma le particelle in **superficie** hanno vicine solo di lato e sotto, non sopra: vengono tirate verso l'interno. Il risultato è che la superficie si comporta come una **pelle elastica** tesa.
+
+Una bella analogia: è come un materasso elastico su cui poggi una pallina leggera, che non sfonda. Questa "pelle" tende anche a far prendere alle gocce la forma più compatta possibile, cioè la **sfera**.
+
+Nel corpo questa idea è importantissima: i nostri **polmoni** sono pieni di minuscole sacche (gli alveoli) ricoperte di un velo d'acqua. La tensione superficiale tenderebbe a farle collassare come palloncini sgonfi. Per fortuna i polmoni producono una sostanza, il **surfattante**, che **abbassa** la tensione superficiale e tiene gli alveoli aperti. I bimbi nati prematuri a volte non ne hanno abbastanza: capisci quanto conta questo concetto in medicina e veterinaria.
+
+<Diagram caption="Perche si forma la tensione superficiale" code={`flowchart TB
+  P["Particella DENTRO il liquido"] --> A["Tirata da tutte le parti<br/>le spinte si annullano"]
+  S["Particella in SUPERFICIE"] --> B["Tirata solo verso il basso e di lato<br/>(sopra non ha vicine)"]
+  B --> T["La superficie si tende<br/>come una pelle elastica<br/>= tensione superficiale"]`} />
+
+## Guarda il video
+
+<YouTube id="nGmpVpksqVY" title="Tensione di vapore (o pressione di vapore) — La Chimica Fuori dai Libri" />
+
+<VideoVisto id="chim-u1-28" />
+
+## Da ricordare
+
+- **Pressione (tensione) di vapore**: la spinta del vapore in equilibrio col suo liquido. Cresce con la **temperatura** ed è alta nei liquidi **volatili**.
+- **Ebollizione**: avviene quando la pressione di vapore **pareggia** la pressione esterna. In montagna l'acqua bolle prima, in pentola a pressione dopo.
+- **Calore di evaporazione**: energia che serve per far diventare vapore un liquido; per questo il **sudore raffredda** la pelle.
+- **Tensione superficiale**: la superficie del liquido si comporta come una **pelle elastica**; tiene aperti gli alveoli grazie al surfattante.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un liquido bolle quando..."
+  opzioni={["la sua pressione di vapore pareggia la pressione esterna", "diventa solido", "perde tutta l'energia", "smette di evaporare"]}
+  corretta={0}
+  spiegazione="L'ebollizione inizia nel momento in cui la pressione di vapore del liquido raggiunge la pressione esterna che spinge sulla sua superficie."
+/>
+
+<Quiz
+  domanda="Perche il sudore che evapora ti rinfresca?"
+  opzioni={["perche aggiunge acqua alla pelle", "perche per evaporare prende calore dal corpo, che cosi si raffredda", "perche aumenta la temperatura", "perche e salato"]}
+  corretta={1}
+  spiegazione="L'evaporazione richiede calore (calore di evaporazione): questo calore viene preso dalla pelle, che di conseguenza si raffredda."
+/>
+
+<Quiz
+  domanda="La goccia d'acqua e tonda e l'insetto resta a galla per via della..."
+  opzioni={["pressione atmosferica", "tensione superficiale", "ebollizione", "densita dell'aria"]}
+  corretta={1}
+  spiegazione="La tensione superficiale fa comportare la superficie del liquido come una pelle elastica: dà forma sferica alle gocce e regge piccoli pesi."
+/>
+
+<Esercizio
+  problema="In alta montagna l'aria preme meno sulla superficie dell'acqua rispetto al livello del mare. Secondo te l'acqua bolle a una temperatura piu alta o piu bassa di 100 gradi? Spiega perche."
+  soluzione="A una temperatura piu BASSA. L'acqua bolle quando la sua pressione di vapore pareggia la pressione esterna. Se in montagna l'aria spinge di meno, basta una pressione di vapore piu piccola per pareggiarla: e quella pressione di vapore piu piccola si raggiunge gia a una temperatura inferiore a 100 gradi. (Per lo stesso motivo nella pentola a pressione, dove l'aria spinge di piu, l'acqua bolle oltre i 100 gradi.)"
+/>
+
+</section>
+
+</RisorsaLayout>

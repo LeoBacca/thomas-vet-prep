@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-04-1",
+    "topicId": "fis-u2-04",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: nel moto rettilineo uniforme il corpo può accelerare o frenare, purché rimanga su una linea retta.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Nel MRU ENTRAMBE le condizioni devono valere insieme: la traiettoria è dritta (rettilineo) E la velocità non cambia mai (uniforme). Se il corpo frena o accelera, la velocità non è più costante e il moto non è più uniforme. Pensa a un'auto in autostrada: se preme il gas o il freno, anche su un rettilineo, smette di fare MRU.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-04-2",
+    "topicId": "fis-u2-04",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un gatto cammina a velocità costante lungo un corridoio (MRU). Come appare il grafico della sua velocità nel tempo?",
+    "choices": [
+      "Una retta orizzontale: la velocità rimane sempre uguale",
+      "Una retta che sale: la velocità aumenta col tempo",
+      "Una curva a campana: prima sale poi scende",
+      "Un punto fisso: il gatto non si muove"
+    ],
+    "answer": 0,
+    "explain": "Nel MRU la velocità è costante, quindi sul grafico v-t è una retta piatta (orizzontale). Il grafico spazio-tempo è invece una retta inclinata (più è ripida, più il gatto va veloce). Se vedessi una retta che sale, significherebbe che il gatto sta accelerando, non MRU. In veterinaria: monitorare la 'costanza' di un parametro (es. frequenza cardiaca stabile) equivale a un 'grafico orizzontale'.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-04-3",
+    "topicId": "fis-u2-04",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega con parole tue: (1) cos'è il moto rettilineo uniforme, (2) qual è la formula chiave e cosa significa ciascun simbolo, (3) come ricavi la velocità e il tempo dalla stessa formula.",
+    "answer": "1) Il moto rettilineo uniforme (MRU) è il moto di un corpo che si sposta in linea retta a velocità costante: non accelera e non frena mai. È il moto più semplice in fisica. Esempio: un cane pastore che corre dritto a ritmo costante sul campo. 2) La formula chiave è s = v · t, dove s è lo spazio percorso (in metri), v è la velocità (in m/s, sempre uguale), e t è il tempo trascorso (in secondi). In pratica: spazio = velocità per tempo, come calcolare quanta strada fai in auto. Se il corpo non parte dall'origine, si usa x = x₀ + v · t, dove x₀ è la posizione di partenza. 3) Dalla stessa formula si ricavano le altre grandezze per 'spostare' i simboli: v = s / t (velocità = spazio diviso tempo) e t = s / v (tempo = spazio diviso velocità). Basta ricordare una formula sola e saper riarrangiare.",
+    "explain": "Punti chiave: MRU = velocità costante + traiettoria dritta. Formula s = v · t riarrangiabile in v = s/t e t = s/v. Sul grafico v-t: retta orizzontale. Sul grafico s-t: retta inclinata.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-04-4",
+    "topicId": "fis-u2-04",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Una pecora fugge dal gregge su un sentiero dritto a velocità costante di 1 m/s. Il cane pastore se ne accorge quando la pecora è già a 90 m di distanza, e parte inseguendola alla velocità costante di 36 km/h. Quanti secondi impiega il cane a raggiungere la pecora? (Suggerimento: converti prima le unità, poi usa la velocità relativa.)",
+    "choices": [
+      "10 s",
+      "90 s",
+      "9 s",
+      "8 s",
+      "100 s"
+    ],
+    "answer": 0,
+    "explain": "Passo 1 — converti: 36 km/h = 36 ÷ 3,6 = 10 m/s. Passo 2 — velocità relativa: il cane guadagna terreno a 10 − 1 = 9 m/s (si avvicina di 9 m ogni secondo). Passo 3 — tempo: t = 90 m ÷ 9 m/s = 10 s. TRAPPOLE: '90 s' è la trappola di chi divide 90 m per la velocità della pecora (1 m/s), o di chi dimentica di convertire 36 km/h e ragiona come se il cane andasse a 1 m/s: 90 ÷ 1 = 90 s; '9 s' è il near-miss di chi divide 90 per la sola velocità del cane (10 m/s) senza sottrarre la velocità della pecora: 90 ÷ 10 = 9 s; '8 s' è un valore inventato plausibile; '100 s' è il filler di chi divide 90 per 0,9 o sbaglia la conversione. La chiave è ricordare di sottrarre le velocità quando i due corpi si muovono nella stessa direzione.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-04-5",
+    "topicId": "fis-u2-04",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Guardi il grafico spazio-tempo di un oggetto e vedi una curva che si incurva verso l'alto (non una retta). Cosa significa?",
+    "choices": [
+      "L'oggetto si sta muovendo più lentamente col tempo",
+      "L'oggetto è fermo",
+      "L'oggetto sta accelerando: la velocità aumenta nel tempo, quindi NON è MRU",
+      "L'oggetto fa un moto rettilineo uniforme ma con posizione di partenza diversa da zero",
+      "Il grafico è sbagliato: un moto reale produce sempre una retta"
+    ],
+    "answer": 2,
+    "explain": "Nel MRU il grafico s-t è una RETTA: se vedi una curva, la velocità sta cambiando. Una curva che si incurva verso l'alto (sempre più ripida) indica che lo spazio cresce sempre più rapidamente col tempo: il corpo sta accelerando. TRAPPOLE: 'si muove più lentamente' (opposto esatto: sarebbe una curva che diventa meno ripida); 'è fermo' è il distrattore estremo; 'MRU con posizione iniziale ≠ 0' è la trappola più insidiosa — cambiare x₀ sposta la retta in alto ma resta una RETTA, non una curva; 'il grafico è sbagliato' è il filler fuori tema. Regola rapida: retta → MRU; curva → velocità che cambia.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,99 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u3-04">
+
+In una reazione chimica le sostanze di partenza si trasformano in nuove sostanze. Ma quanto è **veloce** questa trasformazione? E da cosa dipende la sua velocità? Qui scopriamo tre idee che rispondono proprio a questa domanda: l'**ordine di reazione**, la **molecolarità** e il fatto che molte reazioni avvengono **in più passaggi**, non tutte in una volta sola.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> l'ordine di reazione ti dice <strong>quanto</strong> la velocità cambia se aggiungi più ingredienti. La molecolarità ti dice <strong>quante particelle</strong> si scontrano in un singolo passo. E spesso una reazione è come una ricetta a più passaggi: la velocità di tutta la ricetta dipende dal passaggio più lento.</div>
+
+## L'ordine di reazione: quanto contano gli ingredienti
+
+Immagina di fare una torta. Più zucchero metti, più dolce viene. Ma di quanto? L'**ordine di reazione** risponde a una domanda simile: se **raddoppio** la quantità di un reagente, di quanto cambia la **velocità** della reazione?
+
+- Se raddoppiando un reagente la velocità **non cambia**, per quel reagente l'ordine è **0**.
+- Se raddoppiando il reagente la velocità **raddoppia** (×2), l'ordine è **1**.
+- Se raddoppiando il reagente la velocità diventa **quattro volte** (×4), l'ordine è **2**.
+
+Questa relazione si scrive in una formuletta chiamata **legge della velocità** (o legge cinetica). Per una reazione con i reagenti A e B si scrive così, come codice: `v = k * [A]^m * [B]^n`. Qui le parentesi quadre `[A]` significano "concentrazione di A" (quanto A c'è in un certo volume). I numeri `m` e `n` sono gli ordini rispetto ad A e a B. La somma `m + n` è l'**ordine totale** della reazione.
+
+Una cosa importantissima: **l'ordine si scopre con gli esperimenti**, non si indovina guardando la reazione scritta sul foglio. Va misurato in laboratorio.
+
+In medicina questo conta davvero: la velocità con cui il fegato **smaltisce un farmaco** segue leggi di questo tipo. Per molti farmaci lo smaltimento è di ordine 1 (più farmaco c'è, più in fretta sparisce). Ma per l'**alcol** lo smaltimento è quasi di ordine 0: il corpo lo elimina sempre alla stessa velocità, indipendentemente da quanto ne hai bevuto. Ecco perché smaltire l'alcol richiede tempo fisso e non si può accelerare.
+
+## La molecolarità: quante particelle si scontrano
+
+Perché due sostanze reagiscano, le loro particelle devono **scontrarsi**. La **molecolarità** conta quante particelle partecipano a un singolo urto che fa avvenire la reazione, in **un solo passaggio**.
+
+- **Unimolecolare**: una sola particella si trasforma o si rompe da sola. Come un palloncino troppo gonfio che scoppia per conto suo.
+- **Bimolecolare**: due particelle si scontrano. Come due persone che si urtano in un corridoio affollato. È il caso più comune.
+- **Trimolecolare**: tre particelle si incontrano nello **stesso istante**. Rarissimo: è come sperare che tre amici, partendo da posti diversi, arrivino esattamente nello stesso secondo nello stesso punto.
+
+<div class="callout">💡 <strong>Attenzione a non confondere:</strong> la <strong>molecolarità</strong> è un numero intero (1, 2, 3) e riguarda <strong>un singolo passo</strong> della reazione. L'<strong>ordine</strong> invece si misura sperimentalmente e può anche essere 0, oppure un numero non intero. Sono due cose diverse.</div>
+
+## Le reazioni a più stadi e il "collo di bottiglia"
+
+Molte reazioni **non** avvengono in un colpo solo. Avvengono in più **stadi** (più passaggi), uno dopo l'altro. L'insieme dei passaggi si chiama **meccanismo di reazione**.
+
+Pensa alla fila alla cassa del supermercato. Ci sono più passaggi: prendere il carrello, riempirlo, fare la fila, pagare. Se la cassa è lentissima, non importa quanto sei stato veloce a riempire il carrello: il tempo totale lo decide la **cassa lenta**. Quella cassa è il **collo di bottiglia**.
+
+Nelle reazioni succede la stessa cosa. Lo stadio più lento di tutti si chiama **stadio lento** (o stadio determinante), ed è lui a comandare la velocità di tutta la reazione. Puoi accelerare quanto vuoi gli altri passaggi: se non sblocchi quello lento, la velocità totale non migliora.
+
+<Diagram caption="Meccanismo a più stadi: lo stadio lento è il collo di bottiglia che decide la velocità totale" code={`flowchart LR
+  R["Reagenti<br/>(partenza)"] -->|"Stadio 1<br/>VELOCE"| I["Intermedio<br/>(prodotto temporaneo)"]
+  I -->|"Stadio 2<br/>LENTO = collo di bottiglia"| P["Prodotti<br/>(arrivo)"]`} />
+
+Quel prodotto temporaneo che si forma a metà strada e poi viene consumato si chiama **intermedio**: nasce in uno stadio e sparisce in quello dopo, quindi non lo trovi né tra i reagenti né tra i prodotti finali.
+
+<Diagram caption="Analogia: il tempo totale lo decide il passaggio più lento" code={`flowchart TB
+  A["Passo veloce"] --> B["Passo veloce"]
+  B --> C["Passo LENTO<br/>(collo di bottiglia)"]
+  C --> D["Velocita totale<br/>= comandata dal passo lento"]`} />
+
+Anche questo è puro mondo biomedico. Nel nostro corpo gli **enzimi** (proteine che accelerano le reazioni) lavorano spesso su reazioni a più stadi. In una catena di reazioni del metabolismo, l'enzima più lento fa da collo di bottiglia e decide il ritmo di tutta la catena. I medici e i veterinari ne tengono conto: a volte un farmaco agisce proprio rallentando o sbloccando quello stadio chiave.
+
+## Da ricordare
+
+- L'**ordine di reazione** dice di quanto cambia la velocità se cambi la quantità di un reagente; si scopre **con gli esperimenti**, non si indovina.
+- La **molecolarità** è il numero di particelle che si scontrano in **un singolo passaggio** (1 = unimolecolare, 2 = bimolecolare, 3 = trimolecolare e rara).
+- Ordine e molecolarità sono cose **diverse**: l'ordine si misura, la molecolarità è un numero intero riferito a un solo stadio.
+- Molte reazioni avvengono in **più stadi** (un meccanismo): chi forma e poi consuma sostanze di passaggio crea degli **intermedi**.
+- Lo **stadio lento** è il collo di bottiglia: è lui a decidere la velocità di tutta la reazione.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Raddoppi la concentrazione di un reagente e la velocità della reazione diventa quattro volte più grande. Qual è l'ordine rispetto a quel reagente?"
+  opzioni={["ordine 0", "ordine 1", "ordine 2", "non si puo dire"]}
+  corretta={2}
+  spiegazione="Raddoppiare l'ingrediente (×2) e ottenere ×4 di velocita significa che 2 elevato a 2 fa 4: l'ordine e 2. Se la velocita fosse semplicemente raddoppiata (×2) sarebbe ordine 1; se non fosse cambiata sarebbe ordine 0."
+/>
+
+<Quiz
+  domanda="In un meccanismo a più stadi, chi decide la velocità complessiva della reazione?"
+  opzioni={["lo stadio più veloce", "lo stadio più lento (collo di bottiglia)", "il primo stadio sempre", "tutti gli stadi allo stesso modo"]}
+  corretta={1}
+  spiegazione="Come la cassa lenta del supermercato: il tempo totale lo comanda il passaggio più lento, lo stadio determinante. Accelerare gli altri non serve se quello resta lento."
+/>
+
+<Quiz
+  domanda="Qual è la differenza corretta tra ordine e molecolarità?"
+  opzioni={["sono la stessa cosa con nomi diversi", "l'ordine si misura sperimentalmente, la molecolarità conta le particelle di un singolo stadio", "la molecolarità si misura, l'ordine si indovina dalla formula", "riguardano entrambi solo le reazioni a uno stadio"]}
+  corretta={1}
+  spiegazione="L'ordine si scopre con gli esperimenti e può essere anche 0 o non intero. La molecolarità è invece un numero intero (1, 2, 3) riferito a un singolo passaggio della reazione."
+/>
+
+<Esercizio
+  problema="Una reazione avviene in due stadi. Lo stadio 1 è velocissimo, lo stadio 2 è molto lento. Se un chimico trova un modo per rendere lo stadio 1 ancora più veloce, la reazione complessiva diventerà più rapida? Spiega perché, usando l'idea del collo di bottiglia."
+  soluzione="No, o quasi per niente. La velocità totale è decisa dallo stadio LENTO (lo stadio 2), che fa da collo di bottiglia. Rendere ancora più veloce uno stadio che era già velocissimo non cambia il tempo totale, esattamente come correre verso una cassa lenta non ti fa pagare prima. Per accelerare davvero la reazione bisogna intervenire sullo stadio 2, quello lento (per esempio con un catalizzatore o un enzima)."
+/>
+
+</section>
+
+</RisorsaLayout>

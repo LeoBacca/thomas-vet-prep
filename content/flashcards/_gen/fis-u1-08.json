@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u1-08-1",
+    "topicId": "fis-u1-08",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: il prodotto SCALARE tra due vettori dà come risultato un altro vettore (una freccia).",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il prodotto scalare dà come risultato un NUMERO, non un vettore. Per questo si chiama 'scalare': il risultato è uno scalare (un valore numerico). È il prodotto VETTORIALE che invece restituisce un nuovo vettore perpendicolare ai due di partenza.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u1-08-2",
+    "topicId": "fis-u1-08",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Vuoi sommare graficamente due vettori con la regola del parallelogramma. Qual è il vettore SOMMA?",
+    "choices": [
+      "La diagonale che parte dall'origine comune dei due vettori",
+      "Il lato più lungo del parallelogramma",
+      "L'altra diagonale (non quella che esce dall'origine)",
+      "La media dei moduli dei due vettori"
+    ],
+    "answer": 0,
+    "explain": "Con la regola del parallelogramma porti i due vettori alla stessa origine e costruisci il parallelogramma: la SOMMA è la diagonale che esce dall'origine comune. L'altra diagonale (quella che non esce dall'origine) è invece la DIFFERENZA tra i due vettori. I lati del parallelogramma sono i vettori stessi, non la somma.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u1-08-3",
+    "topicId": "fis-u1-08",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra prodotto scalare e prodotto vettoriale: che tipo di risultato dà ciascuno, quale funzione trigonometrica usa e (se riesci) fai un esempio fisico di ciascuno.",
+    "answer": "Il prodotto SCALARE (si scrive A · B) dà come risultato un NUMERO. La formula è: modulo di A × modulo di B × cos θ, dove θ è l'angolo tra i due vettori. Esempio fisico: il lavoro di una forza. Se spingi un oggetto in diagonale, solo la componente nella direzione del movimento 'conta': il prodotto scalare cattura proprio questo (il coseno è massimo quando forza e spostamento sono paralleli, zero quando sono perpendicolari). Il prodotto VETTORIALE (si scrive A × B) dà come risultato un VETTORE, perpendicolare al piano dei due vettori di partenza. La formula del modulo è: modulo di A × modulo di B × sin θ. Esempio fisico: il momento torcente (o momento di una forza): quando stringi una chiave inglese, la rotazione che ottieni è perpendicolare sia alla chiave che alla forza che applichi. Punto chiave da ricordare: scalare → numero (usa coseno); vettoriale → vettore perpendicolare (usa seno).",
+    "explain": "Scalare → numero, coseno. Vettoriale → vettore perpendicolare, seno. Il prodotto scalare è massimo quando i vettori sono paralleli; il vettoriale è massimo quando sono perpendicolari.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u1-08-4",
+    "topicId": "fis-u1-08",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sul prodotto vettoriale tra due vettori è FALSA?",
+    "choices": [
+      "Il prodotto vettoriale gode della proprietà commutativa (A × B = B × A)",
+      "Il prodotto vettoriale tra due vettori paralleli è zero",
+      "Il risultato del prodotto vettoriale è un vettore",
+      "La direzione del risultato è perpendicolare ai due vettori di partenza",
+      "Il modulo del risultato dipende dal seno dell'angolo tra i due vettori"
+    ],
+    "answer": 0,
+    "explain": "L'affermazione FALSA è la prima: il prodotto vettoriale NON è commutativo. Invertendo l'ordine si inverte il verso del risultato: A × B = −(B × A). È come girare una vite a destra o a sinistra: si ottiene il verso opposto. Le altre affermazioni sono tutte vere: tra vettori paralleli il seno di 0° è zero, quindi il prodotto è nullo; il risultato è effettivamente un vettore perpendicolare ai due; e la formula usa il seno. La trappola classica è confondere con il prodotto scalare, che invece È commutativo (A · B = B · A).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u1-08-5",
+    "topicId": "fis-u1-08",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Due vettori hanno modulo 10 e 5 e formano tra loro un angolo di 45°. Quanto vale il loro prodotto scalare? (ricorda: cos 45° ≈ 0,707)",
+    "choices": [
+      "Circa 35,4",
+      "50",
+      "Circa 25,8",
+      "45",
+      "Circa 11,2"
+    ],
+    "answer": 0,
+    "explain": "Formula del prodotto scalare: A · B = |A| × |B| × cos θ = 10 × 5 × cos 45° = 50 × 0,707 ≈ 35,4. Trappole: '50' è il risultato di 10 × 5 senza il coseno, come se i vettori fossero paralleli (θ = 0°, cos 0° = 1); chi ottiene 50 ha dimenticato l'angolo. '25,8' è vicino a 50 × 0,5 = 25, cioè il valore che otterresti usando cos 60° invece di cos 45° (angolo sbagliato): è una trappola per chi confonde l'angolo. '45' è solo il valore dell'angolo, non un calcolo. '11,2' è un numero verosimile ma non torna con nessun passaggio corretto. Regola: prodotto scalare = moduli × coseno dell'angolo tra loro.",
+    "tags": ["prova d'esame"]
+  }
+]

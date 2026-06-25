@@ -1,0 +1,105 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u2-04">
+
+## Cos'è la cromatina (in parole povere)
+
+Il DNA di una cellula umana, se lo stendessi in fila, misurerebbe circa 2 metri. Eppure deve stare dentro un nucleo grande pochi micrometri. Come ci riesce? Avvolgendosi intorno a piccole "rocce" proteiche chiamate **istoni**. L'insieme di DNA + istoni si chiama **cromatina**.
+
+Ogni "roccia" è un ottamero di istoni (8 proteine raggruppate) e il DNA vi si avvolge attorno per circa 1,65 giri. Questa struttura si chiama **nucleosoma**: è l'unità base della cromatina, simile a un filo di perle dove ogni perla è un nucleosoma.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il nucleosoma è come un rocchetto di filo: la bobina è fatta di proteine (istoni) e il filo è il DNA avvolto intorno.</div>
+
+## Eucromatina e eterocromatina
+
+Non tutta la cromatina è uguale. Esistono due stati:
+
+- **Eucromatina** — cromatina "rilassata", aperta. I geni in questa zona possono essere letti e tradotti in proteine. È la zona "attiva".
+- **Eterocromatina** — cromatina molto compatta, "chiusa". I geni in questa zona sono silenziati, come libri chiusi in uno scatolone.
+
+La cellula può passare dall'uno all'altro stato: questo è il **rimodellamento della cromatina**.
+
+## Come funziona il rimodellamento della cromatina
+
+Il rimodellamento non avviene da solo: servono dei macchinari molecolari chiamati **complessi di rimodellamento**. I più importanti appartengono alla famiglia **SWI/SNF** (pronunciato "switch-sniff").
+
+Questi complessi sono proteine che usano energia (ATP) per:
+
+1. **Spostare** i nucleosomi lungo il DNA — come far scorrere i rocchetti sul filo.
+2. **Rimuovere** temporaneamente un nucleosoma — liberando il tratto di DNA sottostante.
+3. **Sostituire** gli istoni normali con varianti speciali che cambiano il comportamento di quella zona.
+
+Il risultato: un gene prima "chiuso" diventa accessibile alla macchina trascrizionale (RNA polimerasi), oppure un gene prima "aperto" viene silenziato.
+
+<Diagram caption="Come i complessi di rimodellamento agiscono sui nucleosomi" code={`flowchart TB
+  A["DNA avvolto intorno agli istoni<br/>(nucleosoma chiuso)"]
+  B["Il complesso SWI/SNF<br/>si lega e usa ATP"]
+  C{"Tipo di azione"}
+  D["Nucleosoma spostato<br/>→ DNA esposto"]
+  E["Nucleosoma rimosso<br/>→ accesso totale al gene"]
+  F["Istone sostituito<br/>con variante speciale"]
+  G["RNA polimerasi accede<br/>→ gene trascritto"]
+  A --> B --> C
+  C --> D --> G
+  C --> E --> G
+  C --> F --> G`} />
+
+## Cosa sono le condensine
+
+Le **condensine** sono grandi complessi proteici (a forma di anello) che si occupano di una cosa diversa: **compattare e organizzare i cromosomi** durante la divisione cellulare.
+
+Esistono due tipi principali:
+- **Condensina I** — agisce durante la mitosi, una volta che l'involucro nucleare si rompe.
+- **Condensina II** — entra in azione già nel nucleo, prima che la cellula si divida.
+
+Come funzionano? Formano delle **anse** di DNA: immaginale come stringere un filo con un elastico in più punti — il risultato è una struttura molto più corta e compatta. Questo è fondamentale perché, durante la mitosi, i cromosomi devono essere abbastanza compatti da poter essere separati senza aggrovigliarsi.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le condensine sono come le fascette da elettricista: prendono un lungo cavo (il DNA) e lo organizzano in spire ordinate in modo che non si ingarbugli quando la cellula si divide.</div>
+
+## Differenza tra complessi di rimodellamento e condensine
+
+È facile confonderli. Ecco la distinzione chiave:
+
+- **Complessi di rimodellamento (es. SWI/SNF)** → agiscono a livello del singolo nucleosoma, regolano l'espressione dei geni (chi si legge e chi no).
+- **Condensine** → agiscono su scala molto più grande, compattano interi cromosomi per la divisione cellulare.
+
+<Diagram caption="Condensine: formazione di anse di DNA per la compattazione cromosomica" code={`flowchart LR
+  A["Cromatina decondensata<br/>(interfase)"]
+  B["Condensina II si lega<br/>(dentro il nucleo)"]
+  C["Condensina I si lega<br/>(dopo rottura involucro)"]
+  D["Formazione di anse di DNA<br/>(loop extrusion)"]
+  E["Cromosoma compatto<br/>e visibile al microscopio"]
+  F["Separazione corretta<br/>dei cromatidi in mitosi"]
+  A --> B --> D
+  B --> C --> D
+  D --> E --> F`} />
+
+## Guarda il video
+<YouTube id="7c9bt7bz0Z4" title="REGOLAZIONE della TRASCRIZIONE negli EUCAROTI - NUCLEOSOMI e CROMATINA" />
+<VideoVisto id="bio-u2-04" />
+
+## Da ricordare
+- Il nucleosoma è l'unità base della cromatina: DNA avvolto attorno a 8 istoni. I complessi di rimodellamento (SWI/SNF) usano ATP per spostare, rimuovere o modificare i nucleosomi, controllando quali geni sono accessibili.
+- L'eucromatina è aperta e trascritta; l'eterocromatina è compatta e silenziata. Il rimodellamento permette alla cellula di passare da uno stato all'altro.
+- Le condensine (I e II) sono complessi ad anello che compattano i cromosomi prima della mitosi formando anse di DNA, così i cromatidi possono essere separati senza aggrovigliarsi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione principale dei complessi di rimodellamento della cromatina come SWI/SNF?" opzioni={["Sintetizzare nuovi istoni per rimpiazzare quelli vecchi","Spostare, rimuovere o sostituire i nucleosomi per regolare l'accesso al DNA","Duplicare il DNA durante la fase S del ciclo cellulare","Tagliare il DNA in frammenti per la riparazione"]} corretta={1} spiegazione="I complessi SWI/SNF usano energia (ATP) per riposizionare o rimuovere i nucleosomi, rendendo il DNA più o meno accessibile alla macchina trascrizionale. Non sintetizzano istoni, non duplicano il DNA né lo tagliano." />
+
+<Quiz domanda="Cosa si intende per eterocromatina?" opzioni={["Cromatina rilassata dove i geni vengono attivamente trascritti","Cromatina che contiene solo DNA mitocondriale","Cromatina molto compatta in cui i geni sono generalmente silenziati","Il tratto di DNA libero tra un nucleosoma e l'altro"]} corretta={2} spiegazione="L'eterocromatina è la forma condensata della cromatina: il DNA è strettamente avvolto e i geni presenti in quella regione non sono accessibili all'RNA polimerasi, risultando quindi silenziati." />
+
+<Quiz domanda="Qual è il ruolo delle condensine durante la mitosi?" opzioni={["Rimuovere gli istoni dai nucleosomi per permettere la trascrizione","Compattare i cromosomi formando anse di DNA così che i cromatidi possano essere separati correttamente","Attivare i geni necessari alla divisione cellulare modificando le code istoniche","Formare il fuso mitotico che trascina i cromosomi ai poli"]} corretta={1} spiegazione="Le condensine (I e II) organizzano la cromatina in anse compatte (loop extrusion) durante la mitosi. Questo accorcia enormemente i cromosomi e impedisce che si aggroviglino durante la separazione dei cromatidi. Il fuso mitotico è invece formato dalle tubulina/chinesine." />
+
+<Esercizio problema="Immagina che una mutazione inattivi completamente il complesso SWI/SNF in una cellula. Quali conseguenze ti aspetti sull'espressione genica e perché?" soluzione="Senza SWI/SNF, i nucleosomi non possono essere riposizionati o rimossi. I tratti di DNA che normalmente vengono 'aperti' per la trascrizione rimarrebbero chiusi. Il risultato è che molti geni che richiedono il rimodellamento della cromatina per essere espressi verrebbero silenziati. La cellula non potrebbe rispondere correttamente a segnali di differenziamento, crescita o risposta allo stress. In pratica: meno flessibilità nel controllo dell'espressione genica, con conseguenze gravi soprattutto per geni regolati dinamicamente." />
+
+</section>
+
+</RisorsaLayout>

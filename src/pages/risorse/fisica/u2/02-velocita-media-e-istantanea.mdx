@@ -1,0 +1,121 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-02">
+
+## Cos'è la velocità?
+
+La velocità ti dice **quanto velocemente ti sposti** nello spazio.
+
+In fisica si distinguono due tipi di velocità:
+- **Velocità media** — descrive il viaggio nel suo insieme
+- **Velocità istantanea** — descrive quanto stai andando veloce *in un preciso momento*
+
+---
+
+## Velocità media
+
+Immagina di percorrere 120 km in 2 ore in macchina.
+Non sei andato sempre alla stessa velocità: hai frenato, accelerato, forse ti sei fermato al bar.
+Ma in media hai fatto:
+
+**v\_media = spazio totale / tempo totale**
+
+v\_media = 120 km / 2 h = **60 km/h**
+
+In formule:
+
+**v\_media = Δx / Δt**
+
+- **Δx** = spostamento (posizione finale meno posizione iniziale), in metri (m)
+- **Δt** = tempo impiegato, in secondi (s)
+- **v\_media** si misura in **m/s**
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la velocità media è come la "media del voto": non ti dice come è andato ogni singolo compito, ma il risultato complessivo del percorso.</div>
+
+---
+
+## Velocità istantanea
+
+Guarda il tachimetro della macchina mentre guidi: quel numero cambia in continuazione e ti dice quanto sei veloce **esattamente adesso**, non in media.
+
+Quella è la **velocità istantanea**.
+
+In fisica la otteniamo "rimpicciolendo" l'intervallo di tempo finché diventa piccolissimo (quasi zero):
+
+**v\_ist = Δx / Δt** (quando Δt è piccolissimo)
+
+In pratica: se guardi quanto ti sposti in un millisecondo, ottieni praticamente la velocità istantanea in quell'istante.
+
+---
+
+## Confronto tra le due
+
+| | Velocità media | Velocità istantanea |
+|---|---|---|
+| Descrive | tutto il viaggio | un singolo istante |
+| Intervallo di tempo | lungo | brevissimo (→ 0) |
+| Esempio | 60 km/h medi in autostrada | 95 km/h sul tachimetro |
+
+---
+
+<Diagram caption="Come si calcola la velocità media: spazio diviso tempo" code={`flowchart TB
+  A["Conosci posizione iniziale x1<br/>e posizione finale x2"] --> B["Calcola lo spostamento<br/>Δx = x2 - x1"]
+  B --> C["Conosci il tempo impiegato Δt"]
+  C --> D["Dividi: v_media = Δx / Δt"]
+  D --> E["Risultato in m/s"]`} />
+
+<Diagram caption="Dalla velocità media alla velocità istantanea: l'intervallo di tempo si restringe" code={`flowchart LR
+  A["Intervallo di tempo Δt grande<br/>→ velocità MEDIA"] --> B["Intervallo Δt sempre più piccolo"]
+  B --> C["Δt quasi zero<br/>→ velocità ISTANTANEA"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="4IW-gRRRTN4" title="velocità MEDIA ed ISTANTANEA differenza / la fisica che ci piace" />
+<VideoVisto id="fis-u2-02" />
+
+---
+
+## Da ricordare
+- La velocità media si calcola come **Δx / Δt**: spazio percorso diviso tempo impiegato.
+- La velocità istantanea è ciò che leggi sul tachimetro: la velocità in **un preciso istante**.
+- Per passare dalla velocità media a quella istantanea si riduce Δt finché tende a zero.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un ciclista percorre 45 km in 1,5 ore. Qual è la sua velocità media in km/h?"
+  opzioni={["20 km/h", "30 km/h", "45 km/h", "60 km/h"]}
+  corretta={1}
+  spiegazione="v_media = 45 km / 1,5 h = 30 km/h. Si divide sempre lo spazio totale per il tempo totale."
+/>
+
+<Quiz
+  domanda="Cosa indica il tachimetro di un'auto mentre si guida?"
+  opzioni={["La velocità media dall'inizio del viaggio", "La velocità istantanea in quell'istante", "La distanza percorsa", "Il tempo di percorrenza"]}
+  corretta={1}
+  spiegazione="Il tachimetro mostra la velocità in tempo reale, cioè la velocità istantanea: quanto stai andando veloce esattamente in quell'istante."
+/>
+
+<Quiz
+  domanda="Un'auto parte da fermo e dopo 10 s si trova a 200 m dal punto di partenza. Qual è la velocità media?"
+  opzioni={["10 m/s", "20 m/s", "200 m/s", "2 m/s"]}
+  corretta={1}
+  spiegazione="v_media = Δx / Δt = 200 m / 10 s = 20 m/s. Lo spostamento è 200 m, il tempo è 10 s."
+/>
+
+<Esercizio
+  problema="Una maratoneta corre 42 km in 3 ore e 30 minuti. Calcola la sua velocità media in km/h e in m/s."
+  soluzione="Prima converti il tempo: 3 h 30 min = 3,5 h. Velocità media in km/h: v = 42 / 3,5 = 12 km/h. Per convertire in m/s: 12 km/h ÷ 3,6 = 3,33 m/s."
+/>
+
+</section>
+
+</RisorsaLayout>

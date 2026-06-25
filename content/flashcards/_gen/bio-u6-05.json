@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fc-bio-u6-05-1",
+    "topicId": "bio-u6-05",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "mc",
+    "q": "Il pancreas produce insulina e la rilascia nel sangue, che la trasporta fino alle cellule muscolari lontane. Che tipo di segnalazione cellulare e questa?",
+    "choices": [
+      "Endocrina: il segnale (ormone) viaggia nel sangue e raggiunge cellule bersaglio lontane",
+      "Paracrina: il segnale agisce solo sulle cellule vicine alla sorgente",
+      "Autocrina: la cellula manda un segnale a se stessa",
+      "Sinaptica: il segnale attraversa la fessura sinaptica tra due neuroni"
+    ],
+    "answer": 0,
+    "explain": "Endocrina = ormone nel sangue, distanza lunga. Pensa a una email aziendale mandata a tutta l'azienda. Paracrina e sinaptica agiscono solo in zona locale; autocrina e quando mittente e destinatario coincidono.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-bio-u6-05-2",
+    "topicId": "bio-u6-05",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "open",
+    "q": "Elenca i cinque tipi di segnalazione cellulare e per ognuno indica la distanza percorsa dal segnale e un esempio.",
+    "answer": "1) Da contatto diretto: distanza zero, le cellule si toccano fisicamente (es. sviluppo embrionale, una cellula dice alla vicina che tessuto diventare). 2) Autocrina: distanza zero, la cellula manda il segnale a se stessa e ha i recettori per riceverlo (es. alcune cellule immunitarie si attivano da sole durante un'infezione). 3) Paracrina: distanza breve-locale, il segnale agisce sulle cellule vicine e viene degradato rapidamente (es. fattori di crescita intorno a una ferita). 4) Endocrina: distanza lunga, un ormone viene rilasciato nel sangue e raggiunge cellule bersaglio in tutto il corpo (es. insulina dal pancreas alle cellule muscolari). 5) Sinaptica: distanza brevissima (fessura sinaptica ~20 nm), usata dai neuroni, rapidissima e precisa (es. segnale dal cervello che fa contrarre un muscolo).",
+    "explain": "La chiave per distinguerli e la distanza: da contatto e autocrina = zero; paracrina e sinaptica = locale; endocrina = tutto il corpo via sangue. Senza il recettore giusto la cellula non legge nessun segnale.",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

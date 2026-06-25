@@ -1,0 +1,141 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u2-01">
+
+## Cos'è un cromosoma eucariotico?
+
+Le cellule eucariotiche (quelle con il nucleo, come le tue) non hanno il DNA fluttuante libero: lo impacchettano in strutture chiamate **cromosomi**. Pensa ai cromosomi come a delle matasse di filo ordinatissime — il "filo" è il DNA, avvolto intorno a proteine speciali chiamate **istoni**.
+
+Nei procarioti (batteri) il DNA è circolare. Negli eucarioti invece ogni cromosoma è una molecola di DNA **lineare**, cioè ha un inizio e una fine. Questo crea due problemi concreti che la cellula deve risolvere:
+
+1. Come si tiene insieme il cromosoma durante la divisione cellulare?
+2. Come si protegge il DNA alle estremità, che potrebbero "sfilacciarsi"?
+
+La risposta a questi due problemi è scritta nella struttura del cromosoma stesso.
+
+---
+
+## Le tre parti fondamentali di un cromosoma lineare
+
+Un cromosoma eucariotico funzionale deve avere obbligatoriamente tre elementi. Mancandone uno, il cromosoma non funziona correttamente.
+
+### 1. Il centromero
+
+Il **centromero** è una regione specifica nel mezzo (o quasi) del cromosoma. È il punto dove si attacca il **cinetocore** — una struttura proteica — durante la divisione cellulare. Da lì partono i filamenti del fuso mitotico che "tirano" i cromosomi verso i poli della cellula.
+
+Immagina il cromosoma come uno zaino: il centromero è il gancio da cui lo agganci alla corda per trasportarlo. Senza gancio, lo zaino cade e va perso.
+
+Il centromero divide il cromosoma in due braccia:
+- **braccio corto** (indicato con "p")
+- **braccio lungo** (indicato con "q")
+
+### 2. I telomeri
+
+I **telomeri** sono le "cappette" alle estremità del cromosoma, come le puntine di plastica in fondo ai lacci delle scarpe. Sono fatti di sequenze di DNA molto ripetute (negli umani la sequenza TTAGGG si ripete migliaia di volte) associata a proteine protettive.
+
+Senza telomeri, ogni volta che la cellula si divide perde un pezzo di DNA vero e proprio — le estremità si accorcerebbero fino a danneggiare geni importanti. I telomeri fanno da "cuscinetto sacrificabile".
+
+Con il tempo i telomeri si accorciano (è una delle cause dell'invecchiamento cellulare). Un enzima chiamato **telomerasi** può rallentare questo processo ricostruendoli, ma nelle cellule adulte normali è poco attivo.
+
+### 3. Le origini di replicazione
+
+Le **origini di replicazione** (ORI) sono i punti dove inizia la copia del DNA. I cromosomi eucariotici ne hanno molte (anche centinaia), perché il DNA è lungo e copiarlo tutto da un unico punto sarebbe troppo lento.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un cromosoma eucariotico funziona perché ha un gancio centrale (centromero) per essere trascinato durante la divisione, cappette protettive alle estremità (telomeri) e punti di partenza per la copia (origini di replicazione).</div>
+
+---
+
+## Perché il DNA eucariotico è lineare e non circolare?
+
+Non è del tutto chiaro il "perché" evolutivo, ma le conseguenze sono note: la linearità permette una maggiore complessità e regolazione, ma richiede soluzioni specifiche — centromero e telomeri — che i batteri con DNA circolare non hanno bisogno di inventarsi.
+
+---
+
+<Diagram caption="Struttura di un cromosoma eucariotico lineare: le tre componenti essenziali" code={`flowchart LR
+  T1["Telomero 5'<br/>(cappetta protettiva)"]
+  B1["Braccio corto (p)<br/>(sequenze di geni)"]
+  C["Centromero<br/>(aggancio al fuso mitotico)"]
+  B2["Braccio lungo (q)<br/>(sequenze di geni)"]
+  T2["Telomero 3'<br/>(cappetta protettiva)"]
+  O["Origini di replicazione<br/>(sparse lungo tutto il cromosoma)"]
+
+  T1 --> B1 --> C --> B2 --> T2
+  O -. "multiple, distribuite" .-> B1
+  O -. "multiple, distribuite" .-> B2`} />
+
+<Diagram caption="Cosa succede se mancano le componenti essenziali" code={`flowchart TB
+  A["Cromosoma lineare eucariotico"]
+  A --> B["Senza centromero"]
+  A --> C["Senza telomeri"]
+  A --> D["Senza origini di replicazione"]
+  B --> E["Il fuso non si attacca<br/>Il cromosoma NON viene segregato<br/>Cellula figlia perde il cromosoma"]
+  C --> F["Le estremità si degradano<br/>Ad ogni divisione si perde DNA<br/>Instabilità genomica"]
+  D --> G["Il DNA non viene copiato<br/>Il cromosoma si diluisce<br/>nelle divisioni successive"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="ipDFSzeYsBA" title="Caratteristiche dei cromosomi. Centromero e cariotipo — TD medicina" />
+<VideoVisto id="bio-u2-01" />
+
+---
+
+## Da ricordare
+
+- I cromosomi eucariotici sono **lineari** e richiedono tre elementi minimi: centromero, telomeri e origini di replicazione.
+- Il **centromero** è il punto di aggancio al fuso mitotico durante la divisione cellulare; senza di esso il cromosoma non viene distribuito alle cellule figlie.
+- I **telomeri** proteggono le estremità del cromosoma dalla degradazione; si accorciano a ogni divisione e la telomerasi può ricostruirli.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è la funzione principale del centromero in un cromosoma eucariotico?"
+  opzioni={[
+    "Proteggere le estremità del cromosoma dalla degradazione",
+    "Essere il punto di aggancio al fuso mitotico durante la divisione cellulare",
+    "Avviare la replicazione del DNA",
+    "Contenere i geni per la produzione di istoni"
+  ]}
+  corretta={1}
+  spiegazione="Il centromero è la regione dove si forma il cinetocore, struttura proteica a cui si attaccano i microtubuli del fuso. Questo permette ai cromosomi di essere separati e distribuiti correttamente alle cellule figlie durante la mitosi e la meiosi."
+/>
+
+<Quiz
+  domanda="Di cosa sono fatti i telomeri negli eucarioti?"
+  opzioni={[
+    "Di sequenze uniche di DNA ricche di geni fondamentali",
+    "Di proteine istoni avvolte attorno al DNA",
+    "Di sequenze di DNA altamente ripetute associate a proteine protettive",
+    "Di RNA ribosomiale che stabilizza le estremità"
+  ]}
+  corretta={2}
+  spiegazione="I telomeri sono costituiti da brevi sequenze di DNA ripetute in tandem (ad esempio TTAGGG negli umani, ripetute migliaia di volte) associate a un complesso proteico chiamato shelterina. Questa struttura protegge le estremità dalla degradazione enzimatica e impedisce che vengano riconosciute come rotture del DNA."
+/>
+
+<Quiz
+  domanda="Un cromosoma artificiale introdotto in una cellula eucariotica funzionerà correttamente solo se contiene:"
+  opzioni={[
+    "Solo un centromero funzionale",
+    "Solo i telomeri alle estremità",
+    "Centromero, telomeri e almeno un'origine di replicazione",
+    "Centromero e una sequenza promotore attiva"
+  ]}
+  corretta={2}
+  spiegazione="Questa è la definizione operativa di cromosoma artificiale eucariotico (YAC, BAC, HAC): per funzionare in una cellula ospite deve avere tutte e tre le componenti minime — centromero (segregazione), telomeri (protezione delle estremità) e origini di replicazione (copia del DNA). Mancandone una, il cromosoma viene perso o degradato."
+/>
+
+<Esercizio
+  problema="Un ricercatore elimina con una mutazione la sequenza telomerica da un cromosoma di lievito e osserva le cellule per diverse generazioni. Descrivi cosa ti aspetti che accada al cromosoma e alla cellula, spiegando perché."
+  soluzione="Senza telomeri, le estremità del cromosoma non sono protette. Ad ogni ciclo di replicazione, la DNA polimerasi non può copiare fino all'estremità 3' (problema della replicazione delle estremità), quindi il cromosoma si accorcia progressivamente. Inoltre, le estremità libere vengono riconosciute dalla cellula come rotture del doppio filamento (DSB), attivando i sistemi di risposta al danno al DNA (checkpoint). La cellula può bloccare il ciclo cellulare, tentare riparazioni errate (fusioni cromatidiche end-to-end) oppure andare in apoptosi. Nel lievito privo di telomerasi, dopo molte generazioni le colonie mostrano senescenza replicativa: le cellule smettono di dividersi o accumulano instabilità cromosomica."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,119 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u5-11">
+
+Alcune molecole hanno un anello di atomi di carbonio con dentro elettroni che non stanno fermi in un posto, ma "scivolano" tutti intorno all'anello. Queste molecole si chiamano **aromatiche**. La più famosa di tutte è il **benzene**: un anello di 6 atomi di carbonio. È una struttura così solida e comoda che la natura la usa dappertutto, anche dentro di noi.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina 6 persone in cerchio che si tengono per mano e si passano delle palline senza mai fermarsi. Le palline (gli elettroni) appartengono a tutti, non a una persona sola. Questo "passaggio continuo" rende il cerchio molto stabile. Quel cerchio è il benzene.</div>
+
+<Diagram caption="Il benzene: anello di 6 carboni con elettroni che girano tutti insieme (delocalizzati)" code={`flowchart TB
+  B["Benzene (anello di 6 carboni)"] --> E["6 elettroni che NON stanno fermi"]
+  E --> D["Si spalmano su tutto l'anello<br/>(delocalizzati)"]
+  D --> S["Risultato: molecola molto STABILE"]`} />
+
+## Cos'è l'aromaticità (e perché conta)
+
+"Aromatico" in chimica non vuol dire "che profuma". Vuol dire che una molecola ad anello è **extra stabile** grazie a quegli elettroni che girano liberi.
+
+Pensa alla differenza tra una sedia normale e una sedia super rinforzata. Sembrano simili, ma quella rinforzata regge molto di più. Allo stesso modo, una molecola aromatica regge meglio e reagisce in modo diverso dalle altre.
+
+Perché ti interessa per medicina e veterinaria? Perché tantissime cose importanti del corpo contengono anelli aromatici:
+
+- la **fenilalanina** e il **triptofano**, due mattoni delle nostre proteine;
+- le **basi del DNA** (le "lettere" del codice genetico) hanno anelli aromatici;
+- moltissimi **farmaci** (dall'aspirina al paracetamolo) hanno un anello benzenico.
+
+Capire l'anello aromatico vuol dire capire un pezzo di come è fatta la vita.
+
+## La regola di Hückel: il "test" per sapere se è aromatica
+
+Come facciamo a sapere se un anello è davvero aromatico? Esiste un controllo veloce, la **regola di Hückel**.
+
+La regola dice: l'anello è aromatico se il numero dei suoi elettroni "che girano" (li chiamiamo elettroni pi greco) è uguale a **4n + 2**, dove n è un numero intero (0, 1, 2, 3...).
+
+Non spaventarti dalla formula. Funziona così: provi a mettere n uguale a 0, poi 1, poi 2... e ottieni una lista di numeri "magici":
+
+- con n = 0 → 2 elettroni
+- con n = 1 → 6 elettroni
+- con n = 2 → 10 elettroni
+- con n = 3 → 14 elettroni
+
+Se il tuo anello ha uno di questi numeri (2, 6, 10, 14...), è aromatico. Il benzene ha **6** elettroni: 6 è nella lista, quindi il benzene è aromatico. Promosso.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> è come la lista dei numeri vincenti di una lotteria. I numeri vincenti sono 2, 6, 10, 14... Se i tuoi elettroni "pescano" uno di questi numeri, l'anello è aromatico. Il benzene pesca il 6: ha vinto.</div>
+
+<Diagram caption="Regola di Hückel: i numeri di elettroni che rendono un anello aromatico" code={`flowchart LR
+  H["Conta gli elettroni che girano (pi greco)"] --> N["Sono 2, 6, 10 o 14?<br/>(la formula 4n+2)"]
+  N -->|"Si"| A["E aromatico (super stabile)"]
+  N -->|"No"| X["Non e aromatico"]`} />
+
+## La sostituzione elettrofila aromatica: cambiare un pezzo senza rompere l'anello
+
+Il benzene è così stabile che non vuole "rompersi". Quindi reagisce in un modo speciale, chiamato **sostituzione elettrofila aromatica**. Nome lungo, idea semplice.
+
+Spacchettiamo le parole:
+
+- **Sostituzione**: vuol dire "scambio". L'anello tiene tutti i suoi atomi, ma cambia un pezzettino con un altro. È come sostituire una sola tessera in un mosaico, senza smontare tutto il mosaico.
+- **Elettrofila**: "elettro-filo" significa "amante degli elettroni". Un **elettrofilo** è una particella povera di elettroni, che li cerca con fame. L'anello aromatico, pieno di elettroni che girano, è il posto perfetto dove andarli a prendere.
+
+Cosa succede in pratica: su uno dei 6 carboni dell'anello c'è un atomo di idrogeno (H). Arriva un elettrofilo affamato, si attacca all'anello e **prende il posto** di quell'idrogeno. Alla fine l'anello aromatico è ancora intatto (resta super stabile), ma ha un nuovo pezzo al posto del vecchio idrogeno.
+
+Questo è esattamente il modo in cui i chimici (e i farmacologi) costruiscono i farmaci: partono da un anello benzenico e gli "agganciano" pezzi diversi per ottenere medicine diverse.
+
+<Diagram caption="Sostituzione elettrofila: l'anello resta, cambia solo un pezzo" code={`flowchart TB
+  I["Anello del benzene con un H su un carbonio"] --> E["Arriva un ELETTROFILO (affamato di elettroni)"]
+  E --> P["Prende il posto dell'idrogeno H"]
+  P --> F["Anello ancora intatto e aromatico,<br/>ma con un pezzo NUOVO"]`} />
+
+## Guarda il video
+
+<YouTube id="b18YOTRztys" title="Idrocarburi aromatici: il benzene e l'aromaticità — Agora Scienze Biomediche" />
+
+<VideoVisto id="chim-u5-11" />
+
+## Da ricordare
+
+- **Aromatico** non vuol dire "profumato": vuol dire anello **extra stabile** con elettroni che girano tutti insieme (delocalizzati).
+- Il **benzene** è l'anello aromatico più famoso: 6 carboni, 6 elettroni che si spalmano su tutto l'anello.
+- **Regola di Hückel**: è aromatico se ha 2, 6, 10, 14... elettroni (la formula 4n + 2). Il benzene ne ha 6, quindi è aromatico.
+- Il benzene reagisce per **sostituzione elettrofila aromatica**: un elettrofilo (affamato di elettroni) prende il posto di un idrogeno, e l'anello resta intero.
+- Gli anelli aromatici sono ovunque nel corpo e nei farmaci (DNA, amminoacidi, aspirina, paracetamolo).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="In chimica, una molecola 'aromatica' è una molecola che:"
+  opzioni={["per forza ha un buon profumo", "ha un anello extra stabile con elettroni delocalizzati", "non contiene mai carbonio", "si rompe facilmente"]}
+  corretta={1}
+  spiegazione="In chimica 'aromatico' non c'entra con l'odore: indica un anello molto stabile in cui gli elettroni girano spalmati su tutto l'anello (delocalizzati)."
+/>
+
+<Quiz
+  domanda="Secondo la regola di Hückel (4n + 2), quale numero di elettroni rende un anello aromatico?"
+  opzioni={["4 elettroni", "5 elettroni", "6 elettroni", "8 elettroni"]}
+  corretta={2}
+  spiegazione="I numeri 'vincenti' sono 2, 6, 10, 14... Il benzene ne ha 6, quindi e aromatico. 4, 5 e 8 non sono nella lista."
+/>
+
+<Quiz
+  domanda="Nella sostituzione elettrofila aromatica, cosa fa l'elettrofilo?"
+  opzioni={["rompe completamente l'anello", "prende il posto di un atomo di idrogeno sull'anello", "aggiunge nuovi carboni all'anello", "non reagisce con il benzene"]}
+  corretta={1}
+  spiegazione="L'elettrofilo (affamato di elettroni) si attacca all'anello e sostituisce un idrogeno. L'anello aromatico resta intatto e stabile."
+/>
+
+<Esercizio
+  problema="Un anello ha 6 elettroni che girano (elettroni pi greco). Usando la regola di Hückel (4n + 2), spiega se e aromatico oppure no."
+  soluzione="E aromatico. Provo i numeri: con n = 1 la formula 4n + 2 da 4x1 + 2 = 6. Il mio anello ha proprio 6 elettroni, quindi rispetta la regola di Hückel ed e aromatico. E infatti questo e il caso del benzene."
+/>
+
+</section>
+
+</RisorsaLayout>

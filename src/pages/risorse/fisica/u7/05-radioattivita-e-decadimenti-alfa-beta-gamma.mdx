@@ -1,0 +1,106 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u7-05">
+
+## Cos'è la radioattività?
+
+Alcuni nuclei atomici sono **instabili**: hanno troppi protoni o troppi neutroni e non riescono a stare insieme tranquillamente. Per tornare a uno stato stabile, il nucleo si "spezza" o emette qualcosa. Questo processo si chiama **decadimento radioattivo**.
+
+Pensa a una pentola a pressione: se c'è troppa pressione dentro, prima o poi deve sfogare qualcosa. Il nucleo instabile fa lo stesso — rilascia energia o particelle fino a diventare stabile.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La radioattività è il modo in cui un nucleo instabile si libera dell'energia in eccesso per diventare stabile.</div>
+
+---
+
+## I tre tipi di decadimento
+
+### Decadimento Alfa (α)
+
+Il nucleo espelle una **particella alfa**: 2 protoni + 2 neutroni (cioè un nucleo di elio).
+
+- Il nucleo perde 2 protoni e 2 neutroni, quindi si trasforma in un elemento diverso.
+- La particella alfa è pesante e lenta: viene fermata da un foglio di carta o dalla pelle.
+- Esempio: l'uranio-238 decade in torio-234 emettendo una particella alfa.
+
+### Decadimento Beta (β)
+
+Qui il nucleo trasforma un neutrone in un protone (o viceversa) e lancia fuori un **elettrone** (oppure la sua antiparticella, il positrone).
+
+- Il nucleo cambia elemento (cambia il numero di protoni) ma perde pochissima massa.
+- Le particelle beta sono più veloci e penetranti dell'alfa: le ferma uno strato sottile di alluminio.
+- Esempio: il carbonio-14 decade in azoto-14 emettendo una particella beta.
+
+### Decadimento Gamma (γ)
+
+Il nucleo non cambia composizione: emette solo **energia sotto forma di onde elettromagnetiche** (simili ai raggi X, ma più energetiche).
+
+- Spesso accompagna gli altri decadimenti.
+- I raggi gamma sono i più penetranti: servono piombo o cemento spesso per bloccarli.
+- Non cambiano né protoni né neutroni: il nucleo rimane lo stesso elemento.
+
+<Diagram caption="I tre tipi di decadimento radioattivo e il loro potere di penetrazione" code={`flowchart TB
+  N["Nucleo instabile"]
+  N --> A["Decadimento alfa (α)<br/>emette 2p + 2n<br/>fermato dalla carta"]
+  N --> B["Decadimento beta (β)<br/>emette elettrone<br/>fermato dall'alluminio"]
+  N --> G["Decadimento gamma (γ)<br/>emette energia (fotoni)<br/>fermato dal piombo"]`} />
+
+---
+
+## L'emivita: quanto dura la radioattività?
+
+Non puoi prevedere quando un singolo nucleo decade — è casuale. Ma se hai **miliardi** di nuclei, puoi prevedere quanto tempo ci vuole perché **la metà** di loro decada. Questo tempo si chiama **emivita** (o tempo di dimezzamento), indicata con il simbolo **T₁/₂**.
+
+Ogni elemento radioattivo ha la sua emivita:
+- Lo iodio-131: circa **8 giorni** (usato in medicina)
+- Il carbonio-14: circa **5.730 anni** (usato per datare reperti antichi)
+- L'uranio-238: circa **4,5 miliardi di anni**
+
+**Come funziona in pratica?**
+Parti da 100 g di una sostanza radioattiva con emivita di 1 anno:
+- Dopo 1 anno restano 50 g
+- Dopo 2 anni restano 25 g
+- Dopo 3 anni restano 12,5 g
+- ... e così via, dimezzando ogni volta.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'emivita è il tempo necessario perché metà dei nuclei instabili decadano. Non importa quanta sostanza hai: dimezza sempre in quel tempo.</div>
+
+<Diagram caption="Come la quantità di sostanza radioattiva si dimezza nel tempo (ogni passo = 1 emivita)" code={`flowchart LR
+  Q0["Quantità iniziale<br/>100%"] --> Q1["Dopo 1 emivita<br/>50%"]
+  Q1 --> Q2["Dopo 2 emivite<br/>25%"]
+  Q2 --> Q3["Dopo 3 emivite<br/>12,5%"]
+  Q3 --> Q4["Dopo 4 emivite<br/>6,25%"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="ky2gpaYpKs8" title="Il decadimento radioattivo — Francesco Petracca (Math&Fisica)" />
+<VideoVisto id="fis-u7-05" />
+
+---
+
+## Da ricordare
+
+- Un nucleo **instabile** decade emettendo particelle o energia per diventare stabile; esistono tre tipi principali: alfa (particella pesante), beta (elettrone), gamma (energia pura).
+- Il **potere penetrante** cresce da alfa (carta) a beta (alluminio) a gamma (piombo).
+- L'**emivita** è il tempo in cui la metà dei nuclei radioattivi presenti decade; è fissa per ogni elemento e non dipende dalla quantità iniziale.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale tipo di radiazione ha il maggiore potere di penetrazione?" opzioni={["Alfa (α)", "Beta (β)", "Gamma (γ)", "Tutte penetrano ugualmente"]} corretta={2} spiegazione="Le radiazioni gamma sono fotoni ad alta energia e richiedono spessi schermi di piombo o cemento per essere fermate. Le alfa si bloccano con un foglio di carta, le beta con un sottile strato di alluminio." />
+
+<Quiz domanda="Che cosa contiene una particella alfa?" opzioni={["1 protone e 1 neutrone", "Solo 2 elettroni", "2 protoni e 2 neutroni", "2 protoni e 0 neutroni"]} corretta={2} spiegazione="La particella alfa è identica a un nucleo di elio-4: contiene esattamente 2 protoni e 2 neutroni. Per questo è relativamente pesante e poco penetrante." />
+
+<Quiz domanda="Una sostanza radioattiva ha emivita di 10 anni. Parti da 80 g. Quanti grammi restano dopo 20 anni?" opzioni={["40 g", "20 g", "10 g", "0 g"]} corretta={1} spiegazione="Dopo 10 anni (1 emivita) restano 40 g. Dopo altri 10 anni (2a emivita) la quantità si dimezza ancora: 40 ÷ 2 = 20 g." />
+
+<Esercizio problema="Il radio-226 ha un'emivita di circa 1600 anni. Un campione contiene oggi 16 g di radio-226. Quanti grammi di radio-226 saranno presenti tra 4800 anni?" soluzione="4800 anni corrispondono a 4800 ÷ 1600 = 3 emivite. Ogni emivita dimezza la quantità: dopo 1 emivita → 8 g; dopo 2 emivite → 4 g; dopo 3 emivite → 2 g. Risposta: restano 2 g di radio-226." />
+
+</section>
+
+</RisorsaLayout>

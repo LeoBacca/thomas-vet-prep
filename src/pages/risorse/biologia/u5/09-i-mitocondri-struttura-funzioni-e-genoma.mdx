@@ -1,0 +1,105 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-09">
+
+## Cosa sono i mitocondri?
+
+I mitocondri sono organelli presenti in quasi tutte le cellule eucariote (cioè le cellule con nucleo, come le nostre). Vengono chiamati **"centrali energetiche della cellula"** perché il loro compito principale è produrre energia sotto forma di **ATP** (adenosina trifosfato), la moneta energetica usata da ogni cellula per fare qualsiasi cosa: muoversi, crescere, pensare.
+
+Pensa al mitocondrio come a un motore a benzina: prende carburante (glucosio e grassi) e lo trasforma in energia che la cellula può usare direttamente.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il mitocondrio è il motore della cellula — brucia i nutrienti e produce l'ATP che serve per far funzionare tutto il resto.</div>
+
+---
+
+## La struttura del mitocondrio
+
+Il mitocondrio ha una forma ovale, simile a un fagiolo. La sua struttura è particolare perché ha **due membrane** invece di una:
+
+1. **Membrana esterna** — la parete liscia che separa il mitocondrio dal citoplasma. È abbastanza permeabile: lascia passare piccole molecole liberamente.
+
+2. **Membrana interna** — la parete interna, molto meno permeabile. Si piega formando delle strutture a fisarmonica chiamate **creste mitocondriali** (creste = rilievi a forma di cresta). Più creste ci sono, più superficie disponibile per produrre ATP.
+
+3. **Spazio intermembrana** — lo spazio tra le due membrane. È fondamentale per la produzione di ATP perché si accumula lì un gradiente di protoni (ioni H⁺).
+
+4. **Matrice mitocondriale** — il liquido interno, dentro la membrana interna. Qui avvengono molte reazioni chimiche, tra cui il **Ciclo di Krebs**. Contiene anche il DNA mitocondriale.
+
+<Diagram caption="Struttura del mitocondrio e localizzazione delle funzioni principali" code={`flowchart TB
+  A["Membrana esterna<br/>(liscia, permeabile)"]
+  B["Spazio intermembrana<br/>(accumulo di H⁺)"]
+  C["Membrana interna<br/>(creste mitocondriali)"]
+  D["Matrice mitocondriale<br/>(Ciclo di Krebs + DNA mt)"]
+
+  A --> B --> C --> D`} />
+
+---
+
+## Come produce energia: la respirazione cellulare
+
+La produzione di ATP avviene in più tappe, attraverso un processo chiamato **respirazione cellulare aerobica** (aerobica = che richiede ossigeno). Ecco il percorso semplificato:
+
+1. Il glucosio viene scomposto nel citoplasma (**glicolisi**) in molecole più piccole (piruvato).
+2. Il piruvato entra nella matrice mitocondriale e viene ulteriormente demolito nel **Ciclo di Krebs**, rilasciando elettroni ad alta energia.
+3. Gli elettroni percorrono la **catena di trasporto degli elettroni** (sulla membrana interna), pompando ioni H⁺ nello spazio intermembrana.
+4. Gli ioni H⁺ rientrano nella matrice passando attraverso un enzima speciale (**ATP sintasi**) che, girando come una turbina, produce ATP.
+5. L'ossigeno è l'accettore finale degli elettroni: si combina con H⁺ e forma acqua.
+
+<Diagram caption="Le tappe della produzione di ATP nel mitocondrio" code={`flowchart LR
+  A["Glucosio<br/>(citoplasma)"] --> B["Piruvato<br/>(glicolisi)"]
+  B --> C["Ciclo di Krebs<br/>(matrice mitocondriale)"]
+  C --> D["Catena di trasporto<br/>degli elettroni<br/>(membrana interna)"]
+  D --> E["ATP sintasi<br/>(turbina proteica)"]
+  E --> F["ATP<br/>(energia pronta all'uso)"]
+  D --> G["H₂O<br/>(ossigeno + H⁺)"]`} />
+
+---
+
+## Il genoma mitocondriale: il mitocondrio ha il suo DNA
+
+Questa è una delle cose più sorprendenti in biologia: i mitocondri hanno un **proprio DNA**, separato dal DNA nel nucleo. Si chiama **DNA mitocondriale (mtDNA)**.
+
+**Caratteristiche del mtDNA:**
+- Ha forma **circolare** (come il DNA dei batteri, non a doppia elica lineare come il nostro DNA nucleare).
+- È presente in **molte copie** dentro ogni mitocondrio (non solo una).
+- Nell'uomo contiene **16.569 coppie di basi** e **37 geni** in tutto.
+- Di questi 37 geni, solo **13 codificano proteine** (tutte componenti della catena di trasporto degli elettroni o dell'ATP sintasi).
+- Non è avvolto da istoni (le proteine che "impacchettano" il DNA nucleare).
+
+**Perché il mitocondrio ha un DNA proprio?**
+Secondo la **teoria endosimbiotica** (proposta da Lynn Margulis), i mitocondri erano in origine batteri liberi che vennero "inglobati" da una cellula più grande miliardi di anni fa. Invece di essere digeriti, stabilirono una convivenza vantaggiosa: il batterio produceva energia, la cellula ospite dava protezione. Nel tempo, buona parte dei geni batterici si trasferì nel nucleo della cellula ospite, ma una piccola parte rimase nel mitocondrio: è il mtDNA che vediamo oggi.
+
+**Ereditarietà materna:** il mtDNA si eredita quasi esclusivamente dalla madre, perché i mitocondri dell'uovo materno si trasferiscono al figlio, mentre quelli dello spermatozoo vengono eliminati dopo la fecondazione.
+
+---
+
+## Guarda il video
+<YouTube id="iT4mFmQTz1c" title="Mitocondri spiegazione semplice biologia — Med90 appunti per Studenti" />
+<VideoVisto id="bio-u5-09" />
+
+---
+
+## Da ricordare
+- Il mitocondrio ha **due membrane**: quella interna forma le creste dove si produce la maggior parte dell'ATP tramite la catena di trasporto degli elettroni e l'ATP sintasi.
+- La produzione di ATP segue il percorso: glucosio → glicolisi → Ciclo di Krebs → catena di trasporto → ATP sintasi → ATP.
+- Il mitocondrio possiede un **proprio DNA circolare** (mtDNA) di origine batterica, ereditato per via materna, con 37 geni di cui 13 codificanti proteine.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Dove si trova il Ciclo di Krebs nel mitocondrio?" opzioni={["Nello spazio intermembrana","Sulla membrana esterna","Nella matrice mitocondriale","Sulle creste della membrana interna"]} corretta={2} spiegazione="Il Ciclo di Krebs avviene nella matrice mitocondriale, il compartimento liquido interno delimitato dalla membrana interna. Le creste della membrana interna ospitano invece la catena di trasporto degli elettroni e l'ATP sintasi." />
+
+<Quiz domanda="Il DNA mitocondriale (mtDNA) ha una forma..." opzioni={["Lineare, come il DNA nucleare","Circolare, come il DNA batterico","A doppia elica ramificata","Associata a istoni, come il DNA nucleare"]} corretta={1} spiegazione="Il mtDNA è circolare e privo di istoni, esattamente come il DNA dei batteri. Questo è una delle evidenze a supporto della teoria endosimbiotica, che vuole i mitocondri discendenti da antichi batteri inglobati." />
+
+<Quiz domanda="Quanti geni contiene il genoma mitocondriale umano?" opzioni={["3","13","37","200"]} corretta={2} spiegazione="Il genoma mitocondriale umano contiene 37 geni in totale. Di questi, 13 codificano per proteine della catena di trasporto degli elettroni o dell'ATP sintasi; gli altri 24 codificano per RNA ribosomiali e RNA di trasferimento usati dalla macchina traduzionale del mitocondrio stesso." />
+
+<Esercizio problema="Spiega con parole tue perché le creste mitocondriali sono importanti per la produzione di ATP. Cosa succederebbe se la membrana interna fosse completamente liscia?" soluzione="Le creste mitocondriali sono ripiegamenti della membrana interna che aumentano enormemente la superficie disponibile. Su questa membrana sono inserite le proteine della catena di trasporto degli elettroni e le molecole di ATP sintasi. Più superficie = più proteine = più ATP prodotto per unità di tempo. Se la membrana interna fosse liscia, la superficie sarebbe molto minore, ci sarebbero meno ATP sintasi attive e la cellula produrrebbe molto meno energia: le cellule ad alto fabbisogno energetico (come le cellule muscolari e i neuroni) ne risentirebbero in modo particolare." />
+
+</section>
+
+</RisorsaLayout>

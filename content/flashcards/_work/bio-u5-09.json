@@ -1,0 +1,25 @@
+{
+ "id": "bio-u5-09",
+ "titolo": "I mitocondri: struttura, funzioni e genoma mitocondriale",
+ "materia": "biologia",
+ "unita": 5,
+ "slug": "09-i-mitocondri-struttura-funzioni-e-genoma",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u5/09-i-mitocondri-struttura-funzioni-e-genoma.mdx",
+ "examQuestions": [
+  {
+   "year": "2016",
+   "q": "I processi del metabolismo energetico della cellula eucariotica si svolgono per la maggior parte:",
+   "choices": [
+    "nel mitocondrio",
+    "nel nucleo",
+    "nel lisosoma",
+    "nell'apparato di Golgi",
+    "nel reticolo endoplasmatico"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

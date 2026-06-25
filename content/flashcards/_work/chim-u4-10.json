@@ -1,0 +1,67 @@
+{
+ "id": "chim-u4-10",
+ "titolo": "Le soluzioni tampone e l'equazione di Henderson-Hasselbalch",
+ "materia": "chimica",
+ "unita": 4,
+ "slug": "10-le-soluzioni-tampone-e-lequazione-di",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/chimica/u4/10-le-soluzioni-tampone-e-lequazione-di.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Se una soluzione tampone (1 litro) a pH = 4 viene diluita con acqua (a 10 litri), il pH della soluzione ottenuta è circa:",
+   "choices": [
+    "4",
+    "9",
+    "8",
+    "5",
+    "0,4"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2017",
+   "q": "Miscelando quantità equimolari di ammoniaca e cloruro di ammonio in acqua si ottiene:",
+   "choices": [
+    "una soluzione tampone",
+    "un miscuglio eterogeneo",
+    "una soluzione acida",
+    "una soluzione neutra",
+    "un precipitato"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2018",
+   "q": "Quale di queste coppie di composti costituisce un efficace sistema tampone?",
+   "choices": [
+    "HCOOH/HCOONa",
+    "HCl/NaCl",
+    "H2SO4/CaSO4",
+    "KOH/KCl",
+    "CH3COOH/HCl"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Quale tra le seguenti è una soluzione tampone?",
+   "choices": [
+    "Una soluzione 1 M di CH3COOH e 1 M di CH3COONa",
+    "Una soluzione 1 M di CH3COOH e 1 M di HCl",
+    "Una soluzione 1 M di NaOH e 1 M di HCl",
+    "Una soluzione 1 M di NaOH e 1 M di CH3COONa",
+    "Una soluzione 1 M di CH3COONa e 1 M di NH4Cl"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "id": "chim-u2-02",
+ "titolo": "Le soluzioni: soluto e solvente; gassose, liquide e solide",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "02-le-soluzioni-soluto-e-solvente-gassose",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u2/02-le-soluzioni-soluto-e-solvente-gassose.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Indicare quale delle seguenti affermazioni è vera. Se una soluzione è satura di un soluto X:",
+   "choices": [
+    "non si può sciogliervi altro soluto X alla stessa temperatura",
+    "non si può sciogliervi altri soluti diversi da X",
+    "si può sciogliervi altro soluto X se si rimuove il corpo di fondo",
+    "se si aggiunge altro soluto X questo inizia a reagire con il solvente",
+    "non si può sciogliervi altro soluto X anche aumentando la temperatura"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

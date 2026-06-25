@@ -1,0 +1,53 @@
+{
+ "id": "fis-u5-07",
+ "titolo": "Trasformazioni termodinamiche (isoterma, isocora, isobara, adiabatica)",
+ "materia": "fisica",
+ "unita": 5,
+ "slug": "07-trasformazioni-termodinamiche-isoterma-isocora-isobara-adiabatica",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/fisica/u5/07-trasformazioni-termodinamiche-isoterma-isocora-isobara-adiabatica.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Quando si comprime un gas in un cilindro e si vuole allo stesso tempo mantenere costante la sua temperatura:",
+   "choices": [
+    "siamo costretti a sottrarre calore al gas raffreddandolo",
+    "dobbiamo fornire calore al gas riscaldandolo",
+    "dobbiamo trasferire il massimo di energia possibile al gas",
+    "dobbiamo trasferire il minimo di energia possibile al gas",
+    "siamo costretti ad isolare termicamente il cilindro"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2008",
+   "q": "Il lavoro necessario per comprimere una mole di gas perfetto ben isolato termicamente:",
+   "choices": [
+    "non è mai nullo",
+    "è nullo perché non c'è scambio di calore con l'esterno",
+    "viene fornito dallo stesso gas",
+    "non può essere espresso in Joule ma in Pascal",
+    "non dipende dal valore del volume finale a cui si giunge"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2017",
+   "q": "Se si sottopone un gas perfetto a una trasformazione isobara:",
+   "choices": [
+    "volume e temperatura variano entrambi secondo proporzionalità diretta",
+    "volume e temperatura variano entrambi secondo proporzionalità inversa",
+    "pressione e temperatura variano entrambi secondo proporzionalità diretta",
+    "pressione e temperatura variano entrambi secondo proporzionalità inversa",
+    "pressione e volume variano entrambi secondo proporzionalità inversa"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

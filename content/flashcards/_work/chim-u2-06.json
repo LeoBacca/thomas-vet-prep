@@ -1,0 +1,53 @@
+{
+ "id": "chim-u2-06",
+ "titolo": "Le unità di concentrazione: percentuali (p/p, p/v, v/v)",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "06-le-unita-di-concentrazione-percentuali-p",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/chimica/u2/06-le-unita-di-concentrazione-percentuali-p.mdx",
+ "examQuestions": [
+  {
+   "year": "2017",
+   "q": "Una soluzione contiene 5 g di soluto disciolti in 50 L di solvente. La sua concentrazione è pari a:",
+   "choices": [
+    "0,1 g/L",
+    "10 g/L",
+    "250 g/L",
+    "0,1 M",
+    "10 M"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Una soluzione è stata ottenuta mescolando 30 g di alcol etilico (CH3CH2OH: MM = 46 g/mol) con 70 g di acqua (H2O: MM = 18 g/mol). Quale delle seguenti affermazioni è falsa?",
+   "choices": [
+    "La concentrazione della soluzione è di 30 g di alcol etilico in 100 mL di soluzione",
+    "I dati sono sufficienti per calcolare le frazioni molari di ciascuna delle due componenti della soluzione",
+    "L'acqua e l'alcol etilico sono miscibili in qualsiasi proporzione",
+    "La concentrazione della soluzione è 30% m/m di alcol etilico",
+    "L'acqua e l'alcol etilico non possono essere separati completamente per distillazione frazionata"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Quale delle seguenti soluzioni acquose contiene la massa maggiore di MgCl2 (massa molare: 95 g/mol)?",
+   "choices": [
+    "1 L di soluzione di MgCl2 10% (m/V)",
+    "1 L di soluzione di MgCl2 1 M",
+    "1 L di soluzione di MgCl2 1 m",
+    "0.5 L di soluzione di MgCl2 10% (m/m)",
+    "0.5 L di soluzione di MgCl2 2 M"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

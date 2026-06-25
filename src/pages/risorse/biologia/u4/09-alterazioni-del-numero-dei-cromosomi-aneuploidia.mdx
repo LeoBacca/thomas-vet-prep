@@ -1,0 +1,115 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u4-09">
+
+## Quanti cromosomi siamo "di default"?
+
+L'essere umano ha normalmente **46 cromosomi**, organizzati in 23 coppie. Ogni coppia contiene due cromosomi "gemelli" (uno ereditato dalla mamma, uno dal papà).
+
+Quando questo numero cambia — cioè quando una cellula si ritrova con cromosomi in più o in meno rispetto al normale — si parla di **variazione del numero cromosomico**.
+
+Ci sono due grandi categorie: **aneuploidia** e **poliploidia**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Immagina che ogni cromosoma sia un libro in una biblioteca. La biblioteca normale ha 46 libri in 23 coppie. L'aneuploidia è avere un libro in più (o in meno) solo in UNA coppia. La poliploidia è avere una copia intera extra di TUTTA la biblioteca.</div>
+
+---
+
+## Aneuploidia: un cromosoma in più o in meno
+
+**Aneuploidia** significa che il numero totale di cromosomi NON è un multiplo esatto del set base. Hai qualcosa in più o in meno in una coppia specifica.
+
+### Come succede?
+
+Il problema nasce durante la **meiosi**, la divisione cellulare che produce i gameti (ovociti e spermatozoi). Se durante la meiosi due cromosomi omologhi non si separano correttamente, si parla di **non-disgiunzione**.
+
+Risultato: un gamete riceve **due copie** di quel cromosoma invece di una, e l'altro gamete ne riceve **zero**.
+
+Quando questi gameti si fondono con un gamete normale durante la fecondazione, si ottiene una cellula con **3 copie** di quel cromosoma (trisomia) o con **1 sola copia** (monosomia).
+
+### I tipi principali di aneuploidia
+
+- **Trisomia (2n + 1):** tre copie di un cromosoma invece di due. Esempio: trisomia 21 (sindrome di Down).
+- **Monosomia (2n − 1):** una sola copia di un cromosoma. Esempio: sindrome di Turner (45, X).
+- **Nullisomia (2n − 2):** nessuna copia di quel cromosoma — quasi sempre letale.
+
+---
+
+## Poliploidia: set interi in più
+
+**Poliploidia** significa avere uno o più **set completi di cromosomi** in più rispetto al normale.
+
+- Un organismo normale è **diploide (2n)**: ha 2 set.
+- Un **triploide (3n)** ha 3 set completi.
+- Un **tetraploide (4n)** ha 4 set completi.
+
+La poliploidia è rarissima e quasi sempre letale negli animali. Nelle **piante** è invece comunissima e spesso vantaggiosa (molte specie coltivate, come il grano, sono poliploidi).
+
+---
+
+## La trisomia 21: la sindrome di Down
+
+La **sindrome di Down** è l'esempio più conosciuto di aneuploidia negli esseri umani. Chi ne è affetto ha **tre copie del cromosoma 21** invece di due.
+
+Il cromosoma 21 è il più piccolo del genoma umano, ma avere una terza copia porta comunque a importanti effetti sullo sviluppo fisico e cognitivo.
+
+### Come si origina?
+
+Nella stragrande maggioranza dei casi (circa il 95%), la causa è una **non-disgiunzione** durante la meiosi I o la meiosi II nella madre (più raramente nel padre). Durante la formazione dell'ovocita, le due copie del cromosoma 21 non si separano e finiscono entrambe nello stesso gamete.
+
+### Frequenza
+
+La sindrome di Down è più frequente quando la madre ha un'età avanzata al momento del concepimento. L'età materna aumenta il rischio perché gli ovociti "invecchiano" con la donna e la meiosi può diventare meno precisa.
+
+### Diagnosi
+
+Si può rilevare tramite **cariotipo**: si osservano i cromosomi del feto (o di una persona) e si conta il numero. Se il cromosoma 21 appare 3 volte, la diagnosi è confermata.
+
+---
+
+<Diagram caption="Non-disgiunzione nella meiosi e origine della trisomia 21" code={`flowchart TB
+  A["Cellula madre (2n=46)<br/>con 2 copie del cromosoma 21"] --> B["Meiosi"]
+  B --> C["Non-disgiunzione:<br/>i 2 cromosomi 21<br/>non si separano"]
+  C --> D["Gamete con 2 copie<br/>del cromosoma 21"]
+  C --> E["Gamete con 0 copie<br/>del cromosoma 21"]
+  D --> F["Fecondazione con<br/>gamete normale (1 copia)"]
+  E --> G["Fecondazione con<br/>gamete normale (1 copia)"]
+  F --> H["Zigote con 3 copie<br/>= Trisomia 21<br/>(sindrome di Down)"]
+  G --> I["Zigote con 1 copia<br/>= Monosomia 21<br/>(quasi sempre letale)"]`} />
+
+<Diagram caption="Aneuploidia vs Poliploidia: confronto schematico" code={`flowchart TB
+  A["Variazioni del numero<br/>cromosomico"] --> B["Aneuploidia<br/>(numero NON multiplo del set base)"]
+  A --> C["Poliploidia<br/>(set interi in più)"]
+  B --> D["Trisomia (2n+1)<br/>es. sindrome di Down"]
+  B --> E["Monosomia (2n-1)<br/>es. sindrome di Turner"]
+  C --> F["Triploide (3n)<br/>es. alcune piante"]
+  C --> G["Tetraploide (4n)<br/>es. grano comune"]`} />
+
+## Guarda il video
+<YouTube id="oxT0Z7abSjA" title="CARIOTIPO: POLIPLOIDIA e ANEUPLOIDIA — Biologia con Giulia" />
+<VideoVisto id="bio-u4-09" />
+
+## Da ricordare
+- L'**aneuploidia** è la perdita o il guadagno di singoli cromosomi (non set interi); si origina da errori di separazione durante la meiosi, chiamati **non-disgiunzione**.
+- La **trisomia 21** (sindrome di Down) si verifica quando il cromosoma 21 è presente in tre copie invece di due; è la forma di aneuploidia autosomica più comune compatibile con la vita.
+- La **poliploidia** è il possesso di interi set cromosomici in più (3n, 4n…): rarissima e letale negli animali, frequentissima e utile nelle piante coltivate.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quante copie del cromosoma 21 ha una persona con trisomia 21?" opzioni={["1 copia","2 copie","3 copie","4 copie"]} corretta={2} spiegazione="Trisomia significa tre copie. Una persona con trisomia 21 ha quindi 3 copie del cromosoma 21, per un totale di 47 cromosomi invece di 46." />
+
+<Quiz domanda="Qual è la causa più comune della trisomia 21?" opzioni={["Una mutazione puntiforme nel gene BRCA1","La non-disgiunzione durante la meiosi","Un crossing-over anomalo durante la mitosi","L'inversione di un segmento del cromosoma 21"]} corretta={1} spiegazione="La trisomia 21 nasce quasi sempre da una non-disgiunzione in meiosi: i due cromosomi 21 non si separano correttamente e finiscono entrambi nello stesso gamete. Quando questo gamete viene fecondato da uno normale, il risultato è una cellula con 3 copie del cromosoma 21." />
+
+<Quiz domanda="In quale gruppo di organismi la poliploidia è comune e spesso vantaggiosa?" opzioni={["Mammiferi","Insetti","Piante","Batteri"]} corretta={2} spiegazione="Nelle piante la poliploidia è frequentissima e può conferire vantaggi come dimensioni maggiori e maggiore resistenza. Molte specie coltivate (grano, patate, fragole) sono poliploidi. Negli animali è invece quasi sempre letale." />
+
+<Esercizio problema="Una cellula uovo umana subisce una non-disgiunzione del cromosoma 13 durante la meiosi II. Quanti cromosomi 13 contiene questo ovocita? Se viene fecondato da uno spermatozoo normale, quanti cromosomi 13 avrà lo zigote risultante? Come si chiama questa condizione?" soluzione="Dopo la non-disgiunzione in meiosi II, l'ovocita contiene 2 copie del cromosoma 13 (invece di 1 sola). Lo spermatozoo normale porta 1 copia del cromosoma 13. Lo zigote avrà quindi 2 + 1 = 3 copie del cromosoma 13. Questa condizione si chiama trisomia 13 (o sindrome di Patau), un'aneuploidia autosomica grave." />
+
+</section>
+
+</RisorsaLayout>

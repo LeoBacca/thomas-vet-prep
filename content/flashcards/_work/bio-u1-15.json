@@ -1,0 +1,137 @@
+{
+ "id": "bio-u1-15",
+ "titolo": "Amminoacidi, legame peptidico, struttura delle proteine, domini e siti attivi",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "15-amminoacidi-legame-peptidico-struttura-delle-proteine",
+ "freq": 9,
+ "risorseMdx": "src/pages/risorse/biologia/u1/15-amminoacidi-legame-peptidico-struttura-delle-proteine.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Gli anticorpi sono costituiti da:",
+   "choices": [
+    "Proteine a struttura quaternaria",
+    "Nucleopolisaccaridi",
+    "Proteine a struttura secondaria",
+    "Proteine enzimatiche",
+    "Proteine e fosfolipidi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2009",
+   "q": "Una proteina è dotata di struttura quaternaria solo quando:",
+   "choices": [
+    "è formata da due o più catene polipeptidiche associate",
+    "ha attività catalitica",
+    "possiede una struttura quadridimensionale",
+    "contiene alcuni ponti disolfuro intramolecolari",
+    "è formata da quattro catene polipeptidiche associate"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2015",
+   "q": "Quale delle seguenti molecole ha funzione strutturale?",
+   "choices": [
+    "Collagene",
+    "Emoglobina",
+    "Catalasi",
+    "Anticorpo",
+    "Adrenalina"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2018",
+   "q": "La denaturazione di una proteina consiste:",
+   "choices": [
+    "nell'alterazione della sua struttura secondaria e terziaria",
+    "nella modifica della sua struttura primaria",
+    "nella frammentazione in piccoli polipeptidi operata dal proteasoma",
+    "nella sostituzione di uno o più aminoacidi nel suo sito attivo",
+    "nella sostituzione di residui idrofilici con residui idrofobici nelle catene laterali di alcuni aminoacidi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2019",
+   "q": "Quale tra le seguenti affermazioni riferite agli α-amminoacidi, è corretta?",
+   "choices": [
+    "Due molecole di cisteina possono legarsi tra loro mediante formazione di un ponte disolfuro",
+    "Alcuni amminoacidi hanno catene laterali polari, ma nessun amminoacido ha una catena laterale elettricamente carica",
+    "Il carbonio α lega sempre quattro atomi o gruppi tutti diversi fra loro",
+    "Il legame peptidico unisce in modo covalente le catene laterali di due amminoacidi",
+    "La catena laterale dell'asparagina è aromatica"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2020",
+   "q": "Quale delle seguenti affermazioni è vera per un amminoacido e per l'amido?",
+   "choices": [
+    "Entrambi contengono ossigeno",
+    "Entrambi contengono azoto",
+    "Entrambi sono presenti nelle proteine",
+    "Entrambi sono grandi polimeri",
+    "Entrambi sono sostanze di riserva"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "A quale livello strutturale delle proteine appartengono le alfa-eliche?",
+   "choices": [
+    "Secondo",
+    "Primo",
+    "Terzo",
+    "Quarto",
+    "Quinto"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Quale parte della molecola degli amminoacidi influenza significativamente la struttura del polipeptide che li contiene?",
+   "choices": [
+    "Il gruppo R",
+    "Il gruppo amminico",
+    "Il gruppo carbossilico",
+    "La base azotata",
+    "Il gruppo ossidrilico"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Cosa s'intende per struttura primaria di una proteina?",
+   "choices": [
+    "La sequenza degli aminoacidi legati fra loro per mezzo del legame peptidico",
+    "Il legame della catena peptidica con specifici monosaccaridi",
+    "La sequenza degli aminoacidi legati fra loro attraverso i diversi gruppi fosfato",
+    "La sequenza degli aminoacidi legati fra loro attraverso molteplici legami idrogeno",
+    "L'unione di diversi peptidi che compongono la proteina"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

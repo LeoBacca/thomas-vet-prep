@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-30-1",
+    "topicId": "chim-u1-30",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: la distinzione tra 'sistema' e 'ambiente' in termodinamica dipende solo dall'esperimento che stai osservando, non da una proprietà fisica fissa della materia.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. 'Sistema' è la parte che DECIDI di osservare (es. le sostanze nella provetta); 'ambiente' è tutto il resto attorno. È un confine che scegli tu, non qualcosa di fisso nella natura. Una cellula può essere il sistema; il liquido attorno di essa è l'ambiente.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-30-2",
+    "topicId": "chim-u1-30",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Sei in cima a una montagna a 2000 m. Sei salito a piedi dal sentiero lungo oppure hai preso la funivia: l'altitudine è sempre 2000 m. Quale concetto termodinamico illustra perfettamente questa analogia?",
+    "choices": [
+      "La funzione di stato: dipende solo dal punto di arrivo, non dal percorso",
+      "La reazione esotermica: l'energia rilasciata dipende dalla strada percorsa",
+      "Il sistema aperto: scambia materia ed energia con l'ambiente",
+      "La variazione di entalpia assoluta H, non la sua variazione ΔH"
+    ],
+    "answer": 0,
+    "explain": "Una funzione di stato (come l'entalpia H) conta solo dove sei arrivato (stato finale) e da dove sei partito (stato iniziale), non il viaggio in mezzo. Esattamente come l'altitudine: 2000 m è 2000 m indipendentemente dal sentiero. Per questo possiamo calcolare ΔH di una reazione senza conoscere tutti i passaggi intermedi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-30-3",
+    "topicId": "chim-u1-30",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Hai in mano una borsa del ghiaccio istantaneo: la pieghi e diventa subito FREDDA. Poi accendi un fiammifero: lo senti CALDO. Per ciascuna situazione, di' se la reazione è esotermica o endotermica, qual è il segno del ΔH, e spiega brevemente il ragionamento.",
+    "answer": "Borsa del ghiaccio: la borsa si raffredda perché la reazione ASSORBE calore dall'ambiente (dalla tua mano, dall'aria). Il sistema prende energia da fuori → è ENDOTERMICA → ΔH è POSITIVO (endo = il calore entra nel sistema, quindi H finale > H iniziale, la differenza è positiva). Fiammifero: la fiamma scalda l'aria e la tua mano perché la reazione di combustione RILASCIA calore verso l'ambiente. Il sistema perde energia → è ESOTERMICA → ΔH è NEGATIVO (eso = il calore esce dal sistema, quindi H finale < H iniziale, la differenza è negativa). Trucco: eso = 'esce' (ΔH < 0, ambiente si scalda); endo = 'entra' (ΔH > 0, ambiente si raffredda).",
+    "explain": "Chiave: guarda cosa succede all'AMBIENTE. Si scalda → reazione esotermica, ΔH negativo. Si raffredda → reazione endotermica, ΔH positivo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-30-4",
+    "topicId": "chim-u1-30",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un sistema viene definito CHIUSO quando:",
+    "choices": [
+      "può scambiare energia, ma non materia con l'ambiente esterno",
+      "può scambiare materia, ma non energia con l'ambiente esterno",
+      "non può scambiare né materia né energia con l'ambiente esterno",
+      "al suo interno non avvengono reazioni chimiche",
+      "contiene sostanze in un'unica fase"
+    ],
+    "answer": 0,
+    "explain": "Un sistema CHIUSO lascia passare l'energia (ad esempio il calore attraverso le pareti della provetta) ma NON la materia (niente sostanze che entrano o escono). Trappola 'materia ma non energia' (opzione B): è l'opposto esatto, confonde i due tipi di scambio. Trappola 'né materia né energia' (opzione C): quello è il sistema ISOLATO, non chiuso. 'Nessuna reazione' e 'fase unica' (opzioni D ed E) sono filler fuori tema: non hanno nulla a che fare con la definizione di sistema chiuso. Ricorda i tre tipi: APERTO = scambia tutto; CHIUSO = solo energia; ISOLATO = non scambia nulla.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-30-5",
+    "topicId": "chim-u1-30",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "In una reazione chimica che avviene a pressione costante, il calore scambiato con l'ambiente si identifica con:",
+    "choices": [
+      "la variazione di energia libera della reazione (ΔG)",
+      "la variazione di entalpia della reazione (ΔH)",
+      "la variazione di entropia della reazione (ΔS)",
+      "la variazione della costante di equilibrio (ΔK)",
+      "il grado di spontaneità della reazione"
+    ],
+    "answer": 1,
+    "explain": "A pressione costante (quella normale dell'aria, la più comune in laboratorio e nel corpo), il calore scambiato coincide esattamente con la variazione di entalpia ΔH. È per questo che ΔH è così utile in chimica: basta misurare il calore e hai subito ΔH. Trappola ΔG (opzione A): l'energia libera di Gibbs dice se una reazione è spontanea, non quanto calore scambia. Trappola ΔS (opzione C): l'entropia misura il disordine, non il calore direttamente. 'Costante di equilibrio' (opzione D) è un termine scambiato: K non è una variazione di energia. 'Grado di spontaneità' (opzione E) è un filler vago, non una grandezza definita che misura il calore.",
+    "tags": ["prova d'esame"]
+  }
+]

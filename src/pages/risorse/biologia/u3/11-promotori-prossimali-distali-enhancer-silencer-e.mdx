@@ -1,0 +1,110 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-11">
+
+## Il problema: chi decide quando un gene si accende?
+
+Immagina che i geni siano lampade in casa tua. Non vuoi che siano tutte accese sempre: alcune servono solo in cucina, altre solo di notte. La cellula ha lo stesso problema — ha migliaia di geni, ma deve accenderne solo i giusti, al momento giusto, nel tessuto giusto.
+
+Per farlo usa dei **segmenti di DNA** vicini o lontani dal gene che fungono da interruttori. Questi segmenti vengono letti da proteine speciali chiamate **fattori di trascrizione** (proteine che si legano al DNA e controllano se l'RNA polimerasi può partire a copiare il gene).
+
+---
+
+## Promotore prossimale: l'interruttore vicino
+
+Il **promotore** è la zona di DNA subito prima del gene dove si attacca l'RNA polimerasi per iniziare la trascrizione.
+
+La parte chiamata **promotore prossimale** si trova a poche decine di basi dal punto di partenza del gene. Contiene:
+- la **scatola TATA** (una sequenza di nucleotidi ricca di T e A) — è come il "pulsante di accensione" principale
+- altre sequenze brevi dove si appoggiano i **fattori di trascrizione basali** (le proteine minime necessarie per far partire la macchina)
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il promotore prossimale è il cruscotto base dell'auto — senza di lui il motore non parte, ma da solo non basta per guidare in autostrada.</div>
+
+---
+
+## Elementi distali: gli interruttori lontani
+
+Esistono poi sequenze di DNA che possono trovarsi anche a migliaia di basi di distanza dal gene, eppure lo influenzano ugualmente. Come? Il DNA si piega su se stesso come un gomitolo, così queste sequenze lontane si avvicinano fisicamente al promotore.
+
+Ci sono due tipi principali:
+
+### Enhancer (potenziatori)
+- **Cosa fanno:** accelerano e aumentano la trascrizione del gene vicino
+- **Come:** le proteine che si legano all'enhancer prendono contatto con il complesso del promotore e lo "spingono" ad attivarsi meglio
+- **Caratteristica speciale:** funzionano in entrambe le direzioni sul DNA e da qualsiasi distanza
+
+### Silencer (silenziatori)
+- **Cosa fanno:** frenano o bloccano la trascrizione
+- **Come:** le proteine che vi si legano impediscono all'RNA polimerasi di partire o la rallentano
+- Sono l'opposto degli enhancer — se l'enhancer è il pedale dell'acceleratore, il silencer è il freno
+
+---
+
+## Fattori di trascrizione specifici: le proteine che leggono gli interruttori
+
+I fattori di trascrizione **specifici** sono proteine che si legano agli enhancer o ai silencer e dicono alla cellula: "questo gene si accende solo in questo tessuto" oppure "solo in risposta a questo segnale".
+
+Ogni cellula produce certi fattori di trascrizione e non altri — ecco perché le cellule del fegato esprimono geni diversi da quelle del muscolo, pur avendo lo stesso DNA.
+
+---
+
+## Caso concreto: i recettori degli ormoni steroidei
+
+Gli **ormoni steroidei** (es. estrogeni, testosterone, cortisolo) sono molecole prodotte da ghiandole come le ovaie, i testicoli o il surrene. Sono piccoli e idrofobici (non si sciolgono in acqua), quindi attraversano facilmente la membrana cellulare.
+
+Una volta dentro la cellula incontrano il loro **recettore** (una proteina specifica). Il recettore degli ormoni steroidei è un esempio classico di fattore di trascrizione specifico che si attiva su richiesta.
+
+Ecco come funziona:
+
+1. L'ormone entra nella cellula e si lega al recettore nel citoplasma (o già nel nucleo)
+2. Il legame cambia la forma del recettore (si dice che avviene una **modificazione conformazionale**)
+3. Il recettore attivato entra nel nucleo (o si sposta nella zona giusta)
+4. Si lega a sequenze specifiche di DNA chiamate **HRE** — Hormone Response Elements (elementi di risposta ormonale) — che si trovano negli enhancer dei geni bersaglio
+5. Il recettore recluta altri fattori e attiva la trascrizione di quei geni
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il recettore degli ormoni steroidei è come una chiave: senza ormone è inerte, ma quando l'ormone si lega diventa la chiave giusta per aprire l'interruttore (enhancer/HRE) di geni specifici.</div>
+
+---
+
+<Diagram caption="Struttura della regione regolatoria di un gene eucariotico: elementi prossimali e distali" code={`flowchart LR
+  SE["Silencer<br/>(elemento distale)"] -->|"proteine repressori<br/>si legano"| PP
+  EN["Enhancer<br/>(elemento distale)"] -->|"attivatori<br/>si legano"| PP
+  PP["Promotore prossimale<br/>(scatola TATA + sequenze brevi)"] -->|"RNA polimerasi<br/>si assembla"| GE["Gene<br/>(trascrizione)"]
+  GE --> RNA["mRNA prodotto"]`} />
+
+<Diagram caption="Come il recettore degli ormoni steroidei attiva la trascrizione" code={`flowchart TB
+  A["Ormone steroideo<br/>(es. testosterone)"] -->|"attraversa<br/>la membrana"| B["Si lega al recettore<br/>nel citoplasma"]
+  B -->|"cambia forma<br/>(attivazione)"| C["Complesso ormone-recettore<br/>entra nel nucleo"]
+  C -->|"riconosce la sequenza"| D["HRE nell'enhancer<br/>(Hormone Response Element)"]
+  D -->|"recluta altri<br/>fattori"| E["RNA polimerasi<br/>si attiva sul promotore"]
+  E --> F["Trascrizione del gene<br/>bersaglio"]`} />
+
+## Guarda il video
+<YouTube id="8NGRSOI7lh8" title="FATTORI di SPECIFICITÀ, REPRESSORI e ATTIVATORI - REGOLAZIONE della TRASCRIZIONE" />
+<VideoVisto id="bio-u3-11" />
+
+## Da ricordare
+- Il **promotore prossimale** è vicino al gene e contiene la scatola TATA; gli **enhancer** e **silencer** sono elementi distali che lo raggiungono per ripiegamento del DNA
+- I **fattori di trascrizione specifici** si legano a enhancer/silencer e determinano quali geni si accendono in quale tessuto e momento
+- I **recettori degli ormoni steroidei** sono fattori di trascrizione attivati dall'ormone: entrano nel nucleo e si legano agli **HRE** (enhancer specifici) per attivare i geni bersaglio
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un enhancer è un elemento regolatorio che..." opzioni={["Si trova sempre a poche basi dalla scatola TATA", "Aumenta la trascrizione del gene bersaglio legando fattori attivatori, anche a grande distanza", "Blocca l'accesso dell'RNA polimerasi al promotore", "Codifica direttamente per una proteina regolatrice"]} corretta={1} spiegazione="L'enhancer è un elemento distale che può trovarsi migliaia di basi lontano dal gene; quando i fattori attivatori vi si legano, il DNA si ripiega e il complesso stimola l'RNA polimerasi al promotore, aumentando la trascrizione." />
+
+<Quiz domanda="In quale modo un ormone steroideo (es. cortisolo) regola l'espressione genica?" opzioni={["Si lega a un recettore di membrana che attiva secondi messaggeri", "Entra nella cellula, si lega al suo recettore, e il complesso si lega agli HRE dell'enhancer attivando la trascrizione", "Degrada direttamente il silenziatore del gene bersaglio", "Si lega alla scatola TATA sostituendo i fattori basali"]} corretta={1} spiegazione="Gli ormoni steroidei sono lipofili: attraversano la membrana, si legano al recettore intracellulare, il complesso entra nel nucleo e si lega agli HRE (Hormone Response Elements) negli enhancer, attivando la trascrizione dei geni bersaglio." />
+
+<Quiz domanda="Qual è la differenza principale tra un silencer e un enhancer?" opzioni={["Il silencer è più vicino al gene rispetto all'enhancer", "L'enhancer attiva la trascrizione, il silencer la reprime", "Il silencer funziona solo nei procarioti", "L'enhancer blocca l'RNA polimerasi, il silencer la attiva"]} corretta={1} spiegazione="Enhancer e silencer sono entrambi elementi regolatori distali, ma con effetti opposti: l'enhancer aumenta la trascrizione reclutando attivatori, il silencer la reprime reclutando proteine repressori che bloccano o rallentano l'RNA polimerasi." />
+
+<Esercizio problema="Thomas studia che il gene per una proteina del fegato si esprime solo negli epatociti (cellule del fegato) e non nei neuroni, pur avendo le stesse identiche sequenze di DNA. Come è possibile? Spiega il ruolo degli enhancer e dei fattori di trascrizione specifici." soluzione="Tutte le cellule hanno lo stesso DNA, ma ogni tipo cellulare produce un insieme diverso di fattori di trascrizione specifici. Gli epatociti producono certi fattori (es. HNF-4α) che si legano agli enhancer del gene epatico e attivano la sua trascrizione. I neuroni non producono quegli stessi fattori, quindi anche se l'enhancer è presente nel DNA, nessuna proteina vi si lega per attivarlo — il gene rimane silenziato. Il 'cosa si accende' dipende non dal DNA, ma da quali fattori specifici sono disponibili in quella cellula." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u3-02-1",
+    "topicId": "chim-u3-02",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Cosa vuol dire 'bilanciare' una reazione chimica?",
+    "choices": [
+      "Cambiare le formule delle sostanze finche i conti tornano",
+      "Avere lo stesso numero di atomi di ogni tipo prima e dopo la freccia",
+      "Eliminare i prodotti che danno fastidio",
+      "Avere lo stesso numero di sostanze a sinistra e a destra"
+    ],
+    "answer": 1,
+    "explain": "Bilanciare vuol dire che ogni tipo di atomo deve esserci nello stesso numero tra reagenti e prodotti. Pensa ai mattoncini LEGO: li smonti e li rimonti in un'altra forma, ma il numero di mattoncini (gli atomi) resta identico. Nulla si crea, nulla si distrugge: gli atomi si riorganizzano soltanto.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-02-2",
+    "topicId": "chim-u3-02",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: per bilanciare 'H₂O' posso cambiare il piccolo 2 in basso e scriverla H₃O.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il numero piccolo in basso (il pedice) fa parte dell'identita della sostanza e NON si tocca mai: H₂O e sempre acqua, H₃O sarebbe un'altra cosa. Per bilanciare si cambia solo il numero grande davanti (il coefficiente), che dice quante copie di quella molecola prendo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-02-3",
+    "topicId": "chim-u3-02",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "open",
+    "q": "Nella reazione 'CH₄ + O₂ → CO₂ + H₂O' (il metano dei fornelli che brucia) prova a bilanciare contando gli atomi un elemento per volta. Quali coefficienti servono?",
+    "answer": "La reazione bilanciata e: CH₄ + 2 O₂ → CO₂ + 2 H₂O. Si procede cosi: il carbonio (C) e gia a posto (1 a sinistra, 1 a destra). L'idrogeno: a sinistra ce ne sono 4 (in CH₄), a destra solo 2 (in H₂O), quindi metto un 2 davanti all'acqua → 2 H₂O, ora 4 e 4. Infine l'ossigeno, che conviene lasciare per ultimo: a destra ora ce ne sono 4 (2 nella CO₂ + 2 nelle due H₂O), quindi metto un 2 davanti a O₂ → 2 O₂, ora 4 e 4. Controllo finale: 1 C, 4 H, 4 O da entrambi i lati. Bilanciata!",
+    "explain": "Trucco chiave: conta un elemento per volta e lascia l'ossigeno per ultimo, perche di solito compare in piu sostanze e si sistema da solo alla fine. Questa e una combustione, la stessa cosa che fanno le nostre cellule quando 'bruciano' gli zuccheri per darci energia.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u3-02-4",
+    "topicId": "chim-u3-02",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "In una reazione scritta in modo corretto (bilanciata), cosa risulta uguale tra reagenti e prodotti?",
+    "choices": [
+      "Le moli dei reagenti e quelle dei prodotti",
+      "Gli atomi di ogni elemento, contati prima e dopo la freccia",
+      "Gli indici (i numeri piccoli) dei reagenti e quelli dei prodotti",
+      "Il numero di sostanze a sinistra e a destra",
+      "La temperatura di reagenti e prodotti"
+    ],
+    "answer": 1,
+    "explain": "La giusta e 'gli atomi di ogni elemento': bilanciare significa proprio conservare il numero di atomi (la massa si conserva). 'Le moli' e l'opposto-trappola: di solito le moli NON sono uguali (in CH₄ + 2 O₂ → CO₂ + 2 H₂O sono 3 a sinistra e 3 a destra per caso, ma in N₂ + 3 H₂ → 2 NH₃ sono 4 contro 2). 'Gli indici' e una trappola con termine scambiato: gli indici (pedici) sono fissi e non si confrontano per bilanciare. 'Il numero di sostanze' e un'altra falsa simmetria. 'La temperatura' e il filler fuori tema: non c'entra nulla col bilanciamento.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u3-02-5",
+    "topicId": "chim-u3-02",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Quale tra queste equazioni e l'UNICA correttamente bilanciata (stesso numero di atomi di ogni elemento a sinistra e a destra)?",
+    "choices": [
+      "2 CaO → Ca + O₂",
+      "4 NH₃ + 5 O₂ → 4 NO + 6 H₂O",
+      "N₂ + 3 H₂ → 3 NH₃",
+      "3 KOH + 2 H₃PO₄ → K₃PO₄ + 3 H₂O",
+      "2 O₃ → 2 O₂ + O"
+    ],
+    "answer": 1,
+    "explain": "Si controlla un elemento per volta. La giusta e '4 NH₃ + 5 O₂ → 4 NO + 6 H₂O': N 4=4, H 12=12, O 10=10. '2 CaO → Ca + O₂' e la trappola dell'ossigeno: l'ossigeno torna (2 a sinistra, 2 a destra) ma il calcio no, 2 a sinistra contro 1 a destra, quindi NON e bilanciata. 'N₂ + 3 H₂ → 3 NH₃' e la trappola classica: non torna ne l'azoto (2 a sinistra, 3 a destra) ne l'idrogeno (6 a sinistra, ma 9 a destra) - sembra vicina ma controlla TUTTI gli elementi. '3 KOH + 2 H₃PO₄ → K₃PO₄ + 3 H₂O' ha il potassio a posto (3 a sinistra, 3 a destra), ma il fosforo no (2 a sinistra, 1 a destra) e cosi idrogeno e ossigeno: e un near-miss. '2 O₃ → 2 O₂ + O' e il filler: 6 O a sinistra, 5 a destra, scartabile subito.",
+    "tags": ["prova d'esame"]
+  }
+]

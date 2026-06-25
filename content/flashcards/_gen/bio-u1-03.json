@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-03-1",
+    "topicId": "bio-u1-03",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un virus, da solo, riesce a moltiplicarsi senza entrare in una cellula?",
+    "choices": [
+      "Sì, basta che abbia acqua e cibo intorno",
+      "No: deve entrare in una cellula viva e 'dirottarla' per fare copie di sé",
+      "Sì, ma solo se fa molto caldo",
+      "No, perché i virus non si moltiplicano mai"
+    ],
+    "answer": 1,
+    "explain": "Un virus è come una chiavetta USB malevola: da sola non fa nulla, ma infilata in un computer (la cellula) installa un programma che ne produce copie. Il virus non mangia, non respira, non ha le 'macchine' per costruirsi da solo: è un parassita obbligato e deve usare la cellula ospite. Si moltiplica eccome, ma solo dentro una cellula.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-03-2",
+    "topicId": "bio-u1-03",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: un virus può contenere DNA e RNA contemporaneamente.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Ogni virus porta UN solo tipo di acido nucleico: o DNA o RNA, mai entrambi insieme. È come un libretto di istruzioni scritto in una sola lingua. Questo acido nucleico (il 'codice') sta dentro un guscio proteico chiamato capside.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-03-3",
+    "topicId": "bio-u1-03",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Cos'è l'envelope (involucro) di un virus, da dove viene e perché i virus che NON ce l'hanno (i virus 'nudi') resistono meglio nell'ambiente?",
+    "answer": "L'envelope è una membrana lipidica (cioè fatta di grassi) che alcuni virus si portano dietro avvolgendo il loro nucleocapside (acido nucleico + capside). Non se la costruiscono: la 'rubano' alla membrana della cellula ospite quando escono. Su questo involucro sporgono delle glicoproteine (proteine con zuccheri attaccati) che funzionano come spine/ganci per agganciarsi alle cellule bersaglio. I virus senza envelope si chiamano 'nudi' e resistono meglio fuori (a calore, detersivi, disinfettanti) perché la membrana lipidica è fragile e si rovina facilmente: chi ne è privo non ha questo punto debole, quindi sopravvive più a lungo nell'ambiente.",
+    "explain": "Chiave: envelope = membrana di grasso rubata all'ospite, fragile; i virus nudi (senza envelope) sono più resistenti.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-03-4",
+    "topicId": "bio-u1-03",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "I prioni sono agenti infettivi fatti SOLO di proteina. All'inizio si pensava fossero virus, ma era sbagliato. Per essere un vero virus, un prione avrebbe dovuto avere quale di queste caratteristiche?",
+    "choices": [
+      "Possedere uno dei due acidi nucleici, DNA oppure RNA",
+      "Possedere contemporaneamente sia DNA sia RNA",
+      "Avere una propria membrana cellulare",
+      "Avere un metabolismo proprio per produrre energia",
+      "Essere grande abbastanza da vedersi al microscopio ottico"
+    ],
+    "answer": 0,
+    "explain": "La firma di OGNI virus è avere un acido nucleico: o DNA o RNA (mai entrambi). I prioni sono solo proteina, niente codice genetico: per questo non sono virus. Le trappole: 'sia DNA sia RNA insieme' è l'opposto esatto della regola vera (nessun virus li ha entrambi). 'Membrana cellulare propria' e 'metabolismo proprio' sono caratteristiche delle CELLULE, non dei virus, che infatti devono dirottare la cellula ospite. 'Visibili al microscopio ottico' è il filler fuori tema: i virus sono troppo piccoli e si vedono solo al microscopio elettronico, e comunque non è questo a definire un virus.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-03-5",
+    "topicId": "bio-u1-03",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "I virus a RNA devono portarsi dietro alcuni enzimi propri. Perché?",
+    "choices": [
+      "Perché le difese dell'ospite distruggerebbero subito il virus",
+      "Perché i loro enzimi sono più bravi a produrre ATP (energia)",
+      "Perché la cellula ospite non ha enzimi capaci di copiare un genoma a RNA",
+      "Perché così possono replicarsi anche fuori da qualsiasi cellula",
+      "Perché i loro enzimi servono a digerire la parete della cellula"
+    ],
+    "answer": 2,
+    "explain": "La cellula ospite sa copiare il proprio DNA, ma NON è attrezzata per copiare un genoma fatto di RNA in nuovo RNA: quell'enzima (una RNA-polimerasi RNA-dipendente) lei non ce l'ha. Quindi il virus a RNA se lo deve portare già pronto. Le trappole: 'difese dell'ospite' è una vera funzione virale ma è fuori tema rispetto alla domanda (qui si parla di copiare il genoma, non di difendersi). 'Enzimi più bravi a fare ATP' è una misconcezione: i virus non producono energia propria. 'Replicarsi fuori da qualsiasi cellula' è l'opposto esatto della verità: i virus sono parassiti obbligati e si replicano SOLO dentro una cellula. 'Digerire la parete' è il filler fuori tema.",
+    "tags": ["prova d'esame"]
+  }
+]

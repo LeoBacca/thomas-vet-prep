@@ -1,0 +1,10 @@
+{
+ "id": "fis-u4-03",
+ "titolo": "Onde trasversali e longitudinali",
+ "materia": "fisica",
+ "unita": 4,
+ "slug": "03-onde-trasversali-e-longitudinali",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u4/03-onde-trasversali-e-longitudinali.mdx",
+ "examQuestions": []
+}

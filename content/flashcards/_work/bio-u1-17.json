@@ -1,0 +1,25 @@
+{
+ "id": "bio-u1-17",
+ "titolo": "Modificazioni post-traduzionali delle proteine (fosforilazione, acetilazione, glicosilazione, lipidazione)",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "17-modificazioni-post-traduzionali-delle-proteine-fosforilazione",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u1/17-modificazioni-post-traduzionali-delle-proteine-fosforilazione.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Maggio",
+   "q": "La regolazione dell'attività enzimatica mediante modificazione covalente avviene quando:",
+   "choices": [
+    "agli enzimi viene legato un gruppo funzionale che ne modula l'attività",
+    "alcune molecole legandosi al sito allosterico mediante interazioni deboli modulano l'attività dell'enzima in senso positivo o negativo",
+    "ci sono cambiamenti di pH",
+    "il substrato è presente a bassa concentrazione",
+    "il colesterolo si lega al sito allosterico"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

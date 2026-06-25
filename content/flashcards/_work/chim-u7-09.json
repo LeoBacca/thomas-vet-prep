@@ -1,0 +1,25 @@
+{
+ "id": "chim-u7-09",
+ "titolo": "Gli acidi grassi saturi e insaturi; i trigliceridi (oli e grassi)",
+ "materia": "chimica",
+ "unita": 7,
+ "slug": "09-gli-acidi-grassi-saturi-e-insaturi",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u7/09-gli-acidi-grassi-saturi-e-insaturi.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "Indica quale classe di composti, tra quelle sottoelencate, apporta maggiore energia all'organismo:",
+   "choices": [
+    "lipidi",
+    "glicidi",
+    "protidi",
+    "vitamine liposolubili",
+    "acidi nucleici"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "discriminazione"
+  }
+ ]
+}

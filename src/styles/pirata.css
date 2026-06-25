@@ -1,0 +1,163 @@
+/* ============================================================
+   PIRATA.CSS — overlay tema "Buggy / One Piece / pirati"
+   Caricato DOPO global.css. Solo aggiunte + override mirati.
+   Filosofia: carico ma leggero (gradienti CSS, niente immagini di
+   sfondo pesanti) e SEMPRE leggibile (le aree di testo restano pulite).
+   ============================================================ */
+
+/* ---------- titoli "da insegna" (font display solo sui titoli) ---------- */
+.brand,
+h1,
+.hero h1 { font-family: var(--display); letter-spacing: .5px; }
+h1 { color: var(--navy); }
+
+/* ---------- header: tolda di nave ---------- */
+.site-header {
+  background: linear-gradient(180deg, var(--navy), #0d3454);
+  border-bottom: 3px solid var(--gold);
+  box-shadow: 0 2px 0 #07223a;
+}
+.brand { color: #fff !important; font-size: 1.25rem; }
+.brand span { color: var(--gold) !important; }
+.nav a { color: #cfe0ee; }
+.nav a:hover { color: var(--gold); }
+
+/* ---------- link / accenti ---------- */
+a:hover { color: var(--gold); }
+
+/* ---------- carte "wanted poster" ---------- */
+.card {
+  border: 2px solid var(--border);
+  box-shadow: 0 2px 0 rgba(10,41,66,.06);
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  position: relative;
+}
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  box-shadow: 0 8px 22px rgba(10,41,66,.14);
+}
+
+/* ---------- footer: legno + corda ---------- */
+.site-footer {
+  background: linear-gradient(180deg, transparent, rgba(10,41,66,.04));
+  border-top: 2px dashed var(--rope);
+}
+
+/* ============================================================
+   MASCOTTE — Buggy + i 3 cani di Thomas
+   (le <img> vengono aggiunte nelle pagine; qui solo lo stile)
+   ============================================================ */
+
+/* sticker base: contorno bianco + ombra morbida, stile adesivo */
+.mascotte {
+  display: block;
+  filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 2px #fff)
+          drop-shadow(0 4px 6px rgba(10,41,66,.28));
+  -webkit-user-select: none; user-select: none; -webkit-user-drag: none;
+}
+
+/* --- HERO benvenuto (tutorial): Buggy a sx, i 3 cani a dx --- */
+.hero-mascotte {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: .2rem 0 1rem;
+  flex-wrap: wrap;
+}
+.hero-mascotte .buggy { width: clamp(110px, 26vw, 180px); height: auto; }
+.hero-mascotte .dogs { display: flex; align-items: flex-end; gap: .4rem; }
+.hero-mascotte .dogs .mascotte { width: clamp(64px, 17vw, 104px); height: auto; }
+.hero-mascotte .dogs .mascotte:nth-child(2) { transform: translateY(-8px) scale(1.06); } /* il centrale spicca */
+@media (max-width: 520px) {
+  .hero-mascotte { justify-content: center; }
+  .hero-mascotte .dogs .mascotte { width: 56px; }
+}
+
+/* le mascotte sparse si posizionano rispetto al contenitore principale */
+main { position: relative; }
+
+/* --- mascotte piccole sparse ai lati (decorative, in Risorse) --- */
+.mascotte-scatter {
+  position: absolute;
+  z-index: 0;
+  width: clamp(58px, 7vw, 92px);
+  height: auto;
+  opacity: .9;
+  pointer-events: none;
+}
+.mascotte-scatter.flip { transform: scaleX(-1); }
+/* su schermi stretti spariscono: niente affollamento/peso su mobile */
+@media (max-width: 1100px) { .mascotte-scatter { display: none; } }
+
+/* --- DASHBOARD studio: Buggy che parla (stile Duolingo) --- */
+.buggy-dash {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  margin: .2rem 0 1rem;
+}
+.buggy-dash .buggy { width: clamp(72px, 16vw, 104px); height: auto; flex: none; }
+.speech-bubble {
+  position: relative;
+  background: var(--paper);
+  border: 2px solid var(--navy);
+  border-radius: 14px;
+  padding: .7rem .95rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.35;
+  box-shadow: 0 3px 0 rgba(10,41,66,.12);
+  max-width: 520px;
+}
+/* codina del fumetto verso Buggy */
+.speech-bubble::before,
+.speech-bubble::after {
+  content: ""; position: absolute; left: -14px; top: 22px;
+  border: 8px solid transparent;
+}
+.speech-bubble::before { border-right-color: var(--navy); left: -18px; }
+.speech-bubble::after  { border-right-color: var(--paper); left: -14px; }
+
+/* --- SESSIONE: testa di un cane che incoraggia sull'errore (vignetta) --- */
+.dog-pop {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin: .7rem 0 0;
+  opacity: 0;
+  transform: translateY(8px) scale(.9);
+  transition: opacity .25s ease, transform .25s ease;
+  pointer-events: none;
+}
+.dog-pop.show { opacity: 1; transform: translateY(0) scale(1); }
+.dog-pop .dog { width: 64px; height: 64px; flex: none; border-radius: 50%; object-fit: cover;
+  background: #fff;
+  filter: drop-shadow(0 0 2px #fff) drop-shadow(0 3px 5px rgba(10,41,66,.28)); }
+.comic-bubble {
+  position: relative;
+  background: #fff;
+  border: 2px solid var(--buggy);
+  border-radius: 14px;
+  padding: .5rem .8rem;
+  font-weight: 700;
+  color: var(--navy);
+  box-shadow: 0 3px 0 rgba(210,59,59,.18);
+}
+.comic-bubble::before,
+.comic-bubble::after {
+  content: ""; position: absolute; left: -13px; top: 18px; border: 7px solid transparent;
+}
+.comic-bubble::before { border-right-color: var(--buggy); left: -17px; }
+.comic-bubble::after  { border-right-color: #fff; left: -13px; }
+
+/* "pop" buffo all'apparizione (rispetta prefers-reduced-motion) */
+@media (prefers-reduced-motion: no-preference) {
+  .dog-pop.show .dog { animation: dog-bounce .45s ease; }
+}
+@keyframes dog-bounce {
+  0% { transform: scale(.6) rotate(-8deg); }
+  60% { transform: scale(1.12) rotate(4deg); }
+  100% { transform: scale(1) rotate(0); }
+}

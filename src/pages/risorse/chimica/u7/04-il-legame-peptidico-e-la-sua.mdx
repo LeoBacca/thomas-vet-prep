@@ -1,0 +1,102 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-04">
+
+Gli **amminoacidi** sono i "mattoncini" con cui il corpo costruisce le **proteine**. Ma per costruire qualcosa coi mattoncini, serve la "colla" che li tiene attaccati. Quella colla, in chimica, è il **legame peptidico**: è proprio il legame che unisce un amminoacido all'altro, uno dopo l'altro, come i vagoni di un treno.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> due amminoacidi si "danno la mano", restano uniti e nel farlo lasciano cadere una gocciolina d'acqua. Quel nuovo legame che li tiene insieme è il legame peptidico.</div>
+
+## Come è fatto un amminoacido (in 10 secondi)
+
+Ogni amminoacido ha due "estremità" importanti, come una persona ha una mano destra e una mano sinistra:
+
+- da un lato il **gruppo amminico**, scritto **-NH2** (è la parte "ammino" del nome);
+- dall'altro lato il **gruppo carbossilico**, scritto **-COOH** (è la parte "acido" del nome).
+
+Il legame peptidico nasce **proprio qui**: la mano -COOH di un amminoacido stringe la mano -NH2 dell'altro.
+
+## La formazione: una reazione di condensazione
+
+Quando i due amminoacidi si uniscono, succede una cosa curiosa: **esce una molecola d'acqua** (H2O). Per questo la reazione si chiama **condensazione** (o reazione di disidratazione, cioè "che toglie acqua").
+
+Da dove esce l'acqua? Facile:
+
+- il gruppo **-COOH** cede un -OH (ossigeno + idrogeno);
+- il gruppo **-NH2** cede un -H (idrogeno);
+- quei pezzi (-OH più -H) si mettono insieme e formano **H2O**.
+
+Quello che resta unisce i due amminoacidi: nasce il **legame peptidico**, scritto come **-CO-NH-** (è un legame di tipo ammidico). Il risultato di due amminoacidi uniti si chiama **dipeptide**.
+
+<Diagram caption="Due amminoacidi si uniscono e liberano acqua: nasce il legame peptidico" code={`flowchart LR
+  A["Amminoacido 1<br/>(porta il -COOH)"] --> L["LEGAME PEPTIDICO<br/>-CO-NH-"]
+  B["Amminoacido 2<br/>(porta il -NH2)"] --> L
+  L --> W["Esce 1 molecola<br/>d'acqua H2O"]`} />
+
+<Diagram caption="Il 'conto' degli atomi: cosa entra nell'acqua che esce" code={`flowchart TB
+  C["-COOH cede -OH"] --> H2O["Si forma H2O"]
+  N["-NH2 cede -H"] --> H2O
+  H2O --> R["Restano i due amminoacidi<br/>uniti dal legame peptidico"]`} />
+
+## Le sue caratteristiche (e perché contano per il corpo)
+
+Il legame peptidico ha due qualità importanti:
+
+- **È robusto e stabile.** Una volta formato, non si rompe da solo. È un bene: le tue proteine (muscoli, pelle, anticorpi, enzimi) devono reggere nel tempo.
+- **È rigido e "piatto" (planare).** Gli atomi attorno al legame stanno tutti sullo stesso piano e non ruotano liberamente, come una cerniera che si muove poco. Questo costringe la proteina ad assumere forme precise, e nelle proteine **la forma decide la funzione**.
+
+Aggancio biomedico: quando mangi carne, pesce o legumi, il tuo stomaco e intestino fanno il lavoro **inverso**. Aggiungono acqua per **spezzare** i legami peptidici (reazione di **idrolisi**, cioè "rottura con acqua") e liberare i singoli amminoacidi, che poi il corpo riusa per costruire le **sue** proteine. In medicina veterinaria questo conta tantissimo: la dieta di un animale deve fornire i mattoncini giusti, altrimenti il corpo non riesce a costruire ciò che gli serve.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> per <strong>unire</strong> due amminoacidi togli acqua (condensazione); per <strong>separarli</strong> aggiungi acqua (idrolisi). Sono lo stesso film, mandato avanti o indietro.</div>
+
+## Guarda il video
+
+<YouTube id="QJyEj9RmPhQ" title="Proteine: il legame peptidico — formazione tra amminoacidi" />
+
+<VideoVisto id="chim-u7-04" />
+
+## Da ricordare
+
+- Il **legame peptidico** unisce due amminoacidi: la mano **-COOH** di uno con la mano **-NH2** dell'altro.
+- Quando si forma, **esce una molecola d'acqua** (H2O): si chiama reazione di **condensazione**.
+- Il legame peptidico si scrive **-CO-NH-** ed è di tipo **ammidico**; due amminoacidi uniti formano un **dipeptide**.
+- È un legame **stabile** e **rigido/planare**: per questo le proteine hanno forme precise (e la forma decide la funzione).
+- L'operazione inversa (digestione delle proteine nel corpo) aggiunge acqua e si chiama **idrolisi**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quando si forma un legame peptidico tra due amminoacidi, cosa viene eliminato?"
+  opzioni={["Una molecola di anidride carbonica (CO2)", "Una molecola di acqua (H2O)", "Un atomo di carbonio", "Niente, non esce nulla"]}
+  corretta={1}
+  spiegazione="Si forma ed esce una molecola d'acqua (H2O): l'-OH del gruppo -COOH e l'-H del gruppo -NH2 si uniscono. Per questo la reazione si chiama condensazione."
+/>
+
+<Quiz
+  domanda="Quali due gruppi degli amminoacidi reagiscono per formare il legame peptidico?"
+  opzioni={["Due gruppi -OH", "Il gruppo carbossilico -COOH di uno e il gruppo amminico -NH2 dell'altro", "Due gruppi -NH2", "Due gruppi -COOH"]}
+  corretta={1}
+  spiegazione="Il legame nasce tra il -COOH di un amminoacido e il -NH2 dell'altro. È proprio l'incontro di queste due 'mani' a creare il legame -CO-NH-."
+/>
+
+<Quiz
+  domanda="Quale di queste affermazioni sul legame peptidico è VERA?"
+  opzioni={["È fragile e si rompe da solo", "È rigido e planare, e questo dà alla proteina una forma precisa", "Fa ruotare liberamente gli atomi in ogni direzione", "Si forma aggiungendo acqua"]}
+  corretta={1}
+  spiegazione="Il legame peptidico è rigido e planare (poco rotabile): obbliga la proteina ad assumere forme precise. Si forma togliendo acqua, non aggiungendola."
+/>
+
+<Esercizio
+  problema="Hai 2 amminoacidi separati. Quando li unisci con un legame peptidico, ottieni un dipeptide e liberi 1 molecola d'acqua. Domanda: se invece unisci 3 amminoacidi in fila (formando un tripeptide), quante molecole d'acqua liberi in tutto?"
+  soluzione="2 molecole d'acqua. Ogni legame peptidico libera 1 acqua. Per mettere in fila 3 amminoacidi servono 2 legami (1° con 2° e 2° con 3°), quindi 2 legami = 2 molecole d'acqua. Regola pratica: con N amminoacidi in catena si formano N meno 1 legami e si liberano N meno 1 molecole d'acqua."
+/>
+
+</section>
+
+</RisorsaLayout>

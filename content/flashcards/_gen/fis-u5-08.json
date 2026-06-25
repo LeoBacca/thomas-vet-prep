@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u5-08-1",
+    "topicId": "fis-u5-08",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: il calore puo passare spontaneamente da un corpo freddo a uno caldo, senza che nessuno faccia nulla dall'esterno.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. E' il secondo principio della termodinamica (enunciato di Clausius): il calore va sempre e solo dal piu caldo al piu freddo, mai al contrario da solo. E' come l'acqua che scende dalla montagna: non risale da sola. Per far andare il calore 'in salita' (dal freddo al caldo) serve lavoro esterno, come fa il frigorifero con l'elettricita.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-08-2",
+    "topicId": "fis-u5-08",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "open",
+    "q": "Cos'e l'entropia e cosa le succede in un processo spontaneo? Usa un esempio di vita quotidiana.",
+    "answer": "L'entropia (simbolo S) e la grandezza che i fisici usano per misurare il 'disordine' di un sistema. Nei processi spontanei e irreversibili - quelli che avvengono da soli, senza intervento esterno - l'entropia totale del sistema piu l'ambiente aumenta sempre. Non puo mai diminuire da sola. Esempio: il profumo di un fiore si diffonde nell'aria (le molecole passano da concentrate a sparse = piu disordine = entropia aumenta). Per riportare le molecole nel fiore ci vorrebbe lavoro esterno. Un altro esempio: la camera da letto che, se non la sistemi, diventa sempre piu in disordine da sola. Sistemarla richiede il tuo lavoro. In un processo reversibile ideale (che non esiste in natura, solo come approssimazione) l'entropia resterebbe costante.",
+    "explain": "Entropia S = misura del disordine. Nei processi reali spontanei: S totale aumenta sempre. Non diminuisce mai da sola.",
+    "tags": ["risposta aperta"]
+  }
+]

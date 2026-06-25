@@ -1,0 +1,25 @@
+{
+ "id": "chim-u6-05",
+ "titolo": "Le ammine: struttura, basicità e nucleofilicità",
+ "materia": "chimica",
+ "unita": 6,
+ "slug": "05-le-ammine-struttura-basicita-e-nucleofilicita",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u6/05-le-ammine-struttura-basicita-e-nucleofilicita.mdx",
+ "examQuestions": [
+  {
+   "year": "2016",
+   "q": "Le ammine primarie e secondarie:",
+   "choices": [
+    "sono basiche perché l'azoto ha un doppietto elettronico disponibile",
+    "sono acide perché hanno atomi di idrogeno legati all'azoto",
+    "non sono né acide né basiche perché il doppietto elettronico non condiviso stabilizza il gruppo amminico",
+    "possono dare anidridi",
+    "sono acide perché l'azoto ha un doppietto elettronico disponibile"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

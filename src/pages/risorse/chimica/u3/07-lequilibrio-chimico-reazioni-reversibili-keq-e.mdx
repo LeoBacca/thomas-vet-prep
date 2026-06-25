@@ -1,0 +1,109 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u3-07">
+
+Alcune reazioni non vanno solo in avanti: tornano anche indietro. I reagenti diventano prodotti, ma i prodotti possono ridiventare reagenti. Quando le due cose viaggiano alla **stessa velocità**, la reazione raggiunge l'**equilibrio chimico**. Non è uno stop: è un pareggio. Capirlo è importante perché nel nostro corpo quasi tutto è in equilibrio: il sangue, la respirazione, la digestione.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> all'equilibrio la reazione non si ferma. Continua a lavorare in tutte e due le direzioni, ma alla stessa velocità. Quindi le quantità restano ferme, anche se "dentro" tutto si muove.</div>
+
+## Cos'è una reazione reversibile
+
+Una reazione **reversibile** è come una porta che si apre e si chiude nei due sensi. Per questo si scrive con una **doppia freccia**:
+
+`A + B ⇌ C + D`
+
+I reagenti `A + B` formano i prodotti `C + D` (freccia in avanti). Ma anche `C + D` possono tornare a essere `A + B` (freccia indietro).
+
+All'inizio c'è solo roba a sinistra, quindi la reazione corre veloce **in avanti**. Man mano che si formano i prodotti, la reazione **indietro** prende velocità. A un certo punto le due velocità si pareggiano: è l'**equilibrio**.
+
+<Diagram caption="All'equilibrio le due velocità sono uguali: la reazione lavora nei due sensi allo stesso ritmo" code={`flowchart LR
+  R["Reagenti<br/>A + B"] -->|"velocità in avanti"| P["Prodotti<br/>C + D"]
+  P -->|"velocità indietro"| R
+  E["EQUILIBRIO<br/>velocità avanti = velocità indietro"]`} />
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina una scala mobile che sale, e tu che la scendi a piedi alla stessa velocità. Continui a camminare, ti stanchi, ma rispetto al pavimento resti fermo. Questo è l'equilibrio dinamico: tanto movimento, posizione che non cambia.</div>
+
+## Equilibrio dinamico: fermo solo in apparenza
+
+La parola **dinamico** vuol dire "in movimento". All'equilibrio le molecole continuano a reagire senza sosta. Quello che resta costante non è il movimento, ma le **quantità** di reagenti e prodotti.
+
+Un'analogia quotidiana: un negozio con la porta sempre aperta. Entrano clienti e ne escono altri. Se entrano e escono allo stesso ritmo, **dentro il negozio c'è sempre lo stesso numero di persone**, anche se non sono mai le stesse. Le persone cambiano, il numero no.
+
+Nel corpo umano succede di continuo. Il diossido di carbonio nel sangue è in equilibrio: ne produci, ne elimini con il respiro, e la quantità resta controllata. Se questo equilibrio si sposta troppo, cambia il pH del sangue e stai male. La medicina e la veterinaria studiano proprio come tenere questi equilibri al posto giusto.
+
+## La costante di equilibrio (Keq)
+
+Quando una reazione raggiunge l'equilibrio, le concentrazioni di reagenti e prodotti restano costanti. Se le metti in un rapporto preciso, esce sempre lo **stesso numero**: la **costante di equilibrio**, scritta **Keq**.
+
+Per la reazione `A + B ⇌ C + D` si scrive così:
+
+`Keq = [C] x [D] / ([A] x [B])`
+
+Le parentesi quadre `[ ]` vogliono dire "concentrazione di". Sopra metti i **prodotti**, sotto i **reagenti**. Questa regola si chiama **legge d'azione di massa**: il rapporto tra prodotti e reagenti, all'equilibrio, è sempre lo stesso a una certa temperatura.
+
+Cosa ti dice il valore di Keq:
+
+- **Keq grande** (molto maggiore di 1): all'equilibrio ci sono soprattutto **prodotti**. La reazione è andata quasi tutta in avanti.
+- **Keq piccola** (molto minore di 1): all'equilibrio ci sono soprattutto **reagenti**. La reazione è andata poco in avanti.
+- **Keq vicina a 1**: c'è un bel mix di reagenti e prodotti.
+
+<Diagram caption="Il valore di Keq ti dice dove pende la reazione all'equilibrio" code={`flowchart TB
+  K["Keq = prodotti diviso reagenti<br/>(legge d'azione di massa)"]
+  K --> G["Keq GRANDE<br/>tanti PRODOTTI"]
+  K --> M["Keq PICCOLA<br/>tanti REAGENTI"]
+  K --> U["Keq vicina a 1<br/>mix di entrambi"]`} />
+
+Una cosa importante: **Keq dipende solo dalla temperatura**. Se non cambi la temperatura, quel numero resta lo stesso, sempre. Cambiare le quantità di partenza non cambia Keq.
+
+## Guarda il video
+
+<YouTube id="Utcr1stOEcU" title="La costante di equilibrio — spiegazione semplice per principianti" />
+
+<VideoVisto id="chim-u3-07" />
+
+## Da ricordare
+
+- Una reazione **reversibile** va nei due sensi: si scrive con la **doppia freccia** ⇌.
+- All'**equilibrio** la velocità in avanti è uguale a quella indietro: le quantità restano costanti.
+- L'equilibrio è **dinamico**: fermo in apparenza, ma dentro tutto continua a reagire.
+- La **Keq** è il rapporto prodotti diviso reagenti (legge d'azione di massa) e dà sempre lo stesso numero.
+- Keq **grande** = tanti prodotti; Keq **piccola** = tanti reagenti. Keq dipende **solo dalla temperatura**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa significa che una reazione ha raggiunto l'equilibrio chimico?"
+  opzioni={["La reazione si è fermata del tutto", "La velocità in avanti è uguale alla velocità indietro", "Sono finiti tutti i reagenti", "La temperatura è scesa a zero"]}
+  corretta={1}
+  spiegazione="All'equilibrio la reazione non si ferma: continua nei due sensi, ma alla stessa velocità. Per questo le quantità di reagenti e prodotti restano costanti."
+/>
+
+<Quiz
+  domanda="Nell'espressione della Keq, cosa metti sopra (al numeratore)?"
+  opzioni={["I reagenti", "I prodotti", "La temperatura", "Il tempo di reazione"]}
+  corretta={1}
+  spiegazione="La legge d'azione di massa mette i prodotti sopra e i reagenti sotto: Keq = prodotti diviso reagenti."
+/>
+
+<Quiz
+  domanda="Una reazione ha una Keq molto grande (molto maggiore di 1). All'equilibrio ci saranno soprattutto:"
+  opzioni={["reagenti", "prodotti", "né reagenti né prodotti", "solo acqua"]}
+  corretta={1}
+  spiegazione="Keq grande vuol dire che il numeratore (i prodotti) è molto più grande del denominatore (i reagenti): la reazione è andata quasi tutta in avanti."
+/>
+
+<Esercizio
+  problema="Per la reazione N2 + 3 H2 ⇌ 2 NH3 misuri che all'equilibrio c'è pochissima ammoniaca (NH3) e tantissimo azoto e idrogeno rimasti. Senza fare conti, la Keq sarà grande o piccola? Da che parte pende l'equilibrio?"
+  soluzione="La Keq sarà piccola (molto minore di 1). All'equilibrio ci sono soprattutto reagenti (N2 e H2) e pochi prodotti (NH3): siccome la Keq è prodotti diviso reagenti, il numeratore è piccolo e il denominatore è grande, quindi il rapporto è basso. L'equilibrio pende verso i reagenti, cioè verso sinistra."
+/>
+
+</section>
+
+</RisorsaLayout>

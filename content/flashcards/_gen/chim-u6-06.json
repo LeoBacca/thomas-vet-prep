@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u6-06-1",
+    "topicId": "chim-u6-06",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Pensa a una catena di vagoni (atomi di carbonio). Il vagone speciale C=O è L'ULTIMO del treno, con accanto un solo idrogeno. Che famiglia è?",
+    "choices": [
+      "Un chetone",
+      "Un'aldeide",
+      "Un alcol",
+      "Un acido carbossilico"
+    ],
+    "answer": 1,
+    "explain": "Regola del treno: C=O a fine catena (accanto ha una H) = ALDEIDE. C=O in mezzo alla catena (fra due carboni) = CHETONE. Gli alcoli non hanno C=O, hanno O-H.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-06-2",
+    "topicId": "chim-u6-06",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Il fruttosio (lo zucchero della frutta) è un'aldeide, mentre il glucosio è un chetone.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "È il contrario: il GLUCOSIO è un'aldeide (il C=O sta al primo carbonio, a fine catena); il FRUTTOSIO è un chetone (il C=O sta in mezzo alla catena, sul secondo carbonio). Entrambi sono zuccheri con gruppo carbonile C=O.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-06-3",
+    "topicId": "chim-u6-06",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra un'aldeide e un chetone: dove si trova il gruppo carbonile in ciascuno, come riconosci il nome e fai un esempio per ognuno.",
+    "answer": "Aldeidi e chetoni hanno entrambi il gruppo carbonile C=O (un carbonio legato a un ossigeno con doppio legame). La differenza è la POSIZIONE: nell'aldeide il C=O si trova a FINE CATENA (all'estremità), con accanto un idrogeno; nel chetone il C=O si trova IN MEZZO alla catena, fra due atomi di carbonio. Dal nome lo riconosci dalla desinenza: le aldeidi finiscono in -ALE (es. etanale = CH3-CHO), i chetoni finiscono in -ONE (es. propanone = l'acetone, CH3-CO-CH3).",
+    "explain": "La posizione del C=O è tutto: fine catena = aldeide (-ale); centro catena = chetone (-one). L'acetone (propanone) è il chetone più famoso.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u6-06-4",
+    "topicId": "chim-u6-06",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "L'etanale è un composto organico. Qual è la sua formula bruta?",
+    "choices": [
+      "C2H4O",
+      "C2H6O",
+      "C3H2O2",
+      "C2H3O",
+      "C3H2O"
+    ],
+    "answer": 0,
+    "explain": "L'etanale (un'aldeide a 2 carboni) ha formula CH3-CHO: 2 carboni, 4 idrogeni, 1 ossigeno → C2H4O. Trappole: C2H6O è l'etanolo (un alcol, non un'aldeide: ha 2 H in più perché non c'è il doppio legame C=O). C2H3O ha troppo pochi idrogeni. Le formule con 3 carboni (C3...) sono sbagliate perché 'etan-' indica 2 carboni.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u6-06-5",
+    "type": "mc",
+    "topicId": "chim-u6-06",
+    "materia": "chimica",
+    "unita": 6,
+    "q": "Domanda d'esame (2017): l'acetone (propanone) può essere ossidato a quale tipo di composto?",
+    "choices": [
+      "Acido carbossilico",
+      "Alogenuro alchilico",
+      "Alcol secondario",
+      "Alcano",
+      "Alchene"
+    ],
+    "answer": 0,
+    "explain": "La risposta giusta è 'acido carbossilico'. L'ossidazione aggiunge ossigeno alla molecola, quindi il prodotto deve avere PIÙ ossigeno di partenza: solo l'acido carbossilico (gruppo -COOH) ha più ossigeno dell'acetone. Le trappole vanno tutte nella direzione opposta (riduzione o sostituzione, non ossidazione): alcol secondario, alcano e alchene hanno tanto o meno ossigeno, e l'alogenuro alchilico introdurrebbe un alogeno, non ossigeno. Nota: le aldeidi si ossidano molto facilmente (il carbonio del C=O porta ancora una H); i chetoni come l'acetone resistono di più e servono condizioni forti, ma all'esame la risposta richiesta resta 'acido carbossilico'.",
+    "tags": ["prova d'esame"]
+  }
+]

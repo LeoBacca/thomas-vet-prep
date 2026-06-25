@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-04-1",
+    "topicId": "bio-u1-04",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: nel ciclo LITICO di un batteriofago il batterio muore, mentre nel ciclo LISOGENICO il batterio sopravvive (almeno finche non scatta l'induzione).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Litico = uccide subito il batterio rompendolo (lisi). Lisogenico = il virus si nasconde dentro il cromosoma e aspetta; il batterio continua a vivere e a dividersi, portando il virus 'addormentato' (profago) nelle cellule figlie.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-04-2",
+    "topicId": "bio-u1-04",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Nel ciclo lisogenico il DNA del batteriofago entra nel batterio e poi... cosa fa?",
+    "choices": [
+      "Si integra nel cromosoma batterico e diventa profago, replicandosi in silenzio ad ogni divisione cellulare",
+      "Produce subito centinaia di nuovi virus e rompe il batterio",
+      "Rimane libero nel citoplasma del batterio senza toccare il cromosoma",
+      "Viene espulso dal batterio senza causare danni"
+    ],
+    "answer": 0,
+    "explain": "Il DNA virale si inserisce nel cromosoma del batterio come un passeggero clandestino (profago). Da quel momento viene copiato automaticamente ogni volta che il batterio si divide: le cellule figlie ereditano il virus senza saperlo. Il profago resta dormiente finche un evento di stress (raggi UV, sostanze chimiche) lo risveglia: solo allora si stacca dal cromosoma e fa partire il ciclo litico con la lisi del batterio.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-04-3",
+    "topicId": "bio-u1-04",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Due colture batteriche vengono infettate dallo stesso batteriofago. Nella coltura A i batteri muoiono in poco tempo e si vedono molti virus liberi. Nella coltura B i batteri continuano a dividersi normalmente per molte generazioni. Quale ciclo sta avvenendo in ciascuna coltura? Spiega perche.",
+    "answer": "Nella coltura A e in corso il CICLO LITICO: il fago entra nel batterio, lo usa come fabbrica per produrre copie di se stesso, poi lo rompe (lisi) e i nuovi virus vengono liberati. Il risultato e la morte rapida dei batteri e la comparsa di molte particelle virali. Nella coltura B e in corso il CICLO LISOGENICO: il DNA del fago si e integrato nel cromosoma batterico come profago. I batteri (ora lisogeni) si dividono normalmente e trasmettono il profago alle cellule figlie. Non ci sono segni esterni di infezione perche il virus e dormiente. Solo un evento stressante, come l'esposizione a raggi UV, potrebbe risvegliare il profago e innescare un ciclo litico.",
+    "explain": "Lisi rapida + virus liberi = ciclo litico. Batteri che si dividono normalmente = ciclo lisogenico (profago dormiente).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-04-4",
+    "topicId": "bio-u1-04",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un fago infetta una cellula di E. coli e compie un ciclo lisogenico. Cosa succede SUBITO dopo che il DNA virale e entrato nel batterio?",
+    "choices": [
+      "Ha integrato il proprio DNA nel cromosoma batterico",
+      "Ha provocato immediatamente la lisi (rottura) della cellula batterica",
+      "Ha bloccato la duplicazione del DNA del batterio",
+      "Ha trasferito anche il capside (il guscio proteico) dentro la cellula batterica",
+      "Ha trasferito anche l'enzima trascrittasi inversa dentro la cellula batterica"
+    ],
+    "answer": 0,
+    "explain": "Nel ciclo lisogenico il DNA virale si INTEGRA nel cromosoma batterico diventando profago: questa e la definizione stessa di ciclo lisogenico. Le trappole da smontare: 'lisi immediata' e l'opposto esatto (descrive il ciclo LITICO, non lisogenico); 'blocca la duplicazione del DNA' e una misconcezione, il batterio continua a dividersi normalmente copiando anche il profago; 'capside trasferito dentro' e falso, solo il DNA entra, il capside rimane fuori; 'trascrittasi inversa' e un termine scambiato da un altro contesto (la usano i retrovirus come l'HIV, non i batteriofagi).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-04-5",
+    "topicId": "bio-u1-04",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Il ciclo LITICO di un batteriofago prevede che:",
+    "choices": [
+      "Il DNA virale si inserisca nel cromosoma batterico e si replichi insieme ad esso",
+      "Il batterio si divida normalmente portando il profago nelle cellule figlie",
+      "Il virus rimanga inattivo nel batterio fino a un segnale di stress",
+      "Il batterio venga distrutto (lisi) con rilascio di nuovi virus",
+      "Il virus disattivi i propri geni dopo essere entrato nella cellula ospite"
+    ],
+    "answer": 3,
+    "explain": "Nel ciclo litico il virus prende il controllo del batterio, si moltiplica e alla fine lo rompe (lisi), liberando decine o centinaia di nuovi fagi pronti ad attaccare altri batteri. Il batterio muore. Le trappole: 'DNA che si integra nel cromosoma' descrive il ciclo LISOGENICO (l'opposto esatto); 'batterio che si divide normalmente' e il comportamento del batterio lisogeno, non di quello in lisi; 'virus inattivo fino a stress' e la definizione del profago, cioe il ciclo lisogenico ancora; 'geni virali disattivati' e una misconcezione, nel ciclo litico e vero il contrario: i geni virali prendono il comando e fermano quelli batterici.",
+    "tags": ["prova d'esame"]
+  }
+]

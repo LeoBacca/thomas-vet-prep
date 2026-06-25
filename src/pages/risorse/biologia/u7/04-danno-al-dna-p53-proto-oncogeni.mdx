@@ -1,0 +1,106 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u7-04">
+
+## Il DNA si rompe — e adesso?
+
+Ogni giorno il DNA delle nostre cellule subisce migliaia di danni: raggi UV, errori di copiatura, sostanze tossiche. Se la cellula non se ne accorge e continua a dividersi, quegli errori si accumulano. Più errori accumulati = rischio tumore.
+
+Per evitarlo, la cellula ha un sistema di allarme. Il sensore principale si chiama **p53** — spesso chiamato "il guardiano del genoma".
+
+### Come funziona p53?
+
+Quando il DNA è danneggiato, alcuni enzimi (come ATM e ATR) si attivano e "svegliano" p53. Normalmente p53 viene degradata velocemente dalla proteina MDM2; ma quando c'è danno, MDM2 viene bloccata e p53 si accumula.
+
+A quel punto p53 fa tre cose possibili:
+
+1. **Blocca il ciclo cellulare** — ferma la divisione per dare tempo di riparare il DNA.
+2. **Attiva la riparazione** — accende i geni che correggono il danno.
+3. **Ordina l'apoptosi** — se il danno è troppo grave, la cellula si autodistrugge (apoptosi = suicidio controllato della cellula).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> p53 è come un controllore di qualità in fabbrica: se trova un pezzo difettoso, ferma il nastro, prova a ripararlo, e se non si può aggiustare, lo butta via prima che causi guai.</div>
+
+---
+
+## Proto-oncogeni: gli acceleratori
+
+Un **proto-oncogene** è un gene normale che stimola la cellula a crescere e dividersi. In condizioni normali è utile: fa partire la divisione quando serve (ad esempio per riparare un tessuto).
+
+Il problema nasce quando questo gene subisce una mutazione e diventa un **oncogene** — cioè un acceleratore bloccato sul massimo. La cellula riceve continuamente il segnale "dividi, dividi, dividi!" anche quando non dovrebbe.
+
+Esempi di proto-oncogeni diventati oncogeni:
+- **RAS** — normalmente trasmette il segnale di crescita solo su richiesta; mutato, trasmette il segnale in modo costante.
+- **MYC** — normalmente attiva geni per la crescita; iperespresso, spinge la cellula a proliferare senza controllo.
+
+**Basta UNA copia mutata** su due per trasformare un proto-oncogene in oncogene. Si dice che agisce in modo **dominante** (come un freno rotto: basta che uno dei due sia rotto).
+
+---
+
+## Geni oncosoppressori: i freni
+
+I **geni oncosoppressori** (o anti-oncogeni) fanno l'opposto: frenano la divisione cellulare o inducono l'apoptosi. p53 è il più famoso, ma ne esistono molti altri (es. RB — il gene del retinoblastoma).
+
+Per perdere la funzione di un oncosoppressore servono **entrambe le copie mutate** (una da ogni cromosoma). Si dice che agisce in modo **recessivo** — come due freni: basta che uno funzioni per fermare la macchina. Solo quando entrambi si rompono la cellula non riesce più a frenare.
+
+Questa è la **teoria dei "two hits" (due colpi)** di Knudson: ci vogliono due mutazioni sullo stesso gene oncosoppressore per perderne la funzione.
+
+---
+
+## Virus oncogeni: agenti esterni che rompono i freni
+
+Alcuni virus riescono a causare tumori. Come? In due modi principali:
+
+- **Inserzione nel DNA**: il virus inserisce il suo materiale genetico vicino a un proto-oncogene, attivandolo in modo anomalo.
+- **Inattivazione di p53 o RB**: alcuni virus producono proteine che "sequestrano" p53 o RB, togliendogli la capacità di frenare la cellula.
+
+Esempi di virus oncogeni:
+- **HPV** (Papillomavirus) — causa cancro della cervice uterina; le proteine virali E6 ed E7 bloccano rispettivamente p53 e RB.
+- **HBV/HCV** (epatite B e C) — aumentano il rischio di carcinoma epatico.
+- **EBV** (Epstein-Barr) — associato al linfoma di Burkitt.
+
+---
+
+<Diagram caption="Risposta della cellula al danno al DNA: il ruolo di p53" code={`flowchart TB
+  A["Danno al DNA<br/>(UV, errori, tossine)"] --> B["Attivazione di ATM/ATR<br/>(sensori del danno)"]
+  B --> C["p53 si accumula<br/>(MDM2 viene bloccata)"]
+  C --> D{{"Il danno è riparabile?"}}
+  D -- "Sì" --> E["Blocco del ciclo cellulare<br/>Riparazione del DNA"]
+  D -- "No" --> F["Apoptosi<br/>(morte programmata della cellula)"]
+  E --> G["Cellula sopravvive sana"]
+  F --> H["Cellula eliminata<br/>senza rischio tumore"]`} />
+
+<Diagram caption="Proto-oncogeni vs Oncosoppressori: come contribuiscono al tumore" code={`flowchart LR
+  A["Proto-oncogene<br/>(es. RAS, MYC)"] -- "Mutazione guadagno di funzione<br/>1 copia mutata basta" --> B["Oncogene<br/>Segnale sempre attivo"]
+  C["Gene oncosoppressore<br/>(es. p53, RB)"] -- "Mutazione perdita di funzione<br/>servono 2 copie mutate" --> D["Freno inattivo<br/>nessun controllo"]
+  B --> E["Divisione incontrollata<br/>= tumore"]
+  D --> E`} />
+
+## Guarda il video
+<YouTube id="eB9HAllEGkc" title="Oncogeni ed oncosoppressori" />
+<VideoVisto id="bio-u7-04" />
+
+## Da ricordare
+- **p53** è il "guardiano del genoma": risponde al danno al DNA bloccando il ciclo cellulare, attivando la riparazione o inducendo l'apoptosi; è mutato in circa il 50% dei tumori umani.
+- **Proto-oncogeni** diventano oncogeni con UNA sola mutazione (dominante, guadagno di funzione); i **geni oncosoppressori** devono perdere ENTRAMBE le copie per smettere di funzionare (recessivo, perdita di funzione — regola dei "two hits").
+- Alcuni **virus oncogeni** (come HPV, HBV, EBV) causano tumori inattivando p53/RB o inserendo il loro DNA vicino a proto-oncogeni.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale delle seguenti affermazioni su p53 è CORRETTA?" opzioni={["p53 stimola la divisione cellulare anche in assenza di danni al DNA","p53 può indurre l'apoptosi quando il danno al DNA è irreparabile","p53 è un proto-oncogene che diventa oncogeno per mutazione","p53 è necessaria solo durante la fase S del ciclo cellulare"]} corretta={1} spiegazione="p53 è un gene oncosoppressore: blocca il ciclo, promuove la riparazione, e se il danno è troppo grave ordina l'apoptosi. Non stimola la divisione (quello lo fanno i proto-oncogeni) e non è un proto-oncogene." />
+
+<Quiz domanda="Perché per inattivare un gene oncosoppressore servono DUE mutazioni (regola dei two hits)?" opzioni={["Perché i geni oncosoppressori sono presenti in quattro copie nel genoma","Perché ogni mutazione aumenta la velocità di divisione cellulare","Perché basta una copia funzionante su due per mantenere il controllo della divisione","Perché la seconda mutazione attiva il proto-oncogene"]} corretta={2} spiegazione="Gli oncosoppressori agiscono in modo recessivo: finché almeno una copia è intatta, la proteina viene prodotta e il freno funziona. Solo quando entrambe le copie sono mutate si perde completamente la funzione frenante." />
+
+<Quiz domanda="Come fa il virus HPV a favorire lo sviluppo del tumore della cervice uterina?" opzioni={["Inserisce un oncogene virale direttamente nel gene p53","Le sue proteine E6 ed E7 inattivano rispettivamente p53 e RB","Provoca un aumento della sintesi di MDM2 che stabilizza p53","Attiva i checkpoint del ciclo cellulare aumentando la riparazione del DNA"]} corretta={1} spiegazione="HPV produce due proteine chiave: E6 si lega a p53 e ne causa la degradazione, E7 si lega a RB inattivandola. In questo modo la cellula perde entrambi i principali freni alla divisione, favorendo la trasformazione tumorale." />
+
+<Esercizio problema="Una cellula ha subito un danno grave al DNA. Descrivi, in ordine, i passaggi principali della risposta mediata da p53: cosa si attiva, cosa fa p53 e quale può essere l'esito finale se il danno non è riparabile." soluzione="1) Il danno al DNA attiva i sensori ATM/ATR. 2) ATM/ATR fosforilano p53, impedendo a MDM2 di degradarla: p53 si accumula nella cellula. 3) p53 agisce come fattore di trascrizione e attiva geni che bloccano il ciclo cellulare (es. p21, che inibisce le CDK). 4) I sistemi di riparazione del DNA entrano in azione. 5) Se il danno è troppo esteso e non riparabile, p53 attiva geni pro-apoptotici (es. BAX), inducendo la morte programmata della cellula. Questo impedisce che la cellula con DNA difettoso si replichi e trasmetta le mutazioni alle cellule figlie." />
+
+</section>
+
+</RisorsaLayout>

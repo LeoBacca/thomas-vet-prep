@@ -1,0 +1,198 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-12">
+
+Una **reazione redox** è una reazione in cui due sostanze si **scambiano degli elettroni** (le minuscole particelle con carica negativa). Una "passa" elettroni, l'altra li "prende". Sembra una cosa da laboratorio, ma succede di continuo: quando un chiodo arrugginisce, quando una mela tagliata diventa marrone, e perfino dentro le tue cellule mentre respiri. Imparare a riconoscerle è una delle basi della chimica.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> redox = un passaggio di elettroni da uno all'altro. Pensa a un passaggio di palla: chi <strong>dà</strong> la palla si <strong>ossida</strong>, chi la <strong>riceve</strong> si <strong>riduce</strong>. Le due cose avvengono sempre insieme: se qualcuno dà, qualcun altro deve ricevere.</div>
+
+## Ossidazione e riduzione: chi perde e chi acquista
+
+Le due parole spaventano, ma dicono una cosa semplice:
+
+- **Ossidazione** = una sostanza **perde** elettroni (li regala).
+- **Riduzione** = una sostanza **acquista** elettroni (li prende).
+
+Per non confonderti c'è un trucchetto in inglese, famosissimo, chiamato **OIL RIG**:
+
+- **OIL** = *Oxidation Is Loss* → l'ossidazione è una **perdita** di elettroni.
+- **RIG** = *Reduction Is Gain* → la riduzione è un **guadagno** di elettroni.
+
+Un modo facile per ricordarlo: la parola "**riduzione**" ti fa pensare a qualcosa che **diminuisce**, e infatti la carica diventa più negativa perché arrivano elettroni (che sono negativi). È un po' controintuitivo, ma il trucco OIL RIG ti salva sempre.
+
+<Diagram caption="OIL RIG: chi perde elettroni si ossida, chi li acquista si riduce" code={`flowchart LR
+  A["Atomo A<br/>PERDE elettroni"] -->|"elettroni e-"| B["Atomo B<br/>ACQUISTA elettroni"]
+  A --> OX["Si OSSIDA<br/>(OIL = Oxidation Is Loss)"]
+  B --> RID["Si RIDUCE<br/>(RIG = Reduction Is Gain)"]`} />
+
+## Le due cose succedono sempre insieme
+
+Questo è il punto più importante: **non esiste un'ossidazione da sola**. Se una sostanza perde elettroni, quegli elettroni devono finire da qualche parte. Quindi c'è sempre un'altra sostanza che li acquista e si riduce nello stesso momento. Per questo si chiama "ossido-**riduzione**": è una coppia inseparabile.
+
+È come una compravendita: non puoi vendere se nessuno compra. Gli elettroni "venduti" da uno sono esattamente quelli "comprati" dall'altro.
+
+<Diagram caption="Ossidazione e riduzione: due facce della stessa reazione" code={`flowchart TB
+  R["Reazione REDOX"] --> OX["OSSIDAZIONE<br/>perde elettroni"]
+  R --> RID["RIDUZIONE<br/>acquista elettroni"]
+  OX -->|"gli stessi elettroni"| RID`} />
+
+## Perché conta per medicina e veterinaria
+
+Le reazioni redox non sono un argomento "da chimici": sono il motore della vita. Quando tu (o un cane, o un cavallo) **respiri**, le cellule usano l'ossigeno proprio per fare reazioni redox: gli elettroni presi dal cibo passano, passaggio dopo passaggio, fino all'ossigeno, e questo libera l'**energia** che ti tiene vivo. Senza redox, nessun battito di cuore.
+
+Anche gli **antiossidanti** di cui senti parlare (vitamina C, vitamina E) servono proprio a controllare reazioni redox dannose nel corpo. E la **ruggine** del ferro o una mela che annerisce sono la stessa identica idea: qualcosa che si ossida perdendo elettroni. Capire le redox ti aiuterà tantissimo quando, più avanti, studierai metabolismo e fisiologia.
+
+## Il numero di ossidazione: la "carica finta" di ogni atomo
+
+Finora abbiamo parlato di elettroni che passano. Ma come fai a vedere, in una reazione scritta, **chi** li ha persi e **chi** li ha presi? Lo strumento è il **numero di ossidazione** (n.o.): è una specie di "carica immaginaria" che assegni a ogni atomo facendo finta che, in ogni legame, gli elettroni appartengano tutti all'atomo più "avido" (quello più elettronegativo).
+
+Non devi capire la teoria a fondo: ti bastano poche **regole pratiche**, da applicare nell'ordine.
+
+- **Elemento libero (non combinato)** = n.o. **0**. Esempi: Zn metallico, O2, H2, Cl2, Br2, S, Fe. Stanno da soli o legati a sé stessi, quindi nessuno "ruba" elettroni a nessuno.
+- **Ione semplice (un solo atomo)** = n.o. **uguale alla sua carica**. Esempi: Na⁺ è +1, Cl⁻ è -1, Fe²⁺ è +2, Mn²⁺ è +2.
+- **Ossigeno** = quasi sempre **-2** (eccezioni rare come i perossidi, che a te non servono ora).
+- **Idrogeno** = **+1** quando è legato a non-metalli (acqua, acidi). Negli idruri dei metalli è -1, ma è un caso raro.
+- **La somma di tutti i n.o.** in una molecola neutra fa **0**; in uno ione poliatomico fa **la carica dello ione**.
+
+Quest'ultima regola è la più potente: ti permette di trovare il n.o. "sconosciuto" di un atomo facendo una piccola equazione.
+
+<div class="callout">💡 <strong>Come si usa in pratica:</strong> metti i n.o. che conosci (O = -2, H = +1), chiami x il n.o. che cerchi, e imponi che la somma faccia la carica totale. Esempio veloce: in MnO4⁻ l'ossigeno è -2 (e ce ne sono 4, quindi -8). La carica totale è -1. Allora x + (-8) = -1 → x = +7. Il manganese è +7.</div>
+
+### La regola d'oro: il n.o. CAMBIA solo in una redox
+
+Ecco a cosa serve davvero il numero di ossidazione:
+
+- **Ossidazione** = il n.o. **AUMENTA** (diventa più positivo) → l'atomo ha **perso** elettroni.
+- **Riduzione** = il n.o. **DIMINUISCE** (diventa più negativo) → l'atomo ha **acquistato** elettroni.
+
+Quindi per capire se una reazione è una redox basta calcolare i n.o. prima e dopo: se almeno un atomo **cambia** n.o., è una redox. Se nessuno cambia, NON è una redox (è solo uno scambio, una dissociazione, una reazione acido-base...). Per esempio HCl che in acqua si dissocia in H⁺ e Cl⁻ non è una redox: l'idrogeno resta +1 e il cloro resta -1, nessuno cambia.
+
+<Diagram caption="Il numero di ossidazione ti dice in che verso vanno gli elettroni" code={`flowchart LR
+  S["n.o. di partenza"] -->|"AUMENTA<br/>es. +2 va a +4"| OX["OSSIDAZIONE<br/>perde elettroni"]
+  S -->|"DIMINUISCE<br/>es. +7 va a +2"| RID["RIDUZIONE<br/>acquista elettroni"]`} />
+
+## Ossidante e riducente: la trappola da non sbagliare MAI
+
+Questa è la confusione numero uno agli esami, quindi leggila due volte. I nomi sembrano dire il contrario di quello che fanno:
+
+- L'**agente ossidante** è la sostanza che **fa ossidare l'altro**... e per farlo deve **prendere** i suoi elettroni. Quindi l'ossidante **si RIDUCE** (acquista elettroni, n.o. che diminuisce).
+- L'**agente riducente** è la sostanza che **fa ridurre l'altro**... cedendogli i propri elettroni. Quindi il riducente **si OSSIDA** (perde elettroni, n.o. che aumenta).
+
+Detto in modo brutale: **l'ossidante non si ossida, si riduce. Il riducente non si riduce, si ossida.** Sembra uno scioglilingua, ma la logica è semplice: il loro nome dice cosa fanno *all'altro*, non a sé stessi.
+
+<div class="callout">💡 <strong>Trucco anti-trappola:</strong> pensa a un "agente" come a un istigatore. L'agente ossidante <strong>spinge l'altro a ossidarsi</strong> rubandogli gli elettroni, e così facendo è lui a ridursi. Domanda chiave: <em>chi cede elettroni?</em> Quello è il <strong>riducente</strong> (e si ossida). <em>Chi li acquista?</em> Quello è l'<strong>ossidante</strong> (e si riduce).</div>
+
+<Diagram caption="Ossidante e riducente fanno il contrario di quello che il nome suggerisce" code={`flowchart TB
+  OSS["AGENTE OSSIDANTE"] -->|"acquista elettroni"| A["si RIDUCE<br/>n.o. diminuisce"]
+  RID["AGENTE RIDUCENTE"] -->|"cede elettroni"| B["si OSSIDA<br/>n.o. aumenta"]`} />
+
+Un esempio biologico che ritrovi in fisiologia: nella fermentazione, il **NADH** cede i suoi elettroni (e idrogeni) a un'altra molecola. Cedere elettroni = ossidarsi = comportarsi da **riducente**. Infatti il NADH diventa NAD⁺. Tienilo a mente: la molecola che "porta" elettroni e li consegna è sempre il riducente.
+
+## Bilanciare una redox con il metodo degli elettroni scambiati
+
+Bilanciare una redox significa una cosa sola: **gli elettroni ceduti da chi si ossida devono essere ESATTAMENTE quelli acquistati da chi si riduce.** Non possono avanzare elettroni. Ecco i passi, sempre gli stessi:
+
+1. Assegna i numeri di ossidazione a tutti gli atomi.
+2. Trova chi cambia n.o.: uno aumenta (si ossida), uno diminuisce (si riduce).
+3. Conta **quanti elettroni** perde uno e quanti ne acquista l'altro (per ogni atomo).
+4. Trova il numero che pareggia i due scambi (di solito il minimo comune multiplo): metti i coefficienti in modo che **elettroni persi = elettroni acquistati**.
+5. Sistema gli altri atomi (e, in soluzione acida, aggiungi H⁺ e H2O per chiudere i conti).
+
+L'idea chiave da ricordare per l'esame è il punto 4: se uno cede 1 elettrone e l'altro ne acquista 5, ti serviranno **5** "donatori" per ogni "accettore", così 5×1 = 1×5. Ecco da dove vengono i coefficienti grandi che vedi nelle reazioni dell'esame (il famoso 5 davanti al ferro, il 5 davanti all'ossalato...).
+
+<Diagram caption="Bilanciare = pareggiare gli elettroni ceduti e acquistati" code={`flowchart LR
+  A["Chi si ossida<br/>cede X elettroni"] --> C["Elettroni ceduti<br/>=<br/>Elettroni acquistati"]
+  B["Chi si riduce<br/>acquista Y elettroni"] --> C
+  C --> D["Coefficienti che<br/>pareggiano X e Y"]`} />
+
+## Da ricordare
+
+- **Redox** = reazione in cui ci si scambia **elettroni**.
+- **Ossidazione** = **perde** elettroni → il n.o. **aumenta**. **Riduzione** = **acquista** elettroni → il n.o. **diminuisce**.
+- Trucco: **OIL RIG** → *Oxidation Is Loss, Reduction Is Gain*.
+- **Numero di ossidazione**, regole base: elemento libero = **0**; ione semplice = **carica**; O = **-2**; H = **+1**; somma dei n.o. = 0 (molecola neutra) o = carica (ione).
+- Se un atomo **cambia n.o.**, la reazione è una redox; se nessuno cambia, non lo è.
+- **Trappola dei nomi**: l'agente **ossidante** prende elettroni e **si riduce**; l'agente **riducente** cede elettroni e **si ossida**. Chi cede = riducente; chi acquista = ossidante.
+- **Bilanciare** = imporre che gli **elettroni ceduti = elettroni acquistati** (da qui i coefficienti).
+- Le redox sono ovunque: respirazione, ruggine, mela che annerisce, antiossidanti, NADH/NAD⁺.
+
+## Guarda il video
+
+<YouTube id="-AQFtr3D-Qc" title="Le ossidoriduzioni spiegate in 7 minuti — introduzione semplice alle redox" />
+
+<VideoVisto id="chim-u4-12" />
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Una sostanza che si OSSIDA, cosa fa con gli elettroni?"
+  opzioni={["li acquista", "li perde", "li distrugge", "non c'entra con gli elettroni"]}
+  corretta={1}
+  spiegazione="Ossidazione = perdita di elettroni. Ricorda OIL: Oxidation Is Loss. La sostanza che si ossida regala i suoi elettroni."
+/>
+
+<Quiz
+  domanda="Cosa vuol dire la sigla RIG di 'OIL RIG'?"
+  opzioni={["Reduction Is Gain (la riduzione è un guadagno di elettroni)", "Reduction Is Gone (la riduzione fa sparire gli elettroni)", "Reaction In Gas (la reazione avviene in un gas)", "Reduction Is Glucose"]}
+  corretta={0}
+  spiegazione="RIG sta per Reduction Is Gain: la riduzione è un guadagno (acquisto) di elettroni. Insieme a OIL (Oxidation Is Loss) ti fa ricordare tutto."
+/>
+
+<Quiz
+  domanda="In una reazione redox, l'ossidazione può avvenire da sola, senza nessuna riduzione?"
+  opzioni={["Sì, sono indipendenti", "No: se uno perde elettroni, un altro deve acquistarli", "Solo nei metalli", "Solo nel corpo umano"]}
+  corretta={1}
+  spiegazione="No. Gli elettroni persi da una sostanza devono finire su un'altra. Per questo ossidazione e riduzione avvengono sempre insieme, come una compravendita."
+/>
+
+<Esercizio
+  problema="Nella reazione tra zinco (Zn) e rame, lo zinco PERDE 2 elettroni e diventa Zn con carica positiva, mentre il rame li ACQUISTA. Domanda: quale dei due si ossida e quale si riduce?"
+  soluzione="Lo zinco PERDE elettroni, quindi si OSSIDA (OIL = Oxidation Is Loss). Il rame ACQUISTA quegli elettroni, quindi si RIDUCE (RIG = Reduction Is Gain). Gli elettroni persi dallo zinco sono esattamente quelli acquistati dal rame: ecco perché è una reazione redox."
+/>
+
+<Esercizio
+  problema="Assegna il numero di ossidazione al manganese (Mn) nello ione permanganato MnO4⁻ e al cromo (Cr) nello ione CrO4²⁻. Poi: se CrO4²⁻ si trasforma in Cr³⁺, il cromo si ossida o si riduce?"
+  soluzione="Regola: O = -2; la somma dei n.o. deve dare la carica dello ione. Per MnO4⁻: i 4 ossigeni valgono 4 × (-2) = -8. Sia x il n.o. del Mn → x + (-8) = -1 (carica dello ione) → x = +7. Per CrO4²⁻: 4 × (-2) = -8; x + (-8) = -2 → x = +6. Quando CrO4²⁻ (Cr = +6) diventa Cr³⁺ (Cr = +3), il n.o. DIMINUISCE da +6 a +3: il cromo ACQUISTA elettroni, quindi si RIDUCE."
+/>
+
+<Esercizio
+  problema="Nella trasformazione PbCl2 → PbCl4, cosa succede al piombo? (Ricorda: il cloro nei cloruri ha n.o. -1.)"
+  soluzione="Il cloro è -1. In PbCl2 ci sono 2 cloruri (-2 in totale); la molecola è neutra, quindi il piombo è +2. In PbCl4 ci sono 4 cloruri (-4 in totale); per fare 0 il piombo deve essere +4. Il piombo passa da +2 a +4: il n.o. AUMENTA, quindi il piombo PERDE elettroni e si OSSIDA. (Il cloro resta -1 in entrambi: non cambia, non è lui a reagire.)"
+/>
+
+<Esercizio
+  problema="Nella reazione (da bilanciare) Fe²⁺ + H⁺ + MnO4⁻ → Fe³⁺ + Mn²⁺ + H2O, individua chi si ossida e chi si riduce, conta gli elettroni scambiati e trova i coefficienti di Fe²⁺ e MnO4⁻."
+  soluzione="Numeri di ossidazione: il ferro passa da +2 (Fe²⁺) a +3 (Fe³⁺) → AUMENTA di 1, quindi il ferro si OSSIDA cedendo 1 elettrone. Il manganese in MnO4⁻ è +7 (4 ossigeni = -8, carica -1 → +7) e diventa +2 in Mn²⁺ → DIMINUISCE di 5, quindi il manganese si RIDUCE acquistando 5 elettroni. Per pareggiare gli elettroni: 1 atomo di Mn acquista 5 elettroni, quindi servono 5 atomi di Fe che cedono 1 elettrone ciascuno (5 × 1 = 1 × 5). Coefficienti: 5 Fe²⁺ e 1 MnO4⁻. La reazione completa bilanciata in ambiente acido è: 5 Fe²⁺ + 8 H⁺ + MnO4⁻ → 5 Fe³⁺ + Mn²⁺ + 4 H2O. Nota: il riducente è il Fe²⁺ (cede elettroni), l'ossidante è MnO4⁻ (li acquista)."
+/>
+
+<Quiz
+  domanda="Una specie chimica si comporta da AGENTE RIDUCENTE quando:"
+  opzioni={["cede elettroni (e quindi si ossida)", "acquista elettroni (e quindi si riduce)", "ossida un'altra specie prendendole gli elettroni", "non scambia elettroni con nessuno", "acquista soltanto protoni, non elettroni"]}
+  corretta={0}
+  spiegazione="Trappola classica del nome. Il riducente FA RIDURRE l'altro cedendogli i propri elettroni: cedere elettroni = ossidarsi. Quindi il riducente si OSSIDA. L'opzione 'acquista elettroni / si riduce' descrive l'ossidante (l'opposto esatto). 'Ossida un'altra specie prendendole gli elettroni' è la definizione dell'ossidante (termine scambiato). Le ultime due sono fuori tema: una redox è proprio uno scambio di elettroni, e qui contano gli elettroni, non i protoni."
+/>
+
+<Quiz
+  domanda="Nella reazione bilanciata 10 FeO + 2 HMnO4 → 5 Fe2O3 + 2 MnO + H2O, cosa avviene? (In FeO il ferro è +2, in Fe2O3 è +3; in HMnO4 il manganese è +7, in MnO è +2.)"
+  opzioni={["il ferro si ossida e il manganese si riduce", "il manganese si ossida e il ferro si riduce", "il manganese è il riducente e il ferro è l'ossidante", "non è una redox perché ferro e manganese non si scambiano elettroni", "il ferro si ossida e l'ossigeno si riduce"]}
+  corretta={0}
+  spiegazione="Il ferro passa da +2 a +3: il n.o. aumenta, quindi si OSSIDA (cede elettroni → è il riducente). Il manganese passa da +7 a +2: il n.o. diminuisce, quindi si RIDUCE (acquista elettroni → è l'ossidante). L'opzione 2 inverte i ruoli; la 3 scambia ossidante e riducente; la 4 è falsa perché i n.o. cambiano (quindi È una redox); nella 5 l'ossigeno resta -2 in tutti i composti, non cambia, quindi non si riduce."
+/>
+
+<Quiz
+  domanda="Nella reazione di fermentazione piruvato + NADH + H⁺ → etanolo + CO2 + NAD⁺, qual è l'agente riducente?"
+  opzioni={["il NADH", "il piruvato", "l'etanolo", "la CO2", "lo ione H⁺"]}
+  corretta={0}
+  spiegazione="Il riducente è chi CEDE elettroni (e così si ossida). Il NADH consegna i suoi elettroni (e idrogeni) trasformandosi in NAD⁺: ha ceduto elettroni, quindi è il riducente. Il piruvato invece li riceve e diventa etanolo: è l'ossidante (si riduce), per questo l'opzione 'piruvato' è la trappola più insidiosa. Etanolo e CO2 sono prodotti, non reagenti; lo ione H⁺ qui non cambia numero di ossidazione."
+/>
+
+</section>
+
+</RisorsaLayout>

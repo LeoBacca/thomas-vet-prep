@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u3-07-1",
+    "topicId": "fis-u3-07",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: in un tubo con acqua che scorre, se il tubo si restringe l'acqua va piu veloce.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. E come mettere il pollice sull'uscita del tubo da giardino: il buco si restringe, l'acqua schizza piu forte. Il motivo e che l'acqua non puo sparire — la stessa quantita che entra deve uscire. Se il buco e piu piccolo, l'acqua deve correre piu in fretta per far passare tutto. Questa e l'equazione di continuita: A × v = costante.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-07-2",
+    "topicId": "fis-u3-07",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "open",
+    "q": "Un tubo ha una sezione di 10 cm² nella parte larga e di 2 cm² nella parte stretta. L'acqua entra a 1 m/s nella parte larga. Quanto va veloce nella parte stretta? Spiega anche il ragionamento.",
+    "answer": "Nella parte stretta l'acqua va a 5 m/s. Si usa l'equazione di continuita: A₁ × v₁ = A₂ × v₂ → 10 × 1 = 2 × v₂ → v₂ = 10/2 = 5 m/s. La sezione si e ridotta di 5 volte, quindi la velocita e aumentata di 5 volte. Il principio alla base e la conservazione della massa: il fluido non si crea ne si distrugge, quindi la portata Q = A × v deve rimanere costante in ogni punto del tubo.",
+    "explain": "Q = A × v e costante: sezione piu piccola → velocita piu alta, in proporzione inversa.",
+    "tags": ["risposta aperta"]
+  }
+]

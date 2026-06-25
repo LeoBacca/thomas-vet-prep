@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u4-07-1",
+    "topicId": "fis-u4-07",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: quando un'ambulanza con la sirena accesa si avvicina a te, senti la sirena piu acuta rispetto a quando l'ambulanza e ferma.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. E l'effetto Doppler: quando la sorgente si avvicina, le onde sonore si 'comprimono' davanti ad essa (arrivano piu onde al secondo = frequenza piu alta = suono piu acuto). Quando la sorgente si allontana succede il contrario: suono piu grave.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u4-07-2",
+    "topicId": "fis-u4-07",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "open",
+    "q": "Sei in piedi sul bordo di una pista. Una macchina da corsa passa davanti a te a tutta velocita con il motore che romba. Descrivi cosa senti prima che arrivi, nel momento in cui ti passa accanto e dopo che si e allontanata. Spiega perche succede.",
+    "answer": "Mentre la macchina si avvicina senti un rombo sempre piu acuto: le onde sonore si comprimono davanti alla sorgente in movimento, quindi arrivano piu onde al secondo alle tue orecchie (frequenza piu alta = suono piu acuto). Nel momento esatto in cui ti passa accanto percepisci per un istante la frequenza reale del motore. Subito dopo, mentre la macchina si allontana, il rombo diventa piu grave: le onde si allargano dietro la sorgente, arrivano meno onde al secondo (frequenza piu bassa = suono piu grave). Questo e l'effetto Doppler: la sorgente non cambia, ma cambia come le onde ti raggiungono a seconda del moto relativo tra te e la sorgente.",
+    "explain": "Chiave: avvicinamento → onde compresse → frequenza alta → suono acuto. Allontanamento → onde allargate → frequenza bassa → suono grave. La sorgente non cambia: cambi tu (o lei) rispetto all'altra.",
+    "tags": ["risposta aperta"]
+  }
+]

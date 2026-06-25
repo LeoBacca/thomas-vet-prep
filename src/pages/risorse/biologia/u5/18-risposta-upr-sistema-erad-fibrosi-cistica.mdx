@@ -1,0 +1,136 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-18">
+
+## Perché le proteine si "sbagliano" nel reticolo endoplasmatico?
+
+Il **reticolo endoplasmatico rugoso (RER)** è la fabbrica dove vengono prodotte le proteine destinate ad essere secrete o inserite nelle membrane. Prima di uscire, ogni proteina deve **piegarsi** nella forma giusta, come un origami preciso.
+
+A volte qualcosa va storto: la proteina esce storta, con una forma sbagliata. Queste si chiamano **proteine mal ripiegate** (o "unfolded proteins"). La cellula deve accorgersene e correre ai ripari.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il RER è come un controllo qualità in fabbrica: se un prodotto è difettoso viene fermato, riparato o buttato via — mai spedito al cliente.</div>
+
+---
+
+## La risposta UPR (Unfolded Protein Response)
+
+**UPR** significa letteralmente "risposta alle proteine non ripiegate". Si attiva quando nel RER si accumulano troppe proteine mal ripiegate.
+
+Il RER ha tre "sensori di allarme" sulla sua membrana:
+
+- **IRE1** — taglia un mRNA speciale per produrre un fattore di trascrizione (XBP1) che aumenta la capacità del RER
+- **PERK** — mette in pausa temporanea la produzione di nuove proteine, così non se ne accumulano altre
+- **ATF6** — va al Golgi, viene tagliato e libera un fattore di trascrizione che attiva geni di recupero
+
+Insieme, questi tre sensori fanno tre cose:
+1. **Rallentano** la produzione di nuove proteine (stop momentaneo)
+2. **Aumentano** i chaperone molecolari (le "proteine soccorritrici" che aiutano a ripiegare correttamente)
+3. **Attivano l'ERAD** per eliminare le proteine che non si riesce a salvare
+
+Se il problema è troppo grave e non si risolve, la UPR alla fine attiva l'**apoptosi** (morte programmata della cellula).
+
+<Diagram caption="Le tre fasi della risposta UPR: rallenta, ripara, elimina" code={`flowchart TB
+  A["Accumulo di proteine<br/>mal ripiegate nel RER"]
+  A --> B["IRE1 attivato<br/>Produce XBP1<br/>Aumenta capacità RER"]
+  A --> C["PERK attivato<br/>Blocca traduzione<br/>Meno proteine nuove"]
+  A --> D["ATF6 attivato<br/>Va al Golgi<br/>Attiva geni di recupero"]
+  B --> E["Più chaperone molecolari<br/>Più tentativi di ripiegamento"]
+  C --> E
+  D --> E
+  E --> F{"Proteina salvata?"}
+  F -- "Sì" --> G["Proteina ripiegata<br/>correttamente — via libera"]
+  F -- "No" --> H["Attivazione ERAD<br/>Proteina eliminata"]
+  H --> I["Se il danno persiste:<br/>Apoptosi (morte cellulare)"]`} />
+
+---
+
+## Il sistema ERAD: il cestino delle proteine difettose
+
+**ERAD** sta per "Endoplasmic Reticulum-Associated Degradation", cioè **degradazione associata al reticolo endoplasmatico**.
+
+Funziona in tre passi, come smaltire un pacco difettoso:
+
+1. **Riconoscimento** — i chaperone "annusano" la proteina difettosa e la marcano
+2. **Retrotransloco** — la proteina viene fisicamente estratta dal RER e spinta nel citoplasma (come tirar fuori qualcosa da un cassetto)
+3. **Ubiquitinazione + Proteasoma** — la proteina viene etichettata con l'**ubiquitina** (un cartellino "da buttare") e poi distrutta dal **proteasoma**, una specie di tritacarne molecolare
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'ERAD è come il sistema di reso difettosi di un magazzino: il prodotto guasto viene ritirato dalla scaffalatura, etichettato "scarto" e mandato al trituratore.</div>
+
+### La fibrosi cistica: quando l'ERAD sbaglia bersaglio
+
+La **fibrosi cistica** è una malattia genetica causata da una mutazione nel gene **CFTR** (un canale per il cloro sulla membrana cellulare).
+
+La mutazione più comune (**ΔF508**) produce una proteina CFTR che ha solo una piccola piega sbagliata. Questa proteina, se riuscisse ad arrivare sulla membrana, funzionerebbe ancora **in parte** (non è del tutto rotta). Il problema? L'ERAD la riconosce come "difettosa" e la degrada quasi tutta, prima che raggiunga la membrana.
+
+Risultato: le cellule polmonari non hanno abbastanza canali CFTR funzionanti, il muco diventa denso e si accumulano batteri.
+
+- La malattia non è causata da una proteina completamente rotta
+- È causata in gran parte da un **controllo di qualità troppo severo** che butta via un prodotto che avrebbe ancora una funzione parziale
+
+<Diagram caption="Percorso della proteina CFTR: normale vs mutante ΔF508" code={`flowchart LR
+  A["Gene CFTR<br/>mutato (ΔF508)"]
+  B["Gene CFTR<br/>normale"]
+  A --> C["Proteina CFTR<br/>con piega lievemente<br/>scorretta"]
+  B --> D["Proteina CFTR<br/>correttamente ripiegata"]
+  C --> E["ERAD la riconosce<br/>come difettosa"]
+  D --> F["Trasporto al Golgi<br/>poi alla membrana"]
+  E --> G["Ubiquitinazione<br/>e degradazione<br/>al proteasoma"]
+  F --> H["Canale CFTR<br/>funzionante<br/>sulla membrana"]
+  G --> I["Nessun canale CFTR<br/>Muco denso<br/>Fibrosi cistica"]`} />
+
+---
+
+## Secrezione costitutiva vs secrezione regolata
+
+Le cellule secernono sostanze verso l'esterno in due modalità diverse:
+
+### Secrezione costitutiva (continua)
+- Avviene **sempre, senza uno stimolo esterno**
+- Le vescicole cariche di proteine partono dal Golgi e si fondono con la membrana in modo automatico
+- Esempio: le cellule del fegato secernono continuamente albumina nel sangue
+- "Costitutiva" = fa parte della costituzione normale della cellula, è sempre accesa
+
+### Secrezione regolata (a comando)
+- Avviene **solo quando arriva un segnale** (ormone, neurotrasmettitore, variazione di calcio)
+- Le vescicole si accumulano vicino alla membrana e aspettano il via
+- Solo quando arriva il segnale giusto si fondono e liberano il contenuto
+- Esempi: insulina secretata dal pancreas dopo un pasto; neurotrasmettitori liberati da un neurone dopo uno stimolo elettrico
+
+| | Costitutiva | Regolata |
+|---|---|---|
+| Stimolo necessario? | No | Sì |
+| Velocità | Continua, lenta | A impulso, rapida |
+| Dove si accumula? | Non si accumula | Nelle vescicole secretorie |
+| Esempio | Albumina epatica | Insulina pancreatica |
+
+---
+
+## Guarda il video
+<YouTube id="jX_pTLFIuks" title="Reticolo endoplasmatico parte 2 — molecular_Lindo" />
+<VideoVisto id="bio-u5-18" />
+
+## Da ricordare
+- La risposta **UPR** si attiva quando si accumulano proteine mal ripiegate nel RER: rallenta la sintesi, potenzia i chaperone e attiva l'ERAD; se il danno non si risolve, porta all'apoptosi.
+- Il sistema **ERAD** riconosce le proteine difettose, le estrae dal RER, le etichetta con ubiquitina e le distrugge al proteasoma; nella fibrosi cistica l'ERAD degrada la proteina CFTR ΔF508, che avrebbe ancora una funzione parziale se raggiungesse la membrana.
+- La secrezione **costitutiva** è continua e automatica; quella **regolata** avviene solo su stimolo e libera grandi quantità di sostanza in poco tempo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale dei tre sensori UPR blocca temporaneamente la traduzione di nuove proteine per ridurre il carico sul RER?" opzioni={["IRE1, che taglia l'mRNA di XBP1","PERK, che fosforila il fattore di inizio eIF2α bloccando la traduzione","ATF6, che migra al Golgi per essere tagliato","BiP, che sequestra le proteine mal ripiegate"]} corretta={1} spiegazione="PERK è il sensore che, una volta attivato, fosforila eIF2α: questo fattore serve per avviare la traduzione, e una volta bloccato la cellula produce meno proteine nuove, alleggerendo il carico nel RER." />
+
+<Quiz domanda="Nella fibrosi cistica da mutazione ΔF508, qual è il meccanismo principale che porta alla malattia?" opzioni={["La proteina CFTR non viene mai sintetizzata","La proteina CFTR mutante viene degradata dall'ERAD prima di raggiungere la membrana","La proteina CFTR viene secreta all'esterno invece di restare in membrana","Il gene CFTR produce una proteina troppo grande per il Golgi"]} corretta={1} spiegazione="La mutazione ΔF508 produce una proteina CFTR con una piccola anomalia di ripiegamento. L'ERAD la riconosce come difettosa e la degrada al proteasoma prima che raggiunga la membrana cellulare. Risultato: nessun canale del cloro funzionante, muco denso nei polmoni." />
+
+<Quiz domanda="Qual è la differenza fondamentale tra secrezione costitutiva e secrezione regolata?" opzioni={["La secrezione costitutiva usa il Golgi; quella regolata bypassa il Golgi","La secrezione costitutiva avviene continuamente senza stimolo; quella regolata richiede un segnale specifico per liberare il contenuto delle vescicole","La secrezione costitutiva riguarda solo le proteine di membrana; quella regolata riguarda solo gli ormoni","La secrezione costitutiva è più veloce e massiva di quella regolata"]} corretta={1} spiegazione="La distinzione chiave è la presenza o assenza di un segnale. La secrezione costitutiva è sempre attiva (es. albumina epatica). La secrezione regolata accumula il prodotto in vescicole che rimangono in attesa e lo liberano solo quando arriva lo stimolo giusto (es. insulina dopo il pasto, neurotrasmettitori dopo l'impulso nervoso)." />
+
+<Esercizio problema="Un paziente ha una mutazione che blocca completamente il gene IRE1. Cosa succede quando nel suo RER si accumulano proteine mal ripiegate? Descrivi almeno due conseguenze." soluzione="Senza IRE1 funzionante: (1) Non viene prodotto XBP1 attivo, quindi la cellula non riesce ad aumentare la capacità del RER né a potenziare la biogenesi dei chaperone e delle componenti ERAD. (2) La risposta UPR è parzialmente compromessa: PERK e ATF6 possono ancora attivarsi, ma manca uno dei tre bracci principali. A lungo termine, le proteine mal ripiegate si accumulano nel RER causando stress persistente, con rischio aumentato di apoptosi. Alcune cellule ad alto fabbisogno secretorio (come le plasmacellule o le cellule acinose del pancreas) sono particolarmente vulnerabili." />
+
+</section>
+
+</RisorsaLayout>

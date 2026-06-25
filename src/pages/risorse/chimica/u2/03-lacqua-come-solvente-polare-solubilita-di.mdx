@@ -1,0 +1,95 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-03">
+
+L'acqua è il liquido più importante della vita: il nostro corpo è fatto per circa due terzi di acqua. Ma l'acqua non è solo un liquido qualsiasi: è un bravissimo **solvente**, cioè un liquido capace di **sciogliere** tante sostanze. Il sale da cucina e lo zucchero spariscono nell'acqua; l'olio invece galleggia e non si scioglie. In questa pagina capiamo **perché** succede, e la regola è una sola, semplicissima.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ogni sostanza si scioglie bene solo in chi le "assomiglia". La regola si chiama <strong>simile scioglie simile</strong>. L'acqua è "polare" (ha un lato positivo e uno negativo), quindi scioglie le cose polari come sale e zucchero, ma non i grassi che sono "apolari".</div>
+
+## Perché l'acqua è "polare"
+
+La molecola d'acqua è fatta di un atomo di ossigeno (O) e due di idrogeno (H): per questo si scrive H2O. Ma questi atomi non tirano gli elettroni allo stesso modo: l'ossigeno tira di più, gli idrogeni di meno. Risultato: un lato della molecola resta un po' **negativo** (vicino all'ossigeno) e l'altro un po' **positivo** (vicino agli idrogeni).
+
+Immagina una **piccola calamita**: ha un polo positivo e uno negativo. La molecola d'acqua è proprio così. Per questo si dice che l'acqua è **polare** (ha due "poli", come una calamita). Questa è la chiave di tutto.
+
+<Diagram caption="La molecola d'acqua ha un lato un po' negativo e uno un po' positivo, come una mini-calamita" code={`flowchart LR
+  O["Ossigeno (O)<br/>lato un po' NEGATIVO"] --- H1["Idrogeno (H)<br/>lato un po' positivo"]
+  O --- H2["Idrogeno (H)<br/>lato un po' positivo"]`} />
+
+## Come l'acqua scioglie il sale (la solvatazione)
+
+Il sale da cucina è cloruro di sodio (NaCl). Nel sale solido ci sono particelle cariche tenute insieme dall'attrazione: il **sodio** è positivo (Na+) e il **cloro** è negativo (Cl-). Le chiamiamo **ioni**: ioni vuol solo dire "particelle con una carica".
+
+Quando butti il sale in acqua, le molecole d'acqua (le mini-calamite) accorrono. Il loro lato negativo si gira verso il sodio positivo, e il loro lato positivo si gira verso il cloro negativo. È come quando i poli opposti di due calamite si attaccano. Pian piano l'acqua **circonda** ogni ione e lo stacca dagli altri, portandolo via. Questo "abbraccio" delle molecole d'acqua attorno a uno ione si chiama **solvatazione**.
+
+<Diagram caption="Solvatazione: le molecole d'acqua circondano gli ioni Na+ e Cl- e li separano" code={`flowchart TB
+  S["Cristallo di sale (NaCl)<br/>ioni Na+ e Cl- attaccati"] --> A["Arrivano le molecole d'acqua (polari)"]
+  A --> NA["Acqua circonda Na+ (positivo)<br/>col suo lato negativo (ossigeno)"]
+  A --> CL["Acqua circonda Cl- (negativo)<br/>col suo lato positivo (idrogeno)"]
+  NA --> D["Gli ioni si staccano e vanno in giro: il sale e' sciolto"]
+  CL --> D`} />
+
+Con lo **zucchero** succede una cosa simile: lo zucchero non è fatto di ioni, ma ha tante zone polari (i gruppi -OH), cioè altri "lati positivi e negativi". L'acqua li riconosce come simili e li circonda allo stesso modo. Ecco perché anche lo zucchero si scioglie benissimo.
+
+## Perché l'olio e i grassi NON si sciolgono
+
+I grassi e l'olio sono fatti di lunghe catene che **non hanno poli**: sono **apolari**, cioè senza un lato positivo e uno negativo. Per le mini-calamite dell'acqua non c'è niente a cui attaccarsi: l'acqua non riesce a circondarli. Così il grasso resta tutto da una parte (galleggia) e l'acqua dall'altra. Non sono "simili", quindi non si mescolano.
+
+Pensa a una bella **vinaigrette** per l'insalata: olio e aceto (che è quasi tutto acqua). Per quanto agiti la bottiglia, dopo un po' si separano di nuovo in due strati. Acqua sotto, olio sopra.
+
+Questo conta tantissimo in **medicina e biologia**. Le membrane delle nostre cellule sono fatte di grassi proprio perché respingono l'acqua: così tengono separato il "dentro" dal "fuori" della cellula, come un muro impermeabile. Inoltre alcuni farmaci e vitamine sono "amici dell'acqua" (si sciolgono nel sangue, che è quasi tutto acqua), mentre altri sono "amici dei grassi" (le vitamine A, D, E, K): il corpo li gestisce in modo diverso proprio per questo motivo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> polare con polare si scioglie (acqua + sale, acqua + zucchero). Apolare con apolare si scioglie (grasso + grasso). Ma polare con apolare NO: per questo acqua e olio non si mescolano.</div>
+
+## Guarda il video
+
+<YouTube id="R6dPaWcOwN0" title="Il simile scioglie il simile: solubilità e miscibilità delle sostanze" />
+
+<VideoVisto id="chim-u2-03" />
+
+## Da ricordare
+
+- L'acqua è **polare**: ha un lato un po' negativo (ossigeno) e uno un po' positivo (idrogeni), come una mini-calamita.
+- Regola d'oro: **simile scioglie simile**. Polare scioglie polare, apolare scioglie apolare.
+- L'acqua scioglie **sali** (ioni) e **zuccheri** perché sono polari; le sue molecole li circondano e li separano: questa è la **solvatazione**.
+- L'acqua NON scioglie **grassi e olio** perché sono **apolari**: non hanno poli a cui attaccarsi.
+- Conta in biologia: le membrane delle cellule sono di grassi proprio perché respingono l'acqua.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Perché si dice che la molecola d'acqua è 'polare'?"
+  opzioni={["Perché è freddissima come i poli della Terra", "Perché ha un lato un po' positivo e uno un po' negativo, come una calamita", "Perché contiene il polonio", "Perché è sempre solida"]}
+  corretta={1}
+  spiegazione="L'ossigeno tira di più gli elettroni, così un lato della molecola resta un po' negativo e l'altro un po' positivo: due poli, come una mini-calamita."
+/>
+
+<Quiz
+  domanda="Come fa l'acqua a sciogliere il sale (NaCl)?"
+  opzioni={["Lo scalda finché evapora", "Le sue molecole circondano gli ioni Na+ e Cl- e li separano (solvatazione)", "Lo trasforma in zucchero", "Non lo scioglie affatto"]}
+  corretta={1}
+  spiegazione="Il lato negativo dell'acqua si gira verso il sodio positivo e il lato positivo verso il cloro negativo: l'acqua circonda gli ioni e li stacca. Questo abbraccio si chiama solvatazione."
+/>
+
+<Quiz
+  domanda="Perché l'olio NON si scioglie in acqua?"
+  opzioni={["Perché è troppo leggero", "Perché è apolare (senza poli) e l'acqua è polare: non sono simili", "Perché l'acqua è troppo fredda", "Perché l'olio è fatto di ioni"]}
+  corretta={1}
+  spiegazione="L'olio è apolare: non ha un lato positivo e uno negativo. L'acqua, che è polare, non trova niente a cui attaccarsi. Simile scioglie simile, e questi due non sono simili."
+/>
+
+<Esercizio
+  problema="Hai tre sostanze: sale da cucina, zucchero e olio d'oliva. Le metti una alla volta in un bicchiere d'acqua e mescoli. Quali si sciolgono e quali no? Spiega il perché usando la regola 'simile scioglie simile'."
+  soluzione="Si sciolgono il sale e lo zucchero, mentre l'olio no. Il sale è fatto di ioni carichi (polari) e lo zucchero ha tante zone polari (i gruppi -OH): l'acqua, anch'essa polare, li circonda e li separa. L'olio invece è apolare (senza poli): non è 'simile' all'acqua, quindi resta separato e galleggia. In breve: polare scioglie polare, ma polare e apolare non si mescolano."
+/>
+
+</section>
+
+</RisorsaLayout>

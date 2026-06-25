@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-fis-u3-09-1",
+    "topicId": "fis-u3-09",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Nella legge di Poiseuille, se raddoppi il raggio di un tubo, come cambia la portata Q (a pressione e viscosita invariate)?",
+    "choices": [
+      "Raddoppia (×2)",
+      "Quadruplica (×4)",
+      "Aumenta di 16 volte (×16)",
+      "Rimane invariata"
+    ],
+    "answer": 2,
+    "explain": "La portata Q dipende da r alla quarta potenza (r⁴). Raddoppiare r significa moltiplicare r⁴ per 2⁴ = 16. E come un tubo dell'acqua da giardino: anche solo allargarlo un pochino fa schizzare via molta piu acqua. Per questo un vaso sanguigno leggermente ristretto riduce drasticamente il flusso di sangue.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-09-2",
+    "topicId": "fis-u3-09",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "open",
+    "q": "Cos'e la resistenza idraulica e a quale concetto di elettricita somiglia? Come si calcola e come si combina quando due tubi sono in parallelo?",
+    "answer": "La resistenza idraulica R e la 'difficolta' che un tubo oppone al passaggio del fluido. Si calcola come R = 8·η·L / (π·r⁴): aumenta se il fluido e viscoso (η grande) o il tubo e lungo, diminuisce se il raggio e grande. E l'analogo esatto della resistenza elettrica: la legge Q = ΔP / R e identica alla legge di Ohm (I = V/R), dove la portata Q gioca il ruolo della corrente e la differenza di pressione ΔP il ruolo della tensione. Quando due tubi sono in parallelo la resistenza totale si calcola con 1/R_tot = 1/R1 + 1/R2: il risultato e sempre minore di ciascuna resistenza singola (piu strade = meno ostacolo totale).",
+    "explain": "Analogia chiave: resistenza idraulica sta al flusso come resistenza elettrica sta alla corrente. In parallelo le resistenze si 'sommano al contrario' (inversi) e la totale diminuisce.",
+    "tags": ["risposta aperta"]
+  }
+]

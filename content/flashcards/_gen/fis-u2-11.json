@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-11-1",
+    "topicId": "fis-u2-11",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: quando spingi un muro con le mani, il muro spinge te con una forza uguale e contraria (terzo principio della dinamica).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Questo e' il terzo principio di Newton: ogni forza di azione genera sempre una forza di reazione uguale in intensita' e direzione, ma di verso opposto. Ecco perche' su un pattino a rotelle, spingendo il muro, ti allontani.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-11-2",
+    "topicId": "fis-u2-11",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un cavallo tira una carrozza in avanti. Per il terzo principio, la carrozza esercita una forza uguale e contraria sul cavallo. Eppure il cavallo avanza. Perche'?",
+    "choices": [
+      "Perche' la forza del cavallo e' in realta' piu' grande di quella della carrozza",
+      "Perche' azione e reazione agiscono su corpi diversi: il cavallo riceve anche la spinta del suolo sui suoi zoccoli, che supera la resistenza della carrozza",
+      "Perche' il terzo principio vale solo tra oggetti immobili",
+      "Perche' la carrozza e' piu' leggera del cavallo"
+    ],
+    "answer": 1,
+    "explain": "Azione e reazione sono uguali e contrarie, ma agiscono su corpi DIVERSI (non si annullano tra loro). Il cavallo avanza perche' sul suo corpo agiscono piu' forze: la reazione del suolo sui zoccoli (in avanti) supera la resistenza della carrozza (all'indietro). Il saldo netto e' positivo e il cavallo accelera. L'errore classico e' pensare che azione = reazione implichi sempre equilibrio: il punto chiave e' 'su corpi diversi'.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-11-3",
+    "topicId": "fis-u2-11",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Un nuotatore spinge l'acqua all'indietro con le braccia. Descrivi la coppia azione-reazione (chi esercita cosa su chi, con quale verso) e spiega perche' le due forze NON si annullano.",
+    "answer": "Azione: il nuotatore esercita una forza sull'acqua diretta all'indietro. Reazione: per il terzo principio, l'acqua esercita sul nuotatore una forza di uguale intensita' ma verso opposto, cioe' in avanti. Ecco perche' il nuotatore avanza. Le due forze NON si annullano perche' agiscono su corpi DIVERSI: l'azione agisce sull'acqua, la reazione agisce sul nuotatore. Due forze si annullano solo se agiscono sullo stesso corpo. Qui i corpi sono distinti, quindi ciascuno accelera nella propria direzione.",
+    "explain": "Punto chiave: azione e reazione sempre uguali e contrarie, sempre su corpi diversi → non si cancellano mai tra loro.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-11-4",
+    "topicId": "fis-u2-11",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Due sferette metalliche A e B si trovano a distanza d. La sferetta A ha carica q, la sferetta B ha carica -2q. Se F e' la forza che A esercita su B, qual e' la forza che B esercita su A?",
+    "choices": [
+      "-F",
+      "La meta' di F (cioe' F/2), perche' B ha carica doppia",
+      "Il doppio di F (cioe' 2F), perche' B ha carica piu' grande",
+      "Zero, perche' le cariche si annullano tra loro",
+      "-2F, perche' la carica di B e' due volte quella di A"
+    ],
+    "answer": 0,
+    "explain": "Il terzo principio vale SEMPRE, indipendentemente dalle cariche. La forza che B esercita su A e' uguale in modulo a F ma di verso opposto: -F. Non importa che B abbia carica doppia: le due forze di un'interazione sono sempre uguali e contrarie tra i due corpi. Trappole da smontare: 'F/2' (sbagliato: non si divide la forza per la carica piu' grande); '2F' e' l'opposto esatto (sembrerebbe giusto perche' la carica e' doppia, ma non funziona cosi'); 'zero' e' la misconcezione peggiore (le cariche opposte si attraggono, non si annullano come forze); '-2F' confonde la carica (-2q) con il modulo della forza.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-11-5",
+    "topicId": "fis-u2-11",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Il campo magnetico terrestre esercita un momento di forza sull'ago di una bussola. Quale delle seguenti affermazioni e' certamente sempre vera?",
+    "choices": [
+      "Per il terzo principio, l'ago della bussola esercita un analogo momento di forza sulla Terra",
+      "Per il secondo principio, nell'emisfero australe l'ago comincia ad accelerare verso il Polo Nord",
+      "Senza un meccanismo di richiamo l'ago comincerebbe a ruotare senza fermarsi a indicare il Nord",
+      "A causa della natura vettoriale del momento, la bussola funziona correttamente solo nell'emisfero boreale",
+      "Le interazioni magnetiche sono un caso in cui i principi della meccanica non valgono"
+    ],
+    "answer": 0,
+    "explain": "Per il terzo principio della dinamica, se il campo terrestre esercita un momento sull'ago, l'ago esercita un momento uguale e contrario sulla Terra. Questa e' sempre vera, senza eccezioni. Le trappole: 'accelera verso il Polo Nord nell'emisfero australe' (falsa: il secondo principio dice che l'accelerazione dipende dalla forza netta, e l'ago si orienta, non accelera indefinitamente); 'senza richiamo ruoterebbe senza fermarsi' (falsa: il campo magnetico e' gia' il meccanismo di richiamo); 'funziona solo nell'emisfero boreale' (falsa: la bussola funziona ovunque); 'i principi della meccanica non valgono' (falsa e fuori tema: le leggi di Newton sono universali, incluse le interazioni magnetiche).",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,96 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-02">
+
+Un **amminoacido** è il "mattoncino" con cui sono costruite le proteine. La cosa speciale è che porta addosso **due parti opposte**: una parte che si comporta da **acido** (il gruppo -COOH, che tende a cedere un H) e una parte che si comporta da **base** (il gruppo -NH2, che tende a prendere un H). Avere insieme un pezzo acido e un pezzo basico cambia tutto: l'amminoacido reagisce in modo diverso a seconda di quanto è acido o basico l'ambiente in cui si trova, cioè a seconda del **pH**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un amminoacido è come una persona con una mano "che dà" e una mano "che prende". A pH neutro la mano acida regala il suo H alla mano basica: dentro la stessa molecola nasce una carica più (+) e una carica meno (-). La carica totale è zero. Questa forma con due cariche opposte si chiama <strong>zwitterione</strong>.</div>
+
+## Lo zwitterione: positivo e negativo nella stessa molecola
+
+La parola **zwitterione** viene dal tedesco e vuol dire "ione ibrido". Tradotto: una molecola che ha **una carica + e una carica - allo stesso tempo**, ma che nel complesso è **neutra** (le due cariche si bilanciano).
+
+Pensa a una calamita: ha un polo nord e un polo sud sulla stessa barretta. Lo zwitterione è simile: ha la sua zona positiva (-NH3 con una carica +) e la sua zona negativa (-COO con una carica -) sulla stessa molecola.
+
+Questo conta tantissimo in **biologia e medicina**: gli amminoacidi del nostro corpo vivono quasi sempre come zwitterioni, perché il sangue ha un pH vicino al neutro (circa 7,4). Proprio per questo le proteine si sciolgono bene nell'acqua del corpo e funzionano.
+
+<Diagram caption="Lo stesso amminoacido cambia carica al variare del pH" code={`flowchart LR
+  A["pH ACIDO<br/>(tanti H in giro)<br/>-NH3+ e -COOH<br/>carica TOTALE = +1"] -->|"alzo il pH"| B["pH NEUTRO<br/>ZWITTERIONE<br/>-NH3+ e -COO-<br/>carica TOTALE = 0"]
+  B -->|"alzo ancora il pH"| C["pH BASICO<br/>(pochi H in giro)<br/>-NH2 e -COO-<br/>carica TOTALE = -1"]`} />
+
+## Perché il pH cambia la carica
+
+Ricorda la regola facile: un ambiente **acido** è **pieno di H+** (ioni idrogeno), un ambiente **basico** ne ha **pochissimi**. L'amminoacido reagisce a questo.
+
+- In ambiente **acido** ci sono H+ dappertutto. Il gruppo -COO ne acchiappa uno e diventa -COOH (perde la sua carica negativa). Resta solo la carica positiva del gruppo amminico: la molecola è **positiva (+1)**.
+- In ambiente **basico** ci sono pochissimi H+. Anche il gruppo -NH3 (positivo) molla il suo H e diventa -NH2 (neutro). Resta solo la carica negativa del gruppo acido: la molecola è **negativa (-1)**.
+- A un pH "giusto" nel mezzo, le due cariche convivono e si annullano: è lo **zwitterione**, carica zero.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> più l'ambiente è acido (pieno di H+), più l'amminoacido si carica positivo. Più è basico (pochi H+), più si carica negativo. La carica della molecola "segue" il pH.</div>
+
+## Il punto isoelettrico (pI)
+
+Il **punto isoelettrico**, scritto **pI**, è semplicemente **il valore di pH in cui l'amminoacido ha carica totale zero**, cioè è tutto zwitterione.
+
+L'immagine giusta è una **bilancia**: a sinistra la forma positiva, a destra la forma negativa. Il pI è il punto in cui la bilancia sta **perfettamente in equilibrio**, né a destra né a sinistra. Per questo si chiama "iso-elettrico": "stesse cariche", quindi totale neutro.
+
+C'è un trucco pratico per calcolarlo (per un amminoacido semplice): si fa la **media dei due pKa**. I pKa sono due numeri (uno per il gruppo acido, uno per quello basico) che ti dicono "a che pH ogni gruppo molla il suo H". La formula è:
+
+`pI = (pKa1 + pKa2) / 2`
+
+Esempio: se pKa1 = 2 e pKa2 = 10, allora `pI = (2 + 10) / 2 = 6`. A pH 6 quell'amminoacido è neutro.
+
+Perché ci interessa in **veterinaria e medicina**? Perché in laboratorio si separano le proteine col loro pI (una tecnica si chiama elettroforesi): al pH del suo pI una proteina non ha carica, quindi **non si muove** dentro un campo elettrico. Sapere il pI serve anche a capire quando una proteina è più o meno solubile nel sangue o nelle urine.
+
+## Guarda il video
+
+<YouTube id="SoXBMNoTA8Q" title="Amminoacidi: proprietà acido-base e punto isoelettrico — spiegazione" />
+
+<VideoVisto id="chim-u7-02" />
+
+## Da ricordare
+
+- Un amminoacido ha **due parti opposte**: una acida (-COOH) e una basica (-NH2).
+- A pH neutro è uno **zwitterione**: ha una carica + e una carica - insieme, totale **zero**.
+- In ambiente **acido** (tanti H+) diventa **positivo**; in ambiente **basico** (pochi H+) diventa **negativo**.
+- Il **punto isoelettrico (pI)** è il pH in cui la carica totale è **zero**.
+- Per un amminoacido semplice: `pI = (pKa1 + pKa2) / 2`.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Che cos'è uno zwitterione?"
+  opzioni={["Una molecola con solo carica positiva", "Una molecola che ha una carica + e una carica - insieme, con totale neutro", "Una molecola senza alcuna carica in nessun punto", "Un amminoacido che non si scioglie in acqua"]}
+  corretta={1}
+  spiegazione="Lo zwitterione porta contemporaneamente una carica positiva (-NH3+) e una negativa (-COO-): le due si bilanciano e la carica totale è zero."
+/>
+
+<Quiz
+  domanda="In un ambiente molto ACIDO (pieno di H+), un amminoacido tende ad avere carica totale:"
+  opzioni={["positiva", "negativa", "sempre zero", "non ha carica"]}
+  corretta={0}
+  spiegazione="Con tanti H+ in giro, il gruppo -COO- ne cattura uno e perde la carica negativa. Resta la carica positiva del gruppo amminico: totale +1."
+/>
+
+<Quiz
+  domanda="Il punto isoelettrico (pI) di un amminoacido è:"
+  opzioni={["il pH in cui la molecola è tutta positiva", "il pH in cui la carica totale è zero (forma zwitterione)", "la temperatura di fusione", "il numero di gruppi -NH2"]}
+  corretta={1}
+  spiegazione="Il pI è proprio il valore di pH in cui l'amminoacido ha carica netta nulla, cioè esiste come zwitterione."
+/>
+
+<Esercizio
+  problema="Un amminoacido semplice ha pKa1 = 2,3 (gruppo -COOH) e pKa2 = 9,7 (gruppo -NH3+). Calcola il suo punto isoelettrico pI."
+  soluzione="Si fa la media dei due pKa: pI = (2,3 + 9,7) / 2 = 12 / 2 = 6. Quindi a pH 6 l'amminoacido ha carica totale zero (è uno zwitterione)."
+/>
+
+</section>
+
+</RisorsaLayout>

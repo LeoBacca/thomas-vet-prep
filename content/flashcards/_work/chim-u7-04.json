@@ -1,0 +1,25 @@
+{
+ "id": "chim-u7-04",
+ "titolo": "Il legame peptidico e la sua formazione",
+ "materia": "chimica",
+ "unita": 7,
+ "slug": "04-il-legame-peptidico-e-la-sua",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u7/04-il-legame-peptidico-e-la-sua.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "L'indicazione Ala-Ala corrisponde a:",
+   "choices": [
+    "un dipeptide",
+    "un disaccaride",
+    "un diestere",
+    "un'ammina",
+    "un composto aromatico"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

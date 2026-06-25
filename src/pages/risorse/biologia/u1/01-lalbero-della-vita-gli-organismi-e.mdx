@@ -1,0 +1,86 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-01">
+
+## Tutti gli esseri viventi sono parenti
+
+Sembra strano, ma è vero: un batterio, una quercia e un cane condividono un antenato comune lontanissimo. I biologi lo rappresentano con una figura chiamata **albero della vita** — un grande albero genealogico di tutti gli organismi mai esistiti sulla Terra.
+
+I rami dell'albero si dividono nel tempo ogni volta che una popolazione si separa e si evolve in modo diverso. Più due specie sono vicine sull'albero, più sono imparentate (e più si assomigliano a livello molecolare).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'albero della vita è l'albero genealogico di tutte le creature: risalendo i rami trovi gli antenati comuni, scendendo trovi i discendenti moderni.</div>
+
+## I tre grandi domini
+
+I biologi oggi dividono tutti i viventi in **tre domini**:
+
+- **Bacteria** — batteri classici (es. Escherichia coli). Cellule senza nucleo.
+- **Archaea** — simili ai batteri ma con chimica diversa; vivono spesso in ambienti estremi (vulcani, acque salate).
+- **Eukarya** — tutto il resto: funghi, piante, animali, protisti. Cellule con nucleo racchiuso in una membrana.
+
+Noi umani (e gli animali domestici come i cani e i gatti) siamo negli Eukarya, nel ramo degli Animali.
+
+## La cellula: il mattone della vita
+
+Ogni organismo vivente è fatto di **cellule**. La cellula è la più piccola unità capace di vivere, crescere e riprodursi da sola. È come il mattoncino LEGO più piccolo: da soli sono già qualcosa; messi insieme costruiscono strutture enormi.
+
+Esistono due grandi tipi di cellula:
+
+- **Cellula procariote** — non ha un nucleo vero. Il DNA galleggia nel citoplasma. Piccola e semplice. Esempi: batteri e archei.
+- **Cellula eucariote** — ha un **nucleo** (un compartimento chiuso da membrana che contiene il DNA). Più grande e complessa. Esempi: tutte le cellule di piante, animali e funghi.
+
+## La teoria cellulare
+
+La **teoria cellulare** è uno dei pilastri della biologia moderna. Si riassume in tre punti:
+
+1. Tutti gli organismi viventi sono composti da **una o più cellule**.
+2. La cellula è l'**unità fondamentale** della vita.
+3. Ogni cellula deriva da una **cellula preesistente** (le cellule non compaiono dal nulla).
+
+Questo vuol dire che quando una ferita guarisce, nuove cellule nascono da quelle vicine — non appaiono magicamente.
+
+<Diagram caption="L'albero della vita: dai tre domini alle forme viventi principali" code={`flowchart TB
+  A["Antenato comune universale<br/>(LUCA)"] --> B["Bacteria<br/>es. E. coli, Salmonella"]
+  A --> C["Archaea<br/>es. Metanogeni, Alofili"]
+  A --> D["Eukarya"]
+  D --> E["Protisti<br/>es. Ameba, Paramecio"]
+  D --> F["Fungi<br/>es. Lievito, Muffa"]
+  D --> G["Piante<br/>es. Quercia, Erba"]
+  D --> H["Animali<br/>es. Cane, Gatto, Umano"]`} />
+
+<Diagram caption="La teoria cellulare: i tre principi fondamentali" code={`flowchart LR
+  P1["1. Tutti i viventi<br/>sono fatti di cellule"] --> CORE["Teoria<br/>Cellulare"]
+  P2["2. La cellula è<br/>l'unità base della vita"] --> CORE
+  P3["3. Ogni cellula nasce<br/>da un'altra cellula"] --> CORE
+  CORE --> C1["Cellula Procariote<br/>— senza nucleo<br/>es. Batterio"]
+  CORE --> C2["Cellula Eucariote<br/>— con nucleo<br/>es. Cellula animale"]`} />
+
+## Guarda il video
+<YouTube id="ejTrVtepYC8" title="L'albero della vita dei biologi — FNOB TV" />
+<VideoVisto id="bio-u1-01" />
+
+## Da ricordare
+- L'albero della vita mostra che tutti gli organismi discendono da un antenato comune; i tre domini sono Bacteria, Archaea ed Eukarya.
+- La cellula è l'unità fondamentale della vita: la più piccola struttura capace di svolgere tutte le funzioni vitali.
+- La teoria cellulare afferma che ogni organismo è fatto di cellule e che ogni cellula nasce da una cellula preesistente — mai dal nulla.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quanti domini comprende la classificazione moderna di tutti gli esseri viventi?" opzioni={["Due: Procarioti ed Eucarioti","Tre: Bacteria, Archaea ed Eukarya","Quattro: Bacteria, Archaea, Piante e Animali","Cinque: uno per ogni regno classico"]} corretta={1} spiegazione="La classificazione moderna riconosce tre domini: Bacteria, Archaea ed Eukarya. La distinzione procarioti/eucarioti descrive un tipo cellulare, non un dominio." />
+
+<Quiz domanda="Quale dei seguenti NON è un principio della teoria cellulare?" opzioni={["Tutti gli organismi sono composti da cellule","La cellula è l'unità fondamentale della vita","Ogni cellula deriva da una cellula preesistente","Le cellule possono originarsi spontaneamente dalla materia inorganica"]} corretta={3} spiegazione="La generazione spontanea è stata smentita. La teoria cellulare afferma esattamente il contrario: ogni cellula nasce da una cellula già esistente." />
+
+<Quiz domanda="Qual è la differenza principale tra una cellula procariote e una eucariote?" opzioni={["La cellula procariote è più grande","La cellula eucariote non ha membrana plasmatica","La cellula procariote non ha un nucleo delimitato da membrana","La cellula eucariote non ha DNA"]} corretta={2} spiegazione="Il tratto distintivo è il nucleo: le cellule procariote (Bacteria e Archaea) non hanno un nucleo vero — il DNA è libero nel citoplasma. Le cellule eucariote hanno il DNA racchiuso in un nucleo membranoso." />
+
+<Esercizio problema="Un batterio e una cellula muscolare di cane appartengono allo stesso dominio? Motiva la risposta indicando anche a quale dominio appartiene ciascuno." soluzione="No, appartengono a domini diversi. Il batterio appartiene al dominio Bacteria (cellula procariote, senza nucleo). La cellula muscolare del cane appartiene al dominio Eukarya (cellula eucariote, con nucleo membranoso). Il cane è un animale, che rientra nel ramo degli Animali all'interno degli Eukarya." />
+
+</section>
+
+</RisorsaLayout>

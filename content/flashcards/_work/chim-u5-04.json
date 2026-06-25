@@ -1,0 +1,25 @@
+{
+ "id": "chim-u5-04",
+ "titolo": "Stereochimica: isomeria, enantiomeri, diastereoisomeri, epimeri e racemi",
+ "materia": "chimica",
+ "unita": 5,
+ "slug": "04-stereochimica-isomeria-enantiomeri-diastereoisomeri-epimeri-e",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u5/04-stereochimica-isomeria-enantiomeri-diastereoisomeri-epimeri-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2019",
+   "q": "Quanti isomeri costituzionali sono possibili nella molecola C3H8O?",
+   "choices": [
+    "3",
+    "2",
+    "1",
+    "4",
+    "5"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

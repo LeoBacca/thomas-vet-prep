@@ -1,0 +1,106 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u6-12">
+
+Gli **acidi carbossilici** sono molecole con un gruppo speciale, il **gruppo carbossilico** (lo scriviamo COOH). Sono ovunque: l'aceto, il succo di limone, l'acido lattico che senti nei muscoli dopo lo sport. Da questi acidi nascono altre molecole "parenti" (i **derivati**): la più importante è l'**estere**. In questa pagina vediamo le 4 reazioni chiave che li riguardano. Niente paura: le facciamo una alla volta, con esempi di tutti i giorni.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un acido carbossilico è una molecola con la "manina" COOH. A seconda di chi incontra, questa manina può attaccarsi a un alcol, rompersi con l'acqua, unirsi a un altro acido, oppure perdere un pezzo. Sono solo 4 mosse.</div>
+
+## 1. Esterificazione: acido + alcol → estere + acqua
+
+Questa è la reazione più importante. Prendi un **acido carbossilico** e un **alcol** (l'alcol è una molecola con il gruppo OH, come quello del vino). Li metti insieme con un pizzico di acido forte come "aiutante" (il catalizzatore) e ottieni un **estere** più una molecola d'**acqua**.
+
+Pensa a un **incastro Lego**: un mattoncino (l'acido) e un altro (l'alcol) si uniscono, e nel farlo "buttano fuori" un pezzettino d'acqua. È come quando due persone si danno la mano: per unirsi, ognuna lascia andare qualcosa.
+
+<Diagram caption="Esterificazione: acido carbossilico e alcol si uniscono e liberano acqua" code={`flowchart LR
+  A["Acido carbossilico<br/>(gruppo COOH)"] --> E["ESTERE<br/>(profumo di frutta)"]
+  B["Alcol<br/>(gruppo OH)"] --> E
+  E --> W["+ Acqua<br/>(H2O liberata)"]`} />
+
+Perché conta per medicina e veterinaria? Gli **esteri** sono i responsabili degli **odori della frutta** (banana, ananas, mela). Ma soprattutto i **grassi** del corpo (i **trigliceridi**) sono esteri: nascono unendo acidi grassi con un alcol chiamato glicerolo. Quindi capire l'esterificazione vuol dire capire come il corpo costruisce e immagazzina i grassi.
+
+## 2. Idrolisi: la reazione al contrario (estere + acqua → acido + alcol)
+
+**Idrolisi** vuol dire "rottura con l'acqua" (idro = acqua, lisi = rottura). È esattamente il **contrario** dell'esterificazione: prendi un estere, aggiungi acqua, e lo **spezzi** di nuovo nei suoi due pezzi di partenza, cioè l'acido e l'alcol.
+
+Immagina di **smontare** l'incastro Lego di prima: l'acqua si infila in mezzo e separa i due mattoncini.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> esterificazione = montare (e perdo acqua). Idrolisi = smontare (e uso acqua). Sono la stessa strada percorsa nei due sensi.</div>
+
+Questo è fondamentale nel corpo. Quando **digerisci i grassi**, il tuo organismo fa proprio un'idrolisi: enzimi chiamati **lipasi** spezzano i grassi (esteri) per poterli assorbire. Anche molti **farmaci** sono costruiti come esteri apposta, così il corpo li "smonta" con l'idrolisi e li attiva al momento giusto. Un esempio classico e' l'**aspirina**.
+
+## 3. Condensazione di Claisen: unire due "pezzi" di acido
+
+La **condensazione di Claisen** è una mossa un po' più avanzata. Qui due molecole simili a esteri si **uniscono tra loro** formando una molecola più lunga, e nel farlo liberano un piccolo pezzo (una molecola di alcol). "Condensazione" significa proprio questo: due pezzi che si fondono in uno più grande perdendo qualcosa di piccolo.
+
+Pensa a **costruire una catena**: aggancio un anello all'altro per allungarla. La Claisen è il modo in cui la natura **allunga le catene di carbonio**.
+
+<Diagram caption="Claisen: due unità si uniscono in una catena più lunga" code={`flowchart TB
+  U1["Unità 1<br/>(tipo estere)"] --> J["Si uniscono<br/>(condensazione)"]
+  U2["Unità 2<br/>(tipo estere)"] --> J
+  J --> L["Molecola piu lunga<br/>+ piccolo pezzo liberato"]`} />
+
+Rilevanza biomedica: la condensazione di Claisen è il **trucco che il corpo usa per costruire gli acidi grassi**, mattone dopo mattone. Ogni volta che il tuo organismo allunga una catena di grasso, sta facendo una reazione "cugina" della Claisen. Quindi non è teoria astratta: è come letteralmente fabbrichi parte di te stesso.
+
+## 4. Decarbossilazione: perdere la "manina" COOH come CO2
+
+**Decarbossilazione** è una parola lunga ma dice una cosa semplice: la molecola **perde il gruppo COOH** sotto forma di **anidride carbonica** (CO2), quella stessa che butti fuori quando respiri. "De-carbossil-azione" = togliere il carbossile.
+
+Immagina un razzo che **sgancia uno stadio** per diventare più leggero: l'acido sgancia il pezzo COOH che vola via come gas CO2.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> decarbossilazione = la molecola si toglie di dosso il gruppo COOH e lo manda via come bollicina di CO2.</div>
+
+Dove la incontri in biologia? Tantissimo. La **CO2 che espiri** arriva in buona parte da reazioni di decarbossilazione che avvengono nelle tue cellule (per esempio nel ciclo di Krebs, il "motore" che ti dà energia). Anche alcuni **neurotrasmettitori** (i messaggeri del cervello, come l'istamina o la serotonina) si formano togliendo un COOH da un amminoacido. Insomma, è una reazione che ti tiene letteralmente vivo.
+
+## Guarda il video
+
+<YouTube id="qaXiFG0t_y8" title="Esterificazione di Fischer: acido carbossilico + alcol → estere — Lezioni del Prof. Atzeni" />
+
+<VideoVisto id="chim-u6-12" />
+
+## Da ricordare
+
+- **Esterificazione**: acido carbossilico **+** alcol **→** estere **+** acqua (montare, si perde acqua). I grassi del corpo sono esteri.
+- **Idrolisi**: estere **+** acqua **→** acido **+** alcol (smontare, si usa acqua). È come digerisci i grassi e attivi molti farmaci.
+- **Condensazione di Claisen**: due unità si **uniscono** in una catena più lunga. È come il corpo costruisce gli acidi grassi.
+- **Decarbossilazione**: la molecola perde il **COOH** come **CO2**. È la CO2 che espiri e come nascono alcuni neurotrasmettitori.
+- Esterificazione e idrolisi sono la **stessa reazione nei due sensi** opposti.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Nella reazione di esterificazione, un acido carbossilico e un alcol formano un estere e che altro?"
+  opzioni={["ossigeno", "acqua", "anidride carbonica", "sale"]}
+  corretta={1}
+  spiegazione="Acido + alcol danno estere + acqua. I due pezzi si uniscono e nel farlo liberano una molecola d'acqua (H2O)."
+/>
+
+<Quiz
+  domanda="L'idrolisi di un estere è una reazione che:"
+  opzioni={["unisce due esteri in uno più lungo", "spezza l'estere usando acqua, tornando ad acido e alcol", "toglie il gruppo COOH come CO2", "trasforma l'alcol in acido"]}
+  corretta={1}
+  spiegazione="Idrolisi = rottura con l'acqua. È l'esterificazione al contrario: l'estere si rompe e tornano l'acido e l'alcol di partenza. È così che il corpo digerisce i grassi."
+/>
+
+<Quiz
+  domanda="La decarbossilazione fa perdere alla molecola il gruppo COOH sotto forma di:"
+  opzioni={["acqua", "alcol", "anidride carbonica (CO2)", "azoto"]}
+  corretta={2}
+  spiegazione="Il gruppo COOH se ne va come CO2, la stessa anidride carbonica che espiri respirando. Per questo molte reazioni che ti danno energia liberano CO2."
+/>
+
+<Esercizio
+  problema="Hai preparato in laboratorio un estere profumato facendo reagire un acido carbossilico con un alcol. Per errore lo lasci a lungo in acqua con un po' di acido. Dopo un po' il profumo sparisce e ritrovi l'odore pungente dell'acido di partenza. Quale reazione è avvenuta e perché?"
+  soluzione="È avvenuta un'idrolisi. L'acqua ha spezzato l'estere riportandolo ai suoi due pezzi originali: l'acido carbossilico (l'odore pungente che hai sentito) e l'alcol. L'idrolisi è infatti l'esterificazione percorsa al contrario: con tanta acqua intorno, l'estere si 'smonta' di nuovo in acido + alcol."
+/>
+
+</section>
+
+</RisorsaLayout>

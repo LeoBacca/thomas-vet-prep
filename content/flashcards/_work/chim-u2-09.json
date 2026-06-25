@@ -1,0 +1,25 @@
+{
+ "id": "chim-u2-09",
+ "titolo": "Miscele di gas: la legge di Dalton; aria inspirata ed espirata",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "09-miscele-di-gas-la-legge-di",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u2/09-miscele-di-gas-la-legge-di.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Maggio",
+   "q": "Chi formulò l'enunciato: \"La pressione totale di una miscela di gas è pari alla somma delle pressioni parziali dei singoli componenti\", noto come \"Legge delle pressioni parziali\"?",
+   "choices": [
+    "Dalton",
+    "Henry",
+    "Boyle",
+    "Avogadro",
+    "Charles"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

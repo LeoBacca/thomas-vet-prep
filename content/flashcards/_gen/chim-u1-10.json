@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-10-1",
+    "topicId": "chim-u1-10",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: i gas nobili (come neon e argon) quasi non reagiscono con altri atomi perche hanno gia 8 elettroni nello strato piu esterno.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. I gas nobili sono il 'modello perfetto': hanno gia l'ottetto completo e non hanno nessun motivo di legarsi ad altri atomi. Tutti gli altri atomi cercano di imitarli.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-10-2",
+    "topicId": "chim-u1-10",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "La 'regola dell'ottetto' dice che gli atomi tendono a essere stabili quando hanno…",
+    "choices": [
+      "8 elettroni nello strato piu esterno",
+      "8 protoni nel nucleo",
+      "8 neutroni nel nucleo",
+      "8 legami con altri atomi"
+    ],
+    "answer": 0,
+    "explain": "La parola 'ottetto' significa proprio otto. Gli atomi sono stabili quando hanno 8 elettroni nell'ultimo strato (il 'parcheggio esterno'). Non c'entra il numero di protoni (che e fisso e definisce l'elemento), ne i neutroni, ne il numero di legami.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-10-3",
+    "topicId": "chim-u1-10",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Il sale da cucina (NaCl) si forma perche il sodio e il cloro vogliono entrambi completare l'ottetto. Spiega cosa fa ciascuno dei due atomi e come entrambi raggiungono la stabilita.",
+    "answer": "Il sodio (Na) ha 1 solo elettrone nello strato esterno: per arrivare a 8 gliene mancherebbero ben sette (difficilissimo da prendere). Gli e molto piu conveniente CEDERE quell'unico elettrone: cosi quel mezzo strato sparisce e resta lo strato precedente, che e gia pieno (8 elettroni). Il cloro (Cl) ha invece 7 elettroni nello strato esterno: ne manca solo uno per arrivare a 8. Gli conviene PRENDERE un elettrone. Risultato: il sodio cede il suo elettrone al cloro. Il sodio diventa uno ione Na⁺ (ha perso un elettrone negativo → diventa positivo). Il cloro diventa uno ione Cl⁻ (ha guadagnato un elettrone → diventa negativo). Entrambi hanno ora 8 elettroni nello strato esterno → ottetto completo → stabilita. Gli ioni Na⁺ e Cl⁻ si attraggono (cariche opposte) e formano il sale. Questo tipo di legame (un atomo cede, l'altro prende) si chiama legame ionico.",
+    "explain": "Punto chiave: chi ha pochi elettroni esterni li cede, chi ne ha quasi 8 li prende. In entrambi i casi l'obiettivo e lo stesso: arrivare a 8. Na⁺ e Cl⁻ sono anche fondamentali per nervi e muscoli negli animali.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-10-4",
+    "topicId": "chim-u1-10",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Nella molecola HF (acido fluoridrico), il fluoro ha completato l'ottetto condividendo 1 coppia di elettroni con l'idrogeno. Quanti elettroni NON condivisi (cioe che appartengono solo al fluoro) restano nello strato esterno del fluoro?",
+    "choices": [
+      "6",
+      "7",
+      "2",
+      "4",
+      "0"
+    ],
+    "answer": 0,
+    "explain": "Il fluoro ha 7 elettroni nello strato esterno. Ne condivide 1 con l'idrogeno (formando 1 coppia di legame = 2 elettroni condivisi, di cui 1 e del fluoro). Gli restano quindi 7 − 1 = 6 elettroni NON condivisi (3 coppie solitarie). Trappole: '7' e la risposta di chi dimentica che un elettrone viene impegnato nel legame; '2' e chi confonde gli elettroni non condivisi con la coppia di legame; '4' e un numero intermedio che sembra plausibile ma non ha senso chimico; '0' e chi pensa che il fluoro usi tutti i suoi elettroni.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-10-5",
+    "topicId": "chim-u1-10",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sulla regola dell'ottetto e FALSA?",
+    "choices": [
+      "I gas nobili hanno gia 8 elettroni esterni e per questo non reagiscono quasi mai",
+      "Per completare l'ottetto un atomo puo cedere, prendere o condividere elettroni",
+      "Gli atomi rispettano la regola dell'ottetto solo se cedono elettroni, mai se li prendono",
+      "L'acqua (H2O) si forma perche l'ossigeno completa il suo ottetto condividendo elettroni con due idrogeni",
+      "I legami chimici tra atomi nascono proprio dalla 'voglia' di completare l'ottetto"
+    ],
+    "answer": 2,
+    "explain": "La frase falsa e la C: non esiste una preferenza fissa per 'solo cedere'. Un atomo sceglie la strategia piu conveniente in base a quanti elettroni ha: se ne ha pochi (es. sodio con 1) li cede; se ne ha quasi 8 (es. cloro con 7) ne prende; se conviene a entrambi, li condividono (es. H2O). Le altre affermazioni sono tutte corrette e si trovano direttamente nella regola dell'ottetto.",
+    "tags": ["prova d'esame"]
+  }
+]

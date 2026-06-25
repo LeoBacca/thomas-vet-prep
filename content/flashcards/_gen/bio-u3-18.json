@@ -1,0 +1,61 @@
+[
+  {
+    "id": "fc-bio-u3-18-1",
+    "topicId": "bio-u3-18",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Il DNA usa un alfabeto di 4 lettere (le basi A, T, C, G), ma le proteine sono fatte di amminoacidi. Come fa la cellula a 'leggere' quale amminoacido mettere? Raggruppa le basi dell'mRNA in gruppetti di...",
+    "choices": ["1 base alla volta", "2 basi alla volta", "3 basi alla volta (un codone)", "4 basi alla volta"],
+    "answer": 2,
+    "explain": "La cellula legge l'mRNA a blocchi di 3 basi: ogni blocco si chiama codone ed è la 'parola' che indica un amminoacido. È come leggere una frase senza spazi tagliandola ogni 3 lettere. Con 4 basi e gruppi da 3 si ottengono 4³ = 64 combinazioni, più che sufficienti per i 20 amminoacidi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-18-2",
+    "topicId": "bio-u3-18",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: dire che il codice genetico è 'degenerato' significa che è rotto o difettoso.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. 'Degenerato' (o ridondante) significa solo che più codoni diversi possono indicare lo STESSO amminoacido: per esempio la leucina ha ben 6 codoni. È come avere più parole sinonime per la stessa cosa. Anzi, è una sicurezza: se cambia una base, spesso l'amminoacido resta lo stesso e la proteina non si rompe.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-18-3",
+    "topicId": "bio-u3-18",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Lo stesso identico codice genetico (per esempio AUG = metionina) viene usato sia da un batterio sia da un elefante. Perché gli scienziati considerano questo fatto una prova potente che tutti gli esseri viventi hanno un'origine comune?",
+    "answer": "Perché il codice genetico è (quasi) universale: AUG significa metionina nei batteri, nelle piante, negli animali e nei virus, allo stesso modo. Se ogni gruppo di esseri viventi si fosse evoluto in modo del tutto indipendente, ci aspetteremmo dizionari codone-amminoacido diversi, scelti a caso. Il fatto che sia praticamente lo stesso per tutti si spiega bene se tutti discendono da un unico antenato comune, che già usava quel codice e l'ha trasmesso ai suoi discendenti. Esistono pochissime eccezioni (per esempio nei mitocondri), ma la regola generale vale per la stragrande maggioranza degli organismi.",
+    "explain": "Da ricordare: il codice è quasi universale; questa condivisione è un forte indizio di antenato comune.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-18-4",
+    "topicId": "bio-u3-18",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Su un filamento di mRNA c'è il codone UUU, che corrisponde all'amminoacido fenilalanina. Quale anticodone avrà il tRNA capace di portare questo amminoacido?",
+    "choices": ["UUU", "AAA", "TTT", "GGG", "CCC"],
+    "answer": 1,
+    "explain": "L'anticodone del tRNA si appaia al codone in modo COMPLEMENTARE, come due pezzi di puzzle: di fronte a ogni U dell'mRNA va una A. Quindi UUU → anticodone AAA. Trappole: 'UUU' è copiare il codone tale e quale (sbagliato, va appaiato non copiato); 'TTT' usa la T, ma nell'RNA la timina non esiste, c'è l'uracile (U); 'GGG' e 'CCC' sono fuori tema, non si appaiano con U.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-18-5",
+    "topicId": "bio-u3-18",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Una proteina è formata da 150 amminoacidi. Qual è il numero MINIMO di codoni che deve contenere l'mRNA che la codifica?",
+    "choices": ["75", "300", "150", "50", "450"],
+    "answer": 2,
+    "explain": "Ogni amminoacido è indicato da esattamente 1 codone (= 3 basi). Quindi per 150 amminoacidi servono come minimo 150 codoni: il rapporto è 1 a 1. Trappole: '450' è il numero di BASI (150 × 3), non di codoni; '50' divide per 3 (errore inverso, come se un codone bastasse per 3 amminoacidi); '300' raddoppia senza motivo; '75' dimezza. Attenzione a non confondere 'codoni' con 'basi'.",
+    "tags": ["prova d'esame"]
+  }
+]

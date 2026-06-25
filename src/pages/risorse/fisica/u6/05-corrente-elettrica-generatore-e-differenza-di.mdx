@@ -1,0 +1,72 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u6-05">
+
+## Cos'è la corrente elettrica?
+
+Immagina un tubo pieno d'acqua. Se spingi l'acqua da un lato, scorre dall'altra parte. La corrente elettrica funziona allo stesso modo: è un **flusso di cariche elettriche** (di solito elettroni) che si spostano lungo un filo conduttore.
+
+La corrente si indica con la lettera **I** e si misura in **Ampere (A)**.
+
+Più cariche passano in un secondo, più la corrente è intensa.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La corrente elettrica è come il flusso d'acqua in un tubo — più "acqua" passa al secondo, più forte è la corrente.</div>
+
+## La differenza di potenziale
+
+L'acqua nel tubo scorre solo se c'è un **dislivello**: un lato alto e uno basso. Senza dislivello, l'acqua sta ferma.
+
+In elettricità il "dislivello" si chiama **differenza di potenziale** (o **tensione**). Si indica con **V** (o ΔV) e si misura in **Volt (V)**.
+
+- Se la differenza di potenziale è alta → gli elettroni vengono spinti con forza → corrente intensa.
+- Se la differenza di potenziale è zero → gli elettroni non si spostano → niente corrente.
+
+## Il generatore
+
+Chi crea il dislivello? Il **generatore** (ad esempio una pila o una batteria).
+
+Il generatore ha due poli:
+- **Polo positivo (+)**: a potenziale più alto.
+- **Polo negativo (−)**: a potenziale più basso.
+
+Il generatore "pompa" continuamente le cariche da un polo all'altro, mantenendo costante la differenza di potenziale. Senza il generatore, la corrente si esaurirebbe in fretta.
+
+<Diagram caption="Dal generatore alla corrente: schema del circuito semplice" code={`flowchart LR
+  G["Generatore<br/>(pila)"] -->|"polo +"| F["Filo conduttore"]
+  F --> U["Utilizzatore<br/>(es. lampadina)"]
+  U -->|"polo -"| G`} />
+
+<Diagram caption="Analogia idraulica: pompa = generatore, acqua = cariche elettriche" code={`flowchart TB
+  P["Pompa idraulica<br/>(= generatore)"] -->|"spinge l'acqua"| T["Tubo in alto<br/>(= polo +)"]
+  T -->|"scorre verso il basso"| R["Ruota ad acqua<br/>(= utilizzatore)"]
+  R -->|"ritorna alla pompa"| P`} />
+
+## Guarda il video
+<YouTube id="UUvcykH33Xo" title="La corrente elettrica, generatori di tensione, intensità di corrente e verso della corrente" />
+<VideoVisto id="fis-u6-05" />
+
+## Da ricordare
+- La corrente elettrica è un flusso di cariche; si misura in Ampere (A).
+- La differenza di potenziale (tensione) è il "dislivello" che mette in moto le cariche; si misura in Volt (V).
+- Il generatore mantiene costante la differenza di potenziale e permette alla corrente di scorrere in modo continuo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Che cosa rappresenta la corrente elettrica?" opzioni={["Un accumulo di cariche ferme in un punto","Un flusso continuo di cariche elettriche in movimento","La forza con cui un generatore spinge gli elettroni","L'energia immagazzinata in un condensatore"]} corretta={1} spiegazione="La corrente elettrica è proprio il flusso di cariche in movimento (di solito elettroni) attraverso un conduttore. Non è energia immagazzinata né accumulo statico." />
+
+<Quiz domanda="In quale unità di misura si esprime la differenza di potenziale (tensione)?" opzioni={["Ampere (A)","Watt (W)","Volt (V)","Ohm (Ω)"]} corretta={2} spiegazione="La differenza di potenziale si misura in Volt (V). L'Ampere misura la corrente, il Watt la potenza e l'Ohm la resistenza." />
+
+<Quiz domanda="Cosa succede alla corrente se la differenza di potenziale tra i due capi di un circuito è zero?" opzioni={["La corrente raddoppia","La corrente rimane costante","Non scorre nessuna corrente","La corrente diventa alternata"]} corretta={2} spiegazione="Senza differenza di potenziale non c'è 'dislivello' che spinga le cariche: gli elettroni non si spostano e la corrente è zero." />
+
+<Esercizio problema="Una pila ha una differenza di potenziale di 9 V tra i suoi poli. Se attraverso il circuito collegato passano 2 A di corrente, in quanto tempo passano 10 coulomb di carica?" soluzione="Per definizione, la corrente I = Q / t, quindi t = Q / I = 10 C / 2 A = 5 secondi. In 5 secondi passano 10 coulomb di carica attraverso il circuito." />
+
+</section>
+
+</RisorsaLayout>

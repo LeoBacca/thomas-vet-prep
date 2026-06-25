@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u3-01-1",
+    "topicId": "fis-u3-01",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: l'olio galleggia sull'acqua perché è più leggero nel senso che occupa meno spazio (volume minore) dell'acqua.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'olio galleggia perché è MENO DENSO, non perché occupa meno spazio. La densità (ρ = m/V) dice quanto pesa ogni litro di una sostanza: un litro d'olio pesa circa 900 g, un litro d'acqua pesa 1000 g. Stesso volume, meno massa → olio galleggia. In veterinaria: le lipoproteine nel sangue degli animali si comportano in modo simile — quelle con densità bassa (LDL) 'galleggiano' nelle fasi più dense.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-01-2",
+    "topicId": "fis-u3-01",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Pensi alle ciaspole da neve: distribuiscono il peso del corpo su una superficie grande. Questo serve a...",
+    "choices": [
+      "Aumentare la pressione sul terreno, così si cammina più veloce",
+      "Ridurre la pressione sul terreno, così non si affonda nella neve",
+      "Aumentare la forza che il corpo esercita sulla neve",
+      "Rendere il peso del corpo minore"
+    ],
+    "answer": 1,
+    "explain": "La pressione è P = F/A: la forza (il peso del corpo) resta uguale, ma l'area A è molto più grande con le ciaspole. Denominatore grande → P piccola → non affondi. Senza ciaspole, stessi piedi stretti (area piccola) → pressione altissima → affondi. Questo principio spiega anche le unghie degli zoccoli degli equini: forma e area dell'unghia determinano la pressione sul terreno.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-01-3",
+    "topicId": "fis-u3-01",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "open",
+    "q": "Spiega con parole tue: perché un sub che scende a 10 metri sott'acqua sente una pressione maggiore rispetto alla superficie? Usa la formula di Stevino e fai un ragionamento.",
+    "answer": "In un fluido, la pressione totale è data dalla formula di Stevino: P = P₀ + ρ · g · h, dove P₀ è la pressione in superficie (pressione atmosferica, circa 100.000 Pa), ρ è la densità dell'acqua (1000 kg/m³), g è la gravità (≈ 9,8 m/s²) e h è la profondità. Più si scende (h cresce), più la colonna d'acqua sopra è alta e pesa di più: tutta quell'acqua preme verso il basso e di lato. A 10 metri il termine ρ·g·h vale circa 1000 × 9,8 × 10 = 98.000 Pa ≈ 100.000 Pa, che si somma alla pressione atmosferica: la pressione raddoppia rispetto alla superficie. È come stare sotto a un materasso sempre più pesante man mano che si aggiungono strati.",
+    "explain": "Formula chiave: P = P₀ + ρ·g·h. Profondità doppia → pressione idrostatica doppia; la pressione totale non raddoppia esattamente perché P₀ non cambia, ma a 10 m circa raddoppia.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u3-01-4",
+    "topicId": "fis-u3-01",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Una beuta vuota pesa 40 g. Riempita d'acqua (densità 1,00 g/cm³) pesa 240 g. Riempita di un altro liquido pesa 260 g. Qual è la densità di quel liquido, in g/cm³?",
+    "choices": [
+      "1,10 g/cm³",
+      "0,91 g/cm³",
+      "2,20 g/cm³",
+      "1,00 g/cm³",
+      "0,83 g/cm³"
+    ],
+    "answer": 0,
+    "explain": "Passo 1: massa dell'acqua = 240 − 40 = 200 g. Poiché la densità dell'acqua è 1,00 g/cm³, il volume della beuta è V = m/ρ = 200/1,00 = 200 cm³. Passo 2: massa del liquido incognito = 260 − 40 = 220 g. Passo 3: ρ_liquido = m/V = 220/200 = 1,10 g/cm³. Trappola '0,91': è l'inverso, cioè 200/220 ≈ 0,91 (numeratore e denominatore scambiati). Trappola '2,20': si ottiene dividendo 220 per un volume sbagliato di 100 cm³ invece di 200 cm³ (errore sul volume). Trappola '1,00': ha confuso il liquido con l'acqua e riportato la densità dell'acqua. Trappola '0,83': è 200/240, cioè ha usato come denominatore il peso totale della beuta piena d'acqua invece del volume. Ricorda: V si ricava dall'acqua (densità nota), poi usi quel V per il liquido incognito.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u3-01-5",
+    "topicId": "fis-u3-01",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Su una superficie di 50 cm² agisce una pressione di 1,2 × 10⁵ Pa. Qual è la forza perpendicolare su quella superficie? (Ricorda: 1 m² = 10.000 cm²)",
+    "choices": [
+      "600 N",
+      "60 N",
+      "6 N",
+      "300 N",
+      "3 N"
+    ],
+    "answer": 0,
+    "explain": "La formula è F = P × A. Prima converti l'area in m²: 50 cm² = 50/10.000 m² = 0,005 m² = 5 × 10⁻³ m². Poi: F = 1,2 × 10⁵ Pa × 5 × 10⁻³ m² = 600 N. Trappola '60 N': si ottiene sbagliando la conversione di un fattore 10, cioè usando 0,0005 m² invece di 0,005 m² (come se 50 cm² facessero 5 × 10⁻⁴ m²). Trappola '6 N': stesso tipo di errore ma di un fattore 100 (area 5 × 10⁻⁵ m²). Trappola '300 N': è la metà del valore giusto, tipico di chi divide per 2 senza motivo. Trappola '3 N': errore di conversione ancora più grande nella stessa direzione di '6 N'. Regola: converti SEMPRE l'area in m² (dividi i cm² per 10.000) prima di applicare F = P × A.",
+    "tags": ["prova d'esame"]
+  }
+]

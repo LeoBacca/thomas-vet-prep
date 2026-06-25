@@ -1,0 +1,221 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import '@/styles/studio.css';
+const base = import.meta.env.BASE_URL;
+const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
+---
+<BaseLayout title="Sfida">
+  <div class="studio fc-wrap">
+    <div class="fc-top">
+      <span class="fc-left">
+        <a href={u('studio/')} style="text-decoration:none">‹ Dashboard</a>
+        <span class="help" tabindex="0" aria-label="Come funziona">?
+          <span class="help-bubble">
+            <b>⚔️ Sfida lampo</b><br>
+            10 domande a risposta multipla, a tempo, solo per divertirti e fare XP
+            (<b>non cambia il ripasso</b> dello "Studia oggi"). Più rispondi veloce e di fila
+            (combo), più punti.<br>
+            Dopo ogni risposta <b>il timer si ferma</b>: leggi con calma la spiegazione e apri
+            la risorsa. A fine partita trovi l'<b>elenco degli argomenti da ripassare</b>.
+          </span>
+        </span>
+      </span>
+      <span id="progress"></span>
+      <span class="score">⭐ <span id="score">0</span> · <span class="combo">🔥<span id="combo">0</span></span></span>
+    </div>
+
+    <div id="intro" class="s-panel" style="text-align:center">
+      <p style="font-size:1.4rem;margin:.2rem">⚔️ Sfida lampo</p>
+      <p style="color:var(--muted,#666)">10 domande a risposta multipla, a tempo. Più sei veloce e di fila, più punti! Non intacca il ripasso SRS: è solo per divertirsi e fare XP. Dopo ogni risposta il timer si ferma, così leggi con calma.</p>
+      <p style="margin:.6rem 0 .2rem">Materia:</p>
+      <select id="materia" class="btn" style="min-width:160px"></select>
+      <div style="margin-top:1rem"><button class="btn primary" id="startBtn" style="font-size:1.1rem">▶️ Inizia</button></div>
+      <p style="font-size:.85rem;color:var(--muted,#666);margin-top:1rem">Record: <b id="best">0</b> punti</p>
+    </div>
+
+    <div id="game" class="hidden">
+      <div class="timerbar"><span id="timer"></span></div>
+      <div class="fc-card">
+        <span class="fc-tag" id="cardTag"></span>
+        <div class="fc-q" id="q"></div>
+        <div class="fc-choices" id="choices"></div>
+        <div class="fc-explain hidden" id="explain"></div>
+      </div>
+      <div id="nextArea"></div>
+    </div>
+
+    <div id="end" class="s-panel s-summary hidden">
+      <p class="big" id="endScore">0</p>
+      <p id="endLine">—</p>
+      <div id="endBadge" style="color:#a0780f;font-weight:600;margin:.4rem 0"></div>
+      <div id="endReport"></div>
+      <div class="s-tools" style="justify-content:center;margin-top:1rem">
+        <button class="btn primary" id="againBtn">🔁 Rigioca</button>
+        <a class="btn" href={u('studio/')}>Dashboard</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import { load, save } from '../../scripts/studio/store.js';
+    import { applyChallenge } from '../../scripts/studio/game.js';
+    import { challengePool, CARDS_META, MATERIE, ALL_CARDS, ripasso } from '../../scripts/studio/cards.js';
+
+    const $ = (id) => document.getElementById(id);
+    const TIME = 15; // secondi per RISPONDERE (poi il timer si ferma per leggere)
+    const N = 10;
+    let state = load();
+    let deck = [], i = 0, score = 0, combo = 0, bestCombo = 0, correctCount = 0;
+    let toReview = [];   // argomenti sbagliati/scaduti -> report finale
+    let timer = null, remaining = 0, answered = false;
+
+    // popola materie disponibili (solo quelle con card a risposta multipla)
+    const have = new Set(ALL_CARDS.filter((c) => c.type === 'mc' || c.type === 'tf').map((c) => c.materia));
+    const sel = $('materia');
+    sel.innerHTML = '<option value="">Tutte</option>' +
+      MATERIE.filter((m) => have.has(m.key)).map((m) => '<option value="' + m.key + '">' + m.emoji + ' ' + m.nome + '</option>').join('');
+    $('best').textContent = state.challenge.bestScore || 0;
+
+    $('startBtn').addEventListener('click', start);
+    $('againBtn').addEventListener('click', () => { $('end').classList.add('hidden'); $('intro').classList.remove('hidden'); state = load(); $('best').textContent = state.challenge.bestScore || 0; });
+
+    function start() {
+      deck = challengePool(N, { materia: sel.value || null });
+      i = 0; score = 0; combo = 0; bestCombo = 0; correctCount = 0; toReview = [];
+      $('intro').classList.add('hidden'); $('end').classList.add('hidden'); $('game').classList.remove('hidden');
+      $('score').textContent = '0'; $('combo').textContent = '0';
+      renderCard();
+    }
+
+    function renderCard() {
+      answered = false;
+      const card = deck[i];
+      $('progress').textContent = (i + 1) + '/' + deck.length;
+      $('cardTag').textContent = (card.materia || '').toUpperCase();
+      $('q').textContent = card.q;
+      $('explain').className = 'fc-explain hidden';
+      $('nextArea').innerHTML = '';
+      const choices = $('choices'); choices.innerHTML = '';
+      card.choices.forEach((c, idx) => {
+        const b = document.createElement('button');
+        b.className = 'fc-choice'; b.textContent = c;
+        b.addEventListener('click', () => answer(card, idx));
+        choices.appendChild(b);
+      });
+      startTimer();
+    }
+
+    function startTimer() {
+      remaining = TIME * 1000;
+      $('timer').style.width = '100%';
+      $('timer').classList.remove('paused');
+      const t0 = Date.now();
+      clearInterval(timer);
+      timer = setInterval(() => {
+        if (answered) { clearInterval(timer); return; }
+        remaining = TIME * 1000 - (Date.now() - t0);
+        if (remaining <= 0) { remaining = 0; $('timer').style.width = '0%'; answer(deck[i], -1); }
+        else $('timer').style.width = (remaining / (TIME * 1000) * 100) + '%';
+      }, 80);
+    }
+
+    function answer(card, idx) {
+      if (answered) return;        // niente doppi click / timeout dopo risposta
+      answered = true;
+      clearInterval(timer);
+      $('timer').classList.add('paused');   // il timer si ferma: tempo libero per leggere
+      const secsLeft = Math.max(0, remaining / 1000);
+      const isCorrect = idx === card.answer;
+      document.querySelectorAll('#choices .fc-choice').forEach((b, k) => {
+        b.disabled = true;
+        if (k === card.answer) b.classList.add('correct');
+        else if (k === idx) b.classList.add('wrong');
+      });
+
+      const explain = $('explain');
+      if (isCorrect) {
+        combo++; bestCombo = Math.max(bestCombo, combo); correctCount++;
+        const pts = 100 + Math.round(secsLeft * 5) + combo * 10;
+        score += pts;
+        explain.className = 'fc-explain';
+        explain.innerHTML = '✅ +' + pts + ' punti' + (combo > 1 ? '  (combo ×' + combo + ')' : '');
+        if (card.explain) {
+          const ex = document.createElement('div');
+          ex.style.cssText = 'margin-top:.4rem;color:var(--muted,#666);font-size:.9rem';
+          ex.textContent = card.explain;
+          explain.appendChild(ex);
+        }
+      } else {
+        combo = 0;
+        if (card.topicId && !toReview.includes(card.topicId)) toReview.push(card.topicId);
+        explain.className = 'fc-explain ko';
+        explain.innerHTML = (idx === -1 ? '⏱️ <b>Tempo scaduto!</b> ' : '❌ ');
+        explain.appendChild(document.createTextNode(card.explain || ''));
+      }
+
+      // link cliccabile alla risorsa (anche quando giusta, per riguardare)
+      const link = ripasso(card.topicId);
+      if (link) {
+        const a = document.createElement('a');
+        a.href = link.href;
+        a.className = 'fc-ripasso' + (isCorrect ? ' soft' : '');
+        a.textContent = (isCorrect ? '📖 Vai al concetto: ' : '🔁 Meglio ripassare: ') + link.titolo;
+        explain.appendChild(document.createElement('br'));
+        explain.appendChild(a);
+      }
+
+      $('score').textContent = score; $('combo').textContent = combo;
+
+      // NIENTE auto-avanzamento: tasto "Continua" così c'è tutto il tempo di leggere.
+      const nb = document.createElement('button');
+      nb.className = 'btn primary'; nb.style.marginTop = '.8rem';
+      nb.textContent = (i + 1 >= deck.length) ? 'Vedi risultato →' : 'Continua →';
+      nb.addEventListener('click', () => { i++; if (i >= deck.length) finish(); else renderCard(); });
+      $('nextArea').appendChild(nb);
+    }
+
+    function finish() {
+      $('game').classList.add('hidden');
+      const perfect = correctCount === deck.length;
+      const prevBest = state.challenge.bestScore || 0;
+      const res = applyChallenge(state, { score, total: deck.length, correct: correctCount, perfect, streak: bestCombo }, CARDS_META);
+      save(state);
+
+      $('end').classList.remove('hidden');
+      $('endScore').textContent = '⭐ ' + score;
+      $('endLine').textContent = correctCount + '/' + deck.length + ' giuste · combo max ' + bestCombo + ' · +' + res.xpGained + ' XP';
+      const badges = [];
+      if (perfect) badges.push('💎 PERFETTO, nessun errore!');
+      if (score > prevBest) badges.push('🏆 Nuovo record!');
+      if (res.leveledUp) badges.push('⬆️ Livello ' + res.level + '!');
+      if (res.newAchievements.length) badges.push('🎖️ ' + res.newAchievements.length + ' nuova/e medaglia/e!');
+      $('endBadge').innerHTML = badges.join('<br>');
+
+      renderReport();
+    }
+
+    // Report finale: tutti gli argomenti sbagliati, con link cliccabile alle Risorse.
+    function renderReport() {
+      const box = $('endReport'); box.innerHTML = '';
+      if (!toReview.length) {
+        box.innerHTML = '<p style="color:#2c6e34;font-weight:600;margin:.6rem 0">👏 Niente da ripassare: le hai prese tutte!</p>';
+        return;
+      }
+      const h = document.createElement('p');
+      h.style.cssText = 'font-weight:700;margin:1rem 0 .4rem';
+      h.textContent = '📋 Da ripassare (' + toReview.length + '):';
+      box.appendChild(h);
+      const ul = document.createElement('div');
+      ul.className = 'review-list';
+      for (const tid of toReview) {
+        const link = ripasso(tid);
+        if (!link) continue;
+        const a = document.createElement('a');
+        a.href = link.href; a.className = 'review-item';
+        a.textContent = '🔁 ' + link.titolo;
+        ul.appendChild(a);
+      }
+      box.appendChild(ul);
+    }
+  </script>
+</BaseLayout>

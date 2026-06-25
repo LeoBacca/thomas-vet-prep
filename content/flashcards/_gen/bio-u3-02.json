@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u3-02-1",
+    "topicId": "bio-u3-02",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: l'elicasi apre la doppia elica del DNA rompendo i legami a idrogeno tra le basi azotate, consumando energia (ATP).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. L'elicasi e come un cursore che apre una cerniera lampo: usa l'energia dell'ATP per spezzare i legami a idrogeno che tengono uniti i due filamenti. Il punto in cui si apre si chiama forcella di replicazione. Senza elicasi, la cellula non potrebbe mai copiare il DNA.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-02-2",
+    "topicId": "bio-u3-02",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Perche, mentre l'elicasi apre il DNA, serve anche la topoisomerasi? Quale problema risolve?",
+    "choices": [
+      "Porta i nucleotidi al sito dove si copia il DNA",
+      "Elimina le tensioni torsionali (il superavvolgimento) che si accumulano davanti alla forcella",
+      "Taglia il DNA in frammenti piccoli per copiarlo piu facilmente",
+      "Produce l'ATP necessario all'elicasi"
+    ],
+    "answer": 1,
+    "explain": "Quando l'elicasi apre la cerniera del DNA, il tratto davanti si avvolge sempre di piu su se stesso, come un elastico che torti troppo. Questo 'superavvolgimento positivo' bloccherebbe l'elicasi. La topoisomerasi taglia temporaneamente il DNA, lascia scaricare la tensione e poi risalda il taglio. Le altre opzioni descrivono funzioni di altri enzimi (DNA polimerasi, nucleasi, ecc.) che non c'entrano.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-02-3",
+    "topicId": "bio-u3-02",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Immagina che in una cellula venga bloccata solo la topoisomerasi. L'elicasi funziona ancora. Cosa succederebbe alla replicazione del DNA e perche?",
+    "answer": "L'elicasi riuscirebbe ad aprire i primi tratti di DNA, ma davanti alla forcella di replicazione si accumulerebbe rapidamente un superavvolgimento positivo crescente. Il DNA davanti si avvolgerebbe sempre di piu su se stesso (come un elastico che torti senza mai potersi destorcere), creando una tensione torsionale che blocca meccanicamente l'avanzamento dell'elicasi. La replicazione rallenta e si ferma, anche se l'elicasi e perfettamente funzionante. Questo succede perche elicasi e topoisomerasi lavorano in tandem: senza topoisomerasi, l'elicasi rimane 'intrappolata' dalle tensioni che essa stessa genera. Curiosita veterinaria: certi antibiotici (come i fluorochinoloni) funzionano esattamente cosi, bloccando le topoisomerasi batteriche per fermare la replica dei batteri.",
+    "explain": "Punto chiave: senza topoisomerasi il superavvolgimento positivo si accumula davanti alla forcella fino a bloccare l'elicasi. Le due proteine sono indispensabili insieme.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-02-4",
+    "topicId": "bio-u3-02",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Durante la duplicazione del DNA negli eucarioti si formano le bolle di replica. Quale enzima causa la rottura dei legami a idrogeno tra le basi azotate?",
+    "choices": [
+      "DNA ligasi",
+      "DNA polimerasi",
+      "Elicasi",
+      "Telomerasi",
+      "Replicasi"
+    ],
+    "answer": 2,
+    "explain": "L'elicasi e l'unico enzima che rompe i legami a idrogeno tra le basi azotate, aprendo la doppia elica e formando la forcella (e quindi le bolle di replica). Smontare le trappole: la DNA ligasi UNISCE frammenti gia presenti (fa il contrario, ricongiunge); la DNA polimerasi aggiunge nuovi nucleotidi sul filamento stampo ma non apre l'elica; la telomerasi allunga le estremita dei cromosomi (i telomeri) e non partecipa all'apertura; 'replicasi' e un termine generico o non specifico, non un enzima ben definito con questo ruolo.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-02-5",
+    "topicId": "bio-u3-02",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Quale affermazione descrive CORRETTAMENTE la differenza tra topoisomerasi I e topoisomerasi II?",
+    "choices": [
+      "La topoisomerasi I taglia entrambi i filamenti del DNA; la II taglia solo un filamento",
+      "La topoisomerasi I taglia un solo filamento; la II taglia entrambi i filamenti",
+      "La topoisomerasi I apre la doppia elica; la topoisomerasi II la risalda",
+      "La topoisomerasi I agisce solo durante la trascrizione; la II solo durante la replicazione",
+      "La topoisomerasi I usa ATP; la topoisomerasi II non ne ha bisogno"
+    ],
+    "answer": 1,
+    "explain": "La topoisomerasi I fa un taglio su UN SOLO filamento e permette al filamento intatto di ruotare attorno al taglio, scaricando la tensione. La topoisomerasi II taglia ENTRAMBI i filamenti, fa passare un tratto di DNA attraverso il taglio, poi risalda: questo le permette anche di separare cromosomi intrecciati. Trappole da smontare: l'opzione A inverte esattamente i ruoli dei due tipi (e l'opposto esatto della risposta giusta). L'opzione C confonde la topoisomerasi con l'elicasi (che apre) e la ligasi (che risalda): la topoisomerasi fa entrambe le cose da sola, in sequenza. L'opzione D e falsa: entrambe partecipano sia alla replicazione sia alla trascrizione. L'opzione E inverte la realta: e la topoisomerasi II a richiedere ATP, non la I.",
+    "tags": ["prova d'esame"]
+  }
+]

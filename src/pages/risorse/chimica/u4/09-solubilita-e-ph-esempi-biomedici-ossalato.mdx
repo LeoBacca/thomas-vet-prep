@@ -1,0 +1,83 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-09">
+
+Quando sciogli lo zucchero nel caffè, a un certo punto non se ne scioglie più: il resto si deposita sul fondo. Alcuni sali nel nostro corpo fanno la stessa cosa: si sciolgono poco e, se ce n'è troppo, **precipitano** formando dei piccoli **cristalli solidi**. Questi cristalli sono i protagonisti dei **calcoli renali** e della **gotta**. E c'è un "interruttore" che decide se si formano oppure no: il **pH**, cioè quanto un liquido è acido o basico. Capire questo legame ti fa capire una bella fetta di medicina.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un sale poco solubile è come zucchero in poca acqua: oltre un certo limite non si scioglie più e si formano cristalli. Il pH (acido o basico) sposta quel limite, quindi decide se i cristalli si formano o si sciolgono.</div>
+
+<Diagram caption="Il pH come interruttore: stesso sale, esito diverso" code={`flowchart TB
+  S["Sale poco solubile<br/>sciolto nel liquido del corpo"] --> PH{"Com'e il pH?"}
+  PH -->|"pH sfavorevole"| P["Il sale PRECIPITA<br/>si formano cristalli solidi"]
+  PH -->|"pH favorevole"| D["Il sale resta DISCIOLTO<br/>niente cristalli"]`} />
+
+## Cosa vuol dire "poco solubile" e cosa c'entra il pH
+
+Un sale è fatto da due pezzi con carica opposta che, nell'acqua, possono stare **separati** (disciolti) oppure **uniti** in un cristallo solido. Finché ce n'è poco, restano separati e galleggiano nel liquido. Se diventano troppi, si attaccano tra loro e cadono giù come solido: è la **precipitazione**.
+
+Il pH entra in gioco perché molti di questi pezzi sono "sensibili" all'acidità. Pensa così: in un liquido **acido** ci sono tanti ioni idrogeno (li chiamiamo H+, sono le particelle che danno il sapore aspro). Questi H+ a volte si "agganciano" a uno dei due pezzi del sale e lo trasformano in qualcosa di **più solubile**, che resta disciolto. Togli l'acidità (liquido più basico) e quel pezzo torna nella forma che **precipita** facilmente.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> in tanti sali, più acido = più si scioglie, meno cristalli. Ma non vale per tutti allo stesso modo: dipende da quale sale stiamo guardando.</div>
+
+## Esempio 1: i calcoli renali di ossalato di calcio
+
+L'**ossalato di calcio** è il sale che forma il tipo più comune di **calcolo renale** (quel "sassolino" doloroso che si forma nei reni). È fatto di **calcio** (che prendi col cibo, es. latte e formaggi) e di **ossalato** (presente in spinaci, cioccolato, tè).
+
+Quando nelle urine ce n'è troppo, l'ossalato di calcio precipita e i cristalli si uniscono fino a formare il calcolo. Per questo motivo bere molta acqua aiuta: diluisce le urine, quindi ci sono meno pezzi vicini tra loro e fanno più fatica ad attaccarsi. È come allargare i tavoli in una sala: le persone si incontrano di meno.
+
+## Esempio 2: la gotta e l'acido urico
+
+La **gotta** è una malattia in cui si formano cristalli di **urato** (il "sale" dell'acido urico) nelle articolazioni, spesso nell'alluce, ed è molto dolorosa. Qui il pH conta tantissimo, ma in modo opposto all'intuizione comune.
+
+L'**acido urico** si scioglie male quando l'urina è **acida**, e si scioglie meglio quando l'urina è **più basica**. Ecco perché un trattamento usato è rendere le urine meno acide (più basiche): così l'urato resta disciolto e viene eliminato invece di formare cristalli e sassolini. È un esempio perfetto di "giro l'interruttore pH e cambio il destino del sale".
+
+<Diagram caption="Acido urico e urato: il pH dell'urina cambia tutto" code={`flowchart LR
+  U["Acido urico nelle urine"] --> A["Urina ACIDA<br/>si scioglie poco<br/>RISCHIO cristalli"]
+  U --> B["Urina piu BASICA<br/>si scioglie meglio<br/>resta disciolto"]`} />
+
+## Da ricordare
+
+- Un sale **poco solubile** resta disciolto finché ce n'è poco; se è troppo, **precipita** in cristalli solidi.
+- Il **pH** (quanto un liquido è acido o basico) è l'interruttore che sposta il limite e decide se si formano o no i cristalli.
+- L'**ossalato di calcio** è il sale dei **calcoli renali** più comuni: bere molta acqua diluisce le urine e aiuta a non farlo precipitare.
+- L'**acido urico** (gotta) si scioglie **poco** in urina acida e **meglio** in urina più basica: rendere le urine più basiche aiuta a sciogliere l'urato.
+- Regola pratica: stesso sale, pH diverso, esito diverso. Cambiare il pH è una vera "leva terapeutica".
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa vuol dire che un sale 'precipita'?"
+  opzioni={["Che si scioglie completamente nel liquido", "Che si formano cristalli solidi che si separano dal liquido", "Che evapora", "Che cambia colore"]}
+  corretta={1}
+  spiegazione="Precipitare significa che i pezzi del sale, prima disciolti, si uniscono e cadono come solido formando cristalli. È quello che succede nei calcoli e nella gotta."
+/>
+
+<Quiz
+  domanda="Perché bere molta acqua aiuta contro i calcoli di ossalato di calcio?"
+  opzioni={["Perché scioglie il calcio nello stomaco", "Perché diluisce le urine, così i pezzi del sale si incontrano di meno e precipitano meno", "Perché abbassa la temperatura del corpo", "Perché elimina l'ossalato dal cibo"]}
+  corretta={1}
+  spiegazione="Più acqua = urine più diluite = meno pezzi vicini tra loro = più difficile che si attacchino e formino cristalli."
+/>
+
+<Quiz
+  domanda="Nella gotta, l'acido urico si scioglie meglio quando l'urina è:"
+  opzioni={["più acida", "più basica", "il pH non conta", "congelata"]}
+  corretta={1}
+  spiegazione="L'acido urico si scioglie poco in urina acida e meglio in urina più basica. Per questo rendere le urine meno acide aiuta a evitare i cristalli di urato."
+/>
+
+<Esercizio
+  problema="Un paziente con gotta ha le urine molto acide e continua a formare cristalli di urato nelle articolazioni. Il medico vuole intervenire sul pH delle urine per aiutarlo. In che direzione deve spostare il pH (verso più acido o verso più basico) e perché?"
+  soluzione="Verso più basico. L'acido urico si scioglie poco quando l'urina è acida e meglio quando è più basica. Rendendo le urine meno acide (più basiche), l'urato tende a restare disciolto invece di precipitare in cristalli, e viene eliminato con l'urina."
+/>
+
+</section>
+
+</RisorsaLayout>

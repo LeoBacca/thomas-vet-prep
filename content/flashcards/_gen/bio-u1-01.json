@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-01-1",
+    "topicId": "bio-u1-01",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: la cellula procariote e la cellula eucariote si distinguono perche la prima non ha un nucleo vero — il DNA galleggia libero nel citoplasma.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il nucleo e il cartello distintivo: la cellula eucariote (animali, piante, funghi) ha il DNA chiuso dentro un involucro di membrana, come un libro in una cartella. La cellula procariote (batteri e archei) non ha quella cartella: il DNA e libero nel citoplasma. Per questo batteri e protisti stanno in domini separati.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-01-2",
+    "topicId": "bio-u1-01",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale dei tre grandi domini della vita comprende cani, gatti, funghi, piante e protisti?",
+    "choices": [
+      "Eukarya — tutti gli organismi con cellule dotate di nucleo membranoso",
+      "Bacteria — i batteri classici come E. coli",
+      "Archaea — gli organismi degli ambienti estremi",
+      "Nessuno dei tre: queste creature appartengono a regni separati dai domini"
+    ],
+    "answer": 0,
+    "explain": "Eukarya raccoglie tutto cio che ha cellule con nucleo vero: animali, piante, funghi e protisti. E come il capofamiglia di tutti i 'viventi con cartella per il DNA'. Bacteria e Archaea sono entrambe famiglie di cellule SENZA nucleo (procarioti), quindi niente cani ne funghi la dentro. L'ultima opzione confonde i 'regni' (concetto piu vecchio) con i 'domini' (la classificazione attuale in tre grandi rami).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-01-3",
+    "topicId": "bio-u1-01",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue i tre punti della teoria cellulare e spiega perche il terzo punto smonta l'idea della 'generazione spontanea' (che le cellule possano nascere dal nulla).",
+    "answer": "La teoria cellulare dice tre cose: 1) tutti gli organismi viventi sono fatti di una o piu cellule (anche l'animale piu enorme e un insieme di cellule); 2) la cellula e l'unita fondamentale della vita, cioe la piu piccola struttura capace di svolgere tutte le funzioni vitali da sola; 3) ogni cellula nasce sempre da una cellula gia esistente — mai dal nulla. Il terzo punto smonta direttamente la 'generazione spontanea': se una cellula puo nascere solo da un'altra cellula, non puo mai comparire spontaneamente dalla materia inorganica o dall'aria. Esempio concreto: quando una ferita guarisce, le nuove cellule nascono dalle cellule sane vicine che si dividono, non saltano fuori dal nulla.",
+    "explain": "I tre pilastri: 1) tutto e fatto di cellule; 2) la cellula e l'unita base; 3) ogni cellula viene da un'altra cellula. Il punto 3 nega la generazione spontanea.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-01-4",
+    "topicId": "bio-u1-01",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Secondo la teoria cellulare, quale affermazione e corretta?",
+    "choices": [
+      "Le cellule sono le unita fondamentali degli organismi viventi",
+      "Tutti gli organismi viventi sono pluricellulari",
+      "Ogni cellula nasce dall'unione di due cellule diverse",
+      "Le cellule possono formarsi a partire da anidride carbonica e acqua",
+      "Le cellule prive di organuli non sono viventi"
+    ],
+    "answer": 0,
+    "explain": "La risposta giusta e la prima: la cellula e l'unita fondamentale della vita — e proprio uno dei tre pilastri della teoria cellulare. Le trappole: 'tutti pluricellulari' e falso (i batteri sono organismi unicellulari, eppure vivono benissimo). 'Unione di due cellule' confonde la nascita di una cellula con la riproduzione sessuale di un organismo: le cellule nascono per divisione di una cellula madre, non per fusione di due. 'Formarsi da CO2 e acqua' e l'opposto esatto: e la fotosintesi che produce zuccheri, non cellule; il terzo principio della teoria dice che ogni cellula viene da un'altra cellula, mai dal nulla. 'Senza organuli non viventi' e un filler fuori tema: i batteri non hanno organuli membranosi eppure sono viventi.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-01-5",
+    "topicId": "bio-u1-01",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale affermazione sugli autotrofi e sugli eterotrofi e corretta?",
+    "choices": [
+      "Gli autotrofi si nutrono a partire da CO2 e da altre sostanze inorganiche",
+      "Solo gli eterotrofi hanno bisogno di assumere composti chimici dall'ambiente",
+      "La respirazione cellulare e presente soltanto negli eterotrofi",
+      "Soltanto gli autotrofi contengono mitocondri",
+      "Soltanto gli eterotrofi richiedono la presenza di ossigeno"
+    ],
+    "answer": 0,
+    "explain": "Gli autotrofi (come le piante) costruiscono il proprio cibo a partire da sostanze semplici come CO2 e acqua, usando energia luminosa: la risposta giusta. Le trappole: 'Solo gli eterotrofi assumono composti dall'ambiente' e falso — anche gli autotrofi assorbono acqua, sali minerali e CO2 dall'ambiente (sostanze inorganiche!); solo i composti organici pre-fatti li assumono soltanto gli eterotrofi. 'Respirazione solo negli eterotrofi' e falso: le piante respirano anche loro, di notte (e anche di giorno assieme alla fotosintesi). 'Solo gli autotrofi hanno mitocondri' e l'opposto esatto: i mitocondri servono per la respirazione cellulare e li hanno sia piante che animali (i procarioti non ne hanno, ma quelli sono un'altra storia). 'Solo gli eterotrofi richiedono ossigeno' e falso: molti autotrofi usano ossigeno nella respirazione.",
+    "tags": ["prova d'esame"]
+  }
+]

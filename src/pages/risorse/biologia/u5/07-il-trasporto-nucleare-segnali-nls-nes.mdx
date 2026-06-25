@@ -1,0 +1,127 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-07">
+
+## Il problema: chi entra e chi esce dal nucleo?
+
+Il nucleo è separato dal citoplasma da una doppia membrana, la **membrana nucleare** (o involucro nucleare). L'unico modo per attraversarla sono i **pori nucleari** (NPC, Nuclear Pore Complex): strutture enormi fatte di decine di proteine diverse.
+
+I pori non sono aperti come porte spalancate: lasciano passare liberamente solo molecole piccole (sotto ~40 kDa). Tutto il resto — proteine grandi, RNA — deve essere **trasportato attivamente**, cioè con un meccanismo controllato che consuma energia.
+
+La domanda è: come fa la cellula a decidere cosa entra e cosa esce?
+
+---
+
+## I segnali: NLS e NES — i "badge" delle proteine
+
+Ogni proteina che deve entrare o uscire dal nucleo porta una sequenza di amminoacidi specifica, come un badge identificativo.
+
+- **NLS** (*Nuclear Localization Signal*, Segnale di Localizzazione Nucleare): sequenza corta ricca di amminoacidi basici (lisina, arginina). Dice "voglio ENTRARE nel nucleo".
+- **NES** (*Nuclear Export Signal*, Segnale di Esportazione Nucleare): sequenza ricca di leucine. Dice "voglio USCIRE dal nucleo".
+
+Questi segnali vengono letti da proteine trasportatrici specifiche.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> NLS è il biglietto d'ingresso, NES è il biglietto d'uscita. Senza il biglietto giusto, non passi dal poro.</div>
+
+---
+
+## I trasportatori: importine ed esportine
+
+I trasportatori sono proteine della famiglia delle **karyopherine**. Si dividono in due gruppi:
+
+- **Importine**: riconoscono l'NLS nel citoplasma, legano la proteina "passeggera" (cargo) e la portano dentro al nucleo attraverso il poro.
+- **Esportine**: riconoscono l'NES nel nucleo, legano il cargo (proteine o RNA) e lo portano fuori nel citoplasma.
+
+Spesso l'importazione avviene in due step: prima l'**importina-alfa** riconosce l'NLS e lo lega, poi l'**importina-beta** si aggancia al complesso e guida il tutto attraverso il poro nucleare.
+
+---
+
+## Il sistema Ran: dare una direzione
+
+Il meccanismo di trasporto funziona solo se c'è una direzione chiara: le proteine devono entrare dal lato giusto e uscire dal lato giusto. Questa direzionalità è garantita dalla proteina **Ran**, una piccola GTPasi (una proteina che usa GTP come "carburante").
+
+**Ran** esiste in due forme:
+- **Ran-GTP**: presente in alta concentrazione **nel nucleo**
+- **Ran-GDP**: presente in alta concentrazione **nel citoplasma**
+
+Questo gradiente — Ran-GTP dentro, Ran-GDP fuori — è mantenuto da due enzimi:
+- **RCC1** (dentro il nucleo): ricarica Ran con GTP ("mette benzina nel serbatoio")
+- **RanGAP** (fuori, nel citoplasma): fa idrolizzare GTP in GDP ("svuota il serbatoio")
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Ran-GTP nel nucleo è come una luce verde che si accende solo dentro. Il trasportatore la vede e capisce dove si trova: se c'è luce verde, sei nel nucleo; se è spenta, sei nel citoplasma.</div>
+
+---
+
+## Come funziona l'importazione passo per passo
+
+1. Nel citoplasma, l'importina-alfa riconosce l'NLS della proteina cargo e la lega.
+2. L'importina-beta si lega al complesso e lo trascina attraverso il poro nucleare.
+3. Dentro il nucleo, **Ran-GTP** si lega all'importina-beta e la fa staccare dal cargo: la proteina viene rilasciata nel nucleo.
+4. Il complesso importina + Ran-GTP torna nel citoplasma, dove RanGAP converte il GTP in GDP.
+5. Ran-GDP ha bassa affinità per l'importina: si stacca e il trasportatore è libero per un nuovo ciclo.
+
+---
+
+## Come funziona l'esportazione passo per passo
+
+1. Dentro il nucleo, **Ran-GTP** è necessario per formare il complesso esportina + cargo (con NES) + Ran-GTP.
+2. Questo complesso triplice attraversa il poro verso il citoplasma.
+3. Nel citoplasma, **RanGAP** converte Ran-GTP in Ran-GDP.
+4. La perdita di GTP smonta il complesso: l'esportina rilascia il cargo nel citoplasma.
+5. L'esportina torna nel nucleo per un nuovo ciclo.
+
+---
+
+<Diagram caption="Trasporto di importazione: dall'NLS all'ingresso nel nucleo" code={`flowchart TB
+  A["Proteina con NLS nel citoplasma"] --> B["Importina-alfa riconosce l'NLS<br/>e lega la proteina cargo"]
+  B --> C["Importina-beta si lega al complesso<br/>e guida attraverso il poro nucleare"]
+  C --> D["Nel nucleo: Ran-GTP si lega<br/>all'importina-beta"]
+  D --> E["Il cargo viene rilasciato<br/>nel nucleo"]
+  E --> F["Importina + Ran-GTP<br/>tornano nel citoplasma"]
+  F --> G["RanGAP converte GTP in GDP<br/>— importina si stacca e si ricicla"]`} />
+
+<Diagram caption="Il gradiente Ran: come la cellula crea la direzionalità del trasporto" code={`flowchart LR
+  subgraph CITOPLASMA["CITOPLASMA"]
+    A["Ran-GDP<br/>(forma inattiva)"]
+    B["RanGAP<br/>GTP → GDP"]
+  end
+  subgraph NUCLEO["NUCLEO"]
+    C["Ran-GTP<br/>(forma attiva)"]
+    D["RCC1<br/>GDP → GTP"]
+  end
+  A -- "entra nel nucleo" --> D
+  D --> C
+  C -- "esce nel citoplasma" --> B
+  B --> A
+  C -. "IMPORT: sgancia il cargo<br/>dall'importina" .-> C
+  C -. "EXPORT: assembla il complesso<br/>esportina + cargo" .-> C`} />
+
+## Guarda il video
+<YouTube id="xn2jBCFn9mY" title="Meccanismi di trasporto nucleo-citoplasma — Importine, esportine e gradiente Ran-GTP/GDP" />
+<VideoVisto id="bio-u5-07" />
+
+## Da ricordare
+- NLS (ricco di lisina/arginina) = segnale di entrata nel nucleo; NES (ricco di leucine) = segnale di uscita; vengono letti rispettivamente da importine ed esportine.
+- Ran-GTP è concentrato nel nucleo (grazie a RCC1) e Ran-GDP nel citoplasma (grazie a RanGAP): questo gradiente è il motore che dà direzionalità al trasporto.
+- All'importazione Ran-GTP smonta il complesso nel nucleo liberando il cargo; all'esportazione Ran-GTP assembla il complesso nel nucleo e RanGAP lo smonta nel citoplasma rilasciando il cargo fuori.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una proteina con sequenza NLS deve entrare nel nucleo. Quale proteina la riconosce per prima nel citoplasma?" opzioni={["Importina-beta","Importina-alfa","Esportina (CRM1)","RanGAP"]} corretta={1} spiegazione="È l'importina-alfa a riconoscere direttamente la sequenza NLS nel citoplasma. Poi si aggancia l'importina-beta che guida il complesso attraverso il poro nucleare." />
+
+<Quiz domanda="Perché Ran-GTP è concentrato nel nucleo e Ran-GDP nel citoplasma?" opzioni={["Perché il GTP non può attraversare i pori nucleari","Perché RCC1 (nel nucleo) ricarica Ran con GTP e RanGAP (nel citoplasma) lo idrolizza a GDP","Perché le importine portano Ran-GTP dentro al nucleo ad ogni ciclo","Perché Ran-GDP viene degradato nel citoplasma"]} corretta={1} spiegazione="Il gradiente è mantenuto da due enzimi: RCC1 è localizzato nel nucleo e converte Ran-GDP in Ran-GTP; RanGAP è nel citoplasma e catalizza l'idrolisi di GTP in GDP. Questo crea una differenza di concentrazione stabile tra i due compartimenti." />
+
+<Quiz domanda="Durante l'esportazione nucleare, cosa causa il rilascio del cargo nel citoplasma?" opzioni={["Il poro nucleare taglia la sequenza NES dalla proteina","Ran-GTP viene convertito in Ran-GDP da RanGAP, smontando il complesso esportina-cargo","L'importina compete con l'esportina per lo stesso sito sul cargo","Il cargo è troppo grande per rientrare nel nucleo"]} corretta={1} spiegazione="Nel citoplasma RanGAP idrolizza il GTP legato a Ran, convertendolo in Ran-GDP. Questo abbassa l'affinità dell'esportina per il complesso: il cargo viene rilasciato e l'esportina torna nel nucleo libera." />
+
+<Esercizio problema="Immagina una proteina mutante in cui la sequenza NLS è stata alterata e non è più riconoscibile. Dove si troverà questa proteina nella cellula e perché non riesce ad entrare nel nucleo? Descrivi brevemente i passaggi che salta." soluzione="La proteina resterà nel citoplasma. Normalmente il primo passo è che l'importina-alfa riconosce la sequenza NLS e forma un complesso con la proteina cargo. Se l'NLS è mutato, l'importina-alfa non riesce a legarlo: nessun complesso viene formato, l'importina-beta non ha niente da trasportare e il poro nucleare non viene attraversato. La proteina resta quindi bloccata nel citoplasma, anche se il poro è funzionante." />
+
+</section>
+
+</RisorsaLayout>

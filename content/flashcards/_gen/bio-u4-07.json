@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u4-07-1",
+    "topicId": "bio-u4-07",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: se hai l'allele dominante di una malattia genetica, svilupperai SEMPRE quella malattia.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. La PENETRANZA può essere incompleta: alcune persone hanno l'allele ma non mostrano il carattere. Ambiente, altri geni o il 'caso biologico' possono spegnere l'effetto. Esempio: con penetranza 80%, su 100 portatori, 20 non sviluppano la malattia.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-07-2",
+    "topicId": "bio-u4-07",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Due pazienti hanno entrambi la neurofibromatosi (stessa mutazione, penetranza quasi completa). Uno ha 5 macchie cutanee, l'altro ne ha 200 e tumori benigni. Questo differenza descrive:",
+    "choices": [
+      "Espressività variabile: lo stesso gene si manifesta con intensita diversa",
+      "Penetranza incompleta: uno dei due non ha davvero la mutazione",
+      "Imprinting genomico: la copia materna e quella paterna si comportano diversamente",
+      "Un errore diagnostico: non possono essere la stessa malattia"
+    ],
+    "answer": 0,
+    "explain": "L'ESPRESSIVITA risponde a 'chi ha il gene, lo mostra molto o poco?'. Entrambi hanno il gene (penetranza alta), ma l'intensita dei sintomi varia — pochi o molti: e l'espressivita variabile. La penetranza riguarda invece quanti portatori manifestano il carattere (qui alta, quasi 100%).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-07-3",
+    "topicId": "bio-u4-07",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "open",
+    "q": "Due sindromi, Prader-Willi e Angelman, sono causate da un danno alla stessa regione del cromosoma 15. Come e possibile che diano fenotipi completamente diversi?",
+    "answer": "Il motivo e l'imprinting genomico: certi geni del cromosoma 15 vengono silenziati (tramite metilazione del DNA) in modo diverso a seconda che vengano dalla madre o dal padre. Nel cromosoma 15 normale, la copia PATERNA e attiva e quella MATERNA e silenziata dall'imprinting. Nella sindrome di Prader-Willi e la copia paterna a essere assente o mutata: quella materna e silenziata, quindi nessuna copia funziona → Prader-Willi. Nella sindrome di Angelman e la copia materna a essere assente o mutata: quella paterna e silenziata, quindi di nuovo nessuna copia funziona → Angelman. Stesso cromosoma, stesso tipo di danno, fenotipo diverso perche conta l'ORIGINE PARENTALE del cromosoma colpito.",
+    "explain": "Punto chiave: con l'imprinting, non basta sapere 'quale gene e danneggiato' — bisogna sapere se viene dal padre o dalla madre, perche uno dei due e sistematicamente spento.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u4-07-4",
+    "topicId": "bio-u4-07",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "I geni A, B, C controllano tutti la produzione di un pigmento rosso (eredita poligenica). Ogni allele maiuscolo aggiunge pigmento. A quale genotipo corrisponde la massima produzione di colore?",
+    "choices": [
+      "AaBBCc — ha 4 alleli maiuscoli su 6 possibili",
+      "aaBBcc — ha solo 2 alleli maiuscoli, entrambi in BB",
+      "AaBbCc — ha 3 alleli maiuscoli: e il genotipo perfettamente intermedio",
+      "AAbbCc — ha 3 alleli maiuscoli, come AaBbCc",
+      "aabbCc — ha un solo allele maiuscolo: produzione minima"
+    ],
+    "answer": 0,
+    "explain": "Nei caratteri poligenici ogni allele maiuscolo contribuisce in modo ADDITIVO. Conta il numero totale di alleli attivi: AaBBCc ha A+BB+C = 4 alleli maiuscoli, il massimo tra le opzioni. aaBBcc ne ha 2, AaBbCc e AAbbCc ne hanno 3, aabbCc solo 1. Trappola classica: BB sembra 'doppio forte' ma vale sempre 2 alleli come due singoli — non c'e bonus per l'omozigosi in un sistema additivo.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u4-07-5",
+    "topicId": "bio-u4-07",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Quale affermazione sui caratteri poligenici e CORRETTA?",
+    "choices": [
+      "Mostrano distribuzione continua nella popolazione (curva a campana) perche molti geni contribuiscono con effetto additivo",
+      "Seguono le proporzioni mendeliane classiche (3:1) come i caratteri monogenici",
+      "L'ambiente non influenza i caratteri poligenici perche il genotipo e gia determinato",
+      "Un solo gene pleiotropico e responsabile di tutti i caratteri poligenici",
+      "I caratteri poligenici si trasmettono solo per via materna tramite imprinting"
+    ],
+    "answer": 0,
+    "explain": "I caratteri poligenici (es. altezza, colore della pelle) sono determinati da MOLTI geni con effetto additivo: chi eredita tanti alleli 'attivi' e agli estremi, la maggioranza sta nel mezzo → distribuzione a campana. Trappola 1 (opzione B): le proporzioni 3:1 di Mendel valgono per caratteri MONOGENICI. Trappola 2 (opzione C): l'ambiente amplifica la variabilita — gemelli identici possono avere altezze diverse per la dieta. Trappola 3 (opzione D): 'pleiotropia' e l'opposto, un gene che influenza piu caratteri. Trappola 4 (opzione E): confonde imprinting con poligenicita, sono concetti distinti.",
+    "tags": ["prova d'esame"]
+  }
+]

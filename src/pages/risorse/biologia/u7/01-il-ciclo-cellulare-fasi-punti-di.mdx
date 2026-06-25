@@ -1,0 +1,147 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u7-01">
+
+## Il ciclo cellulare: che cos'è?
+
+Ogni cellula del tuo corpo nasce, cresce e — se tutto va bene — si divide in due cellule figlie. L'insieme ordinato di eventi che porta da una cellula "appena nata" fino alla sua divisione si chiama **ciclo cellulare**.
+
+Pensa a una ricetta di cucina con passaggi obbligatori in sequenza: non puoi infornare la torta prima di avere impastato. Nel ciclo cellulare vale la stessa logica: ogni fase deve finire correttamente prima che inizi la successiva.
+
+---
+
+## Le 4 fasi del ciclo
+
+Il ciclo è diviso in due grandi blocchi: l'**Interfase** (la cellula si prepara) e la **Fase M** (la cellula si divide).
+
+**Interfase — tre sotto-fasi:**
+
+- **G1** (*Gap 1* — "pausa 1"): la cellula cresce, produce proteine, controlla se l'ambiente è favorevole. È qui che decide se proseguire oppure fermarsi.
+- **S** (*Sintesi*): la cellula duplica tutto il suo DNA. Ogni cromosoma viene copiato esattamente. Alla fine del periodo S il DNA è raddoppiato.
+- **G2** (*Gap 2* — "pausa 2"): la cellula controlla che la copia del DNA sia andata bene e si prepara alla divisione.
+
+**Fase M — la divisione vera e propria:**
+
+- **Mitosi**: i cromosomi duplicati vengono separati e distribuiti alle due cellule figlie.
+- **Citodieresi**: il citoplasma si divide in due, producendo due cellule identiche.
+
+Esiste anche una **fase G0**: alcune cellule escono dal ciclo e smettono di dividersi (es. neuroni adulti). È come una "pausa indefinita".
+
+---
+
+## I punti di controllo (checkpoint)
+
+Lungo il ciclo ci sono tre **checkpoint** — veri e propri "cancelli di sicurezza". Se qualcosa non va, il cancello rimane chiuso e il ciclo si blocca.
+
+| Checkpoint | Dove si trova | Cosa controlla |
+|---|---|---|
+| **G1/S** (punto di restrizione) | Fine di G1 | La cellula è abbastanza grande? L'ambiente è favorevole? Il DNA è integro? |
+| **G2/M** | Fine di G2 | Il DNA è stato copiato senza errori? |
+| **Spindle checkpoint** | A metà Mitosi | I cromosomi sono tutti agganciati correttamente al fuso? |
+
+Se un errore sfugge a tutti e tre i checkpoint, la cellula può diventare cancerosa. I checkpoint sono quindi il sistema antitruffa del ciclo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> I checkpoint sono come i controlli al gate in aeroporto: se manca qualcosa (DNA danneggiato, cromosoma non agganciato) non si parte. Solo quando tutto è in ordine il ciclo avanza.</div>
+
+---
+
+## Cicline e CDK: i semafori molecolari
+
+Per aprire ogni "cancello" servono delle proteine che danno il via. Queste proteine lavorano in coppia:
+
+- **CDK** (*Cyclin-Dependent Kinase* — chinasi ciclina-dipendente): è un enzima sempre presente nella cellula, ma da solo è **inattivo** — come un motore spento.
+- **Ciclina**: è la proteina che si lega alla CDK e la **accende**. I livelli di ciclina salgono e scendono a ogni fase del ciclo (da cui il nome: "ciclano").
+
+**Coppia = interruttore molecolare.** Solo quando la ciclina si lega alla sua CDK si forma un complesso attivo che fosforila (= aggiunge un gruppo fosfato a) altre proteine bersaglio, spingendo la cellula al passaggio successivo.
+
+Le coppie principali da ricordare:
+
+- **Ciclina D + CDK4/6** → apre il checkpoint G1/S (decide se andare verso la sintesi del DNA)
+- **Ciclina E + CDK2** → consolida il passaggio G1→S
+- **Ciclina A + CDK2** → guida la fase S (duplicazione DNA)
+- **Ciclina B + CDK1** (= MPF, *Maturation Promoting Factor*) → spinge la cellula in Mitosi
+
+Quando la fase è completata, la ciclina viene **degradata** (distrutta dal proteasoma tramite l'ubiquitina-ligasi APC/C). La CDK torna inattiva e si aspetta la ciclina della fase successiva.
+
+---
+
+<Diagram caption="Le 4 fasi del ciclo cellulare e i tre checkpoint di controllo" code={`flowchart LR
+  G0["G0<br/>Pausa indefinita<br/>(es. neuroni)"]
+  G1["G1<br/>Crescita cellulare<br/>sintesi proteine"]
+  CP1{"Checkpoint<br/>G1/S<br/>DNA intatto?<br/>Ambiente ok?"}
+  S["Fase S<br/>Duplicazione<br/>del DNA"]
+  G2["G2<br/>Controllo copia<br/>preparazione mitosi"]
+  CP2{"Checkpoint<br/>G2/M<br/>Copia DNA ok?"}
+  M["Fase M<br/>Mitosi +<br/>Citodieresi"]
+  CP3{"Spindle<br/>checkpoint<br/>Cromosomi<br/>agganciati?"}
+  FIGLIE["2 cellule<br/>figlie identiche"]
+
+  G1 --> CP1
+  CP1 -->|"No: blocco"| G0
+  CP1 -->|"Sì: avanti"| S
+  S --> G2
+  G2 --> CP2
+  CP2 -->|"No: blocco/apoptosi"| G0
+  CP2 -->|"Sì: avanti"| M
+  M --> CP3
+  CP3 -->|"No: blocco"| M
+  CP3 -->|"Sì: avanti"| FIGLIE
+  FIGLIE --> G1`} />
+
+<Diagram caption="Come lavorano le coppie ciclina-CDK per guidare il ciclo cellulare" code={`flowchart TB
+  subgraph G1S["Fase G1 → S"]
+    CicD["Ciclina D<br/>(sale in G1)"]
+    CDK46["CDK4 / CDK6<br/>(sempre presente)"]
+    RB["Proteina Rb<br/>(freno al ciclo)"]
+    CicD -->|"si lega a"| CDK46
+    CDK46 -->|"fosforila e inattiva"| RB
+    RB -->|"freno rimosso:<br/>via libera verso S"| GOON1["Avanzamento<br/>G1 → S"]
+  end
+
+  subgraph SM["Fase S → M"]
+    CicA["Ciclina A<br/>(sale in S/G2)"]
+    CDK2["CDK2"]
+    CicB["Ciclina B<br/>(sale in G2/M)"]
+    CDK1["CDK1 = MPF"]
+    CicA -->|"si lega a"| CDK2
+    CDK2 -->|"attiva"| REP["Replicazione DNA"]
+    CicB -->|"si lega a"| CDK1
+    CDK1 -->|"attiva"| MIT["Entrata in Mitosi"]
+  end
+
+  DEGRAD["APC/C + Ubiquitina<br/>degradano la ciclina<br/>a fase completata"]
+  GOON1 --> CicA
+  MIT --> DEGRAD
+  DEGRAD -->|"CDK torna inattiva"| CicD`} />
+
+---
+
+## Guarda il video
+<YouTube id="90tXsk4mkkM" title="Regolazione CICLO CELLULARE. Fattori di Crescita, Citochine, Ciclina (Proteina), Cdk (Enzima), APC" />
+<VideoVisto id="bio-u7-01" />
+
+## Da ricordare
+- Il ciclo cellulare ha 4 fasi (G1, S, G2, M): la cellula prima cresce e copia il DNA, poi si divide.
+- I tre checkpoint (G1/S, G2/M, spindle) sono cancelli di sicurezza che bloccano il ciclo se qualcosa non va.
+- Le coppie **ciclina + CDK** aprono ogni cancello: la ciclina sale, accende la CDK, poi viene degradata per fermare il segnale.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="In quale fase del ciclo cellulare avviene la duplicazione del DNA?" opzioni={["G1","S","G2","Fase M"]} corretta={1} spiegazione="La fase S (Sintesi) è dedicata esclusivamente alla duplicazione del DNA. G1 e G2 sono fasi di crescita e controllo, mentre la Fase M è quella della divisione." />
+
+<Quiz domanda="Quale coppia ciclina-CDK è responsabile dell'ingresso in Mitosi?" opzioni={["Ciclina D + CDK4","Ciclina E + CDK2","Ciclina A + CDK2","Ciclina B + CDK1"]} corretta={3} spiegazione="Il complesso Ciclina B + CDK1 (chiamato anche MPF, Maturation Promoting Factor) è il principale regolatore dell'ingresso in Mitosi. Si accumula in G2 e viene degradato alla fine della Mitosi dall'APC/C." />
+
+<Quiz domanda="Cosa succede ai livelli di ciclina quando la fase del ciclo a cui corrisponde è completata?" opzioni={["Rimangono costanti per tutto il ciclo","Aumentano ulteriormente per preparare la fase successiva","La ciclina viene degradata dal proteasoma tramite APC/C","La ciclina si trasferisce nel nucleo e rimane inattiva"]} corretta={2} spiegazione="A fine fase, il complesso APC/C (Anaphase-Promoting Complex) aggiunge ubiquitina alla ciclina, marcandola per la degradazione da parte del proteasoma. Questo abbassa bruscamente l'attività della CDK e permette al ciclo di avanzare in modo ordinato." />
+
+<Esercizio problema="Thomas studia un campione di cellule al microscopio e nota che alcune hanno il DNA ancora intatto come un'unica massa compatta (non ancora nei cromosomi visibili), mentre in altre i cromosomi sono già separati ai poli. In quale fase del ciclo si trovano i due gruppi di cellule? Qual è il checkpoint che separa queste due situazioni?" soluzione="Le cellule con il DNA non condensato in cromosomi visibili si trovano ancora in Interfase (G1, S o G2). Le cellule con i cromosomi già separati ai poli sono nella fase M avanzata (anafase/telofase della mitosi). Il checkpoint che separa le due situazioni è lo Spindle checkpoint (checkpoint del fuso mitotico), che si trova a metà della Mitosi: solo quando tutti i cromosomi sono correttamente agganciati al fuso mitotico, il complesso APC/C viene attivato, la coesina viene tagliata e le cromatidi fratelli si separano verso i poli opposti." />
+
+</section>
+
+</RisorsaLayout>

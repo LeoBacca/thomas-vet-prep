@@ -1,0 +1,118 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-13">
+
+Il **DNA** è il libretto di istruzioni che c'è dentro ogni tua cellula: dice al corpo come costruirsi e come funzionare. Ma com'è fatto questo libretto? È una catena lunghissima di **mattoncini** uguali, agganciati uno dopo l'altro. Qui scopriamo qual è il mattoncino (il **nucleotide**) e qual è la **colla** che li tiene attaccati (il **legame fosfodiestere**).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina una collana. Ogni perla è un nucleotide. Il filo che lega una perla all'altra è il legame fosfodiestere. Tante perle in fila = un acido nucleico (DNA o RNA).</div>
+
+## Il mattoncino: il nucleotide
+
+Ogni **nucleotide** è fatto di **3 pezzi** sempre uguali come schema:
+
+- uno **zucchero** (il pentoso, uno zucchero a 5 atomi di carbonio);
+- un **gruppo fosfato** (un atomo di fosforo con degli ossigeni attorno);
+- una **base azotata** (la "lettera" del codice: A, T, C, G, oppure U).
+
+Pensa al nucleotide come a un mattoncino LEGO con tre parti incollate insieme. Lo zucchero è il corpo centrale, il fosfato sta da un lato e la base azotata sporge dall'altro.
+
+<Diagram caption="Le 3 parti di un nucleotide" code={`flowchart LR
+  N["NUCLEOTIDE<br/>(un mattoncino)"] --> F["Gruppo fosfato"]
+  N --> Z["Zucchero<br/>(pentoso)"]
+  N --> B["Base azotata<br/>(A, T, C, G, U)"]`} />
+
+## La colla: il legame fosfodiestere
+
+Adesso mettiamo in fila tanti mattoncini. Come si agganciano?
+
+Il **fosfato** di un nucleotide fa da ponte e si attacca allo **zucchero** del nucleotide successivo. Questo ponte è il **legame fosfodiestere**. "Di-estere" vuol dire che il fosfato si lega da due lati: con lo zucchero di sotto e con lo zucchero di sopra.
+
+Il risultato è una catena dove si alternano sempre **zucchero - fosfato - zucchero - fosfato**, come una cerniera lampo che si chiude. Questa parte si chiama **scheletro (o spina dorsale) zucchero-fosfato**. Le basi azotate, invece, sporgono verso l'interno, come i denti della cerniera.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il legame fosfodiestere è la colla che unisce i mattoncini. Lo scheletro fuori è sempre zucchero-fosfato; le "lettere" (le basi) stanno appese dentro.</div>
+
+<Diagram caption="Lo scheletro zucchero-fosfato tenuto insieme dai legami fosfodiestere" code={`flowchart TB
+  Z1["Zucchero"] --> P1["Fosfato"]
+  P1 -->|"legame fosfodiestere"| Z2["Zucchero"]
+  Z2 --> P2["Fosfato"]
+  P2 -->|"legame fosfodiestere"| Z3["Zucchero"]
+  Z1 --- B1["Base azotata"]
+  Z2 --- B2["Base azotata"]
+  Z3 --- B3["Base azotata"]`} />
+
+## Il DNA: una scala a chiocciola
+
+Il **DNA** non è un solo filo: sono **due fili** affiancati e attorcigliati a spirale. Questa forma si chiama **doppia elica**, ed è come una **scala a chiocciola**.
+
+- I **due corrimani** (i bordi laterali) sono i due scheletri zucchero-fosfato.
+- I **gradini** sono le basi azotate, che si tengono per mano al centro: **A** sta sempre con **T**, e **C** sta sempre con **G**. Si chiamano coppie complementari.
+
+Le basi al centro si tengono con legami deboli (legami a idrogeno): deboli apposta, così la scala si può "aprire" come una zip quando la cellula deve leggere o copiare il DNA. Questo conta tantissimo in medicina e veterinaria: quando una cellula si divide, copia tutto il DNA, e se in questa copia avviene un errore può nascere una mutazione (alla base di molte malattie).
+
+<Diagram caption="La doppia elica del DNA: due scheletri e le coppie di basi" code={`flowchart TB
+  D["DNA = doppia elica<br/>(scala a chiocciola)"] --> S1["Corrimano 1<br/>scheletro zucchero-fosfato"]
+  D --> S2["Corrimano 2<br/>scheletro zucchero-fosfato"]
+  D --> G["Gradini = coppie di basi<br/>A con T, C con G"]`} />
+
+## DNA e RNA: i cugini
+
+L'**RNA** è il cugino del DNA. Lavorano insieme: il DNA è l'archivio che resta al sicuro nel nucleo, l'RNA è la fotocopia che esce e porta le istruzioni dove servono (per costruire le proteine). Le differenze sono tre, semplici da ricordare:
+
+- l'RNA di solito è un **filo singolo**, il DNA è doppio;
+- cambia lo **zucchero**: l'RNA ha il ribosio, il DNA ha il desossiribosio (uno zucchero con un ossigeno in meno);
+- cambia una **lettera**: nell'RNA la base T (timina) è sostituita dalla U (uracile).
+
+In tutti e due, però, la colla che tiene insieme i mattoncini è sempre la stessa: il **legame fosfodiestere**.
+
+## Guarda il video
+
+<YouTube id="jR1uYInz6z8" title="Gli acidi nucleici, il DNA e l'RNA — spiegazione per principianti" />
+
+<VideoVisto id="chim-u7-13" />
+
+## Da ricordare
+
+- Il **nucleotide** è il mattoncino: **zucchero + fosfato + base azotata**.
+- Il **legame fosfodiestere** è la colla che unisce i nucleotidi: collega il fosfato di uno allo zucchero del successivo.
+- Si forma lo **scheletro zucchero-fosfato** (sempre fuori); le basi sporgono dentro.
+- Il **DNA** è una **doppia elica** (scala a chiocciola): A con T, C con G.
+- L'**RNA** è il cugino: filo singolo, zucchero ribosio, e usa U al posto di T.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Da quali 3 pezzi è fatto un nucleotide?"
+  opzioni={["acqua, sale e zucchero", "zucchero, fosfato e base azotata", "proteina, grasso e vitamina", "carbonio, ossigeno e ferro"]}
+  corretta={1}
+  spiegazione="Ogni nucleotide ha sempre tre parti: uno zucchero (pentoso), un gruppo fosfato e una base azotata. È il mattoncino base del DNA e dell'RNA."
+/>
+
+<Quiz
+  domanda="Che cosa fa il legame fosfodiestere?"
+  opzioni={["tiene unite le due eliche al centro", "colora le basi azotate", "unisce un nucleotide al successivo, formando lo scheletro zucchero-fosfato", "spezza il DNA in pezzi"]}
+  corretta={2}
+  spiegazione="Il legame fosfodiestere è la colla tra i nucleotidi: collega il fosfato di uno allo zucchero del successivo, costruendo la catena (lo scheletro zucchero-fosfato)."
+/>
+
+<Quiz
+  domanda="Nel DNA, con quale base si accoppia sempre la A (adenina)?"
+  opzioni={["con la C", "con la G", "con la T", "con un'altra A"]}
+  corretta={2}
+  spiegazione="Le coppie sono fisse: A con T e C con G. Per questo si dice che i due filamenti sono complementari, come due metà che combaciano."
+/>
+
+<Esercizio
+  problema="Indica due differenze tra DNA e RNA, e di' qual è invece il legame che li tiene insieme in entrambi."
+  soluzione="Differenze: 1) il DNA è a doppio filamento, l'RNA di solito a filamento singolo; 2) cambia la base, nell'RNA c'è l'uracile (U) al posto della timina (T) (e cambia anche lo zucchero: ribosio nell'RNA, desossiribosio nel DNA). In entrambi, però, i nucleotidi sono uniti dallo stesso legame: il legame fosfodiestere."
+/>
+
+</section>
+
+</RisorsaLayout>

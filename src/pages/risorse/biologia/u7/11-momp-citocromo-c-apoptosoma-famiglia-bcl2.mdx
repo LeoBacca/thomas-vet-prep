@@ -1,0 +1,155 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u7-11">
+
+## Perché una cellula decide di suicidarsi?
+
+Le cellule del corpo non muoiono per caso: quando qualcosa va storto — un danno al DNA, un'infezione virale, uno sviluppo anomalo — la cellula può attivare un programma di autodistruzione ordinata chiamato **apoptosi** (dal greco: "caduta delle foglie"). Non è una morte caotica: è un suicidio pulito, controllato, che evita danni ai vicini.
+
+Esistono due strade principali per arrivarci:
+- **Via intrinseca** (mitocondriale): parte dall'interno della cellula, coinvolge i mitocondri.
+- **Via estrinseca** (recettori di morte): parte da segnali esterni, ricevuti sulla superficie della cellula.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La cellula ha due pulsanti di autodistruzione — uno interno (mitocondri) e uno esterno (recettori sulla membrana). Entrambi attivano le stesse "forbici molecolari" chiamate caspasi.</div>
+
+---
+
+## La via intrinseca: i mitocondri come interruttori
+
+I **mitocondri** non servono solo a produrre energia. Sono anche i custodi della vita cellulare. Dentro di loro, nello spazio tra le due membrane, si trova il **citocromo C** — una proteina normalmente usata nella respirazione cellulare.
+
+Quando arriva un segnale di danno grave (es. DNA irrecuperabile), la membrana esterna del mitocondrio si perfora. Questo evento si chiama **MOMP** (*Mitochondrial Outer Membrane Permeabilization*, cioè "permeabilizzazione della membrana esterna mitocondriale"). È il punto di non ritorno: una volta che si apre quel buco, la cellula è condannata.
+
+Dal buco fuoriesce il citocromo C nel citoplasma.
+
+---
+
+## L'apoptosoma: la macchina della morte
+
+Una volta nel citoplasma, il citocromo C non agisce da solo. Si lega a una proteina chiamata **Apaf-1** (pensa a lei come a un "montante" che aspettava solo il segnale). Insieme, più molecole di Apaf-1 + citocromo C si assemblano in una struttura a ruota con 7 raggi: l'**apoptosoma**.
+
+L'apoptosoma recluta e attiva la **caspasi 9** (una "forbice proteica"). La caspasi 9 attiva a cascata le **caspasi effettrici 3, 6 e 7**, che vanno a tagliare proteine strutturali, enzimi del DNA e altri componenti cellulari — smontando la cellula pezzo per pezzo in modo ordinato.
+
+---
+
+## La famiglia BCL-2: pro-vita contro pro-morte
+
+Chi decide se aprire o no il buco MOMP? La famiglia di proteine **BCL-2**. Si dividono in due squadre opposte:
+
+**Proteine anti-apoptotiche (pro-vita):**
+- BCL-2, BCL-XL, MCL-1 — tengono chiusa la membrana mitocondriale, bloccano BAX e BAK.
+
+**Proteine pro-apoptotiche (pro-morte):**
+- **BAX** e **BAK** — sono le "trivelle" che perforano la membrana e causano MOMP.
+- **Proteine BH3-only** (es. BID, PUMA, NOXA) — sono sensori di danno; quando si attivano, inibiscono le proteine pro-vita e/o attivano direttamente BAX/BAK.
+
+Il destino della cellula dipende dall'equilibrio: se vincono le pro-vita, la cellula sopravvive; se vincono le pro-morte, si innesca il MOMP.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> BCL-2 è come un tappo sul buco: finché è lì, l'acqua (= citocromo C) non esce. Le proteine pro-morte (BAX, BAK) sono chi toglie il tappo. Le BH3-only sono chi ordina di toglierlo.</div>
+
+---
+
+## La via estrinseca: i recettori di morte
+
+La via estrinseca parte dalla superficie cellulare. Esistono recettori specifici chiamati **recettori di morte** (es. FAS/CD95, TRAIL-R) che, quando vengono attivati da ligandi appositi (es. FasL, TRAIL), formano un complesso chiamato **DISC** (*Death-Inducing Signaling Complex*).
+
+Il DISC recluta e attiva direttamente la **caspasi 8**, che poi può:
+1. Attivare direttamente le caspasi effettrici 3/7 (strada corta).
+2. Tagliare la proteina **BID** in **tBID** (BID troncato), che va al mitocondrio e attiva BAX/BAK — collegando così la via estrinseca a quella intrinseca.
+
+---
+
+<Diagram caption="Via intrinseca dell'apoptosi: dal danno al MOMP fino alla morte cellulare" code={`flowchart TB
+  A["Segnale di danno<br/>(DNA rotto, stress, ecc.)"] --> B["Proteine BH3-only<br/>si attivano (es. PUMA, NOXA)"]
+  B --> C["BAX e BAK<br/>si inseriscono nella membrana mitocondriale"]
+  C --> D["MOMP<br/>Permeabilizzazione membrana esterna"]
+  D --> E["Citocromo C<br/>fuoriesce nel citoplasma"]
+  E --> F["Citocromo C + Apaf-1<br/>formano l'APOPTOSOMA"]
+  F --> G["Caspasi 9 attivata"]
+  G --> H["Caspasi 3, 6, 7 attivate"]
+  H --> I["Smontaggio ordinato<br/>della cellula = APOPTOSI"]`} />
+
+<Diagram caption="Equilibrio BCL-2: proteine pro-vita contro pro-morte e collegamento tra le due vie" code={`flowchart LR
+  subgraph PRO_VITA["Proteine pro-vita"]
+    BV["BCL-2 / BCL-XL / MCL-1<br/>bloccano BAX e BAK"]
+  end
+  subgraph PRO_MORTE["Proteine pro-morte"]
+    BH3["BH3-only<br/>(PUMA, NOXA, BID)"]
+    BAX["BAX / BAK<br/>(fanno il buco MOMP)"]
+  end
+  subgraph VIA_EST["Via estrinseca"]
+    RD["Recettore di morte<br/>(FAS, TRAIL-R)"]
+    DISC["DISC"]
+    CASP8["Caspasi 8"]
+    tBID["tBID (BID troncato)"]
+  end
+  BV -- "inibisce" --> BAX
+  BH3 -- "inibisce pro-vita<br/>e attiva" --> BAX
+  BAX --> MOMP["MOMP<br/>Citocromo C"]
+  RD --> DISC --> CASP8
+  CASP8 --> tBID --> BAX
+  CASP8 --> CASP3["Caspasi 3/7<br/>= MORTE"]
+  MOMP --> APTO["Apoptosoma<br/>Caspasi 9"] --> CASP3`} />
+
+## Guarda il video
+<YouTube id="OMU3uzcdLfI" title="Apoptosi chiarimenti — Massimiliano Della Mea" />
+<VideoVisto id="bio-u7-11" />
+
+## Da ricordare
+- **MOMP** è il punto di non ritorno della via intrinseca: quando la membrana mitocondriale esterna si perfora, il citocromo C esce e la morte è inevitabile.
+- La **famiglia BCL-2** decide se fare MOMP o no: le proteine pro-vita (BCL-2, BCL-XL) tengono chiuso, le pro-morte (BAX, BAK, BH3-only) aprono il buco.
+- Le **caspasi** sono le "forbici" finali: la via intrinseca attiva la caspasi 9 tramite l'apoptosoma, quella estrinseca attiva la caspasi 8 tramite il DISC — entrambe convergono sulle caspasi effettrici 3, 6, 7.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa significa MOMP nel contesto dell'apoptosi?"
+  opzioni={[
+    "La fusione dei mitocondri tra loro",
+    "La permeabilizzazione della membrana esterna mitocondriale",
+    "L'attivazione dei ribosomi nel citoplasma",
+    "Il blocco della sintesi di ATP"
+  ]}
+  corretta={1}
+  spiegazione="MOMP sta per Mitochondrial Outer Membrane Permeabilization: è la perforazione della membrana esterna del mitocondrio che permette al citocromo C di uscire nel citoplasma, dando il via alla cascata apoptotica."
+/>
+
+<Quiz
+  domanda="Qual è la funzione dell'apoptosoma?"
+  opzioni={[
+    "Produrre ATP in condizioni di stress",
+    "Riparare il DNA danneggiato",
+    "Assemblare citocromo C e Apaf-1 per attivare la caspasi 9",
+    "Bloccare l'attività di BAX e BAK"
+  ]}
+  corretta={2}
+  spiegazione="L'apoptosoma è un complesso a forma di ruota formato da citocromo C + Apaf-1. La sua funzione è reclutare e attivare la caspasi 9, che a sua volta attiva le caspasi effettrici 3, 6 e 7 che smontano la cellula."
+/>
+
+<Quiz
+  domanda="Nella famiglia BCL-2, quale coppia di proteine è direttamente responsabile della formazione dei pori nella membrana mitocondriale (MOMP)?"
+  opzioni={[
+    "BCL-2 e BCL-XL",
+    "PUMA e NOXA",
+    "BAX e BAK",
+    "Apaf-1 e caspasi 9"
+  ]}
+  corretta={2}
+  spiegazione="BAX e BAK sono le proteine pro-apoptotiche che si inseriscono fisicamente nella membrana esterna mitocondriale e formano i pori che causano il MOMP. BCL-2 e BCL-XL fanno l'opposto: bloccano BAX e BAK. PUMA e NOXA sono BH3-only, cioè attivatori upstream di BAX/BAK."
+/>
+
+<Esercizio
+  problema="Un farmaco sperimentale blocca selettivamente BCL-2 e BCL-XL nelle cellule tumorali. Spiega, passaggio per passaggio, perché questo farmaco potrebbe favorire l'apoptosi delle cellule cancerose."
+  soluzione="Bloccando BCL-2 e BCL-XL (proteine pro-vita), il farmaco elimina il 'freno' che normalmente trattiene BAX e BAK. BAX e BAK diventano liberi di inserirsi nella membrana mitocondriale esterna e formare pori (MOMP). Il citocromo C fuoriesce nel citoplasma, si lega ad Apaf-1 e forma l'apoptosoma. L'apoptosoma attiva la caspasi 9, che attiva le caspasi 3, 6 e 7. Queste smontano la cellula tumorale in modo ordinato. Questo meccanismo è alla base di farmaci reali come il venetoclax, usato contro certi tipi di leucemia."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,116 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u6-11">
+
+## Cos'è un oncogene?
+
+Un **proto-oncogene** è un gene normale che aiuta la cellula a crescere e dividersi nel momento giusto. Pensa a un acceleratore dell'auto: in condizioni normali, lo premi solo quando serve.
+
+Un **oncogene** è la versione difettosa (mutata) dello stesso gene: è come se l'acceleratore si bloccasse premuto a fondo, anche quando non vuoi andare veloce. La cellula riceve un segnale di "cresci, dividiti!" continuo, senza mai fermarsi — e questo può portare al cancro.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Proto-oncogene = acceleratore normale. Oncogene = acceleratore bloccato a tavoletta. La cellula non riesce più a fermarsi e cresce in modo incontrollato.</div>
+
+---
+
+## Come funziona la segnalazione normale (EGF e insulina)
+
+Le cellule comunicano tramite molecole segnale chiamate **ligandi**. Due esempi importanti sono:
+
+- **EGF** (Epidermal Growth Factor): stimola la proliferazione cellulare, cioè dice alle cellule di dividersi.
+- **Insulina**: regola l'assorbimento del glucosio (lo zucchero) nelle cellule.
+
+Entrambi si legano a recettori sulla superficie cellulare chiamati **recettori tirosina-chinasi** (RTK). "Chinasi" significa che il recettore trasferisce un gruppo fosfato (PO₄) su altre proteine, accendendo una catena di segnali.
+
+### Passaggi chiave della via EGF/insulina
+
+1. EGF o insulina si lega al proprio recettore RTK sulla membrana.
+2. Il recettore si attiva: due recettori si avvicinano e si fosforilano a vicenda (autofosforilazione).
+3. Le proteine adattatrici riconoscono la fosforilazione e reclutano **Ras** (una piccola proteina G).
+4. Ras attiva una cascata di chinasi: **RAF → MEK → ERK**.
+5. ERK entra nel nucleo e attiva geni della proliferazione.
+
+In parallelo, si attiva anche la via **PI3K/AKT** (vedi sotto).
+
+---
+
+## La segnalazione dei fosfoinositidi (via PI3K/AKT)
+
+I **fosfoinositidi** sono lipidi (grassi) della membrana cellulare che funzionano da messaggeri. Ecco come funziona la via:
+
+1. Il recettore attivato (es. RTK) recluta **PI3K** (fosfoinositide 3-chinasi).
+2. PI3K trasforma il lipide di membrana **PIP2** in **PIP3**.
+3. PIP3 funge da "piattaforma" che attrae la proteina **AKT** (chiamata anche PKB).
+4. AKT fosforilata attiva molti bersagli cellulari: stimola la sopravvivenza, la crescita e il metabolismo.
+5. **mTOR** è uno dei principali bersagli di AKT: accelera la sintesi proteica.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> PI3K/AKT è come un interruttore principale della sopravvivenza cellulare. Se resta sempre acceso (per una mutazione), la cellula non muore mai — un tratto tipico del cancro.</div>
+
+### Freno naturale: PTEN
+
+**PTEN** è una fosfatasi (toglie il fosfato) che converte PIP3 di nuovo in PIP2, spegnendo il segnale. PTEN è un **oncosoppressore**: se viene inattivato da una mutazione, AKT rimane sempre attiva e la cellula prolifera in modo incontrollato.
+
+---
+
+## Dove nascono gli oncogeni in queste vie
+
+Le mutazioni possono colpire diversi punti della cascata:
+
+- **Recettore RTK** (es. EGFR mutato): rimane attivo anche senza EGF legato.
+- **Ras mutato**: non riesce più a spegnersi (è "bloccato" in forma attiva). Presente in circa il 30% di tutti i tumori umani.
+- **PI3K mutata**: produce troppo PIP3 anche senza stimolo.
+- **AKT amplificata**: segnala sempre, indipendentemente da PI3K.
+- **PTEN inattivato**: non riesce più a spegnere PIP3 — freno rotto.
+
+---
+
+<Diagram caption="Via di segnalazione EGF/insulina: dalla membrana al nucleo" code={`flowchart TB
+  A["EGF o Insulina<br/>(ligando)"] --> B["Recettore RTK<br/>(sulla membrana)"]
+  B --> C["Autofosforilazione<br/>del recettore"]
+  C --> D["Reclutamento di Ras<br/>(proteina G)"]
+  D --> E["Cascata RAF → MEK → ERK"]
+  E --> F["ERK entra nel nucleo"]
+  F --> G["Attivazione geni<br/>di proliferazione"]
+  C --> H["Reclutamento di PI3K"]
+  H --> I["PIP2 → PIP3<br/>(lipidi di membrana)"]
+  I --> J["Attivazione di AKT"]
+  J --> K["mTOR attivo:<br/>crescita e sopravvivenza"]`} />
+
+<Diagram caption="Come una mutazione trasforma un proto-oncogene in oncogene: esempio di Ras" code={`flowchart LR
+  A["Segnale EGF<br/>(ligando presente)"] --> B["Ras attivo<br/>(GTP legato)"]
+  B --> C["Cascata di segnale<br/>attivata"]
+  C --> D["GAP spegne Ras<br/>(GTP → GDP)"]
+  D --> E["Segnale terminato<br/>(cellula normale)"]
+
+  F["Mutazione in Ras<br/>(oncogene)"] --> G["Ras sempre attivo<br/>(non si spegne)"]
+  G --> H["Cascata sempre accesa"]
+  H --> I["Proliferazione<br/>incontrollata: TUMORE"]`} />
+
+## Guarda il video
+<YouTube id="PdTao8eW7UM" title="Oncogeni: L'interruttore genetico che trasforma cellule sane in cancerose" />
+<VideoVisto id="bio-u6-11" />
+
+## Da ricordare
+- Gli oncogeni sono proto-oncogeni mutati che mandano segnali di crescita continui; esempio classico è **Ras**, bloccato in forma attiva in ~30% dei tumori.
+- La via **PI3K/AKT** è attivata da recettori come EGFR e dal recettore dell'insulina; promuove sopravvivenza e crescita cellulare tramite PIP3 e mTOR.
+- **PTEN** è il freno naturale di PI3K/AKT: quando è inattivato da una mutazione, la cellula riceve segnali di sopravvivenza in modo permanente.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una mutazione blocca Ras nella forma attiva (GTP-legata) e non può più essere spenta da GAP. Quale effetto ha sulla cellula?" opzioni={["La cellula smette di dividersi per mancanza di segnale","La cascata RAF-MEK-ERK rimane permanentemente attiva, favorendo la proliferazione incontrollata","Il recettore RTK viene degradato più velocemente","La cellula produce meno PIP3"]} corretta={1} spiegazione="Ras attivo trasmette continuamente il segnale alla cascata RAF→MEK→ERK. Se non può spegnersi, la proliferazione è costante — questa è la firma degli oncogeni Ras, presenti in circa il 30% dei tumori umani." />
+
+<Quiz domanda="Qual è il ruolo di PTEN nella via PI3K/AKT?" opzioni={["Attiva PI3K legandosi al recettore RTK","Converte PIP2 in PIP3, amplificando il segnale","Converte PIP3 in PIP2, spegnendo il segnale e frenando la proliferazione","Fosforila AKT per mantenerla attiva"]} corretta={2} spiegazione="PTEN è una fosfatasi che rimuove il fosfato da PIP3 riportandolo a PIP2. In questo modo spegne il segnale a monte di AKT. Se PTEN è mutato/inattivato, AKT rimane sempre attiva: PTEN è un oncosoppressore classico." />
+
+<Quiz domanda="Cosa succede immediatamente dopo che EGF si lega al proprio recettore RTK?" opzioni={["Il recettore entra nel nucleo e attiva direttamente i geni","Due recettori RTK si avvicinano e si fosforilano a vicenda (autofosforilazione)","Il recettore attiva direttamente mTOR senza intermediari","PI3K viene degradata per bloccare il segnale"]} corretta={1} spiegazione="Il legame di EGF induce la dimerizzazione (avvicinamento di due recettori) seguita da autofosforilazione reciproca dei domini intracellulari. Questa fosforilazione crea siti di ancoraggio per le proteine adattatrici che proseguono la cascata." />
+
+<Esercizio problema="Una cellula tumorale ha una mutazione che rende PI3K costitutivamente attiva (cioè sempre accesa, indipendentemente dal segnale). Spiega: (a) quali effetti ha a valle nella via di segnalazione; (b) perché questa cellula ha un vantaggio rispetto a una cellula normale in condizioni di scarsità di nutrienti." soluzione="(a) PI3K sempre attiva converte continuamente PIP2 in PIP3. L'eccesso di PIP3 recluta e attiva AKT in modo permanente. AKT attiva a sua volta mTOR, che stimola la sintesi proteica e la crescita cellulare, e inibisce le proteine pro-apoptotiche (che normalmente causerebbero la morte cellulare programmata). Il risultato è proliferazione continua e resistenza all'apoptosi. (b) In condizioni normali, quando i nutrienti scarseggiano, la segnalazione tramite insulina/IGF cala, PI3K riceve meno input, AKT si riduce e mTOR rallenta la crescita. La cellula normale 'aspetta'. La cellula con PI3K mutata ignora questa pausa: AKT e mTOR rimangono attivi indipendentemente dal segnale insulinico, quindi la cellula continua a crescere e dividersi anche quando l'ambiente non è favorevole — un grande vantaggio selettivo per il tumore." />
+
+</section>
+
+</RisorsaLayout>

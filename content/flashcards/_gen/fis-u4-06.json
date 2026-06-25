@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fc-fis-u4-06-1",
+    "topicId": "fis-u4-06",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: il suono e un'onda meccanica longitudinale e non puo propagarsi nel vuoto.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 0,
+    "explain": "Vero. Il suono ha bisogno di un mezzo fisico (aria, acqua, legno…) per propagarsi: e come una fila di domino, il primo mattoncino spinge il secondo e cosi via. Nello spazio vuoto non c'e nulla da far vibrare, quindi regna il silenzio assoluto. Le onde elettromagnetiche (luce, radio) invece viaggiano anche nel vuoto — il suono no.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-fis-u4-06-2",
+    "topicId": "fis-u4-06",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "open",
+    "q": "Cos'e il decibel e perche si usa una scala logaritmica invece di misurare direttamente l'intensita in W/m²?",
+    "answer": "Il decibel (dB) e un'unita logaritmica che misura il livello sonoro con la formula β = 10 · log₁₀(I / I₀), dove I₀ = 10⁻¹² W/m² e la soglia di udibilita (il suono piu debole che sentiamo). Si usa una scala logaritmica per due motivi: 1) L'intensita varia in modo enorme — dalla soglia di udibilita (10⁻¹² W/m²) alla soglia del dolore (1 W/m²) c'e un fattore di un trilione (10¹²). Gestire numeri cosi diversi con una scala lineare sarebbe scomodissimo. 2) L'orecchio umano non percepisce l'intensita in modo lineare: se l'intensita raddoppia, non senti il suono 'due volte piu forte'. Il cervello risponde in modo logaritmico, quindi i decibel rispecchiano meglio la percezione reale. In pratica: ogni volta che l'intensita si moltiplica per 10, il livello sale di 10 dB; se l'intensita raddoppia, il livello sale di circa 3 dB.",
+    "explain": "Da ricordare: decibel = scala logaritmica adatta alla percezione umana; +10 dB = intensita ×10; +3 dB = intensita ×2.",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

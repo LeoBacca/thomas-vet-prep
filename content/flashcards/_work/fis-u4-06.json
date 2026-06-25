@@ -1,0 +1,10 @@
+{
+ "id": "fis-u4-06",
+ "titolo": "Onde acustiche (suono, intensità e decibel)",
+ "materia": "fisica",
+ "unita": 4,
+ "slug": "06-onde-acustiche-suono-intensita-e-decibel",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u4/06-onde-acustiche-suono-intensita-e-decibel.mdx",
+ "examQuestions": []
+}

@@ -1,0 +1,144 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-06">
+
+## Cos'è un gene?
+
+Un **gene** è un tratto di DNA che contiene le istruzioni per costruire qualcosa di utile per la cellula — di solito una proteina, a volte un RNA funzionale.
+
+Pensa al DNA come a un libro di ricette enorme. Ogni **ricetta** è un gene: dice alla cellula come preparare un ingrediente preciso (la proteina). Il resto del libro può contenere spaziatori, note, o parti scritte in codice che regolano quando usare quella ricetta.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un gene = una sequenza di DNA con le istruzioni per produrre una proteina (o un RNA). Non tutto il DNA è gene: c'è molta parte "non codificante" in mezzo.</div>
+
+---
+
+## La struttura di base di un gene
+
+Ogni gene ha alcune parti fondamentali:
+
+- **Promotore** — la zona dove si attacca l'RNA-polimerasi (l'enzima che "legge" il gene). È come il titolo della ricetta: dice "inizia qui".
+- **Sequenza codificante** — la parte che viene letta e trasformata in proteina.
+- **Terminatore** — il segnale di "fine lettura". L'RNA-polimerasi si stacca qui.
+
+Nei **procarioti** (batteri, senza nucleo) e negli **eucarioti** (cellule con nucleo, come le nostre) questa struttura esiste in entrambi, ma con differenze importanti.
+
+---
+
+## Gene procariotico vs gene eucariotico
+
+### Gene procariotico (es. nei batteri)
+
+- La sequenza codificante è **continua**: non ci sono interruzioni. Quello che c'è scritto viene letto tutto, dall'inizio alla fine.
+- Niente nucleo: il DNA sta nel citoplasma, e la trascrizione (produzione di mRNA) e la traduzione (produzione di proteina) avvengono **nello stesso posto e quasi contemporaneamente**.
+- I geni sono spesso raggruppati in **operoni**: più geni uno dietro l'altro, controllati da un unico promotore. Vengono trascritti insieme in un unico lungo mRNA → questo si chiama mRNA **policistronico** (contiene le istruzioni per più proteine).
+
+### Gene eucariotico (es. nelle nostre cellule)
+
+- La sequenza codificante è **spezzettata**: ci sono pezzi che codificano (chiamati **esoni**) intervallati da pezzi che *non* codificano (chiamati **introni**). È come una ricetta con pagine di testo inutile in mezzo che vanno tagliate prima di cucinare.
+- Dopo la trascrizione, l'mRNA grezzo deve essere **processato** nel nucleo: gli introni vengono rimossi (splicing), vengono aggiunti un cappuccio (capping) e una coda (poliadenilazione).
+- Solo dopo questo "montaggio" l'mRNA maturo esce dal nucleo e va nel citoplasma a essere tradotto.
+- Di solito ogni mRNA porta le istruzioni per **una sola proteina** → si chiama mRNA **monocistronico**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Nei batteri i geni sono compatti e spesso raggruppati (policistronici). Nelle cellule eucariotiche ogni gene ha dei "pezzi di rumore" (introni) da rimuovere, e ogni mRNA porta di solito una sola proteina (monocistronico).</div>
+
+---
+
+## Monocistronico vs Policistronico
+
+| | **Monocistronico** | **Policistronico** |
+|---|---|---|
+| **Significato** | 1 mRNA → 1 proteina | 1 mRNA → più proteine |
+| **Dove si trova** | Eucarioti (tipico) | Procarioti (tipico) |
+| **Perché esiste** | Ogni gene ha il suo promotore | Più geni in un operone condividono un promotore |
+
+Nei batteri, raggruppare geni correlati in un operone è efficiente: con un solo segnale "accendi" o "spegni" più enzimi della stessa via metabolica in una volta.
+
+---
+
+<Diagram caption="Struttura di un gene procariotico: i geni stanno uno dietro l'altro in un operone e vengono trascritti in un unico mRNA policistronico" code={`flowchart LR
+  A["Promotore<br/>(segnale di inizio)"] --> B["Gene 1<br/>(sequenza codificante)"]
+  B --> C["Gene 2<br/>(sequenza codificante)"]
+  C --> D["Gene 3<br/>(sequenza codificante)"]
+  D --> E["Terminatore<br/>(segnale di fine)"]
+  E --> F["mRNA policistronico<br/>(istruzioni per 3 proteine)"]`} />
+
+<Diagram caption="Struttura di un gene eucariotico: la sequenza codificante è interrotta da introni; l'mRNA viene processato nel nucleo prima di uscire" code={`flowchart TB
+  A["DNA eucariotico:<br/>Promotore"] --> B["Esone 1"]
+  B --> C["Introne<br/>(non codificante)"]
+  C --> D["Esone 2"]
+  D --> E["Introne<br/>(non codificante)"]
+  E --> F["Esone 3"]
+  F --> G["Terminatore"]
+  G --> H["mRNA pre-processato<br/>(contiene ancora gli introni)"]
+  H --> I["Splicing nel nucleo:<br/>introni rimossi"]
+  I --> J["mRNA maturo monocistronico<br/>esce nel citoplasma"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="lROquK7MAoA" title="Il GENOMA e i GENI — Citologia Lezione 14 (AboutBiology)" />
+<VideoVisto id="bio-u3-06" />
+
+---
+
+## Da ricordare
+
+- Un gene è un tratto di DNA con istruzioni per una proteina (o RNA funzionale); ha sempre un promotore, una parte codificante e un terminatore.
+- Nei procarioti i geni sono compatti e spesso in operoni → mRNA **policistronico** (più proteine da un solo mRNA).
+- Negli eucarioti i geni contengono **introni** (non codificanti) intervallati agli **esoni** (codificanti); dopo lo splicing l'mRNA maturo è **monocistronico** (una proteina per mRNA).
+
+---
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cos'è un introne in un gene eucariotico?"
+  opzioni={[
+    "Una sequenza codificante che finisce nell'mRNA maturo",
+    "Una sequenza non codificante che viene rimossa durante lo splicing",
+    "Il promotore del gene eucariotico",
+    "Un gene batterico all'interno di un operone"
+  ]}
+  corretta={1}
+  spiegazione="Gli introni sono le sequenze NON codificanti presenti nei geni eucariotici. Vengono trascritti nell'mRNA grezzo ma poi eliminati durante lo splicing nel nucleo. Restano solo gli esoni nell'mRNA maturo."
+/>
+
+<Quiz
+  domanda="Un mRNA policistronico contiene le istruzioni per..."
+  opzioni={[
+    "Un solo tipo di RNA ribosomiale",
+    "Una sola proteina",
+    "Più proteine diverse",
+    "Un solo esone"
+  ]}
+  corretta={2}
+  spiegazione="Policistronico significa 'molti cistron': un unico mRNA porta le istruzioni per più proteine. È tipico dei procarioti, dove più geni di un operone vengono trascritti insieme in un unico trascritto."
+/>
+
+<Quiz
+  domanda="Nei batteri, trascrizione e traduzione possono avvenire contemporaneamente. Perché questo NON succede negli eucarioti?"
+  opzioni={[
+    "Perché gli eucarioti non hanno ribosomi",
+    "Perché negli eucarioti il DNA è nel nucleo e i ribosomi sono nel citoplasma",
+    "Perché l'mRNA eucariotico non viene mai tradotto",
+    "Perché nei batteri mancano gli introni"
+  ]}
+  corretta={1}
+  spiegazione="Negli eucarioti il DNA (e quindi la trascrizione) si trova nel nucleo, mentre i ribosomi (dove avviene la traduzione) stanno nel citoplasma. L'mRNA deve prima essere processato e poi attraversare la membrana nucleare — impossibile tradurre mentre si trascrive ancora."
+/>
+
+<Esercizio
+  problema="Hai un batterio e una cellula muscolare di topo. Entrambi producono l'enzima glucochinasi. Il gene della glucochinasi nel batterio produce un mRNA che porta anche le istruzioni per altri 2 enzimi della stessa via. Come si chiama questo tipo di mRNA? Nella cellula muscolare, invece, quante proteine produce l'mRNA della glucochinasi?"
+  soluzione="Nel batterio l'mRNA è POLICISTRONICO: un unico trascritto porta le istruzioni per 3 proteine (glucochinasi + 2 enzimi). Questo è possibile perché i 3 geni fanno parte dello stesso operone e condividono un promotore. Nella cellula muscolare (eucariota) l'mRNA è MONOCISTRONICO: produce UNA SOLA proteina (la glucochinasi). Il gene eucariotico ha il proprio promotore separato e il suo mRNA maturo — dopo splicing, capping e poliadenilazione — porta le istruzioni per una proteina soltanto."
+/>
+
+</section>
+
+</RisorsaLayout>

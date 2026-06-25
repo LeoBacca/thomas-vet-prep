@@ -1,0 +1,130 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-13">
+
+## I mitocondri non sono oggetti fissi
+
+Immagina i mitocondri non come fagioli immobili, ma come bolle di plastica che si fondono tra loro e si spezzano continuamente. Questo è quello che succede davvero nelle cellule: i mitocondri formano **reti dinamiche** che cambiano forma ogni pochi minuti.
+
+Questo movimento non è casuale: serve a mantenere i mitocondri sani, a distribuire l'energia dove serve e a eliminare quelli danneggiati.
+
+---
+
+## Fusione: due mitocondri diventano uno
+
+La **fusione** è quando due mitocondri si uniscono. È come due gocce d'acqua che si toccano e si fondono in una sola.
+
+**Perché è utile?**
+- Permette di mescolare i contenuti (DNA, proteine, lipidi) tra mitocondri vecchi e nuovi
+- Se un mitocondrio è parzialmente danneggiato, la fusione con uno sano può "ripararlo"
+- Aumenta la capacità di produrre energia nei momenti di stress
+
+**Le proteine che guidano la fusione:**
+- **Mitofusina 1 e 2 (MFN1/MFN2)** — si trovano sulla membrana esterna e agganciano i due mitocondri
+- **OPA1** — si trova sulla membrana interna e completa la fusione del compartimento interno
+
+---
+
+## Fissione: un mitocondrio si divide in due
+
+La **fissione** è l'opposto: un mitocondrio si stringe in un punto e si spezza in due, come uno strangolamento.
+
+**Perché è utile?**
+- Permette di isolare le parti danneggiate (che poi verranno distrutte dalla mitofagia)
+- Serve a distribuire i mitocondri alle cellule figlie durante la divisione cellulare
+- Crea mitocondri più piccoli e manovrabili
+
+**La proteina chiave della fissione:**
+- **DRP1 (Dynamin-Related Protein 1)** — è una proteina citosolica (sta nel citoplasma) che viene reclutata sulla membrana esterna e forma un anello che strizza il mitocondrio fino a spaccarlo
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La fusione è come mescolare due mazzi di carte in uno — si condividono le risorse. La fissione è come tagliare un mazzo in due — si isola e si distribuisce.</div>
+
+---
+
+## Come si trovano l'equilibrio fusione-fissione?
+
+La cellula regola il rapporto tra fusione e fissione in base allo stato energetico e agli stress:
+- **Molto stress o danni** → prevale la fissione (isola le parti malate)
+- **Alta richiesta energetica** → prevale la fusione (crea reti più efficienti)
+
+Un equilibrio rotto verso troppa fissione produce mitocondri piccoli e frammentati, spesso associati a malattie neurodegenerative.
+
+---
+
+## Importazione delle proteine: il grande problema del mitocondrio
+
+Il mitocondrio ha un suo DNA (mtDNA), ma codifica solo **13 proteine**. Ne servono invece circa **1.500**. Le altre vengono prodotte dai ribosomi nel citoplasma e devono essere **importate** dentro il mitocondrio.
+
+Ma come fa una proteina fatta nel citoplasma ad entrare in un organello con **due membrane**?
+
+La risposta sono i **complessi traslocatori**: macchine proteiche inserite nelle membrane che riconoscono le proteine giuste e le fanno passare.
+
+---
+
+## I quattro complessi di importazione
+
+### TOM — Translocase of the Outer Membrane
+È il cancello d'ingresso principale. **Tutte** le proteine destinate al mitocondrio passano prima per il complesso TOM sulla membrana esterna. Riconosce una sequenza segnale (detta **presequenza**) all'estremità della proteina.
+
+### TIM23 — Translocase of the Inner Membrane 23
+Dopo TOM, le proteine destinate alla **matrice** (l'interno più profondo) o alla membrana interna passano per TIM23. Usa il gradiente elettrochimico della membrana interna come forza motrice.
+
+### TIM22 — Translocase of the Inner Membrane 22
+Serve per inserire nella **membrana interna** proteine particolari con molti segmenti transmembrana (ad esempio i trasportatori di metaboliti come il carrier dell'ADP/ATP). Non richiede la presequenza classica.
+
+### SAM — Sorting and Assembly Machinery
+Si trova sulla membrana esterna e assembla le **proteine a barile beta** (beta-barrel proteins), tipiche della membrana esterna. Queste proteine, dopo essere entrate dal TOM, vengono riconosciute e inserite correttamente dal SAM.
+
+### OXA — OXidase Assembly translocase
+Si trova sulla membrana interna e gestisce un flusso inverso: inserisce nella membrana interna le proteine codificate dal mtDNA (prodotte direttamente nella matrice) e alcune proteine importate che poi vengono "riposizionate" dalla matrice verso la membrana interna.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> TOM è il portone d'ingresso del palazzo. TIM23 è l'ascensore per la cantina (matrice). TIM22 installa i pannelli nelle pareti interne. SAM monta le porte nella facciata esterna. OXA monta componenti dall'interno.</div>
+
+---
+
+<Diagram caption="Dinamica mitocondriale: fusione e fissione" code={`flowchart TB
+  A["Due mitocondri separati"] -->|"MFN1/MFN2 agganciano<br/>le membrane esterne"| B["Avvicinamento<br/>e aggancio"]
+  B -->|"OPA1 fonde<br/>le membrane interne"| C["Mitocondrio fuso<br/>(rete continua)"]
+  C -->|"DRP1 reclutato<br/>sulla membrana esterna"| D["Anello di DRP1<br/>stringe il mitocondrio"]
+  D -->|"Strizione completa"| E["Due mitocondri<br/>separati (fissione)"]
+  E -->|"Mitocondrio danneggiato"| F["Mitofagia<br/>(eliminazione)"]
+  E -->|"Mitocondrio sano"| G["Continua a<br/>fondersi o dividersi"]`} />
+
+<Diagram caption="Vie di importazione delle proteine mitocondriali" code={`flowchart TD
+  CITO["Proteina sintetizzata<br/>nel citoplasma"]
+  CITO --> TOM["Complesso TOM<br/>(membrana esterna)<br/>— cancello universale"]
+  TOM -->|"Proteina con presequenza<br/>→ matrice"| TIM23["Complesso TIM23<br/>(membrana interna)<br/>→ matrice o ancoraggio MI"]
+  TOM -->|"Proteina carrier<br/>(multi-transmembrana)"| TIM22["Complesso TIM22<br/>(membrana interna)<br/>→ inserzione in MI"]
+  TOM -->|"Proteina beta-barrel<br/>per membrana esterna"| SAM["Complesso SAM<br/>(membrana esterna)<br/>→ assemblaggio in ME"]
+  TIM23 -->|"Arrivo in matrice"| MAT["Matrice mitocondriale"]
+  MAT -->|"Proteine codificate<br/>da mtDNA o reindirizzate"| OXA["Complesso OXA<br/>(membrana interna)<br/>→ inserzione in MI da matrice"]`} />
+
+## Guarda il video
+<YouTube id="cm2LmLjdU4E" title="Citologia - Lezione 12: Mitocondri" />
+<VideoVisto id="bio-u5-13" />
+
+## Da ricordare
+- I mitocondri sono dinamici: **fusione** (MFN1/2 + OPA1) e **fissione** (DRP1) si bilanciano per mantenere la rete mitocondriale sana
+- Tutte le proteine citoplasmatiche entrano dal **TOM**; poi vengono smistate da TIM23, TIM22, SAM o OXA a seconda della destinazione finale
+- Uno squilibrio verso troppa fissione (mitocondri frammentati) è associato a malattie neurodegenerative come il Parkinson
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale proteina forma l'anello che stringe il mitocondrio durante la fissione?" opzioni={["OPA1","MFN1","DRP1","TOM20"]} corretta={2} spiegazione="DRP1 (Dynamin-Related Protein 1) è una GTPasi citosolica che viene reclutata sulla membrana esterna mitocondriale e si assembla in un anello che, idrolizzando GTP, si stringe e taglia il mitocondrio in due." />
+
+<Quiz domanda="Quale complesso traslocatore gestisce l'inserimento delle proteine beta-barrel nella membrana esterna mitocondriale?" opzioni={["TIM23","TIM22","OXA","SAM"]} corretta={3} spiegazione="Il complesso SAM (Sorting and Assembly Machinery) si trova nella membrana esterna e si occupa di assemblare correttamente le proteine a struttura beta-barrel che devono risiedere nella membrana esterna stessa. Le proteine arrivano prima dal TOM e poi vengono passate al SAM." />
+
+<Quiz domanda="Una proteina con presequenza di targeting alla matrice mitocondriale deve attraversare, nell'ordine corretto:" opzioni={["TIM23 → TOM → matrice","TOM → TIM23 → matrice","SAM → TOM → matrice","TOM → TIM22 → matrice"]} corretta={1} spiegazione="La via canonica per le proteine della matrice è: riconoscimento dalla presequenza da parte del TOM (membrana esterna), poi passaggio attraverso TIM23 (membrana interna) fino alla matrice. TIM22 serve per i carrier multi-transmembrana, non per le proteine della matrice." />
+
+<Esercizio problema="Spiega perché un mitocondrio non può sopravvivere solo con le proteine codificate dal proprio DNA. Quante proteine codifica il mtDNA umano e da dove arrivano le restanti?" soluzione="Il mtDNA umano codifica solo 13 proteine (tutte subunità della catena respiratoria e dell'ATP sintasi), 22 tRNA e 2 rRNA. Il mitocondrio ha però bisogno di circa 1.500 proteine diverse per tutte le sue funzioni (strutturali, di replicazione, di importazione, metaboliche). Le restanti ~1.487 proteine sono codificate dal DNA nucleare, prodotte dai ribosomi citoplasmatici e importate nel mitocondrio attraverso i complessi TOM/TIM/SAM/OXA. Questo è anche il motivo per cui i complessi di importazione sono essenziali: senza di essi il mitocondrio non potrebbe costruirsi né mantenersi." />
+
+</section>
+
+</RisorsaLayout>

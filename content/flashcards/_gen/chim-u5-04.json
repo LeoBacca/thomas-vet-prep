@@ -1,0 +1,79 @@
+[
+  {
+    "id": "fc-chim-u5-04-1",
+    "topicId": "chim-u5-04",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: due molecole che hanno gli stessi atomi, collegati nello STESSO ordine, ma orientati diversamente nello spazio, si chiamano isomeri di struttura.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Se gli atomi sono collegati nello stesso ordine e cambia solo la disposizione nello spazio, si parla di STEREOISOMERI. Gli isomeri di struttura hanno invece gli atomi collegati in ordine DIVERSO — come perline di una collana infilate in sequenza diversa.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-04-2",
+    "topicId": "chim-u5-04",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Due molecole sono immagini allo specchio l'una dell'altra e non si possono sovrapporre — come la mano destra e la mano sinistra. Come si chiamano?",
+    "choices": [
+      "Enantiomeri",
+      "Epimeri",
+      "Diastereoisomeri",
+      "Isomeri di struttura"
+    ],
+    "answer": 0,
+    "explain": "Sono enantiomeri: immagini speculari NON sovrapponibili. La parola chiave è 'immagine allo specchio + non si sovrappongono'. Gli epimeri e i diastereoisomeri sono casi diversi: NON sono immagini speculari. Gli isomeri di struttura hanno addirittura un ordine di legami diverso — categoria completamente diversa. Nel corpo conta moltissimo: i recettori sono come guanti, accettano solo la 'mano' giusta.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-04-3",
+    "topicId": "chim-u5-04",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "open",
+    "q": "Glucosio e galattosio hanno gli stessi atomi, lo stesso ordine di legami, e differiscono solo nell'orientamento di un gruppo in UN unico punto della molecola. Che tipo di isomeri sono? Spiega il ragionamento passo per passo.",
+    "answer": "Passo 1 — Stesso ordine di legami? Sì: quindi sono STEREOISOMERI (non isomeri di struttura). Passo 2 — Sono immagini allo specchio non sovrapponibili l'uno dell'altro? No: quindi NON sono enantiomeri, ma DIASTEREOISOMERI. Passo 3 — Differiscono in un solo punto? Sì: quindi il nome più preciso è EPIMERI. In sintesi: glucosio e galattosio sono epimeri. Pur essendo quasi gemelli, il corpo li riconosce e li tratta in modo diverso — i recettori e gli enzimi 'sentono' quella piccola differenza di orientamento.",
+    "explain": "La scaletta: stesso ordine → stereoisomeri; non immagine speculare → diastereoisomeri; 1 solo punto diverso → epimeri. Glucosio e galattosio = esempio classico di epimeri.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u5-04-4",
+    "topicId": "chim-u5-04",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quanti isomeri costituzionali (di struttura) esistono per la formula molecolare C3H8O?",
+    "choices": [
+      "3",
+      "2",
+      "5",
+      "1",
+      "4"
+    ],
+    "answer": 0,
+    "explain": "La risposta corretta è 3. Per C3H8O si possono costruire tre strutture diverse: due propanoli (1-propanolo e 2-propanolo, che differiscono per dove è attaccato il gruppo -OH sulla catena a 3 carboni) e il metossietano (CH3-O-C2H5, un etere in cui l'ossigeno è in mezzo). Sono tutti isomeri di struttura perché hanno gli stessi atomi ma collegati in ordine diverso. La trappola '2' fa dimenticare l'etere; '4' o '5' nascono dall'inventare strutture che non reggono con le valenze; '1' è chi non prova nemmeno a spostare il gruppo -OH.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u5-04-5",
+    "topicId": "chim-u5-04",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni su enantiomeri e diastereoisomeri è CORRETTA?",
+    "choices": [
+      "Gli enantiomeri sono immagini allo specchio non sovrapponibili; i diastereoisomeri sono stereoisomeri che NON sono immagini speculari",
+      "Gli enantiomeri e i diastereoisomeri differiscono nell'ordine in cui gli atomi sono collegati",
+      "Un racemo è una miscela 50/50 di due diastereoisomeri",
+      "Gli epimeri sono enantiomeri che differiscono in un solo punto della molecola",
+      "Due molecole chirali sono sempre enantiomeri tra loro"
+    ],
+    "answer": 0,
+    "explain": "Solo la prima affermazione è corretta: enantiomeri = immagini speculari non sovrapponibili; diastereoisomeri = stereoisomeri che NON lo sono. Le trappole: 'differiscono nell'ordine dei legami' è falso — sia enantiomeri che diastereoisomeri sono stereoisomeri, hanno lo STESSO ordine di legami (cambia solo lo spazio); 'racemo = miscela di diastereoisomeri' è sbagliato — il racemo è miscela 50/50 di due ENANTIOMERI; 'epimeri = enantiomeri che differiscono in un punto' è falso — gli epimeri sono DIASTEREOISOMERI (non enantiomeri) che differiscono in un solo punto; 'due molecole chirali sono sempre enantiomeri' è falso — possono essere anche diastereoisomeri tra loro."
+    ,
+    "tags": ["prova d'esame"]
+  }
+]

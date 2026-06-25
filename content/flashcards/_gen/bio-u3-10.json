@@ -1,0 +1,81 @@
+[
+  {
+    "id": "fc-bio-u3-10-1",
+    "topicId": "bio-u3-10",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Negli eucarioti ci sono tre RNA polimerasi diverse, ognuna con un compito preciso. Quale polimerasi produce l'mRNA, cioe il messaggio che poi viene tradotto in proteina?",
+    "choices": [
+      "RNA polimerasi I, perche e la piu grande e lavora nel nucleolo",
+      "RNA polimerasi II, perche produce gli mRNA che portano le istruzioni per le proteine",
+      "RNA polimerasi III, perche produce i tRNA che 'leggono' i codoni",
+      "Tutte e tre le polimerasi producono mRNA in quantita uguali"
+    ],
+    "answer": 1,
+    "explain": "Pensa a tre fotocopiatrici in ufficio: la pol I copia i manuali tecnici (rRNA per il ribosoma), la pol II copia le lettere operative (mRNA → proteine), la pol III copia i post-it (tRNA e piccoli RNA). Solo la pol II produce mRNA.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-10-2",
+    "topicId": "bio-u3-10",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o Falso: la RNA polimerasi II puo legarsi da sola al DNA e iniziare la trascrizione, senza bisogno di altre proteine di supporto.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 1,
+    "explain": "Falso. La RNA pol II da sola NON riesce a legarsi al promotore. Ha bisogno di una squadra di proteine chiamate fattori generali di trascrizione (TFIID, TFIIB, TFIIF, TFIIE, TFIIH) che si assemblano prima di lei, come una troupe che prepara il set prima che l'attore principale entri in scena.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-10-3",
+    "topicId": "bio-u3-10",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Descrivi il ruolo della TATA box e spiega cosa succede sul promotore prima che la RNA polimerasi II inizi a trascrivere. Parti dal momento in cui il DNA e ancora 'chiuso'.",
+    "answer": "La TATA box e una sequenza di DNA ricca di T (timina) e A (adenina) — tipicamente TATAAAA — che si trova nel promotore di un gene, circa 25-30 basi prima del punto in cui inizia la trascrizione (chiamato sito +1). E il segnale di partenza del gene. Ecco cosa succede, nell'ordine: 1) TFIID arriva per primo e si lega alla TATA box tramite la sua subunita TBP (TATA-Binding Protein), che piega il DNA in quel punto — come piantare una bandierina sul copione nel punto esatto. 2) TFIIA e TFIIB si aggiungono e stabilizzano il complesso. 3) La RNA pol II, insieme a TFIIF, entra nel complesso. 4) TFIIE e TFIIH completano il ponteggio. TFIIH in particolare apre la doppia elica del DNA (attivita elicasica) e fosforila la coda della RNA pol II, dandole il 'via': solo a quel punto la polimerasi si stacca dal complesso e inizia a sintetizzare l'RNA.",
+    "explain": "Da ricordare: TFIID + TBP si legano PRIMA alla TATA box → poi arrivano gli altri fattori in ordine → ultimo TFIIH che apre il DNA e 'accende' la polimerasi.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-10-4",
+    "topicId": "bio-u3-10",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Quale dei seguenti passaggi e INDISPENSABILE per avviare la trascrizione in una cellula eucariotica?",
+    "choices": [
+      "Il legame dei fattori generali di trascrizione al promotore del gene",
+      "La rimozione del cap in posizione 5' dalla molecola di mRNA",
+      "Lo splicing degli introni prima che la polimerasi possa partire",
+      "L'aggiunta della coda di poliA alla molecola di mRNA gia prodotta",
+      "L'appaiamento di un primer al filamento di DNA stampo"
+    ],
+    "answer": 0,
+    "explain": "I fattori generali di trascrizione (TFIID, TFIIB, TFIIF, TFIIE, TFIIH) devono assemblarsi sul promotore PRIMA che la RNA pol II possa partire: senza di loro la polimerasi non si lega ne si avvia. Le altre opzioni sono trappole: il cap 5' viene AGGIUNTO (non rimosso) dopo la trascrizione — rimuoverlo e invece il segnale di degradazione dell'mRNA; lo splicing avviene sull'mRNA gia prodotto; la coda di poliA e aggiunta dopo la trascrizione; il primer serve nella REPLICAZIONE del DNA (DNA pol), non nella trascrizione (RNA pol non ha bisogno di primer).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-10-5",
+    "topicId": "bio-u3-10",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Quale fattore generale di trascrizione si lega PER PRIMO alla TATA box, dando il via all'assemblaggio del complesso di preinizio?",
+    "choices": [
+      "TFIIH, perche e quello che apre il DNA e fosforila la RNA polimerasi",
+      "RNA polimerasi II, perche deve occupare il posto prima degli altri fattori",
+      "TFIIB, perche stabilizza il complesso e aiuta a posizionare la polimerasi",
+      "TFIID, tramite la sua subunita TBP che riconosce la sequenza TATAAAA",
+      "TFIIA, perche e il fattore piu piccolo e riesce ad avvicinarsi per primo"
+    ],
+    "answer": 3,
+    "explain": "TFIID e il primo ad arrivare: la sua subunita TBP (TATA-Binding Protein) riconosce la sequenza TATAAAA, si lega e piega il DNA, creando la piattaforma su cui si assembleranno tutti gli altri. Le trappole: TFIIH e l'ULTIMO del ponteggio (apre il DNA e attiva la polimerasi solo alla fine); la RNA pol II entra solo dopo TFIID + TFIIA + TFIIB; TFIIB arriva dopo TFIID, non prima; TFIIA non ha nulla a che fare con il riconoscimento della TATA box.",
+    "tags": ["prova d'esame"]
+  }
+]

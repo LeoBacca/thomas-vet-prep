@@ -1,0 +1,67 @@
+{
+ "id": "chim-u7-08",
+ "titolo": "Il legame glicosidico, disaccaridi e polisaccaridi (amido, glicogeno, cellulosa)",
+ "materia": "chimica",
+ "unita": 7,
+ "slug": "08-il-legame-glicosidico-disaccaridi-e-polisaccaridi",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/chimica/u7/08-il-legame-glicosidico-disaccaridi-e-polisaccaridi.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "L'amido:",
+   "choices": [
+    "è una miscela dei polisaccaridi di amilosio e amilopectina",
+    "è un altro nome della cellulosa",
+    "è un altro nome del glicogeno",
+    "è un polisaccaride composto da saccarosio e amilosio",
+    "è un componente delle membrane cellulari"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2010",
+   "q": "Quale delle seguenti classi di composti non ha struttura polimerica?",
+   "choices": [
+    "Polieni",
+    "Proteine",
+    "Polisaccaridi",
+    "Poliesteri",
+    "Acidi ribonucleici"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2010",
+   "q": "Quale dei seguenti zuccheri non è riducente:",
+   "choices": [
+    "Saccarosio",
+    "Glucosio",
+    "Lattosio",
+    "Galattosio",
+    "Cellobiosio"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2018",
+   "q": "Idrolizzando molecole di lattosio si ottengono:",
+   "choices": [
+    "glucosio e galattosio",
+    "glucosio e fruttosio",
+    "solo glucosio",
+    "solo galattosio",
+    "saccarosio e galattosio"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

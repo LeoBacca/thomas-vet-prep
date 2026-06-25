@@ -1,0 +1,39 @@
+{
+ "id": "bio-u4-08",
+ "titolo": "Cromosomi umani, cariotipo, diploidia, omologhi e bandeggio",
+ "materia": "biologia",
+ "unita": 4,
+ "slug": "08-cromosomi-umani-cariotipo-diploidia-omologhi-e",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/biologia/u4/08-cromosomi-umani-cariotipo-diploidia-omologhi-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "L'analisi del cariotipo di una cellula che si trova in metafase mitotica consente di evidenziare:",
+   "choices": [
+    "le anomalie di numero o di struttura dei cromosomi",
+    "la perdita di un gene conseguente alla duplicazione del DNA",
+    "una possibile mutazione genica avvenuta nella molecola del DNA",
+    "l'acquisto di un gene da parte di un cromosoma",
+    "la frequenza del crossing-over"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2007",
+   "q": "Una prova che i cromosomi X e Y fossero un tempo autosomi omologhi è data dal fatto che:",
+   "choices": [
+    "le estremità dei due cromosomi si allineano durante la meiosi e possono ricombinarsi",
+    "sul cromosoma Y c'è il gene SRY responsabile della mascolinità, come nel cromosoma X",
+    "il cromosoma X è strapieno di DNA spazzatura",
+    "il cromosoma Y deriva per duplicazione dal cromosoma X",
+    "gli autosomi omologhi da cui derivano erano già in origine diversi tra loro"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

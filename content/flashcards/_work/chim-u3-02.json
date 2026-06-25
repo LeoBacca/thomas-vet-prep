@@ -1,0 +1,263 @@
+{
+ "id": "chim-u3-02",
+ "titolo": "Il bilanciamento delle reazioni chimiche",
+ "materia": "chimica",
+ "unita": 3,
+ "slug": "02-il-bilanciamento-delle-reazioni-chimiche",
+ "freq": 18,
+ "risorseMdx": "src/pages/risorse/chimica/u3/02-il-bilanciamento-delle-reazioni-chimiche.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "In una reazione bilanciata risultano uguali:",
+   "choices": [
+    "le moli dei reagenti e quelle dei prodotti",
+    "gli atomi dei reagenti e quelli dei prodotti",
+    "i numeri di ossidazione dei reagenti e quelli dei prodotti",
+    "gli indici dei reagenti e quelli dei prodotti",
+    "le masse dei reagenti e quelle dei prodotti"
+   ],
+   "correct": 1,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2008",
+   "q": "Indicare quando la seguente reazione di ossido-riduzione è correttamente bilanciata: Cu + HNO3 -> Cu(NO3)2 + H2O + NO",
+   "choices": [
+    "3Cu + 8HNO3 -> 3Cu(NO3)2 + 4H2O + 2NO",
+    "3Cu + 4HNO3 -> 3Cu(NO3)2 + 2H2O + 2NO",
+    "2Cu + 4HNO3 -> 2Cu(NO3)2 + 3H2O + 3NO",
+    "3Cu + 6HNO3 -> 3Cu(NO3)2 + 3H2O + 3NO",
+    "2Cu + 8HNO3 -> 2Cu(NO3)2 + 4H2O + 2NO"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2009",
+   "q": "Dall'ossidazione totale di una molecola di etanolo (C2H5OH) si ottengono:",
+   "choices": [
+    "due molecole di CO2 e tre di acqua",
+    "solo due molecole di CO2",
+    "due molecole di CO ed una di CO2",
+    "solo due molecole di CO",
+    "due molecole di CO2 ed una di acqua"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2010",
+   "q": "Indicare l'unica equazione bilanciata.",
+   "choices": [
+    "4 NH3 + 5 O2 -> 4 NO + 6 H2O",
+    "2 CaO -> Ca + O2",
+    "N2 + 3 H2 -> 3 NH3",
+    "3 KOH + 2 H3PO4 -> K3PO4 + 3 H2O",
+    "2 O3 -> 2 O2 + O"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2011",
+   "q": "Indicare quale tra le seguenti reazioni è bilanciata:",
+   "choices": [
+    "3 SO2 + Ni2O3 -> Ni2(SO3)3",
+    "2 SO2 + Ni2O3 -> 2 Ni2(SO3)3",
+    "SO2 + 2 Ni2O3 -> Ni2(SO3)3",
+    "SO2 + Ni2O3 -> Ni2(SO3)3",
+    "1/2 SO2 + Ni2O3 -> Ni2(SO3)3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "formula"
+  },
+  {
+   "year": "2011",
+   "q": "Calcolare quante moli di K2O si ottengono a partire da 39 grammi di potassio metallico (39 u.m.a.), per reazione con eccesso di ossigeno, dopo aver bilanciato la seguente reazione: 4 K + O2 -> 2 K2O",
+   "choices": [
+    "0,5",
+    "1,0",
+    "2,0",
+    "0,25",
+    "0,14"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2011",
+   "q": "Un campione di roccia contenente ferro (55,8 u.m.a.) viene triturato e disciolto in una soluzione di HCl concentrato. Dalla reazione, da bilanciare, si liberano 4 g di H2. Calcolare la quantità di ferro presente inizialmente nel campione. Fe + 2 HCl -> FeCl2 + H2",
+   "choices": [
+    "111,6 g",
+    "55,8 g",
+    "223,2 g",
+    "5,58 g",
+    "4,0 g"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2011",
+   "q": "Assegnare gli opportuni coefficienti stechiometrici alla seguente reazione: KClO3 + H2SO4 -> KHSO4 + HClO4 + ClO2 + H2O",
+   "choices": [
+    "3; 3 -> 3; 1; 2; 1",
+    "2; 2 -> 2; 1; 1; 1",
+    "1; 1 -> 1; 1; 1; 1",
+    "4; 2 -> 3; 1; 2; 1",
+    "2; 4 -> 1; 2; 1; 3"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2013",
+   "q": "Qual e il volume minimo di ossigeno necessario per la combustione completa di 400 ml di propano (C3H8)? Si assuma che entrambi i gas siano ideali e che abbiano la stessa pressione e temperatura. Reazione: C3H8 + 5 O2 -> 3 CO2 + 4 H2O.",
+   "choices": [
+    "2000 ml",
+    "2600 ml",
+    "2800 ml",
+    "3600 ml",
+    "4000 ml"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2013",
+   "q": "Qual e il volume di idrogeno prodotto quando 2,5 g di calcio reagiscono con un eccesso di acqua? Ca + 2 H2O -> Ca(OH)2 + H2. [Il volume molare del gas, nelle condizioni dell'esperimento, e di 24 litri per mole] [La massa atomica relativa del calcio e 40]",
+   "choices": [
+    "1500 ml",
+    "1000 ml",
+    "1200 ml",
+    "1800 ml",
+    "2000 ml"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2015",
+   "q": "Data l'equazione: a NH3 + b O2 -> 4 NO + c H2O. Quale valore deve avere il coefficiente b affinché l'equazione sia bilanciata?",
+   "choices": [
+    "5",
+    "4",
+    "10",
+    "8",
+    "3"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2018",
+   "q": "Quanti litri di ossigeno sono necessari per la combustione completa di 5,50 L di etilene (C2H4) considerando i gas alle stesse condizioni di pressione e temperatura?",
+   "choices": [
+    "16,5 L",
+    "5,50 L",
+    "22,4 L",
+    "11,0 L",
+    "2,75 L"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2018",
+   "q": "Quali sono i valori da attribuire ai coefficienti a, b, c per bilanciare correttamente la seguente reazione chimica: aNH3 + bO2 -> cNO + 6H2O ?",
+   "choices": [
+    "a = 4 ; b = 5 ; c = 4",
+    "a = 4 ; b = 4 ; c = 5",
+    "a = 3 ; b = 2 ; c = 4",
+    "a = 4 ; b = 1 ; c = 3",
+    "a = 3 ; b = 1 ; c = 3"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2019",
+   "q": "Secondo la reazione 2KClO3(s) -> 2KCl(s) + 3O2(g) quale volume di O2 viene prodotto a STP dalla decomposizione di 0,4 mol di KClO3?",
+   "choices": [
+    "13,4 L",
+    "33,6 L",
+    "0,6 L",
+    "22,4 L",
+    "11,2 L"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2019",
+   "q": "Quanti grammi di H2O reagiscono completamente con 1 mole di Na (M = 23 g/mol) secondo la reazione: 2Na + 2H2O -> 2NaOH + H2?",
+   "choices": [
+    "18",
+    "23",
+    "1",
+    "2",
+    "36"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2020",
+   "q": "Quale delle seguenti combinazioni di coefficienti stechiometrici - a, b, c, d, e, f - deve essere utilizzata per bilanciare la reazione aH3AsO3 + bHIO3 + cCl- -> dICl2- + eH3AsO4 + fOH- ?",
+   "choices": [
+    "a = 2; b = 1; c = 2; d = 1; e = 2; f = 1",
+    "a = 1; b = 1; c = 2; d = 1; e = 1; f = 1",
+    "a = 2; b = 2; c = 2; d = 1; e = 2; f = 2",
+    "a = 2; b = 2; c = 2; d = 2; e = 2; f = 2",
+    "a = 1; b = 1; c = 1; d = 1; e = 1; f = 1"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2022",
+   "q": "La combustione dell'acido solfidrico può avvenire secondo la seguente reazione: 2 H2S + 3 O2 -> 2 SO2 + 2 H2O. Se 10 mol di H2S e 30 mol di O2 vengono poste in un recipiente chiuso, quante moli saranno complessivamente presenti nel recipiente dopo la combustione completa?",
+   "choices": [
+    "35 mol",
+    "20 mol",
+    "40 mol",
+    "10 mol",
+    "55 mol"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2022",
+   "q": "In ogni reazione del tipo A + 2B -> C il reagente A è limitante se:",
+   "choices": [
+    "il rapporto tra il numero di moli di A e il numero di moli di B è minore di 0,5",
+    "la massa di A è minore della massa di B",
+    "il numero di moli di A è minore del numero di moli di B",
+    "il rapporto tra il numero di moli di A e il numero di moli di B è maggiore di 0,5",
+    "il rapporto tra la massa di A e la massa di B è minore di 0,5"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

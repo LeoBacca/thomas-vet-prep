@@ -1,0 +1,112 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u3-09">
+
+Hai presente quando metti troppo zucchero nel caffè e una parte resta sul fondo, non si scioglie più? Quello è un **equilibrio eterogeneo**: una parte è solida (sul fondo) e una parte è disciolta nel liquido. "Eterogeneo" vuol dire solo che ci sono **due forme diverse** che convivono: il **solido** e gli **ioni sciolti** nell'acqua.
+
+Alcuni sali si sciolgono pochissimo. Quel pochino che riesce a sciogliersi raggiunge un equilibrio con il solido che resta sul fondo. Per misurare questo "pochino" si usa un numero: il **prodotto di solubilità**, che si scrive **Kps**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il Kps è come la "capienza massima" dell'acqua per quel sale. Finché non la riempi, tutto resta sciolto. Appena la superi, il sale di troppo si deposita come solido (precipita).</div>
+
+<Diagram caption="Il solido in equilibrio con i suoi ioni nell'acqua" code={`flowchart LR
+  S["Sale SOLIDO<br/>sul fondo<br/>(es. AgCl)"] -->|"si scioglie"| I["Ioni SCIOLTI<br/>nell'acqua<br/>(Ag+ e Cl-)"]
+  I -->|"si riuniscono"| S`} />
+
+Le due frecce vanno nei due sensi: un po' di solido si scioglie e un po' di ioni tornano solido, alla stessa velocità. Per questo si dice **equilibrio**: la situazione, vista da fuori, sembra ferma.
+
+## Cos'è il Kps (prodotto di solubilità)
+
+Prendiamo un sale poco solubile, per esempio il cloruro d'argento, **AgCl**. Quando si scioglie, si rompe in due ioni: **Ag+** e **Cl-**.
+
+Il **Kps** è semplicemente il **prodotto** (cioè la moltiplicazione) delle concentrazioni di questi ioni all'equilibrio:
+
+`Kps = [Ag+] x [Cl-]`
+
+Le parentesi quadre `[ ]` significano "concentrazione di", cioè quanti ioni ci sono in un litro d'acqua. Il Kps è un numero **fisso** per ogni sale, a una certa temperatura. Più il Kps è piccolo, meno quel sale si scioglie.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Kps piccolo = sale "testardo" che non si vuole sciogliere. Kps grande = sale che si scioglie più volentieri.</div>
+
+Un dettaglio utile: il solido non entra nel calcolo. Conta solo quello che è **disciolto** in acqua. Il mucchietto sul fondo non si conta.
+
+## L'effetto dello ione comune
+
+Immagina di avere già l'acqua con un po' di AgCl sciolto, all'equilibrio. Cosa succede se ci aggiungi del sale da cucina che porta altri ioni **Cl-** (lo stesso ione che c'è già dentro)?
+
+L'acqua si "affolla" di ioni Cl-. Per restare in equilibrio, una parte di Ag+ si attacca a questi Cl- in più e **precipita** come solido. Risultato: il sale poco solubile si scioglie **ancora meno** di prima.
+
+Questo si chiama **effetto dello ione comune**: aggiungere uno ione che il sale ha già **riduce** quanto quel sale riesce a sciogliersi.
+
+<Diagram caption="Effetto dello ione comune: si aggiunge uno ione che c'è già" code={`flowchart TB
+  A["Soluzione all'equilibrio<br/>con Ag+ e Cl-"] --> B["Aggiungo altri ioni Cl-"]
+  B --> C["Troppi Cl- in acqua"]
+  C --> D["Ag+ e Cl- si riuniscono<br/>e PRECIPITANO come solido"]
+  D --> E["Il sale si scioglie ANCORA MENO"]`} />
+
+Una analogia: è come una pista da ballo già piena. Se entra altra gente dello stesso tipo, alcune coppie si formano subito e **escono** dalla pista (precipitano). Resta meno spazio per sciogliersi.
+
+**Perché conta in medicina e veterinaria:** i **calcoli renali** sono proprio questo fenomeno. Nelle urine ci sono ioni come calcio e ossalato. Se la loro concentrazione supera il Kps, si forma un solido: il sassolino (calcolo) che precipita nel rene. Bere molta acqua **diluisce** gli ioni, abbassa le concentrazioni e aiuta a restare sotto il Kps, evitando che il calcolo si formi.
+
+## Come capire se precipita: il quoziente Q
+
+Per prevedere se si formerà un solido, si calcola lo stesso prodotto delle concentrazioni in quel momento. Lo chiamiamo **Q**. Poi lo confrontiamo con il Kps:
+
+- Se Q è **minore di** Kps → c'è ancora spazio, tutto resta sciolto. Non precipita.
+- Se Q è **uguale a** Kps → siamo esattamente all'equilibrio (acqua "piena al punto giusto").
+- Se Q è **maggiore di** Kps → si è superata la capienza, il sale in eccesso **precipita**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Q è "quanto sta succedendo adesso", Kps è "il limite". Se superi il limite, precipita.</div>
+
+Nel rene è proprio così: se il prodotto delle concentrazioni di calcio e ossalato supera il Kps, parte la formazione del calcolo.
+
+## Guarda il video
+
+<YouTube id="z2SC6eT-NAo" title="Cos'è il prodotto di solubilità (Kps) - spiegazione semplice, Prof. Atzeni" />
+
+<VideoVisto id="chim-u3-09" />
+
+## Da ricordare
+
+- **Equilibrio eterogeneo** = solido sul fondo in equilibrio con i suoi **ioni** sciolti in acqua.
+- Il **Kps** è il **prodotto delle concentrazioni** degli ioni all'equilibrio. Kps **piccolo** = sale che si scioglie **poco**.
+- Il solido non entra nel calcolo: conta solo ciò che è **disciolto**.
+- **Effetto dello ione comune**: aggiungere uno ione che il sale ha già fa sciogliere il sale **ancora meno** (e può farlo precipitare).
+- Si **precipita** quando **Q è maggiore di Kps**. È il meccanismo dei **calcoli renali**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa indica un Kps molto piccolo per un sale?"
+  opzioni={["Che il sale si scioglie moltissimo", "Che il sale si scioglie pochissimo", "Che il sale non esiste", "Che il sale è liquido"]}
+  corretta={1}
+  spiegazione="Kps piccolo significa che le concentrazioni degli ioni sciolti sono basse: il sale è poco solubile, si scioglie pochissimo."
+/>
+
+<Quiz
+  domanda="Per il sale AgCl che si scioglie in Ag+ e Cl-, come si scrive il prodotto di solubilità?"
+  opzioni={["Kps = [Ag+] + [Cl-]", "Kps = [Ag+] x [Cl-]", "Kps = [AgCl]", "Kps = [Ag+] diviso [Cl-]"]}
+  corretta={1}
+  spiegazione="Il Kps è il PRODOTTO (la moltiplicazione) delle concentrazioni degli ioni in soluzione: [Ag+] moltiplicato per [Cl-]. Il solido non entra nel calcolo."
+/>
+
+<Quiz
+  domanda="A una soluzione di AgCl all'equilibrio aggiungi altri ioni Cl-. Cosa succede all'AgCl?"
+  opzioni={["Si scioglie di più", "Si scioglie di meno e una parte precipita", "Non cambia nulla", "Diventa gassoso"]}
+  corretta={1}
+  spiegazione="È l'effetto dello ione comune: aggiungendo uno ione già presente (Cl-), una parte di Ag+ si riunisce e precipita, quindi il sale si scioglie ancora meno."
+/>
+
+<Esercizio
+  problema="In un campione di urina, il prodotto delle concentrazioni di calcio e ossalato (chiamiamolo Q) risulta MAGGIORE del Kps del sale che potrebbero formare. Cosa ci aspettiamo che accada, e perché bere molta acqua aiuta a prevenirlo?"
+  soluzione="Se Q è maggiore del Kps si è superata la 'capienza' della soluzione, quindi il sale in eccesso PRECIPITA come solido: è la formazione di un calcolo renale. Bere molta acqua DILUISCE l'urina, cioè abbassa le concentrazioni di calcio e ossalato; così Q torna sotto il Kps e il calcolo non si forma."
+/>
+
+</section>
+
+</RisorsaLayout>

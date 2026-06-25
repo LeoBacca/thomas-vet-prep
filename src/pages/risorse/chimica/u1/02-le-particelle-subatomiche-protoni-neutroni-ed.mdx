@@ -1,0 +1,103 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-02">
+
+Tutto ciò che vedi e tocchi è fatto di **atomi**: l'aria, l'acqua, questo schermo, il tuo corpo. L'atomo è il mattoncino più piccolo della materia. Ma anche l'atomo è fatto di pezzi ancora più piccoli, chiamati **particelle subatomiche**. Sono tre: **protoni**, **neutroni** ed **elettroni**. Conoscerle è il punto di partenza di tutta la chimica, e capire come è fatto un atomo ti servirà poi per capire come funzionano le cellule, le ossa e il sangue.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina l'atomo come un piccolo sistema solare. Al centro c'è il "Sole" (il <strong>nucleo</strong>, con protoni e neutroni); intorno girano i "pianeti" (gli <strong>elettroni</strong>).</div>
+
+<Diagram caption="L'atomo: nucleo al centro, elettroni intorno" code={`flowchart TB
+  A["ATOMO"] --> N["NUCLEO<br/>(il centro)"]
+  A --> E["ELETTRONI<br/>girano intorno"]
+  N --> P["Protoni<br/>carica positiva (+)"]
+  N --> NE["Neutroni<br/>carica neutra (0)"]
+  E --> EL["carica negativa (-)"]`} />
+
+## Le tre particelle e la loro carica
+
+Ogni particella ha una **carica elettrica**, cioè un piccolo "segno" che può essere positivo, negativo o assente. Pensa a una calamita: ha un polo più e un polo meno. Allo stesso modo:
+
+- **Protone**: carica **positiva (+)**. Sta nel nucleo. ("Protone" e "Positivo" iniziano entrambi con la P: un trucco per ricordarlo.)
+- **Neutrone**: carica **neutra (0)**, cioè nessuna carica. Sta anche lui nel nucleo. ("Neutrone" come "neutro".)
+- **Elettrone**: carica **negativa (-)**. Gira intorno al nucleo, fuori.
+
+Le cariche opposte si attirano. Per questo gli elettroni negativi restano "agganciati" all'atomo: sono attratti dai protoni positivi del nucleo. È la stessa attrazione che senti tra i due poli opposti di due calamite.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> protone più (+), elettrone meno (-), neutrone niente (0). Il più e il meno si attraggono, ed è questa attrazione che tiene insieme l'atomo.</div>
+
+## Dove si trovano: nucleo e orbitali
+
+L'atomo è quasi tutto **spazio vuoto**. Se gonfiassi un atomo fino a farlo grande come uno stadio, il nucleo sarebbe una pallina al centro del campo, e gli elettroni piccole mosche che sfrecciano sugli spalti lontani. In mezzo: vuoto.
+
+- Il **nucleo** è il centro: piccolissimo ma pesante. Contiene **protoni e neutroni** stretti insieme. Quasi tutto il "peso" dell'atomo è qui.
+- Gli **orbitali** sono le "zone" intorno al nucleo dove si trovano gli **elettroni**. Non sono binari precisi come quelli di un treno: sono più come le **nuvole di moscerini** che ronzano intorno a una lampada. Sappiamo che gli elettroni stanno lì intorno, ma non in un punto esatto.
+
+Gli elettroni sono leggerissimi: pesano quasi nulla rispetto a protoni e neutroni. Eppure sono importantissimi, perché sono proprio loro, quelli più esterni, a decidere come un atomo si lega agli altri. E i legami tra atomi sono ciò che costruisce ogni molecola del tuo corpo.
+
+<Diagram caption="Chi sta dentro il nucleo e chi sta fuori" code={`flowchart LR
+  N["NUCLEO<br/>(centro pesante)"] --> P["Protoni (+)"]
+  N --> NE["Neutroni (0)"]
+  O["ORBITALI<br/>(zone esterne)"] --> EL["Elettroni (-)<br/>leggerissimi"]`} />
+
+## Perché conta in medicina e veterinaria
+
+Questo non è un dettaglio astratto: il corpo funziona grazie a queste particelle.
+
+- Nel sangue e nelle cellule circolano **ioni**, cioè atomi che hanno guadagnato o perso elettroni e quindi hanno una carica (per esempio sodio, potassio, calcio). È lo spostamento di queste cariche che fa **battere il cuore** e fa viaggiare i **segnali nei nervi**.
+- Le **radiografie** e altre tecniche di diagnosi sfruttano proprio il comportamento di nucleo ed elettroni.
+- Anche un esame del sangue che misura gli "elettroliti" sta misurando, in fondo, atomi carichi: cioè la chimica delle particelle subatomiche applicata a un animale o a una persona.
+
+Capire protoni, neutroni ed elettroni oggi vuol dire avere le basi per capire domani come si cura un corpo.
+
+## Guarda il video
+
+<YouTube id="BpcnoVfe5Eo" title="Gli atomi: protoni, neutroni, elettroni e orbitali — Biologia con Giulia" />
+
+<VideoVisto id="chim-u1-02" />
+
+## Da ricordare
+
+- L'atomo è fatto di **tre particelle**: protoni, neutroni ed elettroni.
+- **Cariche**: protone **positivo (+)**, neutrone **neutro (0)**, elettrone **negativo (-)**.
+- **Protoni e neutroni** stanno nel **nucleo** (il centro, pesante); gli **elettroni** girano fuori, negli **orbitali**.
+- L'atomo è quasi tutto **spazio vuoto**: nucleo minuscolo al centro, elettroni leggerissimi lontani.
+- Le cariche opposte (+ e -) si **attraggono**: è questo che tiene insieme l'atomo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale particella ha carica positiva?"
+  opzioni={["il neutrone", "il protone", "l'elettrone", "l'orbitale"]}
+  corretta={1}
+  spiegazione="Il protone ha carica positiva (+). Trucco: Protone e Positivo iniziano entrambi con la P. Il neutrone è neutro, l'elettrone è negativo."
+/>
+
+<Quiz
+  domanda="Dove si trovano i protoni e i neutroni?"
+  opzioni={["negli orbitali, lontano dal centro", "nel nucleo, al centro dell'atomo", "fuori dall'atomo", "non si trovano nell'atomo"]}
+  corretta={1}
+  spiegazione="Protoni e neutroni stanno insieme nel nucleo, cioè nel centro pesante dell'atomo. Solo gli elettroni girano fuori, negli orbitali."
+/>
+
+<Quiz
+  domanda="L'elettrone ha carica:"
+  opzioni={["positiva", "negativa", "neutra", "non ha carica"]}
+  corretta={1}
+  spiegazione="L'elettrone ha carica negativa (-). È attratto dal nucleo positivo, e per questo resta agganciato all'atomo."
+/>
+
+<Esercizio
+  problema="Un atomo ha i suoi protoni e neutroni stipati nel centro, mentre alcune particelle leggerissime gli ronzano intorno a distanza. Come si chiama il centro? E come si chiamano le particelle che gli girano intorno?"
+  soluzione="Il centro si chiama nucleo (contiene protoni e neutroni). Le particelle leggere che girano intorno sono gli elettroni, e le zone in cui si trovano si chiamano orbitali."
+/>
+
+</section>
+
+</RisorsaLayout>

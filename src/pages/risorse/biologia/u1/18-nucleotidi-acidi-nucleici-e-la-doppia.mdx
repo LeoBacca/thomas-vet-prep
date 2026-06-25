@@ -1,0 +1,95 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-18">
+
+## Cos'è un nucleotide?
+
+Pensa a un nucleotide come a un **mattoncino Lego**. Ogni mattoncino è fatto di tre pezzi uniti insieme:
+
+1. **Zucchero a 5 atomi di carbonio** — nel DNA si chiama *desossiribosio*, nell'RNA si chiama *ribosio*. È la spina dorsale del mattoncino.
+2. **Gruppo fosfato** — un "gancio" carico negativamente che serve a collegare un mattoncino al successivo.
+3. **Base azotata** — è la parte "variabile" del mattoncino. È qui che sta l'informazione.
+
+Le basi azotate sono **4** e si dividono in due famiglie:
+- **Purine** (struttura a due anelli): **Adenina (A)** e **Guanina (G)**
+- **Pirimidine** (struttura a un anello): **Citosina (C)** e **Timina (T)** — nel DNA; nell'RNA la timina è sostituita dall'**Uracile (U)**
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un nucleotide = zucchero + fosfato + base azotata. È il mattoncino con cui è costruito tutto il DNA.</div>
+
+## Come si forma la catena (il filamento)
+
+I nucleotidi si uniscono uno dopo l'altro: il **gruppo fosfato** di un nucleotide si lega allo **zucchero** del nucleotide successivo, formando un lungo filo. Questo legame si chiama *legame fosfodiesterico* (dal nome della reazione chimica, ma non preoccuparti del nome: ricorda solo che tiene insieme i mattoncini).
+
+Il risultato è una lunga catena con:
+- Uno **scheletro esterno** fatto di zucchero + fosfato (sempre uguale)
+- Le **basi azotate** che sporgono verso l'interno, come i denti di un pettine
+
+<Diagram caption="Struttura di un nucleotide e come si forma il filamento di DNA" code={`flowchart TB
+  A["Gruppo fosfato<br/>(gancio di collegamento)"] --> B["Zucchero desossiribosio<br/>(struttura centrale)"]
+  B --> C["Base azotata<br/>A, T, C o G<br/>(porta l'informazione)"]
+  C --> D["Legame fosfodiesterico<br/>(collega un nucleotide al prossimo)"]
+  D --> E["Filamento di DNA<br/>(catena lunga migliaia di nucleotidi)"]`} />
+
+## La doppia elica: Watson e Crick (1953)
+
+Nel 1953 James Watson e Francis Crick (con dati fondamentali di Rosalind Franklin e Erwin Chargaff) capirono come è fatto il DNA. La risposta? Una **doppia elica** — immagina una scala a chiocciola.
+
+- I **due montanti della scala** (lo scheletro) sono fatti di zucchero + fosfato.
+- I **pioli della scala** sono coppie di basi azotate che si legano al centro.
+- I due filamenti sono **antiparalleli**: uno va in su (5'→3'), l'altro va in giù (3'→5').
+
+### La regola dell'appaiamento complementare
+
+Le basi non si appaiano a caso: seguono una regola fissa chiamata **complementarità delle basi** (regola di Chargaff):
+
+- **A si lega sempre con T** (Adenina — Timina) tramite **2 legami idrogeno**
+- **G si lega sempre con C** (Guanina — Citosina) tramite **3 legami idrogeno**
+
+Pensa alle basi come a pezzi di puzzle: A e T hanno la forma giusta per incastrarsi tra loro, G e C idem. Non si possono scambiare.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il DNA è una scala a chiocciola. I pioli sono coppie di basi: A con T, G con C. Questa regola si chiama complementarità e permette al DNA di copiarsi fedelmente.</div>
+
+<Diagram caption="La doppia elica del DNA: struttura e appaiamento delle basi" code={`flowchart TB
+  A["5' — Zucchero-Fosfato — 3'<br/>(filamento 1, scheletro sinistro)"] 
+  B["Base A — — — Base T<br/>(2 legami idrogeno)"]
+  C["Base G — — — Base C<br/>(3 legami idrogeno)"]
+  D["Base T — — — Base A<br/>(2 legami idrogeno)"]
+  E["Base C — — — Base G<br/>(3 legami idrogeno)"]
+  F["3' — Zucchero-Fosfato — 5'<br/>(filamento 2, scheletro destro)"]
+  A --> B --> C --> D --> E --> F`} />
+
+## Perché è importante questa struttura?
+
+1. **Copia fedele**: grazie alla complementarità, quando il DNA si divide ogni filamento fa da stampo per ricostruire l'altro. È come avere due chiavi identiche.
+2. **Protezione dell'informazione**: le basi stanno all'interno della doppia elica, protette dallo scheletro esterno.
+3. **Stabilità**: i legami idrogeno tra le basi (tanti, sommati lungo tutta la molecola) tengono i due filamenti uniti in modo stabile ma reversibile — si possono "aprire" quando serve.
+
+## Guarda il video
+<YouTube id="DWlDAhefj5Q" title="La DOPPIA ELICA del DNA - Erwin Chargaff, Rosalind Franklin, James Watson e Francis Crick" />
+<VideoVisto id="bio-u1-18" />
+
+## Da ricordare
+- Un **nucleotide** è formato da tre parti: zucchero + fosfato + base azotata (A, T, C, G nel DNA).
+- Il DNA ha una struttura a **doppia elica**: due filamenti antiparalleli uniti dai pioli (coppie di basi).
+- La regola d'oro: **A-T** (2 legami idrogeno) e **G-C** (3 legami idrogeno) — mai in altro modo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quante parti compongono un nucleotide?" opzioni={["Due: zucchero e base azotata","Tre: zucchero, fosfato e base azotata","Quattro: zucchero, fosfato, base azotata e acqua","Una sola: la base azotata"]} corretta={1} spiegazione="Un nucleotide è sempre composto da tre parti: uno zucchero a 5 carboni (desossiribosio nel DNA), un gruppo fosfato e una base azotata. Tutte e tre sono indispensabili." />
+
+<Quiz domanda="Con quale base si appaia sempre la Guanina (G) nel DNA?" opzioni={["Adenina (A)","Uracile (U)","Timina (T)","Citosina (C)"]} corretta={3} spiegazione="La Guanina si appaia sempre con la Citosina tramite 3 legami idrogeno (G-C). L'Adenina si appaia con la Timina tramite 2 legami idrogeno (A-T). Questa è la regola di complementarità di Chargaff." />
+
+<Quiz domanda="Cosa si intende quando si dice che i due filamenti del DNA sono 'antiparalleli'?" opzioni={["Che hanno basi diverse","Che uno è di DNA e l'altro di RNA","Che corrono in direzioni opposte: uno dal 5' al 3', l'altro dal 3' al 5'","Che si respingono e non si toccano mai"]} corretta={2} spiegazione="Antiparallelo significa che i due filamenti hanno orientamento opposto: dove uno va dal capo 5' al capo 3', l'altro va dal 3' al 5'. È come due corsie di un'autostrada che scorrono in senso contrario." />
+
+<Esercizio problema="Un filamento di DNA ha la seguente sequenza di basi: 5'-ATCGGTA-3'. Scrivi la sequenza del filamento complementare, specificando anche l'orientamento 5'→3'." soluzione="Il filamento complementare, scritto in senso antiparallelo (3'→5' rispetto al primo, quindi 5'→3' letto normalmente), è: 5'-TACCGAT-3'. Si applica la regola A-T e G-C: A diventa T, T diventa A, C diventa G, G diventa C. Ricorda che il filamento complementare è antiparallelo, quindi si legge in direzione opposta." />
+
+</section>
+
+</RisorsaLayout>

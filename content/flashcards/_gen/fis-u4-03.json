@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u4-03-1",
+    "topicId": "fis-u4-03",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: in un'onda trasversale il mezzo oscilla nella stessa direzione in cui l'onda avanza (come le molecole d'aria nel suono).",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. E' il contrario: nelle onde TRASVERSALI il mezzo oscilla PERPENDICOLARE alla direzione di propagazione (pensa alla corda che sale e scende mentre l'onda va avanti). Sono le onde LONGITUDINALI — come il suono — in cui il mezzo oscilla parallelo alla direzione di propagazione (le molecole d'aria vanno avanti e indietro nella stessa direzione del suono).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u4-03-2",
+    "topicId": "fis-u4-03",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "open",
+    "q": "Hai in mano un'estremita di una corda tesa orizzontalmente e la muovi su e giu. (a) Come si chiama questo tipo di onda? (b) In quale direzione oscilla la corda rispetto alla direzione in cui l'onda avanza? (c) Fai un esempio di onda del tipo opposto e spiega come oscilla il mezzo in quel caso.",
+    "answer": "(a) E' un'onda trasversale. (b) La corda oscilla in verticale (su-giu), mentre l'onda avanza orizzontalmente lungo la corda: oscillazione e propagazione formano un angolo retto, sono perpendicolari. (c) L'esempio opposto e il suono, che e un'onda longitudinale. Le molecole d'aria si spostano avanti e indietro nella STESSA direzione in cui il suono viaggia, creando zone di compressione (molecole vicine) e rarefazione (molecole lontane). Altro esempio di longitudinale: premi ritmicamente un'estremita di una molla — le spire si addensano e si rarefanno lungo la molla stessa.",
+    "explain": "La parola chiave: trasversale = perpendicolare; longitudinale = parallelo. Il suono e sempre longitudinale; la luce (e le corde) sono trasversali.",
+    "tags": ["risposta aperta"]
+  }
+]

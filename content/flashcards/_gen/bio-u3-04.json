@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u3-04-1",
+    "topicId": "bio-u3-04",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: durante la replicazione del DNA, entrambi i filamenti vengono copiati in modo continuo, senza interruzioni.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Solo il filamento guida (leading strand) viene copiato in modo continuo. L'altro filamento, detto filamento lento (lagging strand), viene copiato a pezzetti — i frammenti di Okazaki — perché la DNA polimerasi puo lavorare solo in direzione 5'→3' e quel filamento corre nella direzione opposta alla forcella.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-04-2",
+    "topicId": "bio-u3-04",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Immagina di costruire un muro di mattoni. Puoi aggiungere mattoni solo da sinistra verso destra. Su una parete ti muovi agevolmente; sull'altra devi ripartire sempre dall'inizio e costruire tratti separati. Quale concetto descrive questa analogia?",
+    "choices": [
+      "Il fatto che la DNA polimerasi lavora solo in direzione 5'→3', costringendo il filamento lento a essere sintetizzato a pezzetti (frammenti di Okazaki)",
+      "Il fatto che la primasi rimuove i primer di RNA uno alla volta",
+      "Il fatto che la DNA ligasi deve sigillare ogni singolo nucleotide",
+      "Il fatto che la doppia elica si apre prima da un estremo e poi dall'altro"
+    ],
+    "answer": 0,
+    "explain": "La DNA polimerasi puo aggiungere nucleotidi solo in direzione 5'→3' (come il muratore che aggiunge mattoni da sinistra a destra). Sul filamento guida procede senza problemi; sul filamento lento deve 'tornare indietro' ogni volta e costruire un nuovo tratto — un frammento di Okazaki. Analogia veterinaria: e come suturare una ferita lunga facendo piccoli punti separati anziche un filo unico.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-04-3",
+    "topicId": "bio-u3-04",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Descrivi, in ordine, i passaggi che trasformano il filamento discontinuo (fatto di tanti frammenti di Okazaki separati) in un unico filamento continuo di DNA. Quali enzimi entrano in gioco e che cosa fa ciascuno?",
+    "answer": "Il processo avviene in tre fasi: 1) RIMOZIONE DEL PRIMER DI RNA — ogni frammento di Okazaki inizia con un breve tratto di RNA (il primer). Questo primer viene eliminato: nei procarioti lo fa la DNA polimerasi I (che ha un'attivita esonucleasica 5'→3'); negli eucarioti ci pensano RNasi H e FEN1. 2) RIEMPIMENTO DEL BUCO — dopo la rimozione del primer rimane un buco nel filamento. La DNA polimerasi (I nei procarioti, delta negli eucarioti) riempie quel tratto con nucleotidi di DNA, procedendo in direzione 5'→3'. A questo punto i frammenti sono accostati ma non ancora uniti chimicamente: rimane un 'nick' (taglio) tra la fine di un frammento e l'inizio del successivo. 3) SIGILLATURA DEI NICK — la DNA ligasi forma un legame covalente (fosfodiesterico) tra il gruppo 3'-OH di un frammento e il gruppo 5'-fosfato di quello accanto. E come il nastro adesivo che unisce pezzi di scotch gia affiancati. Il filamento discontinuo diventa cosi un unico filamento continuo.",
+    "explain": "Sequenza da ricordare: rimozione RNA (RNasi H / DNA pol I) → riempimento DNA (DNA pol) → sigillatura nick (DNA ligasi). La DNA ligasi forma sempre un legame fosfodiesterico covalente.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-04-4",
+    "topicId": "bio-u3-04",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Quale tra i seguenti processi NON ha bisogno dell'enzima DNA ligasi?",
+    "choices": [
+      "La PCR (reazione a catena della polimerasi) in vitro",
+      "L'unione dei frammenti di Okazaki durante la replicazione del filamento lento",
+      "La cucitura di un gene bersaglio a un vettore di clonaggio in laboratorio",
+      "La riparazione di rotture nel backbone del DNA dopo danni cellulari",
+      "Il completamento della sintesi del filamento discontinuo dopo la rimozione dei primer di RNA"
+    ],
+    "answer": 0,
+    "explain": "La PCR amplifica il DNA in vitro con cicli di denaturazione, annealing e allungamento; la DNA polimerasi termica copia i filamenti ma NON li unisce: ogni ciclo produce frammenti distinti e non e necessario sigillarli. In tutti gli altri casi (frammenti di Okazaki, clonaggio, riparazione, completamento del filamento lento) la DNA ligasi e indispensabile per formare il legame fosfodiesterico covalente che 'incolla' i frammenti adiacenti. TRAPPOLA: 'sintesi del filamento lento' sembra sbagliata ma e proprio li che la ligasi serve — non confondere 'sintesi' (fa la DNA polimerasi) con 'sigillatura dei nick' (fa la ligasi).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-04-5",
+    "topicId": "bio-u3-04",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Durante la replicazione del DNA sul filamento lento (lagging strand), qual e il corretto ordine temporale dei passaggi?",
+    "choices": [
+      "Primasi posa il primer → DNA polimerasi allunga il frammento → rimozione del primer RNA → riempimento con DNA → DNA ligasi sigilla il nick",
+      "DNA polimerasi copia direttamente senza primer → DNA ligasi unisce i pezzi",
+      "DNA ligasi sigilla i nick → poi la primasi posa i primer per ogni nuovo frammento",
+      "Rimozione del primer RNA → primasi posa un nuovo primer → DNA polimerasi allunga → DNA ligasi sigilla",
+      "La primasi copia tutto il filamento lento, poi la DNA polimerasi sostituisce l'RNA con DNA"
+    ],
+    "answer": 0,
+    "explain": "Il solo ordine corretto e: primer di RNA (primasi) → allungamento DNA (DNA polimerasi) → rimozione primer (RNasi H o DNA pol I) → riempimento buco (DNA pol) → sigillatura nick (DNA ligasi). TRAPPOLA B: la DNA polimerasi non puo mai partire senza un primer — ha bisogno di un 3'-OH libero da cui estendere. TRAPPOLA C: la ligasi e sempre l'ULTIMO passo, non il primo. TRAPPOLA D: non ha senso rimuovere un primer prima di averlo posato. TRAPPOLA E: la primasi e breve e posa solo primer di RNA (circa 10 nt), mai un intero filamento.",
+    "tags": ["prova d'esame"]
+  }
+]

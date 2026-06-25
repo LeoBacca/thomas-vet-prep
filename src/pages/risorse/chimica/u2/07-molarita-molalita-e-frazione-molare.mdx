@@ -1,0 +1,116 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-07">
+
+Quando sciogli qualcosa in un liquido (lo zucchero nel caffè, il sale nell'acqua) ottieni una **soluzione**. La domanda è: quanto soluto c'è dentro? Tanto o poco? La **concentrazione** risponde proprio a questo. In chimica ci sono tre modi molto usati per misurarla: **molarità**, **molalità** e **frazione molare**. Sembrano simili, ma cambiano solo per "cosa metti sotto" nella divisione. Capita la differenza, sono facilissime.
+
+Prima un ripasso veloce: il **soluto** è la cosa che sciogli (lo zucchero), il **solvente** è il liquido che lo scioglie (l'acqua). La **mole** è solo un modo per contare le particelle, come "una dozzina" conta 12 uova.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> tutte e tre rispondono a "quanto soluto c'è?". Cambia solo il denominatore: molarità divide per i <strong>litri di soluzione</strong>, molalità divide per i <strong>kg di solvente</strong>, frazione molare divide per le <strong>moli totali</strong>.</div>
+
+<Diagram caption="Le tre concentrazioni a confronto: cambia solo cosa c'è sotto" code={`flowchart TB
+  C["Quanto soluto c'è?<br/>(moli di soluto sopra)"] --> M["MOLARITA (M)<br/>diviso LITRI di soluzione<br/>unita: mol/L"]
+  C --> m["MOLALITA (m)<br/>diviso KG di solvente<br/>unita: mol/kg"]
+  C --> x["FRAZIONE MOLARE (x)<br/>diviso MOLI TOTALI<br/>numero puro, senza unita"]`} />
+
+## Molarità (M): la più usata
+
+La **molarità** ti dice quante **moli di soluto** ci sono in **un litro di soluzione**.
+
+La formula è semplice:
+
+`M = moli di soluto / litri di soluzione`  →  si misura in **mol/L** (a volte scritto M).
+
+Pensala come una ricetta: "in questa bottiglia da 1 litro ho sciolto 2 moli di sale" significa molarità 2 mol/L. Più alta è la molarità, più "carica" è la soluzione.
+
+Attenzione a un dettaglio: qui sotto c'è il volume **della soluzione finale** (soluto + solvente messi insieme), non solo dell'acqua. E poiché il volume di un liquido si **dilata con il caldo**, la molarità cambia un pochino con la temperatura.
+
+**In medicina e veterinaria** la molarità è ovunque. Le **flebo**, i farmaci sciolti, gli esami del sangue: la glicemia, per esempio, è la concentrazione di glucosio nel sangue, ed è una concentrazione di questo tipo. Sapere "quanto principio attivo per litro" è ciò che distingue una dose giusta da una pericolosa.
+
+## Molalità (m): quella che non teme il caldo
+
+La **molalità** ti dice quante **moli di soluto** ci sono per **un chilogrammo di solvente**.
+
+`m = moli di soluto / kg di solvente`  →  si misura in **mol/kg**.
+
+La differenza con la molarità è solo nel denominatore:
+
+- molarità → sotto ci sono i **litri della soluzione** (un volume),
+- molalità → sotto c'è la **massa del solo solvente** (un peso, in kg).
+
+Perché esiste anche questa? Perché la **massa non cambia con la temperatura**, mentre il volume sì. Un chilo di acqua resta un chilo sia d'estate che d'inverno. Quindi quando serve una misura stabile, che non si sballa con il caldo o il freddo, si usa la molalità. È la preferita negli esperimenti sul punto di ebollizione e di congelamento.
+
+<Diagram caption="Molarità vs molalità: cosa metti sotto e il ruolo della temperatura" code={`flowchart LR
+  A["Moli di soluto"] --> B{"Diviso per cosa?"}
+  B -->|"litri di SOLUZIONE"| M["MOLARITA<br/>cambia col caldo<br/>(il volume si dilata)"]
+  B -->|"kg di SOLVENTE"| m["MOLALITA<br/>NON cambia col caldo<br/>(la massa e stabile)"]`} />
+
+## Frazione molare (x): una semplice proporzione
+
+La **frazione molare** è ancora più intuitiva: è la **fetta di torta** che spetta a un componente.
+
+`x del soluto = moli di soluto / moli totali`
+
+Dove "moli totali" vuol dire moli di soluto **più** moli di solvente, tutte sommate.
+
+È come dire: in una classe di 20 studenti, se 5 hanno gli occhiali, la "frazione con occhiali" è 5 diviso 20, cioè 0,25. La frazione molare funziona uguale, ma conta moli al posto di studenti.
+
+Due cose comode da ricordare:
+
+- la frazione molare è un **numero puro**, senza unità di misura (è solo un rapporto),
+- se sommi le frazioni molari di **tutti** i componenti, ottieni sempre **1**. Sono le fette di un'unica torta intera.
+
+Questo modo di contare torna utile quando si studiano i gas e le miscele: per esempio l'aria che respiriamo si descrive con le frazioni molari di ossigeno e azoto.
+
+## Guarda il video
+
+<YouTube id="cVb_-UxGxl0" title="Molarità e molalità: la concentrazione di una soluzione, spiegata semplice" />
+
+<VideoVisto id="chim-u2-07" />
+
+## Da ricordare
+
+- **Molarità (M)** = moli di soluto **/ litri di soluzione** → mol/L. È la più usata; cambia un po' con la temperatura.
+- **Molalità (m)** = moli di soluto **/ kg di solvente** → mol/kg. Non cambia con la temperatura, perché usa la massa.
+- **Frazione molare (x)** = moli di un componente **/ moli totali**. È un numero puro tra 0 e 1.
+- Le frazioni molari di tutti i componenti **sommate fanno 1**.
+- Il trucco per non confonderle: guarda sempre **cosa c'è al denominatore** (litri di soluzione, kg di solvente, oppure moli totali).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="La molarità (M) si calcola dividendo le moli di soluto per:"
+  opzioni={["i kg di solvente", "i litri di soluzione", "le moli totali", "i grammi di soluto"]}
+  corretta={1}
+  spiegazione="La molarità è moli di soluto diviso litri di soluzione (mol/L). I kg di solvente sono il denominatore della molalità, le moli totali quello della frazione molare."
+/>
+
+<Quiz
+  domanda="Quale concentrazione NON cambia con la temperatura, perché usa la massa e non il volume?"
+  opzioni={["la molarità", "la molalità", "tutte e due cambiano", "nessuna delle due"]}
+  corretta={1}
+  spiegazione="La molalità usa i kg di solvente (una massa), che restano costanti col caldo. La molarità usa i litri di soluzione (un volume), che si dilata con la temperatura."
+/>
+
+<Quiz
+  domanda="Se sommi le frazioni molari di tutti i componenti di una soluzione, quanto ottieni?"
+  opzioni={["sempre 0", "sempre 1", "dipende dal volume", "un numero con unità mol/L"]}
+  corretta={1}
+  spiegazione="La frazione molare è la fetta di torta di ogni componente: tutte le fette insieme formano la torta intera, cioè 1. Ed è un numero puro, senza unità."
+/>
+
+<Esercizio
+  problema="Sciogli 0,5 moli di sale in acqua e porti il tutto a un volume finale di 2 litri di soluzione. Qual è la molarità?"
+  soluzione="Molarità = moli di soluto / litri di soluzione = 0,5 mol / 2 L = 0,25 mol/L. Quindi la soluzione è 0,25 M."
+/>
+
+</section>
+
+</RisorsaLayout>

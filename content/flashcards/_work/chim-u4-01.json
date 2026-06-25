@@ -1,0 +1,67 @@
+{
+ "id": "chim-u4-01",
+ "titolo": "Acidi e basi: la teoria di Arrhenius",
+ "materia": "chimica",
+ "unita": 4,
+ "slug": "01-acidi-e-basi-la-teoria-di",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/chimica/u4/01-acidi-e-basi-la-teoria-di.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "Indica qual è il comportamento di un acido in soluzione acquosa:",
+   "choices": [
+    "libera protoni",
+    "libera elettroni",
+    "accetta protoni",
+    "libera ioni ossidrile",
+    "accetta elettroni"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2012",
+   "q": "Una molecola di acqua ed una molecola di anidride carbonica danno origine a:",
+   "choices": [
+    "acido carbonico",
+    "ossido di carbonio",
+    "idrossido di carbonio",
+    "acetaldeide",
+    "acido formico"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2014",
+   "q": "Tra i composti elencati qui sotto: CO2, MgO, HCl, Na2O, HNO3, NO2, H2SO4, SO2, K2O, KOH, quanti sono acidi e quanti basici in soluzione acquosa?",
+   "choices": [
+    "acidi = 6 basici = 4",
+    "acidi = 4 basici = 6",
+    "acidi = 5 basici = 5",
+    "acidi = 7 basici = 3",
+    "acidi = 8 basici = 2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2017",
+   "q": "L'idrossido di sodio reagisce con l'acido cloridrico per dare:",
+   "choices": [
+    "cloruro di sodio e acqua",
+    "ipoclorito di sodio e acqua",
+    "ossido di sodio e acqua",
+    "cloro e acqua",
+    "ossido di sodio e cloro"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "applicazione"
+  }
+ ]
+}

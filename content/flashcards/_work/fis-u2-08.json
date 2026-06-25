@@ -1,0 +1,53 @@
+{
+ "id": "fis-u2-08",
+ "titolo": "Le forze e i loro tipi (peso, gravitazionale, contatto, attrito, tensione, elastica/Hooke)",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "08-le-forze-e-i-loro-tipi",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/fisica/u2/08-le-forze-e-i-loro-tipi.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "Nina, Elena e Silvia hanno tre borracce identiche contenenti 1 kg d'acqua ciascuna. Le tre ragazze partono da Roma verso tre destinazioni diverse: Nina si reca al Polo Nord, Elena all'equatore mentre Silvia va al Polo Sud. Posto che le borracce sono rimaste sigillate durante il viaggio, arrivate a destinazione, si verifica che:",
+   "choices": [
+    "il peso della borraccia di Elena è minore di quello della borraccia di Nina",
+    "il peso della borraccia di Silvia è minore di quello della borraccia di Elena",
+    "il peso delle tre borracce è esattamente lo stesso",
+    "la massa della borraccia di Elena è minore di quella alla partenza",
+    "il peso delle borracce di Silvia e di Nina dipende dal periodo dell'anno in cui avviene la misura, dato che l'asse terrestre è inclinato"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2012",
+   "q": "Se il pianeta Terra improvvisamente raddoppiasse il suo raggio mantenendo la stessa densità, cosa succederebbe al peso di un corpo, misurato sulla superficie del pianeta?",
+   "choices": [
+    "Si raddoppierebbe",
+    "Rimarrebbe costante",
+    "Si dimezzerebbe",
+    "Diventerebbe un quarto",
+    "Si quadruplicherebbe"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2022",
+   "q": "Un corpo di massa 400 g viene appeso a una molla che ha una costante elastica di 49 N/m. Qual è l'allungamento della molla nella posizione di equilibrio? (g = 9,8 m/s^2)",
+   "choices": [
+    "8 cm",
+    "5 cm",
+    "12,5 cm",
+    "20 cm",
+    "40,8 cm"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

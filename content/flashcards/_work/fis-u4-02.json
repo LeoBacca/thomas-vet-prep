@@ -1,0 +1,10 @@
+{
+ "id": "fis-u4-02",
+ "titolo": "Parametri delle onde (frequenza, periodo, pulsazione, lunghezza d'onda, velocità)",
+ "materia": "fisica",
+ "unita": 4,
+ "slug": "02-parametri-delle-onde-frequenza-periodo-pulsazione",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u4/02-parametri-delle-onde-frequenza-periodo-pulsazione.mdx",
+ "examQuestions": []
+}

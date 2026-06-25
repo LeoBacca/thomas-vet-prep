@@ -1,0 +1,39 @@
+{
+ "id": "bio-u3-03",
+ "titolo": "Primasi, DNA polimerasi e correzione degli errori (proofreading)",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "03-primasi-dna-polimerasi-e-correzione-degli",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/biologia/u3/03-primasi-dna-polimerasi-e-correzione-degli.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "Quale tra i seguenti elementi NON è coinvolto nella duplicazione del DNA?",
+   "choices": [
+    "Anticodone",
+    "Primer a RNA",
+    "Ligasi",
+    "Elicasi",
+    "DNA polimerasi"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Sono in grado di interrompere la replicazione del DNA deossiribonucleotidi che presentano:",
+   "choices": [
+    "lo zucchero desossiribosio privo del gruppo ossidrilico in posizione 3'",
+    "lo zucchero ribosio privo del gruppo ossidrilico in posizione 2'",
+    "una base azotata in posizione 1'",
+    "un gruppo trifosfato in posizione 5'",
+    "un legame fosfodiestere"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

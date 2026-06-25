@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fc-chim-u2-07-1", "topicId": "chim-u2-07", "materia": "chimica", "unita": 2, "type": "mc",
+    "q": "Hai sciolto dello zucchero in un bicchiere d'acqua. Per calcolare la MOLARITA (M) della soluzione, le moli di zucchero le devi dividere per cosa?",
+    "choices": ["I litri di soluzione finale (acqua + zucchero insieme)", "I kg di sola acqua", "Le moli totali (zucchero + acqua)", "I grammi di zucchero che hai messo"],
+    "answer": 0,
+    "explain": "La molarità e moli di soluto diviso litri di SOLUZIONE (mol/L). Dividere per i kg di solvente da la molalita; dividere per le moli totali da la frazione molare. Il trucco per non confonderle e guardare sempre cosa c'e al denominatore.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-07-2", "topicId": "chim-u2-07", "materia": "chimica", "unita": 2, "type": "tf",
+    "q": "Vero o falso: se scaldi una soluzione, la sua MOLALITA (m) resta uguale, mentre la MOLARITA (M) cambia un po'.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. La molalita usa i kg di solvente, cioe una MASSA: un chilo d'acqua resta un chilo d'estate e d'inverno, quindi non cambia col caldo. La molarita invece usa i litri di soluzione, cioe un VOLUME: e il volume si dilata col caldo, percio la molarita cambia un pochino.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-07-3", "topicId": "chim-u2-07", "materia": "chimica", "unita": 2, "type": "open",
+    "q": "Negli esperimenti sul punto di ebollizione e di congelamento, i chimici preferiscono usare la molalita invece della molarita. Sapresti spiegare perche?",
+    "answer": "Perche la molalita non cambia con la temperatura. La molalita si calcola dividendo le moli di soluto per i kg di SOLVENTE, e la massa (i kg) e stabile: un chilo d'acqua resta un chilo a qualsiasi temperatura. La molarita invece divide per i LITRI di soluzione, cioe un volume, e i liquidi si dilatano col caldo e si contraggono col freddo: quindi il volume cambia e con lui cambia anche la molarita. Negli esperimenti sull'ebollizione e sul congelamento si lavora proprio cambiando la temperatura, percio serve una misura che non si sballi quando scaldi o raffreddi: la molalita.",
+    "explain": "Da ricordare: massa (kg) = stabile col caldo; volume (litri) = si dilata. Per questo la molalita e la 'concentrazione che non teme il caldo'.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u2-07-4", "topicId": "chim-u2-07", "materia": "chimica", "unita": 2, "type": "mc",
+    "q": "Quanti grammi di NaOH (massa molare = 40 g/mol) devi sciogliere per ottenere 500 mL di una soluzione 1 M?",
+    "choices": ["7 g", "20 g", "40 g", "80 g", "2 g"],
+    "answer": 1,
+    "explain": "Prima le moli: M = moli / litri, quindi moli = M × litri = 1 mol/L × 0,5 L = 0,5 mol (500 mL = 0,5 L, da convertire!). Poi i grammi: 0,5 mol × 40 g/mol = 20 g. Le trappole: 40 g e l'errore di chi dimentica di convertire i mL in litri e usa 1 L invece di 0,5 L (esce il doppio); 80 g raddoppia ancora di piu; 2 g e chi divide per sbaglio invece di moltiplicare; 7 g e un numero fuori tema, buttato li per confondere.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u2-07-5", "topicId": "chim-u2-07", "materia": "chimica", "unita": 2, "type": "mc",
+    "q": "Hai 150 mL di una soluzione 0,4 M. Quanti mL di acqua devi AGGIUNGERE per portarla a una concentrazione di 0,1 M?",
+    "choices": ["600 mL", "450 mL", "150 mL", "300 mL", "250 mL"],
+    "answer": 1,
+    "explain": "Diluizione: le moli di soluto non cambiano, quindi C1×V1 = C2×V2. Trovi il volume FINALE: V2 = (0,4 × 150) / 0,1 = 600 mL. Ma la domanda chiede l'acqua da AGGIUNGERE, non il volume finale: 600 − 150 = 450 mL. Le trappole: 600 mL e la trappola classica, e il volume finale, ma tu hai gia 150 mL quindi non li aggiungi tutti; 150 mL e chi pensa 'da 0,4 a 0,1 e 4 volte, aggiungo lo stesso volume di partenza' (sbagliato, il volume va a 4×, non l'aggiunta); 300 mL e il doppio del volume iniziale, un near-miss che sembra giusto; 250 mL e un numero fuori tema, messo per riempire.",
+    "tags": ["prova d'esame"]
+  }
+]

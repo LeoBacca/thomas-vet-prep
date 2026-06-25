@@ -1,0 +1,96 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u6-01">
+
+## Cos'è la carica elettrica?
+
+Tutto è fatto di atomi. Dentro ogni atomo ci sono:
+- **protoni** (carica positiva, nel nucleo)
+- **elettroni** (carica negativa, intorno al nucleo)
+- **neutroni** (nessuna carica, nel nucleo)
+
+Di solito protoni ed elettroni si bilanciano: l'oggetto è **neutro**. Se un oggetto perde o guadagna elettroni, diventa **carico**.
+
+- Troppi elettroni → carica **negativa**
+- Pochi elettroni → carica **positiva**
+
+L'unità di misura della carica elettrica è il **coulomb (C)**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La carica elettrica è come un "credito o debito" di elettroni. Se ne hai troppi sei negativo, se ne hai pochi sei positivo.</div>
+
+---
+
+## Cariche uguali o opposte?
+
+Tra due cariche elettriche c'è sempre una forza:
+
+- **Cariche dello stesso segno** (+ e + oppure - e -) → si **respingono**
+- **Cariche di segno opposto** (+ e -) → si **attraggono**
+
+Pensa a due calamite: i poli uguali si respingono, i poli diversi si attraggono. Con le cariche elettriche funziona allo stesso modo.
+
+<Diagram caption="Attrazione e repulsione tra cariche elettriche" code={`flowchart LR
+  A["+ carica positiva"] -- "si respingono" --> B["+ carica positiva"]
+  C["+ carica positiva"] -- "si attraggono" --> D["- carica negativa"]`} />
+
+---
+
+## La legge di Coulomb
+
+Charles-Augustin de Coulomb (nel 1785) misurò la forza tra due cariche e scoprì questa legge:
+
+**F = k · |q₁ · q₂| / r²**
+
+Dove:
+- **F** è la forza elettrica (in newton, N)
+- **k** è una costante = 9 × 10⁹ N·m²/C²
+- **q₁** e **q₂** sono le due cariche (in coulomb)
+- **r** è la distanza tra le cariche (in metri)
+
+Cosa ci dice questa formula?
+1. **Più grandi sono le cariche** → forza più forte
+2. **Più lontane sono le cariche** → forza più debole (e diminuisce velocemente: se raddoppi la distanza, la forza diventa 4 volte più piccola)
+
+Pensa al volume di una cassa bluetooth: se la allontani di un po', il suono cala molto. La forza elettrica funziona in modo simile con la distanza.
+
+<Diagram caption="Come cambiano carica e distanza nella legge di Coulomb" code={`flowchart TB
+  A["Aumenti le cariche q1 o q2"] --> B["Forza F aumenta"]
+  C["Aumenti la distanza r"] --> D["Forza F diminuisce"]
+  D --> E["Se r raddoppia,<br/>F diventa 4 volte minore"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="wG6Z_dXsAv4" title="LEZIONE di FISICA! Legge di Coulomb, cariche elettriche e forza elettrica" />
+<VideoVisto id="fis-u6-01" />
+
+## Da ricordare
+- La carica elettrica nasce da uno squilibrio tra protoni ed elettroni; si misura in coulomb (C).
+- Cariche dello stesso segno si respingono, cariche di segno opposto si attraggono.
+- La forza di Coulomb è proporzionale al prodotto delle cariche e inversamente proporzionale al quadrato della distanza: F = k · |q₁ · q₂| / r².
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Due cariche elettriche entrambe positive si trovano vicine. Cosa succede?" opzioni={["Si attraggono", "Si respingono", "Non si influenzano", "Si neutralizzano"]} corretta={1} spiegazione="Cariche dello stesso segno (entrambe positive o entrambe negative) si respingono sempre. Solo cariche di segno opposto si attraggono." />
+
+<Quiz domanda="Nella legge di Coulomb, se raddoppio la distanza r tra due cariche, la forza F diventa:" opzioni={["La metà", "Il doppio", "Un quarto", "Quattro volte maggiore"]} corretta={2} spiegazione="La forza è inversamente proporzionale al quadrato della distanza (r²). Se r raddoppia, r² diventa 4 volte più grande, quindi F diventa 4 volte più piccola, cioè un quarto." />
+
+<Quiz domanda="Qual è l'unità di misura della carica elettrica nel Sistema Internazionale?" opzioni={["Ampere (A)", "Volt (V)", "Coulomb (C)", "Newton (N)"]} corretta={2} spiegazione="La carica elettrica si misura in coulomb (C). L'ampere misura la corrente, il volt la tensione, il newton la forza." />
+
+<Esercizio problema="Due cariche q₁ = 2 × 10⁻⁶ C e q₂ = 3 × 10⁻⁶ C sono a una distanza di 0,1 m. Calcola la forza elettrica tra loro. (k = 9 × 10⁹ N·m²/C²)" soluzione="Applico la legge di Coulomb: F = k · |q₁ · q₂| / r²
+F = (9 × 10⁹) · (2 × 10⁻⁶ · 3 × 10⁻⁶) / (0,1)²
+F = (9 × 10⁹) · (6 × 10⁻¹²) / 0,01
+F = (54 × 10⁻³) / 0,01
+F = 5,4 N
+Le due cariche si attraggono o respingono con una forza di 5,4 newton. Poiché hanno lo stesso segno (entrambe positive), si respingono." />
+
+</section>
+
+</RisorsaLayout>

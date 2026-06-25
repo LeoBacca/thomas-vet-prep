@@ -1,0 +1,91 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u6-07">
+
+Le **aldeidi** e i **chetoni** hanno una parte speciale chiamata **gruppo carbonile**: un atomo di carbonio legato a un ossigeno con un doppio legame (si scrive C=O). Questo gruppo è il "punto debole" della molecola: è il posto dove arrivano gli attacchi e dove succedono le reazioni. La reazione più importante si chiama **addizione nucleofila**, e da qui nascono **emiacetali**, **acetali** e **immine**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> nel carbonile il carbonio è un po' "scoperto" e attira chi ha elettroni da offrire. Una molecola ricca di elettroni (il <strong>nucleofilo</strong>) si avvicina, si attacca al carbonio, e il doppio legame C=O si apre. Questo "attaccarsi" è l'addizione nucleofila.</div>
+
+## Perché il carbonile attira gli attacchi
+
+L'ossigeno è "egoista": tira gli elettroni del doppio legame verso di sé. Così il carbonio resta con una **carica leggermente positiva** (lo chiamiamo carbonio "affamato di elettroni"). È come una calamita positiva: attira tutto ciò che ha elettroni in abbondanza.
+
+Il **nucleofilo** è proprio questo: una molecola "ricca di elettroni" che cerca un posto positivo a cui legarsi. Pensa a una persona con tante caramelle (gli elettroni) che cerca chi ne ha bisogno. Quando il nucleofilo si lega al carbonio, il doppio legame C=O si apre e l'ossigeno prende gli elettroni in più, diventando un gruppo OH.
+
+<Diagram caption="Addizione nucleofila: il nucleofilo si lega al carbonio e il C=O si apre" code={`flowchart LR
+  C["Carbonile C=O<br/>carbonio positivo"] -->|"arriva il nucleofilo"| A["Il nucleofilo si lega al carbonio"]
+  A --> B["Il doppio legame si apre<br/>l'ossigeno diventa OH"]`} />
+
+## Emiacetali e acetali: quando arriva un alcol
+
+Se il nucleofilo è un **alcol** (una molecola con un gruppo OH, come l'etanolo del vino), succede questo:
+
+- **Primo passo:** una molecola di alcol si lega al carbonile. Si forma un **emiacetale**. "Emi" vuol dire "metà": è una struttura a metà strada, con un OH e un gruppo dell'alcol sullo stesso carbonio.
+- **Secondo passo:** se arriva una **seconda** molecola di alcol, l'OH se ne va (come acqua) e si forma un **acetale**, che ha due gruppi dell'alcol sullo stesso carbonio.
+
+<Diagram caption="Dal carbonile all'emiacetale, poi all'acetale" code={`flowchart TB
+  C["Aldeide o chetone<br/>(C=O)"] -->|"+ 1 alcol"| E["EMIACETALE<br/>(metà strada: OH + O-alcol)"]
+  E -->|"+ 1 altro alcol, esce acqua"| AC["ACETALE<br/>(due gruppi O-alcol)"]`} />
+
+Questo conta tantissimo in biologia. Gli **zuccheri** come il **glucosio** (quello che corre nel tuo sangue) in realtà non stanno dritti come un bastoncino: si chiudono ad anello proprio formando un **emiacetale** interno. E quando due zuccheri si uniscono per fare cose grandi come l'**amido** o la **cellulosa**, il legame che li tiene insieme è un **acetale**. Senza questa chimica, niente energia dal cibo.
+
+## Immine: quando arriva un'ammina (basi di Schiff)
+
+Se invece il nucleofilo è un'**ammina** (una molecola con azoto, come quelle che derivano dall'ammoniaca), il risultato è diverso. L'azoto si lega al carbonio, poi esce una molecola d'acqua e si forma un nuovo doppio legame, ma stavolta tra carbonio e azoto (C=N). Questo prodotto si chiama **immina**, detta anche **base di Schiff**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> con un <strong>alcol</strong> ottieni emiacetali e acetali (legami con ossigeno). Con un'<strong>ammina</strong> ottieni un'<strong>immina</strong> (un nuovo doppio legame C=N) e si libera acqua.</div>
+
+Le immine sono fondamentali nel corpo. La **vitamina B6** (in una sua forma) lavora formando proprio una base di Schiff per spostare pezzi tra le molecole durante il metabolismo degli amminoacidi. E la **vista** funziona grazie a una base di Schiff: nell'occhio, la luce colpisce una molecola legata a una proteina con un legame C=N, e questo fa partire il segnale che il cervello legge come immagine.
+
+## Guarda il video
+
+<YouTube id="qXTLZ8xv1gU" title="Addizione nucleofila al gruppo carbonilico — Prof. Atzeni" />
+
+<VideoVisto id="chim-u6-07" />
+
+## Da ricordare
+
+- Nel **carbonile** (C=O) il carbonio è positivo: attira i **nucleofili** (molecole ricche di elettroni). Questo è l'**addizione nucleofila**.
+- Con **un alcol** si forma un **emiacetale** ("metà strada"); con un **secondo alcol** si forma un **acetale** (esce acqua).
+- Con un'**ammina** si forma un'**immina** (base di Schiff), con un nuovo doppio legame **C=N**, e si libera **acqua**.
+- Gli **zuccheri** si chiudono ad anello come emiacetali; **amido** e **cellulosa** sono tenuti insieme da legami acetalici.
+- Le **immine** sono usate dalla **vitamina B6** nel metabolismo e dalla molecola della **vista** nell'occhio.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Nel gruppo carbonile (C=O), perché il carbonio viene attaccato dai nucleofili?"
+  opzioni={["perché è negativo", "perché è leggermente positivo (l'ossigeno tira via gli elettroni)", "perché non ha legami", "perché è un metallo"]}
+  corretta={1}
+  spiegazione="L'ossigeno attira gli elettroni del doppio legame, lasciando il carbonio con una carica leggermente positiva. Così attira i nucleofili, che sono ricchi di elettroni."
+/>
+
+<Quiz
+  domanda="Cosa si forma quando un'aldeide o un chetone reagisce con UNA sola molecola di alcol?"
+  opzioni={["un acetale", "un emiacetale", "un'immina", "un acido"]}
+  corretta={1}
+  spiegazione="Con una sola molecola di alcol si forma l'emiacetale ('emi' = metà), che ha un OH e un gruppo dell'alcol sullo stesso carbonio. Con un secondo alcol si arriva all'acetale."
+/>
+
+<Quiz
+  domanda="Quando un'ammina si addiziona a un carbonile, si forma un'immina. Che cosa si libera nel processo?"
+  opzioni={["ossigeno", "acqua", "idrogeno gassoso", "anidride carbonica"]}
+  corretta={1}
+  spiegazione="L'azoto si lega al carbonio e poi esce una molecola d'acqua, formando il nuovo doppio legame C=N (l'immina, o base di Schiff)."
+/>
+
+<Esercizio
+  problema="Il glucosio nel sangue di solito non è una catena dritta ma una forma ad anello. Quale reazione di questa lezione spiega la chiusura ad anello? Indica anche il tipo di prodotto."
+  soluzione="È un'addizione nucleofila interna: un gruppo OH dello stesso zucchero si addiziona al proprio carbonile (C=O). Il prodotto è un emiacetale (un emiacetale ciclico), ed è proprio così che il glucosio si chiude ad anello."
+/>
+
+</section>
+
+</RisorsaLayout>

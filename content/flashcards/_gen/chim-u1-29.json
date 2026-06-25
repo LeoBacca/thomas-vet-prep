@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-29-1",
+    "topicId": "chim-u1-29",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un diagramma di fase è come una mappa geografica. Cosa rappresentano le tre 'regioni' della mappa?",
+    "choices": [
+      "I tre stati della materia: solido, liquido e gas — a seconda di temperatura e pressione",
+      "Tre diversi tipi di molecole con forme diverse",
+      "Le tre temperature: freddo, caldo e bollente",
+      "Le tre velocità con cui le molecole si muovono"
+    ],
+    "answer": 0,
+    "explain": "Il diagramma di fase mappa esattamente dove si trova una sostanza (solido, liquido o gas) per ogni coppia di valori temperatura + pressione. Le linee tra le regioni sono i passaggi di stato (fusione, evaporazione, sublimazione). I due assi del grafico sono sempre temperatura (orizzontale) e pressione (verticale).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-29-2",
+    "topicId": "chim-u1-29",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Quando il sudore evapora dalla pelle, prende calore dalla pelle stessa e la raffredda. Questo e il meccanismo di termoregolazione del corpo.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Per evaporare (passare da liquido a gas) l'acqua ha bisogno di energia. Quella energia la prende come calore dalla pelle, che si raffredda. Ecco perché uscire bagnati dalla doccia fa sentire freddo. Il cane usa lo stesso principio ansimando: fa evaporare acqua dalle vie respiratorie, non dalla pelle.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-29-3",
+    "topicId": "chim-u1-29",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Hai appena finito di correre in una giornata estiva molto umida. Sudi tantissimo ma non ti senti per niente rinfrescato: il sudore rimane appiccicoso sulla pelle. Spiega, usando i concetti del diagramma di fase e dell'evaporazione, perche succede questo.",
+    "answer": "Il sudore raffredda la pelle SOLO se evapora, perche evaporando assorbe calore dalla pelle (passaggio di stato da liquido a gas, che richiede energia). In una giornata umida, l'aria e gia satura di vapore acqueo: c'e gia tanta acqua in forma gassosa intorno a te. Questo rende molto piu difficile l'evaporazione del sudore dalla pelle — il sudore rimane liquido sulla superficie. Risultato: pochissimo calore viene assorbito dalla pelle, il raffreddamento non funziona, e ti senti appiccicoso e accaldato. In aria secca, invece, il sudore evapora rapidamente e il raffreddamento e molto efficace.",
+    "explain": "Punto chiave: l'evaporazione richiede energia (calore) che viene tolta alla pelle. Se l'aria e gia satura di vapore, l'evaporazione rallenta — meno calore viene rimosso — meno ti raffreddi.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-29-4",
+    "topicId": "chim-u1-29",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "La temperatura alla quale il solido e il liquido di una sostanza hanno la stessa tensione di vapore si chiama:",
+    "choices": [
+      "Punto triplo della sostanza",
+      "Punto di ebollizione della sostanza",
+      "Punto di sublimazione della sostanza",
+      "Punto di congelamento della sostanza",
+      "Punto critico della sostanza"
+    ],
+    "answer": 0,
+    "explain": "Il punto triplo e l'unica combinazione di temperatura e pressione in cui tutti e tre gli stati (solido, liquido, gas) coesistono in equilibrio — e quindi solido e liquido hanno la stessa tensione di vapore. Trappole: 'punto di ebollizione' riguarda solo il passaggio liquido→gas alla pressione atmosferica (non c'entra il solido); 'punto di congelamento' e il passaggio liquido→solido ma non descrive questa condizione speciale in cui solido e liquido hanno la stessa tensione di vapore; 'punto di sublimazione' riguarda il passaggio solido→gas, non l'equilibrio solido-liquido richiesto dalla domanda; 'punto critico' e invece la T e P oltre cui non esiste piu distinzione tra liquido e gas.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-29-5",
+    "topicId": "chim-u1-29",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sul diagramma di fase della CO2 (anidride carbonica) e CORRETTA?",
+    "choices": [
+      "A pressione atmosferica normale, il solido (ghiaccio secco) sublima direttamente a gas senza passare dal liquido",
+      "A pressione atmosferica normale, il ghiaccio secco si scioglie in un liquido come fa il ghiaccio d'acqua",
+      "Il punto triplo della CO2 rappresenta la temperatura a cui la CO2 sublima tre volte piu velocemente",
+      "La CO2 non ha un punto triplo perche non puo esistere allo stato liquido",
+      "A 100 °C la CO2 bolle perche e la temperatura di ebollizione di tutte le sostanze"
+    ],
+    "answer": 0,
+    "explain": "Nella mappa (diagramma di fase) della CO2, a pressione atmosferica normale, la regione del liquido non esiste: il solido passa direttamente a gas — cioe sublima. Per questo il ghiaccio secco non bagna mai: non diventa pozzanghera. Trappole: l'opzione B e l'opposto esatto, confonde CO2 con acqua; l'opzione C inventa un significato assurdo di 'triplo'; l'opzione D e falsa — la CO2 ha eccome un punto triplo (a circa 5 atm e −57 °C), semplicemente a pressione normale siamo al di sotto; l'opzione E e un filler fuori tema, ogni sostanza ha la sua temperatura di ebollizione.",
+    "tags": ["prova d'esame"]
+  }
+]

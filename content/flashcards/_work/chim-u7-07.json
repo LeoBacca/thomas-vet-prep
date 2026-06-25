@@ -1,0 +1,25 @@
+{
+ "id": "chim-u7-07",
+ "titolo": "Ciclizzazione dei monosaccaridi, mutarotazione e reazioni (Maillard)",
+ "materia": "chimica",
+ "unita": 7,
+ "slug": "07-ciclizzazione-dei-monosaccaridi-mutarotazione-e-reazioni",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u7/07-ciclizzazione-dei-monosaccaridi-mutarotazione-e-reazioni.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "La mutarotazione del glucosio in soluzione acquosa:",
+   "choices": [
+    "fa raggiungere un potere ottico intermedio tra i due anomeri dello zucchero",
+    "fa diminuire il potere ottico rotatorio dello zucchero",
+    "fa aumentare il potere ottico dello zucchero",
+    "annulla completamente il potere ottico dello zucchero",
+    "lascia invariato il potere ottico dello zucchero"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "definizione"
+  }
+ ]
+}

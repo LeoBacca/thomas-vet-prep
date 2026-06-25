@@ -1,0 +1,53 @@
+{
+ "id": "chim-u4-05",
+ "titolo": "Acidi e basi forti e deboli: Ka, Kb, pKa, pKb",
+ "materia": "chimica",
+ "unita": 4,
+ "slug": "05-acidi-e-basi-forti-e-deboli",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/chimica/u4/05-acidi-e-basi-forti-e-deboli.mdx",
+ "examQuestions": [
+  {
+   "year": "2013",
+   "q": "Quale tra i seguenti e l'acido piu debole?",
+   "choices": [
+    "CH3COOH",
+    "HCl",
+    "HNO3",
+    "H3PO4",
+    "(COOH)2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "A seguito dell'aggiunta di 0,1 mol di HCl ad una soluzione acquosa di 1 L di CH3COOH 0,1 M:",
+   "choices": [
+    "l'equilibrio di ionizzazione di CH3COOH si sposta verso sinistra e il pH della soluzione è dovuto solo all'HCl",
+    "l'equilibrio di ionizzazione di CH3COOH si sposta verso destra e il pH della soluzione è dovuto solo all'HCl",
+    "l'equilibrio di ionizzazione di CH3COOH si sposta verso destra e il pH della soluzione dipende sia da CH3COOH che da HCl",
+    "l'equilibrio di ionizzazione di CH3COOH non si sposta e il pH della soluzione dipende solo dall'HCl",
+    "l'acidità della soluzione dipende in ugual misura da CH3COOH e da HCl"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "La sostanza A è un acido più forte della sostanza B se:",
+   "choices": [
+    "la base coniugata di A è una base più debole di quella di B",
+    "la base coniugata di A è una base più forte di quella di B",
+    "la base coniugata di A è un acido più debole di quella di B",
+    "la base coniugata di A è un acido più forte di quella di B",
+    "la base coniugata di A è una base più forte ma un acido più debole di quella di B"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

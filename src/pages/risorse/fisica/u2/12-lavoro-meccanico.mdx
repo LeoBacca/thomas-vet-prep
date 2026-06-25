@@ -1,0 +1,83 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-12">
+
+## Cos'è il lavoro meccanico?
+
+In fisica, **lavoro** non significa "faticare". Significa qualcosa di molto preciso: una forza che sposta un oggetto.
+
+Se spingi un muro con tutta la tua forza e il muro non si muove, dal punto di vista della fisica **non hai compiuto nessun lavoro**. Strano, vero? Ma è così.
+
+Il lavoro si compie solo quando:
+1. esiste una **forza** applicata sull'oggetto, e
+2. l'oggetto si **sposta** nella direzione di quella forza.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Lavoro = forza che fa muovere qualcosa. Senza movimento, niente lavoro.</div>
+
+## La formula
+
+Il lavoro si calcola con una formula semplice:
+
+**W = F × d × cos(θ)**
+
+Dove:
+- **W** = lavoro (si misura in **Joule**, simbolo J)
+- **F** = forza applicata (in Newton, N)
+- **d** = spostamento (in metri, m)
+- **θ** (theta) = angolo tra la direzione della forza e quella dello spostamento
+
+Se spingi un carrello in avanti e la forza è esattamente nella direzione del movimento, l'angolo è 0° e cos(0°) = 1: la formula diventa semplicemente **W = F × d**.
+
+## Quando il lavoro è positivo, negativo o zero?
+
+- **Lavoro positivo**: la forza aiuta il movimento (es. spingi una scatola in avanti)
+- **Lavoro negativo**: la forza si oppone al movimento (es. l'attrito frena la scatola)
+- **Lavoro zero**: la forza è perpendicolare allo spostamento (es. porti una borsa in piano: la forza è verso il basso, lo spostamento è orizzontale — cos 90° = 0)
+
+## Unità di misura
+
+1 **Joule** = 1 Newton × 1 metro = la forza di 1 N che sposta un oggetto di 1 m nella stessa direzione.
+
+<Diagram caption="Schema: quando si compie lavoro e quando no" code={`flowchart TB
+  A["Applichi una forza F"] --> B{"L'oggetto si sposta?"}
+  B -- "No" --> C["Lavoro = 0<br/>Nessun lavoro compiuto"]
+  B -- "Sì" --> D{"Forza e spostamento<br/>sono allineati?"}
+  D -- "Sì (θ=0°)" --> E["Lavoro massimo<br/>W = F × d"]
+  D -- "Parzialmente (0 < θ < 90°)" --> F["Lavoro parziale<br/>W = F × d × cos(θ)"]
+  D -- "Perpendicolare (θ=90°)" --> G["Lavoro = 0<br/>cos(90°) = 0"]`} />
+
+<Diagram caption="Esempio pratico: spingere un carrello" code={`flowchart LR
+  A["Forza F = 10 N"] --> B["Spostamento d = 5 m"]
+  B --> C["Angolo θ = 0°<br/>cos(0°) = 1"]
+  C --> D["W = 10 × 5 × 1"]
+  D --> E["W = 50 Joule"]`} />
+
+## Guarda il video
+<YouTube id="wVzeYstm0_c" title="Lavoro Fisica - Spiegazione Semplice" />
+<VideoVisto id="fis-u2-12" />
+
+## Da ricordare
+- Il lavoro richiede sia una forza che uno spostamento: senza movimento non c'è lavoro fisico.
+- La formula è W = F × d × cos(θ), dove θ è l'angolo tra forza e spostamento.
+- L'unità di misura del lavoro è il Joule (J): 1 J = 1 N × 1 m.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una persona porta una borsa della spesa camminando in piano. La forza che tiene la borsa è diretta verso il basso, lo spostamento è orizzontale. Quanto lavoro compie quella forza sulla borsa?" opzioni={["Un lavoro positivo, perché la borsa si sposta","Un lavoro negativo, perché la forza è contraria al moto","Lavoro zero, perché forza e spostamento sono perpendicolari","Non si può sapere senza conoscere il peso della borsa"]} corretta={2} spiegazione="L'angolo tra la forza (verticale verso il basso) e lo spostamento (orizzontale) è 90°. cos(90°) = 0, quindi W = F × d × 0 = 0 J. Nessun lavoro viene compiuto da quella forza." />
+
+<Quiz domanda="Spingi un cassetto con una forza di 20 N e lo sposti di 3 m nella stessa direzione della forza. Quanto lavoro hai compiuto?" opzioni={["23 J","17 J","60 J","6,7 J"]} corretta={2} spiegazione="W = F × d × cos(θ) = 20 N × 3 m × cos(0°) = 20 × 3 × 1 = 60 J. L'angolo è 0° perché forza e spostamento sono nella stessa direzione." />
+
+<Quiz domanda="Quale di queste situazioni NON comporta lavoro meccanico (W = 0)?" opzioni={["Sollevare una scatola dal pavimento","Tirare un sacco trascinandolo sul pavimento","Tenere ferma una porta aperta senza muoverla","Spingere un carrello in avanti"]} corretta={2} spiegazione="Tenere ferma una porta significa applicare una forza, ma l'oggetto non si sposta (d = 0). Quindi W = F × 0 = 0 J. Senza spostamento non c'è lavoro meccanico." />
+
+<Esercizio problema="Un operaio spinge una cassa con una forza di 50 N per uno spostamento di 4 m. La forza è parallela al pavimento (angolo 0°). Calcola il lavoro compiuto." soluzione="W = F × d × cos(θ) = 50 N × 4 m × cos(0°) = 50 × 4 × 1 = 200 J. L'operaio compie un lavoro di 200 Joule." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,86 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-13">
+
+## Cos'è la potenza?
+
+Immagina due persone che devono spostare lo stesso scatolone al piano di sopra.
+La prima ci mette 10 secondi. La seconda ci mette 2 minuti.
+Entrambe fanno lo stesso **lavoro**, ma la prima lo fa **molto più in fretta**.
+
+In fisica, questa differenza si chiama **potenza**: misura quanto lavoro viene fatto nell'unità di tempo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La potenza ti dice quanto velocemente riesci a fare un lavoro. Chi ha più potenza, fa lo stesso lavoro in meno tempo.</div>
+
+## La formula
+
+La potenza si calcola così:
+
+**P = L / t**
+
+- **P** = potenza (si misura in **Watt**, simbolo W)
+- **L** = lavoro compiuto (si misura in Joule, J)
+- **t** = tempo impiegato (si misura in secondi, s)
+
+Un Watt equivale a fare 1 Joule di lavoro in 1 secondo. Semplice.
+
+## Un esempio pratico
+
+Pensa alla lampadina di casa tua: una lampadina da **60 W** consuma 60 Joule di energia ogni secondo. Una da **10 W** ne consuma solo 10 nello stesso secondo. La prima è più "potente" (e consuma di più!).
+
+In un motore d'auto succede la stessa cosa: un motore più potente riesce a compiere lo stesso lavoro (accelerare, salire una salita) in meno tempo.
+
+## Potenza e velocità
+
+C'è un altro modo utile per calcolare la potenza quando una forza spinge un oggetto che si muove:
+
+**P = F × v**
+
+- **F** = forza applicata (in Newton, N)
+- **v** = velocità dell'oggetto (in m/s)
+
+Questa formula è comoda quando conosci la forza e la velocità invece del lavoro totale.
+
+<Diagram caption="Come si collega la potenza a lavoro e tempo" code={`flowchart TB
+  L["Lavoro (J)<br/>Quanto sforzo è stato fatto"]
+  T["Tempo (s)<br/>Quanto ci hai messo"]
+  P["Potenza (W)<br/>P = Lavoro / Tempo"]
+  L --> P
+  T --> P`} />
+
+<Diagram caption="Esempio: stessa salita, tempi diversi — cambia la potenza, non il lavoro" code={`flowchart LR
+  A["Stessa salita<br/>stesso lavoro da fare"]
+  B["Ci metti 10 s<br/>Potenza alta"]
+  C["Ci metti 60 s<br/>Potenza bassa"]
+  A --> B
+  A --> C`} />
+
+## Guarda il video
+<YouTube id="FASdLBHm5X4" title="FISICA! Parliamo di LAVORO E POTENZA in FISICA — La Fisica Che Ci Piace" />
+<VideoVisto id="fis-u2-13" />
+
+## Da ricordare
+- La potenza misura quanto lavoro viene fatto per unità di tempo: **P = L / t**
+- L'unità di misura è il **Watt (W)**: 1 W = 1 J/s
+- A parità di lavoro, più è corto il tempo impiegato, maggiore è la potenza
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un motore compie un lavoro di 3000 J in 10 secondi. Qual è la sua potenza?" opzioni={["30 W","300 W","3000 W","30 000 W"]} corretta={1} spiegazione="P = L / t = 3000 J / 10 s = 300 W. Si divide il lavoro per il tempo." />
+
+<Quiz domanda="Due studenti spostano lo stesso mobile compiendo lo stesso lavoro. Il primo impiega 5 s, il secondo 20 s. Chi ha sviluppato più potenza?" opzioni={["Il secondo, perché ha impiegato più tempo","Il primo, perché ha impiegato meno tempo","Hanno la stessa potenza, perché il lavoro è uguale","Non si può dire senza conoscere la forza"]} corretta={1} spiegazione="P = L / t: stesso L, ma il primo ha t più piccolo, quindi P più grande. Meno tempo = più potenza." />
+
+<Quiz domanda="Qual è l'unità di misura della potenza nel Sistema Internazionale?" opzioni={["Joule (J)","Newton (N)","Watt (W)","Pascal (Pa)"]} corretta={2} spiegazione="La potenza si misura in Watt (W). 1 W = 1 J/s. Le altre unità misurano energia, forza e pressione." />
+
+<Esercizio problema="Una pompa solleva 500 kg di acqua di 4 m in 20 secondi. Calcola la potenza della pompa. (g = 10 m/s²)" soluzione="Prima calcola il lavoro: L = F × s = (m × g) × h = 500 × 10 × 4 = 20 000 J. Poi la potenza: P = L / t = 20 000 J / 20 s = 1000 W = 1 kW." />
+
+</section>
+
+</RisorsaLayout>

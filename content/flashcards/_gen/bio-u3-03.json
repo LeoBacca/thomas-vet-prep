@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u3-03-1",
+    "topicId": "bio-u3-03",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: la DNA polimerasi può partire dal nulla e iniziare a costruire il nuovo filamento di DNA da sola, senza bisogno di alcun punto di partenza.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. La DNA polimerasi NON può iniziare da zero: ha bisogno di un punto di appoggio già pronto, chiamato primer. È come uno scrittore che non riesce a iniziare un testo bianco: gli serve un incipit da cui continuare. Ci pensa la primasi a scrivere quelle prime righe (un breve tratto di RNA), dopodiché la DNA polimerasi si aggancia e continua in DNA.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-03-2",
+    "topicId": "bio-u3-03",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "La DNA polimerasi inserisce un nucleotide sbagliato e lo corregge subito. Come si chiama questa capacità di autocorrezione, e in quale direzione 'torna indietro' l'enzima per farlo?",
+    "choices": [
+      "Proofreading: l'enzima torna indietro nella direzione 3'→5' e taglia il nucleotide sbagliato",
+      "Proofreading: l'enzima continua in avanti nella direzione 5'→3' e inserisce due nucleotidi corretti al posto di uno",
+      "Ligazione: la DNA ligasi rimuove il nucleotide sbagliato e lo sostituisce",
+      "Inneschi ripetuti: la primasi sintetizza un nuovo primer sopra l'errore per coprirlo"
+    ],
+    "answer": 0,
+    "explain": "Si chiama proofreading ('correzione di bozze'). La DNA polimerasi ha una seconda funzione enzimatica — l'attività esonucleasica — che agisce nella direzione 3'→5', cioè torna indietro rispetto alla direzione normale di sintesi (5'→3'). In questo modo riconosce il nucleotide mal appaiato, lo taglia via e reinserisce quello corretto. Senza questo meccanismo ci sarebbe 1 errore ogni 100 000 basi; grazie ad esso scende a 1 errore ogni 10 000 000.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-03-3",
+    "topicId": "bio-u3-03",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Descrivi a parole tue le tappe principali della replicazione del DNA, dalla forcella di replicazione al filamento finito. Includi il ruolo di primasi, DNA polimerasi, frammenti di Okazaki, DNA polimerasi I e DNA ligasi.",
+    "answer": "Prima, l'elicasi 'apre' la doppia elica come una cerniera, creando la forcella di replicazione. Sui due filamenti stampo esposti entra in scena la primasi: sintetizza un breve tratto di RNA (il primer, circa 10 nucleotidi) complementare al filamento stampo, fornendo l'estremità 3'-OH libera di cui ha bisogno la DNA polimerasi. La DNA polimerasi III si aggancia al primer e aggiunge nucleotidi di DNA sempre nella direzione 5'→3'. Sul filamento guida (leading strand, quello che scorre già nella direzione giusta) la sintesi è continua. Sul filamento in ritardo (lagging strand, opposto) invece la polimerasi deve procedere a tratti: produce segmenti corti detti frammenti di Okazaki, ciascuno preceduto dal proprio primer. Alla fine, la DNA polimerasi I rimuove tutti i primer di RNA e riempie i buchi con DNA. Infine, la DNA ligasi salda i frammenti adiacenti, creando un filamento continuo e completo.",
+    "explain": "Sequenza chiave: elicasi apre → primasi fa il primer → DNA pol III sintetizza (continuo sul leading, Okazaki sul lagging) → DNA pol I rimuove primer → ligasi salda.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-03-4",
+    "topicId": "bio-u3-03",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Quale tra i seguenti elementi NON è coinvolto nella duplicazione del DNA?",
+    "choices": [
+      "Anticodone",
+      "Primer a RNA",
+      "DNA ligasi",
+      "Elicasi",
+      "DNA polimerasi"
+    ],
+    "answer": 0,
+    "explain": "L'anticodone è una sequenza di tre basi sull'RNA transfer (tRNA) che riconosce il codone dell'mRNA durante la SINTESI PROTEICA (traduzione), non durante la replicazione del DNA. È un termine di un altro processo: ecco la trappola. Gli altri quattro sono tutti protagonisti della replicazione: il primer a RNA è fatto dalla primasi come punto di innesco; la DNA ligasi salda i frammenti di Okazaki; l'elicasi apre la doppia elica; la DNA polimerasi sintetizza il nuovo filamento. Se vedi 'anticodone' in un contesto di replicazione, è sempre l'intruso.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-03-5",
+    "topicId": "bio-u3-03",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Certi farmaci antivirali e anticancro usano deossiribonucleotidi modificati per bloccare la replicazione del DNA. Quali deossiribonucleotidi sono in grado di INTERROMPERE la replicazione?",
+    "choices": [
+      "Quelli con il gruppo ossidrilico (-OH) in posizione 3' rimosso dal desossiribosio",
+      "Quelli con il gruppo ossidrilico (-OH) in posizione 2' rimosso dal ribosio",
+      "Quelli che hanno una base azotata in posizione 1'",
+      "Quelli che portano un gruppo trifosfato in posizione 5'",
+      "Quelli che formano un legame fosfodiestere con il nucleotide precedente"
+    ],
+    "answer": 0,
+    "explain": "La DNA polimerasi aggiunge ogni nuovo nucleotide attaccandolo all'estremità 3'-OH del filamento nascente: serve proprio quel gruppo -OH in posizione 3' per fare il legame. Se manca (nucleotide 'terminatore'), non c'è più nulla a cui agganciare il prossimo nucleotide: la catena si blocca. È il principio degli antivirali come l'aciclovir (contro l'herpes) e degli analoghi dei nucleosidi usati in oncologia. Le trappole: 'posizione 2' del ribosio' riguarda l'RNA, non il DNA (nei deossiribonucleotidi il 2'-OH manca già per definizione); 'base azotata in posizione 1'' descrive la struttura normale di qualunque nucleotide; il 'gruppo trifosfato in 5'' fornisce l'energia per la reazione, ma la sua presenza non blocca la catena; il 'legame fosfodiestere' è già il risultato della reazione, non una modificazione che la ferma.",
+    "tags": ["prova d'esame"]
+  }
+]

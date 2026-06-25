@@ -1,0 +1,108 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-14">
+
+Gli atomi, da soli, spesso non sono "felici": gli mancano degli elettroni per essere stabili. Per stare meglio, due atomi possono **mettere in comune** i loro elettroni, un po' come due bambini che dividono le caramelle invece di litigare. Questo è il **legame covalente**: una **coppia di elettroni condivisa** tra due atomi che li tiene incollati insieme.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> covalente vuol dire "condividere". Due atomi prendono in mano la stessa coppia di elettroni, e questa coppia condivisa è la "colla" che li unisce.</div>
+
+<Diagram caption="Il legame covalente: una coppia di elettroni condivisa tra due atomi" code={`flowchart LR
+  A["Atomo A<br/>(ha 1 elettrone da offrire)"] --- C["Coppia di elettroni<br/>CONDIVISA<br/>= il legame"]
+  C --- B["Atomo B<br/>(ha 1 elettrone da offrire)"]`} />
+
+## Perché gli atomi condividono gli elettroni
+
+Quasi tutti gli atomi "vogliono" avere 8 elettroni nel loro guscio più esterno (per l'idrogeno bastano 2). È la cosiddetta **regola dell'ottetto**: con l'ottetto completo l'atomo è stabile e tranquillo.
+
+Se un atomo da solo non arriva all'ottetto, può prenderne in prestito un po' dal vicino. Ma invece di rubarli, li **condivide**: ognuno mette un elettrone, e la coppia "vale" per tutti e due. Così entrambi si avvicinano all'ottetto senza che nessuno resti a mani vuote.
+
+Questo conta tantissimo in biologia: l'**acqua** (H2O), il **glucosio** (lo zucchero che ti dà energia), le **proteine** e il **DNA** sono tutti tenuti insieme da legami covalenti. Senza la condivisione di elettroni, il tuo corpo non esisterebbe proprio.
+
+## I tre tipi di legame covalente
+
+Tutto dipende da **come** viene condivisa la coppia di elettroni. C'è un dettaglio chiave: l'**elettronegatività**, cioè quanto un atomo è "goloso" e tira a sé gli elettroni condivisi. Confrontando la golosità dei due atomi, otteniamo tre casi.
+
+<Diagram caption="I tre tipi di legame covalente in base a chi tira di più gli elettroni" code={`flowchart TB
+  L["Legame covalente<br/>(coppia condivisa)"] --> P["PURO<br/>atomi uguali<br/>tirano allo stesso modo"]
+  L --> PO["POLARE<br/>atomi diversi<br/>uno tira piu' dell'altro"]
+  L --> D["DATIVO<br/>la coppia la mette<br/>UN solo atomo"]`} />
+
+### 1) Covalente puro: condivisione equa
+
+Si forma quando i due atomi sono **uguali** (o quasi). Hanno la stessa golosità, quindi tirano la coppia di elettroni con la **stessa forza**. Risultato: gli elettroni stanno **esattamente in mezzo**.
+
+Analogia: due bambini della stessa forza tirano una corda. La corda non si sposta, resta al centro. Esempi: l'idrogeno H2, l'ossigeno O2, l'azoto N2 che respiri.
+
+### 2) Covalente polare: condivisione sbilanciata
+
+Si forma tra atomi **diversi**, con golosità diversa. Quello più goloso (più elettronegativo) **tira la coppia verso di sé**. Gli elettroni non se ne vanno del tutto, ma passano più tempo dalla sua parte.
+
+Così quel lato diventa un po' negativo (lo segniamo con **delta meno**) e l'altro un po' positivo (**delta più**). Il legame ha due "poli", come una calamita: per questo si dice **polare**. La direzione in cui scivolano gli elettroni si indica con una **freccia** che punta verso l'atomo più goloso.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la freccia della polarità punta verso l'atomo che "vince" e tiene gli elettroni più vicini. Quel lato diventa leggermente negativo (delta meno), l'altro leggermente positivo (delta più).</div>
+
+<Diagram caption="Freccia della polarita': gli elettroni scivolano verso l'atomo piu' goloso" code={`flowchart LR
+  H["H<br/>delta piu'<br/>(lato positivo)"] -->|"la coppia scivola di qua"| O["O<br/>delta meno<br/>(lato negativo, piu' goloso)"]`} />
+
+Questo è fondamentale per il corpo: l'**acqua** è una molecola polare (l'ossigeno tira gli elettroni più dell'idrogeno). Proprio per questo l'acqua scioglie sali e zuccheri e fa da "trasportatore" nel sangue e nelle cellule. La vita dipende dalla polarità dell'acqua.
+
+### 3) Covalente dativo: la coppia la mette uno solo
+
+Qui c'è la stessa coppia condivisa di prima, ma con una differenza: **un solo atomo** mette **entrambi** gli elettroni, mentre l'altro non ne mette nessuno (ha solo un posto vuoto dove riceverli). Si chiama anche **legame di coordinazione**.
+
+Analogia: di solito ognuno porta una caramella e le si divide. Nel dativo, un amico porta **tutte e due** le caramelle e le condivide lo stesso con l'altro. Il legame, una volta formato, è identico a un normale covalente: cambia solo **chi ha portato** gli elettroni.
+
+Esempio classico: lo ione ammonio. L'azoto dell'ammoniaca (NH3) ha una coppia di elettroni "libera" e la dona a uno ione idrogeno (H+) che è a mani vuote. In biologia questo tipo di legame tiene il **ferro** dentro l'**emoglobina** (la proteina che porta l'ossigeno nel sangue): senza legami dativi, il tuo sangue non potrebbe trasportare ossigeno.
+
+## Guarda il video
+
+<YouTube id="NvnUJEYIacE" title="Legame covalente: puro, multiplo e dativo — spiegazione semplice" />
+
+<VideoVisto id="chim-u1-14" />
+
+## Da ricordare
+
+- **Covalente** = due atomi **condividono** una coppia di elettroni per raggiungere l'ottetto ed essere stabili.
+- **Puro**: atomi **uguali**, tirano allo stesso modo, elettroni **in mezzo** (es. H2, O2).
+- **Polare**: atomi **diversi**, l'atomo più goloso tira gli elettroni a sé → un lato **delta meno**, l'altro **delta più** (la freccia punta verso il più goloso). È il caso dell'acqua.
+- **Dativo** (o di coordinazione): la coppia condivisa la mette **un solo** atomo; l'altro mette il posto vuoto.
+- I legami covalenti tengono insieme acqua, zuccheri, proteine e DNA: sono la base della vita.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Che cosa condividono due atomi in un legame covalente?"
+  opzioni={["Un protone", "Una coppia di elettroni", "Un neutrone", "Un atomo intero"]}
+  corretta={1}
+  spiegazione="Nel legame covalente i due atomi mettono in comune una coppia di elettroni: quella coppia condivisa è la 'colla' che li unisce."
+/>
+
+<Quiz
+  domanda="In un legame covalente PURO (tra due atomi uguali, come H2) gli elettroni condivisi stanno:"
+  opzioni={["Tutti dalla parte di un atomo", "Esattamente in mezzo ai due atomi", "Fuori dal legame", "Su un terzo atomo"]}
+  corretta={1}
+  spiegazione="Atomi uguali hanno la stessa elettronegatività (stessa golosità): tirano la coppia con la stessa forza, quindi gli elettroni restano in mezzo."
+/>
+
+<Quiz
+  domanda="Che cosa rende DATIVO (di coordinazione) un legame covalente?"
+  opzioni={["Gli atomi non condividono nulla", "La coppia di elettroni la fornisce un solo atomo", "Si forma solo tra atomi uguali", "Coinvolge i protoni invece degli elettroni"]}
+  corretta={1}
+  spiegazione="Nel dativo la coppia condivisa la mette tutta un solo atomo; l'altro offre solo un posto vuoto dove riceverla. Una volta formato, è un normale legame covalente."
+/>
+
+<Esercizio
+  problema="Nell'acqua (H2O) l'ossigeno è più 'goloso' di elettroni (più elettronegativo) dell'idrogeno. Di che tipo è il legame O-H? E da quale parte punta la freccia della polarità?"
+  soluzione="È un legame covalente POLARE, perché gli atomi sono diversi e hanno golosità diversa. La freccia della polarità punta verso l'ossigeno (l'atomo più goloso): l'ossigeno diventa delta meno (leggermente negativo) e l'idrogeno delta più (leggermente positivo). Proprio questa polarità rende l'acqua capace di sciogliere sali e zuccheri nel corpo."
+/>
+
+</section>
+
+</RisorsaLayout>

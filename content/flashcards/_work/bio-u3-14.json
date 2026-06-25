@@ -1,0 +1,53 @@
+{
+ "id": "bio-u3-14",
+ "titolo": "Splicing e splicing alternativo, spliceosoma, snRNA e ribozimi",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "14-splicing-e-splicing-alternativo-spliceosoma-snrna",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/biologia/u3/14-splicing-e-splicing-alternativo-spliceosoma-snrna.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "In ingegneria genetica con il termine c-DNA si indica una molecola di DNA complementare ottenuta a partire da una molecola di RNA, grazie all'intervento degli enzimi trascrittasi inversa e DNA polimerasi. Tale tecnica risulta particolarmente utile quando si lavora con i geni degli eucarioti perché:",
+   "choices": [
+    "il DNA degli eucarioti contiene oltre agli esoni anche gli introni non codificanti",
+    "non è possibile isolare il DNA degli eucarioti",
+    "i geni degli eucarioti sono formati da triplette diverse da quelle dei procarioti",
+    "i procarioti non sono attaccati dai virus che possiedono la trascrittasi inversa",
+    "l'informazione negli eucarioti passa normalmente dall'RNA al DNA"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2010",
+   "q": "Attraverso lo splicing alternativo una cellula può:",
+   "choices": [
+    "produrre proteine diverse dallo stesso trascritto primario",
+    "produrre trascritti primari diversi dallo stesso gene",
+    "produrre dallo stesso mRNA proteine diverse",
+    "amplificare regioni specifiche del DNA",
+    "riparare i danni del DNA su singolo filamento"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Gli esoni sono:",
+   "choices": [
+    "sequenze codificanti di un gene",
+    "sequenze non codificanti di un gene",
+    "proteine presenti nell'eterocromatina e nell'eucromatina",
+    "sequenze di riconoscimento dell'RNA polimerasi",
+    "complessi proteici formati da fattori di trascrizione"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

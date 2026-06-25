@@ -1,0 +1,10 @@
+{
+ "id": "chim-u1-04",
+ "titolo": "Proprietà magnetiche del nucleo e Risonanza Magnetica (RMN)",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "04-proprieta-magnetiche-del-nucleo-e-risonanza",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/chimica/u1/04-proprieta-magnetiche-del-nucleo-e-risonanza.mdx",
+ "examQuestions": []
+}

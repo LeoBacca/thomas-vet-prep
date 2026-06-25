@@ -1,0 +1,85 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u6-06">
+
+## Cos'è la resistenza elettrica?
+
+Immagina un tubo attraverso cui scorre l'acqua. Più il tubo è stretto, meno acqua passa. Nella corrente elettrica funziona allo stesso modo: la **resistenza** è l'ostacolo che un materiale oppone al passaggio degli elettroni.
+
+- **Corrente (I)** — quanti elettroni passano al secondo (Ampere, A)
+- **Tensione (V)** — la "spinta" che fa muovere gli elettroni (Volt, V)
+- **Resistenza (R)** — quanto il materiale si oppone al passaggio (Ohm, Ω)
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La tensione spinge, la resistenza frena, la corrente è il risultato — V = R · I</div>
+
+## La prima legge di Ohm
+
+La **prima legge di Ohm** dice una cosa semplice: se aumenti la spinta (tensione), passa più corrente; se aumenti l'ostacolo (resistenza), passa meno corrente.
+
+La formula è:
+
+**V = R · I**
+
+Oppure, a seconda di cosa vuoi trovare:
+
+- **I = V / R** (quanta corrente passa?)
+- **R = V / I** (quanto è grande la resistenza?)
+
+Esempio pratico: una lampadina con R = 100 Ω collegata a 220 V fa passare I = 220 / 100 = **2,2 A**.
+
+## La seconda legge di Ohm e la resistività
+
+La resistenza di un filo non dipende solo dal materiale, ma anche dalla sua forma. Un filo lungo oppone più resistenza (come una strada lunga). Un filo spesso oppone meno resistenza (come una strada a più corsie).
+
+La formula è:
+
+**R = ρ · L / A**
+
+Dove:
+- **ρ (rho)** = resistività del materiale (caratteristica del materiale, misurata in Ω·m)
+- **L** = lunghezza del filo (m)
+- **A** = sezione trasversale del filo (m²)
+
+La **resistività** è una proprietà del materiale: il rame ha bassa resistività (conduce bene), il vetro ha altissima resistività (non conduce quasi per niente).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> R = ρ · L / A — filo lungo e sottile = più resistenza; filo corto e spesso = meno resistenza.</div>
+
+<Diagram caption="Relazione tra tensione, corrente e resistenza (prima legge di Ohm)" code={`flowchart TB
+  V["Tensione V<br/>(Volt — la spinta)"] --> R["Resistenza R<br/>(Ohm — l'ostacolo)"]
+  R --> I["Corrente I<br/>(Ampere — il risultato)"]
+  V --> I`} />
+
+<Diagram caption="Seconda legge di Ohm: cosa fa variare la resistenza di un filo" code={`flowchart LR
+  rho["Resistività ρ<br/>(dipende dal materiale)"] --> R["Resistenza R"]
+  L["Lunghezza L<br/>(più lungo = più R)"] --> R
+  A["Sezione A<br/>(più spesso = meno R)"] --> R`} />
+
+## Guarda il video
+<YouTube id="W2rqNQAuA7A" title="La legge di Ohm in 3 minuti, tensione corrente e resistenza elettrica, formule, triangolo di Ohm" />
+<VideoVisto id="fis-u6-06" />
+
+## Da ricordare
+- La prima legge di Ohm è **V = R · I**: tensione, resistenza e corrente sono sempre collegate da questa formula.
+- La seconda legge di Ohm è **R = ρ · L / A**: la resistenza cresce con la lunghezza e diminuisce con la sezione del filo.
+- La **resistività ρ** è una proprietà del materiale: i metalli (rame, alluminio) la hanno bassa; gli isolanti la hanno altissima.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una resistenza da 50 Ω è collegata a una tensione di 100 V. Quanta corrente scorre?" opzioni={["0,5 A","2 A","5 000 A","150 A"]} corretta={1} spiegazione="Dalla prima legge di Ohm: I = V / R = 100 / 50 = 2 A. La corrente è il rapporto tra tensione e resistenza." />
+
+<Quiz domanda="Se raddoppi la tensione mantenendo la stessa resistenza, cosa succede alla corrente?" opzioni={["Rimane uguale","Si dimezza","Raddoppia","Diventa zero"]} corretta={2} spiegazione="Dalla formula I = V / R, se V raddoppia e R non cambia, anche I raddoppia. Tensione e corrente sono direttamente proporzionali." />
+
+<Quiz domanda="Un filo di rame viene sostituito con uno dello stesso materiale ma di lunghezza doppia e sezione uguale. Come cambia la resistenza?" opzioni={["Si dimezza","Rimane uguale","Raddoppia","Quadruplica"]} corretta={2} spiegazione="Dalla seconda legge di Ohm: R = ρ · L / A. Se L raddoppia e tutto il resto è uguale, anche R raddoppia." />
+
+<Esercizio problema="Un ferro da stiro ha una resistenza di 40 Ω ed è collegato alla rete domestica a 230 V. Calcola: (a) la corrente che scorre nel ferro; (b) la resistenza che dovrebbe avere per far passare solo 4 A alla stessa tensione." soluzione="(a) I = V / R = 230 / 40 = 5,75 A. (b) R = V / I = 230 / 4 = 57,5 Ω — servirebbe una resistenza maggiore per limitare la corrente a 4 A." />
+
+</section>
+
+</RisorsaLayout>

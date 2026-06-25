@@ -1,0 +1,10 @@
+{
+ "id": "fis-u3-09",
+ "titolo": "Viscosità, legge di Poiseuille e resistenze idrauliche",
+ "materia": "fisica",
+ "unita": 3,
+ "slug": "09-viscosita-legge-di-poiseuille-e-resistenze",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u3/09-viscosita-legge-di-poiseuille-e-resistenze.mdx",
+ "examQuestions": []
+}

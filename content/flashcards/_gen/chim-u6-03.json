@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u6-03-1",
+    "topicId": "chim-u6-03",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: in tutte e tre le reazioni principali degli alcoli (disidratazione, ossidazione, sostituzione) il punto in cui avviene la reazione e sempre il gruppo -OH.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il gruppo -OH e la 'maniglia' della molecola: che si tolga acqua (disidratazione), che si trasformi in C=O (ossidazione) o che venga scambiato (sostituzione), e sempre li che succede qualcosa. Il resto della catena di carbonio rimane intatto.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-03-2",
+    "topicId": "chim-u6-03",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Scaldi un alcol con un acido (per esempio l'etanolo con acido solforico). Cosa ottieni per disidratazione?",
+    "choices": [
+      "Un alchene: la molecola perde acqua e si forma un doppio legame C=C",
+      "Un acido carbossilico: il gruppo -OH si trasforma in -COOH",
+      "Un altro alcol piu lungo",
+      "Un sale che precipita sul fondo"
+    ],
+    "answer": 0,
+    "explain": "Disidratare = strizzare via l'acqua. L'alcol perde una molecola d'acqua (l'-OH e un idrogeno vicino vanno via insieme come H2O) e dove prima c'era l'-OH ora si forma un legame doppio tra due carboni: si chiama alchene. Serve calore e un acido come aiutante (catalizzatore). Le altre opzioni descrivono l'ossidazione (acido carbossilico) o scenari senza senso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-03-3",
+    "topicId": "chim-u6-03",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "open",
+    "q": "Il tuo amico beve troppo. Spiega passo per passo cosa succede all'etanolo nel suo fegato, usando la chimica dell'ossidazione degli alcoli. Perche il giorno dopo ha mal di testa?",
+    "answer": "L'etanolo e un alcol primario: il suo gruppo -OH si ossida a tappe, proprio come sale due gradini di una scala. Primo gradino: l'enzima alcol deidrogenasi (ADH) toglie due idrogeni all'etanolo e lo trasforma in acetaldeide (un'aldeide, cioe un composto con il gruppo -CHO). Secondo gradino: l'enzima aldeide deidrogenasi (ALDH) ossida l'acetaldeide e la trasforma in acido acetico (-COOH), che e l'acido dell'aceto e che il corpo riesce a smaltire. Il mal di testa del giorno dopo e colpa dello stadio di mezzo, l'acetaldeide: e una sostanza tossica che si accumula se il fegato non riesce a smaltirla abbastanza in fretta. In chimica: alcol → aldeide → acido carbossilico. Nel fegato: etanolo → acetaldeide (tossica!) → acido acetico.",
+    "explain": "Da ricordare: ossidazione alcol primario = due gradini (aldeide poi acido). L'acetaldeide e la tossina responsabile della 'sbronza'.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u6-03-4",
+    "topicId": "chim-u6-03",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "L'ossidazione di un alcol SECONDARIO porta a:",
+    "choices": [
+      "Un chetone",
+      "Un'aldeide",
+      "Un acido carbossilico",
+      "Un alcol terziario",
+      "Un'anidride mista"
+    ],
+    "answer": 0,
+    "explain": "Un alcol secondario ha il gruppo -OH su un carbonio 'di mezzo' (legato ad altri due carboni). Ossidandolo il -OH diventa C=O, ma siccome ci sono due catene attaccate a quel carbonio il prodotto e un CHETONE, non un'aldeide. L'aldeide si forma invece dall'alcol PRIMARIO (l'-OH e all'estremita). Trappola 'aldeide': e l'errore piu comune, si confonde primario con secondario. Trappola 'acido carbossilico': si ottiene solo ossidando ancora un'aldeide, non direttamente da un secondario. 'Alcol terziario' e l'opposto esatto (un altro alcol, non un prodotto di ossidazione). 'Anidride mista' e un filler fuori tema.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u6-03-5",
+    "topicId": "chim-u6-03",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sulla reattivita degli alcoli e FALSA?",
+    "choices": [
+      "L'ossidazione del gruppo -OH di un alcol da sempre luogo a un chetone o a un'aldeide, qualunque sia il tipo di alcol",
+      "L'ossidazione di un alcol secondario puo dare un chetone",
+      "L'ossidazione di un alcol primario puo dare un acido carbossilico",
+      "La disidratazione di un alcol produce un alchene",
+      "Nella sostituzione, il gruppo -OH viene rimpiazzato da un altro gruppo senza rompere la catena di carbonio"
+    ],
+    "answer": 0,
+    "explain": "La risposta FALSA e la prima: NON e vero che l'ossidazione di un alcol da 'sempre' un chetone o un'aldeide. Dipende dal tipo: un alcol primario si ossida prima ad aldeide e poi ad acido carbossilico (quindi puo dare un acido!); un secondario da un chetone. Dire 'sempre chetone o aldeide' esclude l'acido carbossilico, che e un prodotto reale e importante. Le altre affermazioni sono tutte corrette: secondario → chetone (si), primario → acido (si, con ossidazione completa), disidratazione → alchene (si), sostituzione → catena intatta (si).",
+    "tags": ["prova d'esame"]
+  }
+]

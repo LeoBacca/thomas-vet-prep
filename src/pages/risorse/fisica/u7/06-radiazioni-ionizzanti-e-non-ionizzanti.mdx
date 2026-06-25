@@ -1,0 +1,99 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u7-06">
+
+## Cosa sono le radiazioni?
+
+Una **radiazione** è energia che viaggia nello spazio. Può essere luce, calore, onde radio o particelle minuscole sparate da un atomo.
+
+La domanda chiave è una sola: **questa radiazione ha abbastanza energia da strappare elettroni dagli atomi?**
+
+- Se **sì** → è **ionizzante** (crea ioni, cioè atomi con carica elettrica).
+- Se **no** → è **non ionizzante** (scalda o eccita gli atomi, ma non li "rompe").
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Immagina un atomo come una cipolla con gli elettroni al posto degli strati. Le radiazioni ionizzanti hanno forza sufficiente da strappare via uno strato; quelle non ionizzanti riescono solo a farlo tremare un po'.</div>
+
+---
+
+## Radiazioni non ionizzanti — le "tranquille"
+
+Hanno **bassa frequenza** e **poca energia**. Non rompono i legami chimici delle molecole.
+
+Esempi di tutti i giorni:
+
+- **Onde radio e microonde** — radio, Wi-Fi, forno a microonde.
+- **Infrarosso** — il calore che senti avvicinandoti a un caminetto.
+- **Luce visibile** — quella che vedi con gli occhi.
+- **Ultravioletto (UV) vicino** — quello che abbronza la pelle (con qualche rischio, ma non ionizza).
+
+Effetti principali: **riscaldamento dei tessuti** (le microonde scaldano il cibo proprio così).
+
+---
+
+## Radiazioni ionizzanti — le "energetiche"
+
+Hanno **alta frequenza** (o sono particelle veloci) e **molta energia**. Riescono a strappare elettroni dagli atomi, creando **ioni reattivi** che possono danneggiare le molecole del DNA.
+
+Esempi:
+
+- **Raggi X** — usati in radiologia.
+- **Raggi gamma (γ)** — emessi da nuclei radioattivi.
+- **Particelle alfa (α)** — fermate da un foglio di carta, ma pericolosissime se ingerite.
+- **Particelle beta (β)** — fermate da pochi mm di alluminio.
+- **Raggi UV lontano** — la parte più energetica dell'ultravioletto.
+
+Effetti principali: **ionizzazione delle molecole biologiche**, danni al DNA, rischio di mutazioni e tumori se l'esposizione è elevata.
+
+---
+
+## Dove si trova il confine?
+
+Il confine tra ionizzanti e non ionizzanti si trova nella zona dell'**ultravioletto**, attorno a 10 eV di energia per fotone. Sopra quella soglia: ionizzante. Sotto: non ionizzante.
+
+<Diagram caption="Lo spettro elettromagnetico: da non ionizzante a ionizzante" code={`flowchart LR
+  A["Onde radio<br/>(non ionizzante)"] --> B["Microonde<br/>(non ionizzante)"]
+  B --> C["Infrarosso<br/>(non ionizzante)"]
+  C --> D["Luce visibile<br/>(non ionizzante)"]
+  D --> E["UV vicino<br/>(non ionizzante)"]
+  E --> F["UV lontano<br/>(soglia ~10 eV)"]
+  F --> G["Raggi X<br/>(ionizzante)"]
+  G --> H["Raggi gamma<br/>(ionizzante)"]`} />
+
+<Diagram caption="Effetti biologici a confronto" code={`flowchart TB
+  A["Radiazione non ionizzante"] --> B["Eccita o riscalda<br/>le molecole"]
+  B --> C["Effetto termico<br/>(es. scottatura solare)"]
+  D["Radiazione ionizzante"] --> E["Strappa elettroni<br/>dagli atomi"]
+  E --> F["Ionizzazione del DNA<br/>possibili mutazioni"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="Jr0tOuoI4Ic" title="Cosa Sono le Radiazioni E Che ce Ne Facciamo?" />
+<VideoVisto id="fis-u7-06" />
+
+## Da ricordare
+
+- Le radiazioni **ionizzanti** hanno abbastanza energia da strappare elettroni dagli atomi e possono danneggiare il DNA; esempi: raggi X, raggi gamma, particelle alfa e beta.
+- Le radiazioni **non ionizzanti** (onde radio, infrarosso, luce visibile, UV vicino) non rompono legami chimici ma possono riscaldare i tessuti.
+- Il confine tra le due categorie si trova nella zona dell'**ultravioletto**, attorno a 10 eV di energia per fotone.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale delle seguenti è una radiazione ionizzante?" opzioni={["Onde radio FM","Luce visibile di una lampadina","Raggi X usati in radiologia","Microonde del forno"]} corretta={2} spiegazione="I raggi X hanno energie nell'ordine dei keV, ben oltre la soglia di ionizzazione (~10 eV). Onde radio, luce visibile e microonde non hanno abbastanza energia per strappare elettroni dagli atomi." />
+
+<Quiz domanda="Cosa produce la ionizzazione negli atomi di una molecola biologica?" opzioni={["Un aumento della temperatura della cellula","La formazione di ioni reattivi che possono alterare il DNA","Un semplice riscaldamento reversibile dei tessuti","La riflessione della luce da parte della cellula"]} corretta={1} spiegazione="Quando una radiazione ionizzante strappa un elettrone, l'atomo diventa un ione con carica. Questi ioni reattivi possono rompere o modificare le catene del DNA, causando potenzialmente mutazioni." />
+
+<Quiz domanda="Le microonde del forno scaldano il cibo perché:" opzioni={["Ionizzano gli atomi dell'acqua nel cibo","Fanno vibrare le molecole d'acqua producendo calore","Emettono raggi gamma ad alta energia","Rompono i legami covalenti delle proteine"]} corretta={1} spiegazione="Le microonde sono radiazioni non ionizzanti. La loro energia è sufficiente a far oscillare le molecole polari come l'acqua, generando calore per attrito molecolare — nessuna ionizzazione avviene." />
+
+<Esercizio problema="Un medico usa i raggi X per una radiografia e poi usa una lampada a infrarossi per riscaldare un muscolo dolorante del paziente. Classifica ognuna delle due radiazioni (ionizzante o non ionizzante) e spiega brevemente il motivo." soluzione="I raggi X sono radiazioni ionizzanti: hanno energia nell'ordine dei keV, molto superiore alla soglia di circa 10 eV necessaria per estrarre elettroni dagli atomi. La lampada a infrarossi emette invece radiazioni non ionizzanti: la loro energia è troppo bassa per ionizzare gli atomi, e l'effetto biologico principale è puramente termico (riscaldamento dei tessuti)." />
+
+</section>
+
+</RisorsaLayout>

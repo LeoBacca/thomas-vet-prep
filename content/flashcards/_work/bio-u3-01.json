@@ -1,0 +1,53 @@
+{
+ "id": "bio-u3-01",
+ "titolo": "La replicazione semiconservativa, origini e forcella replicativa",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "01-la-replicazione-semiconservativa-origini-e-forcella",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/biologia/u3/01-la-replicazione-semiconservativa-origini-e-forcella.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Meselson e Stahl nel 1957 fornirono prove sperimentali che ciascun filamento di DNA serviva da stampo per il nuovo DNA, dimostrando così il processo di duplicazione semiconservativa del DNA. Essi fecero crescere un ceppo di Escherichia coli in un terreno contenente azoto pesante (15N), quindi lo passarono in un terreno contenente azoto leggero (14N). Dopo una generazione esaminarono i risultati e constatarono che la percentuale di DNA composto da un'elica pesante (con azoto 15) e da una leggera (con azoto 14) era:",
+   "choices": [
+    "100%",
+    "75%",
+    "50%",
+    "25%",
+    "0%"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2015",
+   "q": "Viene condotto un esperimento per dimostrare che il DNA si replica in modo semiconservativo (esperimento di Meselson-Stahl). Dei batteri Escherichia coli sono stati fatti crescere in un mezzo di coltura in cui la fonte di azoto contiene solamente azoto pesante (15N). Successivamente, sono stati selezionati i batteri in cui tutto l'azoto nel DNA era 15N. Questi batteri sono stati poi fatti crescere in un altro terreno, la cui sola fonte di azoto era azoto leggero 14N, e fatti dividere per tre volte. Dopo la terza divisione, qual è la percentuale di molecole di DNA che contengono sia 15N che 14N?",
+   "choices": [
+    "25%",
+    "12,5%",
+    "50%",
+    "75%",
+    "100%"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2016",
+   "q": "Si definisce semiconservativa la replicazione del DNA in quanto:",
+   "choices": [
+    "solo un filamento della doppia elica figlia è neosintetizzato",
+    "avviene soltanto in circa la metà delle cellule di un individuo",
+    "ogni singolo filamento della doppia elica contiene per metà materiale genetico originale e per metà materiale genetico di nuova sintesi",
+    "solo metà delle informazioni genetiche vengono duplicate",
+    "si realizza in individui a ciclo vitale aplonte e non diplonte"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+[
+  {
+    "id": "fc-chim-u1-08-1",
+    "topicId": "chim-u1-08",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Nella tavola periodica i GRUPPI sono le 18 colonne verticali. Cosa hanno in comune due elementi della stessa colonna?",
+    "choices": ["Lo stesso numero di protoni", "Lo stesso numero di elettroni nell'ultimo guscio (elettroni esterni)", "Lo stesso peso esatto", "Lo stesso numero di gusci"],
+    "answer": 1,
+    "explain": "Stessa colonna (stesso gruppo) = stesso numero di elettroni esterni, detti di valenza. Sono proprio quelli a decidere come l'elemento reagisce: per questo gli elementi di una stessa colonna si comportano in modo simile, come una famiglia con lo stesso carattere. Lo stesso numero di gusci invece riguarda i periodi (le righe).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-08-2",
+    "topicId": "chim-u1-08",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: nella tavola periodica gli elementi sono messi in fila in ordine alfabetico.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Sono ordinati per numero atomico crescente, cioè per quanti protoni hanno nel nucleo: 1, 2, 3, 4... come i numeri civici lungo una strada, senza salti né buchi. L'ordine alfabetico non c'entra nulla.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-08-open",
+    "topicId": "chim-u1-08",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Il sodio (Na) e il potassio (K) si trovano nella stessa colonna, la prima a sinistra. Cosa puoi prevedere sul loro comportamento chimico, e perche e interessante per chi studia veterinaria?",
+    "answer": "Essendo nella stessa colonna (stesso gruppo) hanno lo stesso numero di elettroni esterni, quindi si comportano in modo simile: sono entrambi molto reattivi e formano ioni positivi. E interessante perche nel corpo degli animali (e nostro) sodio e potassio lavorano insieme per far funzionare i segnali nervosi e il battito cardiaco: la loro somiglianza chimica si riflette nei ruoli che svolgono nell'organismo.",
+    "explain": "Da ricordare: stessa colonna = stessi elettroni esterni = stesso comportamento chimico.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-08-exam1",
+    "topicId": "chim-u1-08",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Due elementi hanno lo STESSO numero di elettroni nell'ultimo guscio (gli elettroni esterni). Cosa puoi dire con certezza?",
+    "choices": ["Occupano lo stesso periodo (la stessa riga)", "Fanno parte dello stesso gruppo (la stessa colonna)", "Sono lo stesso identico elemento", "Hanno lo stesso numero di protoni", "Hanno la stessa massa atomica"],
+    "answer": 1,
+    "explain": "Stessi elettroni esterni = stessa colonna = stesso gruppo: e questa la definizione di gruppo. Trappola 'stesso periodo': il periodo (la riga) dice quanti gusci ha l'atomo, non quanti elettroni esterni, quindi e l'idea opposta e sbagliata. 'Stesso elemento' e 'stessi protoni' sono trappole: elementi diversi della stessa colonna hanno protoni diversi (es. sodio 11 e potassio 19), restano elementi distinti. La massa atomica e fuori tema: dipende da protoni e neutroni, non dagli elettroni esterni.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-08-exam2",
+    "topicId": "chim-u1-08",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale dei seguenti elementi si trova nel PRIMO gruppo (la prima colonna a sinistra) e nel SECONDO periodo (la seconda riga) della tavola periodica?",
+    "choices": ["Sodio", "Litio", "Magnesio", "Carbonio", "Francio"],
+    "answer": 1,
+    "explain": "Servono due informazioni insieme: gruppo (colonna) e periodo (riga). Primo gruppo = prima colonna (i metalli alcalini); secondo periodo = seconda riga, cioe 2 gusci. Il litio (3 protoni) sta proprio li. Trappole della stessa famiglia: sodio e francio sono anch'essi nella prima colonna, ma stanno in righe piu in basso (3 e 7 gusci), quindi giusto gruppo ma periodo sbagliato. Il magnesio e nel SECONDO gruppo (colonna accanto), non nel primo. Il carbonio e fuori tema: sta in un'altra colonna piu a destra. Devi incrociare colonna E riga, non fermarti alla famiglia.",
+    "tags": ["prova d'esame"]
+  }
+]

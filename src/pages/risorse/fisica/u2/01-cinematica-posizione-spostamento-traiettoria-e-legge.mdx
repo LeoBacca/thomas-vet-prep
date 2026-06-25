@@ -1,0 +1,117 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-01">
+
+## Cos'è la cinematica?
+
+La **cinematica** è la parte della fisica che studia il **movimento** degli oggetti, senza chiedersi perché si muovono. Ci interessa solo *dove* si trova un oggetto, *dove va* e *quanto ci mette*.
+
+Immagina di guardare un cane che corre nel parco: la cinematica descrive il suo percorso e la sua posizione minuto per minuto, senza preoccuparsi di quanto sia stanco o di chi lo insegua.
+
+---
+
+## Il punto materiale
+
+Per semplificare, in fisica si tratta spesso un oggetto come un **punto materiale**: un puntino senza dimensioni che rappresenta l'oggetto intero. È un'approssimazione utile — come usare una puntina su una mappa per indicare una città.
+
+---
+
+## Posizione
+
+La **posizione** dice *dove si trova* il punto in un certo istante. Per descriverla serve un **sistema di riferimento**: un punto di partenza fisso (l'origine) e una direzione.
+
+- Se il moto è in linea retta, basta un numero: per esempio, "3 metri a destra dell'origine" si scrive x = 3 m.
+- La posizione dipende dal sistema di riferimento scelto: cambia origine, cambia il numero.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La posizione è come il numero civico di casa — ti dice esattamente dove sei rispetto a un punto di riferimento.</div>
+
+---
+
+## Spostamento
+
+Lo **spostamento** è la differenza tra la posizione finale e quella iniziale:
+
+**Δx = x_finale − x_iniziale**
+
+Lo spostamento può essere positivo (vai "avanti") o negativo (vai "indietro"). È diverso dalla distanza percorsa: se vai 5 metri avanti e poi torni 5 metri indietro, la distanza percorsa è 10 m ma lo spostamento è 0.
+
+**Esempio:** Parti dal km 2 di una strada e arrivi al km 7. Spostamento = 7 − 2 = **5 km**. Se poi torni al km 4, il nuovo spostamento è 4 − 7 = **−3 km**.
+
+---
+
+## Traiettoria
+
+La **traiettoria** è il percorso geometrico che il punto materiale traccia nello spazio mentre si muove. È come la scia lasciata da un aereo nel cielo.
+
+- Può essere una retta (moto rettilineo), una curva, un cerchio, ecc.
+- La traiettoria non dice nulla sui tempi: mostra solo la forma del percorso.
+
+---
+
+## Legge oraria
+
+La **legge oraria** è una formula che dice *dove si trova* l'oggetto *in ogni istante*. Scrive la posizione come funzione del tempo:
+
+**x(t) = ...**
+
+Per il moto più semplice (rettilineo uniforme, cioè velocità costante v):
+
+**x(t) = x₀ + v · t**
+
+- x₀ = posizione di partenza
+- v = velocità (costante)
+- t = tempo trascorso
+
+**Esempio:** Un cane parte da x₀ = 0 e corre a v = 2 m/s. Dopo 3 secondi: x(3) = 0 + 2 × 3 = **6 m**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La legge oraria è come il GPS del fisico — ti dice la posizione esatta dell'oggetto in qualsiasi momento tu voglia sapere.</div>
+
+---
+
+<Diagram caption="Le quattro idee chiave della cinematica e come si collegano" code={`flowchart TB
+  A["Sistema di riferimento<br/>(punto zero + direzione)"] --> B["Posizione x(t)<br/>(dove si trova l'oggetto)"]
+  B --> C["Spostamento Δx<br/>(posizione finale − iniziale)"]
+  B --> D["Traiettoria<br/>(forma del percorso nello spazio)"]
+  B --> E["Legge oraria x(t)<br/>(posizione in funzione del tempo)"]`} />
+
+<Diagram caption="Come si legge la legge oraria: dal tempo alla posizione" code={`flowchart LR
+  T["Tempo t<br/>(es. t = 3 s)"] --> L["Legge oraria<br/>x(t) = x₀ + v·t"]
+  L --> P["Posizione x<br/>(es. x = 6 m)"]
+  X0["Posizione iniziale x₀<br/>e velocità v"] --> L`} />
+
+---
+
+## Guarda il video
+<YouTube id="CtEAZEOVFQg" title="Introduzione alla cinematica: traiettoria, spazio, tempo, velocità" />
+<VideoVisto id="fis-u2-01" />
+
+---
+
+## Da ricordare
+
+- La **posizione** indica dove si trova l'oggetto rispetto a un'origine; lo **spostamento** è la variazione di posizione (finale meno iniziale) e può essere negativo.
+- La **traiettoria** è la forma geometrica del percorso; non contiene informazioni sui tempi, solo sulla forma del cammino.
+- La **legge oraria** x(t) = x₀ + v·t descrive la posizione in ogni istante: conoscendola, sai tutto sul moto dell'oggetto.
+
+---
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un gatto parte dalla posizione x = 2 m e arriva a x = 8 m. Qual è il suo spostamento?" opzioni={["6 m", "10 m", "8 m", "2 m"]} corretta={0} spiegazione="Lo spostamento è Δx = x_finale − x_iniziale = 8 − 2 = 6 m. Non è la posizione finale (8 m) né la somma (10 m)." />
+
+<Quiz domanda="Un oggetto si muove di moto rettilineo uniforme con x₀ = 0 m e v = 3 m/s. Qual è la sua posizione dopo 4 secondi?" opzioni={["7 m", "3 m", "12 m", "0,75 m"]} corretta={2} spiegazione="Usando la legge oraria: x(t) = x₀ + v·t = 0 + 3 × 4 = 12 m." />
+
+<Quiz domanda="Cosa descrive la traiettoria di un punto materiale?" opzioni={["La velocità in ogni istante", "La forma geometrica del percorso nello spazio", "La posizione in funzione del tempo", "Lo spostamento totale"]} corretta={1} spiegazione="La traiettoria è il percorso geometrico (la 'forma' del cammino) che l'oggetto traccia nello spazio. Non dice nulla sui tempi o sulla velocità." />
+
+<Esercizio problema="Una ciclista percorre una strada rettilinea. Parte dalla posizione x₀ = 5 m, si muove con velocità costante v = 4 m/s. Scrivi la legge oraria e calcola dove si trova dopo 6 secondi. Poi calcola lo spostamento compiuto in quei 6 secondi." soluzione="Legge oraria: x(t) = 5 + 4·t. Dopo 6 secondi: x(6) = 5 + 4×6 = 5 + 24 = 29 m. Spostamento: Δx = x(6) − x₀ = 29 − 5 = 24 m (oppure direttamente Δx = v·t = 4×6 = 24 m)." />
+
+</section>
+
+</RisorsaLayout>

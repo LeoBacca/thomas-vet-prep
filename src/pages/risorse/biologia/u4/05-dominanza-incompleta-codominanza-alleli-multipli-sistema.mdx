@@ -1,0 +1,227 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u4-05">
+
+## Mendel aveva semplificato: la realtà è più sfumata
+
+Mendel lavorava con caratteri netti: semi lisci o rugosi, fiori viola o bianchi. O uno o l'altro. Nella realtà, però, gli alleli spesso non si comportano così. A volte si mescolano a metà, a volte compaiono entrambi insieme, a volte esistono più di due versioni dello stesso gene.
+
+---
+
+## Dominanza incompleta: il mix a metà
+
+Con la **dominanza incompleta**, nessuno dei due alleli "vince" sull'altro. Il risultato nell'eterozigote (chi ha due alleli diversi) è un fenotipo intermedio, cioè a metà strada tra i due genitori.
+
+**Esempio classico: la bocca di leone (Antirrhinum)**
+
+- Fiore rosso (RR) + Fiore bianco (BB) → Fiore **rosa** (RB)
+- Non è che il rosso sparisce o il bianco sparisce: si diluiscono a vicenda.
+
+Immagina di mescolare vernice rossa e vernice bianca: ottieni il rosa. Non hai più né la vernice rossa né quella bianca pura, ma qualcosa di nuovo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Con la dominanza incompleta, un allele non sovrasta l'altro — il risultato è una via di mezzo tra i due genitori.</div>
+
+---
+
+## Codominanza: entrambi si vedono insieme
+
+Con la **codominanza**, entrambi gli alleli si esprimono completamente e contemporaneamente nell'eterozigote. Non si mescolano, non si fondono: si vedono entrambi.
+
+**Esempio: il mantello del bovino roano**
+
+- Bovino con pelo rosso (RR) + Bovino con pelo bianco (BB) → Bovino **roano** (RB): ha peli rossi E peli bianchi a chiazze
+- Ogni pelo è rosso oppure bianco — non rosa. I due colori coesistono senza mescolarsi.
+
+Immagina di mettere perline rosse e perline bianche nello stesso barattolo: vedi entrambi i colori, non ottieni un colore nuovo.
+
+---
+
+## Alleli multipli: più di due scelte
+
+Fino ad ora abbiamo parlato di geni con due alleli (es. R e B). Ma molti geni esistono in **più di due versioni** nella popolazione. Si chiamano **alleli multipli**.
+
+Attenzione: un individuo può avere al massimo **due alleli** per un gene (uno per cromosoma). Ma nella **popolazione** possono esisterne molti di più.
+
+---
+
+## Il sistema ABO: l'esempio perfetto
+
+I gruppi sanguigni ABO usano **tre alleli** per lo stesso gene: **I^A**, **I^B** e **i**.
+
+| Allele | Cosa produce |
+|--------|-------------|
+| I^A | Antigene A sulla superficie dei globuli rossi |
+| I^B | Antigene B sulla superficie dei globuli rossi |
+| i | Nessun antigene |
+
+Le regole di dominanza:
+- I^A è **dominante** su i
+- I^B è **dominante** su i
+- I^A e I^B sono **codominanti** tra loro (si esprimono entrambi)
+
+Quindi i possibili genotipi e fenotipi (gruppi sanguigni) sono:
+
+| Genotipo | Gruppo sanguigno |
+|----------|-----------------|
+| I^A I^A oppure I^A i | A |
+| I^B I^B oppure I^B i | B |
+| I^A I^B | AB (codominanza!) |
+| ii | 0 |
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Nel sistema ABO, tre alleli determinano quattro gruppi sanguigni. I^A e I^B sono codominanti (chi li ha entrambi ha gruppo AB), mentre i è recessivo (ci vogliono due copie per avere gruppo 0).</div>
+
+---
+
+## Dominanza incompleta vs codominanza: non confonderle
+
+Sono due cose diverse e l'esame ama metterti alla prova proprio su questo confine.
+
+| | Dominanza incompleta | Codominanza |
+|---|---|---|
+| Cosa fa l'eterozigote | mostra un fenotipo **intermedio** (nuovo, a metà) | mostra **entrambi** i fenotipi insieme |
+| Esempio | bocca di leone: rosso × bianco → **rosa** | sistema ABO: I^A I^B → gruppo **AB** (antigeni A e B entrambi presenti) |
+| Immagine mentale | vernici mescolate (un colore nuovo) | perline rosse e bianche nello stesso barattolo (due colori distinti) |
+| Rapporto in F2 | 1 : 2 : 1 (fenotipico = genotipico) | 1 : 2 : 1 (fenotipico = genotipico) |
+
+Punto cruciale: in **entrambi** i casi l'eterozigote ha un aspetto suo, diverso da tutti e due gli omozigoti. Per questo il rapporto fenotipico in F2 NON è 3:1 (come nella dominanza completa di Mendel) ma **1:2:1**, identico a quello genotipico. Ogni genotipo corrisponde a un fenotipo riconoscibile.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Dominanza incompleta = colori mescolati (rosa). Codominanza = colori affiancati (entrambi visibili, come gruppo AB). In tutti e due i casi l'F2 dà 1:2:1, non 3:1.</div>
+
+---
+
+## Antigeni e anticorpi nel sistema ABO
+
+Il gruppo sanguigno non è solo questione di antigeni sui globuli rossi: nel **plasma** ci sono anche gli **anticorpi**. La regola d'oro è semplice e simmetrica:
+
+> Hai nel plasma gli anticorpi contro l'antigene che NON possiedi.
+
+| Gruppo | Antigeni sui globuli rossi | Anticorpi nel plasma |
+|--------|----------------------------|----------------------|
+| A | A | anti-B |
+| B | B | anti-A |
+| AB | A e B | **nessuno** |
+| 0 | nessuno | anti-A E anti-B |
+
+Perché è così? Il corpo non produce anticorpi contro i propri antigeni (altrimenti si autodistruggerebbe), ma produce anticorpi contro gli antigeni "estranei". Quindi:
+- gruppo A ha l'antigene A → produce anti-B;
+- gruppo B ha l'antigene B → produce anti-A;
+- gruppo AB ha entrambi gli antigeni → **non** produce anticorpi anti-A né anti-B;
+- gruppo 0 non ha antigeni → produce **entrambi** gli anticorpi.
+
+Questa regola permette di "leggere al contrario": se in un'analisi il plasma contiene anti-A, l'individuo NON è A e NON è AB (loro non hanno anti-A); sarà B oppure 0.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Anticorpi = il contrario degli antigeni che hai. Gruppo A ha anti-B, gruppo B ha anti-A, gruppo AB non ha anticorpi, gruppo 0 li ha tutti e due.</div>
+
+---
+
+## Donatore e ricevente universale
+
+Da antigeni e anticorpi nasce la regola delle trasfusioni. Se metto globuli rossi con un antigene in un plasma che contiene il relativo anticorpo, il sangue **si agglutina** (i globuli si attaccano): è pericoloso. Conta soprattutto l'antigene del **donatore** contro l'anticorpo del **ricevente**.
+
+- **Donatore universale = gruppo 0.** I suoi globuli rossi NON hanno antigeni A né B, quindi nessun ricevente li attacca. Può donare a tutti.
+- **Ricevente universale = gruppo AB.** Il suo plasma NON ha anticorpi anti-A né anti-B, quindi accetta globuli rossi di qualsiasi gruppo.
+
+Specularmente: il gruppo AB può **ricevere** da tutti ma può **donare** solo ad altri AB (i suoi globuli hanno entrambi gli antigeni). Il gruppo 0 dona a tutti ma può **ricevere** solo da 0.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> 0 = donatore universale (niente antigeni da attaccare). AB = ricevente universale (niente anticorpi che attacchino).</div>
+
+---
+
+## Contare genotipi e fenotipi con alleli multipli
+
+Una domanda d'esame tipica: "un gene ha n alleli, quanti genotipi sono possibili?". Si conta così.
+
+**Numero di genotipi** con n alleli:
+
+- omozigoti: n (uno per ciascun allele);
+- eterozigoti: tutte le coppie di alleli diversi = n × (n − 1) / 2;
+- totale = n + n(n − 1)/2 = **n × (n + 1) / 2**.
+
+Esempi che ricorrono nei compiti:
+- ABO, **3 alleli** (I^A, I^B, i): 3 × 4 / 2 = **6 genotipi**;
+- coniglio, **4 alleli** (C, c^ch, c^h, c): 4 × 5 / 2 = **10 genotipi**.
+
+**Numero di fenotipi:** dipende dalle relazioni di dominanza, NON c'è una formula fissa.
+- Nell'ABO: I^A e I^B codominanti più i recessivo → **4 fenotipi** (A, B, AB, 0), pur avendo 6 genotipi.
+- Nell'anatra con 3 alleli, due codominanti e uno recessivo: stessa logica dell'ABO → 6 genotipi ma **4 fenotipi** (i due alleli "dominanti" danno: il primo, il secondo, la combinazione codominante dei due, e il recessivo puro).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Genotipi con n alleli = n(n+1)/2 (formula fissa). I fenotipi invece li conti caso per caso guardando chi domina e chi è codominante.</div>
+
+---
+
+## Cenni al fattore Rh
+
+Oltre all'ABO, sui globuli rossi può esserci (o no) un altro antigene, il **fattore Rh** (antigene D). Funziona come dominanza completa con due alleli:
+
+- chi ha l'antigene D è **Rh positivo** (genotipo DD o Dd);
+- chi non ce l'ha è **Rh negativo** (genotipo dd, omozigote recessivo).
+
+Si combina con l'ABO: un gruppo "AB positivo" ha antigeni A, B e D. A differenza dell'ABO, gli anticorpi anti-Rh NON sono presenti dalla nascita: si formano solo dopo un primo contatto col sangue Rh positivo (importante in gravidanza, madre Rh negativa con feto Rh positivo).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Rh = un antigene in più (il D). Ce l'hai (Rh+) o no (Rh−), con dominanza completa: dd = negativo, DD/Dd = positivo.</div>
+
+---
+
+<Diagram caption="Dominanza incompleta: incrociando rosso (RR) e bianco (BB) si ottiene rosa (RB)" code={`flowchart TB
+  A["Genitore 1<br/>Fiore ROSSO<br/>genotipo RR"] --> C["Figlio F1<br/>Fiore ROSA<br/>genotipo RB<br/>(fenotipo intermedio)"]
+  B["Genitore 2<br/>Fiore BIANCO<br/>genotipo BB"] --> C
+  C --> D["F2: 1 RR Rosso<br/>2 RB Rosa<br/>1 BB Bianco<br/>rapporto 1 : 2 : 1"]`} />
+
+<Diagram caption="Sistema ABO: tre alleli, quattro gruppi sanguigni — regole di dominanza e codominanza" code={`flowchart TB
+  A["3 alleli nel gene ABO:<br/>I^A, I^B, i"] --> B["I^A e I^B dominano su i<br/>(i = recessivo)"]
+  A --> C["I^A e I^B sono CODOMINANTI<br/>tra loro"]
+  B --> D["I^A i → Gruppo A<br/>I^B i → Gruppo B<br/>ii → Gruppo 0"]
+  C --> E["I^A I^B → Gruppo AB<br/>(entrambi gli antigeni presenti)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="2d4CN4SJjyc" title="Dominanza: completa, incompleta, codominanza" />
+<VideoVisto id="bio-u4-05" />
+
+---
+
+## Da ricordare
+
+- **Dominanza incompleta**: l'eterozigote ha un fenotipo intermedio tra i due genitori (es. rosso + bianco = rosa). In F2 il rapporto è 1:2:1, fenotipico = genotipico.
+- **Codominanza**: l'eterozigote esprime entrambi gli alleli contemporaneamente senza mescolarli (es. gruppo sanguigno AB). Anche qui F2 = 1:2:1.
+- **Sistema ABO**: tre alleli (I^A, I^B, i) con I^A e I^B codominanti e i recessivo, producono quattro gruppi sanguigni (A, B, AB, 0).
+- **Genotipi → gruppi**: AA e Ai → A; BB e Bi → B; AB → AB; ii → 0.
+- **Anticorpi nel plasma**: hai gli anticorpi contro l'antigene che NON possiedi. A ha anti-B; B ha anti-A; AB nessun anticorpo; 0 ha anti-A e anti-B.
+- **Trasfusioni**: gruppo 0 = donatore universale (globuli rossi senza antigeni A/B); gruppo AB = ricevente universale (plasma senza anti-A/anti-B).
+- **Conteggio**: con n alleli i genotipi sono n(n+1)/2 (ABO = 6, coniglio a 4 alleli = 10); i fenotipi si contano caso per caso (ABO = 4).
+- **Incroci impossibili**: due genitori che danno SOLO figli AB devono essere AA × BB; un figlio AB esclude un genitore di gruppo 0; un genitore 0 × AB dà figli A o B (mai 0 né AB).
+- **Fattore Rh**: antigene D in dominanza completa; DD/Dd = Rh+, dd = Rh−.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un fiore rosso (RR) viene incrociato con un fiore bianco (WW). Il fenotipo dei figli F1 è rosa (RW). Che tipo di dominanza si osserva?" opzioni={["Dominanza completa del rosso sul bianco","Dominanza incompleta","Codominanza","Epistasi"]} corretta={1} spiegazione="Il fenotipo dei figli F1 è intermedio (rosa) tra quello dei genitori (rosso e bianco): nessun allele domina completamente sull'altro. Questo è il segno distintivo della dominanza incompleta." />
+
+<Quiz domanda="Una persona con gruppo sanguigno AB ha il genotipo I^A I^B. Quale affermazione è corretta?" opzioni={["I^A è dominante su I^B","I^B è dominante su I^A","I^A e I^B sono codominanti: entrambi si esprimono","i è codominante con I^A"]} corretta={2} spiegazione="Gli alleli I^A e I^B sono codominanti: nell'eterozigote I^A I^B, entrambi gli antigeni (A e B) compaiono sulla superficie dei globuli rossi, dando il gruppo AB." />
+
+<Quiz domanda="Qual è il genotipo di una persona con gruppo sanguigno 0?" opzioni={["I^A I^B","I^A i","I^B i","ii"]} corretta={3} spiegazione="L'allele i non produce antigeni sulla superficie dei globuli rossi ed è recessivo. Solo chi è omozigote ii (due alleli i) avrà il gruppo sanguigno 0, perché gli alleli I^A e I^B dominano su i." />
+
+<Esercizio problema="Una donna con gruppo sanguigno A (genotipo I^A i) e un uomo con gruppo sanguigno B (genotipo I^B i) aspettano un figlio. Quali gruppi sanguigni sono possibili nel bambino? Calcola le probabilità per ciascun gruppo." soluzione="Incrocio I^A i × I^B i. Le combinazioni possibili degli alleli sono: I^A I^B (gruppo AB), I^A i (gruppo A), I^B i (gruppo B), ii (gruppo 0). Ogni combinazione ha probabilità 1/4 = 25%. Quindi il bambino può avere qualsiasi gruppo sanguigno (A, B, AB o 0) con uguale probabilità del 25%." />
+
+<Esercizio problema="Una madre ha gruppo sanguigno 0 e il padre ha gruppo sanguigno AB. Quali gruppi sanguigni potranno avere i figli? E con quali probabilità? Possono avere gruppo 0 o gruppo AB?" soluzione="La madre 0 è per forza ii; il padre AB è per forza I^A I^B. Incrocio ii × I^A I^B. La madre dà sempre un i; il padre dà I^A (metà) oppure I^B (metà). Combinazioni: I^A i (gruppo A) con probabilità 1/2 = 50%, e I^B i (gruppo B) con probabilità 1/2 = 50%. Quindi i figli possono essere solo A o B. Gruppo 0 è IMPOSSIBILE (servirebbero due i, ma il padre non ha alcun i) e gruppo AB è IMPOSSIBILE (servirebbero I^A e I^B insieme, ma la madre dà solo i). Curiosità: i figli non hanno lo stesso gruppo di nessuno dei due genitori." />
+
+<Esercizio problema="Un uomo di gruppo A e una donna di gruppo B hanno parecchi figli, TUTTI di gruppo AB. Cosa si può dedurre sul genotipo dei due genitori?" soluzione="Perché compaia il gruppo AB nei figli, devono ricevere un I^A da un genitore e un I^B dall'altro: l'uomo A fornisce I^A, la donna B fornisce I^B. Se anche uno solo dei due portasse un allele i nascosto (cioè I^A i oppure I^B i), una parte dei figli erediterebbe quella i e comparirebbero gruppi diversi da AB (A, B o 0). Dato che TUTTI i figli sono AB, nessuno dei due può portare l'allele i: il padre è omozigote I^A I^A (AA) e la madre omozigote I^B I^B (BB). Incrocio I^A I^A × I^B I^B → 100% I^A I^B, cioè tutti AB. Nota: con tanti figli, la probabilità che siano tutti AB per caso, se un genitore portasse i, sarebbe trascurabile." />
+
+<Esercizio problema="Un'analisi di laboratorio rileva nel plasma di un donatore la presenza di anticorpi anti-A (e nessun anti-B). A quale gruppo sanguigno appartiene quasi certamente? E perché non può essere A o AB?" soluzione="Regola: si hanno nel plasma gli anticorpi contro l'antigene che NON si possiede. Avere anti-A significa NON avere l'antigene A. Quindi l'individuo non è di gruppo A (ha antigene A, niente anti-A) né di gruppo AB (ha entrambi gli antigeni, nessun anticorpo). Restano gruppo B (antigene B, plasma con anti-A) e gruppo 0 (nessun antigene, plasma con anti-A E anti-B). Poiché qui è presente solo anti-A e non anti-B, è coerente soprattutto con il gruppo B; il gruppo 0 avrebbe anche anti-B. Risposta: l'individuo è quasi certamente di gruppo B." />
+
+<Quiz domanda="Un gene presenta 4 alleli diversi nella popolazione (come il colore del pelo nel coniglio: aguti, cincillà, himalayano, albino). Quanti genotipi diversi sono possibili per questo gene?" opzioni={["4","6","8","10","16"]} corretta={3} spiegazione="Con n alleli i genotipi sono n(n+1)/2. Per n = 4: 4 × 5 / 2 = 10. Si scompone in 4 omozigoti (uno per allele) più 6 eterozigoti (le coppie di alleli diversi: 4 × 3 / 2 = 6). La trappola '16' viene da chi calcola 4 × 4 (tutte le combinazioni ordinate, contando due volte gli eterozigoti); '4' è solo il numero di alleli, non di genotipi." />
+
+<Quiz domanda="Una donna è madre di un bambino di gruppo AB positivo. A quale gruppo sanguigno la donna NON potrà MAI appartenere?" opzioni={["0","A","B","AB","Non si può escludere alcun gruppo"]} corretta={0} spiegazione="Il bambino AB ha genotipo I^A I^B: ha ricevuto un I^A da un genitore e un I^B dall'altro, quindi la madre deve fornire un I^A oppure un I^B. Una madre di gruppo 0 è ii: può dare solo l'allele i, mai I^A né I^B, perciò non potrebbe avere un figlio AB. I gruppi A (può dare I^A), B (può dare I^B) e AB (può dare entrambi) restano tutti possibili. La parte 'positivo' (Rh) non cambia il ragionamento sull'ABO." />
+
+<Quiz domanda="Sono definiti donatori universali i soggetti i cui globuli rossi non presentano antigeni A né B. Qual è questo gruppo, e qual è invece il ricevente universale?" opzioni={["Donatore universale 0; ricevente universale AB","Donatore universale AB; ricevente universale 0","Donatore universale A; ricevente universale B","Donatore e ricevente universale sono entrambi il gruppo AB","Donatore universale 0; ricevente universale 0"]} corretta={0} spiegazione="Il donatore universale è il gruppo 0: i suoi globuli rossi non hanno antigeni A o B, quindi nessun plasma ricevente li attacca. Il ricevente universale è il gruppo AB: il suo plasma non contiene anticorpi anti-A né anti-B, quindi accetta globuli rossi di ogni gruppo. La trappola classica è invertire i due (opzione B): il gruppo AB infatti ha entrambi gli antigeni, quindi come DONATORE va bene solo per altri AB." />
+
+</section>
+
+</RisorsaLayout>

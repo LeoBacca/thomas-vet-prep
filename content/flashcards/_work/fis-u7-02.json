@@ -1,0 +1,10 @@
+{
+ "id": "fis-u7-02",
+ "titolo": "Spettro elettromagnetico",
+ "materia": "fisica",
+ "unita": 7,
+ "slug": "02-spettro-elettromagnetico",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u7/02-spettro-elettromagnetico.mdx",
+ "examQuestions": []
+}

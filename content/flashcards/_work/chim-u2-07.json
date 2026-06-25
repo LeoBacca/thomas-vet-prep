@@ -1,0 +1,179 @@
+{
+ "id": "chim-u2-07",
+ "titolo": "Molarità, molalità e frazione molare",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "07-molarita-molalita-e-frazione-molare",
+ "freq": 12,
+ "risorseMdx": "src/pages/risorse/chimica/u2/07-molarita-molalita-e-frazione-molare.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Una soluzione acquosa di acido solforico 0,1 M contiene:",
+   "choices": [
+    "0,0001 mol di acido in 1 ml di soluzione",
+    "0,1 mol di acido in 100 ml di soluzione",
+    "0,001 mol di soluto in 1 litro di soluzione",
+    "0,1 mol di acido in 10 litri di acqua",
+    "1 ml di acido in 1 ml di soluzione"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2009",
+   "q": "Determina quanti mL di una soluzione acquosa 10 N di HCl si devono prelevare per preparare 500 mL di una soluzione 10^-2 N:",
+   "choices": [
+    "0,5",
+    "5,0",
+    "5,5",
+    "6,0",
+    "10"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2010",
+   "q": "Quanti ml di acqua devono essere aggiunti a 150 ml di una soluzione 0,4 M per avere una concentrazione finale pari a 0,1 M?",
+   "choices": [
+    "450",
+    "150",
+    "300",
+    "600",
+    "250"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2010",
+   "q": "Quanti grammi di NaOH (PM = 40) si devono sciogliere in 500 ml di acqua per ottenere una soluzione acquosa 1 M di NaOH?",
+   "choices": [
+    "20",
+    "40",
+    "7",
+    "80",
+    "2"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2011",
+   "q": "Quanti grammi di NaOH (40 u.m.a.) bisogna sciogliere in 200 ml di acqua per preparare una soluzione 0,1 M?",
+   "choices": [
+    "0,8 g",
+    "0,4 g",
+    "1,6 g",
+    "4,0 g",
+    "8,0 g"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2012",
+   "q": "Calcolare la molarità di una soluzione ottenuta sciogliendo 49 g di H2SO4 (98 u.m.a.) in 250 ml di acqua.",
+   "choices": [
+    "2,0 M",
+    "1,0 M",
+    "0,2 M",
+    "4,0 M",
+    "0,1 M"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2012",
+   "q": "A quale volume si devono portare 10 ml di HCl 6 M perché la concentrazione finale sia 0,5 M?",
+   "choices": [
+    "120 ml",
+    "240 ml",
+    "60 ml",
+    "83 ml",
+    "12 ml"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2013",
+   "q": "A 400 ml di una soluzione acquosa 2,5 M e stata aggiunta dell'acqua per diluirla alla concentrazione di 2 M. Quale volume di acqua e stato aggiunto?",
+   "choices": [
+    "100 ml",
+    "1000 ml",
+    "200 ml",
+    "500 ml",
+    "800 ml"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2015",
+   "q": "20 g di NaOH sono sciolti in 500 mL di acqua. Qual è il volume minimo di questa soluzione necessario per neutralizzare 25 mL di una soluzione 1 mol/L di H2SO4(aq)? (Si assuma massa atomica relativa: H = 1; O = 16; Na = 23; S = 32)",
+   "choices": [
+    "50 mL",
+    "25 mL",
+    "12,5 mL",
+    "75 mL",
+    "100 mL"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2015",
+   "q": "Quanto idrossido di potassio è presente in 25 cm3 di una soluzione di idrossido di potassio 1,5 M? (Si assuma massa atomica relativa: H = 1; O = 16; K = 39)",
+   "choices": [
+    "2,1 g",
+    "2,7 g",
+    "1,7 g",
+    "3,3 g",
+    "3,7 g"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2016",
+   "q": "In 500 mL di soluzione acquosa sono disciolti 36 g di glucosio (M.M. = 180 u). La molarità della soluzione è:",
+   "choices": [
+    "0,4 M",
+    "0,2 M",
+    "0,1 M",
+    "2 M",
+    "1 M"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2020",
+   "q": "Una soluzione acquosa di glucosio a concentrazione 0,2 M può essere ottenuta:",
+   "choices": [
+    "miscelando 0,4 moli di glucosio con 1 L di acqua distillata in un matraccio da 2 L, e portando successivamente a volume con acqua distillata",
+    "dissolvendo 0,2 moli di glucosio in 2 L di acqua distillata",
+    "miscelando 1 L di acqua distillata con 1 L di una soluzione acquosa di glucosio a concentrazione 0,1 M",
+    "dissolvendo 0,4 moli di glucosio in 10 L di acqua distillata",
+    "dissolvendo 0,2 moli di glucosio in 10 L di acqua distillata"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

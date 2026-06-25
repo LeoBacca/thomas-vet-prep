@@ -1,0 +1,98 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u6-08">
+
+## Cosa sono i recettori accoppiati a proteine G?
+
+Immagina di suonare un campanello alla porta. Il campanello è il **recettore**, il suono è il **segnale**, e la persona che corre ad aprire è la **risposta cellulare**. I recettori accoppiati a proteine G (detti **GPCR**, dall'inglese *G Protein-Coupled Receptors*) funzionano esattamente così: raccolgono un messaggio chimico dall'esterno della cellula e lo trasmettono all'interno, scatenando una catena di reazioni.
+
+Sono i recettori più diffusi nel corpo umano e bersaglio di circa il 35% dei farmaci esistenti.
+
+## Struttura del GPCR: sette eliche che attraversano la membrana
+
+Un GPCR ha una forma caratteristica: attraversa la membrana cellulare **sette volte** a zig-zag, come un filo che entra ed esce sette volte da un tessuto. Questa struttura si chiama **eptaelicoidale** (epta = sette).
+
+- La parte **esterna** alla cellula riconosce il segnale (ormone, neurotrasmettitore, luce...).
+- La parte **interna** è agganciata a una proteina G, pronta ad attivarsi.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il GPCR è come un interruttore a muro: il dito (il segnale) preme all'esterno, la luce (la risposta) si accende all'interno.</div>
+
+## Le proteine G: trimeriche e monomeriche
+
+### Proteine G trimeriche (eterotrimeriche)
+
+Sono formate da **tre subunità**: alfa (α), beta (β) e gamma (γ). In condizioni di riposo, la subunità α tiene legata una molecola di **GDP** (una "moneta scarica"). Quando il GPCR viene attivato:
+
+1. Il GDP si stacca e viene sostituito dal **GTP** (la "moneta carica").
+2. La subunità α si separa dal complesso βγ.
+3. Entrambe le parti vanno ad attivare proteine effettrici (es. adenilato ciclasi → produce cAMP).
+4. La subunità α idrolizza il GTP in GDP da sola: la risposta si spegne automaticamente.
+
+### Proteine G monomeriche (piccole GTPasi)
+
+Sono proteine **da sole**, più piccole, ma con lo stesso meccanismo GTP/GDP. Le più famose sono le proteine della famiglia **Ras**. Controllano la crescita cellulare e la divisione. Una mutazione che le blocca in stato "sempre acceso" è una delle cause più comuni di cancro.
+
+## Il ciclo delle GTPasi: GEF e GAP
+
+Le proteine G (sia trimeriche che monomeriche) funzionano come **interruttori molecolari** con due stati:
+
+- **ON**: legata al GTP — proteina attiva, trasmette il segnale.
+- **OFF**: legata al GDP — proteina inattiva, nessun segnale.
+
+Il passaggio tra i due stati è regolato da due proteine speciali:
+
+| Proteina | Nome completo | Cosa fa |
+|----------|--------------|---------|
+| **GEF** | Guanine nucleotide Exchange Factor | Scambia il GDP con il GTP → **accende** il segnale |
+| **GAP** | GTPase-Activating Protein | Accelera l'idrolisi del GTP in GDP → **spegne** il segnale |
+
+<div class="callout">💡 <strong>In parole semplici:</strong> GEF è come premere l'acceleratore, GAP è come premere il freno. Insieme regolano la durata e l'intensità del segnale.</div>
+
+<Diagram caption="Ciclo di attivazione del GPCR con proteina G trimerica" code={`flowchart TB
+  A["Segnale esterno<br/>(ormone, neurotrasmettitore)"] --> B["GPCR si attiva:<br/>cambia forma"]
+  B --> C["Subunità α scambia<br/>GDP con GTP<br/>(aiutata da GEF)"]
+  C --> D["Subunità α-GTP si stacca<br/>dal complesso βγ"]
+  D --> E["Subunità α attiva<br/>proteine effettrici<br/>(es. adenilato ciclasi)"]
+  E --> F["Produzione di<br/>secondi messaggeri<br/>(cAMP, DAG, IP3...)"]
+  F --> G["Risposta cellulare"]
+  D --> H["Complesso βγ attiva<br/>altri effettori"]
+  E --> I["α idrolizza GTP → GDP<br/>(accelerata da GAP)"]
+  I --> J["Subunità α-GDP<br/>si riassocia a βγ"]
+  J --> B`} />
+
+<Diagram caption="Ciclo ON/OFF delle piccole GTPasi (es. Ras) regolato da GEF e GAP" code={`flowchart LR
+  INATT["Ras-GDP<br/>(INATTIVA — OFF)"]
+  INATT -->|"GEF agisce:<br/>sostituisce GDP con GTP"| ATT["Ras-GTP<br/>(ATTIVA — ON)"]
+  ATT -->|"Trasmette segnale a<br/>proteine effettrici"| EFF["Risposta cellulare<br/>(es. proliferazione)"]
+  ATT -->|"GAP accelera<br/>l'idrolisi del GTP"| INATT
+  MUT["Mutazione di Ras:<br/>GAP non funziona"] -->|"Ras bloccata ON"| CANC["Segnale continuo<br/>→ rischio cancro"]`} />
+
+## Guarda il video
+<YouTube id="C4pbOQrTo7Y" title="CORSO DI BIOLOGIA CELLULARE 1 - LEZIONE 5 DI 23 - RECETTORI ACCOPPIATI A PROTEINE G - PARTE 1" />
+<VideoVisto id="bio-u6-08" />
+
+## Da ricordare
+- I GPCR hanno 7 eliche transmembrana e, quando attivati, fanno scambiare GDP con GTP sulla subunità α della proteina G trimerica, avviando la cascata di segnalazione.
+- Le piccole GTPasi (come Ras) funzionano con lo stesso interruttore GTP/GDP ma sono proteine singole; se bloccate in stato attivo (mutazione), causano proliferazione incontrollata.
+- GEF accende il segnale (GDP → GTP), GAP lo spegne (accelera GTP → GDP); insieme controllano durata e intensità della risposta.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quante eliche transmembrana ha un recettore GPCR?" opzioni={["3","5","7","9"]} corretta={2} spiegazione="I GPCR hanno esattamente 7 eliche transmembrana (struttura eptaelicoidale). Questa è la loro caratteristica strutturale distintiva." />
+
+<Quiz domanda="Cosa fa una proteina GEF sul ciclo delle GTPasi?" opzioni={["Accelera l'idrolisi del GTP in GDP, spegnendo il segnale","Sostituisce il GDP con il GTP, attivando la proteina G","Blocca la subunità α impedendo la trasduzione","Degrada il secondo messaggero cAMP"]} corretta={1} spiegazione="GEF (Guanine nucleotide Exchange Factor) catalizza lo scambio del GDP con il GTP, portando la proteina G dallo stato inattivo (OFF) allo stato attivo (ON)." />
+
+<Quiz domanda="Una mutazione che impedisce a GAP di agire sulla proteina Ras causa:" opzioni={["La cellula smette di ricevere segnali dall'esterno","Ras rimane bloccata in stato attivo (GTP legato) con segnale continuo","Il recettore GPCR si distacca dalla membrana","La subunità α non riesce a legarsi al βγ"]} corretta={1} spiegazione="GAP accelera l'idrolisi del GTP in GDP, spegnendo Ras. Se GAP non funziona, Ras resta in stato ON con GTP legato e trasmette segnali di crescita in modo continuo e incontrollato — meccanismo tipico di molti tumori." />
+
+<Esercizio problema="Descrivi in ordine i passaggi che avvengono dalla comparsa di un ormone fuori dalla cellula fino alla produzione del secondo messaggero cAMP, includendo il ruolo della subunità α della proteina G trimerica." soluzione="1. L'ormone (ligando) si lega al GPCR sul lato extracellulare. 2. Il GPCR cambia conformazione e attiva la proteina G trimerica: la subunità α scambia il GDP con il GTP (con l'aiuto di GEF). 3. La subunità α-GTP si stacca dal complesso βγ. 4. La subunità α-GTP si lega all'enzima adenilato ciclasi e lo attiva. 5. L'adenilato ciclasi converte l'ATP in cAMP (secondo messaggero). 6. Il cAMP attiva proteine chinasi (es. PKA) che avviano la risposta cellulare. 7. La subunità α idrolizza autonomamente il GTP in GDP (accelerata da GAP), si dissocia dall'adenilato ciclasi e si riassocia al complesso βγ: il segnale si spegne." />
+
+</section>
+
+</RisorsaLayout>

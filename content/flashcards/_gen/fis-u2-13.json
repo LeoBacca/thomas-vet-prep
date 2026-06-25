@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-13-1",
+    "topicId": "fis-u2-13",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: se due persone spostano lo stesso mobile al piano di sopra, ma una ci mette 10 secondi e l'altra 2 minuti, quella più lenta ha compiuto più lavoro.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il LAVORO dipende da forza e spostamento, non dal tempo: entrambe sollevano lo stesso peso alla stessa altezza, quindi il lavoro è identico. Quello che cambia è la POTENZA: chi finisce in 10 secondi ha più potenza (fa lo stesso lavoro in meno tempo).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-13-2",
+    "topicId": "fis-u2-13",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Una pompa veterinaria solleva acqua a grande velocità; un'altra più lenta solleva la stessa quantità d'acqua alla stessa altezza, ma ci mette il doppio del tempo. Quale delle due ha MAGGIORE potenza?",
+    "choices": [
+      "La pompa veloce, perché fa lo stesso lavoro in meno tempo",
+      "La pompa lenta, perché impiega più energia totale",
+      "Hanno la stessa potenza, perché il lavoro è uguale",
+      "Dipende dalla massa dell'acqua"
+    ],
+    "answer": 0,
+    "explain": "Potenza = Lavoro / Tempo. Se il lavoro è uguale, chi impiega meno tempo ha potenza maggiore. La pompa veloce (t più piccolo) dà P più alta. 'Stessa potenza' è la trappola più comune: stesso lavoro NON significa stessa potenza, perché manca ancora il tempo nel conto.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-13-3",
+    "topicId": "fis-u2-13",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Cos'è la potenza in fisica, qual è la sua formula e la sua unità di misura? Spiega anche il legame tra potenza ed energia consumata (es. una lampadina da 20 W accesa per 16 ore).",
+    "answer": "La potenza misura quanto velocemente viene compiuto un lavoro (o consumata energia): P = L / t, dove L è il lavoro in Joule e t è il tempo in secondi. L'unità di misura è il Watt (W); 1 W = 1 J/s. Esiste anche la formula P = F × v, utile quando si conosce la forza e la velocità invece del lavoro totale. Il legame con l'energia è diretto: L = P × t. Una lampadina da 20 W accesa per 16 ore consuma L = 20 W × (16 × 3600 s) = 20 × 57 600 = 1 152 000 J ≈ 1,15 MJ. In pratica la potenza è come la 'velocità di spesa' dell'energia: motore più potente = brucia energia più in fretta.",
+    "explain": "Da ricordare: P = L/t (W = J/s). Per trovare l'energia: L = P × t. Convertire le ore in secondi è il passaggio critico.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-13-4",
+    "topicId": "fis-u2-13",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "In un allevamento di galline ogni gabbia ha una lampada da 20 W accesa per 16 ore al giorno. Quanta energia consuma approssimativamente ogni gabbia al giorno? (1 ora = 3600 s)",
+    "choices": [
+      "circa 1,15 MJ",
+      "circa 1,15 kJ",
+      "320 kWh",
+      "320 kJ",
+      "320 J"
+    ],
+    "answer": 0,
+    "explain": "Energia = Potenza × Tempo = 20 W × (16 × 3600 s) = 20 × 57 600 = 1 152 000 J ≈ 1,15 MJ. Le trappole: '1,15 kJ' è l'opposto in scala, mille volte più piccolo (chi dimentica di convertire le ore in secondi e resta nell'ordine dei kilojoule); '320 kWh' è enorme e fuori scala (il calcolo 20 × 16 darebbe al massimo 320 Wh, cioè 0,32 kWh, non 320 kWh); '320 kJ' nasce dall'errore di calcolare 20 × 16 = 320 senza convertire le ore in secondi; '320 J' è il filler fuori tema, un valore ridicolmente basso per 16 ore. Il passaggio critico è convertire le ore: 16 h = 16 × 3600 s = 57 600 s.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-13-5",
+    "topicId": "fis-u2-13",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un pianoforte di massa 400 kg deve essere sollevato fino a una finestra a 15 m di altezza. Un motore da 1 kW impiegherà come MINIMO quanto tempo? (g = 10 m/s²)",
+    "choices": [
+      "circa 1 minuto",
+      "circa 6 secondi",
+      "circa 10 minuti",
+      "alcune ore",
+      "poco più di un'ora"
+    ],
+    "answer": 0,
+    "explain": "Prima calcola il lavoro minimo: L = m × g × h = 400 × 10 × 15 = 60 000 J. Poi il tempo: t = L / P = 60 000 J / 1000 W = 60 s ≈ 1 minuto. Trappole: '6 secondi' è l'opposto in ordine di grandezza (chi divide male o dimentica un fattore 10); '10 minuti' nasce da un errore di un fattore 10 nel calcolo del lavoro o della potenza; 'alcune ore' e 'poco più di un'ora' sono fuori scala per un motore da 1 kW su un lavoro da 60 kJ. Strategia: prima il lavoro (J), poi dividi per la potenza (W) e ottieni i secondi; poi converti in minuti.",
+    "tags": ["prova d'esame"]
+  }
+]

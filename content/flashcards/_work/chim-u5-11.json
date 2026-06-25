@@ -1,0 +1,53 @@
+{
+ "id": "chim-u5-11",
+ "titolo": "Idrocarburi aromatici: il benzene, la regola di Hückel e la sostituzione elettrofila",
+ "materia": "chimica",
+ "unita": 5,
+ "slug": "11-idrocarburi-aromatici-il-benzene-la-regola",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/chimica/u5/11-idrocarburi-aromatici-il-benzene-la-regola.mdx",
+ "examQuestions": [
+  {
+   "year": "2017",
+   "q": "Quale tra le seguenti serie di composti è formata solo da composti aromatici?",
+   "choices": [
+    "Benzene, toluene, naftalene, fenantrene",
+    "Acetilene, benzene, toluene, naftalene",
+    "Toluene, benzene, butano, pentano",
+    "Toluene, naftalene, fenantrene, etilene",
+    "Butano, toluene, etilene, naftalene"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2020",
+   "q": "Quale delle seguenti proprietà è comune alla molecola del benzene e alla molecola dell'etilene?",
+   "choices": [
+    "L'ibridazione sp2 degli atomi di carbonio",
+    "La loro struttura ciclica",
+    "L'ibridazione sp degli atomi di carbonio",
+    "La loro aromaticità",
+    "La capacità di dare reazioni di sostituzione elettrofila"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Quale dei seguenti composti è aromatico?",
+   "choices": [
+    "Benzene",
+    "Fosgene",
+    "Cicloesanone",
+    "Formammide",
+    "Butanone"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "discriminazione"
+  }
+ ]
+}

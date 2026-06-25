@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u7-01-1",
+    "topicId": "fis-u7-01",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: un'onda elettromagnetica (come la luce o le onde radio) ha bisogno di un mezzo fisico per viaggiare, esattamente come il suono ha bisogno dell'aria.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Le onde elettromagnetiche sono le uniche onde che possono viaggiare nel VUOTO, senza nessun mezzo. La luce solare ci raggiunge attraverso il vuoto dello spazio. Il suono invece non può: se togli l'aria, il suono scompare. La differenza sta nel fatto che le onde elettromagnetiche non fanno oscillare particelle di materia, ma due campi invisibili (elettrico e magnetico) che si rigenerano a vicenda.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u7-01-2",
+    "topicId": "fis-u7-01",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "mc",
+    "q": "In un'onda elettromagnetica il campo elettrico (E) e il campo magnetico (B) come sono orientati tra loro e rispetto alla direzione di viaggio dell'onda?",
+    "choices": [
+      "Sono paralleli tra loro e paralleli alla direzione di viaggio",
+      "Sono perpendicolari tra loro e perpendicolari alla direzione di viaggio",
+      "Sono paralleli tra loro ma perpendicolari alla direzione di viaggio",
+      "Sono perpendicolari tra loro ma paralleli alla direzione di viaggio"
+    ],
+    "answer": 1,
+    "explain": "Pensa a tre direzioni come i tre assi X, Y, Z: l'onda avanza lungo X, il campo elettrico oscilla lungo Y e il campo magnetico lungo Z. Tutti e tre perpendicolari a vicenda. Per questo si dice che l'onda elettromagnetica e' un'onda 'trasversale': i campi oscillano di lato rispetto alla direzione di marcia, non avanti-indietro. Confondere 'paralleli' con 'perpendicolari' e' la trappola classica su questo argomento.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u7-01-3",
+    "topicId": "fis-u7-01",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "open",
+    "q": "Spiega con parole tue come nasce e come si propaga un'onda elettromagnetica. Parti da una carica elettrica e arriva fino all'onda che viaggia nel vuoto.",
+    "answer": "Tutto inizia da una carica elettrica che accelera (cioe' cambia velocita' o direzione, per esempio oscillando avanti e indietro come l'antenna di una radio). Quella carica in movimento crea un campo elettrico che cambia nel tempo. Un campo elettrico variabile, pero', non se ne sta fermo: genera automaticamente un campo magnetico variabile. E quel campo magnetico variabile, a sua volta, rigenera un campo elettrico variabile. E' un ciclo che si autoalimenta, come una ruota che gira senza fine. Il risultato e' che l'onda si stacca dalla sorgente e viaggia da sola nello spazio, anche nel vuoto totale, alla velocita' della luce (circa 300 000 km/s). Non ha bisogno di trasportare materia: trasporta solo energia, grazie ai due campi che si rigenerano a vicenda.",
+    "explain": "Da ricordare: carica che accelera → campo E variabile → campo B variabile → campo E variabile → ... l'onda si propaga da sola a velocita' c.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u7-01-4",
+    "topicId": "fis-u7-01",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Le onde elettromagnetiche usate per le trasmissioni radio tra imbarcazioni — cosa fanno con l'energia?",
+    "choices": [
+      "Trasportano energia indipendentemente dalla frequenza utilizzata",
+      "Non possono trasportare energia perche' si scaricherebbe in mare",
+      "Trasportano energia solo se la frequenza e' in un certo intervallo ristretto",
+      "Contengono campi elettrici ma non magnetici, quindi non hanno energia",
+      "Contengono campi magnetici ma non elettrici, quindi non hanno energia"
+    ],
+    "answer": 0,
+    "explain": "Tutte le onde elettromagnetiche trasportano energia: e' la loro caratteristica fondamentale. Non importa se la frequenza e' alta o bassa, se siamo nell'intervallo delle radio o delle microonde — l'energia viene sempre trasportata (anche se la quantita' di energia dipende dalla frequenza: piu' e' alta, piu' energia per singolo 'pacchetto'). Le ultime due opzioni sono trappole classiche: un'onda EM ha SEMPRE entrambi i campi, elettrico E magnetico, che oscillano insieme — non puoi avere l'uno senza l'altro. L'opzione 'solo in un certo intervallo di frequenze' e' falsa perche' scambia la banda operativa delle radio (scelta tecnica degli ingegneri) con una presunta limitazione fisica che non esiste.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u7-01-5",
+    "topicId": "fis-u7-01",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Nel vuoto, qual e' la velocita' di un'onda radio rispetto alla velocita' della luce visibile?",
+    "choices": [
+      "L'onda radio e' piu' lenta, perche' ha frequenza piu' bassa",
+      "L'onda radio e' piu' veloce, perche' ha lunghezza d'onda maggiore",
+      "Sono identiche: nel vuoto tutte le onde elettromagnetiche viaggiano alla stessa velocita' c ≈ 300 000 km/s",
+      "Dipende dal mezzo che attraversano, nel vuoto non si puo' stabilire",
+      "L'onda radio e' piu' lenta perche' trasporta meno energia"
+    ],
+    "answer": 2,
+    "explain": "Nel vuoto tutte le onde elettromagnetiche — radio, infrarosso, luce visibile, raggi X, raggi gamma — viaggiano esattamente alla stessa velocita': c ≈ 300 000 km/s. Cio' che cambia al variare della frequenza e' la lunghezza d'onda (c = f x λ), NON la velocita'. Le trappole: 'piu' lenta perche' ha frequenza piu' bassa' e 'piu' lenta perche' trasporta meno energia' confondono la frequenza con la velocita'; 'piu' veloce perche' ha lunghezza d'onda maggiore' e' l'opposto esatto della prima trappola; l'opzione sul 'mezzo' e' un filler: nel vuoto la velocita' e' sempre c per tutte le onde EM.",
+    "tags": ["prova d'esame"]
+  }
+]

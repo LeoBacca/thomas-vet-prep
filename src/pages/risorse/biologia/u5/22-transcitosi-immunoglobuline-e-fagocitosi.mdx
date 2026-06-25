@@ -1,0 +1,113 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-22">
+
+## Cos'è il trasporto vescicolare?
+
+La membrana cellulare è impermeabile alle molecole grandi. Per spostare cose "grosse" dentro o fuori la cellula, si usano le **vescicole**: piccole sacche membranose che avvolgono il carico e lo trasportano come scatole postali.
+
+Esistono tre grandi strategie:
+
+- **Endocitosi** — la cellula "inghiotte" qualcosa dall'esterno formando una vescicola verso l'interno.
+- **Esocitosi** — la cellula "sputa fuori" il contenuto di una vescicola verso l'esterno.
+- **Transcitosi** — la cellula prende qualcosa da un lato, lo porta attraverso il suo interno e lo rilascia dall'altro lato.
+
+---
+
+## Fagocitosi — il mangiatore di particelle
+
+La **fagocitosi** (dal greco *phagein* = mangiare) è un tipo speciale di endocitosi in cui la cellula ingloba particelle **solide e grandi**: batteri, cellule morte, detriti.
+
+Come funziona, passo per passo:
+
+1. La cellula "sente" la particella estranea grazie a recettori di superficie.
+2. La membrana comincia ad allungarsi attorno alla particella formando dei "bracci" chiamati **pseudopodi** (piedi falsi).
+3. Gli pseudopodi si chiudono e la particella si trova intrappolata in una sacca: il **fagosoma**.
+4. Il fagosoma si fonde con i **lisosomi** (gli organelli digestivi della cellula).
+5. Gli enzimi lisosomiali digeriscono e distruggono il contenuto.
+
+Chi la fa? Solo alcune cellule specializzate: **macrofagi**, neutrofili e cellule dendritiche — gli "spazzini" del sistema immunitario.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La fagocitosi è come Pac-Man: la cellula apre la bocca, ingoia il batterio, poi lo digerisce.</div>
+
+---
+
+## Transcitosi — il corriere che attraversa la cellula
+
+Immagina una cellula **polarizzata**: una faccia (lato A) dà sul sangue, l'altra faccia (lato B) dà sull'intestino o su un altro compartimento. Le due facce sono diverse e separate.
+
+La **transcitosi** permette di spostare molecole da lato A a lato B senza farle finire nel citoplasma della cellula. È come un corriere che entra dal portone, attraversa il corridoio e consegna il pacco al retro.
+
+### L'esempio delle immunoglobuline IgA
+
+Le **immunoglobuline** (IgA, IgG) sono anticorpi — le "lettere di riconoscimento" del sistema immunitario. Devono essere trasportate dal sangue all'intestino per proteggere le mucose.
+
+Come avviene la transcitosi delle IgA:
+
+1. L'IgA (prodotta come dimero, cioè in coppia) si lega a un recettore specifico sul **lato basolaterale** della cellula epiteliale intestinale: il recettore **pIgR** (poly-Ig receptor).
+2. Il complesso IgA + pIgR viene internalizzato per **endocitosi** → si forma una vescicola.
+3. La vescicola attraversa l'interno della cellula (transcitosi vera e propria).
+4. La vescicola si fonde con la membrana sul **lato apicale** (lato intestino) → **esocitosi**.
+5. Il pIgR viene tagliato: rimane attaccato all'IgA una parte chiamata **componente secretoria**, che protegge l'anticorpo dagli enzimi intestinali.
+6. L'IgA secretoria viene rilasciata nel lume intestinale, pronta a neutralizzare agenti patogeni.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La transcitosi è come un sistema di poste interne: il pacco (IgA) entra da una porta, viene caricato su un furgoncino (vescicola), attraversa l'edificio (cellula) e viene consegnato all'uscita opposta (lume intestinale).</div>
+
+---
+
+## Cellula polarizzata: perché è importante
+
+Una cellula **polarizzata** ha due lati con caratteristiche diverse:
+- **Lato apicale**: rivolto verso la cavità (es. intestino, bronchi).
+- **Lato basolaterale**: rivolto verso il sangue/tessuto connettivo.
+
+Questa polarità è mantenuta da strutture chiamate **giunzioni strette** (tight junctions), che impediscono alle proteine di membrana di mescolarsi tra i due lati. La transcitosi è l'unico modo per far attraversare grandi molecole una cellula polarizzata in modo controllato e direzionale.
+
+---
+
+<Diagram caption="Fagocitosi: i passaggi dall'inglobamento alla digestione" code={`flowchart TB
+  A["Particella estranea (es. batterio)<br/>riconosciuta dai recettori"] --> B["Formazione degli pseudopodi:<br/>la membrana avvolge la particella"]
+  B --> C["Fagosoma: vescicola chiusa<br/>con la particella intrappolata"]
+  C --> D["Fusione con i lisosomi<br/>(organelli digestivi)"]
+  D --> E["Fagolisosoma: digestione<br/>enzimatica del contenuto"]
+  E --> F["Detriti espulsi per esocitosi<br/>o riutilizzati dalla cellula"]`} />
+
+<Diagram caption="Transcitosi delle IgA attraverso la cellula epiteliale intestinale" code={`flowchart TB
+  A["IgA dimerica nel sangue<br/>(lato basolaterale)"] --> B["Legame al recettore pIgR<br/>sulla membrana basolaterale"]
+  B --> C["Endocitosi: formazione<br/>della vescicola di trasporto"]
+  C --> D["Trasporto della vescicola<br/>attraverso il citoplasma"]
+  D --> E["Esocitosi sul lato apicale:<br/>fusione con la membrana"]
+  E --> F["Taglio del pIgR: IgA + componente<br/>secretoria rilasciata nel lume intestinale"]
+  F --> G["IgA secretoria protegge<br/>la mucosa intestinale dai patogeni"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="_q-dqppyJ5s" title="ENDOCITOSI ED ESOCITOSI | Pillole di Scienza" />
+<VideoVisto id="bio-u5-22" />
+
+## Da ricordare
+- La **fagocitosi** è l'inglobamento di particelle solide grandi (batteri, detriti) tramite pseudopodi → fagosoma → fusione con lisosomi → digestione.
+- La **transcitosi** trasporta molecole (come le IgA) da un lato all'altro di una cellula polarizzata usando vescicole: endocitosi → transito → esocitosi.
+- Le **giunzioni strette** mantengono la polarità cellulare (lato apicale vs basolaterale) e rendono necessaria la transcitosi per il transito controllato di grandi molecole.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Durante la fagocitosi, qual è l'ordine corretto degli eventi?" opzioni={["Lisosoma → fagosoma → pseudopodi → digestione", "Pseudopodi → fagosoma → fusione con lisosoma → digestione", "Fagosoma → pseudopodi → esocitosi → digestione", "Endosoma → pseudopodi → fagosoma → esocitosi"]} corretta={1} spiegazione="La sequenza corretta è: la cellula estende gli pseudopodi attorno alla particella, forma il fagosoma chiudendoli, poi il fagosoma si fonde con il lisosoma formando il fagolisosoma dove avviene la digestione enzimatica." />
+
+<Quiz domanda="Nel trasporto delle IgA per transcitosi, il recettore pIgR si trova inizialmente su quale lato della cellula intestinale?" opzioni={["Lato apicale (verso il lume intestinale)", "Lato basolaterale (verso il sangue)", "Su entrambi i lati in egual misura", "All'interno del reticolo endoplasmatico"]} corretta={1} spiegazione="Il recettore pIgR è espresso sul lato basolaterale della cellula epiteliale intestinale, dove può intercettare le IgA dimeriche provenienti dal sangue. Dopo la transcitosi, viene tagliato sul lato apicale e la componente secretoria rimane legata all'IgA." />
+
+<Quiz domanda="Qual è la differenza principale tra fagocitosi e pinocitosi?" opzioni={["La fagocitosi usa lisosomi, la pinocitosi no", "La fagocitosi ingloba particelle solide grandi, la pinocitosi ingloba liquidi e molecole solubili piccole", "La fagocitosi avviene solo fuori dalla cellula, la pinocitosi dentro", "La fagocitosi produce energia, la pinocitosi la consuma"]} corretta={1} spiegazione="La distinzione fondamentale è la dimensione e lo stato fisico del materiale: la fagocitosi riguarda particelle solide grandi (batteri, detriti — da 'phagein', mangiare), mentre la pinocitosi riguarda liquidi e molecole disciolte piccole (da 'pinein', bere). Entrambe sono forme di endocitosi." />
+
+<Esercizio problema="Un macrofago incontra un batterio nel tessuto. Descrivi in 4-5 passaggi cosa succede, usando i termini tecnici corretti (pseudopodi, fagosoma, lisosoma, fagolisosoma)." soluzione="1) Il macrofago riconosce il batterio tramite recettori di superficie (es. recettori per il complemento o i TLR). 2) La membrana plasmatica si estende formando gli pseudopodi che avvolgono progressivamente il batterio. 3) Gli pseudopodi si fondono chiudendo il batterio all'interno di una vescicola intracellulare chiamata fagosoma. 4) Il fagosoma si fonde con uno o più lisosomi (organelli contenenti enzimi idrolitici) formando il fagolisosoma. 5) Gli enzimi lisosomiali (proteasi, lipasi, nucleasi, ecc.) digeriscono e degradano il batterio; i detriti vengono espulsi per esocitosi o riutilizzati dalla cellula." />
+
+</section>
+
+</RisorsaLayout>

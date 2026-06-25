@@ -1,0 +1,53 @@
+{
+ "id": "bio-u3-17",
+ "titolo": "La traduzione: attori (rRNA, tRNA, mRNA), aminoacil-tRNA e ribosomi",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "17-la-traduzione-attori-rrna-trna-mrna",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/biologia/u3/17-la-traduzione-attori-rrna-trna-mrna.mdx",
+ "examQuestions": [
+  {
+   "year": "2013",
+   "q": "Quale/i delle seguenti affermazioni si puo/possono correttamente riferire ai processi di trascrizione e traduzione nelle cellule eucariotiche? 1. Entrambi i processi implicano reazioni di polimerizzazione; 2. Entrambi i processi avvengono nel nucleo; 3. Entrambi i processi richiedono l'appaiamento tra basi complementari.",
+   "choices": [
+    "Solo 1 e 3",
+    "Solo 1",
+    "Solo 1 e 2",
+    "Solo 2 e 3",
+    "Tutte"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2014",
+   "q": "L'interazione che si verifica tra un codone di mRNA e un anticodone di tRNA in un ribosoma comporta la formazione di:",
+   "choices": [
+    "legami idrogeno",
+    "legami fosfodiesterici",
+    "legami glicosidici",
+    "legami peptidici",
+    "legami covalenti"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2016",
+   "q": "Quale funzione svolge l'rRNA?",
+   "choices": [
+    "Costituisce lo scheletro strutturale e funzionale del ribosoma",
+    "Trasporta l'informazione genetica dal nucleo al ribosoma",
+    "Trasporta gli aminoacidi al ribosoma",
+    "Interviene nella maturazione del pre-mRNA",
+    "Funge da stampo per la sintesi della proteina"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

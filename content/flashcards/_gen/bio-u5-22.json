@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u5-22-1",
+    "topicId": "bio-u5-22",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un macrofago incontra un batterio. Quale sequenza descrive correttamente la fagocitosi?",
+    "choices": [
+      "Pseudopodi avvolgono il batterio → fagosoma → fusione con lisosoma → digestione enzimatica",
+      "Lisosoma esce dalla cellula → ingloba il batterio → rientra come fagosoma",
+      "Il batterio entra da solo tramite canali proteici → viene digerito nel citoplasma",
+      "La cellula produce anticorpi → il batterio si dissolve → i detriti vengono espulsi"
+    ],
+    "answer": 0,
+    "explain": "Analogia: il macrofago e come Pac-Man. Allunga le 'braccia' (pseudopodi) attorno al batterio, lo chiude in un sacchetto (fagosoma) e poi ci versa dentro il succo digestivo (lisosoma). Le altre opzioni inventano passaggi che non esistono: i lisosomi non escono dalla cellula, i batteri non entrano da soli dai canali e gli anticorpi sono un meccanismo diverso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-22-2",
+    "topicId": "bio-u5-22",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Cos'e la transcitosi e perche le cellule dell'intestino la usano per trasportare le immunoglobuline IgA? Descrivi il percorso in parole semplici.",
+    "answer": "La transcitosi e un trasporto 'da un lato all'altro' di una cellula polarizzata usando vescicole. Le IgA (anticorpi) arrivano dal sangue sul lato basolaterale, si legano al recettore pIgR sulla membrana, vengono internalizzate in una vescicola (endocitosi), attraversano il citoplasma e vengono rilasciate sul lato apicale (lume intestinale) per esocitosi. Il recettore viene tagliato e la parte che rimane attaccata all'IgA si chiama componente secretoria: protegge l'anticorpo dagli enzimi intestinali. Risultato: l'IgA secretoria difende la mucosa intestinale dai patogeni.",
+    "explain": "La transcitosi e necessaria perche le giunzioni strette impediscono alle molecole grandi di passare tra le cellule: l'unica via e attraverso la cellula stessa, usando le vescicole come furgoncini interni.",
+    "tags": ["risposta aperta"]
+  }
+]

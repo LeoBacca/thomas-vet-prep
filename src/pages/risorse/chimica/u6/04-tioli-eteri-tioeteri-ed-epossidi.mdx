@@ -1,0 +1,81 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u6-04">
+
+In chimica i **gruppi funzionali** sono dei "pezzetti speciali" attaccati a una molecola che decidono come si comporta. Qui ne vediamo tre famiglie molto utili: i **tioli** (con lo zolfo), gli **eteri** (con un ossigeno in mezzo) e gli **epossidi** (un piccolo anello con dentro un ossigeno). Sono parenti stretti dell'alcol, e capire le somiglianze rende tutto più facile.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> parti dall'alcol (un ossigeno con una H, cioè -OH). Cambia un pezzo e ottieni gli altri: metti lo <strong>zolfo</strong> al posto dell'ossigeno e hai un <strong>tiolo</strong>; togli la H e infili l'ossigeno <strong>in mezzo</strong> a due pezzi e hai un <strong>etere</strong>; chiudi l'ossigeno in un mini-anello a tre e hai un <strong>epossido</strong>.</div>
+
+<Diagram caption="Confronto: alcol, tiolo, etere ed epossido partendo dalla stessa idea" code={`flowchart TB
+  AL["ALCOL<br/>R-O-H<br/>ossigeno con una H"] --> T["TIOLO<br/>R-S-H<br/>lo zolfo prende il posto dell'ossigeno"]
+  AL --> E["ETERE<br/>R-O-R<br/>ossigeno incastrato tra due pezzi"]
+  AL --> EP["EPOSSIDO<br/>ossigeno chiuso in un anello a 3<br/>(molto teso e reattivo)"]`} />
+
+## I tioli: l'alcol che "puzza" di zolfo
+
+Un **tiolo** è come un alcol, ma al posto dell'ossigeno c'è lo **zolfo**. Il gruppo si scrive **-SH** (zolfo + idrogeno). Pensa allo zolfo come al "cugino piazzato sotto" l'ossigeno nella tavola periodica: si assomigliano, ma lo zolfo è più grosso e fa cose un po' diverse.
+
+La cosa più famosa dei tioli è l'**odore forte**: sono loro che danno la puzza di uova marce e di aglio. Per questo si aggiunge una piccola quantità di tiolo al gas di casa, che da solo non avrebbe odore: così, se c'è una perdita, la senti subito col naso.
+
+**Perché conta in medicina e veterinaria:** il gruppo -SH è importantissimo nel **corpo**. Due tioli vicini possono "darsi la mano" e formare un **ponte disolfuro** (-S-S-), una specie di graffetta che tiene ferma la forma delle **proteine**. È così che la cheratina rende rigidi peli e unghie, ed è grazie a questi ponti che molte proteine mantengono la forma giusta per funzionare.
+
+## Gli eteri: l'ossigeno fa da ponte
+
+In un **etere** l'ossigeno sta **in mezzo** a due parti di molecola: si scrive **R-O-R**. Immagina l'ossigeno come un piccolo ponte che unisce due rive. A differenza dell'alcol, qui non c'è la H sull'ossigeno, quindi l'etere è molto più "tranquillo": reagisce poco e per questo si usa spesso come **solvente** in laboratorio.
+
+Un nome che forse hai sentito è l'**etere** usato in passato come **anestetico**: faceva addormentare i pazienti per le operazioni. Oggi si usano molecole più sicure, ma molti **anestetici moderni** restano comunque dei parenti degli eteri.
+
+**Aggancio biologico:** tanti **zuccheri** si legano tra loro proprio con un "ponte" di ossigeno simile a quello dell'etere (si chiama legame glicosidico). È così che si costruiscono amido e fibre, cioè le riserve e le strutture fatte di zucchero.
+
+## Gli epossidi: il triangolo "carico a molla"
+
+Un **epossido** è un etere un po' speciale: l'ossigeno è chiuso dentro un **anello a tre angoli** (due atomi di carbonio + un ossigeno). Tre punti formano un triangolo, e in chimica un triangolo è una forma **molto tesa**, come un elastico tirato al massimo. Per questo l'epossido è **reattivo**: appena può, l'anello si apre e reagisce.
+
+Questa reattività è utilissima, ma ha due facce. Da un lato è la base delle **colle epossidiche** (le resine a due componenti che si induriscono mescolando i due tubetti). Dall'altro lato, in biologia, alcuni epossidi sono **pericolosi**: il nostro corpo, cercando di smaltire certe sostanze, può per sbaglio trasformarle in epossidi che attaccano il **DNA**. È uno dei motivi per cui alcune sostanze del fumo risultano tossiche.
+
+<Diagram caption="Perché l'epossido è così reattivo: l'anello a 3 è 'teso'" code={`flowchart LR
+  AN["Anello a 3 atomi<br/>C-C-O molto teso"] -->|"si apre facilmente"| RE["Reagisce subito<br/>(colle, ma anche danno al DNA)"]`} />
+
+## Da ricordare
+
+- **Tiolo (-SH):** è un alcol con lo **zolfo** al posto dell'ossigeno; odore forte; nel corpo forma i **ponti disolfuro** che danno forma alle proteine.
+- **Etere (R-O-R):** ossigeno **in mezzo** a due pezzi; poco reattivo, ottimo **solvente**; parente degli anestetici.
+- **Epossido:** ossigeno chiuso in un **anello a 3**, molto teso e quindi **reattivo**; utile nelle colle, ma certi epossidi possono danneggiare il **DNA**.
+- Trucco: tutti nascono "modificando" l'idea dell'**alcol** (cambia atomo, sposta l'ossigeno, oppure chiudilo in anello).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è la differenza principale tra un alcol e un tiolo?"
+  opzioni={["Il tiolo ha lo zolfo al posto dell'ossigeno", "Il tiolo non ha idrogeno", "Il tiolo è un anello a tre atomi", "Non c'è nessuna differenza"]}
+  corretta={0}
+  spiegazione="L'alcol ha il gruppo -OH (ossigeno), il tiolo ha -SH: lo zolfo prende il posto dell'ossigeno. Lo zolfo è il 'cugino' dell'ossigeno nella tavola periodica."
+/>
+
+<Quiz
+  domanda="In un etere, dove si trova l'ossigeno?"
+  opzioni={["Attaccato a una sola H", "In mezzo a due parti della molecola (R-O-R)", "Chiuso in un anello a tre", "Non c'è ossigeno negli eteri"]}
+  corretta={1}
+  spiegazione="Nell'etere l'ossigeno fa da 'ponte' in mezzo a due pezzi (R-O-R), senza la H. Per questo è poco reattivo e si usa come solvente."
+/>
+
+<Quiz
+  domanda="Perché l'epossido è più reattivo di un etere normale?"
+  opzioni={["Perché contiene zolfo", "Perché ha tanti idrogeni", "Perché l'ossigeno è chiuso in un anello a 3, molto teso", "Perché è un metallo"]}
+  corretta={2}
+  spiegazione="L'anello a tre atomi è 'teso' come un elastico tirato: appena può si apre e reagisce. Per questo l'epossido è molto più reattivo dell'etere."
+/>
+
+<Esercizio
+  problema="Nel corpo, due gruppi -SH di una proteina si avvicinano e reagiscono tra loro. Che cosa formano, e a che cosa serve?"
+  soluzione="Formano un ponte disolfuro (-S-S-): è come una graffetta che tiene ferma la forma della proteina. Questi ponti servono a mantenere la struttura corretta delle proteine (ad esempio rendono rigidi peli, unghie e cheratina) così che possano funzionare bene."
+/>
+
+</section>
+
+</RisorsaLayout>

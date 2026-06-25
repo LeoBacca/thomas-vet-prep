@@ -1,0 +1,91 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u3-04">
+
+## Cos'è la spinta di Archimede?
+
+Quando immergi qualcosa in un liquido, il liquido spinge verso l'alto quell'oggetto. Questa forza si chiama **spinta di Archimede** (o spinta idrostatica).
+
+Pensa quando entri in piscina: ti senti più leggero. Non è magia — è il liquido che ti spinge su.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Ogni oggetto immerso in un fluido riceve una spinta verso l'alto uguale al peso del fluido che ha spostato.</div>
+
+## La formula
+
+La spinta di Archimede si calcola così:
+
+**F = ρ × g × V**
+
+- **ρ** (rho) = densità del fluido (es. acqua = 1000 kg/m³)
+- **g** = accelerazione di gravità (≈ 9,8 m/s²)
+- **V** = volume della parte immersa dell'oggetto
+
+In pratica: più fluido sposti, più forza ricevi verso l'alto.
+
+## Perché alcune cose galleggiano e altre affondano?
+
+Tutto dipende dal confronto tra due forze:
+
+- **Peso dell'oggetto** → tira verso il basso
+- **Spinta di Archimede** → spinge verso l'alto
+
+Ci sono tre casi possibili:
+
+1. **Spinta > Peso** → l'oggetto sale e **galleggia** in superficie
+2. **Spinta = Peso** → l'oggetto sta **sospeso** nel liquido (equilibrio)
+3. **Spinta < Peso** → l'oggetto **affonda**
+
+Il trucco facile: confronta la **densità** dell'oggetto con quella del fluido.
+- Se l'oggetto è **meno denso** del liquido → galleggia (es. legno nell'acqua)
+- Se l'oggetto è **più denso** del liquido → affonda (es. ferro nell'acqua)
+
+## Come fa una nave di ferro a galleggiare?
+
+Il ferro è più denso dell'acqua, eppure le navi galleggiano. Perché?
+
+Una nave non è piena di ferro massiccio: è **cava**, piena d'aria. La forma a scafo aumenta il volume totale dell'oggetto senza aumentarne di molto la massa. Così la densità media della nave (ferro + aria) diventa minore di quella dell'acqua.
+
+<Diagram caption="Le tre condizioni di galleggiamento" code={`flowchart TB
+  A["Oggetto immerso in un fluido"] --> B["Confronto densità"]
+  B --> C["Densità oggetto < Densità fluido"]
+  B --> D["Densità oggetto = Densità fluido"]
+  B --> E["Densità oggetto > Densità fluido"]
+  C --> F["Galleggia in superficie"]
+  D --> G["Sospeso nel liquido"]
+  E --> H["Affonda"]`} />
+
+<Diagram caption="Come si calcola la spinta di Archimede" code={`flowchart LR
+  A["Volume immerso V"] --> B["Fluido spostato"]
+  B --> C["Peso del fluido spostato<br/>F = rho × g × V"]
+  C --> D["Spinta verso l'alto"]
+  D --> E["Uguale al peso<br/>del fluido spostato"]`} />
+
+## Guarda il video
+<YouTube id="JNrVJfwd7K4" title="LEGGE DI ARCHIMEDE SPIEGATA FACILE" />
+<VideoVisto id="fis-u3-04" />
+
+## Da ricordare
+- La spinta di Archimede è uguale al peso del fluido spostato dall'oggetto: **F = ρ × g × V**
+- Un oggetto galleggia se la sua densità media è minore di quella del fluido in cui è immerso
+- Una nave di ferro galleggia perché la sua forma cava abbassa la densità media sotto quella dell'acqua
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un oggetto ha densità 600 kg/m³ e viene immerso in acqua (densità 1000 kg/m³). Cosa succede?" opzioni={["Affonda sul fondo","Rimane sospeso a metà","Galleggia in superficie","Dipende dalla temperatura"]} corretta={2} spiegazione="La densità dell'oggetto (600 kg/m³) è minore di quella dell'acqua (1000 kg/m³), quindi la spinta di Archimede supera il peso e l'oggetto galleggia in superficie." />
+
+<Quiz domanda="Qual è la formula della spinta di Archimede?" opzioni={["F = m × a","F = ρ × g × V","F = P / A","F = m × g / V"]} corretta={1} spiegazione="La spinta di Archimede si calcola come F = ρ × g × V, dove ρ è la densità del fluido, g è l'accelerazione di gravità e V è il volume della parte immersa." />
+
+<Quiz domanda="Un cubo di ferro massiccio (densità ~7800 kg/m³) viene immerso in acqua. Cosa succede?" opzioni={["Galleggia perché è grande","Rimane sospeso perché è pesante","Affonda perché la sua densità è maggiore di quella dell'acqua","Galleggia se lo spingi verso il basso"]} corretta={2} spiegazione="Il ferro ha densità circa 7800 kg/m³, molto maggiore di quella dell'acqua (1000 kg/m³). La spinta di Archimede non riesce a bilanciare il peso e il cubo affonda." />
+
+<Esercizio problema="Un oggetto di volume 0,002 m³ è completamente immerso in acqua (densità 1000 kg/m³). Calcola la spinta di Archimede che riceve. (g = 9,8 m/s²)" soluzione="Usiamo la formula F = ρ × g × V. Sostituiamo: F = 1000 × 9,8 × 0,002 = 19,6 N. La spinta di Archimede è 19,6 Newton verso l'alto." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,25 @@
+{
+ "id": "bio-u3-07",
+ "titolo": "Promotori ed elementi regolativi in cis",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "07-promotori-ed-elementi-regolativi-in-cis",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u3/07-promotori-ed-elementi-regolativi-in-cis.mdx",
+ "examQuestions": [
+  {
+   "year": "2018",
+   "q": "Quale dei seguenti elementi genetici è presente nel DNA di un gene eucariotico?",
+   "choices": [
+    "Il promotore",
+    "Un cap all'estremità 5'",
+    "Una sequenza di poliT all'estremità 3'",
+    "Una sequenza di poliA all'estremità 3'",
+    "L'operatore"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

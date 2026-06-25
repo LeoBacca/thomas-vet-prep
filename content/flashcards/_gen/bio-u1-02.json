@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-02-1",
+    "topicId": "bio-u1-02",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: un cristallo di sale che cresce in acqua va considerato un essere vivente, perche aumenta di dimensioni proprio come fanno i viventi.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il cristallo cresce per semplice aggregazione fisica di ioni, senza metabolismo, senza DNA, senza cellule. La crescita dei viventi segue un programma scritto nel DNA e richiede energia dal metabolismo. Crescere non basta: ci vogliono tutte e 7 le proprieta.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-02-2",
+    "topicId": "bio-u1-02",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Il metabolismo e il 'motore' dei viventi. E composto di due parti. Quella che DEMOLISCE molecole complesse per ricavare energia si chiama:",
+    "choices": [
+      "Catabolismo",
+      "Anabolismo",
+      "Omeostasi",
+      "Irritabilita"
+    ],
+    "answer": 0,
+    "explain": "Catabolismo = demolire (da 'kata', giu). Come smontare i mattoncini Lego per riusare i pezzi: le molecole complesse vengono spezzate e si libera energia (ATP). L'anabolismo e il contrario: usa quella energia per COSTRUIRE strutture nuove (proteine, membrane, DNA).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-02-3",
+    "topicId": "bio-u1-02",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Il tuo corpo rimane a 37 gradi sia d'estate che d'inverno, sia che tu stia correndo sia che tu stia dormendo. Quale proprieta dei viventi descrive questo fenomeno? Spiega come funziona con le tue parole e fai un altro esempio tratto dal corpo animale.",
+    "answer": "Si chiama omeostasi (dal greco 'stato simile'): e la capacita di un organismo di mantenere stabili le proprie condizioni interne anche quando l'ambiente esterno cambia. Per la temperatura: d'estate il corpo suda (l'evaporazione raffredda) e aumenta la circolazione in superficie; d'inverno fa rabbrividire i muscoli (che generano calore) e riduce il flusso di sangue alla pelle. E un sistema di autoregolazione continua. Altro esempio veterinario: il pH del sangue di un cane rimane circa 7,4 anche dopo un pasto ricco di proteine, grazie a sistemi tampone (come il bicarbonato) che neutralizzano l'eccesso di acido. Se l'omeostasi fallisce, l'animale si ammala o muore.",
+    "explain": "Omeostasi = mantenimento attivo dell'equilibrio interno. La parola chiave e 'attivo': non e passivita, e il vivente che lavora per compensare i cambiamenti esterni.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-02-4",
+    "topicId": "bio-u1-02",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "L'insieme dei processi che permettono a un organismo di mantenere condizioni chimico-fisiche stabili al suo interno e definito:",
+    "choices": [
+      "omeostasi",
+      "osmosi",
+      "feedback",
+      "retroazione",
+      "osmolarita"
+    ],
+    "answer": 0,
+    "explain": "Omeostasi e la parola giusta: e l'autoregolazione dell'ambiente interno (temperatura, pH, glicemia...). Trappola 'osmosi': e un processo fisico di passaggio di acqua attraverso una membrana, non un sistema di regolazione generale. Trappola 'feedback' e 'retroazione': il feedback (o retroazione) e il MECCANISMO con cui l'omeostasi si realizza (es. termoregolazione), ma non e il nome del concetto piu ampio. Trappola 'osmolarita': e la concentrazione di soluti in una soluzione, un valore numerico, non un processo di regolazione.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-02-5",
+    "topicId": "bio-u1-02",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Sono organismi autotrofi:",
+    "choices": [
+      "i funghi e i batteri decompositori",
+      "le piante e i cianobatteri",
+      "esclusivamente le piante con clorofilla",
+      "qualunque organismo che utilizzi nutrienti di natura esogena",
+      "gli organismi saprofagi"
+    ],
+    "answer": 1,
+    "explain": "Autotrofo significa 'che si nutre da solo': produce il proprio cibo a partire da fonti inorganiche (luce solare o reazioni chimiche). Le piante lo fanno con la fotosintesi, i cianobatteri (batteri fotosintetici) anche. Trappola 'esclusivamente le piante': sbagliato, anche i cianobatteri sono autotrofi e lo erano gia miliardi di anni prima delle piante. Trappola 'funghi e batteri decompositori': sono ETEROTROFI, mangiano materia organica gia fatta da altri. Trappola 'nutrienti di natura esogena': e esattamente la definizione degli ETEROTROFI (prendono il nutrimento dall'esterno), l'opposto degli autotrofi. 'Saprofagi' e un filler: sono organismi che mangiano materia morta, eterotrofi al 100%.",
+    "tags": ["prova d'esame"]
+  }
+]

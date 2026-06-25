@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u5-19-1",
+    "topicId": "bio-u5-19",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "La cellula usa 'buste' di membrana chiamate vescicole per spostare proteine da un compartimento all'altro. Quale proteina si comporta come il 'velcro molecolare' che fa fondere la vescicola con la membrana di destinazione?",
+    "choices": [
+      "Le proteine SNARE (v-SNARE sulla vescicola + t-SNARE sul bersaglio)",
+      "Le proteine di rivestimento COPII",
+      "Le proteine RAB, che fanno da 'guardie del traffico'",
+      "La proteina NSF, che usa ATP per aprire i complessi"
+    ],
+    "answer": 0,
+    "explain": "Le SNARE sono il 'velcro': la v-SNARE sulla vescicola si avvolge sulla t-SNARE del bersaglio formando un fascio a 4 eliche che trascina le due membrane a fondersi. Le RAB guidano l'attracco prima, le proteine di rivestimento formano la vescicola, NSF la ricicla dopo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-19-2",
+    "topicId": "bio-u5-19",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Descrivi le tre fasi del traffico vescicolare (formazione, attracco, fusione) e indica, per ciascuna, la protagonista molecolare principale.",
+    "answer": "1) FORMAZIONE: le proteine di rivestimento (COPI, COPII o Clatrina) si assemblano sulla membrana donatore, le curvano e raccolgono il cargo, formando una vescicola rivestita. Una GTPasi (ARF o SAR1) d'attivazione avvia il processo; idrolizzando il GTP il rivestimento si smonta e la vescicola diventa 'nuda'. Protagonista: proteine coat (COPII per RE→Golgi, COPI per Golgi→RE, Clatrina per Golgi→lisosomi ed endocitosi). 2) ATTRACCO: la proteina RAB attiva (legata a GTP) recluta effettori che formano un ponte (tether) tra la vescicola e la membrana bersaglio. I fosfoinositidi di membrana fungono da 'codici postali' per riconoscere il compartimento giusto. Protagonista: RAB GTPasi. 3) FUSIONE: la v-SNARE sulla vescicola si avvolge sulla t-SNARE compatibile del bersaglio, formando un complesso a fascio a 4 eliche che trascina le membrane a fondersi. Dopo la fusione, NSF + alfa-SNAP idrolizzano ATP per sciogliere il complesso e riciclare le SNARE. Protagoniste: SNARE (v e t), poi NSF.",
+    "explain": "Le tre protagoniste: proteine di rivestimento (formazione) → RAB (attracco) → SNARE (fusione). Aiuto mnemonica: Coat-RAB-SNARE.",
+    "tags": ["risposta aperta"]
+  }
+]

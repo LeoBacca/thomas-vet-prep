@@ -1,0 +1,108 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u7-07">
+
+## Come finisce la mitosi? Il "semaforo verde" per dividersi
+
+Finora sai che la mitosi è la divisione del nucleo in due copie identiche. Ma chi dà il segnale di fine? Chi assicura che i cromosomi si separino davvero e che le due cellule figlie si stacchino? Qui entra in gioco una macchina molecolare chiamata **APC/C** (Complesso Promotore dell'Anafase, o Ciclosoma).
+
+Pensa all'APC/C come a un addetto alla demolizione: il suo compito è distruggere alcune proteine specifiche nel momento giusto, in modo che la mitosi possa finire in modo ordinato.
+
+---
+
+## L'APC/C: il demolitore molecolare
+
+L'**APC/C** è un complesso proteico (cioè un gruppo di proteine che lavorano insieme). Funziona come un **ubiquitina-ligasi**: attacca un cartellino chiamato **ubiquitina** su altre proteine per mandarle al proteasoma, che è il "tritacarne" della cellula. Le proteine marcate vengono demolite.
+
+Quando si attiva l'APC/C, due proteine fondamentali vengono demolite quasi contemporaneamente:
+
+1. **La securina** — tiene insieme i cromatidi fratelli (come un lucchetto). Se viene demolita, i cromatidi si separano e inizia l'anafase.
+2. **La ciclina B** — tiene attiva la chinasi Cdk1 (il motore della mitosi). Se viene demolita, Cdk1 si spegne e la cellula può uscire dalla mitosi.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'APC/C è il semaforo che passa dal rosso al verde: demolisce il "lucchetto" (securina) per separare i cromosomi e demolisce il "motore" (ciclina B) per spegnere la mitosi.</div>
+
+---
+
+## Passo dopo passo: dalla metafase alla fine
+
+### 1. Checkpoint del fuso mitotico (SAC)
+
+Prima che l'APC/C si attivi, la cellula controlla che **tutti i cromosomi siano agganciati correttamente al fuso mitotico**. Finché anche un solo cromosoma non è in posizione, un segnale inibitore (il **SAC**, Spindle Assembly Checkpoint) blocca l'APC/C. Quando tutti i cromosomi sono pronti, il SAC si spegne e l'APC/C viene attivato.
+
+### 2. Degradazione della securina → separazione dei cromatidi
+
+La **securina** blocca una proteasi chiamata **separasi**. Quando l'APC/C demolisce la securina, la separasi si libera e taglia la **coesina**, la proteina che tiene uniti i cromatidi fratelli. I cromatidi si separano e vengono tirati verso i poli opposti della cellula: inizia l'**anafase**.
+
+### 3. Degradazione della ciclina B → uscita dalla mitosi
+
+In parallelo, l'APC/C attacca la **ciclina B** e la manda al proteasoma. Senza ciclina B, la chinasi **Cdk1** (la coppia ciclina B–Cdk1 è il motore della mitosi) si spegne. La cellula inizia la **telofase**: i cromosomi si decondensano, il nucleo si riforma.
+
+### 4. Citodieresi: il taglio fisico
+
+Dopo che il nucleo si è diviso (carioteca riformata), tocca dividere il citoplasma. Questo si chiama **citodieresi**.
+
+Nelle cellule animali: si forma un **anello contrattile** di actina e miosina che stringe la cellula a metà come un laccio, fino a separarla in due. Il punto di strozzatura si chiama **solco di clivaggio**.
+
+Nelle cellule vegetali: non si può stringere (c'è la parete cellulare rigida), quindi si forma una **piastra cellulare** al centro, che poi diventa la nuova parete tra le due cellule figlie.
+
+---
+
+## Mitosi asimmetrica: non sempre le figlie sono uguali
+
+Di solito la mitosi produce due cellule identiche. Ma in certi casi la cellula divide il suo contenuto **in modo disuguale** di proposito. Questo si chiama **mitosi asimmetrica**.
+
+Esempio: le cellule staminali spesso si dividono asimmetricamente per produrre una cellula figlia identica alla madre (che rimane staminale) e una cellula figlia differenziata (che ha un ruolo specifico). Per farlo, alcune proteine e determinanti del destino cellulare vengono concentrate su un polo della cellula prima della divisione.
+
+---
+
+<Diagram caption="Attivazione dell'APC/C e separazione dei cromatidi: dalla metafase all'anafase" code={`flowchart TB
+  A["Tutti i cromosomi agganciati al fuso<br/>(checkpoint SAC soddisfatto)"] --> B["SAC si spegne<br/>APC/C si attiva"]
+  B --> C["APC/C ubiquitina la SECURINA<br/>(cartellino di demolizione)"]
+  B --> D["APC/C ubiquitina la CICLINA B<br/>(cartellino di demolizione)"]
+  C --> E["Proteasoma degrada la securina"]
+  D --> F["Proteasoma degrada la ciclina B"]
+  E --> G["SEPARASI si libera<br/>Taglia la COESINA"]
+  F --> H["CDK1 si spegne<br/>Uscita dalla mitosi"]
+  G --> I["Cromatidi fratelli si separano<br/>ANAFASE"]
+  H --> J["Cromosomi si decondensano<br/>Nucleo si riforma: TELOFASE"]`} />
+
+<Diagram caption="Citodieresi nelle cellule animali vs vegetali, e mitosi asimmetrica" code={`flowchart TB
+  A["Fine della telofase<br/>Nucleo diviso"] --> B["CITODIERESI<br/>(divisione del citoplasma)"]
+  B --> C["Cellula ANIMALE"]
+  B --> D["Cellula VEGETALE"]
+  C --> E["Anello contrattile<br/>actina + miosina<br/>stringe il solco di clivaggio"]
+  D --> F["Piastra cellulare<br/>cresce al centro<br/>diventa nuova parete"]
+  E --> G["Due cellule figlie separate"]
+  F --> G
+  G --> H["Mitosi SIMMETRICA<br/>figlie identiche"]
+  G --> I["Mitosi ASIMMETRICA<br/>determinanti del destino<br/>distribuiti in modo disuguale<br/>figlie con destini diversi"]`} />
+
+## Guarda il video
+<YouTube id="90tXsk4mkkM" title="Regolazione CICLO CELLULARE. Fattori di Crescita, Citochine, Ciclina (Proteina), Cdk (Enzima), APC" />
+<VideoVisto id="bio-u7-07" />
+
+## Da ricordare
+- L'APC/C demolisce la securina (liberando la separasi, che taglia la coesina e separa i cromatidi) e la ciclina B (spegnendo Cdk1 e portando la cellula fuori dalla mitosi).
+- La citodieresi divide il citoplasma: anello contrattile nelle cellule animali, piastra cellulare nelle cellule vegetali.
+- La mitosi asimmetrica produce cellule figlie con destini diversi distribuendo in modo disuguale i determinanti cellulari prima della divisione.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione principale dell'APC/C durante la mitosi?" opzioni={["Duplicare il DNA prima della divisione","Agganciare i cromosomi al fuso mitotico","Ubiquitinare securina e ciclina B per avviarne la degradazione","Formare l'anello contrattile durante la citodieresi"]} corretta={2} spiegazione="L'APC/C è un'ubiquitina-ligasi che attacca il cartellino di ubiquitina alla securina e alla ciclina B, indirizzandole al proteasoma per la degradazione. Questo innesca la separazione dei cromatidi e l'uscita dalla mitosi." />
+
+<Quiz domanda="Cosa succede immediatamente dopo la degradazione della securina?" opzioni={["La ciclina B si attiva e accelera la mitosi","La separasi viene inibita dalla coesina","La separasi si libera e taglia la coesina, separando i cromatidi fratelli","Il SAC blocca l'avanzamento del ciclo cellulare"]} corretta={2} spiegazione="La securina blocca la separasi. Quando l'APC/C degrada la securina, la separasi si libera e può tagliare la coesina, la proteina che tiene uniti i cromatidi fratelli. Solo così i cromatidi possono andare verso i poli opposti." />
+
+<Quiz domanda="Come avviene la citodieresi nelle cellule vegetali, e perché è diversa da quella animale?" opzioni={["Tramite un anello contrattile di actina, perché le cellule vegetali sono più grandi","Tramite una piastra cellulare che cresce al centro, perché la parete rigida impedisce la strozzatura","Tramite fusione dei lisosomi al centro della cellula","Tramite dissoluzione della membrana plasmatica e sua ricostruzione in due copie"]} corretta={1} spiegazione="Le cellule vegetali hanno una parete cellulare rigida che non può essere strozzata come nelle cellule animali. Invece, vescicole del Golgi si fondono al centro della cellula formando la piastra cellulare, che cresce verso l'esterno fino a dividere completamente le due cellule figlie." />
+
+<Esercizio problema="Una cellula in metafase riceve un farmaco che blocca permanentemente l'APC/C. Descrivi cosa succederebbe: la cellula riuscirebbe a entrare in anafase? Riuscirà a completare la mitosi? Motiva la risposta." soluzione="No, la cellula non riuscirebbe ad entrare in anafase né a completare la mitosi. Senza APC/C attivo, la securina non viene ubiquitinata e non viene degradata dal proteasoma. La separasi rimane quindi bloccata dalla securina e non può tagliare la coesina. I cromatidi fratelli restano uniti e non si separano: la cellula si blocca in metafase. Inoltre, la ciclina B non viene degradata, Cdk1 rimane attivo e la cellula non può entrare in telofase né procedere alla citodieresi." />
+
+</section>
+
+</RisorsaLayout>

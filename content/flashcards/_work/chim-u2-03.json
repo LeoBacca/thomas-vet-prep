@@ -1,0 +1,53 @@
+{
+ "id": "chim-u2-03",
+ "titolo": "L'acqua come solvente polare; solubilità di soluti ionici e non ionici",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "03-lacqua-come-solvente-polare-solubilita-di",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/chimica/u2/03-lacqua-come-solvente-polare-solubilita-di.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Quale dei seguenti solventi, aggiunto all'acqua in volumi uguali, NON dà origine ad un sistema a due fasi?",
+   "choices": [
+    "alcol etilico",
+    "etere etilico",
+    "n-esano",
+    "benzene",
+    "cloroformio"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2011",
+   "q": "Quale dei seguenti liquidi è miscibile con un egual volume di acqua?",
+   "choices": [
+    "Alcol metilico",
+    "Etere etilico",
+    "Olio di paraffina",
+    "Cloroformio",
+    "Etere di petrolio"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Quale di queste sostanze è poco o per nulla solubile in acqua?",
+   "choices": [
+    "Solido covalente apolare",
+    "Gas biatomici polari",
+    "Solido covalente polare",
+    "Solido ionico",
+    "Liquido covalente polare"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fc-bio-u4-03-1", "topicId": "bio-u4-03", "materia": "biologia", "unita": 4, "type": "mc",
+    "q": "Un gene è come una 'casella' sul cromosoma. Le versioni diverse che possono riempire quella casella (per esempio 'occhi azzurri' o 'occhi marroni') come si chiamano?",
+    "choices": ["Cromosomi", "Alleli", "Proteine", "Geni nuovi e separati"],
+    "answer": 1,
+    "explain": "Le versioni alternative dello stesso gene si chiamano alleli. Resta sempre lo stesso gene (la stessa casella, lo stesso carattere): cambia solo la 'versione'. Siamo diploidi, quindi per ogni gene abbiamo due alleli, uno dal cromosoma della mamma e uno da quello del papà.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-03-2", "topicId": "bio-u4-03", "materia": "biologia", "unita": 4, "type": "tf",
+    "q": "Vero o falso: due cani con genotipo diverso (AA e Aa, con A = pelo scuro dominante) possono avere lo stesso fenotipo, cioè entrambi pelo scuro.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il genotipo è ciò che hai scritto nel DNA (gli alleli), il fenotipo è ciò che si vede fuori. In Aa l'allele dominante A 'copre' il recessivo a, quindi sia AA sia Aa mostrano pelo scuro: stesso fenotipo, genotipo diverso. È un punto chiave della genetica.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-03-3", "topicId": "bio-u4-03", "materia": "biologia", "unita": 4, "type": "open",
+    "q": "Spiega con parole tue la differenza tra genotipo e fenotipo. Perché un allele recessivo, come quello del pelo chiaro (a), si vede solo nel genotipo aa e non in Aa?",
+    "answer": "Il genotipo è la 'carta d'identità genetica' dell'individuo: indica quali alleli possiede davvero nel DNA (per esempio AA, Aa, aa) e non si vede dall'esterno. Il fenotipo è il carattere osservabile che ne risulta (il colore del pelo che vedi). L'allele recessivo a si esprime solo se è presente in doppia copia (aa), perché quando insieme a lui c'è un allele dominante (Aa), è A a 'vincere' e a determinare il fenotipo, coprendo il recessivo. Quindi il pelo chiaro compare unicamente nell'omozigote recessivo aa: è l'unico modo per 'far vedere' il recessivo.",
+    "explain": "Da ricordare: il recessivo si manifesta nel fenotipo solo in omozigosi (aa); basta un dominante per nasconderlo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u4-03-4", "topicId": "bio-u4-03", "materia": "biologia", "unita": 4, "type": "mc",
+    "q": "Un figlio mostra un carattere che NESSUNO dei due genitori manifesta. Quel carattere dipende da un allele recessivo (r). Quali genotipi devono avere il padre e la madre?",
+    "choices": ["RR e rr", "Rr e Rr", "rr e rr", "RR e RR", "Aumento del numero di cromosomi nel figlio"],
+    "answer": 1,
+    "explain": "Il figlio mostra il carattere recessivo, quindi è per forza rr: ha ricevuto una r da ciascun genitore. Ma i genitori NON manifestano quel carattere, perciò non possono essere rr: devono avere almeno una R che li 'copre'. L'unico modo per non vederlo eppure trasmettere una r ciascuno è Rr e Rr (portatori sani). Trappole: 'rr e rr' lo manifesterebbero anch'essi (esatto opposto della richiesta); 'RR e RR' e 'RR e rr' non possono dare un figlio rr perché manca una r da uno dei due; l'ultima opzione è fuori tema (non c'entra il numero di cromosomi).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u4-03-5", "topicId": "bio-u4-03", "materia": "biologia", "unita": 4, "type": "mc",
+    "q": "Un individuo è OMOZIGOTE per un certo allele (ha cioè due copie identiche). Quale di queste affermazioni è SBAGLIATA?",
+    "choices": ["Trasmette quell'allele a tutti i suoi figli", "Ogni suo gamete contiene una copia di quell'allele", "Ogni sua cellula del corpo possiede due copie di quell'allele", "I suoi genitori sono sicuramente entrambi omozigoti per quell'allele", "Potrà avere figli sia omozigoti sia eterozigoti per quell'allele"],
+    "answer": 3,
+    "explain": "L'affermazione falsa è che i genitori siano 'sicuramente' omozigoti: basta che ciascun genitore gli abbia passato quell'allele, ma uno o entrambi potrebbero essere eterozigoti (per esempio Aa). Le altre quattro sono vere: un omozigote ha due copie identiche, quindi ogni gamete porta quell'allele e lo trasmette a tutti i figli, e ogni sua cellula somatica ne possiede due copie; inoltre, a seconda dell'allele portato dall'altro genitore, i suoi figli potranno essere omozigoti o eterozigoti. Trappola principale: l'opzione sui genitori sembra logica ma confonde 'avere ricevuto l'allele' con 'essere omozigote'.",
+    "tags": ["prova d'esame"]
+  }
+]

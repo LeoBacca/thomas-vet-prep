@@ -1,0 +1,101 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-10">
+
+Quando sciogli qualcosa in un liquido (come zucchero o sale nell'acqua), la soluzione cambia un po' di comportamento rispetto al liquido puro. Alcuni di questi cambiamenti dipendono **solo da quante particelle** hai sciolto, e **non da cosa** hai sciolto. Si chiamano **proprietà colligative**. Sono importanti perché spiegano cose di tutti i giorni e anche cose del nostro corpo, come l'equilibrio dei liquidi nelle cellule.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> alle proprietà colligative interessa solo il <strong>numero</strong> di particelle disciolte, non la loro identità. È come una folla: conta quante persone ci sono, non se sono uomini o donne.</div>
+
+La parola "colligative" viene da "collegate al numero". La prima e più semplice di queste proprietà è l'**abbassamento della pressione di vapore**, descritto dalla **legge di Raoult**.
+
+## Che cos'è la pressione di vapore
+
+Lascia un bicchiere d'acqua sul tavolo: dopo qualche giorno si svuota. L'acqua è **evaporata**, cioè alcune molecole sono scappate dalla superficie e sono diventate vapore. La **pressione di vapore** misura proprio quanto un liquido "ha voglia" di evaporare: più è alta, più il liquido evapora facilmente.
+
+<Diagram caption="Il liquido puro: le molecole evaporano liberamente dalla superficie" code={`flowchart TB
+  L["Acqua pura"] --> S["Superficie libera"]
+  S --> E["Le molecole d'acqua<br/>evaporano facilmente"]
+  E --> P["Pressione di vapore ALTA"]`} />
+
+## Il soluto ostacola l'evaporazione
+
+Ora sciogli dello zucchero nell'acqua. Lo zucchero **non evapora** (resta nel liquido), ma occupa spazio sulla superficie e si mette "in mezzo". Così alcune molecole d'acqua trovano la strada bloccata e fanno più fatica a scappare nell'aria.
+
+Risultato: la soluzione evapora **di meno** del liquido puro. La sua pressione di vapore è **più bassa**. Questo è l'**abbassamento della pressione di vapore**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il soluto è come tante persone ferme davanti alla porta di un locale: chi è dentro fa più fatica a uscire. Meno molecole escono, più bassa è la pressione di vapore.</div>
+
+<Diagram caption="Il soluto si mette in mezzo e ostacola l'uscita delle molecole di solvente" code={`flowchart TB
+  Sol["Acqua + zucchero (soluzione)"] --> Sup["Superficie occupata in parte<br/>dalle particelle di soluto"]
+  Sup --> Blocco["Alcune molecole d'acqua<br/>trovano la strada bloccata"]
+  Blocco --> Meno["Evaporano MENO molecole"]
+  Meno --> Bassa["Pressione di vapore PIU BASSA"]`} />
+
+## La legge di Raoult
+
+La **legge di Raoult** mette tutto questo in una formula semplice. Dice che la pressione di vapore della soluzione dipende da **quanta parte del liquido è ancora solvente puro**:
+
+`P soluzione = P solvente puro x frazione molare del solvente`
+
+La **frazione molare del solvente** è un numero tra 0 e 1: ti dice che quota delle particelle totali è solvente. Se metti tanto soluto, questa quota scende, e quindi anche la pressione di vapore scende. Se non c'è soluto, la frazione vale 1 e ritrovi il liquido puro.
+
+Detto ancora più semplice: **più soluto aggiungi, più la pressione di vapore si abbassa**. Ed è proprio una proprietà colligativa, perché conta solo **quante** particelle hai messo dentro.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la legge di Raoult è una regola di proporzione. Se metà delle particelle è solvente, la pressione di vapore è circa la metà di quella del liquido puro.</div>
+
+## Perché conta in medicina e veterinaria
+
+Il nostro corpo è pieno di soluzioni: il sangue, i liquidi dentro e fuori le cellule sono acqua con tante particelle disciolte (sali, zuccheri, proteine). Il numero di particelle disciolte determina la **concentrazione** dei liquidi, e questo guida il passaggio dell'acqua attraverso le membrane delle cellule. È lo stesso principio per cui in clinica si usano **flebo con soluzioni a concentrazione controllata**: una soluzione troppo concentrata o troppo diluita può far gonfiare o raggrinzire le cellule. Capire che "conta il numero di particelle" è la base per capire questi equilibri.
+
+## Guarda il video
+
+<YouTube id="HCcUtix6acE" title="Le Proprietà Colligative — abbassamento della pressione di vapore e legge di Raoult" />
+
+<VideoVisto id="chim-u2-10" />
+
+## Da ricordare
+
+- Le **proprietà colligative** dipendono solo dal **numero** di particelle disciolte, non da quali sono.
+- La **pressione di vapore** misura quanto facilmente un liquido evapora.
+- Sciogliendo un soluto (non volatile), il solvente evapora di meno: la pressione di vapore **si abbassa**.
+- La **legge di Raoult**: `P soluzione = P solvente puro x frazione molare del solvente`.
+- Più soluto metti, più bassa diventa la pressione di vapore.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Da cosa dipende una proprietà colligativa?"
+  opzioni={["dal tipo di soluto sciolto", "dal numero di particelle disciolte", "dal colore della soluzione", "dalla temperatura della stanza"]}
+  corretta={1}
+  spiegazione="Le proprietà colligative dipendono solo da QUANTE particelle ci sono nella soluzione, non dalla loro natura. Conta il numero, non l'identità."
+/>
+
+<Quiz
+  domanda="Cosa succede alla pressione di vapore di un liquido quando ci sciogli dentro uno zucchero (non volatile)?"
+  opzioni={["aumenta", "si abbassa", "resta identica", "diventa zero"]}
+  corretta={1}
+  spiegazione="Il soluto ostacola l'uscita delle molecole di solvente: evaporano meno molecole, quindi la pressione di vapore si abbassa."
+/>
+
+<Quiz
+  domanda="Secondo la legge di Raoult, se aumento la quantità di soluto disciolto nel solvente:"
+  opzioni={["la pressione di vapore aumenta", "la pressione di vapore si abbassa", "non cambia nulla", "il solvente smette di essere liquido"]}
+  corretta={1}
+  spiegazione="Più soluto aggiungi, più scende la frazione molare del solvente, e quindi la pressione di vapore della soluzione si abbassa."
+/>
+
+<Esercizio
+  problema="Hai due bicchieri: nel primo c'è acqua pura, nel secondo acqua con due cucchiai di zucchero sciolti. Quale dei due ha la pressione di vapore più alta, cioè evapora più facilmente?"
+  soluzione="L'acqua pura (il primo bicchiere). Lo zucchero disciolto nel secondo bicchiere ostacola l'evaporazione delle molecole d'acqua, quindi abbassa la pressione di vapore: la soluzione zuccherata evapora di meno."
+/>
+
+</section>
+
+</RisorsaLayout>

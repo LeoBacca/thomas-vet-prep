@@ -1,0 +1,82 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u4-03">
+
+## Cos'è un'onda?
+
+Un'onda è una perturbazione che si sposta da un punto all'altro, trasportando **energia** ma non materia. Immagina quando butti un sasso in uno stagno: l'acqua non viaggia verso la riva, ma l'onda sì.
+
+Le onde meccaniche si dividono in due grandi famiglie: **trasversali** e **longitudinali**. La differenza sta in una sola cosa: **come oscilla il mezzo rispetto alla direzione in cui l'onda avanza**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> se il mezzo "balla" di lato rispetto al cammino dell'onda → trasversale; se "va avanti e indietro" lungo lo stesso cammino → longitudinale.</div>
+
+---
+
+## Onde trasversali
+
+In un'onda trasversale, il mezzo oscilla **perpendicolare** (cioè "di traverso") alla direzione di propagazione.
+
+**Esempio classico:** agita l'estremità di una corda tenuta orizzontale. La corda sale e scende, ma l'onda viaggia orizzontalmente. Su e giù ↕ — avanza →: le due direzioni formano un angolo retto.
+
+Altri esempi di onde trasversali:
+- Le onde sulla superficie dell'acqua (approssimazione)
+- Le onde elettromagnetiche (luce, radio)
+- Le onde sismiche di tipo S
+
+---
+
+## Onde longitudinali
+
+In un'onda longitudinale, il mezzo oscilla **parallelo** alla direzione di propagazione. Tutto va nella stessa direzione.
+
+**Esempio classico:** una molla compressa a un'estremità e poi lasciata libera. Le spire si addensano (**compressione**) e si rarefano (**rarefazione**) lungo la molla, nella stessa direzione in cui l'onda avanza.
+
+Il **suono** è l'esempio più importante: le molecole d'aria si avvicinano e allontanano lungo la direzione in cui il suono si propaga.
+
+Altri esempi di onde longitudinali:
+- Onde sismiche di tipo P
+- Le onde di pressione in un fluido
+
+---
+
+<Diagram caption="Onda trasversale: il mezzo oscilla perpendicolare alla propagazione" code={`flowchart LR
+  A["Sorgente<br/>(agita la corda)"] --> B["Oscillazione<br/>su-giù ↕"]
+  B --> C["Propagazione →<br/>(direzione onda)"]
+  C --> D["Cresta e avvallamento<br/>alternati"]`} />
+
+<Diagram caption="Onda longitudinale: il mezzo oscilla parallelo alla propagazione (es. suono)" code={`flowchart LR
+  A["Sorgente<br/>(altoparlante)"] --> B["Compressione<br/>→→ molecole vicine"]
+  B --> C["Rarefazione<br/>← molecole lontane"]
+  C --> D["Propagazione →<br/>(stessa direzione)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="usxhbSRdE-A" title="ONDE FISICA, onde longitudinali e trasversali, spiegazione onde fisica, periodo e frequenza" />
+<VideoVisto id="fis-u4-03" />
+
+## Da ricordare
+- **Trasversale**: il mezzo oscilla perpendicolare alla direzione di propagazione (es. corda agitata, luce).
+- **Longitudinale**: il mezzo oscilla parallelo alla direzione di propagazione (es. suono, compressione di una molla).
+- Il suono è sempre longitudinale; le onde su una corda sono sempre trasversali.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Stai agitando un'estremità di una corda tesa verso l'alto e verso il basso. In quale direzione viaggia l'onda?" opzioni={["Nella stessa direzione del movimento della corda (su-giù)", "Perpendicolare al movimento della corda (lungo la corda)", "Diagonalmente rispetto alla corda", "L'onda non si propaga nelle corde"]} corretta={1} spiegazione="Quando la corda oscilla su-giù, l'onda si propaga lungo la corda (orizzontalmente). Oscillazione e propagazione sono perpendicolari: è un'onda trasversale." />
+
+<Quiz domanda="Qual è la principale caratteristica di un'onda longitudinale?" opzioni={["Il mezzo oscilla perpendicolare alla direzione di propagazione", "Il mezzo oscilla parallelo alla direzione di propagazione", "Il mezzo non oscilla affatto", "L'onda si propaga solo nel vuoto"]} corretta={1} spiegazione="Nelle onde longitudinali, come il suono, le particelle del mezzo si muovono avanti e indietro nella stessa direzione in cui l'onda avanza. Questo crea zone di compressione e rarefazione." />
+
+<Quiz domanda="Il suono che senti quando qualcuno parla è un esempio di:" opzioni={["Onda trasversale, perché oscilla l'aria", "Onda elettromagnetica, perché viaggia nell'aria", "Onda longitudinale, perché le molecole d'aria si comprimono e rarefanno lungo la direzione di propagazione", "Onda stazionaria, perché rimane ferma"]} corretta={2} spiegazione="Il suono è un'onda longitudinale: le molecole d'aria vengono spinte avanti e indietro nella stessa direzione in cui il suono viaggia, formando compressioni e rarefazioni." />
+
+<Esercizio problema="Una molla è appoggiata su un tavolo. Premi ritmicamente una delle sue estremità verso l'altra estremità. (a) Come si chiama questo tipo di onda? (b) Come oscilla la molla rispetto alla direzione di propagazione dell'onda?" soluzione="(a) È un'onda longitudinale. (b) Le spire della molla si spostano avanti e indietro nella stessa direzione in cui l'onda avanza lungo la molla: oscillazione e propagazione sono parallele." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,129 @@
+{
+  "materia": "Fisica",
+  "fonte": "Syllabus_semestre_med_2026.md — Insegnamento di Fisica",
+  "note": "Decomposizione in argomenti atomici (1 concetto = 1 scheda risorsa). difficolta: 1=facile, 2=media, 3=tosta (per studente non-scientifico). prereq = id di argomenti propedeutici.",
+  "unita": [
+    {
+      "id": "fis-u1",
+      "titolo": "Introduzione ai metodi della fisica",
+      "cfu": 0.2,
+      "argomenti": [
+        { "id": "fis-u1-01", "titolo": "Notazione scientifica (potenze di 10)", "obiettivo": "Scrivere numeri molto grandi/piccoli come potenze di 10 e fare calcoli con esse.", "prereq": [], "correlati": ["fis-u1-02", "fis-u1-03"], "difficolta": 1, "diagramma": "retta dei numeri con potenze di 10", "video": true },
+        { "id": "fis-u1-02", "titolo": "Grandezze fisiche e unità di misura (Sistema Internazionale)", "obiettivo": "Sapere cos'è una grandezza fisica e le 7 unità base del SI.", "prereq": [], "difficolta": 1, "diagramma": "tabella unità SI", "video": true },
+        { "id": "fis-u1-03", "titolo": "Conversioni tra unità e stima dell'ordine di grandezza", "obiettivo": "Convertire tra unità omogenee e stimare l'ordine di grandezza di un risultato.", "prereq": ["fis-u1-01", "fis-u1-02"], "difficolta": 2, "diagramma": "scala dei prefissi (kilo, milli, micro...)", "video": true },
+        { "id": "fis-u1-04", "titolo": "Grandezze estensive e intensive", "obiettivo": "Distinguere grandezze che dipendono dalla quantità (massa, volume) da quelle che no (densità, temperatura).", "prereq": ["fis-u1-02"], "difficolta": 1, "diagramma": "esempi a confronto", "video": false },
+        { "id": "fis-u1-05", "titolo": "Grandezze scalari e vettoriali", "obiettivo": "Capire la differenza tra una grandezza con solo valore (scalare) e una con valore+direzione+verso (vettore).", "prereq": ["fis-u1-02"], "difficolta": 1, "diagramma": "freccia (vettore) vs numero (scalare)", "video": true },
+        { "id": "fis-u1-06", "titolo": "Funzioni trigonometriche elementari (seno, coseno, tangente)", "obiettivo": "Sapere cosa sono seno/coseno/tangente in un triangolo rettangolo e usarle per scomporre.", "prereq": [], "difficolta": 2, "diagramma": "triangolo rettangolo con cateti/ipotenusa", "video": true },
+        { "id": "fis-u1-07", "titolo": "Vettori: definizione e componenti", "obiettivo": "Rappresentare un vettore e scomporlo nelle componenti x e y.", "prereq": ["fis-u1-05", "fis-u1-06"], "difficolta": 2, "diagramma": "vettore scomposto sugli assi", "video": true },
+        { "id": "fis-u1-08", "titolo": "Operazioni tra vettori (somma, differenza, prodotto scalare e vettoriale)", "obiettivo": "Sommare/sottrarre vettori (regola del parallelogramma) e capire prodotto scalare vs vettoriale.", "prereq": ["fis-u1-07"], "difficolta": 3, "diagramma": "regola del parallelogramma + punta-coda", "video": true }
+      ]
+    },
+    {
+      "id": "fis-u2",
+      "titolo": "Meccanica",
+      "cfu": 1.4,
+      "argomenti": [
+        { "id": "fis-u2-01", "titolo": "Cinematica: posizione, spostamento, traiettoria e legge oraria", "obiettivo": "Descrivere dove si trova e come si muove un punto nel tempo.", "prereq": ["fis-u1-05"], "difficolta": 1, "diagramma": "traiettoria con posizioni nel tempo", "video": true },
+        { "id": "fis-u2-02", "titolo": "Velocità media e istantanea", "obiettivo": "Calcolare la velocità media e capire cos'è quella istantanea.", "prereq": ["fis-u2-01"], "difficolta": 2, "diagramma": "grafico spazio-tempo con pendenza", "video": true },
+        { "id": "fis-u2-03", "titolo": "Accelerazione media e istantanea", "obiettivo": "Capire l'accelerazione come variazione di velocità nel tempo.", "prereq": ["fis-u2-02"], "difficolta": 2, "diagramma": "grafico velocità-tempo", "video": true },
+        { "id": "fis-u2-04", "titolo": "Moto rettilineo uniforme", "obiettivo": "Riconoscere e calcolare il moto a velocità costante.", "prereq": ["fis-u2-02"], "difficolta": 1, "diagramma": "grafici s-t e v-t", "video": true },
+        { "id": "fis-u2-05", "titolo": "Moto uniformemente accelerato e caduta libera", "obiettivo": "Usare le leggi del moto ad accelerazione costante; capire la caduta dei gravi.", "prereq": ["fis-u2-03", "fis-u2-04"], "difficolta": 2, "diagramma": "caduta di un corpo con g", "video": true },
+        { "id": "fis-u2-06", "titolo": "Moto parabolico", "obiettivo": "Capire il moto di un proiettile come somma di due moti.", "prereq": ["fis-u2-05", "fis-u1-07"], "difficolta": 3, "diagramma": "traiettoria parabolica scomposta", "video": true },
+        { "id": "fis-u2-07", "titolo": "Moto circolare uniforme e accelerazione centripeta", "obiettivo": "Capire perché in un moto circolare c'è accelerazione anche a velocità costante.", "prereq": ["fis-u2-03"], "difficolta": 3, "diagramma": "cerchio con vettori velocità e accelerazione centripeta", "video": true },
+        { "id": "fis-u2-08", "titolo": "Le forze e i loro tipi (peso, gravitazionale, contatto, attrito, tensione, elastica/Hooke)", "obiettivo": "Riconoscere i principali tipi di forza e la legge di Hooke.", "prereq": ["fis-u1-05"], "difficolta": 2, "diagramma": "diagramma di corpo libero con varie forze", "video": true },
+        { "id": "fis-u2-09", "titolo": "Primo principio della dinamica (inerzia) ed equilibrio", "obiettivo": "Capire l'inerzia e le condizioni di equilibrio.", "prereq": ["fis-u2-08"], "difficolta": 2, "diagramma": "corpo fermo con forze bilanciate", "video": true },
+        { "id": "fis-u2-10", "titolo": "Secondo principio della dinamica (F = m·a)", "obiettivo": "Collegare forza, massa e accelerazione.", "prereq": ["fis-u2-08", "fis-u2-03"], "difficolta": 2, "diagramma": "F=ma con esempio", "video": true },
+        { "id": "fis-u2-11", "titolo": "Terzo principio della dinamica (azione e reazione)", "obiettivo": "Capire che ogni forza ha una forza uguale e contraria.", "prereq": ["fis-u2-08"], "difficolta": 1, "diagramma": "coppia azione-reazione", "video": true },
+        { "id": "fis-u2-12", "titolo": "Lavoro meccanico", "obiettivo": "Definire il lavoro come forza per spostamento.", "prereq": ["fis-u2-08"], "difficolta": 2, "diagramma": "forza che sposta un corpo", "video": true },
+        { "id": "fis-u2-13", "titolo": "Potenza", "obiettivo": "Capire la potenza come lavoro nel tempo.", "prereq": ["fis-u2-12"], "difficolta": 1, "diagramma": null, "video": false },
+        { "id": "fis-u2-14", "titolo": "Energia cinetica e teorema dell'energia cinetica", "obiettivo": "Collegare il lavoro alla variazione di energia di movimento.", "prereq": ["fis-u2-12"], "difficolta": 2, "diagramma": null, "video": true },
+        { "id": "fis-u2-15", "titolo": "Forze conservative e non conservative", "obiettivo": "Distinguere forze che 'restituiscono' energia (es. gravità) da quelle che la dissipano (attrito).", "prereq": ["fis-u2-12"], "difficolta": 2, "diagramma": null, "video": false },
+        { "id": "fis-u2-16", "titolo": "Energia potenziale (gravitazionale ed elastica)", "obiettivo": "Capire l'energia immagazzinata per posizione o deformazione.", "prereq": ["fis-u2-15"], "difficolta": 2, "diagramma": "corpo in alto / molla compressa", "video": true },
+        { "id": "fis-u2-17", "titolo": "Conservazione dell'energia meccanica", "obiettivo": "Usare la conservazione di energia cinetica + potenziale nei sistemi ideali.", "prereq": ["fis-u2-14", "fis-u2-16"], "difficolta": 3, "diagramma": "montagne russe / pendolo", "video": true },
+        { "id": "fis-u2-18", "titolo": "Quantità di moto, impulso e loro conservazione", "obiettivo": "Capire la quantità di moto e la sua conservazione negli urti.", "prereq": ["fis-u2-10"], "difficolta": 3, "diagramma": "urto tra due palle", "video": true },
+        { "id": "fis-u2-19", "titolo": "Centro di massa", "obiettivo": "Capire il punto che rappresenta il moto di un sistema.", "prereq": ["fis-u2-01"], "difficolta": 2, "diagramma": "corpo con centro di massa segnato", "video": false },
+        { "id": "fis-u2-20", "titolo": "Corpo rigido, momento torcente, equilibrio rotazionale e leve nel corpo umano", "obiettivo": "Capire le rotazioni, il momento di una forza e le leve nel corpo.", "prereq": ["fis-u2-09"], "difficolta": 3, "diagramma": "leva con fulcro + esempio braccio/avambraccio", "video": true }
+      ]
+    },
+    {
+      "id": "fis-u3",
+      "titolo": "Meccanica dei fluidi",
+      "cfu": 1.2,
+      "argomenti": [
+        { "id": "fis-u3-01", "titolo": "Fluidi e solidi; pressione e densità", "obiettivo": "Definire pressione e densità e capire come si comportano i fluidi.", "prereq": ["fis-u1-02"], "difficolta": 1, "diagramma": "pressione = forza/area", "video": true },
+        { "id": "fis-u3-02", "titolo": "Legge di Stevino (pressione idrostatica)", "obiettivo": "Capire perché la pressione aumenta con la profondità.", "prereq": ["fis-u3-01"], "difficolta": 2, "diagramma": "colonna di liquido con profondità", "video": true },
+        { "id": "fis-u3-03", "titolo": "Principio di Pascal", "obiettivo": "Capire la trasmissione della pressione nei fluidi (torchio idraulico).", "prereq": ["fis-u3-01"], "difficolta": 2, "diagramma": "torchio idraulico", "video": true },
+        { "id": "fis-u3-04", "titolo": "Principio di Archimede e galleggiamento", "obiettivo": "Capire la spinta verso l'alto e le condizioni di galleggiamento.", "prereq": ["fis-u3-02"], "difficolta": 2, "diagramma": "corpo immerso con spinta", "video": true },
+        { "id": "fis-u3-05", "titolo": "Misura della pressione (esperimento di Torricelli, manometro)", "obiettivo": "Sapere come si misura la pressione atmosferica e di un fluido.", "prereq": ["fis-u3-02"], "difficolta": 2, "diagramma": "barometro di Torricelli", "video": false },
+        { "id": "fis-u3-06", "titolo": "Flusso, portata e tipi di moto (stazionario, laminare, turbolento)", "obiettivo": "Definire portata e distinguere i regimi di flusso.", "prereq": ["fis-u3-01"], "difficolta": 2, "diagramma": "moto laminare vs turbolento", "video": true },
+        { "id": "fis-u3-07", "titolo": "Equazione di continuità", "obiettivo": "Capire perché un fluido accelera dove il tubo si restringe.", "prereq": ["fis-u3-06"], "difficolta": 2, "diagramma": "tubo che si restringe", "video": true },
+        { "id": "fis-u3-08", "titolo": "Teorema di Bernoulli e applicazioni (stenosi, aneurisma)", "obiettivo": "Collegare velocità e pressione di un fluido; applicarlo alla circolazione.", "prereq": ["fis-u3-07", "fis-u2-17"], "difficolta": 3, "diagramma": "tubo Venturi + vaso sanguigno", "video": true },
+        { "id": "fis-u3-09", "titolo": "Viscosità, legge di Poiseuille e resistenze idrauliche", "obiettivo": "Capire l'attrito interno dei fluidi reali e la resistenza al flusso.", "prereq": ["fis-u3-06"], "difficolta": 3, "diagramma": "profilo parabolico di velocità nel tubo", "video": true },
+        { "id": "fis-u3-10", "titolo": "Tensione superficiale, capillarità e legge di Laplace", "obiettivo": "Capire i fenomeni di superficie dei liquidi.", "prereq": ["fis-u3-01"], "difficolta": 2, "diagramma": "goccia + risalita capillare", "video": true }
+      ]
+    },
+    {
+      "id": "fis-u4",
+      "titolo": "Onde meccaniche",
+      "cfu": 0.4,
+      "argomenti": [
+        { "id": "fis-u4-01", "titolo": "Onde meccaniche e oscillatore armonico", "obiettivo": "Capire cos'è un'onda come propagazione di energia in un mezzo.", "prereq": ["fis-u2-16"], "difficolta": 2, "diagramma": "onda su una corda + molla oscillante", "video": true },
+        { "id": "fis-u4-02", "titolo": "Parametri delle onde (frequenza, periodo, pulsazione, lunghezza d'onda, velocità)", "obiettivo": "Conoscere e collegare i parametri che descrivono un'onda.", "prereq": ["fis-u4-01"], "difficolta": 2, "diagramma": "onda con lunghezza d'onda e ampiezza", "video": true },
+        { "id": "fis-u4-03", "titolo": "Onde trasversali e longitudinali", "obiettivo": "Distinguere onde in cui il mezzo oscilla perpendicolare o parallelo alla propagazione.", "prereq": ["fis-u4-01"], "difficolta": 1, "diagramma": "trasversale (corda) vs longitudinale (molla)", "video": true },
+        { "id": "fis-u4-04", "titolo": "Sovrapposizione e interferenza", "obiettivo": "Capire cosa succede quando due onde si incontrano.", "prereq": ["fis-u4-02"], "difficolta": 2, "diagramma": "interferenza costruttiva e distruttiva", "video": true },
+        { "id": "fis-u4-05", "titolo": "Energia, intensità delle onde e legge dell'inverso del quadrato", "obiettivo": "Capire come l'intensità cala con la distanza.", "prereq": ["fis-u4-02"], "difficolta": 2, "diagramma": "onde sferiche che si allargano", "video": false },
+        { "id": "fis-u4-06", "titolo": "Onde acustiche (suono, intensità e decibel)", "obiettivo": "Capire il suono come onda e la scala dei decibel.", "prereq": ["fis-u4-05"], "difficolta": 2, "diagramma": "scala dei dB con esempi", "video": true },
+        { "id": "fis-u4-07", "titolo": "Effetto Doppler (qualitativo)", "obiettivo": "Capire perché il suono cambia con il movimento della sorgente.", "prereq": ["fis-u4-06"], "difficolta": 2, "diagramma": "ambulanza in movimento con onde compresse/dilatate", "video": true }
+      ]
+    },
+    {
+      "id": "fis-u5",
+      "titolo": "Termodinamica",
+      "cfu": 1.0,
+      "argomenti": [
+        { "id": "fis-u5-01", "titolo": "Sistema e ambiente, variabili e funzioni di stato", "obiettivo": "Definire il linguaggio base della termodinamica.", "prereq": [], "difficolta": 1, "diagramma": "sistema/ambiente/confine", "video": false },
+        { "id": "fis-u5-02", "titolo": "Temperatura, scale di misura e gas perfetti (equazione di stato)", "obiettivo": "Capire la temperatura, le scale e la legge dei gas perfetti (PV=nRT).", "prereq": ["fis-u5-01"], "difficolta": 2, "diagramma": "scale Celsius/Kelvin", "video": true },
+        { "id": "fis-u5-03", "titolo": "Calore, capacità termica e calore specifico", "obiettivo": "Distinguere calore e temperatura; capire il calore specifico.", "prereq": ["fis-u5-02"], "difficolta": 2, "diagramma": null, "video": true },
+        { "id": "fis-u5-04", "titolo": "Cambiamenti di stato, calore latente e calorimetria", "obiettivo": "Capire fusione/evaporazione ecc. e il calore latente.", "prereq": ["fis-u5-03"], "difficolta": 2, "diagramma": "curva di riscaldamento dell'acqua", "video": true },
+        { "id": "fis-u5-05", "titolo": "Trasmissione del calore (conduzione, convezione, irraggiamento)", "obiettivo": "Conoscere i tre modi in cui il calore si trasferisce.", "prereq": ["fis-u5-03"], "difficolta": 1, "diagramma": "3 meccanismi a confronto", "video": true },
+        { "id": "fis-u5-06", "titolo": "Primo principio della termodinamica", "obiettivo": "Capire la conservazione dell'energia tra calore, lavoro ed energia interna.", "prereq": ["fis-u5-03", "fis-u2-12"], "difficolta": 3, "diagramma": "bilancio energetico di un sistema", "video": true },
+        { "id": "fis-u5-07", "titolo": "Trasformazioni termodinamiche (isoterma, isocora, isobara, adiabatica)", "obiettivo": "Riconoscere le trasformazioni canoniche dei gas ideali.", "prereq": ["fis-u5-06"], "difficolta": 3, "diagramma": "grafici P-V delle trasformazioni", "video": true },
+        { "id": "fis-u5-08", "titolo": "Secondo principio della termodinamica e irreversibilità", "obiettivo": "Capire perché certi processi avvengono in un solo verso.", "prereq": ["fis-u5-06"], "difficolta": 3, "diagramma": null, "video": true },
+        { "id": "fis-u5-09", "titolo": "Macchine termiche, rendimento e ciclo di Carnot", "obiettivo": "Capire come si trasforma calore in lavoro e il limite di efficienza.", "prereq": ["fis-u5-08"], "difficolta": 3, "diagramma": "schema macchina termica", "video": true },
+        { "id": "fis-u5-10", "titolo": "Entropia", "obiettivo": "Capire l'entropia come misura del disordine e direzione dei processi.", "prereq": ["fis-u5-08"], "difficolta": 3, "diagramma": "ordine vs disordine", "video": true }
+      ]
+    },
+    {
+      "id": "fis-u6",
+      "titolo": "Elettricità e magnetismo",
+      "cfu": 1.2,
+      "argomenti": [
+        { "id": "fis-u6-01", "titolo": "Carica elettrica e legge di Coulomb", "obiettivo": "Capire la carica e la forza tra cariche.", "prereq": ["fis-u2-08"], "difficolta": 2, "diagramma": "due cariche con forza", "video": true },
+        { "id": "fis-u6-02", "titolo": "Campo elettrico e linee di forza", "obiettivo": "Capire il campo elettrico e come si rappresenta.", "prereq": ["fis-u6-01"], "difficolta": 2, "diagramma": "linee di campo di una carica", "video": true },
+        { "id": "fis-u6-03", "titolo": "Energia potenziale, potenziale elettrico e differenza di potenziale", "obiettivo": "Capire potenziale e ddp (volt).", "prereq": ["fis-u6-02", "fis-u2-16"], "difficolta": 3, "diagramma": null, "video": true },
+        { "id": "fis-u6-04", "titolo": "Conduttori e dielettrici (induzione e polarizzazione)", "obiettivo": "Distinguere materiali che conducono da isolanti.", "prereq": ["fis-u6-02"], "difficolta": 2, "diagramma": "induzione su un conduttore", "video": false },
+        { "id": "fis-u6-05", "titolo": "Corrente elettrica, generatore e differenza di potenziale", "obiettivo": "Capire la corrente come flusso di carica.", "prereq": ["fis-u6-03"], "difficolta": 2, "diagramma": "circuito semplice", "video": true },
+        { "id": "fis-u6-06", "titolo": "Leggi di Ohm, resistenza e resistività", "obiettivo": "Collegare tensione, corrente e resistenza (V=R·I).", "prereq": ["fis-u6-05"], "difficolta": 2, "diagramma": "triangolo V-I-R", "video": true },
+        { "id": "fis-u6-07", "titolo": "Potenza elettrica ed effetto Joule", "obiettivo": "Capire la dissipazione di energia in una resistenza.", "prereq": ["fis-u6-06"], "difficolta": 2, "diagramma": null, "video": false },
+        { "id": "fis-u6-08", "titolo": "Resistenze in serie e in parallelo", "obiettivo": "Calcolare la resistenza equivalente.", "prereq": ["fis-u6-06"], "difficolta": 2, "diagramma": "serie vs parallelo", "video": true },
+        { "id": "fis-u6-09", "titolo": "Capacità e condensatori (serie/parallelo, energia)", "obiettivo": "Capire cos'è un condensatore e come immagazzina carica.", "prereq": ["fis-u6-03"], "difficolta": 3, "diagramma": "condensatore piano", "video": true },
+        { "id": "fis-u6-10", "titolo": "Campo magnetico (esperimento di Oersted) e forza di Lorentz", "obiettivo": "Capire l'origine del campo magnetico e la forza su cariche in moto.", "prereq": ["fis-u6-05"], "difficolta": 3, "diagramma": "filo percorso da corrente + bussola", "video": true },
+        { "id": "fis-u6-11", "titolo": "Induzione elettromagnetica (legge di Faraday-Neumann-Lenz)", "obiettivo": "Capire come un campo magnetico variabile genera corrente.", "prereq": ["fis-u6-10"], "difficolta": 3, "diagramma": "magnete che entra in una spira", "video": true }
+      ]
+    },
+    {
+      "id": "fis-u7",
+      "titolo": "Fisica delle radiazioni",
+      "cfu": 0.6,
+      "argomenti": [
+        { "id": "fis-u7-01", "titolo": "Radiazione elettromagnetica (campi elettrici e magnetici oscillanti)", "obiettivo": "Capire la natura ondulatoria delle onde elettromagnetiche.", "prereq": ["fis-u4-02", "fis-u6-11"], "difficolta": 2, "diagramma": "onda EM con campi E e B perpendicolari", "video": true },
+        { "id": "fis-u7-02", "titolo": "Spettro elettromagnetico", "obiettivo": "Conoscere le regioni dello spettro (radio → gamma).", "prereq": ["fis-u7-01"], "difficolta": 1, "diagramma": "spettro EM completo", "video": true },
+        { "id": "fis-u7-03", "titolo": "Quantizzazione dell'energia: il fotone (E = h·f)", "obiettivo": "Capire la luce come fatta di pacchetti di energia (fotoni).", "prereq": ["fis-u7-01"], "difficolta": 2, "diagramma": null, "video": true },
+        { "id": "fis-u7-04", "titolo": "Assorbimento della radiazione (legge di Lambert-Beer)", "obiettivo": "Capire come la radiazione viene assorbita attraversando la materia.", "prereq": ["fis-u7-02"], "difficolta": 2, "diagramma": "luce attenuata da una soluzione", "video": false },
+        { "id": "fis-u7-05", "titolo": "Radioattività e decadimenti (alfa, beta, gamma), emivita", "obiettivo": "Capire i nuclei instabili, i tipi di decadimento e l'emivita.", "prereq": ["fis-u7-03"], "difficolta": 3, "diagramma": "curva di decadimento + emivita", "video": true },
+        { "id": "fis-u7-06", "titolo": "Radiazioni ionizzanti e non ionizzanti", "obiettivo": "Distinguere le radiazioni in base all'energia e agli effetti.", "prereq": ["fis-u7-02"], "difficolta": 1, "diagramma": "spettro diviso in ionizzante/non", "video": true },
+        { "id": "fis-u7-07", "titolo": "Ottica: riflessione, rifrazione, indice di rifrazione e lenti", "obiettivo": "Capire come la luce si riflette, si rifrange e forma immagini con le lenti.", "prereq": ["fis-u7-01"], "difficolta": 2, "diagramma": "rifrazione + lente convergente con raggi", "video": true }
+      ]
+    }
+  ]
+}

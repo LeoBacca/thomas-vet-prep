@@ -1,0 +1,147 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u4-01">
+
+## Cosa sono le variazioni del genoma?
+
+Il **genoma** è l'insieme di tutte le informazioni genetiche di un organismo, scritte come una sequenza di basi azotate (A, T, C, G) nel DNA.
+
+A volte questa sequenza cambia. Una variazione può essere minuscola — un solo "errore" in una lettera — oppure enorme, coinvolgendo interi pezzi di cromosoma. Da qui nasce la distinzione tra **mutazioni geniche** e **mutazioni cromosomiche**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Immagina il DNA come un libro. Una mutazione genica è un refuso in una parola; una mutazione cromosomica è strappare o duplicare un'intera pagina (o capitolo).</div>
+
+---
+
+## Le mutazioni geniche: errori a livello di sequenza
+
+Le mutazioni geniche riguardano uno o pochissimi nucleotidi (le "lettere" del DNA). Ce ne sono tre tipi fondamentali.
+
+### 1. Sostituzione (o SNP — Single Nucleotide Polymorphism)
+
+Una base viene rimpiazzata da un'altra.
+
+- **Esempio:** ...ATG**C**AG... diventa ...ATG**T**AG...
+- Può essere **sinonima** (la proteina non cambia) o **non sinonima** (cambia un aminoacido nella proteina).
+- La malattia falciforme è causata da UNA sola sostituzione nel gene dell'emoglobina.
+
+### 2. Inserzione
+
+Una o più basi vengono aggiunte nella sequenza.
+
+- **Esempio:** ...ATGCAG... diventa ...ATG**AAA**CAG...
+- Se il numero di basi inserite non è multiplo di 3, provoca uno **spostamento della cornice di lettura** (frameshift): tutto il testo a valle viene "letto male".
+
+### 3. Delezione
+
+Una o più basi vengono rimosse dalla sequenza.
+
+- **Esempio:** ...ATG**C**AG... diventa ...ATGAG...
+- Come l'inserzione, se non è multipla di 3 causa un frameshift — spesso molto dannoso.
+
+<Diagram caption="Tipi di mutazione genica a livello di sequenza nucleotidica" code={`flowchart TB
+  A["Sequenza originale<br/>A - T - G - C - A - G"] --> B["Sostituzione<br/>A - T - G - T - A - G<br/>(C sostituita da T)"]
+  A --> C["Inserzione<br/>A - T - G - A - A - C - A - G<br/>(AAA aggiunto)"]
+  A --> D["Delezione<br/>A - T - G - A - G<br/>(C rimossa)"]
+  B --> E["Proteina con<br/>aminoacido diverso"]
+  C --> F["Frameshift:<br/>proteina alterata<br/>da quel punto in poi"]
+  D --> F`} />
+
+---
+
+## Le mutazioni cromosomiche: errori su grande scala
+
+Le mutazioni cromosomiche coinvolgono **segmenti interi** di cromosoma, visibili al microscopio dopo colorazione. Si dividono in due grandi categorie.
+
+### Mutazioni di struttura (un cromosoma cambia forma)
+
+| Tipo | Cosa succede | Analogia |
+|---|---|---|
+| **Delezione** | Un pezzo di cromosoma viene perso | Strappare una pagina dal libro |
+| **Duplicazione** | Un segmento viene ripetuto | Fotocopiare una pagina e rilegarla due volte |
+| **Inversione** | Un segmento viene capovolto e reinserito | Strappare una pagina, girarla al contrario e rimetterla |
+| **Traslocazione** | Un pezzo si sposta su un altro cromosoma | Spostare un capitolo in un altro libro |
+
+### Mutazioni di numero (il conteggio dei cromosomi cambia)
+
+- **Poliploidia:** la cellula ha interi set di cromosomi in più (comune nelle piante).
+- **Aneuploidia:** manca o è in eccesso UN singolo cromosoma.
+  - Esempio: trisomia 21 = tre copie del cromosoma 21 → sindrome di Down.
+
+<Diagram caption="Mutazioni cromosomiche strutturali: cosa succede al segmento B sul cromosoma" code={`flowchart LR
+  O["Cromosoma originale<br/>A - B - C - D"] --> Del["Delezione<br/>A - C - D<br/>(B perso)"]
+  O --> Dup["Duplicazione<br/>A - B - B - C - D<br/>(B copiato)"]
+  O --> Inv["Inversione<br/>A - B' - C - D<br/>(B capovolto)"]
+  O --> Tra["Traslocazione<br/>B va su un altro cromosoma"]`} />
+
+---
+
+## Mutazione genica vs. cromosomica: le differenze chiave
+
+- **Scala:** genica = nucleotidi; cromosomica = migliaia/milioni di basi.
+- **Visibilità:** le cromosomiche si vedono al microscopio (cariotipo); le geniche no, servono tecniche molecolari.
+- **Effetto:** entrambe possono essere neutre, benefiche o patologiche — dipende da dove colpiscono e come.
+
+---
+
+## Guarda il video
+<YouTube id="lNnZKZGFR40" title="Le mutazioni geniche Step by Step — Genomica Animale Step by Step" />
+<VideoVisto id="bio-u4-01" />
+
+## Da ricordare
+- Le mutazioni **geniche** (sostituzione, inserzione, delezione) cambiano uno o pochi nucleotidi; inserzioni/delezioni non multiple di 3 causano frameshift.
+- Le mutazioni **cromosomiche** alterano la struttura (delezione, duplicazione, inversione, traslocazione) o il numero dei cromosomi (aneuploidia, poliploidia).
+- La differenza pratica: le cromosomiche si vedono al microscopio, le geniche richiedono il sequenziamento.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Una delezione di 4 nucleotidi in un gene provoca quasi certamente:"
+  opzioni={[
+    "A. Nessun effetto, perché 4 è un numero piccolo",
+    "B. Solo la perdita di un aminoacido",
+    "C. Uno spostamento della cornice di lettura (frameshift) che altera la proteina da quel punto in poi",
+    "D. La duplicazione del gene"
+  ]}
+  corretta={2}
+  spiegazione="4 non è multiplo di 3 (il codone ha 3 basi), quindi la lettura del codice viene sfasata da quel punto in poi: tutti i codoni successivi vengono letti in modo diverso, producendo una proteina quasi certamente non funzionale."
+/>
+
+<Quiz
+  domanda="Quale delle seguenti è una mutazione CROMOSOMICA di struttura?"
+  opzioni={[
+    "A. Sostituzione di una base azotata",
+    "B. Trisomia 21",
+    "C. Inversione di un segmento cromosomico",
+    "D. Inserzione di tre nucleotidi"
+  ]}
+  corretta={2}
+  spiegazione="L'inversione è una mutazione strutturale del cromosoma: un segmento viene staccato, ruotato di 180° e reinserito. La trisomia 21 è invece una mutazione di numero, non di struttura. Sostituzione e inserzione di nucleotidi sono mutazioni geniche."
+/>
+
+<Quiz
+  domanda="Cos'è l'aneuploidia?"
+  opzioni={[
+    "A. La presenza di un numero di cromosomi multiplo dell'aploide, come nella poliploidia",
+    "B. La sostituzione di una base nel DNA",
+    "C. La perdita o il guadagno di uno o pochi cromosomi singoli rispetto al numero normale",
+    "D. L'inversione di un segmento di DNA"
+  ]}
+  corretta={2}
+  spiegazione="L'aneuploidia indica la presenza di un numero di cromosomi che NON è un multiplo esatto del set aploide: manca o è in eccesso uno (o pochi) cromosomi singoli. Esempio classico: trisomia 21 (2n+1). La poliploidia è diversa: sono presenti interi set in più."
+/>
+
+<Esercizio
+  problema="Una sequenza originale di DNA è: 5'-ATG-CAG-TTA-3' (tre codoni). Avviene una inserzione di UNA base (G) dopo la seconda base. Scrivi la nuova sequenza e spiega cosa succede alla proteina."
+  soluzione="La sequenza diventa: 5'-ATG-GCA-GTT-A...-3'. Inserendo G dopo la seconda base (T), la cornice di lettura si sposta: il secondo codone diventa GCA invece di CAG, il terzo GTT invece di TTA, e tutti i codoni successivi saranno letti in modo sbagliato. Questo è un frameshift: la proteina prodotta avrà aminoacidi completamente diversi da quello originale a partire dal secondo codone, quasi certamente perdendo la sua funzione."
+/>
+
+</section>
+
+</RisorsaLayout>

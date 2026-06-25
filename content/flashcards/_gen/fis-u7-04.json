@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u7-04-1",
+    "topicId": "fis-u7-04",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: nella legge di Lambert-Beer, se raddoppio la concentrazione di una soluzione (a parità di spessore), l'assorbanza raddoppia.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. La legge dice A = ε·c·l: l'assorbanza è direttamente proporzionale alla concentrazione. Pensa al succo d'arancia: se metti il doppio di polpa nello stesso bicchiere, la luce fatica il doppio ad attraversarlo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u7-04-2",
+    "topicId": "fis-u7-04",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "open",
+    "q": "Cos'è l'assorbanza e da cosa dipende secondo la legge di Lambert-Beer? Spiega i tre fattori della formula A = ε·c·l.",
+    "answer": "L'assorbanza (A) misura quanta luce viene assorbita da una soluzione: più è alta, meno luce passa. Si calcola come A = log(I₀/I), dove I₀ è la luce in entrata e I è quella in uscita. Dipende da tre fattori: 1) ε (epsilon) = coefficiente di estinzione molare, una costante che dipende dalla sostanza e dalla lunghezza d'onda usata; 2) c = concentrazione della soluzione (più molecole ci sono, più assorbono); 3) l = spessore del campione, cioè il cammino che la luce deve percorrere. Tutti e tre moltiplicati insieme danno l'assorbanza. Esempio: succo d'arancia denso in un bicchiere spesso lascia passare pochissima luce.",
+    "explain": "A = ε·c·l: assorbanza proporzionale a concentrazione e spessore. Più la soluzione è concentrata e più è spessa, meno luce passa.",
+    "tags": ["risposta aperta"]
+  }
+]

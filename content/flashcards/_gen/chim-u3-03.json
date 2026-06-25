@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fc-chim-u3-03-1",
+    "topicId": "chim-u3-03",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: un catalizzatore accelera una reazione chimica e alla fine si consuma, quindi bisogna aggiungerne di nuovo ogni volta.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 1,
+    "explain": "Falso. Il catalizzatore accelera la reazione ma alla fine e ancora intatto, pronto a lavorare di nuovo. E come una scorciatoia: ti fa arrivare prima, ma la strada non si consuma. Nel corpo gli enzimi sono i catalizzatori biologici e lavorano cosi: accelerano migliaia di reazioni al secondo senza logorarsi.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-chim-u3-03-2",
+    "topicId": "chim-u3-03",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "open",
+    "q": "Elenca i quattro fattori che possono accelerare una reazione chimica e spiega, per ciascuno, perche funziona (pensa agli urti tra particelle).",
+    "answer": "1) Temperatura piu alta: le particelle si muovono piu in fretta, si scontrano piu spesso e con piu forza → reazione piu veloce. (Es.: il latte fuori dal frigo va a male in fretta, in frigo dura.) 2) Concentrazione piu alta: piu particelle nello stesso spazio → piu urti. (Es.: pista da ballo piena vs vuota.) 3) Superficie di contatto maggiore: la sostanza tritata fine espone piu 'punti di contatto' → piu urti. (Es.: zucchero in polvere si scioglie prima della zolletta; mastichiamo il cibo per lo stesso motivo.) 4) Catalizzatore: abbassa la 'soglia' necessaria per far partire la reazione, accelerandola senza consumarsi. Nel corpo i catalizzatori si chiamano enzimi.",
+    "explain": "Tutto ruota sugli urti: piu urti frequenti e piu energici = reazione piu veloce. Temperatura, concentrazione e superficie aumentano gli urti; il catalizzatore li rende piu efficaci.",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

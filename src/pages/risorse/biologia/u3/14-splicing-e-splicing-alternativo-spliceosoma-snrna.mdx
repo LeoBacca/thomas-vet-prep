@@ -1,0 +1,132 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-14">
+
+## Cos'è lo splicing? Il problema degli introni
+
+Quando la cellula copia un gene in RNA (trascrizione), non ottiene subito un messaggio pronto per costruire proteine. L'RNA appena prodotto — chiamato **pre-mRNA** — contiene due tipi di pezzi:
+
+- **Esoni** (da *expressed*): le parti "utili" che portano le istruzioni per la proteina.
+- **Introni** (da *intervening*): sequenze di mezzo che non servono per la proteina e devono essere **tagliate via**.
+
+Lo **splicing** è esattamente questo: tagliare gli introni e incollare insieme gli esoni, come montare un film eliminando le scene tagliate.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il gene è come un film grezzo con scene inutili (introni). Lo splicing è il montaggio: si buttano le scene inutili e si uniscono quelle buone (esoni) per ottenere il film finale (mRNA maturo).</div>
+
+---
+
+## Chi fa il lavoro? Lo spliceosoma
+
+Lo splicing non avviene da solo: lo esegue una macchina molecolare gigantesca chiamata **spliceosoma**.
+
+Lo spliceosoma è formato da cinque componenti principali detti **snRNP** (si pronuncia "snurp"). Ogni snRNP contiene:
+- un piccolo RNA nucleare (**snRNA**, *small nuclear RNA*) — il pezzo di RNA che "riconosce" le sequenze da tagliare,
+- alcune proteine di supporto.
+
+I cinque snRNP principali sono: **U1, U2, U4, U5, U6**.
+
+Il processo avviene in tre fasi:
+1. U1 si attacca al confine esone-introne all'inizio dell'introne (sito 5').
+2. U2 riconosce un punto speciale dentro l'introne (il "ramo A").
+3. U4, U5 e U6 si aggiungono; l'introne viene tagliato e forma un anello (struttura a lasso), poi viene eliminato.
+4. Gli esoni vengono uniti.
+
+<Diagram caption="Le fasi dello splicing: dallo spliceosoma all'mRNA maturo" code={`flowchart TB
+  A["Pre-mRNA grezzo<br/>(esoni + introni)"]
+  B["U1 snRNP si lega<br/>al sito 5' dell'introne"]
+  C["U2 snRNP riconosce<br/>il punto di ramo (A)"]
+  D["U4, U5, U6 completano<br/>lo spliceosoma"]
+  E["Taglio e formazione<br/>dell'introne a lasso (lariat)"]
+  F["Esoni uniti insieme"]
+  G["mRNA maturo pronto<br/>per la traduzione"]
+  A --> B --> C --> D --> E --> F --> G`} />
+
+---
+
+## Splicing alternativo: un gene, tante proteine
+
+Ecco la cosa più sorprendente: la cellula non è obbligata a includere **tutti** gli esoni ogni volta. Può scegliere combinazioni diverse di esoni da unire. Questo si chiama **splicing alternativo**.
+
+Immagina un mazzo di carte: hai 5 carte (esoni) e puoi costruire mani diverse ogni volta. Con lo stesso gene puoi ottenere proteine diverse — anche molto diverse per forma e funzione.
+
+**Perché è importante?**
+- L'essere umano ha circa 20.000 geni, ma produce più di 100.000 proteine diverse.
+- Lo splicing alternativo è uno dei principali motivi di questa varietà.
+- Tessuti diversi (muscolo, cervello, fegato) possono usare combinazioni diverse degli esoni dello stesso gene.
+
+Un esempio classico: il gene della **tropomiosina** produce proteine diverse nel muscolo liscio, nel muscolo striato e nei fibroblasti, usando esoni diversi.
+
+<Diagram caption="Splicing alternativo: dallo stesso pre-mRNA si ottengono proteine diverse" code={`flowchart LR
+  PRE["Pre-mRNA<br/>E1 - I1 - E2 - I2 - E3"]
+  PRE --> P1["mRNA tipo A<br/>E1 + E2 + E3"]
+  PRE --> P2["mRNA tipo B<br/>E1 + E3<br/>(E2 saltato)"]
+  PRE --> P3["mRNA tipo C<br/>E1 + E2<br/>(E3 saltato)"]
+  P1 --> PR1["Proteina A"]
+  P2 --> PR2["Proteina B"]
+  P3 --> PR3["Proteina C"]`} />
+
+---
+
+## I ribozimi: quando l'RNA fa da enzima
+
+Gli enzimi di solito sono proteine. Ma esiste un gruppo speciale di molecole RNA che si comportano **come enzimi**: si chiamano **ribozimi** (*ribonucleic acid + enzyme*).
+
+Lo spliceosoma è considerato un ribozima perché sono gli **snRNA** (non le proteine) a catalizzare le reazioni chimiche del taglio e dell'unione degli esoni. Le proteine servono da impalcatura, ma il lavoro chimico lo fa l'RNA.
+
+Esistono anche **introni autocatalitici** (gruppo I e gruppo II) che si rimuovono da soli, senza aiuto di proteine — sono ribozimi puri. Questo ha un significato evolutivo enorme: suggerisce che la vita potrebbe essere nata in un mondo dominato dall'RNA ("RNA world"), prima che comparissero le proteine.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un ribozima è un RNA che funziona da forbice molecolare — taglia e incolla senza aver bisogno di una proteina. Lo spliceosoma funziona proprio così: è il suo RNA (gli snRNA) a fare il taglio vero.</div>
+
+---
+
+## Guarda il video
+<YouTube id="a8wnpV3qvrQ" title="SPLICING ALTERNATIVO e SCELTA del SITO DI POLIADENILAZIONE - Biologia con Giulia" />
+<VideoVisto id="bio-u3-14" />
+
+---
+
+## Da ricordare
+- Lo **splicing** rimuove gli introni e unisce gli esoni del pre-mRNA; lo esegue lo **spliceosoma**, composto da cinque snRNP (U1, U2, U4, U5, U6) che usano snRNA per riconoscere i siti di taglio.
+- Lo **splicing alternativo** permette di produrre proteine diverse dallo stesso gene, scegliendo quali esoni includere: spiega come 20.000 geni generano oltre 100.000 proteine.
+- I **ribozimi** sono molecole di RNA con attività catalitica; gli snRNA dello spliceosoma sono ribozimi, e gli introni autocatalitici dimostrano che l'RNA può agire da enzima senza proteine.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale componente dello spliceosoma riconosce per primo il sito 5' dell'introne?"
+  opzioni={["U2 snRNP", "U1 snRNP", "U6 snRNP", "U4 snRNP"]}
+  corretta={1}
+  spiegazione="U1 snRNP è il primo a legarsi: riconosce la sequenza consenso al confine esone-introne sul lato 5' (inizio dell'introne). Solo dopo arrivano U2 e poi il complesso U4/U5/U6."
+/>
+
+<Quiz
+  domanda="Grazie allo splicing alternativo, quante proteine diverse può produrre un singolo gene?"
+  opzioni={["Solo una, sempre uguale", "Al massimo due, una per strand", "Molte proteine diverse, combinando esoni in modi diversi", "Tante quante sono gli introni presenti"]
+  }
+  corretta={2}
+  spiegazione="Lo splicing alternativo permette di includere o escludere specifici esoni durante il processamento del pre-mRNA, generando così mRNA diversi dallo stesso gene e quindi proteine con strutture e funzioni diverse."
+/>
+
+<Quiz
+  domanda="Perché lo spliceosoma è considerato un ribozima?"
+  opzioni={["Perché contiene solo proteine senza RNA", "Perché è fatto interamente di DNA", "Perché le sue proteine catalizzano la reazione di taglio", "Perché sono gli snRNA a catalizzare le reazioni chimiche di taglio e giunzione degli esoni"]
+  }
+  corretta={3}
+  spiegazione="Un ribozima è una molecola di RNA con attività catalitica. Nello spliceosoma, le proteine fanno da impalcatura strutturale, ma sono gli snRNA (in particolare U2 e U6) a eseguire la chimica del taglio e della giunzione — quindi l'RNA agisce da enzima."
+/>
+
+<Esercizio
+  problema="Un gene ha 4 esoni (E1, E2, E3, E4) e 3 introni. Elenca almeno 3 possibili mRNA che si possono ottenere con lo splicing alternativo, e descrivi brevemente che tipo di proteina diversa potrebbe risultare da ciascuno."
+  soluzione="Possibili combinazioni: (1) E1+E2+E3+E4 → proteina completa con tutti i domini; (2) E1+E3+E4 → proteina con dominio di E2 assente, può avere funzione ridotta o diversa; (3) E1+E2+E4 → proteina senza il dominio codificato da E3, potrebbe localizzarsi in modo diverso nella cellula; (4) E1+E4 → proteina molto corta con solo i domini N-terminale e C-terminale. Ogni combinazione può produrre una proteina con caratteristiche strutturali e funzionali diverse, spiegando come un solo gene contribuisce alla complessità del proteoma."
+/>
+
+</section>
+
+</RisorsaLayout>

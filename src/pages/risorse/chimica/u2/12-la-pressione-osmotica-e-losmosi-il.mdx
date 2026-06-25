@@ -1,0 +1,112 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-12">
+
+Immagina due bicchieri d'acqua separati da una parete speciale: una **membrana semipermeabile**. Questa parete ha dei buchini piccolissimi. Lascia passare l'**acqua**, ma non lascia passare le particelle disciolte (per esempio lo zucchero o il sale), che sono troppo grosse. Se da una parte l'acqua è più "affollata" di particelle e dall'altra è più pulita, succede una cosa curiosa: l'acqua si sposta da sola verso la parte più affollata. Questo movimento spontaneo dell'acqua si chiama **osmosi**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> l'acqua è "altruista": si sposta dalla zona dove ci sono poche particelle verso la zona dove ce ne sono tante, per diluirla. È come quando in una stanza troppo piena la gente cerca di redistribuirsi: l'acqua fa lo stesso, cercando di pareggiare la concentrazione tra le due parti.</div>
+
+## Cos'è l'osmosi
+
+L'acqua passa **sempre verso il lato più concentrato** (quello con più particelle disciolte). Perché? Perché la natura vuole "pareggiare i conti": se da una parte l'acqua è troppo affollata di soluto, arriva altra acqua a diluire, così le due parti diventano più simili.
+
+<Diagram caption="L'acqua attraversa la membrana e va verso il lato più concentrato" code={`flowchart LR
+  A["Lato POCO concentrato<br/>(tanta acqua, poco soluto)"] -->|"l'acqua passa di qua"| M["Membrana<br/>semipermeabile"]
+  M -->|"verso il piu concentrato"| B["Lato MOLTO concentrato<br/>(tante particelle di soluto)"]`} />
+
+Nota che passa **solo l'acqua**, non il soluto: la membrana fa da filtro. Il risultato è che il livello del liquido **si alza** dal lato più concentrato, perché lì sta arrivando acqua in più.
+
+## La pressione osmotica
+
+Se l'acqua continua a entrare nel lato concentrato, il livello sale sempre di più. A un certo punto possiamo **fermare** questo flusso premendo dall'alto con una certa forza. La **pressione** che dobbiamo applicare per bloccare l'osmosi si chiama **pressione osmotica** (simbolo: la lettera greca pi greco). Più la soluzione è concentrata, più forte dobbiamo premere.
+
+La formula è semplice e assomiglia a quella dei gas:
+
+`pi = M * R * T`
+
+dove **M** è la concentrazione (molarità), **R** è la solita costante dei gas e **T** è la temperatura in kelvin. Tradotto: più particelle ci sono e più è calda la soluzione, più alta è la pressione osmotica.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la pressione osmotica misura "quanta voglia ha l'acqua di entrare" in una soluzione. Tanto soluto = tanta voglia = pressione alta.</div>
+
+### Perché conta in medicina e veterinaria
+
+Questo non è solo teoria: le tue **cellule** sono sacchetti circondati da una membrana semipermeabile, proprio come quella dei bicchieri. Per questo i medici stanno molto attenti alla concentrazione dei liquidi che entrano nel corpo:
+
+- Una **flebo** (soluzione fisiologica) deve avere la **stessa** concentrazione del sangue. Se fosse troppo diluita, l'acqua entrerebbe nei globuli rossi fino a farli **scoppiare**. Se fosse troppo concentrata, l'acqua **uscirebbe** dalle cellule, che si **raggrinzirebbero**.
+- È lo stesso motivo per cui bere **acqua di mare** disidrata: il sale, troppo concentrato, tira l'acqua **fuori** dalle tue cellule.
+
+## Il fattore di van't Hoff (per i sali)
+
+Ecco il passaggio più delicato, ma andiamo piano. Alcune sostanze, quando si sciolgono in acqua, si **rompono in pezzi**. Si chiamano **elettroliti** (per esempio il sale da cucina, NaCl).
+
+Il sale NaCl, appena tocca l'acqua, si spezza in **due** particelle separate: uno ione sodio e uno ione cloro. Quindi una "pallina" di sale ne genera **due** in soluzione. E siccome la pressione osmotica conta il **numero di particelle**, dobbiamo tenerne conto.
+
+Per farlo si aggiunge un numero alla formula, il **fattore di van't Hoff** (simbolo **i**):
+
+`pi = i * M * R * T`
+
+Il fattore **i** dice **in quanti pezzi** si rompe ogni unità di sostanza:
+
+- **Zucchero** (non si rompe): `i = 1` → resta una particella.
+- **NaCl** (si spezza in 2): `i = 2`.
+- **CaCl2** (si spezza in 3: un calcio e due cloro): `i = 3`.
+
+<Diagram caption="Il fattore i conta in quante particelle si rompe la sostanza in acqua" code={`flowchart TB
+  Z["Zucchero in acqua"] --> Z1["resta 1 particella<br/>i = 1"]
+  N["Sale NaCl in acqua"] --> N1["si rompe in 2 ioni<br/>i = 2"]
+  C["CaCl2 in acqua"] --> C1["si rompe in 3 ioni<br/>i = 3"]`} />
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il fattore di van't Hoff è solo un "moltiplicatore". Conta quanti pezzi fa una sostanza quando si scioglie. Un sale che si spezza in 2 conta doppio rispetto allo zucchero, e quindi ha una pressione osmotica doppia.</div>
+
+## Guarda il video
+
+<YouTube id="Jh4uOrdUd_w" title="La pressione osmotica spiegata semplice — La Chimica per Tutti" />
+
+<VideoVisto id="chim-u2-12" />
+
+## Da ricordare
+
+- **Osmosi** = l'acqua passa da sola attraverso una membrana semipermeabile verso il lato **più concentrato**.
+- Passa **solo l'acqua**, non il soluto: la membrana fa da filtro.
+- La **pressione osmotica** è la forza che serve a **fermare** l'osmosi: `pi = i * M * R * T`.
+- Le **cellule** del corpo si comportano come sacchetti con membrana semipermeabile: per questo le flebo devono avere la concentrazione giusta.
+- Il **fattore di van't Hoff (i)** dice in quanti pezzi si rompe la sostanza: zucchero `i = 1`, NaCl `i = 2`, CaCl2 `i = 3`.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Nell'osmosi, da che parte si sposta l'acqua attraverso la membrana semipermeabile?"
+  opzioni={["verso il lato meno concentrato", "verso il lato più concentrato di soluto", "non si sposta mai", "verso il lato più freddo"]}
+  corretta={1}
+  spiegazione="L'acqua va verso il lato più concentrato per diluirlo e pareggiare le due parti. Passa solo l'acqua, non il soluto."
+/>
+
+<Quiz
+  domanda="Cos'è la pressione osmotica?"
+  opzioni={["la pressione che fa scoppiare la membrana", "la forza che serve a fermare l'osmosi", "il peso del soluto", "la temperatura della soluzione"]}
+  corretta={1}
+  spiegazione="È la pressione minima che dobbiamo applicare per bloccare il passaggio dell'acqua, cioè per fermare l'osmosi. Vale pi = i*M*R*T."
+/>
+
+<Quiz
+  domanda="Il sale da cucina NaCl sciolto in acqua si rompe in 2 ioni. Quanto vale il suo fattore di van't Hoff (i)?"
+  opzioni={["i = 1", "i = 2", "i = 0", "i = 3"]}
+  corretta={1}
+  spiegazione="NaCl si spezza in uno ione sodio e uno ione cloro: 2 particelle, quindi i = 2. Lo zucchero invece non si rompe e ha i = 1."
+/>
+
+<Esercizio
+  problema="Hai due soluzioni alla stessa concentrazione M e alla stessa temperatura T. Una è di zucchero (i = 1), l'altra di sale NaCl (i = 2). Quale delle due ha la pressione osmotica più alta, e di quante volte?"
+  soluzione="Quella di sale NaCl. La formula è pi = i*M*R*T: visto che M, R e T sono uguali, conta solo il fattore i. Lo zucchero ha i = 1, il sale ha i = 2, quindi la pressione osmotica del sale è il doppio (2 volte) di quella dello zucchero. Motivo: il sale si rompe in 2 particelle, e la pressione osmotica dipende dal numero di particelle disciolte."
+/>
+
+</section>
+
+</RisorsaLayout>

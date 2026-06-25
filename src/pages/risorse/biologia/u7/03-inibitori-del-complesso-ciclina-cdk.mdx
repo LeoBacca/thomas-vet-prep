@@ -1,0 +1,110 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u7-03">
+
+## Il ciclo cellulare ha bisogno di un freno
+
+Immagina la cellula come un'auto che deve percorrere un tragitto preciso. Il motore che la fa avanzare è il **complesso ciclina-CDK** (ciclina + chinasi ciclina-dipendente). Ma un'auto senza freni è pericolosa: potrebbe accelerare fuori controllo e provocare un incidente — in biologia questo corrisponde al cancro.
+
+Il "sistema frenante" della cellula sono le **proteine inibitrici del complesso ciclina-CDK**, chiamate **CKI** (dall'inglese *Cyclin-dependent Kinase Inhibitors*, ovvero inibitori delle chinasi ciclina-dipendenti).
+
+---
+
+## Cosa sono le CDK e perché vanno bloccate?
+
+Le **CDK** sono enzimi (proteine che fanno reazioni chimiche). Da sole non funzionano: devono legarsi a una **ciclina** per attivarsi. Una volta attivo, il complesso ciclina-CDK "autorizza" la cellula a passare alla fase successiva del ciclo.
+
+Problema: se questo complesso restasse sempre attivo, la cellula si dividerebbe senza controllo.
+
+Le **CKI** entrano in scena proprio qui: si attaccano al complesso ciclina-CDK e lo bloccano, come un lucchetto messo sul motore.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le CKI sono i freni del ciclo cellulare — bloccano il complesso ciclina-CDK e impediscono alla cellula di dividersi troppo in fretta o nel momento sbagliato.</div>
+
+---
+
+## Le due famiglie di inibitori (CKI)
+
+Esistono due grandi famiglie di proteine inibitrici:
+
+### Famiglia INK4 (p15, p16, p18, p19)
+
+- Agiscono nella **fase G1** del ciclo.
+- Si legano **solo alla CDK** (non alla ciclina), impedendo che la ciclina si attacchi.
+- È come togliere la chiave dal motore: la macchina non può partire.
+- Esempio importante: **p16** è spesso inattivata nei tumori.
+
+### Famiglia CIP/KIP (p21, p27, p57)
+
+- Si legano al **complesso già formato** ciclina-CDK e lo spengono dall'interno.
+- **p21** è attivata da **p53** (la "guardiana del genoma") quando il DNA è danneggiato: blocca il ciclo per dare tempo alle riparazioni.
+- **p27** regola il passaggio G1 → S: se mancano segnali di crescita, p27 resta alta e la cellula non si divide.
+
+---
+
+## Quando vengono attivati gli inibitori?
+
+Le CKI aumentano in risposta a segnali precisi:
+
+1. **Danno al DNA** — p53 induce p21, che blocca il ciclo in G1 o G2.
+2. **Mancanza di fattori di crescita** — p27 rimane elevata, frenando l'entrata in fase S.
+3. **Differenziamento cellulare** — le cellule specializzate smettono di dividersi anche grazie alle CKI.
+4. **Senescenza** — cellule vecchie usano p16 per restare ferme permanentemente.
+
+---
+
+<Diagram caption="Le due famiglie di inibitori CKI e come bloccano il complesso ciclina-CDK" code={`flowchart TB
+  A["Segnale di stop<br/>(danno DNA, stress, differenziamento)"]
+  A --> B["Famiglia INK4<br/>(p15, p16, p18, p19)"]
+  A --> C["Famiglia CIP/KIP<br/>(p21, p27, p57)"]
+  B --> D["Si lega alla CDK da sola<br/>impedisce il legame con la ciclina"]
+  C --> E["Si lega al complesso<br/>ciclina-CDK già formato"]
+  D --> F["Complesso ciclina-CDK INATTIVO"]
+  E --> F
+  F --> G["Ciclo cellulare BLOCCATO"]`} />
+
+<Diagram caption="Via di segnalazione di p53 → p21: dal danno al DNA al blocco del ciclo" code={`flowchart TB
+  A["Danno al DNA<br/>(raggi UV, errori di replicazione)"]
+  A --> B["Attivazione di p53<br/>(proteina guardiana del genoma)"]
+  B --> C["p53 attiva la trascrizione del gene p21"]
+  C --> D["Produzione della proteina p21<br/>(CKI famiglia CIP/KIP)"]
+  D --> E["p21 blocca il complesso<br/>ciclina E-CDK2 e ciclina D-CDK4/6"]
+  E --> F["Blocco in G1 e G2"]
+  F --> G["La cellula ripara il DNA<br/>prima di procedere"]
+  G --> H{"DNA riparato?"}
+  H -->|"Sì"| I["p21 diminuisce,<br/>ciclo riprende"]
+  H -->|"No"| J["Apoptosi<br/>(morte cellulare programmata)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="90tXsk4mkkM" title="Regolazione CICLO CELLULARE. Fattori di Crescita, Citochine, Ciclina (Proteina), Cdk (Enzima), APC" />
+<VideoVisto id="bio-u7-03" />
+
+---
+
+## Da ricordare
+
+- Le **CKI** (inibitori delle chinasi ciclina-dipendenti) sono proteine che bloccano il complesso ciclina-CDK, fermando la progressione del ciclo cellulare.
+- Esistono due famiglie: **INK4** (bloccano la CDK libera, in G1) e **CIP/KIP** (bloccano il complesso già formato; p21 è indotta dal danno al DNA via p53).
+- Quando le CKI vengono inattivate per mutazione, il ciclo perde il freno e la cellula può trasformarsi in cellula tumorale.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale famiglia di inibitori CKI si lega direttamente alla CDK libera, impedendo il legame con la ciclina?" opzioni={["Famiglia CIP/KIP (p21, p27, p57)","Famiglia INK4 (p15, p16, p18, p19)","Famiglia delle cicline di tipo D","Famiglia delle fosfatasi CDC25"]} corretta={1} spiegazione="La famiglia INK4 si lega alla CDK libera (non al complesso già formato) e impedisce fisicamente che la ciclina si associ alla CDK. La famiglia CIP/KIP invece blocca il complesso ciclina-CDK già assemblato." />
+
+<Quiz domanda="Quale proteina inibitrice viene prodotta in risposta al danno al DNA, su attivazione di p53?" opzioni={["p27","p16","p21","p57"]} corretta={2} spiegazione="p53, la 'guardiana del genoma', attiva la trascrizione del gene che codifica p21. Questa proteina CKI blocca i complessi ciclina-CDK e ferma il ciclo cellulare in G1/G2, dando tempo alla cellula di riparare il DNA." />
+
+<Quiz domanda="Se una mutazione inattiva il gene che codifica per p16, quale conseguenza è più probabile?" opzioni={["La cellula smette di dividersi completamente","Il complesso ciclina D-CDK4/6 resta attivo senza freni e la cellula si divide in modo incontrollato","p21 viene automaticamente sovraespressa per compensare","Il DNA viene riparato più velocemente"]} corretta={1} spiegazione="p16 (famiglia INK4) è un inibitore di CDK4 e CDK6. Se p16 è inattiva, CDK4/6 legate alla ciclina D restano attive, la proteina Rb viene iperfosforilata e la cellula supera il checkpoint G1 senza controllo: tipico meccanismo pro-tumorale." />
+
+<Esercizio problema="Una cellula è esposta a radiazioni UV che danneggiano il DNA. Descrivi, passo per passo, come il sistema delle CKI interviene per proteggere la cellula, indicando le proteine coinvolte nell'ordine corretto." soluzione="1. Le radiazioni UV causano lesioni al DNA (es. dimeri di timina). 2. Sensori del danno attivano la chinasi ATM/ATR. 3. ATM/ATR fosforilano e stabilizzano p53. 4. p53 attiva la trascrizione del gene CDKN1A, che codifica per p21. 5. p21 (famiglia CIP/KIP) si lega ai complessi ciclina E-CDK2 e ciclina D-CDK4/6, inibendoli. 6. Il ciclo cellulare si arresta in G1 (e parzialmente in G2). 7. I sistemi di riparazione del DNA entrano in azione. 8. Se il DNA viene riparato, i livelli di p21 diminuiscono e il ciclo riprende. 9. Se il danno è irreparabile, p53 induce l'apoptosi (morte cellulare programmata) per eliminare la cellula pericolosa." />
+
+</section>
+
+</RisorsaLayout>

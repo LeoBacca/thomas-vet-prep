@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u5-10-1",
+    "topicId": "fis-u5-10",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: in un sistema isolato, l'entropia puo diminuire spontaneamente se la temperatura e sufficientemente bassa.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il secondo principio della termodinamica dice che in un sistema isolato l'entropia non diminuisce MAI spontaneamente, a qualsiasi temperatura. Puo aumentare (processo irreversibile) o restare costante (processo reversibile ideale), ma mai scendere da sola.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-10-2",
+    "topicId": "fis-u5-10",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Qual e la definizione piu semplice di entropia (S)?",
+    "choices": [
+      "Una misura del disordine di un sistema: piu configurazioni possibili ha, piu alta e la sua entropia",
+      "La quantita di calore contenuta in un corpo",
+      "La differenza di temperatura tra due corpi a contatto",
+      "La velocita con cui avviene un processo termodinamico"
+    ],
+    "answer": 0,
+    "explain": "L'entropia misura il disordine, cioe quante configurazioni diverse un sistema puo assumere. Pensa al mazzo di carte: c'e un solo modo ordinato, ma miliardi di modi disordinati. Non e calore (quello e Q), non e temperatura (quella e T), non e velocita. In un animale, per esempio, la decomposizione dopo la morte porta a un aumento di entropia: da una struttura complessa e ordinata si passa a molecole semplici sparse nell'ambiente.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-10-3",
+    "topicId": "fis-u5-10",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "open",
+    "q": "Spiega con parole tue: cos'e l'entropia, perche tende ad aumentare nei processi spontanei, e come si calcola la sua variazione. Fai un esempio di processo spontaneo in cui l'entropia aumenta.",
+    "answer": "L'entropia (S) e una misura del disordine di un sistema: piu modi ha di arrangiarsi, piu alta e la sua entropia. Tende ad aumentare perche gli stati disordinati sono enormemente piu numerosi di quelli ordinati — e solo questione di probabilita, non di una forza misteriosa. Se mescoli a caso un mazzo di carte, e quasi impossibile che esca in ordine perfetto, semplicemente perche i modi disordinati sono di gran lunga di piu. Questo e il secondo principio della termodinamica: in un sistema isolato, l'entropia non diminuisce mai spontaneamente. La variazione di entropia si calcola (per processi reversibili a temperatura costante T) con la formula ΔS = Q / T, dove Q e il calore scambiato in joule e T e la temperatura assoluta in kelvin. Se il sistema assorbe calore, ΔS e positivo (entropia aumenta); se lo cede, ΔS e negativo (entropia diminuisce). Esempio: un cubetto di ghiaccio che si scioglie in una stanza calda. Le molecole d'acqua passano da una struttura cristallina ordinata (solido) a uno stato liquido disordinato → l'entropia aumenta spontaneamente.",
+    "explain": "Tre punti chiave: 1) S = misura del disordine / numero di configurazioni. 2) Secondo principio: in un sistema isolato ΔS ≥ 0. 3) Formula: ΔS = Q / T (T in kelvin, non in gradi Celsius).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u5-10-4",
+    "topicId": "fis-u5-10",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quanto vale la variazione di entropia nella fusione di 1 kg di ferro a pressione atmosferica? (Calore latente di fusione: L = 234 500 J/kg; temperatura di fusione: 1536 °C)",
+    "choices": [
+      "Circa 130 J/K",
+      "Circa 153 J/K",
+      "Circa 130 J/°C",
+      "Circa 1300 J/K",
+      "Circa 1530 J/°C"
+    ],
+    "answer": 0,
+    "explain": "Formula: ΔS = Q / T. Il calore assorbito e Q = L × m = 234 500 J/kg × 1 kg = 234 500 J. La temperatura DEVE essere in kelvin: T = 1536 + 273 = 1809 K. Quindi ΔS = 234 500 / 1809 ≈ 130 J/K. TRAPPOLA piu comune: usare T = 1536 °C invece di 1809 K → si ottiene 234 500 / 1536 ≈ 153 J (opzione B, che sembra plausibile). TRAPPOLA di unita: J/°C non esiste come unita di entropia (opzioni C ed E) — l'entropia si esprime in J/K, con i kelvin. TRAPPOLA ordine di grandezza: 1300 J/K (opzione D) sarebbe il risultato se si dividesse per 180 anziche per 1809, cioe si dimenticasse la conversione da Celsius a Kelvin per intero.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u5-10-5",
+    "topicId": "fis-u5-10",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un sistema assorbe 600 J di calore a temperatura costante di 27 °C. Qual e la sua variazione di entropia?",
+    "choices": [
+      "22,2 J/K",
+      "2 J/K",
+      "600 J/K",
+      "0,045 J/K",
+      "2 J/°C"
+    ],
+    "answer": 1,
+    "explain": "T deve essere in kelvin: T = 27 + 273 = 300 K. ΔS = Q / T = 600 / 300 = 2 J/K. TRAPPOLA piu comune: usare T = 27 °C invece di 300 K → 600 / 27 ≈ 22,2 J/K (opzione A, risultato sbagliato). TRAPPOLA: confondere la variazione di entropia con il calore e rispondere 600 J/K (opzione C). TRAPPOLA invertita: dividere T per Q invece di Q per T, per giunta in gradi Celsius → 27 / 600 ≈ 0,045 (opzione D). FILLER di unita: J/°C non e un'unita valida per l'entropia, che si misura in J/K (opzione E).",
+    "tags": ["prova d'esame"]
+  }
+]

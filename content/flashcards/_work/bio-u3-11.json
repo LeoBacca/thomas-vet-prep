@@ -1,0 +1,25 @@
+{
+ "id": "bio-u3-11",
+ "titolo": "Promotori prossimali/distali (enhancer, silencer) e fattori specifici (recettori ormoni steroidei)",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "11-promotori-prossimali-distali-enhancer-silencer-e",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u3/11-promotori-prossimali-distali-enhancer-silencer-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2022",
+   "q": "Negli Eucarioti, i fattori trascrizionali regolano l'espressione genica grazie all'interazione con:",
+   "choices": [
+    "brevi sequenze regolatrici di DNA",
+    "brevi sequenze regolatrici di mRNA",
+    "sequenze regolatrici dello splicing",
+    "domini regolatori dell'attività delle primasi",
+    "sequenze mobili di DNA (trasposoni)"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

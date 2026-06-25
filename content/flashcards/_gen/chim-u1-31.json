@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-31-1",
+    "topicId": "chim-u1-31",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: la natura tende spontaneamente verso il disordine, cioè verso entropia (S) più alta.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. L'entropia misura il disordine. Come la tua stanza lasciata sola si disordina da sola (non si riordina da sola), anche la natura va verso stati più disordinati. Una goccia di inchiostro si sparge nell'acqua da sola; non si ricompatta. ΔS > 0 significa che il disordine è aumentato.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-31-2",
+    "topicId": "chim-u1-31",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "L'energia libera di Gibbs (ΔG) è il 'giudice' della spontaneità. Quale segno di ΔG significa che la reazione VA DA SOLA?",
+    "choices": [
+      "ΔG < 0 (negativo): la reazione è in discesa, va da sola",
+      "ΔG > 0 (positivo): la reazione ha energia in eccesso",
+      "ΔG = 0: la reazione è in pareggio perfetto",
+      "Il segno non conta: conta solo la temperatura"
+    ],
+    "answer": 0,
+    "explain": "ΔG < 0 significa reazione spontanea (esoergonica): come una pallina che rotola a valle, va da sola. ΔG > 0 = non spontanea (endoergonica, da sola non parte). ΔG = 0 = equilibrio. Attenzione: 'spontaneo' vuol dire 'può andare da solo', NON 'va veloce'.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-31-3",
+    "topicId": "chim-u1-31",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue: cosa tiene insieme DeltaH (calore) e DeltaS (disordine) per decidere se una reazione è spontanea? Scrivi la formula e spiega cosa succede quando le due 'spinte' vanno in senso opposto.",
+    "answer": "La formula che tiene insieme tutto è ΔG = ΔH − T·ΔS. Ci sono due 'spinte' verso la spontaneità: (1) l'energia che esce, cioè ΔH < 0 (esotermica), che abbassa ΔG; (2) il disordine che aumenta, cioè ΔS > 0, che anch'esso abbassa ΔG (perché c'è un meno davanti al termine T·ΔS). Quando le due spinte vanno nello stesso verso — cioè ΔH < 0 E ΔS > 0 — ΔG è sempre negativo: la reazione è spontanea a qualsiasi temperatura. Quando vanno in verso opposto (es. ΔH > 0 ed ΔS < 0), ΔG è sempre positivo: mai spontanea. Quando una aiuta e l'altra frena, decide la temperatura T: ad alta T pesa di più il termine del disordine (T·ΔS), a bassa T pesa di più il calore.",
+    "explain": "La chiave: ΔG = ΔH − T·ΔS combina calore e disordine in un unico numero. Solo il segno di ΔG decide la spontaneità.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-31-4",
+    "topicId": "chim-u1-31",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Una reazione avviene spontaneamente quando: (domanda d'esame stile 2024 Luglio)",
+    "choices": [
+      "La somma della variazione di entropia dell'ambiente e del sistema è positiva",
+      "La variazione di entropia del sistema è minore di 0",
+      "La variazione di entropia dell'ambiente è maggiore di 0",
+      "La variazione di entropia dell'ambiente è minore di 0",
+      "La variazione di entropia del sistema è nulla"
+    ],
+    "answer": 0,
+    "explain": "Corretta: A. La spontaneità richiede che l'entropia TOTALE (sistema + ambiente) aumenti, cioè ΔS_tot > 0. Questo è equivalente a ΔG < 0. TRAPPOLE: B e D sono l'opposto esatto (la tendenza naturale è ΔS > 0, non < 0). C ('ambiente > 0') è parzialmente vera ma non basta da sola: conta la somma totale, non solo l'ambiente. E ('sistema nulla') è un filler fuori tema: l'entropia del sistema nulla non implica nulla sulla spontaneità.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-31-5",
+    "topicId": "chim-u1-31",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale affermazione è VERA per una reazione spontanea? (domanda d'esame stile 2024 Maggio)",
+    "choices": [
+      "È sempre endotermica (assorbe calore)",
+      "Ha sempre un ΔG negativo",
+      "È sempre esotermica (rilascia calore)",
+      "Necessita sempre di un catalizzatore",
+      "Va sempre molto veloce"
+    ],
+    "answer": 1,
+    "explain": "Corretta: B. L'unica caratteristica che definisce SEMPRE una reazione spontanea è ΔG < 0. TRAPPOLE: A ed C sono le trappole classiche — l'esame mette insieme 'esotermico' ed 'endotermico' per confondere chi scambia ΔH con ΔG. Una reazione può essere spontanea sia se rilascia calore (esotermica) sia se lo assorbe (endotermica), purché ΔG < 0. D ('sempre catalizzatore') è un filler fuori tema: il catalizzatore accelera la reazione, non la rende spontanea. E ('sempre veloce') è l'errore classico: 'spontaneo' vuol dire 'può andare da solo', non 'va veloce'.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u5-09-1",
+    "topicId": "fis-u5-09",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: una macchina termica perfetta potrebbe teoricamente trasformare il 100% del calore assorbito in lavoro utile, senza scartare nulla verso la sorgente fredda.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. E una legge di natura (non un difetto di progettazione): ogni macchina termica deve sempre scaricare una parte del calore verso la sorgente fredda. Pensa a un motorino: bruci carburante (sorgente calda), una parte muove la ruota (lavoro utile), ma il motore scalda l'aria intorno (sorgente fredda) — quella parte e irrecuperabile.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-09-2",
+    "topicId": "fis-u5-09",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "open",
+    "q": "Un motore assorbe Q_h = 1000 J dalla sorgente calda e scarica Q_c = 600 J nella sorgente fredda. Quanto vale il rendimento η? E se una macchina di Carnot operasse tra T_h = 500 K e T_c = 300 K, quale sarebbe il suo rendimento massimo teorico?",
+    "answer": "Rendimento reale: il lavoro prodotto e W = Q_h - Q_c = 1000 - 600 = 400 J. Quindi η = W / Q_h = 400 / 1000 = 0,40, cioe il 40%. Rendimento di Carnot: η_Carnot = 1 - T_c / T_h = 1 - 300/500 = 1 - 0,6 = 0,40, cioe il 40%. (In questo caso i due valori coincidono per come sono stati scelti i numeri.) Da ricordare: le temperature nel ciclo di Carnot si mettono sempre in Kelvin, non in gradi Celsius.",
+    "explain": "Formule chiave: η = 1 - Q_c/Q_h (rendimento reale); η_Carnot = 1 - T_c/T_h (limite massimo teorico, temperature in Kelvin). Il rendimento reale non supera mai quello di Carnot.",
+    "tags": ["risposta aperta"]
+  }
+]

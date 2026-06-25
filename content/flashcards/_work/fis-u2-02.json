@@ -1,0 +1,39 @@
+{
+ "id": "fis-u2-02",
+ "titolo": "Velocità media e istantanea",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "02-velocita-media-e-istantanea",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/fisica/u2/02-velocita-media-e-istantanea.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "In auto percorriamo un primo tratto in leggera discesa di 100 km alla velocità costante di 100 km/h, e un secondo tratto in salita di 100 km alla velocità costante di 50 km/h. Possiamo affermare che:",
+   "choices": [
+    "la media delle velocità indicate dal tachimetro durante il moto è circa 66,7 km/h",
+    "la media delle velocità indicate dal tachimetro durante il moto è circa 75 km/h",
+    "dato che abbiamo tratti in discesa, è impossibile che la velocità possa rimanere costante",
+    "nessuna delle altre risposte proposte è corretta, visto che non abbiamo tenuto conto della natura vettoriale della velocità",
+    "il modulo del vettore velocità media può essere anche superiore a 100 km/h, dato che non ci muoviamo lungo una retta"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2019",
+   "q": "Un veicolo si muove in direzione Est per 10 km e successivamente, senza fermarsi, per 24 km verso Sud. Se la durata del viaggio è di 30 minuti, qual è il modulo, in km/h, della velocità vettoriale media del veicolo?",
+   "choices": [
+    "52",
+    "34",
+    "28",
+    "13",
+    "17"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

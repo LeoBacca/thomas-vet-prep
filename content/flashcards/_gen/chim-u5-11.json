@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u5-11-1",
+    "topicId": "chim-u5-11",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: in chimica, una molecola 'aromatica' profuma per forza.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. 'Aromatico' in chimica non ha nulla a che fare con l'odore: indica una molecola ad anello che è extra stabile perché i suoi elettroni 'girano' spalmati su tutto l'anello (sono delocalizzati). Il benzene, aromatico per eccellenza, è in realtà un liquido dall'odore pungente e tossico.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-11-2",
+    "topicId": "chim-u5-11",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "La regola di Hückel dice che un anello è aromatico se ha un numero 'magico' di elettroni che girano. Quali sono i primi tre numeri 'magici'?",
+    "choices": [
+      "2, 6, 10 (la formula è 4n+2 con n = 0, 1, 2...)",
+      "4, 8, 12 (la formula è 4n con n = 1, 2, 3...)",
+      "3, 6, 9 (multipli di 3)",
+      "1, 4, 9 (quadrati perfetti)"
+    ],
+    "answer": 0,
+    "explain": "La formula di Hückel è 4n+2: con n=0 dà 2, con n=1 dà 6, con n=2 dà 10. Il benzene ha 6 elettroni che girano e 6 è nella lista, quindi è aromatico. I multipli di 4 (4, 8, 12...) sono invece i numeri 'anti-aromatici': un anello con quei valori è instabile. Da ricordare per la vita: gli anelli aromatici sono ovunque nel tuo DNA, nelle proteine e nei farmaci.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-11-3",
+    "topicId": "chim-u5-11",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "open",
+    "q": "Cos'è la sostituzione elettrofila aromatica e perché l'anello del benzene 'preferisce' questo tipo di reazione invece di rompersi?",
+    "answer": "Il benzene è un anello di 6 carboni con elettroni che girano liberi su tutto l'anello: questa delocalizzazione lo rende straordinariamente stabile. Quando arriva un reagente esterno, il benzene vuole conservare questa stabilità a tutti i costi. Ecco perché sceglie la sostituzione invece dell'addizione: un reagente chiamato elettrofilo (cioè 'amante degli elettroni', una particella povera di elettroni e affamata) attacca uno dei carboni dell'anello e prende il posto di un atomo di idrogeno (H). Alla fine l'anello aromatico è ancora intero e stabile, ma ha un pezzo nuovo al posto del vecchio H. È come cambiare una singola tessera di un mosaico senza smontare tutto il pavimento. Questo meccanismo è importante per i farmaci: i chimici partono dall'anello benzenico e gli 'agganciano' gruppi diversi per costruire medicine (aspirina, paracetamolo, antibiotici).",
+    "explain": "Da ricordare: il benzene reagisce per sostituzione (non addizione) perché vuole conservare la stabilità dell'anello aromatico. L'elettrofilo prende il posto di un H.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u5-11-4",
+    "topicId": "chim-u5-11",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale tra le seguenti serie di composti è formata SOLO da composti aromatici?",
+    "choices": [
+      "Benzene, toluene, naftalene, fenantrene",
+      "Acetilene, benzene, toluene, naftalene",
+      "Toluene, benzene, butano, pentano",
+      "Toluene, naftalene, fenantrene, etilene",
+      "Butano, toluene, etilene, naftalene"
+    ],
+    "answer": 0,
+    "explain": "Benzene, toluene, naftalene e fenantrene sono tutti composti con uno o più anelli aromatici. Le altre serie contengono intrusi: acetilene (HC≡CH) è un idrocarburo alifatico con triplo legame, non aromatico; butano e pentano sono alcani (catene lineari senza anelli); etilene (C=C) ha un doppio legame ma non è ciclico né soddisfa la regola di Hückel. La trappola classica è confondere 'ha un doppio legame' con 'è aromatico': l'aromaticità richiede un anello ciclico CON elettroni delocalizzati (rispettando 4n+2).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u5-11-5",
+    "topicId": "chim-u5-11",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale delle seguenti proprietà è comune al benzene e all'etilene (CH₂=CH₂)?",
+    "choices": [
+      "L'ibridazione sp² degli atomi di carbonio",
+      "La struttura ciclica (entrambi hanno un anello)",
+      "L'ibridazione sp degli atomi di carbonio",
+      "L'aromaticità (entrambi rispettano la regola di Hückel)",
+      "La capacità di dare reazioni di sostituzione elettrofila"
+    ],
+    "answer": 0,
+    "explain": "Sia il benzene sia l'etilene hanno carboni con ibridazione sp²: ogni carbonio ha 3 legami sigma (nel piano) e un orbitale p perpendicolare che partecipa al sistema pi greco. Questa è la sola cosa in comune. Le trappole: 'struttura ciclica' è sbagliata perché l'etilene NON ha un anello (è una molecola lineare con solo 2 carboni); 'ibridazione sp' appartiene ai tripli legami (es. acetilene), non a questi due; 'aromaticità' è sbagliata perché l'etilene non è aromatico (non è ciclico e non soddisfa 4n+2); 'sostituzione elettrofila' vale per il benzene, ma l'etilene preferisce le reazioni di addizione.",
+    "tags": ["prova d'esame"]
+  }
+]

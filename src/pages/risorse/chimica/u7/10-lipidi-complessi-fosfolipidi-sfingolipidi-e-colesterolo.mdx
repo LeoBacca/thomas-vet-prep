@@ -1,0 +1,104 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-10">
+
+I **lipidi** sono i grassi del corpo. Ma non tutti i grassi servono come riserva di energia: alcuni servono a **costruire**. I **lipidi complessi** (fosfolipidi, sfingolipidi, glicolipidi) sono i mattoni con cui sono fatte le **membrane** delle cellule, cioè le "pareti" che racchiudono ogni cellula. Il **colesterolo**, invece, è un grasso speciale da cui il corpo ricava ormoni e vitamina D. Capire questi grassi vuol dire capire come è fatta ogni cellula del corpo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il fosfolipide ha una <strong>testa</strong> che ama l'acqua e due <strong>code</strong> che la odiano. Messi tutti insieme, formano un muro a doppio strato: è la membrana che avvolge la cellula, come la buccia avvolge un'arancia.</div>
+
+## Il fosfolipide: una molecola con due facce
+
+Immagina un **fiammifero con due gambe**. La capocchia è la **testa**, le gambe sono le **code**.
+
+- La **testa** contiene un gruppo **fosfato**: è **polare**, cioè ama l'acqua (la chiamiamo *idrofila*, "amica dell'acqua").
+- Le due **code** sono catene di grasso (acidi grassi): sono **apolari**, cioè odiano l'acqua (le chiamiamo *idrofobe*, "che hanno paura dell'acqua").
+
+Una molecola così, mezza che ama l'acqua e mezza che la odia, si chiama **anfipatica** (due nature in una). È un po' come il **sapone**: una parte si attacca all'acqua, l'altra al grasso. Per questo il sapone lava via l'unto.
+
+<Diagram caption="Il fosfolipide: testa polare (ama l'acqua) e due code apolari (odiano l'acqua)" code={`flowchart TB
+  F["FOSFOLIPIDE"] --> T["TESTA con fosfato<br/>polare = ama l'acqua (idrofila)"]
+  F --> C["DUE CODE di grasso<br/>apolari = odiano l'acqua (idrofobe)"]`} />
+
+## Perché si formano le membrane (il doppio strato)
+
+Metti tante di queste molecole in acqua. Le **teste** vogliono stare a contatto con l'acqua; le **code** vogliono nascondersi da essa. La soluzione che trovano da sole è geniale: si mettono in **due file affiancate**, con le teste rivolte verso l'acqua (fuori e dentro la cellula) e le **code nascoste al centro**, una contro l'altra.
+
+Nasce così il **doppio strato fosfolipidico**: il muro che separa l'interno della cellula dall'esterno. Il bello è che si forma **da solo**, senza che nessuno lo costruisca, solo per la voglia delle code di scappare dall'acqua.
+
+<Diagram caption="Il doppio strato: teste verso l'acqua, code nascoste al centro" code={`flowchart TB
+  ACQUAF["ACQUA fuori dalla cellula"] --> S1["Fila 1: teste in alto, code in basso"]
+  S1 --> CENTRO["Centro oleoso: code contro code (niente acqua)"]
+  CENTRO --> S2["Fila 2: code in alto, teste in basso"]
+  S2 --> ACQUAD["ACQUA dentro la cellula"]`} />
+
+**Rilevanza biomedica:** ogni cellula del nostro corpo, e di quello degli animali, è avvolta da questa membrana. È lei che decide cosa entra e cosa esce: nutrienti dentro, scarti fuori. Senza membrane, le cellule non esisterebbero.
+
+## Sfingolipidi e glicolipidi: cugini specializzati
+
+Oltre ai fosfolipidi, nelle membrane ci sono altri lipidi complessi simili:
+
+- **Sfingolipidi**: hanno lo stesso schema testa-code, ma sono costruiti su una "spina dorsale" diversa (una molecola chiamata *sfingosina* al posto del glicerolo). Sono abbondantissimi nelle **guaine che avvolgono i nervi**: funzionano come la **plastica isolante intorno a un filo elettrico**, e aiutano il segnale nervoso a viaggiare veloce.
+- **Glicolipidi**: sono lipidi con attaccato uno **zucchero** (in greco *glykos* vuol dire dolce). Stanno sulla faccia esterna della membrana e fanno da **etichette di riconoscimento**: aiutano le cellule a riconoscersi tra loro, un po' come un cartellino con il nome a una festa.
+
+## Il colesterolo: non solo il "cattivo" degli esami del sangue
+
+Il **colesterolo** ha una struttura tutta diversa: non ha code lunghe, ma **quattro anelli** uniti (la struttura tipica degli **steroidi**). Ha cattiva fama per via degli esami del sangue, ma in realtà è **indispensabile**:
+
+- **Nelle membrane** si infila tra i fosfolipidi e regola la **fluidità**: non troppo molli, non troppo rigide. Fa da **termostato**, come il burro che a temperatura giusta è morbido al punto giusto.
+- È il **materiale di partenza** per costruire gli **ormoni steroidei**: testosterone, estrogeni, cortisolo. Insomma, senza colesterolo non ci sarebbero questi ormoni.
+- Dalla pelle, con l'aiuto del **sole**, il colesterolo viene trasformato in **vitamina D**, importante per ossa sane.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il colesterolo non è solo un nemico. È il <strong>mattone di partenza</strong> per ormoni e vitamina D, e fa da <strong>regolatore</strong> della morbidezza delle membrane.</div>
+
+## Guarda il video
+
+<YouTube id="58AwpVwEUVs" title="Chimica organica: i lipidi (grassi, fosfolipidi, steroidi) — spiegazione per principianti" />
+
+<VideoVisto id="chim-u7-10" />
+
+## Da ricordare
+
+- Il **fosfolipide** è **anfipatico**: testa polare (ama l'acqua) + due code apolari (odiano l'acqua), come il sapone.
+- In acqua i fosfolipidi formano da soli un **doppio strato**: è la **membrana** che avvolge ogni cellula.
+- **Sfingolipidi** = isolante dei nervi; **glicolipidi** = lipidi con zucchero, fanno da etichette di riconoscimento.
+- Il **colesterolo** è uno **steroide** (quattro anelli): regola la fluidità delle membrane.
+- Dal colesterolo nascono gli **ormoni steroidei** (testosterone, estrogeni, cortisolo) e la **vitamina D**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Perché un fosfolipide si dice 'anfipatico'?"
+  opzioni={["Perché è fatto solo di zuccheri", "Perché ha una parte che ama l'acqua e una che la odia", "Perché è sempre solido", "Perché contiene ferro"]}
+  corretta={1}
+  spiegazione="Anfipatico vuol dire 'due nature in una': la testa con il fosfato ama l'acqua (idrofila), le due code di grasso la odiano (idrofobe). Proprio come il sapone."
+/>
+
+<Quiz
+  domanda="Nel doppio strato della membrana cellulare, dove si trovano le code dei fosfolipidi?"
+  opzioni={["Rivolte verso l'acqua, all'esterno", "Nascoste al centro, una contro l'altra", "Tutte verso l'interno della cellula", "Attaccate al colesterolo del sangue"]}
+  corretta={1}
+  spiegazione="Le code odiano l'acqua, quindi si nascondono al centro del doppio strato. Le teste, che amano l'acqua, restano rivolte verso l'acqua dentro e fuori la cellula."
+/>
+
+<Quiz
+  domanda="Da quale lipide il corpo ricava ormoni come testosterone ed estrogeni e la vitamina D?"
+  opzioni={["Dai glicolipidi", "Dagli sfingolipidi", "Dal colesterolo", "Dai trigliceridi di riserva"]}
+  corretta={2}
+  spiegazione="Il colesterolo è uno steroide ed è il mattone di partenza per gli ormoni steroidei (testosterone, estrogeni, cortisolo) e, con l'aiuto del sole sulla pelle, per la vitamina D."
+/>
+
+<Esercizio
+  problema="Spiega con parole tue perché, mettendo tanti fosfolipidi in acqua, si forma DA SOLO un doppio strato (una membrana), senza che nessuno lo costruisca."
+  soluzione="Ogni fosfolipide ha la testa che ama l'acqua e le code che la odiano. In acqua, le teste cercano l'acqua mentre le code cercano di scappare da essa. Il modo più comodo per accontentare tutti è disporsi su due file affiancate: le teste verso l'acqua (sopra e sotto) e le code nascoste al centro, lontane dall'acqua. Questa disposizione si forma spontaneamente, solo per la 'voglia' delle code di evitare l'acqua: ecco il doppio strato, cioè la membrana cellulare."
+/>
+
+</section>
+
+</RisorsaLayout>

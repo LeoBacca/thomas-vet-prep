@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u3-10-1",
+    "topicId": "fis-u3-10",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: le molecole in superficie di un liquido sono tirate in tutte le direzioni in modo uguale, esattamente come quelle al centro, quindi non c'e alcuna 'pellicola' tesa sulla superficie.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Le molecole al centro sono tirate ugualmente in tutte le direzioni e si bilanciano. Quelle in superficie invece hanno vicine solo molecole sotto e di lato: la risultante le tira verso il basso, creando una specie di pelle elastica tesa — la tensione superficiale. E' per questo che un ago leggero galleggia sull'acqua invece di affondare.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-10-2",
+    "topicId": "fis-u3-10",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "open",
+    "q": "La legge di Laplace dice che la differenza di pressione dentro una goccia sferica e ΔP = 2γ/R. Cosa succede alla pressione interna se il raggio R della goccia diventa molto piccolo? Spiega con un esempio pratico.",
+    "answer": "Se R diventa molto piccolo, ΔP diventa molto grande: la pressione interna aumenta. Questo perche R e al denominatore della formula — piu piccolo e il raggio, piu alta e la pressione dentro. Esempio pratico: gonfiare un palloncino e difficile all'inizio (quando e piccolo, la pressione richiesta e alta) e diventa via via piu facile man mano che si allarga. In biologia questo spiega perche gli alveoli polmonari piu piccoli tenderebbero a svuotarsi in quelli piu grandi: il surfattante polmonare riduce γ per evitare che collassino.",
+    "explain": "Regola chiave: R piccolo → ΔP grande (rapporto inverso). La formula per la goccia e ΔP = 2γ/R; per la bolla di sapone (due superfici) e ΔP = 4γ/R.",
+    "tags": ["risposta aperta"]
+  }
+]

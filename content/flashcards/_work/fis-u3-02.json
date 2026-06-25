@@ -1,0 +1,67 @@
+{
+ "id": "fis-u3-02",
+ "titolo": "Legge di Stevino (pressione idrostatica)",
+ "materia": "fisica",
+ "unita": 3,
+ "slug": "02-legge-di-stevino-pressione-idrostatica",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/fisica/u3/02-legge-di-stevino-pressione-idrostatica.mdx",
+ "examQuestions": [
+  {
+   "year": "2008",
+   "q": "Assumendo per l'acqua di mare una densità costante di 1,03 chilogrammi/decimetro cubo, calcolare la variazione del valore di pressione tra il fondo del mare e la sua superficie sapendo che il fondo dista 3 chilometri dalla superficie.",
+   "choices": [
+    "variazione di pressione = 1,03 x 10^3 x 9,8 x 3 x 10^3 = 3,0 x 10^7 Pascal",
+    "variazione di pressione = 1,03 x 9,8 x 3 x 10^3 = 3,0 x 10^4 Pascal",
+    "variazione di pressione = 1,03 x 9,8 x 3 = 30 Pascal",
+    "variazione di pressione = 1,03 x 10^3 x 3 x 10^3 = 3,0 x 10^6 Pascal",
+    "variazione di pressione = 1,03 x 10^4 x 9,8 x 3 x 10^3 = 3,0 x 10^8 Pascal"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2010",
+   "q": "Le giraffe hanno un collo lungo circa 5 m. Assumendo per il sangue una densità pari a quella dell'acqua, che differenza di pressione ci aspettiamo alla base del collo tra quando la giraffa ha il collo disteso in verticale e quando ha il collo disteso in orizzontale?",
+   "choices": [
+    "Circa 0,5 atm",
+    "Circa 5 atm",
+    "Circa 50 cm Hg",
+    "Circa 0,05 atm",
+    "Circa 50 atm"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2011",
+   "q": "In un libro di fisiologia leggiamo che mediamente nei mammiferi la circolazione polmonare ha una pressione più bassa della circolazione sistemica. Quale tra le seguenti motivazioni potrebbe essere una plausibile giustificazione fisica?",
+   "choices": [
+    "Data la posizione relativa, la differenza di pressione idrostatica tra gli organi coinvolti nella circolazione polmonare è minore dell'analoga differenza di pressione nella circolazione sistemica",
+    "Il sangue povero di ossigeno ha una pressione inferiore",
+    "Il volume del sangue immesso nella circolazione polmonare ogni secondo è assai minore di quello immesso nella circolazione sistemica",
+    "Il sangue che scorre nei polmoni si muove lentamente, in modo da bene ossigenarsi",
+    "Il sangue della circolazione sistemica, ricco di nutrienti, ha una pressione osmotica più alta"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2013",
+   "q": "Una bollicina di gas si sposta verso l'alto dal fondo di un bicchiere di bibita frizzante termicamente in equilibrio. Cosa succede al gas della bollicina quando questa si sposta verso l'alto?",
+   "choices": [
+    "La pressione diminuisce ed il volume aumenta",
+    "La pressione aumenta ed il volume diminuisce",
+    "La temperatura e la pressione aumentano",
+    "La temperatura ed il volume aumentano",
+    "Il volume e la temperatura diminuiscono"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

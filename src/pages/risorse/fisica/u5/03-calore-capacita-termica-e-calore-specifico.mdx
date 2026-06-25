@@ -1,0 +1,101 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u5-03">
+
+## Calore e temperatura: due cose diverse
+
+Spesso si usano come sinonimi, ma in fisica **non lo sono affatto**.
+
+- La **temperatura** misura quanto sono agitate le molecole di un corpo. È una proprietà del corpo stesso, cioè descrive il suo stato interno. Si misura in gradi Celsius (°C) o in Kelvin (K).
+- Il **calore** è energia in transito: passa da un corpo più caldo a uno più freddo, finché non raggiungono la stessa temperatura. Non è qualcosa che un corpo "ha" dentro di sé, è qualcosa che si **trasferisce**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La temperatura è come la velocità di una macchina; il calore è come l'energia che la macchina spende per accelerare. Sono collegate, ma non sono la stessa cosa.</div>
+
+---
+
+## Quanto calore serve per scaldare qualcosa?
+
+Dipende da tre fattori:
+
+1. **La massa** del corpo (più è pesante, più calore ci vuole)
+2. **Di quanto vuoi alzare la temperatura** (un grado o dieci fa differenza)
+3. **Di che materiale è fatto** il corpo — e qui entra in gioco il **calore specifico**
+
+---
+
+## Il calore specifico
+
+Il **calore specifico** (simbolo **c**) di una sostanza è la quantità di calore necessaria per alzare di **1°C la temperatura di 1 kg** di quella sostanza.
+
+La formula è:
+
+**Q = m · c · ΔT**
+
+Dove:
+- **Q** = calore ceduto o assorbito (in Joule, J)
+- **m** = massa del corpo (in kg)
+- **c** = calore specifico del materiale (in J / kg·°C)
+- **ΔT** = variazione di temperatura (temperatura finale − temperatura iniziale, in °C)
+
+**Esempio pratico:** L'acqua ha un calore specifico di circa 4186 J/(kg·°C). Il ferro ha circa 450 J/(kg·°C). Questo vuol dire che per scaldare 1 kg d'acqua di 1°C ci vuole quasi **dieci volte** più energia che per scaldare 1 kg di ferro della stessa quantità. Ecco perché l'acqua impiega tanto a scaldarsi sulla cucina!
+
+---
+
+## La capacità termica
+
+La **capacità termica** (simbolo **C**, maiuscola) è simile al calore specifico, ma si riferisce a un oggetto specifico — non a un materiale in generale.
+
+**C = m · c**
+
+È la quantità di calore che serve per alzare di 1°C **quell'oggetto preciso**, con la sua massa e il suo materiale già inclusi.
+
+- Calore specifico → proprietà del **materiale** (es. "l'acqua")
+- Capacità termica → proprietà dell'**oggetto** (es. "questa pentola da 2 kg d'acqua")
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il calore specifico è come il "consumo per km" di un'auto (caratteristica del modello); la capacità termica è il "pieno totale" di quella specifica auto con quel serbatoio.</div>
+
+---
+
+<Diagram caption="Relazione tra calore, massa, calore specifico e variazione di temperatura" code={`flowchart TB
+  A["Calore Q (Joule)"] --> B["dipende da..."]
+  B --> C["Massa m (kg)"]
+  B --> D["Calore specifico c<br/>del materiale"]
+  B --> E["Variazione di temperatura<br/>ΔT (°C)"]
+  C & D --> F["Capacità termica C = m · c"]
+  F --> G["C · ΔT = Q"]`} />
+
+<Diagram caption="Differenza tra calore e temperatura" code={`flowchart LR
+  A["Corpo caldo<br/>(T alta)"] -->|"trasferisce CALORE Q"| B["Corpo freddo<br/>(T bassa)"]
+  B --> C["T del corpo freddo<br/>aumenta"]
+  A --> D["T del corpo caldo<br/>diminuisce"]
+  C & D --> E["Equilibrio termico<br/>(stessa T)"]`} />
+
+## Guarda il video
+<YouTube id="tvU8bHKnSlI" title="Il calore, il calore specifico, la capacità termica e la temp. di equilibrio" />
+<VideoVisto id="fis-u5-03" />
+
+## Da ricordare
+- Calore e temperatura non sono la stessa cosa: il calore è energia che si trasferisce, la temperatura misura lo stato termico di un corpo.
+- La formula fondamentale è **Q = m · c · ΔT**: il calore dipende da massa, materiale e variazione di temperatura.
+- La capacità termica (C) è specifica per un oggetto; il calore specifico (c) è una proprietà del materiale.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Hai una pentola con 2 kg d'acqua (calore specifico = 4186 J/kg·°C). Quanti Joule servono per alzare la temperatura da 20°C a 70°C?" opzioni={["41 860 J","418 600 J","209 300 J","83 720 J"]} corretta={1} spiegazione="Q = m · c · ΔT = 2 kg × 4186 J/(kg·°C) × (70 − 20)°C = 2 × 4186 × 50 = 418 600 J. Risposta B." />
+
+<Quiz domanda="Un blocco di ferro da 1 kg (c = 450 J/kg·°C) e un blocco d'acqua da 1 kg (c = 4186 J/kg·°C) ricevono la stessa quantità di calore. Quale si scalda di più?" opzioni={["Si scaldano uguale perché la massa è la stessa","Il ferro, perché ha un calore specifico più basso","L'acqua, perché ha un calore specifico più alto","Non si può sapere senza conoscere la temperatura iniziale"]} corretta={1} spiegazione="Con la stessa massa e lo stesso calore Q, ΔT = Q / (m · c). Un c più basso dà un ΔT più alto: il ferro si scalda molto di più dell'acqua con la stessa energia." />
+
+<Quiz domanda="Qual è la differenza tra calore specifico e capacità termica?" opzioni={["Sono la stessa grandezza fisica, solo con unità diverse","Il calore specifico riguarda 1 kg di materiale; la capacità termica riguarda un oggetto di massa assegnata","La capacità termica si misura in Joule, il calore specifico no","Il calore specifico dipende dalla forma dell'oggetto"]} corretta={1} spiegazione="Il calore specifico c è una proprietà del materiale (J/kg·°C). La capacità termica C = m · c è la proprietà dell'oggetto specifico con la sua massa (J/°C)." />
+
+<Esercizio problema="Un blocco di alluminio di massa 0,5 kg viene riscaldato da 25°C a 125°C. Il calore specifico dell'alluminio è 900 J/(kg·°C). Calcola il calore assorbito." soluzione="Q = m · c · ΔT = 0,5 kg × 900 J/(kg·°C) × (125 − 25)°C = 0,5 × 900 × 100 = 45 000 J = 45 kJ." />
+
+</section>
+
+</RisorsaLayout>

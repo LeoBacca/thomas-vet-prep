@@ -1,0 +1,87 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u6-02">
+
+## Cos'è il campo elettrico?
+
+Immagina di avere una carica elettrica ferma nello spazio — per esempio un palloncino carico di elettricità statica. Intorno a quella carica succede qualcosa di invisibile: lo spazio si "modifica" in modo tale che, se ci metti vicino un'altra carica, questa sente una forza.
+
+Questo "qualcosa" che riempie lo spazio intorno a una carica si chiama **campo elettrico**.
+
+Il campo elettrico non è una cosa che si tocca: è una proprietà dello spazio. È come la temperatura in una stanza — non la vedi, ma se ci metti un termometro, lo senti.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il campo elettrico è la "zona d'influenza" di una carica: ovunque in quella zona, un'altra carica sente una spinta (attrazione o repulsione).</div>
+
+## Come si misura il campo elettrico?
+
+Il campo elettrico in un punto si misura con una piccola **carica di prova** positiva: si piazza nel punto, si misura la forza che sente, e si divide la forza per il valore della carica.
+
+In formula:
+
+**E = F / q**
+
+- **E** = campo elettrico (si misura in N/C, newton per coulomb)
+- **F** = forza che sente la carica di prova
+- **q** = valore della carica di prova
+
+Il campo elettrico è un **vettore**: ha una direzione e un verso (come una freccia), non è solo un numero.
+
+## Come si rappresenta: le linee di forza
+
+Disegnare frecce ovunque nello spazio sarebbe impossibile. Per questo Faraday inventò le **linee di forza** (o linee di campo): curve immaginarie che mostrano come è fatto il campo elettrico in una regione.
+
+Le linee di forza seguono queste regole:
+
+- **Partono dalle cariche positive** e **arrivano alle cariche negative** (o si allontanano all'infinito)
+- In ogni punto, la freccia del campo è **tangente** alla linea (cioè punta nella direzione della linea in quel punto)
+- **Linee più fitte = campo più forte**; linee più rade = campo più debole
+- **Non si incrociano mai** (in un punto il campo ha una sola direzione)
+
+<Diagram caption="Linee di forza attorno a una carica positiva isolata: partono dalla carica e si allontanano in tutte le direzioni" code={`flowchart TB
+  subgraph spazio["Spazio intorno alla carica"]
+    Q["+ Carica positiva"]
+    Q --> A["freccia verso l'alto"]
+    Q --> B["freccia verso destra"]
+    Q --> C["freccia verso il basso"]
+    Q --> D["freccia verso sinistra"]
+    Q --> E["freccia diagonale in alto a destra"]
+    Q --> F["freccia diagonale in basso a sinistra"]
+  end`} />
+
+<Diagram caption="Confronto tra carica positiva e carica negativa: le linee escono dalla positiva ed entrano nella negativa" code={`flowchart LR
+  Pos["+ Carica positiva"] --> L1["linea di campo"]
+  L1 --> L2["linea di campo"]
+  L2 --> Neg["- Carica negativa"]
+  Pos --> M1["linea di campo"]
+  M1 --> M2["linea di campo"]
+  M2 --> Neg`} />
+
+## Guarda il video
+<YouTube id="W084A7IDkwI" title="TEORIA Le linee di forza del campo elettrico MONDADORI EDUCATION" />
+<VideoVisto id="fis-u6-02" />
+
+## Da ricordare
+- Il campo elettrico è la "zona d'influenza" di una carica: modifica lo spazio intorno a sé così che altre cariche sentono una forza
+- Le linee di forza partono dalle cariche positive, arrivano alle negative, non si incrociano mai e dove sono più fitte il campo è più intenso
+- Il campo elettrico è un vettore (freccia): E = F/q, si misura in N/C
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una carica di prova positiva è posta in un punto dello spazio e sente una forza di 6 N. Il valore della carica è 2 C. Quanto vale il campo elettrico in quel punto?" opzioni={["E = 12 N/C", "E = 3 N/C", "E = 8 N/C", "E = 0,33 N/C"]} corretta={1} spiegazione="Il campo elettrico si calcola come E = F/q = 6 N / 2 C = 3 N/C. Hai diviso la forza per la carica, non moltiplicato." />
+
+<Quiz domanda="In quale direzione puntano le linee di forza del campo elettrico generato da una carica positiva isolata?" opzioni={["Verso la carica, convergono al centro", "Si allontanano dalla carica in tutte le direzioni", "Formano cerchi chiusi intorno alla carica", "Non hanno una direzione definita"] } corretta={1} spiegazione="Le linee di forza di una carica positiva escono dalla carica e si allontanano in tutte le direzioni. È il contrario di una carica negativa, dove le linee entrano." />
+
+<Quiz domanda="Cosa indica il fatto che in una certa zona le linee di forza del campo elettrico sono molto ravvicinate tra loro?" opzioni={["Il campo elettrico in quella zona è debole", "In quella zona non ci sono cariche elettriche", "Il campo elettrico in quella zona è intenso (forte)", "Le linee stanno per incrociarsi"] } corretta={2} spiegazione="La densità delle linee di forza è proporzionale all'intensità del campo: più le linee sono fitte, più il campo è forte in quella zona." />
+
+<Esercizio problema="Una carica di prova di 0,5 C è posta vicino a una carica sorgente e sente una forza di 10 N. Calcola il campo elettrico in quel punto. Poi dimmi: se sposti la carica di prova in un punto più lontano dove le linee di forza sono più rade, il campo sarà maggiore o minore?" soluzione="E = F/q = 10 N / 0,5 C = 20 N/C. Nel punto più lontano, dove le linee di forza sono più rade (meno fitte), il campo elettrico è minore: la densità delle linee è direttamente proporzionale all'intensità del campo." />
+
+</section>
+
+</RisorsaLayout>

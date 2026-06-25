@@ -1,0 +1,128 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-07">
+
+## Velocità costante, ma il corpo accelera — come è possibile?
+
+Immagina di far girare una pallina attaccata a uno spago. La pallina percorre sempre lo stesso cerchio e la sua **velocità** (cioè quanto è veloce) non cambia. Eppure qualcosa cambia in continuazione: la **direzione** verso cui la pallina sta andando.
+
+In fisica, la velocità è un vettore: ha sia un modulo (quanto veloce) sia una direzione (verso dove). Quando **la direzione cambia**, anche se il modulo resta uguale, il vettore velocità è cambiato. E quando la velocità cambia, per definizione esiste un'**accelerazione**.
+
+Questo tipo di accelerazione, che non aumenta la rapidità ma curva la traiettoria, si chiama **accelerazione centripeta** (dal latino *centrum* = centro, *petere* = puntare verso).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Andare in curva ad andatura costante è comunque un'accelerazione, perché stai continuamente cambiando direzione.</div>
+
+---
+
+## Dove punta l'accelerazione centripeta?
+
+L'accelerazione centripeta punta **sempre verso il centro del cerchio**, lungo il raggio. Non spinge il corpo verso l'esterno (quello è un effetto percepito, non una forza reale); lo spinge verso il centro, tenendolo sulla traiettoria circolare.
+
+Senza questa accelerazione — e senza la forza che la genera — il corpo volerebbe via in linea retta. Lo spago teso è ciò che produce la forza centripeta sulla pallina.
+
+---
+
+## La formula
+
+L'accelerazione centripeta si calcola così:
+
+**a = v² / r**
+
+Dove:
+- **a** = accelerazione centripeta (m/s²)
+- **v** = modulo della velocità (m/s)
+- **r** = raggio della traiettoria circolare (m)
+
+**Cosa ci dice questa formula?**
+- Più vai veloce (v grande), maggiore è l'accelerazione: raddoppiando la velocità l'accelerazione quadruplica.
+- Più è piccolo il raggio (curva stretta), maggiore è l'accelerazione.
+
+Esempio di vita reale: in auto, una curva stretta a 50 km/h ti sbatte sul sedile più di una curva larga alla stessa velocità.
+
+---
+
+## Periodo e frequenza nel moto circolare uniforme
+
+Un'altra grandezza utile è il **periodo T**: il tempo necessario per fare un giro completo.
+
+Se la circonferenza è 2πr e la velocità è v, allora:
+
+**T = 2πr / v**
+
+La **frequenza** f è quanti giri si fanno al secondo: f = 1/T.
+
+---
+
+<Diagram caption="Il vettore velocità cambia direzione ad ogni istante, generando l'accelerazione centripeta diretta verso il centro." code={`flowchart TB
+  A["Corpo in moto circolare<br/>velocità costante in modulo"] --> B["Direzione del vettore velocità<br/>cambia ad ogni istante"]
+  B --> C["Variazione del vettore velocità<br/>= accelerazione centripeta"]
+  C --> D["Direzione: verso il centro<br/>del cerchio (lungo il raggio)"]`} />
+
+<Diagram caption="Relazione tra le grandezze del moto circolare uniforme." code={`flowchart LR
+  V["Velocità v (m/s)"] --> F["a = v² / r"]
+  R["Raggio r (m)"] --> F
+  F --> A["Accelerazione centripeta a (m/s²)"]
+  A --> T["Traiettoria circolare mantenuta"]`} />
+
+## Guarda il video
+<YouTube id="KSOUzJiMSiI" title="Accelerazione centripeta, una semplice dimostrazione" />
+<VideoVisto id="fis-u2-07" />
+
+## Da ricordare
+- Nel moto circolare uniforme la velocità ha modulo costante, ma la **direzione cambia** continuamente: questo basta per avere un'accelerazione.
+- L'**accelerazione centripeta** punta sempre verso il centro del cerchio e vale **a = v² / r**.
+- Più è alta la velocità o più è piccolo il raggio, maggiore è l'accelerazione centripeta.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un'auto percorre una curva circolare a velocità costante. Cosa si può dire dell'accelerazione dell'auto?"
+  opzioni={[
+    "L'accelerazione è zero perché la velocità non cambia in modulo.",
+    "L'accelerazione è diretta verso l'esterno della curva.",
+    "Esiste un'accelerazione centripeta diretta verso il centro della curva.",
+    "L'accelerazione è diretta nel verso opposto al moto."
+  ]}
+  corretta={2}
+  spiegazione="Anche se il modulo della velocità è costante, la direzione cambia continuamente. Questa variazione del vettore velocità corrisponde a un'accelerazione centripeta, che punta sempre verso il centro della traiettoria circolare."
+/>
+
+<Quiz
+  domanda="Una pallina si muove in cerchio con velocità v = 4 m/s e raggio r = 2 m. Quanto vale l'accelerazione centripeta?"
+  opzioni={[
+    "2 m/s²",
+    "4 m/s²",
+    "8 m/s²",
+    "16 m/s²"
+  ]}
+  corretta={2}
+  spiegazione="Usando la formula a = v² / r = (4)² / 2 = 16 / 2 = 8 m/s². Raddoppiare la velocità quadruplica l'accelerazione, e dividerla per il raggio la scala ulteriormente."
+/>
+
+<Quiz
+  domanda="Se raddoppio il raggio della traiettoria circolare mantenendo la stessa velocità, cosa succede all'accelerazione centripeta?"
+  opzioni={[
+    "Raddoppia.",
+    "Si dimezza.",
+    "Quadruplica.",
+    "Rimane uguale."
+  ]}
+  corretta={1}
+  spiegazione="Dalla formula a = v² / r, se r diventa 2r e v è costante, la nuova accelerazione è v² / (2r) = a / 2. L'accelerazione centripeta si dimezza: curva più larga, meno accelerazione."
+/>
+
+<Esercizio
+  problema="Una ruota gira con velocità v = 6 m/s su una traiettoria di raggio r = 3 m. Calcola l'accelerazione centripeta e spiega in parole cosa rappresenta fisicamente."
+  soluzione="Usando a = v² / r = (6)² / 3 = 36 / 3 = 12 m/s². Fisicamente questa accelerazione non fa aumentare la velocità della ruota, ma la 'piega' continuamente verso il centro, mantenendo il corpo sulla traiettoria circolare. Se la forza centripeta venisse a mancare, il corpo partirebbe in linea retta (tangente al cerchio) nel punto in cui si trova."
+/>
+
+</section>
+
+</RisorsaLayout>

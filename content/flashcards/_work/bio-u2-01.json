@@ -1,0 +1,25 @@
+{
+ "id": "bio-u2-01",
+ "titolo": "I cromosomi eucariotici lineari e l'organizzazione minimale (centromero, telomeri)",
+ "materia": "biologia",
+ "unita": 2,
+ "slug": "01-i-cromosomi-eucariotici-lineari-e-lorganizzazione",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u2/01-i-cromosomi-eucariotici-lineari-e-lorganizzazione.mdx",
+ "examQuestions": [
+  {
+   "year": "2013",
+   "q": "Classificare le seguenti strutture biologiche in base alla loro massa, in ordine crescente: 1. il gene CFTR umano; 2. il cromosoma Y umano; 3. un nucleotide; 4. la timina; 5. il cromosoma X umano.",
+   "choices": [
+    "4, 3, 1, 2, 5",
+    "1, 3, 2, 4, 5",
+    "3, 4, 1, 2, 5",
+    "3, 4, 1, 5, 2",
+    "4, 3, 1, 5, 2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

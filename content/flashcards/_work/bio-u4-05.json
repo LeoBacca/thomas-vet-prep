@@ -1,0 +1,165 @@
+{
+ "id": "bio-u4-05",
+ "titolo": "Dominanza incompleta, codominanza, alleli multipli (sistema AB0)",
+ "materia": "biologia",
+ "unita": 4,
+ "slug": "05-dominanza-incompleta-codominanza-alleli-multipli-sistema",
+ "freq": 11,
+ "risorseMdx": "src/pages/risorse/biologia/u4/05-dominanza-incompleta-codominanza-alleli-multipli-sistema.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Un uomo ha gruppo sanguigno A e sua moglie gruppo sanguigno B. Quale serie rappresenta tutti i possibili gruppi sanguigni che il figlio che aspettano potrebbe avere?",
+   "choices": [
+    "A, B, AB, 0",
+    "A, B, 0",
+    "A, B, AB",
+    "AB, 0",
+    "A, B"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2007",
+   "q": "Il plasma di un donatore di sangue, sottoposto ad analisi di laboratorio, risulta contenere anticorpi anti-A. Il gruppo sanguigno di questo individuo:",
+   "choices": [
+    "sarà probabilmente B",
+    "sarà probabilmente 0",
+    "sarà sicuramente A",
+    "sarà sicuramente AB",
+    "non si può determinare"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2008",
+   "q": "Una madre ha gruppo sanguigno 0 mentre il padre è AB. Eventuali figli potranno essere:",
+   "choices": [
+    "A o B",
+    "tutti AB",
+    "tutti 0",
+    "AB o 0",
+    "AB; A; B; 0"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2008",
+   "q": "Il gruppo sanguigno umano più comune è determinato da alleli codominanti di tre differenti tipi (A, B, 0) che pertanto possono originare:",
+   "choices": [
+    "4 diversi fenotipi",
+    "6 diversi fenotipi",
+    "8 diversi fenotipi",
+    "4 diversi genotipi",
+    "8 diversi genotipi"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2008",
+   "q": "In una famiglia, il padre ha gruppo sanguigno B e la madre ha gruppo sanguigno A. Essi hanno parecchi figli, tutti con gruppo sanguigno AB. Si potrebbe ragionevolmente presumere che:",
+   "choices": [
+    "il genotipo dei genitori sia AA e BB",
+    "il genotipo dei genitori sia 00 e BB",
+    "il genotipo dei genitori sia AB",
+    "il genotipo del padre sia A0 e della madre B0",
+    "il genotipo di entrambi i genitori sia 00"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2008",
+   "q": "Sono definiti \"donatori universali\" i soggetti:",
+   "choices": [
+    "i cui globuli rossi non presentano antigeni A e B",
+    "i cui globuli rossi presentano gli antigeni A e B",
+    "il cui sangue si agglutina in presenza di siero anti-A",
+    "il cui sangue si agglutina in presenza di siero anti-B",
+    "che hanno gruppo sanguigno A o B"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2010",
+   "q": "In una specie di anatra il colore del piumaggio è determinato da un gene con tre alleli, due dei quali codominanti ed uno recessivo rispetto agli altri due. Quanti fenotipi si possono ottenere e quanti genotipi?",
+   "choices": [
+    "4 fenotipi e 6 genotipi",
+    "3 fenotipi e 6 genotipi",
+    "6 fenotipi e 9 genotipi",
+    "3 fenotipi e 4 genotipi",
+    "6 fenotipi e 6 genotipi"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2014",
+   "q": "Il colore del pelo nei conigli è determinato da un solo gene che ha quattro alleli: aguti (C), cincillà (Cch), himalayano (Ch), albino (c). Quanti diversi genotipi sono possibili per il colore del pelo nel coniglio?",
+   "choices": [
+    "10",
+    "4",
+    "6",
+    "7",
+    "16"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2019",
+   "q": "Negli esseri umani esistono 4 gruppi sanguigni definiti dal sistema AB0. Quale tra le seguenti affermazioni è corretta?",
+   "choices": [
+    "Gli individui di gruppo A producono antigeni di gruppo A",
+    "Gli individui di gruppo 0 sono riceventi universali",
+    "Gli individui di gruppo AB possono donare sangue a individui di gruppo A o B",
+    "Gli individui di gruppo B producono anticorpi anti-B",
+    "Gli individui di gruppo 0 sono omozigoti dominanti"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "A quale gruppo sanguigno una donna non potrà appartenere, se è la madre di un bambino di gruppo AB positivo?",
+   "choices": [
+    "0",
+    "A negativo",
+    "AB",
+    "B",
+    "B positivo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Nella dominanza incompleta:",
+   "choices": [
+    "l'eterozigote mostra un fenotipo intermedio tra quelli dei due omozigoti",
+    "l'eterozigote può mostrare indifferentemente un fenotipo uguale all'uno o all'altro dei due omozigoti",
+    "l'eterozigote può mostrare un'ampia gamma di fenotipi",
+    "lo stesso genotipo può produrre fenotipi diversi",
+    "l'eterozigote mostra lo stesso fenotipo dell'omozigote recessivo"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

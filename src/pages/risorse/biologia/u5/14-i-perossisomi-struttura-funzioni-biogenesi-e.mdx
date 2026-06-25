@@ -1,0 +1,125 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-14">
+
+## Cos'è un perossisoma?
+
+Immagina un sacchetto chiuso da una singola membrana lipidica, delle dimensioni di 0,1–1 micrometro (più piccolo di un mitocondrio). Dentro ci sono circa 50 enzimi diversi. Questo è il **perossisoma**: un organello presente in tutte le cellule eucariote, abbondante soprattutto nelle cellule del fegato e del rene.
+
+Il nome viene da **perossido di idrogeno (H₂O₂)**, una molecola tossica che il perossisoma produce durante il suo lavoro… e poi distrugge subito.
+
+---
+
+## Struttura
+
+- **Membrana semplice** (un solo strato fosfolipidico, a differenza del mitocondrio che ne ha due).
+- **Matrice interna** ricca di enzimi ossidativi, tra cui la **catalasi** — l'enzima "pompiere" che neutralizza l'H₂O₂.
+- In alcune specie si vede un **nucleo cristallino** (un deposito di enzimi compattati), ma nell'uomo di solito non c'è.
+
+---
+
+## Funzioni principali
+
+### 1. Beta-ossidazione degli acidi grassi a catena molto lunga
+Gli acidi grassi con catena lunghissima (più di 22 carboni) vengono tagliati a pezzi nel perossisoma, rendendoli abbastanza corti da essere poi completamente bruciati nel mitocondrio. È come spezzare un tronco troppo lungo prima di metterlo nel camino.
+
+### 2. Produzione e smaltimento del perossido di idrogeno
+Le reazioni ossidative dentro il perossisoma liberano H₂O₂, che è tossica. La **catalasi** la converte immediatamente in acqua + ossigeno:
+
+**2 H₂O₂ → 2 H₂O + O₂**
+
+Questa è una delle reazioni più veloci in tutta la biologia.
+
+### 3. Sintesi dei plasmalogeni
+I plasmalogeni sono un tipo speciale di fosfolipidi importantissimi nella **guaina mielinica** dei neuroni. Il perossisoma assembla i primi passaggi di questa sintesi.
+
+### 4. Detossificazione
+Nel fegato, i perossisomi ossidano sostanze come l'alcol etilico, farmaci e tossine, rendendole meno pericolose.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il perossisoma è il "reparto chimico di smaltimento" della cellula — brucia rifiuti tossici, taglia acidi grassi troppo lunghi e produce materiale utile per i nervi, sempre tenendo sotto controllo i propri veleni interni.</div>
+
+---
+
+## Come ci arrivano le proteine? (Biogenesi e importazione)
+
+I perossisomi non hanno DNA proprio: tutte le loro proteine sono codificate nel nucleo, sintetizzate dai ribosomi liberi nel citoplasma e poi importate. Il meccanismo è guidato da sequenze segnale specifiche.
+
+### Segnali di smistamento
+- **PTS1** (Peroxisome Targeting Signal 1): una sequenza di tre amminoacidi alla coda C-terminale della proteina, di solito **Ser-Lys-Leu (SKL)**. È il "codice postale" più comune.
+- **PTS2**: sequenza all'estremità N-terminale, usata da poche proteine.
+
+### Le peroxine (proteine PEX)
+Le **peroxine** sono proteine strutturali e regolatrici del perossisoma, codificate dai geni **PEX**. Gestiscono sia l'importazione delle proteine che la formazione del perossisoma stesso.
+
+Le tappe principali della biogenesi:
+1. Nascita di nuovi perossisomi per **gemmazione dal reticolo endoplasmatico** (ER) — le proteine di membrana PEX3, PEX16 e PEX19 avviano la formazione della membrana.
+2. Oppure, i perossisomi esistenti si moltiplicano per **fissione binaria** (si dividono in due), come i mitocondri.
+3. Le proteine della matrice interna vengono importate dal citoplasma attraverso il **poro di translocazione**, formato principalmente da PEX14 e PEX17.
+
+<Diagram caption="Importazione delle proteine nella matrice del perossisoma" code={`flowchart TB
+  A["Proteina sintetizzata<br/>nel citoplasma"] --> B["Riconoscimento del segnale<br/>PTS1 (sequenza SKL)<br/>o PTS2 (N-terminale)"]
+  B --> C["Legame con il recettore<br/>PEX5 (per PTS1)<br/>o PEX7 (per PTS2)"]
+  C --> D["Il complesso recettore+proteina<br/>si avvicina alla membrana<br/>del perossisoma"]
+  D --> E["Aggancio al poro di translocazione<br/>PEX14 / PEX17"]
+  E --> F["Proteina rilasciata<br/>nella matrice del perossisoma"]
+  F --> G["Recettore PEX5/7 riciclato<br/>verso il citoplasma"]`} />
+
+<Diagram caption="Formazione e proliferazione dei perossisomi" code={`flowchart LR
+  A["Reticolo<br/>endoplasmatico (ER)"] -->|"PEX3, PEX16, PEX19<br/>inseriscono proteine<br/>di membrana"| B["Vescicola pre-perossisomiale"]
+  B --> C["Perossisoma immaturo"]
+  C -->|"Importazione<br/>proteine matrice"| D["Perossisoma maturo<br/>e funzionale"]
+  D -->|"Fissione binaria<br/>(divisione)"| E["Due perossisomi figli"]`} />
+
+---
+
+## Patologia: la sindrome di Zellweger
+
+La **sindrome di Zellweger** (o spettro di Zellweger) è una malattia genetica rara e grave causata da mutazioni nei geni **PEX** (più spesso PEX1, PEX6, PEX12…).
+
+### Cosa succede
+Le peroxine difettose non riescono ad assemblare correttamente i perossisomi. Le cellule hanno strutture simili a perossisomi vuoti (**membrane fantasma**) ma senza enzimi funzionanti al loro interno.
+
+### Conseguenze
+- Gli acidi grassi a catena lunghissima si accumulano nel sangue e nei tessuti (non vengono tagliati).
+- La sintesi dei plasmalogeni è bloccata → la mielina dei nervi non si forma correttamente → **gravi problemi neurologici**.
+- Accumulo di intermedi tossici nel fegato, cervello e reni.
+
+### Sintomi principali
+Ipotonia (muscoli molli), convulsioni, problemi visivi e uditivi, dismorfie facciali. La forma più grave è incompatibile con una lunga sopravvivenza.
+
+### Perché è utile studiarla
+È il modello classico per capire l'importanza dei perossisomi: quando mancano, i danni si vedono in tutto l'organismo, soprattutto nel sistema nervoso in sviluppo.
+
+---
+
+## Guarda il video
+<YouTube id="UIteYi0_WuQ" title="I PEROSSISOMI - Citologia Lezione 9 (AboutBiology)" />
+<VideoVisto id="bio-u5-14" />
+
+---
+
+## Da ricordare
+- I perossisomi sono organelli con membrana singola che ossidano acidi grassi a catena molto lunga e neutralizzano l'H₂O₂ tramite la catalasi.
+- Le loro proteine vengono importate dal citoplasma grazie a segnali PTS1/PTS2 riconosciuti dalle peroxine (PEX); i perossisomi nascono dall'ER o per fissione binaria.
+- La sindrome di Zellweger è causata da mutazioni nei geni PEX: i perossisomi non funzionano, si accumulano acidi grassi tossici e la mielina non si forma, causando gravi danni neurologici.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione principale della catalasi nel perossisoma?" opzioni={["Tagliare gli acidi grassi a catena lunga","Sintetizzare i plasmalogeni per la mielina","Convertire il perossido di idrogeno in acqua e ossigeno","Importare le proteine dalla matrice citoplasmatica"]} corretta={2} spiegazione="La catalasi è l'enzima 'pompiere' del perossisoma: converte l'H₂O₂ (tossica, prodotta dalle reazioni ossidative interne) in acqua e ossigeno, evitando che danneggi la cellula." />
+
+<Quiz domanda="Qual è la sequenza segnale più comune (PTS1) che guida una proteina verso il perossisoma?" opzioni={["Una sequenza idrofobica N-terminale di 20 amminoacidi","Il tripeptide Ser-Lys-Leu (SKL) al C-terminale della proteina","Un segnale di ancoraggio transmembrana riconosciuto dall'SRP","Una sequenza ricca di arginina nel mezzo della proteina"]} corretta={1} spiegazione="PTS1 (Peroxisome Targeting Signal 1) è tipicamente il tripeptide SKL (Ser-Lys-Leu) posizionato all'estremità C-terminale della proteina. Viene riconosciuto dal recettore PEX5 nel citoplasma, che poi porta la proteina al poro di translocazione del perossisoma." />
+
+<Quiz domanda="Nella sindrome di Zellweger, qual è la causa molecolare principale?" opzioni={["Mancanza della catalasi per mutazione del suo gene strutturale","Mutazioni nei geni PEX che impediscono l'assemblaggio funzionale dei perossisomi","Eccesso di perossisomi che producono troppo H₂O₂","Difetto nei mitocondri che blocca la beta-ossidazione"]} corretta={1} spiegazione="La sindrome di Zellweger è causata da mutazioni in uno dei geni PEX (che codificano le peroxine). Le peroxine difettose non riescono ad assemblare correttamente i perossisomi: le cellule hanno membrane 'fantasma' vuote, senza enzimi funzionanti, quindi non possono svolgere nessuna delle funzioni perossisomiali (beta-ossidazione, sintesi plasmalogeni, ecc.)." />
+
+<Esercizio problema="Un paziente neonato presenta ipotonia grave, convulsioni, accumulo di acidi grassi a catena molto lunga nel sangue e livelli bassi di plasmalogeni nella mielina. La biopsia epatica mostra strutture membranose simili a perossisomi ma prive di enzimi. Quale diagnosi suggeriscono questi dati e qual è il meccanismo molecolare sottostante?" soluzione="I dati sono compatibili con la sindrome di Zellweger (o spettro Zellweger). Il meccanismo è una mutazione in uno o più geni PEX: le peroxine difettose non riescono a importare le proteine enzimatiche nella matrice perossisomiale né ad assemblare correttamente i perossisomi. Il risultato sono 'membrane fantasma' prive di enzimi funzionanti. Senza perossisomi attivi: (1) gli acidi grassi a catena molto lunga non vengono ossidati e si accumulano; (2) la sintesi dei plasmalogeni è bloccata, quindi la mielina del sistema nervoso in sviluppo non si forma correttamente, causando i gravi sintomi neurologici." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,39 @@
+{
+ "id": "chim-u2-05",
+ "titolo": "Solubilità dei gas nei liquidi: la legge di Henry",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "05-solubilita-dei-gas-nei-liquidi-la",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u2/05-solubilita-dei-gas-nei-liquidi-la.mdx",
+ "examQuestions": [
+  {
+   "year": "2019",
+   "q": "Quale tra le seguenti affermazioni riferite alla solubilità NON è corretta?",
+   "choices": [
+    "La solubilità dei gas nei liquidi generalmente aumenta all'aumentare della temperatura",
+    "La solubilità di alcuni solidi nei liquidi diminuisce all'aumentare della temperatura",
+    "In acqua a 20 °C la solubilità di CO2 è maggiore di quella di O2",
+    "La solubilità di una sostanza in un solvente si riferisce alla soluzione satura",
+    "In acqua a 20 °C la solubilità di N2 è minore di quella di O2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "La solubilità di un gas in una soluzione:",
+   "choices": [
+    "viene modulata dalla temperatura",
+    "non dipende dalle eventuali interazioni chimiche del gas con le molecole del solvente",
+    "non dipende dagli eventuali legami deboli che si formano tra solvente e soluto",
+    "dipende dal volume del liquido",
+    "nessuna delle altre risposte è corretta"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

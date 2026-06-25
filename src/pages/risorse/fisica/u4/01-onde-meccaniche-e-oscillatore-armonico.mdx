@@ -1,0 +1,119 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u4-01">
+
+## Cos'è un'onda meccanica?
+
+Un'onda meccanica è una perturbazione che si propaga attraverso un mezzo materiale (solido, liquido o gas) trasportando **energia**, ma non materia.
+
+Pensa a quando lanci un sasso in uno stagno: l'acqua non si sposta verso la riva, ma i cerchi concentrici (l'onda) sì. L'acqua oscilla su e giù, l'energia viaggia in avanti.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un'onda meccanica è come il "messaggero" che porta energia da un posto all'altro, usando la materia come trampolino — senza spostarla davvero.</div>
+
+---
+
+## Cosa serve per avere un'onda meccanica?
+
+Ci vogliono due ingredienti:
+
+1. **Un mezzo elastico** — qualcosa che possa deformarsi e poi tornare alla forma originale (acqua, aria, una corda).
+2. **Una sorgente di disturbo** — qualcosa che dia la spinta iniziale (un sasso, le corde vocali, una mano che scuote la corda).
+
+Senza mezzo, niente onda meccanica: nel vuoto le onde meccaniche non viaggiano. (Le onde luminose sì, ma sono un'altra storia.)
+
+---
+
+## L'oscillatore armonico: il mattone base
+
+Prima di capire le onde, bisogna capire come oscilla un singolo punto. L'**oscillatore armonico** è il modello più semplice di oscillazione: un punto che va avanti e indietro in modo regolare attorno a una posizione di equilibrio.
+
+L'esempio classico è una **molla con un peso attaccato**:
+
+- Spingi il peso verso il basso → la molla si comprime.
+- Lasci andare → la molla spinge il peso verso l'alto, poi oltre, poi torna.
+- Il peso oscilla su e giù sempre con lo stesso ritmo.
+
+Questo ritmo regolare si chiama **moto armonico semplice**.
+
+La forza che riporta sempre il peso verso il centro si chiama **forza di richiamo** ed è proporzionale allo spostamento:
+
+**F = −k · x**
+
+dove k è la costante della molla e x è quanto ti sei allontanato dall'equilibrio. Il segno meno dice che la forza punta sempre verso il centro.
+
+---
+
+## Da oscillatore ad onda: il passaggio chiave
+
+Immagina tanti oscillatori armonici in fila, collegati tra loro (come le molecole d'aria). Quando il primo oscilla, trascina il secondo, il secondo trascina il terzo, e così via. Il risultato è un'**onda**: una oscillazione che "cammina" lungo la fila.
+
+L'onda non è altro che tanti oscillatori armonici che fanno la stessa cosa, ma con un piccolo ritardo l'uno rispetto all'altro.
+
+---
+
+## Tipi di onde meccaniche
+
+Le onde meccaniche si dividono in base alla direzione dell'oscillazione rispetto alla direzione di propagazione:
+
+- **Onde trasversali**: la materia oscilla in direzione perpendicolare alla propagazione. Esempio: una corda agitata — l'onda avanza orizzontalmente, la corda si muove su e giù.
+- **Onde longitudinali**: la materia oscilla nella stessa direzione della propagazione. Esempio: il suono nell'aria — le molecole si comprimono e si rarefanno nella stessa direzione in cui viaggia il suono.
+
+<Diagram caption="Propagazione di un'onda: energia in movimento, materia che oscilla sul posto" code={`flowchart LR
+  A["Sorgente<br/>(disturbo iniziale)"] -->|"energia"| B["Punto 1<br/>(oscilla)"]
+  B -->|"energia"| C["Punto 2<br/>(oscilla dopo)"]
+  C -->|"energia"| D["Punto 3<br/>(oscilla ancora dopo)"]
+  D -->|"energia"| E["...e così via"]`} />
+
+<Diagram caption="Oscillatore armonico: forza di richiamo e moto periodico" code={`flowchart TB
+  A["Posizione di equilibrio"] -->|"spostamento x"| B["Peso spostato"]
+  B -->|"F = -k · x<br/>(forza di richiamo)"| A
+  A --> C["Oscillazione periodica<br/>(va e torna sempre uguale)"]
+  C --> D["Periodo T costante"]`} />
+
+## Guarda il video
+<YouTube id="NFJ4Ny4ogGk" title="LA FISICA FACILE - Le onde Meccaniche" />
+<VideoVisto id="fis-u4-01" />
+
+## Da ricordare
+- Un'onda meccanica trasporta **energia** attraverso un mezzo, senza spostare la materia.
+- L'**oscillatore armonico** è un punto che oscilla attorno all'equilibrio per via di una forza di richiamo (F = −k·x).
+- Le onde **trasversali** oscillano perpendicolarmente alla direzione di propagazione; quelle **longitudinali** oscillano nella stessa direzione.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa trasporta un'onda meccanica mentre si propaga?"
+  opzioni={["Materia", "Energia", "Massa e calore", "Solo informazione, né materia né energia"]}
+  corretta={1}
+  spiegazione="Un'onda meccanica trasporta energia da un punto all'altro attraverso il mezzo, ma non sposta la materia che la compone. Le molecole oscillano e tornano al punto di partenza."
+/>
+
+<Quiz
+  domanda="Un peso attaccato a una molla viene tirato verso il basso e poi rilasciato. Come si chiama il tipo di moto che compie?"
+  opzioni={["Moto rettilineo uniforme", "Moto circolare uniforme", "Moto armonico semplice", "Moto parabolico"]}
+  corretta={2}
+  spiegazione="Il peso oscilla su e giù in modo regolare attorno alla posizione di equilibrio: questo è il moto armonico semplice, il comportamento tipico dell'oscillatore armonico."
+/>
+
+<Quiz
+  domanda="In un'onda sonora che viaggia nell'aria, come oscillano le molecole d'aria rispetto alla direzione di propagazione del suono?"
+  opzioni={["Perpendicolarmente (su e giù)", "Nella stessa direzione del suono (avanti e indietro)", "In cerchio", "Non oscillano affatto"]}
+  corretta={1}
+  spiegazione="Il suono è un'onda longitudinale: le molecole d'aria si comprimono e si rarefanno nella stessa direzione in cui viaggia l'onda sonora."
+/>
+
+<Esercizio
+  problema="Una molla ha costante elastica k = 200 N/m. Un peso viene spostato di x = 0,05 m dalla posizione di equilibrio e poi rilasciato. Calcola il modulo della forza di richiamo che agisce sul peso in quel momento."
+  soluzione="La forza di richiamo vale F = k · x = 200 · 0,05 = 10 N. Il segno negativo nella formula F = −k·x indica che la forza è diretta verso l'equilibrio (opposta allo spostamento), quindi il modulo è 10 N."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,139 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u5-10">
+
+## Cos'è l'entropia?
+
+Immagina di avere una stanza in ordine perfetto: libri allineati, vestiti piegati, tutto al suo posto.
+Ora immagina di chiudere gli occhi, far entrare un cane scatenato e riaprirli.
+Risultato? Disordine totale.
+
+L'**entropia** è esattamente questo: una misura del **disordine** di un sistema.
+In fisica si indica con la lettera **S** ed è una grandezza termodinamica che descrive quante configurazioni diverse un sistema può assumere.
+
+Più configurazioni possibili ci sono, più alta è l'entropia.
+
+---
+
+## Perché il disordine tende ad aumentare?
+
+Pensa a un mazzo di carte in ordine: c'è **un solo** modo per averlo perfettamente ordinato (asso, 2, 3… per ogni seme).
+Ma ci sono **miliardi di miliardi** di modi per averlo disordinato.
+
+Se mescoli il mazzo a caso, è quasi impossibile che esca ordinato: non perché ci sia una forza che vuole il disordine, ma semplicemente perché i modi disordinati sono **di gran lunga** di più.
+
+Questo è il **secondo principio della termodinamica**: in un sistema isolato, l'entropia non diminuisce mai. Tende sempre ad aumentare (o al massimo a restare uguale).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il disordine cresce da solo perché ci sono molti più stati disordinati che ordinati — è solo questione di probabilità.</div>
+
+---
+
+## Direzione dei processi naturali
+
+L'entropia ci spiega **perché certi processi vanno in un solo verso**:
+
+- Il caffè caldo si raffredda nel tempo — il calore passa dall'oggetto caldo a quello freddo, mai il contrario spontaneamente.
+- Un uovo rotto non si ricompone da solo.
+- Il profumo di un fiore si diffonde nella stanza — le molecole di profumo non tornano spontaneamente tutte nel fiore.
+
+In tutti questi casi, il sistema passa da uno stato più ordinato (o meno probabile) a uno più disordinato (più probabile).
+
+---
+
+## Come si calcola la variazione di entropia?
+
+Per un processo reversibile a temperatura costante T (in kelvin), la variazione di entropia è:
+
+**ΔS = Q / T**
+
+Dove:
+- **ΔS** = variazione di entropia (in J/K, joule per kelvin)
+- **Q** = calore scambiato (in joule) — positivo se assorbito, negativo se ceduto
+- **T** = temperatura assoluta (in kelvin)
+
+Se il sistema assorbe calore, la sua entropia aumenta.
+Se il sistema cede calore, la sua entropia diminuisce.
+
+---
+
+## Schema: come cambia l'entropia
+
+<Diagram caption="Direzione dei processi e variazione di entropia" code={`flowchart TB
+  A["Sistema ordinato<br/>(bassa entropia)"] --> B["Processo spontaneo<br/>(es. calore, diffusione)"]
+  B --> C["Sistema disordinato<br/>(alta entropia)"]
+  C --> D["Entropia dell'universo<br/>è aumentata"]
+  style A fill:#c8f0c8
+  style C fill:#f0c8c8
+  style D fill:#f0e0a0`} />
+
+<Diagram caption="Entropia e probabilità: stati ordinati vs disordinati" code={`flowchart LR
+  P["Pochi stati ordinati<br/>(molto improbabili)"] -- "bassa S" --> S["Entropia bassa"]
+  Q["Moltissimi stati disordinati<br/>(molto probabili)"] -- "alta S" --> T["Entropia alta"]
+  S -- "processo spontaneo" --> T`} />
+
+---
+
+## Guarda il video
+<YouTube id="Q758vCLrIpo" title="Vediamo Insieme Cos'è l'Entropia - La Fisica Che Ci Piace" />
+<VideoVisto id="fis-u5-10" />
+
+---
+
+## Da ricordare
+- L'entropia S misura il disordine di un sistema: più stati possibili, più alta è S.
+- Il secondo principio della termodinamica dice che in un sistema isolato l'entropia non diminuisce mai spontaneamente.
+- La variazione di entropia si calcola con ΔS = Q / T (calore scambiato diviso temperatura assoluta in kelvin).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un sistema isolato subisce un processo spontaneo. Cosa succede alla sua entropia totale?"
+  opzioni={[
+    "Diminuisce, perché il sistema si organizza",
+    "Rimane sempre esattamente costante",
+    "Aumenta o rimane costante, mai diminuisce",
+    "Dipende dalla temperatura: sotto 0 °C diminuisce"
+  ]}
+  corretta={2}
+  spiegazione="Il secondo principio della termodinamica afferma che in un sistema isolato l'entropia totale non può diminuire spontaneamente: può aumentare (processo irreversibile) o restare costante (processo reversibile ideale)."
+/>
+
+<Quiz
+  domanda="Un sistema assorbe 600 J di calore a temperatura costante di 300 K. Qual è la variazione di entropia?"
+  opzioni={[
+    "180 000 J/K",
+    "2 J/K",
+    "0,5 J/K",
+    "300 J/K"
+  ]}
+  corretta={1}
+  spiegazione="ΔS = Q / T = 600 J / 300 K = 2 J/K. L'entropia aumenta perché il sistema ha assorbito calore."
+/>
+
+<Quiz
+  domanda="Quale di questi processi avviene spontaneamente nella direzione in cui l'entropia del sistema aumenta?"
+  opzioni={[
+    "Il vapore acqueo si condensa in acqua liquida a 20 °C",
+    "Un cubo di ghiaccio si scioglie in una stanza calda",
+    "Il profumo si concentra spontaneamente in un angolo della stanza",
+    "Un uovo si ricompone dopo essere stato rotto"
+  ]}
+  corretta={1}
+  spiegazione="Il ghiaccio che si scioglie è un processo spontaneo: le molecole d'acqua passano da uno stato ordinato (cristallo) a uno disordinato (liquido), quindi l'entropia aumenta. Gli altri processi descrivono diminuzioni di entropia, che non avvengono spontaneamente."
+/>
+
+<Esercizio
+  problema="Una macchina termica assorbe 1200 J di calore dalla sorgente calda a 400 K e cede calore alla sorgente fredda a 300 K. Calcola la variazione di entropia della sorgente calda e della sorgente fredda, e verifica se il processo rispetta il secondo principio."
+  soluzione="Variazione di entropia della sorgente calda: ΔS_calda = -Q_assorbito / T_calda = -1200 / 400 = -3 J/K (l'entropia diminuisce perché cede calore). Per una macchina di Carnot (reversibile), il calore ceduto alla sorgente fredda è Q_fredda = Q_calda × (T_fredda / T_calda) = 1200 × (300/400) = 900 J. Variazione di entropia della sorgente fredda: ΔS_fredda = +900 / 300 = +3 J/K. Variazione totale: ΔS_tot = -3 + 3 = 0 J/K. Il processo è reversibile (macchina di Carnot) e l'entropia totale non cambia: il secondo principio è rispettato. In una macchina reale (irreversibile) ΔS_tot sarebbe > 0."
+/>
+
+</section>
+
+</RisorsaLayout>

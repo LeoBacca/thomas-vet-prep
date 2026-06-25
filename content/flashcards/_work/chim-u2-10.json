@@ -1,0 +1,10 @@
+{
+ "id": "chim-u2-10",
+ "titolo": "Le proprietà colligative e la legge di Raoult",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "10-le-proprieta-colligative-e-la-legge",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/chimica/u2/10-le-proprieta-colligative-e-la-legge.mdx",
+ "examQuestions": []
+}

@@ -1,0 +1,160 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u7-07">
+
+## Cos'è l'ottica geometrica?
+
+L'ottica geometrica studia come si comporta la luce quando colpisce superfici o passa da un mezzo all'altro. I fenomeni principali sono due: **riflessione** e **rifrazione**.
+
+---
+
+## Riflessione: la luce rimbalza
+
+Quando la luce colpisce una superficie liscia (come uno specchio), rimbalza. Questo si chiama **riflessione**.
+
+La regola è semplice: **l'angolo di incidenza è uguale all'angolo di riflessione**. Entrambi si misurano rispetto alla **normale**, cioè la linea perpendicolare alla superficie nel punto in cui arriva il raggio.
+
+Immagina di lanciare una palla contro un muro in modo obliquo: rimbalza con lo stesso angolo dall'altra parte. La luce si comporta esattamente così.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la luce rimbalza come una palla — entra con un angolo, esce con lo stesso angolo, tutto rispetto alla perpendicolare alla superficie.</div>
+
+<Diagram caption="Riflessione: il raggio incidente e il raggio riflesso formano angoli uguali rispetto alla normale." code={`flowchart TB
+  A["Raggio incidente"] --> B["Punto di contatto<br/>sulla superficie"]
+  B --> C["Raggio riflesso"]
+  B --> D["Normale (perpendicolare<br/>alla superficie)"]
+  A -- "angolo i" --> D
+  D -- "angolo r = i" --> C`} />
+
+---
+
+## Rifrazione: la luce cambia direzione
+
+Quando la luce passa da un mezzo a un altro (ad esempio dall'aria all'acqua), **cambia velocità** e di conseguenza **cambia direzione**. Questo fenomeno si chiama **rifrazione**.
+
+Un esempio di tutti i giorni: metti un cucchiaio in un bicchiere d'acqua. Guardandolo di lato sembra spezzato, perché la luce rallenta entrando nell'acqua e cambia direzione.
+
+La luce si "piega" verso la normale se entra in un mezzo più denso (come dall'aria all'acqua), e si "allontana" dalla normale se entra in un mezzo meno denso.
+
+---
+
+## Indice di rifrazione
+
+Ogni mezzo trasparente ha un numero che dice quanto rallenta la luce al suo interno: si chiama **indice di rifrazione** (simbolo **n**).
+
+La formula è:
+
+**n = c / v**
+
+dove:
+- **c** = velocità della luce nel vuoto (circa 300.000 km/s)
+- **v** = velocità della luce in quel mezzo
+
+Più n è alto, più il mezzo rallenta la luce:
+- Aria: n ≈ 1,0 (quasi come il vuoto)
+- Acqua: n ≈ 1,33
+- Vetro: n ≈ 1,5
+- Diamante: n ≈ 2,4
+
+---
+
+## La legge di Snell
+
+La relazione tra i due angoli quando la luce passa da un mezzo all'altro è descritta dalla **legge di Snell**:
+
+**n₁ · sen(θ₁) = n₂ · sen(θ₂)**
+
+- n₁ e n₂ sono gli indici di rifrazione dei due mezzi
+- θ₁ è l'angolo nel primo mezzo (rispetto alla normale)
+- θ₂ è l'angolo nel secondo mezzo (rispetto alla normale)
+
+In pratica: se passi in un mezzo con n più alto, l'angolo si riduce (il raggio si avvicina alla normale).
+
+<Diagram caption="Rifrazione: il raggio cambia direzione passando dall'aria (n=1) all'acqua (n=1,33). L'angolo si riduce." code={`flowchart TB
+  A["Raggio nell'aria<br/>(n = 1,0)<br/>angolo grande"] --> B["Superficie aria-acqua"]
+  B --> C["Raggio nell'acqua<br/>(n = 1,33)<br/>angolo più piccolo"]
+  B --> D["Normale alla superficie"]`} />
+
+---
+
+## Le lenti
+
+Una **lente** è un oggetto trasparente (di solito vetro o plastica) con superfici curve che sfrutta la rifrazione per concentrare o disperdere i raggi di luce.
+
+Esistono due tipi principali:
+
+- **Lente convergente** (più spessa al centro): fa convergere i raggi in un punto chiamato **fuoco**. Esempio: la lente d'ingrandimento.
+- **Lente divergente** (più sottile al centro): fa divergere i raggi come se venissero da un punto. Esempio: gli occhiali per i miopi.
+
+La distanza tra la lente e il fuoco si chiama **distanza focale** (simbolo **f**).
+
+Le lenti formano immagini degli oggetti. L'immagine può essere:
+- **reale** (si può proiettare su uno schermo) o **virtuale** (esiste solo "dentro" la lente)
+- **dritta** o **capovolta**
+- **ingrandita** o **rimpicciolita**
+
+---
+
+## Guarda il video
+<YouTube id="gDbQKKXYV0s" title="RIFLESSIONE E RIFRAZIONE della luce, legge di Snell, lenti e specchi — La Fisica Che Ci Piace" />
+<VideoVisto id="fis-u7-07" />
+
+---
+
+## Da ricordare
+- La riflessione segue la regola "angolo incidente = angolo riflesso", misurati rispetto alla normale alla superficie.
+- L'indice di rifrazione (n = c/v) misura quanto un mezzo rallenta la luce: più è alto, più la luce rallenta e si piega verso la normale.
+- Le lenti convergenti concentrano la luce in un fuoco; le lenti divergenti la disperdono — entrambe sfruttano la rifrazione.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un raggio di luce passa dall'aria (n = 1,0) al vetro (n = 1,5). Come cambia la sua direzione rispetto alla normale alla superficie?"
+  opzioni={[
+    "Si allontana dalla normale (l'angolo aumenta)",
+    "Rimane invariata, la luce va dritta",
+    "Si avvicina alla normale (l'angolo diminuisce)",
+    "Torna indietro, perché il vetro è opaco"
+  ]}
+  corretta={2}
+  spiegazione="Passando in un mezzo con indice di rifrazione più alto, la luce rallenta e si avvicina alla normale: l'angolo di rifrazione è più piccolo dell'angolo di incidenza. È la legge di Snell: n₁·sen(θ₁) = n₂·sen(θ₂), con n₂ > n₁ → θ₂ < θ₁."
+/>
+
+<Quiz
+  domanda="Qual è la formula corretta per l'indice di rifrazione di un mezzo?"
+  opzioni={[
+    "n = v / c (velocità nel mezzo diviso velocità nel vuoto)",
+    "n = c / v (velocità nel vuoto diviso velocità nel mezzo)",
+    "n = c · v (velocità nel vuoto per velocità nel mezzo)",
+    "n = c - v (differenza tra le velocità)"
+  ]}
+  corretta={1}
+  spiegazione="L'indice di rifrazione è n = c / v, dove c è la velocità della luce nel vuoto (~3×10⁸ m/s) e v è la velocità nel mezzo. Dato che la luce rallenta nei mezzi materiali, v è sempre minore di c, quindi n è sempre maggiore o uguale a 1."
+/>
+
+<Quiz
+  domanda="Una lente convergente ha distanza focale f = 10 cm. Un oggetto è posto a 30 cm dalla lente. Che tipo di immagine si forma?"
+  opzioni={[
+    "Virtuale, dritta e ingrandita (come nella lente d'ingrandimento)",
+    "Reale, capovolta (l'oggetto è oltre il fuoco)",
+    "Non si forma nessuna immagine",
+    "L'immagine si forma esattamente sul fuoco"
+  ]}
+  corretta={1}
+  spiegazione="Quando l'oggetto è oltre il fuoco (30 cm > 10 cm), una lente convergente forma un'immagine reale e capovolta. L'immagine virtuale dritta si forma solo quando l'oggetto è tra la lente e il fuoco (distanza < f), come accade con la lente d'ingrandimento."
+/>
+
+<Esercizio
+  problema="La velocità della luce nel vuoto è c = 3,0 × 10⁸ m/s. In un certo tipo di vetro, la luce viaggia a v = 2,0 × 10⁸ m/s. Calcola l'indice di rifrazione di questo vetro."
+  soluzione="Usa la formula n = c / v. Sostituisci i valori: n = (3,0 × 10⁸) / (2,0 × 10⁸) = 1,5. L'indice di rifrazione del vetro è 1,5 (valore tipico del vetro comune). Non ha unità di misura perché è un rapporto tra due velocità."
+/>
+
+</section>
+
+</RisorsaLayout>

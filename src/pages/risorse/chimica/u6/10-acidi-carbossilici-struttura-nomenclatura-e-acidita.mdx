@@ -1,0 +1,109 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u6-10">
+
+Gli **acidi carbossilici** sono molecole che hanno tutte un pezzetto speciale in comune: il **gruppo carbossilico**, scritto **-COOH**. È questo gruppo che le rende "acide". Ne incontri tantissimi ogni giorno: l'aceto (acido acetico), il limone (acido citrico) e perfino l'acido lattico che si forma nei tuoi muscoli quando ti alleni tanto.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il gruppo -COOH è come una mano che tiene un atomo di idrogeno (H) ma lo lascia andare facilmente. Quell'H che scappa via, sotto forma di **H+**, è proprio quello che rende la sostanza "acida".</div>
+
+## Com'è fatto il gruppo carbossilico -COOH
+
+Guardiamo dentro la sigla **-COOH**. È fatto di due parti unite:
+
+- un **C** (carbonio) legato con un doppio legame a un **O** (ossigeno): questo si chiama gruppo **carbonile**, lo scriviamo **C=O**;
+- lo stesso C è legato anche a un gruppo **-OH** (ossigeno + idrogeno), chiamato **ossidrile**.
+
+Carbonile + ossidrile attaccati allo stesso carbonio = gruppo **carbossilico**. È come unire due mattoncini per ottenerne uno nuovo con superpoteri.
+
+<Diagram caption="Il gruppo carbossilico -COOH nasce dall'unione di due pezzi" code={`flowchart LR
+  A["C=O<br/>(carbonile)"] --> C["Gruppo carbossilico<br/>-COOH"]
+  B["-OH<br/>(ossidrile)"] --> C`} />
+
+## Come si chiamano (nomenclatura)
+
+Dare il nome è più facile di quanto sembri. Si prende il nome della catena di carboni e si aggiunge **acido** davanti e il suffisso **-oico** alla fine.
+
+- 1 carbonio → acido **metan**oico (il nome comune è acido **formico**, quello delle formiche);
+- 2 carboni → acido **etan**oico (nome comune: acido **acetico**, quello dell'aceto);
+- 3 carboni → acido **propan**oico.
+
+Quindi la "ricetta" è sempre: **acido + [nome della catena] + -oico**. Il carbonio del -COOH conta sempre come il primo della catena.
+
+## Perché è acido: l'H+ che scappa
+
+Ecco il cuore della pagina. Un acido, in chimica, è una sostanza che **cede ioni H+** (cioè perde un atomo di idrogeno lasciando indietro la sua carica positiva). Il gruppo -COOH fa esattamente questo: molla il suo H.
+
+Ma perché lo molla così volentieri? Per un motivo elegante. Quando l'H+ se ne va, quel che resta si chiama **ione carbossilato (-COO⁻)**, e la sua carica negativa **non resta ferma su un solo ossigeno**: si "spalma" in egual misura sui due ossigeni. I chimici chiamano questo fenomeno **risonanza**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina due amici che reggono insieme uno zaino pesante (la carica negativa). Diviso in due, lo zaino pesa la metà per ciascuno: più comodo, più stabile. Per questo al -COOH "conviene" lasciar andare l'H+.</div>
+
+<Diagram caption="Il -COOH cede H+ e diventa carbossilato stabilizzato (carica divisa sui due ossigeni)" code={`flowchart LR
+  A["R-COOH<br/>(acido carbossilico)"] -->|"cede H+"| B["R-COO⁻<br/>(ione carbossilato)"]
+  B --> C["Carica negativa<br/>divisa sui 2 ossigeni<br/>(risonanza)"]
+  C --> D["Forma stabile:<br/>per questo è acido"]`} />
+
+Più la forma "scarica" (il carbossilato) è stabile, più la molecola è contenta di perdere l'H+: ecco perché gli acidi carbossilici sono acidi, anche se in modo gentile (sono acidi "deboli", non aggressivi come quelli dei laboratori).
+
+## Perché contano per medicina e veterinaria
+
+Gli acidi carbossilici sono ovunque nel corpo, di te e degli animali:
+
+- gli **amminoacidi**, i mattoni delle proteine, contengono un gruppo -COOH;
+- gli **acidi grassi** (quelli del grasso e delle membrane delle cellule) sono lunghe catene che finiscono con -COOH;
+- l'**acido lattico** si accumula nei muscoli sotto sforzo, e nei bovini è un valore che il veterinario controlla;
+- tantissimi farmaci (per esempio l'**aspirina**, cioè acido acetilsalicilico) hanno un gruppo -COOH che li rende acidi e attivi.
+
+Capire il -COOH ti aiuta quindi a capire come funzionano proteine, grassi e medicine: non è teoria astratta, è il funzionamento del corpo vivo.
+
+## Guarda il video
+
+<YouTube id="ijE07cgfnOU" title="Gli acidi carbossilici: nomenclatura e proprietà chimico-fisiche — spiegazione semplice" />
+
+<VideoVisto id="chim-u6-10" />
+
+## Da ricordare
+
+- L'**acido carbossilico** è una molecola con il gruppo **-COOH** (carbonile C=O + ossidrile -OH sullo stesso carbonio).
+- Si chiama: **acido + [nome catena] + -oico** (es. acido etanoico = acido acetico).
+- È **acido** perché **cede H+** (un atomo di idrogeno con carica positiva).
+- Cede l'H+ facilmente perché lo ione **carbossilato (-COO⁻)** è stabile: la carica negativa è **divisa sui due ossigeni** (risonanza).
+- Sono fondamentali nel corpo: amminoacidi, acidi grassi, acido lattico e molti farmaci hanno un -COOH.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è il gruppo che caratterizza tutti gli acidi carbossilici?"
+  opzioni={["-OH (ossidrile)", "-COOH (carbossilico)", "-NH2 (amminico)", "-CH3 (metile)"]}
+  corretta={1}
+  spiegazione="Tutti gli acidi carbossilici hanno il gruppo carbossilico -COOH, formato da un carbonile C=O e da un ossidrile -OH sullo stesso carbonio."
+/>
+
+<Quiz
+  domanda="Perché un acido carbossilico si comporta da acido?"
+  opzioni={["Perché acquista un H+", "Perché cede un H+ (uno ione idrogeno)", "Perché non reagisce mai", "Perché contiene azoto"]}
+  corretta={1}
+  spiegazione="Un acido cede ioni H+. Il gruppo -COOH lascia andare il suo idrogeno, e quel che resta (il carbossilato) è stabile grazie alla carica divisa sui due ossigeni."
+/>
+
+<Quiz
+  domanda="Come si chiama l'acido carbossilico con 2 atomi di carbonio (quello dell'aceto)?"
+  opzioni={["acido metanoico (formico)", "acido etanoico (acetico)", "acido propanoico", "acido citrico"]}
+  corretta={1}
+  spiegazione="Con 2 carboni è l'acido etanoico, il cui nome comune è acido acetico: è proprio quello che dà il sapore aspro all'aceto."
+/>
+
+<Esercizio
+  problema="Lo ione carbossilato che resta dopo che il -COOH ha ceduto l'H+ è molto stabile. Spiega con parole tue da cosa dipende questa stabilità e perché aiuta la molecola a essere acida."
+  soluzione="Quando il -COOH perde l'H+ resta una carica negativa. Questa carica non sta su un solo ossigeno, ma è divisa (spalmata) in egual modo sui due ossigeni: è la risonanza. Una carica condivisa è più stabile, come uno zaino pesante retto da due persone invece che da una. Poiché la forma 'scarica' è stabile, alla molecola conviene cedere l'H+: ecco perché l'acido carbossilico si comporta da acido."
+/>
+
+</section>
+
+</RisorsaLayout>

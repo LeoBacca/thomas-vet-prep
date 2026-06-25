@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fc-bio-u2-04-1",
+    "topicId": "bio-u2-04",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: il nucleosoma e l'unita base della cromatina, formato da DNA avvolto intorno a 8 proteine istoniche (ottamero), e i complessi di rimodellamento come SWI/SNF usano ATP per spostare o rimuovere i nucleosomi cosi da regolare quali geni sono accessibili.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 0,
+    "explain": "Vero. Il nucleosoma e come un rocchetto: 8 istoni formano la bobina, il DNA e il filo avvolto intorno per 1,65 giri. SWI/SNF usa energia (ATP) per spostare o togliere questi rocchetti: se il tratto di DNA viene 'aperto' (eucromatina), il gene puo essere letto; se rimane 'chiuso' (eterocromatina), il gene e silenziato.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-bio-u2-04-2",
+    "topicId": "bio-u2-04",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "open",
+    "q": "Qual e la differenza di ruolo tra i complessi di rimodellamento della cromatina (es. SWI/SNF) e le condensine? Pensa a quando agiscono e su quale scala.",
+    "answer": "I complessi di rimodellamento (SWI/SNF) lavorano a livello del singolo nucleosoma, in qualsiasi momento della vita della cellula: spostano, rimuovono o sostituiscono gli istoni per rendere un gene accessibile o silenzioso. Regolano cioe l'espressione genica. Le condensine invece agiscono su scala molto piu grande e in un momento preciso: durante la divisione cellulare (mitosi). Formano anse di DNA (come fascette da elettricista che stringono un cavo) compattando interi cromosomi cosi che i cromatidi possano essere separati senza aggrovigliarsi. Condensina I agisce dopo la rottura dell'involucro nucleare; Condensina II gia prima, dentro il nucleo.",
+    "explain": "La distinzione chiave: SWI/SNF = controllo fine dei geni (scala nucleosoma); condensine = compattazione globale per la divisione (scala cromosoma intero).",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

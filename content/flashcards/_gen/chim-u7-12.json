@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-chim-u7-12-1",
+    "topicId": "chim-u7-12",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: quando NAD+ acquista elettroni si trasforma in NADH — cioe si RIDUCE (diventa 'pieno').",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. NAD+ e il furgoncino vuoto: quando carica il pacco (acquista 2 elettroni + 1 ione H+) diventa NADH — il furgoncino pieno. Acquistare elettroni = ridursi (riduzione = ricevere). Lo stesso vale per FAD che diventa FADH2.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-12-2",
+    "topicId": "chim-u7-12",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Cosa sono NAD+ e FAD, cosa trasportano e a cosa serve quello che trasportano? Menziona anche da quali vitamine derivano.",
+    "answer": "NAD+ e FAD sono trasportatori di elettroni: funzionano come furgoncini che girano dentro la cellula. Quando il cibo viene smontato (zuccheri, grassi) si liberano elettroni carichi di energia. NAD+ e FAD li raccolgono e diventano rispettivamente NADH e FADH2 (furgoncini pieni). Poi portano questi elettroni ai mitocondri, dove vengono usati per produrre ATP — la moneta energetica della cellula, che alimenta muscoli, cuore e tutto il resto. Una volta scaricati gli elettroni, tornano alla forma vuota (NAD+ e FAD) e ricominciano: sono riutilizzabili all infinito. Riguardo alle vitamine: il NAD+ deriva dalla vitamina B3 (niacina) e il FAD dalla vitamina B2 (riboflavina). Senza queste vitamine il corpo non ha abbastanza furgoncini e l energia non arriva: ecco perche le vitamine del gruppo B sono essenziali per avere energia.",
+    "explain": "Concetto chiave: NAD+/FAD = trasportatori di elettroni (furgoncini). Vuoti → pieni (NADH/FADH2) → scaricano ai mitocondri → ATP. Derivano da vitamine B3 e B2.",
+    "tags": ["risposta aperta"]
+  }
+]

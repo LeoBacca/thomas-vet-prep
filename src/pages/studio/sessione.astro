@@ -1,0 +1,303 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import '@/styles/studio.css';
+const base = import.meta.env.BASE_URL;
+const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
+---
+<BaseLayout title="Studio di oggi">
+  <div class="studio fc-wrap">
+    <div class="fc-top">
+      <span class="fc-left">
+        <a href={u('studio/')} style="text-decoration:none">‹ Dashboard</a>
+        <span class="help" tabindex="0" aria-label="Come funziona">?
+          <span class="help-bubble">
+            <b>📚 Studia oggi</b><br>
+            Trovi le card <b>da ripassare</b> (le sceglie l'algoritmo) più alcune card <b>nuove</b>.
+            Rispondi e di' quanto è stata facile: l'app decide da sola quando rivederla.<br>
+            ⚠️ Le card che <b>sbagli tornano subito</b>, più avanti nella stessa sessione, così le impari
+            bene <b>oggi</b> (non aspetti domani). Se dopo qualche tentativo proprio non viene, la lasciamo
+            per domani e ti segniamo il concetto da ripassare.
+          </span>
+        </span>
+      </span>
+      <span id="progress">—</span>
+      <span>XP <b id="sessXp">0</b> · <span class="combo">🔥<span id="combo">0</span></span></span>
+    </div>
+
+    <div id="empty" class="s-panel hidden" style="text-align:center">
+      <p style="font-size:1.3rem">🎉 Tutto ripassato per oggi!</p>
+      <p style="color:var(--muted,#666)">Non ci sono card dovute e hai già fatto le card nuove di oggi. Torna domani, oppure mettiti alla prova con una Sfida.</p>
+      <div class="s-tools" style="justify-content:center">
+        <a class="btn" href={u('studio/')}>Dashboard</a>
+        <a class="btn primary" href={u('studio/sfida/')}>⚔️ Vai alla Sfida</a>
+      </div>
+    </div>
+
+    <div id="player" class="hidden">
+      <div class="fc-card">
+        <span class="fc-tagrow">
+          <span class="fc-tag" id="cardTag"></span>
+          <span class="fc-quiz hidden" id="cardQuiz">📝 Argomento da quiz</span>
+        </span>
+        <div class="fc-q" id="q"></div>
+        <div class="fc-choices" id="choices"></div>
+        <div class="fc-explain hidden" id="explain"></div>
+      </div>
+      <div id="rateArea"></div>
+      <div class="toast" id="toast"></div>
+      <!-- Sull'errore: la testa di uno dei cani di Thomas incoraggia (fumetto a comparsa) -->
+      <div class="dog-pop hidden" id="dogPop">
+        <img class="dog" id="dogPopImg" src="" alt="" width="64" height="64" />
+        <div class="comic-bubble" id="dogPopText"></div>
+      </div>
+    </div>
+
+    <div id="summary" class="s-panel s-summary hidden">
+      <p class="big">🏁 Sessione finita!</p>
+      <p><b id="sumDone">0</b> card · <b id="sumAcc">0%</b> giuste al primo colpo · <b id="sumXp">0</b> XP · combo max <b id="sumCombo">0</b></p>
+      <div id="sumAch" style="color:#a0780f;font-weight:600;margin:.5rem 0"></div>
+      <div class="s-tools" style="justify-content:center">
+        <a class="btn primary" href={u('studio/')}>Torna alla Dashboard</a>
+        <a class="btn" href={u('studio/sfida/')}>⚔️ Sfida</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import { load, save, localDay } from '../../scripts/studio/store.js';
+    import { review as fsrsReview, previewIntervals, RATING } from '../../scripts/studio/fsrs.js';
+    import { applyReview } from '../../scripts/studio/game.js';
+    import { buildQueue, CARDS_META, ripasso } from '../../scripts/studio/cards.js';
+    import { isQuizTopic, quizTitle } from '../../data/quiz.js';
+    import { caneRandom, frasaRandom, caniIncoraggiamento } from '../../data/frasi-mascotte.js';
+
+    const $ = (id) => document.getElementById(id);
+    const state = load();
+
+    // --- Mascotte incoraggiamento sull'errore (testa di un cane a caso + fumetto) ---
+    const MBASE = import.meta.env.BASE_URL;
+    let dogShown = false;
+    function showDogEncouragement() {
+      if (dogShown) return; dogShown = true;          // una sola volta per card
+      const pop = $('dogPop'); if (!pop) return;
+      const dog = caneRandom();
+      const img = $('dogPopImg');
+      img.src = (MBASE + 'mascotte/' + dog.slug + '.png').replace(/\/{2,}/g, '/');
+      img.alt = dog.nome;
+      $('dogPopText').textContent = frasaRandom(caniIncoraggiamento);
+      pop.classList.remove('hidden');
+      void pop.offsetWidth;                            // reflow per far partire la transizione
+      pop.classList.add('show');
+    }
+
+    // Coda di oggi: card uniche (dovute + nuove). Ogni card viene "chiusa" UNA volta sola.
+    const queue = buildQueue(state);
+    const items = queue.map((card) => ({ card, fails: 0 }));   // fails = quante volte sbagliata oggi
+    const totalUnique = items.length;
+
+    const LEARN_GAP = 4;    // se la sbagli, ricompare ~4 card dopo (stessa sessione)
+    const MAX_FAILS = 3;    // dopo 3 errori la lasciamo per domani (niente "allo sfinimento")
+
+    let pos = 0;
+    let finalized = 0;      // card chiuse (uscite dalla sessione)
+    const sess = { correctFirst: 0, xp: 0, maxCombo: 0, ach: [] };
+
+    // Etichetta intervallo in italiano CHIARO (niente "1m" che sembra 1 minuto).
+    function ivlLabel(d) {
+      d = Math.max(1, Math.round(d));
+      if (d === 1) return '1 giorno';
+      if (d < 7) return d + ' giorni';
+      if (d < 30) { const w = Math.round(d / 7); return w === 1 ? '1 settimana' : w + ' settimane'; }
+      if (d < 365) { const m = Math.round(d / 30); return m === 1 ? '1 mese' : m + ' mesi'; }
+      const y = Math.round(d / 365 * 10) / 10;
+      return y === 1 ? '1 anno' : y + ' anni';
+    }
+
+    if (!queue.length) { $('empty').classList.remove('hidden'); }
+    else { $('player').classList.remove('hidden'); renderCard(); }
+
+    function renderCard() {
+      const item = items[pos];
+      const card = item.card;
+      $('progress').textContent = '✅ ' + finalized + '/' + totalUnique;
+      const tag = (card.materia || '').toUpperCase() + (card.tags && card.tags[0] ? ' · ' + card.tags[0] : '');
+      $('cardTag').textContent = item.fails > 0 ? '🔁 RIPASSO · ' + tag : tag;
+      const quiz = $('cardQuiz');
+      if (isQuizTopic(card.topicId)) { quiz.classList.remove('hidden'); quiz.title = quizTitle(card.topicId); }
+      else quiz.classList.add('hidden');
+      $('q').textContent = card.q;
+      const explain = $('explain'); explain.className = 'fc-explain hidden';
+      $('rateArea').innerHTML = ''; $('toast').textContent = '';
+      dogShown = false;
+      { const dp = $('dogPop'); if (dp) { dp.classList.remove('show'); dp.classList.add('hidden'); } }
+      const choices = $('choices'); choices.innerHTML = '';
+
+      if (card.type === 'mc' || card.type === 'tf') {
+        card.choices.forEach((c, idx) => {
+          const b = document.createElement('button');
+          b.className = 'fc-choice'; b.textContent = c;
+          b.addEventListener('click', () => answerChoice(card, idx, b));
+          choices.appendChild(b);
+        });
+      } else { // open
+        const b = document.createElement('button');
+        b.className = 'btn primary'; b.textContent = 'Mostra risposta';
+        b.addEventListener('click', () => revealOpen(card));
+        choices.appendChild(b);
+      }
+    }
+
+    function answerChoice(card, idx, btn) {
+      const isCorrect = idx === card.answer;
+      document.querySelectorAll('#choices .fc-choice').forEach((b, i) => {
+        b.disabled = true;
+        if (i === card.answer) b.classList.add('correct');
+        else if (i === idx) b.classList.add('wrong');
+      });
+      reveal(card, isCorrect);
+    }
+
+    function revealOpen(card) {
+      $('choices').innerHTML = '';
+      reveal(card, null, true);
+    }
+
+    function reveal(card, isCorrect, isOpen) {
+      const explain = $('explain');
+      explain.className = 'fc-explain' + (isCorrect === false ? ' ko' : '');
+      explain.innerHTML = '';
+      if (isOpen && card.answer) {
+        const ans = document.createElement('div');
+        ans.innerHTML = '<strong>Risposta:</strong> ';
+        ans.appendChild(document.createTextNode(card.answer));
+        explain.appendChild(ans);
+        if (card.explain) {
+          const ex = document.createElement('div');
+          ex.style.marginTop = '.5rem'; ex.style.color = 'var(--muted,#666)'; ex.style.fontSize = '.9rem';
+          ex.textContent = card.explain;
+          explain.appendChild(ex);
+        }
+      } else {
+        explain.appendChild(document.createTextNode(card.explain || ''));
+      }
+      // ponte verso le Risorse
+      const link = ripasso(card.topicId);
+      if (link) {
+        const a = document.createElement('a');
+        a.href = link.href;
+        if (isCorrect === false) { a.className = 'fc-ripasso'; a.textContent = '🔁 Meglio ripassare: ' + link.titolo; }
+        else { a.className = 'fc-ripasso soft'; a.textContent = '📖 Vai al concetto: ' + link.titolo; }
+        explain.appendChild(document.createElement('br'));
+        explain.appendChild(a);
+      }
+      explain.classList.remove('hidden');
+      if (isCorrect === false) showDogEncouragement();   // risposta multipla sbagliata
+      buildRating(card, isCorrect, isOpen);
+    }
+
+    function buildRating(card, isCorrect, isOpen) {
+      const area = $('rateArea');
+      const item = items[pos];
+      const prev = state.cards[card.id] || null;
+      const pv = previewIntervals(prev, { desiredRetention: state.settings.desiredRetention });
+
+      // sbagliata a risposta multipla: voto automatico "Di nuovo".
+      if (isCorrect === false) {
+        const willRetry = item.fails < MAX_FAILS;
+        const b = document.createElement('button');
+        b.className = 'btn';
+        b.textContent = willRetry ? 'Continua → (la rivediamo tra poco)' : 'Continua →';
+        b.addEventListener('click', () => resolve(card, RATING.AGAIN));
+        area.appendChild(b);
+        return;
+      }
+
+      const wrap = document.createElement('div');
+      wrap.className = 'rate' + (!isOpen ? ' correct-only' : '');
+      // per le card aperte includo "Di nuovo"; per le risposte multiple corrette no.
+      const defs = isOpen
+        ? [[RATING.AGAIN, 'Di nuovo', 'r1'], [RATING.HARD, 'Difficile', 'r2'], [RATING.GOOD, 'Bene', 'r3'], [RATING.EASY, 'Facile', 'r4']]
+        : [[RATING.HARD, 'Difficile', 'r2'], [RATING.GOOD, 'Bene', 'r3'], [RATING.EASY, 'Facile', 'r4']];
+      for (const [g, lbl, cls] of defs) {
+        const b = document.createElement('button');
+        b.className = cls;
+        // "Di nuovo" non mostra un intervallo: la card torna OGGI (tra poco), non tra X giorni.
+        const sub = g === RATING.AGAIN ? '🔁 tra poco' : ivlLabel(pv[g]);
+        b.innerHTML = lbl + '<small>' + sub + '</small>';
+        b.addEventListener('click', () => resolve(card, g));
+        wrap.appendChild(b);
+      }
+      area.appendChild(wrap);
+    }
+
+    // Chiude o rimette in coda la card corrente.
+    function resolve(card, grade) {
+      const item = items[pos];
+      const failed = grade === RATING.AGAIN;
+      if (failed) { item.fails++; showDogEncouragement(); }   // copre anche le card aperte ("Di nuovo")
+
+      // --- LEARNING STEP: sbagliata e sotto il limite → torna tra poco, NON chiude la card ---
+      if (failed && item.fails <= MAX_FAILS) {
+        state.combo.current = 0;          // sbagliata: combo azzerata
+        const eff = 3;                    // piccola XP-sforzo (non conta come ripasso "vero")
+        state.xp += eff;
+        const day = localDay();
+        const d = (state.days[day] ||= { reviews: 0, correct: 0, xp: 0, newCards: 0 });
+        d.xp += eff;
+        save(state);
+
+        sess.xp += eff;
+        $('sessXp').textContent = sess.xp;
+        $('combo').textContent = '0';
+        $('toast').textContent = '🔁 La rivediamo tra poco (oggi). +' + eff + ' XP per averci provato';
+
+        // reinserisci la stessa card più avanti nella sessione
+        const at = Math.min(pos + LEARN_GAP, items.length);
+        items.splice(at, 0, item);
+        pos++;
+        setTimeout(() => { if (pos >= items.length) showSummary(); else renderCard(); }, 700);
+        return;
+      }
+
+      // --- CHIUSURA: risposta corretta, oppure errore ma limite raggiunto (la lasciamo a domani) ---
+      const now = new Date().toISOString();
+      const prev = state.cards[card.id] || null;
+      const isNew = !prev || !prev.reps;
+      const newState = fsrsReview(prev, grade, { now, desiredRetention: state.settings.desiredRetention, fuzz: true });
+      const res = applyReview(state, { cardId: card.id, grade, newCardState: newState, isNew, now }, CARDS_META);
+      save(state);
+
+      finalized++;
+      if (res.correct && item.fails === 0) sess.correctFirst++;
+      sess.xp += res.xpGained;
+      sess.maxCombo = Math.max(sess.maxCombo, state.combo.current);
+      res.newAchievements.forEach((id) => { if (!sess.ach.includes(id)) sess.ach.push(id); });
+
+      $('sessXp').textContent = sess.xp;
+      $('combo').textContent = state.combo.current;
+      let msg = '+' + res.xpGained + ' XP';
+      if (res.mult > 1) msg += ' (×' + res.mult.toFixed(2) + ' combo)';
+      if (res.leveledUp) msg += ' · ⬆️ LIVELLO ' + res.level + '!';
+      if (failed) msg = '📌 La rivedrai domani — ripassa il concetto qui sopra. ' + msg;
+      $('toast').textContent = msg;
+      if (res.newAchievements.length) {
+        const span = document.createElement('span'); span.className = 'ach';
+        span.textContent = '🎖️ Medaglia sbloccata!';
+        $('toast').appendChild(span);
+      }
+
+      pos++;
+      setTimeout(() => { if (pos >= items.length) showSummary(); else renderCard(); }, res.newAchievements.length ? 900 : (failed ? 1100 : 350));
+    }
+
+    function showSummary() {
+      $('player').classList.add('hidden');
+      const s = $('summary'); s.classList.remove('hidden');
+      $('sumDone').textContent = finalized;
+      $('sumAcc').textContent = finalized ? Math.round(sess.correctFirst / finalized * 100) + '%' : '0%';
+      $('sumXp').textContent = sess.xp;
+      $('sumCombo').textContent = sess.maxCombo;
+      if (sess.ach.length) $('sumAch').textContent = '🎖️ ' + sess.ach.length + ' nuova/e medaglia/e! Guardale nella Dashboard.';
+    }
+  </script>
+</BaseLayout>

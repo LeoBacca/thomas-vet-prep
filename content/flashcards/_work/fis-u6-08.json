@@ -1,0 +1,81 @@
+{
+ "id": "fis-u6-08",
+ "titolo": "Resistenze in serie e in parallelo",
+ "materia": "fisica",
+ "unita": 6,
+ "slug": "08-resistenze-in-serie-e-in-parallelo",
+ "freq": 5,
+ "risorseMdx": "src/pages/risorse/fisica/u6/08-resistenze-in-serie-e-in-parallelo.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "In un circuito elettrico alimentato da una batteria sono inserite due resistenze in parallelo. Perché la corrente erogata dalla batteria è la somma delle correnti che attraversano le singole resistenze?",
+   "choices": [
+    "Per il principio di conservazione della carica elettrica",
+    "Perché gli elettroni hanno carica negativa",
+    "Perché si conserva l'energia cinetica degli elettroni",
+    "Perché l'effetto Joule nel circuito è nullo",
+    "Perché la differenza di potenziale erogata dalla batteria è costante nel tempo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2009",
+   "q": "Un circuito elettrico è costituito da tre resistenze collegate in parallelo. Le prime due hanno un valore di 20 e 40 Ohm rispettivamente, mentre il valore resistivo della terza è ignoto. Misurando la resistenza totale del circuito si ricava un valore di 12 Ohm. Qual è il valore più probabile della terza resistenza?",
+   "choices": [
+    "120 Ohm",
+    "72 Ohm",
+    "48 Ohm",
+    "32 Ohm",
+    "240 Ohm"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2012",
+   "q": "Una resistenza R1 = 5 ohm e una seconda resistenza R2 ignota, collegate in serie, dissipano 10 W se collegate a un generatore di tensione continua da 20 V. Quanto vale R2?",
+   "choices": [
+    "35 ohm",
+    "15 ohm",
+    "circa 3,3 ohm",
+    "circa 5,7 ohm",
+    "1 ohm"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2015",
+   "q": "Due resistori, di resistenza R e 4R, sono connessi in serie in modo da ottenere una resistenza totale di 100 ohm. Questi due resistori vengono ora connessi tra di loro in parallelo in un circuito a corrente continua. Qual è ora la resistenza risultante?",
+   "choices": [
+    "16 ohm",
+    "20 ohm",
+    "25 ohm",
+    "400 ohm",
+    "625 ohm"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2020",
+   "q": "Un generatore ideale da 10 V viene connesso a un circuito di 3 resistenze delle quali la prima da 5 ohm è in serie alle due da 10 ohm tra di loro in parallelo. Qual è il valore della corrente che attraversa il circuito?",
+   "choices": [
+    "1 A",
+    "10 A",
+    "2 A",
+    "3 A",
+    "5 A"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

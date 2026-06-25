@@ -1,0 +1,81 @@
+{
+ "id": "bio-u4-06",
+ "titolo": "Pleiotropia, epistasi (rapporti mendeliani atipici), associazione e mappe genetiche",
+ "materia": "biologia",
+ "unita": 4,
+ "slug": "06-pleiotropia-epistasi-rapporti-mendeliani-atipici-associazione",
+ "freq": 5,
+ "risorseMdx": "src/pages/risorse/biologia/u4/06-pleiotropia-epistasi-rapporti-mendeliani-atipici-associazione.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "È stato possibile iniziare a costruire una mappa cromosomica:",
+   "choices": [
+    "associando la frequenza del crossing-over alla distanza relativa dei geni sui cromosomi",
+    "esaminando il numero di cromosomi di un cariotipo",
+    "esaminando i gameti di più generazioni",
+    "verificando l'andamento della meiosi nei gameti maschili",
+    "esaminando il tipo di cromosomi presenti nel maschio e nella femmina"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2008",
+   "q": "I gatti dell'isola di Man sono eterozigoti per una mutazione (dominante) che causa l'assenza della coda. La mutazione omozigote risulta letale già a livello embrionale. Pertanto l'incrocio tra due gatti di Man originerà:",
+   "choices": [
+    "un rapporto fenotipico di 2:1 tra i gatti nati vivi, cioè 2 gatti di Man e 1 con coda normale",
+    "un rapporto fenotipico di 3:1 tra i gatti nati vivi, cioè 1 gatto di Man e 3 con coda normale",
+    "un rapporto fenotipico di 2:1 tra i gatti nati vivi, cioè 2 gatti con coda normale e 1 di Man",
+    "tutti gatti con coda normale",
+    "tutti gatti di Man"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2010",
+   "q": "Le mappe genetiche possono essere stabilite mediante:",
+   "choices": [
+    "la frequenza di ricombinazione di geni associati",
+    "la frequenza di ricombinazione di geni indipendenti",
+    "l'analisi delle mappe cromosomiche",
+    "l'utilizzo del test-cross",
+    "la tecnica della PCR"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2012",
+   "q": "Nei polli la forma della cresta è determinata dall'interazione tra due geni, P e R, non associati tra loro. La cresta \"a rosa\" si sviluppa quando il gene P presenta entrambi gli alleli recessivi e il gene R almeno un allele dominante. Qual è la probabilità che dall'incrocio di due individui eterozigoti per entrambi i geni nasca un pollo con la cresta \"a rosa\"?",
+   "choices": [
+    "3/16",
+    "1/16",
+    "9/16",
+    "3/4",
+    "1/2"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2015",
+   "q": "Il colore del pelo di un animale può essere nero, marrone o bianco (ossia assenza di colore). Il diverso colore è dato dall'interazione di due geni presenti su loci diversi e non associati tra loro. Il gene B/b ha due alleli: B rende il pelo nero e b marrone. Il gene C/c ha due alleli: C garantisce colore del pelo mentre c no. Si effettuano tre incroci: Incrocio 1: nero x nero, progenie nero/marrone/bianco; Incrocio 2: nero x marrone, progenie solo nero; Incrocio 3: bianco x nero, progenie nero o marrone. Quale riga della tabella indica il corretto genotipo dei genitori per ciascuno dei tre incroci?",
+   "choices": [
+    "Riga 4",
+    "Riga 2",
+    "Riga 3",
+    "Riga 1",
+    "Riga 5"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  }
+ ]
+}

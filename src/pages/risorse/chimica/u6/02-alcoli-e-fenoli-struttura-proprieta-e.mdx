@@ -1,0 +1,94 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u6-02">
+
+Gli **alcoli** e i **fenoli** sono molecole che hanno tutte la stessa "etichetta": un piccolo gruppo chiamato **ossidrile**, scritto **-OH** (un atomo di ossigeno legato a uno di idrogeno). Quel -OH è come un adesivo che cambia il carattere della molecola: la rende più "amica" dell'acqua e capace di fare cose che gli idrocarburi semplici non sanno fare. È importante perché tantissime sostanze del corpo e dei farmaci hanno proprio questo -OH attaccato.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> guarda dove è incollato l'-OH. Se è attaccato a un carbonio "normale" (di una catena) → è un <strong>alcol</strong>. Se è attaccato direttamente all'<strong>anello del benzene</strong> → è un <strong>fenolo</strong>. Stesso adesivo, posto diverso, comportamento diverso.</div>
+
+<Diagram caption="Lo stesso gruppo -OH: su una catena (alcol) o sull'anello aromatico (fenolo)" code={`flowchart LR
+  OH["Gruppo ossidrile<br/>-OH"] --> ALC["ALCOL<br/>-OH su un carbonio<br/>di catena (es. etanolo)"]
+  OH --> FEN["FENOLO<br/>-OH attaccato<br/>all'anello del benzene"]`} />
+
+## Cos'è un alcol (e perché ti riguarda)
+
+Un **alcol** è una molecola con il gruppo -OH attaccato a un carbonio della catena. L'esempio più famoso è l'**etanolo**, cioè l'alcol delle bevande e del disinfettante per le mani.
+
+Quel -OH ha un piccolo "trucco": l'ossigeno tira a sé gli elettroni, quindi una parte della molecola è un po' negativa e una un po' positiva. È come un magnete debole. Questo permette agli alcoli di **agganciarsi all'acqua** (legami a idrogeno), per questo i piccoli alcoli si sciolgono benissimo in acqua, proprio come lo zucchero.
+
+Rilevanza per medicina e veterinaria: il glicerolo (un alcol con tre -OH) fa parte dei **grassi** del corpo, e il **colesterolo** è anch'esso un alcol. Anche tanti zuccheri sono pieni di gruppi -OH. Insomma, l'-OH è ovunque dentro di noi.
+
+## Cos'è un fenolo
+
+Un **fenolo** ha lo stesso -OH, ma incollato direttamente sull'**anello aromatico** (l'anello del benzene, una struttura a forma di esagono molto stabile). Sembra una differenza da niente, ma cambia tutto il carattere della molecola.
+
+I fenoli si usano spesso come **disinfettanti** e **antisettici**: il fenolo è stato uno dei primi disinfettanti usati in chirurgia. Molti **antiossidanti** naturali (come quelli di tè, olio d'oliva e frutta) sono fenoli: aiutano a proteggere le cellule dai danni.
+
+## L'acidità del fenolo: il punto chiave
+
+Un **acido** è una sostanza che tende a "mollare" un idrogeno (uno ione H+). Domanda: chi molla più facilmente l'idrogeno dell'-OH, l'alcol o il fenolo?
+
+Risposta: il **fenolo è molto più acido** di un alcol. Gli alcoli mollano l'idrogeno con grandissima fatica (sono acidi debolissimi, quasi come l'acqua). Il fenolo invece lo lascia andare molto più volentieri.
+
+Perché? Quando il fenolo perde l'H+, resta una carica negativa sull'ossigeno. Ma l'anello aromatico accanto **assorbe e distribuisce** quella carica negativa su tutto l'esagono, come tante persone che si dividono il peso di uno zaino pesante. Carica "spalmata" = situazione più stabile = il fenolo è contento di cedere l'idrogeno. Nell'alcol invece non c'è nessun anello che aiuta: la carica resta tutta concentrata sull'ossigeno, una situazione scomoda, quindi l'alcol non vuole cedere l'H+.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il fenolo è più acido perché, dopo aver perso l'idrogeno, l'anello aromatico gli "regge" la carica negativa e lo stabilizza. L'alcol da solo non ha questo aiuto, quindi resta acido debolissimo.</div>
+
+<Diagram caption="Perché il fenolo cede l'H+ più facilmente di un alcol" code={`flowchart TB
+  D["Tolgo l'H+ dal gruppo -OH<br/>(resta una carica negativa)"] --> A["ALCOL<br/>carica tutta sull'ossigeno<br/>→ scomodo, instabile"]
+  D --> F["FENOLO<br/>la carica si spalma sull'anello<br/>→ stabile"]
+  A --> A2["Acido debolissimo:<br/>non vuole cedere l'H+"]
+  F --> F2["Più acido:<br/>cede l'H+ volentieri"]`} />
+
+## Guarda il video
+
+<YouTube id="PYU8XApqDQU" title="Differenza di acidità tra fenoli e alcoli — spiegazione del Prof. Atzeni" />
+
+<VideoVisto id="chim-u6-02" />
+
+## Da ricordare
+
+- **Alcoli** e **fenoli** hanno tutti il gruppo **ossidrile -OH**.
+- **Alcol** = -OH su un carbonio di catena (es. etanolo). **Fenolo** = -OH attaccato all'**anello aromatico**.
+- Il gruppo -OH rende le molecole più solubili in **acqua** (forma legami a idrogeno).
+- Il **fenolo è molto più acido** di un alcol: cede l'H+ più facilmente perché l'anello stabilizza la carica negativa.
+- Gli -OH sono ovunque nel corpo: colesterolo, glicerolo dei grassi, zuccheri; molti fenoli sono **antiossidanti** e **disinfettanti**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è il gruppo funzionale comune ad alcoli e fenoli?"
+  opzioni={["il gruppo amminico -NH2", "il gruppo ossidrile -OH", "il gruppo carbossile -COOH", "il doppio legame C=C"]}
+  corretta={1}
+  spiegazione="Sia gli alcoli sia i fenoli hanno il gruppo ossidrile -OH (ossigeno legato a idrogeno). Cambia solo a cosa è attaccato."
+/>
+
+<Quiz
+  domanda="Cosa distingue un fenolo da un alcol?"
+  opzioni={["il fenolo non ha l'-OH", "nel fenolo l'-OH è attaccato direttamente all'anello aromatico", "il fenolo non contiene ossigeno", "l'alcol ha sempre due gruppi -OH"]}
+  corretta={1}
+  spiegazione="Nel fenolo il gruppo -OH è legato direttamente all'anello del benzene; nell'alcol è legato a un carbonio di catena."
+/>
+
+<Quiz
+  domanda="Tra un comune alcol e il fenolo, chi è più acido (cede più facilmente l'H+)?"
+  opzioni={["l'alcol", "il fenolo", "sono identici", "nessuno dei due è acido"]}
+  corretta={1}
+  spiegazione="Il fenolo è più acido: dopo aver perso l'H+, l'anello aromatico spalma e stabilizza la carica negativa, cosa che nell'alcol non avviene."
+/>
+
+<Esercizio
+  problema="Spiega con parole tue perché il fenolo è più acido dell'etanolo (un alcol)."
+  soluzione="Perché quando il fenolo perde l'idrogeno dell'-OH resta una carica negativa, ma l'anello aromatico la distribuisce su tutto l'esagono, rendendo la molecola più stabile: così il fenolo cede l'H+ volentieri. Nell'etanolo non c'è nessun anello che aiuti, quindi la carica resta concentrata sull'ossigeno (situazione instabile) e l'alcol cede l'H+ con grande difficoltà: è un acido debolissimo."
+/>
+
+</section>
+
+</RisorsaLayout>

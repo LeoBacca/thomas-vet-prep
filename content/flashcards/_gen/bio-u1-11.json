@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-11-1",
+    "topicId": "bio-u1-11",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: nella cellula eucariotica il DNA galleggia libero nel citoplasma, senza una 'stanza' separata che lo contenga.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Questo è quello che succede nei batteri (cellule procariotiche), dove il DNA sta libero nel citoplasma. La cellula EUCARIOTICA ha invece un nucleo vero: una 'stanza' con una doppia membrana (l'involucro nucleare) che custodisce e protegge il DNA. È la differenza principale tra procarioti ed eucarioti.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-11-2",
+    "topicId": "bio-u1-11",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "La cellula eucariotica è spesso paragonata a una città moderna. Quale organulo fa da 'centro di smistamento postale', ricevendo le proteine, modificandole e spedendole a destinazione?",
+    "choices": [
+      "Il reticolo endoplasmatico rugoso (RER)",
+      "L'apparato di Golgi",
+      "Il lisosoma",
+      "Il nucleo"
+    ],
+    "answer": 1,
+    "explain": "L'apparato di Golgi è il postino della cellula: riceve i pacchi (proteine) dal RER tramite vescicole, ci incolla le etichette (modifiche chimiche) e li smista verso il lisosoma, la membrana plasmatica o lo spazio fuori dalla cellula. Il RER è la 'fabbrica' che li produce, non il postino.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-11-3",
+    "topicId": "bio-u1-11",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Descrivi il percorso che fa una proteina dall'inizio della sua produzione fino a quando viene 'spedita' fuori dalla cellula. Nomina gli organuli che attraversa e cosa succede in ciascuno.",
+    "answer": "1. La proteina viene sintetizzata dai ribosomi agganciati al Reticolo Endoplasmatico Rugoso (RER): il RER è la 'fabbrica', rugosa proprio perché è piena di ribosomi. 2. La proteina appena costruita entra nel RER, che la piega nella forma giusta e la impacchetta in una vescicola. 3. La vescicola si stacca dal RER e si fonde con l'apparato di Golgi, il 'centro postale': qui la proteina viene modificata (es. aggiunta di zuccheri, etichette di indirizzo). 4. Il Golgi confeziona la proteina in una nuova vescicola secretoria. 5. Questa vescicola viaggia fino alla membrana plasmatica, si fonde con essa e riversa la proteina fuori dalla cellula (esocitosi). Tutto il materiale viaggia sempre dentro vescicole — mai libero nel citoplasma — come pacchi sigillati in buste.",
+    "explain": "Percorso chiave: RER (sintesi) → vescicola → Golgi (modifica + smistamento) → vescicola secretoria → membrana plasmatica → fuori dalla cellula.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-11-4",
+    "topicId": "bio-u1-11",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale dei seguenti componenti della cellula eucariotica NON è delimitato da membrana?",
+    "choices": [
+      "Il ribosoma",
+      "Il mitocondrio",
+      "Il lisosoma",
+      "Le cisterne del reticolo endoplasmatico",
+      "Il nucleo"
+    ],
+    "answer": 0,
+    "explain": "Il ribosoma è l'unico tra questi che NON ha una membrana propria: è un complesso di proteine e RNA che sta agganciato al RER oppure libero nel citoplasma. Tutti gli altri hanno una membrana: il mitocondrio ne ha addirittura due (doppia membrana), il lisosoma è una vescicola membranosa piena di enzimi, le cisterne del reticolo endoplasmatico sono proprio sacchi di membrana, e il nucleo è avvolto dall'involucro nucleare (doppio strato). La trappola tipica è pensare che 'sta dentro la cellula = ha una membrana propria', ma non è così: il ribosoma è un macchinario senza involucro.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-11-5",
+    "topicId": "bio-u1-11",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Secondo l'ipotesi più accreditata, come si è formato il nucleo nella cellula eucariotica?",
+    "choices": [
+      "Un batterio si è infilato dentro un'altra cellula ed è diventato il nucleo (endosimbiosi)",
+      "La membrana plasmatica di un'antica cellula procariotica si è ripiegata verso l'interno, avvolgendo il DNA",
+      "Il nucleo si è formato per divisione di un mitocondrio già presente",
+      "Un virus ha portato il DNA dentro la cellula, che lo ha poi circondato con una membrana",
+      "Due cellule procariotiche si sono fuse e una è diventata il nucleo dell'altra"
+    ],
+    "answer": 1,
+    "explain": "L'ipotesi corretta è quella dell'invaginazione: la membrana esterna di un antico batterio ha cominciato a ripiegarsi verso l'interno, avvolgendo il DNA come si avvolge un libro in una copertina rigida, e col tempo ha formato il doppio strato dell'involucro nucleare. Trappola classica: l'endosimbiosi (un batterio entrato dentro un'altra cellula) è l'ipotesi che spiega l'ORIGINE DEI MITOCONDRI e dei cloroplasti, NON del nucleo — scambio di termini frequentissimo. Le altre opzioni (divisione di un mitocondrio, virus, fusione di due cellule) non hanno supporto scientifico e sono filler o near-miss plausibili ma errati.",
+    "tags": ["prova d'esame"]
+  }
+]

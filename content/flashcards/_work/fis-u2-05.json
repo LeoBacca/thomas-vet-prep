@@ -1,0 +1,53 @@
+{
+ "id": "fis-u2-05",
+ "titolo": "Moto uniformemente accelerato e caduta libera",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "05-moto-uniformemente-accelerato-e-caduta-libera",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/fisica/u2/05-moto-uniformemente-accelerato-e-caduta-libera.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Un corpo di ferro di 5 chili ed uno di piombo di 2 chili vengono lasciati cadere da dieci metri di altezza indipendentemente l'uno dall'altro. In un secondo esperimento i due corpi vengono strettamente legati insieme ed il corpo così composto è lasciato cadere dalla stessa altezza. Sapendo che l'effetto dell'attrito dell'aria è trascurabile, si indichi quale delle affermazioni seguenti è l'UNICA CORRETTA quando si confronti il moto effettuato dai due corpi con quello del corpo composto:",
+   "choices": [
+    "i tre corpi seguono lo stesso moto di caduta",
+    "il corpo leggero tende a frenare il corpo più pesante perché pesa di meno",
+    "il corpo più pesante tende a frenare il corpo più leggero perché ha maggiore inerzia",
+    "il corpo composto segue un moto che dipenderà da come è stato legato",
+    "i tre corpi seguono tre distinti moti perché i materiali sono diversi"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2012",
+   "q": "Un vaso cade da un'altezza di 5 m. Trascurando l'attrito con l'aria, si può ritenere che la sua velocità al momento dell'impatto col suolo sia circa:",
+   "choices": [
+    "10 m/s",
+    "100 m/s",
+    "20 m/s",
+    "5 m/s",
+    "50 m/s"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2016",
+   "q": "In una camera a vuoto vengono lasciati cadere, da una distanza di 1 metro dal suolo e nello stesso istante, due oggetti di volume e massa diversi. Si può affermare che:",
+   "choices": [
+    "i due oggetti toccano il suolo contemporaneamente",
+    "l'oggetto di massa maggiore tocca il suolo per primo",
+    "l'oggetto di massa minore tocca il suolo per primo",
+    "l'oggetto di volume maggiore tocca il suolo per primo",
+    "l'oggetto di volume minore tocca il suolo per primo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

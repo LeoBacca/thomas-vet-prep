@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-12-1",
+    "topicId": "bio-u1-12",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: i mitocondri hanno il proprio DNA circolare, proprio come i batteri, e si riproducono per scissione binaria esattamente come farebbe un batterio libero.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Sono due delle prove piu solide della teoria endosimbiotica: il DNA mitocondriale e circolare (come quello batterico, non lineare come quello del nucleo eucariotico) e i mitocondri si dividono per scissione binaria, non per mitosi come le cellule in cui vivono. Sono tracce del loro passato da batteri liberi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-12-2",
+    "topicId": "bio-u1-12",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Circa 2 miliardi di anni fa, una cellula grande inghiotti un batterio capace di usare l'ossigeno per produrre energia. Invece di digerirlo, lo tenne vivo dentro di se. Cosa divenne quel batterio nel tempo?",
+    "choices": [
+      "Il nucleo della cellula eucariotica",
+      "Il mitocondrio: la centrale energetica della cellula",
+      "Il ribosoma, la macchina per fabbricare proteine",
+      "La membrana cellulare esterna"
+    ],
+    "answer": 1,
+    "explain": "Questa e la teoria endosimbiotica di Lynn Margulis: il batterio aerobico inghiottito perse l'autonomia e divento il mitocondrio, che ancora oggi produce l'energia (ATP) per la cellula. Il nucleo ha un'origine diversa. I ribosomi mitocondriali ASSOMIGLIANO a quelli batterici (e una prova del passato procariotico), ma non sono il batterio trasformato.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-12-3",
+    "topicId": "bio-u1-12",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Elenca almeno tre caratteristiche che accomunano i mitocondri ai batteri e spiega per ciascuna perche e una prova a favore della teoria endosimbiotica.",
+    "answer": "1. DNA circolare: i mitocondri hanno un genoma proprio e circolare, identico nella forma a quello dei batteri. Le cellule eucariotiche hanno invece DNA lineare nel nucleo: avere un DNA circolare separato suggerisce un'origine batterica indipendente. 2. Doppia membrana: il mitocondrio e avvolto da due membrane. Quella esterna e la membrana della cellula che inglobo il batterio per fagocitosi; quella interna era la membrana originale del batterio. Questa struttura a doppio strato si spiega perfettamente con il meccanismo dell'inghiottimento. 3. Scissione binaria: i mitocondri si moltiplicano dividendosi a meta, esattamente come i batteri, non con la mitosi usata dal resto della cellula. Questo meccanismo ancestrale non si sarebbe conservato se il mitocondrio fosse nato dentro la cellula. (Bonus: i ribosomi mitocondriali sono di tipo procariotico, simili per dimensioni e struttura a quelli batterici, non a quelli del citoplasma eucariotico.)",
+    "explain": "Le tre prove chiave: DNA circolare, doppia membrana, scissione binaria. Ognuna e un 'residuo fossile' del passato batterico del mitocondrio.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-12-4",
+    "topicId": "bio-u1-12",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "La teoria endosimbiotica sostiene che cloroplasti e mitocondri si siano evoluti da organismi unicellulari procarioti. Quale delle seguenti affermazioni supporta questa teoria?",
+    "choices": [
+      "Entrambi gli organuli contengono molecole di DNA e di RNA",
+      "Entrambi gli organuli sono dotati di microtubuli",
+      "Entrambi gli organuli producono proteine usando ribosomi di tipo eucariotico",
+      "Entrambi gli organuli si replicano per mitosi come le cellule in cui si trovano",
+      "Entrambi gli organuli sono privi di membrana propria"
+    ],
+    "answer": 0,
+    "explain": "Avere DNA proprio (circolare, come nei batteri) PIU RNA (per trascrivere e produrre proteine in modo autonomo) e la prova piu completa dell'origine procariotica: questi organuli conservano un intero sistema di espressione genetica indipendente, come ci si aspetterebbe da un batterio che viveva per conto suo. I microtubuli (opzione B) non sono una prova dell'endosimbiosi: fanno parte del citoscheletro eucariotico, non dei batteri. L'opzione C e una trappola: i ribosomi di mitocondri e cloroplasti sono di tipo PROCARIOTICO, non eucariotico. L'opzione D e l'opposto esatto: si replicano per scissione binaria (batterica), non per mitosi eucariotica. L'opzione E e sbagliata: entrambi hanno una doppia membrana, non sono privi di membrana.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-12-5",
+    "topicId": "bio-u1-12",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale fra le seguenti entita biologiche NON possiede i mitocondri?",
+    "choices": [
+      "Batteri aerobi",
+      "Funghi filamentosi",
+      "Diatomee (alghe unicellulari eucariotiche)",
+      "Lievito di birra",
+      "Amebe"
+    ],
+    "answer": 0,
+    "explain": "I batteri sono PROCARIOTI: non hanno un nucleo delimitato da membrana e non hanno organuli come i mitocondri. Sono proprio i discendenti (in forma libera) degli organismi che, secondo la teoria endosimbiotica, DIVENTARONO mitocondri quando furono inglobati. Tutte le altre opzioni sono organismi EUCARIOTICI: i funghi filamentosi e il lievito di birra sono eucarioti del regno Fungi; le diatomee sono alghe eucariotiche; le amebe sono protozoi eucariotici. Tutti i veri eucarioti hanno i mitocondri.",
+    "tags": ["prova d'esame"]
+  }
+]

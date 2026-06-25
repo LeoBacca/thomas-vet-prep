@@ -1,0 +1,109 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u5-09">
+
+## Cos'è una macchina termica?
+
+Una **macchina termica** è qualsiasi dispositivo che trasforma il calore in lavoro meccanico.
+
+Esempi concreti: il motore di un'auto, una turbina a vapore, il motore di un aereo.
+
+Come funziona in generale:
+- La macchina prende calore da una **sorgente calda** (ad esempio il fuoco o il vapore).
+- Una parte di quel calore viene convertita in **lavoro utile** (far girare un albero, spingere un pistone…).
+- Il resto del calore viene **scaricato** in una **sorgente fredda** (l'ambiente, l'acqua di raffreddamento…).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> nessuna macchina termica può trasformare il 100% del calore in lavoro — una parte va sempre "sprecata" verso il freddo. Questa è una legge di natura, non un difetto di progettazione.</div>
+
+<Diagram caption="Schema di funzionamento di una macchina termica" code={`flowchart TB
+  A["Sorgente CALDA<br/>(temperatura alta T_h)"] -->|"Calore assorbito Q_h"| B["MACCHINA TERMICA"]
+  B -->|"Lavoro utile W"| C["Utilizzatore<br/>(motore, generatore…)"]
+  B -->|"Calore scaricato Q_c"| D["Sorgente FREDDA<br/>(temperatura bassa T_c)"]`} />
+
+---
+
+## Il rendimento: quanto è efficiente la macchina?
+
+Il **rendimento** (simbolo η, si legge "eta") misura quanto bene la macchina sfrutta il calore.
+
+La formula è:
+
+**η = W / Q_h**
+
+Dove:
+- **W** = lavoro prodotto
+- **Q_h** = calore assorbito dalla sorgente calda
+
+Poiché **W = Q_h − Q_c**, si può anche scrivere:
+
+**η = 1 − (Q_c / Q_h)**
+
+Il rendimento è sempre un numero tra 0 e 1 (o tra 0% e 100%). Non raggiunge mai 1 perché non si può scaricare zero calore.
+
+---
+
+## Il ciclo di Carnot: il limite teorico massimo
+
+Sadi Carnot (fisico francese, 1824) dimostrò che esiste un **rendimento massimo teorico** che nessuna macchina reale può superare.
+
+Questo limite dipende **solo dalle temperature** delle due sorgenti:
+
+**η_Carnot = 1 − (T_c / T_h)**
+
+Dove **T_c** e **T_h** sono le temperature in **Kelvin** (non in gradi Celsius!).
+
+Esempi pratici:
+- Se T_h = 600 K e T_c = 300 K → η_Carnot = 1 − 300/600 = **0,50 = 50%**
+- Se T_h = 1000 K e T_c = 300 K → η_Carnot = 1 − 300/1000 = **0,70 = 70%**
+
+Più grande è la differenza di temperatura, più alto è il rendimento massimo raggiungibile.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il ciclo di Carnot è la "macchina perfetta" immaginaria — nessuna macchina reale può fare di meglio. È come il limite di velocità della luce per le auto: puoi avvicinarti, ma non superarlo.</div>
+
+<Diagram caption="Come cambia il rendimento massimo al variare delle temperature" code={`flowchart LR
+  A["Differenza di temperatura<br/>PICCOLA tra T_h e T_c"] -->|"rendimento basso"| B["η vicino a 0%"]
+  C["Differenza di temperatura<br/>GRANDE tra T_h e T_c"] -->|"rendimento alto"| D["η si avvicina a 100%<br/>(ma non ci arriva mai)"]
+  E["T_c = 0 K (zero assoluto)"] -->|"solo caso teorico"| F["η = 100%<br/>(irraggiungibile in pratica)"]`} />
+
+---
+
+## Il ciclo di Carnot in dettaglio
+
+Il ciclo di Carnot è composto da **quattro trasformazioni** su un gas:
+
+1. **Espansione isoterma** (a T_h costante): il gas assorbe calore e si espande.
+2. **Espansione adiabatica** (senza scambio di calore): il gas si raffredda.
+3. **Compressione isoterma** (a T_c costante): il gas cede calore alla sorgente fredda.
+4. **Compressione adiabatica**: il gas torna alle condizioni iniziali.
+
+---
+
+## Guarda il video
+<YouTube id="FbYCkQ0FMrI" title="Il Ciclo di Carnot per una Macchina Termica - Fisica | ZERO g" />
+<VideoVisto id="fis-u5-09" />
+
+## Da ricordare
+- Una macchina termica trasforma parte del calore in lavoro, ma non può convertire il 100% del calore: una parte va sempre scaricata nella sorgente fredda.
+- Il rendimento si calcola come η = 1 − (Q_c / Q_h) ed è sempre minore di 1.
+- Il ciclo di Carnot dà il rendimento massimo teorico possibile: η_Carnot = 1 − (T_c / T_h), dove le temperature sono in Kelvin.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una macchina termica assorbe 800 J dalla sorgente calda e scarica 500 J nella sorgente fredda. Qual è il suo rendimento?" opzioni={["37,5%", "62,5%", "60%", "40%"]} corretta={0} spiegazione="Il lavoro prodotto è W = 800 − 500 = 300 J. Il rendimento è η = W / Q_h = 300 / 800 = 0,375, cioè il 37,5%. Risposta A." />
+
+<Quiz domanda="Una macchina di Carnot opera tra una sorgente calda a 500 K e una fredda a 250 K. Qual è il suo rendimento massimo?" opzioni={["25%", "50%", "75%", "100%"]} corretta={1} spiegazione="η_Carnot = 1 − T_c / T_h = 1 − 250/500 = 1 − 0,5 = 0,5 = 50%. Risposta B." />
+
+<Quiz domanda="Cosa succede al rendimento massimo di Carnot se si abbassa la temperatura della sorgente fredda mantenendo fissa quella calda?" opzioni={["Diminuisce", "Rimane uguale", "Aumenta", "Diventa uguale a 1"] } corretta={2} spiegazione="η_Carnot = 1 − T_c / T_h. Se T_c scende, il rapporto T_c/T_h diminuisce, quindi 1 meno quel rapporto aumenta. Il rendimento massimo cresce. Risposta C." />
+
+<Esercizio problema="Un motore a vapore opera tra una caldaia a 400°C e un condensatore a 100°C. Converti le temperature in Kelvin e calcola il rendimento massimo teorico (ciclo di Carnot). Poi calcola quanti joule di lavoro può produrre al massimo se assorbe 2000 J dalla caldaia." soluzione="Converti: T_h = 400 + 273 = 673 K; T_c = 100 + 273 = 373 K. Rendimento di Carnot: η = 1 − 373/673 ≈ 1 − 0,554 = 0,446, cioè circa 44,6%. Lavoro massimo: W = η × Q_h = 0,446 × 2000 ≈ 892 J." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,67 @@
+{
+ "id": "chim-u1-11",
+ "titolo": "Molecole, ioni e ioni poliatomici",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "11-molecole-ioni-e-ioni-poliatomici",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/chimica/u1/11-molecole-ioni-e-ioni-poliatomici.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Indicare la definizione CORRETTA di molecola:",
+   "choices": [
+    "la più piccola quantità di una sostanza chimica che ne conserva le caratteristiche chimiche",
+    "la più piccola quantità di un elemento che permette di riconoscerlo",
+    "la più piccola quantità di un elemento o composto che ne conserva tutte le caratteristiche fisiche e chimiche",
+    "la più piccola quantità con cui un elemento entra a far parte di un composto",
+    "la più piccola quantità di una sostanza chimica che ne conserva solo le caratteristiche fisiche"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2012",
+   "q": "Indicare la formula corretta dello ione clorato:",
+   "choices": [
+    "ClO3-",
+    "ClO2-",
+    "Cl-",
+    "ClO4-",
+    "ClO-"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2013",
+   "q": "Qual e il numero minimo di atomi di idrogeno necessario per costituire una molecola di fosfato d'ammonio, (NH4)3PO4?",
+   "choices": [
+    "12",
+    "4",
+    "8",
+    "9",
+    "6"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2016",
+   "q": "Quale tra le seguenti formule chimiche identifica lo ione carbonato?",
+   "choices": [
+    "CO3 2-",
+    "CO2-",
+    "HCO3-",
+    "CO3 2+",
+    "HCO2-"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  }
+ ]
+}

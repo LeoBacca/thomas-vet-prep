@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u3-08-1",
+    "topicId": "fis-u3-08",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: in un tubo orizzontale, dove il fluido scorre PIU veloce la pressione sulle pareti e PIU alta.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso — e l'opposto! E il principio di Bernoulli: piu veloce = meno pressione. Pensa a un tubo da giardino: quando stringi l'uscita col pollice, l'acqua schizza forte (veloce) ma non 'gonfia' le pareti — anzi le risucchia verso l'interno.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-08-2",
+    "topicId": "fis-u3-08",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "open",
+    "q": "Un'arteria ha una placca che la restringe (stenosi). Usando Bernoulli, spiega cosa succede alla velocita del sangue e alla pressione nella zona ristretta, e perche questo e pericoloso.",
+    "answer": "Nella zona ristretta la sezione e piu piccola, quindi il sangue deve accelerare per passare (equazione di continuita: se il tubo si stringe, il fluido corre piu forte). Per Bernoulli, piu alta e la velocita, piu bassa e la pressione: la pressione nella stenosi cala. Una pressione bassa significa che le pareti dell'arteria non vengono 'spinte' dall'interno ma vengono invece 'risucchiate' verso il centro, e questo tende a far collassare ulteriormente il vaso. E un circolo vizioso: piu si restringe, piu il sangue accelera, piu la pressione scende, piu il vaso tende a chiudersi.",
+    "explain": "La chiave e ricordare il collegamento in serie: stenosi → velocita su (continuita) → pressione giu (Bernoulli) → rischio collasso del vaso.",
+    "tags": ["risposta aperta"]
+  }
+]

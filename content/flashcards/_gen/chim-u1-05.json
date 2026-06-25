@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-05-1",
+    "topicId": "chim-u1-05",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale numero quantico ti dice la FORMA dell'orbitale (sfera, manubrio...)?",
+    "choices": [
+      "n (numero principale): decide la grandezza e l'energia dell'orbitale",
+      "l (numero secondario): decide la forma, a cui corrispondono le lettere s, p, d, f",
+      "m (numero magnetico): decide verso dove punta l'orbitale nello spazio",
+      "spin (ms): dice il verso di rotazione dell'elettrone"
+    ],
+    "answer": 1,
+    "explain": "Il numero l e il 'codice forma': l=0 → sfera (s), l=1 → manubrio (p), l=2 → quadrifoglio (d). Il numero n invece e il piano del palazzo (grandezza ed energia); m e l'orientamento; lo spin e la trottola dell'elettrone. La confusione piu comune e scambiare n con l.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-05-2",
+    "topicId": "chim-u1-05",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: in un orbitale ci possono stare al massimo 2 elettroni, e devono avere spin opposti (uno 'su' e uno 'giu').",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Pensa a un posto a due sedili: ci entrano due persone ma devono mettersi in verso opposto. Lo stesso vale per l'orbitale: massimo 2 elettroni, con spin +1/2 e -1/2. Mai due elettroni con lo stesso spin nella stessa casella.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-05-3",
+    "topicId": "chim-u1-05",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Usando l'analogia del condominio, spiega che cosa indicano i quattro numeri quantici n, l, m e spin. Poi di' qual e la regola fondamentale che limita i valori che ciascuno puo assumere.",
+    "answer": "Immagina l'atomo come un grande condominio dove vivono gli elettroni. n e il PIANO: puo valere 1, 2, 3, 4... e piu e alto, piu l'orbitale e grande, lontano dal nucleo e pieno di energia. l e la FORMA della stanza: puo valere da 0 fino a n-1 (mai uguale o maggiore di n). A l=0 corrisponde la stanza sferica (s); a l=1 la stanza a manubrio (p); a l=2 quella a quadrifoglio (d). m e l'ORIENTAMENTO della stanza nello spazio: puo valere da -l a +l (incluso lo 0). Per un orbitale p (l=1), m puo essere -1, 0 o +1: tre direzioni. Lo spin (ms) e la trottola dell'elettrone: puo valere solo +1/2 (su) o -1/2 (giu). Regola chiave: l deve essere minore di n; m non puo uscire dall'intervallo da -l a +l. Se una di queste condizioni e violata, la quaterna e impossibile.",
+    "explain": "Da ricordare: l < n sempre; m va da -l a +l; spin solo ±1/2. Se uno solo di questi vincoli e violato, la quaterna e vietata.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-05-4",
+    "topicId": "chim-u1-05",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti serie di numeri quantici (n, l, m, spin) riferita a un elettrone e POSSIBILE?",
+    "choices": [
+      "n=4, l=2, m=-2, ms=+1/2",
+      "n=3, l=3, m=+2, ms=+1/2",
+      "n=4, l=1, m=-2, ms=-1/2",
+      "n=2, l=2, m=-2, ms=-1/2",
+      "n=3, l=0, m=1, ms=+1/2"
+    ],
+    "answer": 0,
+    "explain": "La prima serie e corretta: n=4, l=2 (ok perche l puo andare da 0 a n-1=3), m=-2 (ok perche m va da -l a +l, cioe da -2 a +2), ms=+1/2 (ok). Le trappole: 'n=3, l=3' e impossibile perche l deve essere MINORE di n (l max = n-1 = 2, non 3); 'n=4, l=1, m=-2' e impossibile perche l=1 ammette solo m=-1, 0, +1 e non -2; 'n=2, l=2' e impossibile perche con n=2, l puo essere al massimo 1 (non 2); 'n=3, l=0, m=1' e impossibile perche con l=0 l'unico m consentito e 0, non 1. Il metodo: controlla prima che l < n, poi che |m| ≤ l.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-05-5",
+    "topicId": "chim-u1-05",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti quaterne di numeri quantici (n, l, m, spin) riferita a un elettrone e POSSIBILE?",
+    "choices": [
+      "n=3, l=1, m=-1/2, ms=0",
+      "n=3, l=1, m=0, ms=-1/2",
+      "n=2, l=3, m=0, ms=+1/2",
+      "n=2, l=3, m=+1/2, ms=0",
+      "n=3, l=1, m=4, ms=+1/2"
+    ],
+    "answer": 1,
+    "explain": "Solo la seconda e corretta: n=3, l=1 (ok, l < n), m=0 (ok, m va da -1 a +1 quando l=1), ms=-1/2 (ok, spin vale +1/2 o -1/2). Le trappole da smontare: 'n=3, l=1, m=-1/2, ms=0' e impossibile perche m e ms SONO SCAMBIATI: m deve essere un intero (-1, 0 o 1) e lo spin deve essere +1/2 o -1/2, non il contrario; 'n=2, l=3' e impossibile perche con n=2, l puo essere al massimo 1 (l max = n-1 = 1); 'n=2, l=3, m=+1/2, ms=0' ha due errori a cascata (l fuori limite + m e ms scambiati); 'n=3, l=1, m=4' e impossibile perche con l=1, m puo essere solo -1, 0 o +1, non 4. La trappola piu insidiosa e scambiare m con ms: ricorda che m e sempre un intero, ms e sempre ±1/2.",
+    "tags": ["prova d'esame"]
+  }
+]

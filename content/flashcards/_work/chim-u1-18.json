@@ -1,0 +1,39 @@
+{
+ "id": "chim-u1-18",
+ "titolo": "Geometria molecolare e angolo di legame",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "18-geometria-molecolare-e-angolo-di-legame",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u1/18-geometria-molecolare-e-angolo-di-legame.mdx",
+ "examQuestions": [
+  {
+   "year": "2015",
+   "q": "Quale delle seguenti molecole o ioni ha la stessa forma (geometria molecolare) della fosfina (PH3)?",
+   "choices": [
+    "H3O+",
+    "BrF3",
+    "CO3^2-",
+    "BF3",
+    "NO3^-"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2018",
+   "q": "La forma geometrica della molecola di fosfina PH3 è:",
+   "choices": [
+    "piramidale trigonale",
+    "tetraedrica",
+    "piegata",
+    "trigonale planare",
+    "lineare"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

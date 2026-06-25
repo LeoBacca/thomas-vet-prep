@@ -1,0 +1,25 @@
+{
+ "id": "bio-u5-06",
+ "titolo": "Il nucleo: involucro, nucleolo, condensati nucleari, pori e nucleoporine",
+ "materia": "biologia",
+ "unita": 5,
+ "slug": "06-il-nucleo-involucro-nucleolo-condensati-nucleari",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u5/06-il-nucleo-involucro-nucleolo-condensati-nucleari.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Luglio",
+   "q": "La membrana nucleare è strettamente collegata con quale delle seguenti strutture?",
+   "choices": [
+    "Reticolo endoplasmatico",
+    "Mitocondrio",
+    "Lisosoma",
+    "Flagello",
+    "Apparato del Golgi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u5-06">
+
+Un **legame** tra due atomi è una coppia di elettroni condivisa: due puntini tenuti in mezzo, come due bambini che tengono insieme la stessa corda. Quando il legame si **rompe**, quei due elettroni devono andare da qualche parte. E qui c'è il bivio: o se ne va **uno per uno**, o se li prende **tutti e due un atomo solo**. Da come si dividono quegli elettroni nascono cose molto diverse: i **radicali** oppure gli **ioni** (carbocationi e carbanioni). Capire questo bivio ti fa capire come funzionano tantissime reazioni.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il legame è una coppia di elettroni. Rottura <strong>omolitica</strong> = "metà per uno" (un elettrone a testa → due radicali). Rottura <strong>eterolitica</strong> = "tutto a uno" (la coppia intera a un solo atomo → due ioni).</div>
+
+<Diagram caption="I due modi di rompere un legame: chi si prende gli elettroni?" code={`flowchart TB
+  L["Legame = coppia di elettroni condivisa"] --> O["Rottura OMOLITICA<br/>un elettrone a testa"]
+  L --> E["Rottura ETEROLITICA<br/>la coppia intera a un solo atomo"]
+  O --> R["Due RADICALI<br/>(elettrone spaiato, neutri)"]
+  E --> I["Due IONI<br/>uno positivo + uno negativo"]`} />
+
+## Rottura omolitica: nascono i radicali
+
+"Omo" vuol dire **uguale**. Nella rottura omolitica i due elettroni si dividono **in parti uguali**: uno va a un atomo, l'altro va all'altro atomo. È come spezzare a metà esatta un panino diviso in due.
+
+Il risultato sono due **radicali**: pezzi con un **elettrone spaiato** (un elettrone solo, senza il suo compagno). Un elettrone spaiato è molto "irrequieto": cerca subito un partner, quindi i radicali sono **reattivissimi**. Per spaccare un legame in modo così simmetrico di solito serve **energia**: calore o luce (per esempio i raggi del sole).
+
+Aggancio al corpo: i famosi **radicali liberi** di cui parlano creme e integratori sono proprio questi. Nel nostro corpo possono danneggiare le cellule; gli **antiossidanti** (come la vitamina C) servono a "calmarli" offrendogli l'elettrone che gli manca. Ecco perché in medicina e veterinaria se ne parla così spesso.
+
+## Rottura eterolitica: nascono gli ioni
+
+"Etero" vuol dire **diverso**. Qui la divisione **non** è equa: **un atomo si prende tutti e due** gli elettroni, l'altro resta a mani vuote. È come due fratelli che ricevono una mancia: uno la intasca tutta, l'altro niente.
+
+Chi si prende la coppia diventa **negativo** (ha elettroni in più). Chi resta senza diventa **positivo** (ha perso la sua parte di elettroni). Si formano quindi due **ioni** con carica opposta. Quando l'atomo coinvolto è il **carbonio**, abbiamo due nomi precisi:
+
+- **Carbocatione** = carbonio **positivo** (ha perso gli elettroni del legame). "Catione" = carica +.
+- **Carbanione** = carbonio **negativo** (si è preso entrambi gli elettroni). "Anione" = carica −.
+
+<Diagram caption="Eterolitica sul carbonio: chi prende la coppia diventa negativo" code={`flowchart LR
+  C["Legame C con un altro atomo"] --> S["Rottura eterolitica"]
+  S --> P["Carbonio resta SENZA elettroni<br/>= CARBOCATIONE (positivo +)"]
+  S --> N["Carbonio PRENDE la coppia<br/>= CARBANIONE (negativo -)"]`} />
+
+## Quanto sono stabili? (la parte che conta davvero)
+
+Carbocationi e carbanioni sono instabili, ma **non tutti allo stesso modo**. Più sono stabili, più "durano" e più facilmente si formano. La regola pratica è semplice se ricordi una cosa: i gruppi attaccati al carbonio (i pezzi di catena, detti **gruppi alchilici**) **regalano un po' di elettroni** al carbonio vicino.
+
+Pensa agli elettroni come a soldi:
+
+- Un **carbocatione** è **positivo**, cioè è **a corto di elettroni**: gli serve aiuto. Quindi è **più felice (più stabile) quando ha più gruppi attorno** che gli prestano elettroni. Più "amici che pagano" → più stabile. Per questo l'ordine di stabilità è: **terziario maggiore di secondario maggiore di primario** (terziario = tre gruppi attaccati, primario = uno solo).
+- Un **carbanione** è **negativo**, cioè ha **elettroni in eccesso**: non vuole altri soldi. Quindi più gruppi che gli spingono altri elettroni addosso lo **infastidiscono**. Per il carbanione l'ordine è **rovesciato**: il **primario** (pochi gruppi) è il più stabile.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il carbocatione è un "povero" di elettroni → sta meglio circondato da chi gliene presta (più gruppi = più stabile). Il carbanione è già "ricco" → più gruppi lo disturbano (meno gruppi = più stabile). Sono due regole opposte.</div>
+
+<Diagram caption="Stabilità: ordine opposto per cationi e anioni" code={`flowchart TB
+  CAT["CARBOCATIONE (+) a corto di elettroni"] --> CATO["Più gruppi = più stabile<br/>terziario maggiore di secondario maggiore di primario"]
+  AN["CARBANIONE (-) pieno di elettroni"] --> ANO["Meno gruppi = più stabile<br/>primario maggiore di secondario maggiore di terziario"]`} />
+
+## Guarda il video
+
+<YouTube id="YUTy1jkD7f4" title="Radicali liberi: scissione omolitica ed eterolitica — spiegazione di chimica organica" />
+
+<VideoVisto id="chim-u5-06" />
+
+## Da ricordare
+
+- Un legame è una **coppia di elettroni**: rompendolo, quegli elettroni si ridistribuiscono.
+- **Omolitica** = divisione **equa** (un elettrone a testa) → due **radicali** (elettrone spaiato, neutri, reattivissimi); serve calore o luce.
+- **Eterolitica** = divisione **non equa** (coppia intera a un atomo) → due **ioni**: uno **positivo**, uno **negativo**.
+- Sul carbonio: **carbocatione** = carbonio **positivo** (senza elettroni); **carbanione** = carbonio **negativo** (con la coppia).
+- Stabilità **opposta**: carbocatione più stabile con **più** gruppi (terziario); carbanione più stabile con **meno** gruppi (primario).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Nella rottura OMOLITICA di un legame, come si dividono i due elettroni?"
+  opzioni={["Uno per atomo (parti uguali)", "Tutti e due a un solo atomo", "Spariscono", "Si trasformano in protoni"]}
+  corretta={0}
+  spiegazione="'Omo' = uguale: un elettrone a ciascun atomo. Il risultato sono due radicali, ognuno con un elettrone spaiato."
+/>
+
+<Quiz
+  domanda="La rottura ETEROLITICA di un legame produce:"
+  opzioni={["Due radicali neutri", "Uno ione positivo e uno ione negativo", "Due atomi identici", "Solo calore"]}
+  corretta={1}
+  spiegazione="'Etero' = diverso: un atomo prende tutta la coppia (diventa negativo), l'altro resta senza (diventa positivo). Quindi due ioni di carica opposta."
+/>
+
+<Quiz
+  domanda="Tra i carbocationi, qual è in genere il più stabile?"
+  opzioni={["Il primario (un gruppo attaccato)", "Il terziario (tre gruppi attaccati)", "Sono tutti uguali", "Quello senza gruppi"]}
+  corretta={1}
+  spiegazione="Il carbocatione è positivo, quindi a corto di elettroni: più gruppi gli prestano elettroni e lo stabilizzano. Ordine: terziario maggiore di secondario maggiore di primario."
+/>
+
+<Esercizio
+  problema="Un legame carbonio-cloro si rompe e il carbonio resta SENZA i due elettroni del legame, diventando carico positivamente. Di che tipo di rottura si tratta e quale specie si forma sul carbonio?"
+  soluzione="È una rottura ETEROLITICA: la coppia di elettroni se l'è presa tutta il cloro (che diventa ione negativo), mentre il carbonio resta senza e diventa positivo. La specie che si forma sul carbonio è un CARBOCATIONE (carbonio con carica +)."
+/>
+
+</section>
+
+</RisorsaLayout>

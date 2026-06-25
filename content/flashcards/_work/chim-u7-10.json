@@ -1,0 +1,25 @@
+{
+ "id": "chim-u7-10",
+ "titolo": "Lipidi complessi (fosfolipidi, sfingolipidi) e colesterolo",
+ "materia": "chimica",
+ "unita": 7,
+ "slug": "10-lipidi-complessi-fosfolipidi-sfingolipidi-e-colesterolo",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u7/10-lipidi-complessi-fosfolipidi-sfingolipidi-e-colesterolo.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Gli steroidi si classificano tra:",
+   "choices": [
+    "lipidi",
+    "zuccheri",
+    "acidi nucleici",
+    "vitamine",
+    "proteine"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

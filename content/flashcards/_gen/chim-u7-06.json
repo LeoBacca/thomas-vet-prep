@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u7-06-1",
+    "topicId": "chim-u7-06",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: nel corpo umano e negli animali quasi tutti gli zuccheri naturali appartengono alla serie D (OH del penultimo carbonio a destra nella proiezione di Fischer).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. In natura dominano i D-zuccheri. Gli enzimi del corpo sono costruiti apposta per riconoscere la forma D, come un guanto che va solo sulla mano giusta. La forma L esiste ma le cellule la ignorano.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-06-2",
+    "topicId": "chim-u7-06",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Glucosio e galattosio hanno la stessa formula chimica ma sono zuccheri diversi. Come si chiama questa coppia, e perche sono diversi?",
+    "choices": [
+      "Sono epimeri: differiscono per la posizione di un solo gruppo OH (sul carbonio 4)",
+      "Sono enantiomeri: sono l'immagine allo specchio l'uno dell'altro",
+      "Sono anomeri: differiscono per l'OH che si forma quando lo zucchero si chiude ad anello",
+      "Sono isomeri di struttura: hanno la stessa formula ma un atomo di carbonio in meno"
+    ],
+    "answer": 0,
+    "explain": "Glucosio e galattosio sono EPIMERI: differiscono per la configurazione di un solo carbonio (il C4). E per questo che il fegato riesce a trasformare uno nell'altro con poche mosse enzimatiche: sono quasi gemelli, cambiano solo un 'dito'. Enantiomeri sarebbero se fossero immagini allo specchio complete (serie D vs L). Anomeri riguardano la chiusura ad anello, non la catena dritta.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-06-3",
+    "topicId": "chim-u7-06",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Spiega con parole tue: cos'e la proiezione di Fischer e come si usa per capire se uno zucchero e D o L? Poi di' perche questa distinzione conta in biologia.",
+    "answer": "La proiezione di Fischer e un modo semplice per disegnare uno zucchero in 2D: si stira la molecola dritta come una scaletta verticale. Il carbonio piu importante (nel glucosio e il CHO, il gruppo aldeide) va in alto; in basso c'e il CH2OH. I gruppi OH spuntano a destra o a sinistra come braccia. Per capire se lo zucchero e D o L si guarda l'OH del PENULTIMO carbonio dal basso (nel glucosio e il C5): se e a DESTRA e la serie D, se e a SINISTRA e la serie L. D e L sono immagini allo specchio l'una dell'altra, come la mano destra e la sinistra: stessi atomi, ma non sovrapponibili. Si chiamano enantiomeri. In biologia conta perche gli enzimi del corpo sono costruiti per riconoscere solo la forma D: funzionano come un guanto che va solo sulla mano giusta. La forma L, pur avendo gli stessi atomi, non viene riconosciuta e non viene metabolizzata.",
+    "explain": "Chiave: penultimo carbonio → OH a destra = D, a sinistra = L. D e L sono enantiomeri. In natura dominano i D; gli enzimi sono stereospecifici.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u7-06-4",
+    "topicId": "chim-u7-06",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Nella molecola del glucosio (un monosaccaride a 6 carboni):",
+    "choices": [
+      "e presente un gruppo funzionale diverso dal gruppo alcolico (il gruppo aldeide CHO sul C1)",
+      "tutti i gruppi funzionali alcolici sono primari",
+      "tutti i gruppi funzionali alcolici sono secondari",
+      "non ci sono gruppi alcolici (OH) nella molecola",
+      "tutti i gruppi funzionali presenti sono alcolici (OH)"
+    ],
+    "answer": 0,
+    "explain": "Il glucosio ha sia gruppi OH (alcolici) SIA un gruppo CHO (aldeide) sul primo carbonio: quindi e presente un gruppo funzionale DIVERSO dal solo gruppo alcolico. Le trappole: 'tutti OH primari' e falso perche i C2-C5 portano OH secondari (carbonio legato a due altri carboni); 'tutti secondari' e falso perche il C6 porta un OH primario (CH2OH); 'nessun OH' e l'opposto della realta; 'solo OH' e falso perche c'e l'aldeide. Riconoscere il gruppo CHO nel glucosio e il punto chiave.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u7-06-5",
+    "topicId": "chim-u7-06",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Quando il glucosio si scioglie in acqua si chiude ad anello e nasce un nuovo OH sul C1. Questo OH puo puntare in giu (forma alfa) o in su (forma beta). Come si chiama questa coppia di forme?",
+    "choices": [
+      "Epimeri, perche differiscono per la posizione di un solo OH lungo la catena",
+      "Enantiomeri, perche sono l'immagine allo specchio l'una dell'altra",
+      "Anomeri, perche nascono dalla chiusura ad anello e differiscono solo per la posizione dell'OH sul C1",
+      "Isomeri di struttura, perche hanno un legame C-O in posizione diversa",
+      "Diastereoisomeri aciclici, perche si formano solo in fase gassosa"
+    ],
+    "answer": 2,
+    "explain": "Le due forme che nascono dalla chiusura ad anello si chiamano ANOMERI (alfa e beta). Non sono epimeri perche la differenza non e su un OH gia esistente nella catena dritta, ma sul nuovo OH che appare solo quando l'anello si forma. Non sono enantiomeri perche non sono immagini allo specchio complete: differiscono solo sul C1, il resto e identico. La trappola 'isomeri di struttura' e fuorviante perche il legame non cambia posizione: cambia solo l'orientamento (su o giu) dell'OH anomerico.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u5-11-1",
+    "topicId": "bio-u5-11",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: il ciclo di Krebs serve principalmente a produrre direttamente tanta ATP, proprio come la glicolisi produce ATP nel citoplasma.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il ciclo di Krebs produce pochissimo ATP diretto (solo 1 GTP per giro). Il suo scopo principale e caricare le 'navette' NADH e FADH₂ con elettroni ad alta energia: saranno loro a portare quegli elettroni alla catena respiratoria, dove si produrra la maggior parte dell'ATP.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-11-2",
+    "topicId": "bio-u5-11",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Il ciclo di Krebs si chiama 'ciclo' perche alla fine delle sue 8 tappe ricomincia da capo. Quale molecola viene rigenerata alla fine di ogni giro, pronta per ricevere un nuovo acetil-CoA?",
+    "choices": [
+      "Il piruvato",
+      "L'ossalacetato",
+      "Il citrato",
+      "L'acetil-CoA"
+    ],
+    "answer": 1,
+    "explain": "L'ossalacetato (4 carboni) e la molecola di partenza: si lega all'acetil-CoA (2 carboni) per formare il citrato (6 carboni). Alla fine delle 8 tappe si rigenera, permettendo al ciclo di girare di nuovo. Pensa a una ruota che ritorna sempre al punto di partenza dopo ogni giro.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-11-3",
+    "topicId": "bio-u5-11",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Elenca i prodotti di UN singolo giro del ciclo di Krebs (una molecola di acetil-CoA). Poi spiega con parole tue perche questi prodotti sono importanti per la cellula.",
+    "answer": "Per ogni giro del ciclo si producono: 3 NADH, 1 FADH₂, 1 GTP (equivalente a 1 ATP) e 2 CO₂. Il GTP e l'unica energia direttamente utilizzabile, ma e poca cosa. La cosa piu importante sono le navette cariche: NADH e FADH₂ portano elettroni ad alta energia alla catena di trasporto degli elettroni (terza tappa della respirazione, sempre nel mitocondrio), dove quell'energia verra usata per produrre circa 32 ATP. La CO₂ e lo scarto: viene espulsa con il respiro. Siccome da 1 glucosio si ricavano 2 piruvati → 2 acetil-CoA, il ciclo gira DUE volte per glucosio, quindi i totali si raddoppiano: 6 NADH, 2 FADH₂, 2 GTP, 4 CO₂.",
+    "explain": "Da ricordare: per giro → 3 NADH + 1 FADH₂ + 1 GTP + 2 CO₂. Il ciclo gira 2 volte per ogni glucosio.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-11-4",
+    "topicId": "bio-u5-11",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "In una cellula eucariotica, quali dei seguenti processi metabolici avvengono DENTRO un organello delimitato da membrane?",
+    "choices": [
+      "Ciclo di Krebs e fosforilazione ossidativa",
+      "Glicolisi e ciclo di Krebs",
+      "Fermentazione lattica e ciclo di Krebs",
+      "Glicolisi e fermentazione lattica",
+      "Fosforilazione ossidativa e glicolisi"
+    ],
+    "answer": 0,
+    "explain": "Ciclo di Krebs e fosforilazione ossidativa avvengono entrambi nel mitocondrio (un organello delimitato da membrane). La glicolisi avviene nel citoplasma, senza nessun organello. La fermentazione lattica avviene anch'essa nel citoplasma. Le trappole da smontare: 'glicolisi e ciclo di Krebs' e sbagliato perche la glicolisi sta nel citoplasma, non in un organello (trappola: chi studia solo il ciclo e dimentica dove sta la glicolisi); 'fermentazione lattica e ciclo di Krebs' unisce un processo citoplasmatico a uno mitocondriale; 'glicolisi e fermentazione' sono entrambi nel citoplasma, nessun organello; 'fosforilazione e glicolisi' e l'opposto esatto per la glicolisi. Regola: la respirazione aerobica (Krebs + catena respiratoria) sta nel mitocondrio; glicolisi e fermentazione stanno fuori.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-11-5",
+    "topicId": "bio-u5-11",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quali fra i seguenti processi fanno parte della respirazione cellulare AEROBICA?",
+    "choices": [
+      "Ciclo dell'acido citrico e fosforilazione ossidativa",
+      "Produzione di acido lattico e ciclo dell'acido citrico",
+      "Produzione di etanolo e fosforilazione ossidativa",
+      "Produzione di acido lattico e fosforilazione ossidativa",
+      "Produzione di etanolo e ciclo dell'acido citrico"
+    ],
+    "answer": 0,
+    "explain": "La respirazione aerobica comprende glicolisi, ciclo di Krebs (= ciclo dell'acido citrico) e fosforilazione ossidativa (la catena respiratoria). Le trappole: la produzione di acido lattico e la produzione di etanolo sono le FERMENTAZIONI, che sono processi ANAEROBICI (senza ossigeno) e non fanno parte della respirazione aerobica. Sono l'opposto esatto: la fermentazione e la via alternativa quando manca l'ossigeno. Occhio allo scambio di termini: 'ciclo dell'acido citrico' e il nome alternativo del ciclo di Krebs (il primo intermediario e il citrato, che ha tre gruppi carbossilici = acido tricarbossilico).",
+    "tags": ["prova d'esame"]
+  }
+]

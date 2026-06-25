@@ -1,0 +1,81 @@
+[
+  {
+    "id": "fc-chim-u4-07-1",
+    "topicId": "chim-u4-07",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "L'acido fosforico H3PO4 deve cedere i suoi 3 ioni H+ in acqua. Come li cede?",
+    "choices": [
+      "Li cede tutti e tre in un colpo solo, come chi svuota il portafoglio in una volta",
+      "Li cede uno alla volta, e ogni cessione e un po' piu difficile della precedente",
+      "Li cede a coppie: prima 2, poi 1",
+      "Non li cede mai perche e un acido debole"
+    ],
+    "answer": 1,
+    "explain": "Un acido poliprotico cede i suoi H+ a tappe, uno per volta. Ogni tappa e piu difficile: dopo aver perso il primo H+ (positivo) la particella diventa piu negativa e trattiene piu forte quelli che restano. H3PO4 → H2PO4⁻ → HPO4²⁻ → PO4³⁻. Questa cessione a scalini e fondamentale per capire il funzionamento dei tamponi fisiologici.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-07-2",
+    "topicId": "chim-u4-07",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: la cartina al tornasole diventa ROSSA in una soluzione basica (pH maggiore di 7).",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 1,
+    "explain": "Falso. Il tornasole diventa ROSSO in ambiente ACIDO (pH minore di 7) e BLU in ambiente BASICO (pH maggiore di 7). E' l'errore piu comune: scambiare i due colori. Aiuto mnemonico: ROSSO → il fuoco brucia (acido aggressivo); BLU → il mare calmo (basico).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-07-3",
+    "topicId": "chim-u4-07",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "Spiega con parole tue: cos'e un acido poliprotico e perche e importante per la fisiologia di un animale? Fai almeno un esempio concreto.",
+    "answer": "Un acido poliprotico e un acido che ha piu di un H+ da cedere in acqua. Lo cede a tappe, uno alla volta: la prima tappa e facile, le successive sono sempre piu difficili perche la particella, avendo gia perso cariche positive, diventa via via piu negativa e trattiene piu strettamente i protoni rimanenti. Per la fisiologia animale (e umana) e fondamentale perche i principali sistemi tampone del sangue sono proprio due acidi poliprotici: l'acido carbonico H2CO3 (diprotico, cede fino a 2 H+) e l'acido fosforico H3PO4 (triprotico, cede fino a 3 H+). Cedendo o riprendendo H+ a seconda delle condizioni, questi acidi mantengono il pH del sangue vicino a 7,4. Anche una piccola variazione di pH puo compromettere il funzionamento degli enzimi e delle proteine: per questo un animale malato che non riesce a tamponare il pH va incontro a acidosi o alcalosi, condizioni pericolose.",
+    "explain": "Parola chiave: a tappe (una cessione alla volta, sempre piu difficile). I tamponi fisiologici (H2CO3, H3PO4) usano proprio questa proprieta per mantenere stabile il pH del sangue.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u4-07-4",
+    "topicId": "chim-u4-07",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Quale/i dei seguenti acidi e/sono monoprotico/i in soluzione acquosa? 1. CH3COOH (acido acetico); 2. HNO3 (acido nitrico); 3. H3PO4 (acido fosforico)",
+    "choices": [
+      "Solo 1 e 2",
+      "Solo 1",
+      "Solo 2",
+      "Solo 3",
+      "Solo 2 e 3"
+    ],
+    "answer": 0,
+    "explain": "Un acido monoprotico cede UN SOLO H+ in acqua. L'acido acetico CH3COOH ha un solo H+ cedibile (quello del gruppo -COOH; gli altri 3 H legati al carbonio non vengono ceduti). L'acido nitrico HNO3 ha anch'esso un solo H+ cedibile → monoprotico. L'acido fosforico H3PO4 invece ha 3 H+ da cedere → e triprotico, non monoprotico. Trappola classica: guardare quante H ci sono nella formula senza distinguere quali sono effettivamente acide. In CH3COOH ci sono 4 H ma solo 1 e cedibile. In H3PO4 tutti e 3 gli H del prefisso H3 sono cedibili. La trappola 'Solo 2' fa cadere chi conosce HNO3 ma dimentica che anche CH3COOH e monoprotico. 'Solo 3' e l'opposto esatto: H3PO4 e TRIprotico, non monoprotico. 'Solo 2 e 3' mescola un monoprotico vero (HNO3) con un triprotico (H3PO4), sbagliando la categoria di H3PO4.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u4-07-5",
+    "topicId": "chim-u4-07",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sugli indicatori di pH e CORRETTA?",
+    "choices": [
+      "La fenolftaleina e trasparente in ambiente basico e diventa rosa in ambiente acido",
+      "La cartina al tornasole diventa blu in ambiente acido e rossa in ambiente basico",
+      "Un indicatore di pH cambia colore a seconda dell'acidita della soluzione",
+      "La cartina universale misura solo se una soluzione e acida o basica, senza dare un valore numerico di pH",
+      "Gli indicatori di pH funzionano solo in laboratorio e non hanno applicazioni mediche"
+    ],
+    "answer": 2,
+    "explain": "La definizione corretta e semplice: un indicatore di pH e una sostanza che cambia colore in base all'acidita (pH) della soluzione. Trappole da smontare: 'la fenolftaleina diventa rosa in acido' e l'OPPOSTO ESATTO: e trasparente in acido e diventa rosa in BASICO. 'Il tornasole blu in acido, rosso in basico' inverte i colori (il tornasole e ROSSO in acido, BLU in basico): e la trappola piu comune di tutto l'argomento. 'La cartina universale non da un valore numerico' e falso: a differenza del tornasole (che dice solo acido/basico), la cartina universale confronta il colore con una scala e da un numero di pH approssimativo. 'Gli indicatori non hanno applicazioni mediche' e un filler fuori tema e completamente falso: le striscette delle urine usano proprio indicatori colorati per misurare il pH urinario.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,102 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u4-06">
+
+## Cos'è il suono?
+
+Il suono è un'**onda meccanica longitudinale**: una vibrazione che si propaga attraverso un mezzo (aria, acqua, legno…).
+
+Quando un oggetto vibra — una corda di chitarra, la membrana di un altoparlante — spinge e tira le particelle d'aria vicine. Quelle particelle spingono quelle accanto, e così via: nasce un'**onda di pressione** che viaggia nello spazio.
+
+Senza un mezzo fisico il suono non si propaga. Nello spazio vuoto non c'è nulla da far vibrare, quindi regna il silenzio assoluto.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il suono è come una fila di domino: il primo mattoncino (la sorgente) spinge il secondo, che spinge il terzo… finché la "spinta" arriva al tuo orecchio.</div>
+
+## Caratteristiche principali di un'onda sonora
+
+- **Frequenza (f)** — quante vibrazioni al secondo, misurata in **Hz**. Più è alta, più il suono è acuto (una voce di soprano); più è bassa, più è grave (un basso elettrico).
+- **Ampiezza** — quanto sono grandi le variazioni di pressione. Più è grande, più il suono è **forte**.
+- **Lunghezza d'onda (λ)** — la distanza tra due "creste" di pressione consecutive.
+- **Velocità** — nell'aria a 20 °C circa **340 m/s**. Varia con il mezzo: nell'acqua è circa 1500 m/s.
+
+L'orecchio umano percepisce frequenze tra **20 Hz e 20 000 Hz** (20 kHz). I suoni sotto i 20 Hz si chiamano infrasuoni; sopra i 20 kHz, ultrasuoni.
+
+## Intensità sonora
+
+L'**intensità sonora (I)** misura quanta energia porta l'onda nell'unità di tempo, su una certa superficie. Si misura in **W/m²** (watt per metro quadrato).
+
+La soglia di udibilità umana è **I₀ = 10⁻¹² W/m²**: un valore minuscolo. La soglia del dolore è circa **1 W/m²**, ovvero un trilione di volte più grande.
+
+Gestire numeri così diversi con la stessa scala sarebbe scomodo: per questo si usano i **decibel**.
+
+## La scala dei decibel
+
+Il **decibel (dB)** è un'unità logaritmica che "comprime" la scala enorme dell'intensità in numeri maneggevoli.
+
+La formula è:
+
+**β = 10 · log₁₀(I / I₀)**
+
+dove I₀ = 10⁻¹² W/m² è la soglia di riferimento.
+
+In pratica:
+
+- Ogni volta che l'intensità **raddoppia**, i decibel aumentano di circa **3 dB**.
+- Ogni volta che l'intensità si moltiplica per **10**, i decibel aumentano di **10 dB**.
+
+Alcuni riferimenti pratici:
+
+| Situazione | Livello dB |
+|---|---|
+| Silenzio quasi totale | 0 dB |
+| Conversazione normale | 60 dB |
+| Traffico intenso | 80 dB |
+| Concerto rock | 110 dB |
+| Soglia del dolore | ~130 dB |
+
+<div class="callout">💡 <strong>In parole semplici:</strong> I decibel sono come i gradi Celsius per la temperatura — una scala pensata per il modo in cui il nostro corpo percepisce le cose, non per i valori assoluti di fisica.</div>
+
+## Perché una scala logaritmica?
+
+L'orecchio umano non percepisce l'intensità in modo lineare: se l'intensità raddoppia, non senti il suono "due volte più forte". Il cervello risponde in modo **logaritmico**, quindi i decibel rispecchiano meglio la percezione reale.
+
+<Diagram caption="Come nasce un'onda sonora: la sorgente vibra e comprime/rarefà l'aria attorno" code={`flowchart LR
+  A["Sorgente<br/>(vibra)"] --> B["Zone di<br/>compressione<br/>(alta pressione)"]
+  B --> C["Zone di<br/>rarefazione<br/>(bassa pressione)"]
+  C --> D["Orecchio<br/>(recepisce)"]`} />
+
+<Diagram caption="Dalla intensità fisica (W/m²) alla scala in decibel" code={`flowchart TB
+  A["Intensità I<br/>(W/m²)"] --> B["Rapporto<br/>I / I₀"]
+  B --> C["Logaritmo<br/>log₁₀(I / I₀)"]
+  C --> D["Moltiplica × 10"]
+  D --> E["Livello sonoro β<br/>in decibel (dB)"]`} />
+
+## Guarda il video
+<YouTube id="ny2L6s70RgY" title="Il suono: onde sonore — HUB Scuola" />
+<VideoVisto id="fis-u4-06" />
+
+## Da ricordare
+- Il suono è un'onda meccanica longitudinale: ha bisogno di un mezzo per propagarsi e non viaggia nel vuoto.
+- L'intensità sonora (W/m²) misura l'energia dell'onda; il decibel la esprime su scala logaritmica adatta alla percezione umana.
+- Ogni +10 dB corrisponde a un'intensità 10 volte maggiore; ogni +3 dB l'intensità raddoppia.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la natura fisica del suono?" opzioni={["Un'onda elettromagnetica trasversale","Un'onda meccanica longitudinale","Un'onda meccanica trasversale","Un campo elettrico variabile"]} corretta={1} spiegazione="Il suono è un'onda meccanica longitudinale: le particelle del mezzo oscillano nella stessa direzione in cui si propaga l'onda. Non è elettromagnetica (quelle non hanno bisogno di un mezzo) e non è trasversale." />
+
+<Quiz domanda="Un suono ha intensità I = 10⁻¹⁰ W/m². Qual è il suo livello in decibel? (I₀ = 10⁻¹² W/m²)" opzioni={["10 dB","20 dB","100 dB","120 dB"]} corretta={1} spiegazione="β = 10 · log₁₀(10⁻¹⁰ / 10⁻¹²) = 10 · log₁₀(10²) = 10 · 2 = 20 dB." />
+
+<Quiz domanda="Se l'intensità di un suono passa da I a 10·I, di quanti decibel aumenta il livello sonoro?" opzioni={["1 dB","3 dB","10 dB","100 dB"]} corretta={2} spiegazione="Δβ = 10 · log₁₀(10·I / I) = 10 · log₁₀(10) = 10 · 1 = 10 dB. Moltiplicare l'intensità per 10 aggiunge sempre 10 dB." />
+
+<Esercizio problema="Un altoparlante produce un livello sonoro di 80 dB. Un secondo altoparlante identico viene acceso accanto al primo, raddoppiando l'intensità totale. Qual è il nuovo livello sonoro in dB?" soluzione="Δβ = 10 · log₁₀(2) ≈ 10 · 0,301 ≈ 3 dB. Il nuovo livello è quindi 80 + 3 = 83 dB. Raddoppiare l'intensità aggiunge solo circa 3 dB — l'orecchio percepisce l'aumento, ma non sente il suono 'due volte più forte'." />
+
+</section>
+
+</RisorsaLayout>

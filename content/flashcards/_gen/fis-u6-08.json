@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u6-08-1",
+    "topicId": "fis-u6-08",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: collegando resistenze IN SERIE la resistenza totale del circuito AUMENTA ogni volta che aggiungi una nuova resistenza.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. In serie le resistenze si sommano direttamente: R_eq = R1 + R2 + R3 + ... Ogni nuova resistenza aggiunge un ostacolo in più sul percorso della corrente, come aggiungere un casello autostradale sulla stessa corsia. La resistenza totale cresce sempre.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-08-2",
+    "topicId": "fis-u6-08",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Hai due resistenze, una da 6 Ω e una da 6 Ω, collegate IN PARALLELO (come due corsie autostradali affiancate). Qual è la resistenza equivalente?",
+    "choices": [
+      "12 Ω (la somma delle due)",
+      "3 Ω (metà di ciascuna)",
+      "6 Ω (uguale a entrambe)",
+      "1 Ω (il reciproco della somma)"
+    ],
+    "answer": 1,
+    "explain": "In parallelo si apre una corsia in più: la corrente si divide e incontra meno ostacolo. Due resistenze UGUALI in parallelo danno sempre R/2. Con la formula: R_eq = (6 × 6) / (6 + 6) = 36 / 12 = 3 Ω. La risposta '12 Ω' è il risultato della serie, non del parallelo: trappola classica! '6 Ω' è come se non avessi fatto nulla. In parallelo la resistenza totale è SEMPRE minore della più piccola delle singole.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-08-3",
+    "topicId": "fis-u6-08",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "open",
+    "q": "Un circuito ha R1 = 10 Ω e R2 = 15 Ω in parallelo, e questa combinazione è in serie con R3 = 5 Ω. Calcola la resistenza equivalente totale e spiega i passaggi.",
+    "answer": "Per prima cosa calcolo il parallelo di R1 e R2, usando la formula prodotto-su-somma (valida per 2 resistenze): R_par = (R1 × R2) / (R1 + R2) = (10 × 15) / (10 + 15) = 150 / 25 = 6 Ω. Poi sommo il risultato con R3, che è in serie: R_eq = R_par + R3 = 6 + 5 = 11 Ω. Strategia: i circuiti misti si risolvono un blocco alla volta, dall'interno verso l'esterno.",
+    "explain": "Da ricordare: prima risolvi il parallelo interno, poi sommi in serie. Blocchi separati, uno alla volta.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u6-08-4",
+    "topicId": "fis-u6-08",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "In un circuito elettrico due resistenze sono collegate in parallelo e alimentate da una batteria. Perché la corrente erogata dalla batteria è uguale ALLA SOMMA delle correnti che attraversano le due singole resistenze? (domanda d'esame reale 2006)",
+    "choices": [
+      "Per il principio di conservazione della carica elettrica",
+      "Perché gli elettroni hanno carica negativa",
+      "Perché l'effetto Joule nel circuito è nullo",
+      "Perché si conserva l'energia cinetica degli elettroni",
+      "Perché la resistenza totale in parallelo è sempre maggiore di quella di ogni ramo"
+    ],
+    "answer": 0,
+    "explain": "La risposta corretta è la conservazione della carica: la carica che esce dalla batteria deve essere uguale alla carica totale che scorre nei due rami — non si crea né si distrugge carica elettrica, si divide solo tra i percorsi disponibili. 'Carica negativa degli elettroni' è un fatto vero ma non spiega la somma delle correnti: è un filler plausibile. 'Effetto Joule nullo' è falso nel caso generale e fuori tema. 'Energia cinetica conservata' riguarda la meccanica, non la conservazione della carica. L'ultima è una trappola: in parallelo la resistenza totale è MINORE, non maggiore.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u6-08-5",
+    "topicId": "fis-u6-08",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Un generatore da 10 V è collegato a 3 resistenze: la prima da 5 Ω è in serie con due resistenze da 10 Ω l'una collegate tra loro in parallelo. Qual è la corrente che attraversa il circuito? (domanda d'esame reale 2020)",
+    "choices": [
+      "1 A",
+      "10 A",
+      "2 A",
+      "3 A",
+      "5 A"
+    ],
+    "answer": 0,
+    "explain": "Passo 1: calcolo il parallelo delle due da 10 Ω — due resistenze uguali in parallelo danno R/2 = 10/2 = 5 Ω. Passo 2: sommo in serie con i 5 Ω — R_eq = 5 + 5 = 10 Ω. Passo 3: applico Ohm I = V/R = 10 V / 10 Ω = 1 A. Trappola '2 A': chi dimentica un pezzo di resistenza e usa solo 5 Ω (o solo il blocco in parallelo, o solo quella in serie), calcolando I = 10/5 = 2 A. Trappola '10 A': chi confonde la formula e applica I = V senza dividere per la resistenza. Trappola '5 A' e '3 A': numeri plausibili ma senza una formula corretta dietro. Metodo: blocco in parallelo prima, poi serie, poi Ohm.",
+    "tags": ["prova d'esame"]
+  }
+]

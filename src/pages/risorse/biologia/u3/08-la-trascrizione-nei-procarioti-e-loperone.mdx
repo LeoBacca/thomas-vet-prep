@@ -1,0 +1,135 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-08">
+
+## Cos'è la trascrizione?
+
+La **trascrizione** è il primo passo con cui l'informazione genetica passa dal DNA all'RNA.
+Pensa al DNA come a un libro originale chiuso in cassaforte: non puoi portarlo fuori. Allora fai una **fotocopia** — quella fotocopia è l'**mRNA** (RNA messaggero).
+
+Nei **procarioti** (batteri come *E. coli*) tutto succede nel citoplasma, senza nuclei né membrane di mezzo. È tutto più diretto rispetto alle cellule del tuo corpo.
+
+---
+
+## I protagonisti della trascrizione procariotica
+
+| Elemento | Ruolo |
+|---|---|
+| **DNA stampo** | Il filamento "letto" dall'enzima |
+| **RNA polimerasi** | L'enzima che costruisce l'mRNA |
+| **Fattore sigma (σ)** | La "guida" che porta la polimerasi nel punto giusto sul DNA |
+| **Promotore** | La sequenza di DNA dove la polimerasi si attacca per cominciare |
+| **Terminatore** | Il segnale di stop che dice "qui finisci la copia" |
+
+---
+
+## Come si svolge la trascrizione: tre fasi
+
+**1. Inizio (Iniziazione)**
+Il fattore sigma riconosce il **promotore** — una sequenza specifica sul DNA. La RNA polimerasi si aggancia lì e i due filamenti del DNA si separano leggermente.
+
+**2. Allungamento (Elongazione)**
+La RNA polimerasi scorre lungo il filamento stampo e costruisce la catena di mRNA aggiungendo un nucleotide alla volta. Usa le regole di complementarità (A-U, T-A, G-C).
+
+**3. Fine (Terminazione)**
+Quando la polimerasi incontra il **terminatore**, si stacca dal DNA e rilascia l'mRNA appena costruito.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la RNA polimerasi legge il DNA come un lettore cd che scorre la traccia, costruendo un nastro di mRNA finché non trova il cartello "STOP".</div>
+
+---
+
+## Che cos'è un operone?
+
+I batteri sono efficienti: non producono proteine quando non servono. Per questo hanno inventato gli **operoni**.
+
+Un **operone** è un gruppo di geni vicini sul DNA che vengono **accesi o spenti tutti insieme** con un unico interruttore. È come un appartamento con un unico quadro elettrico: stacchi una levetta e spegni tutte le luci di quella stanza.
+
+L'operone è composto da:
+- **Promotore** — dove si attacca la RNA polimerasi
+- **Operatore** — la "levetta" che può bloccare o permettere la trascrizione
+- **Geni strutturali** — i geni che codificano per le proteine utili
+
+---
+
+## L'operone Lac: un esempio classico
+
+**E. coli** preferisce il glucosio come fonte di energia. Ma se c'è solo **lattosio** (lo zucchero del latte), deve produrre gli enzimi per digerirlo. Quando il glucosio torna, smette subito — non spreca energia.
+
+I geni per digerire il lattosio sono raggruppati nell'**operone lac**, che contiene tre geni principali:
+- **lacZ** — produce beta-galattosidasi (taglia il lattosio)
+- **lacY** — produce permeasi (trasporta il lattosio dentro la cellula)
+- **lacA** — produce transacetilasi (ruolo accessorio)
+
+### Senza lattosio: operone SPENTO
+
+Un **repressore** (proteina prodotta da un gene regolatore vicino) si lega all'operatore e blocca fisicamente la RNA polimerasi. Risultato: nessun mRNA, nessun enzima.
+
+### Con il lattosio: operone ACCESO
+
+Il lattosio si trasforma in **allolattosio** dentro la cellula. L'allolattosio si lega al repressore e lo **cambia di forma** — il repressore non riesce più ad agganciarsi all'operatore e si stacca. La RNA polimerasi è libera di trascrivere.
+
+### Il controllo positivo: il ruolo del glucosio
+
+C'è un secondo livello di controllo. Quando il glucosio è scarso, aumenta una molecola chiamata **cAMP**. Il cAMP attiva una proteina chiamata **CAP** (o CRP), che si lega a una regione vicino al promotore e **aumenta l'efficienza** della RNA polimerasi. Quindi l'operone lac è veramente acceso a pieno regime solo quando:
+1. c'è lattosio (repressore staccato)
+2. manca glucosio (CAP attivato)
+
+<div class="callout">💡 <strong>In parole semplici:</strong> l'operone lac è come un negozio che apre solo quando ha merce da vendere (lattosio presente) E quando il fornitore preferito è chiuso (glucosio assente).</div>
+
+---
+
+<Diagram caption="Le tre fasi della trascrizione procariotica" code={`flowchart TB
+  A["Fattore sigma riconosce<br/>il promotore sul DNA"] --> B["RNA polimerasi si lega<br/>al promotore<br/>(INIZIO)"]
+  B --> C["I filamenti del DNA<br/>si separano localmente"]
+  C --> D["La polimerasi scorre<br/>lungo il filamento stampo<br/>(ALLUNGAMENTO)"]
+  D --> E["Aggiunge nucleotidi<br/>uno alla volta → catena mRNA"]
+  E --> F["La polimerasi incontra<br/>il terminatore<br/>(FINE)"]
+  F --> G["mRNA rilasciato<br/>pronto per la traduzione"]`} />
+
+<Diagram caption="Regolazione dell'operone Lac in E. coli" code={`flowchart TB
+  subgraph OFF["OPERONE SPENTO — glucosio presente, lattosio assente"]
+    R1["Repressore attivo"] --> O1["Si lega all'operatore"]
+    O1 --> B1["RNA polimerasi bloccata"]
+    B1 --> N1["Nessun mRNA prodotto"]
+  end
+  subgraph ON["OPERONE ACCESO — lattosio presente, glucosio assente"]
+    L["Lattosio → Allolattosio"] --> R2["Allolattosio lega il repressore"]
+    R2 --> R3["Repressore cambia forma<br/>e si stacca dall'operatore"]
+    G2["Glucosio basso → cAMP alto"] --> CAP["CAP si lega vicino al promotore"]
+    R3 --> POL["RNA polimerasi libera"]
+    CAP --> POL
+    POL --> M["mRNA trascritto:<br/>lacZ, lacY, lacA"]
+    M --> ENZ["Enzimi per digerire il lattosio"]
+  end`} />
+
+---
+
+## Guarda il video
+<YouTube id="tBkMwSsCbo0" title="La regolazione genica nei procarioti - operone lac e trp" />
+<VideoVisto id="bio-u3-08" />
+
+## Da ricordare
+- Nei procarioti la trascrizione avviene nel citoplasma: RNA polimerasi + fattore sigma leggono il DNA e producono mRNA in tre fasi (inizio, allungamento, fine).
+- Un operone è un blocco di geni con un unico promotore/operatore: si accendono e spengono insieme tramite un repressore proteico.
+- L'operone lac si accende solo in presenza di lattosio (allolattosio stacca il repressore) E in assenza di glucosio (CAP potenzia la trascrizione): doppio controllo negativo + positivo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è il ruolo del fattore sigma nella trascrizione procariotica?" opzioni={["Costruisce la catena di mRNA aggiungendo nucleotidi","Guida la RNA polimerasi al promotore corretto sul DNA","Si lega all'operatore per bloccare la trascrizione","Taglia il DNA nel punto di inizio"]} corretta={1} spiegazione="Il fattore sigma è una subunità della RNA polimerasi che riconosce specificamente la sequenza del promotore sul DNA. Senza di esso, la polimerasi non saprebbe dove attaccarsi per iniziare la trascrizione." />
+
+<Quiz domanda="In E. coli, cosa succede all'operone lac quando nel mezzo è presente SOLO glucosio (niente lattosio)?" opzioni={["L'operone è acceso perché c'è energia disponibile","L'operone è spento perché il repressore rimane legato all'operatore","L'operone è acceso grazie alla proteina CAP attivata dal cAMP","L'allolattosio attiva la RNA polimerasi direttamente"]} corretta={1} spiegazione="Senza lattosio non si forma allolattosio, quindi il repressore rimane nella sua forma attiva e si lega all'operatore bloccando la RNA polimerasi. Non ha senso produrre enzimi per digerire il lattosio se questo non è presente." />
+
+<Quiz domanda="Che ruolo ha la proteina CAP (CRP) nella regolazione dell'operone lac?" opzioni={["Blocca il repressore impedendogli di legarsi all'operatore","Si lega all'operatore al posto del repressore","Potenzia la trascrizione legandosi vicino al promotore quando il glucosio è scarso","Degrada l'allolattosio una volta che gli enzimi non servono più"]} corretta={2} spiegazione="Quando il glucosio è scarso, il livello di cAMP sale. Il cAMP si lega a CAP (proteina attivatrice catabolica), che poi si attacca a una regione vicino al promotore dell'operone lac e aiuta la RNA polimerasi a lavorare in modo molto più efficiente: è il controllo positivo." />
+
+<Esercizio problema="Un batterio E. coli si trova in un ambiente con abbondante lattosio MA anche abbondante glucosio. L'operone lac sarà acceso o spento? Spiega perché, considerando entrambi i livelli di controllo." soluzione="L'operone lac sarà DEBOLMENTE acceso o praticamente spento. Ecco perché: (1) Controllo negativo: il lattosio viene convertito in allolattosio, che stacca il repressore dall'operatore → questo permetterebbe la trascrizione. (2) Controllo positivo: ma il glucosio è abbondante, quindi il cAMP è basso → CAP rimane inattiva e non si lega al promotore. Senza CAP attiva, la RNA polimerasi ha pochissima efficienza su questo promotore. Il risultato è che vengono prodotti pochissimi enzimi per il lattosio: il batterio usa prima il glucosio (fonte energetica preferita) e si prepara ad usare il lattosio solo quando il glucosio finirà." />
+
+</section>
+
+</RisorsaLayout>

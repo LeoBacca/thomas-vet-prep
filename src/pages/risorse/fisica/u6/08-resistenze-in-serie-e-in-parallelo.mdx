@@ -1,0 +1,184 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u6-08">
+
+## Cosa sono le resistenze?
+
+Una resistenza è un componente elettrico che "frena" il passaggio della corrente. Pensa all'acqua in un tubo: la resistenza è come un restringimento del tubo — più è stretto, meno acqua passa.
+
+Quando in un circuito hai più resistenze, puoi collegarle in due modi: **in serie** o **in parallelo**. In entrambi i casi puoi calcolare una **resistenza equivalente** — cioè un'unica resistenza che si comporta esattamente come tutte le altre messe insieme.
+
+---
+
+## Resistenze in serie
+
+Le resistenze sono **in serie** quando la corrente deve attraversarle **una dopo l'altra**, come caselli autostradali sulla stessa corsia: se vuoi passare, li percorri tutti.
+
+La resistenza equivalente si calcola semplicemente **sommando** tutte le resistenze:
+
+**R_eq = R1 + R2 + R3 + ...**
+
+Più resistenze aggiungi, più la resistenza totale aumenta.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Serie = somma diretta. Aggiungi un ostacolo dopo l'altro, la fatica totale cresce.</div>
+
+<Diagram caption="Resistenze in serie: la corrente passa attraverso R1, poi R2, poi R3. La resistenza equivalente è la somma." code={`flowchart LR
+  A["+ Batteria"] --> R1["R1"]
+  R1 --> R2["R2"]
+  R2 --> R3["R3"]
+  R3 --> B["- Batteria"]
+  style R1 fill:#f9c74f
+  style R2 fill:#f9c74f
+  style R3 fill:#f9c74f`} />
+
+---
+
+## Resistenze in parallelo
+
+Le resistenze sono **in parallelo** quando la corrente può scegliere su quale ramo passare — come più corsie autostradali affiancate. La corrente si divide tra i vari percorsi.
+
+La resistenza equivalente si calcola con la formula dei **reciproci**:
+
+**1/R_eq = 1/R1 + 1/R2 + 1/R3 + ...**
+
+Più resistenze aggiungi in parallelo, più la resistenza totale **diminuisce** — perché apri più strade alla corrente.
+
+Caso speciale con solo 2 resistenze: **R_eq = (R1 × R2) / (R1 + R2)**
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Parallelo = più strade disponibili. La corrente si divide, quindi incontra meno ostacolo totale.</div>
+
+<Diagram caption="Resistenze in parallelo: la corrente si divide tra R1 e R2, poi si riunisce. La resistenza equivalente è minore di entrambe." code={`flowchart LR
+  A["+ Batteria"] --> N1["Nodo A"]
+  N1 --> R1["R1 — ramo superiore"]
+  N1 --> R2["R2 — ramo inferiore"]
+  R1 --> N2["Nodo B"]
+  R2 --> N2
+  N2 --> B["- Batteria"]
+  style R1 fill:#90e0ef
+  style R2 fill:#90e0ef`} />
+
+---
+
+## Il legame con la legge di Ohm
+
+Trovare la resistenza equivalente è quasi sempre solo il **primo passo**. Negli esami, una volta ridotto il circuito a un'unica R_eq, ti chiedono la **corrente**, una **tensione** o la **potenza**. Lo strumento che lega tutto è la **legge di Ohm**:
+
+**V = R × I**
+
+dove V è la tensione (in volt, V), R la resistenza (in ohm, Ω) e I la corrente (in ampere, A). Da questa stessa formula ricavi le altre due forme che servono spessissimo:
+
+- corrente: **I = V / R**
+- resistenza: **R = V / I**
+
+Quindi, se conosci la tensione del generatore e hai calcolato la R_eq dell'intero circuito, la corrente totale erogata dal generatore è subito:
+
+**I_tot = V / R_eq**
+
+<div class="callout">💡 <strong>In parole semplici:</strong> prima riduci tutto a una sola R_eq, poi applichi I = V / R_eq. La resistenza equivalente serve proprio per poter usare Ohm su tutto il circuito come se fosse una sola resistenza.</div>
+
+---
+
+## Conservazione della carica: perché in parallelo le correnti si sommano
+
+In un nodo (il punto dove un filo si divide in più rami) la carica elettrica **non si accumula e non si distrugge**: tutta la carica che arriva al nodo deve anche uscirne. Questo è il **principio di conservazione della carica elettrica**.
+
+Conseguenza pratica per le resistenze **in parallelo**: la corrente erogata dalla batteria si **divide** tra i vari rami all'ingresso e si **riunisce** all'uscita. Perciò la corrente totale è la **somma** delle correnti dei singoli rami:
+
+**I_tot = I₁ + I₂ + I₃ + ...**
+
+Non è "magia" né effetto Joule né energia cinetica degli elettroni: è semplicemente che la carica che entra deve uscire. Per questo, quando un esame chiede *perché* la corrente erogata dalla batteria è la somma delle correnti dei singoli rami, la risposta è **la conservazione della carica**.
+
+Due conseguenze utili da ricordare:
+
+- **In serie** la corrente è la **stessa** in ogni resistenza (c'è una sola strada, la carica passa tutta di lì), mentre le tensioni si sommano: V_tot = V₁ + V₂ + ...
+- **In parallelo** la **tensione** ai capi di ogni ramo è la **stessa** (tutti i rami sono collegati agli stessi due nodi), mentre le correnti si sommano.
+
+<div class="callout">💡 <strong>Trucco:</strong> serie = stessa corrente, tensioni che si sommano. Parallelo = stessa tensione, correnti che si sommano.</div>
+
+---
+
+## La potenza dissipata
+
+Una resistenza percorsa da corrente si scalda: dissipa **potenza** per **effetto Joule**. La potenza P si misura in **watt (W)** e si calcola con tre formule equivalenti, tutte derivate da P = V × I usando la legge di Ohm:
+
+- **P = V × I** (forma base)
+- **P = I² × R** (utile quando conosci corrente e resistenza)
+- **P = V² / R** (utile quando conosci tensione e resistenza)
+
+Le tre formule danno lo stesso risultato: scegli quella che usa i dati che hai. Esempio classico d'esame: se conosci la **tensione del generatore** e la **potenza dissipata**, ricavi la resistenza totale con **R = V² / P**, e da lì puoi trovare una resistenza incognita.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> tutte e tre le formule della potenza vengono da P = V × I. Sostituendo V = R × I ottieni P = I² × R; sostituendo I = V / R ottieni P = V² / R.</div>
+
+---
+
+## Come si risolve un circuito misto, passo-passo
+
+La maggior parte dei problemi d'esame mescola serie e parallelo nello stesso circuito. Il metodo è sempre lo stesso: **ridurre il circuito un pezzo alla volta** finché non resta una sola resistenza equivalente.
+
+1. **Individua i gruppi.** Cerca prima i blocchi più "interni": resistenze chiaramente in parallelo (rami che partono dagli stessi due nodi) o chiaramente in serie (una dopo l'altra, senza diramazioni in mezzo).
+2. **Riduci i paralleli.** Calcola la R equivalente di ogni gruppo in parallelo con 1/R_eq = 1/R₁ + 1/R₂ (oppure R_eq = R₁ × R₂ / (R₁ + R₂) se sono solo due). Il parallelo è sempre **minore** della più piccola del gruppo: usalo come controllo.
+3. **Somma le serie.** Sostituisci ogni gruppo già ridotto con il suo valore e somma tutte le resistenze rimaste in serie: R_eq = R_a + R_b + ...
+4. **Ripeti** finché non resta un solo numero: quella è la R_eq totale del circuito.
+5. **Applica Ohm e/o la potenza.** Con la R_eq totale trovi la corrente erogata (I = V / R_eq) e la potenza (P = V² / R_eq), oppure procedi a ritroso per tensioni e correnti dei singoli rami.
+
+Esempio guida (è proprio lo schema "una in serie con due in parallelo"): generatore da 10 V, R₁ = 5 Ω in serie con R₂ = 10 Ω e R₃ = 10 Ω che sono tra loro in parallelo.
+
+- Passo 2 — parallelo di R₂ e R₃: (10 × 10) / (10 + 10) = 100 / 20 = 5 Ω.
+- Passo 3 — serie con R₁: R_eq = 5 + 5 = 10 Ω.
+- Passo 5 — corrente erogata: I = V / R_eq = 10 / 10 = **1 A**.
+
+<div class="callout">💡 <strong>Strategia anti-errore:</strong> non sommare mai "tutto insieme". Riduci prima i paralleli (numero più piccolo), poi le serie (somma), e solo alla fine usa Ohm. Se un parallelo ti viene maggiore di una delle resistenze del gruppo, hai sbagliato un conto.</div>
+
+---
+
+## Guarda il video
+<YouTube id="m2uWTPe_pBI" title="Resistenze in Serie e Parallelo : Resistenza Equivalente" />
+<VideoVisto id="fis-u6-08" />
+
+## Da ricordare
+- **Serie:** R_eq = R1 + R2 + ... — la resistenza totale aumenta ad ogni resistenza aggiunta. Stessa corrente in tutte; le tensioni si sommano.
+- **Parallelo:** 1/R_eq = 1/R1 + 1/R2 + ... — la resistenza totale è sempre minore della più piccola tra le singole resistenze. Stessa tensione su ogni ramo; le correnti si sommano.
+- **Regola pratica:** due resistenze uguali R in parallelo danno R_eq = R/2; in serie danno R_eq = 2R.
+- **Legge di Ohm:** V = R × I, da cui I = V / R e R = V / I. Corrente erogata dal generatore: I_tot = V / R_eq.
+- **Potenza dissipata:** P = V × I = I² × R = V² / R (in watt). Da P e V ricavi la resistenza totale: R = V² / P.
+- **Conservazione della carica:** in un nodo la carica che entra esce tutta, perciò in parallelo I_tot = I₁ + I₂ + ... (è questo il motivo per cui le correnti dei rami si sommano).
+- **Metodo circuito misto:** riduci prima i paralleli, poi somma le serie, ripeti fino a una sola R_eq, infine applica Ohm e la potenza.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Tre resistenze da 4 Ω, 6 Ω e 2 Ω sono collegate in serie. Qual è la resistenza equivalente?" opzioni={["6 Ω","10 Ω","12 Ω","2 Ω"]} corretta={2} spiegazione="In serie si sommano: 4 + 6 + 2 = 12 Ω. La resistenza equivalente è 12 Ω." />
+
+<Quiz domanda="Due resistenze da 6 Ω ciascuna sono collegate in parallelo. Qual è la resistenza equivalente?" opzioni={["12 Ω","6 Ω","3 Ω","1 Ω"]} corretta={2} spiegazione="Due resistenze uguali R in parallelo danno R/2. Oppure con la formula: (6×6)/(6+6) = 36/12 = 3 Ω." />
+
+<Quiz domanda="Collegando resistenze in parallelo, la resistenza equivalente risultante è:" opzioni={["Sempre maggiore della resistenza più grande","Sempre uguale alla somma di tutte le resistenze","Sempre minore della resistenza più piccola tra quelle collegate","Uguale alla media aritmetica delle resistenze"]} corretta={2} spiegazione="In parallelo si aprono più percorsi alla corrente, quindi la resistenza totale è sempre minore di qualsiasi singola resistenza nel gruppo." />
+
+<Esercizio problema="In un circuito hai R1 = 10 Ω e R2 = 15 Ω collegate in parallelo, e questa combinazione è in serie con R3 = 5 Ω. Calcola la resistenza equivalente totale del circuito." soluzione="Prima calcola il parallelo di R1 e R2: R_par = (10 × 15) / (10 + 15) = 150 / 25 = 6 Ω. Poi somma il risultato con R3 (serie): R_eq = 6 + 5 = 11 Ω." />
+
+### Prova d'esame — calcolo e ragionamento
+
+<Esercizio problema="Un generatore ideale da 10 V alimenta un circuito in cui R1 = 5 Ω è in serie con il gruppo formato da R2 = 10 Ω e R3 = 10 Ω, queste due tra loro in parallelo. Qual è la corrente erogata dal generatore? Risolvi passo-passo." soluzione="Passo 1 — riduci il parallelo di R2 e R3 (due resistenze uguali): R_par = (10 × 10) / (10 + 10) = 100 / 20 = 5 Ω (oppure R/2 = 10/2 = 5 Ω). Passo 2 — somma in serie con R1: R_eq = 5 + 5 = 10 Ω. Passo 3 — applica la legge di Ohm all'intero circuito: I = V / R_eq = 10 / 10 = 1 A. La corrente erogata dal generatore è 1 A." />
+
+<Esercizio problema="Due resistenze in serie, di valore R e 4R, danno una resistenza totale di 100 Ω. Le stesse due resistenze vengono ora collegate in parallelo. Quanto vale la nuova resistenza equivalente?" soluzione="Passo 1 — trova R dalla serie: R + 4R = 5R = 100 Ω, quindi R = 20 Ω e 4R = 80 Ω. Passo 2 — calcola il parallelo: R_eq = (20 × 80) / (20 + 80) = 1600 / 100 = 16 Ω. Controllo: il parallelo (16 Ω) è minore della più piccola del gruppo (20 Ω), come deve essere." />
+
+<Esercizio problema="Una resistenza R1 = 5 Ω è collegata in serie con una resistenza incognita R2. Il circuito è alimentato da un generatore in continua da 20 V e dissipa una potenza totale di 10 W. Quanto vale R2?" soluzione="Passo 1 — dalla potenza ricava la resistenza totale: P = V² / R_tot, quindi R_tot = V² / P = (20 × 20) / 10 = 400 / 10 = 40 Ω. Passo 2 — essendo in serie, R_tot = R1 + R2, quindi R2 = R_tot − R1 = 40 − 5 = 35 Ω. (Verifica: I = V / R_tot = 20 / 40 = 0,5 A; P = V × I = 20 × 0,5 = 10 W. Torna.)" />
+
+<Esercizio problema="Tre resistenze sono collegate tutte in parallelo: R1 = 20 Ω, R2 = 40 Ω e una terza R3 incognita. La resistenza totale misurata del gruppo è 12 Ω. Quanto vale R3?" soluzione="Usa la formula del parallelo con i reciproci: 1/R_tot = 1/R1 + 1/R2 + 1/R3. Sostituisci: 1/12 = 1/20 + 1/40 + 1/R3. In numeri: 1/20 = 0,050 e 1/40 = 0,025, quindi 1/20 + 1/40 = 0,075. Inoltre 1/12 ≈ 0,08333. Allora 1/R3 = 0,08333 − 0,075 = 0,008333, da cui R3 = 1 / 0,008333 = 120 Ω." />
+
+<Quiz domanda="In un circuito alimentato da una batteria, due resistenze sono collegate in parallelo. La corrente erogata dalla batteria risulta uguale alla somma delle correnti che attraversano le due resistenze. Qual è la ragione fisica corretta?" opzioni={["Per il principio di conservazione della carica elettrica: in un nodo la carica che entra deve uscire","Perché gli elettroni hanno carica negativa","Perché si conserva l'energia cinetica degli elettroni nei rami","Perché l'effetto Joule nel circuito è nullo","Perché la tensione erogata dalla batteria resta costante nel tempo"]} corretta={0} spiegazione="La spiegazione è la conservazione della carica: in un nodo nulla si accumula, quindi la corrente che entra si ridistribuisce tra i rami e poi si riunisce, e la somma delle correnti dei rami è uguale a quella erogata. Il segno della carica degli elettroni e la loro energia cinetica non c'entrano (trappole fuori tema). L'effetto Joule non è nullo, anzi le resistenze dissipano potenza. La tensione costante riguarda il fatto che i rami hanno la stessa V, non il perché le correnti si sommano." />
+
+<Quiz domanda="Una resistenza R1 = 5 Ω è in serie con una resistenza incognita R2. Collegando il tutto a un generatore in continua da 20 V, il circuito dissipa 10 W. Quanto vale R2?" opzioni={["35 Ω","15 Ω","circa 3,3 Ω","circa 5,7 Ω","1 Ω"]} corretta={0} spiegazione="Da P = V² / R_tot ricavi R_tot = 20² / 10 = 400 / 10 = 40 Ω. In serie R_tot = R1 + R2, quindi R2 = 40 − 5 = 35 Ω. Trappola 15 Ω: si ottiene se per errore si fa R_tot = V × I usando numeri sbagliati o si dimezza male. Trappola 3,3 Ω: viene da P / I o da un parallelo immaginario. 5,7 Ω e 1 Ω sono near-miss/filler che non rispettano P = V²/R con i dati dati." />
+
+<Quiz domanda="Un generatore ideale da 10 V alimenta R1 = 5 Ω posta in serie con due resistenze da 10 Ω collegate fra loro in parallelo. Qual è la corrente erogata dal generatore?" opzioni={["1 A","2 A","3 A","5 A","10 A"]} corretta={0} spiegazione="Le due da 10 Ω in parallelo danno 10/2 = 5 Ω. In serie con R1: R_eq = 5 + 5 = 10 Ω. Per Ohm I = V / R_eq = 10 / 10 = 1 A. Trappola 2 A: si ottiene se si dimentica R1 e si usa solo il parallelo (10 / 5 = 2). Trappola 10 A: chi divide 10 V per 1 Ω o ignora del tutto la riduzione. 3 A e 5 A sono distrattori plausibili ma non corrispondono ad alcun calcolo corretto." />
+
+<Quiz domanda="Due resistori di valore R e 4R sono collegati in serie e danno una resistenza totale di 100 Ω. Gli stessi due resistori vengono ora collegati in parallelo. Quanto vale la resistenza risultante?" opzioni={["16 Ω","20 Ω","25 Ω","400 Ω","625 Ω"]} corretta={0} spiegazione="Dalla serie 5R = 100 Ω, quindi R = 20 Ω e 4R = 80 Ω. In parallelo: (20 × 80) / (20 + 80) = 1600 / 100 = 16 Ω. Trappola 20 Ω: è solo R, ci si ferma prima di fare il parallelo. Trappola 25 Ω: media o conto sbagliato. 400 Ω e 625 Ω sono near-miss che nascono moltiplicando i valori senza dividere per la somma. Controllo: il parallelo deve essere minore di 20 Ω, e 16 Ω lo è." />
+
+</section>
+
+</RisorsaLayout>

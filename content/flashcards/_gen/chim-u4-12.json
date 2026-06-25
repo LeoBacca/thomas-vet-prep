@@ -1,0 +1,61 @@
+[
+  {
+    "id": "fc-chim-u4-12-1",
+    "topicId": "chim-u4-12",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "In una reazione redox una sostanza si OSSIDA. Cosa fa con i suoi elettroni?",
+    "choices": ["Li perde (li regala a un'altra sostanza)", "Li acquista (li prende da un'altra sostanza)", "Li distrugge", "Non c'entrano nulla con gli elettroni"],
+    "answer": 0,
+    "explain": "Ossidazione = perdita di elettroni. Il trucco è OIL: Oxidation Is Loss. Pensa a un passaggio di palla: chi DA' la palla si ossida. Gli elettroni regalati finiscono su un'altra sostanza, che invece si riduce.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-12-2",
+    "topicId": "chim-u4-12",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: in una reazione, un'ossidazione può avvenire da sola, senza che nessuna altra sostanza si riduca.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Gli elettroni persi da una sostanza devono finire da qualche parte: c'e' sempre un'altra sostanza che li acquista e si riduce nello stesso momento. E' come una compravendita: non puoi vendere se nessuno compra. Per questo si chiama ossido-riduzione, una coppia inseparabile.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-12-3",
+    "topicId": "chim-u4-12",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "Spiega con parole tue cosa significa il trucco 'OIL RIG' e perche' aiuta a non confondere ossidazione e riduzione.",
+    "answer": "OIL RIG e' una sigla in inglese che riassume tutto: OIL = Oxidation Is Loss, cioe' l'ossidazione e' una PERDITA di elettroni; RIG = Reduction Is Gain, cioe' la riduzione e' un GUADAGNO (acquisto) di elettroni. Serve perche' la parola 'riduzione' inganna: sembra che qualcosa diminuisca, e invece la sostanza acquista elettroni. Visto che gli elettroni sono carichi negativamente, quando arrivano la carica diventa piu' negativa (si 'riduce' di valore): per questo il nome torna. Con OIL RIG ti basta ricordare chi perde e chi acquista per risolvere qualsiasi redox.",
+    "explain": "Da ricordare: si OSSIDA chi PERDE elettroni, si RIDUCE chi li ACQUISTA. Le due cose avvengono sempre insieme.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u4-12-4",
+    "topicId": "chim-u4-12",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Una sostanza viene chiamata RIDUCENTE. Per definizione, cosa fa?",
+    "choices": ["Acquista elettroni da un'altra sostanza", "Cede (perde) i suoi elettroni a un'altra sostanza", "Acquista interi ioni, non elettroni", "Si trasforma sempre in un metallo", "Non scambia nulla con le altre sostanze"],
+    "answer": 1,
+    "explain": "Attenzione al nome, che e' una trappola classica: il riducente fa ridurre QUALCUN ALTRO, e per farlo gli regala elettroni. Quindi il riducente CEDE elettroni e, cedendoli, si ossida lui stesso. La scelta 'acquista elettroni' e' l'opposto esatto (quello e' l'ossidante). 'Acquista ioni' scambia elettroni con ioni (termine sbagliato), e 'diventa un metallo' e' un filler fuori tema.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u4-12-5",
+    "topicId": "chim-u4-12",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Del rame metallico (Cu) reagisce e si trasforma in ioni Cu²⁺, liberando i suoi elettroni che vengono presi dall'idrogeno. Quale specie si comporta da RIDUCENTE?",
+    "choices": ["Lo ione Cu²⁺ gia' formato", "Il rame metallico (Cu) di partenza", "L'idrogeno che acquista gli elettroni", "L'acqua del recipiente", "Nessuna, non e' una redox"],
+    "answer": 1,
+    "explain": "Il riducente e' chi PERDE elettroni: qui e' il rame metallico Cu, che li cede e diventa Cu²⁺ (quindi si ossida). 'Lo ione Cu²⁺' e' una trappola: e' il rame DOPO aver gia' ceduto, non puo' cedere ancora. 'L'idrogeno' e' l'opposto esatto, perche' ACQUISTA elettroni (si riduce, fa l'ossidante). 'L'acqua' e' un filler fuori tema, e 'non e' una redox' e' falso perche' qui gli elettroni si spostano davvero.",
+    "tags": ["prova d'esame"]
+  }
+]

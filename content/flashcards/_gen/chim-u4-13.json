@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u4-13-1",
+    "topicId": "chim-u4-13",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: in una pila (cella galvanica), l'ANODO e il polo NEGATIVO dove avviene l'OSSIDAZIONE (il metallo regala elettroni).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Anodo = ossidazione = polo negativo. Un trucco: Anodo e Ossidazione iniziano entrambi per vocale. Al catodo (polo positivo) invece arrivano gli elettroni e avviene la riduzione.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-13-2",
+    "topicId": "chim-u4-13",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Nella pila, le due vaschette (semicelle) sono collegate da due cose: il filo e il ponte salino. A cosa serve il ponte salino?",
+    "choices": [
+      "Far passare gli elettroni da una semicella all'altra",
+      "Riequilibrare le cariche tra le due soluzioni, facendo passare ioni",
+      "Riscaldare la soluzione per far andare piu veloce la reazione",
+      "Colorare la soluzione in modo da capire quando la pila e scarica"
+    ],
+    "answer": 1,
+    "explain": "Il ponte salino non fa passare elettroni (quelli viaggiano nel filo); fa passare ioni per riequilibrare le cariche. Senza di lui una soluzione diventerebbe troppo carica e la pila si spegnerebbe subito, come una valvola di sfogo che tiene tutto in equilibrio.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-13-3",
+    "topicId": "chim-u4-13",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "Hai due metalli da mettere in una pila: zinco (potenziale redox standard -0,76 V) e rame (potenziale redox standard +0,34 V). Quale sara l'anodo e quale il catodo? Quanti volt produrra la pila? La pila funzionera da sola?",
+    "answer": "Chi ha il potenziale piu BASSO (lo zinco, -0,76 V) si ossida e diventa l'ANODO (polo negativo): regala elettroni. Chi ha il potenziale piu ALTO (il rame, +0,34 V) si riduce e diventa il CATODO (polo positivo): riceve gli elettroni. La tensione si calcola con: E pila = E catodo - E anodo = (+0,34) - (-0,76) = 0,34 + 0,76 = 1,10 V. Il risultato e positivo, quindi si: la pila funziona da sola, producendo circa 1,1 volt. E' la classica pila Daniell.",
+    "explain": "Da ricordare: potenziale piu basso → anodo (ossidazione); potenziale piu alto → catodo (riduzione). Tensione = E catodo − E anodo. Se positiva, la reazione e spontanea.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u4-13-4",
+    "topicId": "chim-u4-13",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Durante il funzionamento di una pila elettrochimica si ha:",
+    "choices": [
+      "una reazione di ossido-riduzione (redox): chi si ossida all'anodo regala elettroni, chi si riduce al catodo li riceve",
+      "solo una reazione di riduzione: al catodo gli ioni prendono elettroni, ma all'anodo non succede nulla di chimico",
+      "solo una reazione di ossidazione: il metallo dell'anodo si consuma, ma al catodo non avviene nessuna reazione",
+      "una reazione acido-base: un acido cede un protone a una base",
+      "una reazione di neutralizzazione tra acido e base che produce acqua e sale"
+    ],
+    "answer": 0,
+    "explain": "In una pila avviene SEMPRE una reazione redox completa: all'anodo c'e l'ossidazione (chi perde elettroni) e al catodo c'e la riduzione (chi li acquista). Le due meta-reazioni avvengono insieme, come i due piatti di una bilancia: non puoi avere una senza l'altra. Le opzioni B e C sono l'opposto esatto: descrivono ognuna solo meta della reazione. La reazione acido-base e la neutralizzazione sono processi completamente diversi, senza scambio di elettroni.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u4-13-5",
+    "topicId": "chim-u4-13",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Tra due elettrodi metallici immersi in soluzione, quale diventa il CATODO (polo positivo) della pila?",
+    "choices": [
+      "Quello con il potenziale redox standard piu alto: ha piu 'voglia' di prendere elettroni e si riduce",
+      "Quello con il potenziale redox standard piu basso: cede piu facilmente gli elettroni e si riduce",
+      "Quello fisicamente piu grande: ha piu superficie a disposizione per ridursi",
+      "Quello che si trova a sinistra nella pila: per convenzione il catodo e sempre a sinistra",
+      "Quello che si scioglie piu in fretta: significa che sta cedendo piu ioni in soluzione"
+    ],
+    "answer": 0,
+    "explain": "Il catodo e chi ha il potenziale piu ALTO: pensa al potenziale come alla 'voglia di prendere elettroni'. Chi ne ha di piu vince il 'braccio di ferro' con l'altro metallo e li riceve (si riduce). La trappola classica e l'opposto esatto: il potenziale piu BASSO identifica l'ANODO (chi si ossida e cede elettroni). Le ultime tre opzioni confondono la dimensione fisica, la posizione o la velocita di dissoluzione col potenziale redox: sono tutti filler fuori tema. Chi si scioglie piu in fretta e proprio l'anodo, non il catodo: anche questa e una trappola da riconoscere.",
+    "tags": ["prova d'esame"]
+  }
+]

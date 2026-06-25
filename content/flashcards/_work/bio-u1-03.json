@@ -1,0 +1,123 @@
+{
+ "id": "bio-u1-03",
+ "titolo": "I virus: caratteristiche generali e struttura (acido nucleico, capside, involucro) e classi",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "03-i-virus-caratteristiche-generali-e-struttura",
+ "freq": 8,
+ "risorseMdx": "src/pages/risorse/biologia/u1/03-i-virus-caratteristiche-generali-e-struttura.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "L'influenza è dovuta:",
+   "choices": [
+    "ad una infezione virale",
+    "ad una infezione batterica",
+    "all'azione di uno pneumococco",
+    "all'azione del polline",
+    "all'azione di uno stafilococco"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2008",
+   "q": "I prioni sono proteine normalmente presenti sulla superficie di tutte le cellule, ma particolarmente numerose sui neuroni; la loro alterazione provoca il gruppo di malattie definite \"encefalopatie spongiformi\". Il primo a dare il nome a questi agenti infettivi non convenzionali fu Stanley Prusiner nel 1982, dall'acronimo PRotein Infective ONly particles, riconoscendone così la loro natura esclusivamente proteica. La comunità scientifica era invece più propensa a considerare virus questi agenti infettivi. Questa interpretazione era errata in quanto per essere considerati virus avrebbero dovuto avere una delle seguenti caratteristiche tipiche dei virus:",
+   "choices": [
+    "presentare uno dei due tipi di acidi nucleici, DNA o RNA",
+    "presentare entrambi gli acidi nucleici, DNA e RNA",
+    "avere una membrana cellulare",
+    "avere un metabolismo proprio",
+    "essere visibili al microscopio ottico"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2010",
+   "q": "I virus a RNA devono disporre in proprio di alcuni enzimi in quanto:",
+   "choices": [
+    "le cellule ospiti non possiedono enzimi che possano replicare il genoma virale",
+    "i virus verrebbero rapidamente distrutti dalle difese dell'ospite",
+    "gli enzimi posseduti dal virus traducono il DNA virale in proteine",
+    "gli enzimi posseduti dal virus sono più efficaci per la sintesi di ATP",
+    "i messaggeri virali non possono essere tradotti dagli enzimi della cellula ospite"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2016",
+   "q": "Quali sono le principali macromolecole che costituiscono i virus?",
+   "choices": [
+    "Proteine e acidi nucleici",
+    "Molecole complesse in parte sconosciute",
+    "Proteine",
+    "Idrocarburi e carboidrati",
+    "Lipidi e zuccheri"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2017",
+   "q": "Quale tra le seguenti affermazioni sui virus è FALSA?",
+   "choices": [
+    "Hanno dimensioni variabili tra 10 um e 100 um",
+    "Possono contenere DNA o RNA",
+    "Sono incapaci di sintesi proteica autonoma",
+    "Sono parassiti di organismi animali, vegetali o batteri",
+    "Sono parassiti endocellulari obbligati"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2018",
+   "q": "La replicazione dei virus può avvenire solo all'interno di una cellula ospite, perché i virus:",
+   "choices": [
+    "sono privi delle strutture necessarie alla sintesi proteica",
+    "sono privi di enzimi propri",
+    "non possiedono sequenze geniche atte a regolare il loro ciclo replicativo",
+    "sono privi di un involucro esterno",
+    "possono replicarsi solo alla temperatura e al pH esistenti all'interno della cellula ospite"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2022",
+   "q": "La peste suina africana è una infezione virale che colpisce i suini domestici e selvatici, non trasmissibile all'uomo. È una malattia altamente infettiva e spesso mortale per gli animali colpiti, sostenuta da un virus che non stimola la formazione di anticorpi neutralizzanti e ciò rende difficile preparare un:",
+   "choices": [
+    "vaccino",
+    "antibiotico",
+    "antipiretico",
+    "battericida",
+    "antistaminico"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Quale fra le seguenti entità biologiche può avere un genoma a RNA?",
+   "choices": [
+    "virus",
+    "batteri parassiti",
+    "protozoi",
+    "mitocondri",
+    "cloroplasti"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

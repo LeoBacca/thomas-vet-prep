@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-fis-u7-05-1",
+    "topicId": "fis-u7-05",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Tre tipi di radiazione, tre 'scudi' diversi. Abbina la radiazione al materiale che la ferma: alfa → carta, beta → alluminio, gamma → piombo. Questa affermazione e CORRETTA?",
+    "choices": [
+      "Si, e corretta: alfa si ferma con carta, beta con alluminio, gamma con piombo",
+      "No: alfa e gamma si fermano con carta, beta serve il piombo",
+      "No: tutte e tre le radiazioni si fermano solo con il piombo",
+      "No: alfa si ferma con alluminio, beta con piombo, gamma con carta"
+    ],
+    "answer": 0,
+    "explain": "Pensa a tre 'ospiti' sempre piu prepotenti che bussano alla porta. La particella alfa e pesante e lenta (2 protoni + 2 neutroni): basta un foglio di carta per fermarla, persino la pelle umana la blocca. La particella beta (un elettrone velocissimo) e piu piccola e penetrante: ci vuole un foglio sottile di alluminio. I raggi gamma (pura energia, come raggi X potenziati) sono i piu penetranti in assoluto: servono blocchi di piombo o cemento spesso. Regola da ricordare: carta → alluminio → piombo, dal meno al piu penetrante.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u7-05-2",
+    "topicId": "fis-u7-05",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "open",
+    "q": "Spiega cos'e l'emivita (T₁/₂) e rispondi: hai 80 g di una sostanza radioattiva con emivita di 5 anni. Quanti grammi restano dopo 15 anni?",
+    "answer": "L'emivita e il tempo necessario perche la META dei nuclei instabili presenti decada. Non dipende da quanta sostanza hai: dimezza sempre in quel tempo fisso. 15 anni con emivita di 5 anni = 3 emivite. Dopo la 1a emivita (5 anni): 80 ÷ 2 = 40 g. Dopo la 2a emivita (10 anni): 40 ÷ 2 = 20 g. Dopo la 3a emivita (15 anni): 20 ÷ 2 = 10 g. Risposta: restano 10 g.",
+    "explain": "Regola chiave: ogni emivita dimezza la quantita. Conta quante emivite entrano nel tempo totale, poi dimezza tante volte. Non importa la quantita iniziale: la proporzione e sempre la stessa.",
+    "tags": ["risposta aperta"]
+  }
+]

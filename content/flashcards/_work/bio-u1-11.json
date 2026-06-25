@@ -1,0 +1,25 @@
+{
+ "id": "bio-u1-11",
+ "titolo": "La cellula eucariotica, il sistema delle endomembrane e l'origine del nucleo",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "11-la-cellula-eucariotica-il-sistema-delle",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u1/11-la-cellula-eucariotica-il-sistema-delle.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "Quale dei seguenti componenti della cellula eucariotica NON è delimitato da membrana?",
+   "choices": [
+    "Il ribosoma",
+    "Il mitocondrio",
+    "Il lisosoma",
+    "Le cisterne del reticolo endoplasmatico",
+    "Il nucleo"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "discriminazione"
+  }
+ ]
+}

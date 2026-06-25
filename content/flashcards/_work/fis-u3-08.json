@@ -1,0 +1,10 @@
+{
+ "id": "fis-u3-08",
+ "titolo": "Teorema di Bernoulli e applicazioni (stenosi, aneurisma)",
+ "materia": "fisica",
+ "unita": 3,
+ "slug": "08-teorema-di-bernoulli-e-applicazioni-stenosi",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u3/08-teorema-di-bernoulli-e-applicazioni-stenosi.mdx",
+ "examQuestions": []
+}

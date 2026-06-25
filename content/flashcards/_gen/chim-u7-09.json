@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u7-09-1",
+    "topicId": "chim-u7-09",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: un acido grasso SATURO ha almeno un doppio legame nella catena di carbonio, che la fa piegare.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il doppio legame e la piega sono caratteristici degli acidi grassi INSATURI. Il SATURO non ha doppi legami: la catena e dritta, 'saturata' di idrogeno al massimo. E' proprio la catena dritta che fa star solido il burro.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-09-2",
+    "topicId": "chim-u7-09",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Perche il burro e solido a temperatura ambiente mentre l'olio d'oliva e liquido? (Pensa alle catene di carbonio come matite!)",
+    "choices": [
+      "Le catene dritte dei grassi saturi si impilano come matite in un astuccio → stanno compatte → solido",
+      "Le catene piegate degli insaturi si impilano meglio → stanno compatte → solido",
+      "Il burro e solido perche contiene acqua, l'olio e liquido perche non ne contiene",
+      "Non dipende dalla struttura chimica: e solo una questione di temperatura di produzione"
+    ],
+    "answer": 0,
+    "explain": "La forma della catena decide tutto. Le catene DRITTE (sature, come nel burro) si impilano compatte come matite in un astuccio → solido. Le catene PIEGATE (insature, come nell'olio d'oliva) non riescono a impilarsi → restano sparse → liquido. Nei mangimi per cani e gatti si aggiunge olio di pesce proprio perche gli acidi grassi insaturi (Omega-3) sono liquidi e facili da assorbire.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-09-3",
+    "topicId": "chim-u7-09",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Descrivi cos'e un trigliceride: come e fatto, da dove viene il nome 'tri', e che ruolo ha nel corpo di un animale.",
+    "answer": "Un trigliceride e formato da una molecola di GLICEROLO (un piccolo 'supporto a tre ganci') a cui sono attaccati TRE acidi grassi. Il nome viene proprio da qui: 'tri' = tre, riferito ai tre acidi grassi. Puoi immaginarlo come una forchetta a tre punte (il glicerolo) con uno spaghetto infilzato su ogni punta (i tre acidi grassi). Nel corpo, i trigliceridi sono la principale forma di RISERVA DI ENERGIA: il tessuto adiposo (il grasso sotto la pelle) e praticamente un deposito di trigliceridi, una batteria di scorta. Il veterinario li misura nelle analisi del sangue di cani e gatti per valutare il metabolismo dei lipidi. La differenza tra olio e grasso e solo lo stato fisico: un trigliceride SOLIDO e un grasso (ricco di acidi grassi saturi, es. burro), uno LIQUIDO e un olio (ricco di insaturi, es. olio di girasole).",
+    "explain": "Da ricordare: trigliceride = glicerolo + 3 acidi grassi. 'Tri' = tre acidi grassi. Funzione principale = riserva di energia (tessuto adiposo).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u7-09-4",
+    "topicId": "chim-u7-09",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Quale classe di composti apporta la MAGGIORE quantita di energia all'organismo?",
+    "choices": [
+      "Lipidi (grassi e oli)",
+      "Glicidi (zuccheri)",
+      "Protidi (proteine)",
+      "Vitamine liposolubili",
+      "Acidi nucleici"
+    ],
+    "answer": 0,
+    "explain": "I LIPIDI vincono: forniscono circa 9 kcal per grammo, piu del doppio dei glucidi e delle proteine (entrambi circa 4 kcal/g). Le vitamine liposolubili sono presenti in quantita minime e non sono una fonte energetica significativa. Gli acidi nucleici (DNA, RNA) non sono usati come carburante. La trappola classica e scegliere i glicidi perche 'sono la benzina del corpo' — vero, ma i lipidi restano il serbatoio piu calorico.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u7-09-5",
+    "topicId": "chim-u7-09",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Quale affermazione sugli acidi grassi insaturi e CORRETTA?",
+    "choices": [
+      "Non hanno doppi legami e la loro catena e dritta",
+      "Hanno uno o piu doppi legami C=C che curvano la catena e li rendono tendenzialmente liquidi a temperatura ambiente",
+      "Sono sempre di origine animale e si trovano nel burro e nello strutto",
+      "Sono detti 'saturi' perche la catena e piena di idrogeno come puo essere",
+      "Il processo di idrogenazione li produce aggiungendo ossigeno alla catena"
+    ],
+    "answer": 1,
+    "explain": "La risposta giusta e la B: uno o piu doppi legami C=C creano una piega nella catena, impedendo l'impilamento → liquidi (oli vegetali, olio di pesce). Trappola A: quella e la descrizione del SATURO, non dell'insaturo — classico scambio. Trappola C: gli insaturi sono tipicamente di origine vegetale o dal pesce (olio d'oliva, olio di girasole), non animale. Trappola D: 'saturato di idrogeno' descrive il SATURO — l'insaturo manca di idrogeno proprio dove c'e il doppio legame. Filler E: la idrogenazione aggiunge IDROGENO (non ossigeno) per trasformare un olio insaturo in un grasso piu solido (es. margarina).",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,98 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u1-01">
+
+In fisica e in biologia capita spessissimo di avere numeri **enormi** (quante cellule ha il corpo umano) o **piccolissimi** (quanto è grande un atomo). Scriverli con tutti gli zeri è scomodo e fa venire errori. La **notazione scientifica** è semplicemente un modo più corto per scrivere questi numeri, usando le **potenze di 10**.
+
+## Prima cosa: le potenze di 10
+
+Una potenza di 10 dice solo *quanti zeri* mettere dopo l'1:
+
+- 10¹ = 10
+- 10² = 100
+- 10³ = 1 000
+- 10⁶ = 1 000 000 (un milione)
+
+Se l'esponente è **negativo**, il numero diventa **piccolo** (sotto l'1):
+
+- 10⁻¹ = 0,1
+- 10⁻³ = 0,001
+- 10⁻⁶ = 0,000 001 (un milionesimo)
+
+<div class="callout">💡 <strong>In parole semplici:</strong> l'esponente ti dice di quanti posti spostare la virgola. Esponente <strong>positivo</strong> → virgola a destra (numero più grande); <strong>negativo</strong> → virgola a sinistra (numero più piccolo).</div>
+
+## La regola della notazione scientifica
+
+Un numero è scritto in notazione scientifica quando ha questa forma:
+
+**(un numero da 1 a 9,99…) × 10 elevato a un esponente**
+
+Cioè: **una sola cifra** prima della virgola, moltiplicata per una potenza di 10.
+
+- 3 800 000 = **3,8 × 10⁶**
+- 0,00042 = **4,2 × 10⁻⁴**
+
+<Diagram caption="Trasformare un numero grande in notazione scientifica" code={`flowchart LR
+  A["3 800 000"] -->|"sposto la virgola<br/>di 6 posti a sinistra"| B["3,8"]
+  B -->|"i posti spostati<br/>diventano l'esponente"| C["3,8 × 10⁶"]`} />
+
+## Come si fa, passo per passo
+
+1. Sposta la virgola finché davanti resta **una sola cifra** (da 1 a 9).
+2. **Conta** di quanti posti l'hai spostata: quel numero è l'**esponente**.
+3. Partito da un numero **grande** → esponente **positivo**; da un numero **piccolo** → esponente **negativo**.
+
+## A cosa serve (e con cosa è collegata)
+
+Serve a scrivere e confrontare al volo grandezze molto diverse. Va a braccetto con le [unità di misura](../02-grandezze-fisiche-e-unita-di-misura/) e con l'[ordine di grandezza](../03-conversioni-tra-unita-e-stima-dellordine/), che vedrai subito dopo.
+
+## Guarda il video
+
+<YouTube id="-ND2GryzaVg" title="Le potenze di dieci e la notazione scientifica" />
+
+<VideoVisto id="fis-u1-01" />
+
+## Da ricordare
+
+- Notazione scientifica = **una cifra**, la virgola, il resto, **× 10ⁿ**.
+- Esponente **positivo** = numero grande · esponente **negativo** = numero piccolo.
+- L'esponente è semplicemente *quanti posti* hai spostato la virgola.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Come si scrive 5 600 000 in notazione scientifica?"
+  opzioni={["56 × 10⁵", "5,6 × 10⁶", "5,6 × 10⁵", "0,56 × 10⁷"]}
+  corretta={1}
+  spiegazione="Sposti la virgola di 6 posti verso sinistra: resta 5,6 e i 6 posti diventano l'esponente."
+/>
+
+<Quiz
+  domanda="Quanto vale 10⁻³?"
+  opzioni={["1 000", "0,001", "0,01", "−1 000"]}
+  corretta={1}
+  spiegazione="Esponente negativo = numero piccolo: 10⁻³ = 0,001 (la virgola scende di 3 posti)."
+/>
+
+<Quiz
+  domanda="Un globulo rosso misura circa 0,000007 m. In notazione scientifica è:"
+  opzioni={["7 × 10⁻⁶ m", "7 × 10⁶ m", "7 × 10⁻⁵ m", "0,7 × 10⁻⁵ m"]}
+  corretta={0}
+  spiegazione="Il numero è piccolo (sotto 1): sposti la virgola di 6 posti a destra fino al 7, quindi esponente −6."
+/>
+
+<Esercizio
+  problema="Scrivi in notazione scientifica: 42 000."
+  soluzione="4,2 × 10⁴ — la virgola si sposta di 4 posti a sinistra (da 42000 a 4,2), quindi l'esponente è 4."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,137 @@
+{
+ "id": "chim-u1-26",
+ "titolo": "L'equazione di stato dei gas perfetti (PV=nRT) e la respirazione",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "26-lequazione-di-stato-dei-gas-perfetti",
+ "freq": 9,
+ "risorseMdx": "src/pages/risorse/chimica/u1/26-lequazione-di-stato-dei-gas-perfetti.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Una mole di idrogeno (H2 gas) reagisce con una mole di cloro (Cl2 gas) per formare acido cloridrico (HCl gas): H2 + Cl2 -> 2 HCl. Che volume di HCl (in litri) si forma dalla reazione effettuata alla temperatura di 0 °C e a pressione atmosferica?",
+   "choices": [
+    "44,8 litri",
+    "11,2 litri",
+    "13,8 litri",
+    "22,4 litri",
+    "28,0 litri"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2010",
+   "q": "Una mole di sostanze diverse che allo stato gassoso si comporti come un gas ideale, nelle stesse condizioni di pressione e di temperatura:",
+   "choices": [
+    "occupa sempre lo stesso volume",
+    "ha sempre la stessa massa",
+    "contiene lo stesso numero di elettroni",
+    "contiene un numero di particelle pari a 6,022 x 10^3",
+    "contiene un numero di particelle pari a 6,022 x 10^13"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2011",
+   "q": "Una mole di un gas alla temperatura di 0 °C e alla pressione di 1 atm occupa un volume di 22,414 litri. Calcolare quante moli di gas occupano 1,12 litri.",
+   "choices": [
+    "0,05",
+    "0,1",
+    "0,001",
+    "0,5",
+    "1,0"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2012",
+   "q": "Qual è il volume in litri occupato da 22 g di CO2 (44 u.m.a.) alla pressione di 1 atm e alla temperatura di 273 K?",
+   "choices": [
+    "11,21",
+    "22,41",
+    "9,64",
+    "1,64",
+    "47,00"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2014",
+   "q": "22,0 g di un gas occupano 5,60 dm3 a temperatura e pressione standard (STP). Qual è la massa molare del gas? [Volume molare del gas = 22,4 dm3 a STP]",
+   "choices": [
+    "88,0 g mol-1",
+    "44,0 g mol-1",
+    "108 g mol-1",
+    "5,50 g mol-1",
+    "176 g mol-1"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2016",
+   "q": "Se 0,3 moli di CO2 occupano un volume pari a 6,72 litri, che volume occupa lo stesso numero di moli di NO nelle stesse condizioni di temperatura e pressione?",
+   "choices": [
+    "6.720 mL",
+    "67,20 cL",
+    "0,3 L",
+    "2.240 mL",
+    "2,24 L"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2019",
+   "q": "Quale delle seguenti equazioni è corretta per un gas che ha massa m e massa molare M?",
+   "choices": [
+    "pV = mRT/M",
+    "pV = MRT/m",
+    "p/V = mRT/M",
+    "p/V = MRT/m",
+    "pV = m/MRT"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "formula"
+  },
+  {
+   "year": "2022",
+   "q": "Un recipiente rigido contiene 1 mol di argon (si consideri il gas come ideale). Mediante una valvola, vengono inserite altre 2 mol dello stesso gas. Affinché la pressione all'interno del recipiente rimanga costante, la temperatura assoluta dovrà:",
+   "choices": [
+    "diventare un terzo rispetto a quella iniziale",
+    "rimanere costante",
+    "raddoppiare rispetto a quella iniziale",
+    "triplicare rispetto a quella iniziale",
+    "dimezzare rispetto a quella iniziale"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "A 0°C e 1 atm, qual è il volume occupato da 2,5 mol di cloro allo stato elementare (Cl2)?",
+   "choices": [
+    "56,0 litri",
+    "27,0 litri",
+    "112,0 litri",
+    "5,6 litri",
+    "2,7 litri"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

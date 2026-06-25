@@ -1,0 +1,113 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u5-01">
+
+## Cos'è la termodinamica?
+
+La termodinamica studia come il calore e l'energia si trasformano all'interno della materia. Per farlo usa un linguaggio preciso: bisogna sapere cos'è un **sistema**, cos'è l'**ambiente** e come si descrive lo **stato** di un sistema.
+
+---
+
+## Sistema e ambiente
+
+Immagina di avere un pentolino d'acqua sul fuoco. Puoi decidere di studiare solo l'acqua dentro il pentolino: quella porzione di materia è il tuo **sistema termodinamico**. Tutto il resto — il fuoco, l'aria intorno, il tavolo — è l'**ambiente** (detto anche "surroundings").
+
+In breve:
+- **Sistema** = la parte che stai studiando
+- **Ambiente** = tutto ciò che sta fuori dal sistema
+- **Universo termodinamico** = sistema + ambiente
+
+### Tipi di sistema
+
+A seconda di cosa riesce a passare attraverso il confine tra sistema e ambiente, si distinguono tre tipi:
+
+| Tipo di sistema | Scambia energia? | Scambia materia? | Esempio |
+|---|---|---|---|
+| **Aperto** | Sì | Sì | Pentolino senza coperchio |
+| **Chiuso** | Sì | No | Pentolino con coperchio |
+| **Isolato** | No | No | Thermos ben chiuso |
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il sistema è come la tua stanza: puoi decidere se lasciare aperta la finestra (sistema aperto), chiuderla (sistema chiuso) o isolarla completamente (sistema isolato).</div>
+
+---
+
+## Le variabili di stato
+
+Per descrivere lo stato di un sistema non servono mille informazioni: bastano poche grandezze misurabili chiamate **variabili di stato**. Per un gas, le principali sono:
+
+- **Pressione (P)** — quanto il gas "spinge" sulle pareti
+- **Volume (V)** — quanto spazio occupa il gas
+- **Temperatura (T)** — quanto è agitato il gas a livello microscopico
+
+Se conosci P, V e T di un gas, conosci completamente il suo stato termodinamico. È come la carta d'identità del sistema in quel momento.
+
+---
+
+## Le funzioni di stato
+
+Una **funzione di stato** è una grandezza il cui valore dipende solo dallo stato attuale del sistema, non da come ci sei arrivato.
+
+Pensa all'altitudine di una montagna: se sei a 1500 m, la tua quota è 1500 m, indipendentemente da quale sentiero hai preso per salire. Allo stesso modo, l'**energia interna** U di un gas dipende solo dalla temperatura attuale, non dalla storia del gas.
+
+Esempi di funzioni di stato:
+- **Energia interna (U)**
+- **Entalpia (H)**
+- **Entropia (S)**
+
+Al contrario, **calore (Q)** e **lavoro (W)** NON sono funzioni di stato: dipendono dal percorso seguito durante la trasformazione.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> le funzioni di stato sono come la tua posizione su una mappa — conta solo dove sei adesso, non il percorso fatto per arrivarci.</div>
+
+---
+
+## Schema riassuntivo
+
+<Diagram caption="Sistema, ambiente e tipi di sistema termodinamico" code={`flowchart TB
+  U["Universo termodinamico"]
+  U --> S["Sistema<br/>(ciò che studiamo)"]
+  U --> A["Ambiente<br/>(tutto il resto)"]
+  S --> SA["Sistema aperto<br/>scambia energia e materia"]
+  S --> SC["Sistema chiuso<br/>scambia solo energia"]
+  S --> SI["Sistema isolato<br/>non scambia nulla"]`} />
+
+<Diagram caption="Variabili di stato vs funzioni di stato" code={`flowchart LR
+  VS["Variabili di stato<br/>P, V, T"]
+  FS["Funzioni di stato<br/>U, H, S"]
+  NS["NON funzioni di stato<br/>Q calore - W lavoro"]
+  VS --> FS
+  FS --> D1["Dipendono solo<br/>dallo stato attuale"]
+  NS --> D2["Dipendono dal<br/>percorso seguito"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="FVdKxWbN6JU" title="Termodinamica 1 - Introduzione." />
+<VideoVisto id="fis-u5-01" />
+
+---
+
+## Da ricordare
+- Il **sistema** è la parte che studiamo; l'**ambiente** è tutto il resto. I sistemi possono essere aperti, chiusi o isolati a seconda di cosa scambiano con l'esterno.
+- Le **variabili di stato** (P, V, T) descrivono completamente lo stato di un sistema in un dato momento.
+- Le **funzioni di stato** (U, H, S) dipendono solo dallo stato attuale del sistema, non dal percorso seguito per arrivarci.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un thermos ben chiuso e ben isolato termicamente è un esempio di:" opzioni={["Sistema aperto", "Sistema chiuso", "Sistema isolato", "Ambiente termodinamico"]} corretta={2} spiegazione="Un thermos non scambia né energia (è isolato termicamente) né materia (è chiuso ermeticamente) con l'ambiente. È quindi un sistema isolato." />
+
+<Quiz domanda="Quali delle seguenti grandezze è una funzione di stato?" opzioni={["Il calore Q assorbito durante una trasformazione", "Il lavoro W compiuto durante una trasformazione", "L'energia interna U del sistema", "Il percorso seguito dalla trasformazione"]} corretta={2} spiegazione="L'energia interna U è una funzione di stato: il suo valore dipende solo dallo stato attuale del sistema (in particolare dalla temperatura), non da come ci si è arrivati. Calore e lavoro invece dipendono dal percorso." />
+
+<Quiz domanda="Un pentolino d'acqua sul fuoco con il coperchio ben chiuso è:" opzioni={["Un sistema isolato, perché il coperchio blocca tutto", "Un sistema aperto, perché il vapore può uscire", "Un sistema chiuso, perché scambia calore ma non materia", "Un ambiente termodinamico"]} corretta={2} spiegazione="Con il coperchio chiuso la materia (l'acqua) non esce, ma il calore si trasmette attraverso le pareti del pentolino. È quindi un sistema chiuso: scambia energia ma non materia." />
+
+<Esercizio problema="Hai una siringa tappata (ago chiuso) piena d'aria. Comprimi lo stantuffo a metà. Indica: (a) qual è il sistema termodinamico; (b) se è aperto, chiuso o isolato; (c) quali variabili di stato cambiano e in che direzione." soluzione="(a) Il sistema è l'aria contenuta nella siringa. (b) È un sistema chiuso: la quantità di aria non cambia (la siringa è tappata), ma il calore può trasmettersi attraverso le pareti della siringa verso l'ambiente. (c) Il volume V diminuisce (la comprimi a metà); la pressione P aumenta (stessa quantità d'aria in meno spazio); la temperatura T tende ad aumentare (comprimere un gas lo scalda, come si sente quando si gonfia una ruota di bicicletta velocemente)." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,106 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-05">
+
+## Il problema delle estremità: perché i cromosomi si accorciano?
+
+Ricordi che la DNA polimerasi aggiunge nucleotidi solo in direzione 5'→3' e ha bisogno di un primer (un pezzetto di RNA) per partire?
+
+Questo crea un problema serio alle **estremità dei cromosomi**:
+
+- Sul filamento in ritardo, l'ultimo primer viene sintetizzato vicino all'estremità.
+- Quando il primer viene rimosso, la DNA polimerasi **non può riempire il vuoto** che rimane: non c'è niente davanti a cui attaccarsi.
+- Risultato: ogni volta che la cellula si divide, i cromosomi perdono un piccolo pezzetto alle estremità.
+
+Se questo accadesse ai geni veri e propri, dopo poche divisioni la cellula perderebbe informazioni vitali. La natura ha trovato una soluzione elegante: i **telomeri**.
+
+## Cosa sono i telomeri?
+
+I **telomeri** sono "cappucci" protettivi alle due estremità di ogni cromosoma. Sono formati da una sequenza di DNA che si ripete migliaia di volte — negli umani la sequenza è **TTAGGG** — e non contengono geni utili.
+
+Immagina il cromosoma come una stringa da scarpe: i telomeri sono i **cappuccini di plastica** alle estremità. Si consumano un po' ogni volta che la stringa viene usata, ma proteggono il tessuto importante dal disfacimento.
+
+Ogni divisione cellulare accorcia i telomeri di 50–200 basi. I geni veri restano intatti finché i telomeri non si esauriscono del tutto.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> I telomeri sono la zona sacrificabile delle estremità cromosomiche — si consumano ad ogni divisione al posto dei geni importanti.</div>
+
+<Diagram caption="Il problema dell'estremità: perché il filamento in ritardo perde basi ad ogni replicazione" code={`flowchart TB
+  A["Cromosoma con telomero<br/>alle estremità (TTAGGG x migliaia)"] --> B["Replicazione del DNA"]
+  B --> C["Filamento guida: copiato completo<br/>fino all'estremità"]
+  B --> D["Filamento in ritardo: l'ultimo primer<br/>viene rimosso ma il gap non può essere riempito"]
+  D --> E["Estremità del filamento in ritardo<br/>è più corta di ~50-200 basi"]
+  C --> F["Dopo molte divisioni:<br/>telomero si accorcia progressivamente"]
+  E --> F
+  F --> G["Telomero critico:<br/>la cellula smette di dividersi (senescenza)"]`} />
+
+## La telomerasi: l'enzima che ricostruisce i telomeri
+
+Per risolvere il problema dell'accorciamento, alcune cellule possiedono un enzima speciale: la **telomerasi**.
+
+La telomerasi è un enzima particolare perché:
+
+1. È una **ribonucleoproteina** — cioè è fatta sia di proteine che di RNA.
+2. Porta con sé un **modello di RNA interno** (la sequenza complementare a TTAGGG).
+3. Usa questo modello per **allungare il filamento stampo** all'estremità del cromosoma, aggiungendo nuove ripetizioni TTAGGG.
+4. Dopo che il filamento stampo è stato allungato, la DNA polimerasi può finalmente copiarlo e riempire il gap.
+
+In pratica, la telomerasi funziona come una **trascriptasi inversa** (sintetizza DNA usando l'RNA come stampo) e rigenera i telomeri prima che si consumino troppo.
+
+### Chi ha la telomerasi?
+
+- **Cellule staminali** e **cellule germinali** (spermatozoi e ovociti): telomerasi molto attiva — devono dividersi a lungo senza invecchiare.
+- **Cellule somatiche adulte** (muscoli, fegato, neuroni...): telomerasi assente o quasi — i telomeri si accorciano ad ogni divisione.
+- **Cellule tumorali**: telomerasi riattivata — per questo le cellule cancerose si dividono in modo illimitato (sono "immortali").
+
+<Diagram caption="Come la telomerasi allunga il telomero: meccanismo passo per passo" code={`flowchart TB
+  A["Estremità del cromosoma:<br/>filamento stampo con telomero corto"] --> B["La telomerasi si lega all'estremità<br/>tramite il suo RNA interno (3'-AAUCCC-5')"]
+  B --> C["La telomerasi allunga il filamento stampo<br/>aggiungendo ripetizioni TTAGGG"]
+  C --> D["La telomerasi scorre avanti<br/>(traslocazione) e ripete l'aggiunta"]
+  D --> E["Filamento stampo allungato<br/>con molte nuove ripetizioni TTAGGG"]
+  E --> F["La DNA polimerasi ora può<br/>copiare il filamento allungato"]
+  F --> G["Telomero ripristinato:<br/>lunghezza mantenuta"]`} />
+
+## La senescenza replicativa
+
+Quando i telomeri si accorciano fino a una **lunghezza critica**, la cellula lo percepisce come un segnale di "danno al DNA". La cellula attiva allora un blocco permanente alla divisione: questo stato si chiama **senescenza replicativa**.
+
+- La cellula **non muore** subito (non è apoptosi), ma **non si divide più**.
+- È un meccanismo di protezione: evita che cellule con DNA danneggiato si moltiplichino e causino tumori.
+- È anche una delle cause dell'**invecchiamento dei tessuti**: con il tempo, sempre più cellule entrano in senescenza e i tessuti perdono capacità di rinnovarsi.
+
+Il **limite di Hayflick** (scoperto nel 1961) descrive proprio questo: le cellule umane in coltura si dividono al massimo 50–70 volte, poi si fermano. È una conseguenza diretta dell'accorciamento dei telomeri.
+
+### Senescenza vs. apoptosi: la differenza in breve
+
+- **Senescenza**: la cellula smette di dividersi ma rimane viva (come un lavoratore in pensione).
+- **Apoptosi**: la cellula muore in modo programmato e controllato (come un lavoratore che lascia l'azienda definitivamente).
+
+## Guarda il video
+<YouTube id="rFVbUva_yTg" title="Genetica, Lezione 5, Telomeri, telomerasi e cancro — Dr Francesca Galotti" />
+<VideoVisto id="bio-u3-05" />
+
+## Da ricordare
+- I **telomeri** sono sequenze ripetute (TTAGGG) alle estremità dei cromosomi: proteggono i geni dall'accorciamento ad ogni divisione, ma si consumano progressivamente.
+- La **telomerasi** è un enzima che riallunga i telomeri usando un RNA interno come stampo; è attiva nelle cellule staminali e tumorali, assente nelle cellule somatiche adulte.
+- La **senescenza replicativa** è il blocco permanente alla divisione che scatta quando i telomeri raggiungono una lunghezza critica: protegge dall'instabilità genomica ma contribuisce all'invecchiamento dei tessuti.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Perché il filamento in ritardo perde basi alle estremità ad ogni replicazione?" opzioni={["Perché l'elicasi distrugge i nucleotidi terminali","Perché la DNA polimerasi rimuove i nucleotidi alle estremità come controllo qualità","Perché dopo la rimozione dell'ultimo primer rimane un gap che la DNA polimerasi non può riempire","Perché la ligasi non riesce a unire i frammenti alle estremità"] } corretta={2} spiegazione="La DNA polimerasi può aggiungere nucleotidi solo 5'→3' e ha bisogno di un primer. L'ultimo primer sul filamento in ritardo viene rimosso, lasciando un gap terminale che non può essere riempito perché non c'è un punto di attacco a monte. Questo è il 'problema delle estremità'." />
+
+<Quiz domanda="Qual è la funzione principale della telomerasi?" opzioni={["Riparare le mutazioni puntiformi nel DNA","Allungare i telomeri aggiungendo sequenze ripetute all'estremità del cromosoma","Rimuovere i primer di RNA dopo la replicazione","Unire tra loro i frammenti di Okazaki"] } corretta={1} spiegazione="La telomerasi usa il proprio RNA interno come stampo per aggiungere nuove ripetizioni della sequenza telomerica (TTAGGG negli umani) all'estremità del cromosoma, compensando l'accorciamento che avviene ad ogni divisione." />
+
+<Quiz domanda="In quali cellule umane la telomerasi è particolarmente attiva?" opzioni={["Cellule muscolari adulte e neuroni","Cellule staminali, cellule germinali e cellule tumorali","Solo nelle cellule del fegato durante la rigenerazione","Tutte le cellule somatiche adulte"] } corretta={1} spiegazione="La telomerasi è molto attiva nelle cellule che devono dividersi molte volte: cellule staminali (rinnovano i tessuti), cellule germinali (trasmettono il genoma alle generazioni successive) e cellule tumorali (che hanno riattivato l'enzima rendendosi 'immortali'). Le cellule somatiche adulte comuni hanno poca o nessuna telomerasi." />
+
+<Esercizio problema="Un ricercatore studia due linee cellulari: la linea A smette di dividersi dopo circa 60 divisioni; la linea B continua a dividersi indefinitamente. Analizzando l'attività enzimatica, nella linea A la telomerasi non è rilevabile, nella linea B è molto elevata. Come spieghi queste osservazioni? Che cosa potrebbe essere la linea B?" soluzione="La linea A si comporta come normali cellule somatiche: senza telomerasi, i telomeri si accorciano ad ogni divisione finché raggiungono la lunghezza critica e la cellula entra in senescenza replicativa (limite di Hayflick). La linea B ha telomerasi attiva: i telomeri vengono riallungati dopo ogni divisione e non si raggiunge mai la lunghezza critica. La linea B è quasi certamente una linea cellulare tumorale: le cellule cancerose spesso riattivano la telomerasi, il che permette loro di dividersi in modo illimitato ('immortalità replicativa'), una delle caratteristiche distintive del cancro." />
+
+</section>
+
+</RisorsaLayout>

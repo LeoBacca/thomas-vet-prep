@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u6-06-1",
+    "topicId": "fis-u6-06",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: se raddoppi la tensione (la 'spinta') su una resistenza che non cambia, la corrente che scorre raddoppia anch'essa.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Dalla prima legge di Ohm I = V / R: se V raddoppia e R rimane uguale, anche I raddoppia. Tensione e corrente sono direttamente proporzionali — come spingere di piu su un tubo d'acqua: scorre piu acqua.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-06-2",
+    "topicId": "fis-u6-06",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Hai due fili dello stesso materiale. Il filo A e lungo il doppio del filo B, ma hanno la stessa sezione. Quale ha la resistenza maggiore?",
+    "choices": [
+      "Il filo A (piu lungo), perche R = ρ · L / A e la lunghezza aumenta la resistenza",
+      "Il filo B (piu corto), perche i fili corti oppongono piu resistenza",
+      "Sono uguali: la lunghezza non cambia la resistenza, conta solo il materiale",
+      "Dipende dalla temperatura, non dalla lunghezza"
+    ],
+    "answer": 0,
+    "explain": "La seconda legge di Ohm dice R = ρ · L / A. La resistenza cresce al crescere della lunghezza (come una strada piu lunga che rallenta il traffico). Il filo A, lungo il doppio, ha resistenza doppia. Il materiale (ρ) e la sezione (A) sono uguali nei due fili, quindi conta solo L.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-06-3",
+    "topicId": "fis-u6-06",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "open",
+    "q": "Spiega con parole tue: cos'e la resistivita di un materiale? In cosa differisce dalla resistenza di un filo? Fai un esempio con due materiali diversi (uno conduttore e uno isolante).",
+    "answer": "La resistivita (simbolo ρ, rho) e una proprieta del MATERIALE in se: misura quanto quel tipo di sostanza ostacola il passaggio degli elettroni, indipendentemente dalla forma o dalle dimensioni del pezzo che usi. Si misura in Ω·m. La resistenza (R) e invece la proprieta di UN OGGETTO SPECIFICO (quel filo lungo X, spesso Y, fatto di quel materiale): dipende dalla resistivita del materiale MA ANCHE dalla forma — piu e lungo piu resiste, piu e spesso meno resiste. Formula: R = ρ · L / A. Esempio: il rame ha resistivita bassissima (~1,7×10⁻⁸ Ω·m) → conduce bene l'elettricita (usato nei cavi). Il vetro ha resistivita altissima (~10¹² Ω·m) → non conduce quasi per niente (usato come isolante). Stessa lunghezza e sezione, ma il filo di vetro avrebbe una resistenza enormemente piu alta di quello in rame.",
+    "explain": "Distinguere resistivita (proprieta del materiale, ρ) da resistenza (proprieta del filo specifico, R = ρ·L/A) e il punto piu insidioso dell'argomento.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u6-06-4",
+    "topicId": "fis-u6-06",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Un filo di alluminio ha sezione 1,0×10⁻⁶ m², lunghezza 16,0 cm e resistenza 4,0×10⁻³ Ω. Qual e la resistivita dell'alluminio?",
+    "choices": [
+      "2,5×10⁻⁸ Ω·m",
+      "2,5×10⁻⁶ Ω·m",
+      "2,5×10⁻⁵ Ω·m",
+      "6,4×10⁴ Ω·m",
+      "6,4×10⁶ Ω·m"
+    ],
+    "answer": 0,
+    "explain": "Dalla seconda legge di Ohm R = ρ · L / A si ricava ρ = R · A / L. Prima converti la lunghezza: L = 16,0 cm = 0,16 m (passaggio fondamentale!). Poi ρ = (4,0×10⁻³ Ω × 1,0×10⁻⁶ m²) / 0,16 m = 4,0×10⁻⁹ / 0,16 = 2,5×10⁻⁸ Ω·m → risposta giusta. Le trappole: i valori 2,5×10⁻⁶ e 2,5×10⁻⁵ sono ordini di grandezza vicini a quello giusto e ti ingannano se sbagli la potenza di 10 o dimentichi di convertire i cm in metri; i valori enormi 6,4×10⁴ e 6,4×10⁶ nascono dal mettere la formula al contrario (per esempio ρ = R · L / A oppure dividere per A invece che moltiplicare): vengono numeri assurdamente grandi, segnale che la formula è stata invertita. Ricorda: la resistività di un metallo è sempre piccolissima (intorno a 10⁻⁸ Ω·m), quindi un risultato grande è sicuramente sbagliato.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u6-06-5",
+    "topicId": "fis-u6-06",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sulla resistenza di un filo metallico e CORRETTA?",
+    "choices": [
+      "La resistenza aumenta se si allunga il filo oppure se si riduce la sua sezione trasversale",
+      "La resistenza diminuisce se si allunga il filo, perche ci sono piu atomi a condurre",
+      "La resistenza non dipende dalla lunghezza, solo dal materiale",
+      "Raddoppiare la sezione e raddoppiare la lunghezza hanno lo stesso effetto sulla resistenza",
+      "La resistivita e la resistenza sono la stessa cosa misurata in unita diverse"
+    ],
+    "answer": 0,
+    "explain": "Dalla formula R = ρ · L / A: R cresce con L (filo piu lungo → piu ostacolo) e decresce con A (sezione maggiore → piu 'corsie' per gli elettroni). Trappole: 'piu atomi a condurre' e la misconcezione classica — piu lunghezza significa piu collisioni, non piu conduzione; 'non dipende da L' ignora la formula; 'stesso effetto' e falso perche raddoppiare L raddoppia R (proporzionalita diretta) mentre raddoppiare A dimezza R (proporzionalita inversa) — effetti opposti; 'resistivita = resistenza in unita diverse' confonde una proprieta del materiale (ρ, in Ω·m) con una proprieta del filo specifico (R, in Ω).",
+    "tags": ["prova d'esame"]
+  }
+]

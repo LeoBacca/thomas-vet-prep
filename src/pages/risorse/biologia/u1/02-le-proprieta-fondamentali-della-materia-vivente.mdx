@@ -1,0 +1,139 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-02">
+
+## Cos'è la materia vivente?
+
+Guarda intorno a te: una pietra, una bottiglia d'acqua e un gatto. La pietra e la bottiglia sono **materia non vivente**. Il gatto è **materia vivente**. Come fai a distinguerle? Perché il gatto fa cose che la pietra non farà mai: mangia, respira, cresce, si riproduce.
+
+I biologi hanno identificato **sette proprietà** che caratterizzano tutti gli esseri viventi, dai batteri alle balene. Se un oggetto le possiede tutte, è vivo. Se ne manca anche solo una, non lo è.
+
+---
+
+## Le 7 proprietà degli esseri viventi
+
+### 1. Organizzazione cellulare
+Ogni essere vivente è fatto di **cellule** — le unità di base della vita, come i mattoncini di una costruzione. Alcuni organismi hanno una sola cellula (come i batteri); altri, come noi, ne hanno trilioni.
+
+### 2. Metabolismo
+Il metabolismo è l'insieme di tutte le **reazioni chimiche** che avvengono dentro un organismo per produrre energia e costruire le proprie strutture. In parole povere: è come il "motore" che tiene in funzione il vivente. Senza cibo (carburante) il motore si ferma.
+
+### 3. Crescita e sviluppo
+I viventi cambiano nel tempo seguendo un **programma scritto nel DNA**. Un seme diventa una quercia, un girino diventa una rana: non è un caso, è un piano preciso codificato nei geni.
+
+### 4. Risposta agli stimoli
+Un essere vivente **percepisce l'ambiente** e reagisce. Se tocchi una pianta carnivora, le foglie si chiudono. Se entra troppa luce nell'occhio, la pupilla si restringe. Questa capacità si chiama **irritabilità**.
+
+### 5. Omeostasi
+Dal greco "stato simile": i viventi mantengono le proprie condizioni interne **stabili e costanti** anche quando l'ambiente esterno cambia. Esempio: il tuo corpo rimane a 37 °C sia d'estate che d'inverno, grazie a sudorazione e brividi.
+
+### 6. Riproduzione
+I viventi generano **nuovi individui simili a sé**. Può avvenire in modo sessuale (unione di cellule riproduttive) o asessuale (divisione diretta). Senza riproduzione, ogni specie si estinguerebbe.
+
+### 7. Evoluzione (adattamento)
+Le popolazioni di viventi cambiano nel tempo: le varianti meglio adattate all'ambiente **sopravvivono e si riproducono** di più. Nel lungo periodo questo porta a nuove specie. È il principio della selezione naturale di Darwin.
+
+---
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un essere è vivo se mangia energia, mantiene un ordine interno, cresce seguendo un piano, risponde all'ambiente, si riproduce e può cambiare nel tempo.</div>
+
+---
+
+## Come si collegano le proprietà: uno schema
+
+<Diagram caption="Le 7 proprietà fondamentali degli esseri viventi e come si intrecciano" code={`flowchart TB
+  A["Organizzazione cellulare<br/>(struttura di base)"]
+  B["Metabolismo<br/>(energia + reazioni chimiche)"]
+  C["Crescita e sviluppo<br/>(piano scritto nel DNA)"]
+  D["Risposta agli stimoli<br/>(irritabilità)"]
+  E["Omeostasi<br/>(equilibrio interno)"]
+  F["Riproduzione<br/>(nuovi individui)"]
+  G["Evoluzione<br/>(adattamento nel tempo)"]
+
+  A --> B
+  B --> C
+  B --> E
+  D --> E
+  C --> F
+  F --> G`} />
+
+## Il metabolismo da vicino: catabolismo e anabolismo
+
+<Diagram caption="Le due direzioni del metabolismo: demolire per ricavare energia, costruire per crescere" code={`flowchart LR
+  N["Nutrienti<br/>(cibo, luce solare)"]
+  CAT["CATABOLISMO<br/>Demolizione molecole<br/>→ energia liberata"]
+  ANA["ANABOLISMO<br/>Costruzione molecole<br/>→ energia consumata"]
+  EN["Energia (ATP)"]
+  STR["Strutture cellulari<br/>(proteine, membrane, DNA)"]
+
+  N --> CAT
+  CAT --> EN
+  EN --> ANA
+  ANA --> STR`} />
+
+---
+
+## Guarda il video
+<YouTube id="kyVn1Ez94uQ" title="Caratteristiche degli esseri viventi" />
+<VideoVisto id="bio-u1-02" />
+
+---
+
+## Da ricordare
+- Tutti gli esseri viventi condividono 7 proprietà: organizzazione cellulare, metabolismo, crescita, risposta agli stimoli, omeostasi, riproduzione ed evoluzione.
+- Il metabolismo è il "motore" della vita: il catabolismo demolisce molecole per ricavare energia, l'anabolismo usa quell'energia per costruire strutture.
+- L'omeostasi è la capacità di mantenere costante l'ambiente interno (es. temperatura corporea) nonostante i cambiamenti esterni.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale proprietà descrive la capacità di un organismo di mantenere stabili le proprie condizioni interne (es. temperatura corporea costante)?"
+  opzioni={[
+    "Metabolismo",
+    "Irritabilità",
+    "Omeostasi",
+    "Riproduzione"
+  ]}
+  corretta={2}
+  spiegazione="L'omeostasi è proprio la capacità di mantenere costante l'ambiente interno. Il metabolismo riguarda le reazioni chimiche energetiche, l'irritabilità è la risposta agli stimoli, la riproduzione genera nuovi individui."
+/>
+
+<Quiz
+  domanda="Un batterio si divide in due cellule figlie identiche. Di quale proprietà dei viventi è un esempio?"
+  opzioni={[
+    "Omeostasi",
+    "Riproduzione asessuale",
+    "Catabolismo",
+    "Sviluppo"
+  ]}
+  corretta={1}
+  spiegazione="La divisione di un batterio in due cellule figlie è un esempio di riproduzione asessuale: l'organismo genera nuovi individui senza unione di cellule sessuali. Non si tratta di sviluppo (che riguarda la crescita di un singolo individuo) né di catabolismo (demolizione di molecole)."
+/>
+
+<Quiz
+  domanda="Nel metabolismo, come si chiama la fase in cui le molecole complesse vengono demolite per liberare energia?"
+  opzioni={[
+    "Anabolismo",
+    "Omeostasi",
+    "Evoluzione",
+    "Catabolismo"
+  ]}
+  corretta={3}
+  spiegazione="Il catabolismo è la fase 'demolitiva' del metabolismo: spezza molecole complesse (es. glucosio) per ricavare energia (ATP). L'anabolismo è il contrario: usa energia per costruire molecole complesse."
+/>
+
+<Esercizio
+  problema="Considera un cristallo di sale che cresce in una soluzione salina. Elenca almeno TRE proprietà dei viventi che il cristallo di sale NON possiede, spiegando brevemente perché manca di ciascuna."
+  soluzione="1) Metabolismo: il cristallo non compie reazioni chimiche per ricavare energia; cresce solo per aggregazione fisica di ioni. 2) Omeostasi: non regola nessuna condizione interna; se cambia la temperatura o la concentrazione della soluzione, non reagisce attivamente per mantenere un equilibrio. 3) Riproduzione: un cristallo non genera nuovi cristalli autonomamente; si divide solo se frammentato meccanicamente, non per un processo biologico programmato. (Risposta accettabile anche: nessuna organizzazione cellulare; nessuna risposta agli stimoli biologici; nessuna evoluzione genetica.)"
+/>
+
+</section>
+
+</RisorsaLayout>

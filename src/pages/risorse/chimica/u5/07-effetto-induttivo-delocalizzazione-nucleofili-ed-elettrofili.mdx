@@ -1,0 +1,107 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u5-07">
+
+In chimica gli **elettroni** sono come soldi: c'è chi ne ha in abbondanza e chi ne è a corto. E proprio come tra le persone, succede qualcosa quando uno ha tanto e l'altro ha poco. In questa pagina impariamo a riconoscere **chi attira gli elettroni e chi li cede**, perché è da qui che partono quasi tutte le reazioni della chimica organica.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> gli elettroni sono carichi <strong>negativi</strong>. Le zone "ricche" di elettroni sono attratte dalle zone "povere" (positive). Il ricco va verso il povero: da lì nasce la reazione.</div>
+
+## L'effetto induttivo: il tiro alla fune degli elettroni
+
+Immagina due bambini che tengono in mano la stessa corda (la corda sono gli elettroni di un legame). Se uno tira più forte, la corda si sposta verso di lui. In chimica funziona uguale: certi atomi tirano gli elettroni del legame **più forte** verso di sé.
+
+Questo "tiro alla fune" si chiama **effetto induttivo**. Atomi come il **fluoro**, l'**ossigeno** o il **cloro** sono dei gran tiratori: attirano gli elettroni verso di loro e lasciano l'altra parte un po' più **povera** (cioè leggermente positiva).
+
+- Chi **attira** gli elettroni rende la zona vicina più **positiva** (povera di elettroni).
+- Chi **cede** o **spinge** gli elettroni rende la zona vicina più **negativa** (ricca di elettroni).
+
+L'effetto si trasmette lungo i legami, ma si **smorza** con la distanza: più ti allontani dal "tiratore", meno lo senti (come una corda che vibra sempre meno man mano che ti allontani dalla mano che la scuote).
+
+<Diagram caption="Effetto induttivo: un atomo che tira gli elettroni verso di sé" code={`flowchart LR
+  C["Atomo di carbonio<br/>(resta piu POVERO, leggermente +)"] -->|"il legame e gli elettroni<br/>vengono tirati verso destra"| F["Atomo che ATTIRA<br/>(es. fluoro, ossigeno)<br/>diventa piu RICCO, leggermente -"]`} />
+
+## La delocalizzazione: elettroni che non stanno fermi
+
+A volte gli elettroni non restano fissi in un punto, ma sono **spalmati** su più atomi, come la marmellata su una fetta di pane: non è tutta in un angolo, è distribuita. Questo "spalmare" si chiama **delocalizzazione**.
+
+Quando gli elettroni sono delocalizzati, la molecola è di solito **più stabile** (più tranquilla), perché il "peso" della carica è condiviso tra più atomi invece di pesare tutto su uno solo. È un po' come dividere uno zaino pesante tra più amici: nessuno fa fatica.
+
+Perché ci interessa? Perché la delocalizzazione decide **dove** una molecola è ricca o povera di elettroni, e quindi **dove** reagirà.
+
+## Nucleofili ed elettrofili: il ricco e il povero che si cercano
+
+Arriviamo al cuore della pagina. Dai due nomi facciamoci aiutare dal loro significato:
+
+- **Nucleofilo** vuol dire "**amico del nucleo**". Il nucleo è positivo, quindi il nucleofilo è chi è attratto dal positivo: è la parte **ricca di elettroni** (negativa) che va a **donare** i suoi elettroni. È il "generoso".
+- **Elettrofilo** vuol dire "**amico degli elettroni**". È chi è **a corto di elettroni** (povero, positivo) e quindi li **cerca** disperatamente. È il "bisognoso".
+
+Quando si incontrano, il **nucleofilo (ricco) attacca l'elettrofilo (povero)** e gli porta in dote i suoi elettroni, formando un nuovo legame. Ricco verso povero, sempre.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il <strong>nucleofilo</strong> ha elettroni da regalare e cerca un partner positivo. L'<strong>elettrofilo</strong> ha bisogno di elettroni. Il primo attacca il secondo: nasce un legame.</div>
+
+<Diagram caption="Il nucleofilo (ricco di elettroni) attacca l'elettrofilo (povero di elettroni)" code={`flowchart LR
+  N["NUCLEOFILO<br/>ricco di elettroni (-)<br/>il generoso: dona"] -->|"attacca e dona elettroni"| E["ELETTROFILO<br/>povero di elettroni (+)<br/>il bisognoso: riceve"]
+  E --> L["Si forma un<br/>NUOVO LEGAME"]`} />
+
+### Perché conta per medicina e veterinaria
+
+Questa non è teoria fine a se stessa. Nel corpo, tantissime reazioni funzionano proprio così:
+
+- Molti **farmaci** agiscono perché una loro parte ricca di elettroni (nucleofila) si attacca a una parte povera (elettrofila) di una proteina o di un enzima, bloccandolo o attivandolo.
+- Alcune sostanze **tossiche** o cancerogene sono elettrofili aggressivi: cercano elettroni e finiscono per attaccarsi al DNA (che ha zone ricche di elettroni), danneggiandolo.
+- Gli **antiossidanti** che senti nominare per la dieta degli animali aiutano proprio a "calmare" molecole troppo avide di elettroni.
+
+Capire chi dona e chi riceve elettroni è la base per capire come funziona un farmaco nel corpo: un super-potere utilissimo per un futuro veterinario.
+
+## Guarda il video
+
+<YouTube id="Q34DxelHD9I" title="Elettrofili e Nucleofili: cosa sono — spiegazione per principianti" />
+
+<VideoVisto id="chim-u5-07" />
+
+## Da ricordare
+
+- **Effetto induttivo**: certi atomi (fluoro, ossigeno, cloro) **tirano** gli elettroni verso di sé; l'effetto si smorza con la distanza.
+- **Delocalizzazione**: elettroni **spalmati** su più atomi → molecola più **stabile**.
+- **Nucleofilo** = "amico del nucleo", **ricco** di elettroni (negativo), li **dona**.
+- **Elettrofilo** = "amico degli elettroni", **povero** di elettroni (positivo), li **cerca**.
+- Nelle reazioni il **nucleofilo (ricco) attacca l'elettrofilo (povero)**: ricco verso povero, sempre.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un nucleofilo è una specie chimica che:"
+  opzioni={["è povera di elettroni e li cerca", "è ricca di elettroni e li dona", "non ha cariche", "non reagisce mai"]}
+  corretta={1}
+  spiegazione="Nucleofilo significa 'amico del nucleo' (positivo): è ricco di elettroni (negativo) e li dona. È il generoso della reazione."
+/>
+
+<Quiz
+  domanda="Un elettrofilo, durante una reazione, di solito:"
+  opzioni={["dona elettroni", "riceve elettroni dal nucleofilo", "respinge il nucleofilo", "perde il nucleo"]}
+  corretta={1}
+  spiegazione="L'elettrofilo è povero di elettroni (positivo): li cerca, quindi li riceve dal nucleofilo, che lo attacca."
+/>
+
+<Quiz
+  domanda="L'effetto induttivo di un atomo che attira fortemente gli elettroni (come il fluoro):"
+  opzioni={["si rafforza allontanandosi dall'atomo", "rende le zone vicine più povere di elettroni e si smorza con la distanza", "non influenza la molecola", "crea solo elettrofili"]}
+  corretta={1}
+  spiegazione="L'atomo 'tiratore' rende le zone vicine più positive (povere di elettroni) e l'effetto diminuisce man mano che ci si allontana lungo i legami."
+/>
+
+<Esercizio
+  problema="Hai due specie: la specie A è ricca di elettroni e carica negativamente; la specie B è povera di elettroni e carica positivamente. Quale delle due è il nucleofilo, quale l'elettrofilo, e chi attacca chi quando si incontrano?"
+  soluzione="La specie A (ricca di elettroni, negativa) è il NUCLEOFILO. La specie B (povera di elettroni, positiva) è l'ELETTROFILO. Quando si incontrano, il nucleofilo A attacca l'elettrofilo B donandogli i suoi elettroni: ricco verso povero. Così si forma un nuovo legame."
+/>
+
+</section>
+
+</RisorsaLayout>

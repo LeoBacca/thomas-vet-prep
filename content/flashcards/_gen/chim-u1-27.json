@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-27-1",
+    "topicId": "chim-u1-27",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: in un gas, scaldare significa semplicemente fare muovere più velocemente le particelle — la temperatura non è altro che una misura della loro velocità media.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Secondo la teoria cinetica, la temperatura misura l'energia cinetica media delle particelle: caldo = particelle veloci, freddo = particelle lente. Quando misuri la febbre di un animale, stai indirettamente misurando quanto si agitano le sue molecole.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-27-2",
+    "topicId": "chim-u1-27",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Immagina di scaldare un campione di gas. Cosa succede alla curva di Maxwell-Boltzmann?",
+    "choices": [
+      "Si sposta a destra e diventa più bassa e larga (velocità più alte e più varie)",
+      "Si sposta a sinistra e diventa più alta e stretta",
+      "Rimane identica: la forma non dipende dalla temperatura",
+      "Scompare perché tutte le particelle raggiungono la stessa velocità"
+    ],
+    "answer": 0,
+    "explain": "Scaldando, le particelle in media corrono di più: il picco della curva si sposta verso destra (velocità più alte). La curva si abbassa e si allarga perché le velocità si 'spalmano' su un intervallo più ampio. L'opposto (scelta B) è ciò che succede raffreddando.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-27-3",
+    "topicId": "chim-u1-27",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Un veterinario sa che un gatto con febbre alta è in pericolo. Usando la teoria cinetica dei gas, spiega: (a) cosa significa fisicamente avere febbre alta; (b) perché le proteine del corpo si danneggiano; (c) cosa succede se invece il gatto ipotermico (troppo freddo) non viene riscaldato.",
+    "answer": "(a) La febbre alta significa che le molecole del corpo si muovono e si urtano con energia cinetica media molto maggiore del normale. In un gas, temperatura = velocità media delle particelle; lo stesso principio vale per le molecole biologiche. (b) Le proteine sono molecole delicate con una forma precisa. Se le particelle attorno si muovono troppo velocemente e le colpiscono con troppa energia, la struttura tridimensionale della proteina si rompe (denaturazione): la proteina perde la sua funzione. Per un enzima digestivo o una proteina del sangue, questo è letale. (c) Con ipotermia (temperatura troppo bassa), le molecole rallentano: tutte le reazioni chimiche vitali (digestione, respirazione cellulare, trasmissione nervosa) rallentano fino a fermarsi. L'animale va in coma e muore se non viene riscaldato.",
+    "explain": "Il legame chiave: temperatura = energia cinetica media. Troppa (febbre) → denaturazione proteica. Troppo poca (ipotermia) → blocco di tutte le reazioni metaboliche.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-27-4",
+    "topicId": "chim-u1-27",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "L'energia cinetica media delle molecole di un gas ideale dipende da:",
+    "choices": [
+      "Dalla temperatura assoluta (kelvin) del gas",
+      "Dalla massa molecolare: molecole più pesanti hanno sempre più energia",
+      "Dal volume del contenitore in cui si trova il gas",
+      "Dalla pressione: più è alta, più le molecole sono energetiche",
+      "Dal numero totale di molecole presenti nel recipiente"
+    ],
+    "answer": 0,
+    "explain": "Risposta corretta: la temperatura. È il principio fondamentale della teoria cinetica — Ek media = (3/2)kT, dove T è la temperatura in kelvin. Trappole: la massa molecolare (B) determina la velocità, non l'energia, a parità di T — molecole pesanti e leggere alla stessa T hanno la stessa Ek media ma velocità diverse. Volume (C) e pressione (D) non determinano l'energia delle singole particelle. Il numero di molecole (E) è una proprietà del sistema, non dell'energia delle singole particelle.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-27-5",
+    "topicId": "chim-u1-27",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un gas ideale X ha energia cinetica media E a 200 K. Un altro gas ideale Y ha energia cinetica media 2E. Qual è la temperatura assoluta del gas Y?",
+    "choices": [
+      "100 K",
+      "400 K",
+      "800 K",
+      "50 K",
+      "1600 K"
+    ],
+    "answer": 1,
+    "explain": "L'energia cinetica media è direttamente proporzionale alla temperatura assoluta (kelvin): Ek ∝ T. Se l'energia raddoppia (da E a 2E), anche la temperatura deve raddoppiare: 2 × 200 K = 400 K. Trappola classica (A — 100 K): chi pensa erroneamente che raddoppiare l'energia dimezzi la temperatura, confondendo la proporzione diretta con quella inversa. (C — 800 K) viene da chi quadruplica per sbaglio (×4 invece di ×2), (E — 1600 K) da chi moltiplica per 8: numeri grandi messi lì per confondere. (D — 50 K) è ancora la proporzione inversa, spinta più in là. La regola da ricordare è una sola: l'energia cinetica media dipende solo dalla temperatura, quindi se l'energia raddoppia, raddoppia la temperatura.",
+    "tags": ["prova d'esame"]
+  }
+]

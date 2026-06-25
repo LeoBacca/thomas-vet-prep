@@ -1,0 +1,93 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u5-02">
+
+## Cos'è la temperatura?
+
+La temperatura misura quanto è "agitato" il moto delle molecole di un oggetto. Più le molecole si muovono velocemente, più l'oggetto è caldo. Non è una cosa astratta: quando tocchi una tazza di caffè bollente, senti proprio quella agitazione molecolare trasferirsi alla tua mano.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La temperatura è una misura dell'energia cinetica media delle molecole. Più è alta, più le molecole si muovono.</div>
+
+## Le scale di misura della temperatura
+
+Esistono tre scale principali:
+
+- **Celsius (°C)** — quella di tutti i giorni. L'acqua ghiaccia a 0 °C e bolle a 100 °C.
+- **Fahrenheit (°F)** — usata negli USA. L'acqua ghiaccia a 32 °F e bolle a 212 °F.
+- **Kelvin (K)** — la scala scientifica. Parte dallo zero assoluto, il punto più freddo possibile in natura: −273,15 °C = 0 K. In fisica si usa quasi sempre questa.
+
+La conversione più importante da ricordare:
+
+**T (K) = T (°C) + 273**
+
+Esempio: 27 °C = 27 + 273 = **300 K**
+
+<Diagram caption="Le tre scale di temperatura a confronto" code={`flowchart LR
+  A["Celsius (°C)<br/>scala quotidiana"] --> D["Acqua ghiaccia<br/>0 °C / 273 K / 32 °F"]
+  B["Kelvin (K)<br/>scala scientifica"] --> D
+  C["Fahrenheit (°F)<br/>scala USA"] --> D
+  D --> E["Acqua bolle<br/>100 °C / 373 K / 212 °F"]`} />
+
+## Che cos'è un gas perfetto?
+
+Un gas perfetto è un modello semplificato di gas. Immagina delle palline da ping-pong che rimbalzano dentro una scatola senza mai incollarsi tra loro: ecco un gas perfetto. Nella realtà i gas reali si comportano quasi così quando la pressione è bassa e la temperatura è alta.
+
+Le ipotesi del modello:
+- Le molecole sono piccole e distanziate (volume delle molecole trascurabile).
+- Non si attraggono né si respingono tra di loro.
+- Gli urti tra molecole e pareti sono elastici (nessuna perdita di energia).
+
+## L'equazione di stato: PV = nRT
+
+Questa equazione lega le quattro variabili che descrivono uno stato di un gas:
+
+| Simbolo | Grandezza | Unità nel SI |
+|---------|-----------|-------------|
+| P | Pressione | Pascal (Pa) |
+| V | Volume | metri cubi (m³) |
+| n | Numero di moli | mol |
+| R | Costante universale dei gas | 8,314 J/(mol·K) |
+| T | Temperatura | Kelvin (K) |
+
+**Trucco per ricordarla:** "Presto Voglio nRT" — ogni lettera dell'acronimo corrisponde a P, V, n, R, T.
+
+Se conosci quattro valori, puoi sempre ricavare il quinto. Per esempio, vuoi trovare il volume?
+
+**V = nRT / P**
+
+<Diagram caption="Relazione tra le variabili nell'equazione dei gas perfetti" code={`flowchart TB
+  n["n = numero di moli"] --> PV["PV = nRT"]
+  R["R = 8,314 J/mol·K<br/>(costante)"] --> PV
+  T["T = temperatura in Kelvin"] --> PV
+  PV --> P["P = pressione"]
+  PV --> V["V = volume"]`} />
+
+## Guarda il video
+<YouTube id="9nJVg6AqHbE" title="Equazione di stato dei gas perfetti (ideali) PV=nRT con esempio di applicazione - lezione di chimica" />
+<VideoVisto id="fis-u5-02" />
+
+## Da ricordare
+- La temperatura in fisica si misura sempre in **Kelvin**: T(K) = T(°C) + 273.
+- Un gas perfetto segue l'equazione **PV = nRT**, dove R = 8,314 J/(mol·K).
+- Se la temperatura sale (a volume fisso), la pressione sale; se il volume aumenta (a temperatura fissa), la pressione scende.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la temperatura di 0 °C espressa in Kelvin?" opzioni={["0 K", "100 K", "273 K", "373 K"]} corretta={2} spiegazione="La conversione è T(K) = T(°C) + 273. Quindi 0 + 273 = 273 K. Lo zero assoluto (0 K) corrisponde a −273 °C, non a 0 °C." />
+
+<Quiz domanda="In un gas perfetto, se raddoppi il volume mantenendo costante la temperatura e il numero di moli, cosa succede alla pressione?" opzioni={["Raddoppia", "Rimane uguale", "Si dimezza", "Diventa zero"]} corretta={2} spiegazione="Dalla legge PV = nRT, con n, R, T costanti il prodotto PV deve restare costante. Se V raddoppia, P deve dimezzarsi. Questa è la legge di Boyle." />
+
+<Quiz domanda="Quale affermazione descrive correttamente un gas perfetto?" opzioni={["Le molecole si attraggono fortemente tra loro", "Le molecole non hanno volume e non interagiscono", "Il gas si comporta sempre come un liquido a basse temperature", "La pressione non dipende dalla temperatura"]} corretta={1} spiegazione="Nel modello del gas perfetto le molecole sono puntiformi (volume trascurabile) e non esercitano forze reciproche tra di loro. Gli urti sono perfettamente elastici." />
+
+<Esercizio problema="Una bombola contiene 2 mol di gas perfetto a una temperatura di 27 °C e una pressione di 100 000 Pa. Qual è il volume della bombola? (R = 8,314 J/(mol·K))" soluzione="Prima converti la temperatura: T = 27 + 273 = 300 K. Poi applica PV = nRT e ricava V: V = nRT / P = (2 × 8,314 × 300) / 100 000 = 4988,4 / 100 000 ≈ 0,050 m³ = 50 litri." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,75 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u1-05">
+
+Alcune grandezze sono descritte da un solo numero, altre hanno bisogno anche di una **direzione**. È una distinzione fondamentale in fisica.
+
+- **Scalare** → basta un **numero + unità**. Esempi: massa (70 kg), tempo (5 s), temperatura (37 °C), energia.
+- **Vettoriale** → serve **numero + direzione + verso**. Esempi: forza, velocità, spostamento. Si disegna come una **freccia**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> se chiedere "in che direzione?" ha senso, è un vettore. "Ci sono 24 °C" → direzione? non ha senso → scalare. "Una spinta di 10 N verso destra" → la direzione conta → vettore.</div>
+
+<Diagram caption="Le due famiglie di grandezze" code={`flowchart TB
+  G["Grandezza fisica"] --> S["SCALARE<br/>solo numero + unità<br/>(massa, tempo, temperatura, energia)"]
+  G --> V["VETTORIALE<br/>numero + direzione + verso<br/>(forza, velocità, spostamento)"]`} />
+
+## Com'è fatto un vettore
+
+Un vettore (la freccia) ha quattro ingredienti:
+
+<Diagram caption="L'anatomia di un vettore" code={`flowchart LR
+  V["VETTORE<br/>(freccia)"] --> A["Modulo = la lunghezza<br/>(quanto è intenso)"]
+  V --> B["Direzione = la retta su cui sta"]
+  V --> C["Verso = da che parte punta"]
+  V --> D["Punto di applicazione = da dove parte"]`} />
+
+## Guarda il video
+
+<YouTube id="tHxv7DXWR9E" title="Grandezze scalari e vettoriali — La Fisica Che Ci Piace" />
+
+<VideoVisto id="fis-u1-05" />
+
+## Da ricordare
+
+- **Scalare** = solo numero + unità.
+- **Vettoriale** = numero (modulo) + direzione + verso → si disegna come freccia.
+- Test: ha senso chiedere "in che direzione?" → è un vettore.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale di queste è una grandezza vettoriale?"
+  opzioni={["massa", "temperatura", "forza", "tempo"]}
+  corretta={2}
+  spiegazione="La forza ha intensità, direzione e verso → vettoriale. Le altre sono scalari."
+/>
+
+<Quiz
+  domanda="Un vettore è definito da:"
+  opzioni={["solo un numero", "numero, direzione e verso", "solo una direzione", "solo un colore"]}
+  corretta={1}
+  spiegazione="Servono tutti e tre: modulo (numero), direzione e verso."
+/>
+
+<Quiz
+  domanda="La temperatura è una grandezza:"
+  opzioni={["vettoriale", "scalare", "una forza", "una freccia"]}
+  corretta={1}
+  spiegazione="Scalare: basta il numero con l'unità (es. 37 °C), non ha una direzione."
+/>
+
+<Esercizio
+  problema="La velocità '60 km/h verso est' è scalare o vettoriale?"
+  soluzione="Vettoriale: ha un valore (60 km/h) E una direzione/verso (verso est)."
+/>
+
+</section>
+
+</RisorsaLayout>

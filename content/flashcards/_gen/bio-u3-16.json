@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u3-16-1",
+    "topicId": "bio-u3-16",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "rRNA e tRNA vengono trascritti subito pronti per lavorare, oppure nascono come 'bozze' che devono essere rifinite?",
+    "choices": [
+      "Nascono come precursori immaturi (bozze) e devono essere maturati prima di funzionare",
+      "Nascono gia pronti: escono dal nucleo e lavorano immediatamente",
+      "Solo l'rRNA nasce immaturo; il tRNA e gia pronto alla trascrizione",
+      "Solo il tRNA nasce immaturo; l'rRNA e gia pronto"
+    ],
+    "answer": 0,
+    "explain": "Sia rRNA che tRNA nascono come precursori (bozze grezze). La maturazione e come la revisione di un testo: si taglia, si modifica, si rifinisce. Senza questo processo nessuno dei due puo svolgere il proprio ruolo nel ribosoma o nel trasporto degli amminoacidi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-16-2",
+    "topicId": "bio-u3-16",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Descrivi in poche righe come matura il pre-tRNA: quali tagli avvengono, cosa viene aggiunto all'estremita 3' e perche e importante?",
+    "answer": "Il pre-tRNA appena trascritto ha sequenze extra ad entrambe le estremita. La maturazione avviene in questi passi: 1) L'RNasi P (un ribozima, cioe un RNA con attivita enzimatica) taglia la sequenza leader all'estremita 5'. 2) Un'endonucleasi rimuove la coda in eccesso all'estremita 3'. 3) La tRNA nucleotidiltransferasi aggiunge la sequenza CCA-OH all'estremita 3': qui si attacchera l'amminoacido durante la sintesi proteica. Questa sequenza NON e codificata dal DNA, viene aggiunta dopo. 4) Molte basi vengono modificate chimicamente (es. in pseudouridina) per stabilizzare la forma 'a foglia di trifoglio'. 5) Se presente, un introne viene rimosso con lo splicing. Solo dopo tutti questi passaggi il tRNA e maturo e puo trasportare l'amminoacido giusto al ribosoma.",
+    "explain": "Da ricordare: RNasi P = ribozima che taglia in 5'; CCA-OH aggiunto al 3' (non codificato dal DNA) = sito di attacco dell'amminoacido.",
+    "tags": ["risposta aperta"]
+  }
+]

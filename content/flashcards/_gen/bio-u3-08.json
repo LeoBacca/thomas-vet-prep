@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u3-08-1",
+    "topicId": "bio-u3-08",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Nei batteri, l'operone lac si accende a pieno regime SOLO in una condizione precisa. Qual e?",
+    "choices": [
+      "Quando c'e lattosio E manca glucosio",
+      "Quando c'e glucosio E manca lattosio",
+      "Solo quando c'e lattosio, indipendentemente dal glucosio",
+      "Solo quando manca glucosio, anche senza lattosio"
+    ],
+    "answer": 0,
+    "explain": "Doppio controllo: il lattosio (via allolattosio) stacca il repressore (controllo negativo); il glucosio scarso alza il cAMP che attiva CAP (controllo positivo). Come un negozio che apre solo se ha merce da vendere E il fornitore preferito e chiuso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-08-2",
+    "topicId": "bio-u3-08",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Descrivi in poche frasi le tre fasi della trascrizione nei procarioti e il ruolo del fattore sigma.",
+    "answer": "La trascrizione nei procarioti avviene nel citoplasma in tre fasi. 1) Inizio: il fattore sigma (una subunita della RNA polimerasi) riconosce il promotore sul DNA e vi aggancia la polimerasi; i due filamenti del DNA si separano localmente. 2) Allungamento: la RNA polimerasi scorre lungo il filamento stampo e aggiunge un nucleotide alla volta seguendo le regole di complementarita (A-U, T-A, G-C), costruendo la catena di mRNA. 3) Fine: quando la polimerasi incontra il terminatore, si stacca dal DNA e rilascia l'mRNA pronto per la traduzione. Senza fattore sigma la polimerasi non saprebbe dove attaccarsi.",
+    "explain": "Da ricordare: sigma = guida al promotore; tre fasi = inizio, allungamento, fine; tutto nel citoplasma senza nucleo.",
+    "tags": ["risposta aperta"]
+  }
+]

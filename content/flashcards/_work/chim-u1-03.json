@@ -1,0 +1,193 @@
+{
+ "id": "chim-u1-03",
+ "titolo": "Numero atomico, numero di massa e isotopi",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "03-numero-atomico-numero-di-massa-e",
+ "freq": 13,
+ "risorseMdx": "src/pages/risorse/chimica/u1/03-numero-atomico-numero-di-massa-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Il numero di massa di un elemento corrisponde:",
+   "choices": [
+    "al numero di protoni più il numero di neutroni",
+    "al numero dei protoni dell'elemento",
+    "al numero dei neutroni dell'elemento",
+    "al numero di protoni meno il numero di neutroni",
+    "al numero di neutroni meno il numero di protoni"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2007",
+   "q": "I due nuclidi 14 e 12 del carbonio si distinguono perché il primo possiede:",
+   "choices": [
+    "due neutroni in più",
+    "due protoni in più",
+    "due protoni in meno",
+    "due nucleoni in meno",
+    "due elettroni in più"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2009",
+   "q": "L'isotopo 14C rispetto all'isotopo 12C possiede:",
+   "choices": [
+    "due neutroni in più",
+    "due protoni in più",
+    "due protoni in meno",
+    "due neutroni in meno",
+    "due elettroni in più"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2010",
+   "q": "Qual è il numero di massa di un atomo formato da 11 protoni, 11 elettroni e 12 neutroni?",
+   "choices": [
+    "23",
+    "11",
+    "12",
+    "22",
+    "13"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2010",
+   "q": "L'isotopo radioattivo del carbonio usato per la datazione archeologica è costituito da:",
+   "choices": [
+    "6 protoni, 8 neutroni, 6 elettroni",
+    "6 protoni, 7 neutroni, 6 elettroni",
+    "7 protoni, 7 neutroni, 7 elettroni",
+    "7 protoni, 6 neutroni, 7 elettroni",
+    "8 protoni, 6 neutroni, 6 elettroni"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2011",
+   "q": "Il deuterio rispetto all'idrogeno possiede:",
+   "choices": [
+    "un neutrone in più",
+    "un elettrone in più",
+    "un neutrone in meno",
+    "un protone in più",
+    "lo stesso numero di massa"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2011",
+   "q": "Due isotopi di uno stesso elemento si comportano chimicamente allo stesso modo, in quanto hanno:",
+   "choices": [
+    "lo stesso numero di elettroni nell'orbitale più esterno",
+    "egual numero di elettroni e neutroni",
+    "lo stesso numero di massa",
+    "egual numero di protoni e neutroni",
+    "lo stesso numero di neutroni"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2012",
+   "q": "Atomi dello stesso elemento possono avere una massa diversa se hanno:",
+   "choices": [
+    "un diverso numero di neutroni",
+    "un diverso numero di protoni",
+    "un diverso numero di elettroni",
+    "neutroni di massa diversa",
+    "protoni di massa diversa"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2012",
+   "q": "Qual è il numero di massa di uno ione formato da 16 protoni, 14 elettroni e 18 neutroni?",
+   "choices": [
+    "34",
+    "32",
+    "30",
+    "16",
+    "18"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2013",
+   "q": "Il neon possiede tre isotopi con massa atomica relativa di 22,0 u, 21,0 u e 20,0 u la cui frequenza relativa e 11,2 : 0,2 : 114. Qual e la massa atomica relativa media del neon?",
+   "choices": [
+    "20,18 u",
+    "19,97 u",
+    "21,26 u",
+    "22,37 u",
+    "20,51 u"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2016",
+   "q": "Quale differenza sussiste tra gli isotopi 18 e 16 dell'ossigeno?",
+   "choices": [
+    "Il primo possiede due neutroni in più",
+    "Il primo possiede due protoni in meno",
+    "Il primo possiede due protoni in più",
+    "Il secondo possiede due neutroni in più",
+    "Il primo possiede due elettroni in più"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2017",
+   "q": "Il trizio è un isotopo dell'idrogeno. Sapendo che il suo numero di massa è 3 è possibile affermare che:",
+   "choices": [
+    "il nucleo del trizio è formato da un protone e due neutroni",
+    "il nucleo del trizio è formato da tre protoni",
+    "il numero atomico del trizio è due",
+    "la massa atomica del trizio è 1 u",
+    "il trizio ha la stessa configurazione elettronica del litio"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2018",
+   "q": "Gli isotopi 235 e 239 dell'uranio sono diversi perché:",
+   "choices": [
+    "il primo possiede quattro neutroni in meno",
+    "il primo possiede due protoni e due neutroni in meno",
+    "il primo possiede quattro protoni in meno",
+    "il primo possiede quattro elettroni in meno",
+    "il primo possiede due protoni e due elettroni in meno"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

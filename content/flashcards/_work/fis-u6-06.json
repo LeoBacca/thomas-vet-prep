@@ -1,0 +1,25 @@
+{
+ "id": "fis-u6-06",
+ "titolo": "Leggi di Ohm, resistenza e resistività",
+ "materia": "fisica",
+ "unita": 6,
+ "slug": "06-leggi-di-ohm-resistenza-e-resistivita",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u6/06-leggi-di-ohm-resistenza-e-resistivita.mdx",
+ "examQuestions": [
+  {
+   "year": "2014",
+   "q": "Un filo di alluminio ha una sezione di 1,0x10-6 m2. Il filo è lungo 16,0 cm ed ha una resistenza pari a 4,0x10-3 ohm. Qual è la resistività dell'alluminio di cui è fatto questo filo?",
+   "choices": [
+    "2,5x10-8 ohm·m",
+    "2,5x10-6 ohm·m",
+    "2,5x10-5 ohm·m",
+    "6,4x104 ohm·m",
+    "6,4x106 ohm·m"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

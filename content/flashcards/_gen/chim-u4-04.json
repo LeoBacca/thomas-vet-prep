@@ -1,0 +1,81 @@
+[
+  {
+    "id": "fc-chim-u4-04-1",
+    "topicId": "chim-u4-04",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Immagina un righello da 0 a 14. Dove si trovano le soluzioni ACIDE su questo righello del pH?",
+    "choices": [
+      "Tra 0 e 7, dalla parte dei numeri più piccoli",
+      "Tra 7 e 14, dalla parte dei numeri più grandi",
+      "Esattamente sul 7, il punto centrale",
+      "Ovunque, dipende solo dalla temperatura"
+    ],
+    "answer": 0,
+    "explain": "La scala del pH va da 0 a 14, con il 7 come punto neutro (acqua pura). I numeri sotto il 7 indicano soluzioni acide (limone, aceto, succhi gastrici); i numeri sopra il 7 indicano soluzioni basiche (sapone, bicarbonato). Più il numero è basso, più la soluzione è acida.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-04-2",
+    "topicId": "chim-u4-04",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: se una soluzione ha pH 3 ed un'altra ha pH 5, quella con pH 3 è solo 'un po'' più acida — la differenza è piccola perché i numeri sono vicini.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 1,
+    "explain": "Falso. La scala del pH è logaritmica: ogni passo vale DIECI volte. Da pH 5 a pH 3 ci sono due passi, quindi pH 3 è cento volte più acido di pH 5. È come i terremoti: un piccolo numero in più significa un salto enorme. Non è una scala lineare come un righello normale.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-04-3",
+    "topicId": "chim-u4-04",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "Il sangue di un cane ha un pH di circa 7,4. Spiega: (1) se è acido, neutro o basico; (2) quanto vale il suo pOH; (3) perché è così importante che questo valore rimanga stabile.",
+    "answer": "1) Il pH 7,4 è maggiore di 7, quindi il sangue è leggermente BASICO (si dice anche 'alcalino'). Non acido, non neutro: basico. 2) Il pOH si calcola con la regola pH + pOH = 14. Quindi pOH = 14 − 7,4 = 6,6. 3) Il corpo lavora continuamente per tenere il pH del sangue in questo piccolo intervallo. Se scende sotto 7,35 (troppo acido) si chiama acidosi; se sale sopra 7,45 (troppo basico) si chiama alcalosi. Entrambe le condizioni sono pericolose anche con variazioni di pochi decimi, perché alterano il funzionamento di enzimi e proteine vitali.",
+    "explain": "La relazione pH + pOH = 14 vale a 25°C per l'acqua pura e le soluzioni acquose diluite. L'aggancio veterinario/biomedico è diretto: il controllo del pH ematico è uno dei parametri base nella clinica animale.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u4-04-4",
+    "topicId": "chim-u4-04",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "La scala del pH va da 0 a 14. Una soluzione con pH = 12 è:",
+    "choices": [
+      "fortemente basica",
+      "fortemente acida",
+      "a pH neutro",
+      "a pH fisiologico (uguale al sangue)",
+      "ricca di ioni H⁺"
+    ],
+    "answer": 0,
+    "explain": "pH 12 è molto superiore a 7, quindi la soluzione è fortemente BASICA. Le trappole: 'fortemente acida' è l'opposto esatto — i valori bassi (vicino a 0) sono acidi, non quelli alti; 'neutro' è solo il 7; 'fisiologico' è 7,4 (il sangue), non 12; 'ricca di ioni H⁺' è la descrizione di una soluzione ACIDA — più H⁺ ci sono, più basso è il pH, non più alto.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u4-04-5",
+    "topicId": "chim-u4-04",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "L'acido solforico H₂SO₄ è un acido FORTE e BIPROTICO: si dissocia completamente rilasciando 2 ioni H⁺ per molecola. Qual è l'espressione corretta per calcolare il pH di una soluzione di H₂SO₄ 0,002 M?",
+    "choices": [
+      "pH = −log₁₀(0,004)",
+      "pH = log₁₀(0,004)",
+      "pH = −log₁₀(0,001)",
+      "pH = −log₁₀(0,002)",
+      "pH = log₁₀(0,002)"
+    ],
+    "answer": 0,
+    "explain": "H₂SO₄ è biprotico: ogni molecola libera 2 ioni H⁺. Con concentrazione 0,002 M, la concentrazione di H⁺ è 2 × 0,002 = 0,004 M. Il pH è il logaritmo NEGATIVO in base 10 di [H⁺], quindi pH = −log₁₀(0,004). Le trappole: usare 0,002 invece di 0,004 dimentica il fattore 2 del biprotico; usare 0,001 dimezza invece di raddoppiare; i log senza il segno meno darebbero un numero negativo, assurdo per una soluzione acida diluita.",
+    "tags": ["prova d'esame"]
+  }
+]

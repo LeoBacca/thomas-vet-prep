@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-01-1",
+    "topicId": "fis-u2-01",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: se un cane parte dal cancello, gira attorno al parco e torna esattamente al cancello, il suo SPOSTAMENTO è zero, anche se ha corso 500 metri.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Lo spostamento è Δx = posizione finale − posizione iniziale. Se il cane torna al punto di partenza, la posizione finale è uguale a quella iniziale: Δx = 0. La distanza percorsa (500 m) è un'altra cosa: conta quanto ha corso in totale, indipendentemente dalla direzione. Stessa idea: se esci di casa, fai il giro dell'isolato e rientri, il tuo spostamento è zero.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-01-2",
+    "topicId": "fis-u2-01",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un cavallo si muove a velocità costante v = 5 m/s partendo dalla posizione x₀ = 10 m. Qual è la legge oraria del suo moto e dove si trova dopo 4 secondi?",
+    "choices": [
+      "x(t) = 5·t; dopo 4 s è a 20 m",
+      "x(t) = 10 + 5·t; dopo 4 s è a 30 m",
+      "x(t) = 10 · 5·t; dopo 4 s è a 200 m",
+      "x(t) = 10 − 5·t; dopo 4 s è a −10 m"
+    ],
+    "answer": 1,
+    "explain": "La legge oraria del moto rettilineo uniforme è x(t) = x₀ + v·t. Qui x₀ = 10 m e v = 5 m/s, quindi x(t) = 10 + 5·t. Dopo 4 secondi: x(4) = 10 + 5×4 = 10 + 20 = 30 m. La trappola 'x(t) = 5·t' dimentica la posizione di partenza (x₀ = 0 invece di 10). La trappola '10 · 5·t' moltiplica invece di sommare (confonde addizione e moltiplicazione). La trappola '10 − 5·t' usa un segno meno senza senso: un cavallo che corre in avanti guadagna posizione, non la perde.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-01-3",
+    "topicId": "fis-u2-01",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra TRAIETTORIA e LEGGE ORARIA. Poi fai un esempio con un animale in movimento.",
+    "answer": "La traiettoria è la FORMA del percorso che un oggetto disegna nello spazio mentre si muove: è come la scia di un aereo nel cielo o le impronte lasciate da un gatto sulla neve. Dice solo che forma ha il cammino (una retta, una curva, un cerchio...) ma non dice nulla su quando l'oggetto si trovava in ciascun punto, né quanto era veloce. La legge oraria invece è una formula che dice DOVE si trova l'oggetto in OGNI istante: metti un valore di tempo t, ottieni la posizione x. È come il GPS: non ti dice solo il tracciato del percorso, ma ti dice 'alle 10:00 eri al km 3, alle 10:05 eri al km 8'. Esempio: immagina un gatto che corre in linea retta nel corridoio di casa. La traiettoria è semplicissima: una retta. Ma la legge oraria ti dice anche che il gatto partiva da x₀ = 0, correva a v = 2 m/s e quindi dopo 3 secondi era a x(3) = 0 + 2×3 = 6 m. Due informazioni diverse: la forma del cammino vs la posizione istante per istante.",
+    "explain": "Da ricordare: traiettoria = forma geometrica del percorso (niente tempi); legge oraria = posizione in funzione del tempo x(t) = x₀ + v·t.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-01-4",
+    "topicId": "fis-u2-01",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "La traiettoria di un punto materiale si definisce come:",
+    "choices": [
+      "il luogo dei punti occupati dal punto materiale durante il suo moto",
+      "la legge che fornisce la posizione del punto materiale in funzione del tempo",
+      "il segmento che unisce la posizione iniziale e finale del punto materiale",
+      "la curva che descrive l'andamento della velocità nel tempo",
+      "la pendenza del grafico orario"
+    ],
+    "answer": 0,
+    "explain": "La traiettoria è il luogo geometrico di tutti i punti che il mobile ha occupato durante il moto: è la 'forma del percorso' nello spazio. La scelta B descrive invece la legge oraria x(t), che è un'altra cosa (posizione in funzione del tempo). La scelta C descrive lo spostamento (da punto iniziale a punto finale, in linea retta): è solo un pezzo della traiettoria, non tutta la traiettoria. La scelta D descrive un grafico velocità-tempo, non la geometria del percorso. La scelta E (pendenza del grafico orario) indica la velocità, non la traiettoria. Trappola classica: confondere traiettoria con legge oraria — la legge oraria aggiunge il tempo, la traiettoria è solo la forma nello spazio.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-01-5",
+    "topicId": "fis-u2-01",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Una delle seguenti affermazioni sulla traiettoria è FALSA. Quale?",
+    "choices": [
+      "La traiettoria dipende dal sistema di riferimento scelto",
+      "Accelerazione e posizione iniziale da soli bastano per determinare la traiettoria",
+      "La traiettoria è il luogo dei punti occupati dal mobile durante il moto",
+      "Per un moto rettilineo la traiettoria è una retta",
+      "La traiettoria non contiene informazioni sul tempo"
+    ],
+    "answer": 1,
+    "explain": "L'affermazione falsa è la B: accelerazione e posizione iniziale da soli NON bastano a determinare la traiettoria. Manca la velocità iniziale — senza sapere in quale direzione e con quale velocità parte l'oggetto, non si può tracciare il percorso. Esempio: un proiettile sparato in su e uno sparato di lato hanno la stessa accelerazione (la gravità verso il basso) e partono dallo stesso punto, ma tracciano traiettorie completamente diverse. Le altre affermazioni sono tutte corrette: la traiettoria dipende davvero dal riferimento (A), è il luogo dei punti occupati (C), è una retta per moto rettilineo (D), e non dà informazioni sui tempi (E).",
+    "tags": ["prova d'esame"]
+  }
+]

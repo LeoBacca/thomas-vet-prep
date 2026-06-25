@@ -1,0 +1,140 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u2-03">
+
+## Cos'è la cromatina?
+
+Il DNA nel nucleo non galleggia libero: è avvolto intorno a piccole proteine chiamate **istoni**, come il filo di un gomitolo. L'insieme di DNA + istoni si chiama **cromatina**.
+
+La cromatina può essere più o meno "stretta". Questa differenza è fondamentale: quanto il DNA è compatto decide se un gene può essere letto oppure no.
+
+---
+
+## Eucromatina: la cromatina "aperta"
+
+L'**eucromatina** è la cromatina poco compatta, allentata. Immagina un gomitolo disfatto: il filo è accessibile, si può lavorarci sopra.
+
+- Il DNA è **accessibile** agli enzimi che leggono i geni.
+- I geni nell'eucromatina sono **attivi**: vengono trascritti in RNA.
+- Si trova nelle zone della cellula dove c'è intensa attività genetica.
+
+---
+
+## Eterocromatina: la cromatina "chiusa"
+
+L'**eterocromatina** è la cromatina molto compatta, stretta come un gomitolo arrotolato al massimo. Il filo non è raggiungibile.
+
+- Il DNA è **inaccessibile**.
+- I geni nell'eterocromatina sono **silenziati**: non vengono letti.
+- Esistono due tipi:
+  - **Eterocromatina costitutiva**: sempre chiusa, in tutte le cellule (es. le regioni vicino ai centromeri dei cromosomi).
+  - **Eterocromatina facoltativa**: può aprirsi o chiudersi a seconda del momento o del tipo di cellula. Un esempio classico è il cromosoma X inattivato nelle femmine dei mammiferi (corpuscolo di Barr).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Eucromatina = libro aperto (geni accesi). Eterocromatina = libro chiuso (geni spenti).</div>
+
+---
+
+## La metilazione del DNA: un interruttore chimico
+
+La **metilazione del DNA** è uno dei meccanismi principali con cui la cellula "spegne" i geni senza toccare la sequenza del DNA.
+
+Come funziona? Un piccolo gruppo chimico — il **gruppo metile (–CH₃)** — viene aggiunto a una lettera del DNA, di solito la **citosina** (C), nei punti dove C è seguita da G (siti detti **CpG**).
+
+Questo gruppo metile funziona come un lucchetto:
+1. Blocca fisicamente le proteine che leggono il gene.
+2. Richiama altre proteine che compattano ulteriormente la cromatina, trasformando quella zona in eterocromatina.
+
+Risultato: il gene viene **silenziato**.
+
+La metilazione è **ereditabile** (si trasmette alle cellule figlie) ma è anche **reversibile** — per questo si chiama meccanismo **epigenetico** (epi = sopra; epigenetica = regolazione "sopra" al DNA, senza cambiarne la sequenza).
+
+---
+
+<Diagram caption="Da eucromatina a eterocromatina: come la metilazione silenzia un gene" code={`flowchart TB
+  A["DNA non metilato<br/>Cromatina aperta (eucromatina)"] --> B["Enzima DNMT aggiunge<br/>un gruppo metile —CH₃<br/>sulla citosina"]
+  B --> C["Il sito CpG è metilato"]
+  C --> D["Proteine repressori<br/>riconoscono la metilazione"]
+  D --> E["La cromatina si compatta<br/>(eterocromatina)"]
+  E --> F["Gene SILENZIATO<br/>non viene trascritto"]`} />
+
+<Diagram caption="Confronto tra eucromatina e eterocromatina: struttura e funzione" code={`graph TB
+  CR["CROMATINA"] --> EU["EUCROMATINA<br/>poco compatta"]
+  CR --> ET["ETEROCROMATINA<br/>molto compatta"]
+  EU --> EU1["DNA accessibile"]
+  EU --> EU2["Geni ATTIVI<br/>(trascrizione ON)"]
+  EU --> EU3["Istoni acetilati<br/>(carica ridotta, cromatina allentata)"]
+  ET --> ET1["DNA inaccessibile"]
+  ET --> ET2["Geni SILENZIATI<br/>(trascrizione OFF)"]
+  ET --> ET3["DNA metilato sui CpG<br/>Istoni deacetilati"]
+  ET --> EC["Eterocromatina<br/>COSTITUTIVA<br/>(sempre chiusa)"]
+  ET --> EF["Eterocromatina<br/>FACOLTATIVA<br/>(può riaprirsi)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="7c9bt7bz0Z4" title="REGOLAZIONE della TRASCRIZIONE negli EUCAROTI - NUCLEOSOMI e CROMATINA" />
+<VideoVisto id="bio-u2-03" />
+
+---
+
+## Da ricordare
+
+- **Eucromatina** = cromatina aperta, geni attivi; **eterocromatina** = cromatina compatta, geni silenziati.
+- La **metilazione del DNA** (aggiunta di –CH₃ sulle citosine nei siti CpG) è il principale meccanismo chimico che trasforma l'eucromatina in eterocromatina e spegne i geni.
+- La metilazione è un meccanismo **epigenetico**: non cambia la sequenza del DNA, ma ne cambia l'espressione, ed è trasmissibile alle cellule figlie.
+
+---
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale delle seguenti affermazioni descrive correttamente l'eucromatina?"
+  opzioni={[
+    "È la cromatina molto compatta in cui i geni sono silenziati",
+    "È la cromatina poco compatta in cui i geni sono attivamente trascritti",
+    "Contiene solo DNA metilato sui siti CpG",
+    "Si forma esclusivamente durante la divisione cellulare"
+  ]}
+  corretta={1}
+  spiegazione="L'eucromatina è la forma aperta e poco compatta della cromatina: il DNA è accessibile agli enzimi della trascrizione, quindi i geni presenti in quella regione vengono letti e trascritti in RNA."
+/>
+
+<Quiz
+  domanda="Dove avviene tipicamente la metilazione del DNA nei mammiferi?"
+  opzioni={[
+    "Sulle adenine in qualsiasi posizione della sequenza",
+    "Sulle guanine nei siti GpC",
+    "Sulle citosine nei siti CpG",
+    "Sugli istoni H3 e H4"
+  ]}
+  corretta={2}
+  spiegazione="Nei mammiferi la metilazione del DNA avviene quasi sempre sulle citosine (C) posizionate prima di una guanina (G), cioè nei dinucleotidi CpG. Il gruppo metile viene aggiunto in posizione 5 della citosina dall'enzima DNA metiltransferasi (DNMT)."
+/>
+
+<Quiz
+  domanda="Cosa si intende per meccanismo 'epigenetico'?"
+  opzioni={[
+    "Una mutazione che altera la sequenza del DNA",
+    "Un cambiamento nel numero di cromosomi della cellula",
+    "Una modifica che regola l'espressione genica senza alterare la sequenza del DNA",
+    "La sintesi di un nuovo filamento di DNA durante la replicazione"
+  ]}
+  corretta={2}
+  spiegazione="Epigenetico significa letteralmente 'sopra il gene': si tratta di modifiche chimiche (come la metilazione del DNA o le modifiche agli istoni) che cambiano se e quanto un gene viene espresso, senza toccare la sequenza nucleotidica del DNA stesso. Queste modifiche possono essere ereditate dalle cellule figlie."
+/>
+
+<Esercizio
+  problema="Una cellula staminale si differenzia in una cellula muscolare. Durante questo processo, molti geni attivi nella cellula staminale vengono silenziati e resteranno spenti per tutta la vita della cellula muscolare. Utilizzando i concetti di eucromatina, eterocromatina e metilazione del DNA, spiega come questo silenziamento permanente può avvenire e perché si mantiene anche nelle cellule figlie generate dalla divisione cellulare."
+  soluzione="Durante la differenziazione, gli enzimi DNMT aggiungono gruppi metile (–CH₃) sulle citosine dei siti CpG nei promotori dei geni da silenziare. Questo richiama proteine repressori che compattano la cromatina, trasformando quelle regioni da eucromatina (aperta, geni attivi) a eterocromatina (chiusa, geni spenti). Il silenziamento rimane stabile perché, dopo ogni replicazione del DNA, gli enzimi DNMT di mantenimento riconoscono il filamento parentale già metilato e metilano anche il filamento figlio neo-sintetizzato. In questo modo, il pattern di metilazione — e quindi lo stato di eterocromatina — si trasmette fedelmente a ogni cellula figlia, rendendo il silenziamento ereditabile senza modificare la sequenza del DNA."
+/>
+
+</section>
+
+</RisorsaLayout>

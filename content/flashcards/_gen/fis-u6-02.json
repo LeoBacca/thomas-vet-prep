@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u6-02-1",
+    "topicId": "fis-u6-02",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: il campo elettrico e una proprieta dello spazio intorno a una carica — non si tocca, ma fa sentire una forza a qualsiasi altra carica che ci finisce dentro.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Esatto. Pensa alla temperatura in una stanza: non la vedi, ma un termometro la sente subito. Il campo elettrico e la 'zona d influenza' di una carica: modifica lo spazio intorno a se cosi che ogni altra carica che ci entra sente una spinta (attrazione o repulsione).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-02-2",
+    "topicId": "fis-u6-02",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "open",
+    "q": "Elenca almeno 3 regole delle linee di forza del campo elettrico. Per ciascuna, spiega cosa ci dice sulla carica o sul campo.",
+    "answer": "1) Partono dalle cariche positive e arrivano alle cariche negative (o si allontanano all infinito): il verso indica sempre la direzione in cui una carica positiva di prova sarebbe spinta. 2) In ogni punto la tangente alla linea indica la direzione del campo in quel punto: cosi sai verso dove 'punta' il campo senza dover disegnare frecce ovunque. 3) Dove le linee sono piu fitte (vicine tra loro) il campo e piu intenso; dove sono piu rade e piu debole: e come le isobare su una mappa meteo, avvicinate = gradiente forte. 4) Le linee non si incrociano mai: in ogni punto dello spazio il campo ha una sola direzione, quindi due frecce diverse nello stesso punto sarebbero una contraddizione.",
+    "explain": "Da ricordare: linee fuori dal + e dentro al -; tangente = direzione E; fitte = campo forte; niente incroci.",
+    "tags": ["risposta aperta"]
+  }
+]

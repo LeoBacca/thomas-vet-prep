@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u3-19-1",
+    "topicId": "bio-u3-19",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "La traduzione ha tre fasi. Quale descrive correttamente la fase di ALLUNGAMENTO?",
+    "choices": [
+      "Il ribosoma si sposta lungo l'mRNA codone per codone: ogni tRNA porta l'amminoacido giusto e si forma un legame peptidico, allungando la catena proteica",
+      "Il ribosoma riconosce il codone AUG e arriva il primo tRNA con la metionina",
+      "Il ribosoma incontra un codone di stop e i fattori di rilascio liberano la proteina",
+      "Le regioni UTR regolano la stabilita dell'mRNA e controllano quanta proteina viene prodotta"
+    ],
+    "answer": 0,
+    "explain": "Pensa a costruire un muro di mattoni: ogni mattone e un amminoacido, la 'colla' tra due mattoni e il legame peptidico. Nell'allungamento il ribosoma legge l'mRNA un 'codice' (codone) alla volta e aggiunge un mattone dopo l'altro. L'inizio e quando il cantiere apre (codone AUG); la terminazione e quando il cantiere chiude (codone di stop).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-19-2",
+    "topicId": "bio-u3-19",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Descrivi le tre fasi della traduzione (inizio, allungamento, terminazione) e spiega a cosa servono la 5'UTR e la 3'UTR dell'mRNA.",
+    "answer": "INIZIO: il ribosoma si aggancia all'mRNA in corrispondenza della 5'UTR e trova il codone AUG (il segnale 'parti da qui'). Arriva il primo tRNA con la metionina: la macchina e pronta. ALLUNGAMENTO: il ribosoma avanza lungo l'mRNA un codone alla volta (da 5' a 3'). Ad ogni codone arriva il tRNA corretto con il suo amminoacido; i due amminoacidi vengono uniti da un legame peptidico. La catena proteica cresce amminoacido per amminoacido. TERMINAZIONE: il ribosoma incontra uno dei tre codoni di stop (UAA, UAG o UGA). Nessun tRNA li riconosce: arrivano invece i fattori di rilascio, la proteina viene liberata e il ribosoma si smonta. UTR: le regioni UTR (Untranslated Region) sono le parti dell'mRNA che non vengono mai tradotte in proteina. La 5'UTR sta prima di AUG: aiuta il ribosoma ad agganciarsi e trovare il punto di inizio. La 3'UTR sta dopo il codone di stop: regola la stabilita dell'mRNA (quanto dura nella cellula) e quanta proteina viene prodotta, anche grazie al legame con microRNA e proteine regolatrici.",
+    "explain": "Tre parole chiave: AUG = inizio, legame peptidico = allungamento, codone di stop + fattori di rilascio = terminazione. 5'UTR = 'qui si inizia'; 3'UTR = 'quanto a lungo restare attivo'.",
+    "tags": ["risposta aperta"]
+  }
+]

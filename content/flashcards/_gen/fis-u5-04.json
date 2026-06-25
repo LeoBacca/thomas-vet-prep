@@ -1,0 +1,28 @@
+[
+  {
+    "id": "fc-fis-u5-04-1",
+    "topicId": "fis-u5-04",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: mentre stai sciogliendo del ghiaccio a 0 °C aggiungendo calore, la temperatura dell'acqua+ghiaccio sale gradualmente da 0 °C verso 10 °C.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 1,
+    "explain": "Falso. Durante la fusione la temperatura rimane bloccata a 0 °C finché tutto il ghiaccio è diventato liquido. Tutto il calore che aggiungi serve a rompere i legami tra le molecole del ghiaccio, non ad agitarle più velocemente (e ciò che fa salire la temperatura è proprio l'agitazione delle molecole). Solo quando tutto il solido è scomparso la temperatura ricomincia a salire.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-04-2",
+    "topicId": "fis-u5-04",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "open",
+    "q": "Cos'è il calore latente e a cosa serve la formula Q = m · L? Fai un esempio con l'acqua, spiegando perché il calore latente di vaporizzazione è molto più grande di quello di fusione.",
+    "answer": "Il calore latente (L) è l'energia che devi dare a 1 kg di una sostanza per farle cambiare stato, senza che la temperatura si muova di un grado. La formula Q = m · L ti dice il calore totale necessario: moltiplichi la massa (in kg) per il calore latente specifico (in J/kg). Per l'acqua: il calore latente di fusione è L_f = 334 000 J/kg (serve a sciogliere il ghiaccio); il calore latente di vaporizzazione è L_v = 2 260 000 J/kg (serve a trasformare acqua liquida in vapore). L_v è circa 7 volte più grande di L_f perché passare da liquido a gas significa staccare completamente le molecole le une dalle altre, rompendo tutti i legami e portandole a distanze enormi: un lavoro molto più difficile rispetto a far semplicemente scorrere le molecole del ghiaccio (fusione), dove i legami si allentano ma non si spezzano del tutto.",
+    "explain": "Da ricordare: Q = m · L; durante il cambio di stato T è costante; L_v acqua ≈ 7× L_f acqua perché vaporizzare richiede rompere tutti i legami intermolecolari.",
+    "tags": ["risposta aperta"]
+  }
+]

@@ -1,0 +1,96 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u3-01">
+
+Una **reazione chimica** è una trasformazione: alcune sostanze di partenza si trasformano in sostanze nuove e diverse. Le sostanze di partenza si chiamano **reagenti**, quelle che ottieni alla fine si chiamano **prodotti**. Succede in continuazione: quando il legno brucia, quando il ferro arrugginisce, e anche dentro il tuo corpo quando digerisci un panino.
+
+Il punto chiave è che gli **atomi** (i mattoncini di cui è fatta ogni cosa) non spariscono e non si creano dal nulla: si **riarrangiano**, cioè si staccano e si riattaccano in modo diverso, come quando smonti una costruzione di mattoncini LEGO e rimonti gli stessi pezzi in una forma nuova.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> in una reazione chimica gli atomi non si perdono e non si moltiplicano: sono sempre gli stessi, ma cambiano partner. Reagenti → Prodotti.</div>
+
+<Diagram caption="Una reazione riarrangia gli stessi atomi: nulla si perde, nulla si crea" code={`flowchart LR
+  R["REAGENTI<br/>(sostanze di partenza)"] -->|"reazione chimica"| P["PRODOTTI<br/>(sostanze nuove)"]
+  A["Gli atomi si staccano<br/>e si riattaccano diversamente"]`} />
+
+## Reagenti → Prodotti: cosa cambia davvero
+
+Immagina due molecole come due mazzi di mattoncini già montati. Durante la reazione i mattoncini si **separano** e poi si **rimontano** in combinazioni nuove. I mattoncini (gli atomi) sono sempre quelli, ma il risultato finale è diverso.
+
+Un esempio facile: l'idrogeno e l'ossigeno (due gas) reagiscono e formano **acqua**. Gli atomi di idrogeno e ossigeno c'erano già prima, ma erano legati in modo diverso. Dopo la reazione sono ancora tutti lì, solo riuniti in un modo nuovo.
+
+<Diagram caption="Gli atomi cambiano solo il modo in cui sono uniti" code={`flowchart TB
+  I["Idrogeno + Ossigeno<br/>(reagenti)"] -->|"reazione"| W["Acqua<br/>(prodotto)"]
+  W --> N["Stessi atomi di prima,<br/>uniti in modo diverso"]`} />
+
+**Perché conta per medicina e veterinaria:** il tuo corpo è una fabbrica di reazioni chimiche. Respirare, digerire, far battere il cuore: sono tutte reazioni in cui i nutrienti (reagenti) si trasformano in energia e in sostanze utili (prodotti). Capire le reazioni è il primo passo per capire come funziona un organismo vivo.
+
+## La conservazione della massa (legge di Lavoisier)
+
+Visto che gli atomi non spariscono e non si creano, anche il **peso totale** non cambia. Questo è il senso della **legge di Lavoisier**: in una reazione chimica la massa dei reagenti è uguale alla massa dei prodotti.
+
+La frase famosa è: **"Nulla si crea, nulla si distrugge, tutto si trasforma."**
+
+Pensa a una bilancia: se metti i reagenti su un piatto e poi raccogli tutti i prodotti, il peso è identico. Per esempio, 4 grammi di idrogeno più 32 grammi di ossigeno danno esattamente 36 grammi di acqua: 4 + 32 = 36, niente si perde per strada.
+
+<div class="callout">💡 <strong>Attenzione:</strong> vale se nulla scappa via. Se bruci la legna all'aria aperta sembra che "pesi meno", ma è perché parte dei prodotti se ne va come fumo e gas. In un contenitore chiuso il peso resta identico.</div>
+
+## La conservazione della carica
+
+Alcuni atomi o gruppi di atomi hanno una **carica elettrica**: possono essere positivi o negativi (si chiamano **ioni**). Anche la carica si conserva: la somma delle cariche prima della reazione deve essere uguale alla somma delle cariche dopo. Non puoi "perdere" o "guadagnare" carica dal nulla, esattamente come per gli atomi.
+
+È un po' come fare i conti con i soldi: se prima hai in tasca un saldo totale, dopo uno scambio il saldo totale deve tornare lo stesso. Reagenti e prodotti devono "pareggiare il conto" sia per gli atomi sia per le cariche.
+
+**Aggancio biomedico:** nelle cellule nervose e nei muscoli del corpo, ioni come sodio e potassio (carichi positivamente) si spostano avanti e indietro. È proprio questo movimento di cariche, sempre conservate, che fa passare i segnali nei nervi e fa contrarre il cuore.
+
+## Guarda il video
+
+<YouTube id="ZVMqEucbZLo" title="Le reazioni chimiche e la legge di Lavoisier — spiegazione facile (Facciamo Scienze)" />
+
+<VideoVisto id="chim-u3-01" />
+
+## Da ricordare
+
+- Una **reazione chimica** trasforma i **reagenti** in **prodotti**: reagenti → prodotti.
+- Gli **atomi** non si creano e non si distruggono: si **riarrangiano** (come mattoncini smontati e rimontati).
+- **Legge di Lavoisier**: la massa dei reagenti è uguale alla massa dei prodotti (nulla si crea, nulla si distrugge).
+- Si conserva anche la **carica elettrica**: la carica totale prima è uguale a quella dopo.
+- Il corpo umano e quello animale sono pieni di reazioni chimiche: respirazione, digestione, segnali nervosi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="In una reazione chimica, come si chiamano le sostanze di partenza?"
+  opzioni={["prodotti", "reagenti", "atomi", "ioni"]}
+  corretta={1}
+  spiegazione="Le sostanze di partenza sono i reagenti; quelle che si ottengono alla fine sono i prodotti."
+/>
+
+<Quiz
+  domanda="Secondo la legge di Lavoisier, in una reazione chimica la massa totale:"
+  opzioni={["aumenta sempre", "diminuisce sempre", "resta uguale (reagenti = prodotti)", "sparisce"]}
+  corretta={2}
+  spiegazione="Nulla si crea e nulla si distrugge: la massa dei reagenti è uguale alla massa dei prodotti."
+/>
+
+<Quiz
+  domanda="Durante una reazione chimica, gli atomi:"
+  opzioni={["spariscono", "si creano dal nulla", "si riarrangiano in modo diverso", "diventano più pesanti"]}
+  corretta={2}
+  spiegazione="Gli atomi sono sempre gli stessi: si staccano e si riattaccano in combinazioni nuove, come mattoncini rimontati."
+/>
+
+<Esercizio
+  problema="In un contenitore chiuso fai reagire 4 grammi di idrogeno con 32 grammi di ossigeno e ottieni acqua. Quanti grammi di acqua si formano? Quale legge stai usando?"
+  soluzione="Si formano 36 grammi di acqua, perché 4 + 32 = 36. Usi la legge di Lavoisier (conservazione della massa): la massa dei reagenti è uguale alla massa dei prodotti, quindi nulla si perde."
+/>
+
+</section>
+
+</RisorsaLayout>

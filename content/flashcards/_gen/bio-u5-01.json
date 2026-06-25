@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u5-01-1",
+    "topicId": "bio-u5-01",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: la membrana cellulare e rigida come una parete, e i fosfolipidi che la compongono sono fissi e non si muovono.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. La membrana e 'fluida': i fosfolipidi scivolano lateralmente l'uno accanto all'altro, come iceberg che galleggiano nel mare. E per questo che il modello si chiama 'a mosaico FLUIDO'. La rigidita sarebbe un problema — la cellula non potrebbe deformarsi, dividersi o inglobare sostanze.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-01-2",
+    "topicId": "bio-u5-01",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un fosfolipide e la molecola base della membrana. Com'e fatta?",
+    "choices": [
+      "Ha una testa che ama l'acqua (idrofila) e due code che la odiano (idrofobe): le code stanno all'interno della membrana, lontano dall'acqua",
+      "E fatta tutta di zuccheri, come il glicocalice",
+      "Ha due teste idrofile e nessuna coda: per questo la membrana e impermeabile",
+      "E uguale a una molecola di grasso saturo: solo carbonio e idrogeno, nessuna parte polare"
+    ],
+    "answer": 0,
+    "explain": "Pensa a un chiodo da discobar: la 'capocchia' (testa idrofila) sta in acqua, il 'gambo' (code idrofobe) scappa dall'acqua verso l'interno. Due file di fosfolipidi schiena contro schiena formano il doppio strato: le code idrofobe al centro, le teste verso l'acqua all'esterno e all'interno della cellula. Quella struttura e il 'panino' della membrana.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-01-3",
+    "topicId": "bio-u5-01",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Spiega cos'e il glicocalice, dove si trova e a cosa serve. Poi di' perche la membrana e definita 'asimmetrica' e fai un esempio concreto di questa asimmetria.",
+    "answer": "Il glicocalice e uno strato 'peloso' di catene di zuccheri (carboidrati) attaccate a proteine e lipidi della membrana. Si trova SOLO sul lato esterno della cellula. Serve a tre cose: 1) Riconoscimento cellulare — le cellule del sistema immunitario leggono il glicocalice per capire se una cellula e 'amica' o 'nemica'; 2) Adesione — aiuta le cellule a tenersi insieme nei tessuti; 3) Protezione meccanica e chimica — fa da cuscinetto contro urti e agenti chimici. La membrana e 'asimmetrica' perche il foglietto esterno e quello interno hanno composizione e funzioni diverse. Esempio concreto: il glicocalice esiste solo sul foglietto esterno (verso l'ambiente), dove serve a comunicare. Il foglietto interno invece e collegato al citoscheletro e alle proteine di segnalazione interna. Se i due lati fossero identici, la cellula non potrebbe distinguere il 'fuori' dal 'dentro'.",
+    "explain": "Punti chiave: glicocalice = zuccheri solo all'esterno; asimmetria = i due foglietti hanno composizione e ruoli diversi; esterno → comunicazione con l'ambiente; interno → collegamento con il citoplasma.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-01-4",
+    "topicId": "bio-u5-01",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale tra le seguenti NON e una funzione delle proteine che si trovano nella membrana cellulare?",
+    "choices": [
+      "Trascrizionale (produrre RNA copiando il DNA)",
+      "Di trasporto (spostare sostanze attraverso la membrana)",
+      "Di adesione (tenere le cellule attaccate tra loro nei tessuti)",
+      "Recettoriale (ricevere segnali chimici dall'esterno)",
+      "Di trasduzione di segnali (trasmettere messaggi all'interno della cellula)"
+    ],
+    "answer": 0,
+    "explain": "La trascrizione del DNA avviene nel nucleo, non sulla membrana: e un compito delle proteine del nucleo (RNA-polimerasi), non delle proteine di membrana. Le proteine di membrana fanno invece trasporto (canali e trasportatori), adesione (tengono le cellule nei tessuti), ricezione di segnali (recettori) e trasduzione di segnali (passano il messaggio dentro la cellula). La trappola e confondere 'membrana' con 'tutto quello che accade nella cellula': ogni compartimento ha le sue proteine specializzate.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-01-5",
+    "topicId": "bio-u5-01",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Nel modello a mosaico fluido, quale affermazione descrive CORRETTAMENTE le proteine integrali di membrana?",
+    "choices": [
+      "Attraversano completamente il doppio strato lipidico e spesso formano canali di trasporto",
+      "Stanno solo sul lato esterno della membrana e formano il glicocalice",
+      "Sono rigidamente fissate e non si possono mai spostare nella membrana",
+      "Si trovano solo sul foglietto interno e servono esclusivamente al riconoscimento immunitario",
+      "Sono formate da zuccheri, non da amminoacidi, per poter resistere all'ambiente acquoso"
+    ],
+    "answer": 0,
+    "explain": "Le proteine integrali (o transmembrana) attraversano tutto il doppio strato e spesso funzionano da canali o trasportatori — come tunnel che bucano la membrana per far passare sostanze. Le altre opzioni sono tutte trappole: il glicocalice e fatto di zuccheri su proteine/lipidi, non dalle proteine integrali stesse; nel modello FLUIDO le proteine si possono muovere lateralmente (non sono fisse); il riconoscimento immunitario e una funzione del glicocalice (lato esterno), non di proteine solo interne; le proteine sono sempre formate da amminoacidi, non da zuccheri (quelli sono i polisaccaridi del glicocalice).",
+    "tags": ["prova d'esame"]
+  }
+]

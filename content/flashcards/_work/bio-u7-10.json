@@ -1,0 +1,25 @@
+{
+ "id": "bio-u7-10",
+ "titolo": "La morte cellulare: necrosi e apoptosi (vie intrinseca ed estrinseca, caspasi)",
+ "materia": "biologia",
+ "unita": 7,
+ "slug": "10-la-morte-cellulare-necrosi-e-apoptosi",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u7/10-la-morte-cellulare-necrosi-e-apoptosi.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Luglio",
+   "q": "Cosa s'intende con il termine \"apoptosi\"?",
+   "choices": [
+    "Morte cellulare programmata",
+    "Morte cellulare determinata da un trauma cellulare",
+    "Mutazione genetica",
+    "Silenziamento genico",
+    "Trascrizione genica"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

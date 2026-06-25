@@ -1,0 +1,104 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u3-07">
+
+## Perché il fluido accelera dove il tubo si restringe?
+
+Pensa a quando annaffi il giardino con un tubo di gomma. Se metti il pollice sull'uscita e restringi il foro, l'acqua schizza lontano molto più veloce. Perché?
+
+La risposta è semplice: **l'acqua non può sparire**. Se entra una certa quantità d'acqua al secondo da un lato del tubo, la stessa quantità deve uscire dall'altro lato. Questo principio si chiama **conservazione della massa**.
+
+## La portata: la quantità che resta costante
+
+La **portata volumetrica** (simbolo Q) è la quantità di liquido che passa attraverso una sezione del tubo nell'unità di tempo. Si misura in m³/s.
+
+Si calcola così:
+
+**Q = A × v**
+
+Dove:
+- **A** = area della sezione trasversale del tubo (m²)
+- **v** = velocità del fluido (m/s)
+
+## L'equazione di continuità
+
+Poiché il fluido non si crea né si distrugge, la portata Q è la stessa in ogni punto del tubo:
+
+**A₁ × v₁ = A₂ × v₂**
+
+Questo significa:
+- Sezione grande → velocità bassa
+- Sezione piccola → velocità alta
+
+I due valori si compensano sempre, proprio come in una fila di persone: se il corridoio si restringe, la gente deve camminare più veloce per non accumularsi.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> dove il tubo è stretto il fluido corre più veloce, dove è largo rallenta — la quantità che passa al secondo non cambia mai.</div>
+
+## Un esempio concreto
+
+Supponiamo che un tubo abbia una sezione di 10 cm² dove entra l'acqua, e si restringa a 2 cm² in un punto successivo. Se l'acqua entra a 1 m/s, quanto va veloce nella parte stretta?
+
+A₁ × v₁ = A₂ × v₂
+10 × 1 = 2 × v₂
+v₂ = 5 m/s
+
+La velocità si moltiplica per 5, perché la sezione è diventata 5 volte più piccola.
+
+<Diagram caption="Equazione di continuità: sezione e velocità si compensano" code={`flowchart LR
+  A["Tubo largo<br/>A₁ grande<br/>v₁ piccola"] --> B["Strozzatura<br/>A₂ piccola<br/>v₂ grande"]
+  B --> C["Tubo largo<br/>A₃ grande<br/>v₃ piccola"]`} />
+
+<Diagram caption="Conservazione della portata: A × v = costante" code={`flowchart TB
+  P["Portata Q = A × v<br/>costante lungo tutto il tubo"]
+  P --> D1["Sezione grande A<br/>Velocità v bassa"]
+  P --> D2["Sezione piccola A<br/>Velocità v alta"]
+  D1 --> R["A₁ × v₁ = A₂ × v₂"]
+  D2 --> R`} />
+
+## Guarda il video
+<YouTube id="V_tjv8gVpes" title="Equazione di Continuità - Fisica | ZERO g" />
+<VideoVisto id="fis-u3-07" />
+
+## Da ricordare
+- La portata Q = A × v rimane costante lungo un tubo a flusso stazionario e fluido incomprimibile.
+- Dove la sezione del tubo si restringe, la velocità del fluido aumenta (e viceversa).
+- L'equazione di continuità è A₁ × v₁ = A₂ × v₂ ed è una conseguenza della conservazione della massa.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un tubo passa da una sezione di 8 cm² a una sezione di 2 cm². Se nella parte larga il fluido scorre a 3 m/s, quale sarà la velocità nella parte stretta?"
+  opzioni={["6 m/s", "12 m/s", "1,5 m/s", "24 m/s"]}
+  corretta={1}
+  spiegazione="Usiamo A₁ × v₁ = A₂ × v₂: 8 × 3 = 2 × v₂, quindi v₂ = 24/2 = 12 m/s. La sezione si restringe di 4 volte, quindi la velocità aumenta di 4 volte."
+/>
+
+<Quiz
+  domanda="Qual è la definizione corretta di portata volumetrica Q?"
+  opzioni={["Q = massa / tempo", "Q = A × v, cioè area della sezione per velocità del fluido", "Q = forza / area", "Q = pressione × volume"]}
+  corretta={1}
+  spiegazione="La portata volumetrica Q = A × v esprime il volume di fluido che attraversa una sezione nell'unità di tempo. Si misura in m³/s."
+/>
+
+<Quiz
+  domanda="In un tubo orizzontale con fluido incomprimibile a flusso stazionario, cosa succede alla portata Q lungo il percorso?"
+  opzioni={["Aumenta dove il tubo si restringe", "Diminuisce dove il tubo si allarga", "Rimane costante in ogni sezione del tubo", "Dipende dalla pressione in ogni punto"]}
+  corretta={2}
+  spiegazione="L'equazione di continuità garantisce che Q = A × v sia costante in ogni sezione del tubo, perché il fluido incomprimibile non può accumularsi né scomparire."
+/>
+
+<Esercizio
+  problema="Un fiume largo 20 m e profondo 2 m scorre a 0,5 m/s. Il fiume si restringe a 5 m di larghezza mantenendo la stessa profondità. Qual è la velocità dell'acqua nella parte stretta?"
+  soluzione="Calcoliamo le aree: A₁ = 20 × 2 = 40 m²; A₂ = 5 × 2 = 10 m². Applichiamo l'equazione di continuità: A₁ × v₁ = A₂ × v₂ → 40 × 0,5 = 10 × v₂ → v₂ = 20/10 = 2 m/s. L'acqua accelera da 0,5 m/s a 2 m/s perché la sezione si riduce di 4 volte."
+/>
+
+</section>
+
+</RisorsaLayout>

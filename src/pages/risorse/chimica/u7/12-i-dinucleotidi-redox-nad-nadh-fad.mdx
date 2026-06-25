@@ -1,0 +1,91 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-12">
+
+Il tuo corpo ricava energia dal cibo. Ma quell'energia non si sposta da sola: serve qualcuno che la **trasporti** da una parte all'altra della cellula. Quel "qualcuno" sono delle molecole speciali chiamate **NAD+** e **FAD**. Pensali come dei **furgoncini delle consegne**: caricano un pacco in un punto e lo scaricano in un altro. Il "pacco" che trasportano sono gli **elettroni** (cioè piccole cariche di energia).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> NAD+ e FAD sono furgoncini vuoti. Quando caricano gli elettroni (il pacco) diventano pieni: NAD+ diventa <strong>NADH</strong> e FAD diventa <strong>FADH2</strong>. Pieni vanno a consegnare; vuoti tornano a ricaricare. Sempre lo stesso viaggio, avanti e indietro.</div>
+
+## Prima cosa: cosa vuol dire "redox"
+
+In chimica, una reazione **redox** è semplicemente uno scambio di **elettroni** tra due molecole. È come passarsi una pallina:
+
+- chi **perde** elettroni si dice che si **ossida** (resta con la mano vuota);
+- chi **acquista** elettroni si dice che si **riduce** (riceve la pallina).
+
+Un trucco per ricordarlo: **riduzione = ricevere** (entrambe iniziano per "ri"). Gli elettroni non spariscono mai: passano sempre da una molecola a un'altra. Per questo le due cose vanno **sempre insieme**: se uno perde, un altro guadagna.
+
+<Diagram caption="NAD+ acquista elettroni e diventa NADH (si riduce)" code={`flowchart LR
+  A["NAD+<br/>(furgoncino VUOTO)"] -->|"acquista 2 elettroni<br/>+ 1 ione H+"| B["NADH<br/>(furgoncino PIENO)"]
+  B -->|"scarica gli elettroni"| A`} />
+
+## Perché il corpo li usa: NAD+ e FAD
+
+Quando digerisci il cibo (zuccheri, grassi), le cellule lo "smontano" pezzo per pezzo. Ad ogni pezzo che si smonta, si liberano degli elettroni carichi di energia. Se restassero liberi a girovagare sarebbe un disastro. Allora intervengono i furgoncini:
+
+- **NAD+** raccoglie gli elettroni e diventa **NADH**;
+- **FAD** raccoglie gli elettroni e diventa **FADH2**.
+
+Pieni di elettroni, questi furgoncini vanno verso una specie di "centrale elettrica" della cellula (i **mitocondri**), dove scaricano gli elettroni. Da lì la cellula produce l'**ATP**, cioè la moneta energetica con cui paga tutte le sue attività: muovere i muscoli, far battere il cuore, pensare.
+
+Ecco l'aggancio importante per medicina e veterinaria: NAD+ e FAD nascono dalle **vitamine**. Il NAD+ deriva dalla vitamina **B3** (niacina), il FAD dalla vitamina **B2** (riboflavina). Ecco perché senza vitamine il corpo (umano o animale) si stanca: senza furgoncini, l'energia non arriva.
+
+<Diagram caption="Il viaggio del furgoncino: dal cibo all'energia" code={`flowchart TB
+  C["Cibo che si smonta<br/>(libera elettroni)"] --> N["NAD+ / FAD<br/>caricano gli elettroni"]
+  N --> P["Diventano NADH / FADH2<br/>(furgoncini pieni)"]
+  P --> M["Vanno ai mitocondri<br/>e scaricano gli elettroni"]
+  M --> E["La cellula produce ATP<br/>(energia pronta all'uso)"]`} />
+
+## La differenza tra NAD+ e FAD (semplice)
+
+Fanno lo stesso mestiere, ma con una piccola differenza nel "pacco" che caricano:
+
+- **NAD+** prende **2 elettroni e 1 ione H+**, e diventa **NADH** (più uno H+ che resta lì vicino, in giro).
+- **FAD** prende **2 elettroni e 2 ioni H+**, e diventa **FADH2**.
+
+Non serve impararlo a memoria nei dettagli adesso. La cosa da fissare è una sola: **partono "vuoti", si caricano di elettroni, e tornano "pieni"**. Poi scaricano e ricominciano. Sono **riutilizzabili all'infinito**, come una cassetta delle consegne che fa avanti e indietro tutto il giorno.
+
+## Da ricordare
+
+- **NAD+** e **FAD** sono **trasportatori di elettroni**: dei furgoncini che spostano energia dentro la cellula.
+- **Redox** = scambio di elettroni: chi li perde si **ossida**, chi li acquista si **riduce** (riduzione = ricevere).
+- **Vuoti**: NAD+ e FAD. **Pieni** (carichi di elettroni): **NADH** e **FADH2**.
+- Gli elettroni che trasportano servono a produrre **ATP**, l'energia che il corpo usa per tutto.
+- Nascono dalle **vitamine B3 e B2**: per questo le vitamine sono fondamentali per avere energia.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="A cosa servono NAD+ e FAD nella cellula?"
+  opzioni={["A trasportare elettroni nelle reazioni redox", "A digerire i grassi direttamente", "A colorare il sangue di rosso", "A produrre vitamine"]}
+  corretta={0}
+  spiegazione="Sono dei trasportatori di elettroni: li caricano in un punto e li scaricano in un altro, come dei furgoncini. Gli elettroni servono poi a produrre energia (ATP)."
+/>
+
+<Quiz
+  domanda="Quando NAD+ acquista elettroni, in cosa si trasforma?"
+  opzioni={["In FAD", "In ATP", "In NADH", "In vitamina B3"]}
+  corretta={2}
+  spiegazione="NAD+ è il furgoncino vuoto. Quando si carica di elettroni (cioè si riduce) diventa NADH, il furgoncino pieno."
+/>
+
+<Quiz
+  domanda="In una reazione redox, una molecola che ACQUISTA elettroni:"
+  opzioni={["si ossida", "si riduce", "sparisce", "diventa una vitamina"]}
+  corretta={1}
+  spiegazione="Acquistare elettroni significa ridursi (riduzione = ricevere). Chi invece perde elettroni si ossida. Le due cose avvengono sempre insieme."
+/>
+
+<Esercizio
+  problema="Durante la digestione, una molecola di cibo si smonta e libera 2 elettroni. Un NAD+ di passaggio li raccoglie. Descrivi cosa succede al NAD+ e di' se si è ossidato o ridotto."
+  soluzione="Il NAD+ acquista i 2 elettroni (insieme a uno ione H+) e si trasforma in NADH. Avendo acquistato elettroni, il NAD+ si è RIDOTTO. La molecola di cibo, che li ha persi, si è invece ossidata: nello scambio uno perde e l'altro riceve, sempre insieme."
+/>
+
+</section>
+
+</RisorsaLayout>

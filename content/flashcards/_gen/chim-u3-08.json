@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u3-08-1",
+    "topicId": "chim-u3-08",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: quando disturbi un equilibrio chimico (ad esempio aggiungendo un reagente), il sistema si sposta in modo da RIDURRE quel disturbo.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. E esattamente il principio di Le Chatelier: il sistema 'si difende' dal disturbo spostandosi nel verso che lo annulla in parte. E come una bilancia che si inclina per tornare in equilibrio dopo che hai aggiunto un peso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-08-2",
+    "topicId": "chim-u3-08",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Un sistema gassoso e all'equilibrio. Aumenti la pressione schiacciando il contenitore. Dove si sposta l'equilibrio secondo Le Chatelier?",
+    "choices": [
+      "Verso il lato con MENO molecole di gas, per 'fare spazio' e ridurre la pressione",
+      "Verso il lato con PIU molecole di gas, per aumentare ancora di piu la pressione",
+      "Non si sposta: la pressione non influenza l'equilibrio",
+      "Si sposta sempre verso i prodotti, indipendentemente dal numero di molecole"
+    ],
+    "answer": 0,
+    "explain": "Aumentare la pressione e come schiacciare un palloncino: il sistema reagisce spostandosi verso il lato con MENO molecole di gas perche meno molecole occupano meno spazio e cosi abbassano la pressione. Il verso opposto (piu molecole) aggraverebbe il problema, non lo risolverebbe.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-08-3",
+    "topicId": "chim-u3-08",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "open",
+    "q": "Spiega con parole tue come il principio di Le Chatelier descrive l'effetto della TEMPERATURA sull'equilibrio. Usa l'analogia del 'calore come ingrediente' e fai un esempio per una reazione esotermica e per una endotermica.",
+    "answer": "Il trucco e trattare il calore come se fosse una sostanza scritta nella reazione. REAZIONE ESOTERMICA (libera calore): il calore e tra i PRODOTTI. Se riscaldi, e come se stessi aggiungendo prodotti: l'equilibrio si sposta INDIETRO, verso i reagenti, per 'consumare' quel calore in eccesso. REAZIONE ENDOTERMICA (assorbe calore): il calore e tra i REAGENTI. Se riscaldi, e come se stessi aggiungendo reagenti: l'equilibrio si sposta AVANTI, verso i prodotti. Regola rapida: scaldi → la reazione va nel verso che ASSORBE calore; raffreddi → va nel verso che LIBERA calore. Nota importante: la temperatura e l'unico disturbo che cambia davvero il punto di equilibrio (il valore di K); concentrazione e pressione spostano solo la posizione dell'equilibrio ma non cambiano K.",
+    "explain": "Da ricordare: calore = ingrediente. Esotermica + caldo → verso reagenti. Endotermica + caldo → verso prodotti. Solo la T cambia K.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u3-08-4",
+    "topicId": "chim-u3-08",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Secondo il principio di Le Chatelier, quale delle seguenti affermazioni e CORRETTA?",
+    "choices": [
+      "Una reazione endotermica viene favorita da un aumento di temperatura",
+      "Una reazione endotermica viene favorita da un aumento di concentrazione dei prodotti",
+      "L'aggiunta di un reagente RIDUCE la quantita di prodotti all'equilibrio",
+      "Una reazione che produce piu molecole di gas viene favorita da un aumento di pressione",
+      "L'aggiunta di un catalizzatore aumenta la quantita di prodotti all'equilibrio"
+    ],
+    "answer": 0,
+    "explain": "Corretta: nelle reazioni endotermiche il calore e un 'reagente'; scaldare e come aggiungere un reagente, quindi l'equilibrio si sposta verso i prodotti. Trappola 2: aggiungere prodotti sposta verso i REAGENTI (effetto opposto). Trappola 3: aggiungere un reagente sposta verso i PRODOTTI (non li riduce!). Trappola 4: aumentare la pressione favorisce il lato con MENO molecole di gas, non quello con piu. Filler 5: il catalizzatore velocizza entrambe le reazioni ma non cambia la posizione dell'equilibrio ne la quantita dei prodotti.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u3-08-5",
+    "topicId": "chim-u3-08",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "L'emoglobina nel sangue trasporta ossigeno grazie a un equilibrio chimico. Nei polmoni la concentrazione di O2 e alta; nei muscoli e bassa. Cosa prevede Le Chatelier in questi due ambienti?",
+    "choices": [
+      "Nei polmoni l'equilibrio si sposta verso il LEGAME (emoglobina cattura O2); nei muscoli verso il RILASCIO (emoglobina libera O2)",
+      "Nei polmoni l'equilibrio si sposta verso il RILASCIO di O2; nei muscoli verso il LEGAME",
+      "La concentrazione di O2 non sposta l'equilibrio: conta solo la temperatura",
+      "L'emoglobina lega O2 solo nei muscoli perche li la domanda e maggiore",
+      "L'equilibrio non si sposta mai: emoglobina e O2 sono sempre legati insieme"
+    ],
+    "answer": 0,
+    "explain": "Nei polmoni la concentrazione di O2 e alta: aggiungere O2 e un disturbo, l'equilibrio si sposta verso il LEGAME (consuma l'O2 in eccesso) → emoglobina lo cattura. Nei muscoli la concentrazione di O2 e bassa: togliere O2 e il disturbo opposto, l'equilibrio si sposta verso il RILASCIO (riproducendo cio che manca) → emoglobina lo libera. Trappola 2: invertita rispetto alla realta. Trappola 3: la concentrazione e uno dei tre disturbi principali, influenza eccome l'equilibrio. Trappola 4: e l'opposto del meccanismo reale. Filler 5: se fosse cosi non potremmo ossigenare i tessuti.",
+    "tags": ["prova d'esame"]
+  }
+]

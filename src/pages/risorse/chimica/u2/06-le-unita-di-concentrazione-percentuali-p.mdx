@@ -1,0 +1,102 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-06">
+
+Quando sciogli lo zucchero nel caffè, ottieni una **soluzione**: una parte che si scioglie (il **soluto**, lo zucchero) e una parte che la scioglie (il **solvente**, il caffè). La **concentrazione** ci dice quanto soluto c'è dentro: poco zucchero o tanto zucchero? Le **percentuali** sono il modo più semplice per dirlo, e ci servono ogni giorno (anche in farmacia e in ospedale).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> "percentuale" vuol dire "su 100". La concentrazione percentuale risponde sempre alla stessa domanda: <strong>quanto soluto c'è in 100 parti di soluzione?</strong> Cambia solo cosa misuri (peso o volume).</div>
+
+## Le tre percentuali: cosa misuri sopra e cosa sotto
+
+Ci sono tre tipi di percentuale. Sembrano tanti, ma cambia solo **una cosa**: se conti il **peso** (in grammi) o il **volume** (in millilitri) del soluto e della soluzione.
+
+- **p/p (peso/peso)**: grammi di soluto in **100 grammi** di soluzione.
+- **p/v (peso/volume)**: grammi di soluto in **100 mL** di soluzione.
+- **v/v (volume/volume)**: mL di soluto in **100 mL** di soluzione.
+
+La formula è sempre la stessa idea: prendi il soluto, lo dividi per la soluzione **intera** (soluto + solvente, non solo il solvente!) e moltiplichi per 100.
+
+<Diagram caption="Le tre percentuali a confronto: cambia solo se misuri peso o volume" code={`flowchart TB
+  C["Concentrazione %<br/>= (soluto / soluzione) x 100"]
+  C --> PP["p/p (peso/peso)<br/>grammi soluto in 100 g soluzione<br/>es. 10 g sale in 100 g acqua salata"]
+  C --> PV["p/v (peso/volume)<br/>grammi soluto in 100 mL soluzione<br/>es. 9 g sale in 100 mL fisiologica"]
+  C --> VV["v/v (volume/volume)<br/>mL soluto in 100 mL soluzione<br/>es. 12 mL alcol in 100 mL vino"]`} />
+
+## p/p — peso su peso
+
+Si usa quando pesi tutto sulla bilancia. Esempio: in 100 g di acqua salata ci sono 10 g di sale. Allora la concentrazione è del **10% p/p**.
+
+La formula è: **% p/p = (grammi di soluto ÷ grammi di soluzione) × 100**.
+
+Attenzione a una cosa importante: la **soluzione** è il totale, cioè soluto **più** solvente. Se sciogli 10 g di sale in 90 g di acqua, la soluzione pesa 10 + 90 = 100 g. Quindi la percentuale è 10 ÷ 100 × 100 = **10%**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> "soluzione" = tutto insieme, soluto + solvente. È l'errore più comune: non dividere mai per il solo solvente.</div>
+
+## p/v — peso su volume (la regina in medicina)
+
+Qui pesi il soluto (in grammi) ma misuri la soluzione in volume (in mL). È comodissima quando il soluto è solido e il liquido si misura con una siringa o una provetta.
+
+La formula è: **% p/v = (grammi di soluto ÷ mL di soluzione) × 100**.
+
+Questa è la percentuale che vedi scritta sulle **flebo** e sui farmaci. La famosa **soluzione fisiologica** è cloruro di sodio (sale) allo **0,9% p/v**: vuol dire 0,9 g di sale in 100 mL di liquido. È la concentrazione giusta per il nostro sangue, ecco perché si usa per le flebo: troppo o troppo poco sale farebbe male alle cellule. Anche la **glucosata al 5%** (5 g di glucosio in 100 mL) si esprime così.
+
+## v/v — volume su volume
+
+Si usa quando sia il soluto che il solvente sono liquidi, così misuri tutto con un cilindro graduato senza bilancia.
+
+La formula è: **% v/v = (mL di soluto ÷ mL di soluzione) × 100**.
+
+L'esempio che conosci già è l'**alcol nelle bevande**: un vino "12 gradi" è al **12% v/v**, cioè 12 mL di alcol puro in 100 mL di vino. Stessa cosa per il **disinfettante per le mani**: l'alcol al 70% v/v è la concentrazione che uccide meglio i germi.
+
+## Guarda il video
+
+<YouTube id="LHHSReYkykI" title="Concentrazione delle soluzioni: percentuale massa/massa, massa/volume e volume/volume" />
+
+<VideoVisto id="chim-u2-06" />
+
+## Da ricordare
+
+- **Percentuale = "su 100"**: quanto soluto c'è in 100 parti di soluzione.
+- Formula unica: **(soluto ÷ soluzione) × 100**. La soluzione è il **totale** (soluto + solvente).
+- **p/p**: grammi in 100 g. **p/v**: grammi in 100 mL. **v/v**: mL in 100 mL.
+- In medicina domina la **p/v**: fisiologica 0,9% e glucosata 5% sono g in 100 mL.
+- Il vino "12 gradi" è alcol al **12% v/v**: 12 mL di alcol in 100 mL.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="La concentrazione percentuale p/v (peso/volume) indica:"
+  opzioni={["grammi di soluto in 100 g di soluzione", "grammi di soluto in 100 mL di soluzione", "mL di soluto in 100 mL di soluzione", "grammi di soluto in 100 mL di solvente"]}
+  corretta={1}
+  spiegazione="p/v vuol dire peso (grammi) di soluto in 100 mL di soluzione. È quella usata per le flebo, come la fisiologica allo 0,9%."
+/>
+
+<Quiz
+  domanda="Sciogli 20 g di zucchero in 80 g di acqua. Qual è la concentrazione % p/p?"
+  opzioni={["25%", "20%", "80%", "100%"]}
+  corretta={1}
+  spiegazione="La soluzione è il totale: 20 + 80 = 100 g. Quindi 20 ÷ 100 × 100 = 20%. Ricorda: si divide per la soluzione intera, non per la sola acqua."
+/>
+
+<Quiz
+  domanda="Un vino riporta '13 gradi'. Cosa significa in termini di concentrazione?"
+  opzioni={["13 g di alcol in 100 g di vino (p/p)", "13 mL di alcol in 100 mL di vino (v/v)", "13 g di alcol in 100 mL di vino (p/v)", "13 mL di alcol in 100 g di vino"]}
+  corretta={1}
+  spiegazione="I 'gradi' del vino sono una percentuale v/v: 13 mL di alcol puro in 100 mL di vino, perché sia alcol che vino sono liquidi."
+/>
+
+<Esercizio
+  problema="Una soluzione fisiologica contiene 4,5 g di sale (NaCl) in 500 mL di soluzione. Qual è la sua concentrazione percentuale p/v? Verifica se corrisponde alla fisiologica usata in ospedale."
+  soluzione="Uso la formula % p/v = (grammi di soluto ÷ mL di soluzione) × 100 = (4,5 ÷ 500) × 100 = 0,9%. Sì: corrisponde esattamente alla soluzione fisiologica allo 0,9% p/v usata per le flebo."
+/>
+
+</section>
+
+</RisorsaLayout>

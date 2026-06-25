@@ -1,0 +1,135 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-27">
+
+## Cos'è la famiglia Rho?
+
+La **famiglia Rho** è un gruppo di proteine che funzionano come **interruttori molecolari**: si accendono (stato attivo) e si spengono (stato inattivo) a seconda della situazione della cellula.
+
+Tecnicamente sono **GTPasi** — proteine che legano il GTP (una molecola di energia, simile all'ATP) quando sono attive, e lo idrolizzano a GDP quando si spengono. Pensa a un interruttore della luce: GTP = luce accesa, GDP = luce spenta.
+
+Le tre GTPasi Rho più importanti per il movimento cellulare sono:
+
+- **Cdc42** — forma i **filopodi** (sottili propaggini a dita che esplorano l'ambiente)
+- **Rac1** — forma i **lamellipodi** (ampi "veli" piatti che spingono il bordo anteriore)
+- **RhoA** — forma le **fibre da stress** (cavi di actina + miosina che tirano il bordo posteriore)
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Cdc42 e Rac1 spingono la cellula in avanti allargandosi, RhoA la tira da dietro contraendosi — insieme generano il movimento.</div>
+
+## Come si attivano le GTPasi Rho?
+
+Le GTPasi Rho non si attivano da sole: hanno bisogno di aiutanti.
+
+- **GEF** (Guanine nucleotide Exchange Factor): scambia GDP con GTP → **attiva** la GTPasi
+- **GAP** (GTPase-Activating Protein): accelera l'idrolisi del GTP a GDP → **spegne** la GTPasi
+- **GDI** (Guanine nucleotide Dissociation Inhibitor): tiene la GTPasi ferma nel citoplasma → **blocca** finché non serve
+
+È un sistema di controllo a tre livelli: chi accende, chi spegne, chi mantiene in standby.
+
+## Cosa fa l'actina quando le GTPasi si attivano?
+
+L'actina è un filamento proteico che si può allungare o accorciare rapidamente. Le GTPasi Rho controllano questo processo tramite proteine intermediarie:
+
+- **Rac1 e Cdc42** attivano il complesso **Arp2/3** (tramite WASP/N-WASP/WAVE): questo complesso nucleia nuovi rami di actina → la cellula si espande in avanti
+- **RhoA** attiva **ROCK** (una chinasi) e **mDia** (una formina): ROCK fosforila la miosina II → contrazione; mDia polimerizza filamenti lineari di actina
+
+In pratica: Rac1/Cdc42 = costruiscono la struttura di avanzamento; RhoA = contraggono il retro per far avanzare la cellula.
+
+<Diagram caption="Ciclo di attivazione delle GTPasi Rho: da GEF/GAP all'effetto sull'actina" code={`flowchart TB
+  A["Segnale esterno<br/>(es. chemoattrattore)"] --> B["GEF attiva la GTPasi<br/>GDP → GTP"]
+  B --> C{"Quale GTPasi?"}
+  C -->|"Rac1 / Cdc42"| D["Attivazione Arp2/3<br/>via WASP/WAVE"]
+  D --> E["Polimerizzazione ramificata<br/>dell'actina"]
+  E --> F["Lamellipodio / Filopodio<br/>(bordo anteriore avanza)"]
+  C -->|"RhoA"| G["Attivazione ROCK + mDia"]
+  G --> H["Fosforilazione miosina II<br/>+ actina lineare"]
+  H --> I["Fibre da stress + contrazione<br/>(bordo posteriore si ritrae)"]
+  F --> J["La cellula migra"]
+  I --> J
+  B --> K["GAP spegne la GTPasi<br/>GTP → GDP"]
+  K --> L["GTPasi inattiva"]`} />
+
+## La migrazione cellulare: come si muove una cellula
+
+Una cellula che migra (come un neutrofilo che insegue un batterio) segue questi passi:
+
+1. **Polarizzazione**: la cellula "capisce" da che parte deve andare e stabilisce un fronte anteriore e uno posteriore
+2. **Protrusione**: il bordo anteriore si allunga (lamellipodi e filopodi, guidati da Rac1/Cdc42)
+3. **Adesione**: le protrusioni si agganciano alla matrice extracellulare (tramite integrine)
+4. **Contrazione**: RhoA + miosina tirano il corpo cellulare in avanti
+5. **Distacco**: le adesioni posteriori si rompono → il retro si stacca e avanza
+
+Questo ciclo si ripete continuamente, come un bruco che si allunga in avanti e poi raccoglie il retro.
+
+## Chemiotassi dei neutrofili
+
+La **chemiotassi** è la migrazione di una cellula lungo un **gradiente di concentrazione** di una sostanza chimica: la cellula va verso la concentrazione più alta (chemoattrattore) o si allontana (chemorepellente).
+
+I **neutrofili** (globuli bianchi che combattono le infezioni) sono maestri della chemiotassi:
+
+- Le **fMLP** (peptidi batterici) o **IL-8** (citochina infiammatoria) creano un gradiente chimico
+- I neutrofili hanno recettori accoppiati a **proteine G** (GPCR) che rilevano il gradiente
+- Sul lato con più chemoattrattore → **Rac1/Cdc42 attivi** → protrusione anteriore
+- Sul lato opposto → **RhoA attivo** → contrazione posteriore
+- Il risultato: il neutrofilo migra verso il sito di infezione in modo direzionale
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il neutrofilo "annusa" i batteri tramite il gradiente chimico, e usa le GTPasi Rho per orientarsi e camminare verso di loro.</div>
+
+<Diagram caption="Chemiotassi del neutrofilo: dal gradiente chimico alla migrazione direzionale" code={`flowchart LR
+  A["Batterio / sito di infezione<br/>(alta concentrazione fMLP)"] --> B["Gradiente chimico<br/>nel tessuto"]
+  B --> C["Recettore GPCR del neutrofilo<br/>rileva il gradiente"]
+  C --> D["Lato anteriore:<br/>Rac1 + Cdc42 attivi"]
+  C --> E["Lato posteriore:<br/>RhoA attivo"]
+  D --> F["Lamellipodio in avanti<br/>(actina ramificata)"]
+  E --> G["Contrazione con miosina<br/>(fibre da stress)"]
+  F --> H["Neutrofilo avanza<br/>verso il batterio"]
+  G --> H
+  H --> I["Fagocitosi del batterio"]`} />
+
+## Guarda il video
+<YouTube id="5yOvRjLUYKw" title="Citologia - Lezione 13: Citoscheletro e centrioli" />
+<VideoVisto id="bio-u5-27" />
+
+## Da ricordare
+- Le GTPasi Rho (Cdc42, Rac1, RhoA) sono interruttori molecolari che si accendono con GTP e si spengono con GDP, controllati da GEF (attivatori) e GAP (spegnitori).
+- Rac1 e Cdc42 spingono il bordo anteriore della cellula formando lamellipodi e filopodi; RhoA contrae il bordo posteriore tramite miosina — insieme producono il movimento direzionale.
+- La chemiotassi dei neutrofili sfrutta recettori GPCR che rilevano i gradienti chimici batterici e attivano le GTPasi Rho in modo asimmetrico, permettendo alla cellula di migrare direzionalmente verso il sito di infezione.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale GTPasi della famiglia Rho è principalmente responsabile della formazione dei lamellipodi (le estensioni piatte del bordo cellulare anteriore durante la migrazione)?"
+  opzioni={["RhoA", "Rac1", "Cdc42", "ROCK"]}
+  corretta={1}
+  spiegazione="Rac1 attiva il complesso Arp2/3 (tramite WAVE) che nucleia actina ramificata formando i lamellipodi — le ampie estensioni piatte usate per la protrusione anteriore. Cdc42 forma invece i filopodi (estensioni più sottili). RhoA e ROCK controllano la contrazione del bordo posteriore."
+/>
+
+<Quiz
+  domanda="Che ruolo svolge la proteina GAP nella regolazione delle GTPasi Rho?"
+  opzioni={["Scambia GDP con GTP, attivando la GTPasi", "Trattiene la GTPasi inattiva nel citoplasma", "Accelera l'idrolisi del GTP a GDP, spegnendo la GTPasi", "Fosforila la miosina II per innescare la contrazione"]}
+  corretta={2}
+  spiegazione="GAP (GTPase-Activating Protein) accelera l'idrolisi del GTP a GDP, portando la GTPasi dallo stato attivo (GTP-bound) a quello inattivo (GDP-bound). Il GEF fa il contrario (scambia GDP con GTP, attivando). Il GDI invece mantiene la GTPasi in standby nel citoplasma."
+/>
+
+<Quiz
+  domanda="Durante la chemiotassi dei neutrofili, cosa succede sul lato della cellula che punta verso il chemoattrattore (es. fMLP batterico)?"
+  opzioni={["RhoA si attiva e forma fibre da stress", "Rac1 e Cdc42 si attivano e promuovono la protrusione anteriore", "Il GDI blocca tutte le GTPasi per evitare movimenti errati", "La miosina II contrae l'actina per ritirare il bordo"]}
+  corretta={1}
+  spiegazione="Sul lato anteriore (verso il chemoattrattore), i recettori GPCR rilevano la concentrazione più alta di fMLP e attivano Rac1 e Cdc42 tramite GEF. Questi promuovono la polimerizzazione ramificata dell'actina e la formazione di lamellipodi/filopodi. RhoA e la contrazione con miosina avvengono invece sul lato posteriore."
+/>
+
+<Esercizio
+  problema="Un ricercatore tratta dei neutrofili con un inibitore specifico di ROCK (la chinasi effettrice di RhoA). Prevedi: (1) cosa succede alla morfologia cellulare, (2) la cellula riesce ancora a migrare verso un gradiente di fMLP? Spiega perché."
+  soluzione="(1) Inibendo ROCK, la miosina II non viene fosforilata e quindi non si contrae. Le fibre da stress si disassemblano e le adesioni focali si riducono — la cellula perde la sua forma contratta e appare più 'piatta' e distesa. (2) La cellula può ancora formare lamellipodi (Rac1/Cdc42 funzionano ancora) e spostarsi inizialmente, ma la migrazione sarà inefficiente: senza la contrazione del bordo posteriore (retrazione), il corpo cellulare non riesce a seguire il fronte — la cellula si 'allunga' ma non avanza davvero. La migrazione direzionale efficiente richiede sia la protrusione anteriore sia la retrazione posteriore coordinata."
+/>
+
+</section>
+
+</RisorsaLayout>

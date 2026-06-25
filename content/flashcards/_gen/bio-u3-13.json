@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u3-13-1",
+    "topicId": "bio-u3-13",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Il pre-mRNA appena trascritto nel nucleo non e ancora pronto: deve essere 'rifinito'. Quale coppia di modifiche vengono aggiunte alle estremita del pre-mRNA durante la maturazione (capping e poliadenilazione)?",
+    "choices": [
+      "Cappuccio m7G in 5' + coda poli-A (150-250 adenine) in 3'",
+      "Coda poli-A in 5' + cappuccio m7G in 3'",
+      "Segnale AAUAAA in 5' + guanosina modificata in 3'",
+      "Nessuna modifica: il pre-mRNA e gia pronto alla traduzione"
+    ],
+    "answer": 0,
+    "explain": "Pensa a una lettera importante: il cappuccio m7G e il sigillo di ceralacca sul davanti (estremita 5'), che protegge e fa riconoscere la lettera al 'postino' ribosoma. La coda poli-A e il nastro adesivo sul retro (estremita 3'), che mantiene la busta integra piu a lungo. Le due modifiche avvengono nel nucleo, alle estremita opposte del pre-mRNA.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-13-2",
+    "topicId": "bio-u3-13",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Spiega a cosa servono il cappuccio 5' e la coda poli-A nell'mRNA maturo. Poi di': cosa succederebbe se una mutazione eliminasse la sequenza segnale AAUAAA dal pre-mRNA?",
+    "answer": "Il cappuccio 5' (m7G) svolge tre funzioni: protegge l'estremita 5' dell'mRNA dagli enzimi che lo degraderebbero (esonucleasi), permette ai ribosomi di riconoscere l'mRNA per iniziare la traduzione, e favorisce l'uscita dell'mRNA dal nucleo verso il citoplasma. La coda poli-A (150-250 adenine in 3') stabilizza l'mRNA proteggendo l'estremita 3', regola la durata di vita dell'mRNA (quando la coda si accorcia troppo l'mRNA viene degradato) e aiuta la traduzione. Se la sequenza AAUAAA fosse eliminata da una mutazione, le proteine responsabili della poliadenilazione non riconoscerebbero il sito di taglio in 3': l'mRNA non verrebbe tagliato correttamente e non riceverebbe la coda poli-A. Il risultato sarebbe un mRNA privo di coda poli-A, molto instabile e degradato rapidamente, con produzione drasticamente ridotta della proteina corrispondente.",
+    "explain": "Cappuccio 5' = protezione + riconoscimento ribosomale. Coda poli-A = stabilita + 'timer' di vita. AAUAAA e il segnale obbligatorio per avviare la poliadenilazione: senza di esso, niente coda, niente stabilita.",
+    "tags": ["risposta aperta"]
+  }
+]

@@ -1,0 +1,116 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u3-09">
+
+## Cos'è la viscosità?
+
+Immagina di versare miele e poi acqua dallo stesso bicchiere. Il miele scende lento e "fatica" a muoversi; l'acqua scivola via subito. Questa resistenza interna al movimento si chiama **viscosità**.
+
+La viscosità è l'attrito che si crea **tra gli strati del fluido stesso** quando uno scorre più veloce dell'altro. Più un fluido è viscoso, più è difficile farlo scorrere.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La viscosità è quanto un fluido "resiste" a scorrere — come l'attrito, ma dentro il liquido stesso.</div>
+
+Il simbolo della viscosità dinamica è **η** (eta greco) e si misura in **Pa·s** (pascal moltiplicato per secondo, cioè pascal-secondo). Acqua: circa 0,001 Pa·s. Miele: circa 10 Pa·s. Una differenza enorme!
+
+---
+
+## Flusso laminare: gli strati del fluido
+
+In un tubo, il fluido non si muove tutto alla stessa velocità. Gli strati vicino alla parete sono quasi fermi (la parete li "frena"), mentre lo strato centrale corre più veloce. Questa situazione si chiama **flusso laminare**: gli strati scorrono paralleli senza mescolarsi, come le corsie di un'autostrada.
+
+<Diagram caption="Profilo di velocità in un tubo: strato lento vicino alla parete, velocità massima al centro" code={`flowchart LR
+  A["Parete<br/>(v = 0)"] --> B["Strato lento"]
+  B --> C["Strato medio"]
+  C --> D["Strato centrale<br/>(v massima)"]
+  D --> C2["Strato medio"]
+  C2 --> B2["Strato lento"]
+  B2 --> A2["Parete<br/>(v = 0)"]`} />
+
+---
+
+## La legge di Poiseuille
+
+La legge di Poiseuille dice quanto fluido passa attraverso un tubo in un certo tempo, cioè la **portata volumetrica Q**:
+
+**Q = (π · r⁴ · ΔP) / (8 · η · L)**
+
+Dove:
+- **r** = raggio del tubo
+- **ΔP** = differenza di pressione tra i due capi del tubo
+- **η** = viscosità del fluido
+- **L** = lunghezza del tubo
+
+### Cosa ci dice questa formula?
+
+- Se **raddoppi il raggio**, la portata aumenta di **16 volte** (r alla quarta potenza!). Questo è il fattore più importante.
+- Più pressione applichi → più fluido passa (ovvio).
+- Tubo più lungo o fluido più viscoso → meno fluido passa.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il raggio del tubo comanda tutto — un vaso sanguigno anche solo leggermente più stretto porta drasticamente meno sangue al cuore.</div>
+
+---
+
+## La resistenza idraulica
+
+Come in elettricità c'è la resistenza elettrica che ostacola la corrente, in fluidodinamica c'è la **resistenza idraulica R** che ostacola il flusso:
+
+**R = (8 · η · L) / (π · r⁴)**
+
+Così la legge di Poiseuille diventa semplicissima:
+
+**Q = ΔP / R**
+
+È l'analogo della legge di Ohm (I = V/R): più resistenza c'è, meno fluido scorre per la stessa differenza di pressione.
+
+### Resistenze in serie e in parallelo
+
+Proprio come i resistori elettrici:
+- **In serie** (tubi uno dopo l'altro): R_totale = R1 + R2 + ...
+- **In parallelo** (tubi affiancati): 1/R_totale = 1/R1 + 1/R2 + ...
+
+<Diagram caption="Resistenze idrauliche: confronto tra serie e parallelo" code={`flowchart LR
+  P1["Pressione<br/>alta"] --> T1["Tubo R1"]
+  T1 --> T2["Tubo R2"]
+  T2 --> P2["Pressione<br/>bassa"]
+  P3["Pressione<br/>alta"] --> S1["Tubo Ra"]
+  P3 --> S2["Tubo Rb"]
+  S1 --> P4["Pressione<br/>bassa"]
+  S2 --> P4`} />
+
+---
+
+## In medicina veterinaria conta moltissimo
+
+Quando un vaso sanguigno si restringe (per esempio per placche o spasmo), il raggio diminuisce pochissimo ma la portata crolla moltissimo — perché r entra alla quarta potenza. Il cuore deve aumentare la pressione per compensare: ecco l'ipertensione.
+
+---
+
+## Guarda il video
+<YouTube id="r4nlV94u22I" title="Legge di Poiseuille (Fluidi Viscosi) - Fisica | ZERO g" />
+<VideoVisto id="fis-u3-09" />
+
+## Da ricordare
+- La viscosità è l'attrito interno di un fluido; il simbolo è η e si misura in Pa·s.
+- La legge di Poiseuille lega portata, raggio (alla quarta!), pressione e viscosità: Q = π r⁴ ΔP / (8 η L).
+- La resistenza idraulica R = 8ηL / (πr⁴) funziona come la resistenza elettrica: Q = ΔP / R.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Se il raggio di un tubo viene dimezzato, la portata Q (a parità di pressione e viscosità) diventa:" opzioni={["La metà (1/2)", "Un quarto (1/4)", "Un sedicesimo (1/16)", "Invariata"]} corretta={2} spiegazione="La portata dipende da r alla quarta potenza. Se r diventa r/2, allora r⁴ diventa (r/2)⁴ = r⁴/16. Quindi Q si riduce a 1/16 del valore originale. Il raggio è il fattore dominante!" />
+
+<Quiz domanda="Quale grandezza fisica corrisponde alla viscosità dinamica η?" opzioni={["La densità del fluido", "La resistenza interna al flusso tra gli strati del fluido", "La velocità massima al centro del tubo", "La differenza di pressione tra i due capi del tubo"]} corretta={1} spiegazione="La viscosità dinamica η misura quanto un fluido resiste internamente al movimento relativo tra i suoi strati. È l'attrito interno del fluido, non la pressione né la velocità." />
+
+<Quiz domanda="Due tubi identici sono collegati in parallelo. La resistenza idraulica totale rispetto a un singolo tubo è:" opzioni={["Doppia", "Uguale", "La metà", "Un quarto"]} corretta={2} spiegazione="In parallelo, 1/R_tot = 1/R1 + 1/R2 = 2/R (perché i tubi sono identici). Quindi R_tot = R/2: la resistenza totale si dimezza. Più percorsi paralleli = meno ostacolo al flusso complessivo." />
+
+<Esercizio problema="Un vaso sanguigno di raggio r = 2 mm e lunghezza L = 10 cm trasporta sangue con viscosità η = 0,003 Pa·s. La differenza di pressione tra i capi è ΔP = 200 Pa. Calcola la portata Q usando la legge di Poiseuille (Q = π r⁴ ΔP / 8 η L). Esprimi il risultato in m³/s." soluzione="Convertiamo: r = 0,002 m; L = 0,10 m. Calcoliamo r⁴ = (0,002)⁴ = 1,6 × 10⁻¹¹ m⁴. Poi: Q = π × 1,6×10⁻¹¹ × 200 / (8 × 0,003 × 0,10) = π × 3,2×10⁻⁹ / 0,0024 ≈ 3,14 × 1,333×10⁻⁶ ≈ 4,19 × 10⁻⁶ m³/s, cioè circa 4,2 mL/s. Nota come r alla quarta renda il risultato molto sensibile anche a piccole variazioni di raggio." />
+
+</section>
+
+</RisorsaLayout>

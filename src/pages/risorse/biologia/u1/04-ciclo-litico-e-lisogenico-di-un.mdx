@@ -1,0 +1,96 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-04">
+
+## Cosa sono i batteriofagi?
+
+Un **batteriofago** (o fago, in breve) è un virus che infetta i batteri. Non attacca le cellule umane, solo quelle batteriche. Come tutti i virus, il fago non ha un metabolismo proprio: per riprodursi deve entrare in una cellula ospite e usare i suoi "macchinari".
+
+Quando un fago incontra un batterio, ha due strade possibili: ucciderlo subito oppure nascondersi e aspettare. Queste due strategie si chiamano **ciclo litico** e **ciclo lisogenico**.
+
+---
+
+## Il ciclo litico — "entra, moltiplica, distruggi"
+
+Nel ciclo litico il virus è aggressivo e va dritto al punto:
+
+1. **Adesione** — il fago si attacca alla superficie del batterio come una chiave nella serratura.
+2. **Iniezione** — inietta il proprio DNA dentro il batterio (il rivestimento proteico rimane fuori).
+3. **Presa di controllo** — il DNA virale "ordina" ai macchinari del batterio di smettere di lavorare per lui e di produrre copie del virus.
+4. **Assemblaggio** — vengono costruite decine o centinaia di nuovi fagi all'interno del batterio.
+5. **Lisi** — il batterio si rompe (lisi = rottura) e i nuovi virus vengono rilasciati, pronti ad attaccare altri batteri.
+
+Il risultato finale è la **morte del batterio**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il ciclo litico è come un invasore che entra in casa, saccheggia tutto, e alla fine fa saltare in aria l'edificio per scappare con il bottino.</div>
+
+---
+
+## Il ciclo lisogenico — "entra, nasconditi, aspetta"
+
+Nel ciclo lisogenico il virus è paziente: non distrugge subito la cellula. Ecco cosa fa:
+
+1. **Adesione e iniezione** — come nel ciclo litico, il fago inietta il suo DNA.
+2. **Integrazione** — invece di prendere il controllo, il DNA virale si inserisce nel cromosoma del batterio e diventa parte di esso. In questa forma si chiama **profago**.
+3. **Replicazione silenziosa** — ogni volta che il batterio si divide e duplica il suo DNA, copia anche il profago. Le cellule figlie ereditano il virus "addormentato" senza saperlo.
+4. **Induzione** — in caso di stress (per esempio raggi UV o sostanze chimiche), il profago si "sveglia", si stacca dal cromosoma batterico e innesca un ciclo litico.
+
+Il batterio che porta un profago al suo interno si chiama **batterio lisogeno**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il ciclo lisogenico è come un intruso che si trasferisce in casa tua, si mimetizza con la famiglia e aspetta il momento giusto per agire. Finché non viene disturbato, non lo noti nemmeno.</div>
+
+---
+
+## Le due vie a confronto
+
+| | Ciclo litico | Ciclo lisogenico |
+|---|---|---|
+| Il batterio muore subito? | Sì | No (almeno finché non scatta l'induzione) |
+| Il DNA virale si integra? | No | Sì (diventa profago) |
+| Nuovi virus prodotti subito? | Sì | No |
+| Come si chiama il virus? | Virus virulento | Virus temperato |
+
+---
+
+<Diagram caption="Ciclo litico del batteriofago — le 5 tappe che portano alla distruzione del batterio" code={`flowchart TB
+  A["1. Adesione<br/>Il fago si attacca al batterio"] --> B["2. Iniezione<br/>Il DNA virale entra nel batterio"]
+  B --> C["3. Presa di controllo<br/>Il DNA virale 'comanda' la cellula"]
+  C --> D["4. Assemblaggio<br/>Vengono costruiti nuovi fagi"]
+  D --> E["5. Lisi<br/>Il batterio si rompe e i fagi vengono liberati"]`} />
+
+<Diagram caption="Ciclo lisogenico del batteriofago — il virus si nasconde e aspetta" code={`flowchart TB
+  A["1. Adesione e iniezione<br/>Il DNA virale entra nel batterio"] --> B["2. Integrazione<br/>Il DNA virale si inserisce nel cromosoma<br/>e diventa PROFAGO"]
+  B --> C["3. Replicazione silenziosa<br/>Il batterio si divide normalmente<br/>e copia anche il profago"]
+  C --> D{"4. Evento di stress?<br/>es. raggi UV"}
+  D -- "No" --> C
+  D -- "Sì — induzione" --> E["5. Il profago si stacca<br/>e parte il CICLO LITICO"]`} />
+
+## Guarda il video
+<YouTube id="x9jwCQ6aDlI" title="Ciclo litico e ciclo lisogeno | Pillole di Scienza" />
+<VideoVisto id="bio-u1-04" />
+
+## Da ricordare
+- Nel **ciclo litico** il virus si moltiplica subito e uccide il batterio distruggendolo (lisi).
+- Nel **ciclo lisogenico** il DNA virale si integra nel cromosoma batterico come **profago** e rimane latente; si riattiva solo in caso di stress.
+- I batteri che portano un profago si chiamano **batteri lisogeni**; il virus in forma dormiente è detto **virus temperato**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Cosa succede al batterio alla fine del ciclo litico?" opzioni={["Si divide in due cellule figlie sane","Il batterio si rompe (lisi) e muore, liberando nuovi fagi","Il batterio integra il DNA virale e sopravvive","Il batterio espelle il DNA virale senza morire"]} corretta={1} spiegazione="Nel ciclo litico il batterio viene usato come fabbrica di nuovi virus, poi si rompe (lisi) e muore. I nuovi fagi vengono così liberati nell'ambiente." />
+
+<Quiz domanda="Come si chiama il DNA virale quando è integrato nel cromosoma batterico durante il ciclo lisogenico?" opzioni={["Capsomero","Plasmide","Profago","Ribosoma"]} corretta={2} spiegazione="Quando il DNA del batteriofago si inserisce nel cromosoma del batterio e resta dormiente, prende il nome di profago. Il batterio che lo ospita è detto batterio lisogeno." />
+
+<Quiz domanda="Quale evento può trasformare il ciclo lisogenico in ciclo litico?" opzioni={["L'aumento della temperatura del laboratorio a 37 °C","Un segnale di stress per il batterio, come l'esposizione a raggi UV","La presenza di antibiotici nel mezzo di coltura","La mancanza di glucosio nel mezzo di coltura"]} corretta={1} spiegazione="Un evento stressante per il batterio — come l'esposizione a raggi UV o certe sostanze chimiche — può innescare l'induzione: il profago si stacca dal cromosoma e avvia un ciclo litico che porterà alla morte del batterio." />
+
+<Esercizio problema="Immagina di osservare al microscopio due colture batteriche infettate dallo stesso batteriofago. Nella coltura A i batteri muoiono rapidamente e si vedono molte particelle virali libere. Nella coltura B i batteri continuano a dividersi normalmente per molte generazioni senza segni di malattia. Quale ciclo è in corso in ciascuna coltura? Motiva la risposta." soluzione="Nella coltura A è in corso il ciclo litico: il virus si replica velocemente, uccide i batteri (lisi) e libera nuovi fagi visibili al microscopio elettronico. Nella coltura B è in corso il ciclo lisogenico: il DNA virale si è integrato come profago nel cromosoma batterico e i batteri (ora lisogeni) si dividono normalmente trasmettendo il profago alle cellule figlie, senza alcun segno esterno di infezione." />
+
+</section>
+
+</RisorsaLayout>

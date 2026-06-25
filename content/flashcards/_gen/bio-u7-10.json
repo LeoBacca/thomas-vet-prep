@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u7-10-1",
+    "topicId": "bio-u7-10",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: nella necrosi la cellula si gonfia e la membrana si rompe, causando infiammazione nei tessuti vicini.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. La necrosi e una morte accidentale e caotica: la cellula non riesce piu a regolare l'acqua, si gonfia come un pallone, la membrana esplode e il contenuto interno si riversa fuori. Questo avvelena i tessuti vicini e scatena una forte risposta infiammatoria. E l'opposto dell'apoptosi, che invece e silenziosa e ordinata.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-10-2",
+    "topicId": "bio-u7-10",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Nella via intrinseca dell'apoptosi, quale molecola viene rilasciata dal mitocondrio per innescare l'apoptosoma?",
+    "choices": [
+      "Il citocromo c",
+      "La caspasi-8",
+      "BCL-2",
+      "Un recettore FAS"
+    ],
+    "answer": 0,
+    "explain": "Il citocromo c e la chiave. Quando la cellula sente un danno interno (danno al DNA, stress), le proteine BAX/BAK aprono dei pori nel mitocondrio e il citocromo c fuoriesce. Nel citoplasma si assembla con altre proteine formando l'apoptosoma, che attiva la caspasi-9 (iniziatrice) e poi le caspasi effettrici. BCL-2 fa l'opposto: blocca i pori e protegge la cellula. La caspasi-8 e la via estrinseca, non intrinseca. FAS e un recettore di superficie, non una molecola mitocondriale.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-10-3",
+    "topicId": "bio-u7-10",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "open",
+    "q": "Descrivi in 4-5 passi cosa succede nella via estrinseca dell'apoptosi, dal segnale esterno fino alla demolizione della cellula. Poi spiega in una frase la differenza fra caspasi iniziatrici ed effettrici.",
+    "answer": "Via estrinseca passo per passo: 1) Un segnale esterno (es. la molecola FasL) si lega a un recettore di morte sulla superficie della cellula (es. FAS o TNFR). 2) Il recettore attivato recluta proteine adattatrici interne che 'accendono' la caspasi-8, che e una caspasi iniziatrice. 3) La caspasi-8 attiva a cascata le caspasi effettrici, in particolare la caspasi-3. 4) Le caspasi effettrici tagliano proteine strutturali della cellula, frammentano il DNA e smontano il citoscheletro. 5) La cellula si divide in corpi apoptotici, che vengono mangiati dai macrofagi senza scatenare infiammazione. Differenza caspasi: le INIZIATRICI (8, 9) ricevono il primo segnale di morte e 'accendono' il processo; le EFFETTRICI (es. 3) eseguono materialmente la demolizione della cellula.",
+    "explain": "Da ricordare: via estrinseca = segnale esterno → recettore FAS → caspasi-8 → caspasi-3 → demolizione. Iniziatrici = ricevono il segnale; effettrici = demoliscono.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u7-10-4",
+    "topicId": "bio-u7-10",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Cosa s'intende con il termine 'apoptosi'?",
+    "choices": [
+      "Morte cellulare programmata",
+      "Morte cellulare determinata da un trauma cellulare",
+      "Mutazione genetica",
+      "Silenziamento genico",
+      "Trascrizione genica"
+    ],
+    "answer": 0,
+    "explain": "L'apoptosi e la morte cellulare PROGRAMMATA e ordinata: la cellula si 'suicida' in modo controllato senza danneggiare i vicini. La risposta B descrive invece la NECROSI (morte accidentale da trauma/ischemia/tossina), che e l'opposto esatto. Mutazione genetica, silenziamento genico e trascrizione sono processi che riguardano il DNA e l'espressione dei geni, non la morte cellulare: sono filler fuori tema.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u7-10-5",
+    "topicId": "bio-u7-10",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sulla proteina BCL-2 e CORRETTA?",
+    "choices": [
+      "BCL-2 forma pori nel mitocondrio per rilasciare il citocromo c e avviare l'apoptosi",
+      "BCL-2 e una caspasi effettrice che demolisce il DNA nella fase finale dell'apoptosi",
+      "BCL-2 inibisce le proteine pro-apoptotiche come BAX, proteggendo la cellula dalla morte",
+      "BCL-2 e un recettore di morte sulla superficie cellulare che attiva la caspasi-8",
+      "BCL-2 assembla l'apoptosoma nel citoplasma dopo il rilascio del citocromo c"
+    ],
+    "answer": 2,
+    "explain": "BCL-2 e una proteina ANTIAPOPTOTICA: il suo ruolo e bloccare BAX e BAK, impedendo che formino pori nel mitocondrio. Se BCL-2 prevale, il citocromo c non esce e la cellula sopravvive. L'opzione A descrive esattamente l'opposto: e cio che fa BAX (proteina PRO-apoptotica), non BCL-2. L'opzione B e falsa: BCL-2 non e una caspasi. L'opzione D e una trappola: descrive un recettore di morte (come FAS), che appartiene alla via estrinseca e non ha nulla a che fare con BCL-2. L'opzione E descrive il ruolo del citocromo c nell'assemblare l'apoptosoma, non di BCL-2.",
+    "tags": ["prova d'esame"]
+  }
+]

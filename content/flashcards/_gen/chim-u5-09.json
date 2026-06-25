@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u5-09-1",
+    "topicId": "chim-u5-09",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: gli alcani si chiamano 'saturi' perché ogni carbonio ha tutte e 4 le sue 'mani' occupate — nessun posto libero per aggiungere altri atomi.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. 'Saturo' significa proprio 'pieno': nei legami singoli ogni carbonio tiene già occupati tutti e 4 i suoi posti di legame (con altri carboni o con idrogeni). Non c'è un doppio legame o un posto vuoto dove attaccare altro. Contrasto utile: gli alcheni hanno un doppio legame e sono 'insaturi' (hanno posti disponibili).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-09-2",
+    "topicId": "chim-u5-09",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un cicloalcano ha 6 carboni (come il cicloesano). Quanti idrogeni ha secondo la sua formula generale?",
+    "choices": [
+      "12 idrogeni (formula CnH2n)",
+      "14 idrogeni (formula CnH2n+2)",
+      "6 idrogeni (uno per carbonio)",
+      "8 idrogeni (formula CnH2n-4)"
+    ],
+    "answer": 0,
+    "explain": "I cicloalcani seguono CnH2n: per 6 carboni sono 2×6 = 12 idrogeni → C6H12. Hanno 2 idrogeni IN MENO rispetto all'alcano aperto (CnH2n+2 = C6H14) perché chiudere l'anello 'consuma' due posti, come unire i due capi di una collana. '6 idrogeni' è un filler: uno per carbonio non ha senso con 4 legami disponibili per carbonio.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-09-3",
+    "topicId": "chim-u5-09",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "open",
+    "q": "Spiega con parole tue cos'è la 'tensione di anello' e perché il cicloesano (6 carboni) è molto più stabile del ciclopropano (3 carboni). Aggiungi un esempio biomedico.",
+    "answer": "Il carbonio vuole che i suoi 4 legami stiano 'comodi', cioè distanziati a circa 109,5 gradi l'uno dall'altro (come braccia aperte, la posizione naturale). Quando chiudi un anello molto piccolo — per esempio il ciclopropano con solo 3 carboni — sei costretto a piegare i legami a angoli molto più stretti: la molecola resta in una posizione scomoda, 'sotto sforzo'. Questo sforzo si chiama tensione di anello: la molecola è instabile e reattiva. Il cicloesano, con 6 carboni, riesce invece ad assumere una forma a 'sedia' in cui gli angoli sono quasi quelli ideali (circa 111 gradi), quindi la tensione è quasi zero ed è molto stabile. Esempio biomedico: il glucosio nel nostro corpo forma un anello a 6 atomi proprio perché è la forma più stabile — la natura ha 'scelto' quella geometria. Anche il ciclopropano fu usato come anestetico proprio grazie alla sua reattività (che gli permette di interagire con le membrane cellulari del sistema nervoso).",
+    "explain": "Da ricordare: anello piccolo = angoli sbagliati = molta tensione = molto reattivo. Anello a 6 = angoli quasi perfetti = stabile. Il glucosio è l'esempio biomedico classico.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u5-09-4",
+    "topicId": "chim-u5-09",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "La combustione COMPLETA di un alcano in presenza di abbondante ossigeno produce:",
+    "choices": [
+      "Anidride carbonica (CO2) e acqua (H2O)",
+      "Monossido di carbonio (CO) e acqua (H2O)",
+      "Un alchene e monossido di carbonio",
+      "Un chetone e un'aldeide",
+      "Solo ossigeno e calore"
+    ],
+    "answer": 0,
+    "explain": "Combustione COMPLETA = tutto il carbonio si ossida fino in fondo → CO2; tutto l'idrogeno → H2O. È come il fornello di casa: metano + ossigeno → CO2 + H2O + calore. 'Monossido (CO) e acqua' è l'opposto esatto: succede nella combustione INCOMPLETA (poco ossigeno), è la trappola più comune dell'esame. 'Un alchene e CO' è sbagliato: gli alcheni si formano per eliminazione, non da combustione. 'Chetone e aldeide' sono prodotti di ossidazione parziale di alcoli, non di combustione di alcani. 'Solo ossigeno' è un filler fuori tema e sbagliato: l'ossigeno è il reagente, non il prodotto.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u5-09-5",
+    "topicId": "chim-u5-09",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Indicare quale tra le seguenti formule è quella del butano (l'alcano con 4 carboni usato negli accendini):",
+    "choices": [
+      "C4H10",
+      "C4H8",
+      "C3H8",
+      "C6H12",
+      "C4H12"
+    ],
+    "answer": 0,
+    "explain": "Formula degli alcani: CnH2n+2. Con n=4 carboni: H = 2×4+2 = 10 → C4H10. 'C4H8' è la trappola opposta: è la formula di un alchene a 4 carboni (CnH2n), non un alcano saturo (2 idrogeni in meno). 'C3H8' è il propano (3 carboni, usato nelle bombole): stesso tipo di molecola ma un carbonio in meno — trappola da confusione tra nomi simili. 'C6H12' è il cicloesano: sbaglia sia il numero di carboni (6 invece di 4) sia la formula (CnH2n = cicloalcano). 'C4H12' è impossibile: con 4 carboni il massimo è 10 idrogeni, non 12 — chi lo vede deve capire che supera il massimo consentito dalla formula.",
+    "tags": ["prova d'esame"]
+  }
+]

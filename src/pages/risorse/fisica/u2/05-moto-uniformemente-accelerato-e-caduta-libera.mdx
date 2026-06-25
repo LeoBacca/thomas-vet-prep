@@ -1,0 +1,91 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-05">
+
+## Cos'è il moto uniformemente accelerato?
+
+Immagina di premere il pedale del gas su un'auto: la velocità aumenta in modo regolare, un po' alla volta. Questo è esattamente il **moto uniformemente accelerato**: un moto in cui la velocità cambia di una quantità fissa ogni secondo.
+
+Quella quantità fissa si chiama **accelerazione** e si misura in **m/s²** (metri al secondo quadrato).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'accelerazione dice di quanti m/s aumenta (o diminuisce) la velocità ogni secondo. Se a = 3 m/s², dopo 1 s vai 3 m/s più veloce, dopo 2 s vai 6 m/s più veloce, e così via.</div>
+
+## Le tre formule fondamentali
+
+Per descrivere questo moto hai bisogno di tre grandezze: la velocità iniziale **v₀**, l'accelerazione **a**, il tempo **t** e lo spazio percorso **s**.
+
+Le formule da conoscere sono:
+
+- **Velocità finale:** v = v₀ + a · t
+- **Spazio percorso:** s = v₀ · t + ½ · a · t²
+- **Legame v-s:** v² = v₀² + 2 · a · s
+
+Non devi impararle a memoria come filastrocche: capiscine il senso. La prima dice che la velocità cresce linearmente col tempo. La seconda somma lo spazio "base" (come se non ci fosse accelerazione) allo spazio "extra" dovuto all'accelerazione.
+
+<Diagram caption="Relazioni tra le grandezze del moto uniformemente accelerato" code={`flowchart TB
+  A["Velocità iniziale v₀<br/>(m/s)"] --> C["Velocità finale v<br/>v = v₀ + a·t"]
+  B["Accelerazione a<br/>(m/s²)"] --> C
+  B --> D["Spazio percorso s<br/>s = v₀·t + ½·a·t²"]
+  A --> D
+  E["Tempo t<br/>(secondi)"] --> C
+  E --> D`} />
+
+## La caduta libera: la gravità come acceleratore
+
+Lascia cadere una penna dalla mano. Cosa succede? Cade verso il basso, sempre più veloce. Questo è il **moto di caduta libera**: un caso speciale di moto uniformemente accelerato dove l'unico "motore" è la gravità.
+
+La Terra attira tutti i corpi verso di sé con la stessa accelerazione, che si chiama **accelerazione di gravità** e vale circa:
+
+**g = 9,8 m/s²** (spesso arrotondata a 10 m/s² nei calcoli)
+
+Questo significa che ogni secondo che passa, la velocità di caduta aumenta di circa 9,8 m/s.
+
+**Fatto sorprendente di Galileo:** una piuma e un martello, nel vuoto, cadono alla stessa velocità. L'aria rallenta la piuma nella vita reale, ma la gravità li accelera allo stesso modo. Lo ha dimostrato Galileo Galilei nel 1600!
+
+Per la caduta libera (partendo da fermi, v₀ = 0), le formule diventano più semplici:
+
+- v = g · t
+- s = ½ · g · t²
+
+<Diagram caption="Come cambia la velocità durante la caduta libera" code={`flowchart LR
+  A["t = 0 s<br/>v = 0 m/s"] --> B["t = 1 s<br/>v = 9,8 m/s"]
+  B --> C["t = 2 s<br/>v = 19,6 m/s"]
+  C --> D["t = 3 s<br/>v = 29,4 m/s"]
+  D --> E["Ogni secondo<br/>+9,8 m/s"]`} />
+
+## Segno dell'accelerazione: attenzione alla direzione
+
+Quando un oggetto accelera nel verso del moto, **a è positiva** (velocità aumenta).
+Quando frena, **a è negativa** (velocità diminuisce). Si chiama anche **decelerazione**.
+
+Per la caduta libera, se scegli il verso positivo verso il basso, **g è positiva**. Se lanci qualcosa verso l'alto, la gravità è diretta verso il basso e rallenta il corpo: in quel caso **a = −g**.
+
+## Guarda il video
+<YouTube id="3jTRo_n35OU" title="Il moto uniformemente accelerato e la caduta libera dei corpi" />
+<VideoVisto id="fis-u2-05" />
+
+## Da ricordare
+- Nel moto uniformemente accelerato la velocità cambia di una quantità costante ogni secondo: quella quantità è l'accelerazione a (m/s²).
+- La caduta libera è un caso speciale con accelerazione costante g ≈ 9,8 m/s² verso il basso, uguale per tutti i corpi indipendentemente dalla massa.
+- Le formule chiave sono: v = v₀ + a·t e s = v₀·t + ½·a·t² — basta sostituire i valori noti per trovare l'incognita.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un'auto parte da ferma e accelera a 4 m/s². Qual è la sua velocità dopo 5 secondi?" opzioni={["5 m/s","10 m/s","20 m/s","25 m/s"]} corretta={2} spiegazione="Si usa v = v₀ + a·t = 0 + 4·5 = 20 m/s. La risposta corretta è 20 m/s." />
+
+<Quiz domanda="Un oggetto cade liberamente dal riposo. Dopo 3 secondi (g = 10 m/s²), quanti metri ha percorso?" opzioni={["15 m","30 m","45 m","90 m"]} corretta={2} spiegazione="Si usa s = ½·g·t² = ½·10·9 = 45 m. Attenzione: t² = 3² = 9, non 3." />
+
+<Quiz domanda="Galileo dimostrò che nel vuoto, lasciando cadere un oggetto leggero e uno pesante dalla stessa altezza:" opzioni={["L'oggetto più pesante cade prima","L'oggetto più leggero cade prima","Arrivano a terra nello stesso momento","Dipende dalla forma degli oggetti"]} corretta={2} spiegazione="Nel vuoto tutti i corpi cadono con la stessa accelerazione g, indipendentemente dalla massa. Arrivano quindi a terra nello stesso momento." />
+
+<Esercizio problema="Un sasso viene lasciato cadere dal bordo di un ponte. Tocca l'acqua dopo 4 secondi. Usa g = 10 m/s². (a) Con che velocità arriva all'acqua? (b) Quanto è alto il ponte?" soluzione="(a) v = g·t = 10·4 = 40 m/s. Il sasso tocca l'acqua a 40 m/s (circa 144 km/h!). (b) s = ½·g·t² = ½·10·16 = 80 m. Il ponte è alto 80 metri." />
+
+</section>
+
+</RisorsaLayout>

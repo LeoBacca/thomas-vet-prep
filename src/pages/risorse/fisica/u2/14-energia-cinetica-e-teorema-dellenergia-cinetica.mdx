@@ -1,0 +1,92 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-14">
+
+## Cos'è l'energia cinetica?
+
+**Energia cinetica** è l'energia che un oggetto ha *perché si sta muovendo*.
+
+Più è pesante e più va veloce, più ha energia cinetica. Pensa a una palla da bowling lanciata a tutta forza: fa molto più male di una pallina da tennis alla stessa velocità, e fa più male se va veloce che se va piano.
+
+La formula è:
+
+**Ec = ½ · m · v²**
+
+- **m** = massa dell'oggetto (kg)
+- **v** = velocità (m/s)
+- **Ec** = energia cinetica (Joule, J)
+
+Due cose importanti da notare:
+- La velocità è al **quadrato**: se raddoppi la velocità, l'energia cinetica quadruplica.
+- La massa conta meno della velocità: la velocità "pesa" di più nel calcolo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'energia cinetica è "quanta energia di movimento ha un oggetto". Più va veloce, molto più ne ha — perché la velocità è al quadrato.</div>
+
+---
+
+## Il teorema dell'energia cinetica
+
+Il **teorema dell'energia cinetica** dice una cosa molto pratica:
+
+> Il lavoro totale fatto su un oggetto è uguale alla variazione della sua energia cinetica.
+
+In formula:
+
+**L = ΔEc = Ec_finale − Ec_iniziale = ½mv² − ½mv₀²**
+
+### Che cosa significa in pratica?
+
+- Se spingi un oggetto fermo e gli fai fare lavoro positivo → si mette in moto (acquista energia cinetica).
+- Se freni un oggetto in moto con una forza contraria (lavoro negativo) → rallenta (perde energia cinetica).
+- Se il lavoro totale è zero → la velocità non cambia.
+
+### Un esempio concreto
+
+Immagina di spingere uno skateboard fermo su un pavimento liscio con una forza costante per 3 metri. Stai facendo lavoro sullo skateboard. Quel lavoro si trasforma esattamente nell'energia cinetica che lo skateboard acquista. Niente di più, niente di meno.
+
+---
+
+<Diagram caption="Collegamento tra lavoro, forza e variazione di energia cinetica" code={`flowchart TB
+  A["Forza applicata su un oggetto"] --> B["Lavoro L = F · d · cos(θ)"]
+  B --> C{"Lavoro positivo<br/>o negativo?"}
+  C -->|"Positivo"| D["L'oggetto accelera<br/>Ec aumenta"]
+  C -->|"Negativo"| E["L'oggetto rallenta<br/>Ec diminuisce"]
+  C -->|"Zero"| F["Velocità costante<br/>Ec invariata"]`} />
+
+<Diagram caption="Formula dell'energia cinetica: come cambiano massa e velocità" code={`flowchart LR
+  A["Massa m (kg)"] --> C["Ec = ½ · m · v²"]
+  B["Velocità v (m/s)<br/>al quadrato!"] --> C
+  C --> D["Energia cinetica (J)"]
+  D --> E["Se v raddoppia<br/>Ec quadruplica"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="KNYCskvOhIE" title="L'energia cinetica e il teorema dell'energia cinetica [lezione di fisica]" />
+<VideoVisto id="fis-u2-14" />
+
+## Da ricordare
+- L'energia cinetica è Ec = ½mv²: dipende dalla massa e dal **quadrato** della velocità.
+- Il teorema dell'energia cinetica dice che il lavoro totale su un oggetto è uguale alla sua variazione di energia cinetica (L = ΔEc).
+- Lavoro positivo → l'oggetto accelera; lavoro negativo → l'oggetto rallenta.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un oggetto di massa 2 kg si muove a 3 m/s. Qual è la sua energia cinetica?" opzioni={["3 J","6 J","9 J","18 J"]} corretta={2} spiegazione="Ec = ½ · m · v² = ½ · 2 · 3² = ½ · 2 · 9 = 9 J. Ricorda di elevare al quadrato la velocità prima di moltiplicare." />
+
+<Quiz domanda="Su un oggetto viene fatto un lavoro totale di 50 J. Partiva da fermo. Che energia cinetica ha alla fine?" opzioni={["0 J","25 J","50 J","100 J"]} corretta={2} spiegazione="Per il teorema dell'energia cinetica, L = ΔEc. Partendo da fermo (Ec iniziale = 0), tutta l'energia guadagnata è 50 J. Quindi Ec finale = 50 J." />
+
+<Quiz domanda="Se la velocità di un oggetto raddoppia, la sua energia cinetica:" opzioni={["Raddoppia","Triplica","Quadruplica","Rimane uguale"]} corretta={2} spiegazione="Ec = ½mv². Se v diventa 2v, otteniamo ½m(2v)² = ½m·4v² = 4·(½mv²). L'energia cinetica quadruplica, perché la velocità è elevata al quadrato." />
+
+<Esercizio problema="Una macchina da 1000 kg viaggia a 20 m/s. Il conducente frena e la macchina si ferma completamente. Quanto lavoro ha fatto la forza frenante in totale?" soluzione="Usiamo il teorema dell'energia cinetica: L = Ec_finale − Ec_iniziale. Ec_iniziale = ½ · 1000 · 20² = ½ · 1000 · 400 = 200 000 J. Ec_finale = 0 (la macchina è ferma). Quindi L = 0 − 200 000 = −200 000 J. Il lavoro è negativo: la forza frenante si oppone al moto e toglie energia cinetica all'auto." />
+
+</section>
+
+</RisorsaLayout>

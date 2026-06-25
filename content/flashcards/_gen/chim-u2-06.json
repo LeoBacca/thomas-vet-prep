@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u2-06-1",
+    "topicId": "chim-u2-06",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "La concentrazione percentuale risponde sempre alla stessa domanda: quanto soluto c'è in 100 parti di soluzione? Ma 'soluzione' qui significa cosa?",
+    "choices": [
+      "Solo il solvente (ad esempio solo l'acqua)",
+      "Il totale: soluto più solvente insieme",
+      "Solo il soluto disciolto",
+      "Il volume del contenitore"
+    ],
+    "answer": 1,
+    "explain": "L'errore più comune è dividere per il solo solvente. La soluzione è TUTTO: soluto + solvente. Se sciogli 10 g di sale in 90 g di acqua, la soluzione pesa 100 g (10 + 90), non 90. La formula è sempre: (soluto ÷ soluzione intera) × 100.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-06-2",
+    "topicId": "chim-u2-06",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: la soluzione fisiologica usata nelle flebo è espressa come percentuale p/v e contiene 0,9 g di sale in 100 mL di soluzione.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. La fisiologica è NaCl allo 0,9% p/v: 0,9 g di sale in ogni 100 mL di liquido. Si usa p/v (peso/volume) perché il soluto è solido e si misura in grammi, mentre il liquido si misura con una siringa. Questa è la concentrazione del sangue: troppo o troppo poco sale farebbe male alle cellule. Lo stesso principio vale per i medicinali in flebo nei pazienti veterinari.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-06-3",
+    "topicId": "chim-u2-06",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega con parole tue le tre percentuali (p/p, p/v, v/v): cosa cambia tra loro, quando si usa ciascuna e fai un esempio reale per ognuna.",
+    "answer": "Le tre percentuali misurano tutte 'quanto soluto c'è in 100 parti di soluzione', ma cambiano le UNITÀ usate per misurare soluto e soluzione. p/p (peso su peso): sia il soluto che la soluzione si pesano in grammi. Si usa quando tutto è solido o quando si lavora con la bilancia. Esempio: acqua salata al 10% p/p = 10 g di sale in 100 g di soluzione totale (cioè 10 g sale + 90 g acqua). p/v (peso su volume): il soluto si pesa (grammi) ma la soluzione si misura in mL. È la più usata in medicina e farmacia perché il farmaco è spesso una polvere e il liquido si misura con una siringa. Esempio: fisiologica 0,9% p/v = 0,9 g di NaCl in 100 mL. v/v (volume su volume): sia soluto che solvente sono liquidi, quindi si misurano tutti e due in mL. Esempio: alcol al 70% v/v (disinfettante per mani) = 70 mL di alcol puro in 100 mL di soluzione; vino al 12% v/v = 12 mL di alcol in 100 mL di vino.",
+    "explain": "Chiave: cambia solo cosa misuri. p/p → bilancia su tutto; p/v → bilancia sul soluto, cilindro sulla soluzione; v/v → cilindro su tutto perché tutto è liquido.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u2-06-4",
+    "topicId": "chim-u2-06",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Hai mescolato 30 g di alcol etilico con 70 g di acqua. Quale delle seguenti affermazioni su questa soluzione è FALSA?",
+    "choices": [
+      "La concentrazione p/p di alcol è 30% (30 g di alcol in 100 g totali di soluzione)",
+      "Hai dati sufficienti per calcolare le frazioni molari delle due componenti (MM alcol = 46 g/mol, MM acqua = 18 g/mol)",
+      "La concentrazione è 30 g di alcol in 100 mL di soluzione (30% p/v)",
+      "Alcol e acqua sono miscibili in qualsiasi proporzione",
+      "Alcol e acqua non si separano completamente per distillazione frazionata"
+    ],
+    "answer": 2,
+    "explain": "La terza affermazione è falsa: dire '30 g di alcol in 100 mL di soluzione' è p/v, ma qui sappiamo solo i PESI (30 g + 70 g = 100 g di soluzione), non il volume in mL. Il volume di 100 g di soluzione acqua-alcol NON è necessariamente 100 mL (le densità delle due componenti sono diverse), quindi non possiamo ricavare la percentuale p/v senza misurare il volume. La percentuale p/p è invece corretta: 30 g su 100 g totali = 30% p/p. Le frazioni molari si calcolano dai grammi e dalle masse molari (moli alcol = 30/46; moli acqua = 70/18): la risposta B è vera. Alcol e acqua sono davvero miscibili in ogni proporzione e formano un miscuglio azeotropo che non si separa totalmente per distillazione.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u2-06-5",
+    "topicId": "chim-u2-06",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Hai 5 g di un farmaco (soluto) disciolti in 50 L di soluzione. Qual è la sua concentrazione in g/L?",
+    "choices": [
+      "0,1 g/L",
+      "10 g/L",
+      "250 g/L",
+      "0,01 g/L",
+      "50 g/L"
+    ],
+    "answer": 0,
+    "explain": "Concentrazione (g/L) = grammi di soluto ÷ litri di soluzione = 5 g ÷ 50 L = 0,1 g/L. La trappola più comune è fare l'operazione al contrario: 50 ÷ 5 = 10 (opzione B, che è l'inverso esatto). L'opzione C (250) nasce da 5 × 50, cioè moltiplicando invece di dividere. L'opzione D (0,01) è uno spostamento di decimale errato. L'opzione E (50) riporta il volume come se fosse la risposta. Regola: concentrazione = soluto ÷ soluzione; non invertire mai il rapporto.",
+    "tags": ["prova d'esame"]
+  }
+]

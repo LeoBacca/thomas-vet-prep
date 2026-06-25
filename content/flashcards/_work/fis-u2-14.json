@@ -1,0 +1,25 @@
+{
+ "id": "fis-u2-14",
+ "titolo": "Energia cinetica e teorema dell'energia cinetica",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "14-energia-cinetica-e-teorema-dellenergia-cinetica",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u2/14-energia-cinetica-e-teorema-dellenergia-cinetica.mdx",
+ "examQuestions": [
+  {
+   "year": "2016",
+   "q": "L'energia cinetica di una moto di massa uguale a 300 kg che viaggia alla velocità di 6 m/s è pari a:",
+   "choices": [
+    "5.400 J",
+    "900 J",
+    "10.800 J",
+    "1.800 J",
+    "2.700 J"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

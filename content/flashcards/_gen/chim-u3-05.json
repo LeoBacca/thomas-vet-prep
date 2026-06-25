@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-chim-u3-05-1",
+    "topicId": "chim-u3-05",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Cos'e l'energia di attivazione (Ea)? Scegli l'analogia piu giusta.",
+    "choices": [
+      "L'energia liberata alla fine della reazione, come il calore di un fuoco",
+      "La 'collina' minima che le molecole devono scalare per far partire la reazione",
+      "La velocita con cui le molecole si muovono a temperatura ambiente",
+      "L'energia che un catalizzatore aggiunge alle molecole per farle reagire"
+    ],
+    "answer": 1,
+    "explain": "L'Ea e la 'collina' da superare: le molecole devono avere abbastanza energia per arrivare in cima. Se la collina e alta la reazione e lenta, se e bassa e veloce. Il catalizzatore non spinge piu forte: abbassa la collina stessa.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-05-2",
+    "topicId": "chim-u3-05",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "open",
+    "q": "Un enzima viene aggiunto a una reazione lentissima nel corpo di un cane. Spiega: cos'e un urto efficace, cosa fa l'enzima all'energia di attivazione e perche la reazione diventa molto piu veloce.",
+    "answer": "Un urto efficace e uno scontro tra molecole che ha DUE requisiti: abbastanza energia (le molecole devono andare abbastanza 'veloci') e il giusto orientamento (devono incontrarsi nell'angolo giusto). Gli urti troppo deboli o mal orientati sono solo rimbalzi a vuoto. L'enzima e un catalizzatore: abbassa l'energia di attivazione, cioe rende la 'collina' piu bassa. Non aggiunge energia alle molecole, ma fa si che molte piu molecole riescano a superare la collina anche alla bassa temperatura del corpo. Risultato: la reazione diventa enormemente piu veloce senza cambiare la temperatura.",
+    "explain": "Urto efficace = energia sufficiente + orientamento giusto. Enzima = abbassa Ea (la collina). Piu molecole superano la collina → reazione piu veloce.",
+    "tags": ["risposta aperta"]
+  }
+]

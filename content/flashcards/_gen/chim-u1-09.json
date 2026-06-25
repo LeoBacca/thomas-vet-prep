@@ -1,0 +1,73 @@
+[
+  {
+    "id": "fc-chim-u1-09-1",
+    "topicId": "chim-u1-09",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Scendendo lungo un gruppo della tavola periodica (dall'alto verso il basso), il raggio atomico in genere...",
+    "choices": ["aumenta", "diminuisce", "resta uguale", "diventa zero"],
+    "answer": 0,
+    "explain": "Scendendo si aggiungono nuovi gusci di elettroni, come le bucce di una cipolla: più bucce metti, più grande diventa. Quindi il raggio aumenta. Attenzione a non confondere col periodo: andando verso DESTRA invece il raggio diminuisce, perché il nucleo (la calamita) tira più forte gli elettroni dello stesso guscio.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-09-2",
+    "topicId": "chim-u1-09",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: l'elettronegatività e l'energia di ionizzazione aumentano entrambe nello stesso senso, cioè muovendosi verso destra e verso l'alto nella tavola.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Elettronegatività, energia di ionizzazione e affinità elettronica vanno tutte nella stessa direzione: crescono verso l'angolo in alto a destra (fluoro, ossigeno), dove gli atomi sono piccoli e 'aggressivi' con gli elettroni. Il raggio atomico invece fa il contrario: cresce verso il basso a sinistra.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-09-3",
+    "topicId": "chim-u1-09",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue: perché l'energia di ionizzazione (la fatica per strappare un elettrone) DIMINUISCE scendendo lungo un gruppo, ad esempio passando da litio a sodio a potassio?",
+    "answer": "Perché scendendo lungo il gruppo l'atomo aggiunge nuovi gusci di elettroni e diventa più grande: l'elettrone più esterno si trova sempre più lontano dal nucleo. Il nucleo (la calamita) lo tira con meno forza, anche perché i gusci interni gli fanno un po' da schermo. Risultato: serve poca energia per togliere quell'elettrone, cioè l'energia di ionizzazione è bassa. Per questo Li, Na e K hanno energie di prima ionizzazione via via decrescenti: ciascuno è più grande del precedente.",
+    "explain": "Da ricordare: più l'elettrone esterno è lontano dal nucleo, meno fatica serve per strapparlo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-09-4",
+    "topicId": "chim-u1-09",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "L'atomo neutro di neon (Ne) e lo ione sodio (Na⁺) hanno lo STESSO numero di elettroni (10). Chi dei due è più piccolo?",
+    "choices": [
+      "Sono identici come dimensione, perché hanno lo stesso numero di elettroni",
+      "È più piccolo lo ione Na⁺",
+      "È più piccolo l'atomo Ne",
+      "È impossibile saperlo senza conoscere il numero di neutroni",
+      "Dipende dalla temperatura a cui si trovano"
+    ],
+    "answer": 1,
+    "explain": "Hanno gli stessi 10 elettroni, ma il sodio ha 11 protoni e il neon solo 10. Il nucleo del Na⁺ (calamita più forte, +11) tira gli stessi 10 elettroni più vicino a sé, quindi è più PICCOLO. Le trappole: 'sono identici' è la misconcezione di chi conta solo gli elettroni e dimentica i protoni; 'più piccolo il Ne' è l'opposto esatto (ha meno protoni, quindi tira di meno); il numero di neutroni non c'entra con la dimensione (cambia la massa, non il raggio); la temperatura è un filler fuori tema.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-09-5",
+    "topicId": "chim-u1-09",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Lo ione Na⁺ (sodio, Z=11) è più grande dello ione Mg²⁺ (magnesio, Z=12), anche se hanno lo stesso numero di elettroni. Quale affermazione spiega la differenza di grandezza?",
+    "choices": [
+      "Il magnesio ha una carica nucleare maggiore del sodio, quindi tira più forte gli stessi elettroni",
+      "Lo ione sodio ha più elettroni dello ione magnesio",
+      "Il magnesio è meno elettronegativo del sodio, quindi tiene gli elettroni più larghi",
+      "Lo ione magnesio ha meno orbitali interni dello ione sodio",
+      "Il sodio reagisce più facilmente con l'acqua del magnesio"
+    ],
+    "answer": 0,
+    "explain": "Na⁺ e Mg²⁺ hanno entrambi 10 elettroni, ma il magnesio ha 12 protoni contro gli 11 del sodio. La calamita più forte del Mg²⁺ stringe gli stessi elettroni più vicino, quindi è più piccolo. Le trappole: 'il sodio ha più elettroni' è falso (ne hanno 10 a testa, è una misconcezione); 'il magnesio è meno elettronegativo' è l'opposto esatto della realtà (con più protoni tira di più, non di meno); 'meno orbitali interni' è un termine scambiato/near-miss (i gusci interni sono uguali); la reattività con l'acqua è un filler fuori tema, non spiega la dimensione.",
+    "tags": ["prova d'esame"]
+  }
+]

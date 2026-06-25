@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u4-08-1",
+    "topicId": "bio-u4-08",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: una cellula somatica umana (una qualsiasi cellula del corpo, non un gamete) contiene 46 cromosomi disposti in 23 coppie.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Le cellule del corpo sono diploidi (2n = 46): 22 coppie di autosomi uguali in maschi e femmine, piu una coppia di cromosomi sessuali (XX nella femmina, XY nel maschio). Solo i gameti (spermatozoo e ovocita) hanno 23 cromosomi, cioe meta.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-08-2",
+    "topicId": "bio-u4-08",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Due cromosomi 'omologhi' sono come due edizioni diverse dello stesso libro. Cosa vuol dire questo in pratica?",
+    "choices": [
+      "Hanno la stessa lunghezza, lo stesso centromero e portano gli stessi geni (anche se in versioni — alleli — diverse); uno viene dalla mamma, uno dal papa",
+      "Sono copie identiche al 100%: stesse sequenze, stessi alleli, stessa origine",
+      "Sono i due cromatidi dello stesso cromosoma, uniti al centromero",
+      "Sono cromosomi di specie diverse che hanno geni simili per evoluzione"
+    ],
+    "answer": 0,
+    "explain": "Gli omologhi formano una coppia: stessa lunghezza, centromero nella stessa posizione, stessi geni nello stesso ordine. Ma come due edizioni dello stesso libro possono avere testi leggermente diversi: uno eredita la versione materna di ogni gene (allele), l'altro la versione paterna. Non sono identici. Confonderli con i cromatidi fratelli (stessa copia dello stesso cromosoma, uniti al centromero) e l'errore classico.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-08-3",
+    "topicId": "bio-u4-08",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "open",
+    "q": "Descrivi in 4-5 frasi come si ottiene un cariotipo e a cosa serve il bandeggio G. Poi spiega: perche il cariotipo viene fatto su cellule in METAFASE e non in qualunque momento della divisione?",
+    "answer": "Per ottenere un cariotipo si prelevano cellule in divisione (di solito linfociti del sangue), le si coltiva e si blocca la divisione in metafase con un farmaco (la colchicina). In metafase i cromosomi sono al massimo della compattazione: sono ben visibili e separati, con la classica forma a X (due cromatidi uniti al centromero). Si fotografano al microscopio, si ritagliano e si ordinano in coppie per numero e dimensione. Poi si colora con il bandeggio G (colorante Giemsa): ogni coppia di cromosomi mostra un pattern unico di bande chiare e scure, come un codice a barre, che permette di identificarla con certezza e di scovare anomalie strutturali (parti mancanti, invertite o duplicate). Se si usassero cellule in una fase diversa, i cromosomi sarebbero troppo 'allentati' e invisibili (interfase) oppure gia divisi e separati (anafase): solo in metafase sono compatti e visibili tutti nello stesso piano. Il cariotipo umano normale si scrive 46,XX (femmina) o 46,XY (maschio); un cromosoma 21 in piu rivela la sindrome di Down (trisomia 21).",
+    "explain": "Punto chiave: la metafase e il momento in cui i cromosomi sono piu compatti e visibili. Il bandeggio G aggiunge il 'codice a barre' per riconoscere ogni coppia.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u4-08-4",
+    "topicId": "bio-u4-08",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "L'analisi del cariotipo di una cellula in metafase mitotica consente di evidenziare:",
+    "choices": [
+      "Le anomalie di numero o di struttura dei cromosomi",
+      "La perdita di un singolo gene conseguente a un errore di duplicazione del DNA",
+      "Una mutazione puntuale avvenuta nella sequenza del DNA",
+      "Il numero di eventi di crossing-over avvenuti durante la meiosi",
+      "L'acquisizione di un gene da parte di un cromosoma per trasferimento orizzontale"
+    ],
+    "answer": 0,
+    "explain": "Il cariotipo e una 'fotografia' di tutti i cromosomi disposti in ordine. Cio che si vede sono i cromosomi interi: si possono rilevare anomalie di NUMERO (un cromosoma in piu o in meno, come la trisomia 21) e di STRUTTURA (un pezzo mancante, duplicato o invertito, visibile con il bandeggio G). Le trappole: 'perdita di un singolo gene' e 'mutazione puntuale nel DNA' (opzioni B e C) sono impossibili da vedere al microscopio nel cariotipo — la risoluzione e troppo bassa, servono tecniche molecolari come il sequenziamento. 'Frequenza del crossing-over' (opzione D) non si vede nel cariotipo di cellule in mitosi: il crossing-over avviene in meiosi e non lascia tracce visibili nella forma dei cromosomi. 'Acquisizione di un gene' (opzione E) e un filler: anche questo e invisibile al cariotipo.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u4-08-5",
+    "topicId": "bio-u4-08",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Una prova che i cromosomi X e Y fossero un tempo autosomi omologhi e data dal fatto che:",
+    "choices": [
+      "Le estremita dei due cromosomi si allineano durante la meiosi e possono ricombinarsi (crossing-over nella regione pseudoautosomica)",
+      "Il cromosoma Y porta il gene SRY della mascolinita, che e una copia diretta di un gene del cromosoma X",
+      "Il cromosoma X e strapieno di DNA non codificante (DNA spazzatura), prova di una degradazione evolutiva",
+      "Il cromosoma Y deriva per duplicazione recente e integrale dal cromosoma X",
+      "Gli autosomi omologhi da cui derivavano erano gia in origine molto diversi tra loro"
+    ],
+    "answer": 0,
+    "explain": "La prova diretta della comune origine di X e Y e la regione pseudoautosomica: le estremita dei due cromosomi si appaiano durante la meiosi e possono scambiarsi pezzi (crossing-over), esattamente come fanno due autosomi omologhi. Questo significa che in quella regione si comportano ancora come una coppia di omologhi. Le trappole: 'gene SRY copia del cromosoma X' (opzione B) e falso — SRY e presente SOLO sul cromosoma Y e non ha un omologo funzionale sull'X. 'DNA spazzatura sull'X' (opzione C) descrive qualcosa di reale ma non e una prova della comune origine dei due cromosomi sessuali. 'Y derivato per duplicazione da X' (opzione D) e una semplificazione sbagliata: i due derivano da una coppia autosomica comune, non uno dall'altro. L'opzione E e l'opposto esatto della realta: se fossero stati gia diversi all'inizio, non avrebbero potuto divergere dalla stessa coppia di omologhi.",
+    "tags": ["prova d'esame"]
+  }
+]

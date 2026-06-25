@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u4-02-1",
+    "topicId": "bio-u4-02",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Cos'e l'espansione di sequenze ripetute nel DNA?",
+    "choices": [
+      "Un errore in cui la cellula copia troppe volte una piccola sequenza di basi, aumentando il numero di ripetizioni ad ogni generazione",
+      "Un meccanismo di riparazione che elimina le sequenze duplicate dal DNA",
+      "Il processo normale con cui la DNA-polimerasi aggiunge nucleotidi durante la replicazione",
+      "Una mutazione causata dai raggi UV che altera le basi del DNA"
+    ],
+    "answer": 0,
+    "explain": "Immagina di ricopiare a mano la parola 'banana' venti volte: a un certo punto potresti sbagliare e scriverne ventuno. Lo stesso fa la DNA-polimerasi: si 'perde' tra le sequenze ripetute (es. CAG CAG CAG...) e ne aggiunge di nuove. Se l'errore passa di generazione in generazione, le ripetizioni crescono sempre di piu — e superata una certa soglia compaiono malattie come la corea di Huntington.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-02-2",
+    "topicId": "bio-u4-02",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "open",
+    "q": "Spiega la differenza tra HR e NHEJ nella riparazione dei doppi tagli del DNA. Quale e piu preciso e perche?",
+    "answer": "Quando il DNA si spezza su entrambi i filamenti (doppio taglio), la cellula ha due strategie. La ricombinazione omologa (HR) usa il cromosoma omologo — cioe la copia sana dello stesso cromosoma — come modello per ricostruire la sequenza mancante: e molto precisa perche ha uno stampo da seguire, ma funziona solo quando quella copia e disponibile (fasi S e G2 del ciclo cellulare). La giunzione di estremita non omologhe (NHEJ) invece ricuce semplicemente le due estremita rotte insieme, senza usare nessun modello: e rapida e funziona in qualsiasi fase del ciclo, ma puo introdurre piccole delezioni o inserzioni, risultando imprecisa. In sintesi: HR = precisione (serve la copia omologa); NHEJ = velocita (nessun modello, rischio errori).",
+    "explain": "Chiave: HR e precisa perche usa uno stampo (cromosoma omologo); NHEJ e rapida ma imprecisa perche ricuce senza modello. Doppio taglio = rottura completa di entrambi i filamenti.",
+    "tags": ["risposta aperta"]
+  }
+]

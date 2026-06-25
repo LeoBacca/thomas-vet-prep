@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-chim-u6-08-1",
+    "topicId": "chim-u6-08",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: nella tautomeria cheto-enolica la molecola cambia identita — la forma cheto e la forma enolo sono due molecole diverse con formule molecolari diverse.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Forma cheto e forma enolo sono la STESSA molecola: si spostano solo un atomo di idrogeno (dal carbonio in alfa all'ossigeno) e il doppio legame (da C=O a C=C). Pensa a una persona che salta da un piede all'altro: e sempre la stessa persona, cambia solo dove appoggia.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-08-2",
+    "topicId": "chim-u6-08",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "open",
+    "q": "Cos'e la condensazione aldolica? Spiega con parole tue cosa succede e perche puo avvenire solo grazie alla tautomeria cheto-enolica.",
+    "answer": "La condensazione aldolica e una reazione in cui due molecole si uniscono per formarne una piu grande chiamata aldolo. Ecco come funziona: grazie alla tautomeria cheto-enolica, il carbonio in alfa (quello subito accanto al carbonile C=O) diventa reattivo nella forma enolo. Questo carbonio in alfa attivato attacca il carbonile di una seconda molecola, agganciandosi come un mattoncino Lego che si incastra nell'altro. Il risultato e l'aldolo, una molecola che contiene sia un gruppo O-H (da 'alcol') sia un gruppo C=O (da 'aldeide'). Senza la tautomeria — cioe senza che il carbonio in alfa diventi reattivo — il gancio non esisterebbe e le due molecole non potrebbero unirsi. In biologia questo meccanismo e alla base della glicolisi: l'enzima aldolasi spezza uno zucchero a 6 carboni in due pezzi da 3, facendo la reazione al contrario.",
+    "explain": "Chiave: il carbonio in alfa diventa reattivo (forma enolo) e aggancia il carbonile di un'altra molecola → due piccole diventano una grande (l'aldolo). L'aldolasi nella glicolisi fa l'inverso.",
+    "tags": ["risposta aperta"]
+  }
+]

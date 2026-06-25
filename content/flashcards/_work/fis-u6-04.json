@@ -1,0 +1,10 @@
+{
+ "id": "fis-u6-04",
+ "titolo": "Conduttori e dielettrici (induzione e polarizzazione)",
+ "materia": "fisica",
+ "unita": 6,
+ "slug": "04-conduttori-e-dielettrici-induzione-e-polarizzazione",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u6/04-conduttori-e-dielettrici-induzione-e-polarizzazione.mdx",
+ "examQuestions": []
+}

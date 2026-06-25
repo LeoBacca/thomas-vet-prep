@@ -1,0 +1,97 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u4-03">
+
+## Cos'è un allele?
+
+Ogni carattere ereditario (colore degli occhi, gruppo sanguigno, colore del pelo…) è controllato da un **gene**. Ma ogni gene può esistere in versioni leggermente diverse: queste versioni si chiamano **alleli**.
+
+Immagina il gene come una "casella" sul cromosoma. In quella casella può esserci la versione "occhi azzurri" oppure la versione "occhi marroni": ognuna di queste versioni è un allele diverso.
+
+Noi siamo organismi **diploidi**: abbiamo i cromosomi in coppia (una copia dalla mamma, una dal papà). Quindi per ogni gene abbiamo **due alleli** — uno per cromosoma.
+
+---
+
+## Omozigote ed eterozigote
+
+Quando guardi i due alleli di un gene in un individuo, possono capitare due situazioni:
+
+- **Omozigote** (omo = uguale): i due alleli sono identici. Es. entrambi "occhi azzurri" (aa) oppure entrambi "occhi marroni" (AA).
+- **Eterozigote** (etero = diverso): i due alleli sono diversi. Es. uno "occhi azzurri" e uno "occhi marroni" (Aa).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> omozigote = due copie uguali dello stesso allele; eterozigote = due copie diverse.</div>
+
+---
+
+## Dominante e recessivo
+
+Quando un individuo è eterozigote (ha due alleli diversi), quale dei due "vince" e si vede? Qui entrano in gioco **dominanza** e **recessività**:
+
+- **Allele dominante**: quello che si esprime (si vede) anche quando è presente una sola copia. Si indica con la lettera **maiuscola** (es. A).
+- **Allele recessivo**: quello che si vede **solo** quando sono presenti due copie (cioè in omozigosi). Si indica con la lettera **minuscola** (es. a).
+
+Esempio con il colore del pelo (semplificato):
+- Pelo scuro è dominante (A), pelo chiaro è recessivo (a).
+- AA → pelo scuro (omozigote dominante)
+- Aa → pelo scuro (l'allele A "copre" l'allele a)
+- aa → pelo chiaro (l'unico modo per vedere il recessivo)
+
+---
+
+## Genotipo e fenotipo
+
+Questi due termini sembrano simili ma significano cose molto diverse:
+
+- **Genotipo**: la "carta d'identità genetica" dell'individuo. Indica quali alleli possiede davvero (es. Aa, AA, aa). Non si vede dall'esterno.
+- **Fenotipo**: ciò che si osserva concretamente: il colore del pelo, la forma del fiore, il gruppo sanguigno. È il risultato visibile del genotipo.
+
+Due individui con **genotipo diverso** (AA e Aa) possono avere lo **stesso fenotipo** (pelo scuro), proprio perché A è dominante su a. Questo è un concetto chiave!
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il genotipo è quello che hai scritto nel DNA; il fenotipo è quello che si vede fuori.</div>
+
+---
+
+<Diagram caption="Dai genotipi ai fenotipi: come gli alleli determinano ciò che si vede" code={`flowchart TB
+  A["Gene del colore del pelo<br/>(due alleli, uno per cromosoma)"]
+  A --> B["Genotipo AA<br/>(omozigote dominante)"]
+  A --> C["Genotipo Aa<br/>(eterozigote)"]
+  A --> D["Genotipo aa<br/>(omozigote recessivo)"]
+  B --> E["Fenotipo: pelo SCURO"]
+  C --> E
+  D --> F["Fenotipo: pelo CHIARO"]`} />
+
+<Diagram caption="Regola di dominanza: quando si vede l'allele recessivo?" code={`flowchart LR
+  A["Allele dominante A"] --> B["Compare nel fenotipo<br/>se: AA oppure Aa"]
+  C["Allele recessivo a"] --> D["Compare nel fenotipo<br/>SOLO se: aa"]
+  B --> E["Fenotipo dominante visibile"]
+  D --> F["Fenotipo recessivo visibile"]`} />
+
+## Guarda il video
+<YouTube id="2Ey8Gi4Szhk" title="ALLELI e DOMINANZA" />
+<VideoVisto id="bio-u4-03" />
+
+## Da ricordare
+- Un **allele** è una versione alternativa di un gene; ogni individuo diploide ne porta due (uno per cromosoma omologo).
+- **Omozigote** = due alleli identici; **eterozigote** = due alleli diversi.
+- Il **genotipo** è la combinazione di alleli nel DNA; il **fenotipo** è il carattere osservabile che ne risulta. Genotipo diverso può dare lo stesso fenotipo (se un allele è dominante sull'altro).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un individuo con genotipo 'Aa' come si definisce?" opzioni={["Omozigote dominante","Omozigote recessivo","Eterozigote","Emizigote"]} corretta={2} spiegazione="'Aa' significa che i due alleli sono diversi (uno maiuscolo, uno minuscolo): questa è proprio la definizione di eterozigote." />
+
+<Quiz domanda="Un allele recessivo 'a' produce il suo fenotipo solo quando…" opzioni={["È presente almeno una copia (genotipo Aa o aa)","È presente in coppia con l'allele dominante (Aa)","È assente dal genotipo","È presente in doppia copia (genotipo aa)"]} corretta={3} spiegazione="L'allele recessivo si esprime nel fenotipo SOLO quando è presente in due copie (aa), perché se c'è anche un allele dominante (Aa), quest'ultimo lo 'copre'." />
+
+<Quiz domanda="Due cani hanno genotipo AA e Aa rispettivamente. Entrambi hanno il pelo scuro (A = pelo scuro, dominante). Cosa significa questo esempio?" opzioni={["Genotipo e fenotipo sono sempre identici","Genotipi diversi possono produrre lo stesso fenotipo","Solo gli omozigoti mostrano il fenotipo dominante","Il fenotipo determina il genotipo"]} corretta={1} spiegazione="AA e Aa hanno genotipi diversi, ma entrambi mostrano pelo scuro: questo dimostra che genotipi diversi possono dare lo stesso fenotipo quando un allele è dominante sull'altro." />
+
+<Esercizio problema="Un gatto ha genotipo 'BB' per il colore del pelo (B = pelo nero, dominante; b = pelo bianco, recessivo). Qual è il suo fenotipo? È omozigote o eterozigote? Cosa succederebbe se il suo genotipo fosse 'Bb'?" soluzione="Con genotipo BB: fenotipo = pelo NERO (B è dominante); è omozigote dominante (due alleli uguali, entrambi B). Con genotipo Bb: fenotipo ancora pelo NERO (l'allele B domina su b), ma stavolta l'individuo è eterozigote. In entrambi i casi il fenotipo è uguale, ma il genotipo è diverso." />
+
+</section>
+
+</RisorsaLayout>

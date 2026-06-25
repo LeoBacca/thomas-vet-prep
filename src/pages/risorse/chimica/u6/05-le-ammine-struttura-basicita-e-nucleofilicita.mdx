@@ -1,0 +1,109 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u6-05">
+
+Le **ammine** sono molecole che contengono **azoto** (la lettera N). Le riconosci dal **gruppo -NH2** (un azoto con due idrogeni attaccati). Sono importantissime: tantissime molecole del nostro corpo, come gli amminoacidi (i mattoni delle proteine) e l'adrenalina, sono ammine. Anche moltissimi farmaci lo sono.
+
+Pensa alle ammine come ai "parenti organici" dell'**ammoniaca** (NH3), quella dei prodotti per pulire. Se prendi l'ammoniaca e sostituisci uno o più dei suoi idrogeni con dei pezzi di carbonio, ottieni un'ammina.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un'ammina è un atomo di azoto che ha un <strong>doppietto di elettroni libero</strong> (una "coppia di mani" non impegnata). Quella coppia di mani è il segreto di tutto: serve ad afferrare gli idrogeni acidi (basicità) e ad attaccare altre molecole (nucleofilicità).</div>
+
+## Primarie, secondarie, terziarie: si conta chi sta intorno all'azoto
+
+Le ammine si classificano contando **quanti pezzi di carbonio** (li chiamiamo R) sono attaccati all'azoto:
+
+- **Primaria**: 1 carbonio e 2 idrogeni (R-NH2)
+- **Secondaria**: 2 carboni e 1 idrogeno (R2-NH)
+- **Terziaria**: 3 carboni e 0 idrogeni (R3-N)
+
+Attenzione: qui si conta in modo diverso dagli alcoli. Negli alcoli guardi il carbonio; nelle ammine guardi **l'azoto** e conti i carboni che gli stanno attaccati.
+
+<Diagram caption="Le tre ammine: cambia solo quanti carboni sono attaccati all'azoto" code={`flowchart TB
+  N["Atomo di AZOTO (N)<br/>con il suo doppietto libero"] --> P["PRIMARIA<br/>1 carbonio + 2 H<br/>(R-NH2)"]
+  N --> S["SECONDARIA<br/>2 carboni + 1 H<br/>(R2-NH)"]
+  N --> T["TERZIARIA<br/>3 carboni + 0 H<br/>(R3-N)"]`} />
+
+In tutti e tre i casi l'azoto tiene sempre da parte la sua **coppia di elettroni libera** (il doppietto). È come una persona che ha le mani occupate a tenere altre cose, ma in tasca ha sempre una mano libera pronta ad afferrare qualcosa.
+
+<Diagram caption="Il doppietto libero: la 'mano libera' dell'azoto" code={`flowchart LR
+  D["Doppietto libero<br/>sull'azoto"] -->|"afferra un H+"| B["BASICITA<br/>(cattura idrogeni acidi)"]
+  D -->|"attacca un carbonio"| Nu["NUCLEOFILICITA<br/>(si lega ad altre molecole)"]`} />
+
+## Basicità: l'ammina cattura gli acidi
+
+Una **base**, in chimica, è qualcosa che cattura ioni idrogeno (H+), cioè la parte "acida". L'ammina lo fa benissimo: usa il suo doppietto libero per agganciare un H+ e diventa carica positiva (uno "ione ammonio").
+
+Analogia: il doppietto è una **calamita** per gli H+. Appena passa un acido, l'ammina lo acchiappa.
+
+Perché conta in medicina? Perché molti farmaci sono ammine. Nel sangue (ambiente leggermente basico) si comportano in un modo, nello stomaco (molto acido) in un altro. Questo cambia quanto velocemente il farmaco viene assorbito. Capire la basicità delle ammine aiuta a capire come si muovono i farmaci nel corpo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ammina = "acchiappa-acidi". Prende un H+ e si trasforma in uno ione ammonio carico positivo. Più il doppietto è "disponibile", più l'ammina è basica.</div>
+
+## Nucleofilicità: l'ammina ama i carboni "poveri di elettroni"
+
+**Nucleofilo** significa, alla lettera, "che ama il nucleo", cioè le zone cariche positivamente. Sempre grazie al suo doppietto libero, l'ammina va a cercare i carboni "poveri di elettroni" (cioè un po' positivi) e ci si attacca formando un nuovo legame.
+
+Basicità e nucleofilicità sono due facce della stessa medaglia: in entrambi i casi è il doppietto libero che "esce a cercare" qualcosa da afferrare. Cambia solo il bersaglio: un H+ (basicità) oppure un carbonio (nucleofilicità).
+
+## Due ammine speciali: nitrosammine e colina
+
+**Nitrosammine.** Sono ammine "andate a male": si formano quando certe ammine reagiscono con i nitriti (conservanti presenti, per esempio, in alcuni salumi e carni lavorate). Sono importanti da conoscere perché molte nitrosammine sono **cancerogene** (favoriscono i tumori). Ecco perché si consiglia di non esagerare con le carni lavorate.
+
+**Colina.** È un'ammina "buona" e fondamentale per il corpo. Serve a costruire l'**acetilcolina**, una molecola messaggera che fa comunicare i nervi con i muscoli: senza, i muscoli non riceverebbero l'ordine di contrarsi. La colina è anche un mattone delle membrane delle nostre cellule. La trovi nelle uova e nel fegato.
+
+<Diagram caption="Due ammine da ricordare per la biologia" code={`flowchart TB
+  A["Ammine nel corpo"] --> Ni["NITROSAMMINE<br/>da nitriti + ammine<br/>spesso cancerogene"]
+  A --> Co["COLINA<br/>serve per acetilcolina<br/>nervi e muscoli, membrane"]`} />
+
+## Guarda il video
+
+<YouTube id="azUw03t-yX4" title="Caratteristiche generali delle ammine — chimica organica spiegata semplice" />
+
+<VideoVisto id="chim-u6-05" />
+
+## Da ricordare
+
+- Un'**ammina** è una molecola con azoto e gruppo **-NH2**; è una "parente" dell'ammoniaca.
+- Si classifica contando i carboni attaccati all'azoto: **primaria** (1), **secondaria** (2), **terziaria** (3).
+- Il segreto è il **doppietto libero** dell'azoto: rende l'ammina **basica** (acchiappa H+) e **nucleofila** (attacca i carboni).
+- **Nitrosammine**: nascono da ammine + nitriti, spesso **cancerogene**.
+- **Colina**: ammina utile, serve per l'**acetilcolina** (nervi-muscoli) e per le membrane cellulari.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Da quale atomo riconosci sempre un'ammina?"
+  opzioni={["dall'ossigeno", "dall'azoto (N)", "dal cloro", "dallo zolfo"]}
+  corretta={1}
+  spiegazione="Le ammine contengono sempre azoto (N), tipicamente nel gruppo -NH2. Sono le 'parenti organiche' dell'ammoniaca NH3."
+/>
+
+<Quiz
+  domanda="Un'ammina con DUE carboni e UN idrogeno attaccati all'azoto è:"
+  opzioni={["primaria", "secondaria", "terziaria", "quaternaria"]}
+  corretta={1}
+  spiegazione="Si conta quanti carboni stanno sull'azoto: due carboni = ammina secondaria (R2-NH)."
+/>
+
+<Quiz
+  domanda="Che cosa rende un'ammina basica e nucleofila?"
+  opzioni={["il numero di idrogeni", "il doppietto di elettroni libero sull'azoto", "il colore della molecola", "il peso della molecola"]}
+  corretta={1}
+  spiegazione="È il doppietto libero dell'azoto: lo usa per afferrare un H+ (basicità) o per attaccare un carbonio (nucleofilicità)."
+/>
+
+<Esercizio
+  problema="Spiega con parole tue perché si consiglia di non esagerare con i salumi e le carni lavorate, collegandoti alle ammine."
+  soluzione="I conservanti chiamati nitriti possono reagire con alcune ammine e formare le nitrosammine. Molte nitrosammine sono cancerogene, cioè favoriscono la comparsa di tumori. Per questo è consigliabile non eccedere con le carni lavorate."
+/>
+
+</section>
+
+</RisorsaLayout>

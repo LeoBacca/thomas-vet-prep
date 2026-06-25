@@ -1,0 +1,39 @@
+{
+ "id": "fis-u2-11",
+ "titolo": "Terzo principio della dinamica (azione e reazione)",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "11-terzo-principio-della-dinamica-azione-e",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/fisica/u2/11-terzo-principio-della-dinamica-azione-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "Il campo magnetico terrestre esercita un momento di forza sull'ago di una bussola. Una delle seguenti affermazioni è certamente sempre vera:",
+   "choices": [
+    "Per il terzo principio della dinamica, l'ago della bussola esercita un analogo momento di forza sulla terra",
+    "Per il secondo principio della dinamica, nell'emisfero australe l'ago della bussola comincia ad accelerare verso il polo Nord",
+    "Data la natura dei momenti di forza, è necessario un meccanismo di richiamo altrimenti l'ago comincerebbe a ruotare, senza indicare il Nord",
+    "A causa della natura vettoriale del momento di forza, la bussola funziona correttamente solo nell'emisfero boreale",
+    "Le interazioni magnetiche sono uno degli esempi in cui i principi della meccanica non sono validi"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2018",
+   "q": "Due sferette metalliche A e B poste a distanza d, hanno carica q e -2q. Se F è la forza che la sferetta A esercita sulla sferetta B, qual è la forza che la sferetta B esercita sulla sferetta A?",
+   "choices": [
+    "-F",
+    "1/2 F",
+    "2 F",
+    "0",
+    "-2 F"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

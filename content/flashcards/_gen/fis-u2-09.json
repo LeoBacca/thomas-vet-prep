@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fc-fis-u2-09-1",
+    "topicId": "fis-u2-09",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: un oggetto che si muove in linea retta a velocita costante ha la forza risultante uguale a zero.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 0,
+    "explain": "Vero. Per il primo principio di Newton, se la forza risultante e zero il corpo rimane nel suo stato di moto — fermo o in moto rettilineo uniforme. Come un'astronave a motori spenti lontano da ogni pianeta: nessuna forza, velocita costante per sempre.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-fis-u2-09-2",
+    "topicId": "fis-u2-09",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Un libro e appoggiato immobile su un tavolo. Elenca le forze che agiscono su di lui e spiega perche rimane fermo usando il primo principio di Newton. Di' poi qual e la differenza tra equilibrio statico ed equilibrio dinamico.",
+    "answer": "Sul libro agiscono due forze: la forza peso (diretta verso il basso, dovuta alla gravita) e la reazione normale del tavolo (diretta verso l'alto). Le due forze sono uguali in modulo e opposte in direzione, quindi si annullano: la forza risultante e zero. Per il primo principio di Newton, se la forza risultante su un corpo e zero, il suo stato di moto non cambia. Il libro era fermo e rimane fermo: questo si chiama equilibrio STATICO. L'equilibrio DINAMICO e invece la situazione in cui la forza risultante e ancora zero, ma il corpo si muoveva gia: allora continua a muoversi in linea retta a velocita costante (esempio: un pattinatore su ghiaccio perfettamente liscio, o un'astronave a motori spenti nello spazio). In entrambi i casi la forza netta e zero; la differenza e solo la velocita di partenza.",
+    "explain": "Chiave: forza risultante zero = stato di moto invariato. Statico = partiva da fermo; dinamico = partiva in moto rettilineo uniforme.",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

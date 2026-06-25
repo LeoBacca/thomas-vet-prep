@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-chim-u7-03-1",
+    "topicId": "chim-u7-03",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: il corpo umano usa quasi esclusivamente amminoacidi di configurazione L per costruire le proteine.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Gli amminoacidi L sono la versione 'sinistra' (L come Left). Gli enzimi del corpo sono fatti su misura per loro, come un guanto sinistro che entra solo nella mano sinistra. La versione D esiste, ma il corpo quasi non la riconosce.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-03-2",
+    "topicId": "chim-u7-03",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Cosa significa che un amminoacido e 'essenziale'? E cosa c'entra con la dieta del gatto?",
+    "answer": "Un amminoacido 'essenziale' e uno che il corpo NON sa fabbricare da solo, quindi deve obbligatoriamente prenderlo dal cibo. 'Essenziale' non vuol dire 'piu importante degli altri': vuol dire solo 'essenziale nella dieta'. Gli amminoacidi non essenziali, invece, il corpo se li costruisce da solo partendo da altre sostanze. Il gatto e un esempio perfetto: per lui la taurina e un amminoacido essenziale perche non la produce a sufficienza. Se la sua dieta non la contiene, si ammala. Per questo il cibo per gatti e formulato diversamente da quello per cani.",
+    "explain": "Essenziale = obbligatorio dalla dieta (il corpo non lo produce). Non essenziale = il corpo lo costruisce da solo. Ogni specie ha la sua lista: nel gatto la taurina e essenziale.",
+    "tags": ["risposta aperta"]
+  }
+]

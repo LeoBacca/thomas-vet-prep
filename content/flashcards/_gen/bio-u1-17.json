@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-17-1",
+    "topicId": "bio-u1-17",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: le modificazioni post-traduzionali avvengono PRIMA che il ribosoma finisca di costruire la proteina.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. 'Post-traduzionale' significa letteralmente 'dopo la traduzione': le modifiche (fosfato, zuccheri, lipidi, acetile) vengono aggiunte DOPO che il ribosoma ha completato la proteina. Come verniciare un mobile IKEA solo dopo averlo assemblato.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-17-2",
+    "topicId": "bio-u1-17",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Una proteina deve ancorarsi alla membrana cellulare per poter mandare segnali (come le proteine Ras nei tumori). Quale modificazione post-traduzionale le permette di farlo?",
+    "choices": [
+      "Lipidazione: viene aggiunta una catena lipidica idrofoba che si inserisce nel doppio strato lipidico della membrana",
+      "Fosforilazione: il gruppo fosfato carico negativamente attrae la membrana",
+      "Glicosilazione: gli zuccheri fanno da ancora sulla superficie cellulare",
+      "Acetilazione: il gruppo acetile neutralizza la carica e la spinge verso la membrana"
+    ],
+    "answer": 0,
+    "explain": "Le membrane cellulari sono fatte di doppio strato di lipidi. Aggiungere un lipide (catena grassa) alla proteina e come darle un gancio idrofobo che si inserisce naturalmente in quello strato. Fosforilazione e acetilazione cambiano l'attivita o la regolazione genica, non l'ancoraggio. La glicosilazione aiuta il riconoscimento cellulare ma non ancora le proteine alla membrana interna.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-17-3",
+    "topicId": "bio-u1-17",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Elenca le quattro modificazioni post-traduzionali principali. Per ognuna di': cosa si aggiunge, chi lo aggiunge (se lo sai) e a cosa serve.",
+    "answer": "1) FOSFORILAZIONE: si aggiunge un gruppo fosfato (PO₄) sugli amminoacidi serina, treonina o tirosina. Lo fa un enzima chiamato chinasi; lo toglie la fosfatasi. Serve ad accendere o spegnere l'attivita della proteina (e l'interruttore on/off piu usato nella cellula). Esempio: quando sale l'adrenalina, la fosforilazione attiva enzimi che liberano glucosio dal glicogeno. 2) ACETILAZIONE: si aggiunge un gruppo acetile (CH₃CO) di solito sulla lisina. Lo fa l'acetil-transferasi; lo toglie la deacetilasi. E fondamentale sugli istoni (proteine che avvolgono il DNA): quando gli istoni vengono acetilati il DNA si apre e i geni si attivano; quando l'acetile viene tolto il DNA si compatta e i geni tacciono. 3) GLICOSILAZIONE: si aggiunge una catena di zuccheri, su asparagina (N-glicosilazione, nel reticolo endoplasmatico) oppure su serina/treonina (O-glicosilazione, nel Golgi). Serve a far piegare bene la proteina, proteggerla dalla degradazione e permettere il riconoscimento tra cellule. Tutte le proteine di membrana e quelle secrete fuori dalla cellula sono glicosilate. 4) LIPIDAZIONE: si aggiunge una catena lipidica (grassa) su glicina o cisteina. Serve ad ancorare la proteina alla membrana cellulare, perche i lipidi sono idrofobi e si inseriscono nel doppio strato. Esempio: le proteine Ras (spesso mutate nei tumori) devono essere prenilate per funzionare.",
+    "explain": "Chiave: fosforilazione = interruttore (chinasi/fosfatasi); acetilazione = regolazione genica (istoni); glicosilazione = stabilita e riconoscimento; lipidazione = ancoraggio a membrana.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-17-4",
+    "topicId": "bio-u1-17",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "La regolazione dell'attivita enzimatica mediante modificazione covalente avviene quando:",
+    "choices": [
+      "agli enzimi viene legato un gruppo funzionale che ne modula l'attivita",
+      "alcune molecole si legano al sito allosterico tramite interazioni deboli e modulano l'attivita in senso positivo o negativo",
+      "ci sono cambiamenti di pH che alterano la forma dell'enzima",
+      "il substrato e presente a bassa concentrazione e l'enzima lavora piu lentamente",
+      "il colesterolo si lega al sito allosterico dell'enzima"
+    ],
+    "answer": 0,
+    "explain": "La parola chiave e 'covalente': un gruppo funzionale (come il fosfato nella fosforilazione) si lega all'enzima con un legame chimico vero, non una semplice interazione debole. Questo cambia la struttura dell'enzima e quindi la sua attivita. L'opzione B descrive la regolazione allosterica (legame debole, reversibile, no legame covalente) — e la trappola classica: sembra simile ma e un meccanismo completamente diverso. Le opzioni C, D, E sono fuori tema o inventate: il pH agisce sulla carica ma non e una modificazione covalente; la concentrazione del substrato riguarda la cinetica, non la regolazione covalente; il colesterolo al sito allosterico e un filler senza fondamento.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-17-5",
+    "topicId": "bio-u1-17",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Gli istoni sono proteine che avvolgono il DNA. Quale affermazione descrive correttamente l'effetto dell'acetilazione degli istoni?",
+    "choices": [
+      "Il DNA si compatta e i geni vengono silenziati perche l'acetile aumenta l'attrazione tra istone e DNA",
+      "La proteina istone viene esportata fuori dal nucleo e degradata",
+      "Il DNA si allarga e i geni diventano piu accessibili perche l'acetile riduce l'attrazione tra istone e DNA",
+      "L'istone viene fosforilato a sua volta, innescando una cascata di segnali",
+      "L'acetilazione non ha effetto sugli istoni: riguarda solo gli enzimi metabolici"
+    ],
+    "answer": 2,
+    "explain": "Gli istoni hanno carica positiva e il DNA ha carica negativa: si attraggono, compattando la cromatina. Quando si aggiunge l'acetile (CH₃CO) alla lisina dell'istone, la carica positiva diminuisce → l'attrazione con il DNA si allenta → il DNA si 'apre' → i geni diventano leggibili. L'opzione A e l'opposto esatto: dice che l'acetile aumenta l'attrazione — il contrario di quello che accade. L'opzione B (degradazione) e quella di chi confonde l'acetilazione con l'ubiquitinazione (che invece marca le proteine per la degradazione). L'opzione D confonde due modificazioni diverse. L'opzione E e un filler sbagliato.",
+    "tags": ["prova d'esame"]
+  }
+]

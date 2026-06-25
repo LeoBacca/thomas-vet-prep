@@ -1,0 +1,86 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-16">
+
+## Cos'è un enzima?
+
+Un enzima è una proteina che fa da **catalizzatore biologico**: accelera le reazioni chimiche dentro la cellula senza essere consumata. Pensa a un enzima come a un operaio specializzato in fabbrica — lavora, assembla o smonta pezzi, poi è di nuovo pronto per il pezzo successivo.
+
+Senza enzimi, molte reazioni ci metterebbero anni. Con gli enzimi, le stesse reazioni avvengono in frazioni di secondo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'enzima abbassa l'energia di attivazione — cioè l'"energia di avvio" necessaria perché una reazione parta — come chi aiuta a spingere un'auto ferma: dopo la prima spinta riparte da sola.</div>
+
+## Come funziona: substrato e sito attivo
+
+Ogni enzima ha una zona specifica chiamata **sito attivo** — una "tasca" di forma precisa dove si aggancia la molecola su cui deve agire. Quella molecola si chiama **substrato**.
+
+Il legame enzima-substrato funziona come una chiave nella serratura (o meglio, come un guanto che si adatta alla mano: modello "adattamento indotto"). Dopo la reazione, il prodotto si stacca e l'enzima è libero di ricominciare.
+
+<Diagram caption="Come un enzima trasforma il substrato in prodotto" code={`flowchart LR
+  A["Enzima libero<br/>(sito attivo vuoto)"] --> B["Enzima + Substrato<br/>(complesso ES)"]
+  B --> C["Reazione catalizzata<br/>(energia di attivazione abbassata)"]
+  C --> D["Prodotto rilasciato"]
+  D --> A`} />
+
+## Le classi principali di enzimi
+
+Gli enzimi si classificano in base a **che cosa fanno** alla molecola substrato. Ecco le classi che devi conoscere:
+
+### Chinasi e Fosfatasi — aggiungono o tolgono un fosfato
+
+- **Chinasi**: aggiungono un gruppo fosfato (PO₄) a una proteina. Questo "accende" o modifica l'attività della proteina. È come girare un interruttore su ON.
+- **Fosfatasi**: tolgono il gruppo fosfato. Sono il tasto OFF.
+
+Questi due enzimi lavorano spesso in coppia per controllare l'attività cellulare (es. segnali ormonali, divisione cellulare).
+
+### Ubiquitinasi e Deubiquitinasi — segnano le proteine da smaltire
+
+- **Ubiquitinasi** (o E3 ligasi): attaccano una piccola proteina chiamata **ubiquitina** a una proteina da eliminare. È come mettere un'etichetta "da buttare" su un oggetto.
+- **Deubiquitinasi**: tolgono quella etichetta. Salvano la proteina dalla distruzione.
+
+La proteina etichettata viene poi smontata dal **proteasoma** (una specie di tritacarne cellulare).
+
+### Acetilasi e Deacetilasi — modificano le proteine istoniche del DNA
+
+- **Acetilasi** (o acetiltransferasi): aggiungono un gruppo acetile agli **istoni**, le proteine attorno a cui si avvolge il DNA. Questo allenta il DNA e permette la lettura dei geni: i geni si "accendono".
+- **Deacetilasi**: tolgono il gruppo acetile. Il DNA si ricompatta e i geni si "spengono".
+
+Questi enzimi sono centrali nell'**epigenetica** — cioè nel controllare quali geni sono attivi senza cambiare la sequenza del DNA.
+
+<Diagram caption="Classi di enzimi: cosa aggiungono o rimuovono e qual è l'effetto" code={`flowchart TB
+  E["Enzimi modificatori"] --> C1["Chinasi<br/>aggiunge fosfato → proteina attiva"]
+  E --> C2["Fosfatasi<br/>rimuove fosfato → proteina inattiva"]
+  E --> C3["Ubiquitinasi<br/>aggiunge ubiquitina → proteina degradata"]
+  E --> C4["Deubiquitinasi<br/>rimuove ubiquitina → proteina salvata"]
+  E --> C5["Acetilasi<br/>aggiunge acetile → DNA aperto, gene ON"]
+  E --> C6["Deacetilasi<br/>rimuove acetile → DNA chiuso, gene OFF"]`} />
+
+## Guarda il video
+<YouTube id="yhHY1T6dxcw" title="Gli ENZIMI e l'ENERGIA di ATTIVAZIONE — Biologia con Giulia" />
+<VideoVisto id="bio-u1-16" />
+
+## Da ricordare
+- Un enzima è un catalizzatore proteico: abbassa l'energia di attivazione e non viene consumato nella reazione.
+- Chinasi/fosfatasi, ubiquitinasi/deubiquitinasi, acetilasi/deacetilasi agiscono sempre in coppie opposte: una aggiunge un gruppo, l'altra lo toglie — il risultato è accendere o spegnere un processo cellulare.
+- Il sito attivo è specifico per il substrato: ogni enzima riconosce solo la sua molecola bersaglio, come una chiave che entra solo nella sua serratura.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione principale di un enzima?" opzioni={["Fornire energia per le reazioni cellulari","Abbassare l'energia di attivazione di una reazione","Trasportare ossigeno nel sangue","Formare nuovi legami covalenti tra gli amminoacidi"]} corretta={1} spiegazione="Gli enzimi sono catalizzatori biologici: accelerano le reazioni abbassando l'energia di attivazione. Non forniscono energia e non vengono consumati." />
+
+<Quiz domanda="Una chinasi aggiunge un gruppo fosfato a una proteina. Quale enzima compie l'azione opposta, rimuovendo quel fosfato?" opzioni={["Acetilasi","Ubiquitinasi","Fosfatasi","Deubiquitinasi"]} corretta={2} spiegazione="La fosfatasi rimuove il gruppo fosfato che la chinasi ha aggiunto. Chinasi e fosfatasi lavorano in coppia come interruttore ON/OFF per le proteine." />
+
+<Quiz domanda="Se un'acetilasi modifica gli istoni attorno a un gene, qual è l'effetto atteso sull'espressione di quel gene?" opzioni={["Il gene viene eliminato dal DNA","Il gene viene duplicato","Il DNA si allenta e il gene viene attivato (trascritto)","Il DNA si compatta e il gene viene silenziato"]} corretta={2} spiegazione="Le acetilasi aggiungono gruppi acetile agli istoni: il DNA si allenta e diventa accessibile, così il gene può essere letto (trascritto). In pratica il gene si accende." />
+
+<Esercizio problema="Una cellula ha una proteina difettosa che deve essere degradata. Elenca in ordine i passaggi che portano alla sua distruzione, usando i termini: ubiquitinasi, ubiquitina, proteasoma." soluzione="1) L'ubiquitinasi riconosce la proteina difettosa e le attacca una catena di ubiquitina (etichetta 'da buttare'). 2) La proteina marcata viene riconosciuta dal proteasoma. 3) Il proteasoma smonta la proteina in piccoli frammenti di amminoacidi che la cellula può riutilizzare." />
+
+</section>
+
+</RisorsaLayout>

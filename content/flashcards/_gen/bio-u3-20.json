@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u3-20-1",
+    "topicId": "bio-u3-20",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Il ribosoma produce una catena di aminoacidi dritta, come una collana. Poi la proteina deve piegarsi in una forma 3D precisa per funzionare. Cosa fa uno chaperone molecolare (es. Hsp70) durante questo processo?",
+    "choices": [
+      "Determina la forma finale della proteina, scrivendola come un progetto",
+      "Protegge la catena dall'aggregarsi con altre proteine mentre si sta ancora ripiegando",
+      "Sintetizza la proteina al posto del ribosoma",
+      "Degrada nel proteasoma la proteina appena sintetizzata"
+    ],
+    "answer": 1,
+    "explain": "Lo chaperone e come un bodyguard: non decide come la proteina deve essere fatta (quello lo decide la sequenza di aminoacidi), ma la 'scorta' durante il ripiegamento tenendola lontana dalle altre catene che potrebbero aggrovigliarla. La forma finale resta scritta nella sequenza stessa.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-20-2",
+    "topicId": "bio-u3-20",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Cosa succede a una proteina che si ripiega in modo scorretto (misfolding)? Cita almeno due possibili conseguenze e un esempio di malattia legata a questo meccanismo.",
+    "answer": "Una proteina mal ripiegata puo avere due destini principali. 1) Perdita di funzione: non riesce a svolgere il suo compito — esempio, nella fibrosi cistica una proteina canale (CFTR) mal ripiegata viene distrutta prima di arrivare alla membrana. 2) Aggregazione tossica: le proteine mal ripiegate si incollano tra loro formando ammassi insolubili che danneggiano le cellule — e il meccanismo alla base di Alzheimer (aggregati di tau e amiloide-beta) e Parkinson (aggregati di alfa-sinucleina). La cellula tenta di rimediare con il sistema ubiquitina-proteasoma: etichetta la proteina difettosa con ubiquitina e la manda al proteasoma, che la tritura in pezzi.",
+    "explain": "Misfolding = perdita di funzione OPPURE aggregati tossici. Sistema di controllo qualita: ubiquitina → proteasoma. Malattie da misfolding: Alzheimer, Parkinson, fibrosi cistica.",
+    "tags": ["risposta aperta"]
+  }
+]

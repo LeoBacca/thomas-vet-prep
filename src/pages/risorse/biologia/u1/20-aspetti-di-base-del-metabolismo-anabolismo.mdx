@@ -1,0 +1,133 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-20">
+
+## Cos'è il metabolismo?
+
+Il **metabolismo** è l'insieme di tutte le reazioni chimiche che avvengono dentro una cellula (e quindi dentro il tuo corpo). Pensa al metabolismo come al "traffico" di una città: ci sono auto che arrivano (portano materiali) e auto che partono (portano via rifiuti o prodotti).
+
+Queste reazioni si dividono in due grandi gruppi: **anabolismo** e **catabolismo**.
+
+---
+
+## Anabolismo: costruire
+
+**Anabolismo** significa costruire molecole grandi a partire da molecole piccole.
+
+- Esempio facile: prendi tanti mattoncini Lego piccoli e li assembli in un castello. Hai costruito qualcosa di grande.
+- In biologia: gli aminoacidi (piccoli) vengono uniti per formare le proteine (grandi).
+- Questa operazione **consuma energia** (ATP): hai bisogno di "pagare" per costruire.
+
+---
+
+## Catabolismo: demolire
+
+**Catabolismo** significa demolire molecole grandi in molecole più piccole.
+
+- Esempio facile: prendi il castello di Lego e lo smonti in tanti mattoncini.
+- In biologia: il glucosio (zucchero grande) viene spezzato in anidride carbonica e acqua durante la respirazione cellulare.
+- Questa operazione **libera energia** (ATP): quando smontate qualcosa si recupera carburante.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Anabolismo = costruisci e spendi energia. Catabolismo = demolisci e recuperi energia.</div>
+
+---
+
+## Condensazione e idrolisi: i meccanismi di base
+
+Le reazioni di anabolismo e catabolismo usano due meccanismi chimici fondamentali.
+
+### Condensazione (o reazione di disidratazione)
+
+La **condensazione** è la reazione che unisce due molecole creando un legame e **rilasciando una molecola d'acqua** come sottoprodotto.
+
+- Immagina due pezzi di creta che schiacci insieme: un po' di materiale fuoriesce (l'acqua), ma le due parti ora sono unite.
+- Viene usata nell'**anabolismo** per costruire polimeri: proteine, amido, DNA…
+
+### Idrolisi
+
+**Idrolisi** (dal greco: *hydro* = acqua, *lysis* = rottura) è la reazione opposta: si **aggiunge acqua** per spezzare un legame e separare due molecole.
+
+- Immagina di ammorbidire con acqua il pezzo di creta unito fino a staccarlo di nuovo.
+- Viene usata nel **catabolismo** per demolire polimeri: la digestione degli alimenti è idrolisi.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Condensazione = unisci due pezzi rilasciando acqua. Idrolisi = aggiungi acqua per spezzare il legame.</div>
+
+---
+
+## Schema generale
+
+<Diagram caption="Anabolismo e catabolismo: flusso di energia e materia" code={`flowchart TB
+  A["Molecole piccole<br/>(es. aminoacidi, glucosio)"]
+  B["Molecole grandi<br/>(es. proteine, amido)"]
+  A -->|"ANABOLISMO<br/>condensazione — consuma ATP"| B
+  B -->|"CATABOLISMO<br/>idrolisi — libera ATP"| A`} />
+
+<Diagram caption="Condensazione e idrolisi a livello molecolare" code={`flowchart LR
+  M1["Monomero A"] & M2["Monomero B"]
+  M1 -->|"condensazione<br/>— H2O"| L["Dimero A-B<br/>(legame formato)"]
+  L -->|"idrolisi<br/>+ H2O"| M1 & M2`} />
+
+---
+
+## Guarda il video
+<YouTube id="ww5nkq9CHug" title="Processi Anabolici e Catabolici - Il metabolismo cellulare in meno di 2 minuti" />
+<VideoVisto id="bio-u1-20" />
+
+## Da ricordare
+- **Anabolismo** = costruisce molecole grandi da piccole, consuma energia; usa la **condensazione** (si perde acqua).
+- **Catabolismo** = demolisce molecole grandi in piccole, libera energia; usa l'**idrolisi** (si aggiunge acqua).
+- Anabolismo e catabolismo sono complementari: l'energia liberata dal catabolismo alimenta l'anabolismo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale delle seguenti affermazioni descrive correttamente l'anabolismo?"
+  opzioni={[
+    "Demolisce le molecole grandi in molecole più piccole liberando energia",
+    "Costruisce molecole complesse a partire da molecole semplici consumando energia",
+    "Aggiunge acqua per rompere i legami chimici tra i monomeri",
+    "È sinonimo di digestione degli alimenti nell'intestino"
+  ]}
+  corretta={1}
+  spiegazione="L'anabolismo costruisce molecole grandi (es. proteine) a partire da molecole piccole (es. aminoacidi) e richiede energia (ATP). La demolizione appartiene al catabolismo."
+/>
+
+<Quiz
+  domanda="Nella reazione di condensazione, cosa viene rilasciato ogni volta che si forma un nuovo legame tra due monomeri?"
+  opzioni={[
+    "Una molecola di CO2",
+    "Una molecola di glucosio",
+    "Una molecola di H2O",
+    "Una molecola di ATP"
+  ]}
+  corretta={2}
+  spiegazione="La condensazione (detta anche reazione di disidratazione) forma un legame tra due monomeri rilasciando una molecola d'acqua (H2O). È il meccanismo alla base della sintesi di proteine, polisaccaridi e acidi nucleici."
+/>
+
+<Quiz
+  domanda="La digestione di un pezzo di pane nello stomaco e nell'intestino è un esempio di:"
+  opzioni={[
+    "Anabolismo tramite condensazione",
+    "Anabolismo tramite idrolisi",
+    "Catabolismo tramite condensazione",
+    "Catabolismo tramite idrolisi"
+  ]}
+  corretta={3}
+  spiegazione="La digestione rompe le molecole grandi dell'amido (polisaccaride) in glucosio (monomeri) aggiungendo acqua: è idrolisi. Poiché demolisce molecole complesse liberando energia, è un processo catabolico."
+/>
+
+<Esercizio
+  problema="Hai una proteina formata da 50 aminoacidi. Quante molecole d'acqua sono state rilasciate durante la sua sintesi per condensazione? E quante molecole d'acqua servono per idrolizzarla completamente?"
+  soluzione="Durante la sintesi (condensazione) si formano 49 legami peptidici (50 aminoacidi − 1 = 49 legami), quindi vengono rilasciate 49 molecole d'acqua. Per idrolizzare completamente la proteina nei 50 aminoacidi originali si devono rompere gli stessi 49 legami, quindi servono 49 molecole d'acqua."
+/>
+
+</section>
+
+</RisorsaLayout>

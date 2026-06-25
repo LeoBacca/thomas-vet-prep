@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u5-02-1",
+    "topicId": "bio-u5-02",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Versi una goccia di colorante in un bicchiere d'acqua e il colore si distribuisce da solo, senza che tu mescoli. In che direzione si muovono le molecole?",
+    "choices": [
+      "Da dove sono di meno verso dove sono di piu",
+      "Da dove sono di piu verso dove sono di meno (lungo il gradiente)",
+      "Restano ferme dove le hai messe",
+      "Si muovono solo se la cellula consuma ATP"
+    ],
+    "answer": 1,
+    "explain": "Questa e la diffusione semplice: le molecole si spostano spontaneamente da una zona ad alta concentrazione verso una a bassa concentrazione, cioe lungo il gradiente. Come l'acqua che scende da un piano alto, non serve energia: si muovono da sole.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-02-2",
+    "topicId": "bio-u5-02",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: nell'osmosi e l'acqua a muoversi, e va sempre verso il lato piu 'salato' (piu concentrato di soluti).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. L'osmosi e la diffusione della sola acqua: si sposta da dove c'e piu acqua (soluzione diluita, ipotonica) verso dove c'e meno acqua perche piena di soluti (ipertonica). E come il sale sulla fetta di cetriolo: l'acqua esce dal cetriolo e va verso il sale.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-02-3",
+    "topicId": "bio-u5-02",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Una proteina canale e una proteina carrier (trasportatrice) servono entrambe per la diffusione facilitata. Spiega con parole tue come funzionano e in cosa sono diverse.",
+    "answer": "Entrambe aiutano a far passare attraverso la membrana molecole che da sole non ce la farebbero (perche troppo grandi o polari), e nessuna delle due consuma ATP: la molecola segue comunque il gradiente. La proteina canale e come un tunnel fisso nella membrana: lascia passare velocemente ioni specifici (Na⁺, K⁺, Cl⁻), e puo essere sempre aperta o aprirsi solo su stimolo. La proteina carrier invece funziona come un taxi: la molecola si lega, la proteina cambia forma e la rilascia dall'altro lato; e piu lenta ma selettiva, ed e quella che trasporta molecole piu grandi come il glucosio (es. GLUT1 e GLUT4).",
+    "explain": "Differenza chiave: canale = tunnel, passaggio rapido di ioni; carrier = cambia forma, piu lento, per molecole polari come il glucosio. Nessuno dei due usa ATP.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-02-4",
+    "topicId": "bio-u5-02",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Immergi una foglia di insalata avvizzita in acqua dolce (soluzione ipotonica, poco concentrata). Subito alle sue cellule cosa succede?",
+    "choices": [
+      "Si sgonfiano perche l'acqua esce per plasmolisi",
+      "Si gonfiano perche l'acqua entra per osmosi",
+      "Non cambiano perche l'acqua entra ed esce in ugual misura",
+      "Scoppiano subito facendo uscire il citoplasma",
+      "Perdono i sali minerali contenuti nel citoplasma"
+    ],
+    "answer": 1,
+    "explain": "Fuori c'e piu acqua (ipotonica) che dentro la cellula, quindi per osmosi l'acqua entra e la cellula si gonfia: la foglia torna turgida. Trappole: 'si sgonfiano per plasmolisi' e l'esatto contrario (succede in ipertonica); 'non cambiano' sarebbe vero solo in soluzione isotonica; le cellule vegetali NON scoppiano perche la parete rigida le contiene; i sali che escono sono un'idea fuori tema, l'osmosi muove acqua, non sali.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-02-5",
+    "topicId": "bio-u5-02",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale di queste sostanze NON riesce ad attraversare liberamente la membrana da sola, ma ha bisogno di una proteina di trasporto?",
+    "choices": [
+      "Lo ione calcio (Ca²⁺)",
+      "L'ossigeno (O₂)",
+      "L'anidride carbonica (CO₂)",
+      "L'acqua, attraverso le acquaporine",
+      "L'azoto dell'aria che respiri"
+    ],
+    "answer": 0,
+    "explain": "Gli ioni come il Ca²⁺ sono carichi: non sgusciano tra i fosfolipidi e devono passare da canali proteici. O₂ e CO₂ sono piccole e apolari, quindi passano per diffusione semplice (sono l'opposto della risposta giusta, la trappola classica). L'acqua e davvero trasporto passivo, ma viene messa li per confondere: passa per osmosi tramite acquaporine. L'azoto dell'aria e un filler fuori tema, non c'entra con la domanda.",
+    "tags": ["prova d'esame"]
+  }
+]

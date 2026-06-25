@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u6-06-1",
+    "topicId": "bio-u6-06",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "mc",
+    "q": "Una cellula riceve un segnale dall'esterno (es. un ormone). Cosa succede PRIMA che la cellula risponda concretamente?",
+    "choices": [
+      "Il segnale entra direttamente nel nucleo e accende subito i geni",
+      "Il segnale viene convertito in una serie di reazioni interne — una cascata di proteine che si attivano l'una con l'altra — prima di produrre la risposta",
+      "Il segnale si lega al DNA e lo modifica direttamente",
+      "La cellula ignora il segnale finche non ne arrivano molti insieme"
+    ],
+    "answer": 1,
+    "explain": "La trasduzione del segnale e il processo in 3 fasi: ricezione (il recettore cattura il segnale), trasduzione (cascata di proteine che si attivano a catena, spesso tramite fosforilazione), risposta (azione concreta). E come un SMS: la vibrazione del telefono non ti fa alzare subito — tu la leggi, decidi, poi agisci. La cascata serve anche ad amplificare: un solo segnale esterno puo attivare centinaia di proteine.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u6-06-2",
+    "topicId": "bio-u6-06",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "open",
+    "q": "Cos'e un 'secondo messaggero' nella trasduzione del segnale? Fai un esempio e spiega perche e utile.",
+    "answer": "Un secondo messaggero e una piccola molecola prodotta all'interno della cellula che si diffonde rapidamente nel citoplasma e porta il segnale lontano dal recettore, amplificandolo. Il segnale originale (il ligando che arriva dall'esterno) e il 'primo messaggero'; le molecole che lo propagano dentro la cellula sono i 'secondi messaggeri'. Esempio classico: nella via della proteina G, quando un ormone si lega al recettore GPCR, la proteina G attiva l'enzima adenilato ciclasi, che produce tantissime molecole di cAMP (adenosina monofosfato ciclico). Questo cAMP e il secondo messaggero: attiva la proteina chinasi A (PKA), che a sua volta fosforila le proteine bersaglio producendo la risposta cellulare. Altri secondi messaggeri importanti: Ca²⁺ (ioni calcio) e IP3. Sono utili perche amplificano enormemente il segnale — un solo ormone puo generare migliaia di molecole di cAMP — e permettono alla cellula di rispondere in modo rapido e coordinato.",
+    "explain": "Secondo messaggero = molecola intracellulare che amplifica e diffonde il segnale. Esempio chiave: cAMP nella via della proteina G (adenilato ciclasi → cAMP → PKA).",
+    "tags": ["risposta aperta"]
+  }
+]

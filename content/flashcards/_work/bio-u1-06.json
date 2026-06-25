@@ -1,0 +1,53 @@
+{
+ "id": "bio-u1-06",
+ "titolo": "Il ciclo di un retrovirus e la trascrittasi inversa",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "06-il-ciclo-di-un-retrovirus-e",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/biologia/u1/06-il-ciclo-di-un-retrovirus-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Il \"dogma centrale\" della biologia sosteneva che l'informazione passa dal DNA all'RNA e da quest'ultimo alle proteine. Oggi è stato parzialmente rivisto, dal momento che:",
+   "choices": [
+    "l'informazione nei virus può passare dall'RNA al DNA",
+    "l'informazione nei procarioti è contenuta nelle proteine",
+    "l'informazione negli eucarioti passa sempre dalle proteine direttamente al DNA",
+    "la mutazione casuale di una proteina comporta un cambiamento anche nel DNA",
+    "la duplicazione del DNA comporta la duplicazione delle proteine"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2011",
+   "q": "Un individuo infettato dall'HIV, se trattato con gli specifici farmaci antivirali:",
+   "choices": [
+    "può trasmettere il virus già pochi giorni dopo l'avvenuta infezione",
+    "può trasmettere il virus solo dopo che siano comparsi i sintomi",
+    "non può trasmettere il virus",
+    "trasmette il virus solo se sospende la terapia",
+    "può trasmettere il virus solo dopo essere divenuto sieropositivo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2020",
+   "q": "Qual è la caratteristica fondamentale dei retrovirus?",
+   "choices": [
+    "Avere un genoma costituito da RNA",
+    "Avere un genoma costituito da DNA",
+    "Non possedere trascriptasi inversa",
+    "Essere dotati di flagelli per il movimento",
+    "Non essere in grado di infettare le cellule animali"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

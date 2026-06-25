@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-13-1",
+    "topicId": "chim-u1-13",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: quando due atomi si legano, la loro energia diminuisce e diventano piu stabili.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Formare un legame significa 'scendere nella valle': l'energia del sistema diminuisce e gli atomi raggiungono una situazione piu stabile. Come una biglia che rotola dal cima di una salita fino al fondo della valle, dove si ferma e sta comoda.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-13-2",
+    "topicId": "chim-u1-13",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Due atomi si avvicinano sempre di piu. Cosa succede all'energia del sistema quando si avvicinano TROPPO, oltre la distanza ideale di legame?",
+    "choices": [
+      "L'energia continua a scendere: piu vicini, piu stabili",
+      "L'energia rimane costante: non cambia piu nulla",
+      "L'energia risale di colpo, perche i due nuclei positivi si respingono",
+      "Gli atomi si fondono in uno solo, azzerando l'energia"
+    ],
+    "answer": 2,
+    "explain": "Ogni nucleo ha carica positiva: se due nuclei si avvicinano troppo si respingono con forza (cariche uguali si respingono). Questo fa risalire l'energia. Esiste quindi una distanza 'giusta' — la lunghezza di legame — dove l'energia e al minimo: ne troppo lontani, ne troppo vicini.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-13-3",
+    "topicId": "chim-u1-13",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega, usando l'analogia della biglia e della valle, perche formare un legame chimico libera energia, mentre spezzarlo richiede energia.",
+    "answer": "Una biglia in cima a una salita ha tanta energia: e in una posizione 'scomoda' e al minimo tocco rotola giu. Quando arriva in fondo alla valle, perde energia e si ferma: e stabile. Allo stesso modo, due atomi separati sono come la biglia in cima: hanno energia alta e sono 'scomodi'. Quando si avvicinano e si legano, scendono verso il minimo di energia, e l'energia in eccesso viene liberata (sotto forma di calore o luce). Questo e il motivo per cui formare un legame LIBERA energia. Per spezzare il legame bisogna fare il percorso inverso: si deve risalire la valle, cioe FORNIRE energia dall'esterno. Nella biologia questo conta sempre: quando il corpo brucia lo zucchero rompe e riforma legami, e dall'energia liberata ricava il carburante per muoversi, respirare e battere il cuore.",
+    "explain": "Chiave: legame formato → energia liberata (discesa nella valle). Legame rotto → energia assorbita (risalita). La lunghezza di legame e la distanza al fondo della valle (minimo di energia).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-13-4",
+    "topicId": "chim-u1-13",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sui legami chimici e FALSA?",
+    "choices": [
+      "I legami chimici possono formarsi solo tra sostanze allo stato liquido",
+      "I legami chimici possono formarsi tra atomi di carbonio",
+      "I legami chimici possono formarsi tra atomi diversi tra loro",
+      "I legami chimici possono essere di tipo covalente polare",
+      "I legami chimici caratterizzano tutti i composti chimici"
+    ],
+    "answer": 0,
+    "explain": "La frase FALSA e la prima: i legami chimici si formano in qualsiasi stato della materia (solido, liquido, gassoso), non solo nei liquidi. Il diamante e un solido fatto di atomi di carbonio legati tra loro; il ghiaccio e un solido con legami tra acqua e acqua. Le altre quattro sono tutte vere: il carbonio si lega a se stesso (pensa al DNA e alle proteine), atomi diversi si legano tra loro (H2O, CO2), esistono legami covalenti polari (H2O), e ogni composto chimico per definizione ha legami. La trappola principale e credere che lo stato fisico limiti la possibilita di formare legami.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-13-5",
+    "topicId": "chim-u1-13",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Nella curva dell'energia di due atomi che si avvicinano, il punto di minima energia corrisponde a:",
+    "choices": [
+      "Gli atomi infinitamente lontani, dove l'energia e quasi zero",
+      "La distanza ideale di legame, dove il legame e stabile",
+      "La situazione in cui i nuclei si toccano e si fondono",
+      "Il momento in cui l'energia e massima e il legame si spezza",
+      "Una distanza qualsiasi: l'energia non dipende dalla distanza tra gli atomi"
+    ],
+    "answer": 1,
+    "explain": "Il minimo della curva e il 'fondo della valle': e la distanza di legame, il punto piu stabile. Trappole: 'infinitamente lontani' ha energia circa zero, non il minimo (che e negativo, sotto zero); 'i nuclei si fondono' sarebbe troppo vicini, dove invece l'energia risale per la repulsione tra nuclei positivi; 'energia massima' e l'opposto esatto di quello che accade al legame. La quinta opzione e completamente sbagliata: l'energia dipende eccome dalla distanza, ed e proprio questa dipendenza che definisce la lunghezza di legame.",
+    "tags": ["prova d'esame"]
+  }
+]

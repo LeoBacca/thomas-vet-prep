@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-chim-u6-07-1",
+    "topicId": "chim-u6-07",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Nel gruppo carbonile (C=O) di un'aldeide, il carbonio attrae le molecole ricche di elettroni (nucleofili). Perche?",
+    "choices": [
+      "Perche l'ossigeno tira gli elettroni verso di se, lasciando il carbonio leggermente positivo",
+      "Perche il carbonio ha troppi elettroni e vuole liberarsene",
+      "Perche l'ossigeno e negativo e respinge gli altri atomi",
+      "Perche il doppio legame C=O e completamente apolare"
+    ],
+    "answer": 0,
+    "explain": "L'ossigeno e 'egoista': attira gli elettroni del doppio legame verso di se, come una calamita. Cosi il carbonio resta scoperto, leggermente positivo, e attira i nucleofili (molecole ricche di elettroni). E come un cassetto vuoto che attira chi ha roba da mettere dentro.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-07-2",
+    "topicId": "chim-u6-07",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "open",
+    "q": "Un'aldeide reagisce prima con una molecola di alcol, poi con una seconda. Che prodotto si forma in ogni passo? E cosa succede invece se al posto dell'alcol arriva un'ammina?",
+    "answer": "Primo passo (1 alcol): si forma un EMIACETALE. 'Emi' vuol dire meta: il carbonio del carbonile ora ha un OH e un gruppo dell'alcol attaccati. E una struttura a meta strada. Secondo passo (2° alcol): l'OH se ne va come acqua e arriva il secondo gruppo dell'alcol: si forma un ACETALE, con due gruppi dell'alcol sullo stesso carbonio. Se arriva un'AMMINA al posto dell'alcol: l'azoto si lega al carbonio, poi esce una molecola d'acqua e si forma un nuovo doppio legame carbonio-azoto (C=N). Questo prodotto si chiama IMMINA (o base di Schiff). Riassunto: alcol → emiacetale → acetale (con ossigeno); ammina → immina (con azoto, esce acqua).",
+    "explain": "Da ricordare: 1 alcol = emiacetale; 2 alcoli = acetale; 1 ammina = immina (C=N) + acqua. Gli zuccheri si chiudono ad anello come emiacetali interni; amido e cellulosa hanno legami acetalici.",
+    "tags": ["risposta aperta"]
+  }
+]

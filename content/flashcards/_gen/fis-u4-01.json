@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u4-01-1",
+    "topicId": "fis-u4-01",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: quando un'onda meccanica (come quella sulla superficie dell'acqua) si propaga, sposta la materia da un posto all'altro.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'onda trasporta ENERGIA, non materia. Pensa al sasso nello stagno: i cerchi si espandono verso la riva, ma l'acqua oscilla su e giù sul posto e non si sposta verso la riva. La materia serve come 'trampolino', ma non viaggia con l'onda.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u4-01-2",
+    "topicId": "fis-u4-01",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Un peso attaccato a una molla viene tirato verso il basso e poi lasciato andare. La forza che lo riporta verso il centro (la 'forza di richiamo') è descritta da F = −k·x. Cosa significa il segno meno?",
+    "choices": [
+      "La forza punta sempre verso il centro, cioè nella direzione opposta allo spostamento",
+      "La forza è sempre negativa, quindi il peso scende sempre verso il basso",
+      "La forza di richiamo è assente quando il peso è al centro",
+      "Il peso rallenta solo quando si avvicina al punto di equilibrio"
+    ],
+    "answer": 0,
+    "explain": "Il segno meno dice che la forza e lo spostamento sono in direzione opposta: se spingi il peso verso il basso (x positivo verso il basso), la forza lo spinge verso l'alto (direzione opposta), e viceversa. È come un elastico: piu lo tiri, piu vuole tornare. Questa forza 'che richiama sempre verso il centro' è ciò che crea l'oscillazione regolare del moto armonico semplice.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u4-01-3",
+    "topicId": "fis-u4-01",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra un'onda trasversale e un'onda longitudinale. Fai un esempio concreto per ciascuna.",
+    "answer": "In un'onda TRASVERSALE la materia oscilla in direzione PERPENDICOLARE (ad angolo retto) rispetto alla direzione in cui viaggia l'onda. Esempio: una corda agitata su e giù — l'onda avanza in orizzontale lungo la corda, ma ogni pezzo di corda si muove su e giù. In un'onda LONGITUDINALE la materia oscilla nella STESSA direzione in cui viaggia l'onda. Esempio: il suono nell'aria — le molecole d'aria si comprimono e si rarefanno proprio nella stessa direzione in cui il suono si propaga. Trucco per ricordare: trasversale = la materia va di traverso rispetto al cammino dell'onda; longitudinale = la materia va nella stessa direzione del cammino dell'onda.",
+    "explain": "Chiave: trasversale = oscillazione perpendicolare alla propagazione (es. corda); longitudinale = oscillazione parallela alla propagazione (es. suono).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u4-01-4",
+    "topicId": "fis-u4-01",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Due lampadari di una cattedrale, uno pesante e uno leggero, sono appesi a catene di lunghezza diversa. Il sacrestano li fa oscillare leggermente e cronometra i loro periodi. Cosa può concludere?",
+    "choices": [
+      "I periodi dipendono dalla lunghezza delle catene: la catena più lunga ha il periodo maggiore",
+      "I periodi dipendono dal peso dei lampadari: il più pesante oscilla più lentamente",
+      "I periodi dipendono sia dalla lunghezza delle catene sia dal peso dei lampadari",
+      "I periodi dipendono dalla forma e dal peso dei lampadari",
+      "I periodi dipendono solo dalla spinta iniziale con cui li ha messi in moto"
+    ],
+    "answer": 0,
+    "explain": "Un lampadario appeso a una catena si comporta come un pendolo. Il periodo di un pendolo dipende SOLO dalla lunghezza del filo (e da g, l'accelerazione di gravità), NON dal peso né dalla forma né dalla spinta iniziale (purché le oscillazioni siano piccole). Catena più lunga = periodo più lungo. Trappola 'peso': è l'errore più comune — istintivamente si pensa che il lampadario più pesante oscilli più lento, ma non è così; massa e peso si cancellano nell'equazione. Trappola 'spinta iniziale': cambia l'ampiezza (quanto si allontana dal centro), non il tempo di ogni oscillazione. Trappola 'forma': irrilevante per il periodo.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u4-01-5",
+    "topicId": "fis-u4-01",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sulle onde meccaniche è FALSA?",
+    "choices": [
+      "Le onde meccaniche hanno bisogno di un mezzo materiale (solido, liquido o gas) per propagarsi",
+      "Un'onda meccanica trasporta energia senza spostare la materia in modo permanente",
+      "Le onde meccaniche si propagano anche nel vuoto, come la luce",
+      "Il suono è un esempio di onda meccanica longitudinale",
+      "Un'onda nasce da una sorgente di disturbo che mette in moto il mezzo"
+    ],
+    "answer": 2,
+    "explain": "L'affermazione FALSA è che le onde meccaniche si propagano nel vuoto: NON possono, perché hanno bisogno di un mezzo materiale (acqua, aria, solido) per trasmettere il disturbo. Le onde luminose (elettromagnetiche) sì che viaggiano nel vuoto, ma sono un altro tipo di onda. Trappola 'mezzo materiale': è vera, non è la risposta; chi la segna sbaglia perché è la definizione corretta. Trappola 'suono longitudinale': è vera; nel suono le molecole d'aria oscillano nella stessa direzione del suono. Trappola 'sorgente di disturbo': anche questa è vera, è uno dei due ingredienti dell'onda meccanica.",
+    "tags": ["prova d'esame"]
+  }
+]

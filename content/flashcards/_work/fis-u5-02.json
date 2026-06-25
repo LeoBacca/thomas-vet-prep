@@ -1,0 +1,39 @@
+{
+ "id": "fis-u5-02",
+ "titolo": "Temperatura, scale di misura e gas perfetti (equazione di stato)",
+ "materia": "fisica",
+ "unita": 5,
+ "slug": "02-temperatura-scale-di-misura-e-gas",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/fisica/u5/02-temperatura-scale-di-misura-e-gas.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Un cilindro contiene gas perfetto mantenuto a temperatura costante T. Se il suo volume viene ridotto lentamente fino a raggiungere la metà del valore iniziale:",
+   "choices": [
+    "la pressione esercitata dal gas si raddoppia",
+    "anche la pressione esercitata dal gas si dimezza",
+    "la pressione esercitata dal gas resta costante",
+    "la temperatura interna aumenta",
+    "la temperatura interna diminuisce"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2010",
+   "q": "Una certa quantità di gas perfetto subisce, a partire da uno stato di equilibrio, una trasformazione irreversibile generica, sino a un nuovo stato di equilibrio, caratterizzato da un volume doppio rispetto a quello iniziale e da una pressione pari a metà di quella iniziale. Cosa possiamo dire della temperatura nello stato di equilibrio finale?",
+   "choices": [
+    "Dato che la temperatura è un parametro di stato e vale la legge dei gas perfetti, la temperatura finale è uguale a quella iniziale",
+    "Non possiamo dire nulla, perché la trasformazione è irreversibile",
+    "Dato che il sistema si è espanso, la temperatura finale è sicuramente inferiore a quella iniziale",
+    "Dato che abbiamo una generica trasformazione irreversibile, la temperatura finale è maggiore di quella iniziale",
+    "Sarebbe necessario specificare meglio come avviene la trasformazione, uscendo dalla genericità"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

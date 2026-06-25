@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-chim-u5-02-1",
+    "topicId": "chim-u5-02",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Nella formula a scheletro (lo zig-zag che vedi sui libri di medicina), cosa rappresenta ogni angolo o estremita della linea?",
+    "choices": [
+      "Un atomo di idrogeno",
+      "Un atomo di carbonio (anche se la lettera C non e scritta)",
+      "Un legame doppio tra due atomi",
+      "Un atomo di ossigeno"
+    ],
+    "answer": 1,
+    "explain": "Nella formula a scheletro ogni angolo e ogni estremita della linea spezzata e un carbonio nascosto. Gli idrogeni sui carboni si danno per sottintesi e non si disegnano: come l'aria, ci sono ma non li vedi. Si scrivono solo gli atomi 'speciali' come O, N, Cl.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-02-2",
+    "topicId": "chim-u5-02",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "open",
+    "q": "Descrivi i tre modi di scrivere la stessa molecola organica (formula estesa, condensata e a scheletro). Usa l'etanolo (CH3-CH2-OH) come esempio e spiega cosa si vede e cosa si nasconde in ciascun tipo.",
+    "answer": "I tre modi sono: 1) ESTESA — disegni ogni singolo atomo (C, H, O) e ogni legame come un trattino. E la piu dettagliata: si vede tutto, come una foto di gruppo in cui riconosci ogni persona. 2) CONDENSATA — i trattini verso gli idrogeni scompaiono: scrivi quanti H ha ogni carbonio con un numerino, es. CH3-CH2-OH. E come scrivere '3 mele, 2 pere' invece di disegnare ogni frutto. 3) A SCHELETRO (zig-zag) — ogni angolo e ogni estremita della linea e un carbonio (la lettera C non si scrive); gli idrogeni sui carboni non si disegnano affatto; si scrivono solo gli atomi diversi da C e H (come l'O del gruppo OH nell'etanolo). E il modo usato in medicina per disegnare velocemente molecole grandi come ormoni e farmaci.",
+    "explain": "Stessa molecola, tre 'livelli di zoom': estesa (tutto visibile), condensata (H raggruppati), scheletro (C e H impliciti, solo gli altri atomi scritti).",
+    "tags": ["risposta aperta"]
+  }
+]

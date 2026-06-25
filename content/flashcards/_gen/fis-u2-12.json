@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u2-12-1",
+    "topicId": "fis-u2-12",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: se spingi un muro con tutta la tua forza ma il muro non si sposta, dal punto di vista della fisica hai compiuto lavoro meccanico.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. In fisica il lavoro richiede SEMPRE due cose insieme: una forza E uno spostamento nella direzione di quella forza. Se l'oggetto non si muove (d = 0), il lavoro e zero — anche se hai sudato tantissimo. Pensa all'equazione: W = F x d x cos(θ). Se d = 0, qualunque cosa moltiplichi, il risultato e 0.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-12-2",
+    "topicId": "fis-u2-12",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Porti una borsa della spesa camminando in piano: la forza che la tieni sollevata e diretta verso l'alto (per bilanciare il peso), mentre il tuo spostamento e orizzontale. Quanto lavoro compie questa forza sulla borsa, e perche? Usa la formula W = F x d x cos(θ).",
+    "answer": "Il lavoro compiuto dalla forza che tiene sollevata la borsa e zero (W = 0). Ecco perche: la forza e diretta verso l'alto (verticale) mentre lo spostamento e orizzontale. L'angolo θ tra la direzione della forza e la direzione dello spostamento e quindi 90°. Nella formula W = F x d x cos(θ) si ha cos(90°) = 0, quindi W = F x d x 0 = 0 J. Nonostante tu stia reggendo la borsa e camminando, quella forza specifica non compie lavoro meccanico sulla borsa, perche non contribuisce allo spostamento orizzontale.",
+    "explain": "Chiave: forza perpendicolare allo spostamento → cos(90°) = 0 → W = 0. Il lavoro e zero non perche la forza e zero, ma perche l'angolo e 90°.",
+    "tags": ["risposta aperta"]
+  }
+]

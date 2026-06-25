@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u2-05-1",
+    "topicId": "chim-u2-05",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: secondo la legge di Henry, se aumenti la pressione del gas sopra un liquido, la quantita di gas disciolto nel liquido aumenta proporzionalmente.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. La legge di Henry dice proprio questo: C = k x P. Pressione e gas disciolto vanno di pari passo (sono proporzionali): raddoppi la pressione, raddoppia il gas che entra nel liquido. E' il meccanismo della bottiglia gassata chiusa e, in biologia, di come l'ossigeno entra nel sangue nei polmoni.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-05-2",
+    "topicId": "chim-u2-05",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quando apri una bottiglia di bibita gassata senti il 'psss' e vedi le bollicine. Qual e la spiegazione corretta secondo la legge di Henry?",
+    "choices": [
+      "La pressione sopra il liquido crolla: il liquido non riesce piu a tenere tutto il gas disciolto, che scappa formando le bollicine",
+      "La pressione sopra il liquido aumenta: il gas si scioglie ancora di piu e poi fuoriesce violentemente",
+      "Entra aria dall'esterno che spinge il gas verso l'alto",
+      "Il liquido si riscalda improvvisamente e libera il gas"
+    ],
+    "answer": 0,
+    "explain": "Tappo chiuso = alta pressione del gas = tanta CO2 tenuta disciolta nel liquido (legge di Henry: C = k x P). Apri il tappo = la pressione crolla a quella dell'aria normale = il liquido non ce la fa piu a tenere tutto quel gas = la CO2 in eccesso scappa come bollicine. In veterinaria e medicina lo stesso principio spiega perche i sub devono risalire lentamente: se la pressione cala troppo in fretta, l'azoto nel sangue forma bollicine pericolose.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-05-3",
+    "topicId": "chim-u2-05",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega con parole tue perche in alta montagna ci si stanca prima e si fa fatica a respirare. Usa la legge di Henry nel ragionamento.",
+    "answer": "In alta montagna l'aria contiene sempre circa il 21% di ossigeno, ma la pressione totale dell'aria e molto piu bassa rispetto al livello del mare. Di conseguenza anche la pressione parziale dell'ossigeno (la 'spinta' che l'ossigeno esercita sopra il sangue nei polmoni) e piu bassa. Per la legge di Henry (C = k x P), meno pressione significa meno gas che si scioglie: quindi meno ossigeno riesce a dissolversi nel sangue. Con meno ossigeno che arriva ai muscoli e al cervello, il corpo si stanca prima e si sente il fiato corto. E' lo stesso principio per cui la bibita aperta diventa sgasata: meno pressione del gas sopra il liquido, meno gas rimane disciolto dentro.",
+    "explain": "Da ricordare: pressione O2 piu bassa in quota → meno O2 si scioglie nel sangue (legge di Henry) → meno O2 ai tessuti → fatica e fiato corto.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u2-05-4",
+    "topicId": "chim-u2-05",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quale tra le seguenti affermazioni sulla solubilita dei gas nei liquidi NON e corretta?",
+    "choices": [
+      "La solubilita dei gas nei liquidi generalmente aumenta all'aumentare della temperatura",
+      "In acqua a 20 °C la solubilita di CO2 e maggiore di quella di O2",
+      "La solubilita di alcuni solidi nei liquidi diminuisce all'aumentare della temperatura",
+      "La solubilita di una sostanza in un solvente si riferisce alla soluzione satura",
+      "In acqua a 20 °C la solubilita di N2 e minore di quella di O2"
+    ],
+    "answer": 0,
+    "explain": "L'affermazione FALSA e la prima: la solubilita dei gas nei liquidi NON aumenta con la temperatura, fa il CONTRARIO: diminuisce quando si scalda il liquido (il gas 'scappa' piu facilmente dal liquido caldo, come le bollicine che si formano piu velocemente nell'acqua calda). Questo e l'opposto di cio che succede con molti solidi (es. lo zucchero si scioglie meglio nell'acqua calda). Le altre affermazioni sono tutte corrette: la CO2 e davvero piu solubile dell'O2 in acqua (grazie anche a interazioni chimiche con l'acqua); alcuni solidi si sciolgono meno al calore (es. certi sali); la solubilita si riferisce alla soluzione satura; e N2 e meno solubile di O2 in acqua. Trappola classica: confondere gas con solidi nel loro comportamento con la temperatura.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u2-05-5",
+    "topicId": "chim-u2-05",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "La solubilita di un gas in una soluzione acquosa dipende da quale fattore?",
+    "choices": [
+      "Dipende dal volume del liquido in cui il gas e disciolto",
+      "Viene modulata dalla temperatura del liquido",
+      "Non dipende dalle interazioni chimiche del gas con le molecole del solvente",
+      "Non dipende dai legami deboli che si formano tra solvente e soluto",
+      "E uguale per tutti i gas in uno stesso solvente"
+    ],
+    "answer": 1,
+    "explain": "La risposta corretta e che la temperatura modula la solubilita del gas: piu e alta la temperatura, meno il gas rimane disciolto (i gas 'fuggono' dal liquido caldo). Trappola 'dipende dal volume': e falsa, la solubilita e una proprieta intensiva (non cambia se hai un bicchiere o una vasca di liquido, e espressa come concentrazione). Trappola 'non dipende dalle interazioni chimiche': e falsa e ingannevole — le interazioni chimiche contano eccome (la CO2 reagisce con l'acqua formando acido carbonico, per questo si scioglie molto piu dell'O2; O2 e N2 invece si sciolgono solo fisicamente). Trappola 'non dipende dai legami deboli': anche i legami deboli tra gas e solvente influenzano la solubilita. Trappola 'uguale per tutti i gas': e un filler fuori tema, ogni gas ha la sua costante k diversa.",
+    "tags": ["prova d'esame"]
+  }
+]

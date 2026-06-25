@@ -1,0 +1,25 @@
+{
+ "id": "fis-u6-01",
+ "titolo": "Carica elettrica e legge di Coulomb",
+ "materia": "fisica",
+ "unita": 6,
+ "slug": "01-carica-elettrica-e-legge-di-coulomb",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u6/01-carica-elettrica-e-legge-di-coulomb.mdx",
+ "examQuestions": [
+  {
+   "year": "2021Agg",
+   "q": "Due sfere cariche a distanza di 3 m si attraggono con una forza di modulo 1 N. Se le sfere vengono portate a distanza di 1 m, quale forza si eserciterà tra di loro?",
+   "choices": [
+    "9 N",
+    "6 N",
+    "3 N",
+    "1 N",
+    "Nessuna delle altre risposte è corretta"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

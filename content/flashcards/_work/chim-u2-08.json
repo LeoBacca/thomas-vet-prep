@@ -1,0 +1,39 @@
+{
+ "id": "chim-u2-08",
+ "titolo": "Il concetto di equivalente in ambito biomedico",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "08-il-concetto-di-equivalente-in-ambito",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u2/08-il-concetto-di-equivalente-in-ambito.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Maggio",
+   "q": "È possibile neutralizzare 25 mL di soluzione 0,04 M di KOH utilizzando:",
+   "choices": [
+    "50 mL di soluzione di H2SO4 0,01M",
+    "50 mL di soluzione di H2SO4 0,04M",
+    "25 mL di soluzione di H2SO4 0,04M",
+    "10 mL di soluzione di HCl 0,02M",
+    "50 mL di soluzione di HCl 0,01M"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Il numero di equivalenti di soluto in 1 litro di soluzione viene detto:",
+   "choices": [
+    "Normalità",
+    "Molarità",
+    "Molalità",
+    "Concentrazione percentuale in massa",
+    "Concentrazione percentuale in volume"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

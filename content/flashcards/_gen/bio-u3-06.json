@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u3-06-1",
+    "topicId": "bio-u3-06",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: tutto il DNA di una cellula contiene geni, cioè istruzioni per costruire proteine.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Solo una parte del DNA è 'gene' (sequenza con istruzioni). Molta parte del DNA è non codificante: spaziatori, sequenze regolatrici, o tratti ancora poco compresi. Pensa al libro di ricette: non ogni pagina è una ricetta.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-06-2",
+    "topicId": "bio-u3-06",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "In un gene eucariotico (come quelli del tuo cane) la sequenza codificante è interrotta da pezzi inutili che devono essere rimossi prima che l'mRNA esca dal nucleo. Come si chiamano questi pezzi 'di scarto'?",
+    "choices": [
+      "Introni",
+      "Esoni",
+      "Operoni",
+      "Promotori"
+    ],
+    "answer": 0,
+    "explain": "Gli INTRONI sono le sequenze non codificanti intercalate negli esoni. Vengono trascritti nell'mRNA grezzo ma poi eliminati dallo splicing nel nucleo. Restano solo gli ESONI (la parte codificante). Operone e promotore sono strutture diverse: l'operone è un gruppo di geni batterici, il promotore è la zona di inizio trascrizione.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-06-3",
+    "topicId": "bio-u3-06",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Spiega la differenza tra un mRNA monocistronico e uno policistronico. In quale tipo di organismo si trova ciascuno, e perché?",
+    "answer": "Un mRNA MONOCISTRONICO porta le istruzioni per UNA SOLA proteina. È tipico degli eucarioti (cellule con nucleo, come le nostre o quelle dei cani): ogni gene ha il proprio promotore separato, viene trascritto individualmente e, dopo splicing, capping e poliadenilazione, produce un unico trascritto maturo destinato a una sola proteina. Un mRNA POLICISTRONICO porta le istruzioni per PIÙ PROTEINE nello stesso trascritto. È tipico dei procarioti (batteri, senza nucleo): più geni correlati sono raggruppati in un operone, condividono un unico promotore e vengono trascritti insieme in un unico lungo mRNA. Questo è efficiente: con un solo segnale 'accendi' o 'spegni', il batterio regola più enzimi della stessa via metabolica in una volta sola.",
+    "explain": "Chiave: monocistronico = eucarioti (un gene, un promotore, una proteina); policistronico = procarioti/operone (più geni, un promotore, più proteine).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-06-4",
+    "topicId": "bio-u3-06",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "I geni che codificano per proteine negli eucarioti differiscono da quelli dei procarioti perché soltanto i primi:",
+    "choices": [
+      "Contengono introni (sequenze non codificanti intercalate agli esoni)",
+      "Sono composti da DNA a doppia elica",
+      "Possiedono un promotore per l'inizio della trascrizione",
+      "Vengono trascritti in molecole di RNA",
+      "Vengono duplicati dall'enzima DNA polimerasi"
+    ],
+    "answer": 0,
+    "explain": "La risposta corretta è che SOLO i geni eucariotici contengono introni. Le trappole: 'DNA a doppia elica' — FALSO come discriminante: ENTRAMBI (procarioti ed eucarioti) hanno DNA a doppia elica. 'Promotore' — FALSO: anche i geni batterici hanno un promotore (è la zona dove si attacca la RNA polimerasi). 'Trascritti in RNA' — FALSO: la trascrizione avviene in tutti i viventi. 'Duplicati dalla DNA polimerasi' — FALSO: la replicazione con DNA polimerasi è universale. L'unica caratteristica ESCLUSIVA degli eucarioti è la presenza degli introni.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-06-5",
+    "topicId": "bio-u3-06",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Nei batteri, trascrizione (produzione di mRNA dal DNA) e traduzione (produzione di proteina dall'mRNA) possono avvenire CONTEMPORANEAMENTE nello stesso posto. Quale affermazione spiega CORRETTAMENTE perché questo NON è possibile nelle cellule eucariotiche?",
+    "choices": [
+      "Negli eucarioti il DNA sta nel nucleo e i ribosomi stanno nel citoplasma: l'mRNA deve prima essere processato e poi attraversare la membrana nucleare",
+      "Negli eucarioti manca la RNA polimerasi, quindi la trascrizione non parte mai dal DNA",
+      "Nei batteri la trascrizione e la traduzione avvengono in compartimenti separati, mentre negli eucarioti no",
+      "Negli eucarioti l'mRNA non viene mai tradotto in proteina",
+      "Nei batteri esistono gli introni, che rallentano la traduzione e la rendono separata dalla trascrizione"
+    ],
+    "answer": 0,
+    "explain": "La risposta corretta: negli eucarioti c'è una separazione fisica — DNA nel nucleo, ribosomi nel citoplasma. L'mRNA grezzo deve prima subire lo splicing (rimozione introni), il capping e la poliadenilazione nel nucleo, poi uscire nel citoplasma: impossibile tradurre mentre si trascrive ancora. Trappola 1: 'manca la RNA polimerasi' — falso, gli eucarioti ce l'hanno (ne hanno persino 3 tipi diversi). Trappola 2: 'nei batteri compartimenti separati' — è l'INVERSO: sono i batteri ad avere tutto nel citoplasma (niente nucleo). Trappola 3: 'mRNA eucariotico non tradotto' — palesemente falso. Trappola 4: 'nei batteri ci sono gli introni' — falso, gli introni sono tipici degli eucarioti, non dei batteri.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,99 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-04">
+
+Hai presente il sale da cucina? Se lo metti in un bicchiere d'acqua, sparisce: si scioglie. Ma qui succede una cosa speciale. Il sale non si limita a "nascondersi" nell'acqua: si **spezza in due pezzettini carichi di elettricità**. Questi pezzettini si chiamano **ioni**. Le sostanze che, sciolte in acqua, si spezzano in ioni si chiamano **elettroliti**. E sono fondamentali per farti vivere: il tuo corpo è pieno di acqua salata, ed è proprio grazie agli elettroliti che il cuore batte e i muscoli si muovono.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un elettrolita è un sale (o simile) che, appena tocca l'acqua, si rompe in due particelle cariche dette ioni. Una carica positiva (+) e una negativa (−). Quegli ioni rendono l'acqua capace di trasportare la corrente elettrica.</div>
+
+## Cosa succede quando il sale si scioglie
+
+Il sale da cucina si chiama **cloruro di sodio**, e in chimica si scrive **NaCl**. È fatto da due "mattoncini" tenuti insieme: il **sodio (Na)** e il **cloro (Cl)**.
+
+Quando lo butti in acqua, l'acqua li separa. Il sodio se ne va da una parte con una carica **positiva** (lo scriviamo **Na+**). Il cloro se ne va dall'altra parte con una carica **negativa** (lo scriviamo **Cl−**). Questo "separarsi in ioni" si chiama **dissociazione**.
+
+Pensa a una coppia che si tiene per mano in mezzo alla folla: appena entrano in una piazza affollata (l'acqua), la folla li separa e ognuno va per conto suo. Il sale fa lo stesso.
+
+<Diagram caption="Il sale (NaCl) in acqua si spezza in due ioni che poi conducono la corrente" code={`flowchart LR
+  S["Sale<br/>NaCl (solido)"] -->|"in acqua"| D["Si dissocia"]
+  D --> P["Ione Na+<br/>(carica positiva)"]
+  D --> N["Ione Cl−<br/>(carica negativa)"]
+  P --> C["Gli ioni si muovono<br/>e conducono la corrente"]
+  N --> C`} />
+
+## Perché l'acqua salata conduce la corrente
+
+L'acqua pura, da sola, conduce la corrente molto male. Ma appena ci sciogli del sale, la situazione cambia: ora dentro ci sono tanti ioni, cioè tante particelle cariche **libere di muoversi**.
+
+La corrente elettrica non è altro che **cariche che si spostano**. Gli ioni positivi corrono verso un lato, quelli negativi verso l'altro: ecco che la corrente passa. Per questo questi sali si chiamano "elettro-liti": perché rendono l'acqua capace di portare l'**elettricità**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> niente ioni → niente corrente. Tanti ioni che si muovono → la corrente passa. Gli ioni sono come tante piccole staffette che si passano l'elettricità.</div>
+
+<Diagram caption="Senza ioni la corrente non passa, con gli ioni sì" code={`flowchart TB
+  A["Acqua pura<br/>(pochissimi ioni)"] --> B["Conduce male<br/>la corrente"]
+  C["Acqua + sale<br/>(tanti ioni Na+ e Cl−)"] --> E["Conduce bene<br/>la corrente"]`} />
+
+## Gli elettroliti nel tuo corpo
+
+Ecco la parte che ti riguarda da vicino, anche da futuro veterinario. Il sangue, il sudore, le lacrime e i liquidi dentro le cellule sono tutti, in pratica, **acqua con dentro degli ioni**. I principali sono:
+
+- **Sodio (Na+)**: regola quanta acqua resta nel corpo. È il motivo per cui, quando sudi tanto, hai sete e voglia di qualcosa di salato.
+- **Potassio (K+)**: lavora soprattutto **dentro** le cellule. Insieme al sodio fa funzionare i **nervi** e il **battito del cuore**.
+- **Cloro (Cl−)**: accompagna il sodio e aiuta a tenere in equilibrio le cariche. Serve anche per produrre l'acido nello stomaco.
+
+Pensa ai nervi e ai muscoli come a piccoli circuiti elettrici. Per inviare un segnale (per esempio "muovi la zampa" in un cane, o "batti" al cuore), le cellule spostano ioni di sodio e potassio dentro e fuori: quel movimento di cariche è un piccolo impulso elettrico. Senza i giusti elettroliti, questi segnali si bloccano.
+
+Per questo, quando un animale (o una persona) è molto disidratato o ha vomito e diarrea, perde elettroliti, e il veterinario gli mette una **flebo**: una soluzione di acqua e sali (la classica "fisiologica") che rimette a posto gli ioni. È chimica pura applicata alla salute.
+
+## Guarda il video
+
+<YouTube id="GV_ISRq_2dU" title="Elettroliti: le soluzioni elettrolitiche e la conducibilità elettrica" />
+
+<VideoVisto id="chim-u2-04" />
+
+## Da ricordare
+
+- Un **elettrolita** è una sostanza (come il sale) che, sciolta in acqua, si spezza in **ioni**.
+- Gli **ioni** sono particelle cariche: positive (Na+, K+) o negative (Cl−).
+- Questo "spezzarsi in ioni" si chiama **dissociazione**.
+- Gli ioni liberi di muoversi rendono l'acqua capace di **condurre la corrente**.
+- Nel corpo gli elettroliti (Na+, K+, Cl−) fanno funzionare **nervi, muscoli e cuore** e regolano l'acqua: per questo si reintegrano con le **flebo**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cos'è un elettrolita?"
+  opzioni={["Un colore che si scioglie nell'acqua", "Una sostanza che, sciolta in acqua, si spezza in ioni", "Un tipo di metallo solido", "Un gas che si forma scaldando l'acqua"]}
+  corretta={1}
+  spiegazione="Un elettrolita è una sostanza (come il sale) che in acqua si dissocia, cioè si separa in ioni carichi positivi e negativi."
+/>
+
+<Quiz
+  domanda="Quando il sale (NaCl) si scioglie in acqua, in quali ioni si separa?"
+  opzioni={["Na+ e Cl−", "H+ e O−", "Na− e Cl+", "Resta tutto unito, non si separa"]}
+  corretta={0}
+  spiegazione="Il sodio diventa lo ione positivo Na+ e il cloro diventa lo ione negativo Cl−. Questa separazione si chiama dissociazione."
+/>
+
+<Quiz
+  domanda="Perché l'acqua con il sale conduce la corrente elettrica?"
+  opzioni={["Perché diventa più calda", "Perché contiene ioni liberi di muoversi che trasportano le cariche", "Perché il sale è un metallo", "Perché l'acqua diventa più densa"]}
+  corretta={1}
+  spiegazione="La corrente è movimento di cariche. Gli ioni liberi nell'acqua salata trasportano queste cariche, quindi la corrente passa. Nell'acqua pura, senza ioni, conduce male."
+/>
+
+<Esercizio
+  problema="Un cane arriva dal veterinario molto disidratato dopo giorni di vomito e diarrea. Il veterinario gli mette una flebo di soluzione fisiologica (acqua + cloruro di sodio). Spiega, con parole tue, perché questo aiuta l'animale e cosa c'entrano gli elettroliti."
+  soluzione="Vomito e diarrea fanno perdere acqua e tanti ioni (elettroliti) come Na+, K+ e Cl−. Senza questi ioni, nervi, muscoli e cuore non riescono più a inviare i loro segnali elettrici nel modo giusto. La flebo è acqua con cloruro di sodio sciolto: in soluzione si dissocia in Na+ e Cl−, cioè rimette nel corpo gli ioni persi. Così si ristabiliscono l'equilibrio dei liquidi e il corretto funzionamento di muscoli e cuore."
+/>
+
+</section>
+
+</RisorsaLayout>

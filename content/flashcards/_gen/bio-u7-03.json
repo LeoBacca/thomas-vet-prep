@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-bio-u7-03-1",
+    "topicId": "bio-u7-03",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: le proteine CKI (inibitori delle chinasi ciclina-dipendenti) funzionano come i freni di un'auto — bloccano il complesso ciclina-CDK e impediscono alla cellula di dividersi in modo incontrollato.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Senza CKI il complesso ciclina-CDK resterebbe sempre attivo e la cellula si dividerebbe senza sosta — come un'auto senza freni. Le CKI si attaccano al complesso e lo spengono. Se le CKI vengono inattivate per mutazione, il ciclo perde il freno e la cellula puo diventare tumorale.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-03-2",
+    "topicId": "bio-u7-03",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "open",
+    "q": "Le CKI si dividono in due famiglie: INK4 e CIP/KIP. In cosa differisce il modo in cui ciascuna blocca il ciclo cellulare? Fai almeno un esempio di proteina per famiglia.",
+    "answer": "La famiglia INK4 (esempi: p15, p16, p18, p19) si lega alla CDK da sola, cioe prima che la ciclina si attacchi: e come togliere la chiave dal motore, cosi il complesso non si forma mai. Agisce soprattutto in fase G1. La famiglia CIP/KIP (esempi: p21, p27, p57) si lega invece al complesso ciclina-CDK gia formato e lo spegne dall'interno. p21 e la piu famosa: viene prodotta quando p53 (la guardiana del genoma) rileva un danno al DNA, e blocca il ciclo per dare tempo alle riparazioni. p27 frena l'entrata in fase S quando mancano segnali di crescita. In sintesi: INK4 impedisce la formazione del complesso; CIP/KIP spegne il complesso gia assemblato.",
+    "explain": "Punto chiave: INK4 = blocca la CDK libera (prima del complesso); CIP/KIP = blocca il complesso gia formato. p21 e indotta da p53 in risposta al danno al DNA.",
+    "tags": ["risposta aperta"]
+  }
+]

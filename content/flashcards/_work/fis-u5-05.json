@@ -1,0 +1,25 @@
+{
+ "id": "fis-u5-05",
+ "titolo": "Trasmissione del calore (conduzione, convezione, irraggiamento)",
+ "materia": "fisica",
+ "unita": 5,
+ "slug": "05-trasmissione-del-calore-conduzione-convezione-irraggiamento",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u5/05-trasmissione-del-calore-conduzione-convezione-irraggiamento.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Luglio",
+   "q": "Qual è il processo che coinvolge il trasferimento di energia tra due corpi tramite l'emissione e l'assorbimento di onde elettromagnetiche?",
+   "choices": [
+    "Irraggiamento",
+    "Convezione",
+    "Evaporazione",
+    "Conduzione",
+    "Sublimazione"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

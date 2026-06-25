@@ -1,0 +1,25 @@
+{
+ "id": "bio-u3-10",
+ "titolo": "La trascrizione eucariotica: le tre RNA polimerasi, fattori generali e TATA box",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "10-la-trascrizione-eucariotica-le-tre-rna",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u3/10-la-trascrizione-eucariotica-le-tre-rna.mdx",
+ "examQuestions": [
+  {
+   "year": "2019",
+   "q": "Quale dei seguenti processi è indispensabile per l'avvio della trascrizione in una cellula eucariotica?",
+   "choices": [
+    "Il legame di alcuni fattori della trascrizione al promotore",
+    "La rimozione del cap in posizione 5' dalla molecola di mRNA",
+    "Lo splicing degli introni",
+    "L'aggiunta della coda di poliA alla molecola di mRNA",
+    "L'appaiamento di un primer al filamento di DNA"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

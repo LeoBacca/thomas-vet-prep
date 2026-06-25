@@ -1,0 +1,10 @@
+{
+ "id": "fis-u2-16",
+ "titolo": "Energia potenziale (gravitazionale ed elastica)",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "16-energia-potenziale-gravitazionale-ed-elastica",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u2/16-energia-potenziale-gravitazionale-ed-elastica.mdx",
+ "examQuestions": []
+}

@@ -1,0 +1,25 @@
+{
+ "id": "chim-u1-13",
+ "titolo": "Il legame chimico: perché gli atomi si legano",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "13-il-legame-chimico-perche-gli-atomi",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u1/13-il-legame-chimico-perche-gli-atomi.mdx",
+ "examQuestions": [
+  {
+   "year": "2017",
+   "q": "Individuare quale tra le seguenti affermazioni sui legami chimici è FALSA.",
+   "choices": [
+    "I legami chimici possono formarsi solo tra sostanze allo stato liquido",
+    "I legami chimici possono formarsi tra atomi di carbonio",
+    "I legami chimici possono formarsi tra atomi diversi tra loro",
+    "I legami chimici possono essere di tipo covalente polare",
+    "I legami chimici caratterizzano tutti i composti chimici"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

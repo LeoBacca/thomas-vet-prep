@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u6-10-1",
+    "topicId": "bio-u6-10",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "mc",
+    "q": "Un recettore tirosin-chinasico (RTK) riceve un segnale dall'esterno. Quale e il primo passo che avviene sulla membrana?",
+    "choices": [
+      "Due recettori si avvicinano e formano un paio (dimerizzazione), poi si fosforilano a vicenda sulle tirosine",
+      "Il recettore entra nel nucleo e attiva direttamente i geni",
+      "Il recettore rilascia un secondo messaggero come il cAMP",
+      "Il ligando attraversa la membrana e agisce direttamente sul DNA"
+    ],
+    "answer": 0,
+    "explain": "Analogia: immagina due campanelli che, quando suonano insieme, fanno scattare la luce. Un RTK da solo non basta: il ligando fa avvicinare due recettori (dimerizzazione), i quali si 'accendono' fosforilando a vicenda i propri residui di tirosina interni. Solo dopo questa auto-fosforilazione parte la cascata interna.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u6-10-2",
+    "topicId": "bio-u6-10",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "open",
+    "q": "Descrivi in ordine la staffetta di segnalazione che parte da un RTK attivato e arriva al nucleo. Quali proteine si passano il 'testimone' e qual e il risultato finale?",
+    "answer": "Dopo l'auto-fosforilazione dell'RTK, la proteina adattatrice GRB2 si lega alle tirosine fosforilate e recluta SOS, un fattore di scambio. SOS attiva Ras sostituendo il suo GDP con GTP: Ras diventa attivo. Ras-GTP attiva Raf (MAP3K). Raf fosforila MEK (MAP2K). MEK fosforila ERK (MAPK). ERK attivata entra nel nucleo e accende fattori di trascrizione (es. c-Fos, c-Jun) che promuovono la proliferazione e la sopravvivenza cellulare. Riassunto della staffetta: RTK → GRB2/SOS → Ras → Raf → MEK → ERK → nucleo → geni di crescita.",
+    "explain": "L'ordine da ricordare e Ras-Raf-MEK-ERK (come una staffetta). ERK e l'esecutore finale che cambia l'espressione genica. Se Ras rimane bloccato sempre attivo (mutazione), la cellula cresce senza freni: e uno dei meccanismi piu comuni del cancro.",
+    "tags": ["risposta aperta"]
+  }
+]

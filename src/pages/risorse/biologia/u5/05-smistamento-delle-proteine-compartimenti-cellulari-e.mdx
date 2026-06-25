@@ -1,0 +1,103 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-05">
+
+## Perché le proteine devono essere "smistate"?
+
+Pensa alla cellula come a una grande azienda con tanti uffici: il nucleo, il reticolo endoplasmatico (RE), il Golgi, i mitocondri, i lisosomi e la membrana plasmatica. Ogni proteina deve arrivare all'ufficio giusto per svolgere il suo lavoro.
+
+Il problema è che tutte le proteine vengono costruite nello stesso posto — i **ribosomi** nel citoplasma. Come fa la cellula a sapere dove mandare ciascuna?
+
+La risposta è: ogni proteina porta con sé un **segnale di indirizzamento**, una specie di etichetta con l'indirizzo di destinazione scritto direttamente nella sequenza di aminoacidi.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il segnale di indirizzamento è come il codice postale stampato su un pacco: la cellula lo legge e sa dove consegnarlo.</div>
+
+---
+
+## I principali compartimenti e i loro segnali
+
+La cellula eucariotica è divisa in **compartimenti** separati da membrane. Le proteine devono attraversare (o aggirare) queste membrane per raggiungere la destinazione giusta.
+
+Ecco i percorsi principali:
+
+### 1. Proteine che restano nel citoplasma
+Non hanno nessun segnale speciale. Vengono sintetizzate sui ribosomi liberi e rimangono lì dove sono.
+
+### 2. Via secretoria: RE → Golgi → destinazione finale
+Molte proteine iniziano il loro percorso entrando nel **reticolo endoplasmatico (RE)**. Per farlo, portano una sequenza segnale all'inizio della catena aminoacidica.
+
+- La sequenza segnale viene riconosciuta da una particella chiamata **SRP** (Signal Recognition Particle).
+- L'SRP blocca momentaneamente la sintesi e trascina il ribosoma verso la membrana del RE.
+- La proteina viene inserita dentro il RE mentre viene ancora costruita.
+- Dal RE passa al **Golgi**, dove viene modificata e "smistata" verso la destinazione finale: lisosomi, membrana plasmatica, o secrezione fuori dalla cellula.
+
+### 3. Mitocondri e cloroplasti
+Hanno segnali diversi, chiamati **presequenze** (o peptidi di transito). Si trovano all'inizio della proteina e vengono riconosciuti da proteine-canale sulla membrana dell'organello, che fanno entrare la proteina.
+
+### 4. Nucleo
+Le proteine destinate al nucleo portano un segnale chiamato **NLS** (Nuclear Localization Signal). Entrano attraverso i pori nucleari, che funzionano come cancelli controllati.
+
+### 5. Lisosomi
+Le proteine destinate ai lisosomi ricevono nel Golgi un "timbro" specifico: un gruppo chimico chiamato **mannosio-6-fosfato**. È come un bollino rosso che dice "consegna ai lisosomi".
+
+---
+
+## Come funziona la via secretoria — passo per passo
+
+<Diagram caption="La via secretoria: dal ribosoma alla destinazione finale" code={`flowchart TB
+  A["Ribosoma nel citoplasma<br/>inizia la sintesi della proteina"] --> B["Sequenza segnale esposta<br/>all'inizio della catena"]
+  B --> C["SRP riconosce la sequenza segnale<br/>e blocca temporaneamente la sintesi"]
+  C --> D["Il ribosoma si aggancia<br/>alla membrana del RE"]
+  D --> E["La proteina entra nel lume del RE<br/>mentre viene completata"]
+  E --> F["La sequenza segnale viene rimossa<br/>da un enzima (peptidasi segnale)"]
+  F --> G["La proteina passa al Golgi<br/>tramite vescicole di trasporto"]
+  G --> H["Il Golgi modifica, taglia<br/>e aggiunge etichette alla proteina"]
+  H --> I1["Lisosoma<br/>(etichetta mannosio-6-fosfato)"]
+  H --> I2["Membrana plasmatica<br/>(esocitosi)"]
+  H --> I3["Secrezione fuori<br/>dalla cellula"]`} />
+
+---
+
+## Come vengono smistati i segnali — uno sguardo d'insieme
+
+<Diagram caption="Segnali di indirizzamento e destinazioni nelle cellule eucariotiche" code={`flowchart LR
+  RIB["Ribosoma<br/>sintetizza la proteina"]
+  RIB --> CIT["Nessun segnale<br/>→ rimane nel citoplasma"]
+  RIB --> RE["Sequenza segnale ER<br/>→ entra nel RE<br/>(via secretoria)"]
+  RIB --> MIT["Pre-sequenza mitocondriale<br/>→ entra nel mitocondrio"]
+  RIB --> NUC["NLS (Nuclear Localization Signal)<br/>→ entra nel nucleo<br/>attraverso i pori nucleari"]
+  RE --> GOL["Golgi: smistamento finale"]
+  GOL --> LIS["Mannosio-6-fosfato<br/>→ lisosoma"]
+  GOL --> MEM["Nessuna etichetta speciale<br/>→ membrana o secrezione"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="SmnCIFdy3mY" title="Biologia 10 - Editing delle proteine (reticolo endoplasmatico, apparato di Golgi, lisosomi)" />
+<VideoVisto id="bio-u5-05" />
+
+## Da ricordare
+- Ogni proteina porta un **segnale di indirizzamento** nella sua sequenza aminoacidica che funziona come un "codice postale" cellulare.
+- Le proteine destinate al RE (e poi a Golgi, lisosomi, membrana) vengono intercettate dall'**SRP** mentre sono ancora in costruzione e portate al RE co-traduzionalmente.
+- Il **Golgi** è il centro di smistamento finale: aggiunge etichette (come il mannosio-6-fosfato per i lisosomi) e indirizza le proteine verso la loro destinazione definitiva.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è il ruolo dell'SRP (Signal Recognition Particle) nella via secretoria?" opzioni={["Degrada le proteine mal ripiegate nel RE","Riconosce la sequenza segnale e porta il ribosoma alla membrana del RE","Aggiunge il mannosio-6-fosfato alle proteine lisosomiali","Trasporta le proteine dal Golgi ai mitocondri"]} corretta={1} spiegazione="L'SRP riconosce la sequenza segnale esposta dal ribosoma e blocca temporaneamente la sintesi proteica. Poi guida il ribosoma verso la membrana del RE, dove la proteina viene inserita nel lume del RE mentre viene ancora costruita." />
+
+<Quiz domanda="Quale 'etichetta' chimica viene aggiunta nel Golgi alle proteine destinate ai lisosomi?" opzioni={["Sequenza NLS","Ubiquitina","Mannosio-6-fosfato","Peptide di transito"]} corretta={2} spiegazione="Le proteine lisosomiali ricevono nel Golgi un gruppo chimico chiamato mannosio-6-fosfato. Questo funge da segnale riconosciuto dai recettori sulla membrana delle vescicole dirette ai lisosomi." />
+
+<Quiz domanda="Una proteina priva di qualsiasi segnale di indirizzamento dove rimane di default?" opzioni={["Nel nucleo","Nel reticolo endoplasmatico","Nel citoplasma","Nei mitocondri"]} corretta={2} spiegazione="Le proteine senza segnali di indirizzamento vengono sintetizzate da ribosomi liberi nel citoplasma e vi rimangono. Per entrare in un compartimento membranoso è sempre necessario un segnale specifico." />
+
+<Esercizio problema="Una proteina ha all'inizio della sua sequenza aminoacidica un tratto formato soprattutto da aminoacidi idrofobici (che 'fuggono dall'acqua'). Questo è il segno tipico di quale tipo di segnale di indirizzamento? Dove verrà trasportata questa proteina?" soluzione="Un tratto di aminoacidi idrofobici all'inizio della catena è la caratteristica tipica della sequenza segnale per il reticolo endoplasmatico (RE): è proprio questa parte idrofobica che permette l'aggancio alla membrana del RE. La proteina verrà riconosciuta dall'SRP durante la sintesi, il ribosoma verrà portato alla membrana del RE e la proteina entrerà nel lume del RE. Da lì proseguirà lungo la via secretoria: prima il Golgi, e infine una destinazione tra lisosomi, membrana plasmatica o secrezione fuori dalla cellula, a seconda delle ulteriori etichette che riceverà (per esempio il mannosio-6-fosfato per i lisosomi)." />
+
+</section>
+
+</RisorsaLayout>

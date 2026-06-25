@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-16-1",
+    "topicId": "chim-u1-16",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: quando un atomo 'ibridizza' i suoi orbitali, il numero totale di orbitali cambia — per esempio frulli 3 orbitali e ottieni 5 orbitali ibridi.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il numero di orbitali NON cambia: ne frulli 3 e ne ottieni esattamente 3. E come il frullato: hai una banana e due fragole (3 frutti in entrata), ottieni un bicchiere di frullato con 3 porzioni. Niente si crea, niente si distrugge.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-16-2",
+    "topicId": "chim-u1-16",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale tipo di ibridazione dà una geometria LINEARE (angolo di 180 gradi), come un bastoncino dritto con un puntino a ogni estremità?",
+    "choices": [
+      "sp — frullo 1s + 1p = 2 orbitali ibridi in linea retta",
+      "sp2 — frullo 1s + 2p = 3 orbitali ibridi su un piano",
+      "sp3 — frullo 1s + 3p = 4 orbitali ibridi a tetraedro",
+      "sp4 — frullo 1s + 4p = 5 orbitali ibridi"
+    ],
+    "answer": 0,
+    "explain": "Con sp hai solo 2 zone: per stare il più lontane possibile si mettono una di fronte all'altra, in linea retta a 180 gradi. sp2 dà 3 zone su un piano (triangolo, 120 gradi); sp3 dà 4 zone a tetraedro (109,5 gradi). 'sp4' non esiste: il sottolivello p ha solo 3 orbitali.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-16-3",
+    "topicId": "chim-u1-16",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue i tre tipi di ibridazione (sp, sp2, sp3): quanti orbitali si 'frullano', quanti ne escono e che forma danno alla molecola. Poi di' perché questo conta in veterinaria.",
+    "answer": "sp: frullo 1 orbitale s + 1 orbitale p = 2 orbitali ibridi. Due zone si allontanano il più possibile mettendosi in linea retta: geometria LINEARE, angolo di 180 gradi. sp2: frullo 1s + 2p = 3 orbitali ibridi. Tre zone su un piano, disposte come un triangolo: geometria PIANA, angoli di 120 gradi. sp3: frullo 1s + 3p = 4 orbitali ibridi. Quattro zone puntano verso i vertici di un tetraedro (una piccola piramide 3D): geometria TETRAEDRICA, angoli di 109,5 gradi. Regola rapida: il numero di orbitali non cambia mai (ne frulli 2 → ottieni 2; ne frulli 3 → ottieni 3; ne frulli 4 → ottieni 4). In veterinaria conta perché la forma di una molecola decide come funziona: un farmaco si incastra nel suo bersaglio solo se ha la geometria giusta (chiave-serratura). Il carbonio sp3 costruisce le catene flessibili dei grassi, quello sp2 forma il piano rigido dei doppi legami nei farmaci e nel DNA.",
+    "explain": "Da ricordare: sp → linea (180°); sp2 → piano/triangolo (120°); sp3 → tetraedro (109,5°). Il numero di orbitali non varia mai.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-16-4",
+    "topicId": "chim-u1-16",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti molecole presenta l'atomo centrale ibridizzato sp2?",
+    "choices": [
+      "SO2 — l'atomo centrale S ha 3 zone (2 legami + 1 doppietto) → sp2, geometria piana",
+      "H2S — lo zolfo ha 4 zone → sp3",
+      "H2O — l'ossigeno ha 4 zone (2 legami + 2 doppietti) → sp3",
+      "NH3 — l'azoto ha 4 zone (3 legami + 1 doppietto) → sp3",
+      "CO2 — il carbonio ha 2 zone (2 doppi legami) → sp"
+    ],
+    "answer": 0,
+    "explain": "Per trovare l'ibridazione conta le 'zone' attorno all'atomo centrale (legami + coppie solitarie): 2 zone → sp; 3 zone → sp2; 4 zone → sp3. SO2 ha zolfo con 2 legami + 1 coppia solitaria = 3 zone → sp2. Le trappole: H2S e NH3 hanno atomi centrali con 4 zone → sp3 (tetraedro distorto); H2O pure (4 zone, 2 legami + 2 coppie solitarie → sp3); CO2 ha carbonio con solo 2 zone (due doppi legami) → sp lineare. Il trucco dell'esame è CO2: il carbonio sembra 'speciale' ma due legami = 2 zone = sp.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-16-5",
+    "topicId": "chim-u1-16",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Lo stato di ibridazione e il numero di ossidazione di ciascun atomo di azoto nella molecola N2O4 sono rispettivamente:",
+    "choices": [
+      "sp2; +4",
+      "sp2; +3",
+      "sp3; +5",
+      "sp3; +4",
+      "sp; +3"
+    ],
+    "answer": 0,
+    "explain": "N2O4 ha struttura con due gruppi NO2 uniti: ogni azoto fa 3 legami (1 con l'altro N + 2 con gli ossigeni) e porta 1 coppia solitaria, totale 3 zone → ibridazione sp2. Numero di ossidazione: ogni O vale -2, ci sono 4 ossigeni = -8 totale; la molecola è neutra, quindi i 2 azoti insieme valgono +8, ciascuno +4. Trappola sp3/+4 (opzione D): la geometria sembra tetraedrica ma ogni N ha solo 3 legami + 1 coppietto = 3 zone sp2. Trappola sp2/+3 (opzione B): il calcolo del n.o. è sbagliato (darebbe -6 per gli ossigeni, ma ce ne sono 4). Trappola sp3/+5 (opzione C): n.o. +5 sarebbe per N con 5 legami con O (come in N2O5), non N2O4. sp/+3 è fuori tema: sp richiederebbe solo 2 zone.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,25 @@
+{
+ "id": "fis-u2-06",
+ "titolo": "Moto parabolico",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "06-moto-parabolico",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u2/06-moto-parabolico.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "Due sferette identiche A e B vengono lasciate cadere contemporaneamente dalla stessa altezza, la sferetta A con velocità iniziale nulla, la B con velocità orizzontale v. Trascurando l'attrito, quando arrivano le sferette al suolo?",
+   "choices": [
+    "Le sferette raggiungono il suolo contemporaneamente",
+    "La sferetta A per prima",
+    "La sferetta B per prima",
+    "La sferetta B per prima, se la velocità orizzontale v è maggiore di 9,8 metri al secondo",
+    "I dati non sono sufficienti per fare una previsione attendibile"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

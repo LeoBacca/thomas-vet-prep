@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u6-02-1",
+    "topicId": "chim-u6-02",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: alcoli e fenoli sono molecole completamente diverse perche hanno gruppi funzionali diversi.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Sia gli alcoli sia i fenoli hanno LO STESSO gruppo funzionale: il gruppo ossidrile -OH (un ossigeno legato a un idrogeno). La differenza non e nel tipo di 'adesivo' ma in dove e incollato: su un carbonio di catena (alcol) oppure direttamente sull'anello del benzene (fenolo).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-02-2",
+    "topicId": "chim-u6-02",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Perche il fenolo e piu acido di un alcol come l'etanolo? (cioe: perche il fenolo cede l'H+ piu facilmente?)",
+    "choices": [
+      "Perche il fenolo ha piu atomi di idrogeno totali rispetto all'etanolo",
+      "Perche dopo aver perso l'H+, l'anello aromatico distribuisce la carica negativa su tutto l'esagono, rendendo la situazione stabile",
+      "Perche l'etanolo non ha ossigeno e quindi non puo cedere H+",
+      "Perche il fenolo e un sale, non un acido vero"
+    ],
+    "answer": 1,
+    "explain": "Quando il fenolo perde l'H+, resta una carica negativa sull'ossigeno. L'anello del benzene accanto la 'assorbe' e la distribuisce su tutto l'esagono — come tante persone che si dividono il peso di uno zaino pesante. Carica spalmata = molecola stabile = il fenolo e contento di cedere l'idrogeno. Nell'alcol invece non c'e nessun anello: la carica resta tutta concentrata sull'ossigeno (scomodo, instabile), quindi l'alcol resiste a cedere l'H+ ed e un acido debolissimo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-02-3",
+    "topicId": "chim-u6-02",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "open",
+    "q": "Con parole tue, spiega la differenza tra un alcol e un fenolo, e poi descrivi come mai il gruppo -OH rende queste molecole 'amiche dell'acqua'.",
+    "answer": "Un alcol ha il gruppo ossidrile -OH attaccato a un carbonio di una catena normale (esempio: l'etanolo CH3CH2OH, l'alcol delle bevande). Un fenolo invece ha lo stesso -OH, ma incollato direttamente sull'anello aromatico del benzene (l'esagono con doppi legami). Stesso 'adesivo', posto diverso. Il -OH rende le molecole amiche dell'acqua perche l'ossigeno tira a se gli elettroni, creando una piccola zona negativa (sull'ossigeno) e una piccola zona positiva (sull'idrogeno): e come un piccolo magnete. Questo magnete riesce ad agganciarsi alle molecole d'acqua (che sono anch'esse dei piccoli magneti) formando i cosiddetti legami a idrogeno. Piu legami a idrogeno riesce a fare una molecola, meglio si scioglie in acqua. Per questo i piccoli alcoli si sciolgono benissimo in acqua.",
+    "explain": "Da ricordare: alcol = -OH su catena; fenolo = -OH su anello aromatico. Il -OH forma legami a idrogeno con l'acqua → solubilita.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u6-02-4",
+    "topicId": "chim-u6-02",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Quale tra le seguenti e la formula chimica del 2-metil-1-butanolo?",
+    "choices": [
+      "CH3CH2CH(CH3)CH2OH",
+      "CH3CH2CH(OH)CH2CH3",
+      "(CH3)2CHCH2CH2OH",
+      "CH3CH2CH2CH2CH2OH",
+      "(CH3)2CH-O-CH2CH3"
+    ],
+    "answer": 0,
+    "explain": "Il nome '2-metil-1-butanolo' va letto pezzo per pezzo: 'butanolo' = catena di 4 carboni con il gruppo -OH; '1-' = l'-OH e sul carbonio numero 1 (il primo della catena); '2-metil' = c'e un gruppo -CH3 di lato sul carbonio numero 2. Risultato: CH3CH2CH(CH3)CH2OH. Le trappole: la seconda formula (CH3CH2CH(OH)CH2CH3) ha l'-OH sul carbonio 3, non sul carbonio 1: e il 3-pentanolo, non il 2-metil-1-butanolo. La terza e la quarta sono catene senza la ramificazione sul carbonio 2 (o con la ramificazione nel posto sbagliato). L'ultima ha un ossigeno 'in mezzo' tra due catene (-O-): quella NON e un alcol ma un etere, una classe completamente diversa.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u6-02-5",
+    "topicId": "chim-u6-02",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Quale delle seguenti sostanze e un alcol?",
+    "choices": [
+      "Cicloesanone",
+      "Propanale",
+      "Trifluoroetanolo",
+      "Benzene",
+      "Butene"
+    ],
+    "answer": 2,
+    "explain": "Un alcol deve avere il gruppo ossidrile -OH legato a un carbonio di catena. Il trifluoroetanolo ha la struttura CF3CH2OH: ha il -OH, quindi e un alcol (il fatto che ci siano tre fluori non cambia la classe). Le trappole: il cicloesanone ha un gruppo carbonile (C=O) chiuso in un anello, non un -OH: e un chetone; il propanale ha un gruppo C=O in fondo alla catena (-CHO): e un'aldeide; il benzene e un idrocarburo aromatico puro (solo C e H, nessun -OH); il butene e un idrocarburo con un doppio legame C=C: non ha ossigeno. La chiave per riconoscere un alcol: cerca il -OH legato a un carbonio (non all'anello aromatico, che sarebbe un fenolo).",
+    "tags": ["prova d'esame"]
+  }
+]

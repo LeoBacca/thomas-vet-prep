@@ -1,0 +1,118 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u3-05">
+
+Perché certe reazioni chimiche avvengono in un lampo e altre lentissime? La **teoria degli urti** dà una risposta semplice: perché due molecole reagiscano, devono prima di tutto **scontrarsi**. Ma non basta uno scontro qualsiasi. Serve uno scontro **fatto bene**.
+
+Pensa a quando vuoi accendere un fiammifero. Non basta appoggiarlo sulla scatola: devi **sfregarlo con forza** e nella giusta direzione. Le molecole funzionano allo stesso modo: devono urtarsi con abbastanza **energia** e nella giusta **posizione**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> le molecole devono sbattere tra loro, ma solo gli urti abbastanza forti e ben orientati ("urti efficaci") fanno partire la reazione. Tutti gli altri urti sono solo rimbalzi a vuoto.</div>
+
+## Cosa rende un urto "efficace"
+
+Immagina due automobiline che si scontrano. Perché si rompano (cioè perché "reagiscano") servono due cose:
+
+- **Abbastanza energia**: se vanno pianissimo, rimbalzano e basta. Devono andare abbastanza veloci.
+- **L'angolo giusto**: due auto che si sfiorano di lato non si rompono; serve uno scontro frontale, ben orientato.
+
+Per le molecole è identico. La maggior parte degli urti è troppo debole o mal orientata: le molecole rimbalzano senza cambiare nulla. Solo una piccola parte sono **urti efficaci**, quelli che davvero fanno avvenire la reazione.
+
+<Diagram caption="Cosa serve perché un urto sia efficace" code={`flowchart TB
+  U["Due molecole si urtano"] --> Q1["Hanno abbastanza energia?"]
+  Q1 -->|"No"| R1["Rimbalzo a vuoto<br/>niente reazione"]
+  Q1 -->|"Si"| Q2["Sono orientate bene?"]
+  Q2 -->|"No"| R2["Rimbalzo a vuoto<br/>niente reazione"]
+  Q2 -->|"Si"| OK["URTO EFFICACE<br/>la reazione avviene"]`} />
+
+## L'energia di attivazione: la collina da scalare
+
+Anche le reazioni che "convengono" hanno bisogno di una spintarella iniziale. Questa spinta minima si chiama **energia di attivazione** (si scrive `Ea`).
+
+Pensa a una **pallina in cima a una discesa, ma con una piccola collina davanti**. La pallina vuole scendere, ma prima deve superare quella collinetta. Se non ha abbastanza spinta per arrivare in cima alla collina, resta ferma. L'energia di attivazione è proprio l'altezza di quella collina: l'energia minima che le molecole devono avere per far partire la reazione.
+
+Più la collina è **alta** (Ea grande), più è **difficile** che la reazione parta, quindi è **lenta**. Più la collina è **bassa** (Ea piccola), più la reazione è **facile** e veloce.
+
+<Diagram caption="Profilo energetico: la barriera (energia di attivazione) tra reagenti e prodotti" code={`flowchart LR
+  R["REAGENTI<br/>(energia di partenza)"] -->|"servono Ea per salire"| T["PICCO<br/>(cima della collina)"]
+  T -->|"poi si scende"| P["PRODOTTI<br/>(energia finale)"]`} />
+
+<div class="callout">💡 <strong>In parole semplici:</strong> l'energia di attivazione è la "collina" che le molecole devono scalare per reagire. Solo le molecole abbastanza "cariche" di energia ce la fanno a passare dall'altra parte.</div>
+
+### Perché conta nel corpo (enzimi e veterinaria)
+
+Nel tuo corpo (e in quello di un cane o di un cavallo) avvengono migliaia di reazioni ogni secondo. A temperatura corporea molte sarebbero lentissime, perché la collina dell'energia di attivazione è troppo alta. La soluzione del corpo sono gli **enzimi**: proteine che funzionano da **catalizzatori**, cioè **abbassano la collina**.
+
+Un catalizzatore non spinge la pallina con più forza: **rende la collina più bassa**, così tantissime molecole riescono a superarla. Per questo gli enzimi permettono alla digestione, alla respirazione e a tutto il metabolismo di avvenire in fretta e a bassa temperatura. Senza enzimi, digerire un pasto richiederebbe anni.
+
+## La legge di Arrhenius: più caldo, più veloce
+
+Hai mai notato che il cibo in frigorifero dura di più? E che il latte fuori dal frigo va a male in fretta? È sempre la stessa storia: con il **caldo** le reazioni vanno **più veloci**, con il **freddo** vanno **più lente**.
+
+La **legge di Arrhenius** mette in formula proprio questo: lega la **velocità di una reazione** alla **temperatura** e all'**energia di attivazione**. Scritta come testo è:
+
+`k = A * e^(-Ea / (R*T))`
+
+Non serve impararla a memoria adesso. Ti basta capire le due idee dentro:
+
+- Se la **temperatura T sale**, più molecole hanno energia sufficiente per superare la collina, quindi la reazione **accelera**.
+- Se l'**energia di attivazione Ea è alta** (collina alta), poche molecole ce la fanno, quindi la reazione è **lenta**.
+
+In medicina e veterinaria questo spiega tante cose: la febbre velocizza alcune reazioni del corpo; il freddo si usa per **conservare** organi e campioni (rallenta le reazioni che li rovinerebbero); i farmaci vanno tenuti alla temperatura giusta per non degradarsi.
+
+<Diagram caption="Come la temperatura cambia la velocita di reazione (legge di Arrhenius)" code={`flowchart TB
+  T["Temperatura piu alta"] --> M["Le molecole si muovono piu veloci"]
+  M --> E["Piu urti efficaci<br/>(piu molecole superano la collina)"]
+  E --> V["La reazione e PIU VELOCE"]`} />
+
+## Guarda il video
+
+<YouTube id="g-RCwSNetHg" title="Teoria degli urti, energia di attivazione Ea e velocità di reazione — lezione di chimica" />
+
+<VideoVisto id="chim-u3-05" />
+
+## Da ricordare
+
+- Perché due molecole reagiscano devono **urtarsi**, ma serve un **urto efficace**: con abbastanza **energia** e **ben orientato**.
+- L'**energia di attivazione (Ea)** è la "collina" minima da superare per far partire la reazione.
+- Collina **alta** → reazione **lenta**. Collina **bassa** → reazione **veloce**.
+- I **catalizzatori** (come gli **enzimi** del corpo) **abbassano la collina**: la reazione diventa molto più veloce.
+- La **legge di Arrhenius** dice che con la **temperatura più alta** le reazioni vanno **più veloci** (più molecole superano la collina).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Perché due molecole reagiscano, secondo la teoria degli urti, cosa serve?"
+  opzioni={["Basta che si trovino vicine", "Un urto con abbastanza energia e ben orientato (urto efficace)", "Che siano dello stesso colore", "Che stiano ferme una accanto all'altra"]}
+  corretta={1}
+  spiegazione="Non basta sfiorarsi: serve un urto efficace, cioè abbastanza forte (energia) e nella giusta direzione (orientamento). Gli altri urti sono solo rimbalzi a vuoto."
+/>
+
+<Quiz
+  domanda="Cos'è l'energia di attivazione (Ea)?"
+  opzioni={["L'energia che si libera alla fine", "L'energia minima che serve per far partire la reazione (la collina da superare)", "Il peso delle molecole", "La temperatura del frigorifero"]}
+  corretta={1}
+  spiegazione="L'Ea è la collina da scalare: l'energia minima che le molecole devono avere per reagire. Se non la raggiungono, la reazione non parte."
+/>
+
+<Quiz
+  domanda="Secondo la legge di Arrhenius, se aumento la temperatura, la reazione:"
+  opzioni={["rallenta", "si ferma", "va più veloce", "non cambia mai"]}
+  corretta={2}
+  spiegazione="Con più temperatura le molecole si muovono più in fretta, fanno più urti efficaci e più di loro superano la collina dell'energia di attivazione: la reazione accelera. È il motivo per cui il cibo dura di più in frigorifero."
+/>
+
+<Esercizio
+  problema="Un enzima (catalizzatore) viene aggiunto a una reazione nel corpo. La collina dell'energia di attivazione era alta e la reazione lentissima. Cosa fa l'enzima e cosa succede alla velocità della reazione?"
+  soluzione="L'enzima abbassa la collina, cioè riduce l'energia di attivazione. Con una collina più bassa, molte più molecole riescono a superarla: la reazione diventa molto più veloce, pur restando alla stessa temperatura del corpo. È esattamente così che gli enzimi permettono alla digestione e al metabolismo di funzionare in fretta."
+/>
+
+</section>
+
+</RisorsaLayout>

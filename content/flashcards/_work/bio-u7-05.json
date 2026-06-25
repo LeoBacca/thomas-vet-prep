@@ -1,0 +1,95 @@
+{
+ "id": "bio-u7-05",
+ "titolo": "Le fasi della mitosi e la condensazione dei cromosomi",
+ "materia": "biologia",
+ "unita": 7,
+ "slug": "05-le-fasi-della-mitosi-e-la",
+ "freq": 6,
+ "risorseMdx": "src/pages/risorse/biologia/u7/05-le-fasi-della-mitosi-e-la.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "Indicare la sequenza corretta delle diverse fasi della mitosi:",
+   "choices": [
+    "profase, metafase, anafase, telofase",
+    "metafase, anafase, telofase, profase",
+    "telofase, profase, anafase, metafase",
+    "interfase, metafase, anafase, telofase",
+    "anafase, profase, telofase, metafase"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2014",
+   "q": "Quale dei seguenti processi utilizza la mitosi? 1. Formazione di globuli rossi nel midollo osseo da cellule staminali; 2. Rigenerazione della mucosa danneggiata nell'apparato digerente; 3. Sviluppo del sistema nervoso nell'embrione",
+   "choices": [
+    "Tutti",
+    "Solo 3",
+    "Solo 1 e 2",
+    "Solo 2 e 3",
+    "Solo 1"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2016",
+   "q": "Quale delle seguenti affermazioni sull'anafase è corretta?",
+   "choices": [
+    "è una fase sia della mitosi sia della meiosi",
+    "è una parte dell'interfase",
+    "è una vitamina",
+    "è una fase esclusiva della meiosi",
+    "è una fase esclusiva della mitosi"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2017",
+   "q": "L'affermazione: \"la membrana nucleare si dissolve e i nucleoli divengono poco visibili o scompaiono\" a quale fase della mitosi o della meiosi può essere attribuita?",
+   "choices": [
+    "Alla profase della mitosi",
+    "Alla metafase I della meiosi",
+    "All'anafase I della meiosi",
+    "Alla telofase della mitosi",
+    "Alla metafase II della meiosi"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Nell'uomo, quale dei seguenti meccanismi viene usato per produrre nuove cellule di un tessuto?",
+   "choices": [
+    "La mitosi",
+    "La meiosi",
+    "La scissione binaria",
+    "La ricombinazione omologa",
+    "La gametogenesi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "I cromatidi fratelli:",
+   "choices": [
+    "sono il prodotto della replicazione del DNA durante la fase S del ciclo cellulare eucariotico",
+    "sono il prodotto della replicazione del DNA durante la fase M del ciclo cellulare eucariotico",
+    "si trovano solo in fase G1 del ciclo cellulare eucariotico",
+    "contengono versioni simili ma non identiche degli stessi geni",
+    "si separano in anafase I meiotica"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

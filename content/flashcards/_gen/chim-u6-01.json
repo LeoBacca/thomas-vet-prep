@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u6-01-1",
+    "topicId": "chim-u6-01",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: in una molecola organica, e lo scheletro di carbonio a decidere come si comporta e reagisce la sostanza, non il gruppo funzionale.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. E esattamente il contrario: lo scheletro di carbonio cambia poco le proprieta della molecola. E il gruppo funzionale, il 'pezzo speciale' attaccato allo scheletro, a decidere reattivita e proprieta. Pensa a tante magliette bianche uguali (lo scheletro): e la scritta stampata sopra (il gruppo funzionale) a dire se sei un medico o un arbitro.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-01-2",
+    "topicId": "chim-u6-01",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Un amminoacido, il mattone delle proteine, ha due gruppi funzionali. Quali sono?",
+    "choices": [
+      "Un gruppo carbonile (C=O) e un gruppo ossidrile (-OH)",
+      "Un gruppo amminico (-NH2) e un gruppo carbossilico (-COOH)",
+      "Due gruppi carbossilici (-COOH e -COOH)",
+      "Un gruppo amminico (-NH2) e un gruppo carbonile (C=O)"
+    ],
+    "answer": 1,
+    "explain": "Gli amminoacidi hanno sempre sia il gruppo amminico (-NH2) sia il gruppo carbossilico (-COOH). Sono proprio questi due gruppi a permettere agli amminoacidi di legarsi tra loro (il -COOH di uno si aggancia al -NH2 del successivo) e costruire le catene di proteine. Senza questi due gruppi funzionali, le proteine non potrebbero formarsi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-01-3",
+    "topicId": "chim-u6-01",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "open",
+    "q": "Spiega con parole tue: cos'e un gruppo funzionale e perche e utile conoscerlo per studiare la chimica organica? Fai almeno un esempio con un aggancio al corpo degli animali.",
+    "answer": "Un gruppo funzionale e un piccolo gruppo di atomi (per esempio -OH oppure -COOH) attaccato allo scheletro di carbonio della molecola. E la 'parte attiva' della molecola: e li che avvengono le reazioni e da lui dipendono le proprieta (come la solubilita in acqua) e la reattivita (con chi e come la molecola reagisce). La cosa piu utile e questa: molecole diverse che hanno lo stesso gruppo funzionale si comportano in modo simile. E come la patente: due persone molto diverse, se hanno entrambe la patente, sanno entrambe guidare. Cosi, imparando cosa fa il gruppo -OH, lo riconosci in mille molecole diverse e sai gia cosa aspettarti. Esempio nel corpo: il gruppo -OH (ossidrile) rende le molecole piu solubili in acqua. Per questo gli zuccheri, che hanno tanti -OH, si sciolgono bene nel sangue degli animali e possono essere trasportati facilmente.",
+    "explain": "Da ricordare: gruppo funzionale = 'pezzo speciale' che decide proprieta e reattivita. Stesso gruppo → comportamento simile in molecole diverse.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u6-01-4",
+    "topicId": "chim-u6-01",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "In un idrocarburo saturo sostituisci un atomo di idrogeno con un gruppo funzionale. Cosa succede alla molecola?",
+    "choices": [
+      "Cambiano le proprieta chimiche e fisiche della sostanza, e cambia anche la massa della molecola",
+      "Cambia solo la massa della molecola, ma le proprieta fisiche restano invariate",
+      "Cambia solo la massa della molecola, ma le proprieta chimiche restano invariate",
+      "Cambiano le proprieta fisiche, ma non la massa della molecola",
+      "Cambiano le proprieta chimiche, ma non la massa della molecola"
+    ],
+    "answer": 0,
+    "explain": "Quando sostituisci H con un gruppo funzionale, cambiano sia le proprieta (chimiche e fisiche) sia la massa: il gruppo funzionale pesa piu dell'idrogeno che hai tolto (ha piu atomi), e porta con se un carattere chimico completamente nuovo. Le trappole piu insidiose sono le opzioni che separano massa da proprieta: in realta cambiano entrambe insieme. Chi risponde 'cambiano solo le chimiche' dimentica che anche solubilita, punto di ebollizione e altre proprieta fisiche cambiano radicalmente quando aggiungi, per esempio, un -OH o un -COOH.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u6-01-5",
+    "topicId": "chim-u6-01",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Quale affermazione sui gruppi funzionali e CORRETTA?",
+    "choices": [
+      "Due molecole con lo stesso gruppo funzionale hanno proprieta e reattivita simili",
+      "Il gruppo funzionale e lo scheletro di carbonio della molecola",
+      "Ogni molecola organica puo avere al massimo un solo gruppo funzionale",
+      "I gruppi funzionali non hanno nessun ruolo nelle reazioni biologiche del corpo",
+      "Il gruppo funzionale cambia solo la massa della molecola, non le sue proprieta chimiche"
+    ],
+    "answer": 0,
+    "explain": "Stesso gruppo funzionale → comportamento simile: e proprio questo il 'trucco' che rende utili i gruppi funzionali per studiare la chimica organica. Le trappole: 'il gruppo funzionale e lo scheletro' e l'opposto esatto (lo scheletro e la catena di carboni, il gruppo funzionale e il pezzetto attaccato); 'al massimo un solo gruppo' e falso perche gli amminoacidi ne hanno gia due (-NH2 e -COOH); 'nessun ruolo nelle reazioni biologiche' e palesemente sbagliato (filler fuori tema: tutta la biochimica ruota attorno ai gruppi funzionali); 'cambia solo la massa' e falso e pericoloso: cambia sia la massa sia le proprieta chimiche e fisiche.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u5-16-1",
+    "topicId": "bio-u5-16",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Una proteina secretoria porta una 'sequenza segnale' all'estremita N-terminale. Qual e il ruolo principale dell'SRP (Signal Recognition Particle) non appena quella sequenza esce dal ribosoma?",
+    "choices": [
+      "Taglia subito la sequenza segnale per liberare la proteina nel citoplasma",
+      "Riconosce la sequenza segnale, ferma temporaneamente la traduzione e guida il ribosoma verso la membrana del RER",
+      "Apre il canale del traslocone nella membrana del RER prima che il ribosoma arrivi",
+      "Degrada la sequenza segnale nel citoplasma per impedire che la proteina entri nel RER"
+    ],
+    "answer": 1,
+    "explain": "L'SRP e come un corriere con il radar: non appena 'vede' l'etichetta (sequenza segnale), ferma il pacco (pausa della traduzione) e lo porta al giusto sportello di consegna (membrana del RER). Solo li si stacca, la traduzione riprende e la proteina puo entrare nel lume attraverso il traslocone.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-16-2",
+    "topicId": "bio-u5-16",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Descrivi le 4 tappe principali con cui una proteina secretoria passa dal ribosoma citoplasmatico al lume del RER. Cita i tre protagonisti molecolari (SRP, traslocone, peptidasi del segnale) e il momento in cui ciascuno entra in gioco.",
+    "answer": "1. La traduzione inizia nel citoplasma; appena la sequenza segnale (N-terminale, idrofobica) esce dal ribosoma, l'SRP la riconosce, si lega al ribosoma e mette in pausa la traduzione. 2. Il complesso ribosoma + SRP + catena nascente si sposta alla membrana del RER e l'SRP si lega al suo recettore (docking protein): l'SRP si stacca e viene riciclato, la traduzione riprende. 3. Il ribosoma e ora posizionato sul traslocone (canale Sec61): la catena polipeptidica nascente viene spinta attraverso il canale direttamente nel lume del RER mentre viene ancora sintetizzata (traslocazione co-traduzionale). 4. La peptidasi del segnale, enzima sul lato luminale della membrana, taglia e rimuove la sequenza segnale: la proteina matura, priva dell'etichetta iniziale, si trova ora nel lume del RER pronta per le modifiche e lo smistamento verso Golgi o secrezione.",
+    "explain": "I tre protagonisti in ordine: SRP (radar + freno nel citoplasma) → traslocone Sec61 (canale di ingresso nella membrana) → peptidasi del segnale (forbice nel lume). Parola chiave: traslocazione CO-TRADUZIONALE (avviene mentre la proteina e ancora in sintesi).",
+    "tags": ["risposta aperta"]
+  }
+]

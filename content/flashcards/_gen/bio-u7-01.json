@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u7-01-1",
+    "topicId": "bio-u7-01",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: durante la fase S del ciclo cellulare, la cellula raddoppia tutto il suo DNA.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. La fase S (Sintesi) è dedicata esclusivamente alla duplicazione del DNA: ogni cromosoma viene copiato esattamente, in modo che alla fine del periodo S il contenuto di DNA sia raddoppiato. G1 e G2 sono fasi di crescita e controllo, non di copia del DNA.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-01-2",
+    "topicId": "bio-u7-01",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "La CDK è un enzima sempre presente nella cellula, ma da sola non fa niente. Cosa succede quando si lega alla sua ciclina?",
+    "choices": [
+      "Il complesso ciclina-CDK si attiva e spinge la cellula al passaggio successivo del ciclo",
+      "La CDK degrada immediatamente la ciclina tramite il proteasoma",
+      "La ciclina blocca la CDK rendendola ancora più inattiva",
+      "Il complesso si sposta nel nucleo e blocca la sintesi del DNA"
+    ],
+    "answer": 0,
+    "explain": "Pensa alla CDK come a un motore spento: da sola non fa nulla. La ciclina è la chiave che lo accende. Quando si legano, il complesso attivo fosforila (= aggiunge un gruppo fosfato a) proteine bersaglio che spingono la cellula in avanti nel ciclo. A fine fase, la ciclina viene degradata e il 'motore' si spegne di nuovo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-01-3",
+    "topicId": "bio-u7-01",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "open",
+    "q": "Descrivi i tre checkpoint del ciclo cellulare: dove si trovano, cosa controllano e perché sono importanti. Usa parole semplici.",
+    "answer": "Ci sono tre checkpoint, cioè tre 'cancelli di sicurezza' lungo il ciclo. Il primo, G1/S (detto punto di restrizione), si trova alla fine di G1 e controlla che la cellula sia abbastanza grande, che l'ambiente esterno sia favorevole e che il DNA non sia danneggiato: se tutto va bene apre il cancello verso la fase S. Il secondo, G2/M, si trova alla fine di G2 e verifica che la copia del DNA sia avvenuta senza errori prima di permettere la divisione. Il terzo, detto Spindle checkpoint (checkpoint del fuso), si trova a metà della Mitosi e controlla che tutti i cromosomi siano agganciati correttamente al fuso mitotico prima di separarsi. Se un errore sfugge a tutti e tre, la cellula può diventare cancerosa: i checkpoint sono quindi il sistema antitruffa del ciclo.",
+    "explain": "Da ricordare: G1/S (DNA integro?), G2/M (copia ok?), Spindle (cromosomi agganciati?). Sono i tre 'gate di sicurezza' che impediscono divisioni con errori.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u7-01-4",
+    "topicId": "bio-u7-01",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Che cosa comprende la fase M del ciclo cellulare di una cellula eucariotica?",
+    "choices": [
+      "Mitosi e citodieresi",
+      "Solo la mitosi",
+      "Fasi G1, S, G2 e mitosi",
+      "Fasi S, G2 e mitosi",
+      "Fase S e mitosi"
+    ],
+    "answer": 0,
+    "explain": "La fase M include due eventi distinti: la Mitosi (separazione dei cromosomi duplicati nelle due cellule figlie) e la Citodieresi (divisione del citoplasma che produce fisicamente due cellule separate). 'Solo la mitosi' dimentica la citodieresi: senza di essa il citoplasma non si dividerebbe. Le risposte che includono G1, G2 o S confondono la fase M con l'Interfase: G1, S e G2 sono le tre sotto-fasi dell'Interfase, non della fase M.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u7-01-5",
+    "topicId": "bio-u7-01",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Quale dei seguenti eventi NON si verifica mai nell'interfase del ciclo cellulare?",
+    "choices": [
+      "La sintesi proteica",
+      "La duplicazione del DNA nucleare",
+      "La citodieresi",
+      "Il metabolismo cellulare ordinario",
+      "Lo splicing del trascritto primario (maturazione dell'RNA)"
+    ],
+    "answer": 2,
+    "explain": "La citodieresi (la divisione fisica del citoplasma in due) appartiene alla fase M, non all'Interfase. Durante l'Interfase la cellula si prepara: sintetizza proteine (G1 e G2), duplica il DNA (fase S), mantiene il metabolismo attivo e processa i trascritti RNA (splicing). Trappola 'duplicazione del DNA': avviene proprio nell'Interfase (fase S), quindi non è quella giusta. Trappola 'sintesi proteica' e 'metabolismo': sono attività continue dell'Interfase. Lo 'splicing' avviene nel nucleo durante l'Interfase, non è mai stato bloccato. La citodieresi invece è fisicamente impossibile in Interfase: i cromosomi non sono ancora stati separati.",
+    "tags": ["prova d'esame"]
+  }
+]

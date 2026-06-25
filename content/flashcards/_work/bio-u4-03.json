@@ -1,0 +1,109 @@
+{
+ "id": "bio-u4-03",
+ "titolo": "Gli alleli: omozigosi, eterozigosi, dominanza/recessività, genotipo e fenotipo",
+ "materia": "biologia",
+ "unita": 4,
+ "slug": "03-gli-alleli-omozigosi-eterozigosi-dominanza-recessivita",
+ "freq": 7,
+ "risorseMdx": "src/pages/risorse/biologia/u4/03-gli-alleli-omozigosi-eterozigosi-dominanza-recessivita.mdx",
+ "examQuestions": [
+  {
+   "year": "2008",
+   "q": "L'acondroplasia è una patologia che causa il nanismo, dovuta ad una scarsa o mancata produzione di condrina, una proteina prodotta dalle cellule che formano la cartilagine delle ossa lunghe. Tale patologia è trasmessa dai genitori ai figli in quanto:",
+   "choices": [
+    "essendo la condrina una proteina, per la sua produzione è necessaria una corretta informazione genetica data dal DNA",
+    "la patologia è infettiva per cui la madre infetta il figlio durante la gestazione",
+    "la patologia deriva da carenza di vitamine e sali minerali nella dieta della madre durante la gestazione",
+    "la madre non fa sufficiente esercizio fisico durante la gravidanza limitando così la crescita delle ossa lunghe del figlio",
+    "l'ambiente di vita dei genitori durante la gravidanza era fortemente inquinato"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2010",
+   "q": "Il fenomeno della resistenza batterica agli antibiotici è causato da:",
+   "choices": [
+    "selezione dei mutanti resistenti operata dall'antibiotico",
+    "mutazioni provocate dall'antibiotico",
+    "alterazioni del metabolismo batterico indotte dall'antibiotico",
+    "alterazioni del metabolismo del paziente indotte dall'antibiotico",
+    "mancato assorbimento intestinale dell'antibiotico"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2010",
+   "q": "Il grado di variabilità genetica di una popolazione è definito in base:",
+   "choices": [
+    "al numero di alleli di ogni gene",
+    "al numero di fenotipi relativi a ogni carattere",
+    "alla frequenza di incroci con altre popolazioni",
+    "alla casualità degli incroci",
+    "al numero di individui della popolazione"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2011",
+   "q": "La minima differenza tra due alleli è relativa a:",
+   "choices": [
+    "un nucleotide",
+    "un codone",
+    "un amminoacido",
+    "un introne",
+    "un esone"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2017",
+   "q": "Un soggetto ha ereditato dai genitori un carattere che gli stessi genitori non manifestano. Tale carattere è determinato da un allele recessivo (r). Quali genotipi dovrebbero possedere la madre e il padre?",
+   "choices": [
+    "Rr e Rr",
+    "RR e rr",
+    "RR e RR",
+    "rr e rr",
+    "Rr e RR"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2018",
+   "q": "Quale delle seguenti affermazioni relative ad un individuo omozigote per un determinato allele NON è corretta?",
+   "choices": [
+    "I suoi genitori sono sicuramente omozigoti per quell'allele",
+    "Ciascuno dei suoi gameti contiene una copia di quell'allele",
+    "Potrà avere figli sia omozigoti che eterozigoti",
+    "Ciascuna delle sue cellule somatiche possiede due copie di quell'allele",
+    "Trasmette quell'allele a tutti i suoi figli"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Qual è il termine corretto per descrivere un organismo con due copie identiche di un allele per un particolare gene?",
+   "choices": [
+    "Omozigote",
+    "Eterozigote",
+    "Dominante",
+    "Recessivo",
+    "Embrionale"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

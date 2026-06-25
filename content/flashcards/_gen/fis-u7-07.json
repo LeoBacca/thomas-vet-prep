@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u7-07-1",
+    "topicId": "fis-u7-07",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: quando la luce rimbalza su uno specchio (riflessione), l'angolo con cui esce e UGUALE all'angolo con cui entra — entrambi misurati rispetto alla linea perpendicolare alla superficie.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. E la legge della riflessione: angolo di incidenza = angolo di riflessione, entrambi rispetto alla normale (la linea perpendicolare alla superficie). Come una palla lanciata obliquamente contro un muro: rimbalza con lo stesso angolo dall'altra parte.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u7-07-2",
+    "topicId": "fis-u7-07",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Un cucchiaio in un bicchiere d'acqua sembra 'spezzato'. Questo accade perche la luce, passando dall'aria all'acqua, cambia velocita e direzione. Come si chiama questo fenomeno e cosa succede all'angolo del raggio?",
+    "choices": [
+      "Riflessione: il raggio rimbalza e l'angolo resta uguale",
+      "Rifrazione: la luce si avvicina alla normale (l'angolo diminuisce) entrando in un mezzo piu denso come l'acqua",
+      "Diffrazione: la luce si espande a ventaglio come uscendo da una fessura",
+      "Dispersione: la luce si separa nei colori dell'arcobaleno"
+    ],
+    "answer": 1,
+    "explain": "Il fenomeno e la RIFRAZIONE: la luce cambia velocita passando da un mezzo all'altro e per questo cambia direzione. Dall'aria (n ≈ 1,0) all'acqua (n ≈ 1,33) la luce rallenta e si avvicina alla normale — l'angolo si riduce. La riflessione e il rimbalzo (niente cambio di mezzo). La diffrazione e l'allargamento a ventaglio. La dispersione e la separazione dei colori (come nel prisma, ognuno rifrange diversamente).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u7-07-3",
+    "topicId": "fis-u7-07",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "open",
+    "q": "Cos'e l'indice di rifrazione di un mezzo? Scrivi la formula, spiega cosa significano le lettere e di' perche n e sempre maggiore o uguale a 1. Poi metti in ordine crescente di n: aria, acqua, diamante, vetro.",
+    "answer": "L'indice di rifrazione (n) misura quanto un mezzo trasparente rallenta la luce rispetto al vuoto. Formula: n = c / v, dove c e la velocita della luce nel vuoto (circa 3 × 10⁸ m/s) e v e la velocita della luce in quel mezzo. Poiche la luce nei materiali viaggia sempre piu lentamente che nel vuoto, v e sempre minore o uguale a c, quindi il rapporto c/v e sempre maggiore o uguale a 1. Piu n e alto, piu il mezzo rallenta la luce e la fa piegare di piu. In ordine crescente: aria (n ≈ 1,0) → acqua (n ≈ 1,33) → vetro (n ≈ 1,5) → diamante (n ≈ 2,4). Il diamante brilla cosi tanto proprio perche ha un n altissimo: piega la luce in modo spettacolare.",
+    "explain": "Chiave: n = c/v; piu e alto, piu la luce rallenta e si piega verso la normale. n ≥ 1 sempre, perche la luce non puo andare piu veloce che nel vuoto.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u7-07-4",
+    "topicId": "fis-u7-07",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Perche la luce bianca che attraversa un prisma di vetro si separa nei colori dell'arcobaleno (fenomeno di dispersione)?",
+    "choices": [
+      "Perche l'indice di rifrazione del vetro dipende dalla frequenza della luce: i diversi colori (frequenze diverse) vengono rifratti di angoli diversi",
+      "Perche la luce bianca viaggia piu veloce nel vetro che nell'aria, quindi esce con piu energia",
+      "Perche nel vetro la luce non viaggia in linea retta ma zigzaga tra gli atomi",
+      "Perche il vetro e piu denso dell'aria e riflette ogni colore su una faccia diversa del prisma",
+      "In realta e un'illusione ottica dovuta al modo in cui l'occhio percepisce il colore"
+    ],
+    "answer": 0,
+    "explain": "La dispersione avviene perche l'indice di rifrazione del vetro (n) non e uguale per tutti i colori: la luce violetta (alta frequenza) viene rifratta di piu della luce rossa (bassa frequenza). Ogni colore 'piega' di un angolo diverso e i colori si separano. Le trappole da smontare: 'la luce va piu veloce nel vetro' e l'opposto esatto (nel vetro la luce RALLENTA, sempre); 'zigzaga tra gli atomi' descrive un meccanismo immaginario; 'riflette su facce diverse' confonde riflessione e rifrazione — la separazione avviene per rifrazione, non per riflessione; 'illusione ottica' e un filler fuori tema, il fenomeno e reale e misurabile.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u7-07-5",
+    "topicId": "fis-u7-07",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Un raggio di luce passa dall'acqua (n = 1,33) al vetro (n = 1,50). In base alla legge di Snell (n₁ · sen θ₁ = n₂ · sen θ₂), cosa succede all'angolo del raggio nel vetro rispetto all'angolo nell'acqua?",
+    "choices": [
+      "L'angolo aumenta: il raggio si allontana dalla normale perche entra in un mezzo piu denso",
+      "L'angolo rimane uguale: la luce continua nella stessa direzione",
+      "L'angolo diminuisce: il raggio si avvicina alla normale perche entra in un mezzo con n piu alto",
+      "Il raggio torna indietro per riflessione totale interna",
+      "L'angolo dipende solo dalla temperatura dei due mezzi e non da n"
+    ],
+    "answer": 2,
+    "explain": "Dalla legge di Snell: n₁ · sen θ₁ = n₂ · sen θ₂. Qui n₂ (vetro, 1,50) e maggiore di n₁ (acqua, 1,33), quindi sen θ₂ deve essere minore di sen θ₁ per mantenere il prodotto uguale — l'angolo θ₂ si riduce, il raggio si avvicina alla normale. Regola pratica: entri in un mezzo con n piu alto → ti avvicini alla normale (angolo piu piccolo). Le trappole: 'l'angolo aumenta' e l'opposto esatto (confonde il comportamento nell'acqua con quello in aria); 'angolo uguale' ignora la legge di Snell; 'riflessione totale interna' avviene solo quando si passa da un mezzo piu denso a uno meno denso (qui e il contrario); 'dipende dalla temperatura' e un filler fuori tema.",
+    "tags": ["prova d'esame"]
+  }
+]

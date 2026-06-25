@@ -1,0 +1,97 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u6-06">
+
+**Aldeidi** e **chetoni** sono due famiglie di molecole che hanno una cosa in comune: un atomo di carbonio legato a un atomo di ossigeno con un **doppio legame**. Questo pezzetto si chiama **gruppo carbonile** e si scrive **C=O**. Capirlo è importante perché lo zucchero che mangi, e tante molecole del tuo corpo, hanno proprio questo gruppo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il carbonile (C=O) è come un "gancio". Se il gancio sta in fondo alla catena è un'<strong>aldeide</strong>; se sta in mezzo, fra due pezzi di catena, è un <strong>chetone</strong>.</div>
+
+## Aldeide o chetone? Guarda dove sta il carbonile
+
+Immagina la molecola come un trenino di vagoni (atomi di carbonio). Il gruppo carbonile è un vagone speciale con sopra l'ossigeno.
+
+- Se questo vagone speciale è **l'ultimo del treno** (a fine catena), accanto ha per forza un atomo di idrogeno (H): è un'**aldeide**.
+- Se il vagone speciale è **in mezzo al treno** (fra due altri carboni), è un **chetone**.
+
+<Diagram caption="Stessa idea, posizione diversa: aldeide (carbonile a fine catena) vs chetone (carbonile interno)" code={`flowchart TB
+  CO["Gruppo carbonile C=O"] --> ALD["A FINE catena<br/>= ALDEIDE<br/>(accanto c'è una H)"]
+  CO --> CHE["IN MEZZO alla catena<br/>= CHETONE<br/>(in mezzo a due carboni)"]`} />
+
+<Diagram caption="Schema concettuale delle due molecole" code={`flowchart LR
+  A["R"] --> B["C=O"]
+  B --> H["H<br/>(ALDEIDE)"]
+  C["R"] --> D["C=O"]
+  D --> E["R<br/>(CHETONE)"]`} />
+
+Qui **R** vuol dire semplicemente "il resto della catena di carboni". Nota la differenza: nell'aldeide accanto al C=O c'è una **H**; nel chetone ci sono **carboni da tutte e due le parti**.
+
+## Come si chiamano (nomenclatura)
+
+I nomi seguono una regoletta facile, basta cambiare la fine della parola:
+
+- **Aldeidi**: il nome finisce in **-ale**. Esempio: metan**ale**, etan**ale**.
+- **Chetoni**: il nome finisce in **-one**. Esempio: propan**one** (cioè l'acetone, quello per togliere lo smalto).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> finisce in <strong>-ale</strong> → aldeide. Finisce in <strong>-one</strong> → chetone. Una sola lettera ti dice di che famiglia è.</div>
+
+## Le proprietà: perché il C=O conta
+
+Il gruppo carbonile è **polare**: l'ossigeno tira gli elettroni più del carbonio, quindi una parte della molecola è un po' "negativa" e l'altra un po' "positiva", un po' come una piccola calamita. Da qui due conseguenze pratiche:
+
+- Aldeidi e chetoni si sciolgono abbastanza bene in **acqua** (quelli piccoli), perché l'acqua è anch'essa polare e le due si "attraggono".
+- Sono molecole **reattive**: quel C=O è un punto dove avvengono molte reazioni del corpo.
+
+**Aggancio alla medicina e alla veterinaria:** gli **zuccheri** sono proprio aldeidi o chetoni. Il **glucosio** (lo zucchero che dà energia alle cellule, tuo e di un cane o un cavallo) è un'aldeide; il **fruttosio** (lo zucchero della frutta) è un chetone. Inoltre, quando il corpo brucia grassi al posto degli zuccheri (per esempio nel digiuno o nel diabete non controllato), produce i **corpi chetonici**: il loro nome viene proprio da "chetone". Misurare i chetoni nel sangue o nelle urine è un esame che si fa davvero in clinica.
+
+## Guarda il video
+
+<YouTube id="GQGgi8DPQqk" title="3 differenze tra aldeidi e chetoni in chimica organica, con esercizi svolti — MnemoChimica" />
+
+<VideoVisto id="chim-u6-06" />
+
+## Da ricordare
+
+- Aldeidi e chetoni hanno entrambi il **gruppo carbonile C=O**.
+- **Aldeide** = carbonile a **fine catena** (accanto ha una H), nome in **-ale**.
+- **Chetone** = carbonile **in mezzo** (fra due carboni), nome in **-one**.
+- Il C=O è **polare**: rende queste molecole solubili in acqua (le piccole) e reattive.
+- In biologia contano tanto: il **glucosio** è un'aldeide, il **fruttosio** un chetone, e dai grassi nascono i **corpi chetonici**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è il gruppo che hanno in comune sia le aldeidi sia i chetoni?"
+  opzioni={["il gruppo C=O (carbonile)", "il gruppo O-H (ossidrile)", "il gruppo N-H", "il doppio legame C=C"]}
+  corretta={0}
+  spiegazione="Entrambe le famiglie hanno il gruppo carbonile, cioè un carbonio legato a un ossigeno con doppio legame (C=O)."
+/>
+
+<Quiz
+  domanda="Se il gruppo carbonile si trova IN MEZZO alla catena, fra due atomi di carbonio, la molecola è:"
+  opzioni={["un'aldeide", "un chetone", "un alcol", "un acido"]}
+  corretta={1}
+  spiegazione="Carbonile interno = chetone. Se invece stesse a fine catena (con accanto una H) sarebbe un'aldeide."
+/>
+
+<Quiz
+  domanda="Un nome che finisce in -ale (per esempio 'etanale') indica:"
+  opzioni={["un chetone", "un'aldeide", "un alcol", "un sale"]}
+  corretta={1}
+  spiegazione="La desinenza -ale è quella delle aldeidi. I chetoni finiscono invece in -one."
+/>
+
+<Esercizio
+  problema="Il propanone (l'acetone) ha il gruppo C=O sul carbonio centrale, con un gruppo di carboni a destra e uno a sinistra. È un'aldeide o un chetone? E come fai a capirlo dal nome?"
+  soluzione="È un CHETONE. Lo capisci in due modi: 1) il carbonile è in mezzo alla catena, fra due carboni (non a fine catena); 2) il nome finisce in -one, la desinenza tipica dei chetoni. Se fosse stato un'aldeide il nome sarebbe finito in -ale."
+/>
+
+</section>
+
+</RisorsaLayout>

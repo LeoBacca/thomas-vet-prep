@@ -1,0 +1,44 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import index from '@/data/chimica-index.json';
+import { isQuizTopic, quizTitle } from '@/data/quiz.js';
+const base = import.meta.env.BASE_URL;
+const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
+
+const topicsByUnit = (num: number) => index.topics.filter((t: any) => t.unita === num);
+const stars = (d: number) => '★'.repeat(d) + '☆'.repeat(3 - d);
+---
+<BaseLayout title="Chimica e Propedeutica Biochimica">
+  <nav class="breadcrumb"><a href={u('risorse/')}>Risorse</a> › Chimica</nav>
+  <h1>⚗️ Chimica e Propedeutica Biochimica</h1>
+  <p>Parti dall'Unità 1 e procedi in ordine. Ogni argomento ha spiegazione, diagramma e video.</p>
+
+  {index.unita.map((unit: any) => (
+    <section>
+      <h2>Unità {unit.num} — {unit.titolo} {!unit.ready && <span class="badge-soon">in arrivo</span>}</h2>
+      {unit.ready ? (
+        <>
+          <div class="unitbar" data-unit-bar data-ids={topicsByUnit(unit.num).map((t: any) => t.id).join(',')}>
+            <div class="track"><div class="fill"></div></div>
+            <span class="lbl">0/0 letti</span>
+          </div>
+          <ol class="topiclist">
+            {topicsByUnit(unit.num).map((t: any) => (
+              <li>
+                <span class="prog-check" data-prog-check data-id={t.id} role="button" tabindex="0" title="Segna come letto"></span>
+                <a href={u(t.url)}>
+                  <span class="num">{t.slug.slice(0, 2)}</span>
+                  <span>{t.titolo}</span>
+                  {isQuizTopic(t.id) && <span class="quiz-badge sm" title={quizTitle(t.id)}>📝 da quiz</span>}
+                  <span class="stars">{stars(t.difficolta)}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </>
+      ) : (
+        <p style="color:var(--muted)">{unit.topicIds.length} argomenti — in preparazione.</p>
+      )}
+    </section>
+  ))}
+</BaseLayout>

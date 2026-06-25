@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u5-03-1",
+    "topicId": "chim-u5-03",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: un idrocarburo 'saturo' si chiama cosi perche i suoi atomi di carbonio sono 'pieni', cioe hanno tutto l'idrogeno che possono tenere, con solo legami singoli tra di loro.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. 'Saturo' = pieno, niente posti liberi. I carboni si danno solo una mano (legame singolo) e ogni posto libero e occupato da idrogeno. Sono gli alcani, con desinenza -ano. Il burro e i grassi saturi funzionano esattamente cosi: catene di carboni 'piene', solide a temperatura ambiente.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-03-2",
+    "topicId": "chim-u5-03",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Guardi il nome di un idrocarburo e vedi che finisce in '-ene'. Cosa ti dice questa desinenza?",
+    "choices": [
+      "Che ha solo legami singoli tra i carboni (e saturo)",
+      "Che ha un doppio legame da qualche parte nella catena (e insaturo)",
+      "Che ha un triplo legame e appartiene agli alchini",
+      "Che la catena si chiude ad anello"
+    ],
+    "answer": 1,
+    "explain": "La desinenza e l'indizio chiave: -ANO = solo legami singoli (alcano, saturo); -ENE = un doppio legame (alchene, insaturo); -INO = un triplo legame (alchino, insaturo). L'etilene (etene) fa maturare la frutta proprio perche ha un doppio legame reattivo: e un alchene.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-03-3",
+    "topicId": "chim-u5-03",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "open",
+    "q": "Spiega come costruire il nome IUPAC di un idrocarburo semplice, usando i 3 passi. Poi applica la regola a questa molecola: una catena di 4 carboni con un doppio legame che parte dal carbonio numero 2.",
+    "answer": "I 3 passi IUPAC sono: 1) Conta i carboni della catena piu lunga: il numero da la radice del nome (1C = met-, 2C = et-, 3C = prop-, 4C = but-, 5C = pent-...). 2) Guarda i legami e scegli la desinenza: tutti singoli → -ano; un doppio → -ene; un triplo → -ino. 3) Numera i carboni partendo dal lato piu vicino al legame multiplo, e metti il numero nel nome per indicare dove inizia. Applicazione: 4 carboni → radice 'but'; un doppio legame → desinenza '-ene'; il doppio parte dal carbonio 2 → si scrive 'but-2-ene'. Nome finale: BUT-2-ENE.",
+    "explain": "Radice (quanti C) + desinenza (-ano/-ene/-ino) + numero (dove sta il legame multiplo): il nome IUPAC e un indirizzo preciso della molecola.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u5-03-4",
+    "topicId": "chim-u5-03",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Tra i composti organici, quali sono i piu semplici? (domanda reale d'esame 2024)",
+    "choices": [
+      "Gli idrocarburi",
+      "Le molecole di idrogeno",
+      "Gli esteri",
+      "Gli eteri",
+      "Gli epossidi"
+    ],
+    "answer": 0,
+    "explain": "Gli idrocarburi sono i piu semplici tra i composti organici perche contengono solo due tipi di atomi: carbonio (C) e idrogeno (H). Nient'altro. Esteri, eteri ed epossidi contengono anche ossigeno e hanno strutture piu complesse. 'Molecole di idrogeno' (H₂) e il filler fuori tema: sono una sostanza elementare, non un composto organico. Regola: organo = carbonio; semplice = meno tipi di atomi.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u5-03-5",
+    "topicId": "chim-u5-03",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Come si chiama il gruppo alchilico con formula -CH₂CH₂CH₃? (domanda reale d'esame 2011)",
+    "choices": [
+      "Propile",
+      "Pronano",
+      "Propene",
+      "Propanale",
+      "Propino"
+    ],
+    "answer": 0,
+    "explain": "Il gruppo ha 3 carboni: radice 'prop'. Un gruppo alchilico e un pezzo di alcano a cui manca un idrogeno (il trattino '-' all'inizio), e il suo nome finisce in '-ile'. Quindi: prop + ile = propile. Le trappole: 'Pronano' non esiste (nome inventato, confonde 'prop' con 'pro'); 'Propene' ha la desinenza -ene, che indica un doppio legame nell'idrocarburo completo, non in un gruppo alchilico; 'Propanale' e un aldeide (gruppo CHO), categoria completamente diversa; 'Propino' ha desinenza -ino, che indica un triplo legame. Tieni a mente: gruppo alchilico = radice dell'alcano + -ile.",
+    "tags": ["prova d'esame"]
+  }
+]

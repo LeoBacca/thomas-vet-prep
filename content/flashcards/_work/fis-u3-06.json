@@ -1,0 +1,39 @@
+{
+ "id": "fis-u3-06",
+ "titolo": "Flusso, portata e tipi di moto (stazionario, laminare, turbolento)",
+ "materia": "fisica",
+ "unita": 3,
+ "slug": "06-flusso-portata-e-tipi-di-moto",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/fisica/u3/06-flusso-portata-e-tipi-di-moto.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Luglio",
+   "q": "Qual è il termine usato per descrivere il flusso continuo a traiettorie rettilinee di un fluido senza turbolenze nemmeno a livello microscopico?",
+   "choices": [
+    "Flusso laminare",
+    "Flusso turbolento",
+    "Flusso viscoso",
+    "Flusso di Poiseuille",
+    "Flusso stazionario"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Un fluido si muove in un tubo con una velocità di 5 m/s. Se l'area trasversale del tubo è di 0,2 m^2, quanto vale la portata volumetrica?",
+   "choices": [
+    "1 m3/s",
+    "0,5 m3/s",
+    "10 m3/s",
+    "5 m3/s",
+    "2 m3/s"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

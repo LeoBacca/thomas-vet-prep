@@ -1,0 +1,146 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u6-03">
+
+## Come fanno le cellule a "riconoscersi"?
+
+Immagina di essere in una folla: riconosci i tuoi amici perché portano la stessa maglietta della squadra. Le cellule funzionano in modo simile. Sulla loro superficie ci sono **proteine speciali** che sporgono verso l'esterno. Quando due cellule si avvicinano, queste proteine si "stringono la mano" — e solo se sono compatibili, le cellule restano attaccate.
+
+Questo meccanismo è fondamentale: senza di esso i tessuti non si formerebbero, gli organi si sfalderebbero, e lo sviluppo dell'embrione sarebbe impossibile.
+
+---
+
+## Le CAM — Molecole di Adesione Cellulare
+
+**CAM** sta per *Cell Adhesion Molecule*, cioè **molecola di adesione cellulare**. Sono proteine transmembrana: hanno una parte dentro la cellula, attraversano la membrana, e sporgono fuori.
+
+Come funzionano?
+
+- La parte esterna si lega alla CAM della cellula vicina (legame **omofilico** = stessa proteina si riconosce) oppure a una CAM diversa (legame **eterofilico**).
+- La parte interna è spesso collegata al **citoscheletro** (la "struttura portante" interna della cellula), trasmettendo segnali meccanici.
+
+Esistono diverse famiglie di CAM:
+
+| Famiglia | Caratteristica principale |
+|---|---|
+| **Caderine** | Richiedono calcio (Ca²⁺) per funzionare |
+| **Immunoglobuline (IgCAM)** | Non richiedono calcio; esempio: N-CAM |
+| **Integrine** | Collegano la cellula alla matrice extracellulare |
+| **Selectine** | Coinvolte nell'adesione dei globuli bianchi |
+
+---
+
+## Le Caderine — le "cerniere" dei tessuti
+
+Le **caderine** sono le CAM più importanti per la formazione dei tessuti solidi. Il loro nome deriva da "calcio-dipendenti": senza ioni calcio (Ca²⁺) la loro struttura collassa e non riescono ad agganciarsi.
+
+Punti chiave:
+
+- Funzionano per legami **omofilici**: la E-caderina si lega solo ad un'altra E-caderina sulla cellula vicina.
+- **E-caderina** (E = Epithelial): si trova nelle cellule epiteliali (pelle, intestino, ecc.). Tiene insieme le cellule degli epiteli.
+- **N-caderina** (N = Neural): si trova nelle cellule nervose e muscolari.
+- **P-caderina** (P = Placenta): si trova nella placenta.
+
+La regola pratica: cellule con lo stesso tipo di caderina si raggruppano insieme. Questa è la base della **selezione cellulare** — cioè il fatto che cellule dello stesso tessuto "preferiscono" stare tra loro.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le caderine sono come moschettoni che si agganciano solo tra loro: E-caderina con E-caderina, N-caderina con N-caderina. Questo spiega perché le cellule della pelle non si mescolano con quelle del fegato.</div>
+
+---
+
+## Come si forma un tessuto: dalla cellula singola al gruppo
+
+Quando le cellule si dividono durante lo sviluppo, si ritrovano vicine ad altre cellule. Il processo di formazione del tessuto avviene in tappe:
+
+1. Le cellule esprimono sulla loro superficie un certo tipo di CAM (per esempio E-caderina).
+2. Le CAM riconoscono le stesse CAM sulle cellule vicine e si legano.
+3. I legami si stabilizzano grazie al Ca²⁺ (nel caso delle caderine) e al citoscheletro.
+4. Si formano strutture specializzate di giunzione (giunzioni aderenti, desmosomi) che rinforzano l'adesione.
+5. Le cellule così unite formano un **tessuto** con proprietà meccaniche e funzionali proprie.
+
+---
+
+<Diagram caption="Le principali famiglie di CAM e il loro ruolo nell'adesione cellulare" code={`flowchart TB
+  A["Molecole di Adesione Cellulare (CAM)"] --> B["Caderine<br/>(calcio-dipendenti)"]
+  A --> C["IgCAM<br/>(es. N-CAM, calcio-indipendenti)"]
+  A --> D["Integrine<br/>(legame con matrice extracellulare)"]
+  A --> E["Selectine<br/>(adesione leucociti a endotelio)"]
+  B --> F["E-caderina → tessuti epiteliali"]
+  B --> G["N-caderina → tessuto nervoso e muscolare"]
+  B --> H["P-caderina → placenta"]`} />
+
+<Diagram caption="Come le caderine guidano la formazione di un tessuto epiteliale" code={`flowchart LR
+  A["Cellula con<br/>E-caderina sulla superficie"] --> B["Si avvicina ad<br/>un'altra cellula con E-caderina"]
+  B --> C["Ca²⁺ stabilizza<br/>il legame omofilico"]
+  C --> D["La parte interna si ancora<br/>al citoscheletro (actina)"]
+  D --> E["Si forma la giunzione<br/>aderente"]
+  E --> F["Le cellule formano<br/>un foglio epiteliale (tessuto)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="tERuNzhb5jM" title="L'adesione cellulare di membrana" />
+<VideoVisto id="bio-u6-03" />
+
+---
+
+## Da ricordare
+
+- Le **CAM** (molecole di adesione cellulare) sono proteine di membrana che permettono alle cellule di riconoscersi e attaccarsi tra loro.
+- Le **caderine** sono CAM calcio-dipendenti che funzionano per legame omofilico: stesso tipo di caderina si lega allo stesso tipo — questo è il meccanismo base per cui cellule uguali si raggruppano formando tessuti.
+- La formazione di un tessuto dipende da: riconoscimento tramite CAM → legame stabilizzato da Ca²⁺ → ancoraggio al citoscheletro → giunzioni intercellulari specializzate.
+
+---
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale proprietà distingue le caderine dalle IgCAM?"
+  opzioni={[
+    "Le caderine sono proteine intracellulari, le IgCAM sono extracellulari",
+    "Le caderine richiedono ioni Ca²⁺ per funzionare, le IgCAM no",
+    "Le caderine si legano alla matrice extracellulare, le IgCAM no",
+    "Le caderine si trovano solo nelle cellule nervose"
+  ]}
+  corretta={1}
+  spiegazione="Le caderine sono calcio-dipendenti: in assenza di Ca²⁺ la loro struttura si destabilizza e non riescono a formare legami. Le IgCAM (come N-CAM) funzionano indipendentemente dal calcio."
+/>
+
+<Quiz
+  domanda="Cosa significa che le caderine formano legami 'omofilici'?"
+  opzioni={[
+    "Si legano a qualsiasi tipo di proteina di membrana vicina",
+    "Si legano solo alla matrice extracellulare",
+    "Una caderina si lega solo alla stessa tipologia di caderina sulla cellula vicina",
+    "Si legano solo in assenza di calcio"
+  ]}
+  corretta={2}
+  spiegazione="Omofilico significa 'stesso tipo con stesso tipo': la E-caderina riconosce e si lega solo alla E-caderina di un'altra cellula. Questo meccanismo spiega la selezione cellulare, cioè perché cellule dello stesso tessuto tendono a stare insieme."
+/>
+
+<Quiz
+  domanda="Quale tipo di caderina è principalmente responsabile della coesione delle cellule nei tessuti epiteliali (es. pelle, intestino)?"
+  opzioni={[
+    "N-caderina",
+    "P-caderina",
+    "T-caderina",
+    "E-caderina"
+  ]}
+  corretta={3}
+  spiegazione="La E-caderina (E = Epithelial) è la caderina tipica dei tessuti epiteliali. La sua presenza sulla membrana cellulare permette alle cellule epiteliali di riconoscersi e formare fogli compatti. La sua perdita è associata alla progressione tumorale (metastasi)."
+/>
+
+<Esercizio
+  problema="Una cellula staminale embrionale, durante lo sviluppo, deve migrare e aggregarsi con le future cellule nervose. Quale tipo di caderina dovrebbe esprimere sulla sua superficie per riconoscere le cellule nervose? Spiega il ragionamento."
+  soluzione="Dovrebbe esprimere la N-caderina (N = Neural), che è la caderina tipica delle cellule nervose e muscolari. Poiché i legami delle caderine sono omofilici, una cellula con N-caderina riconosce e si aggancia alle altre cellule che esprimono N-caderina. Se la cellula staminale esprimesse invece E-caderina, si aggregherebbe alle cellule epiteliali, finendo nel tessuto sbagliato."
+/>
+
+</section>
+
+</RisorsaLayout>

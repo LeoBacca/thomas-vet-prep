@@ -1,0 +1,67 @@
+{
+ "id": "chim-u6-11",
+ "titolo": "I derivati degli acidi carbossilici (esteri, tioesteri, ammidi, anidridi)",
+ "materia": "chimica",
+ "unita": 6,
+ "slug": "11-i-derivati-degli-acidi-carbossilici-esteri",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/chimica/u6/11-i-derivati-degli-acidi-carbossilici-esteri.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Le ammidi hanno carattere:",
+   "choices": [
+    "Neutro",
+    "Basico",
+    "Fortemente acido",
+    "Debolmente acido",
+    "Fortemente basico"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2010",
+   "q": "Quale delle formule seguenti corrisponde ad una generica ammide?",
+   "choices": [
+    "R-CO-NH2",
+    "R-CH2-NH2",
+    "R-CH2-N=N-CH3",
+    "R-O-NH2",
+    "R2C=NH"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "formula"
+  },
+  {
+   "year": "2014",
+   "q": "Quale dei seguenti gruppi funzionali è presente nella molecola CH3CH2CONH2?",
+   "choices": [
+    "Ammidico",
+    "Ossidrilico",
+    "Estereo",
+    "Chetonico",
+    "Amminico"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Un estere ha formula generica:",
+   "choices": [
+    "R-CO-O-R'",
+    "R-CO-O-H",
+    "R-CO-R'",
+    "R-CO-H",
+    "R-O-R'"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "formula"
+  }
+ ]
+}

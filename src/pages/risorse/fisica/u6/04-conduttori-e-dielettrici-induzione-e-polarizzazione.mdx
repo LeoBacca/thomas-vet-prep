@@ -1,0 +1,88 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u6-04">
+
+## Conduttori e dielettrici: cosa cambia?
+
+Tutti i materiali sono fatti di atomi, e gli atomi contengono cariche elettriche (elettroni negativi e nuclei positivi). La differenza tra un **conduttore** e un **dielettrico (isolante)** sta in quanto liberamente quegli elettroni possono muoversi.
+
+**Conduttori** — i metalli come il rame o l'alluminio. Gli elettroni più esterni degli atomi sono praticamente liberi di spostarsi ovunque nel materiale, come acqua che scorre in un tubo aperto.
+
+**Dielettrici (isolanti)** — materiali come il vetro, la gomma o il legno. Gli elettroni sono "incollati" ai loro atomi e non possono spostarsi liberamente. Sono come prigionieri che possono solo inclinarsi un po', ma non scappare.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> In un conduttore le cariche si spostano liberamente; in un dielettrico restano ferme ma si "stiracchiano" leggermente quando arriva un campo elettrico esterno.</div>
+
+---
+
+## Induzione elettrostatica (nei conduttori)
+
+Immagina di avvicinare un oggetto carico (ad esempio un palloncino strofinato) a una sbarra metallica senza toccarla.
+
+Le cariche libere della sbarra sentono il campo elettrico del palloncino e **si ridistribuiscono**: le cariche di segno opposto al palloncino migrano verso il lato vicino, quelle dello stesso segno scappano sul lato opposto. La sbarra non ha acquisito carica in totale, ma si è **separata internamente**.
+
+Questo fenomeno si chiama **induzione elettrostatica**. Se a questo punto si tocca la sbarra con un dito (messa a terra) e poi si allontana il dito prima di allontanare il palloncino, la sbarra rimane carica: è come "rubare" la carica indotta.
+
+<Diagram caption="Induzione elettrostatica in una sbarra conduttrice" code={`flowchart LR
+  P["Oggetto carico +"]
+  A["Cariche - <br/>(attirate verso sinistra)"]
+  B["Cariche + <br/>(respinte verso destra)"]
+  P --> A
+  A --- B`} />
+
+---
+
+## Polarizzazione (nei dielettrici)
+
+Nei dielettrici gli elettroni non possono spostarsi da un atomo all'altro. Però, quando arriva un campo elettrico esterno, ogni atomo si **deforma leggermente**: la nuvola di elettroni si sposta un po' verso il polo positivo esterno, mentre il nucleo rimane quasi fermo.
+
+Il risultato è che ogni atomo diventa un piccolo **dipolo elettrico** (cioè ha un polo + e un polo – separati). Tutti questi piccoli dipoli si orientano nella stessa direzione: il materiale si è **polarizzato**.
+
+Effetto macroscopico: sulla superficie del dielettrico compaiono cariche di superficie (dette **cariche di polarizzazione**), anche se internamente il materiale rimane neutro.
+
+<Diagram caption="Polarizzazione di un dielettrico in un campo elettrico esterno" code={`flowchart TB
+  CE["Campo elettrico esterno →"]
+  CE --> AT["Atomi del dielettrico:<br/>elettroni si spostano leggermente"]
+  AT --> DP["Si formano piccoli dipoli<br/>+ a destra, - a sinistra"]
+  DP --> CP["Cariche di polarizzazione<br/>sulla superficie del materiale"]`} />
+
+---
+
+## Il confronto in sintesi
+
+| | Conduttore | Dielettrico |
+|---|---|---|
+| Cariche libere? | Sì | No |
+| Effetto campo esterno | Induzione (cariche si spostano) | Polarizzazione (atomi si deformano) |
+| Esempi | Rame, alluminio, ferro | Vetro, gomma, legno, plastica |
+
+---
+
+## Guarda il video
+<YouTube id="gfYvvOk84EQ" title="FISICA 2! elettrostatica fisica, induzione e polarizzazione, polarizzazione dielettrici" />
+<VideoVisto id="fis-u6-04" />
+
+## Da ricordare
+- Nei **conduttori** le cariche libere si spostano fisicamente in risposta a un campo esterno (induzione elettrostatica).
+- Nei **dielettrici** le cariche non si spostano, ma ogni atomo si deforma formando un dipolo: è la **polarizzazione**.
+- In entrambi i casi il materiale reagisce al campo esterno, ma con meccanismi completamente diversi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Cos'è l'induzione elettrostatica?" opzioni={["Un dielettrico che si scalda in presenza di cariche","La ridistribuzione delle cariche libere in un conduttore causata da un oggetto carico vicino","La deformazione degli atomi di un isolante in un campo elettrico","Il trasferimento diretto di cariche per contatto"]} corretta={1} spiegazione="L'induzione elettrostatica è il fenomeno per cui le cariche libere di un conduttore si ridistribuiscono in risposta al campo elettrico di un oggetto carico nelle vicinanze, senza contatto diretto." />
+
+<Quiz domanda="In un dielettrico posto in un campo elettrico esterno, cosa succede agli atomi?" opzioni={["Gli elettroni abbandonano gli atomi e scorrono nel materiale","Gli atomi si rompono liberando cariche","La nuvola elettronica si sposta leggermente rispetto al nucleo, formando un dipolo","Gli atomi non subiscono alcun effetto"]} corretta={2} spiegazione="Nei dielettrici gli elettroni non possono spostarsi liberamente, ma il campo esterno deforma ogni atomo: la nuvola di elettroni si sposta leggermente rispetto al nucleo. Ogni atomo diventa un piccolo dipolo. Questo fenomeno si chiama polarizzazione." />
+
+<Quiz domanda="Quale di questi materiali è un buon conduttore elettrico?" opzioni={["Gomma","Vetro","Rame","Legno"]} corretta={2} spiegazione="Il rame è un metallo con molti elettroni liberi, quindi è un ottimo conduttore. Gomma, vetro e legno sono dielettrici (isolanti): i loro elettroni non sono liberi di muoversi." />
+
+<Esercizio problema="Una bacchetta di plastica strofinata con un panno (carica negativamente) viene avvicinata a una sferetta metallica isolata, senza toccarla. Descrivi cosa succede alle cariche nella sferetta e come si chiama questo fenomeno." soluzione="La bacchetta carica negativamente crea un campo elettrico attorno a sé. Le cariche libere nella sferetta metallica si ridistribuiscono: gli elettroni (negativi) vengono respinti dalla bacchetta e migrano sul lato più lontano, mentre il lato vicino alla bacchetta risulta carico positivamente (mancanza di elettroni). La sferetta rimane neutra in totale, ma le cariche si sono separate. Questo fenomeno si chiama induzione elettrostatica. Se ora si tocca la sferetta con un dito (messa a terra) mentre la bacchetta è ancora vicina, gli elettroni in eccesso sul lato lontano defluiscono verso terra; togliendo il dito e poi la bacchetta, la sferetta resta carica positivamente." />
+
+</section>
+
+</RisorsaLayout>

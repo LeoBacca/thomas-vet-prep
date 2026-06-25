@@ -1,0 +1,67 @@
+{
+ "id": "fis-u2-18",
+ "titolo": "Quantità di moto, impulso e loro conservazione",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "18-quantita-di-moto-impulso-e-loro",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/fisica/u2/18-quantita-di-moto-impulso-e-loro.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "Due sfere di metallo di peso diverso si muovono su un piano orizzontale l'una verso l'altra con velocità diversa. Trascurando ogni forza esterna e supponendo elastico il loro urto, quale delle seguenti affermazioni è più adeguata?",
+   "choices": [
+    "Nell'urto si conservano l'energia cinetica totale e la quantità di moto totale",
+    "Nell'urto l'energia cinetica totale si conserva, ma non la quantità di moto totale",
+    "Nell'urto si conserva la quantità di moto totale, ma parte dell'energia cinetica viene dissipata",
+    "L'urto modifica sia l'energia cinetica totale che la quantità di moto totale",
+    "La quantità di moto totale cambia a seconda dell'angolo di impatto delle due sfere"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2013",
+   "q": "Una palla da biliardo del peso di 0,15 kg si muove ad una velocita di 1,6 m/s. Colpisce perpendicolarmente la sponda e rimbalza indietro nella stessa direzione di provenienza ad una velocita di 1,4 m/s. Se la media aritmetica della forza esercitata sulla sponda e di 30 N, per quanto tempo la palla e rimasta a contatto con la sponda?",
+   "choices": [
+    "0,015 s",
+    "0,15 s",
+    "0,001 s",
+    "1,0 s",
+    "15 s"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2022",
+   "q": "Un carrellino ferroviario di massa m, che viaggia con velocità costante v0, urta un carrellino identico inizialmente fermo, restando unito ad esso. Cosa succede immediatamente dopo l'urto?",
+   "choices": [
+    "I due carrellini si muovono con velocità (1/2) v0",
+    "I due carrellini si fermano",
+    "I due carrellini si muovono con velocità v0",
+    "I due carrellini si muovono con energia cinetica pari a m·v0^2",
+    "I due carrellini si muovono con energia cinetica pari a (1/2) m·v0^2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Un corpo di massa m che si muove con velocità v ha la seguente quantità di moto:",
+   "choices": [
+    "mv",
+    "mgh",
+    "ma",
+    "mv^2",
+    "mvr"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "formula"
+  }
+ ]
+}

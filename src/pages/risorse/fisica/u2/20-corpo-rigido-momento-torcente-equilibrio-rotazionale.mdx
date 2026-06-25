@@ -1,0 +1,120 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-20">
+
+## Cos'è un corpo rigido?
+
+Un **corpo rigido** è un oggetto che non si deforma quando lo spingi o ci applichi una forza. In pratica, è una semplificazione: immagina una sbarra di metallo o un osso — li trattiamo come se non si piegassero.
+
+Quando studi un corpo rigido, non basta sapere se si muove in avanti o indietro. Devi capire anche se **ruota**. Ecco perché servono concetti nuovi.
+
+---
+
+## Il momento di una forza (momento torcente)
+
+Il **momento torcente** (o momento di una forza) è la "capacità di una forza di far ruotare un oggetto" attorno a un punto fisso, detto **perno** o **fulcro**.
+
+La formula è:
+
+**M = F × d**
+
+Dove:
+- **F** è la forza applicata (in Newton)
+- **d** è la **distanza perpendicolare** tra il punto di applicazione e il perno (in metri)
+- **M** è il momento torcente (in Newton·metro, N·m)
+
+**Esempio pratico:** aprire una porta. Se spingi lontano dal cardine (perno), la porta gira facilmente. Se spingi vicino al cardine, devi usare molta più forza. Stessa porta, stesso peso — ma cambia la distanza, e quindi il momento torcente.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il momento torcente è come la "spinta di rotazione". Più sei lontano dal perno, più riesci a far ruotare l'oggetto con meno sforzo.</div>
+
+---
+
+## Equilibrio rotazionale
+
+Un oggetto è in **equilibrio rotazionale** quando non accelera in rotazione — cioè sta fermo o ruota a velocità costante.
+
+La condizione è:
+
+**La somma di tutti i momenti torcenti è zero.**
+
+I momenti che fanno ruotare in senso orario e quelli in senso antiorario si devono bilanciare perfettamente.
+
+**Esempio:** la bilancia a bracci. Se metti lo stesso peso alla stessa distanza dai due lati, i momenti si pareggiano e la bilancia non gira.
+
+---
+
+## Le leve
+
+Una **leva** è una delle macchine semplici più antiche. È una sbarra rigida che ruota attorno a un fulcro. Serve a sollevare pesi con meno forza, oppure ad aumentare la velocità del movimento.
+
+Ci sono **tre generi di leva**, in base a dove si trovano il fulcro (F), la resistenza (R) e la forza motrice (M):
+
+| Genere | Ordine | Esempio nel corpo |
+|--------|--------|-------------------|
+| 1° genere | F tra R e M | Testa sull'atlante (vertebra) |
+| 2° genere | R tra F e M | Alzarsi sulla punta dei piedi |
+| 3° genere | M tra F e R | Flessione del braccio con il bicipite |
+
+**Il 3° genere è il più comune nel corpo umano.** Il muscolo (forza) si attacca vicino all'articolazione (fulcro), mentre il peso da sollevare (resistenza) è lontano. Questo significa che i muscoli devono esercitare forze molto grandi per sollevare anche pesi piccoli — ma guadagnano in velocità e ampiezza del movimento.
+
+---
+
+<Diagram caption="Come funziona il momento torcente: forza × distanza dal perno" code={`flowchart LR
+  A["Perno (fulcro)"] -- "distanza d" --> B["Punto di applicazione<br/>della forza F"]
+  B --> C["Momento = F × d"]
+  C --> D["Rotazione dell'oggetto"]`} />
+
+<Diagram caption="I tre generi di leva nel corpo umano" code={`flowchart TB
+  A["LEVE NEL CORPO UMANO"] --> B["1° genere<br/>Fulcro tra forza e resistenza<br/>Esempio: testa sull'atlante"]
+  A --> C["2° genere<br/>Resistenza tra fulcro e forza<br/>Esempio: punta dei piedi"]
+  A --> D["3° genere — più comune<br/>Forza tra fulcro e resistenza<br/>Esempio: bicipite che flette il braccio"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="qWNQe2geuFo" title="LEZIONE di FISICA: MOMENTO di una forza + PROBLEMI FISICA 1 corpo rigido, leve, momento in fisica" />
+<VideoVisto id="fis-u2-20" />
+
+## Da ricordare
+- Il **momento torcente** misura la capacità di una forza di far ruotare un oggetto: M = F × d, dove d è la distanza dal perno.
+- L'**equilibrio rotazionale** si raggiunge quando la somma di tutti i momenti torcenti è zero (momenti orari = momenti antiorari).
+- Le **leve** sfruttano il momento torcente: nel corpo umano prevalgono le leve di 3° genere, dove il muscolo lavora vicino all'articolazione e guadagna in velocità ma deve esercitare forze elevate.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Una forza di 10 N è applicata a 0,5 m dal fulcro di una leva. Quanto vale il momento torcente?"
+  opzioni={["5 N·m", "10 N·m", "0,5 N·m", "20 N·m"]}
+  corretta={0}
+  spiegazione="M = F × d = 10 N × 0,5 m = 5 N·m. Il momento torcente è il prodotto della forza per la distanza perpendicolare dal fulcro."
+/>
+
+<Quiz
+  domanda="Quale condizione deve essere soddisfatta perché un corpo rigido sia in equilibrio rotazionale?"
+  opzioni={["La forza totale applicata deve essere zero", "La somma dei momenti torcenti deve essere zero", "Il corpo deve essere in quiete assoluta", "La velocità di rotazione deve essere massima"]}
+  corretta={1}
+  spiegazione="L'equilibrio rotazionale richiede che la somma algebrica di tutti i momenti torcenti attorno a qualsiasi punto sia uguale a zero. Questo è il secondo principio dell'equilibrio statico."
+/>
+
+<Quiz
+  domanda="Nel corpo umano, la flessione del braccio con il bicipite è un esempio di leva di quale genere?"
+  opzioni={["1° genere", "2° genere", "3° genere", "Non è una leva"]}
+  corretta={2}
+  spiegazione="È una leva di 3° genere: il fulcro è l'articolazione del gomito, la forza motrice è il bicipite (si inserisce vicino al gomito), e la resistenza è il peso tenuto in mano (lontano dal fulcro). In questo tipo di leva la forza muscolare deve essere maggiore della resistenza, ma si guadagna in velocità."
+/>
+
+<Esercizio
+  problema="Una sbarra orizzontale è appoggiata su un fulcro posto al centro. A sinistra, a 0,4 m dal fulcro, appende un peso di 20 N. Dove devi appendere un peso di 16 N sul lato destro per mantenere l'equilibrio?"
+  soluzione="Per l'equilibrio rotazionale, i momenti torcenti devono bilanciarsi: momento sinistro = 20 N × 0,4 m = 8 N·m. Sul lato destro: 16 N × d = 8 N·m → d = 8 / 16 = 0,5 m. Il peso di 16 N va appeso a 0,5 m dal fulcro sul lato destro."
+/>
+
+</section>
+
+</RisorsaLayout>

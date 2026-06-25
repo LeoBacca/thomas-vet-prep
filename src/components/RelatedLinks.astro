@@ -1,0 +1,22 @@
+---
+import { topics } from '@/data/all.js';
+
+interface Props { ids?: string[]; title?: string; }
+const { ids = [], title = 'Vedi anche' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
+
+const items = ids
+  .map((id) => topics.find((t: any) => t.id === id))
+  .filter(Boolean) as any[];
+---
+{items.length > 0 && (
+  <aside class="related">
+    <h3>{title}</h3>
+    <ul>
+      {items.map((it) => (
+        <li><a href={u(it.url)}>{it.titolo}</a></li>
+      ))}
+    </ul>
+  </aside>
+)}

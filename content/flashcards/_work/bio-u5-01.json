@@ -1,0 +1,25 @@
+{
+ "id": "bio-u5-01",
+ "titolo": "Le membrane e il modello a mosaico fluido (glicocalice, asimmetria)",
+ "materia": "biologia",
+ "unita": 5,
+ "slug": "01-le-membrane-e-il-modello-a",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u5/01-le-membrane-e-il-modello-a.mdx",
+ "examQuestions": [
+  {
+   "year": "2018",
+   "q": "Quale tra le seguenti NON è una funzione delle proteine che costituiscono la membrana cellulare?",
+   "choices": [
+    "Trascrizionale",
+    "Di trasporto",
+    "Di adesione",
+    "Recettoriale",
+    "Di trasduzione di segnali"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

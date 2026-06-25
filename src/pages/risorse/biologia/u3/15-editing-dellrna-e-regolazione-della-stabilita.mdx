@@ -1,0 +1,109 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-15">
+
+## Cos'è l'editing dell'RNA?
+
+Pensa all'mRNA come a un documento Word già scritto. L'editing dell'RNA è come aprire quel documento **dopo** la stampa e cambiare qualche lettera con un correttore. Non si tocca il DNA originale: si modifica la copia (l'mRNA) direttamente.
+
+Il meccanismo più comune si chiama **deaminazione**: un enzima (come ADAR, per l'adenosina) trasforma una base azotata in un'altra. Per esempio, una **adenosina (A)** viene convertita in **inosina (I)**, che la cellula legge come guanosina (G). Risultato: il messaggero porta un'informazione diversa da quella scritta nel DNA.
+
+**Perché farlo?** Permette di produrre proteine diverse partendo dallo stesso gene — un modo elegante per aumentare la varietà delle proteine senza duplicare il DNA.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'editing dell'RNA è come correggere una fotocopia senza toccare l'originale — la cellula cambia il messaggio al volo per ottenere proteine diverse.</div>
+
+---
+
+## Quanto vive un mRNA? La stabilità del messaggero
+
+Un mRNA non dura per sempre. La cellula lo degrada dopo un po', come cancellare un file temporaneo. La **durata di vita** (emivita) dell'mRNA determina quanta proteina viene prodotta: un mRNA stabile = tanta proteina; un mRNA degradato subito = poca proteina.
+
+I fattori che controllano la stabilità sono:
+
+- **Il cappuccio (5' cap):** protegge l'estremità iniziale dell'mRNA dalla degradazione.
+- **La coda di poli-A (3' poly-A tail):** una lunga fila di adenine alla fine che funge da "scudo". Più è lunga, più l'mRNA sopravvive.
+- **Sequenze ARE (AU-rich elements):** presenti nella regione non codificante 3', segnalano alla cellula di degradare l'mRNA rapidamente.
+- **miRNA:** piccoli RNA che si legano all'mRNA e ne accelerano la distruzione (vedi sotto).
+
+---
+
+## I miRNA: i silenziatori dell'espressione genica
+
+I **miRNA (microRNA)** sono piccole molecole di RNA, lunghe circa 22 nucleotidi, che **non codificano proteine**. Il loro lavoro è silenziare altri geni.
+
+Come funzionano:
+
+1. Il gene del miRNA viene trascritto nel nucleo come un lungo precursore.
+2. L'enzima **Drosha** lo taglia in un hairpin (struttura a forcina) chiamato **pre-miRNA**.
+3. Il pre-miRNA esce dal nucleo attraverso le proteine di export.
+4. Nel citoplasma, l'enzima **Dicer** lo taglia ulteriormente, producendo un doppio filamento corto.
+5. Uno dei due filamenti si associa al complesso **RISC** (RNA-Induced Silencing Complex).
+6. Il RISC usa il miRNA come guida per trovare l'mRNA bersaglio tramite complementarietà di basi.
+7. Se il legame è perfetto: l'mRNA viene **tagliato e distrutto**. Se il legame è parziale: la **traduzione viene bloccata**.
+
+---
+
+## RNA interference (RNAi): lo stesso principio, diverso punto di partenza
+
+L'**interferenza a RNA (RNAi)** è un meccanismo simile, ma spesso innescato da RNA a doppio filamento (dsRNA) esterno alla cellula (per esempio da un virus).
+
+- Il dsRNA viene tagliato da **Dicer** in frammenti corti detti **siRNA** (small interfering RNA).
+- I siRNA entrano nel complesso RISC.
+- Il RISC trova e distrugge l'mRNA complementare.
+
+In pratica, siRNA e miRNA usano la stessa macchina molecolare (RISC + Dicer), ma arrivano da fonti diverse: i miRNA sono prodotti dalla cellula stessa, i siRNA spesso vengono dall'esterno.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> miRNA e siRNA sono come telecomandi che spengono specifici canali (mRNA bersaglio) — il RISC è il telecomando, il piccolo RNA è il numero del canale.</div>
+
+---
+
+<Diagram caption="Biogenesi e meccanismo d'azione dei miRNA" code={`flowchart TB
+  A["Gene del miRNA nel DNA"] --> B["Trascrizione nel nucleo:<br/>pri-miRNA (lungo precursore)"]
+  B --> C["Taglio da parte di DROSHA:<br/>pre-miRNA (struttura a forcina)"]
+  C --> D["Esportazione nel citoplasma<br/>(via Exportina-5)"]
+  D --> E["Taglio da parte di DICER:<br/>doppio filamento corto ~22 nt"]
+  E --> F["Associazione al complesso RISC"]
+  F --> G{"Complementarietà<br/>con mRNA bersaglio?"}
+  G --> H["Complementarietà perfetta:<br/>mRNA tagliato e degradato"]
+  G --> I["Complementarietà parziale:<br/>traduzione bloccata"]`} />
+
+<Diagram caption="Confronto tra editing dell'RNA, miRNA e RNAi nella regolazione dell'espressione genica" code={`flowchart LR
+  A["DNA"] --> B["mRNA (trascritto primario)"]
+  B --> C["Editing dell'RNA<br/>(enzimi ADAR/APOBEC)<br/>→ cambia sequenza mRNA"]
+  B --> D["Stabilità mRNA<br/>(cap, poly-A, ARE)<br/>→ controlla durata di vita"]
+  B --> E["miRNA endogeni<br/>→ blocco traduzione<br/>o degradazione"]
+  B --> F["siRNA (RNAi)<br/>da dsRNA esterno<br/>→ degradazione mRNA"]
+  C --> G["Proteina modificata"]
+  D --> G
+  E --> H["Silenziamento genico"]
+  F --> H`} />
+
+## Guarda il video
+<YouTube id="Yz3ndoLSmn0" title="STABILITÀ dell'mRNA e REGOLAZIONE TRADUZIONALE - i microRNA (o miRNA)" />
+<VideoVisto id="bio-u3-15" />
+
+## Da ricordare
+- L'editing dell'RNA modifica la sequenza del messaggero dopo la trascrizione, senza toccare il DNA — l'enzima ADAR converte A in I, cambiando il significato del codone.
+- La stabilità dell'mRNA dipende dal cappuccio 5', dalla coda poly-A e da sequenze segnale; più l'mRNA dura, più proteina viene prodotta.
+- I miRNA sono piccoli RNA endogeni (~22 nt) che, tramite il complesso RISC, silenziano geni bersaglio bloccando la traduzione o degradando l'mRNA; i siRNA funzionano allo stesso modo ma originano da RNA a doppio filamento esterno (RNAi).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale enzima taglia il pre-miRNA nel citoplasma producendo il piccolo RNA a doppio filamento di ~22 nucleotidi?" opzioni={["Drosha","Dicer","RISC","ADAR"]} corretta={1} spiegazione="Dicer è la ribonucleasi citoplasmatica che taglia il pre-miRNA (già esportato dal nucleo) in un frammento corto a doppio filamento. Drosha invece opera nel nucleo sul pri-miRNA. RISC è il complesso effettore, non un enzima di taglio del precursore. ADAR è coinvolto nell'editing, non nel processamento dei miRNA." />
+
+<Quiz domanda="Cosa succede alla traduzione di un mRNA quando il miRNA nel complesso RISC si lega ad esso con complementarietà PARZIALE (non perfetta)?" opzioni={["L'mRNA viene tagliato e distrutto immediatamente","La traduzione viene rallentata o bloccata, ma l'mRNA rimane intatto","Il miRNA si distacca senza effetto","L'mRNA viene esportato fuori dalla cellula"]} corretta={1} spiegazione="Con complementarietà parziale il RISC non taglia l'mRNA ma ne blocca la traduzione (repressione traduzionale): l'mRNA resta intatto, ma il ribosoma non riesce a leggerlo. La degradazione diretta dell'mRNA avviene invece solo con complementarietà perfetta, tipica dei siRNA." />
+
+<Quiz domanda="Qual è la principale differenza tra siRNA e miRNA?" opzioni={["I siRNA sono più lunghi dei miRNA","I miRNA provengono da dsRNA esterno (es. virale), i siRNA sono prodotti dalla cellula stessa","I siRNA originano da RNA a doppio filamento esterno (es. virale), mentre i miRNA sono prodotti endogenamente dalla cellula","I siRNA bloccano la traduzione, i miRNA degradano direttamente l'mRNA"]} corretta={2} spiegazione="La distinzione chiave è l'origine: i miRNA sono prodotti dalla cellula stessa (endogeni) a partire da geni specifici; i siRNA derivano tipicamente da RNA a doppio filamento esterno, come RNA virali o RNA introdotti sperimentalmente. Entrambi usano il complesso RISC come effettore." />
+
+<Esercizio problema="Un ricercatore introduce in una cellula un siRNA perfettamente complementare all'mRNA di una proteina essenziale per la divisione cellulare. Dopo 48 ore, la divisione cellulare si ferma quasi completamente. Spiega, passo per passo, come il siRNA ha portato a questo risultato." soluzione="1. Il siRNA introdotto (a doppio filamento, ~21-23 nt) viene riconosciuto da Dicer nel citoplasma, che lo processa se necessario. 2. Un filamento del siRNA (filamento guida) si associa al complesso RISC. 3. Il RISC usa il filamento guida come sonda: cerca nell'mRNA citoplasmatico la sequenza complementare. 4. Trovato l'mRNA bersaglio (quello che codifica la proteina della divisione cellulare), il RISC lo lega con complementarietà perfetta. 5. La proteina Argonauta del RISC taglia l'mRNA bersaglio, che viene poi completamente degradato dalle esonucleasi cellulari. 6. Senza mRNA, i ribosomi non possono produrre la proteina necessaria per la divisione. 7. Esaurite le scorte proteiche preesistenti, la divisione cellulare si ferma. Questo è il principio dell'RNAi usato in laboratorio per silenziare geni specifici." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,137 @@
+{
+ "id": "bio-u1-18",
+ "titolo": "Nucleotidi, acidi nucleici e la doppia elica del DNA (Watson e Crick)",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "18-nucleotidi-acidi-nucleici-e-la-doppia",
+ "freq": 9,
+ "risorseMdx": "src/pages/risorse/biologia/u1/18-nucleotidi-acidi-nucleici-e-la-doppia.mdx",
+ "examQuestions": [
+  {
+   "year": "2013",
+   "q": "Quale/i tra gli acidi nucleici elencati di seguito contiene/contengono azoto? 1. DNA  2. mRNA  3. tRNA",
+   "choices": [
+    "Tutti",
+    "Solo 1",
+    "Solo 1 e 2",
+    "Solo 1 e 3",
+    "Solo 2 e 3"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2014",
+   "q": "Cosa rende il DNA carico negativamente?",
+   "choices": [
+    "Il gruppo fosfato",
+    "Lo zucchero",
+    "Le basi azotate",
+    "Il legame idrogeno",
+    "Il legame fosfodiesterico"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2015",
+   "q": "Quante reazioni di condensazione avvengono durante la formazione di una catena di tre nucleotidi a partire da fosfato, deossiribosio e basi azotate?",
+   "choices": [
+    "8",
+    "2",
+    "5",
+    "6",
+    "0"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2016",
+   "q": "Se in una doppia elica di DNA il contenuto di timina è pari al 34%, quale sarà la percentuale di citosina?",
+   "choices": [
+    "16%",
+    "34%",
+    "32%",
+    "17%",
+    "66%"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2017",
+   "q": "Quale tra i seguenti composti biochimici contiene azoto?",
+   "choices": [
+    "ATP",
+    "Glucosio",
+    "Amilosio",
+    "Vitamina D1",
+    "Colesterolo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "In una molecola di DNA costituita da 3000 nucleotidi dei quali il 30% sono citosine, quale sarà il numero di timine? (Nota: per questo quesito il bando indica che nessuna delle risposte è la soluzione: con C = 30% si ha G = 30% e A = T = 20%, quindi T = 600.)",
+   "choices": [
+    "1050",
+    "900",
+    "1200",
+    "450",
+    "1500"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2022",
+   "q": "Quali fra i costituenti elencati di seguito fanno parte della molecola di ATP? 1. Due gruppi fosfato; 2. Adenina; 3. Ribosio; 4. Guanina; 5. Un gruppo fosfato; 6. Citosina; 7. Desossiribosio; 8. Tre gruppi fosfato",
+   "choices": [
+    "2, 3, 8",
+    "1, 2, 7",
+    "4, 5, 7",
+    "3, 6, 8",
+    "2, 7, 8"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Quale delle seguenti affermazioni sugli acidi nucleici è VERA?",
+   "choices": [
+    "Immagazzinano l'informazione genetica",
+    "Degradano i prodotti di scarto della cellula",
+    "Sono componenti delle membrane delle cellule animali",
+    "Hanno una funzione prettamente strutturale",
+    "Fungono da riserva energetica"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Quale tra le seguenti affermazioni riferite agli acidi nucleici presenti in una cellula eucariotica NON è corretta?",
+   "choices": [
+    "I nucleotidi adiacenti in un filamento di DNA sono uniti mediante 2 o 3 legami a idrogeno",
+    "I filamenti che costituiscono la doppia elica del DNA sono antiparalleli",
+    "Nelle molecole di tRNA alcune basi sono appaiate mediante legami a idrogeno",
+    "Le diverse basi azotate che entrano nella formazione dei nucleotidi che formano gli acidi nucleici sono cinque",
+    "L'RNA è localizzato prevalentemente nel citoplasma di una cellula"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

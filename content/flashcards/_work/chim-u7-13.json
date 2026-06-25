@@ -1,0 +1,25 @@
+{
+ "id": "chim-u7-13",
+ "titolo": "Il legame fosfodiestere e la struttura degli acidi nucleici (DNA e RNA)",
+ "materia": "chimica",
+ "unita": 7,
+ "slug": "13-il-legame-fosfodiestere-e-la-struttura",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u7/13-il-legame-fosfodiestere-e-la-struttura.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "Nella doppia elica del DNA le due catene polinucleotidiche sono unite tra loro:",
+   "choices": [
+    "da due o tre legami idrogeno tra coppie di basi",
+    "da due legami idrogeno tra ogni coppia di basi",
+    "da tre legami idrogeno tra ogni coppia di basi",
+    "da legami fosfodiestere tra i residui di pentoso",
+    "da legami idrogeno tra i residui di pentoso"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

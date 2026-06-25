@@ -1,0 +1,25 @@
+{
+ "id": "bio-u6-03",
+ "titolo": "Riconoscimento tra cellule (caderine, CAM) e formazione dei tessuti",
+ "materia": "biologia",
+ "unita": 6,
+ "slug": "03-riconoscimento-tra-cellule-caderine-cam-e",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u6/03-riconoscimento-tra-cellule-caderine-cam-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Un insieme di cellule unite a svolgere una medesima funzione costituisce:",
+   "choices": [
+    "un tessuto",
+    "un apparato",
+    "un organismo",
+    "un organo",
+    "un individuo"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

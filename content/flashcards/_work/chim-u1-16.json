@@ -1,0 +1,39 @@
+{
+ "id": "chim-u1-16",
+ "titolo": "L'ibridazione degli orbitali (sp, sp², sp³)",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "16-libridazione-degli-orbitali-sp-sp-sp",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u1/16-libridazione-degli-orbitali-sp-sp-sp.mdx",
+ "examQuestions": [
+  {
+   "year": "2020",
+   "q": "Quale delle seguenti molecole presenta l'atomo centrale ibridizzato sp2?",
+   "choices": [
+    "SO2",
+    "H2S",
+    "H2O",
+    "NH3",
+    "CO2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Lo stato di ibridazione e il numero di ossidazione di ciascun atomo di azoto nella molecola N2O4 sono rispettivamente:",
+   "choices": [
+    "sp2; +4",
+    "sp2; +3",
+    "sp3; +5",
+    "sp3; +4",
+    "sp; +3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

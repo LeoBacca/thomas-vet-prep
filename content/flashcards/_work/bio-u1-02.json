@@ -1,0 +1,53 @@
+{
+ "id": "bio-u1-02",
+ "titolo": "Le proprietà fondamentali della materia vivente",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "02-le-proprieta-fondamentali-della-materia-vivente",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/biologia/u1/02-le-proprieta-fondamentali-della-materia-vivente.mdx",
+ "examQuestions": [
+  {
+   "year": "2012",
+   "q": "L'insieme dei processi che permettono ad un organismo di mantenere condizioni chimico-fisiche stabili al suo interno è definito:",
+   "choices": [
+    "omeostasi",
+    "osmosi",
+    "feedback",
+    "retroazione",
+    "osmolarità"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2016",
+   "q": "Quando si parla di \"omeostasi\" ci si riferisce:",
+   "choices": [
+    "alla facoltà di autoregolazione degli organismi viventi",
+    "nessuna delle altre alternative è corretta",
+    "alla capacità degli esseri viventi di autoalimentarsi",
+    "a una particolare forma di riproduzione asessuata",
+    "alla facoltà degli organismi viventi di autodistruzione dei tessuti morti"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2017",
+   "q": "Sono organismi autotrofi:",
+   "choices": [
+    "le piante e i cianobatteri",
+    "i funghi e le piante",
+    "esclusivamente le piante",
+    "qualunque organismo che utilizzi i nutrienti di natura esogena",
+    "gli organismi saprofagi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

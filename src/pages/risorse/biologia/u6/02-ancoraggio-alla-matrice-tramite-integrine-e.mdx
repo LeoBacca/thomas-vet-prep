@@ -1,0 +1,164 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u6-02">
+
+## La cellula ha bisogno di agganciarsi
+
+Immagina una cellula come una tenda da campeggio: non basta posarla sul prato, devi fissarla al terreno con i picchetti, altrimenti vola via. Il "terreno" della cellula si chiama **matrice extracellulare** (ECM, dall'inglese *extracellular matrix*): è una rete di proteine e zuccheri che riempie lo spazio tra le cellule e le sostiene come un'impalcatura.
+
+Il "picchetto" che collega la cellula a questa impalcatura si chiama **integrina**.
+
+---
+
+## Cos'è un'integrina?
+
+Un'integrina è una **proteina di membrana** — cioè una proteina incastrata nella membrana della cellula — che attraversa la membrana stessa e sporge su entrambi i lati:
+
+- **Lato esterno:** si aggancia a proteine della matrice extracellulare, soprattutto alla **fibronectina** (una proteina "colla" a forma di U che tiene insieme cellule e matrice).
+- **Lato interno:** si connette al **citoscheletro** della cellula, in particolare alle fibre di actina (i "cavi" interni che danno forma alla cellula).
+
+L'integrina è quindi un **ponte fisico** tra fuori e dentro la cellula.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'integrina è come un bullone: da un lato avvita la cellula alla matrice (tramite fibronectina), dall'altro si aggancia ai cavi interni (actina). Senza questo bullone, la cellula si stacca e muore.</div>
+
+---
+
+## La fibronectina: il collante universale
+
+La **fibronectina** è una grossa proteina a forma di lungo filo ripiegato che si trova nella matrice extracellulare. Ha più "tasche" di aggancio:
+
+- Una tasca lega il **collagene** (la struttura portante della matrice).
+- Un'altra tasca lega proprio le **integrine** sulla superficie della cellula.
+
+Grazie alla fibronectina, la cellula sa dove si trova e in che tipo di tessuto si trova. Se la fibronectina è abbondante (come nel tessuto connettivo), la cellula riceve segnali di "resta qui e prolifera". Se è assente, la cellula riceve segnali di pericolo.
+
+---
+
+## Cosa succede quando l'integrina si aggancia?
+
+Quando un'integrina lega la fibronectina, non fa solo da ancora meccanica: **trasmette segnali all'interno della cellula**. Questo processo si chiama **meccanotrasduzione** — cioè "conversione di una forza meccanica in un segnale chimico".
+
+Ecco come funziona, passo per passo:
+
+1. La fibronectina (fuori dalla cellula) si lega all'integrina.
+2. L'integrina cambia forma (si "attiva").
+3. Sul lato interno, l'integrina recluta proteine di segnalazione, come la **chinasi FAK** (*Focal Adhesion Kinase*, ovvero "chinasi del punto di adesione focale"). Una chinasi è un enzima che "accende" altre proteine attaccandoci un gruppo fosfato.
+4. FAK attivata dà il via a una cascata di segnali (RAS, PI3K, MAPK) che entrano nel nucleo e regolano geni che controllano:
+   - la **sopravvivenza** della cellula (senza aggancio molte cellule vanno in apoptosi, cioè morte programmata),
+   - la **proliferazione** (divisione cellulare),
+   - la **migrazione** (movimento),
+   - la **differenziazione** (diventare un tipo specifico di cellula).
+
+---
+
+## Segnalazione bidirezionale: inside-out e outside-in
+
+Le integrine funzionano in entrambe le direzioni:
+
+- **Outside-in:** la matrice invia segnali alla cellula (come descritto sopra).
+- **Inside-out:** la cellula può dall'interno modificare lo stato dell'integrina per aumentare o diminuire la sua affinità per la fibronectina. È come se la cellula potesse stringere o allentare il bullone a seconda delle sue esigenze.
+
+---
+
+## Diagramma 1 — Struttura e funzione dell'integrina
+
+<Diagram caption="L'integrina come ponte tra matrice extracellulare e citoscheletro interno" code={`flowchart TB
+  A["Fibronectina<br/>(proteina della matrice extracellulare)"]
+  B["Dominio extracellulare<br/>dell'integrina<br/>(lega fibronectina)"]
+  C["Dominio transmembrana<br/>dell'integrina<br/>(attraversa la membrana)"]
+  D["Dominio citoplasmatico<br/>dell'integrina<br/>(lato interno)"]
+  E["Proteine adattatrici<br/>(talina, vinculina)"]
+  F["Fibre di actina<br/>(citoscheletro)"]
+
+  A -->|"legame fisico"| B
+  B --> C
+  C --> D
+  D -->|"recluta"| E
+  E -->|"si ancora a"| F`} />
+
+---
+
+## Diagramma 2 — Cascata di meccanotrasduzione
+
+<Diagram caption="Dalla forza meccanica al segnale chimico: la via di segnalazione delle integrine" code={`flowchart TB
+  A["Forza meccanica esterna<br/>o legame fibronectina-integrina"]
+  B["Attivazione integrina<br/>(cambiamento conformazionale)"]
+  C["Reclutamento di FAK<br/>(Focal Adhesion Kinase)<br/>nei punti di adesione focale"]
+  D["FAK si autofosforila<br/>e si attiva"]
+  E["Attivazione cascate a valle:<br/>RAS, PI3K, MAPK"]
+  F["Segnali entrano nel nucleo"]
+  G1["Sopravvivenza cellulare"]
+  G2["Proliferazione"]
+  G3["Migrazione"]
+  G4["Differenziazione"]
+
+  A --> B --> C --> D --> E --> F
+  F --> G1
+  F --> G2
+  F --> G3
+  F --> G4`} />
+
+---
+
+## Guarda il video
+<YouTube id="O8YyMiGmCA0" title="Membrana cellulare - Adesione" />
+<VideoVisto id="bio-u6-02" />
+
+## Da ricordare
+- Le **integrine** sono proteine di membrana che fanno da ponte fisico tra la matrice extracellulare (tramite fibronectina) e il citoscheletro di actina all'interno della cellula.
+- La **meccanotrasduzione** è il processo con cui le integrine convertono una forza meccanica (o il legame con la matrice) in una cascata di segnali chimici intracellulari, attraverso proteine come FAK.
+- Senza aggancio alla matrice, molte cellule attivano l'**apoptosi** (morte programmata): l'ancoraggio non è solo fisico, ma un vero segnale di sopravvivenza.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è la funzione principale delle integrine nella cellula?"
+  opzioni={[
+    "Produrre energia tramite la respirazione cellulare",
+    "Collegare la matrice extracellulare al citoscheletro interno e trasmettere segnali",
+    "Sintetizzare proteine nei ribosomi",
+    "Pompare ioni attraverso la membrana plasmatica"
+  ]}
+  corretta={1}
+  spiegazione="Le integrine sono proteine transmembrana che fisicamente collegano la matrice extracellulare (legando fibronectina) al citoscheletro di actina, e al contempo avviano cascate di segnalazione intracellulare (meccanotrasduzione)."
+/>
+
+<Quiz
+  domanda="Cosa si intende con il termine 'meccanotrasduzione'?"
+  opzioni={[
+    "Il trasporto di molecole attraverso la membrana contro gradiente",
+    "La duplicazione del DNA durante la mitosi",
+    "La conversione di un segnale meccanico (forza o tensione) in un segnale chimico intracellulare",
+    "La sintesi di fibronectina da parte dei fibroblasti"
+  ]}
+  corretta={2}
+  spiegazione="Meccanotrasduzione = traduzione (conversione) di stimoli meccanici in segnali biochimici. Le integrine sentono la rigidità e le forze della matrice e attivano chinasi come FAK, dando il via a cascate di segnalazione che regolano comportamenti cellulari."
+/>
+
+<Quiz
+  domanda="Cosa succede a molte cellule epiteliali se vengono staccate dalla matrice extracellulare e perdono il contatto con la fibronectina?"
+  opzioni={[
+    "Si dividono più velocemente per compensare",
+    "Producono più fibronectina autonomamente",
+    "Vanno incontro ad apoptosi (morte cellulare programmata)",
+    "Migrano verso il nucleo della cellula"
+  ]}
+  corretta={2}
+  spiegazione="Molte cellule dipendono dall'ancoraggio alla matrice per ricevere segnali di sopravvivenza tramite le integrine (via FAK e PI3K). Senza questo segnale, attivano l'apoptosi — un meccanismo di controllo che impedisce alle cellule di sopravvivere in luoghi sbagliati del corpo."
+/>
+
+<Esercizio
+  problema="Descrivi con parole tue il percorso di un segnale meccanico dalla matrice extracellulare fino al nucleo della cellula, indicando almeno tre protagonisti molecolari."
+  soluzione="1) La fibronectina (proteina della ECM) si lega al dominio extracellulare dell'integrina. 2) L'integrina cambia conformazione e, sul lato citoplasmatico, recluta la chinasi FAK nei punti di adesione focale. 3) FAK si autofosforila (si attiva aggiungendo un gruppo fosfato a se stessa) e poi fosforila altre proteine a valle, come RAS e le MAPK. 4) Questi segnali entrano nel nucleo e regolano l'espressione genica, influenzando sopravvivenza, proliferazione e differenziazione."
+/>
+
+</section>
+
+</RisorsaLayout>

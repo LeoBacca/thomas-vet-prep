@@ -1,0 +1,261 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-23">
+
+La **nomenclatura** è semplicemente il modo di dare un **nome** ai composti chimici. Come ogni persona ha un nome e un cognome, ogni composto ha un nome che ci dice di che "famiglia" fa parte e da quali pezzi è formato. Imparare le regole serve a questo: leggere un nome e capire subito di che sostanza si tratta, e viceversa.
+
+Qui ci concentriamo su **quattro famiglie** di composti inorganici molto importanti, anche per il corpo umano e per gli animali: **ossidi**, **idrossidi**, **acidi** e **sali**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> tutto parte dall'ossigeno. Metallo o non-metallo si combinano con l'ossigeno e fanno gli <strong>ossidi</strong>. Aggiungi <strong>acqua</strong> e ottieni <strong>idrossidi</strong> (dai metalli) o <strong>acidi</strong> (dai non-metalli). Fai reagire un idrossido con un acido e nasce un <strong>sale</strong>. È una catena.</div>
+
+<Diagram caption="La catena che collega le quattro famiglie: tutto nasce dall'ossigeno e dall'acqua" code={`flowchart TB
+  ME["Metallo + Ossigeno"] --> OB["Ossido basico"]
+  NM["Non-metallo + Ossigeno"] --> OA["Ossido acido (anidride)"]
+  OB -->|"+ acqua"| ID["Idrossido<br/>(ha il gruppo OH)"]
+  OA -->|"+ acqua"| AC["Acido<br/>(libera H+)"]
+  ID -->|"reagisce con"| SA["SALE<br/>+ acqua"]
+  AC -->|"reagisce con"| SA`} />
+
+## 1. Gli ossidi: elemento + ossigeno
+
+Un **ossido** nasce quando un elemento si lega all'**ossigeno**. Pensa all'ossigeno come a un compagno molto socievole: si attacca quasi a tutti.
+
+Ci sono due tipi, a seconda di chi si lega all'ossigeno:
+
+- **Ossido basico**: **metallo + ossigeno**. Esempio: l'ossido di calcio (CaO).
+- **Ossido acido** (chiamato anche **anidride**): **non-metallo + ossigeno**. Esempio: l'anidride carbonica (CO2), quella che espiri ad ogni respiro.
+
+Il nome di base è facile: si dice **ossido di** seguito dal nome dell'elemento. Ossido di calcio, ossido di ferro, e così via.
+
+L'aggancio con il corpo è immediato: la **CO2** è un ossido acido prodotto dalle tue cellule come scarto. Il sangue la trasporta fino ai polmoni, dove la butti fuori respirando. Cani, gatti e cavalli fanno esattamente la stessa cosa.
+
+## 2. Idrossidi e acidi: cosa succede aggiungendo acqua
+
+Adesso prendiamo gli ossidi e aggiungiamo **acqua**. Il risultato dipende da chi c'era nell'ossido:
+
+- **Ossido basico + acqua → idrossido**. Un **idrossido** contiene il gruppo **OH** (ossigeno-idrogeno). Esempio: idrossido di sodio (NaOH). Gli idrossidi sono **basi**: in acqua liberano il gruppo OH.
+- **Ossido acido + acqua → acido**. Un **acido** è una sostanza che in acqua libera ioni **H+** (idrogeno). Esempio: l'acido carbonico (H2CO3), che si forma proprio sciogliendo CO2 in acqua.
+
+Un modo semplice per ricordarlo: **metallo → strada delle basi (idrossidi)**, **non-metallo → strada degli acidi**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> <strong>acido</strong> = rilascia H+ (idrogeno). <strong>Base / idrossido</strong> = rilascia OH. Sono due squadre opposte, e quando si incontrano si neutralizzano.</div>
+
+Perché conta in medicina e veterinaria? Il tuo **stomaco** produce **acido cloridrico (HCl)**, un acido fortissimo che serve a digerire il cibo e a uccidere i germi. Il tuo **sangue**, invece, deve restare leggermente basico e stabile: la coppia anidride carbonica / acido carbonico aiuta a tenere costante il suo livello di acidità. Se questo equilibrio salta, l'organismo (umano o animale) si ammala. Capire acidi e basi è la porta d'ingresso per capire come funziona davvero un corpo.
+
+<Diagram caption="Stessa partenza, due strade: l'acqua trasforma gli ossidi in idrossidi o in acidi" code={`flowchart LR
+  OB["Ossido basico<br/>(da metallo)"] -->|"+ acqua"| ID["IDROSSIDO<br/>libera OH (base)"]
+  OA["Ossido acido<br/>(da non-metallo)"] -->|"+ acqua"| AC["ACIDO<br/>libera H+ (acido)"]`} />
+
+## 3. I sali: quando acido e base si incontrano
+
+Quando un **acido** e un **idrossido** (base) reagiscono insieme, si "neutralizzano" a vicenda e producono due cose: un **sale** e dell'**acqua**.
+
+L'esempio più famoso lo hai in cucina: il **sale da cucina**, il cloruro di sodio (NaCl). Nasce dall'incontro tra l'acido cloridrico (HCl) e l'idrossido di sodio (NaOH).
+
+Pensa al sale come al "figlio" della reazione: prende un pezzo dall'acido e un pezzo dalla base e li mette insieme in un composto nuovo e stabile.
+
+I sali sono ovunque nel corpo: il **sodio** e il **cloruro** del sale regolano l'acqua nei tessuti; il **calcio** (in sali come il fosfato di calcio) costruisce **ossa e denti** tuoi e degli animali. Una flebo che il veterinario attacca a un cane disidratato è, in pratica, una soluzione di sali nell'acqua.
+
+## 4. Le sei famiglie, riassunte (definizioni da imparare a memoria)
+
+Negli esami quasi sempre ti chiedono di **riconoscere a quale famiglia appartiene** un composto, o cosa **è** una certa classe. Ecco le definizioni precise, perché spesso le risposte sbagliate scambiano una famiglia con l'altra. Le famiglie binarie (due elementi) sono ossidi basici, anidridi, idracidi e idruri; quelle ternarie (tre elementi) sono idrossidi e ossiacidi; i sali completano il quadro.
+
+| Famiglia | Da cosa è fatta | Esempio | Come riconoscerla |
+| --- | --- | --- | --- |
+| **Ossido basico** | metallo + ossigeno | CaO, FeO, Al₂O₃ | un metallo legato a O |
+| **Anidride** (ossido acido) | NON-metallo + ossigeno | CO₂, SO₃, N₂O₅ | un non-metallo legato a O |
+| **Idrossido** | metallo + gruppo OH | NaOH, Ca(OH)₂, Mg(OH)₂ | finisce con OH, parte un metallo |
+| **Ossiacido** | idrogeno + non-metallo + ossigeno | H₂SO₄, HNO₃, H₃PO₄ | inizia con H, contiene O (ternario) |
+| **Idracido** | idrogeno + non-metallo (NO ossigeno) | HCl, HBr, H₂S | inizia con H, **niente** O (binario) |
+| **Idruro** | metallo + idrogeno | CaH₂, NaH, LiH | un metallo legato a H |
+| **Sale** | catione (metallo o NH₄⁺) + anione | NaCl, CaSO₄, KNO₃ | nessun H acido iniziale e nessun O legato a solo metallo |
+
+<div class="callout">💡 <strong>Il trucco anti-trabocchetto:</strong> guarda la prima lettera e cosa c'è. Inizia con <strong>H</strong> e c'è <strong>ossigeno</strong> dopo? Ossiacido (es. H₂SO₄). Inizia con H ma <strong>niente ossigeno</strong>? Idracido (es. HCl). Finisce in <strong>OH</strong>? Idrossido (es. NaOH). Solo elemento + ossigeno? Ossido. Un esempio d'esame: <strong>LiF, KOH, FeO, HCl</strong> sono nell'ordine un <strong>sale</strong>, un <strong>idrossido</strong>, un <strong>ossido</strong>, un <strong>acido</strong>.</div>
+
+Attenzione a due coppie che gli esami amano confondere:
+
+- **Idracido vs idruro.** L'**idracido** è idrogeno + non-metallo (HCl, HBr, H₂S): in acqua libera H⁺, è un acido. L'**idruro** è invece metallo + idrogeno (CaH₂, NaH): qui l'idrogeno non è acido, è "dall'altra parte". Stessa parola di radice, famiglie opposte.
+- **Anidride vs ossido basico.** Entrambi sono "elemento + ossigeno", ma l'anidride parte da un **non-metallo** (CO₂, SO₃) e dà acidi con l'acqua; l'ossido basico parte da un **metallo** (CaO) e dà idrossidi.
+
+## 5. Dalla carica degli ioni alla formula: la regola dell'incrocio
+
+Questo è il metodo più richiesto: dato un **catione** (carica positiva) e un **anione** (carica negativa), scrivere la formula del composto. Un composto deve essere **elettricamente neutro**: il totale delle cariche positive deve pareggiare il totale delle negative. La scorciatoia per ottenerlo si chiama **incrocio delle cariche**.
+
+**Come si fa, passo per passo:**
+
+1. Scrivi catione e anione con la loro carica. Esempio: Fe³⁺ e SO₄²⁻.
+2. **Incrocia**: il numero della carica di uno diventa il pedice dell'altro. Il 3 di Fe³⁺ va come pedice a SO₄, il 2 di SO₄²⁻ va come pedice a Fe.
+3. Risultato: Fe₂(SO₄)₃. Il gruppo poliatomico (SO₄) va tra **parentesi** se il suo pedice è maggiore di 1.
+4. **Semplifica** i pedici se hanno un divisore comune. Esempio: Ca²⁺ + O²⁻ darebbe Ca₂O₂, che si semplifica in CaO.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> "quanto sei carico tu, tanti ne servono di me". Uno ione 3+ ha bisogno di tre cariche negative per essere pareggiato. Se l'anione porta 2 cariche negative, ne servono... un po' di entrambi: ecco perché si incrociano i numeri.</div>
+
+| Catione | Anione | Incrocio | Formula | Note |
+| --- | --- | --- | --- | --- |
+| Fe³⁺ | SO₄²⁻ (solfato) | 3 e 2 | **Fe₂(SO₄)₃** | parentesi: SO₄ è in 3 copie |
+| Al³⁺ | SO₄²⁻ (solfato) | 3 e 2 | **Al₂(SO₄)₃** | solfato di alluminio |
+| Fe²⁺ | SO₄²⁻ (solfato) | 2 e 2 → 1 e 1 | **FeSO₄** | si semplifica! |
+| Ca²⁺ | OH⁻ (idrossido) | 2 e 1 | **Ca(OH)₂** | non CaOH |
+| NH₄⁺ | SO₃²⁻ (solfito) | 1 e 2 | **(NH₄)₂SO₃** | solfito d'ammonio |
+| Ca²⁺ | PO₄³⁻ (fosfato) | 2 e 3 | **Ca₃(PO₄)₂** | fosfato calcico |
+| Al³⁺ | O²⁻ (ossido) | 3 e 2 | **Al₂O₃** | ossido di alluminio |
+| K⁺ | NO₃⁻ (nitrato) | 1 e 1 | **KNO₃** | nitrato di potassio |
+
+Un esercizio tipico chiede anche di **contare gli atomi**: in Ca₃(PO₄)₂ ci sono 3 atomi di Ca, 2 di P e **8 di ossigeno** (4 ossigeni nel gruppo PO₄, moltiplicati per i 2 gruppi: 4 × 2 = 8).
+
+### Riconoscere una formula errata
+
+Spesso l'esame ti mostra cinque formule e chiede **quale è sbagliata**. Quasi sempre l'errore è una **carica non pareggiata** (manca o avanza un pedice). Verifica ogni formula con l'incrocio:
+
+| Formula proposta | Giusta o errata? | Perché |
+| --- | --- | --- |
+| **CaOH** | ❌ errata | Ca²⁺ ha 2 cariche, OH⁻ solo 1: serve Ca(OH)₂ |
+| Ca(OH)₂ | ✓ giusta | 2+ pareggiato da due OH⁻ |
+| CaCl₂ | ✓ giusta | Ca²⁺ + due Cl⁻ |
+| CaO | ✓ giusta | Ca²⁺ + O²⁻, già semplificato |
+| **H₂ClO₄** | ❌ errata | l'ossiacido del cloro è HClO₄ (un solo H): "H₂ClO₄" non pareggia |
+| **LiS** | ❌ errata | Li⁺ + S²⁻ richiede due Li: la forma giusta è Li₂S |
+| K₂SO₄ | ✓ giusta | due K⁺ + SO₄²⁻ |
+| Al₂O₃ | ✓ giusta | due Al³⁺ (6+) e tre O²⁻ (6−) si pareggiano |
+
+## 6. Ossiacidi: i suffissi -oso/-ico e i prefissi ipo-/per-, meta/orto/piro
+
+Gli **ossiacidi** (idrogeno + non-metallo + ossigeno) sono i protagonisti delle domande di nomenclatura. Lo stesso non-metallo può formare **più ossiacidi**, che differiscono per il **numero di atomi di ossigeno**. Per distinguerli si usano suffissi e prefissi.
+
+**La scala del cloro (da ricordare a memoria, è ricorrente):** stesso H, stesso Cl, cambia solo l'ossigeno.
+
+| Formula | Nome | Logica |
+| --- | --- | --- |
+| HClO | acido **ipo**clor**oso** | meno ossigeno di tutti (ipo- = "sotto") |
+| HClO₂ | acido clor**oso** | poco ossigeno → suffisso -oso |
+| HClO₃ | acido clor**ico** | più ossigeno → suffisso -ico |
+| HClO₄ | acido **per**clor**ico** | il massimo ossigeno (per- = "oltre") |
+
+La regola generale, dal meno ossigenato al più ossigenato: **ipo...oso → ...oso → ...ico → per...ico**.
+
+<div class="callout">💡 <strong>Memo:</strong> "ico" sta più in alto di "oso" (più ossigeno). I prefissi sono gli estremi: <strong>ipo-</strong> sta sotto l'-oso, <strong>per-</strong> sta sopra l'-ico. Esempio d'esame: HClO₂ è l'acido <strong>cloroso</strong> (non ipocloroso, che è HClO).</div>
+
+### Gli anioni che ne derivano (i sali)
+
+Quando l'ossiacido perde gli H, resta l'**anione** che entra nei sali. Il suffisso cambia di conseguenza: **-oso → -ito**, **-ico → -ato**.
+
+| Acido | Anione | Esempio di sale |
+| --- | --- | --- |
+| HBrO (ipobromoso) | BrO⁻ (**ipobromito**) | ipobromito di sodio NaBrO |
+| HBrO₃ (bromico) | BrO₃⁻ (**bromato**) | bromato di potassio KBrO₃ |
+| H₂SO₃ (solforoso) | SO₃²⁻ (**solfito**) | solfito d'ammonio (NH₄)₂SO₃ |
+| H₂SO₄ (solforico) | SO₄²⁻ (**solfato**) | solfato di alluminio Al₂(SO₄)₃ |
+| HNO₂ (nitroso) | NO₂⁻ (**nitrito**) | nitrito di potassio KNO₂ |
+| HNO₃ (nitrico) | NO₃⁻ (**nitrato**) | nitrato di potassio KNO₃ |
+| H₂CO₃ (carbonico) | CO₃²⁻ (**carbonato**) | carbonato; con un H resta HCO₃⁻ (**bicarbonato**, es. KHCO₃) |
+
+### Il fosforo: i prefissi meta-, orto-, piro-
+
+Il fosforo è un caso speciale e molto chiesto. Lo stesso acido "fosforico" esiste in **tre versioni** che differiscono per quante molecole d'acqua contengono. Si distinguono con i prefissi **meta-, orto-, piro-**.
+
+| Formula | Nome | Idea |
+| --- | --- | --- |
+| HPO₃ | acido **meta**fosforico | il più "asciutto" (meno acqua) |
+| H₃PO₄ | acido **orto**fosforico | la forma normale, completa (3 H) |
+| H₄P₂O₇ | acido **piro**fosforico | due unità unite (deriva dal riscaldamento, "piro" = fuoco) |
+
+<div class="callout">💡 <strong>Da non confondere:</strong> tutte e tre sono "-ico" (stesso fosforo, stesso numero di ossidazione): cambia solo il prefisso meta/orto/piro, cioè quanta acqua. La forma che incontri quasi sempre, anche in biologia (è la base dei gruppi fosfato del DNA e dell'ATP), è l'<strong>ortofosforico H₃PO₄</strong>.</div>
+
+## Guarda il video
+
+<YouTube id="XduUH0iOPJU" title="Nomenclatura dei composti inorganici: ossidi, acidi e sali — spiegazione per principianti" />
+
+<VideoVisto id="chim-u1-23" />
+
+## Da ricordare
+
+- **Ossido** = elemento **+ ossigeno**. Da **metallo** → ossido basico; da **non-metallo** → ossido acido (anidride).
+- **Ossido basico + acqua → idrossido** (contiene **OH**, è una **base**).
+- **Ossido acido + acqua → acido** (libera **H+**).
+- **Acido + idrossido → sale + acqua** (neutralizzazione). Esempio: HCl + NaOH dà NaCl (il sale da cucina).
+- **Le famiglie binarie e ternarie:** anidride = non-metallo + O; idracido = H + non-metallo (niente O, es. HCl); idruro = metallo + H (es. CaH₂); ossiacido = H + non-metallo + O. Non confondere **idracido** (acido) e **idruro** (metallo + H).
+- **Regola dell'incrocio:** la carica di uno ione diventa il pedice dell'altro, poi semplifica. Fe³⁺ + SO₄²⁻ → Fe₂(SO₄)₃; Al³⁺ + SO₄²⁻ → Al₂(SO₄)₃; Ca²⁺ + OH⁻ → Ca(OH)₂ (mai CaOH).
+- **Formula errata = carica non pareggiata:** CaOH (va Ca(OH)₂), H₂ClO₄ (va HClO₄), LiS (va Li₂S) sono sbagliate.
+- **Ossiacidi, scala dell'ossigeno:** ipo...oso → -oso → -ico → per...ico. HClO₂ = acido cloroso. Gli anioni dei sali: -oso → -ito, -ico → -ato (solfito SO₃²⁻, solfato SO₄²⁻, nitrato NO₃⁻, bromato BrO₃⁻, ipobromito BrO⁻).
+- **Fosforo:** HPO₃ metafosforico, H₃PO₄ ortofosforico (la forma normale, quella dell'ATP/DNA), H₄P₂O₇ pirofosforico.
+- Tutto questo è vita reale: CO2 nel respiro, HCl nello stomaco, sali e calcio in sangue, ossa e flebo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Come si forma un ossido?"
+  opzioni={["Mescolando due metalli", "Legando un elemento all'ossigeno", "Aggiungendo sale all'acqua", "Riscaldando un sale"]}
+  corretta={1}
+  spiegazione="Un ossido nasce quando un elemento (metallo o non-metallo) si lega all'ossigeno. Da metallo si ha un ossido basico, da non-metallo un ossido acido (anidride)."
+/>
+
+<Quiz
+  domanda="Un idrossido (come NaOH) è caratterizzato dal gruppo:"
+  opzioni={["H+ (idrogeno libero)", "OH (ossigeno-idrogeno)", "CO2", "NaCl"]}
+  corretta={1}
+  spiegazione="Gli idrossidi contengono il gruppo OH e si comportano da basi: in acqua liberano OH. Sono lo speculare degli acidi, che invece liberano H+."
+/>
+
+<Quiz
+  domanda="Cosa si ottiene facendo reagire un acido con un idrossido (base)?"
+  opzioni={["Solo gas", "Un sale e acqua", "Un metallo puro", "Un altro acido più forte"]}
+  corretta={1}
+  spiegazione="È la reazione di neutralizzazione: acido + base danno un sale e acqua. Esempio classico: HCl + NaOH dà NaCl (il sale da cucina) e acqua."
+/>
+
+<Esercizio
+  problema="Classifica questi tre composti biologicamente importanti nella loro famiglia (ossido, acido o sale) e di' a cosa servono nel corpo: anidride carbonica (CO2), acido cloridrico (HCl), cloruro di sodio (NaCl)."
+  soluzione="CO2 è un ossido (ossido acido / anidride): è lo scarto della respirazione, viene trasportato dal sangue ed espirato dai polmoni. HCl è un acido: nello stomaco serve a digerire il cibo e a uccidere i germi. NaCl è un sale: regola l'acqua nei tessuti ed è quello che si reintegra con le flebo di soluzione fisiologica."
+/>
+
+<Esercizio
+  problema="Scrivi la formula del composto formato dagli ioni Fe(3+) e SO4(2-) (solfato), usando la regola dell'incrocio. Mostra i passaggi."
+  soluzione="Passo 1: scrivo gli ioni con la carica: Fe³⁺ e SO₄²⁻. Passo 2: incrocio le cariche, cioè il numero della carica di uno diventa il pedice dell'altro. Il 3 di Fe³⁺ va come pedice a SO₄; il 2 di SO₄²⁻ va come pedice a Fe. Passo 3: ottengo Fe₂(SO₄)₃ — il gruppo SO₄ va tra parentesi perché compare 3 volte. Passo 4: controllo le cariche: 2 × (3+) = 6+ e 3 × (2−) = 6−, si pareggiano. Formula corretta: Fe₂(SO₄)₃. Allo stesso modo Al³⁺ + SO₄²⁻ dà Al₂(SO₄)₃ (solfato di alluminio)."
+/>
+
+<Esercizio
+  problema="Costruisci la formula del solfito d'ammonio. Suggerimento: il catione ammonio è NH4(+), l'anione solfito è SO3(2-)."
+  soluzione="Catione NH₄⁺ (carica 1+), anione SO₃²⁻ (carica 2−). Incrocio: il 2 dell'anione va come pedice all'ammonio, l'1 del catione va all'anione (e l'1 non si scrive). Servono quindi due gruppi NH₄, che vanno tra parentesi: (NH₄)₂SO₃. Verifica: 2 × (1+) = 2+ pareggia il 2− del solfito. Nota: 'solfito' (con O, suffisso -ito) viene da 'solforoso', mentre 'solfato' (-ato) viene da 'solforico' (SO₄²⁻). Quindi la formula giusta è (NH₄)₂SO₃, non (NH3)2SO4."
+/>
+
+<Esercizio
+  problema="Tra queste formule una è ERRATA: CaOH, Ca(OH)2, CaCl2, CaO. Trova quella sbagliata e correggila spiegando il perché."
+  soluzione="Quella errata è CaOH. Il calcio è lo ione Ca²⁺ (porta 2 cariche positive), mentre il gruppo idrossido è OH⁻ (1 carica negativa). Per pareggiare le cariche servono DUE gruppi OH⁻, quindi la formula corretta è Ca(OH)₂. Le altre sono giuste: Ca(OH)₂ (2+ contro due 1−), CaCl₂ (Ca²⁺ con due Cl⁻), CaO (Ca²⁺ con O²⁻, già semplificato). Regola: quando una formula 'non torna' nelle cariche, di solito manca un pedice."
+/>
+
+<Esercizio
+  problema="Quanti atomi di ossigeno ci sono in una molecola di fosfato calcico, Ca3(PO4)2? E come si chiamano i tre ossiacidi del fosforo HPO3, H3PO4 e H4P2O7?"
+  soluzione="Ossigeni in Ca₃(PO₄)₂: il gruppo PO₄ ha 4 ossigeni e compare 2 volte (è dentro la parentesi col pedice 2), quindi 4 × 2 = 8 atomi di ossigeno. I tre ossiacidi del fosforo: HPO₃ = acido metafosforico, H₃PO₄ = acido ortofosforico (la forma 'normale', completa — è quella dei gruppi fosfato di ATP e DNA), H₄P₂O₇ = acido pirofosforico (deriva dall'unione di due unità per riscaldamento)."
+/>
+
+<Quiz
+  domanda="Cosa sono le anidridi?"
+  opzioni={["Composti formati da un non-metallo e dall'ossigeno", "Composti formati da un metallo e dall'ossigeno", "Composti formati da uno ione metallico e dal gruppo OH⁻", "Composti formati da idrogeno e un non-metallo", "Composti formati da idrogeno, un non-metallo e ossigeno"]}
+  corretta={0}
+  spiegazione="Le anidridi (= ossidi acidi) sono NON-metallo + ossigeno, ad esempio CO₂ o SO₃; con l'acqua danno ossiacidi. Trappole: metallo + ossigeno è l'ossido basico (CaO); ione metallico + OH⁻ è l'idrossido; idrogeno + non-metallo è l'idracido (HCl, niente ossigeno); idrogeno + non-metallo + ossigeno è l'ossiacido (H₂SO₄), un composto ternario diverso dall'anidride."
+/>
+
+<Quiz
+  domanda="Indicare quale tra le seguenti formule rappresenta il solfato di alluminio."
+  opzioni={["Al₂(SO₄)₃", "AlSO₄", "Al₂(SO₃)₃", "Al₃(SO₄)₂", "AlSO₃"]}
+  corretta={0}
+  spiegazione="Alluminio = Al³⁺, solfato = SO₄²⁻. Con l'incrocio delle cariche (3 e 2) si ottiene Al₂(SO₄)₃. Trappole: AlSO₄ non pareggia le cariche; Al₂(SO₃)₃ usa il solfito SO₃²⁻ (acido solforoso), non il solfato; Al₃(SO₄)₂ ha l'incrocio invertito (sarebbe corretto solo se Al fosse 2+ e il solfato 3−); AlSO₃ sbaglia sia anione sia cariche."
+/>
+
+<Quiz
+  domanda="Il composto HClO₂ è:"
+  opzioni={["acido cloroso", "acido ipocloroso", "acido clorico", "acido perclorico", "acido cloridrico"]}
+  corretta={0}
+  spiegazione="Sulla scala dell'ossigeno del cloro: HClO = ipocloroso (meno O), HClO₂ = cloroso, HClO₃ = clorico, HClO₄ = perclorico (più O). Quindi HClO₂ è l'acido cloroso. Trappole: ipocloroso è HClO (un O in meno); clorico è HClO₃; perclorico è HClO₄; il cloridrico è HCl, un idracido senza ossigeno (non è nemmeno un ossiacido)."
+/>
+
+</section>
+
+</RisorsaLayout>

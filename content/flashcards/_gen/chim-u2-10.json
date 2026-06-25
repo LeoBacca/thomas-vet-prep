@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fc-chim-u2-10-1",
+    "topicId": "chim-u2-10",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Sciogli due cucchiai di zucchero nell'acqua. Cosa succede alla pressione di vapore (cioe alla facilita con cui il liquido evapora)?",
+    "choices": [
+      "Si abbassa: il soluto occupa spazio in superficie e ostacola l'uscita delle molecole d'acqua",
+      "Aumenta: lo zucchero da piu energia alle molecole d'acqua",
+      "Resta identica: lo zucchero non tocca le molecole d'acqua",
+      "Dipende dal tipo di zucchero usato"
+    ],
+    "answer": 0,
+    "explain": "Il soluto e come persone ferme davanti all'uscita: blocca parte delle molecole d'acqua che vorrebbero evaporare. Meno molecole escono = pressione di vapore piu bassa. E una proprieta colligativa: conta solo quante particelle ci sono, non cosa sono.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-chim-u2-10-2",
+    "topicId": "chim-u2-10",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "open",
+    "q": "Cos'e una proprieta colligativa? Spiega perche la legge di Raoult dice che aggiungere piu soluto abbassa la pressione di vapore della soluzione.",
+    "answer": "Una proprieta colligativa e una caratteristica di una soluzione che dipende SOLO dal numero di particelle disciolte, non da cosa sono. La legge di Raoult dice: P soluzione = P solvente puro x frazione molare del solvente. La frazione molare del solvente e la quota di particelle totali che e solvente (numero tra 0 e 1). Se aggiungo piu soluto, il solvente diventa una quota minore del totale: la frazione molare del solvente scende, quindi anche la pressione di vapore scende. In pratica il soluto occupa spazio sulla superficie del liquido e blocca alcune molecole di solvente che vorrebbero evaporare.",
+    "explain": "Proprieta colligativa = conta il numero, non l'identita. Raoult: piu soluto → frazione molare solvente piu bassa → pressione di vapore piu bassa.",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

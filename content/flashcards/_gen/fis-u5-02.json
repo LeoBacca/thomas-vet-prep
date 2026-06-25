@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u5-02-1",
+    "topicId": "fis-u5-02",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: lo zero della scala Kelvin (0 K) corrisponde a 0 °C, cioe al punto in cui ghiaccia l'acqua.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Lo zero assoluto (0 K) corrisponde a −273 °C, il punto piu' freddo fisicamente possibile in natura, dove le molecole smettono quasi del tutto di muoversi. L'acqua ghiaccia a 0 °C = 273 K, non a 0 K. La formula di conversione e': T(K) = T(°C) + 273.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-02-2",
+    "topicId": "fis-u5-02",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un gas perfetto e' come un mucchio di palline da ping-pong che rimbalzano dentro una scatola. Cosa succede alla PRESSIONE esercitata sulle pareti se le palline si muovono piu' velocemente (temperatura sale), con il volume della scatola che rimane uguale?",
+    "choices": [
+      "La pressione aumenta, perche' le palline colpiscono le pareti piu' forte e piu' spesso",
+      "La pressione diminuisce, perche' le palline si allontanano dalle pareti",
+      "La pressione rimane uguale, perche' il numero di palline non cambia",
+      "La pressione diventa zero, perche' le palline volano via"
+    ],
+    "answer": 0,
+    "explain": "Se la temperatura sale, le molecole (le 'palline') si muovono piu' velocemente e sbattono contro le pareti con piu' forza e piu' frequenza: la pressione aumenta. Questo e' esattamente quello che dice PV = nRT: con V, n e R costanti, se T sale anche P deve salire. In una siringa veterinaria: se scaldate una siringa chiusa (pistone bloccato), la pressione dentro aumenta.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-02-3",
+    "topicId": "fis-u5-02",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "open",
+    "q": "Una bombola veterinaria contiene ossigeno a 27 °C. Un tecnico deve calcolare il volume della bombola sapendo che contiene 2 mol di gas a una pressione di 100 000 Pa. Spiega passo per passo come si usa l'equazione PV = nRT per trovare V. (R = 8,314 J/(mol·K))",
+    "answer": "Passo 1 — convertire la temperatura in Kelvin (in fisica si usa SEMPRE Kelvin): T = 27 + 273 = 300 K. Passo 2 — scrivere l'equazione e isolare V: da PV = nRT si ricava V = nRT / P. Passo 3 — sostituire i valori: V = (2 mol × 8,314 J/(mol·K) × 300 K) / 100 000 Pa = 4988,4 / 100 000 = circa 0,050 m³, cioe' 50 litri. L'errore piu' comune e' dimenticare di convertire i gradi Celsius in Kelvin: usare 27 al posto di 300 darebbe un risultato sbagliato.",
+    "explain": "Da ricordare: in PV = nRT la T va SEMPRE in Kelvin. Converti prima, calcola dopo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u5-02-4",
+    "topicId": "fis-u5-02",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un cilindro contiene gas perfetto mantenuto a temperatura costante. Se il suo volume viene ridotto lentamente fino a raggiungere la meta' del valore iniziale, cosa succede alla pressione del gas?",
+    "choices": [
+      "La pressione si raddoppia",
+      "La pressione si dimezza",
+      "La pressione resta costante",
+      "La temperatura interna aumenta",
+      "La temperatura interna diminuisce"
+    ],
+    "answer": 0,
+    "explain": "Con la temperatura T costante e il numero di moli n fisso, l'equazione PV = nRT dice che il PRODOTTO P × V deve restare costante (legge di Boyle). Se V si dimezza (diventa V/2), allora P deve raddoppiare per mantenere P × V uguale: come quando stringi un palloncino a meta', l'aria spinge il doppio sulle pareti. Le trappole: 'la pressione si dimezza' e' l'opposto esatto (inverte il verso della relazione); 'la pressione resta costante' sarebbe vero solo se T e V cambiassero insieme in modo proporzionale; 'la temperatura interna aumenta' e 'diminuisce' sono trappole insidiose: la temperatura e' tenuta costante per ipotesi e non cambia.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u5-02-5",
+    "topicId": "fis-u5-02",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un gas perfetto parte da uno stato iniziale (P₀, V₀, T₀) e raggiunge uno stato finale con volume doppio (2V₀) e pressione dimezzata (P₀/2). Che cosa si puo' dire della temperatura finale?",
+    "choices": [
+      "La temperatura finale e' uguale a quella iniziale, perche' PV/T resta costante",
+      "Non si puo' dire nulla, perche' la trasformazione e' generica",
+      "La temperatura finale e' sicuramente piu' bassa, perche' il gas si e' espanso",
+      "La temperatura finale e' sicuramente piu' alta, perche' la trasformazione e' irreversibile",
+      "Serve sapere come avviene la trasformazione prima di rispondere"
+    ],
+    "answer": 0,
+    "explain": "La temperatura si ricava dall'equazione di stato PV = nRT, che vale per qualsiasi STATO DI EQUILIBRIO (non importa come ci si e' arrivati). Nello stato iniziale: P₀V₀ = nRT₀. Nello stato finale: (P₀/2)(2V₀) = P₀V₀ = nRT_f. I due prodotti PV sono uguali, quindi T_f = T₀. La temperatura finale e' uguale a quella iniziale. Trappola 'non si puo' dire nulla': e' sbagliata perche' la legge del gas perfetto si applica agli stati di equilibrio iniziale e finale, indipendentemente dalla trasformazione. Trappola 'piu' bassa perche' si espande': e' una misconcezione: espandersi non abbassa automaticamente T se anche P scende in modo compensato. 'Piu' alta perche' irreversibile' e 'serve sapere la trasformazione' sono variazioni della stessa trappola: per T bastano lo stato iniziale e quello finale.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,131 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u7-09">
+
+## Cos'è l'aneuploidia?
+
+Una cellula normale ha il numero **giusto** di cromosomi. Nell'uomo sono 46, disposti in 23 coppie.
+**Aneuploidia** significa avere un numero sbagliato: uno in più o uno in meno rispetto al normale.
+
+- **Monosomia**: manca un cromosoma (es. 45 invece di 46). Simbolo: 2n − 1.
+- **Trisomia**: c'è un cromosoma in più (es. 47 invece di 46). Simbolo: 2n + 1.
+
+Un esempio famoso di trisomia è la **sindrome di Down**: la persona ha 3 copie del cromosoma 21 invece di 2.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Immagina di fare un mazzo di carte da 52 e di ritrovarti con 51 o 53. Il mazzo è "sbagliato" — e questo causa problemi nel gioco (cioè nello sviluppo dell'organismo).</div>
+
+---
+
+## La causa principale: la non-disgiunzione meiotica
+
+Durante la **meiosi** (la divisione cellulare che produce i gameti — ovuli e spermatozoi) i cromosomi devono separarsi in modo preciso.
+
+Se due cromosomi omologhi **non si separano** come dovrebbero, si chiama **non-disgiunzione**. Può avvenire:
+- nella **meiosi I** (i due cromosomi omologhi vanno tutti e due nella stessa cellula figlia)
+- nella **meiosi II** (le due cromatidi sorelle di uno stesso cromosoma non si separano)
+
+Risultato: si formano gameti con un cromosoma di troppo o uno di meno.
+Quando un gamete anomalo si unisce a uno normale durante la fecondazione, il nuovo individuo avrà il numero sbagliato di cromosomi.
+
+<Diagram caption="Non-disgiunzione in meiosi I e meiosi II" code={`flowchart TB
+  A["Cellula madre (2n = 4)"] --> B["MEIOSI I"]
+  B -->|"Separazione normale"| C["2 cellule con 2 cromosomi ciascuna"]
+  B -->|"Non-disgiunzione in MEIOSI I"| D["Una cellula con 3 cromosomi<br/>Una cellula con 1 cromosoma"]
+  C --> E["MEIOSI II"]
+  D --> F["MEIOSI II anomala"]
+  E --> G["4 gameti normali (n=2)"]
+  F --> H["2 gameti con n+1 (trisomia)<br/>2 gameti con n-1 (monosomia)"]`} />
+
+---
+
+## Gametogenesi maschile: la spermatogenesi
+
+La **spermatogenesi** è la produzione degli spermatozoi nei testicoli. Avviene in modo continuo dalla pubertà per tutta la vita.
+
+1. Le cellule di partenza si chiamano **spermatogoni** (diploidi, 2n).
+2. Gli spermatogoni si dividono per mitosi per moltiplicarsi.
+3. Alcuni diventano **spermatociti primari** e subiscono la **meiosi I** → producono 2 spermatociti secondari (n).
+4. Ogni spermatocita secondario fa la **meiosi II** → 2 spermatidi (n).
+5. Gli spermatidi maturano in **spermatozoi** (n) attraverso un processo detto spermiogenesi.
+
+**Risultato**: da 1 spermatocita primario si ottengono 4 spermatozoi funzionanti.
+
+---
+
+## Gametogenesi femminile: l'oogenesi
+
+L'**oogenesi** è la produzione degli ovociti nelle ovaie. È molto diversa da quella maschile.
+
+1. Le cellule di partenza sono gli **oogoni** (2n), che si moltiplicano per mitosi durante lo sviluppo fetale.
+2. Si differenziano in **ovociti primari** (2n) e si bloccano in **profase I** ancora prima della nascita.
+3. Alla pubertà, ogni mese uno o pochi ovociti riprendono la meiosi → completano la **meiosi I** → formano un **ovocita secondario** (n) + un **primo globulo polare** (piccola cellula che si scarta).
+4. L'ovocita secondario si blocca di nuovo in **metafase II**.
+5. Solo se avviene la **fecondazione**, completa la meiosi II → **ovocita maturo** (n) + un secondo globulo polare.
+
+**Risultato**: da 1 ovocita primario si ottiene 1 solo ovulo funzionante (+ 2-3 globuli polari che si degradano).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La donna nasce già con tutti i suoi ovociti "in pausa" — come libri messi su uno scaffale che vengono aperti uno alla volta ogni mese. L'uomo invece produce spermatozoi freschi ogni giorno, come una fabbrica sempre in attività.</div>
+
+<Diagram caption="Confronto spermatogenesi vs oogenesi" code={`flowchart TB
+  subgraph MASCHIO["Spermatogenesi (testicoli)"]
+    A1["Spermatogonio 2n"] --> A2["Spermatocita primario 2n"]
+    A2 --> A3["Meiosi I"]
+    A3 --> A4["2 Spermatociti secondari n"]
+    A4 --> A5["Meiosi II"]
+    A5 --> A6["4 Spermatozoi n (tutti funzionanti)"]
+  end
+  subgraph FEMMINA["Oogenesi (ovaie)"]
+    B1["Oogonio 2n"] --> B2["Ovocita primario 2n (bloccato in profase I)"]
+    B2 --> B3["Meiosi I (alla pubertà)"]
+    B3 --> B4["Ovocita secondario n + 1° globulo polare"]
+    B4 --> B5["Meiosi II (solo se fecondazione)"]
+    B5 --> B6["1 Ovulo n + 2° globulo polare"]
+  end`} />
+
+---
+
+## Le cellule staminali
+
+Una **cellula staminale** è una cellula che:
+1. **Si auto-rinnova**: può dividersi e produrre altre cellule staminali uguali a sé.
+2. **Si differenzia**: può trasformarsi in cellule specializzate (muscolo, neuroni, sangue, ecc.).
+
+Immagina una cellula staminale come un **tuttofare** che può diventare elettricista, idraulico o muratore a seconda di cosa serve — e che nel frattempo si clona per tenere sempre un "tuttofare" di riserva.
+
+### Tipi principali
+
+- **Cellule staminali embrionali (ES)**: presenti nell'embrione ai primissimi stadi. Sono **totipotenti** o **pluripotenti** — possono diventare qualsiasi tipo di cellula del corpo.
+- **Cellule staminali adulte (o somatiche)**: presenti in alcuni tessuti dell'adulto (midollo osseo, intestino, pelle). Sono **multipotenti** — possono diventare solo certi tipi di cellule (es. le staminali del sangue producono globuli rossi, bianchi e piastrine, ma non neuroni).
+- **Cellule staminali pluripotenti indotte (iPSC)**: cellule adulte "riprogrammate" in laboratorio per tornare a uno stadio simile alle embrionali. Utili per la medicina rigenerativa.
+
+---
+
+## Guarda il video
+<YouTube id="uNYHkWRrIsM" title="Biologia: Meiosi e gametogenesi — PoK Scuola Digitale" />
+<VideoVisto id="bio-u7-09" />
+
+## Da ricordare
+- La **non-disgiunzione** in meiosi I o II produce gameti con un numero anomalo di cromosomi; quando questi si fondono con un gamete normale causano **aneuploidia** (trisomia o monosomia).
+- **Spermatogenesi** = 1 spermatocita → 4 spermatozoi (continua tutta la vita); **oogenesi** = 1 ovocita → 1 ovulo (gli ovociti sono già presenti alla nascita, bloccati fino alla pubertà).
+- Le **cellule staminali** si auto-rinnovano e si differenziano: le embrionali sono pluripotenti, le adulte sono multipotenti, e possono rigenerare tessuti specifici.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Cosa si intende per non-disgiunzione meiotica?" opzioni={["I cromosomi si duplicano due volte invece di una","Due cromosomi omologhi (o cromatidi) non si separano correttamente durante la meiosi","La cellula non riesce a completare la mitosi","I gameti prodotti hanno il doppio dei cromosomi rispetto al normale"]} corretta={1} spiegazione="La non-disgiunzione è proprio il mancato separamento dei cromosomi omologhi (in meiosi I) o delle cromatidi sorelle (in meiosi II). Questo porta a gameti con n+1 o n-1 cromosomi, che causano aneuploidia nella progenie." />
+
+<Quiz domanda="Quanti spermatozoi funzionanti si ottengono da un singolo spermatocita primario?" opzioni={["1","2","4","8"]} corretta={2} spiegazione="Lo spermatocita primario (2n) fa la meiosi I producendo 2 spermatociti secondari (n), ognuno dei quali fa la meiosi II producendo 2 spermatidi. Totale: 4 spermatidi che maturano in 4 spermatozoi funzionanti." />
+
+<Quiz domanda="Quale caratteristica DEFINISCE una cellula staminale?" opzioni={["Produce solo globuli rossi","È diploide e si divide per meiosi","Si auto-rinnova E può differenziarsi in cellule specializzate","Non si divide mai dopo la nascita"]} corretta={2} spiegazione="La doppia capacità — auto-rinnovamento + differenziazione — è la caratteristica definitoria di una cellula staminale. Un tipo di cellula che si limita a dividersi (come un globulo rosso maturo) non è una staminale." />
+
+<Esercizio problema="Una donna ha la sindrome di Turner (45,X): ha solo un cromosoma X invece di due. Spiega in che fase della meiosi è avvenuta la non-disgiunzione e quale gamete anomalo era coinvolto." soluzione="La sindrome di Turner origina da una non-disgiunzione nella meiosi I o II di uno dei genitori. Se la non-disgiunzione è avvenuta nella meiosi I della madre, i due cromosomi sessuali (X e X) non si sono separati: si formano un ovocita con XX e uno senza cromosomi sessuali (0). Se questo secondo ovocita (n-1, privo di X) viene fecondato da uno spermatozoo normale con X, si ottiene 45,X. Anche una non-disgiunzione paterna (lo spermatozoo privo di cromosoma sessuale feconda un ovulo normale X) produce lo stesso risultato." />
+
+</section>
+
+</RisorsaLayout>

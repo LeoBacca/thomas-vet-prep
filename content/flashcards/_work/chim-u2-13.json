@@ -1,0 +1,25 @@
+{
+ "id": "chim-u2-13",
+ "titolo": "Osmolarità e soluzioni isotoniche, ipertoniche e ipotoniche (emolisi, edema)",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "13-osmolarita-e-soluzioni-isotoniche-ipertoniche-e",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u2/13-osmolarita-e-soluzioni-isotoniche-ipertoniche-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2016",
+   "q": "La soluzione S1 è ipertonica rispetto alla soluzione S2, pertanto:",
+   "choices": [
+    "nelle stesse condizioni di temperatura la tensione di vapore di S2 è maggiore della tensione di vapore di S1",
+    "S2 esercita una pressione osmotica maggiore rispetto a S1",
+    "la temperatura di ebollizione di S1 è minore della temperatura di ebollizione di S2",
+    "S1 congela a temperatura più elevata rispetto a S2",
+    "S2 è maggiormente concentrata"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

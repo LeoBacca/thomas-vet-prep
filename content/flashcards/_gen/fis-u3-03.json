@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u3-03-1",
+    "topicId": "fis-u3-03",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: se premi su un liquido in un punto chiuso, la pressione si trasmette uguale in tutte le direzioni e in ogni punto del liquido (principio di Pascal).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Immagina di stringere un tubetto di dentifricio: la pasta non esce solo dove premi, ma dal beccuccio lontano. La pressione si 'sparge' identica ovunque dentro al fluido — questo e il principio di Pascal.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-03-2",
+    "topicId": "fis-u3-03",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "open",
+    "q": "Un meccanico spinge con 10 N su un pistone piccolo (area 2 cm²) collegato a un pistone grande (area 20 cm²) tramite un liquido. Quanta forza esce dal pistone grande, e perche il risultato e piu grande di quello che hai spinto?",
+    "answer": "La forza sul pistone grande e 100 N. Si usa la formula del torchio idraulico: F₁/A₁ = F₂/A₂, quindi F₂ = F₁ × (A₂/A₁) = 10 × (20/2) = 100 N. La forza e 10 volte piu grande perche il pistone grande ha superficie 10 volte piu ampia: la stessa pressione trasmessa dal liquido (per il principio di Pascal) agisce su un'area piu grande, producendo una forza totale maggiore.",
+    "explain": "Il torchio idraulico moltiplica la forza grazie alle diverse aree: F₁/A₁ = F₂/A₂. Piu grande e il pistone in uscita, piu grande e la forza. Stessa idea del cric in officina che solleva un'auto con poco sforzo.",
+    "tags": ["risposta aperta"]
+  }
+]

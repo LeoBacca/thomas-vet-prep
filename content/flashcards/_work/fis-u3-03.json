@@ -1,0 +1,10 @@
+{
+ "id": "fis-u3-03",
+ "titolo": "Principio di Pascal",
+ "materia": "fisica",
+ "unita": 3,
+ "slug": "03-principio-di-pascal",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u3/03-principio-di-pascal.mdx",
+ "examQuestions": []
+}

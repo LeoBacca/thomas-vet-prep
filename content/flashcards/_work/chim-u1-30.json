@@ -1,0 +1,39 @@
+{
+ "id": "chim-u1-30",
+ "titolo": "Termodinamica: sistema, funzioni di stato ed entalpia (eso/endotermico)",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "30-termodinamica-sistema-funzioni-di-stato-ed",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u1/30-termodinamica-sistema-funzioni-di-stato-ed.mdx",
+ "examQuestions": [
+  {
+   "year": "2018",
+   "q": "Un sistema viene definito chiuso quando:",
+   "choices": [
+    "può scambiare energia, ma non materia con l'ambiente esterno",
+    "può scambiare materia, ma non energia con l'ambiente esterno",
+    "non può scambiare né materia né energia con l'ambiente esterno",
+    "al suo interno non avvengono reazioni chimiche",
+    "contiene sostanze in un'unica fase"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "In una reazione chimica che avviene a pressione costante, il calore scambiato si identifica con:",
+   "choices": [
+    "la variazione di entalpia della reazione",
+    "la variazione della costante di equilibrio",
+    "la variazione di energia libera della reazione",
+    "la variazione di entropia della reazione",
+    "il grado di spontaneità della reazione"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "definizione"
+  }
+ ]
+}

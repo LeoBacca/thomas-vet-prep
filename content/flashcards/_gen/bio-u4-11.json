@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fc-bio-u4-11-1", "topicId": "bio-u4-11", "materia": "biologia", "unita": 4, "type": "mc",
+    "q": "In molte malattie il gene difettoso sta sul cromosoma X ed è recessivo. Perché allora i MASCHI si ammalano molto più spesso delle femmine?",
+    "choices": ["Perché i maschi hanno un solo cromosoma X: se quell'unico X è difettoso non c'è una seconda copia 'di scorta' che lo copra", "Perché i maschi hanno due cromosomi X e quindi doppia probabilità di errore", "Perché il gene si trova in realtà sul cromosoma Y", "Perché gli ormoni maschili attivano la malattia"],
+    "answer": 0,
+    "explain": "Il maschio è XY: ha un solo X. Se quel singolo X porta il gene difettoso, non ha un secondo X sano che faccia da 'ruota di scorta', quindi si ammala. La femmina è XX: di solito il suo secondo X sano copre il difetto, perciò è spesso solo portatrice sana. Esempi tipici X-linked recessivi: emofilia e daltonismo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-11-2", "topicId": "bio-u4-11", "materia": "biologia", "unita": 4, "type": "tf",
+    "q": "Vero o falso: una malattia mitocondriale (dovuta al DNA dei mitocondri) può essere trasmessa ai figli sia dal padre sia dalla madre.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. I mitocondri arrivano al figlio solo dalla cellula uovo della madre: lo spermatozoo praticamente non ne porta. Quindi solo la madre trasmette il carattere, e lo trasmette a TUTTI i figli (maschi e femmine). Pensa ai mitocondri come a un 'pacchetto' che viaggia solo dentro l'ovulo: il papà non lo può spedire.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-11-3", "topicId": "bio-u4-11", "materia": "biologia", "unita": 4, "type": "open",
+    "q": "In un albero genealogico vedi due genitori SANI che hanno un figlio MALATO. Cosa puoi dedurre sul tipo di carattere e perché? Cos'è un 'portatore sano'?",
+    "answer": "Se due genitori sani generano un figlio malato, il carattere deve essere RECESSIVO (quasi sempre autosomico recessivo). Spiegazione: in un carattere recessivo servono DUE copie difettose del gene (una dal padre e una dalla madre) per ammalarsi. I due genitori sono 'portatori sani': hanno una copia difettosa e una sana, e la copia sana 'copre' il difetto, quindi non mostrano la malattia (Aa). Quando però per caso il figlio riceve la copia difettosa da entrambi (aa), non ha più nessuna copia sana che lo protegga e si ammala. Per questo i caratteri recessivi possono 'saltare una generazione': restano nascosti nei portatori e ricompaiono dopo. Un carattere dominante invece richiederebbe almeno un genitore già affetto, quindi qui è escluso.",
+    "explain": "Regola chiave: genitori sani + figlio malato = carattere recessivo, genitori portatori sani (Aa x Aa).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u4-11-4", "topicId": "bio-u4-11", "materia": "biologia", "unita": 4, "type": "mc",
+    "q": "Nei mammiferi, una malattia ereditaria causata da un difetto in un gene MITOCONDRIALE come si trasmette?",
+    "choices": ["Viene ereditata soltanto per via materna (la trasmette solo la madre)", "Viene ereditata soltanto per via paterna (la trasmette solo il padre)", "Viene ereditata solo dai figli maschi e mai dalle femmine", "Si trasmette saltando sempre una generazione, come un gene recessivo", "Si trasmette solo se entrambi i genitori sono portatori"],
+    "answer": 0,
+    "explain": "Giusta: solo per via materna, perché i mitocondri arrivano dall'ovulo della madre. Le trappole: 'solo per via paterna' è l'opposto esatto (lo spermatozoo non porta mitocondri al figlio); 'solo i figli maschi / mai le femmine' confonde il mitocondriale con l'Y-linked, ma una madre affetta trasmette a TUTTI i figli, maschi e femmine; 'salta una generazione come un recessivo' scambia il pattern mitocondriale con quello autosomico recessivo, ma qui non c'è dominanza/recessività di un gene di coppia; 'serve che entrambi i genitori siano portatori' è il filler fuori tema (vale per i recessivi autosomici, non per il mtDNA che si trasmette dalla sola madre).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u4-11-5", "topicId": "bio-u4-11", "materia": "biologia", "unita": 4, "type": "mc",
+    "q": "Nei gatti, la maggior parte degli esemplari con mantello arancione è di sesso MASCHILE. Qual è la spiegazione corretta?",
+    "choices": ["Il gene per il colore arancione del mantello si trova sul cromosoma X", "Il gene per il colore arancione del mantello si trova sul cromosoma Y", "Il colore arancione è un carattere recessivo qualsiasi su un autosoma", "Il colore del mantello dipende dagli ormoni maschili", "Il colore arancione compare solo nei gatti di razza pura"],
+    "answer": 0,
+    "explain": "Giusta: il gene del mantello arancione sta sull'X. Il maschio (XY) ha un solo X, quindi gli basta quella copia per essere tutto arancione; la femmina (XX) di solito risulta arancione solo se ha l'allele su entrambi gli X, evento più raro (le femmine con un solo X arancione vengono spesso tartarugate). Le trappole: 'sul cromosoma Y' è lo scambio di cromosoma (se fosse sull'Y lo erediterebbero tutti i maschi dal padre, non è cosi); 'recessivo su un autosoma' toglie il legame col sesso e quindi non spiega perché siano quasi tutti maschi; 'dipende dagli ormoni maschili' confonde la genetica con la fisiologia ormonale; 'solo nei gatti di razza pura' è il filler fuori tema (la razza non c'entra con la posizione del gene).",
+    "tags": ["prova d'esame"]
+  }
+]

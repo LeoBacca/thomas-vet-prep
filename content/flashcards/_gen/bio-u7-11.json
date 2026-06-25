@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u7-11-1",
+    "topicId": "bio-u7-11",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Il MOMP e il 'punto di non ritorno' nell'apoptosi mitocondriale. Cosa succede esattamente durante il MOMP?",
+    "choices": [
+      "La membrana esterna del mitocondrio si perfora e il citocromo C fuoriesce nel citoplasma",
+      "Il nucleo si dissolve e il DNA viene distrutto direttamente",
+      "I ribosomi smettono di produrre proteine per mancanza di energia",
+      "Le caspasi vengono bloccate da BCL-2 all'interno del mitocondrio"
+    ],
+    "answer": 0,
+    "explain": "MOMP = Mitochondrial Outer Membrane Permeabilization: si forma un buco nella membrana esterna del mitocondrio. Da quel buco esce il citocromo C nel citoplasma — e da quel momento la morte cellulare e inevitabile. Analogia: e come forare lo scafo di una barca; una volta aperto il buco, l'acqua entra e non si puo tornare indietro.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-11-2",
+    "topicId": "bio-u7-11",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "open",
+    "q": "La famiglia BCL-2 decide se la cellula vive o muore. Spiega la logica delle due 'squadre' opposte e come si determina il destino della cellula.",
+    "answer": "Nella famiglia BCL-2 ci sono due squadre con ruoli opposti. La squadra pro-vita (BCL-2, BCL-XL, MCL-1) agisce come un tappo: tiene chiusa la membrana mitocondriale e blocca attivamente le proteine pro-morte. La squadra pro-morte ha due livelli: le proteine BAX e BAK sono le 'trivelle' che perforano fisicamente la membrana causando il MOMP; le proteine BH3-only (es. PUMA, NOXA, BID) sono sensori di danno che, quando si attivano, inibiscono le proteine pro-vita e/o attivano direttamente BAX e BAK. Il destino della cellula dipende dall'equilibrio: se le proteine pro-vita prevalgono, la cellula sopravvive; se le pro-morte prevalgono (cioe i sensori di danno segnalano che qualcosa va molto storto), BAX e BAK forano la membrana, esce il citocromo C, si forma l'apoptosoma e la cellula muore in modo ordinato.",
+    "explain": "Chiave: BCL-2 = tappo (pro-vita); BAX/BAK = trivelle (pro-morte); BH3-only = sensori che scelgono da che parte stare. Il bilanciamento tra le due squadre e il vero interruttore dell'apoptosi intrinseca.",
+    "tags": ["risposta aperta"]
+  }
+]

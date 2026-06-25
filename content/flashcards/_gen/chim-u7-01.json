@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u7-01-1",
+    "topicId": "chim-u7-01",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Ogni amminoacido ha un centro fisso, il carbonio alfa, a cui sono attaccate quattro cose. Quali sono?",
+    "choices": [
+      "NH2, COOH, H e la catena laterale R",
+      "NH2, COOH, due catene laterali R",
+      "Solo NH2 e COOH (le altre variano troppo)",
+      "NH2, H, R e un atomo di ossigeno libero"
+    ],
+    "answer": 0,
+    "explain": "Il carbonio alfa e il perno della giostra: a lui sono sempre attaccate le stesse quattro cose — il gruppo amminico (NH2), il gruppo acido/carbossilico (COOH), un idrogeno (H) e la catena laterale R. NH2, COOH e H sono identici in tutti i 20 amminoacidi; cambia solo la R.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-01-2",
+    "topicId": "chim-u7-01",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: la catena laterale R e la parte che cambia da un amminoacido all'altro ed e per questo che esistono 20 amminoacidi diversi.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. La 'base' (NH2, COOH, H e il carbonio alfa) e uguale per tutti. L'unica cosa che cambia e la R — e proprio quel pezzetto diverso che rende ogni amminoacido unico, come i vestiti distinguono le persone che hanno lo stesso corpo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-01-3",
+    "topicId": "chim-u7-01",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Spiega con parole tue i 4 gruppi in cui si classificano gli amminoacidi. Poi descrivi, con un esempio tratto dalla biologia o veterinaria, perche il tipo di catena laterale R conta davvero.",
+    "answer": "I 4 gruppi si distinguono guardando la catena laterale R: 1) R apolare (idrofobica): respinge l'acqua, come l'olio. 2) R polare neutra: ama l'acqua ma non e ne acida ne basica. 3) R acida: si comporta da acido (tende a rilasciare cariche negative). 4) R basica: si comporta da base (tende ad acquisire cariche positive). Perche conta: la R decide come si comporta la proteina nel corpo. Gli amminoacidi con R apolare tendono a nascondersi all'interno del gomitolo proteico (lontano dall'acqua del sangue), quelli con R polare o carica stanno in superficie. E proprio questo gioco a dare alle proteine la forma giusta. Un esempio pratico: nell'anemia falciforme basta un singolo amminoacido 'sbagliato' nell'emoglobina (la proteina che porta l'ossigeno nel sangue) per cambiarne la forma e far diventare i globuli rossi a forma di falce, con conseguenze gravi per l'animale.",
+    "explain": "Da ricordare: 4 gruppi → apolare, polare neutra, acida, basica. Il tipo di R determina la forma e la funzione della proteina.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u7-01-4",
+    "topicId": "chim-u7-01",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Gli amminoacidi naturali che costituiscono le proteine:",
+    "choices": [
+      "hanno tutti un gruppo amminico sul carbonio alfa (C2)",
+      "hanno tutti un solo gruppo amminico",
+      "hanno tutti almeno due gruppi amminici",
+      "hanno tutti un solo gruppo amminico e un solo gruppo carbossilico",
+      "sono tutti amminoacidi essenziali"
+    ],
+    "answer": 0,
+    "explain": "La risposta corretta e la prima: il punto chiave e che il gruppo amminico (NH2) si trova SEMPRE sul carbonio alfa (il C2, cioe il secondo carbonio), ed e questa la caratteristica strutturale comune a tutti i 20 amminoacidi proteici. Le trappole: 'un solo gruppo amminico' (opzione B) sembra plausibile ma non coglie la caratteristica essenziale, ovvero la posizione alfa — alcuni amminoacidi possono avere gruppi amminici anche sulla catena R (es. lisina), quindi la presenza di un solo gruppo amminico NON vale per tutti. 'Almeno due gruppi amminici' (opzione C) e l'opposto esatto della B, ma e anch'essa falsa per lo stesso motivo: non tutti ne hanno piu di uno. 'Un solo NH2 e un solo COOH' (opzione D) e una trappola allettante ma sbagliata: ad esempio l'acido aspartico ha due gruppi COOH. 'Tutti essenziali' (opzione E) e un filler fuori tema: la distinzione essenziale/non essenziale riguarda quelli che il corpo non sa sintetizzare, non la struttura.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u7-01-5",
+    "topicId": "chim-u7-01",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Un amminoacido ha una catena laterale R che, nell'acqua del sangue, 'si nasconde' all'interno del gomitolo proteico lontano dall'acqua. In quale gruppo lo classifichi?",
+    "choices": [
+      "R basica, perche le basi respingono l'acqua",
+      "R polare neutra, perche non e ne acida ne basica",
+      "R apolare (idrofobica), perche respinge l'acqua come l'olio",
+      "R acida, perche le proteine in soluzione acida precipitano",
+      "Non si puo classificare senza conoscere la formula chimica"
+    ],
+    "answer": 2,
+    "explain": "Un gruppo R che 'odia' l'acqua e per definizione apolare, cioe idrofobico. Come l'olio nell'acqua, questi amminoacidi tendono a stare il piu lontano possibile dall'acqua, quindi si raggruppano all'interno del gomitolo proteico. Questo meccanismo e fondamentale per dare alle proteine la loro forma. Le trappole: 'R basica' (opzione A) confonde il comportamento rispetto all'acqua con il concetto di basicita, che e invece la tendenza ad acquisire cariche positive — sono due cose diverse. 'R polare neutra' (opzione B) e un termine scambiato: polare significa al contrario che AMA l'acqua (idrofilica). 'R acida' (opzione D) inventa un legame tra acidita e solubilita che non esiste come regola. 'Non si puo classificare' (opzione E) e un filler fuori tema: il comportamento rispetto all'acqua e esattamente il criterio che usiamo per classificare.",
+    "tags": ["prova d'esame"]
+  }
+]

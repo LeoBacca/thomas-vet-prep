@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u6-11-1",
+    "topicId": "fis-u6-11",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: una calamita ferma vicino a una spira di filo genera una corrente elettrica nella spira.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. La corrente si genera SOLO se il flusso magnetico cambia nel tempo. Se la calamita è ferma, il flusso attraverso la spira è costante: ΔΦ/Δt = 0, quindi ε = 0. Basta muovere la calamita e subito appare la corrente.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-11-2",
+    "topicId": "fis-u6-11",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Il flusso magnetico Φ = B · A · cos(θ) misura 'quanta parte del campo attraversa la spira'. In quali TRE modi puoi farlo cambiare e indurre corrente?",
+    "choices": [
+      "Variare B, variare l'area A della spira, oppure ruotare la spira (cambiare θ)",
+      "Solo variare B: spostare o cambiare l'intensità del magnete",
+      "Solo ruotare la spira: le altre due non cambiano il flusso",
+      "Variare la resistenza del filo e la lunghezza della spira"
+    ],
+    "answer": 0,
+    "explain": "Φ dipende da tre fattori: B (intensità del campo), A (area della spira) e θ (angolo tra campo e spira). Se ne cambi UNO qualsiasi, Φ varia e compare una f.e.m. indotta. Esempio biomedico: in un elettrocardiografo la corrente del cuore crea un campo B che varia → induce segnali misurabili sugli elettrodi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-11-3",
+    "topicId": "fis-u6-11",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "open",
+    "q": "Spiega con parole tue: cosa dice la legge di Lenz e perché il segno meno nella formula ε = −ΔΦ/Δt non è solo un fatto matematico, ma ha un significato fisico profondo?",
+    "answer": "La legge di Lenz dice che la corrente indotta in una spira si oppone SEMPRE alla variazione del flusso che l'ha generata. Se avvicini un magnete e il flusso cresce, la corrente indotta crea un campo magnetico in direzione opposta, cercando di 'bloccare' quell'aumento. Se allontani il magnete e il flusso diminuisce, la corrente tenta di 'mantenere' il flusso com'era. Il segno meno in ε = −ΔΦ/Δt esprime esattamente questa opposizione. Il significato fisico profondo è la conservazione dell'energia: se la corrente indotta aiutasse il cambiamento invece di ostacolarlo, si genererebbe energia dal nulla, cosa impossibile. In pratica Lenz ci dice anche perché frenare magneticamente costa fatica: le macchine che sfruttano l'induzione (alternatori, trasformatori) devono vincere questa 'resistenza naturale'.",
+    "explain": "Il punto chiave: il segno meno = conservazione dell'energia (niente moto perpetuo). La corrente indotta frena sempre la causa.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u6-11-4",
+    "topicId": "fis-u6-11",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Avvicini rapidamente una potente calamita a una spira di rame chiusa a cerchio. Cosa osservi?",
+    "choices": [
+      "Nella spira viene indotta una corrente elettrica circolante",
+      "La spira si deforma diventando un'ellisse stretta e lunga",
+      "Il rame acquista una forte carica elettrica statica positiva",
+      "Non succede nulla: il rame non interagisce con i magneti",
+      "La spira si illumina autonomamente come una lampadina"
+    ],
+    "answer": 0,
+    "explain": "Muovere la calamita cambia il flusso magnetico attraverso la spira → ε = −ΔΦ/Δt ≠ 0 → nasce una corrente indotta (risposta A, corretta). Trappola B: la spira non si deforma, il campo magnetico non esercita forze meccaniche di forma sulla spira chiusa. Trappola C: l'induzione crea corrente (cariche in moto), non carica statica accumulata. Trappola D: il rame non è un magnete, ma conduce benissimo la corrente indotta. Trappola E: una spira di rame non è una lampadina e non emette luce (confonde corrente con emissione luminosa).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u6-11-5",
+    "topicId": "fis-u6-11",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Il flusso attraverso una spira scende da 0,8 Wb a 0,2 Wb in 0,3 secondi. Qual è il valore assoluto della f.e.m. indotta?",
+    "choices": [
+      "0,24 V",
+      "1,8 V",
+      "2,0 V",
+      "0,6 V",
+      "4,0 V"
+    ],
+    "answer": 2,
+    "explain": "Formula: |ε| = |ΔΦ/Δt|. Calcolo: ΔΦ = 0,8 − 0,2 = 0,6 Wb; Δt = 0,3 s. |ε| = 0,6 / 0,3 = 2,0 V (risposta C, corretta). Trappola A (0,24 V): errore tipico — si moltiplica invece di dividere (0,8 × 0,3 = 0,24). Trappola B (1,8 V): si usa il valore iniziale del flusso invece della variazione (0,6 × 3 oppure 0,8 al posto di 0,6 nei conti). Trappola D (0,6 V): si dimentica di dividere per Δt e ci si ferma alla sola ΔΦ = 0,6 Wb. Trappola E (4,0 V): si dividono fra loro i due valori del flusso (0,8 / 0,2 = 4) invece di usare la differenza ΔΦ. Il trucco: prima calcola ΔΦ (la differenza), poi dividi per Δt. Non moltiplicare.",
+    "tags": ["prova d'esame"]
+  }
+]

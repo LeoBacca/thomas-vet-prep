@@ -1,0 +1,78 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+import FigTrigonometria from '@/components/FigTrigonometria.astro';
+
+<RisorsaLayout id="fis-u1-06">
+
+Le funzioni trigonometriche (**seno**, **coseno**, **tangente**) collegano gli **angoli** ai **lati** di un triangolo rettangolo. In fisica servono soprattutto per **scomporre i vettori** (lo vedrai subito dopo), quindi non ti spaventare: bastano tre rapporti.
+
+In un triangolo rettangolo, fissato un angolo (lo chiamiamo θ):
+
+- l'**ipotenusa** è il lato lungo, davanti all'angolo retto;
+- il **cateto opposto** è il lato "di fronte" a θ;
+- il **cateto adiacente** è il lato "accanto" a θ.
+
+<div class="callout">💡 <strong>La filastrocca SOH-CAH-TOA:</strong> <strong>S</strong>eno = <strong>O</strong>pposto/i<strong>H</strong>potenusa · <strong>C</strong>oseno = <strong>A</strong>diacente/i<strong>H</strong>potenusa · <strong>T</strong>angente = <strong>O</strong>pposto/<strong>A</strong>diacente.</div>
+
+Guarda la figura: il lato **rosso** è l'**ipotenusa** (il più lungo, davanti all'angolo retto), l'**arancione** è il **cateto opposto** all'angolo θ, il **verde** è il **cateto adiacente** (quello "attaccato" a θ). I tre rapporti nascono tutti da questi tre lati.
+
+<FigTrigonometria />
+
+## A cosa servono in fisica
+
+Servono per spezzare un vettore "storto" nelle sue parti orizzontale e verticale:
+
+<Diagram caption="Trigonometria applicata ai vettori" code={`flowchart LR
+  A["Vettore di modulo V, angolo θ"] --> X["parte orizzontale = V · cos θ"]
+  A --> Y["parte verticale = V · sin θ"]`} />
+
+## Guarda il video
+
+<YouTube id="1rPvL65dbgM" title="Trigonometria: il triangolo rettangolo — Elia Bombardelli" />
+
+<VideoVisto id="fis-u1-06" />
+
+## Da ricordare
+
+- **Seno** = opposto / ipotenusa.
+- **Coseno** = adiacente / ipotenusa.
+- **Tangente** = opposto / adiacente.
+- In fisica servono per **scomporre i vettori**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="In un triangolo rettangolo, il seno di un angolo è:"
+  opzioni={["opposto / ipotenusa", "adiacente / ipotenusa", "opposto / adiacente", "ipotenusa / opposto"]}
+  corretta={0}
+  spiegazione="Seno = cateto opposto diviso ipotenusa (la 'S-O-H' della filastrocca)."
+/>
+
+<Quiz
+  domanda="Il coseno di un angolo è:"
+  opzioni={["opposto / ipotenusa", "adiacente / ipotenusa", "opposto / adiacente", "ipotenusa / adiacente"]}
+  corretta={1}
+  spiegazione="Coseno = cateto adiacente diviso ipotenusa (la 'C-A-H')."
+/>
+
+<Quiz
+  domanda="A cosa servono seno e coseno in fisica?"
+  opzioni={["a misurare la massa", "a scomporre i vettori nelle componenti", "a contare gli atomi", "a convertire le unità"]}
+  corretta={1}
+  spiegazione="Servono a trovare le componenti orizzontale (V·cos θ) e verticale (V·sin θ) di un vettore."
+/>
+
+<Esercizio
+  problema="Quale rapporto definisce la tangente di un angolo?"
+  soluzione="Tangente = cateto opposto / cateto adiacente (opposto su adiacente, la 'T-O-A')."
+/>
+
+</section>
+
+</RisorsaLayout>

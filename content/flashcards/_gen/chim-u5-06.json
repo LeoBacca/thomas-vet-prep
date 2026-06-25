@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u5-06-1",
+    "topicId": "chim-u5-06",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: nella rottura OMOLITICA di un legame, un atomo si prende tutti e due gli elettroni della coppia condivisa.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Nella rottura omolitica ('omo' = uguale) gli elettroni si dividono IN PARTI UGUALI: uno a testa. È la rottura ETEROLITICA quella dove un atomo si prende la coppia intera.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-06-2",
+    "topicId": "chim-u5-06",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un legame si rompe e i due atomi si dividono gli elettroni in parti UGUALI (uno ciascuno). Cosa si forma?",
+    "choices": [
+      "Due radicali: ogni atomo ha un elettrone spaiato ed è neutro",
+      "Un carbocatione e un carbanione",
+      "Due ioni con carica opposta",
+      "Un atomo positivo e uno neutro"
+    ],
+    "answer": 0,
+    "explain": "Rottura omolitica → un elettrone a testa → due radicali. Ogni radicale ha un elettrone 'spaiato' (senza compagno) ed è neutro. Sono molto reattivi e nel corpo vengono chiamati 'radicali liberi': gli antiossidanti come la vitamina C li neutralizzano proprio donando quell'elettrone mancante.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-06-3",
+    "topicId": "chim-u5-06",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra rottura omolitica e rottura eterolitica di un legame. Cosa si forma in ciascun caso? E se il carbonio resta SENZA la coppia di elettroni, come si chiama la specie che si forma?",
+    "answer": "Un legame è una coppia di 2 elettroni condivisi tra due atomi. Quando il legame si rompe, quegli elettroni devono andare da qualche parte. Ci sono due possibilità:\n1) Rottura OMOLITICA ('omo' = uguale): ogni atomo si prende UN elettrone. Risultato: due RADICALI, ciascuno con un elettrone spaiato. Sono neutri ma reattivissimi. Di solito servono calore o luce per innescarla (esempio: raggi solari).\n2) Rottura ETEROLITICA ('etero' = diverso): un atomo si prende TUTTI E DUE gli elettroni, l'altro resta senza. Risultato: due IONI con carica opposta. Chi ha preso la coppia diventa negativo; chi è rimasto senza diventa positivo.\nSe il carbonio resta SENZA la coppia (positivo), si forma un CARBOCATIONE. Se invece il carbonio si prende la coppia (negativo), si forma un CARBANIONE.",
+    "explain": "Il punto chiave: 'chi si prende gli elettroni' determina tutto. Coppia divisa equamente → radicali neutri. Coppia intera a uno solo → ioni di segno opposto.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u5-06-4",
+    "topicId": "chim-u5-06",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale delle seguenti specie è un RADICALE?",
+    "choices": [
+      "HO· (radicale ossidrile)",
+      "HO⁻ (ione ossidrile)",
+      "HOO⁻ (ione idroperossido)",
+      "H₃O⁺ (ione ossonio)",
+      "R-COO⁻ (ione carbossilato)"
+    ],
+    "answer": 0,
+    "explain": "HO· ha un elettrone spaiato (indicato dal punto '·'): è un radicale, prodotto di una rottura omolitica. È neutro e reattivissimo — uno dei radicali liberi più dannosi per le cellule. Le altre opzioni (HO⁻, HOO⁻, H₃O⁺, R-COO⁻) sono tutti IONI (carichi), prodotti di rotture eterolitiche o di equilibri acido-base: non hanno elettroni spaiati e non sono radicali.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u5-06-5",
+    "topicId": "chim-u5-06",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Riguardo alla stabilità dei carbocationi, quale affermazione è CORRETTA?",
+    "choices": [
+      "Il carbocatione primario è più stabile del terziario, perché ha meno ingombro sterico",
+      "Tutti i carbocationi hanno la stessa stabilità, indipendentemente dai gruppi attaccati",
+      "Il carbocatione terziario è più stabile del primario, perché i gruppi attaccati cedono elettroni al carbonio positivo stabilizzandolo",
+      "Il carbanione terziario è più stabile del primario, per lo stesso motivo del carbocatione",
+      "I carbocationi sono più stabili dei carbanioni perché hanno carica positiva"
+    ],
+    "answer": 2,
+    "explain": "Il carbocatione ha carica positiva: è a corto di elettroni. Ogni gruppo alchilico attaccato gli 'presta' un po' di elettroni (effetto induttivo), stabilizzandolo. Più gruppi ha → più aiuto riceve → più stabile. Ordine: terziario (3 gruppi) maggiore di secondario (2) maggiore di primario (1). TRAPPOLA 1: invertire l'ordine (primario più stabile) è l'errore più comune — vale per i carbanioni, non per i carbocationi. TRAPPOLA 2: per il carbanione l'ordine è OPPOSTO (il primario è il più stabile), perché il carbanione è già ricco di elettroni e i gruppi lo disturbano.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-02-1",
+    "topicId": "fis-u2-02",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: il tachimetro di un'auto mostra la velocità media dall'inizio del viaggio.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il tachimetro mostra la velocità ISTANTANEA: quanto vai veloce esattamente in quell'istante, non in media. La velocità media si calcola solo alla fine, dividendo lo spazio totale percorso per il tempo totale impiegato.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-02-2",
+    "topicId": "fis-u2-02",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un cane corre 120 m in 8 secondi (accelerando, rallentando, annusando). Qual è la sua velocità media?",
+    "choices": [
+      "15 m/s",
+      "8 m/s",
+      "120 m/s",
+      "Non si può sapere senza conoscere la velocità in ogni istante"
+    ],
+    "answer": 0,
+    "explain": "La velocità media è sempre spazio totale diviso tempo totale: v_media = 120 m / 8 s = 15 m/s. Non importa come ha corso nel mezzo: frenate, pause, scatti. Il punto chiave è che NON servono i dettagli istante per istante — basta il totale.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-02-3",
+    "topicId": "fis-u2-02",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Qual è la differenza tra velocità media e velocità istantanea? Fai un esempio concreto per ciascuna.",
+    "answer": "La velocità media descrive l'intero percorso: si calcola dividendo lo spazio totale per il tempo totale (v_media = Δx / Δt) e non dice nulla su come il moto è avvenuto momento per momento. Esempio: un cavallo percorre 3 km in 5 minuti, velocità media = 3000 m / 300 s = 10 m/s, indipendentemente da come ha galoppato nel mezzo. La velocità istantanea invece descrive quanto si è veloci in un preciso istante: è il valore che si otterrebbe misurando lo spostamento in un intervallo di tempo brevissimo (Δt quasi zero). Esempio pratico: il tachimetro dell'auto che mostra 95 km/h esattamente adesso. Se il moto è uniforme (velocità costante) le due coincidono; se il moto cambia, possono essere molto diverse.",
+    "explain": "Da ricordare: media = spazio totale / tempo totale (il 'voto finale'); istantanea = tachimetro (la velocità adesso).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-02-4",
+    "topicId": "fis-u2-02",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "In auto percorri 100 km in discesa alla velocità costante di 100 km/h, poi altri 100 km in salita alla velocità costante di 50 km/h. Qual è la tua velocità media sull'intero percorso?",
+    "choices": [
+      "Circa 66,7 km/h",
+      "Circa 75 km/h",
+      "Esattamente 100 km/h, perché la massima è 100",
+      "Non si può calcolare perché la velocità non era costante",
+      "Può essere superiore a 100 km/h"
+    ],
+    "answer": 0,
+    "explain": "v_media = spazio totale / tempo totale. Spazio totale = 200 km. Tempo per il primo tratto: 100 km ÷ 100 km/h = 1 h. Tempo per il secondo: 100 km ÷ 50 km/h = 2 h. Tempo totale = 3 h. v_media = 200 / 3 ≈ 66,7 km/h. Trappola 'circa 75 km/h': è la media ARITMETICA delle due velocità, (100+50)/2 = 75 — ma quella formula funziona solo se i due tratti durano lo stesso tempo, non se sono la stessa distanza. Qui si passa più tempo nel tratto lento (2 h contro 1 h), quindi la media pesa di più il 50 km/h. Trappola '100 km/h': confonde la velocità massima con la media. Trappola 'non si può calcolare': si può eccome, basta usare spazio/tempo totali. Trappola 'superiore a 100 km/h': impossibile se non si supera mai 100.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-02-5",
+    "topicId": "fis-u2-02",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un veicolo percorre 10 km verso Est, poi senza fermarsi 24 km verso Sud. Il viaggio dura 30 minuti. Qual è il modulo della velocità vettoriale media (spostamento / tempo)?",
+    "choices": [
+      "52 km/h",
+      "68 km/h",
+      "34 km/h",
+      "26 km/h",
+      "13 km/h"
+    ],
+    "answer": 0,
+    "explain": "La velocità vettoriale media usa lo SPOSTAMENTO (la retta che va dal punto di partenza al punto di arrivo), non la distanza totale percorsa. Lo spostamento è l'ipotenusa del triangolo rettangolo con cateti 10 km e 24 km: |Δr| = √(10² + 24²) = √(100 + 576) = √676 = 26 km. Tempo = 30 min = 0,5 h. Velocità vettoriale media = 26 km / 0,5 h = 52 km/h. Trappola '68 km/h': è la velocità SCALARE media (distanza totale percorsa / tempo = (10+24) / 0,5 = 68 km/h) — usa la strada, non la retta. Confondere queste due è la trappola principale. Trappola '34 km/h': è la distanza totale percorsa lungo la strada (10 + 24 = 34 km), ma dimentica di dividere per il tempo (0,5 h). Trappola '26 km/h': è il modulo dello spostamento in km (la retta), ma anche qui ci si dimentica di dividere per il tempo. Trappola '13 km/h': dimezza ulteriormente, nessun senso.",
+    "tags": ["prova d'esame"]
+  }
+]

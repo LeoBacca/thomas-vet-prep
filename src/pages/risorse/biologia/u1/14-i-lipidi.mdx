@@ -1,0 +1,95 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-14">
+
+## Cosa sono i lipidi?
+
+I **lipidi** sono molecole biologiche formate principalmente da carbonio, idrogeno e ossigeno. Il loro tratto più caratteristico è uno solo: **non si sciolgono in acqua** (si dice che sono *idrofobi*, cioè "che fuggono dall'acqua"). Se metti dell'olio in un bicchiere d'acqua, vedi subito il principio: si separa e galleggia.
+
+Questo comportamento dipende dalla struttura chimica. I lipidi sono costruiti soprattutto da lunghe catene di carboni legati a idrogeni — una struttura che non si mescola con l'acqua, ma si scioglie benissimo con altri grassi o solventi organici (come l'acetone).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> I lipidi sono i "grassi" della biologia — non si sciolgono in acqua, immagazzinano energia, costruiscono le membrane cellulari e fungono da messaggeri chimici.</div>
+
+## Le principali categorie di lipidi
+
+Esistono diversi tipi di lipidi, ognuno con una funzione diversa:
+
+### 1. Trigliceridi (grassi e oli)
+
+Un **trigliceride** è formato da una molecola di **glicerolo** (una specie di spina dorsale a 3 carboni) a cui si attaccano tre **acidi grassi** (lunghe catene di carboni).
+
+- Se gli acidi grassi sono **saturi** (ogni carbonio è legato al massimo di idrogeni) il grasso è solido a temperatura ambiente — es. il burro o il grasso animale.
+- Se gli acidi grassi sono **insaturi** (ci sono uno o più doppi legami tra i carboni, quindi meno idrogeni) il lipide è liquido a temperatura ambiente — es. l'olio d'oliva.
+
+I trigliceridi sono la principale **riserva di energia** dell'organismo. Un grammo di grasso contiene più del doppio dell'energia di un grammo di zucchero: 9 kcal contro 4 kcal.
+
+### 2. Fosfolipidi
+
+I **fosfolipidi** sono i mattoni delle **membrane cellulari**. Hanno una struttura a "T rovesciata": una testa con un gruppo fosfato (idrofila, ama l'acqua) e due code di acidi grassi (idrofobe, fuggono l'acqua).
+
+Quando metti i fosfolipidi in acqua, si organizzano spontaneamente in un **doppio strato**: le teste stanno all'esterno a contatto con l'acqua, le code si nascondono all'interno. Questo doppio strato è esattamente la membrana plasmatica di ogni cellula vivente.
+
+### 3. Steroidi
+
+Gli **steroidi** hanno una struttura completamente diversa: quattro anelli di carboni fusi insieme. Il più famoso è il **colesterolo**, che si trova nelle membrane animali (le rende più rigide e stabili) ed è il precursore di molti ormoni.
+
+Da colesterolo derivano per esempio gli **ormoni steroidei** come il testosterone, il cortisolo e gli estrogeni — molecole che regolano crescita, risposta allo stress e riproduzione.
+
+### 4. Cere
+
+Le **cere** sono lipidi semplici con funzione protettiva: rivestono le foglie delle piante per limitare la perdita d'acqua, le piume degli uccelli acquatici per impermeabilizzarle, e formano il cerume nelle orecchie dei mammiferi.
+
+<Diagram caption="Classificazione dei principali lipidi e loro funzioni" code={`flowchart TB
+  L["LIPIDI<br/>(non si sciolgono in acqua)"]
+  L --> T["Trigliceridi<br/>glicerolo + 3 acidi grassi"]
+  L --> F["Fosfolipidi<br/>glicerolo + 2 acidi grassi + fosfato"]
+  L --> S["Steroidi<br/>4 anelli di carbonio fusi"]
+  L --> C["Cere<br/>alcol a lunga catena + acido grasso"]
+  T --> T1["Funzione: riserva energetica<br/>9 kcal per grammo"]
+  T --> T2["Saturi = solidi (burro)<br/>Insaturi = liquidi (olio)"]
+  F --> F1["Funzione: membrana cellulare<br/>doppio strato fosfolipidico"]
+  S --> S1["Colesterolo: stabilizza le membrane<br/>Ormoni steroidei: testosterone, cortisolo"]
+  C --> C1["Funzione: protezione e impermeabilizzazione"]`} />
+
+## La struttura del doppio strato fosfolipidico
+
+Capire i fosfolipidi è fondamentale perché la membrana cellulare è ovunque in biologia. Immagina ogni fosfolipide come uno spillo da bowling: la testa (sfera) ama l'acqua, le due code (bastoncino) la odiano.
+
+In acqua questi "spilli" si dispongono automaticamente in due file parallele, code contro code, teste verso l'esterno. Risultato: un foglio flessibile e impermeabile che separa l'interno della cellula dall'esterno.
+
+<Diagram caption="Struttura del doppio strato fosfolipidico nella membrana cellulare" code={`flowchart TB
+  AQ1["Ambiente acquoso ESTERNO"]
+  AQ1 --> TT["Teste idrofile<br/>(gruppo fosfato — amano l'acqua)"]
+  TT --> CC["Code idrofobe<br/>(acidi grassi — fuggono l'acqua)<br/>— zona interna impermeabile —"]
+  CC --> TB["Teste idrofile<br/>(gruppo fosfato — amano l'acqua)"]
+  TB --> AQ2["Ambiente acquoso INTERNO<br/>(citoplasma della cellula)"]`} />
+
+## Guarda il video
+<YouTube id="RlwpYVFyucM" title="I lipidi e loro funzioni biologiche. Video in 4K!" />
+<VideoVisto id="bio-u1-14" />
+
+## Da ricordare
+- I lipidi sono molecole idrofobe (non si sciolgono in acqua); le categorie principali sono trigliceridi, fosfolipidi, steroidi e cere.
+- I trigliceridi immagazzinano energia (9 kcal/g); i fosfolipidi formano il doppio strato delle membrane cellulari; gli steroidi (come il colesterolo) stabilizzano le membrane e sono precursori degli ormoni.
+- La proprietà idrofoba dei fosfolipidi li fa disporre spontaneamente in un doppio strato, che è la base strutturale di ogni membrana cellulare.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale caratteristica accomuna tutti i lipidi?" opzioni={["Contengono sempre azoto nella loro struttura","Non si sciolgono in acqua (sono idrofobi)","Sono sempre solidi a temperatura ambiente","Sono formati da catene di aminoacidi"]} corretta={1} spiegazione="Il tratto comune a tutti i lipidi è l'idrofobicità: non si sciolgono in acqua. Non contengono azoto (a differenza delle proteine), non sono sempre solidi (gli oli sono liquidi) e le catene di aminoacidi appartengono alle proteine, non ai lipidi." />
+
+<Quiz domanda="Un trigliceride è composto da:" opzioni={["Tre molecole di glucosio legate insieme","Una molecola di glicerolo e tre acidi grassi","Due acidi grassi, un fosfato e un glicerolo","Quattro anelli di carbonio fusi"]} corretta={1} spiegazione="Il trigliceride è formato esattamente da una molecola di glicerolo (la spina dorsale a 3 carboni) a cui si attaccano tre acidi grassi. La struttura con fosfato descrive i fosfolipidi; i quattro anelli fusi descrivono gli steroidi." />
+
+<Quiz domanda="Qual è la funzione principale dei fosfolipidi nell'organismo?" opzioni={["Riserva di energia a lungo termine","Sintesi degli ormoni steroidei","Formare il doppio strato delle membrane cellulari","Impermeabilizzare le foglie delle piante"]} corretta={2} spiegazione="I fosfolipidi sono i mattoni strutturali delle membrane cellulari: grazie alla loro testa idrofila e alle code idrofobe si dispongono spontaneamente in un doppio strato che separa l'interno della cellula dall'esterno. La riserva energetica è compito dei trigliceridi; gli ormoni steroidei derivano dal colesterolo; la copertura delle foglie è affidata alle cere." />
+
+<Esercizio problema="Un acido grasso saturo e uno insaturo differiscono nella struttura chimica. Qual è la differenza e come influenza le proprietà fisiche del lipide che li contiene? Fai un esempio concreto per ciascuno." soluzione="Un acido grasso saturo ha tutti i legami tra i carboni della catena di tipo singolo, il che significa che ogni carbonio porta il massimo numero di atomi di idrogeno (è 'saturo' di idrogeno). Le catene si impacchettano strettamente e il lipide risultante è solido a temperatura ambiente — esempio: il burro o il grasso del lardo. Un acido grasso insaturo ha uno o più doppi legami C=C che creano una piega nella catena; le catene non si impacchettano bene e il lipide rimane liquido a temperatura ambiente — esempio: l'olio d'oliva o l'olio di girasole." />
+
+</section>
+
+</RisorsaLayout>

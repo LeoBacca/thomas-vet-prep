@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u2-02-1",
+    "topicId": "bio-u2-02",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: il DNA di ogni nostra cellula è lungo circa 2 metri, ma riesce a stare in un nucleo minuscolo grazie a proteine chiamate istoni, che funzionano come bobine su cui il DNA si avvolge.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Gli istoni hanno carica positiva e il DNA carica negativa: cariche opposte si attraggono. Il DNA si avvolge attorno a gruppi di 8 istoni (il nucleosoma) esattamente come un filo si avvolge su una bobina. Questo primo livello di compattamento riduce già di molto la lunghezza del filo di DNA.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u2-02-2",
+    "topicId": "bio-u2-02",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Il nucleosoma è la prima 'bobina' su cui si arrotola il DNA. Di quante proteine (istoni) è fatto il suo nucleo interno (il core)?",
+    "choices": [
+      "4 istoni: una copia di H2A, H2B, H3 e H4",
+      "8 istoni: due copie di H2A, H2B, H3 e H4",
+      "10 istoni: due copie di H2A, H2B, H3, H4 e H1",
+      "2 istoni: una copia di H1 e una di H2A"
+    ],
+    "answer": 1,
+    "explain": "Il core del nucleosoma è un ottamero: otto istoni disposti a disco, con 2 copie di ciascuno dei quattro tipi H2A, H2B, H3 e H4. Attorno a questo disco si avvolgono circa 147 paia di basi di DNA per 1,65 giri. L'istone H1 non fa parte del core: ha un ruolo diverso, che si scopre al livello successivo di compattamento.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u2-02-3",
+    "topicId": "bio-u2-02",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "open",
+    "q": "Descrivi a parole tue cosa succede al DNA quando entra in gioco l'istone H1. Cosa c'era prima, cosa si forma dopo e perché H1 è diverso dagli altri istoni?",
+    "answer": "Prima di H1 il DNA forma la cosiddetta 'collana di perle' (fibra da 11 nm): i nucleosomi (le perle) sono separati da piccoli tratti di DNA libero chiamati DNA linker. H1 è diverso perché NON fa parte dell'ottamero interno del nucleosoma: si lega al DNA linker, cioè al tratto tra un nucleosoma e il successivo. Legandosi, H1 stringe i nucleosomi tra loro come chi raccoglie i nodi di una collana tirandoli insieme. I nucleosomi si avvicinano e si dispongono a spirale formando la fibra da 30 nm (detta solenoide), con circa 6 nucleosomi per giro. Questo secondo livello riduce ulteriormente la lunghezza del DNA di circa 6 volte.",
+    "explain": "Da ricordare: H1 è l'istone linker, non entra nel core, si lega al DNA tra i nucleosomi e produce la fibra da 30 nm.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u2-02-4",
+    "topicId": "bio-u2-02",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "La cromatina è:",
+    "choices": [
+      "il complesso di proteine e acidi nucleici presente nel nucleo di una cellula eucariotica",
+      "il pigmento presente nei globuli rossi",
+      "un microfilamento contrattile del citoscheletro",
+      "un pigmento colorato presente nello strato superficiale della pelle",
+      "un materiale contenuto nel citoplasma, fuori dal nucleo"
+    ],
+    "answer": 0,
+    "explain": "Cromatina = DNA + proteine (soprattutto istoni) che si trovano insieme nel nucleo delle cellule eucariotiche. È la forma in cui il DNA esiste dentro il nucleo: non è un pigmento (quella è l'emoglobina o la melanina), non è una struttura contrattile come l'actina, e non sta nel citoplasma. Trappola: 'pigmento nei globuli rossi' suona biologico ma è l'emoglobina (che porta ossigeno). 'Microfilamento contrattile' è un termine vero ma sbagliato: appartiene al citoscheletro. 'Materiale nel citoplasma' inverte la localizzazione: la cromatina è nel nucleo.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u2-02-5",
+    "topicId": "bio-u2-02",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Nel nucleo di una cellula eucariotica (come quelle di un cane o di un essere umano):",
+    "choices": [
+      "il DNA è strettamente legato a proteine specifiche (gli istoni)",
+      "avviene la sintesi di ATP",
+      "avviene la sintesi delle proteine",
+      "il DNA si trova sempre allo stesso livello di compattamento, qualunque cosa stia facendo la cellula",
+      "non è presente RNA"
+    ],
+    "answer": 0,
+    "explain": "Il DNA nel nucleo eucariotico è sempre legato agli istoni che lo compattano: è questo il cuore dell'argomento nucleosomi/cromatina. Le trappole: la sintesi di ATP avviene nei mitocondri (non nel nucleo); la sintesi delle proteine avviene nei ribosomi nel citoplasma (non nel nucleo); il compattamento del DNA cambia continuamente (la cromatina si apre per la trascrizione e si chiude di più in mitosi); il nucleo contiene eccome RNA (l'mRNA viene prodotto lì). Attenzione all'ultima: è la misconcezione più comune.",
+    "tags": ["prova d'esame"]
+  }
+]

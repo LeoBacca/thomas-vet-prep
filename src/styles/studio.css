@@ -1,0 +1,133 @@
+/* Studio — stile SCHELETRO (vanilla). Funzionale, non definitivo: stile/mascotte dopo. */
+.studio { max-width: 880px; margin: 0 auto; }
+.studio h1 { margin-bottom: .2rem; }
+
+/* pannelli */
+.s-panel { border: 1px solid var(--border, #e2e2e2); border-radius: 12px; padding: 1rem 1.1rem; margin: 1rem 0; background: var(--card-bg, #fff); }
+.s-panel > h2 { margin: 0 0 .6rem; font-size: 1.05rem; }
+.panel-sub { font-size: .85rem; color: var(--muted,#666); margin: -.2rem 0 .7rem; line-height: 1.45; }
+.s-row { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+.s-grid { display: grid; gap: .8rem; }
+
+/* header progressi */
+.s-hero { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; }
+.s-level { font-size: 1.4rem; font-weight: 700; }
+.s-level small { display: block; font-weight: 400; font-size: .8rem; color: var(--muted, #666); }
+.s-streak { font-size: 1.5rem; font-weight: 700; white-space: nowrap; }
+.s-streak small { display: block; font-weight: 400; font-size: .75rem; color: var(--muted, #666); }
+
+/* barra xp / progress generica */
+.bar { background: #dde5ee; border-radius: 999px; height: 12px; overflow: hidden; }
+.bar > span { display: block; height: 100%; background: linear-gradient(90deg,#1f6fa8,#5fb0e0); width: 0; transition: width .4s; }
+.bar.xp > span { background: linear-gradient(90deg,#0a2942,#e0a526); } /* navy -> oro tesoro */
+
+/* azioni grandi */
+.s-actions { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+.s-cta { display: block; text-align: center; text-decoration: none; border: 1px solid var(--border,#e2e2e2); border-radius: 12px; padding: 1rem; font-weight: 600; color: inherit; background: #fafafa; }
+.s-cta .big { display: block; font-size: 1.6rem; }
+.s-cta.primary { background: #eef6ff; border-color: #b6d4fb; }
+.s-cta.alt { background: #fff3e8; border-color: #ffcc99; }
+.s-cta:hover { filter: brightness(.97); }
+@media (max-width: 560px){ .s-actions{ grid-template-columns:1fr; } .s-hero{ grid-template-columns:1fr; } }
+
+/* heatmap */
+.heatmap { display: grid; grid-auto-flow: column; grid-template-rows: repeat(7, 12px); gap: 3px; overflow-x: auto; padding-bottom: .3rem; }
+.heatmap .cell { width: 12px; height: 12px; border-radius: 2px; background: #e3eaf1; }
+.heatmap .cell.l1 { background: #bfe0f5; } .heatmap .cell.l2 { background: #7fc1ea; }
+.heatmap .cell.l3 { background: #3f93cf; } .heatmap .cell.l4 { background: #0e4d7a; }
+.heat-legend { display:flex; gap:.3rem; align-items:center; font-size:.75rem; color:var(--muted,#666); margin-top:.4rem; }
+.heat-legend .cell{ width:12px;height:12px;border-radius:2px;display:inline-block; }
+
+/* mastery */
+.mastery-item { display: grid; grid-template-columns: 90px 1fr auto; gap: .6rem; align-items: center; margin: .35rem 0; font-size: .9rem; }
+.mastery-item .lbl { font-weight: 600; }
+.mastery-item .num { color: var(--muted,#666); font-variant-numeric: tabular-nums; }
+
+/* medaglie */
+.medals { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px,1fr)); gap: .6rem; }
+.medal { text-align: center; border: 1px solid var(--border,#eee); border-radius: 10px; padding: .6rem .3rem; opacity: .35; filter: grayscale(1); }
+.medal.got { opacity: 1; filter: none; background: #fffdf3; border-color: #f0e2a8; }
+.medal .ic { font-size: 1.6rem; display: block; }
+.medal .nm { font-size: .72rem; font-weight: 600; margin-top: .2rem; }
+.medal .ds { font-size: .66rem; color: var(--muted,#777); margin-top: .15rem; line-height: 1.2; }
+
+/* obiettivo / data prova */
+.goal-intro { font-size:.9rem; color:var(--muted,#666); margin:0 0 .7rem; line-height:1.5; }
+.goal-row { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; margin:.4rem 0 .8rem; }
+.goal-datelbl { display:inline-flex; align-items:center; gap:.4rem; font-size:.85rem; font-weight:600; }
+.goal-date { font:inherit; padding:.5rem .6rem; border:1px solid var(--border,#bbb); border-radius:8px; background:#fff; cursor:pointer; }
+.goal-preset { font-size:.82rem; padding:.45rem .7rem; }
+.goal-clear { font-size:.82rem; padding:.45rem .7rem; background:#fbeaea; border-color:#f0c4c4; color:#a33; }
+.goal-result { margin:.6rem 0 .2rem; }
+.goal-big { font-size:1.15rem; font-weight:600; display:flex; align-items:center; gap:.4rem; }
+.goal-big b { font-size:1.9rem; font-weight:800; line-height:1; }
+.goal-big.ok b { color:#2c6e34; } .goal-big.warn b { color:#a0780f; } .goal-big.hot b { color:#b00020; }
+.goal-sub { font-size:.86rem; color:var(--muted,#666); margin-top:.3rem; line-height:1.5; }
+.goal-tip { font-weight:600; }
+.goal-tip.ok { color:#2c6e34; } .goal-tip.warn { color:#a0780f; } .goal-tip.hot { color:#b00020; }
+.goal-note { font-size:.82rem; color:var(--muted,#666); background:#fffaf0; border:1px solid #ffe6b8; border-radius:8px; padding:.5rem .7rem; margin:.6rem 0 0; }
+
+/* icona aiuto "?" con tooltip al passaggio del mouse / focus */
+.help { display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px; margin-left:.5rem;
+  border-radius:999px; background:#e8eefc; color:#3a66c2; font-weight:700; font-size:.8rem; cursor:help;
+  position:relative; border:1px solid #c5d4f5; user-select:none; }
+.help:hover, .help:focus { outline:none; background:#d8e4fb; }
+.help .help-bubble { position:absolute; top:130%; left:0; z-index:30; width:min(320px,80vw); display:none;
+  background:#1f2733; color:#fff; font-size:.8rem; font-weight:400; line-height:1.45; text-align:left;
+  padding:.7rem .85rem; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,.22); }
+.help .help-bubble b { color:#ffd98a; }
+.help:hover .help-bubble, .help:focus .help-bubble, .help:focus-within .help-bubble { display:block; }
+.fc-left { display:inline-flex; align-items:center; }
+
+/* flashcard (sessione + sfida) */
+.fc-wrap { max-width: 680px; margin: 1.2rem auto; }
+.fc-top { display:flex; justify-content:space-between; align-items:center; font-size:.85rem; color:var(--muted,#666); margin-bottom:.5rem; gap:.5rem; }
+.fc-card { border: 1px solid var(--border,#e2e2e2); border-radius: 14px; padding: 1.4rem; background:#fff; min-height: 120px; }
+.fc-tagrow { display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; margin-bottom:.6rem; }
+.fc-tag { display:inline-block; font-size:.7rem; background:#eef; border-radius:999px; padding:.1rem .5rem; color:#445; }
+.fc-quiz { display:inline-flex; align-items:center; gap:.25rem; font-size:.7rem; font-weight:700; color:#9a5b00; background:#fdecd2; border:1px solid #f3cf94; border-radius:999px; padding:.1rem .5rem; }
+.fc-quiz.hidden { display:none; }
+.fc-q { font-size: 1.2rem; font-weight: 600; line-height: 1.4; }
+.fc-choices { display: grid; gap: .5rem; margin-top: 1rem; }
+.fc-choice { text-align: left; padding: .7rem .9rem; border: 1px solid var(--border,#ddd); border-radius: 10px; background:#fafafa; cursor:pointer; font-size: 1rem; }
+.fc-choice:hover { background:#f0f0f0; }
+.fc-choice:disabled { cursor: default; }
+.fc-choice.correct { background:#e6f7e6; border-color:#7bc96f; }
+.fc-choice.wrong { background:#fdeaea; border-color:#e57373; }
+.fc-explain { margin-top: 1rem; padding: .9rem; border-radius: 10px; background:#f6f8ff; border:1px solid #dde6ff; }
+.fc-explain.ko { background:#fff4f4; border-color:#ffd2d2; }
+.fc-ripasso { display:inline-block; margin-top:.6rem; font-weight:600; text-decoration:none; background:#fff0e6; border:1px solid #ffc79a; border-radius:8px; padding:.4rem .7rem; color:#a0480f; }
+.fc-ripasso.soft { background:transparent; border:none; color:#3a66c2; padding:.2rem 0; font-weight:500; }
+
+/* bottoni voto SRS */
+.rate { display:grid; grid-template-columns: repeat(4,1fr); gap:.5rem; margin-top:1rem; }
+.rate.correct-only { grid-template-columns: repeat(3,1fr); }
+.rate button { padding:.6rem .3rem; border-radius:10px; border:1px solid var(--border,#ddd); cursor:pointer; font-weight:600; font-size:.9rem; }
+.rate button small{ display:block; font-weight:400; font-size:.7rem; color:var(--muted,#666); }
+.rate .r1{ background:#fdeaea; } .rate .r2{ background:#fff3e0; }
+.rate .r3{ background:#e8f5e9; } .rate .r4{ background:#e3f2fd; }
+.btn { display:inline-block; padding:.6rem 1rem; border-radius:10px; border:1px solid var(--border,#ccc); background:#f3f3f3; cursor:pointer; font-weight:600; text-decoration:none; color:inherit; }
+.btn.primary{ background:#eef6ff; border-color:#b6d4fb; }
+
+/* toast / feedback */
+.toast { margin-top:.8rem; font-size:.9rem; color:#2c6e34; min-height:1.2em; }
+.toast .ach { display:block; color:#a0780f; font-weight:600; }
+
+/* sfida */
+.timerbar { background:#eee; border-radius:999px; height:8px; overflow:hidden; margin:.6rem 0; }
+.timerbar > span{ display:block; height:100%; background:#ff9800; width:100%; transition:width .25s linear; }
+.timerbar > span.paused{ background:#9ccc9c; transition:none; }
+.score { font-weight:700; font-variant-numeric: tabular-nums; }
+.combo { color:#e65100; font-weight:700; }
+.s-summary { text-align:center; }
+.s-summary .big { font-size:2.2rem; font-weight:800; }
+
+/* report finale sfida: argomenti da ripassare */
+.review-list { display:grid; gap:.4rem; text-align:left; margin:.4rem auto 0; max-width:460px; }
+.review-item { display:block; text-decoration:none; background:#fff0e6; border:1px solid #ffc79a; border-radius:8px;
+  padding:.5rem .7rem; color:#a0480f; font-weight:600; font-size:.9rem; }
+.review-item:hover { background:#ffe6d4; }
+
+.s-tools { display:flex; gap:.5rem; flex-wrap:wrap; }
+.s-tools .btn { font-size:.85rem; }
+.hidden { display:none !important; }

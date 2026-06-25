@@ -1,0 +1,25 @@
+{
+ "id": "fis-u2-03",
+ "titolo": "Accelerazione media e istantanea",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "03-accelerazione-media-e-istantanea",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u2/03-accelerazione-media-e-istantanea.mdx",
+ "examQuestions": [
+  {
+   "year": "2015",
+   "q": "Quale delle seguenti automobili ha l'accelerazione media più alta?",
+   "choices": [
+    "Un'automobile che accelera da 20 m/s a 60 m/s in 4 s",
+    "Un'automobile che accelera da 0 a 2,0 m/s in 0,5 s",
+    "Un'automobile che accelera da 0 a 60 m/s in 10 s",
+    "Un'automobile che accelera da 10 m/s a 30 m/s in 8 s",
+    "Un'automobile che accelera da 0 a 10 m/s in 10 s"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "calcolo"
+  }
+ ]
+}

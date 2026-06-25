@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-15-1",
+    "topicId": "bio-u1-15",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Gli amminoacidi sono i 'mattoncini' delle proteine. Quale parte di un amminoacido CAMBIA da uno all'altro e ne determina le caratteristiche?",
+    "choices": [
+      "Il gruppo amminico (–NH₂), uguale in tutti",
+      "La catena laterale R, diversa in ogni amminoacido",
+      "Il gruppo carbossilico (–COOH), uguale in tutti",
+      "Il carbonio centrale, diverso in ogni amminoacido"
+    ],
+    "answer": 1,
+    "explain": "Ogni amminoacido ha la stessa struttura di base (gruppo amminico –NH₂, gruppo carbossilico –COOH, carbonio centrale): queste parti NON cambiano. A cambiare è solo la catena laterale R. È come i vagoni di un treno: lo scheletro è uguale, ma il contenuto (la R) è diverso. Per questo esistono 20 amminoacidi diversi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-15-2",
+    "topicId": "bio-u1-15",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: quando due amminoacidi si uniscono con un legame peptidico, viene liberata una molecola d'acqua (H₂O).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il gruppo –COOH del primo amminoacido reagisce con il gruppo –NH₂ del secondo: si forma il legame peptidico (–CO–NH–) e si 'butta fuori' una molecola d'acqua. Proprio perché perde acqua, si chiama reazione di condensazione. Pensa a due pezzi di pongo che si attaccano e fanno uscire una gocciolina.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-15-3",
+    "topicId": "bio-u1-15",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Perché quando una proteina viene scaldata troppo (per esempio l'albume dell'uovo che cuoce) smette di funzionare? Cosa significa 'denaturazione'?",
+    "answer": "La funzione di una proteina dipende dalla sua forma tridimensionale precisa: la catena di amminoacidi si piega in modo esatto (struttura secondaria e terziaria) e crea, per esempio, il sito attivo di un enzima, una tasca complementare al substrato come una chiave nella sua serratura. Il calore rompe i legami deboli (ponti idrogeno, interazioni idrofobiche) che tengono questa forma: la proteina si srotola e perde la struttura. Questa perdita della forma si chiama denaturazione. Senza la forma giusta il sito attivo si deforma e la proteina non lavora più. Attenzione: la denaturazione altera la forma (struttura secondaria e terziaria), NON spezza i legami peptidici della sequenza (la struttura primaria resta intatta). L'albume dell'uovo che da trasparente diventa bianco e solido è proteine denaturate dal calore.",
+    "explain": "Da ricordare: la forma fa la funzione; la denaturazione distrugge la forma (2ª e 3ª struttura), non la sequenza (1ª struttura).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-15-4",
+    "topicId": "bio-u1-15",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "La denaturazione di una proteina (per esempio per il calore) consiste in:",
+    "choices": [
+      "La rottura dei legami peptidici della sequenza, che si spezza in tanti amminoacidi liberi",
+      "L'alterazione della sua struttura secondaria e terziaria, cioè la perdita della forma 3D",
+      "La modifica della sua struttura primaria, cioè dell'ordine degli amminoacidi",
+      "Lo scambio di un amminoacido con un altro all'interno del sito attivo",
+      "La trasformazione della proteina in uno zucchero di riserva"
+    ],
+    "answer": 1,
+    "explain": "Giusta la seconda: denaturare = srotolare la forma 3D, cioè perdere la struttura secondaria (alfa-elica, foglietto-beta) e terziaria. La sequenza degli amminoacidi (struttura primaria) resta intatta. 'Rompere i legami peptidici / spezzare in amminoacidi liberi' è la trappola opposta: quello è digerire la proteina, non denaturarla. 'Modificare la struttura primaria' e 'scambiare un amminoacido' confondono la denaturazione con una mutazione (cambiare la sequenza è un'altra cosa). 'Trasformarla in zucchero di riserva' è il filler fuori tema: le proteine non sono zuccheri.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-15-5",
+    "topicId": "bio-u1-15",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Una proteina ha struttura QUATERNARIA soltanto quando:",
+    "choices": [
+      "ha attività di enzima e accelera una reazione",
+      "è formata da due o più catene polipeptidiche unite insieme",
+      "è formata esattamente da quattro catene polipeptidiche unite insieme",
+      "contiene alcuni ponti disolfuro che la tengono piegata",
+      "è fatta di amminoacidi al posto degli zuccheri"
+    ],
+    "answer": 1,
+    "explain": "Giusta la seconda: la struttura quaternaria c'è quando DUE o più catene (subunità) si assemblano insieme, come l'emoglobina che ne ha 4. La trappola più insidiosa è 'esattamente quattro catene': il nome 'quaternaria' fa pensare al numero 4, ma bastano due catene, non per forza quattro. 'Attività di enzima' è fuori strada: un enzima può avere anche una sola catena, la funzione non c'entra col livello di struttura. 'Ponti disolfuro che la tengono piegata' descrive la struttura terziaria di una singola catena, non l'unione di più catene. 'Fatta di amminoacidi al posto degli zuccheri' è il filler fuori tema (tutte le proteine sono fatte di amminoacidi).",
+    "tags": ["prova d'esame"]
+  }
+]

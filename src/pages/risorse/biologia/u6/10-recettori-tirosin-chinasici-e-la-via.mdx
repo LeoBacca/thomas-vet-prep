@@ -1,0 +1,92 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u6-10">
+
+## Cosa sono i recettori tirosin-chinasici?
+
+Immagina la membrana cellulare come un muro pieno di antenne. Alcune di queste antenne, quando ricevono un segnale dall'esterno (per esempio un ormone di crescita), non si limitano a "squillare" — **fanno partire una reazione chimica direttamente loro stesse**.
+
+I **recettori tirosin-chinasici** (abbreviati RTK) sono esattamente questo: recettori di membrana che hanno anche un'attività enzimatica incorporata. In pratica sono metà recettore, metà enzima.
+
+Il termine "chinasi" significa semplicemente **enzima che attacca un gruppo fosfato** a un'altra proteina. La parola "tirosina" indica che il fosfato viene attaccato specificamente all'amminoacido tirosina.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un RTK è come un campanello-interruttore: quando il segnale esterno lo suona, lui stesso accende la luce dentro la cellula fosforilando le proteine vicine.</div>
+
+## Come funziona un RTK: i tre passi fondamentali
+
+**Passo 1 — Arrivo del ligando.**
+Una molecola segnale (es. il fattore di crescita EGF) si lega alla parte esterna del recettore, che sporge fuori dalla cellula.
+
+**Passo 2 — Dimerizzazione.**
+Il legame fa sì che due recettori si avvicinino e formino un paio (si "abbracciano"). Questo processo si chiama **dimerizzazione**.
+
+**Passo 3 — Auto-fosforilazione.**
+I due recettori si fosforilano a vicenda sui residui di tirosina interni. Questa fosforilazione è il segnale di partenza per tutta la cascata che segue.
+
+<Diagram caption="Attivazione di un recettore tirosin-chinasico (RTK)" code={`flowchart TB
+  A["Ligando (es. EGF) arriva dall'esterno"] --> B["Si lega a due RTK sulla membrana"]
+  B --> C["I due RTK si avvicinano: dimerizzazione"]
+  C --> D["Si fosforilano a vicenda sui residui di tirosina"]
+  D --> E["Il dominio intracellulare è ora ATTIVO"]
+  E --> F["Recluta proteine adattatrici (es. GRB2)"]
+  F --> G["Parte la cascata di segnalazione intracellulare"]`} />
+
+## La cascata Ras-MAP chinasi (via MAPK)
+
+Una volta attivato l'RTK, parte una vera **catena di montaggio molecolare**. Ogni proteina della catena attiva la successiva, come un domino.
+
+**I protagonisti in ordine:**
+
+1. **Ras** — una piccola proteina G (una "proteinina" che si accende quando lega GTP e si spegne idrolizzando GTP in GDP). È il primo interruttore dopo l'RTK.
+2. **Raf** (MAP3K) — una chinasi attivata da Ras. È il primo "amplificatore" della cascata.
+3. **MEK** (MAP2K) — fosforilata da Raf. Secondo amplificatore.
+4. **ERK** (MAPK) — fosforilata da MEK. È l'esecutore finale: entra nel nucleo.
+
+**Risultato finale:** ERK attivata entra nel nucleo e accende geni che promuovono la **proliferazione cellulare**, la **sopravvivenza** e la **differenziazione**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Ras-Raf-MEK-ERK è come una staffetta: ogni corridore passa il "testimone fosforico" al successivo, finché l'ultimo (ERK) entra in campo e cambia l'espressione dei geni.</div>
+
+<Diagram caption="Cascata Ras-MAP chinasi: dal recettore al nucleo" code={`flowchart TB
+  A["RTK attivato (fosforilato)"] --> B["Proteina adattatrice GRB2 si lega"]
+  B --> C["GRB2 recluta SOS (fattore di scambio)"]
+  C --> D["SOS attiva RAS: scambia GDP con GTP"]
+  D --> E["RAS-GTP attiva RAF (MAP3K)"]
+  E --> F["RAF fosforila MEK (MAP2K)"]
+  F --> G["MEK fosforila ERK (MAPK)"]
+  G --> H["ERK entra nel nucleo"]
+  H --> I["ERK attiva fattori di trascrizione (es. c-Fos, c-Jun)"]
+  I --> J["Espressione di geni per crescita e divisione cellulare"]`} />
+
+## Perché questa via è così importante in medicina?
+
+Mutazioni che **bloccano Ras in stato attivo** (con GTP sempre legato, senza spegnersi) causano una segnalazione continua di crescita: è uno dei meccanismi più comuni nel **cancro**. Per questo la via Ras-MAPK è un bersaglio importante per farmaci antitumorali.
+
+## Guarda il video
+<YouTube id="gOItdEkIybk" title="CORSO DI BIOLOGIA CELLULARE 1 - LEZIONE 16 DI 23 - RECETTORI AD ATTIVITA' TIROSINA CHINASICA - 2" />
+<VideoVisto id="bio-u6-10" />
+
+## Da ricordare
+- I recettori tirosin-chinasici (RTK) sono recettori di membrana con attività enzimatica: quando ricevono un ligando, si dimerizzano e si auto-fosforilano sulle tirosine.
+- La cascata Ras-MAPK segue l'ordine RTK → GRB2/SOS → Ras → Raf → MEK → ERK: ogni step amplifica il segnale fino al nucleo.
+- ERK attivata entra nel nucleo e accende geni di proliferazione; mutazioni che bloccano Ras sempre acceso sono frequenti nel cancro.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Cosa significa 'dimerizzazione' nel contesto degli RTK?" opzioni={["Un recettore si divide in due metà","Due recettori si uniscono in coppia dopo il legame del ligando","Il ligando si divide e si lega a due cellule diverse","Il recettore fosforila due tirosine contemporaneamente"]} corretta={1} spiegazione="La dimerizzazione è il processo in cui due recettori RTK si avvicinano e si associano dopo che il ligando si è legato. Questo 'abbraccio' è necessario perché i due recettori possano fosforilare a vicenda i propri residui di tirosina interni." />
+
+<Quiz domanda="Nella cascata Ras-MAPK, quale proteina è direttamente attivata da Ras?" opzioni={["MEK","ERK","Raf","SOS"]} corretta={2} spiegazione="Ras attivato (con GTP legato) attiva direttamente Raf (MAP3K). Raf poi fosforila MEK, che a sua volta fosforila ERK. L'ordine corretto è: Ras → Raf → MEK → ERK." />
+
+<Quiz domanda="Cosa succede quando Ras rimane bloccato in forma attiva (con GTP) a causa di una mutazione?" opzioni={["La cellula smette di crescere","La cascata MAPK viene inibita in modo permanente","La segnalazione di crescita diventa continua e incontrollata, favorendo il cancro","ERK non riesce più ad entrare nel nucleo"]} corretta={2} spiegazione="Ras normalmente si 'spegne' idrolizzando GTP in GDP. Se una mutazione impedisce questa idrolisi, Ras rimane sempre attivo, la cascata Ras-MAPK è sempre accesa e la cellula riceve un segnale continuo di crescita e divisione: questo è uno dei meccanismi più comuni nel cancro." />
+
+<Esercizio problema="Descrivi in ordine i passaggi che portano dall'arrivo di un fattore di crescita (ligando) all'attivazione di ERK nel nucleo. Usa i nomi delle proteine coinvolte." soluzione="1) Il ligando (fattore di crescita) si lega all'RTK sulla membrana cellulare. 2) Due RTK si dimerizzano e si fosforilano a vicenda sui residui di tirosina (auto-fosforilazione). 3) La proteina adattatrice GRB2 riconosce le tirosine fosforilate e si lega all'RTK. 4) GRB2 recluta SOS, un fattore di scambio nucleotidico. 5) SOS attiva Ras scambiando il suo GDP con GTP: Ras diventa attivo. 6) Ras-GTP attiva Raf (MAP3K). 7) Raf fosforila e attiva MEK (MAP2K). 8) MEK fosforila e attiva ERK (MAPK). 9) ERK attivata trasferisce nel nucleo e fosforila fattori di trascrizione (es. c-Fos, c-Jun), accendendo geni di crescita e divisione cellulare." />
+
+</section>
+
+</RisorsaLayout>

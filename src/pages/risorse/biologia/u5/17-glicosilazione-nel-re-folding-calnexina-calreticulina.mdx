@@ -1,0 +1,147 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-17">
+
+## Cosa succede alle proteine quando entrano nel RE?
+
+Ogni giorno le tue cellule producono migliaia di proteine. Quelle destinate a essere secrete fuori dalla cellula, o a stare nella membrana, entrano nel **reticolo endoplasmatico rugoso (RER)** mentre vengono sintetizzate. Lì non vengono solo "parcheggiate": vengono **modificate** e **controllate** prima di poter andare avanti.
+
+La modifica più importante che avviene subito è la **glicosilazione**.
+
+---
+
+## Cos'è la glicosilazione?
+
+**Glicosilazione** = aggiunta di catene di zuccheri a una proteina.
+
+Immagina la proteina come una maglietta che esce dalla fabbrica. La glicosilazione è come attaccarci delle etichette colorate: servono a identificarla, a piegarla correttamente e a farla riconoscere dai controlli qualità.
+
+Nel RE avviene specificatamente la **N-glicosilazione**: una catena di 14 zuccheri (chiamata oligosaccaride) viene attaccata a un aminoacido asparagina (N) della proteina appena sintetizzata.
+
+Questa catena inizia con **3 glucosio + 9 mannosio + 2 N-acetilglucosamina** e viene trasferita in blocco da una molecola-carrier chiamata **dolicolo pirofosfato**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La glicosilazione è come mettere un'etichetta di controllo sulla proteina appena "prodotta": senza questa etichetta, la proteina non viene accettata nel sistema e non può uscire dal RE.</div>
+
+---
+
+## Il folding: come si piega una proteina?
+
+Una proteina non è solo una sequenza di aminoacidi: deve assumere una **forma tridimensionale precisa** per funzionare. Questo processo si chiama **folding** (ripiegamento).
+
+Nel RE ci sono molecole speciali chiamate **chaperon molecolari** che aiutano il folding. I più importanti per le glicoproteine sono:
+
+- **Calnexina** — chaperon legato alla membrana del RE
+- **Calreticulina** — chaperon nel lume (dentro) del RE
+
+Sono proteine "madri adottive": tengono la proteina nascente, le impediscono di fare legami sbagliati con altre proteine vicine, e la aiutano a piegarsi nel modo giusto.
+
+---
+
+## Come funziona il ciclo calnexina/calreticulina?
+
+Appena la catena di zuccheri viene attaccata alla proteina, due enzimi chiamati **glucosidasi I e II** staccano 2 dei 3 glucosi. Rimane un solo glucosio sulla catena.
+
+Questo glucosio solitario è il **segnale di riconoscimento**: calnexina e calreticulina lo riconoscono e si legano alla proteina.
+
+Finché sono legate, la proteina non può uscire dal RE: viene trattenuta e "assistita" nel folding.
+
+Quando il folding è completato, la glucosidasi II stacca anche l'ultimo glucosio. Senza glucosio, calnexina e calreticulina si staccano: la proteina è libera di procedere verso il Golgi.
+
+**Ma cosa succede se la proteina non si è piegata bene?**
+
+Entra in gioco un altro enzima: **UGGT** (UDP-glucosio glicoproteina glucosiltransferasi). Questo enzima "controlla" la forma della proteina. Se la proteina è ancora mal ripiegata, UGGT rimette un glucosio sulla catena — e il ciclo ricomincia da capo con calnexina/calreticulina.
+
+<Diagram caption="Il ciclo di calnexina e calreticulina nel controllo del folding delle glicoproteine" code={`flowchart TB
+  A["Proteina entra nel RE<br/>+ N-glicosilazione (14 zuccheri)"] --> B["Glucosidasi I e II<br/>rimuovono 2 glucosi<br/>rimane 1 glucosio"]
+  B --> C["Calnexina / Calreticulina<br/>riconoscono il glucosio<br/>e si legano alla proteina"]
+  C --> D["Folding assistito<br/>la proteina cerca la forma giusta"]
+  D --> E{"Proteina<br/>correttamente piegata?"}
+  E -- "SÌ" --> F["Glucosidasi II<br/>rimuove l'ultimo glucosio"]
+  F --> G["Calnexina/Calreticulina<br/>si staccano<br/>Proteina libera → Golgi"]
+  E -- "NO" --> H["UGGT rimette<br/>un glucosio sulla catena"]
+  H --> C`} />
+
+---
+
+## Cosa succede alle proteine che non si piegano mai bene?
+
+Se una proteina continua a fallire il folding dopo molti cicli, viene indirizzata verso la **degradazione**. Il sistema si chiama **ERAD** (ER-Associated Degradation): la proteina viene esportata fuori dal RE, ubiquitinata (marcata per la spazzatura) e distrutta dal **proteasoma**.
+
+Questo è il **controllo di qualità del RE**: nessuna proteina mal piegata passa alla fase successiva.
+
+<Diagram caption="Controllo di qualità nel RE: folding corretto vs. degradazione (ERAD)" code={`flowchart LR
+  A["Glicoproteina<br/>neo-sintetizzata"] --> B["Ciclo calnexina/<br/>calreticulina"]
+  B --> C{"Folding OK?"}
+  C -- "SÌ<br/>(dopo 1 o più cicli)" --> D["Uscita dal RE<br/>verso il Golgi"]
+  C -- "NO<br/>(cicli ripetuti falliti)" --> E["Mannosidasi<br/>rimuove mannosio<br/>segnale di scarto"]
+  E --> F["Riconoscimento da<br/>EDEM e altri lettori"]
+  F --> G["ERAD:<br/>retrotraslocazione<br/>al citosol"]
+  G --> H["Ubiquitinazione<br/>+ Proteasoma<br/>→ degradazione"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="FGZNaEp8PI8" title="Citologia 19 - Reticolo endoplasmatico — Agora Scienze Biomediche" />
+<VideoVisto id="bio-u5-17" />
+
+---
+
+## Da ricordare
+
+- La **N-glicosilazione** nel RE aggiunge una catena di 14 zuccheri alla proteina appena sintetizzata; le glucosidasi la riducono a 1 glucosio, che serve da segnale per calnexina e calreticulina.
+- **Calnexina e calreticulina** sono chaperon del RE che trattengono le glicoproteine finché non sono correttamente piegate; se il folding fallisce, UGGT rimette il glucosio e il ciclo riparte.
+- Le proteine che non raggiungono mai la forma corretta vengono eliminate tramite **ERAD** (degradazione associata al RE), garantendo che solo proteine funzionali escano verso il Golgi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è la funzione principale della glicosilazione nel RE?"
+  opzioni={[
+    "Fornire energia alla proteina durante la sintesi",
+    "Aggiungere una catena di zuccheri che serve da segnale per il folding e il controllo qualità",
+    "Degradare le proteine mal piegate nel proteasoma",
+    "Trasportare la proteina dal ribosoma al Golgi senza controlli"
+  ]}
+  corretta={1}
+  spiegazione="La N-glicosilazione aggiunge una catena di oligosaccaridi alla proteina. Questa catena, dopo il taglio parziale dei glucosi, diventa il segnale che permette a calnexina e calreticulina di riconoscere la proteina e assisterla nel folding."
+/>
+
+<Quiz
+  domanda="Cosa fa l'enzima UGGT durante il ciclo di controllo qualità nel RE?"
+  opzioni={[
+    "Rimuove tutti gli zuccheri dalla glicoproteina per permetterle di uscire",
+    "Trasferisce la proteina mal piegata direttamente al proteasoma",
+    "Rimette un glucosio sulla catena di una proteina ancora mal piegata, riavviando il ciclo con calnexina/calreticulina",
+    "Sintetizza nuove catene di oligosaccaridi da attaccare alle proteine"
+  ]}
+  corretta={2}
+  spiegazione="UGGT (UDP-glucosio glicoproteina glucosiltransferasi) riconosce le proteine ancora mal piegate e rimette un glucosio sulla loro catena glucidica. Questo permette a calnexina e calreticulina di legarsi di nuovo, dando un altro ciclo di opportunità per il folding corretto."
+/>
+
+<Quiz
+  domanda="Cosa avviene a una proteina che non riesce a piegarsi correttamente dopo ripetuti cicli nel RE?"
+  opzioni={[
+    "Viene secreta comunque fuori dalla cellula per evitare l'accumulo nel RE",
+    "Rimane nel RE indefinitamente legata a calnexina",
+    "Viene inviata al Golgi per modifiche aggiuntive",
+    "Viene degradata tramite ERAD: esportata al citosol, ubiquitinata e distrutta dal proteasoma"
+  ]}
+  corretta={3}
+  spiegazione="Le proteine irrecuperabilmente mal piegate vengono riconosciute (spesso dopo rimozione di mannosio da parte di mannosidasi), estratte dal RE tramite retrotraslocazione (ERAD), marcate con ubiquitina e infine degradate dal proteasoma nel citosol."
+/>
+
+<Esercizio
+  problema="Descrivi in ordine i passaggi che subisce una glicoproteina dal momento in cui viene N-glicosilata nel RE fino alla sua uscita verso il Golgi, includendo il ruolo di calnexina/calreticulina e la condizione necessaria per l'uscita."
+  soluzione="1) La proteina appena sintetizzata riceve una catena di 14 zuccheri (N-glicosilazione) trasferita dal dolicolo pirofosfato. 2) La glucosidasi I e poi la glucosidasi II rimuovono 2 dei 3 glucosi iniziali, lasciando 1 glucosio terminale. 3) Calnexina (se la proteina è in membrana) o calreticulina (se è solubile nel lume) riconoscono quel glucosio e si legano alla proteina, la trattengono nel RE e assistono il folding. 4) Se il folding riesce, la glucosidasi II stacca anche l'ultimo glucosio: calnexina/calreticulina si distaccano e la proteina può procedere verso il Golgi. 5) Se il folding non riesce, UGGT rimette un glucosio e il ciclo si ripete. 6) Se dopo molti cicli la proteina rimane mal piegata, viene marcata (rimozione di mannosio), retrotraslocata nel citosol (ERAD), ubiquitinata e degradata dal proteasoma."
+/>
+
+</section>
+
+</RisorsaLayout>

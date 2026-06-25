@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u4-09-1",
+    "topicId": "bio-u4-09",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: l'aneuploidia significa avere uno o piu SET INTERI di cromosomi in piu rispetto al normale (come triploide o tetraploide).",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Quella e la poliploidia (set interi in piu). L'aneuploidia e diversa: riguarda UN SOLO cromosoma in piu o in meno in una coppia specifica. Pensa alla biblioteca con 46 libri: la poliploidia e avere una copia extra di TUTTA la biblioteca; l'aneuploidia e avere un unico libro in piu (o in meno) solo in uno scaffale.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-09-2",
+    "topicId": "bio-u4-09",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Durante la meiosi, due cromosomi omologhi non riescono a separarsi e finiscono entrambi nello stesso gamete. Come si chiama questo errore?",
+    "choices": [
+      "Crossing-over",
+      "Non-disgiunzione",
+      "Disgiunzione",
+      "Mutazione puntiforme"
+    ],
+    "answer": 1,
+    "explain": "Si chiama non-disgiunzione: i due cromosomi non si disgiungono (cioe non si separano) come dovrebbero. Il risultato e che un gamete riceve 2 copie di quel cromosoma e l'altro ne riceve 0. Se il gamete con 2 copie viene fecondato da uno normale (1 copia), lo zigote avra 3 copie: trisomia. Il crossing-over e invece lo scambio di pezzi tra cromosomi omologhi, un processo normale e utile.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-09-3",
+    "topicId": "bio-u4-09",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "open",
+    "q": "Spiega con parole tue: cos'e la trisomia 21 (sindrome di Down), come si origina e come viene diagnosticata?",
+    "answer": "La sindrome di Down e una condizione in cui una persona ha TRE copie del cromosoma 21 invece delle normali due, per un totale di 47 cromosomi invece di 46. Si origina quasi sempre (circa il 95% dei casi) da una non-disgiunzione durante la meiosi: le due copie del cromosoma 21 non si separano correttamente nella formazione dell'ovocita (o piu raramente dello spermatozoo) e finiscono entrambe nello stesso gamete. Quando questo gamete viene fecondato da uno normale, lo zigote ha 3 copie del cromosoma 21. La diagnosi si fa con il cariotipo: si osservano i cromosomi della persona o del feto e si conta quante volte appare il cromosoma 21 — se e 3 volte, la diagnosi e confermata. Il rischio aumenta con l'eta materna perche gli ovociti 'invecchiano' con la donna e la meiosi puo diventare meno precisa.",
+    "explain": "Da ricordare: trisomia 21 = 3 copie cromosoma 21; causa piu comune = non-disgiunzione in meiosi; diagnosi = cariotipo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u4-09-4",
+    "topicId": "bio-u4-09",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Le aneuploidie (come la trisomia 21) possono risultare da:",
+    "choices": [
+      "Non-disgiunzione durante la meiosi",
+      "Mutazione per sostituzione di una singola base nel DNA",
+      "Disgiunzione corretta dei cromosomi omologhi",
+      "Espansione di specifiche triplette di basi nel DNA",
+      "Delezione di un singolo nucleotide"
+    ],
+    "answer": 0,
+    "explain": "La non-disgiunzione in meiosi e la causa delle aneuploidie: i cromosomi non si separano bene e un gamete ne riceve troppi o troppo pochi. Le altre opzioni riguardano mutazioni a livello della SEQUENZA del DNA (sostituzioni di basi, delezioni, espansioni di triplette) — cioe cambiano le 'lettere' scritte sui cromosomi, non il NUMERO dei cromosomi. La 'disgiunzione corretta' e l'opposto esatto: se i cromosomi si separano bene, niente aneuploidia. Attenzione alla trappola: 'delezione' e 'sostituzione' suonano importanti ma descrivono errori molecolari dentro il DNA, non errori nel conteggio dei cromosomi.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u4-09-5",
+    "topicId": "bio-u4-09",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "La sindrome di Down puo essere determinata da:",
+    "choices": [
+      "Mancata disgiunzione del cromosoma 21 durante la meiosi",
+      "Monosomia del cromosoma 21 (una sola copia invece di due)",
+      "Trisomia del cromosoma 13",
+      "Presenza di cromosomi X soprannumerari",
+      "Trisomia del cromosoma 22"
+    ],
+    "answer": 0,
+    "explain": "La sindrome di Down nasce dalla trisomia 21: tre copie del cromosoma 21, e la causa piu comune e la mancata disgiunzione (non-disgiunzione) del cromosoma 21 in meiosi. Trappole da smontare: la 'monosomia del cromosoma 21' e l'opposto esatto (una sola copia invece di tre) e quasi sempre letale; la 'trisomia del cromosoma 13' e la sindrome di Patau, non di Down (stesso tipo di errore, cromosoma sbagliato); i 'cromosomi X soprannumerari' riguardano sindromi dei cromosomi sessuali come la sindrome di Klinefelter (XXY), non la Down; la 'trisomia del cromosoma 22' e un'altra condizione diversa. Il numero del cromosoma conta: e proprio il 21, il piu piccolo del genoma umano.",
+    "tags": ["prova d'esame"]
+  }
+]

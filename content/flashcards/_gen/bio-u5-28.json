@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u5-28-1",
+    "topicId": "bio-u5-28",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "I filamenti intermedi sono le strutture piu stabili del citoscheletro. Qual e la loro funzione principale?",
+    "choices": [
+      "Dare resistenza meccanica alla cellula, come le funi portanti di un ponte — tengono tutto al suo posto anche quando la cellula viene compressa o stirata",
+      "Fungere da binari per il trasporto di vescicole e organelli nel citoplasma",
+      "Permettere il movimento della cellula contraendosi come i muscoli",
+      "Duplicare il DNA durante la divisione cellulare"
+    ],
+    "answer": 0,
+    "explain": "I filamenti intermedi (~10 nm di diametro) non si muovono e non si smontano continuamente: sono le 'funi portanti' della cellula. Gli altri tre non c'entrano: i binari per il trasporto sono i microtubuli; il movimento e affidato ai microfilamenti di actina; il DNA lo copia la DNA polimerasi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-28-2",
+    "topicId": "bio-u5-28",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Descrivi in poche righe: (1) dove si trovano le cheratine e come resistono allo stiramento della pelle; (2) cosa e la lamina nucleare, da quali proteine e formata e cosa le succede durante la mitosi.",
+    "answer": "1) Le cheratine sono filamenti intermedi delle cellule epiteliali (pelle, unghie, capelli). All'interno di ogni cellula formano fasci chiamati tonofilamenti che si ancorano ai desmosomi — le 'graffette' di giunzione tra cellule adiacenti. Si crea cosi una rete continua che attraversa tante cellule: quando la pelle viene stirata, la forza si distribuisce su tutte senza strapparne nessuna. 2) La lamina nucleare e una rete di filamenti intermedi appiattita contro la faccia interna dell'involucro nucleare, presente in tutte le cellule eucariotiche. E formata dalle lamine A, B e C. Svolge tre ruoli: da forma e protegge il nucleo; organizza il DNA ancorandolo in punti precisi (influenzando quali geni sono attivi); durante la mitosi le lamine vengono fosforilate, si depolimerizzano e la lamina si dissolve — permettendo la frammentazione dell'involucro nucleare — poi si riassembla dopo la divisione.",
+    "explain": "Cheratine = filamenti intermedi dell'epidermide, ancorati ai desmosomi, formano rete multi-cellula. Lamina nucleare = lamine A/B/C, protegge e organizza il DNA, si dissolve (per fosforilazione) durante la mitosi.",
+    "tags": ["risposta aperta"]
+  }
+]

@@ -1,0 +1,67 @@
+{
+ "id": "chim-u1-27",
+ "titolo": "Teoria cinetica dei gas e distribuzione di Maxwell-Boltzmann",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "27-teoria-cinetica-dei-gas-e-distribuzione",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/chimica/u1/27-teoria-cinetica-dei-gas-e-distribuzione.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "L'energia cinetica media delle molecole di un gas a comportamento praticamente ideale dipende:",
+   "choices": [
+    "dalla temperatura",
+    "dalla massa molecolare del gas",
+    "dalla pressione esercitata dal gas",
+    "dal volume occupato dal gas",
+    "dal peso molecolare delle molecole"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2008",
+   "q": "Una data massa di acqua viene riscaldata da 15 °C a 30 °C. Quale affermazione, riguardante le molecole del sistema, NON è CORRETTA?",
+   "choices": [
+    "Aumenta il numero di molecole che si scompongono negli elementi costituenti",
+    "Aumenta la frequenza del moto periodico che cambia l'angolo dei legami O-H nell'acqua",
+    "Aumenta la velocità media con cui le particelle si urtano tra loro",
+    "Aumenta la frequenza del moto periodico che cambia la lunghezza dei legami O-H nell'acqua",
+    "Aumenta la velocità media con cui le particelle si muovono"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2015",
+   "q": "Un gas ideale X è costituito da particelle di massa m ed energia cinetica media E. Un altro gas ideale Y è costituito da particelle di massa 4m ed energia cinetica media 2E. Se la temperatura assoluta del gas X è di 200 K, qual è la temperatura assoluta del gas Y?",
+   "choices": [
+    "400 K",
+    "100 K",
+    "50 K",
+    "800 K",
+    "1600 K"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Il comportamento di un gas reale può essere considerato assai simile a quello di un gas ideale:",
+   "choices": [
+    "a bassa pressione e ad alta temperatura",
+    "a elevata pressione ed elevata temperatura",
+    "se il numero di molecole è assai alto",
+    "a elevata pressione e a bassa temperatura",
+    "a bassa pressione e bassa temperatura"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "definizione"
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-21">
+
+## Cosa sono gli endosomi e i lisosomi?
+
+Immagina la cellula come una città. Ci sono camion che raccolgono materiale dall'esterno, magazzini intermedi dove il materiale viene smistato, e infine un impianto di riciclo che distrugge tutto ciò che non serve più.
+
+- **Endosomi** = i magazzini intermedi. Quando la cellula ingloba qualcosa dall'esterno (per endocitosi), il materiale finisce prima negli endosomi.
+- **Lisosomi** = l'impianto di riciclo. Contengono enzimi digestivi potentissimi (le **idrolasi acide**) che scompongono proteine, grassi, carboidrati e acidi nucleici. Il loro interno è acido (pH 4,5–5), come l'aceto — questo attiva gli enzimi e protegge il resto della cellula.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il lisosoma è il "cestino con tritadocumenti" della cellula: tutto ciò che deve essere smontato e riciclato finisce lì dentro.</div>
+
+## La maturazione degli endosomi: da "giovane" a "maturo"
+
+Gli endosomi non nascono già pronti per fondersi con i lisosomi. Attraversano una maturazione in due fasi:
+
+1. **Endosoma precoce (early endosome):** appena formato, pH circa 6. Smista il materiale: quello da riciclare al lisosoma, quello da riusare alla membrana.
+2. **Endosoma tardivo (late endosome):** pH scende a ~5,5. Diventa sempre più simile a un lisosoma. Al suo interno si formano piccole vescicole interne — per questo viene chiamato anche **MVB** (corpo multivescicolare).
+3. **Fusione con il lisosoma:** l'endosoma tardivo si fonde con il lisosoma e il contenuto viene digerito.
+
+<Diagram caption="Maturazione endosomiale: dal materiale ingerito alla digestione lisosomiale" code={`flowchart TB
+  A["Endocitosi<br/>(materiale entra nella cellula)"]
+  B["Endosoma precoce<br/>pH ~6<br/>smistamento del cargo"]
+  C["Endosoma tardivo / MVB<br/>pH ~5,5<br/>vescicole interne si formano"]
+  D["Lisosoma<br/>pH ~4,5–5<br/>idrolasi acide attive"]
+  E["Digestione e riciclo<br/>dei componenti"]
+  A --> B --> C --> D --> E`} />
+
+## Come gli enzimi lisosomiali arrivano al posto giusto: il segnale mannosio-6-fosfato
+
+Gli enzimi dei lisosomi vengono prodotti nel reticolo endoplasmatico (RE) e poi passano per il Golgi — come tutti i prodotti della cellula. Il problema è: come fa la cellula a sapere che quell'enzima deve andare al lisosoma e non essere secreto fuori?
+
+La risposta è un **cartellino molecolare**: il **mannosio-6-fosfato (M6P)**.
+
+Ecco come funziona passo per passo:
+
+1. Nel RE, l'enzima lisosomiale viene sintetizzato e glicosato (cioè gli vengono attaccati zuccheri).
+2. Nel Golgi cis, un enzima speciale aggiunge il gruppo **mannosio-6-fosfato** alla catena di zuccheri. Questo è il "cartellino" che dice: "destinazione lisosoma".
+3. Nel Golgi trans (la rete TGN), ci sono dei **recettori per M6P** (MPR) nella membrana. Riconoscono il cartellino e legano l'enzima.
+4. Si forma una **vescicola rivestita di clatrina** che porta l'enzima verso l'endosoma tardivo.
+5. Nell'endosoma tardivo, il pH acido stacca l'enzima dal recettore. L'enzima rimane nell'endosoma (e poi nel lisosoma); il recettore MPR torna indietro al Golgi per riutilizzo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il mannosio-6-fosfato è come un codice a barre su un pacco: dice al "corriere" (il recettore MPR) dove consegnarlo. Arrivato a destinazione, il codice a barre viene rimosso e il corriere torna al magazzino.</div>
+
+<Diagram caption="Via del mannosio-6-fosfato: dall'enzima neosintetizzato al lisosoma" code={`flowchart LR
+  A["Reticolo endoplasmatico<br/>sintesi enzima lisosomiale<br/>+ glicosilazione iniziale"]
+  B["Golgi cis<br/>aggiunta del tag<br/>mannosio-6-fosfato (M6P)"]
+  C["Golgi trans / TGN<br/>recettore MPR riconosce M6P<br/>imballaggio in vescicola<br/>rivestita di clatrina"]
+  D["Endosoma tardivo<br/>pH acido stacca l'enzima<br/>dal recettore MPR"]
+  E["Lisosoma<br/>enzima attivo<br/>pronto a digerire"]
+  F["Recettore MPR<br/>riciclato al Golgi"]
+  A --> B --> C --> D --> E
+  D --> F --> C`} />
+
+## Malattie da accumulo lisosomiale
+
+Se un enzima lisosomiale è difettoso o manca, il materiale che doveva essere digerito si accumula nel lisosoma. Il lisosoma si gonfia sempre di più, la cellula non funziona bene, e l'organo interessato si danneggia.
+
+Queste patologie si chiamano **malattie da accumulo lisosomiale** (o LSDs, dall'inglese). Sono malattie genetiche rare, spesso gravi.
+
+Esempi importanti:
+
+| Malattia | Enzima mancante | Cosa si accumula |
+|---|---|---|
+| **Malattia di Gaucher** | glucocerebrosidasi | glucocerebrosidi (lipidi) |
+| **Malattia di Tay-Sachs** | esosaminidasi A | gangliside GM2 (lipide del cervello) |
+| **Malattia di Pompe** | alfa-glucosidasi acida | glicogeno |
+| **Mucopolisaccaridosi** | vari enzimi (a seconda del tipo) | mucopolisaccaridi (zuccheri complessi) |
+
+Alcune di queste malattie si possono trattare con la **terapia enzimatica sostitutiva**: si inietta l'enzima mancante, che viene prodotto in laboratorio e recapitato ai lisosomi proprio tramite il sistema M6P.
+
+## Guarda il video
+<YouTube id="xMF1PagtfEA" title="I LISOSOMI - Citologia Lezione 8 (AboutBiology)" />
+<VideoVisto id="bio-u5-21" />
+
+## Da ricordare
+- Gli endosomi maturano (precoce → tardivo → fusione con lisosoma) abbassando progressivamente il pH interno fino a ~4,5.
+- Il mannosio-6-fosfato è il segnale di indirizzamento: viene aggiunto nel Golgi, riconosciuto dai recettori MPR nella TGN, e staccato dal pH acido dell'endosoma tardivo, permettendo al recettore di tornare al Golgi.
+- Le malattie da accumulo lisosomiale nascono quando manca un enzima lisosomiale: il substrato non digerito si accumula, danneggiando le cellule (es. Gaucher, Tay-Sachs, Pompe).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione del mannosio-6-fosfato (M6P) negli enzimi lisosomiali?" opzioni={["È una fonte di energia per il lisosoma","È il segnale di indirizzamento che dirige gli enzimi al lisosoma tramite i recettori MPR","È un inibitore degli enzimi per evitare che digeriscano il Golgi","È il substrato principale che viene digerito nei lisosomi"]} corretta={1} spiegazione="Il mannosio-6-fosfato agisce come un 'cartellino' molecolare: viene aggiunto agli enzimi lisosomiali nel Golgi cis e viene riconosciuto dai recettori MPR nella rete trans-Golgi (TGN). Questo indirizza l'enzima verso l'endosoma tardivo e poi al lisosoma. Le altre opzioni sono errate: M6P non è energia, non inibisce gli enzimi né è un substrato digestivo." />
+
+<Quiz domanda="Cosa succede al recettore MPR dopo che l'enzima lisosomiale è stato consegnato all'endosoma tardivo?" opzioni={["Viene degradato insieme all'enzima nel lisosoma","Rimane nell'endosoma tardivo in modo permanente","Viene riciclato e torna alla rete trans-Golgi (TGN) per un nuovo ciclo","Si trasforma in un canale ionico per acidificare il lisosoma"]} corretta={2} spiegazione="Il pH acido dell'endosoma tardivo (~5,5) causa il distacco dell'enzima dal recettore MPR. Il recettore viene quindi recuperato in vescicole che lo riportano alla TGN, dove può legarsi a nuovi enzimi lisosomiali. Questo riciclo è essenziale: senza di esso la cellula dovrebbe sempre sintetizzare nuovi recettori." />
+
+<Quiz domanda="In che ordine avvengono le tappe della maturazione endosomiale?" opzioni={["Lisosoma → endosoma tardivo → endosoma precoce","Endosoma precoce → endosoma tardivo → fusione con lisosoma","Endosoma tardivo → endosoma precoce → fusione con lisosoma","Golgi → endosoma precoce → lisosoma (senza endosoma tardivo)"]} corretta={1} spiegazione="La sequenza corretta è: il materiale endocitato entra nell'endosoma precoce (pH ~6, smistamento), poi matura in endosoma tardivo / MVB (pH ~5,5, con vescicole interne), e infine si fonde con il lisosoma (pH ~4,5) dove avviene la digestione enzimatica. Il pH cala progressivamente in ogni tappa." />
+
+<Esercizio problema="Un bambino presenta ingrossamento del fegato e della milza, anemia e accumulo di lipidi nelle cellule. Gli esami mostrano carenza di glucocerebrosidasi lisosomiale. Spiega: (1) perché manca questo enzima nel lisosoma, (2) cosa si accumula e perché, (3) come funziona la terapia enzimatica sostitutiva per questa malattia (malattia di Gaucher)." soluzione="(1) La glucocerebrosidasi è un enzima lisosomiale: viene sintetizzata nel RE, taggata con mannosio-6-fosfato nel Golgi, e trasportata al lisosoma tramite i recettori MPR. Se il gene che codifica per questo enzima è mutato, la proteina prodotta è difettosa o assente, e il lisosoma rimane privo di questo enzima digestivo. (2) I glucocerebrosidi sono lipidi (sfingolipidi) normalmente presenti nelle membrane cellulari, in particolare delle cellule del sangue. Quando le cellule vengono smontate (es. globuli rossi vecchi), i loro componenti lipidici arrivano al lisosoma per essere digeriti. Senza glucocerebrosidasi, i glucocerebrosidi non vengono spezzati e si accumulano nei lisosomi — soprattutto nei macrofagi di fegato, milza e midollo osseo. Il lisosoma si gonfia, la cellula smette di funzionare normalmente. (3) Nella terapia sostitutiva si produce in laboratorio la glucocerebrosidasi funzionante, che viene iniettata in vena. L'enzima viene prodotto con il tag M6P sulla sua superficie; i macrofagi lo captano tramite endocitosi e i recettori MPR lo dirigono correttamente ai lisosomi, dove può finalmente digerire i lipidi accumulati. Non guarisce la causa genetica, ma controlla i sintomi." />
+
+</section>
+
+</RisorsaLayout>

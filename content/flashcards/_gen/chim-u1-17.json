@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-17-1",
+    "topicId": "chim-u1-17",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: in ogni legame tra due atomi c'è SEMPRE almeno un legame sigma (σ), e il legame pi greco (π) non può mai esistere da solo senza di esso.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il sigma è la 'base' di ogni legame: è l'aggancio frontale testa-testa che si forma per primo. Il pi greco è solo un aggancio laterale aggiuntivo che si sovrappone a un sigma già presente. Non esiste un doppio o triplo legame senza che ci sia prima il sigma.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-17-2",
+    "topicId": "chim-u1-17",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Immagina due atomi di carbonio legati da un legame DOPPIO C=C (come nei doppi legami degli oli vegetali). Qual è la struttura di quel legame?",
+    "choices": [
+      "1 sigma + 1 pi greco",
+      "2 sigma",
+      "2 pi greco",
+      "1 sigma + 2 pi greco"
+    ],
+    "answer": 0,
+    "explain": "Il legame doppio è sempre 1 sigma (stretta di mano frontale) + 1 pi greco (abbraccio laterale). Non sono due strette di mano: il secondo aggancio è obbligatoriamente di tipo pi greco, laterale. Da ricordare: semplice = 1σ, doppio = 1σ+1π, triplo = 1σ+2π.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-17-3",
+    "topicId": "chim-u1-17",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "La molecola di azoto N≡N (il gas che forma il 78% dell'aria) ha un legame triplo. Spiega: quanti legami sigma e quanti pi greco contiene? Perché l'azoto è così stabile e poco reattivo? E cosa c'entra la rigidità del legame pi greco con il fatto che le proteine hanno una forma precisa?",
+    "answer": "Il legame triplo N≡N contiene 1 sigma + 2 pi greco. Il sigma è l'aggancio frontale testa-testa, i due pi greco sono gli abbracci laterali (uno sopra e uno sotto). Tre agganci complessivi rendono questo legame molto forte e molto corto: per spezzarlo serve molta energia, ecco perché l'azoto dell'aria è straordinariamente stabile e quasi inerte chimicamente. La rigidità del pi greco è cruciale in biologia: appena c'è un pi greco, i due atomi NON possono più ruotare liberamente l'uno rispetto all'altro. Nelle proteine il legame peptidico ha carattere parziale di doppio legame (parzialmente pi greco) e questo blocca la rotazione in quel punto, costringendo la catena in una conformazione planare. È quella rigidità a dare alle proteine la loro forma tridimensionale precisa, fondamentale per il loro funzionamento (enzimi, anticorpi, recettori).",
+    "explain": "Da ricordare: triplo = 1σ + 2π. Più agganci = legame più forte e corto. Il pi greco blocca la rotazione: questo ha conseguenze enormi sulla forma delle molecole biologiche.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-17-4",
+    "topicId": "chim-u1-17",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sui legami carbonio-carbonio è corretta? 1. L'energia di legame cresce nell'ordine C-C, C=C, C≡C; 2. La lunghezza del legame C-C è doppia rispetto a quella del legame C=C; 3. Nel legame C=C gli atomi di carbonio condividono quattro elettroni",
+    "choices": [
+      "Solo 1 e 3",
+      "Solo 3",
+      "Solo 1 e 2",
+      "Solo 2 e 3",
+      "Solo 1"
+    ],
+    "answer": 0,
+    "explain": "Affermazione 1: VERA. Più agganci (sigma + pi greco) = legame più forte: il C-C semplice è il più debole, il C≡C triplo il più forte. Affermazione 2: FALSA (trappola dell'opposto esatto). La lunghezza NON raddoppia: il C-C semplice è circa 154 pm, il C=C doppio circa 134 pm. Più agganci = legame più CORTO, non più lungo. La trappola inverte il ragionamento. Affermazione 3: VERA. Un legame doppio C=C è 1 sigma + 1 pi greco = due coppie di elettroni condivise = 4 elettroni totali. Quindi solo 1 e 3 sono corrette.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-17-5",
+    "topicId": "chim-u1-17",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "I legami tripli (come in N≡N o in C≡C) sono formati da:",
+    "choices": [
+      "un legame σ e due legami π",
+      "tre legami dativi",
+      "due legami σ e un legame π",
+      "due legami ionici e un legame covalente",
+      "tre legami σ, uno per ogni coppia di elettroni"
+    ],
+    "answer": 0,
+    "explain": "Un legame triplo è sempre 1 sigma + 2 pi greco. La regola è semplice: il PRIMO aggancio è sempre sigma (frontale), TUTTI gli agganci aggiuntivi sono pi greco (laterali). Trappola 'due sigma e un pi greco': è l'inversione esatta della regola, confonde il ruolo di sigma e pi greco. Trappola 'tre legami dativi': il legame dativo è un tipo di covalente (dove una coppia la mette un atomo solo) e non c'entra con sigma/pi greco; è un termine scambiato. 'Due legami ionici' è il filler fuori tema: i legami ionici non esistono nelle molecole covalenti come N₂ o C₂H₂. 'Tre sigma' è sbagliato perché tra la stessa coppia di atomi può esserci UN SOLO sigma; tutti gli altri devono essere pi greco.",
+    "tags": ["prova d'esame"]
+  }
+]

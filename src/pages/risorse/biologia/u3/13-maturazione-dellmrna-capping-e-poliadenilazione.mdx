@@ -1,0 +1,104 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-13">
+
+## Cos'è la maturazione dell'mRNA?
+
+Quando il DNA viene trascritto nel nucleo, il prodotto immediato non è ancora un mRNA pronto all'uso. Si chiama **pre-mRNA** (o trascritto primario). È come una bozza grezza che deve essere rifinita prima di uscire dal nucleo e raggiungere i ribosomi.
+
+Questa "rifinitura" si chiama **maturazione dell'mRNA** e comprende tre operazioni principali:
+
+1. Aggiunta del **cappuccio in 5'** (capping)
+2. Aggiunta della **coda poli-A in 3'** (poliadenilazione)
+3. Rimozione degli introni (splicing — trattato a parte)
+
+In questa scheda ci concentriamo sul capping e sulla poliadenilazione.
+
+---
+
+## Il cappuccio in 5' (capping)
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il cappuccio 5' è come il tappo di una penna — protegge l'estremità del messaggio e permette ai ribosomi di riconoscerlo.</div>
+
+### Che cos'è?
+
+Il **cappuccio** è una molecola speciale di guanosina modificata (7-metilguanosina, abbreviata **m7G**) che viene aggiunta all'estremità **5' del pre-mRNA** subito dopo l'inizio della trascrizione.
+
+Il collegamento è insolito: invece del normale legame 5'→3', qui si forma un legame **5'→5'**, cioè testa a testa.
+
+### A cosa serve?
+
+- **Protegge** l'mRNA dalla degradazione da parte degli enzimi (le esonucleasi che "mangiano" l'RNA dal lato 5').
+- **Facilita il riconoscimento** da parte dei ribosomi: il complesso di inizio della traduzione riconosce proprio il cappuccio per attaccarsi all'mRNA.
+- **Favorisce l'uscita** dal nucleo verso il citoplasma.
+
+---
+
+## La coda poli-A in 3' (poliadenilazione)
+
+### Che cos'è?
+
+All'**estremità 3'** del pre-mRNA viene aggiunta una lunga sequenza di adenine (tipicamente **150–250 residui di adenina**). Questa coda si chiama **coda poli-A**.
+
+Il processo avviene in due tappe:
+1. Una specifica sequenza del pre-mRNA — la **sequenza di segnale AAUAAA** — viene riconosciuta da proteine apposite.
+2. L'mRNA viene tagliato circa 10–30 nucleotidi dopo quel segnale, e l'enzima **poli-A polimerasi** aggiunge le adenine una dopo l'altra.
+
+### A cosa serve?
+
+- **Stabilizza** l'mRNA: senza la coda, gli enzimi degradanti lo attaccano rapidamente dall'estremità 3'.
+- **Regola la durata** dell'mRNA: la coda si accorcia nel tempo; quando è troppo corta, l'mRNA viene degradato.
+- **Aiuta l'uscita** dal nucleo e **stimola la traduzione**.
+
+---
+
+<Diagram caption="Struttura del pre-mRNA e dove vengono aggiunti cappuccio e coda poli-A" code={`flowchart LR
+  A["DNA — doppia elica"] --> B["Trascrizione<br/>nel nucleo"]
+  B --> C["pre-mRNA grezzo<br/>(trascritto primario)"]
+  C --> D["Capping 5'<br/>aggiunta m7G<br/>all'estremità 5'"]
+  C --> E["Poliadenilazione 3'<br/>riconoscimento AAUAAA<br/>+ taglio + coda poli-A"]
+  D --> F["pre-mRNA con cappuccio"]
+  E --> F
+  F --> G["mRNA maturo<br/>(dopo splicing)<br/>pronto per la traduzione"]`} />
+
+<Diagram caption="Funzioni del cappuccio 5' e della coda poli-A nell'mRNA maturo" code={`flowchart TB
+  A["mRNA maturo"]
+  A --> B["Cappuccio m7G in 5'"]
+  A --> C["Coda poli-A in 3'"]
+  B --> D["Protezione da<br/>esonucleasi 5'"]
+  B --> E["Riconoscimento<br/>da parte del ribosoma"]
+  B --> F["Esportazione<br/>dal nucleo"]
+  C --> G["Protezione da<br/>esonucleasi 3'"]
+  C --> H["Stabilità<br/>dell'mRNA"]
+  C --> I["Stimolo<br/>alla traduzione"]`} />
+
+## Guarda il video
+<YouTube id="hRQYQOTB17E" title="La MATURAZIONE del pre-mRNA in mRNA — Biologia con Giulia" />
+<VideoVisto id="bio-u3-13" />
+
+## Da ricordare
+
+- Il **cappuccio 5'** (m7G) protegge l'estremità 5' dell'mRNA e permette ai ribosomi di riconoscerlo per iniziare la traduzione.
+- La **coda poli-A** (150–250 adenine) protegge l'estremità 3' e stabilizza l'mRNA; il suo accorciamento progressivo segnala la degradazione.
+- Entrambe le modifiche avvengono nel **nucleo**, prima che l'mRNA esca verso il citoplasma.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione principale del cappuccio 5' (m7G) sull'mRNA?" opzioni={["Codifica per un amminoacido speciale","Protegge l'estremità 5' dalla degradazione e permette il riconoscimento ribosomale","Segnala il punto di taglio per la poliadenilazione","Rimuove gli introni durante lo splicing"]} corretta={1} spiegazione="Il cappuccio 7-metilguanosina in 5' ha due funzioni principali: proteggere l'mRNA dalle esonucleasi che attaccano dall'estremità 5', e permettere ai ribosomi di riconoscere e legare l'mRNA per iniziare la traduzione." />
+
+<Quiz domanda="Quale sequenza segnale sull'mRNA viene riconosciuta per avviare la poliadenilazione in 3'?" opzioni={["AUGUGA","AAUAAA","UUAGCC","GCGCGC"]} corretta={1} spiegazione="La sequenza AAUAAA (esanucleotide poli-A signal) è il segnale canonico riconosciuto dalle proteine che guidano il taglio del pre-mRNA e l'aggiunta della coda poli-A circa 10–30 nucleotidi a valle." />
+
+<Quiz domanda="Cosa succede all'mRNA quando la coda poli-A si accorcia progressivamente nel citoplasma?" opzioni={["L'mRNA viene tradotto più velocemente","L'mRNA viene esportato di nuovo nel nucleo","L'mRNA diventa instabile e viene degradato","Viene aggiunto un nuovo cappuccio 5'"]} corretta={2} spiegazione="La coda poli-A agisce come un 'timer': deadenilasi specifiche la accorciano nel tempo. Quando è troppo corta, l'mRNA perde protezione all'estremità 3' e viene rapidamente degradato dagli enzimi cellulari." />
+
+<Esercizio problema="Immagina che una mutazione elimini la sequenza AAUAAA da un pre-mRNA. Che conseguenze avrebbe sulla maturazione e sulla stabilità dell'mRNA prodotto?" soluzione="Senza la sequenza AAUAAA, le proteine responsabili della poliadenilazione non riconoscono il sito di taglio in 3'. L'mRNA non viene tagliato correttamente e non riceve la coda poli-A. Il risultato è un mRNA privo di coda poli-A: molto più instabile, degradato rapidamente nel citoplasma, e quindi tradotto in quantità molto ridotte o per nulla. La proteina corrispondente sarà prodotta in quantità insufficiente." />
+
+</section>
+
+</RisorsaLayout>

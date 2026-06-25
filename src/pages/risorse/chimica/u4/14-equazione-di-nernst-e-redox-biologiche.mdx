@@ -1,0 +1,126 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-14">
+
+In una reazione **redox** gli elettroni passano da una sostanza a un'altra: una li **perde** (si ossida) e una li **prende** (si riduce). Ogni coppia ha una sua "voglia di prendere elettroni", che misuriamo con un numero: il **potenziale**. L'**equazione di Nernst** serve a correggere questo numero quando le condizioni reali non sono quelle "da manuale" (per esempio se cambia la concentrazione). È importante perché il tuo corpo, in ogni istante, vive proprio di reazioni redox: la respirazione che ti tiene in vita è una lunga catena di elettroni che passano di mano in mano.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il potenziale è quanto una sostanza "ha fame" di elettroni. L'equazione di Nernst è la regola che aggiusta questa fame quando in giro ce n'è di più o di meno del solito.</div>
+
+## L'equazione di Nernst: aggiustare il potenziale
+
+Pensa a una bilancia in un negozio. Tarata bene, segna il peso giusto in **condizioni standard**. Ma se la appoggi su un tavolo storto, devi **correggere** la lettura. L'equazione di Nernst è la correzione del potenziale quando le concentrazioni non sono quelle standard.
+
+La scriviamo così (come testo, niente paura per i simboli):
+
+`E = E0 - (RT / nF) * ln(Q)`
+
+Cosa vuol dire ogni pezzo, in parole semplici:
+
+- **E** è il potenziale **reale**, quello che misuri davvero.
+- **E0** è il potenziale **standard**, il valore "da manuale" (condizioni di riferimento).
+- **R** e **F** sono due costanti fisse (non cambiano mai).
+- **T** è la temperatura.
+- **n** è il **numero di elettroni** che si scambiano nella reazione.
+- **Q** dice quanto è "avanti" la reazione (rapporto tra prodotti e reagenti in quel momento).
+
+Il messaggio è semplice: se cambi le concentrazioni, il potenziale cambia un po'. La Nernst ti dice **di quanto**.
+
+## Il legame con l'energia (DeltaG)
+
+Una reazione redox può **liberare energia** o richiederne. Quell'energia la chiamiamo **DeltaG**. C'è una regola d'oro:
+
+`DeltaG = -nFE`
+
+In parole povere: **più alto è il potenziale E, più energia la reazione può liberare**. E vale anche al contrario.
+
+- Se `E` è positivo, allora `DeltaG` è negativo: la reazione parte da sola ed è **spontanea** (come un sasso che rotola in discesa).
+- Se `E` è negativo, allora `DeltaG` è positivo: la reazione **non** parte da sola, serve spingerla.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> potenziale alto = molta energia disponibile = la reazione "scende in discesa" da sola.</div>
+
+Questo è il cuore del perché viviamo: il nostro corpo sceglie reazioni con `DeltaG` negativo per ricavarne energia utile.
+
+## La respirazione: una catena di elettroni fino all'ossigeno
+
+Ed eccoci alla parte che ti riguarda da vicino, futuro veterinario. Quando le tue cellule "bruciano" il cibo, non fanno esplodere tutto in una volta. Fanno passare gli elettroni **gradino dopo gradino** lungo una scala di proteine dentro il mitocondrio (la "centrale elettrica" della cellula). Questa scala si chiama **catena di trasporto degli elettroni**.
+
+Ogni gradino ha un potenziale un po' più alto del precedente: gli elettroni scendono come acqua che cade di vasca in vasca. All'ultimo gradino c'è il campione assoluto della "fame di elettroni": l'**ossigeno (O2)**. L'ossigeno è l'**accettore finale**: prende gli elettroni e, insieme a degli ioni H+, diventa **acqua**.
+
+<Diagram caption="La catena di trasporto: gli elettroni scendono di gradino in gradino fino all'ossigeno" code={`flowchart LR
+  N["NADH<br/>(porta gli elettroni)"] --> C1["Complesso I"]
+  C1 --> C2["Complesso II e III"]
+  C2 --> C3["Complesso IV"]
+  C3 --> O["O2<br/>accettore finale"]
+  O --> W["Acqua (H2O)"]`} />
+
+Perché l'ossigeno sta in fondo? Perché ha il **potenziale più alto di tutti**: è quello che "tira" più forte gli elettroni. Ecco perché respiriamo: senza ossigeno la catena si blocca, gli elettroni non hanno dove andare e la cellula resta senza energia. È letteralmente il motivo per cui non possiamo smettere di respirare.
+
+<Diagram caption="Gli elettroni scendono verso potenziali sempre più alti: l'energia liberata serve a fare ATP" code={`flowchart TB
+  A["Cibo: elettroni ad alta energia"] --> B["Scendono lungo la catena<br/>(potenziale che cresce)"]
+  B --> C["Energia liberata"]
+  C --> D["Si costruisce ATP<br/>(la benzina della cellula)"]
+  B --> E["Elettroni consegnati a O2"]
+  E --> F["Si forma acqua"]`} />
+
+## Quando l'ossigeno fa danni: la reazione di Fenton
+
+L'ossigeno è prezioso, ma ha un lato pericoloso. A volte si formano frammenti "incompleti" della sua riduzione, come l'**acqua ossigenata (H2O2)**. Se nella cellula c'è del **ferro** (Fe2+), succede la **reazione di Fenton**:
+
+`Fe2+ + H2O2 → Fe3+ + OH- + •OH`
+
+Quel `•OH` è un **radicale libero**: una specie super-reattiva e aggressiva, una specie di "scintilla impazzita". Attacca grassi, proteine e DNA. È una delle cause dello **stress ossidativo**, collegato a invecchiamento e a molte malattie. Per questo il corpo (umano e animale) tiene il ferro libero sotto stretto controllo e usa **antiossidanti** per spegnere queste scintille.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> l'ossigeno è il nostro motore, ma i suoi "scarti" più il ferro possono fare scintille (radicali) che danneggiano le cellule. La reazione di Fenton è esattamente quella scintilla.</div>
+
+## Guarda il video
+
+<YouTube id="wL3MUab-7B0" title="Elettrochimica: l'equazione di Nernst spiegata con esercizi" />
+
+<VideoVisto id="chim-u4-14" />
+
+## Da ricordare
+
+- **Redox** = scambio di elettroni: chi li perde si ossida, chi li prende si riduce.
+- L'**equazione di Nernst** (`E = E0 - (RT/nF)*ln Q`) corregge il potenziale quando le concentrazioni non sono standard.
+- Legame con l'energia: `DeltaG = -nFE`. Potenziale alto significa molta energia liberabile e reazione spontanea.
+- Nella **respirazione** gli elettroni scendono lungo la catena fino all'**O2**, l'accettore finale, che diventa acqua.
+- La **reazione di Fenton** (Fe2+ con acqua ossigenata) genera radicali liberi dannosi: è la base dello stress ossidativo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="A cosa serve l'equazione di Nernst?"
+  opzioni={["A pesare gli atomi", "A correggere il potenziale quando le condizioni non sono standard", "A contare i protoni nel nucleo", "A misurare la temperatura del corpo"]}
+  corretta={1}
+  spiegazione="La Nernst aggiusta il potenziale E rispetto al valore standard E0 quando cambiano le condizioni, per esempio le concentrazioni."
+/>
+
+<Quiz
+  domanda="Nella respirazione cellulare, chi è l'accettore finale degli elettroni?"
+  opzioni={["Il glucosio", "L'acqua", "L'ossigeno (O2)", "Il ferro"]}
+  corretta={2}
+  spiegazione="L'ossigeno ha il potenziale più alto: prende gli elettroni in fondo alla catena e diventa acqua. Senza di lui la catena si blocca."
+/>
+
+<Quiz
+  domanda="Se il potenziale E di una reazione è positivo, allora DeltaG è:"
+  opzioni={["positivo, reazione non spontanea", "negativo, reazione spontanea", "sempre zero", "non si può sapere"]}
+  corretta={1}
+  spiegazione="Vale DeltaG = -nFE: se E è positivo, DeltaG diventa negativo e la reazione parte da sola (spontanea)."
+/>
+
+<Esercizio
+  problema="La reazione di Fenton è Fe2+ + H2O2 che dà Fe3+, ioni OH- e il radicale ossidrile. Spiega con parole tue perché è pericolosa per una cellula e perché il corpo cerca di evitarla."
+  soluzione="È pericolosa perché produce il radicale ossidrile, una specie estremamente reattiva (un 'radicale libero') che attacca grassi, proteine e DNA, danneggiando le strutture della cellula. Questo provoca stress ossidativo, legato a invecchiamento e malattie. Per questo il corpo tiene sotto controllo il ferro libero e usa antiossidanti per neutralizzare i radicali prima che facciano danno."
+/>
+
+</section>
+
+</RisorsaLayout>

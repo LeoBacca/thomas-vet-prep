@@ -1,0 +1,119 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u6-09">
+
+## Cosa sono i secondi messaggeri?
+
+Immagina che un ormone (il **primo messaggero**) arrivi fuori dalla cellula e suoni il campanello. Non può entrare in casa. Allora qualcuno dall'interno sente il campanello e passa la notizia ad altri di casa: questi "portavoce interni" sono i **secondi messaggeri**.
+
+I secondi messaggeri sono piccole molecole prodotte all'interno della cellula quando un recettore viene attivato. Diffondono rapidamente nel citoplasma e trasmettono il segnale a cascata, attivando una serie di proteine.
+
+I più importanti sono:
+- **cAMP** (adenosin monofosfato ciclico): prodotto dall'enzima adenilato ciclasi a partire dall'ATP.
+- **IP3 e DAG**: prodotti dall'enzima fosfolipasi C, liberano calcio dal reticolo endoplasmatico.
+- **Ca²⁺** (ioni calcio): agisce da secondo messaggero quando viene rilasciato nel citoplasma.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il primo messaggero (ormone) resta fuori; il secondo messaggero nasce dentro la cellula e porta il segnale dove serve, amplificandolo.</div>
+
+---
+
+## Come funziona l'amplificazione del segnale?
+
+Qui sta la magia: **un solo ormone può scatenare migliaia di reazioni** all'interno della cellula. Come?
+
+Ogni passaggio della cascata attiva molte molecole del passaggio successivo. È come un megafono a più stadi:
+
+1. Un ormone attiva **un** recettore.
+2. Il recettore attiva **decine** di proteine G.
+3. Ogni proteina G attiva **decine** di adenilato ciclasi.
+4. Ogni adenilato ciclasi produce **centinaia** di molecole di cAMP.
+5. Ogni cAMP attiva una proteina chinasi (PKA).
+6. Ogni PKA fosforila (= "accende") **decine** di enzimi bersaglio.
+
+Il risultato: un segnale debolissimo all'esterno diventa una risposta potente all'interno.
+
+<Diagram caption="Cascata di amplificazione del segnale tramite cAMP" code={`flowchart TB
+  A["Ormone (primo messaggero)<br/>si lega al recettore accoppiato a proteina G"] --> B["Proteina G attivata<br/>(subunità alfa-GTP si stacca)"]
+  B --> C["Adenilato ciclasi attivata<br/>(enzima di membrana)"]
+  C --> D["ATP convertito in cAMP<br/>(secondo messaggero)"]
+  D --> E["PKA attivata<br/>(proteina chinasi A)"]
+  E --> F["Fosforilazione degli enzimi bersaglio<br/>(risposta cellulare amplificata)"]
+  style A fill:#e8f5e9
+  style D fill:#fff9c4
+  style F fill:#e3f2fd`} />
+
+---
+
+## La via della visione: un esempio concreto di amplificazione
+
+La visione è uno degli esempi più eleganti di cascata di secondi messaggeri. Ecco cosa succede quando la luce colpisce i fotorecettori (bastoncelli) della retina:
+
+1. La **luce** colpisce la **rodopsina** (un recettore accoppiato a proteina G).
+2. La rodopsina attiva la **trasducina** (proteina G specializzata).
+3. La trasducina attiva la **fosfodiesterasi** (enzima).
+4. La fosfodiesterasi degrada il **cGMP** (un secondo messaggero simile al cAMP).
+5. Calando il cGMP, i canali ionici si **chiudono**.
+6. La cellula si **iperpolarizza** (meno ioni Na⁺ entrano).
+7. Il segnale elettrico viene inviato al cervello.
+
+Un singolo fotone di luce può chiudere centinaia di canali ionici. Questa è amplificazione!
+
+<Diagram caption="Via di trasduzione del segnale nella visione (bastoncelli della retina)" code={`flowchart TB
+  A["Fotone di luce<br/>colpisce la rodopsina"] --> B["Rodopsina attivata<br/>(recettore GPCR)"]
+  B --> C["Trasducina attivata<br/>(proteina G specializzata)"]
+  C --> D["Fosfodiesterasi attivata<br/>(enzima)"]
+  D --> E["cGMP degradato<br/>(livelli interni calano)"]
+  E --> F["Canali ionici Na⁺ si chiudono"]
+  F --> G["Iperpolarizzazione della cellula<br/>(potenziale di membrana scende)"]
+  G --> H["Segnale elettrico<br/>inviato al cervello"]
+  style A fill:#fff9c4
+  style E fill:#fce4ec
+  style H fill:#e3f2fd`} />
+
+---
+
+## Desensitizzazione: il recettore si stanca
+
+Se il segnale rimane attivo troppo a lungo, la cellula rischia di essere sopraffatta. Per questo esiste la **desensitizzazione**: il recettore viene "spento" o rimosso temporaneamente.
+
+Come avviene?
+
+- **Fosforilazione del recettore**: una chinasi aggiunge un gruppo fosfato al recettore attivato. Questo riduce la sua capacità di attivare la proteina G.
+- **Legame dell'arrestina**: la proteina arrestina si lega al recettore fosforilato e lo "blocca", impedendogli di segnalare.
+- **Internalizzazione**: il recettore bloccato viene portato all'interno della cellula tramite endocitosi (il recettore viene letteralmente "inghiottito" dalla membrana).
+
+Nella visione, questo è fondamentale: quando passi da una stanza buia a una illuminata, all'inizio sei abbagliato. Poi la retina si adatta perché i recettori vengono desensitizzati. In pochi secondi, vedi normalmente.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La desensitizzazione è come abbassare il volume dopo che la musica è stata troppo alta a lungo. La cellula evita di restare "a tutto volume" per sempre.</div>
+
+---
+
+## Guarda il video
+<YouTube id="pX4uPnBk6u8" title="La TRASDUZIONE del SEGNALE — Biologia con Giulia" />
+<VideoVisto id="bio-u6-09" />
+
+## Da ricordare
+- I **secondi messaggeri** (come cAMP, Ca²⁺, IP3) nascono dentro la cellula e trasmettono il segnale a cascata, amplificandolo enormemente.
+- La **via della visione** usa cGMP come secondo messaggero: la luce attiva rodopsina → trasducina → fosfodiesterasi → cala il cGMP → i canali si chiudono → segnale al cervello.
+- La **desensitizzazione** spegne il recettore (tramite fosforilazione, arrestina e internalizzazione) per evitare una stimolazione eccessiva e permettere l'adattamento.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è il ruolo del cAMP nella trasduzione del segnale?" opzioni={["È il primo messaggero che si lega al recettore di membrana", "È un secondo messaggero prodotto all'interno della cellula che amplifica il segnale", "È un enzima che degrada i recettori dopo l'attivazione", "È la proteina G che trasmette il segnale all'adenilato ciclasi"]} corretta={1} spiegazione="Il cAMP (adenosin monofosfato ciclico) è un secondo messaggero: viene prodotto dentro la cellula dall'adenilato ciclasi a partire dall'ATP, dopo che la proteina G è stata attivata dal recettore. Non è il primo messaggero (che è l'ormone extracellulare) né un enzima degradante." />
+
+<Quiz domanda="Nella visione, cosa succede al cGMP quando la luce colpisce i bastoncelli?" opzioni={["Il cGMP aumenta, aprendo i canali al calcio", "Il cGMP viene sintetizzato in grandi quantità dall'adenilato ciclasi", "Il cGMP viene degradato dalla fosfodiesterasi, causando la chiusura dei canali ionici", "Il cGMP si lega alla rodopsina e la disattiva"]} corretta={2} spiegazione="Quando la luce attiva la rodopsina, la proteina G specializzata (trasducina) attiva la fosfodiesterasi, che degrada il cGMP. Il calo di cGMP causa la chiusura dei canali ionici per il Na⁺, iperpolarizzando la cellula e generando il segnale elettrico verso il cervello." />
+
+<Quiz domanda="Quale meccanismo è responsabile della desensitizzazione dei recettori accoppiati a proteina G?" opzioni={["Il recettore viene distrutto dagli enzimi lisosomiali subito dopo la prima attivazione", "Il recettore viene fosforilato, si lega all'arrestina e può essere internalizzato per endocitosi", "La proteina G rimane legata al recettore bloccandolo permanentemente", "Il secondo messaggero degrada il recettore tramite proteolisi"]} corretta={1} spiegazione="La desensitizzazione dei GPCR avviene in tre fasi: (1) il recettore attivato viene fosforilato da chinasi specifiche (GRK), (2) la proteina arrestina si lega al recettore fosforilato impedendogli di attivare ulteriormente la proteina G, (3) il complesso recettore-arrestina può essere internalizzato per endocitosi. Il recettore non viene distrutto permanentemente: può essere riciclato." />
+
+<Esercizio problema="Un ormone si lega a un recettore sulla superficie di una cellula. All'interno della cellula, si misurano prima 100 molecole di proteina G attivate, poi 1.000 molecole di cAMP prodotte per ogni proteina G, e infine ogni molecola di cAMP attiva 10 enzimi bersaglio. Partendo da 1 solo ormone, quanti enzimi bersaglio vengono attivati in totale? Spiega anche perché questo meccanismo è utile dal punto di vista biologico." soluzione="Calcolo: 1 ormone → 100 proteine G → 100 × 1.000 = 100.000 cAMP → 100.000 × 10 = 1.000.000 (un milione) di enzimi bersaglio attivati. Questo meccanismo a cascata è utile perché permette alla cellula di rispondere in modo potente anche a concentrazioni bassissime di ormone. Il corpo non deve produrre grandi quantità di ormone (energeticamente costoso) per ottenere un effetto: basta un segnale debole che viene amplificato migliaia di volte all'interno della cellula." />
+
+</section>
+
+</RisorsaLayout>

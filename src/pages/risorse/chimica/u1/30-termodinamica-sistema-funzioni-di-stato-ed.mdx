@@ -1,0 +1,108 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-30">
+
+La **termodinamica** studia gli scambi di **energia** (soprattutto di **calore**) durante le trasformazioni. In chimica ci serve per capire una cosa molto pratica: una reazione **scalda** o **raffredda**? Pensa al tuo corpo: quando digerisci il cibo, le reazioni chimiche liberano energia e ti tengono caldo a 37 gradi. È termodinamica anche quella.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ogni reazione o scambia calore <strong>verso fuori</strong> (scalda l'ambiente) oppure lo <strong>prende da fuori</strong> (raffredda l'ambiente). La termodinamica tiene il conto di questi scambi.</div>
+
+## Sistema e ambiente
+
+Per studiare uno scambio di calore dobbiamo prima decidere **cosa stiamo guardando**.
+
+- Il **sistema** è la parte che ci interessa: per esempio il liquido dentro una provetta, o le sostanze che reagiscono.
+- L'**ambiente** è tutto il resto attorno: la provetta, l'aria, la tua mano che la tiene.
+
+È come mettere un **confine** immaginario attorno a quello che vuoi osservare. Tutto dentro il confine è "sistema", tutto fuori è "ambiente". Il calore può passare da uno all'altro attraversando quel confine.
+
+Esempio biomedico: una **cellula** è un sistema, e il liquido attorno a lei è l'ambiente. La cellula scambia continuamente sostanze e calore con l'ambiente per restare viva.
+
+## Le funzioni di stato
+
+Una **funzione di stato** è una proprietà che dipende solo da **dov'è arrivato** il sistema, **non dalla strada** che ha fatto per arrivarci.
+
+Analogia facile: pensa all'**altitudine** di una montagna. Se sei in cima a 2000 metri, sei a 2000 metri **e basta**, che tu sia salito con la funivia o a piedi per il sentiero lungo. L'altitudine è una "funzione di stato": conta solo il punto in cui sei, non il percorso.
+
+Allo stesso modo, l'energia di un sistema chimico dipende solo dalle sostanze presenti **adesso**, non da come ci sono arrivate. Questo è comodissimo: possiamo fare i conti senza conoscere tutti i passaggi intermedi.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> funzione di stato = conta solo il <strong>punto di partenza</strong> e il <strong>punto di arrivo</strong>, non il viaggio in mezzo. Come l'altitudine: importa dove sei, non come ci sei salito.</div>
+
+## Entalpia ed esotermico/endotermico
+
+L'**entalpia** (simbolo **H**) è una funzione di stato che possiamo immaginare come il **contenuto di calore** di un sistema a pressione costante (la pressione normale dell'aria, quella in cui facciamo quasi tutti gli esperimenti).
+
+Da sola la H è difficile da misurare. Quello che ci interessa davvero è la sua **variazione**, scritta **DeltaH** (si legge "delta acca"): cioè quanto calore è cambiato passando dai reagenti ai prodotti.
+
+DeltaH = H finale meno H iniziale.
+
+Ci sono due casi, ed è tutto qui:
+
+- Reazione **esotermica**: il sistema **rilascia** calore verso l'ambiente. L'ambiente si **scalda**. In questo caso `DeltaH` è negativo (`DeltaH < 0`). Esempio: bruciare un pezzo di legno, oppure il tuo corpo che brucia gli zuccheri per scaldarti.
+- Reazione **endotermica**: il sistema **assorbe** calore dall'ambiente. L'ambiente si **raffredda**. In questo caso `DeltaH` è positivo (`DeltaH > 0`). Esempio: la borsa del ghiaccio istantaneo che usi su una distorsione, che diventa fredda appena la pieghi.
+
+Trucco per ricordarli: **eso** = "esce" il calore (esce dal sistema). **endo** = "entra" il calore (entra nel sistema).
+
+<Diagram caption="Esotermica: il calore esce dal sistema. Endotermica: il calore entra nel sistema." code={`flowchart TB
+  E1["Reazione ESOTERMICA"] --> E2["Il sistema RILASCIA calore<br/>l'ambiente si scalda"]
+  E2 --> E3["DeltaH negativo (eso = esce)"]
+  N1["Reazione ENDOTERMICA"] --> N2["Il sistema ASSORBE calore<br/>l'ambiente si raffredda"]
+  N2 --> N3["DeltaH positivo (endo = entra)"]`} />
+
+<Diagram caption="Il confine tra sistema e ambiente e il verso del calore" code={`flowchart LR
+  AmbF["Ambiente"] -->|"calore entra: ENDO"| Sis["Sistema<br/>(la reazione)"]
+  Sis -->|"calore esce: ESO"| AmbU["Ambiente"]`} />
+
+Perché conta in medicina e veterinaria: il corpo di un cane, di un gatto o di una persona è una fabbrica di reazioni. Molte sono **esotermiche** e servono proprio a **produrre calore** per mantenere la temperatura corporea. Capire eso/endo ti aiuta poi a capire il **metabolismo** e la febbre.
+
+## Guarda il video
+
+<YouTube id="5C5klqy9gzg" title="Esperimento: reazioni esotermiche ed endotermiche — Lattes Editori" />
+
+<VideoVisto id="chim-u1-30" />
+
+## Da ricordare
+
+- **Sistema** = la parte che osservi; **ambiente** = tutto il resto attorno. Un confine immaginario li separa.
+- **Funzione di stato** = dipende solo dallo stato iniziale e finale, **non** dal percorso (come l'altitudine).
+- **Entalpia H** = il "contenuto di calore" a pressione costante; ci interessa la sua variazione **DeltaH**.
+- **Esotermica**: il calore **esce**, l'ambiente si scalda, `DeltaH` è negativo.
+- **Endotermica**: il calore **entra**, l'ambiente si raffredda, `DeltaH` è positivo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="In una reazione, le sostanze che reagiscono dentro la provetta sono il 'sistema'. Come si chiama tutto ciò che sta attorno (provetta, aria, mano)?"
+  opzioni={["il prodotto", "l'ambiente", "l'entalpia", "il confine"]}
+  corretta={1}
+  spiegazione="Tutto ciò che sta attorno al sistema si chiama ambiente. Il calore può passare dal sistema all'ambiente e viceversa."
+/>
+
+<Quiz
+  domanda="Una funzione di stato (come l'entalpia) dipende da:"
+  opzioni={["solo dal percorso seguito", "solo dallo stato iniziale e finale, non dal percorso", "dal tempo impiegato", "dal colore delle sostanze"]}
+  corretta={1}
+  spiegazione="Come l'altitudine di una montagna: conta solo dove arrivi, non se sali a piedi o in funivia. Per questo si chiama funzione di stato."
+/>
+
+<Quiz
+  domanda="Tocchi una provetta dove sta avvenendo una reazione e la senti diventare CALDA. La reazione è:"
+  opzioni={["endotermica (DeltaH positivo)", "esotermica (DeltaH negativo)", "una funzione di stato", "senza scambio di calore"]}
+  corretta={1}
+  spiegazione="Se l'ambiente (la provetta, la tua mano) si scalda, vuol dire che il sistema ha rilasciato calore: è esotermica e il DeltaH è negativo. Ricorda: eso = il calore esce."
+/>
+
+<Esercizio
+  problema="La borsa del ghiaccio istantaneo: appena la pieghi, dentro avviene una reazione e la borsa diventa FREDDA al tatto. Dì se la reazione è esotermica o endotermica e se il DeltaH è positivo o negativo, spiegando il perché."
+  soluzione="È endotermica. La borsa diventa fredda perché il sistema (la reazione dentro) ASSORBE calore dall'ambiente, cioè dalla tua pelle e dall'aria attorno. L'ambiente perde calore, quindi si raffredda. Quando il calore entra nel sistema, il DeltaH è positivo (maggiore di zero). Trucco: endo = il calore entra."
+/>
+
+</section>
+
+</RisorsaLayout>

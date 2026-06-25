@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u3-09-1",
+    "topicId": "chim-u3-09",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: nel calcolo del Kps (prodotto di solubilità) si include anche la concentrazione del sale SOLIDO che resta sul fondo.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il solido non entra nel calcolo: conta solo quello che è disciolto in acqua (gli ioni in soluzione). Il mucchietto sul fondo non si conta. Ad esempio per AgCl: Kps = [Ag+] × [Cl-], punto. Il solido AgCl non compare.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-09-2",
+    "topicId": "chim-u3-09",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Hai una soluzione di AgCl all'equilibrio con il suo solido sul fondo. Aggiungi del sale da cucina (NaCl), che porta altri ioni Cl- in acqua. Cosa succede all'AgCl?",
+    "choices": [
+      "Si scioglie di meno: una parte di Ag+ si riattacca ai nuovi Cl- e precipita come solido",
+      "Si scioglie di più: più ioni in acqua aumentano la 'capienza' della soluzione",
+      "Non cambia niente: il Kps è fisso, quindi la quantità disciolta resta uguale",
+      "Il solido si dissolve tutto e poi ricristallizza come NaCl"
+    ],
+    "answer": 0,
+    "explain": "È l'effetto dello ione comune: aggiungi uno ione (Cl-) che il sale AgCl ha già. L'acqua si 'affolla' di Cl-, quindi gli Ag+ trovano subito qualcuno a cui attaccarsi e precipitano. Risultato: il sale si scioglie ancora meno. È lo stesso principio dei calcoli renali: se le urine sono già ricche di ossalato e arrivano altri ossalati dal cibo, il calcio precipita più facilmente.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-09-3",
+    "topicId": "chim-u3-09",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "open",
+    "q": "Un'analisi delle urine di un cane mostra che il prodotto delle concentrazioni di calcio e ossalato (il valore Q) è MAGGIORE del Kps di quel sale. Cosa succederà nel rene? E perché il veterinario consiglia di far bere molta acqua al cane per prevenire i calcoli?",
+    "answer": "Se Q supera il Kps significa che si è superata la 'capienza' della soluzione: c'è più sale di quanto l'acqua possa tenere disciolto, quindi il sale in eccesso precipita come solido. Nel rene questo solido è il calcolo (il sassolino). Far bere molta acqua diluisce l'urina: le concentrazioni di calcio e ossalato scendono, Q torna sotto il Kps e il calcolo non si forma. È come aggiungere acqua a un caffè troppo dolce: lo zucchero in eccesso che era precipitato si riscoglie perché hai aumentato la 'capienza'. Regola pratica: Q < Kps → tutto sciolto; Q = Kps → equilibrio; Q > Kps → precipita.",
+    "explain": "Da ricordare: Q è lo stato attuale, Kps è il limite. Se Q supera il limite, precipita (calcolo). Bere acqua diluisce e abbassa Q.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u3-09-4",
+    "topicId": "chim-u3-09",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Il prodotto di solubilità del solfito di stronzio (SrSO3) è Kps = 4,0 × 10⁻⁸. Quando SrSO3 si scioglie, si forma un solo ione Sr2+ e un solo ione SO3²⁻ per ogni formula unità. Qual è la concentrazione degli ioni Sr2+ in una soluzione satura?",
+    "choices": [
+      "2,0 × 10⁻⁴ mol/L",
+      "4,0 × 10⁻⁴ mol/L",
+      "2,0 × 10⁻⁸ mol/L",
+      "1,4 × 10⁻² mol/L",
+      "1,6 × 10⁻¹⁶ mol/L"
+    ],
+    "answer": 0,
+    "explain": "SrSO3 → Sr2+ + SO3²⁻. Se la solubilità è 's', allora [Sr2+] = s e [SO3²⁻] = s. Kps = s × s = s². Quindi s = √(4,0 × 10⁻⁸) = 2,0 × 10⁻⁴ mol/L (radice di 4,0 = 2,0; la radice di 10⁻⁸ dimezza l'esponente e dà 10⁻⁴). Trappole: '4,0 × 10⁻⁴' è il doppio del risultato corretto, cioè chi dimezza l'esponente ma si dimentica di fare la radice anche del 4,0; '2,0 × 10⁻⁸' è solo la metà del Kps (chi divide il Kps per 2 invece di farne la radice); '1,4 × 10⁻²' viene da un calcolo sbagliato della radice (in realtà è √(2 × 10⁻⁴)); '1,6 × 10⁻¹⁶' è un numero piccolissimo che esce facendo l'opposto della radice, cioè elevando al quadrato invece di estrarre la radice. La chiave: scrivi s², uguaglia al Kps, poi fai la radice quadrata.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u3-09-5",
+    "topicId": "chim-u3-09",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Il prodotto di solubilità del solfuro di stagno (SnS) è Kps = [Sn2+][S2-] = 1,0 × 10⁻²⁶. SnS si scioglie dando un solo Sn2+ e un solo S2⁻ per formula unità. Qual è la concentrazione degli ioni Sn2+ in una soluzione satura di SnS?",
+    "choices": [
+      "1,0 × 10⁻¹³ M",
+      "0,5 × 10⁻¹³ M",
+      "1,0 × 10⁻²⁶ M",
+      "0,5 × 10⁻²⁶ M",
+      "1,0 × 10⁻⁵² M"
+    ],
+    "answer": 0,
+    "explain": "SnS → Sn2+ + S2⁻. Entrambi gli ioni hanno la stessa concentrazione 's'. Kps = s × s = s² = 1,0 × 10⁻²⁶. Quindi s = √(1,0 × 10⁻²⁶) = 1,0 × 10⁻¹³ M. Trappole: '0,5 × 10⁻¹³' è la metà del risultato corretto (chi, sbagliando, divide a metà il valore trovato perché 'ci sono 2 ioni'); '1,0 × 10⁻²⁶' è il Kps direttamente, senza estrarre la radice; '0,5 × 10⁻²⁶' è la metà del Kps (chi divide il Kps per 2); '1,0 × 10⁻⁵²' è il Kps al quadrato, l'opposto esatto (ha moltiplicato invece di estrarre la radice). Metodo sicuro: Kps = s² → s = √Kps. Per esponenti pari, la radice dimezza l'esponente: √(10⁻²⁶) = 10⁻¹³.",
+    "tags": ["prova d'esame"]
+  }
+]

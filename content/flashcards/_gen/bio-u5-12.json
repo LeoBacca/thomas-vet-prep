@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u5-12-1",
+    "topicId": "bio-u5-12",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: l'ossigeno che respiriamo serve alla cellula per 'bruciare' direttamente il glucosio, come una fiamma che consuma carburante.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'ossigeno non tocca il glucosio direttamente. Il suo ruolo e molto piu specifico: e l'accettore finale degli elettroni alla fine della catena di trasporto (Complesso IV), dove si combina con H⁺ per formare acqua. Senza O₂ la catena si blocca e la cellula non produce quasi piu ATP — ma non e una 'fiamma'.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-12-2",
+    "topicId": "bio-u5-12",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "L'ATP sintasi e la 'turbina molecolare' del mitocondrio. Cosa la fa girare?",
+    "choices": [
+      "Il flusso di protoni (H⁺) che rientra nella matrice attraverso il suo canale",
+      "La combustione diretta del glucosio",
+      "Gli elettroni provenienti dal NADH che la attraversano",
+      "L'ossigeno che si lega alle sue subunita"
+    ],
+    "answer": 0,
+    "explain": "L'ATP sintasi funziona come una turbina idraulica: i protoni (H⁺) accumulati nello spazio intermembrana 'cadono' attraverso il suo canale verso la matrice (dove ce ne sono pochi) e quella corrente di protoni fa ruotare fisicamente la parte centrale della proteina. Quella rotazione meccanica sintetizza ATP da ADP + fosfato — il meccanismo si chiama chemiosmosi. Gli elettroni di NADH alimentano i complessi che pompano H⁺, ma non attraversano la turbina: e il flusso di H⁺ a farla girare.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-12-3",
+    "topicId": "bio-u5-12",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Descrivi con parole semplici cosa succede nella catena di trasporto degli elettroni: da dove arrivano gli elettroni, cosa fanno i complessi I-IV, come si crea il gradiente protonico e perche senza ossigeno tutto si ferma.",
+    "answer": "Gli elettroni arrivano dalla glicolisi e dal ciclo di Krebs, legati a due 'navette': NADH e FADH₂. Queste navette consegnano gli elettroni al primo complesso della catena, incastonata nella membrana interna del mitocondrio. I complessi I, III e IV usano l'energia degli elettroni che li attraversano per pompare protoni (H⁺) dalla matrice verso lo spazio intermembrana: e come riempire un serbatoio d'acqua in quota, accumulando energia potenziale. Il Complesso II riceve elettroni da FADH₂ ma NON pompa protoni. Alla fine del percorso (Complesso IV) gli elettroni vengono ceduti all'ossigeno, che li usa per formare acqua (H₂O). Lo spazio intermembrana si riempie cosi di H⁺, creando un gradiente: tanti H⁺ da un lato, pochissimi dall'altro. Quei protoni 'vogliono' tornare nella matrice, ma l'unico varco e l'ATP sintasi: passandoci attraverso la fanno girare e lei produce ATP. Senza ossigeno, gli elettroni non possono essere scaricati alla fine e la catena si inceppa: i protoni smettono di essere pompati, il gradiente collassa e la produzione di ATP cessa quasi del tutto.",
+    "explain": "Da ricordare: NADH/FADH₂ portano elettroni → i complessi pompano H⁺ → gradiente protonico → ATP sintasi ruota → ATP. L'ossigeno e il 'secchio' finale che riceve gli elettroni.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-12-4",
+    "topicId": "bio-u5-12",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Nella fosforilazione ossidativa, qual e l'accettore finale degli elettroni della catena respiratoria?",
+    "choices": [
+      "NAD⁺",
+      "CO₂",
+      "ADP",
+      "H₂O",
+      "O₂"
+    ],
+    "answer": 4,
+    "explain": "L'ossigeno (O₂) e l'accettore finale: al Complesso IV riceve gli elettroni e si combina con H⁺ formando acqua (H₂O). Senza O₂ la catena si blocca. Le trappole: NAD⁺ e il trasportatore che PORTA gli elettroni alla catena (e l'opposto di accettore finale); CO₂ e prodotto dal ciclo di Krebs ma non accetta elettroni nella catena; ADP e il 'substrato' dell'ATP sintasi, non un accettore di elettroni; H₂O e il PRODOTTO della reazione finale, non l'accettore (e l'ossigeno che accetta, non l'acqua gia formata).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-12-5",
+    "topicId": "bio-u5-12",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quanti ATP produce approssimativamente l'ossidazione COMPLETA di una molecola di glucosio nella respirazione aerobica?",
+    "choices": [
+      "2 ATP (solo dalla glicolisi)",
+      "8 ATP",
+      "30-32 ATP",
+      "100 ATP circa",
+      "4 ATP (glicolisi + ciclo di Krebs)"
+    ],
+    "answer": 2,
+    "explain": "Il bilancio completo e circa 30-32 ATP: 2 dalla glicolisi + 2 dal ciclo di Krebs + 28-30 dalla catena di trasporto e dalla fosforilazione ossidativa. La quasi totalita (28-30 ATP) viene proprio dall'ultima tappa. Trappola '2 ATP': e solo il contributo della glicolisi, chi dimentica le tappe successive; '4 ATP' somma solo glicolisi e Krebs, ignorando la catena (la parte piu produttiva); '8 ATP' e un numero inventato senza base; '100 ATP' e nettamente esagerato. La fermentazione produce solo 2 ATP: ecco perche la respirazione aerobica e enormemente piu efficiente.",
+    "tags": ["prova d'esame"]
+  }
+]

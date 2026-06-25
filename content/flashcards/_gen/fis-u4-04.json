@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u4-04-1",
+    "topicId": "fis-u4-04",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: quando due onde si incontrano nello stesso punto, se una spinge 'su' e l'altra spinge 'giu' con la stessa forza, il risultato in quel punto e zero — le onde si cancellano a vicenda.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "E il principio di sovrapposizione: la perturbazione totale e la somma delle due. Cresta + avvallamento uguale e opposto = zero. Si chiama interferenza distruttiva. (Le cuffie noise-cancelling funzionano esattamente cosi.)",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u4-04-2",
+    "topicId": "fis-u4-04",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "open",
+    "q": "Due altoparlanti emettono lo stesso suono alla stessa frequenza. In un punto della stanza le onde arrivano perfettamente in fase (cresta su cresta). Cosa succede all'ampiezza del suono in quel punto? Come si chiama questo fenomeno? E cosa succederebbe se invece arrivassero in perfetta opposizione di fase?",
+    "answer": "In fase: le ampiezze si sommano, quindi il suono risultante e piu forte (ampiezza doppia rispetto a una singola onda). Si chiama interferenza costruttiva. In opposizione di fase: le ampiezze si sottraggono e si annullano — silenzio in quel punto. Si chiama interferenza distruttiva. In entrambi i casi, dopo essersi incrociate, le onde riprendono la forma originale come se nulla fosse successo.",
+    "explain": "Principio di sovrapposizione: la perturbazione totale e sempre la somma delle due onde punto per punto. Il risultato dipende dalla fase relativa: in fase → costruttiva (ampiezza massima); in opposizione → distruttiva (ampiezza zero).",
+    "tags": ["risposta aperta"]
+  }
+]

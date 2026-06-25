@@ -1,0 +1,67 @@
+{
+ "id": "bio-u5-10",
+ "titolo": "La glicolisi",
+ "materia": "biologia",
+ "unita": 5,
+ "slug": "10-la-glicolisi",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/biologia/u5/10-la-glicolisi.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "Quale delle seguenti fasi del metabolismo del glucosio richiede ATP?",
+   "choices": [
+    "la glicolisi",
+    "il ciclo di Krebs",
+    "il trasporto degli elettroni",
+    "la fosforilazione ossidativa",
+    "l'ossidazione del piruvato"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2013",
+   "q": "In quale/i delle seguenti fasi della respirazione cellulare si produce ATP? 1. Da glucosio a piruvato; 2. Da piruvato a lattato; 3. Da piruvato ad etanolo.",
+   "choices": [
+    "Solo 1",
+    "Solo 2",
+    "Solo 1 e 2",
+    "Solo 2 e 3",
+    "Solo 1 e 3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2014",
+   "q": "Quale delle seguenti molecole rappresenta un prodotto finale della glicolisi nell'uomo?",
+   "choices": [
+    "NAD ridotto",
+    "H2O",
+    "Lattato",
+    "RuBP",
+    "CO2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "La glicolisi è la via che dà inizio al catabolismo del glucosio. In quale comparto della cellula avviene?",
+   "choices": [
+    "Nel citosol",
+    "Nella matrice dei mitocondri",
+    "Tra le due membrane dei mitocondri",
+    "Nel reticolo endoplasmatico liscio",
+    "Nell'apparato di Golgi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

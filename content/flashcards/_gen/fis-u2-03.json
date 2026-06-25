@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-03-1",
+    "topicId": "fis-u2-03",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: l'accelerazione misura quanto sei veloce in un dato momento.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'accelerazione NON misura la velocità: misura quanto CAMBIA la velocità ogni secondo. Una macchina che viaggia a 100 km/h costante ha accelerazione zero, perché la velocità non sta cambiando. È come la differenza tra 'quanto sei ricco' e 'quanto stai guadagnando': l'accelerazione è il tasso di cambiamento, non il valore attuale.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-03-2",
+    "topicId": "fis-u2-03",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un cane da slitta accelera da 2 m/s a 10 m/s in 4 secondi. Qual è la sua accelerazione media?",
+    "choices": [
+      "2 m/s²  —  la velocità cambia di 2 m/s ogni secondo",
+      "8 m/s²  —  è la variazione totale di velocità",
+      "0,5 m/s²  —  dividi il tempo per la variazione di velocità (al contrario)",
+      "12 m/s²  —  sommi velocità iniziale e finale e dividi per il tempo"
+    ],
+    "answer": 0,
+    "explain": "Formula: a = Δv / Δt. Δv = 10 − 2 = 8 m/s; Δt = 4 s; a = 8 / 4 = 2 m/s². Significa: ogni secondo il cane guadagna 2 m/s di velocità. La trappola più comune è dimenticare di sottrarre la velocità iniziale (risposta 'b' dà solo Δv = 8, non a). La 'c' inverte la frazione (Δt / Δv = 4 / 8 = 0,5) invece di fare Δv / Δt. La 'd' somma le velocità invece di sottrarle.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-03-3",
+    "topicId": "fis-u2-03",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra accelerazione media e accelerazione istantanea. Come si legge l'accelerazione istantanea su un grafico velocità–tempo?",
+    "answer": "L'accelerazione media descrive come cambia la velocità su un INTERO intervallo di tempo: si calcola come Δv / Δt, cioè variazione totale di velocità divisa per il tempo totale. È come la media dei voti del semestre: ti dice come è andata in generale, ma non cosa è successo giorno per giorno. L'accelerazione istantanea invece è il valore dell'accelerazione in UN SINGOLO MOMENTO, come il contachilometri della macchina in un preciso istante. Si ottiene matematicamente facendo diventare l'intervallo di tempo Δt sempre più piccolo, fino a tendere a zero. Sul grafico velocità–tempo: se il grafico è una retta (velocità cambia in modo costante), la pendenza della retta è uguale all'accelerazione media = accelerazione istantanea ovunque. Se il grafico è una curva (velocità cambia in modo variabile), l'accelerazione istantanea in un punto si legge come la PENDENZA DELLA TANGENTE alla curva in quel punto, cioè della retta che 'tocca' la curva esattamente lì.",
+    "explain": "Da ricordare: media = Δv / Δt su un intervallo; istantanea = pendenza della tangente al grafico v–t in un punto. Se il grafico è una retta, le due coincidono.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-03-4",
+    "topicId": "fis-u2-03",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quale delle seguenti automobili ha l'accelerazione media più alta? (Domanda tratta dall'esame reale 2015)",
+    "choices": [
+      "Un'auto che va da 20 m/s a 60 m/s in 4 s  →  a = 10 m/s²",
+      "Un'auto che va da 0 a 2,0 m/s in 0,5 s  →  a = 4 m/s²",
+      "Un'auto che va da 0 a 60 m/s in 10 s  →  a = 6 m/s²",
+      "Un'auto che va da 10 m/s a 30 m/s in 8 s  →  a = 2,5 m/s²",
+      "Un'auto che va da 0 a 10 m/s in 10 s  →  a = 1 m/s²"
+    ],
+    "answer": 0,
+    "explain": "Devi calcolare a = Δv / Δt per ciascuna. A: (60−20)/4 = 40/4 = 10 m/s². B: 2/0,5 = 4 m/s². C: 60/10 = 6 m/s². D: (30−10)/8 = 20/8 = 2,5 m/s². E: 10/10 = 1 m/s². Vince la A con 10 m/s². La trappola classica è guardare solo la velocità finale più alta (C arriva a 60 m/s come la A) senza considerare il tempo: ma C impiega 10 s contro i 4 s della A, quindi la sua accelerazione è molto più bassa. L'altra trappola è la B: la velocità finale è minima (2 m/s), ma in pochissimo tempo (0,5 s), quindi l'accelerazione è comunque 4 m/s², più alta di D ed E. Il calcolo è obbligatorio: non si può indovinare.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-03-5",
+    "topicId": "fis-u2-03",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un gatto salta giù da un tavolo e rallenta dopo l'atterraggio: la sua velocità passa da 3 m/s a 0 m/s in 0,5 s. Quale affermazione sull'accelerazione in questa fase è CORRETTA?",
+    "choices": [
+      "L'accelerazione è negativa e vale −6 m/s², perché la velocità sta diminuendo",
+      "L'accelerazione è positiva e vale +6 m/s², perché il gatto si sta muovendo",
+      "L'accelerazione è zero, perché il gatto alla fine si ferma",
+      "L'accelerazione è negativa e vale −1,5 m/s², perché si fa la media tra velocità iniziale e finale",
+      "Non si può calcolare l'accelerazione se il corpo si ferma"
+    ],
+    "answer": 0,
+    "explain": "a = Δv / Δt = (0 − 3) / 0,5 = −3 / 0,5 = −6 m/s². Il segno negativo indica che la velocità sta DIMINUENDO (decelerazione), non che l'accelerazione 'manca'. Trappola b: confonde 'il corpo si muove' con 'l'accelerazione è positiva' — il segno dipende dalla direzione del cambiamento, non dal moto in sé. Trappola c: l'accelerazione è zero solo se la velocità è costante, non se il corpo è fermo alla fine. Trappola d: −1,5 m/s² si ottiene facendo la media tra le velocità (3 + 0) / 2 = 1,5, ma quella è una velocità media, non un'accelerazione; l'accelerazione è sempre Δv / Δt. Trappola e: filler fuori tema, si può sempre calcolare a = Δv / Δt.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u4-01-1",
+    "topicId": "bio-u4-01",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: una delezione di 3 nucleotidi in un gene NON causa uno spostamento della cornice di lettura (frameshift), perche 3 e esattamente un codone.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il codice genetico si legge a triplette (codoni di 3 basi). Se togli esattamente 3 basi, la lettura non si sfasa: perdi un codone (cioe un aminoacido), ma tutti quelli prima e dopo vengono letti correttamente. Il frameshift scatta solo se il numero di basi aggiunte o tolte NON e multiplo di 3 (es. 1, 2, 4, 5...).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-01-2",
+    "topicId": "bio-u4-01",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Immagina il DNA come un libro e le triplette di basi come le parole. Una INSERZIONE di 1 lettera nel mezzo del testo che cosa provoca?",
+    "choices": [
+      "Cambia solo la parola in cui cade l'errore, le altre restano intatte",
+      "Tutte le parole dopo l'errore vengono lette in modo sbagliato (frameshift)",
+      "Il libro si accorcia di una pagina intera",
+      "Non cambia nulla perche il DNA si auto-corregge sempre"
+    ],
+    "answer": 1,
+    "explain": "Il DNA si legge in triplette (codoni) una dopo l'altra, come parole di 3 lettere. Parti da 'IL CANE MANGIA' scritto a gruppi di 3: ILC-ANE-MAN-GIA. Se inserisci una X all'inizio, tutti i gruppi successivi scalano: XIL-CAN-EMA-NGI-A, e da li in poi nessuna parola ha piu senso. Questo si chiama frameshift (spostamento della cornice di lettura): poiche 1 non e multiplo di 3, tutti i codoni a valle vengono letti in modo sbagliato. E quasi sempre molto dannoso per la proteina prodotta.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-01-3",
+    "topicId": "bio-u4-01",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra mutazione GENICA e mutazione CROMOSOMICA. Fai un esempio concreto di ciascuna e di' come si distinguono in laboratorio.",
+    "answer": "Una mutazione genica e un errore a livello di uno o pochi nucleotidi (le 'lettere' del DNA): puo essere la sostituzione di una base con un'altra, l'aggiunta (inserzione) o la rimozione (delezione) di una o poche basi. Esempio: la malattia falciforme e causata da UNA sola sostituzione nel gene dell'emoglobina. Una mutazione cromosomica invece coinvolge un segmento intero di cromosoma: un pezzo puo essere perso (delezione cromosomica), copiato due volte (duplicazione), capovolto (inversione) oppure spostato su un altro cromosoma (traslocazione); oppure puo cambiare il numero totale di cromosomi, come nella trisomia 21 (sindrome di Down, un cromosoma 21 di troppo). La differenza pratica in laboratorio: le mutazioni cromosomiche si vedono al microscopio guardando il cariotipo (la foto di tutti i cromosomi colorati); le mutazioni geniche invece sono invisibili al microscopio e richiedono il sequenziamento del DNA.",
+    "explain": "Chiave: genica = nucleotidi (invisibile al microscopio, serve il sequenziamento); cromosomica = segmenti o numeri di cromosomi (visibile nel cariotipo).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u4-01-4",
+    "topicId": "bio-u4-01",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Se in un gene si verifica una mutazione NONSENSO, la proteina prodotta rispetto alla forma normale sara:",
+    "choices": [
+      "Piu corta, perche appare un codone di STOP prematuro che blocca la sintesi",
+      "Di uguale lunghezza, perche la mutazione cambia solo un aminoacido",
+      "Piu lunga, perche si aggiunge un aminoacido extra",
+      "Con un aminoacido in meno nel mezzo della catena",
+      "Con una sequenza aminoacidica totalmente differente dall'inizio alla fine"
+    ],
+    "answer": 0,
+    "explain": "Una mutazione nonsenso trasforma un codone che codifica un aminoacido in un codone di STOP (segnale di fine). Il ribosoma smette di costruire la proteina in quel punto: la catena si interrompe prima del dovuto, quindi la proteina risulta piu corta. Trappola 'di uguale lunghezza': questa e la mutazione sinonima (silente), non la nonsenso. Trappola 'piu lunga': al contrario, e la nonsenso che accorcia, non allunga. Trappola 'aminoacido in meno nel mezzo': la catena non si interrompe nel mezzo per saltare un aminoacido — si blocca definitivamente dal punto della mutazione in poi. Trappola 'sequenza totalmente diversa': questo e il frameshift, non la nonsenso.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u4-01-5",
+    "topicId": "bio-u4-01",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "La sequenza dell'mRNA CUGAUCGUAAUGCGC codifica per Leu-Ile-Val-Met-Arg. Si verifica la delezione del settimo nucleotide (G). Quale conseguenza e piu probabile?",
+    "choices": [
+      "Nessun cambiamento grazie alla ridondanza del codice genetico",
+      "L'amminoacido Val verrebbe sostituito con un altro",
+      "L'amminoacido Ile verrebbe sostituito con un altro",
+      "La catena aminoacidica si interrompe prematuramente dopo Ile",
+      "Un cambiamento di tutta la sequenza aminoacidica a partire da Val"
+    ],
+    "answer": 3,
+    "explain": "Dividiamo in codoni l'mRNA originale: CUG-AUC-GUA-AUG-CGC (Leu-Ile-Val-Met-Arg). Il settimo nucleotide e la G che apre il terzo codone (GUA = Val). Se la togliamo, le basi a valle scalano di una posizione e la nuova sequenza diventa CUG-AUC-UAA-UGC-GC: i primi due codoni restano Leu-Ile, ma il terzo ora e UAA, che e un codone di STOP. Quindi il ribosoma si ferma e la catena si interrompe subito dopo Ile (risposta corretta, compito 2020). Trappola 'nessun cambiamento': la ridondanza aiuta solo nelle SOSTITUZIONI sinonime, mai nei frameshift. Trappola 'Val sostituito': il frameshift non scambia un singolo aminoacido, stravolge la lettura da quel punto in poi. Trappola 'Ile sostituito': Ile e letto dal secondo codone AUC, che la delezione del settimo nucleotide non tocca. Trappola 'tutta la sequenza cambia': qui non c'e una catena lunga riscritta, perche compare subito uno STOP.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,10 @@
+{
+ "id": "fis-u2-12",
+ "titolo": "Lavoro meccanico",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "12-lavoro-meccanico",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u2/12-lavoro-meccanico.mdx",
+ "examQuestions": []
+}

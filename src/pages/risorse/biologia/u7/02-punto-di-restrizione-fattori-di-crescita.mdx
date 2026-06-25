@@ -1,0 +1,120 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u7-02">
+
+## Il problema: come fa la cellula a decidere se dividersi?
+
+La cellula non si divide a caso. Prima di copiare tutto il suo DNA (fase S), si ferma a un "bivio" e controlla: ho abbastanza segnali dall'esterno? Devo davvero andare avanti?
+
+Questo bivio si chiama **punto di restrizione** (o punto R) e si trova nella fase G1 del ciclo cellulare.
+
+- Se i segnali ci sono → la cellula supera il punto R e si divide.
+- Se i segnali mancano → la cellula si ferma o entra in quiescenza (pausa).
+
+Una volta superato il punto R, la cellula è "committed": andrà avanti anche se i segnali esterni spariscono. È come salire su un treno in partenza — una volta a bordo non puoi più scendere.
+
+---
+
+## I fattori di crescita: il segnale di partenza
+
+I **fattori di crescita** sono proteine prodotte da altre cellule che arrivano dall'esterno e legano recettori sulla membrana della cellula bersaglio.
+
+Esempi: EGF (fattore di crescita epidermico), PDGF, IGF.
+
+Quando arriva un fattore di crescita, attiva una catena di segnali all'interno della cellula. Il risultato finale è la produzione di una proteina chiave: la **ciclina D**.
+
+---
+
+## La ciclina D: l'interruttore interno
+
+La **ciclina D** è una proteina che aumenta solo quando arrivano fattori di crescita. Da sola non fa molto. Diventa potente quando si lega a un enzima: **Cdk4** o **Cdk6**.
+
+- **Cdk** sta per *Cyclin-dependent kinase*, cioè "chinasi dipendente dalla ciclina".
+- Una chinasi è un enzima che attacca un gruppo fosfato su altre proteine, modificandone il comportamento (fosforilazione).
+
+Quando ciclina D si unisce a Cdk4 o Cdk6, forma un **complesso attivo** che può fosforilare la sua proteina bersaglio principale: **Rb**.
+
+---
+
+## Rb: il guardiano del cancello
+
+**Rb** (proteina del Retinoblastoma) è una proteina che funziona come un cancello chiuso. Quando è attiva (non fosforilata), tiene bloccato un fattore di trascrizione chiamato **E2F**.
+
+- **E2F** vorrebbe attivare i geni necessari per entrare in fase S (copiare il DNA).
+- Ma finché Rb lo tiene stretto, E2F non può fare niente.
+
+Rb è come una guardia del corpo che tiene fermo il direttore (E2F) e gli impedisce di dare ordini.
+
+---
+
+## La fosforilazione di Rb: aprire il cancello
+
+Quando il complesso **ciclina D–Cdk4/6** fosforila Rb (cioè gli attacca gruppi fosfato), Rb cambia forma e perde la presa su E2F.
+
+E2F viene liberato.
+
+A questo punto E2F può attivare i geni per la fase S: vengono prodotte nuove cicline (ciclina E), nuovi enzimi per copiare il DNA, e la cellula inizia la replicazione.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> I fattori di crescita → ciclina D → ciclina D + Cdk4/6 fosforilano Rb → Rb molla E2F → E2F attiva i geni → la cellula entra in fase S.</div>
+
+---
+
+## Un ciclo che si auto-amplifica
+
+Una volta liberato, E2F non solo attiva i geni della fase S: attiva anche la **ciclina E**. La ciclina E si lega a **Cdk2** e questo nuovo complesso fosforila ulteriormente Rb, inattivandola ancora di più. È un circuito di amplificazione: la cellula non torna indietro.
+
+---
+
+## I due diagrammi
+
+<Diagram caption="Via di segnalazione dal fattore di crescita all'ingresso in fase S" code={`flowchart TB
+  A["Fattore di crescita<br/>(es. EGF, PDGF)"] --> B["Recettore di membrana attivato"]
+  B --> C["Cascata di segnali intracellulari<br/>(RAS → MAPK → nucleo)"]
+  C --> D["Produzione di Ciclina D"]
+  D --> E["Complesso Ciclina D – Cdk4/6"]
+  E --> F["Fosforilazione di Rb (pRb)"]
+  F --> G["Rb cambia forma e libera E2F"]
+  G --> H["E2F attiva i geni della fase S"]
+  H --> I["La cellula entra in fase S<br/>(replicazione del DNA)"]`} />
+
+<Diagram caption="Stato di Rb prima e dopo la fosforilazione" code={`flowchart LR
+  subgraph PRIMA["G1 precoce — senza fattori di crescita"]
+    R1["Rb attiva (ipofosforilata)"] -- "tiene bloccato" --> E1["E2F inattivo"]
+    E1 -- "NON attiva" --> G1["Geni fase S — OFF"]
+  end
+  subgraph DOPO["G1 tardiva — fattori di crescita presenti"]
+    R2["Rb fosforilata (inattiva)"] -- "libera" --> E2["E2F attivo"]
+    E2 -- "attiva" --> G2["Geni fase S — ON"]
+    G2 --> S["Ingresso in fase S"]
+  end
+  PRIMA -- "Ciclina D + Cdk4/6<br/>fosforilano Rb" --> DOPO`} />
+
+## Guarda il video
+<YouTube id="90tXsk4mkkM" title="Regolazione CICLO CELLULARE. Fattori di Crescita, Citochine, Ciclina (Proteina), Cdk (Enzima), APC" />
+<VideoVisto id="bio-u7-02" />
+
+## Da ricordare
+- I fattori di crescita inducono la sintesi di ciclina D, che attiva Cdk4/6 e avvia la fosforilazione di Rb.
+- Rb ipofosforilata trattiene E2F bloccando l'ingresso in fase S; quando viene fosforilata da ciclina D–Cdk4/6, E2F è liberato e attiva la trascrizione dei geni necessari alla replicazione.
+- Il punto di restrizione è un punto di non ritorno: una volta superato (E2F attivo + ciclina E che amplifica il segnale), la cellula si divide anche senza ulteriori fattori di crescita.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è il ruolo della proteina Rb in una cellula che non riceve fattori di crescita?" opzioni={["Attiva E2F per avviare la replicazione del DNA","Lega e inibisce E2F impedendo l'ingresso in fase S","Fosforila la ciclina D per attivarla","Degrada i fattori di crescita in eccesso"]} corretta={1} spiegazione="Rb non fosforilata (ipofosforilata) tiene legato E2F e lo mantiene inattivo. Solo dopo la fosforilazione da parte del complesso ciclina D–Cdk4/6, Rb rilascia E2F che può così attivare i geni necessari per la fase S." />
+
+<Quiz domanda="Cosa succede al complesso Ciclina D–Cdk4/6 se i fattori di crescita vengono rimossi prima del punto di restrizione?" opzioni={["Il complesso rimane attivo e la cellula continua verso la fase S","La cellula entra direttamente in mitosi","La ciclina D diminuisce, il complesso si dissocia e la cellula non supera il punto R","Cdk4/6 fosforila comunque Rb senza bisogno della ciclina"]} corretta={2} spiegazione="La ciclina D è instabile e la sua sintesi dipende dai fattori di crescita. Se i fattori di crescita mancano prima del punto R, la ciclina D scende, il complesso con Cdk4/6 non si forma (o si dissocia), Rb rimane attiva e trattiene E2F. La cellula non entra in fase S." />
+
+<Quiz domanda="Perché si dice che E2F crea un 'circuito di amplificazione' dopo essere stato liberato da Rb?" opzioni={["Perché E2F attiva anche la ciclina E, che con Cdk2 fosforila ulteriormente Rb inattivandola del tutto","Perché E2F degrada direttamente Rb senza bisogno delle chinasi","Perché E2F produce nuovi fattori di crescita che escono dalla cellula","Perché E2F blocca i CKI evitando che inibiscano le CDK"]} corretta={0} spiegazione="E2F attiva il gene della ciclina E. La ciclina E si lega a Cdk2 e il nuovo complesso fosforila ulteriormente Rb, rendendola completamente inattiva. Questo crea un loop positivo che garantisce l'ingresso irreversibile in fase S: è il meccanismo molecolare del punto di restrizione." />
+
+<Esercizio problema="Una cellula ha una mutazione che impedisce a Rb di essere fosforilata (Rb è sempre attiva). Cosa succederà alla proliferazione di questa cellula? Che tipo di effetto ha questa mutazione — oncogenico (favorisce il tumore) o soppressivo?" soluzione="Se Rb non può essere fosforilata, rimane sempre legata a E2F, che resta inattivo. I geni della fase S non vengono mai accesi e la cellula non può replicare il DNA né dividersi. La mutazione è quindi soppressiva della proliferazione, NON oncogenica. È l'opposto: tumori reali spesso hanno Rb NON funzionante (mutazione loss-of-function), il che lascia E2F sempre libero e la cellula si divide senza controllo." />
+
+</section>
+
+</RisorsaLayout>

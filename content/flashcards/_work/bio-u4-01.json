@@ -1,0 +1,39 @@
+{
+ "id": "bio-u4-01",
+ "titolo": "Variazioni del genoma: sostituzioni, inserzioni, delezioni; mutazioni geniche e cromosomiche",
+ "materia": "biologia",
+ "unita": 4,
+ "slug": "01-variazioni-del-genoma-sostituzioni-inserzioni-delezioni",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/biologia/u4/01-variazioni-del-genoma-sostituzioni-inserzioni-delezioni.mdx",
+ "examQuestions": [
+  {
+   "year": "2018",
+   "q": "Se in un gene si verifica una mutazione nonsenso la proteina prodotta, rispetto alla forma normale, sarà:",
+   "choices": [
+    "più corta",
+    "di uguale lunghezza",
+    "più lunga",
+    "avrà un aminoacido in meno",
+    "avrà una sequenza aminoacidica totalmente differente"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2020",
+   "q": "La sequenza nucleotidica CUGAUCGUAAUGCGC codifica per gli amminoacidi Leu-Ile-Val-Met-Arg. Una mutazione che provoca la delezione del settimo nucleotide (G) quale dei seguenti eventi comporterebbe?",
+   "choices": [
+    "Un cambiamento di tutta la sequenza amminoacidica dopo l'inserimento dell'amminoacido Ile",
+    "L'amminoacido Val verrebbe sostituito",
+    "Nessun cambiamento grazie alla ridondanza del codice genetico",
+    "L'interruzione della catena amminoacidica",
+    "L'amminoacido Ile verrebbe sostituito"
+   ],
+   "correct": 3,
+   "difficolta": 3,
+   "tipo": "applicazione"
+  }
+ ]
+}

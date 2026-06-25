@@ -1,0 +1,31 @@
+---
+/* Mascotte riusabile (Buggy o un cane). Rende una <img> con path base-aware
+   (compatibile con GitHub Pages) e attributi per performance/accessibilità.
+   Le immagini vivono in /public/mascotte/ e sono GENERATE (non le foto grezze). */
+interface Props {
+  src: string;                 // nome file in /mascotte, es. "buggy-hero.png"
+  alt?: string;
+  class?: string;
+  width?: number;
+  height?: number;
+  decorative?: boolean;        // true -> aria-hidden, alt vuoto (mascotte ornamentali)
+  loading?: 'lazy' | 'eager';
+}
+const {
+  src, alt = '', class: cls = '', width, height,
+  decorative = false, loading = 'lazy', ...rest
+} = Astro.props;
+const base = import.meta.env.BASE_URL;
+const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
+---
+<img
+  src={u('mascotte/' + src)}
+  alt={decorative ? '' : alt}
+  class={('mascotte ' + cls).trim()}
+  width={width}
+  height={height}
+  loading={loading}
+  decoding="async"
+  aria-hidden={decorative ? 'true' : undefined}
+  {...rest}
+/>

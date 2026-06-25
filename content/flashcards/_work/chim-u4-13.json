@@ -1,0 +1,25 @@
+{
+ "id": "chim-u4-13",
+ "titolo": "La cella galvanica: anodo, catodo e potenziali redox standard",
+ "materia": "chimica",
+ "unita": 4,
+ "slug": "13-la-cella-galvanica-anodo-catodo-e",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u4/13-la-cella-galvanica-anodo-catodo-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "Durante il funzionamento di una pila elettrochimica si ha:",
+   "choices": [
+    "una reazione di ossido-riduzione",
+    "solo una reazione di riduzione",
+    "solo una reazione di ossidazione",
+    "una reazione acido-base",
+    "una reazione di neutralizzazione"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

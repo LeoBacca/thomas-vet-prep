@@ -1,0 +1,104 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-11">
+
+## Cos'è il ciclo di Krebs?
+
+Il **ciclo di Krebs** — chiamato anche **ciclo degli acidi tricarbossilici (TCA)** — è una serie di reazioni chimiche che avvengono dentro i mitocondri. È la seconda grande tappa della **respirazione cellulare**, quella che segue la glicolisi.
+
+Lo scopo principale non è produrre molta energia direttamente, ma **estrarre elettroni** dai nutrienti e caricarli su due "navette" molecolari: **NAD⁺** e **FAD**. Queste navette, una volta cariche (diventano NADH e FADH₂), portano gli elettroni alla terza tappa (la catena di trasporto degli elettroni), dove viene prodotta la maggior parte dell'ATP.
+
+> Pensa al ciclo di Krebs come a uno **svuota-bagagli** in aeroporto: prende le valigie (molecole di acetil-CoA) e le smonta pezzo per pezzo. I pezzi utili (elettroni ad alta energia) vengono caricati sulle navette NADH e FADH₂; gli scarti vengono buttati come CO₂.
+
+---
+
+## Il punto di partenza: l'acetil-CoA
+
+Prima di entrare nel ciclo, il **piruvato** — il prodotto finale della glicolisi — viene trasformato in **acetil-CoA** (acetil-coenzima A). Questa conversione avviene nella matrice mitocondriale e libera una molecola di CO₂ e una di NADH per ogni piruvato.
+
+L'acetil-CoA è una molecola a 2 atomi di carbonio. È lei che "entra" nel ciclo vero e proprio.
+
+---
+
+## Le tappe principali del ciclo
+
+Il ciclo si chiama "ciclo" perché la molecola iniziale — l'**ossalacetato** — viene rigenerata alla fine, pronta per ricominciare.
+
+Ecco le tappe chiave in modo semplice:
+
+1. **Condensazione** — L'acetil-CoA (2C) si unisce all'ossalacetato (4C) e forma il **citrato** (6C). Da qui il nome "acidi tricarbossilici" (il citrato ha 3 gruppi -COOH).
+2. **Isomerizzazione** — Il citrato viene riorganizzato in **isocitrato** (sempre 6C), una forma più facile da ossidare.
+3. **Prima ossidazione** — L'isocitrato perde CO₂ e cede elettroni a NAD⁺ → si forma **alfa-chetoglutarato** (5C) + **NADH**.
+4. **Seconda ossidazione** — L'alfa-chetoglutarato perde un'altra CO₂ e cede elettroni → si forma **succinil-CoA** (4C) + **NADH**.
+5. **Produzione di GTP** — Il succinil-CoA si trasforma in **succinato** (4C) e libera energia sotto forma di **GTP** (equivalente all'ATP).
+6. **Terza ossidazione** — Il succinato cede elettroni a **FAD** → si forma **fumarato** (4C) + **FADH₂**.
+7. **Idratazione** — Il fumarato acquista acqua e diventa **malato** (4C).
+8. **Quarta ossidazione** — Il malato cede elettroni a NAD⁺ → si rigenera l'**ossalacetato** (4C) + **NADH**.
+
+A questo punto l'ossalacetato è pronto per legarsi a un nuovo acetil-CoA e il ciclo ricomincia.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il ciclo di Krebs "brucia" i carboni dell'acetil-CoA in CO₂ e raccoglie l'energia liberata caricando le navette NADH e FADH₂ — che la porteranno dove verrà prodotto davvero tanto ATP.</div>
+
+---
+
+## Bilancio per ogni giro del ciclo
+
+Ogni molecola di acetil-CoA che entra produce:
+
+- **3 NADH** (le navette più energetiche)
+- **1 FADH₂**
+- **1 GTP** (= 1 ATP diretto)
+- **2 CO₂** (scarto espulso con il respiro)
+
+Siccome da 1 glucosio si ricavano 2 piruvati → 2 acetil-CoA → il ciclo gira **due volte** per ogni glucosio.
+
+---
+
+<Diagram caption="Le 8 tappe del ciclo di Krebs: molecole, prodotti e trasportatori ridotti" code={`flowchart TB
+  A["Acetil-CoA (2C)<br/>entra nel ciclo"] -->|"+ Ossalacetato (4C)<br/>condensazione"| B["1. Citrato (6C)"]
+  B --> C["2. Isocitrato (6C)<br/>(isomerizzazione)"]
+  C -->|"− CO₂, NAD⁺ → NADH"| D["3. α-Chetoglutarato (5C)"]
+  D -->|"− CO₂, NAD⁺ → NADH"| E["4. Succinil-CoA (4C)"]
+  E -->|"GDP → GTP"| F["5. Succinato (4C)"]
+  F -->|"FAD → FADH₂"| G["6. Fumarato (4C)"]
+  G -->|"+ H₂O"| H["7. Malato (4C)"]
+  H -->|"NAD⁺ → NADH"| I["8. Ossalacetato (4C)<br/>ciclo ricomincia"]
+  I --> B`} />
+
+<Diagram caption="Ruolo del ciclo di Krebs nella respirazione cellulare: dove si colloca e cosa produce" code={`flowchart LR
+  A["Glucosio"] -->|"Glicolisi<br/>(citoplasma)"| B["2 Piruvati<br/>+ 2 ATP + 2 NADH"]
+  B -->|"Decarbossilazione<br/>ossidativa"| C["2 Acetil-CoA<br/>+ 2 CO₂ + 2 NADH"]
+  C -->|"Ciclo di Krebs<br/>× 2 giri<br/>(mitocondrio)"| D["6 NADH<br/>2 FADH₂<br/>2 GTP<br/>4 CO₂"]
+  D -->|"Catena di trasporto<br/>degli elettroni"| E["~32 ATP<br/>+ H₂O"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="4bUQHUDl2Nw" title="LA RESPIRAZIONE CELLULARE - Il ciclo di Krebs" />
+<VideoVisto id="bio-u5-11" />
+
+## Da ricordare
+- Il ciclo di Krebs avviene nella **matrice mitocondriale** e gira **2 volte** per ogni molecola di glucosio (una per ogni acetil-CoA).
+- Il suo scopo principale è produrre **trasportatori ridotti** (NADH e FADH₂) che porteranno gli elettroni alla catena respiratoria, dove si forma la maggior parte dell'ATP.
+- Ogni giro produce: **3 NADH + 1 FADH₂ + 1 GTP + 2 CO₂**; la CO₂ è lo scarto che espiriamo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è il principale scopo del ciclo di Krebs?" opzioni={["Produrre direttamente la maggior parte dell'ATP cellulare", "Sintetizzare glucosio a partire da CO₂", "Ossidare l'acetil-CoA e produrre trasportatori ridotti (NADH e FADH₂)", "Degradare gli acidi grassi in acetil-CoA"]} corretta={2} spiegazione="Il ciclo di Krebs ossida completamente l'acetil-CoA in CO₂ e raccoglie l'energia ceduta agli ioni idrogeno caricando i trasportatori NAD⁺ (→ NADH) e FAD (→ FADH₂). Questi portano poi gli elettroni alla catena di trasporto, dove si produce la maggior parte dell'ATP." />
+
+<Quiz domanda="Quante molecole di NADH vengono prodotte per ogni singolo giro del ciclo di Krebs?" opzioni={["1", "2", "3", "4"]} corretta={2} spiegazione="Per ogni giro del ciclo (= 1 molecola di acetil-CoA) si producono 3 NADH (nelle tappe 3, 4 e 8), 1 FADH₂ (tappa 6) e 1 GTP (tappa 5)." />
+
+<Quiz domanda="Da quale molecola parte il ciclo di Krebs e come si chiama la molecola che entra direttamente?" opzioni={["Il ciclo parte dal glucosio; entra il piruvato", "Il ciclo parte dal piruvato; entra l'acetil-CoA", "Il ciclo parte dall'ATP; entra l'ossalacetato", "Il ciclo parte dal NADH; entra il citrato"]} corretta={1} spiegazione="Il piruvato (prodotto della glicolisi) viene prima convertito in acetil-CoA nella matrice mitocondriale. È l'acetil-CoA (2 carboni) che entra nel ciclo di Krebs legandosi all'ossalacetato (4 carboni) per formare il citrato (6 carboni)." />
+
+<Esercizio problema="Elenca i prodotti di UN giro completo del ciclo di Krebs specificando quante molecole si formano per ciascun tipo. Poi calcola il totale per un'intera molecola di glucosio (2 giri)." soluzione="Per 1 giro (1 acetil-CoA): 3 NADH, 1 FADH₂, 1 GTP, 2 CO₂. Per 1 glucosio (2 giri): 6 NADH, 2 FADH₂, 2 GTP, 4 CO₂. A questi si aggiungono i 2 NADH prodotti nella fase di decarbossilazione ossidativa del piruvato (prima del ciclo vero e proprio)." />
+
+</section>
+
+</RisorsaLayout>

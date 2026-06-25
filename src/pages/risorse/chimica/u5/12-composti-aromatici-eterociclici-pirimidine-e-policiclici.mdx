@@ -1,0 +1,91 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u5-12">
+
+Hai presente quegli anelli di atomi di carbonio molto stabili, come il benzene? Si chiamano **composti aromatici**. A volte, dentro questi anelli, al posto di un atomo di carbonio c'è un atomo diverso (di solito **azoto**). Quando succede, l'anello si chiama **eterociclico**: "etero" vuol dire "diverso", "ciclico" vuol dire "ad anello". Sono importantissimi perché alcuni di questi anelli sono i **mattoni del DNA**: le famose **basi azotate**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un anello aromatico è come una ciambella molto robusta. Se in un punto della ciambella metti un atomo di azoto invece del carbonio, ottieni un anello "eterociclico". Mettine insieme questi anelli e hai le lettere con cui è scritto il DNA.</div>
+
+## Anello singolo: le pirimidine
+
+Una **pirimidina** è un **anello singolo** a sei posti, in cui **due** atomi di carbonio sono stati sostituiti da **azoto** (in chimica l'azoto si indica con la lettera N).
+
+Pensa a un tavolo rotondo con sei sedie: in quattro sedie siedono atomi di carbonio (C), in due sedie siedono atomi di azoto (N). Tutto qui.
+
+Dalla pirimidina nascono tre basi azotate del nostro corpo: **Citosina (C)**, **Timina (T)** e **Uracile (U)**. Sono tre delle "lettere" con cui sono scritti DNA e RNA. Senza queste, le tue cellule non saprebbero come costruire le proteine.
+
+<Diagram caption="L'anello di pirimidina: sei posti, due occupati dall'azoto (N)" code={`flowchart LR
+  N1["N (azoto)"] --> C2["C (carbonio)"]
+  C2 --> N3["N (azoto)"]
+  N3 --> C4["C (carbonio)"]
+  C4 --> C5["C (carbonio)"]
+  C5 --> C6["C (carbonio)"]
+  C6 --> N1`} />
+
+## Due anelli fusi: le purine
+
+Una **purina** è un composto **policiclico**: "poli" vuol dire "tanti", quindi più anelli. In pratica è una pirimidina a cui è stato attaccato un secondo anello più piccolo (a cinque posti), e i due anelli condividono un lato. Si dice che gli anelli sono **fusi**, come due bolle di sapone che si toccano e restano unite.
+
+Anche dalle purine nascono basi azotate: **Adenina (A)** e **Guanina (G)**. Scommando: le purine sono quelle "grandi" (due anelli), le pirimidine quelle "piccole" (un anello).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> pirimidina = un anello (piccola). Purina = due anelli incollati (grande). Insieme danno le 5 lettere del codice genetico: A, G, C, T, U.</div>
+
+<Diagram caption="La purina: due anelli fusi (uno a sei e uno a cinque posti) che condividono un lato" code={`flowchart TB
+  P["PURINA<br/>composto policiclico"] --> A1["Anello grande<br/>a 6 posti (tipo pirimidina)"]
+  P --> A2["Anello piccolo<br/>a 5 posti"]
+  A1 --> F["I due anelli sono FUSI<br/>condividono un lato in comune"]
+  A2 --> F
+  F --> B["Da qui nascono<br/>Adenina (A) e Guanina (G)"]`} />
+
+## Aromatici e tossicità
+
+Gli anelli aromatici sono molto stabili, e questo a volte è un problema. Alcuni composti aromatici sono **tossici** o **cancerogeni** (cioè possono favorire i tumori), proprio perché il corpo fa fatica a smontarli ed eliminarli.
+
+Un esempio classico è il **benzene**: si trova nel fumo di sigaretta e in alcuni fumi industriali, ed è tossico per il midollo osseo (dove si produce il sangue). Altri composti aromatici "a tanti anelli" si formano quando si **brucia** materiale organico: per questo carne molto bruciata, fumo e smog contengono sostanze da non respirare o mangiare in abbondanza. In veterinaria e in medicina questo conta: capire perché una molecola è difficile da eliminare aiuta a capire perché può accumularsi e fare danni.
+
+## Da ricordare
+
+- **Eterociclico** = anello aromatico con dentro un atomo diverso dal carbonio (di solito azoto, N).
+- **Pirimidina** = un anello singolo, sei posti, due azoti → basi **C, T, U**.
+- **Purina** = composto **policiclico**, due anelli **fusi** → basi **A, G**.
+- Pirimidine = "piccole" (1 anello); purine = "grandi" (2 anelli). Insieme sono le lettere di DNA e RNA.
+- Alcuni aromatici (es. **benzene**) sono **tossici/cancerogeni** perché il corpo fa fatica a eliminarli.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Che cosa significa che un anello è 'eterociclico'?"
+  opzioni={["È fatto solo di carbonio", "Contiene almeno un atomo diverso dal carbonio (es. azoto)", "È un anello molto grande", "Non è aromatico"]}
+  corretta={1}
+  spiegazione="'Etero' vuol dire diverso: nell'anello, al posto di un carbonio, c'è un altro atomo, di solito azoto (N)."
+/>
+
+<Quiz
+  domanda="Qual è la differenza tra una pirimidina e una purina?"
+  opzioni={["La pirimidina ha due anelli, la purina uno", "La pirimidina ha un solo anello, la purina ne ha due fusi insieme", "Sono esattamente la stessa cosa", "La purina non contiene azoto"]}
+  corretta={1}
+  spiegazione="Pirimidina = un anello (piccola). Purina = due anelli fusi (grande). È il modo più facile per distinguerle."
+/>
+
+<Quiz
+  domanda="Perché alcuni composti aromatici, come il benzene, sono pericolosi?"
+  opzioni={["Perché sono troppo leggeri", "Perché sono molto stabili e il corpo fa fatica a eliminarli, e possono essere tossici o cancerogeni", "Perché evaporano subito senza fare danni", "Perché contengono solo ossigeno"]}
+  corretta={1}
+  spiegazione="La grande stabilità dell'anello aromatico rende difficile smontare e smaltire la molecola: così può accumularsi e risultare tossica o cancerogena."
+/>
+
+<Esercizio
+  problema="Le basi azotate del DNA sono cinque: Adenina (A), Guanina (G), Citosina (C), Timina (T) e Uracile (U). Sapendo che le purine sono quelle con due anelli fusi e le pirimidine quelle con un solo anello, prova a dire quali sono purine e quali pirimidine. (Suggerimento: le purine sono solo due.)"
+  soluzione="Purine (due anelli): Adenina (A) e Guanina (G). Pirimidine (un anello): Citosina (C), Timina (T) e Uracile (U). Un trucco per ricordarlo: 'pura A G' tiene insieme le due purine A e G; tutte le altre lettere sono pirimidine."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,124 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u6-04">
+
+## Perché le cellule hanno bisogno di "giunzioni"?
+
+Immagina un muro di mattoni: ogni mattone da solo non vale molto, ma insieme formano una struttura solida e impermeabile. Le cellule del nostro corpo fanno la stessa cosa — si collegano l'una all'altra (e alla struttura su cui poggiano) attraverso strutture chiamate **giunzioni cellulari**.
+
+Le giunzioni servono a tre cose principali:
+
+- **Tenere insieme** le cellule in un tessuto (adesione meccanica)
+- **Sigillare** gli spazi tra le cellule per controllare cosa passa
+- **Permettere la comunicazione** diretta tra cellule vicine
+
+Esistono cinque tipi principali. Vediamoli uno per uno.
+
+---
+
+## 1. Giunzioni occludenti (tight junctions)
+
+Sono il "nastro isolante" tra le cellule. Le proteine transmembrana (claudine e occludine) si agganciano tra cellula e cellula, **tappando completamente lo spazio** nel mezzo.
+
+**Dove si trovano:** rivestimento dell'intestino, della vescica, dei vasi sanguigni.
+
+**Funzione:** impedire che sostanze passino *tra* le cellule. Tutto deve passare *dentro* le cellule, così il corpo controlla cosa entra e cosa no.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le giunzioni occludenti sono come una cerniera lampo tra due cellule — chiudono ermeticamente lo spazio e niente può passare di lato.</div>
+
+---
+
+## 2. Giunzioni aderenti (adherens junctions)
+
+Usano proteine chiamate **caderine** (legate internamente all'actina, un filamento del citoscheletro). Tengono le cellule unite ma con un po' di flessibilità.
+
+**Funzione:** adesione meccanica "morbida" — il tessuto resta insieme ma può deformarsi (es. quando il cuore batte o i muscoli si contraggono).
+
+---
+
+## 3. Desmosomi
+
+Sono le "rivetti" del tessuto. Usano anch'essi le caderine, ma si agganciano ai **filamenti intermedi** del citoscheletro (più resistenti dell'actina).
+
+**Dove si trovano:** pelle (epidermide), muscolo cardiaco — ovunque ci sia un forte stress meccanico.
+
+**Funzione:** resistenza alle forze di stiramento e strappo.
+
+---
+
+## 4. Emidesmosomi
+
+Come i desmosomi, ma collegano la cellula **alla membrana basale** (la "fondamenta" su cui poggiano le cellule epiteliali), non a un'altra cellula. Usano integrine al posto delle caderine.
+
+**Dove si trovano:** cellule epiteliali della pelle.
+
+**Funzione:** ancorare le cellule alla struttura sottostante, evitando che si stacchino.
+
+---
+
+## 5. Giunzioni comunicanti (gap junctions)
+
+Sono dei veri e propri **tunnel** tra le cellule. Formate da proteine chiamate **connessine**, che si allineano tra due cellule formando un poro (connessone). Attraverso questi tunnel passano ioni, glucosio, piccole molecole e segnali elettrici.
+
+**Dove si trovano:** muscolo cardiaco, fegato, neuroni.
+
+**Funzione:** coordinare le cellule — es. far battere tutte le cellule del cuore in sincronia.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le giunzioni comunicanti sono come un interfono condominiale: le cellule si "parlano" direttamente, passandosi segnali e molecole senza uscire fuori.</div>
+
+---
+
+## Schema riassuntivo dei 5 tipi
+
+<Diagram caption="I cinque tipi di giunzioni cellulari: struttura e funzione" code={`flowchart TB
+  G["GIUNZIONI CELLULARI"]
+  G --> OCC["Occludenti<br/>(tight junctions)<br/>Sigillano lo spazio tra cellule<br/>Proteine: claudine, occludine"]
+  G --> ADH["Aderenti<br/>(adherens junctions)<br/>Adesione flessibile<br/>Proteine: caderine + actina"]
+  G --> DES["Desmosomi<br/>Resistenza meccanica<br/>Proteine: caderine + fil. intermedi"]
+  G --> EMI["Emidesmosomi<br/>Ancoraggio alla membrana basale<br/>Proteine: integrine + fil. intermedi"]
+  G --> COM["Comunicanti<br/>(gap junctions)<br/>Canali diretti tra cellule<br/>Proteine: connessine"]`} />
+
+---
+
+## Dove si trovano nel tessuto epiteliale
+
+<Diagram caption="Posizione delle giunzioni in una cellula epiteliale: dall'apice alla base" code={`flowchart TB
+  LUME["Lume (spazio esterno)"]
+  LUME --> OCC2["1. Giunzione occludente<br/>— sigilla il bordo apicale"]
+  OCC2 --> ADH2["2. Giunzione aderente<br/>— aggancia le cellule con flessibilità"]
+  ADH2 --> DES2["3. Desmosoma<br/>— rivet meccanico laterale"]
+  DES2 --> COM2["4. Giunzione comunicante<br/>— canale di segnalazione"]
+  COM2 --> EMI2["5. Emidesmosoma<br/>— ancora la cellula alla membrana basale"]
+  EMI2 --> MB["Membrana basale (struttura di supporto)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="XMQPiVVDAu8" title="GIUNZIONI CELLULARI | VIDEO RIASSUNTO CITOLOGIA | SUPERARE L'ESAME DI CITOLOGIA" />
+<VideoVisto id="bio-u6-04" />
+
+## Da ricordare
+- Le **giunzioni occludenti** sigillano lo spazio tra cellule (barriera impermeabile); le **comunicanti** aprono canali diretti per segnali e molecole.
+- **Desmosomi ed emidesmosomi** resistono alle forze meccaniche: i desmosomi tengono insieme cellule vicine, gli emidesmosomi le ancorano alla membrana basale.
+- Tutte le giunzioni usano proteine transmembrana specifiche: **claudine/occludine** (occludenti), **caderine** (aderenti e desmosomi), **integrine** (emidesmosomi), **connessine** (comunicanti).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale tipo di giunzione forma una barriera impermeabile che impedisce alle sostanze di passare tra le cellule?" opzioni={["Giunzione comunicante","Desmosoma","Giunzione occludente","Emidesmosoma"]} corretta={2} spiegazione="Le giunzioni occludenti (tight junctions) sigillano completamente lo spazio intercellulare usando claudine e occludine, costringendo le sostanze a passare attraverso le cellule e non tra di esse." />
+
+<Quiz domanda="Le giunzioni comunicanti (gap junctions) sono formate principalmente da quale proteina?" opzioni={["Caderine","Integrine","Connessine","Occludine"]} corretta={2} spiegazione="Le giunzioni comunicanti sono formate da connessine, che si assemblano in strutture chiamate connessoni. Questi formano canali acquosi diretti tra due cellule adiacenti, permettendo il passaggio di ioni e piccole molecole." />
+
+<Quiz domanda="Un medico studia un tessuto in cui le cellule si staccano facilmente dalla membrana basale. Quale tipo di giunzione è probabilmente danneggiato?" opzioni={["Giunzione aderente","Emidesmosoma","Giunzione comunicante","Giunzione occludente"]} corretta={1} spiegazione="Gli emidesmosomi ancorano le cellule epiteliali alla membrana basale tramite integrine collegate ai filamenti intermedi. Un loro difetto causa il distacco delle cellule dalla struttura di supporto sottostante (come avviene in alcune malattie bollose della pelle)." />
+
+<Esercizio problema="Immagina di dover attraversare un epitelio intestinale sano portando una molecola dal lume intestinale al sangue. Puoi passare tra le cellule o sei costretto a passare dentro di esse? Quale tipo di giunzione determina questa risposta?" soluzione="Non puoi passare tra le cellule: le giunzioni occludenti (tight junctions) sigillano ermeticamente lo spazio intercellulare nella parte apicale dell'epitelio intestinale. Sei costretto a percorrere la via transcellulare — entrare in una cellula epiteliale, attraversarla e uscire dal lato basale verso il sangue. Questo permette all'intestino di controllare attivamente quali sostanze vengono assorbite." />
+
+</section>
+
+</RisorsaLayout>

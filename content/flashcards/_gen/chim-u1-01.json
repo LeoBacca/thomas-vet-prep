@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-01-1",
+    "topicId": "chim-u1-01",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: secondo Dalton, in una reazione chimica gli atomi si distruggono e si ricreano continuamente.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Secondo Dalton gli atomi NON si creano ne si distruggono: si riorganizzano soltanto, come mattoncini smontati e rimontati in un modo diverso. Per questo il peso totale prima e dopo una reazione non cambia mai.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-01-2",
+    "topicId": "chim-u1-01",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Cos'e un elemento chimico?",
+    "choices": [
+      "Un tipo di atomo: la sostanza e fatta di un solo tipo di atomo, tutti uguali tra loro (es. ferro, ossigeno, carbonio)",
+      "Una miscela di atomi diversi mescolati insieme",
+      "Una molecola con piu atomi dello stesso tipo uniti insieme",
+      "Una sostanza che si trova solo in laboratorio e non in natura"
+    ],
+    "answer": 0,
+    "explain": "Un elemento e un 'tipo' di atomo. Pensa all'alfabeto: ogni lettera e un tipo diverso. L'ossigeno e tutto fatto di atomi di ossigeno, il ferro di atomi di ferro, il carbonio di atomi di carbonio. Nel corpo degli animali pochi elementi fanno quasi tutto: C, H, O, N (i tessuti), calcio (le ossa), ferro (il sangue).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-01-3",
+    "topicId": "chim-u1-01",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue le 3 idee principali della teoria atomica di Dalton. Poi di' cosa distingue un elemento chimico da una molecola.",
+    "answer": "Le 3 idee di Dalton: 1) La materia e fatta di atomi, particelle piccolissime che in chimica trattiamo come indivisibili (il mattoncino base di tutto). 2) Tutti gli atomi dello stesso elemento sono uguali tra loro (stessa massa e stesse caratteristiche); atomi di elementi diversi sono diversi. 3) Nelle reazioni chimiche gli atomi non si creano ne si distruggono: si riorganizzano soltanto, come mattoncini smontati e rimontati, quindi il peso totale non cambia. Differenza elemento/molecola: un ELEMENTO e un solo tipo di atomo (es. ossigeno = solo atomi O, tutti uguali). Una MOLECOLA e invece una squadra di piu atomi tenuti insieme: possono essere atomi dello stesso tipo (come O2, due atomi di ossigeno) o di tipi diversi (come H2O, due idrogeni + un ossigeno). L'elemento risponde alla domanda 'che tipo di atomo e?'; la molecola risponde alla domanda 'come sono uniti gli atomi in questa particella?'.",
+    "explain": "Da ricordare: Dalton = atomi indivisibili, tutti uguali per elemento, non si creano ne si distruggono. Elemento = 1 tipo di atomo; molecola = piu atomi uniti.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-01-4",
+    "topicId": "chim-u1-01",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale tra le seguenti sostanze NON e un elemento chimico?",
+    "choices": [
+      "Ammoniaca (NH3)",
+      "Argento (Ag)",
+      "Idrogeno (H2)",
+      "Mercurio (Hg)",
+      "Ferro (Fe)"
+    ],
+    "answer": 0,
+    "explain": "L'ammoniaca (NH3) NON e un elemento: e un composto formato da azoto e idrogeno, cioe da due tipi di atomi diversi uniti insieme. Argento, idrogeno, mercurio e ferro sono invece tutti elementi: ciascuno e fatto di un solo tipo di atomo. La trappola e che l'idrogeno si scrive H2 (due atomi uniti) e puo sembrare un composto, ma e' fatto di un solo tipo di atomo, quindi resta un elemento. L'NH3 invece contiene 2 elementi diversi (N e H): questa e la firma del composto.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-01-5",
+    "topicId": "chim-u1-01",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni su elementi, miscele e composti e CORRETTA?",
+    "choices": [
+      "I composti devono contenere almeno due elementi",
+      "Le miscele devono contenere almeno due composti",
+      "I composti contengono sempre almeno due elementi E le miscele devono contenere almeno due composti",
+      "Due elementi diversi reagiscono sempre dando lo stesso composto binario",
+      "Un elemento puo essere anche una miscela se contiene molecole diverse"
+    ],
+    "answer": 0,
+    "explain": "Solo l'affermazione 'i composti devono contenere almeno due elementi' e corretta: un composto e per definizione una sostanza fatta da piu tipi di atomi (elementi) legati insieme. Le trappole: 'le miscele devono contenere almeno due composti' e falsa perche una miscela puo contenere anche elementi puri (es. aria = azoto + ossigeno, entrambi elementi); 'entrambe corrette insieme' inganna chi non nota l'errore sulla miscela; 'due elementi danno sempre lo stesso composto' e falsa perche azoto e ossigeno per esempio danno NO, NO2, N2O e altri composti diversi, dipende dalle condizioni; l'ultima e un filler fuori tema, un elemento e per definizione puro.",
+    "tags": ["prova d'esame"]
+  }
+]

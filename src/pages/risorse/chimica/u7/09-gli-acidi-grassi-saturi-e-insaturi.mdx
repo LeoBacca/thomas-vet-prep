@@ -1,0 +1,106 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-09">
+
+I **grassi** che mangiamo (il burro, l'olio, il grasso della carne) sono fatti quasi tutti della stessa cosa: i **trigliceridi**. E ogni trigliceride è costruito a partire da mattoncini chiamati **acidi grassi**. Capire questi mattoncini ti spiega perché il burro è solido e l'olio è liquido, e perché certi grassi fanno bene e altri meno.
+
+Un **acido grasso** è semplicemente una **lunga catena di atomi di carbonio**, come una collana. A un'estremità ha un "gancetto" acido (il gruppo -COOH). La differenza tra i tipi di acido grasso sta tutta nella **forma** di questa catena.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> acido grasso <strong>saturo</strong> = catena <strong>dritta</strong>, si impila bene → <strong>solido</strong> (burro). Acido grasso <strong>insaturo</strong> = catena con una <strong>piega</strong>, non si impila → <strong>liquido</strong> (olio).</div>
+
+<Diagram caption="Saturo (dritto) vs insaturo (piegato): la forma decide se è solido o liquido" code={`flowchart TB
+  AG["Acido grasso<br/>(catena di carbonio)"] --> SAT["SATURO<br/>nessun doppio legame<br/>catena DRITTA"]
+  AG --> INS["INSATURO<br/>almeno un doppio legame<br/>catena PIEGATA"]
+  SAT --> SOL["Si impilano bene<br/>SOLIDO a temperatura ambiente<br/>(es. burro, grasso animale)"]
+  INS --> LIQ["Non si impilano<br/>LIQUIDO a temperatura ambiente<br/>(es. olio d'oliva, olio di pesce)"]`} />
+
+## Saturo o insaturo: è questione di "pienezza"
+
+Immagina la catena di carbonio come un treno di vagoni. Ogni vagone (atomo di carbonio) può tenere per mano degli atomi di **idrogeno**.
+
+- Se ogni vagone è **pieno** di idrogeni quanto può, l'acido grasso si dice **saturo** (cioè "saturato", riempito al massimo). La catena resta bella **dritta**.
+- Se in un punto due vagoni vicini si tengono per mano due volte (un **doppio legame**), lì manca un po' di idrogeno: l'acido grasso è **insaturo**. Quel doppio legame crea una **piega** nella catena.
+
+Una sola piega = **monoinsaturo** (come l'olio d'oliva). Tante pieghe = **polinsaturo** (come gli Omega-3 del pesce).
+
+Perché conta la forma? Le catene **dritte** si appoggiano l'una sull'altra come matite ordinate in un astuccio: stanno compatte, quindi **solide**. Le catene **piegate** non riescono a impilarsi bene, restano sparse: quindi **liquide**. Ecco perché il grasso del salame è solido e l'olio d'oliva è liquido.
+
+**Aggancio al corpo:** gli Omega-3 (polinsaturi) sono importanti per il cuore e per le membrane delle cellule, anche nei nostri animali. Per questo nei mangimi per cani e gatti spesso si aggiunge olio di pesce. I grassi saturi in eccesso, invece, sono legati al colesterolo "cattivo" e ai problemi alle arterie.
+
+## Il trigliceride: tre acidi grassi su un supporto
+
+Gli acidi grassi raramente girano da soli. Di solito sono attaccati a un piccolo "supporto a tre ganci" chiamato **glicerolo**. Un glicerolo che tiene **tre** acidi grassi forma un **trigliceride** (tri = tre).
+
+Pensa al glicerolo come a una **forchetta a tre punte**, e a ogni acido grasso come a uno **spaghetto** infilzato su una punta. Trigliceride = la forchetta con i suoi tre spaghetti.
+
+I trigliceridi sono il modo in cui il corpo **immagazzina energia**: il tessuto adiposo (il "grasso" sotto la pelle) è pieno di trigliceridi, una vera batteria di scorta. Sono anche quelli che il veterinario misura nel sangue con le analisi.
+
+E la differenza tra **olio** e **grasso**? È solo lo stato a temperatura ambiente:
+
+- **Grasso** = trigliceride **solido** (ricco di acidi grassi **saturi**, di solito di origine animale: burro, strutto).
+- **Olio** = trigliceride **liquido** (ricco di acidi grassi **insaturi**, di solito di origine vegetale o dai pesci: olio d'oliva, olio di girasole).
+
+<Diagram caption="Un trigliceride: glicerolo + tre acidi grassi" code={`flowchart LR
+  G["GLICEROLO<br/>(supporto a 3 ganci)"] --> A1["acido grasso 1"]
+  G --> A2["acido grasso 2"]
+  G --> A3["acido grasso 3"]
+  A1 --> T["= TRIGLICERIDE<br/>solido = grasso<br/>liquido = olio"]
+  A2 --> T
+  A3 --> T`} />
+
+## Da saturo a insaturo (e viceversa)
+
+Un'ultima curiosità utile. In cucina e nell'industria a volte si **aggiunge idrogeno** agli oli liquidi per renderli solidi: si chiama **idrogenazione** ed è così che da un olio si ottiene la margarina. Il problema è che questo processo può creare i **grassi trans**, considerati i peggiori per la salute del cuore. Sapere se un grasso è saturo, insaturo o trans ti aiuta a capire le etichette degli alimenti, sia per te sia per l'alimentazione degli animali.
+
+## Guarda il video
+
+<YouTube id="UwPWgIOp0cE" title="I trigliceridi: glicerolo e acidi grassi spiegati semplici" />
+
+<VideoVisto id="chim-u7-09" />
+
+## Da ricordare
+
+- Un **acido grasso** è una catena di carbonio con un gancetto acido (-COOH).
+- **Saturo** = nessun doppio legame, catena **dritta**, tende a essere **solido** (burro, grasso animale).
+- **Insaturo** = uno o più doppi legami, catena **piegata**, tende a essere **liquido** (olio d'oliva, olio di pesce).
+- Un **trigliceride** = **glicerolo + 3 acidi grassi**; è la scorta di energia del corpo (tessuto adiposo).
+- **Grasso** = trigliceride solido (saturi); **olio** = trigliceride liquido (insaturi).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è la differenza chiave tra un acido grasso saturo e uno insaturo?"
+  opzioni={["Il colore della catena", "L'insaturo ha uno o più doppi legami che piegano la catena", "Il saturo è sempre vegetale", "Non c'è nessuna differenza"]}
+  corretta={1}
+  spiegazione="L'acido grasso insaturo ha almeno un doppio legame carbonio-carbonio, che crea una piega nella catena. Il saturo non ne ha e resta dritto."
+/>
+
+<Quiz
+  domanda="Perché il burro (saturo) è solido e l'olio d'oliva (insaturo) è liquido a temperatura ambiente?"
+  opzioni={["Perché il burro è più freddo", "Perché le catene dritte dei saturi si impilano bene, quelle piegate degli insaturi no", "Perché l'olio contiene acqua", "Per puro caso"]}
+  corretta={1}
+  spiegazione="Le catene dritte (sature) si impilano compatte come matite in un astuccio, quindi solide. Le catene piegate (insature) non si impilano, restano sparse, quindi liquide."
+/>
+
+<Quiz
+  domanda="Da cosa è formato un trigliceride?"
+  opzioni={["Da tre molecole di glucosio", "Da glicerolo unito a tre acidi grassi", "Da tre atomi di carbonio", "Solo da acqua e sale"]}
+  corretta={1}
+  spiegazione="Trigliceride = un glicerolo (il supporto a tre ganci) con tre acidi grassi attaccati. Tri sta proprio per tre."
+/>
+
+<Esercizio
+  problema="Hai due alimenti: lo strutto (grasso del maiale, solido) e l'olio di girasole (liquido). Per ciascuno, di' se è ricco di acidi grassi saturi o insaturi, e spiega perché in una sola frase."
+  soluzione="Lo strutto è ricco di acidi grassi SATURI: le catene dritte si impilano bene, perciò è solido. L'olio di girasole è ricco di acidi grassi INSATURI: le catene piegate non si impilano, perciò è liquido."
+/>
+
+</section>
+
+</RisorsaLayout>

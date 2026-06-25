@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fc-bio-u6-01-1",
+    "topicId": "bio-u6-01",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "mc",
+    "q": "La matrice extracellulare (ECM) e lo 'scheletro esterno' attorno alle cellule. Quale coppia di componenti e quella giusta: uno che regge la trazione (come una fune) e uno che trattiene acqua (come un gel)?",
+    "choices": [
+      "Collagene (fune) e proteoglicani/GAG (gel)",
+      "Elastina (fune) e collagene (gel)",
+      "Integrine (fune) e elastina (gel)",
+      "Fibronectina (fune) e acido ialuronico (gel)"
+    ],
+    "answer": 0,
+    "explain": "Il collagene forma fibre resistenti alla trazione — come funi — ed e la proteina piu abbondante nel corpo dei mammiferi. I proteoglicani, con le loro catene di glicosaminoglicani (GAG), formano un gel idratato che riempie gli spazi, trattiene acqua e ammortizza. L'elastina serve all'elasticita, non alla trazione; le integrine sono recettori, non componenti strutturali del gel.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-bio-u6-01-2",
+    "topicId": "bio-u6-01",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "open",
+    "q": "Cosa sono le MMP e perche la loro iperattivita e pericolosa nei tumori? Spiega anche il ruolo dei TIMP.",
+    "answer": "Le MMP (metalloproteinasi della matrice) sono enzimi che degradano i componenti della ECM, in particolare il collagene. Sono utili in processi normali come la cicatrizzazione delle ferite, lo sviluppo embrionale e l'angiogenesi: smontano la vecchia matrice dove serve per ricostruirne una nuova o per permettere alle cellule di migrare. Nei tumori le MMP sono spesso sovraespresse: degradano eccessivamente la ECM, aprendo varchi attraverso cui le cellule cancerose possono invadere i tessuti vicini e raggiungere i vasi sanguigni — meccanismo chiave delle metastasi. I TIMP (Tissue Inhibitors of Metalloproteinases) sono gli inibitori naturali delle MMP: bloccano la loro attivita quando la degradazione ha fatto il suo lavoro. L'equilibrio MMP/TIMP determina se la ECM viene degradata o conservata.",
+    "explain": "MMP = demolitori della ECM (utili se controllati, pericolosi se iperattivi nei tumori perche aprono la strada alle metastasi). TIMP = freno sulle MMP.",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

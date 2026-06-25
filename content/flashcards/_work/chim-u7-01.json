@@ -1,0 +1,25 @@
+{
+ "id": "chim-u7-01",
+ "titolo": "Gli amminoacidi: struttura e classificazione delle catene laterali",
+ "materia": "chimica",
+ "unita": 7,
+ "slug": "01-gli-amminoacidi-struttura-e-classificazione-delle",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u7/01-gli-amminoacidi-struttura-e-classificazione-delle.mdx",
+ "examQuestions": [
+  {
+   "year": "2012",
+   "q": "Gli amminoacidi naturali che costituiscono le proteine:",
+   "choices": [
+    "hanno tutti un gruppo amminico sul C2 (carbonio alfa)",
+    "hanno tutti un solo gruppo amminico",
+    "hanno tutti almeno due gruppi amminici",
+    "hanno tutti un solo gruppo amminico ed un solo gruppo carbossilico",
+    "sono tutti amminoacidi essenziali"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

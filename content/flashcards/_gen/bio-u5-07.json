@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-bio-u5-07-1",
+    "topicId": "bio-u5-07",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: una proteina con sequenza NLS entra nel nucleo, mentre una con sequenza NES esce dal nucleo.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "NLS (Nuclear Localization Signal) = biglietto d'ingresso al nucleo, riconosciuto dalle importine nel citoplasma. NES (Nuclear Export Signal) = biglietto d'uscita, riconosciuto dalle esportine nel nucleo. Senza il segnale giusto, il poro non lascia passare.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-07-2",
+    "topicId": "bio-u5-07",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Perche il trasporto tra nucleo e citoplasma ha una direzione precisa? Spiega il ruolo di Ran-GTP e Ran-GDP e dove si trovano nella cellula.",
+    "answer": "La direzionalita e garantita dal gradiente della proteina Ran. Ran-GTP e concentrato nel nucleo (grazie all'enzima RCC1, che ricarica Ran con GTP stando dentro il nucleo); Ran-GDP e concentrato nel citoplasma (grazie a RanGAP, che idrolizza GTP in GDP stando fuori). Durante l'importazione, quando l'importina porta il cargo nel nucleo, Ran-GTP si lega all'importina e la fa staccare dal cargo: la proteina viene rilasciata nel nucleo. Durante l'esportazione, Ran-GTP nel nucleo e necessario per formare il complesso esportina-cargo; quando questo complesso arriva nel citoplasma, RanGAP converte Ran-GTP in Ran-GDP e il complesso si smonta, rilasciando il cargo fuori. In sintesi: Ran-GTP dentro = 'sei nel nucleo'; Ran-GDP fuori = 'sei nel citoplasma'. Questo gradiente e il motore della direzionalita.",
+    "explain": "Chiave: Ran-GTP nel nucleo (RCC1 lo ricarica), Ran-GDP nel citoplasma (RanGAP lo scarica). Ran-GTP sgancia il cargo dall'importina (import) e assembla il complesso esportina-cargo (export).",
+    "tags": ["risposta aperta"]
+  }
+]

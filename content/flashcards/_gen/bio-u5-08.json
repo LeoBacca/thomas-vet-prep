@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u5-08-1",
+    "topicId": "bio-u5-08",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Una proteina prodotta nel citoplasma vuole entrare nel nucleo. Di cosa ha bisogno per farcela?",
+    "choices": [
+      "Di un segnale NLS riconosciuto dalle importine, che la trasportano attraverso il poro nucleare",
+      "Di energia ATP direttamente consumata dalla proteina stessa per aprire il poro nucleare",
+      "Di legarsi alla membrana nucleare esterna e aspettare di essere tirata dentro",
+      "Di nulla: le proteine entrano ed escono dal nucleo liberamente come vogliono"
+    ],
+    "answer": 0,
+    "explain": "Il nucleo e un caveau: non si entra senza badge. Il 'badge' si chiama NLS (Nuclear Localization Signal), una piccola zona della proteina ricca di cariche positive. Le importine (i corrieri) riconoscono il badge, afferrano la proteina e la portano attraverso il poro nucleare. Dentro il nucleo, RanGTP fa mollare il carico alle importine, che tornano a prendere un altro giro.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-08-2",
+    "topicId": "bio-u5-08",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Descrivi con parole tue come NF-kB arriva nel nucleo partendo da uno stato inattivo nel citoplasma. Cosa sblocca il processo?",
+    "answer": "NF-kB e un fattore di trascrizione che, in condizioni normali, se ne sta fermo nel citoplasma perche e tenuto bloccato da una proteina inibitrice chiamata IkB. IkB copre fisicamente il segnale NLS di NF-kB, quindi le importine non lo vedono e non lo possono trasportare. Quando la cellula riceve un segnale di pericolo (per esempio un'infezione o uno stress), una cascata di segnali porta alla fosforilazione di IkB (gli viene attaccato un gruppo fosfato, come un bollino 'da buttare'). IkB fosforilato viene poi degradato dal proteasoma (il tritarifiuti della cellula). A quel punto il segnale NLS di NF-kB e scoperto: le importine lo riconoscono, lo portano nel nucleo attraverso il poro nucleare, e NF-kB attiva i geni dell'infiammazione e della risposta immunitaria.",
+    "explain": "Chiave: NF-kB e bloccato nel citoplasma da IkB che copre il suo NLS. Il segnale di pericolo fa fosforilare e degradare IkB → NLS scoperto → importine portano NF-kB nel nucleo → attivazione geni infiammatori.",
+    "tags": ["risposta aperta"]
+  }
+]

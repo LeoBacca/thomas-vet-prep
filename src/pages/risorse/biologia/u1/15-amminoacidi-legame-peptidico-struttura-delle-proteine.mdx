@@ -1,0 +1,97 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-15">
+
+## Cosa sono gli amminoacidi?
+
+Gli amminoacidi sono i **mattoncini** con cui vengono costruite tutte le proteine del tuo corpo.
+
+Ogni amminoacido ha una struttura base sempre uguale:
+- un **gruppo amminico** (–NH₂): contiene azoto
+- un **gruppo carbossilico** (–COOH): è il "lato acido"
+- un **atomo di carbonio centrale** (carbonio alfa) che li tiene insieme
+- una **catena laterale** (chiamata R): è la parte che cambia da un amminoacido all'altro e ne determina le proprietà
+
+Esistono **20 amminoacidi** diversi, ognuno con una catena R diversa. Pensa a un alfabeto di 20 lettere: combinandole puoi scrivere parole infinite.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un amminoacido è come un vagone del treno — tutti i vagoni hanno la stessa struttura di base, ma il contenuto (la catena R) cambia. Unendo i vagoni in fila ottieni un treno: la proteina.</div>
+
+## Come si forma il legame peptidico?
+
+Quando due amminoacidi si uniscono, il gruppo –COOH del primo reagisce con il gruppo –NH₂ del secondo. In questa reazione si **libera una molecola d'acqua** (H₂O): per questo si chiama reazione di condensazione.
+
+Il legame che si forma tra i due amminoacidi si chiama **legame peptidico** (–CO–NH–).
+
+- Una catena di pochi amminoacidi si chiama **peptide**
+- Una catena lunga (decine o centinaia di amminoacidi) si chiama **polipeptide**
+- Una o più catene polipeptidiche piegate nello spazio formano una **proteina**
+
+<Diagram caption="Dal legame peptidico alla proteina" code={`flowchart TB
+  A["Amminoacido 1<br/>(gruppo –COOH libero)"] --> |"reazione di condensazione<br/>–H₂O"| B["Legame peptidico<br/>(–CO–NH–)"]
+  C["Amminoacido 2<br/>(gruppo –NH₂ libero)"] --> B
+  B --> D["Dipeptide<br/>(2 amminoacidi uniti)"]
+  D --> |"aggiunta di altri amminoacidi"| E["Polipeptide<br/>(catena lunga)"]
+  E --> |"piegatura nello spazio"| F["Proteina funzionale"]`} />
+
+## Le quattro strutture delle proteine
+
+Una proteina non è una catena piatta: si piega e si arrotola su se stessa in modo preciso. Si distinguono **quattro livelli di struttura**:
+
+**1. Struttura primaria**
+È la sequenza lineare degli amminoacidi, tenuti insieme dai legami peptidici. È come l'ordine delle lettere in una parola.
+
+**2. Struttura secondaria**
+La catena si arrotola localmente formando strutture regolari:
+- **alfa-elica**: come un cavatappi
+- **foglietto beta**: come un foglio di carta piegato a fisarmonica
+
+Queste forme sono stabilizzate da ponti idrogeno (legami deboli ma numerosi).
+
+**3. Struttura terziaria**
+L'intera catena si piega ulteriormente nello spazio tridimensionale assumendo una forma globale precisa. È stabilizzata da ponti disolfuro, legami ionici e interazioni idrofobiche. **La funzione della proteina dipende da questa forma.**
+
+**4. Struttura quaternaria**
+Alcune proteine sono formate da più catene polipeptidiche che si assemblano insieme (subunità). L'emoglobina, per esempio, è fatta di 4 subunità.
+
+<Diagram caption="I quattro livelli di struttura proteica" code={`flowchart LR
+  A["Struttura PRIMARIA<br/>sequenza di amminoacidi<br/>(legami peptidici)"] --> B["Struttura SECONDARIA<br/>alfa-elica o foglietto-beta<br/>(ponti idrogeno)"]
+  B --> C["Struttura TERZIARIA<br/>forma 3D della catena<br/>(ponti disolfuro, interazioni idrofobiche)"]
+  C --> D["Struttura QUATERNARIA<br/>più catene assemblate<br/>es. emoglobina = 4 subunità"]`} />
+
+## Domini e sito attivo
+
+Una proteina grande può contenere **domini**: regioni autonome che si piegano in modo indipendente e svolgono una funzione specifica. Un dominio è come un "modulo" riutilizzabile — lo stesso dominio si trova spesso in proteine diverse.
+
+Il **sito attivo** è la zona precisa della proteina (spesso una piccola tasca o cavità) dove avviene la funzione: per gli enzimi è il punto in cui si lega il substrato e avviene la reazione chimica. La forma del sito attivo è complementare al substrato, come una chiave nella sua serratura.
+
+Se la proteina perde la sua forma (denaturazione, per es. per calore), il sito attivo si deforma e la proteina smette di funzionare.
+
+## Guarda il video
+<YouTube id="-I3hW5_RxJA" title="LE PROTEINE - legame peptidico e struttura tridimensionale" />
+<VideoVisto id="bio-u1-15" />
+
+## Da ricordare
+- Gli amminoacidi si uniscono tramite **legame peptidico** (con perdita di acqua) formando catene chiamate polipeptidi.
+- Le proteine hanno quattro livelli di struttura (primaria, secondaria, terziaria, quaternaria): la **forma tridimensionale** determina la funzione.
+- Il **sito attivo** è la zona funzionale della proteina; i **domini** sono moduli strutturali autonomi all'interno di proteine grandi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Cosa si forma quando il gruppo –COOH di un amminoacido reagisce con il gruppo –NH₂ di un altro amminoacido?" opzioni={["Un legame idrogeno, con rilascio di CO₂","Un legame peptidico, con rilascio di H₂O","Un legame ionico, con rilascio di NH₃","Un legame covalente polare, con rilascio di O₂"]} corretta={1} spiegazione="La reazione di condensazione tra il gruppo carbossilico (–COOH) e il gruppo amminico (–NH₂) di due amminoacidi forma un legame peptidico (–CO–NH–) e libera una molecola d'acqua (H₂O)." />
+
+<Quiz domanda="Qual è la struttura proteica che descrive la sequenza lineare degli amminoacidi?" opzioni={["Struttura quaternaria","Struttura terziaria","Struttura secondaria","Struttura primaria"]} corretta={3} spiegazione="La struttura primaria è proprio la sequenza lineare degli amminoacidi uniti da legami peptidici. Le strutture secondaria, terziaria e quaternaria riguardano invece le piegature e gli assemblaggi nello spazio." />
+
+<Quiz domanda="Cosa succede al sito attivo di un enzima quando la proteina viene denaturata (per esempio dal calore)?" opzioni={["Il sito attivo si allarga e diventa più efficiente","La struttura tridimensionale si perde e il sito attivo si deforma, rendendo l'enzima non funzionale","Il sito attivo migra su un dominio vicino e continua a funzionare","Il legame peptidico si rompe e si liberano amminoacidi liberi"]} corretta={1} spiegazione="La funzione di un enzima dipende dalla forma precisa del suo sito attivo, che a sua volta dipende dalla struttura terziaria (tridimensionale) della proteina. La denaturazione distrugge questa forma e quindi il sito attivo non può più legare il substrato." />
+
+<Esercizio problema="Un polipeptide è formato da 50 amminoacidi. Quanti legami peptidici contiene? (Suggerimento: pensa a quante giunzioni ci sono tra 50 vagoni di un treno.)" soluzione="49 legami peptidici. Ogni legame peptidico unisce due amminoacidi adiacenti, quindi per una catena di N amminoacidi ci sono sempre N–1 legami peptidici. Con 50 amminoacidi: 50 – 1 = 49 legami peptidici." />
+
+</section>
+
+</RisorsaLayout>

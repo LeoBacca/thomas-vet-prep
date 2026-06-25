@@ -1,0 +1,110 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-03">
+
+Ogni atomo ha un piccolo "cuore" centrale, il **nucleo**, fatto di due tipi di particelle: i **protoni** (carica positiva) e i **neutroni** (senza carica). Contare queste particelle ci dice tutto su che atomo abbiamo davanti. Per farlo usiamo due numeri: il **numero atomico (Z)** e il **numero di massa (A)**. Sono come la carta d'identità dell'atomo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> <strong>Z</strong> conta solo i <strong>protoni</strong> (e ti dice CHE elemento è). <strong>A</strong> conta protoni <strong>+</strong> neutroni (ti dice quanto "pesa" il nucleo).</div>
+
+## Z, il numero atomico: il "nome" dell'atomo
+
+Il **numero atomico Z** è semplicemente **quanti protoni** ci sono nel nucleo.
+
+È la cosa più importante di tutte: il numero di protoni decide **quale elemento** è l'atomo. Se ci sono 1 protone è idrogeno, se ce ne sono 6 è carbonio, se ce ne sono 8 è ossigeno. Cambia il numero di protoni e cambia l'elemento, punto.
+
+Pensa a Z come al **codice fiscale** dell'elemento: ogni elemento ha il suo, e non si può copiare. Per questo nella tavola periodica ogni casella ha il suo Z.
+
+In un atomo "neutro" (cioè senza carica elettrica) i protoni positivi sono bilanciati da altrettanti **elettroni** negativi. Quindi **Z ti dice anche quanti elettroni** ci sono. E gli elettroni sono quelli che decidono come l'atomo reagisce con gli altri: ecco perché lo stesso elemento si comporta sempre allo stesso modo.
+
+## A, il numero di massa: quanto "pesa" il nucleo
+
+Il **numero di massa A** è la **somma di protoni e neutroni**:
+
+`A = protoni + neutroni`
+
+Protoni e neutroni pesano quasi uguale, mentre gli elettroni sono leggerissimi (quasi non contano). Quindi quasi tutto il peso dell'atomo sta nel nucleo, ed è proprio quello che conta A.
+
+Se conosci Z e A, trovi i neutroni con una sottrazione semplicissima:
+
+`neutroni = A - Z`
+
+Esempio con il carbonio: ha Z = 6 (6 protoni). Se A = 12, allora i neutroni sono 12 - 6 = 6.
+
+## La notazione: come si scrivono Z e A
+
+Per scrivere tutto in modo compatto si mette il simbolo dell'elemento (per il carbonio è la lettera **C**) con due numeri a sinistra: **A in alto** e **Z in basso**. Si legge "A sopra, Z sotto".
+
+<Diagram caption="La notazione A-Z-X: come leggere i due numeri accanto al simbolo" code={`flowchart LR
+  A["A = numero di massa<br/>(protoni + neutroni)<br/>sta in ALTO"] --> X["X = simbolo<br/>dell'elemento"]
+  Z["Z = numero atomico<br/>(solo i protoni)<br/>sta in BASSO"] --> X`} />
+
+## Gli isotopi: stesso elemento, peso diverso
+
+E se due atomi hanno **lo stesso Z ma A diverso**? Hanno lo stesso numero di protoni (quindi sono lo **stesso elemento**), ma un numero **diverso di neutroni**. Questi atomi si chiamano **isotopi**.
+
+Pensa a tre cani della stessa razza: stessa razza (stesso elemento), ma uno pesa un po' di più e uno un po' di meno. Restano tutti cani. Gli isotopi sono così: stesso elemento, peso leggermente diverso perché hanno qualche neutrone in più o in meno.
+
+Importante: siccome il numero di protoni (e quindi di elettroni) non cambia, **gli isotopi si comportano chimicamente allo stesso modo**. Cambia solo il peso del nucleo.
+
+Il carbonio ha tre isotopi famosi: tutti hanno Z = 6, ma A diverso.
+
+<Diagram caption="Gli isotopi del carbonio: stesso Z (6 protoni), neutroni diversi" code={`flowchart TB
+  C["Carbonio: Z = 6 sempre<br/>(6 protoni, e' sempre carbonio)"]
+  C --> C12["Carbonio-12<br/>A = 12<br/>neutroni = 12 - 6 = 6"]
+  C --> C13["Carbonio-13<br/>A = 13<br/>neutroni = 13 - 6 = 7"]
+  C --> C14["Carbonio-14<br/>A = 14<br/>neutroni = 14 - 6 = 8"]`} />
+
+Perché questo conta in medicina e veterinaria? Alcuni isotopi sono **instabili** e si "spengono" lentamente emettendo radiazioni: si chiamano **isotopi radioattivi**. Il **carbonio-14**, per esempio, serve per datare ossa e reperti (la famosa "datazione al carbonio"). Altri isotopi radioattivi si usano in ospedale per le **scintigrafie** e per certe terapie contro i tumori: si "marca" una sostanza con un isotopo e lo si segue mentre viaggia nel corpo. Stesso elemento di sempre, ma con una proprietà in più.
+
+## Guarda il video
+
+<YouTube id="V3Jkpf18-Po" title="Numero di massa, numero atomico ed isotopi — Pillole di Scienza" />
+
+<VideoVisto id="chim-u1-03" />
+
+## Da ricordare
+
+- **Z (numero atomico)** = numero di **protoni**; decide **quale elemento** è l'atomo.
+- In un atomo neutro, **Z = anche il numero di elettroni**.
+- **A (numero di massa)** = **protoni + neutroni** (quasi tutto il peso dell'atomo).
+- Trovi i neutroni così: **neutroni = A - Z**.
+- Gli **isotopi** sono lo stesso elemento (stesso Z) ma con **A diverso**: cambiano solo i neutroni, non il comportamento chimico.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Che cosa indica il numero atomico Z di un atomo?"
+  opzioni={["il numero di neutroni", "il numero di protoni", "protoni piu neutroni", "il peso in grammi"]}
+  corretta={1}
+  spiegazione="Z conta i protoni nel nucleo, ed è proprio il numero di protoni a stabilire quale elemento è l'atomo."
+/>
+
+<Quiz
+  domanda="Un atomo ha numero di massa A = 14 e numero atomico Z = 6. Quanti neutroni ha?"
+  opzioni={["6", "14", "8", "20"]}
+  corretta={2}
+  spiegazione="I neutroni si trovano con A - Z, cioè 14 - 6 = 8. (Questo atomo è il carbonio-14.)"
+/>
+
+<Quiz
+  domanda="Due atomi hanno lo stesso Z ma A diverso. Come si chiamano?"
+  opzioni={["elementi diversi", "ioni", "isotopi", "molecole"]}
+  corretta={2}
+  spiegazione="Stesso Z significa stesso elemento; A diverso significa numero di neutroni diverso. Atomi così si chiamano isotopi."
+/>
+
+<Esercizio
+  problema="L'ossigeno ha numero atomico Z = 8. Un suo atomo ha numero di massa A = 16. Quanti protoni, quanti elettroni (atomo neutro) e quanti neutroni ha? E se un altro atomo di ossigeno avesse A = 18, come si chiamerebbe rispetto al primo?"
+  soluzione="Protoni = Z = 8. Elettroni = 8 (atomo neutro, tanti quanti i protoni). Neutroni = A - Z = 16 - 8 = 8. L'atomo con A = 18 ha sempre Z = 8 (è sempre ossigeno) ma neutroni = 18 - 8 = 10: ha 2 neutroni in più, quindi è un isotopo dell'ossigeno-16 (si chiama ossigeno-18)."
+/>
+
+</section>
+
+</RisorsaLayout>

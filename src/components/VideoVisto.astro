@@ -1,0 +1,18 @@
+---
+interface Props { id: string; }
+const { id } = Astro.props;
+---
+<div class="video-visto">
+  <button
+    class="prog-toggle"
+    type="button"
+    data-prog-toggle
+    data-id={id}
+    data-flag="video"
+    data-on="Video visto"
+    data-off="Ho visto il video"
+    aria-pressed="false"
+  >
+    <span class="box"></span><span class="lbl">Ho visto il video</span>
+  </button>
+</div>

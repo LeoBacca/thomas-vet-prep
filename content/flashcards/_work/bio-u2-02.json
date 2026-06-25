@@ -1,0 +1,67 @@
+{
+ "id": "bio-u2-02",
+ "titolo": "I nucleosomi e l'impaccamento del DNA con gli istoni (istone H1, fibra da 30 nm)",
+ "materia": "biologia",
+ "unita": 2,
+ "slug": "02-i-nucleosomi-e-limpaccamento-del-dna",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/biologia/u2/02-i-nucleosomi-e-limpaccamento-del-dna.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Il rapporto di compattazione del DNA in un cromosoma durante la metafase, in cui è massima la condensazione di cromatina, è di 1:10^4. Ciò significa che se il DNA di un cromosoma lungo circa 4 µm fosse completamente svolto, si otterrebbe un filamento lungo:",
+   "choices": [
+    "40.000 µm cioè 4 cm",
+    "16.000 µm cioè 16 mm",
+    "4.000 µm cioè 40 cm",
+    "40.000 µm cioè 40 m",
+    "40.000 µm cioè 40 cm"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2014",
+   "q": "Che cosa è possibile trovare in un cromosoma umano? 1. Esoni; 2. Introni; 3. Proteine",
+   "choices": [
+    "Tutti",
+    "Solo 1 e 2",
+    "Solo 2 e 3",
+    "Solo 1 e 3",
+    "Solo 1"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2016",
+   "q": "La cromatina è:",
+   "choices": [
+    "il complesso di proteine e acidi nucleici presente nel nucleo di una cellula eucariotica",
+    "il pigmento presente nei globuli rossi",
+    "un microfilamento contrattile",
+    "un pigmento presente nello strato superficiale della pelle",
+    "un materiale contenuto nel citoplasma"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Nel nucleo di una cellula eucariotica:",
+   "choices": [
+    "il DNA è strettamente legato a proteine specifiche",
+    "avviene la sintesi di ATP",
+    "avviene la sintesi delle proteine",
+    "il DNA si trova sempre allo stesso livello di compattamento",
+    "non è presente RNA"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

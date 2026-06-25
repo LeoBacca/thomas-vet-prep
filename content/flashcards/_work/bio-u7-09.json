@@ -1,0 +1,81 @@
+{
+ "id": "bio-u7-09",
+ "titolo": "Cause di aneuploidia, gametogenesi umana e cellula staminale",
+ "materia": "biologia",
+ "unita": 7,
+ "slug": "09-cause-di-aneuploidia-gametogenesi-umana-e",
+ "freq": 5,
+ "risorseMdx": "src/pages/risorse/biologia/u7/09-cause-di-aneuploidia-gametogenesi-umana-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Nella donna, la meiosi a carico delle cellule germinali:",
+   "choices": [
+    "si completa solo dopo la fecondazione",
+    "si svolge per intero nell'ovaio a partire dalla pubertà",
+    "si svolge per intero nell'ovaio prima della nascita",
+    "ha inizio al momento della maturazione del follicolo ovarico",
+    "avviene al momento dell'immissione dello sperma nelle vie genitali femminili"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2008",
+   "q": "I cromosomi sessuali presenti in uno spermatozoo umano sono:",
+   "choices": [
+    "1",
+    "2",
+    "23",
+    "46",
+    "22"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2012",
+   "q": "La spermatogenesi e l'oogenesi si differenziano per diversi aspetti. Indica tra le seguenti l'affermazione NON corretta.",
+   "choices": [
+    "Lo spermatogonio è presente solo nell'embrione, mentre l'oogonio è presente nell'ovaio fino al suo rilascio da parte del follicolo maturo",
+    "Partendo da una singola cellula germinale la spermatogenesi porta alla formazione di quattro spermatozoi, l'oogenesi produce una sola cellula uovo",
+    "La spermatogenesi si completa quasi sempre in modo continuo, mentre l'oogenesi normalmente si arresta, temporaneamente, allo stadio di oocita secondario",
+    "La spermatogenesi è un processo che interessa contemporaneamente moltissimi spermatogoni, mentre l'oogenesi è un processo ciclico che porta a maturazione solitamente un solo oocita primario alla volta",
+    "Dopo la pubertà la spermatogenesi continua per tutta la vita, mentre l'oogenesi si arresta alla menopausa"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2013",
+   "q": "Nell'uomo, quali delle seguenti cellule hanno un numero di cromosomi uguale o minore rispetto ad uno spermatozoo? 1. Un globulo bianco; 2. Una cellula staminale embrionale; 3. Un ovocita secondario; 4. Un globulo rosso maturo.",
+   "choices": [
+    "3 e 4",
+    "1 e 2",
+    "1, 2 e 3",
+    "2, 3 e 4",
+    "1, 3 e 4"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Alla fine del processo di gametogenesi negli animali, spermatozoi e cellule uovo possono essere caratterizzati dalla presenza di: 1. acrosoma; 2. mitocondri; 3. abbondante materiale di riserva; 4. nucleo condensato; 5. accumulo di RNA e proteine; 6. coda. Quale, fra le seguenti, è l'associazione corretta?",
+   "choices": [
+    "Cellule uovo: 2, 3, 5 - Spermatozoi: 1, 2, 4, 6",
+    "Cellule uovo: 2, 4, 5 - Spermatozoi: 1, 3, 5, 6",
+    "Cellule uovo: 1, 2, 3, 4 - Spermatozoi: 2, 4, 5, 6",
+    "Cellule uovo: 1, 3, 4, 6 - Spermatozoi: 2, 3, 5",
+    "Cellule uovo: 3, 4, 6 - Spermatozoi: 1, 2, 3, 5"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

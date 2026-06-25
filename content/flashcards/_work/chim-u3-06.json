@@ -1,0 +1,53 @@
+{
+ "id": "chim-u3-06",
+ "titolo": "I catalizzatori e cenni sugli enzimi",
+ "materia": "chimica",
+ "unita": 3,
+ "slug": "06-i-catalizzatori-e-cenni-sugli-enzimi",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/chimica/u3/06-i-catalizzatori-e-cenni-sugli-enzimi.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "Indica quale, tra quelle sottoelencate, è la funzione svolta da un enzima che catalizza una reazione reversibile del tipo A + B -> C + D:",
+   "choices": [
+    "accelera la velocità della reazione",
+    "sposta l'equilibrio della reazione",
+    "aumenta il valore della costante di equilibrio",
+    "diminuisce il valore della costante di equilibrio",
+    "apporta energia alla reazione"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2018",
+   "q": "Quale delle seguenti affermazioni sui catalizzatori NON è corretta?",
+   "choices": [
+    "Spostano l'equilibrio della reazione verso i prodotti",
+    "Modificano il meccanismo della reazione",
+    "Diminuiscono l'energia di attivazione della reazione",
+    "Non si consumano nel corso della reazione",
+    "Accelerano il raggiungimento dell'equilibrio di reazione"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Quale, tra le seguenti affermazioni relative a un catalizzatore, è FALSA?",
+   "choices": [
+    "Consente di ottenere una maggior quantità di prodotto all'equilibrio",
+    "Rimane inalterato al termine di una reazione",
+    "Può consentire di ottenere prodotti diversi da quelli ottenibili senza catalisi",
+    "Modifica il meccanismo della reazione",
+    "Consente di raggiungere l'equilibrio in un tempo minore"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

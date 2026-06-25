@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u6-11-1",
+    "topicId": "chim-u6-11",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Tutti i derivati degli acidi carbossilici (esteri, tioesteri, ammidi, anidridi) hanno qualcosa in comune. Cos'e' questo 'cuore' che non cambia mai?",
+    "choices": [
+      "Il gruppo acilico -CO- (un carbonio con doppio legame all'ossigeno)",
+      "Un atomo di azoto legato al carbonio",
+      "Un anello di 6 atomi come nel benzene",
+      "Un atomo di zolfo che li rende tutti reattivi allo stesso modo"
+    ],
+    "answer": 0,
+    "explain": "Il cuore acilico -CO- e' lo stesso in tutti i derivati: cambia solo l'atomo o il gruppo agganciato di fianco (O, S, N o un altro -CO-). E' come un attacco LEGO che resta fisso: cambi solo il pezzo che ci appoggi sopra.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-11-2",
+    "topicId": "chim-u6-11",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: le ammidi sono i derivati degli acidi carbossilici piu' stabili e difficili da rompere, ed e' proprio per questo che il corpo le usa per costruire le proteine.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Le ammidi contengono azoto (-N) accanto al cuore acilico e sono le piu' robuste della famiglia. Il legame peptidico, che tiene uniti gli amminoacidi in una proteina (muscoli, enzimi, anticorpi), e' proprio un legame ammidico. Il corpo ha bisogno che le proteine durino: quindi usa il derivato piu' stabile.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-11-3",
+    "topicId": "chim-u6-11",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "open",
+    "q": "Hai davanti quattro molecole. In ognuna il 'cuore' -CO- e' lo stesso, ma l'atomo di fianco cambia: nella prima c'e' un ossigeno legato a un altro carbonio (-O-R), nella seconda uno zolfo (-S-R), nella terza un azoto (-N), nella quarta un altro gruppo acilico (-CO-). Dai il nome di ciascun derivato e spiega quale ruolo biologico ha il derivato con lo zolfo.",
+    "answer": "La prima e' un estere (ossigeno + carbonio a fianco: -O-R). La seconda e' un tioestere (zolfo a fianco: -S-R). La terza e' un'ammide (azoto a fianco: -N). La quarta e' un'anidride (due cuori acilici uniti da un ossigeno: -CO-O-CO-). Il tioestere e' la 'moneta energetica' delle cellule: la molecola acetil-CoA, che libera energia quando il corpo brucia zuccheri e grassi, e' proprio un tioestere. Lo zolfo rende il legame piu' facile da rompere, cosi l'energia si libera rapidamente quando serve.",
+    "explain": "Da ricordare: identifica il derivato guardando chi c'e' accanto al -CO-. Lo zolfo = tioestere = reattivo e utile per liberare energia (acetil-CoA).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u6-11-4",
+    "topicId": "chim-u6-11",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Un estere ha formula generica:",
+    "choices": [
+      "R-CO-O-R'",
+      "R-CO-O-H",
+      "R-CO-R'",
+      "R-CO-H",
+      "R-O-R'"
+    ],
+    "answer": 0,
+    "explain": "L'estere e' il derivato in cui accanto al cuore acilico (-CO-) c'e' un ossigeno legato a un altro gruppo carboniosa (R'): formula R-CO-O-R'. Trappola 'R-CO-O-H': quello e' l'ACIDO carbossilico di partenza (l'OH e' il gruppo carbossilico -COOH), non un estere. 'R-CO-R'' e' un chetone: il carbonile tra due catene, niente ossigeno di ponte. 'R-CO-H' e' un'aldeide. 'R-O-R'' e' un etere (solo un ossigeno tra due catene), privo del cuore acilico -CO-: non e' un derivato dell'acido carbossilico.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u6-11-5",
+    "topicId": "chim-u6-11",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Le ammidi hanno carattere:",
+    "choices": [
+      "Neutro",
+      "Basico",
+      "Fortemente acido",
+      "Debolmente acido",
+      "Fortemente basico"
+    ],
+    "answer": 0,
+    "explain": "Le ammidi hanno carattere neutro: il loro azoto avrebbe in teoria una coppia di elettroni libera (che di solito rende le ammine basiche), ma nel legame ammidico questa coppia e' delocalizzata sul gruppo carbonilico e non e' disponibile per accettare facilmente un protone. Quindi le ammidi non si comportano ne' come acidi ne' come basi significative. Trappola 'basico': e' la confusione con le ammine (R-NH2), che invece hanno l'azoto libero e sono basi. 'Acido' e 'fortemente basico' sono l'opposto esatto o un'esagerazione: entrambi sbagliati per le ammidi.",
+    "tags": ["prova d'esame"]
+  }
+]

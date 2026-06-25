@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-chim-u4-09-1",
+    "topicId": "chim-u4-09",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: nella gotta, rendere le urine piu basiche aiuta perche l'acido urico si scioglie meglio in ambiente meno acido e quindi resta disciolto invece di formare cristalli.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. E' come un interruttore: stesso sale (urato), pH diverso, esito diverso. Urina acida → l'acido urico precipita in cristalli (dolore alle articolazioni). Urina piu basica → resta disciolto e viene eliminato. Cambiare il pH e una vera leva terapeutica.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-09-2",
+    "topicId": "chim-u4-09",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "Un paziente forma spesso calcoli renali di ossalato di calcio. Il medico gli consiglia di bere molta piu acqua. Spiega perche questo aiuta, usando il concetto di solubilita e precipitazione.",
+    "answer": "L'ossalato di calcio e poco solubile: se nelle urine ce n'e troppo, i pezzi del sale si incontrano, si attaccano tra loro e precipitano formando cristalli solidi, che sono i calcoli. Bere molta acqua diluisce le urine: la stessa quantita di ossalato e calcio si trova in un volume maggiore di liquido, quindi i pezzi si incontrano molto meno spesso e fanno fatica ad attaccarsi. E' come allargare la sala: le persone si incontrano di meno e non si 'aggregano'. Risultato: l'ossalato di calcio rimane disciolto e viene eliminato senza formare sassolini.",
+    "explain": "Precipitazione = il sale supera il limite di solubilita e forma cristalli solidi. Diluire = abbassare la concentrazione = stare lontani dal limite. Stesso principio vale per l'urato nella gotta, ma li conta soprattutto il pH.",
+    "tags": ["risposta aperta"]
+  }
+]

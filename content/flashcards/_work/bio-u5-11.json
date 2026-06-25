@@ -1,0 +1,53 @@
+{
+ "id": "bio-u5-11",
+ "titolo": "Il ciclo degli acidi tricarbossilici (ciclo di Krebs)",
+ "materia": "biologia",
+ "unita": 5,
+ "slug": "11-il-ciclo-degli-acidi-tricarbossilici-ciclo",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/biologia/u5/11-il-ciclo-degli-acidi-tricarbossilici-ciclo.mdx",
+ "examQuestions": [
+  {
+   "year": "2013",
+   "q": "In una cellula eucariotica, due dei seguenti processi metabolici avvengono all'interno di un organello delimitato da membrane. Quali? 1. La glicolisi; 2. Il ciclo di Krebs; 3. La fermentazione lattica; 4. La fosforilazione ossidativa.",
+   "choices": [
+    "2 e 4",
+    "1 e 2",
+    "1 e 3",
+    "2 e 3",
+    "3 e 4"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2017",
+   "q": "Quali dei seguenti processi metabolici avvengono nella cellula eucariotica all'interno di un organello circondato da membrana?",
+   "choices": [
+    "Fosforilazione ossidativa e ciclo di Krebs",
+    "Ciclo di Krebs e fermentazione lattica",
+    "Fermentazione lattica e glicolisi",
+    "Glicolisi e ciclo di Calvin",
+    "Fermentazione lattica e replicazione del DNA"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Quali fra i seguenti processi fanno parte della respirazione cellulare aerobica? 1. Produzione di acido lattico; 2. Ciclo dell'acido citrico; 3. Produzione di etanolo; 4. Fosforilazione",
+   "choices": [
+    "2 e 4",
+    "1 e 2",
+    "2 e 3",
+    "1 e 4",
+    "3 e 4"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

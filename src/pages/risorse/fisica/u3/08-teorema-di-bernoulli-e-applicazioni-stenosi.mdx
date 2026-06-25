@@ -1,0 +1,94 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u3-08">
+
+## Cos'è il teorema di Bernoulli?
+
+Immagina un tubo dell'acqua che a un certo punto si stringe. L'acqua deve passare lo stesso, quindi accelera. Il teorema di Bernoulli dice che **quando un fluido va più veloce, la sua pressione scende** — e viceversa.
+
+In formula compatta (per fluido incomprimibile e senza attrito):
+
+> **P + ½ρv² + ρgh = costante**
+
+- **P** = pressione del fluido
+- **ρ** = densità del fluido
+- **v** = velocità del fluido
+- **g** = accelerazione di gravità
+- **h** = altezza del punto considerato
+
+Se rimaniamo alla stessa altezza (come nelle arterie), il termine **ρgh** non cambia, quindi conta solo il gioco tra P e v: **più veloce → meno pressione**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> dove il tubo si stringe, il fluido corre più forte — e "preme meno" sulle pareti. Dove il tubo si allarga, rallenta — e "preme di più".</div>
+
+---
+
+## Perché funziona? La conservazione dell'energia
+
+Bernoulli è semplicemente la conservazione dell'energia applicata ai fluidi.
+
+Un litro d'acqua che accelera acquista energia cinetica (½ρv²). Quell'energia deve venire da qualche parte: viene dalla pressione, che cala. Totale = sempre lo stesso.
+
+---
+
+## Applicazione 1 — Stenosi (restringimento)
+
+Una **stenosi** è un restringimento di un'arteria (per esempio per una placca di colesterolo).
+
+- La sezione si riduce → la velocità aumenta (equazione di continuità: A·v = costante)
+- La velocità aumenta → la pressione scende (Bernoulli)
+- Pressione bassa → le pareti dell'arteria si "risucchiano" verso l'interno
+
+Risultato: il vaso tende a collassare ulteriormente. È un effetto pericoloso e si auto-alimenta.
+
+<Diagram caption="Stenosi: sezione ristretta, velocità alta, pressione bassa" code={`flowchart LR
+  A["Arteria normale<br/>sezione grande<br/>v bassa, P alta"] --> B["Stenosi<br/>sezione piccola<br/>v ALTA, P BASSA"] --> C["Arteria normale<br/>sezione grande<br/>v bassa, P alta"]`} />
+
+---
+
+## Applicazione 2 — Aneurisma (dilatazione)
+
+Un **aneurisma** è il contrario: la parete di un'arteria si dilata e forma una sacca.
+
+- La sezione aumenta → la velocità diminuisce
+- La velocità diminuisce → la pressione **aumenta**
+- Pressione alta → la parete è spinta verso l'esterno e si gonfia ancora di più
+
+Anche questo è un circolo vizioso: più la sacca cresce, più la pressione al suo interno è alta, più rischia di rompersi.
+
+<Diagram caption="Aneurisma vs stenosi: effetti opposti di Bernoulli sulla pressione" code={`flowchart TB
+  V["Velocità alta"] --> PB["Pressione BASSA"]
+  V2["Velocità bassa"] --> PA["Pressione ALTA"]
+  PB --> S["Stenosi: pareti risucchiate verso l'interno"]
+  PA --> AN["Aneurisma: pareti spinte verso l'esterno"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="eYowFmePsI8" title="Teorema di Bernoulli della Fluidodinamica - Fisica | ZERO g" />
+<VideoVisto id="fis-u3-08" />
+
+## Da ricordare
+- **Velocità e pressione sono inversamente proporzionali**: dove il fluido corre più forte, preme di meno sulle pareti.
+- **Stenosi** → restringimento → velocità su, pressione giù → rischio collasso del vaso.
+- **Aneurisma** → dilatazione → velocità giù, pressione su → rischio rottura della parete.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="In un tubo orizzontale, il fluido passa da una sezione larga a una stretta. Cosa succede alla pressione nella zona stretta?" opzioni={["Aumenta, perché il fluido è compresso", "Rimane uguale, la pressione non dipende dalla sezione", "Diminuisce, perché la velocità è aumentata", "Aumenta solo se il fluido è viscoso"]} corretta={2} spiegazione="Per Bernoulli, a stessa altezza: P + ½ρv² = costante. Nella zona stretta la velocità aumenta (equazione di continuità), quindi ½ρv² cresce e P deve scendere per mantenere la somma costante." />
+
+<Quiz domanda="Cos'è una stenosi dal punto di vista fluidodinamico?" opzioni={["Una dilatazione anomala di un'arteria che porta a pressione alta nella sacca", "Un restringimento del lume arterioso che causa aumento di velocità e calo di pressione", "Un aumento di densità del sangue che rallenta il flusso", "Un'ostruzione totale che annulla la portata"]} corretta={1} spiegazione="La stenosi è un restringimento (lume ridotto). Per la continuità (A·v = cost), la velocità sale. Per Bernoulli, velocità alta → pressione bassa. Questo può portare al collasso della parete." />
+
+<Quiz domanda="Un aneurisma aortico è pericoloso principalmente perché:" opzioni={["La velocità del sangue aumenta e raffredda la parete", "La dilatazione causa calo di pressione e ischemia", "La dilatazione causa aumento di pressione sulla parete già indebolita, con rischio di rottura", "La sezione ristretta genera turbolenze letali"]} corretta={2} spiegazione="Nell'aneurisma la sezione è più grande → velocità minore → pressione più alta (Bernoulli). La pressione extra agisce su una parete già danneggiata e distesa, aumentando il rischio di rottura." />
+
+<Esercizio problema="Un'arteria ha diametro 4 mm e velocità del sangue 0,3 m/s. In una stenosi il diametro si riduce a 2 mm. Calcola la velocità del sangue nella stenosi e indica qualitativamente cosa succede alla pressione." soluzione="Usa l'equazione di continuità: A₁·v₁ = A₂·v₂. Le aree sono proporzionali al quadrato del raggio: A ∝ d². Quindi (4²)·0,3 = (2²)·v₂ → 16·0,3 = 4·v₂ → v₂ = 4,8/4 = 1,2 m/s. La velocità quadruplica (il diametro è dimezzato, l'area è 1/4). Per Bernoulli, la pressione nella stenosi sarà significativamente più bassa rispetto al tratto normale." />
+
+</section>
+
+</RisorsaLayout>

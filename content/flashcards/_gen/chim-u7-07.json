@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u7-07-1",
+    "topicId": "chim-u7-07",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: in acqua il glucosio esiste quasi tutto in forma di catena dritta, e solo una piccola parte si chiude ad anello.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso: e il contrario. In acqua quasi tutto il glucosio sta in forma ciclica (ad anello); solo una piccola percentuale resta come catena aperta. L'equilibrio favorisce nettamente l'anello, che e la forma piu stabile.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-07-2",
+    "topicId": "chim-u7-07",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Immagina un bracciale aperto che si aggancia alle due estremita e diventa un cerchio. Nel glucosio quali sono le due 'mani' che si stringono per chiudere l'anello?",
+    "choices": [
+      "Il gruppo aldeidico sul C1 e l'ossidrile (-OH) sul C5: si agganciano formando un legame emiacetale",
+      "Due gruppi aldeidici, uno sul C1 e uno sul C6, che reagiscono tra loro",
+      "Due ossidrili (-OH), uno sul C2 e uno sul C4, che formano un etere",
+      "Il gruppo carbossilico sul C6 e l'ossidrile sul C1"
+    ],
+    "answer": 0,
+    "explain": "La 'calamita' reattiva e il gruppo aldeidico sul C1; il partner e l'ossidrile sul C5. Quando si stringono nasce un legame chiamato emiacetale e l'anello si chiude (forma piranosio, a 6 angoli). Aggancio vet: questo anello e la base strutturale dell'amido (cibo per gli animali) e della cellulosa (erba e fibra).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-07-3",
+    "topicId": "chim-u7-07",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Amido e cellulosa sono entrambi fatti di tante unita di glucosio. Eppure noi diamo l'amido ma non la cellulosa, mentre una mucca mangia erba (cellulosa) grazie a batteri speciali. Come si spiega questa differenza, partendo dalla mutarotazione e dalle forme alfa e beta del glucosio?",
+    "answer": "Quando il glucosio si chiude ad anello, il nuovo -OH sul C1 puo finire in due posizioni: punta in giu (forma alfa) o punta in su (forma beta). In soluzione l'anello si apre e si richiude continuamente, dando ogni volta l'una o l'altra forma: questo equilibrio lento che porta a una miscela fissa di alfa e beta si chiama mutarotazione. Ora, quando i glucosi si uniscono in catena per formare un polisaccaride, 'ricordano' in che posizione e il -OH sul C1: se tutti in forma alfa si forma l'amido, se tutti in forma beta si forma la cellulosa. I nostri enzimi digestivi (amilasi) sanno tagliare il legame alfa, quindi digeriscono l'amido e ricaviamo energia. Non sanno tagliare il legame beta, quindi la cellulosa ci attraversa come fibra. La mucca ospita batteri nello stomaco che POSSONO tagliare il legame beta: per questo puo nutrirsi di erba e noi no. Stessa molecola di base, ma alfa o beta cambia tutto.",
+    "explain": "Da ricordare: alfa → amido (digeribile dagli animali con amilasi); beta → cellulosa (non digeribile senza batteri). La mutarotazione e il meccanismo che genera entrambe le forme in soluzione.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u7-07-4",
+    "topicId": "chim-u7-07",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "La mutarotazione del glucosio in soluzione acquosa:",
+    "choices": [
+      "fa raggiungere un potere ottico intermedio tra i due anomeri dello zucchero",
+      "fa diminuire il potere ottico rotatorio fino ad annullarlo completamente",
+      "fa aumentare il potere ottico perche si forma solo la forma beta, piu 'giratoria'",
+      "annulla completamente il potere ottico dello zucchero perche le due forme si cancellano a vicenda",
+      "lascia invariato il potere ottico perche le due forme non si interconvertono"
+    ],
+    "answer": 0,
+    "explain": "La mutarotazione e il passaggio dalla forma aperta all'equilibrio tra alfa e beta. I due anomeri hanno poteri ottici diversi: partendo da uno solo (es. solo alfa, con rotazione +112°) si arriva alla miscela di equilibrio che ha un valore INTERMEDIO (+52,7°). La risposta giusta e quindi 'valore intermedio'. Trappole: 'annulla completamente' e sbagliato perche si annullerebbe solo se la miscela fosse racemica (50-50 di due enantiomeri), ma alfa e beta NON sono enantiomeri perfetti e il valore di equilibrio non e zero. 'Diminuisce' e parzialmente vero se si parte dall'alfa (rotazione piu alta), ma il punto chiave e che si stabilizza su un valore INTERMEDIO, non che continua a scendere. 'Solo beta' e sbagliato: all'equilibrio ci sono ENTRAMBE le forme (circa 36% alfa e 64% beta). 'Rimane invariato' e l'opposto esatto: e proprio la variazione verso il valore di equilibrio che definisce la mutarotazione.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u7-07-5",
+    "topicId": "chim-u7-07",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "La crosta dorata del pane, l'aroma della carne arrosto e l'HbA1c (emoglobina glicata) misurata ai diabetici hanno qualcosa in comune. Quale reazione chimica li lega?",
+    "choices": [
+      "La reazione di Maillard: uno zucchero reagisce con una proteina (o amminoacido) in presenza di calore, formando composti bruni e profumati; nel corpo avviene lentamente anche a temperatura corporea",
+      "La fermentazione: i lieviti trasformano gli zuccheri in alcol e CO2, producendo aroma e colore",
+      "L'ossidazione: lo zucchero perde elettroni e il gruppo aldeidico diventa un acido, colorando la superficie",
+      "La riduzione: il glucosio acquista idrogeno e si trasforma in sorbitolo, che si deposita sulle proteine",
+      "La caramellizzazione: il saccarosio si scioglie e si riscalda senza nessuna proteina coinvolta"
+    ],
+    "answer": 0,
+    "explain": "La reazione di Maillard e la risposta corretta: richiede uno ZUCCHERO (come il glucosio) + una PROTEINA (o un amminoacido) + CALORE. Produce composti bruni e aromi. In cucina agisce rapidamente (padella, forno). Nel corpo umano avviene lentamente a 37°C: il glucosio del sangue si attacca all'emoglobina formando HbA1c, usata come marcatore del diabete. Trappole: la 'fermentazione' e sbagliata perche e opera di lieviti, non di una reazione tra zucchero e proteina. L''ossidazione' descrive un'altra reazione (zucchero → acido, es. gluconato), non la doratura. La 'riduzione' da il sorbitolo (il dolcificante dei chewing gum), non la crosta del pane. La 'caramellizzazione' e simile all'aspetto ma e diversa: avviene con solo zuccheri e calore, senza proteine, ed e un processo distinto dalla Maillard.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u3-05-1",
+    "topicId": "fis-u3-05",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: nell'esperimento di Torricelli, è il vuoto sopra la colonna di mercurio che 'aspira' il mercurio verso l'alto, tenendolo su.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il vuoto NON aspira niente: è proprio assenza di pressione. A tenere su il mercurio è la pressione atmosferica che preme dall'esterno sulla vaschetta, spingendo il liquido verso l'alto nel tubo. È come premere il pollice su una cannuccia piena d'acqua: l'aria esterna preme e non lascia cadere il liquido — non è il vuoto a 'tirare'.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-05-2",
+    "topicId": "fis-u3-05",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Il barometro e il manometro sono due strumenti per misurare la pressione. Qual è la differenza principale?",
+    "choices": [
+      "Il barometro misura la pressione atmosferica; il manometro misura la pressione di un fluido rispetto all'atmosfera (pressione relativa)",
+      "Il barometro misura la pressione di un fluido; il manometro misura la pressione atmosferica",
+      "Sono la stessa cosa: entrambi misurano la pressione assoluta",
+      "Il barometro usa acqua, il manometro usa mercurio"
+    ],
+    "answer": 0,
+    "explain": "Il barometro (nato dall'esperimento di Torricelli) misura quanto pesa l'aria sopra di noi — la pressione atmosferica. Il manometro a U invece confronta il fluido che ci interessa (es. gas in un pallone, sangue in una vena) con l'aria: la differenza di altezza tra i due lati del tubo ci dà la pressione in eccesso rispetto all'atmosfera, detta pressione relativa o manometrica. Pressione assoluta = pressione atmosferica + pressione manometrica.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-05-3",
+    "topicId": "fis-u3-05",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "open",
+    "q": "Descrivi con parole tue l'esperimento di Torricelli: cosa si fa, cosa si osserva e perché il mercurio si ferma proprio a 76 cm. Aggiungi la formula che lega la pressione atmosferica all'altezza della colonna.",
+    "answer": "Si prende un tubo di vetro chiuso a un'estremità, lo si riempie completamente di mercurio e, tappandolo con il dito, lo si rovescia immergendo l'estremità aperta in una vaschetta di mercurio. Quando si toglie il dito, il mercurio nel tubo scende un po' e poi si ferma a circa 76 cm sopra il livello della vaschetta. Perché si ferma lì? Perché l'aria preme sulla superficie libera del mercurio nella vaschetta e spinge il liquido verso l'alto nel tubo chiuso. Il mercurio continua a salire finché il suo peso eguaglia esattamente questa spinta: a 76 cm il sistema è in equilibrio — pressione atmosferica = peso della colonna di mercurio. Sopra la colonna si forma il 'vuoto di Torricelli' (quasi privo di aria), che non preme nulla. La formula è: P₀ = ρ · g · h, dove ρ è la densità del mercurio (13 600 kg/m³), g è l'accelerazione di gravità (9,8 m/s²) e h è l'altezza della colonna (0,76 m). Il risultato è circa 101 325 Pa = 1 atm.",
+    "explain": "Da ricordare: è la pressione atmosferica a spingere su il mercurio, non il vuoto a tirarlo. P₀ = ρ · g · h ≈ 101 325 Pa = 1 atm quando h = 76 cm di mercurio.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u3-05-4",
+    "topicId": "fis-u3-05",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Per misurare la pressione atmosferica, Torricelli usò un tubo riempito di mercurio. La scelta del mercurio è dovuta principalmente:",
+    "choices": [
+      "Alla sua elevata densità: un liquido meno denso avrebbe richiesto un tubo molto più lungo per equilibrare la pressione atmosferica",
+      "Al suo colore scuro: un liquido trasparente avrebbe reso difficile leggere il livello",
+      "Alla sua elevata conducibilità termica: un liquido isolante sarebbe meno sensibile alle variazioni meteorologiche",
+      "Alla sua bassa temperatura di fusione: altri liquidi non sarebbero utilizzabili nelle giornate fredde",
+      "Alla sua bassa resistività elettrica: un liquido isolante non permetterebbe di scaricare a terra le cariche in eccesso"
+    ],
+    "answer": 0,
+    "explain": "La densità è la chiave: P₀ = ρ · g · h, quindi h = P₀ / (ρ · g). Più il liquido è denso, più corta è la colonna necessaria. Il mercurio è circa 13 600 kg/m³: basta una colonna di 76 cm. Con l'acqua (1 000 kg/m³), invece, servirebbero circa 10 metri di tubo — del tutto impraticabile. Le altre opzioni sono distrattori: il colore non è un requisito tecnico; la conducibilità termica non ha nulla a che fare con la misura della pressione; la temperatura di fusione del mercurio è in realtà bassa (−39 °C), non alta, ma non è la ragione principale della scelta; la resistività elettrica è completamente fuori tema.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u3-05-5",
+    "topicId": "fis-u3-05",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Un manometro a U contiene mercurio (densità 13 600 kg/m³). Un lato è collegato a un gas, l'altro è aperto all'aria. La differenza di altezza tra i due lati è 10 cm. Qual è la pressione relativa (manometrica) del gas? (g = 9,8 m/s²)",
+    "choices": [
+      "13 328 Pa",
+      "1 333 Pa",
+      "133 280 Pa",
+      "136 000 Pa",
+      "980 Pa"
+    ],
+    "answer": 0,
+    "explain": "Formula: P_rel = ρ · g · h. Converti prima h: 10 cm = 0,10 m. Poi calcola: P_rel = 13 600 × 9,8 × 0,10 = 13 328 Pa. Trappola '1 333 Pa': chi sbaglia la conversione e usa h = 0,01 m invece di 0,10 m (13 600 × 9,8 × 0,01 = 1 333), cioè divide i centimetri per 1000 anziché per 100. Trappola '133 280 Pa': chi usa h = 1 m invece di 0,10 m (dimentica del tutto la conversione da cm e calcola con 1 metro). Trappola '136 000 Pa': chi dimentica g e moltiplica solo ρ × h con h in centimetri (13 600 × 10 = 136 000). Trappola '980 Pa': chi usa la densità dell'acqua (1 000 × 9,8 × 0,10) invece di quella del mercurio. Regola d'oro: converti SEMPRE i cm in metri prima di calcolare (10 cm = 0,10 m).",
+    "tags": ["prova d'esame"]
+  }
+]

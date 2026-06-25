@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-25-1",
+    "topicId": "chim-u1-25",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: nelle formule delle leggi dei gas (Boyle, Charles, Gay-Lussac) la temperatura va sempre espressa in gradi Celsius, non in kelvin.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Va SEMPRE in kelvin (K = °C + 273). I gradi Celsius possono essere zero o negativi, il che darebbe divisioni per zero o risultati assurdi nelle formule. I kelvin partono dallo zero assoluto (la temperatura minima possibile) e sono sempre positivi: solo così i conti tornano.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-25-2",
+    "topicId": "chim-u1-25",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un palloncino gonfiato sta sul tavolo a pressione costante. Lo porti fuori dove fa molto più freddo. Cosa succede al palloncino?",
+    "choices": [
+      "Si sgonfia un po' (il volume diminuisce)",
+      "Si gonfia ancora di più (il volume aumenta)",
+      "Non cambia niente",
+      "Esplode per la differenza di pressione"
+    ],
+    "answer": 0,
+    "explain": "Legge di Charles: a pressione costante, volume e temperatura (in kelvin) sono direttamente proporzionali. Temperatura giù → volume giù: il palloncino si raggrinzisce. È lo stesso motivo per cui i palloncini di elio si sgonfiano d'inverno. La risposta 'si gonfia' è l'opposto esatto: confonde il verso della proporzionalità.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-25-3",
+    "topicId": "chim-u1-25",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue le tre leggi dei gas (Boyle, Charles, Gay-Lussac): per ciascuna, cosa si tiene fermo e cosa succede alle altre due grandezze? Aggiungi un esempio concreto per almeno una.",
+    "answer": "Ogni legge 'congela' una grandezza e studia le altre due. BOYLE (temperatura ferma): volume e pressione sono inversamente proporzionali — schiacci il gas (volume giù) e la pressione sale, come quando premi lo stantuffo di una siringa tappata. Formula: P × V = costante. CHARLES (pressione ferma): volume e temperatura sono direttamente proporzionali — scaldi il gas e si espande, come un palloncino lasciato al sole che si gonfia. Formula: V / T = costante. GAY-LUSSAC (volume fermo): pressione e temperatura sono direttamente proporzionali — scaldi un recipiente rigido e la pressione aumenta, come una bomboletta spray esposta al calore che rischia di scoppiare. Formula: P / T = costante. Tutte e tre usano la temperatura in kelvin.",
+    "explain": "Schema rapido: Boyle (T ferma) = P e V inversi; Charles (P ferma) = V e T diretti; Gay-Lussac (V fermo) = P e T diretti.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-25-4",
+    "topicId": "chim-u1-25",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale tra i seguenti cambiamenti NON fa aumentare la pressione di un gas rinchiuso in un contenitore?",
+    "choices": [
+      "Aumentare il volume del contenitore",
+      "Aumentare la temperatura del gas",
+      "Aggiungere altre moli dello stesso gas",
+      "Aumentare la temperatura e diminuire il volume contemporaneamente",
+      "Nessuna delle altre risposte è corretta"
+    ],
+    "answer": 0,
+    "explain": "Aumentare il volume è l'unica azione che fa SCENDERE la pressione (Boyle: se V sale, P scende). Tutte le altre la fanno salire. Aumentare la temperatura a volume fisso fa salire P (Gay-Lussac). Aggiungere moli significa più particelle che sbattono: P sale. Aumentare T e diminuire V agisce nella stessa direzione: P sale ancora di più. La trappola 'Nessuna delle altre' tenta chi non è sicuro: ma la risposta giusta c'è, ed è la prima.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-25-5",
+    "topicId": "chim-u1-25",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "La legge di Gay-Lussac afferma che 'a volume costante la pressione esercitata da un gas è...'?",
+    "choices": [
+      "Direttamente proporzionale alla sua temperatura assoluta (in kelvin)",
+      "Inversamente proporzionale alla sua temperatura assoluta",
+      "Direttamente proporzionale alla sua temperatura in gradi Celsius",
+      "Inversamente proporzionale alla sua temperatura in gradi Celsius",
+      "Indipendente dalla sua temperatura"
+    ],
+    "answer": 0,
+    "explain": "Gay-Lussac: P / T = costante (con T in kelvin), quindi P e T crescono insieme → direttamente proporzionali. L'opposto esatto è 'inversamente proporzionale': sarebbe Boyle, non Gay-Lussac. Le due trappole con i gradi Celsius sono insidiose: i Celsius non si usano mai nelle leggi dei gas perché il loro zero non è lo zero vero (a 0 °C le particelle si muovono ancora). 'Indipendente dalla temperatura' è il filler: contraddirebbe qualsiasi legge dei gas.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,25 @@
+{
+ "id": "bio-u3-12",
+ "titolo": "Inizio, allungamento e terminazione della trascrizione negli eucarioti",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "12-inizio-allungamento-e-terminazione-della-trascrizione",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u3/12-inizio-allungamento-e-terminazione-della-trascrizione.mdx",
+ "examQuestions": [
+  {
+   "year": "2016",
+   "q": "La trascrizione del DNA produce:",
+   "choices": [
+    "una molecola di RNA a singolo filamento",
+    "una molecola di DNA a singolo filamento",
+    "una proteina",
+    "una molecola di DNA a doppio filamento",
+    "una molecola di RNA a doppio filamento"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

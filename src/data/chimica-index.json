@@ -1,0 +1,2445 @@
+{
+  "materia": "Chimica e Propedeutica Biochimica",
+  "unita": [
+    {
+      "key": "u1",
+      "num": 1,
+      "titolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "cfu": 1,
+      "ready": true,
+      "topicIds": [
+        "chim-u1-01",
+        "chim-u1-02",
+        "chim-u1-03",
+        "chim-u1-04",
+        "chim-u1-05",
+        "chim-u1-06",
+        "chim-u1-07",
+        "chim-u1-08",
+        "chim-u1-09",
+        "chim-u1-10",
+        "chim-u1-11",
+        "chim-u1-12",
+        "chim-u1-13",
+        "chim-u1-14",
+        "chim-u1-15",
+        "chim-u1-16",
+        "chim-u1-17",
+        "chim-u1-18",
+        "chim-u1-19",
+        "chim-u1-20",
+        "chim-u1-21",
+        "chim-u1-22",
+        "chim-u1-23",
+        "chim-u1-24",
+        "chim-u1-25",
+        "chim-u1-26",
+        "chim-u1-27",
+        "chim-u1-28",
+        "chim-u1-29",
+        "chim-u1-30",
+        "chim-u1-31"
+      ]
+    },
+    {
+      "key": "u2",
+      "num": 2,
+      "titolo": "Miscele, soluzioni e proprietà colligative",
+      "cfu": 1,
+      "ready": true,
+      "topicIds": [
+        "chim-u2-01",
+        "chim-u2-02",
+        "chim-u2-03",
+        "chim-u2-04",
+        "chim-u2-05",
+        "chim-u2-06",
+        "chim-u2-07",
+        "chim-u2-08",
+        "chim-u2-09",
+        "chim-u2-10",
+        "chim-u2-11",
+        "chim-u2-12",
+        "chim-u2-13"
+      ]
+    },
+    {
+      "key": "u3",
+      "num": 3,
+      "titolo": "Reazioni chimiche: cinetica ed equilibrio",
+      "cfu": 0.5,
+      "ready": true,
+      "topicIds": [
+        "chim-u3-01",
+        "chim-u3-02",
+        "chim-u3-03",
+        "chim-u3-04",
+        "chim-u3-05",
+        "chim-u3-06",
+        "chim-u3-07",
+        "chim-u3-08",
+        "chim-u3-09"
+      ]
+    },
+    {
+      "key": "u4",
+      "num": 4,
+      "titolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "cfu": 1,
+      "ready": true,
+      "topicIds": [
+        "chim-u4-01",
+        "chim-u4-02",
+        "chim-u4-03",
+        "chim-u4-04",
+        "chim-u4-05",
+        "chim-u4-06",
+        "chim-u4-07",
+        "chim-u4-08",
+        "chim-u4-09",
+        "chim-u4-10",
+        "chim-u4-11",
+        "chim-u4-12",
+        "chim-u4-13",
+        "chim-u4-14"
+      ]
+    },
+    {
+      "key": "u5",
+      "num": 5,
+      "titolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "cfu": 0.5,
+      "ready": true,
+      "topicIds": [
+        "chim-u5-01",
+        "chim-u5-02",
+        "chim-u5-03",
+        "chim-u5-04",
+        "chim-u5-05",
+        "chim-u5-06",
+        "chim-u5-07",
+        "chim-u5-08",
+        "chim-u5-09",
+        "chim-u5-10",
+        "chim-u5-11",
+        "chim-u5-12"
+      ]
+    },
+    {
+      "key": "u6",
+      "num": 6,
+      "titolo": "I gruppi funzionali e le isomerie",
+      "cfu": 1,
+      "ready": true,
+      "topicIds": [
+        "chim-u6-01",
+        "chim-u6-02",
+        "chim-u6-03",
+        "chim-u6-04",
+        "chim-u6-05",
+        "chim-u6-06",
+        "chim-u6-07",
+        "chim-u6-08",
+        "chim-u6-09",
+        "chim-u6-10",
+        "chim-u6-11",
+        "chim-u6-12"
+      ]
+    },
+    {
+      "key": "u7",
+      "num": 7,
+      "titolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "cfu": 1,
+      "ready": true,
+      "topicIds": [
+        "chim-u7-01",
+        "chim-u7-02",
+        "chim-u7-03",
+        "chim-u7-04",
+        "chim-u7-05",
+        "chim-u7-06",
+        "chim-u7-07",
+        "chim-u7-08",
+        "chim-u7-09",
+        "chim-u7-10",
+        "chim-u7-11",
+        "chim-u7-12",
+        "chim-u7-13",
+        "chim-u7-14"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "chim-u1-01",
+      "titolo": "Materia, atomi ed elementi (teoria atomica di Dalton)",
+      "obiettivo": "Capire che tutta la materia è fatta di atomi e cos'è un elemento chimico.",
+      "difficolta": 1,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [],
+      "correlati": [
+        "chim-u1-02"
+      ],
+      "slug": "01-materia-atomi-ed-elementi-teoria-atomica",
+      "url": "risorse/chimica/u1/01-materia-atomi-ed-elementi-teoria-atomica/",
+      "prev": null,
+      "next": "chim-u1-02",
+      "diagramma": "dalla materia all'atomo (zoom): oggetto → molecole → atomi",
+      "video": true
+    },
+    {
+      "id": "chim-u1-02",
+      "titolo": "Le particelle subatomiche: protoni, neutroni ed elettroni",
+      "obiettivo": "Conoscere le tre particelle dell'atomo, la loro carica e dove si trovano (nucleo vs orbitali).",
+      "difficolta": 1,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-01"
+      ],
+      "correlati": [
+        "chim-u1-03",
+        "chim-u1-05",
+        "chim-u1-11"
+      ],
+      "slug": "02-le-particelle-subatomiche-protoni-neutroni-ed",
+      "url": "risorse/chimica/u1/02-le-particelle-subatomiche-protoni-neutroni-ed/",
+      "prev": "chim-u1-01",
+      "next": "chim-u1-03",
+      "diagramma": "atomo con nucleo (protoni+neutroni) ed elettroni intorno",
+      "video": true
+    },
+    {
+      "id": "chim-u1-03",
+      "titolo": "Numero atomico, numero di massa e isotopi",
+      "obiettivo": "Distinguere Z (numero atomico) e A (numero di massa) e capire cosa sono gli isotopi.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-02"
+      ],
+      "correlati": [
+        "chim-u1-04"
+      ],
+      "slug": "03-numero-atomico-numero-di-massa-e",
+      "url": "risorse/chimica/u1/03-numero-atomico-numero-di-massa-e/",
+      "prev": "chim-u1-02",
+      "next": "chim-u1-04",
+      "diagramma": "notazione AZX con esempi di isotopi del carbonio",
+      "video": true
+    },
+    {
+      "id": "chim-u1-04",
+      "titolo": "Proprietà magnetiche del nucleo e Risonanza Magnetica (RMN)",
+      "obiettivo": "Capire a grandi linee perché il nucleo di alcuni atomi si comporta come una calamita e come questo è usato nella risonanza magnetica.",
+      "difficolta": 1,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-03"
+      ],
+      "correlati": [],
+      "slug": "04-proprieta-magnetiche-del-nucleo-e-risonanza",
+      "url": "risorse/chimica/u1/04-proprieta-magnetiche-del-nucleo-e-risonanza/",
+      "prev": "chim-u1-03",
+      "next": "chim-u1-05",
+      "diagramma": "nucleo come piccola calamita (spin) in un campo magnetico",
+      "video": true
+    },
+    {
+      "id": "chim-u1-05",
+      "titolo": "I numeri quantici e gli orbitali",
+      "obiettivo": "Capire che gli elettroni stanno in 'zone di probabilità' (orbitali s, p, d) descritte dai numeri quantici.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-02"
+      ],
+      "correlati": [
+        "chim-u1-06"
+      ],
+      "slug": "05-i-numeri-quantici-e-gli-orbitali",
+      "url": "risorse/chimica/u1/05-i-numeri-quantici-e-gli-orbitali/",
+      "prev": "chim-u1-04",
+      "next": "chim-u1-06",
+      "diagramma": "forme degli orbitali s (sfera) e p (manubrio)",
+      "video": true
+    },
+    {
+      "id": "chim-u1-06",
+      "titolo": "Riempimento degli orbitali: Pauli, Hund e Aufbau",
+      "obiettivo": "Sapere in che ordine gli elettroni riempiono gli orbitali e le regole di Pauli e Hund.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-05"
+      ],
+      "correlati": [
+        "chim-u1-07"
+      ],
+      "slug": "06-riempimento-degli-orbitali-pauli-hund-e",
+      "url": "risorse/chimica/u1/06-riempimento-degli-orbitali-pauli-hund-e/",
+      "prev": "chim-u1-05",
+      "next": "chim-u1-07",
+      "diagramma": "diagramma a caselle con frecce su/giù e ordine di riempimento",
+      "video": true
+    },
+    {
+      "id": "chim-u1-07",
+      "titolo": "La configurazione elettronica e gli elementi della vita",
+      "obiettivo": "Scrivere la configurazione elettronica di un elemento e conoscere gli atomi più importanti del corpo (C, H, O, N, P, S).",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-06"
+      ],
+      "correlati": [
+        "chim-u1-08",
+        "chim-u1-10"
+      ],
+      "slug": "07-la-configurazione-elettronica-e-gli-elementi",
+      "url": "risorse/chimica/u1/07-la-configurazione-elettronica-e-gli-elementi/",
+      "prev": "chim-u1-06",
+      "next": "chim-u1-08",
+      "diagramma": "configurazione elettronica di un atomo passo passo",
+      "video": true
+    },
+    {
+      "id": "chim-u1-08",
+      "titolo": "La tavola periodica: come è organizzata",
+      "obiettivo": "Leggere la tavola periodica: gruppi, periodi e blocchi, legati alla configurazione elettronica.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-07"
+      ],
+      "correlati": [
+        "chim-u1-09"
+      ],
+      "slug": "08-la-tavola-periodica-come-e-organizzata",
+      "url": "risorse/chimica/u1/08-la-tavola-periodica-come-e-organizzata/",
+      "prev": "chim-u1-07",
+      "next": "chim-u1-09",
+      "diagramma": "tavola periodica con gruppi e periodi evidenziati",
+      "video": true
+    },
+    {
+      "id": "chim-u1-09",
+      "titolo": "Le proprietà periodiche (raggio, ionizzazione, affinità, elettronegatività)",
+      "obiettivo": "Capire come variano raggio atomico, energia di ionizzazione, affinità elettronica ed elettronegatività nella tavola.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-08"
+      ],
+      "correlati": [],
+      "slug": "09-le-proprieta-periodiche-raggio-ionizzazione-affinita",
+      "url": "risorse/chimica/u1/09-le-proprieta-periodiche-raggio-ionizzazione-affinita/",
+      "prev": "chim-u1-08",
+      "next": "chim-u1-10",
+      "diagramma": "frecce di andamento delle proprietà sulla tavola periodica",
+      "video": true
+    },
+    {
+      "id": "chim-u1-10",
+      "titolo": "La regola dell'ottetto",
+      "obiettivo": "Capire perché gli atomi tendono ad avere 8 elettroni nello strato esterno.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-07"
+      ],
+      "correlati": [
+        "chim-u1-13"
+      ],
+      "slug": "10-la-regola-dellottetto",
+      "url": "risorse/chimica/u1/10-la-regola-dellottetto/",
+      "prev": "chim-u1-09",
+      "next": "chim-u1-11",
+      "diagramma": "atomo che 'vuole' 8 elettroni esterni (gas nobile)",
+      "video": true
+    },
+    {
+      "id": "chim-u1-11",
+      "titolo": "Molecole, ioni e ioni poliatomici",
+      "obiettivo": "Distinguere molecole, ioni (cationi/anioni) e ioni poliatomici.",
+      "difficolta": 1,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-02"
+      ],
+      "correlati": [
+        "chim-u1-12"
+      ],
+      "slug": "11-molecole-ioni-e-ioni-poliatomici",
+      "url": "risorse/chimica/u1/11-molecole-ioni-e-ioni-poliatomici/",
+      "prev": "chim-u1-10",
+      "next": "chim-u1-12",
+      "diagramma": "molecola vs ione (atomo che perde/acquista elettroni)",
+      "video": true
+    },
+    {
+      "id": "chim-u1-12",
+      "titolo": "La mole, il numero di Avogadro e la massa molecolare",
+      "obiettivo": "Capire cos'è la mole, il numero di Avogadro e come si calcola la massa molecolare.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-11"
+      ],
+      "correlati": [
+        "chim-u1-26",
+        "chim-u2-07"
+      ],
+      "slug": "12-la-mole-il-numero-di-avogadro",
+      "url": "risorse/chimica/u1/12-la-mole-il-numero-di-avogadro/",
+      "prev": "chim-u1-11",
+      "next": "chim-u1-13",
+      "diagramma": "1 mole = 6,022×10^23 particelle (analogia 'dozzina')",
+      "video": true
+    },
+    {
+      "id": "chim-u1-13",
+      "titolo": "Il legame chimico: perché gli atomi si legano",
+      "obiettivo": "Capire che gli atomi si legano per raggiungere una configurazione più stabile (energia minima).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-10"
+      ],
+      "correlati": [
+        "chim-u1-14",
+        "chim-u1-15"
+      ],
+      "slug": "13-il-legame-chimico-perche-gli-atomi",
+      "url": "risorse/chimica/u1/13-il-legame-chimico-perche-gli-atomi/",
+      "prev": "chim-u1-12",
+      "next": "chim-u1-14",
+      "diagramma": "curva di energia: due atomi che si avvicinano e si stabilizzano",
+      "video": true
+    },
+    {
+      "id": "chim-u1-14",
+      "titolo": "Il legame covalente: puro, polare e dativo",
+      "obiettivo": "Capire la condivisione di elettroni e distinguere covalente puro, polare e dativo (di coordinazione).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-13"
+      ],
+      "correlati": [
+        "chim-u1-16",
+        "chim-u1-19",
+        "chim-u1-22"
+      ],
+      "slug": "14-il-legame-covalente-puro-polare-e",
+      "url": "risorse/chimica/u1/14-il-legame-covalente-puro-polare-e/",
+      "prev": "chim-u1-13",
+      "next": "chim-u1-15",
+      "diagramma": "coppia di elettroni condivisa; freccia della polarità",
+      "video": true
+    },
+    {
+      "id": "chim-u1-15",
+      "titolo": "Il legame ionico (e cenni sul legame metallico)",
+      "obiettivo": "Capire il trasferimento di elettroni nel legame ionico e a grandi linee il legame metallico.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-13"
+      ],
+      "correlati": [
+        "chim-u1-24"
+      ],
+      "slug": "15-il-legame-ionico-e-cenni-sul",
+      "url": "risorse/chimica/u1/15-il-legame-ionico-e-cenni-sul/",
+      "prev": "chim-u1-14",
+      "next": "chim-u1-16",
+      "diagramma": "Na cede e- a Cl → Na+ Cl-; mare di elettroni nei metalli",
+      "video": true
+    },
+    {
+      "id": "chim-u1-16",
+      "titolo": "L'ibridazione degli orbitali (sp, sp², sp³)",
+      "obiettivo": "Capire l'idea di orbitali ibridi e collegarla alla geometria delle molecole.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-14"
+      ],
+      "correlati": [
+        "chim-u1-17",
+        "chim-u1-18",
+        "chim-u5-01"
+      ],
+      "slug": "16-libridazione-degli-orbitali-sp-sp-sp",
+      "url": "risorse/chimica/u1/16-libridazione-degli-orbitali-sp-sp-sp/",
+      "prev": "chim-u1-15",
+      "next": "chim-u1-17",
+      "diagramma": "orbitali ibridi sp3 (tetraedro), sp2 (piano), sp (lineare)",
+      "video": true
+    },
+    {
+      "id": "chim-u1-17",
+      "titolo": "Legami σ e π: legami semplici, doppi e tripli",
+      "obiettivo": "Distinguere legame sigma e pi greco e capire i legami doppi e tripli.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-16"
+      ],
+      "correlati": [],
+      "slug": "17-legami-e-legami-semplici-doppi-e",
+      "url": "risorse/chimica/u1/17-legami-e-legami-semplici-doppi-e/",
+      "prev": "chim-u1-16",
+      "next": "chim-u1-18",
+      "diagramma": "legame sigma (testa-testa) e pi greco (sopra/sotto)",
+      "video": true
+    },
+    {
+      "id": "chim-u1-18",
+      "titolo": "Geometria molecolare e angolo di legame",
+      "obiettivo": "Prevedere la forma di una molecola (lineare, angolare, tetraedrica) dagli orbitali/ibridazione.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-16"
+      ],
+      "correlati": [
+        "chim-u1-19"
+      ],
+      "slug": "18-geometria-molecolare-e-angolo-di-legame",
+      "url": "risorse/chimica/u1/18-geometria-molecolare-e-angolo-di-legame/",
+      "prev": "chim-u1-17",
+      "next": "chim-u1-19",
+      "diagramma": "geometrie: H2O angolare, CO2 lineare, CH4 tetraedrica",
+      "video": true
+    },
+    {
+      "id": "chim-u1-19",
+      "titolo": "Molecole polari e apolari (il momento dipolare)",
+      "obiettivo": "Capire perché una molecola è polare o apolare e cosa significa per la solubilità.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-14",
+        "chim-u1-18"
+      ],
+      "correlati": [
+        "chim-u1-20"
+      ],
+      "slug": "19-molecole-polari-e-apolari-il-momento",
+      "url": "risorse/chimica/u1/19-molecole-polari-e-apolari-il-momento/",
+      "prev": "chim-u1-18",
+      "next": "chim-u1-20",
+      "diagramma": "H2O polare (dipolo) vs CO2 apolare (dipoli che si annullano)",
+      "video": true
+    },
+    {
+      "id": "chim-u1-20",
+      "titolo": "Le interazioni deboli: legame a idrogeno e forze di van der Waals",
+      "obiettivo": "Capire i legami deboli tra molecole e la loro importanza biologica (es. acqua, DNA).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-19"
+      ],
+      "correlati": [
+        "chim-u1-21",
+        "chim-u2-03"
+      ],
+      "slug": "20-le-interazioni-deboli-legame-a-idrogeno",
+      "url": "risorse/chimica/u1/20-le-interazioni-deboli-legame-a-idrogeno/",
+      "prev": "chim-u1-19",
+      "next": "chim-u1-21",
+      "diagramma": "legami a idrogeno tra molecole d'acqua",
+      "video": true
+    },
+    {
+      "id": "chim-u1-21",
+      "titolo": "Le interazioni idrofobiche",
+      "obiettivo": "Capire perché le molecole apolari 'fuggono' dall'acqua e si raggruppano.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-20"
+      ],
+      "correlati": [],
+      "slug": "21-le-interazioni-idrofobiche",
+      "url": "risorse/chimica/u1/21-le-interazioni-idrofobiche/",
+      "prev": "chim-u1-20",
+      "next": "chim-u1-22",
+      "diagramma": "gocce d'olio che si uniscono in acqua",
+      "video": true
+    },
+    {
+      "id": "chim-u1-22",
+      "titolo": "Il numero di ossidazione",
+      "obiettivo": "Sapere cos'è il numero di ossidazione e come assegnarlo con regole semplici.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-14"
+      ],
+      "correlati": [
+        "chim-u1-23",
+        "chim-u4-12"
+      ],
+      "slug": "22-il-numero-di-ossidazione",
+      "url": "risorse/chimica/u1/22-il-numero-di-ossidazione/",
+      "prev": "chim-u1-21",
+      "next": "chim-u1-23",
+      "diagramma": "regole per assegnare il numero di ossidazione (esempi)",
+      "video": true
+    },
+    {
+      "id": "chim-u1-23",
+      "titolo": "Nomenclatura dei composti inorganici (ossidi, idrossidi, acidi, sali)",
+      "obiettivo": "Riconoscere e nominare ossidi, idrossidi, acidi e sali biologicamente rilevanti.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-22"
+      ],
+      "correlati": [],
+      "slug": "23-nomenclatura-dei-composti-inorganici-ossidi-idrossidi",
+      "url": "risorse/chimica/u1/23-nomenclatura-dei-composti-inorganici-ossidi-idrossidi/",
+      "prev": "chim-u1-22",
+      "next": "chim-u1-24",
+      "diagramma": "schema: metallo/non metallo + O → ossidi → +acqua → idrossidi/acidi → sali",
+      "video": true
+    },
+    {
+      "id": "chim-u1-24",
+      "titolo": "Cenni sullo stato solido (ionici, molecolari, covalenti, metallici)",
+      "obiettivo": "Distinguere i tipi di solido in base alle forze che tengono insieme le particelle.",
+      "difficolta": 1,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-15"
+      ],
+      "correlati": [],
+      "slug": "24-cenni-sullo-stato-solido-ionici-molecolari",
+      "url": "risorse/chimica/u1/24-cenni-sullo-stato-solido-ionici-molecolari/",
+      "prev": "chim-u1-23",
+      "next": "chim-u1-25",
+      "diagramma": "quattro tipi di solido a confronto (reticoli)",
+      "video": false
+    },
+    {
+      "id": "chim-u1-25",
+      "titolo": "Lo stato gassoso e le leggi dei gas (Boyle, Charles, Gay-Lussac)",
+      "obiettivo": "Conoscere le tre leggi dei gas e la temperatura assoluta (kelvin).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [],
+      "correlati": [
+        "chim-u1-26",
+        "chim-u1-27"
+      ],
+      "slug": "25-lo-stato-gassoso-e-le-leggi",
+      "url": "risorse/chimica/u1/25-lo-stato-gassoso-e-le-leggi/",
+      "prev": "chim-u1-24",
+      "next": "chim-u1-26",
+      "diagramma": "tre grafici: P-V (Boyle), V-T (Charles), P-T (Gay-Lussac)",
+      "video": true
+    },
+    {
+      "id": "chim-u1-26",
+      "titolo": "L'equazione di stato dei gas perfetti (PV=nRT) e la respirazione",
+      "obiettivo": "Usare PV=nRT e collegarla alla respirazione e agli scambi gassosi.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-25",
+        "chim-u1-12"
+      ],
+      "correlati": [
+        "chim-u2-09"
+      ],
+      "slug": "26-lequazione-di-stato-dei-gas-perfetti",
+      "url": "risorse/chimica/u1/26-lequazione-di-stato-dei-gas-perfetti/",
+      "prev": "chim-u1-25",
+      "next": "chim-u1-27",
+      "diagramma": "polmone come 'contenitore' di gas con PV=nRT",
+      "video": true
+    },
+    {
+      "id": "chim-u1-27",
+      "titolo": "Teoria cinetica dei gas e distribuzione di Maxwell-Boltzmann",
+      "obiettivo": "Capire che la temperatura è energia di movimento delle particelle e come sono distribuite le velocità.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-25"
+      ],
+      "correlati": [],
+      "slug": "27-teoria-cinetica-dei-gas-e-distribuzione",
+      "url": "risorse/chimica/u1/27-teoria-cinetica-dei-gas-e-distribuzione/",
+      "prev": "chim-u1-26",
+      "next": "chim-u1-28",
+      "diagramma": "curva di Maxwell-Boltzmann a due temperature",
+      "video": true
+    },
+    {
+      "id": "chim-u1-28",
+      "titolo": "Lo stato liquido: ebollizione, tensione superficiale e pressione di vapore",
+      "obiettivo": "Capire ebollizione, calore di evaporazione, tensione superficiale e pressione di vapore.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [],
+      "correlati": [
+        "chim-u1-29",
+        "chim-u2-10"
+      ],
+      "slug": "28-lo-stato-liquido-ebollizione-tensione-superficiale",
+      "url": "risorse/chimica/u1/28-lo-stato-liquido-ebollizione-tensione-superficiale/",
+      "prev": "chim-u1-27",
+      "next": "chim-u1-29",
+      "diagramma": "equilibrio liquido-vapore in un contenitore chiuso",
+      "video": true
+    },
+    {
+      "id": "chim-u1-29",
+      "titolo": "Diagrammi di fase e cambiamenti di stato; sudore e termoregolazione",
+      "obiettivo": "Leggere un diagramma di fase (acqua vs CO2) e capire l'evaporazione del sudore.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-28"
+      ],
+      "correlati": [],
+      "slug": "29-diagrammi-di-fase-e-cambiamenti-di",
+      "url": "risorse/chimica/u1/29-diagrammi-di-fase-e-cambiamenti-di/",
+      "prev": "chim-u1-28",
+      "next": "chim-u1-30",
+      "diagramma": "diagramma di fase dell'acqua (solido/liquido/gas)",
+      "video": true
+    },
+    {
+      "id": "chim-u1-30",
+      "titolo": "Termodinamica: sistema, funzioni di stato ed entalpia (eso/endotermico)",
+      "obiettivo": "Capire sistema/ambiente, funzioni di stato, entalpia e reazioni esotermiche/endotermiche.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [],
+      "correlati": [
+        "chim-u1-31"
+      ],
+      "slug": "30-termodinamica-sistema-funzioni-di-stato-ed",
+      "url": "risorse/chimica/u1/30-termodinamica-sistema-funzioni-di-stato-ed/",
+      "prev": "chim-u1-29",
+      "next": "chim-u1-31",
+      "diagramma": "scambio di calore: reazione esotermica vs endotermica",
+      "video": true
+    },
+    {
+      "id": "chim-u1-31",
+      "titolo": "Entropia ed energia libera di Gibbs: la spontaneità",
+      "obiettivo": "Capire entropia (disordine) ed energia libera di Gibbs come criterio di spontaneità (eso/endoergonico).",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 1,
+      "unitaTitolo": "Struttura dell'atomo, legami chimici, stati della materia e termodinamica",
+      "prereq": [
+        "chim-u1-30"
+      ],
+      "correlati": [],
+      "slug": "31-entropia-ed-energia-libera-di-gibbs",
+      "url": "risorse/chimica/u1/31-entropia-ed-energia-libera-di-gibbs/",
+      "prev": "chim-u1-30",
+      "next": "chim-u2-01",
+      "diagramma": "ΔG = ΔH − TΔS e segno di ΔG (spontaneo o no)",
+      "video": true
+    },
+    {
+      "id": "chim-u2-01",
+      "titolo": "Miscele omogenee ed eterogenee: soluzioni, sospensioni, colloidi e aerosol",
+      "obiettivo": "Distinguere i tipi di miscela di interesse biologico.",
+      "difficolta": 1,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [],
+      "correlati": [
+        "chim-u2-02"
+      ],
+      "slug": "01-miscele-omogenee-ed-eterogenee-soluzioni-sospensioni",
+      "url": "risorse/chimica/u2/01-miscele-omogenee-ed-eterogenee-soluzioni-sospensioni/",
+      "prev": "chim-u1-31",
+      "next": "chim-u2-02",
+      "diagramma": "schema: miscela → omogenea (soluzione) / eterogenea (sospensione, colloide)",
+      "video": true
+    },
+    {
+      "id": "chim-u2-02",
+      "titolo": "Le soluzioni: soluto e solvente; gassose, liquide e solide",
+      "obiettivo": "Capire cos'è una soluzione, chi è soluto e chi solvente, e i vari stati.",
+      "difficolta": 1,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [
+        "chim-u2-01"
+      ],
+      "correlati": [
+        "chim-u2-03",
+        "chim-u2-06"
+      ],
+      "slug": "02-le-soluzioni-soluto-e-solvente-gassose",
+      "url": "risorse/chimica/u2/02-le-soluzioni-soluto-e-solvente-gassose/",
+      "prev": "chim-u2-01",
+      "next": "chim-u2-03",
+      "diagramma": "soluto + solvente → soluzione (es. sale in acqua)",
+      "video": true
+    },
+    {
+      "id": "chim-u2-03",
+      "titolo": "L'acqua come solvente polare; solubilità di soluti ionici e non ionici",
+      "obiettivo": "Capire perché l'acqua scioglie sali e zuccheri ma non i grassi ('simile scioglie simile').",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [
+        "chim-u1-20",
+        "chim-u2-02"
+      ],
+      "correlati": [
+        "chim-u2-04",
+        "chim-u2-05"
+      ],
+      "slug": "03-lacqua-come-solvente-polare-solubilita-di",
+      "url": "risorse/chimica/u2/03-lacqua-come-solvente-polare-solubilita-di/",
+      "prev": "chim-u2-02",
+      "next": "chim-u2-04",
+      "diagramma": "molecole d'acqua che circondano Na+ e Cl- (solvatazione)",
+      "video": true
+    },
+    {
+      "id": "chim-u2-04",
+      "titolo": "Gli elettroliti e il loro ruolo nei fluidi biologici",
+      "obiettivo": "Capire cosa sono gli elettroliti e perché sono importanti nel corpo (Na+, K+, Cl-...).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [
+        "chim-u2-03"
+      ],
+      "correlati": [],
+      "slug": "04-gli-elettroliti-e-il-loro-ruolo",
+      "url": "risorse/chimica/u2/04-gli-elettroliti-e-il-loro-ruolo/",
+      "prev": "chim-u2-03",
+      "next": "chim-u2-05",
+      "diagramma": "sale che si dissocia in ioni che conducono corrente",
+      "video": true
+    },
+    {
+      "id": "chim-u2-05",
+      "titolo": "Solubilità dei gas nei liquidi: la legge di Henry",
+      "obiettivo": "Capire come la pressione influenza la quantità di gas disciolto (es. O2 e CO2 nel sangue, bibite).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [
+        "chim-u2-03"
+      ],
+      "correlati": [],
+      "slug": "05-solubilita-dei-gas-nei-liquidi-la",
+      "url": "risorse/chimica/u2/05-solubilita-dei-gas-nei-liquidi-la/",
+      "prev": "chim-u2-04",
+      "next": "chim-u2-06",
+      "diagramma": "più pressione = più gas disciolto (bottiglia gassata)",
+      "video": true
+    },
+    {
+      "id": "chim-u2-06",
+      "titolo": "Le unità di concentrazione: percentuali (p/p, p/v, v/v)",
+      "obiettivo": "Calcolare la concentrazione in percentuale peso/peso, peso/volume e volume/volume.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [
+        "chim-u2-02"
+      ],
+      "correlati": [
+        "chim-u2-07"
+      ],
+      "slug": "06-le-unita-di-concentrazione-percentuali-p",
+      "url": "risorse/chimica/u2/06-le-unita-di-concentrazione-percentuali-p/",
+      "prev": "chim-u2-05",
+      "next": "chim-u2-07",
+      "diagramma": "tre tipi di percentuale a confronto con esempi",
+      "video": true
+    },
+    {
+      "id": "chim-u2-07",
+      "titolo": "Molarità, molalità e frazione molare",
+      "obiettivo": "Calcolare e distinguere molarità, molalità e frazione molare.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [
+        "chim-u1-12",
+        "chim-u2-06"
+      ],
+      "correlati": [
+        "chim-u2-08",
+        "chim-u2-10"
+      ],
+      "slug": "07-molarita-molalita-e-frazione-molare",
+      "url": "risorse/chimica/u2/07-molarita-molalita-e-frazione-molare/",
+      "prev": "chim-u2-06",
+      "next": "chim-u2-08",
+      "diagramma": "formule a confronto: M (mol/L), m (mol/kg), x (frazione)",
+      "video": true
+    },
+    {
+      "id": "chim-u2-08",
+      "titolo": "Il concetto di equivalente in ambito biomedico",
+      "obiettivo": "Capire cos'è un equivalente e perché si usa per gli elettroliti (mEq/L).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [
+        "chim-u2-07"
+      ],
+      "correlati": [],
+      "slug": "08-il-concetto-di-equivalente-in-ambito",
+      "url": "risorse/chimica/u2/08-il-concetto-di-equivalente-in-ambito/",
+      "prev": "chim-u2-07",
+      "next": "chim-u2-09",
+      "diagramma": "equivalenti e cariche (esempio Ca2+)",
+      "video": false
+    },
+    {
+      "id": "chim-u2-09",
+      "titolo": "Miscele di gas: la legge di Dalton; aria inspirata ed espirata",
+      "obiettivo": "Capire la pressione parziale e la legge di Dalton applicata all'aria che respiriamo.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [
+        "chim-u1-26"
+      ],
+      "correlati": [],
+      "slug": "09-miscele-di-gas-la-legge-di",
+      "url": "risorse/chimica/u2/09-miscele-di-gas-la-legge-di/",
+      "prev": "chim-u2-08",
+      "next": "chim-u2-10",
+      "diagramma": "pressione totale = somma delle pressioni parziali (O2, N2, CO2)",
+      "video": true
+    },
+    {
+      "id": "chim-u2-10",
+      "titolo": "Le proprietà colligative e la legge di Raoult",
+      "obiettivo": "Capire cosa sono le proprietà colligative e l'abbassamento della pressione di vapore.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [
+        "chim-u1-28",
+        "chim-u2-07"
+      ],
+      "correlati": [
+        "chim-u2-11",
+        "chim-u2-12"
+      ],
+      "slug": "10-le-proprieta-colligative-e-la-legge",
+      "url": "risorse/chimica/u2/10-le-proprieta-colligative-e-la-legge/",
+      "prev": "chim-u2-09",
+      "next": "chim-u2-11",
+      "diagramma": "soluto che 'ostacola' l'evaporazione del solvente",
+      "video": true
+    },
+    {
+      "id": "chim-u2-11",
+      "titolo": "Innalzamento ebullioscopico e abbassamento crioscopico",
+      "obiettivo": "Capire perché una soluzione bolle a temperatura più alta e congela a temperatura più bassa (sale sul ghiaccio).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [
+        "chim-u2-10"
+      ],
+      "correlati": [],
+      "slug": "11-innalzamento-ebullioscopico-e-abbassamento-crioscopico",
+      "url": "risorse/chimica/u2/11-innalzamento-ebullioscopico-e-abbassamento-crioscopico/",
+      "prev": "chim-u2-10",
+      "next": "chim-u2-12",
+      "diagramma": "soluzione vs acqua pura: punti di ebollizione e congelamento",
+      "video": true
+    },
+    {
+      "id": "chim-u2-12",
+      "titolo": "La pressione osmotica e l'osmosi; il fattore di van't Hoff",
+      "obiettivo": "Capire l'osmosi e la pressione osmotica, con il fattore correttivo per gli elettroliti.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [
+        "chim-u2-10"
+      ],
+      "correlati": [
+        "chim-u2-13"
+      ],
+      "slug": "12-la-pressione-osmotica-e-losmosi-il",
+      "url": "risorse/chimica/u2/12-la-pressione-osmotica-e-losmosi-il/",
+      "prev": "chim-u2-11",
+      "next": "chim-u2-13",
+      "diagramma": "membrana semipermeabile: acqua che passa verso il più concentrato",
+      "video": true
+    },
+    {
+      "id": "chim-u2-13",
+      "titolo": "Osmolarità e soluzioni isotoniche, ipertoniche e ipotoniche (emolisi, edema)",
+      "obiettivo": "Capire osmolarità/osmolalità e cosa succede alle cellule in soluzioni iso/iper/ipotoniche.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 2,
+      "unitaTitolo": "Miscele, soluzioni e proprietà colligative",
+      "prereq": [
+        "chim-u2-12"
+      ],
+      "correlati": [],
+      "slug": "13-osmolarita-e-soluzioni-isotoniche-ipertoniche-e",
+      "url": "risorse/chimica/u2/13-osmolarita-e-soluzioni-isotoniche-ipertoniche-e/",
+      "prev": "chim-u2-12",
+      "next": "chim-u3-01",
+      "diagramma": "globulo rosso in soluzione isotonica, ipertonica (raggrinzito), ipotonica (scoppia)",
+      "video": true
+    },
+    {
+      "id": "chim-u3-01",
+      "titolo": "Le reazioni chimiche e le leggi di conservazione",
+      "obiettivo": "Capire cos'è una reazione (reagenti → prodotti) e la conservazione di massa e carica.",
+      "difficolta": 1,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 3,
+      "unitaTitolo": "Reazioni chimiche: cinetica ed equilibrio",
+      "prereq": [],
+      "correlati": [
+        "chim-u3-02",
+        "chim-u3-03",
+        "chim-u3-07"
+      ],
+      "slug": "01-le-reazioni-chimiche-e-le-leggi",
+      "url": "risorse/chimica/u3/01-le-reazioni-chimiche-e-le-leggi/",
+      "prev": "chim-u2-13",
+      "next": "chim-u3-02",
+      "diagramma": "reagenti → prodotti (riarrangiamento degli atomi)",
+      "video": true
+    },
+    {
+      "id": "chim-u3-02",
+      "titolo": "Il bilanciamento delle reazioni chimiche",
+      "obiettivo": "Saper bilanciare una semplice reazione contando gli atomi.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 3,
+      "unitaTitolo": "Reazioni chimiche: cinetica ed equilibrio",
+      "prereq": [
+        "chim-u3-01"
+      ],
+      "correlati": [],
+      "slug": "02-il-bilanciamento-delle-reazioni-chimiche",
+      "url": "risorse/chimica/u3/02-il-bilanciamento-delle-reazioni-chimiche/",
+      "prev": "chim-u3-01",
+      "next": "chim-u3-03",
+      "diagramma": "esempio bilanciato passo passo (es. combustione)",
+      "video": true
+    },
+    {
+      "id": "chim-u3-03",
+      "titolo": "La cinetica chimica: velocità di reazione e fattori che la influenzano",
+      "obiettivo": "Capire cos'è la velocità di reazione e cosa la accelera (temperatura, concentrazione, superficie).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 3,
+      "unitaTitolo": "Reazioni chimiche: cinetica ed equilibrio",
+      "prereq": [
+        "chim-u3-01"
+      ],
+      "correlati": [
+        "chim-u3-04",
+        "chim-u3-05"
+      ],
+      "slug": "03-la-cinetica-chimica-velocita-di-reazione",
+      "url": "risorse/chimica/u3/03-la-cinetica-chimica-velocita-di-reazione/",
+      "prev": "chim-u3-02",
+      "next": "chim-u3-04",
+      "diagramma": "fattori che cambiano la velocità di reazione",
+      "video": true
+    },
+    {
+      "id": "chim-u3-04",
+      "titolo": "Ordine di reazione e molecolarità; reazioni a più stadi",
+      "obiettivo": "Capire ordine di reazione, molecolarità e che una reazione può avvenire in più passaggi.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 3,
+      "unitaTitolo": "Reazioni chimiche: cinetica ed equilibrio",
+      "prereq": [
+        "chim-u3-03"
+      ],
+      "correlati": [],
+      "slug": "04-ordine-di-reazione-e-molecolarita-reazioni",
+      "url": "risorse/chimica/u3/04-ordine-di-reazione-e-molecolarita-reazioni/",
+      "prev": "chim-u3-03",
+      "next": "chim-u3-05",
+      "diagramma": "meccanismo a più stadi con stadio lento (collo di bottiglia)",
+      "video": false
+    },
+    {
+      "id": "chim-u3-05",
+      "titolo": "Teoria degli urti, energia di attivazione e legge di Arrhenius",
+      "obiettivo": "Capire che servono urti 'efficaci' e l'energia di attivazione da superare.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 3,
+      "unitaTitolo": "Reazioni chimiche: cinetica ed equilibrio",
+      "prereq": [
+        "chim-u3-03"
+      ],
+      "correlati": [
+        "chim-u3-06"
+      ],
+      "slug": "05-teoria-degli-urti-energia-di-attivazione",
+      "url": "risorse/chimica/u3/05-teoria-degli-urti-energia-di-attivazione/",
+      "prev": "chim-u3-04",
+      "next": "chim-u3-06",
+      "diagramma": "profilo energetico con barriera di energia di attivazione",
+      "video": true
+    },
+    {
+      "id": "chim-u3-06",
+      "titolo": "I catalizzatori e cenni sugli enzimi",
+      "obiettivo": "Capire come un catalizzatore (ed enzima) abbassa l'energia di attivazione.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 3,
+      "unitaTitolo": "Reazioni chimiche: cinetica ed equilibrio",
+      "prereq": [
+        "chim-u3-05"
+      ],
+      "correlati": [],
+      "slug": "06-i-catalizzatori-e-cenni-sugli-enzimi",
+      "url": "risorse/chimica/u3/06-i-catalizzatori-e-cenni-sugli-enzimi/",
+      "prev": "chim-u3-05",
+      "next": "chim-u3-07",
+      "diagramma": "profilo energetico con e senza catalizzatore (barriera più bassa)",
+      "video": true
+    },
+    {
+      "id": "chim-u3-07",
+      "titolo": "L'equilibrio chimico: reazioni reversibili, Keq e legge d'azione di massa",
+      "obiettivo": "Capire l'equilibrio dinamico, la costante Keq e cosa significa.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 3,
+      "unitaTitolo": "Reazioni chimiche: cinetica ed equilibrio",
+      "prereq": [
+        "chim-u3-01"
+      ],
+      "correlati": [
+        "chim-u3-08",
+        "chim-u3-09"
+      ],
+      "slug": "07-lequilibrio-chimico-reazioni-reversibili-keq-e",
+      "url": "risorse/chimica/u3/07-lequilibrio-chimico-reazioni-reversibili-keq-e/",
+      "prev": "chim-u3-06",
+      "next": "chim-u3-08",
+      "diagramma": "reazione a doppia freccia all'equilibrio (velocità uguali)",
+      "video": true
+    },
+    {
+      "id": "chim-u3-08",
+      "titolo": "Principio di Le Chatelier (equilibrio mobile)",
+      "obiettivo": "Prevedere come si sposta un equilibrio cambiando concentrazione, pressione o temperatura.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 3,
+      "unitaTitolo": "Reazioni chimiche: cinetica ed equilibrio",
+      "prereq": [
+        "chim-u3-07"
+      ],
+      "correlati": [],
+      "slug": "08-principio-di-le-chatelier-equilibrio-mobile",
+      "url": "risorse/chimica/u3/08-principio-di-le-chatelier-equilibrio-mobile/",
+      "prev": "chim-u3-07",
+      "next": "chim-u3-09",
+      "diagramma": "bilancia che si sposta a destra/sinistra per ristabilire l'equilibrio",
+      "video": true
+    },
+    {
+      "id": "chim-u3-09",
+      "titolo": "Equilibrio eterogeneo e prodotto di solubilità (calcoli renali)",
+      "obiettivo": "Capire il prodotto di solubilità (Kps), l'effetto dello ione comune e la precipitazione (calcoli renali).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 3,
+      "unitaTitolo": "Reazioni chimiche: cinetica ed equilibrio",
+      "prereq": [
+        "chim-u3-07"
+      ],
+      "correlati": [
+        "chim-u4-09"
+      ],
+      "slug": "09-equilibrio-eterogeneo-e-prodotto-di-solubilita",
+      "url": "risorse/chimica/u3/09-equilibrio-eterogeneo-e-prodotto-di-solubilita/",
+      "prev": "chim-u3-08",
+      "next": "chim-u4-01",
+      "diagramma": "solido in equilibrio con i suoi ioni in soluzione",
+      "video": true
+    },
+    {
+      "id": "chim-u4-01",
+      "titolo": "Acidi e basi: la teoria di Arrhenius",
+      "obiettivo": "Capire la prima definizione di acido (dà H+) e base (dà OH-).",
+      "difficolta": 1,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [],
+      "correlati": [
+        "chim-u4-02"
+      ],
+      "slug": "01-acidi-e-basi-la-teoria-di",
+      "url": "risorse/chimica/u4/01-acidi-e-basi-la-teoria-di/",
+      "prev": "chim-u3-09",
+      "next": "chim-u4-02",
+      "diagramma": "acido → H+ / base → OH- in acqua",
+      "video": true
+    },
+    {
+      "id": "chim-u4-02",
+      "titolo": "La teoria di Brønsted-Lowry (coppie coniugate) e cenni su Lewis",
+      "obiettivo": "Capire acido = dona H+, base = accetta H+, e le coppie coniugate; cenni su Lewis.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u4-01"
+      ],
+      "correlati": [
+        "chim-u4-03"
+      ],
+      "slug": "02-la-teoria-di-br-nsted-lowry",
+      "url": "risorse/chimica/u4/02-la-teoria-di-br-nsted-lowry/",
+      "prev": "chim-u4-01",
+      "next": "chim-u4-03",
+      "diagramma": "trasferimento di H+ tra acido e base coniugata",
+      "video": true
+    },
+    {
+      "id": "chim-u4-03",
+      "titolo": "Autoprotolisi dell'acqua e la costante Kw",
+      "obiettivo": "Capire che l'acqua si ionizza un po' da sola e cos'è Kw = 10^-14.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u4-02"
+      ],
+      "correlati": [
+        "chim-u4-04"
+      ],
+      "slug": "03-autoprotolisi-dellacqua-e-la-costante-kw",
+      "url": "risorse/chimica/u4/03-autoprotolisi-dellacqua-e-la-costante-kw/",
+      "prev": "chim-u4-02",
+      "next": "chim-u4-04",
+      "diagramma": "2 H2O ⇌ H3O+ + OH-",
+      "video": true
+    },
+    {
+      "id": "chim-u4-04",
+      "titolo": "Il concetto di pH e pOH",
+      "obiettivo": "Capire la scala del pH (0-14), acido/neutro/basico, e il legame con pOH.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u4-03"
+      ],
+      "correlati": [
+        "chim-u4-05"
+      ],
+      "slug": "04-il-concetto-di-ph-e-poh",
+      "url": "risorse/chimica/u4/04-il-concetto-di-ph-e-poh/",
+      "prev": "chim-u4-03",
+      "next": "chim-u4-05",
+      "diagramma": "scala del pH colorata con esempi (limone, acqua, sapone, sangue)",
+      "video": true
+    },
+    {
+      "id": "chim-u4-05",
+      "titolo": "Acidi e basi forti e deboli: Ka, Kb, pKa, pKb",
+      "obiettivo": "Distinguere acidi/basi forti (si dissociano del tutto) e deboli, con le costanti di dissociazione.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u4-04"
+      ],
+      "correlati": [
+        "chim-u4-06",
+        "chim-u4-07",
+        "chim-u4-08",
+        "chim-u4-10"
+      ],
+      "slug": "05-acidi-e-basi-forti-e-deboli",
+      "url": "risorse/chimica/u4/05-acidi-e-basi-forti-e-deboli/",
+      "prev": "chim-u4-04",
+      "next": "chim-u4-06",
+      "diagramma": "acido forte (dissociazione totale) vs debole (equilibrio)",
+      "video": true
+    },
+    {
+      "id": "chim-u4-06",
+      "titolo": "Calcolo del pH di acidi e basi (forti e deboli)",
+      "obiettivo": "Saper calcolare il pH di soluzioni di acidi/basi forti e deboli.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u4-05"
+      ],
+      "correlati": [],
+      "slug": "06-calcolo-del-ph-di-acidi-e",
+      "url": "risorse/chimica/u4/06-calcolo-del-ph-di-acidi-e/",
+      "prev": "chim-u4-05",
+      "next": "chim-u4-07",
+      "diagramma": "schema dei passaggi per calcolare il pH",
+      "video": true
+    },
+    {
+      "id": "chim-u4-07",
+      "titolo": "Acidi poliprotici e indicatori di pH",
+      "obiettivo": "Capire gli acidi con più H+ (es. H3PO4) e come funzionano gli indicatori colorati.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u4-05"
+      ],
+      "correlati": [],
+      "slug": "07-acidi-poliprotici-e-indicatori-di-ph",
+      "url": "risorse/chimica/u4/07-acidi-poliprotici-e-indicatori-di-ph/",
+      "prev": "chim-u4-06",
+      "next": "chim-u4-08",
+      "diagramma": "acido poliprotico che cede H+ in più tappe; cartina tornasole",
+      "video": false
+    },
+    {
+      "id": "chim-u4-08",
+      "titolo": "I sali e l'idrolisi salina (comportamento acido o basico in acqua)",
+      "obiettivo": "Capire perché alcuni sali rendono la soluzione acida o basica.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u4-05"
+      ],
+      "correlati": [
+        "chim-u4-09"
+      ],
+      "slug": "08-i-sali-e-lidrolisi-salina-comportamento",
+      "url": "risorse/chimica/u4/08-i-sali-e-lidrolisi-salina-comportamento/",
+      "prev": "chim-u4-07",
+      "next": "chim-u4-09",
+      "diagramma": "sale che si scioglie e gli ioni reagiscono con l'acqua",
+      "video": true
+    },
+    {
+      "id": "chim-u4-09",
+      "titolo": "Solubilità e pH: esempi biomedici (ossalato di calcio, urato)",
+      "obiettivo": "Capire come il pH influenza la precipitazione di sali poco solubili (calcoli, gotta).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u4-08",
+        "chim-u3-09"
+      ],
+      "correlati": [],
+      "slug": "09-solubilita-e-ph-esempi-biomedici-ossalato",
+      "url": "risorse/chimica/u4/09-solubilita-e-ph-esempi-biomedici-ossalato/",
+      "prev": "chim-u4-08",
+      "next": "chim-u4-10",
+      "diagramma": "cristalli che precipitano in base al pH",
+      "video": false
+    },
+    {
+      "id": "chim-u4-10",
+      "titolo": "Le soluzioni tampone e l'equazione di Henderson-Hasselbalch",
+      "obiettivo": "Capire come un tampone resiste alle variazioni di pH e l'equazione di Henderson-Hasselbalch.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u4-05"
+      ],
+      "correlati": [
+        "chim-u4-11",
+        "chim-u7-02"
+      ],
+      "slug": "10-le-soluzioni-tampone-e-lequazione-di",
+      "url": "risorse/chimica/u4/10-le-soluzioni-tampone-e-lequazione-di/",
+      "prev": "chim-u4-09",
+      "next": "chim-u4-11",
+      "diagramma": "tampone: acido debole + base coniugata che 'assorbono' H+ e OH-",
+      "video": true
+    },
+    {
+      "id": "chim-u4-11",
+      "titolo": "L'equilibrio acido-base del sangue: tamponi, acidosi e alcalosi",
+      "obiettivo": "Capire il pH del sangue e i suoi tamponi (bicarbonato, fosfato, proteine); acidosi e alcalosi.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u4-10"
+      ],
+      "correlati": [],
+      "slug": "11-lequilibrio-acido-base-del-sangue-tamponi",
+      "url": "risorse/chimica/u4/11-lequilibrio-acido-base-del-sangue-tamponi/",
+      "prev": "chim-u4-10",
+      "next": "chim-u4-12",
+      "diagramma": "tampone bicarbonato/CO2 nel sangue (polmoni e reni)",
+      "video": true
+    },
+    {
+      "id": "chim-u4-12",
+      "titolo": "Le reazioni di ossido-riduzione (redox)",
+      "obiettivo": "Capire ossidazione (perde elettroni) e riduzione (acquista elettroni) e riconoscerle.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u1-22"
+      ],
+      "correlati": [
+        "chim-u4-13",
+        "chim-u7-12"
+      ],
+      "slug": "12-le-reazioni-di-ossido-riduzione-redox",
+      "url": "risorse/chimica/u4/12-le-reazioni-di-ossido-riduzione-redox/",
+      "prev": "chim-u4-11",
+      "next": "chim-u4-13",
+      "diagramma": "trasferimento di elettroni: chi si ossida e chi si riduce (OIL RIG)",
+      "video": true
+    },
+    {
+      "id": "chim-u4-13",
+      "titolo": "La cella galvanica: anodo, catodo e potenziali redox standard",
+      "obiettivo": "Capire come una reazione redox produce corrente; anodo, catodo, semireazioni e potenziali.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u4-12"
+      ],
+      "correlati": [
+        "chim-u4-14"
+      ],
+      "slug": "13-la-cella-galvanica-anodo-catodo-e",
+      "url": "risorse/chimica/u4/13-la-cella-galvanica-anodo-catodo-e/",
+      "prev": "chim-u4-12",
+      "next": "chim-u4-14",
+      "diagramma": "pila (cella galvanica) con anodo, catodo e ponte salino",
+      "video": true
+    },
+    {
+      "id": "chim-u4-14",
+      "titolo": "Equazione di Nernst e redox biologiche (respirazione, Fenton)",
+      "obiettivo": "Capire l'equazione di Nernst, il legame con ΔG e le redox biologiche (O2 accettore, reazione di Fenton).",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 4,
+      "unitaTitolo": "Acidi, basi, pH, tamponi, ossido-riduzione ed elettrochimica",
+      "prereq": [
+        "chim-u4-13"
+      ],
+      "correlati": [
+        "chim-u7-14"
+      ],
+      "slug": "14-equazione-di-nernst-e-redox-biologiche",
+      "url": "risorse/chimica/u4/14-equazione-di-nernst-e-redox-biologiche/",
+      "prev": "chim-u4-13",
+      "next": "chim-u5-01",
+      "diagramma": "catena di trasporto degli elettroni con O2 finale",
+      "video": true
+    },
+    {
+      "id": "chim-u5-01",
+      "titolo": "Le proprietà del carbonio e la sua ibridazione",
+      "obiettivo": "Capire perché il carbonio forma 4 legami e tantissime molecole (base della vita).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 5,
+      "unitaTitolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "prereq": [
+        "chim-u1-16"
+      ],
+      "correlati": [
+        "chim-u5-02"
+      ],
+      "slug": "01-le-proprieta-del-carbonio-e-la",
+      "url": "risorse/chimica/u5/01-le-proprieta-del-carbonio-e-la/",
+      "prev": "chim-u4-14",
+      "next": "chim-u5-02",
+      "diagramma": "carbonio con 4 legami (tetraedro) e catene",
+      "video": true
+    },
+    {
+      "id": "chim-u5-02",
+      "titolo": "Come si rappresentano i composti organici (formule di struttura)",
+      "obiettivo": "Leggere formule di struttura, condensate e a scheletro (zig-zag).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 5,
+      "unitaTitolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "prereq": [
+        "chim-u5-01"
+      ],
+      "correlati": [
+        "chim-u5-03",
+        "chim-u5-04",
+        "chim-u5-06",
+        "chim-u6-01"
+      ],
+      "slug": "02-come-si-rappresentano-i-composti-organici",
+      "url": "risorse/chimica/u5/02-come-si-rappresentano-i-composti-organici/",
+      "prev": "chim-u5-01",
+      "next": "chim-u5-03",
+      "diagramma": "stessa molecola in formula estesa, condensata e a scheletro",
+      "video": true
+    },
+    {
+      "id": "chim-u5-03",
+      "titolo": "Tipi di idrocarburi e regole di nomenclatura IUPAC",
+      "obiettivo": "Distinguere idrocarburi saturi/insaturi, ciclici/eterociclici e usare le basi della nomenclatura IUPAC.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 5,
+      "unitaTitolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "prereq": [
+        "chim-u5-02"
+      ],
+      "correlati": [
+        "chim-u5-09",
+        "chim-u5-10",
+        "chim-u5-11"
+      ],
+      "slug": "03-tipi-di-idrocarburi-e-regole-di",
+      "url": "risorse/chimica/u5/03-tipi-di-idrocarburi-e-regole-di/",
+      "prev": "chim-u5-02",
+      "next": "chim-u5-04",
+      "diagramma": "albero degli idrocarburi (alcani, alcheni, alchini, aromatici)",
+      "video": true
+    },
+    {
+      "id": "chim-u5-04",
+      "titolo": "Stereochimica: isomeria, enantiomeri, diastereoisomeri, epimeri e racemi",
+      "obiettivo": "Capire i diversi tipi di isomeria, fondamentali per le biomolecole.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 5,
+      "unitaTitolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "prereq": [
+        "chim-u5-02"
+      ],
+      "correlati": [
+        "chim-u5-05"
+      ],
+      "slug": "04-stereochimica-isomeria-enantiomeri-diastereoisomeri-epimeri-e",
+      "url": "risorse/chimica/u5/04-stereochimica-isomeria-enantiomeri-diastereoisomeri-epimeri-e/",
+      "prev": "chim-u5-03",
+      "next": "chim-u5-05",
+      "diagramma": "albero dell'isomeria (di struttura e stereoisomeria)",
+      "video": true
+    },
+    {
+      "id": "chim-u5-05",
+      "titolo": "Chiralità: convenzione R/S, potere ottico e convenzione di Fischer",
+      "obiettivo": "Capire la chiralità (mani specchiate), R/S, destrogiro/levogiro e la proiezione di Fischer.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 5,
+      "unitaTitolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "prereq": [
+        "chim-u5-04"
+      ],
+      "correlati": [
+        "chim-u7-03",
+        "chim-u7-06"
+      ],
+      "slug": "05-chiralita-convenzione-r-s-potere-ottico",
+      "url": "risorse/chimica/u5/05-chiralita-convenzione-r-s-potere-ottico/",
+      "prev": "chim-u5-04",
+      "next": "chim-u5-06",
+      "diagramma": "due enantiomeri come mano destra e sinistra (immagini speculari)",
+      "video": true
+    },
+    {
+      "id": "chim-u5-06",
+      "titolo": "Rottura del legame: omolitica (radicali) ed eterolitica (carbocationi/carbanioni)",
+      "obiettivo": "Distinguere rottura omolitica (radicali) ed eterolitica (ioni) e la stabilità di carbocationi/carbanioni.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 5,
+      "unitaTitolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "prereq": [
+        "chim-u5-02"
+      ],
+      "correlati": [
+        "chim-u5-07"
+      ],
+      "slug": "06-rottura-del-legame-omolitica-radicali-ed",
+      "url": "risorse/chimica/u5/06-rottura-del-legame-omolitica-radicali-ed/",
+      "prev": "chim-u5-05",
+      "next": "chim-u5-07",
+      "diagramma": "rottura omolitica vs eterolitica di un legame",
+      "video": true
+    },
+    {
+      "id": "chim-u5-07",
+      "titolo": "Effetto induttivo, delocalizzazione, nucleofili ed elettrofili",
+      "obiettivo": "Capire chi 'attira' o 'cede' elettroni e cosa sono nucleofili ed elettrofili.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 5,
+      "unitaTitolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "prereq": [
+        "chim-u5-06"
+      ],
+      "correlati": [
+        "chim-u5-08"
+      ],
+      "slug": "07-effetto-induttivo-delocalizzazione-nucleofili-ed-elettrofili",
+      "url": "risorse/chimica/u5/07-effetto-induttivo-delocalizzazione-nucleofili-ed-elettrofili/",
+      "prev": "chim-u5-06",
+      "next": "chim-u5-08",
+      "diagramma": "nucleofilo (ricco di e-) che attacca un elettrofilo (povero di e-)",
+      "video": true
+    },
+    {
+      "id": "chim-u5-08",
+      "titolo": "Reazioni di sostituzione nucleofila (SN1, SN2) ed eliminazione",
+      "obiettivo": "Capire i meccanismi SN1, SN2 e le reazioni di eliminazione.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 5,
+      "unitaTitolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "prereq": [
+        "chim-u5-07"
+      ],
+      "correlati": [],
+      "slug": "08-reazioni-di-sostituzione-nucleofila-sn1-sn2",
+      "url": "risorse/chimica/u5/08-reazioni-di-sostituzione-nucleofila-sn1-sn2/",
+      "prev": "chim-u5-07",
+      "next": "chim-u5-09",
+      "diagramma": "meccanismo SN2 (attacco da dietro) vs SN1 (in due tappe)",
+      "video": true
+    },
+    {
+      "id": "chim-u5-09",
+      "titolo": "Alcani e cicloalcani: struttura, proprietà e reazioni",
+      "obiettivo": "Conoscere alcani e cicloalcani, la tensione di anello e la reazione di ossidazione (combustione).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 5,
+      "unitaTitolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "prereq": [
+        "chim-u5-03"
+      ],
+      "correlati": [],
+      "slug": "09-alcani-e-cicloalcani-struttura-proprieta-e",
+      "url": "risorse/chimica/u5/09-alcani-e-cicloalcani-struttura-proprieta-e/",
+      "prev": "chim-u5-08",
+      "next": "chim-u5-10",
+      "diagramma": "catena di un alcano e anello di un cicloalcano",
+      "video": true
+    },
+    {
+      "id": "chim-u5-10",
+      "titolo": "Alcheni: struttura, dieni coniugati e addizione elettrofila",
+      "obiettivo": "Conoscere gli alcheni (doppio legame), i dieni coniugati e l'addizione elettrofila.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 5,
+      "unitaTitolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "prereq": [
+        "chim-u5-03"
+      ],
+      "correlati": [],
+      "slug": "10-alcheni-struttura-dieni-coniugati-e-addizione",
+      "url": "risorse/chimica/u5/10-alcheni-struttura-dieni-coniugati-e-addizione/",
+      "prev": "chim-u5-09",
+      "next": "chim-u5-11",
+      "diagramma": "doppio legame che reagisce in addizione elettrofila",
+      "video": true
+    },
+    {
+      "id": "chim-u5-11",
+      "titolo": "Idrocarburi aromatici: il benzene, la regola di Hückel e la sostituzione elettrofila",
+      "obiettivo": "Capire l'aromaticità, il benzene, la regola di Hückel e la sostituzione elettrofila aromatica.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 5,
+      "unitaTitolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "prereq": [
+        "chim-u5-03"
+      ],
+      "correlati": [
+        "chim-u5-12"
+      ],
+      "slug": "11-idrocarburi-aromatici-il-benzene-la-regola",
+      "url": "risorse/chimica/u5/11-idrocarburi-aromatici-il-benzene-la-regola/",
+      "prev": "chim-u5-10",
+      "next": "chim-u5-12",
+      "diagramma": "anello del benzene con elettroni delocalizzati",
+      "video": true
+    },
+    {
+      "id": "chim-u5-12",
+      "titolo": "Composti aromatici eterociclici (pirimidine) e policiclici (purine); tossicità",
+      "obiettivo": "Conoscere gli aromatici eterociclici (basi azotate) e policiclici, e la tossicità di alcuni aromatici.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 5,
+      "unitaTitolo": "Il carbonio e i composti organici: idrocarburi e aromatici",
+      "prereq": [
+        "chim-u5-11"
+      ],
+      "correlati": [
+        "chim-u7-11"
+      ],
+      "slug": "12-composti-aromatici-eterociclici-pirimidine-e-policiclici",
+      "url": "risorse/chimica/u5/12-composti-aromatici-eterociclici-pirimidine-e-policiclici/",
+      "prev": "chim-u5-11",
+      "next": "chim-u6-01",
+      "diagramma": "anello di pirimidina e anello fuso delle purine",
+      "video": false
+    },
+    {
+      "id": "chim-u6-01",
+      "titolo": "I gruppi funzionali: cosa sono e perché contano",
+      "obiettivo": "Capire che il gruppo funzionale determina le proprietà e la reattività di una molecola organica.",
+      "difficolta": 1,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 6,
+      "unitaTitolo": "I gruppi funzionali e le isomerie",
+      "prereq": [
+        "chim-u5-02"
+      ],
+      "correlati": [
+        "chim-u6-02",
+        "chim-u6-05",
+        "chim-u6-06",
+        "chim-u6-10"
+      ],
+      "slug": "01-i-gruppi-funzionali-cosa-sono-e",
+      "url": "risorse/chimica/u6/01-i-gruppi-funzionali-cosa-sono-e/",
+      "prev": "chim-u5-12",
+      "next": "chim-u6-02",
+      "diagramma": "tabella dei principali gruppi funzionali",
+      "video": true
+    },
+    {
+      "id": "chim-u6-02",
+      "titolo": "Alcoli e fenoli: struttura, proprietà e acidità del fenolo",
+      "obiettivo": "Conoscere il gruppo -OH negli alcoli e nei fenoli, le proprietà e l'acidità del fenolo.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 6,
+      "unitaTitolo": "I gruppi funzionali e le isomerie",
+      "prereq": [
+        "chim-u6-01"
+      ],
+      "correlati": [
+        "chim-u6-03",
+        "chim-u6-04"
+      ],
+      "slug": "02-alcoli-e-fenoli-struttura-proprieta-e",
+      "url": "risorse/chimica/u6/02-alcoli-e-fenoli-struttura-proprieta-e/",
+      "prev": "chim-u6-01",
+      "next": "chim-u6-03",
+      "diagramma": "gruppo ossidrilico -OH in un alcol e in un fenolo",
+      "video": true
+    },
+    {
+      "id": "chim-u6-03",
+      "titolo": "Reazioni degli alcoli: disidratazione, ossidazione, sostituzione; l'etanolo",
+      "obiettivo": "Conoscere le reazioni principali degli alcoli e il metabolismo dell'etanolo.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 6,
+      "unitaTitolo": "I gruppi funzionali e le isomerie",
+      "prereq": [
+        "chim-u6-02"
+      ],
+      "correlati": [],
+      "slug": "03-reazioni-degli-alcoli-disidratazione-ossidazione-sostituzione",
+      "url": "risorse/chimica/u6/03-reazioni-degli-alcoli-disidratazione-ossidazione-sostituzione/",
+      "prev": "chim-u6-02",
+      "next": "chim-u6-04",
+      "diagramma": "alcol che si ossida ad aldeide e poi acido",
+      "video": true
+    },
+    {
+      "id": "chim-u6-04",
+      "titolo": "Tioli, eteri, tioeteri ed epossidi",
+      "obiettivo": "Conoscere i gruppi -SH (tioli), -O- (eteri) e gli epossidi, con esempi biologici.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 6,
+      "unitaTitolo": "I gruppi funzionali e le isomerie",
+      "prereq": [
+        "chim-u6-02"
+      ],
+      "correlati": [],
+      "slug": "04-tioli-eteri-tioeteri-ed-epossidi",
+      "url": "risorse/chimica/u6/04-tioli-eteri-tioeteri-ed-epossidi/",
+      "prev": "chim-u6-03",
+      "next": "chim-u6-05",
+      "diagramma": "confronto tra alcol, tiolo, etere ed epossido",
+      "video": false
+    },
+    {
+      "id": "chim-u6-05",
+      "titolo": "Le ammine: struttura, basicità e nucleofilicità",
+      "obiettivo": "Conoscere le ammine (gruppo -NH2), la loro basicità/nucleofilicità; nitrosammine e colina.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 6,
+      "unitaTitolo": "I gruppi funzionali e le isomerie",
+      "prereq": [
+        "chim-u6-01"
+      ],
+      "correlati": [
+        "chim-u7-01"
+      ],
+      "slug": "05-le-ammine-struttura-basicita-e-nucleofilicita",
+      "url": "risorse/chimica/u6/05-le-ammine-struttura-basicita-e-nucleofilicita/",
+      "prev": "chim-u6-04",
+      "next": "chim-u6-06",
+      "diagramma": "ammina primaria, secondaria, terziaria; l'azoto con doppietto",
+      "video": true
+    },
+    {
+      "id": "chim-u6-06",
+      "titolo": "Aldeidi e chetoni: struttura, nomenclatura e proprietà",
+      "obiettivo": "Conoscere il gruppo carbonile (C=O) in aldeidi e chetoni e le loro proprietà.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 6,
+      "unitaTitolo": "I gruppi funzionali e le isomerie",
+      "prereq": [
+        "chim-u6-01"
+      ],
+      "correlati": [
+        "chim-u6-07",
+        "chim-u6-08",
+        "chim-u6-09",
+        "chim-u7-06"
+      ],
+      "slug": "06-aldeidi-e-chetoni-struttura-nomenclatura-e",
+      "url": "risorse/chimica/u6/06-aldeidi-e-chetoni-struttura-nomenclatura-e/",
+      "prev": "chim-u6-05",
+      "next": "chim-u6-07",
+      "diagramma": "carbonile C=O in aldeide (a fine catena) e chetone (interno)",
+      "video": true
+    },
+    {
+      "id": "chim-u6-07",
+      "titolo": "Reazioni di aldeidi e chetoni: addizione nucleofila (emiacetali, acetali, immine)",
+      "obiettivo": "Capire l'addizione nucleofila al carbonile: emiacetali/acetali e immine (basi di Schiff).",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 6,
+      "unitaTitolo": "I gruppi funzionali e le isomerie",
+      "prereq": [
+        "chim-u6-06"
+      ],
+      "correlati": [],
+      "slug": "07-reazioni-di-aldeidi-e-chetoni-addizione",
+      "url": "risorse/chimica/u6/07-reazioni-di-aldeidi-e-chetoni-addizione/",
+      "prev": "chim-u6-06",
+      "next": "chim-u6-08",
+      "diagramma": "addizione nucleofila al carbonile → emiacetale",
+      "video": true
+    },
+    {
+      "id": "chim-u6-08",
+      "titolo": "L'idrogeno in α al carbonile: tautomeria cheto-enolica e condensazione aldolica",
+      "obiettivo": "Capire la tautomeria cheto-enolica (importante per gli zuccheri e il metabolismo) e l'aldolica.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 6,
+      "unitaTitolo": "I gruppi funzionali e le isomerie",
+      "prereq": [
+        "chim-u6-06"
+      ],
+      "correlati": [],
+      "slug": "08-lidrogeno-in-al-carbonile-tautomeria-cheto",
+      "url": "risorse/chimica/u6/08-lidrogeno-in-al-carbonile-tautomeria-cheto/",
+      "prev": "chim-u6-07",
+      "next": "chim-u6-09",
+      "diagramma": "equilibrio cheto-enolico (spostamento di H e doppio legame)",
+      "video": true
+    },
+    {
+      "id": "chim-u6-09",
+      "titolo": "Chinoni e idrochinoni: l'ubichinone come trasportatore di elettroni",
+      "obiettivo": "Conoscere la coppia chinone/idrochinone e il ruolo dell'ubichinone (coenzima Q) nella respirazione.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 6,
+      "unitaTitolo": "I gruppi funzionali e le isomerie",
+      "prereq": [
+        "chim-u6-06"
+      ],
+      "correlati": [],
+      "slug": "09-chinoni-e-idrochinoni-lubichinone-come-trasportatore",
+      "url": "risorse/chimica/u6/09-chinoni-e-idrochinoni-lubichinone-come-trasportatore/",
+      "prev": "chim-u6-08",
+      "next": "chim-u6-10",
+      "diagramma": "chinone ⇌ idrochinone (redox, acquisto/cessione di elettroni)",
+      "video": false
+    },
+    {
+      "id": "chim-u6-10",
+      "titolo": "Acidi carbossilici: struttura, nomenclatura e acidità",
+      "obiettivo": "Conoscere il gruppo carbossilico -COOH e perché è acido.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 6,
+      "unitaTitolo": "I gruppi funzionali e le isomerie",
+      "prereq": [
+        "chim-u6-01"
+      ],
+      "correlati": [
+        "chim-u6-11",
+        "chim-u7-01"
+      ],
+      "slug": "10-acidi-carbossilici-struttura-nomenclatura-e-acidita",
+      "url": "risorse/chimica/u6/10-acidi-carbossilici-struttura-nomenclatura-e-acidita/",
+      "prev": "chim-u6-09",
+      "next": "chim-u6-11",
+      "diagramma": "gruppo carbossilico -COOH che cede H+ (carbossilato stabilizzato)",
+      "video": true
+    },
+    {
+      "id": "chim-u6-11",
+      "titolo": "I derivati degli acidi carbossilici (esteri, tioesteri, ammidi, anidridi)",
+      "obiettivo": "Conoscere i derivati degli acidi carbossilici, fondamentali in biochimica (esteri, tioesteri, ammidi).",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 6,
+      "unitaTitolo": "I gruppi funzionali e le isomerie",
+      "prereq": [
+        "chim-u6-10"
+      ],
+      "correlati": [
+        "chim-u6-12",
+        "chim-u7-09"
+      ],
+      "slug": "11-i-derivati-degli-acidi-carbossilici-esteri",
+      "url": "risorse/chimica/u6/11-i-derivati-degli-acidi-carbossilici-esteri/",
+      "prev": "chim-u6-10",
+      "next": "chim-u6-12",
+      "diagramma": "famiglia dei derivati acilici a confronto",
+      "video": true
+    },
+    {
+      "id": "chim-u6-12",
+      "titolo": "Reazioni di acidi carbossilici e derivati: esterificazione, idrolisi, Claisen, decarbossilazione",
+      "obiettivo": "Conoscere le reazioni chiave: esterificazione, idrolisi, condensazione di Claisen, decarbossilazione.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 6,
+      "unitaTitolo": "I gruppi funzionali e le isomerie",
+      "prereq": [
+        "chim-u6-11"
+      ],
+      "correlati": [],
+      "slug": "12-reazioni-di-acidi-carbossilici-e-derivati",
+      "url": "risorse/chimica/u6/12-reazioni-di-acidi-carbossilici-e-derivati/",
+      "prev": "chim-u6-11",
+      "next": "chim-u7-01",
+      "diagramma": "esterificazione: acido + alcol → estere + acqua",
+      "video": true
+    },
+    {
+      "id": "chim-u7-01",
+      "titolo": "Gli amminoacidi: struttura e classificazione delle catene laterali",
+      "obiettivo": "Conoscere la struttura generale di un amminoacido e come si classificano le catene laterali (R).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u6-05",
+        "chim-u6-10"
+      ],
+      "correlati": [
+        "chim-u7-02",
+        "chim-u7-03",
+        "chim-u7-04"
+      ],
+      "slug": "01-gli-amminoacidi-struttura-e-classificazione-delle",
+      "url": "risorse/chimica/u7/01-gli-amminoacidi-struttura-e-classificazione-delle/",
+      "prev": "chim-u6-12",
+      "next": "chim-u7-02",
+      "diagramma": "struttura generale dell'amminoacido (NH2, COOH, R, H sul carbonio α)",
+      "video": true
+    },
+    {
+      "id": "chim-u7-02",
+      "titolo": "Proprietà acido-base degli amminoacidi e punto isoelettrico",
+      "obiettivo": "Capire che gli amminoacidi sono zwitterioni e cos'è il punto isoelettrico (pI).",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u7-01",
+        "chim-u4-10"
+      ],
+      "correlati": [],
+      "slug": "02-proprieta-acido-base-degli-amminoacidi-e",
+      "url": "risorse/chimica/u7/02-proprieta-acido-base-degli-amminoacidi-e/",
+      "prev": "chim-u7-01",
+      "next": "chim-u7-03",
+      "diagramma": "amminoacido a pH acido, neutro (zwitterione) e basico",
+      "video": true
+    },
+    {
+      "id": "chim-u7-03",
+      "titolo": "Stereochimica degli amminoacidi; essenziali e non essenziali",
+      "obiettivo": "Capire la configurazione L degli amminoacidi (Fischer) e la differenza tra essenziali e non essenziali.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u7-01",
+        "chim-u5-05"
+      ],
+      "correlati": [],
+      "slug": "03-stereochimica-degli-amminoacidi-essenziali-e-non",
+      "url": "risorse/chimica/u7/03-stereochimica-degli-amminoacidi-essenziali-e-non/",
+      "prev": "chim-u7-02",
+      "next": "chim-u7-04",
+      "diagramma": "proiezione di Fischer di un L-amminoacido",
+      "video": false
+    },
+    {
+      "id": "chim-u7-04",
+      "titolo": "Il legame peptidico e la sua formazione",
+      "obiettivo": "Capire come si forma il legame peptidico tra due amminoacidi (condensazione) e le sue caratteristiche.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u7-01"
+      ],
+      "correlati": [
+        "chim-u7-05"
+      ],
+      "slug": "04-il-legame-peptidico-e-la-sua",
+      "url": "risorse/chimica/u7/04-il-legame-peptidico-e-la-sua/",
+      "prev": "chim-u7-03",
+      "next": "chim-u7-05",
+      "diagramma": "due amminoacidi che formano un legame peptidico (esce acqua)",
+      "video": true
+    },
+    {
+      "id": "chim-u7-05",
+      "titolo": "I livelli strutturali delle proteine (primaria, secondaria, terziaria, quaternaria)",
+      "obiettivo": "Conoscere i quattro livelli di struttura delle proteine, le interazioni deboli e i ponti disolfuro.",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u7-04"
+      ],
+      "correlati": [],
+      "slug": "05-i-livelli-strutturali-delle-proteine-primaria",
+      "url": "risorse/chimica/u7/05-i-livelli-strutturali-delle-proteine-primaria/",
+      "prev": "chim-u7-04",
+      "next": "chim-u7-06",
+      "diagramma": "i 4 livelli: sequenza → elica/foglietto → ripiegamento 3D → subunità",
+      "video": true
+    },
+    {
+      "id": "chim-u7-06",
+      "titolo": "I carboidrati e i monosaccaridi: struttura e stereochimica",
+      "obiettivo": "Conoscere i monosaccaridi e la loro stereochimica (isomeri, epimeri, anomeri).",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u5-05",
+        "chim-u6-06"
+      ],
+      "correlati": [
+        "chim-u7-07",
+        "chim-u7-08"
+      ],
+      "slug": "06-i-carboidrati-e-i-monosaccaridi-struttura",
+      "url": "risorse/chimica/u7/06-i-carboidrati-e-i-monosaccaridi-struttura/",
+      "prev": "chim-u7-05",
+      "next": "chim-u7-07",
+      "diagramma": "glucosio in proiezione di Fischer; D/L ed epimeri",
+      "video": true
+    },
+    {
+      "id": "chim-u7-07",
+      "titolo": "Ciclizzazione dei monosaccaridi, mutarotazione e reazioni (Maillard)",
+      "obiettivo": "Capire la ciclizzazione (forma ad anello), la mutarotazione e le reazioni (ossidazione, riduzione, Maillard).",
+      "difficolta": 3,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u7-06"
+      ],
+      "correlati": [],
+      "slug": "07-ciclizzazione-dei-monosaccaridi-mutarotazione-e-reazioni",
+      "url": "risorse/chimica/u7/07-ciclizzazione-dei-monosaccaridi-mutarotazione-e-reazioni/",
+      "prev": "chim-u7-06",
+      "next": "chim-u7-08",
+      "diagramma": "glucosio aperto ⇌ forma ciclica (emiacetale)",
+      "video": true
+    },
+    {
+      "id": "chim-u7-08",
+      "titolo": "Il legame glicosidico, disaccaridi e polisaccaridi (amido, glicogeno, cellulosa)",
+      "obiettivo": "Conoscere il legame glicosidico e i principali polisaccaridi (amido, glicogeno, cellulosa, GAG).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u7-06"
+      ],
+      "correlati": [],
+      "slug": "08-il-legame-glicosidico-disaccaridi-e-polisaccaridi",
+      "url": "risorse/chimica/u7/08-il-legame-glicosidico-disaccaridi-e-polisaccaridi/",
+      "prev": "chim-u7-07",
+      "next": "chim-u7-09",
+      "diagramma": "legame glicosidico tra due zuccheri; amido vs cellulosa",
+      "video": true
+    },
+    {
+      "id": "chim-u7-09",
+      "titolo": "Gli acidi grassi saturi e insaturi; i trigliceridi (oli e grassi)",
+      "obiettivo": "Conoscere gli acidi grassi (saturi/insaturi) e i trigliceridi (grassi e oli).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u6-11"
+      ],
+      "correlati": [
+        "chim-u7-10"
+      ],
+      "slug": "09-gli-acidi-grassi-saturi-e-insaturi",
+      "url": "risorse/chimica/u7/09-gli-acidi-grassi-saturi-e-insaturi/",
+      "prev": "chim-u7-08",
+      "next": "chim-u7-10",
+      "diagramma": "acido grasso saturo (dritto) vs insaturo (piegato); trigliceride",
+      "video": true
+    },
+    {
+      "id": "chim-u7-10",
+      "titolo": "Lipidi complessi (fosfolipidi, sfingolipidi) e colesterolo",
+      "obiettivo": "Conoscere fosfolipidi (membrane), sfingolipidi, glicolipidi e il colesterolo (ormoni steroidei, vitamina D).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u7-09"
+      ],
+      "correlati": [],
+      "slug": "10-lipidi-complessi-fosfolipidi-sfingolipidi-e-colesterolo",
+      "url": "risorse/chimica/u7/10-lipidi-complessi-fosfolipidi-sfingolipidi-e-colesterolo/",
+      "prev": "chim-u7-09",
+      "next": "chim-u7-11",
+      "diagramma": "fosfolipide (testa polare + code) e doppio strato di membrana",
+      "video": true
+    },
+    {
+      "id": "chim-u7-11",
+      "titolo": "Basi azotate, nucleosidi e nucleotidi; l'importanza dell'ATP",
+      "obiettivo": "Conoscere basi azotate, nucleosidi e nucleotidi e il ruolo energetico dell'ATP.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u5-12"
+      ],
+      "correlati": [
+        "chim-u7-12",
+        "chim-u7-13"
+      ],
+      "slug": "11-basi-azotate-nucleosidi-e-nucleotidi-limportanza",
+      "url": "risorse/chimica/u7/11-basi-azotate-nucleosidi-e-nucleotidi-limportanza/",
+      "prev": "chim-u7-10",
+      "next": "chim-u7-12",
+      "diagramma": "nucleotide = base + zucchero + fosfato; ATP con legami ad alta energia",
+      "video": true
+    },
+    {
+      "id": "chim-u7-12",
+      "titolo": "I dinucleotidi redox (NAD+/NADH, FAD/FADH2)",
+      "obiettivo": "Capire il ruolo di NAD+ e FAD come trasportatori di elettroni nelle reazioni redox biologiche.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u7-11",
+        "chim-u4-12"
+      ],
+      "correlati": [],
+      "slug": "12-i-dinucleotidi-redox-nad-nadh-fad",
+      "url": "risorse/chimica/u7/12-i-dinucleotidi-redox-nad-nadh-fad/",
+      "prev": "chim-u7-11",
+      "next": "chim-u7-13",
+      "diagramma": "NAD+ che acquista elettroni e diventa NADH",
+      "video": false
+    },
+    {
+      "id": "chim-u7-13",
+      "titolo": "Il legame fosfodiestere e la struttura degli acidi nucleici (DNA e RNA)",
+      "obiettivo": "Capire come i nucleotidi si uniscono (legame fosfodiestere) e la struttura di DNA e RNA.",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u7-11"
+      ],
+      "correlati": [],
+      "slug": "13-il-legame-fosfodiestere-e-la-struttura",
+      "url": "risorse/chimica/u7/13-il-legame-fosfodiestere-e-la-struttura/",
+      "prev": "chim-u7-12",
+      "next": "chim-u7-14",
+      "diagramma": "scheletro zucchero-fosfato e doppia elica del DNA",
+      "video": true
+    },
+    {
+      "id": "chim-u7-14",
+      "titolo": "Modificazioni non enzimatiche delle macromolecole e antiossidanti",
+      "obiettivo": "Capire i danni da radicali liberi (deaminazione, ossidazione) e gli antiossidanti (glutatione, vitamina E, carotenoidi).",
+      "difficolta": 2,
+      "materia": "Chimica e Propedeutica Biochimica",
+      "materiaKey": "chimica",
+      "unita": 7,
+      "unitaTitolo": "Le biomolecole: amminoacidi, proteine, carboidrati, lipidi e acidi nucleici",
+      "prereq": [
+        "chim-u4-14"
+      ],
+      "correlati": [],
+      "slug": "14-modificazioni-non-enzimatiche-delle-macromolecole-e",
+      "url": "risorse/chimica/u7/14-modificazioni-non-enzimatiche-delle-macromolecole-e/",
+      "prev": "chim-u7-13",
+      "next": null,
+      "diagramma": "radicale libero che danneggia una molecola; antiossidante che lo neutralizza",
+      "video": true
+    }
+  ]
+}

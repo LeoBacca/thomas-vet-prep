@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u6-05-1",
+    "topicId": "fis-u6-05",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: senza differenza di potenziale tra i due capi di un circuito, la corrente elettrica non scorre.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Pensa all'acqua in un tubo: se non c'e un dislivello (un lato piu alto e uno piu basso), l'acqua sta ferma. In elettricita la differenza di potenziale e quel dislivello — zero tensione, zero corrente.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-05-2",
+    "topicId": "fis-u6-05",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "open",
+    "q": "Descrivi con parole tue cosa fa un generatore (es. una pila) in un circuito elettrico. Usa l'analogia idraulica per spiegare anche la differenza di potenziale e la corrente.",
+    "answer": "Un generatore (come una pila) e una specie di pompa: mantiene costante un dislivello di potenziale tra i suoi due poli (polo + ad alto potenziale, polo − a basso potenziale). Questo dislivello si chiama differenza di potenziale o tensione e si misura in Volt (V). Senza generatore il dislivello si esaurirebbe subito e la corrente si fermerebbe. La corrente elettrica e il flusso di cariche (di solito elettroni) che scorrono nel filo grazie a quel dislivello, come l'acqua che scorre in un tubo spinta dalla pompa. Piu cariche passano in un secondo, piu la corrente e intensa; si misura in Ampere (A).",
+    "explain": "Da ricordare: generatore = pompa che mantiene la tensione (V); tensione = dislivello che spinge le cariche; corrente (A) = flusso di cariche in movimento.",
+    "tags": ["risposta aperta"]
+  }
+]

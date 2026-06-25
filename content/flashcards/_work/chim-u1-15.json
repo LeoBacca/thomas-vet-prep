@@ -1,0 +1,81 @@
+{
+ "id": "chim-u1-15",
+ "titolo": "Il legame ionico (e cenni sul legame metallico)",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "15-il-legame-ionico-e-cenni-sul",
+ "freq": 5,
+ "risorseMdx": "src/pages/risorse/chimica/u1/15-il-legame-ionico-e-cenni-sul.mdx",
+ "examQuestions": [
+  {
+   "year": "2008",
+   "q": "Quale indicazione può far supporre che un composto binario sia ionico?",
+   "choices": [
+    "Dei due elementi che lo costituiscono uno appartiene al gruppo I e l'altro al gruppo VII",
+    "I due elementi che lo compongono sono entrambi non-metalli",
+    "Il composto conduce la corrente elettrica solo allo stato solido",
+    "I due elementi che lo compongono sono entrambi metalli",
+    "I due elementi che lo costituiscono sono entrambi dello stesso periodo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2012",
+   "q": "Tra quali delle seguenti coppie di elementi si stabilisce un legame prevalentemente ionico?",
+   "choices": [
+    "K e Cl",
+    "H e C",
+    "S e O",
+    "Fe e Fe",
+    "Si e I"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2016",
+   "q": "Il legame ionico è un legame:",
+   "choices": [
+    "di natura elettrostatica che si instaura tra ioni di segno opposto",
+    "che si instaura tra atomi metallici",
+    "apolare",
+    "in cui gli elettroni vengono condivisi tra due atomi uguali",
+    "intermolecolare"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2018",
+   "q": "Quale tra i seguenti termini NON indica una lega metallica?",
+   "choices": [
+    "Rodio",
+    "Bronzo",
+    "Acciaio",
+    "Ottone",
+    "Ghisa"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2019",
+   "q": "Nel legame metallico:",
+   "choices": [
+    "ioni positivi sono circondati da elettroni di valenza delocalizzati",
+    "ioni positivi e negativi si attraggono reciprocamente",
+    "ioni positivi e negativi sono circondati da elettroni di valenza delocalizzati",
+    "atomi neutri si attraggono reciprocamente",
+    "strati di ioni positivi si alternano a strati di ioni negativi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+---
+const { caption = "Triangolo rettangolo: i lati e i tre rapporti dell'angolo θ" } = Astro.props;
+---
+<figure class="diagram figura">
+  <svg viewBox="0 0 400 300" role="img" aria-label="Triangolo rettangolo con ipotenusa, cateto opposto e cateto adiacente, e le definizioni di seno, coseno e tangente" style="max-width:440px;width:100%;height:auto">
+    <polygon points="50,210 320,210 320,70" fill="#eef6f1" stroke="#cfe3d8" stroke-width="1" />
+    <!-- cateto adiacente (verde) -->
+    <line x1="50" y1="210" x2="320" y2="210" stroke="#2f7d62" stroke-width="5" />
+    <!-- cateto opposto (arancione) -->
+    <line x1="320" y1="210" x2="320" y2="70" stroke="#d98324" stroke-width="5" />
+    <!-- ipotenusa (rosso) -->
+    <line x1="50" y1="210" x2="320" y2="70" stroke="#c0392b" stroke-width="5" />
+    <!-- angolo retto -->
+    <polyline points="302,210 302,192 320,192" fill="none" stroke="#888" stroke-width="1.5" />
+    <!-- arco angolo theta -->
+    <path d="M 88 210 A 38 38 0 0 0 84 192" fill="none" stroke="#333" stroke-width="2" />
+    <text x="92" y="203" font-size="18" font-style="italic">θ</text>
+    <!-- etichette lati -->
+    <text x="122" y="232" font-size="14" fill="#2f7d62" font-weight="600">cateto adiacente</text>
+    <text x="326" y="148" font-size="14" fill="#d98324" font-weight="600">cateto opposto</text>
+    <text x="150" y="126" font-size="14" fill="#c0392b" font-weight="600" transform="rotate(-27 150 126)">ipotenusa</text>
+    <!-- rapporti -->
+    <text x="18" y="258" font-size="15"><tspan font-weight="700">sin θ</tspan> = <tspan fill="#d98324">opposto</tspan> ÷ <tspan fill="#c0392b">ipotenusa</tspan></text>
+    <text x="18" y="279" font-size="15"><tspan font-weight="700">cos θ</tspan> = <tspan fill="#2f7d62">adiacente</tspan> ÷ <tspan fill="#c0392b">ipotenusa</tspan></text>
+    <text x="18" y="300" font-size="15"><tspan font-weight="700">tan θ</tspan> = <tspan fill="#d98324">opposto</tspan> ÷ <tspan fill="#2f7d62">adiacente</tspan></text>
+  </svg>
+  <figcaption>{caption}</figcaption>
+</figure>

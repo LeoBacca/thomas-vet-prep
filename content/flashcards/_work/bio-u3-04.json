@@ -1,0 +1,25 @@
+{
+ "id": "bio-u3-04",
+ "titolo": "Filamento continuo e discontinuo, frammenti di Okazaki, rimozione RNA e DNA ligasi",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "04-filamento-continuo-e-discontinuo-frammenti-di",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u3/04-filamento-continuo-e-discontinuo-frammenti-di.mdx",
+ "examQuestions": [
+  {
+   "year": "2022",
+   "q": "Quale tra i seguenti processi NON ha bisogno dell'enzima DNA ligasi?",
+   "choices": [
+    "Metodi PCR",
+    "Unione di frammenti di Okazaki",
+    "Sintesi del filamento lento di DNA",
+    "Cucitura del gene target al vettore di clonaggio",
+    "Meccanismi di ricombinazione"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

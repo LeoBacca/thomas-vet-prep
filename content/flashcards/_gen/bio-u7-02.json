@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-bio-u7-02-1",
+    "topicId": "bio-u7-02",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: quando la proteina Rb e fosforilata dal complesso ciclina D-Cdk4/6, libera E2F che puo attivare i geni per la replicazione del DNA.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Rb fosforilata = cancello aperto: E2F viene liberato e accende i geni della fase S. Senza fosforilazione, Rb tiene E2F bloccato come una guardia che non lascia passare nessuno.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-02-2",
+    "topicId": "bio-u7-02",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "open",
+    "q": "Descrivi la catena di eventi che porta una cellula a superare il punto di restrizione ed entrare in fase S, partendo dall'arrivo di un fattore di crescita.",
+    "answer": "1) Un fattore di crescita (es. EGF) arriva dall'esterno e si lega al suo recettore sulla membrana cellulare. 2) Il recettore attivato avvia una cascata di segnali interni che porta alla produzione di ciclina D nel nucleo. 3) La ciclina D si lega a Cdk4 o Cdk6, formando un complesso attivo (ciclina D-Cdk4/6). 4) Questo complesso fosforila la proteina Rb (aggiunge gruppi fosfato). 5) Rb fosforilata cambia forma e molla la presa su E2F. 6) E2F, ora libero, attiva i geni necessari per la fase S (tra cui la ciclina E, che amplifica ulteriormente il segnale). 7) La cellula entra in fase S e inizia a copiare il DNA. Una volta superato il punto di restrizione, la cellula va avanti anche se i fattori di crescita spariscono: e come salire su un treno gia in partenza.",
+    "explain": "Schema chiave: fattore di crescita → ciclina D → ciclina D + Cdk4/6 → fosforilazione Rb → E2F libero → geni fase S accesi → ingresso in fase S.",
+    "tags": ["risposta aperta"]
+  }
+]

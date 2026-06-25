@@ -1,0 +1,70 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u1-04">
+
+Le grandezze fisiche si possono dividere in due famiglie, a seconda che **dipendano o no dalla quantità di materia**.
+
+- **Estensive** → dipendono da *quanta* roba hai: massa, volume, lunghezza, energia. Più materia c'è, più sono grandi.
+- **Intensive** → *non* dipendono dalla quantità: temperatura, densità, pressione. Restano uguali sia che tu abbia tanto sia poco materiale.
+
+<div class="callout">💡 <strong>Il trucco infallibile:</strong> immagina di tagliare l'oggetto <strong>a metà</strong>. Se la grandezza si <strong>dimezza</strong> → è <strong>estensiva</strong>. Se <strong>resta uguale</strong> → è <strong>intensiva</strong>.</div>
+
+<Diagram caption="Il test del 'taglio a metà' per riconoscerle" code={`flowchart TB
+  G["Taglio l'oggetto a metà..."] --> Q{"La grandezza cambia?"}
+  Q -->|"si dimezza"| E["ESTENSIVA<br/>massa, volume, lunghezza, energia"]
+  Q -->|"resta uguale"| I["INTENSIVA<br/>temperatura, densità, pressione"]`} />
+
+## Un esempio pratico
+
+Una pentola d'acqua bollente e una tazza presa da quella pentola: la **temperatura** è la stessa (100 °C) → **intensiva**. Ma la pentola contiene **più massa** e **più calore** della tazza → quelle sono **estensive**.
+
+## Guarda il video
+
+<YouTube id="LyPH0jq8qyQ" title="Grandezze estensive vs intensive — la differenza in 5 minuti" />
+
+<VideoVisto id="fis-u1-04" />
+
+## Da ricordare
+
+- **Estensiva** = dipende dalla quantità (massa, volume…).
+- **Intensiva** = non dipende dalla quantità (temperatura, densità…).
+- Test: taglia a metà → si dimezza (estensiva) o resta uguale (intensiva)?
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="La temperatura è una grandezza:"
+  opzioni={["estensiva", "intensiva", "derivata", "vettoriale"]}
+  corretta={1}
+  spiegazione="Intensiva: non dipende dalla quantità. Una goccia e un secchio d'acqua bollente sono entrambi a 100 °C."
+/>
+
+<Quiz
+  domanda="Se dividi a metà un blocco di ferro, la sua massa:"
+  opzioni={["resta uguale", "si dimezza", "raddoppia", "sparisce"]}
+  corretta={1}
+  spiegazione="Si dimezza: la massa dipende dalla quantità di materia, quindi è estensiva."
+/>
+
+<Quiz
+  domanda="Quale di queste è una grandezza estensiva?"
+  opzioni={["densità", "temperatura", "volume", "pressione"]}
+  corretta={2}
+  spiegazione="Il volume dipende da quanta materia hai → estensivo. Le altre tre sono intensive."
+/>
+
+<Esercizio
+  problema="La densità è estensiva o intensiva? Spiega perché."
+  soluzione="Intensiva: non dipende da quanta materia hai. L'acqua ha densità ~1 kg/L sia in un bicchiere sia in una piscina."
+/>
+
+</section>
+
+</RisorsaLayout>

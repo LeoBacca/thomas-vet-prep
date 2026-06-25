@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fc-chim-u1-26-1", "topicId": "chim-u1-26", "materia": "chimica", "unita": 1, "type": "mc",
+    "q": "Nella formula dei gas perfetti PV = nRT, cosa indica la lettera n?",
+    "choices": ["La pressione del gas", "Quante particelle di gas ci sono (le moli)", "Quanto è caldo il gas", "Il nome del gas"],
+    "answer": 1,
+    "explain": "n è il numero di moli, cioè QUANTE particelle di gas ci sono. Una mole è solo un 'pacco' enorme di particelle (6,022x10²³), come una dozzina sono 12 uova. La pressione è P, la temperatura è T: ognuna ha la sua lettera.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-26-2", "topicId": "chim-u1-26", "materia": "chimica", "unita": 1, "type": "mc",
+    "q": "Quando INSPIRI, il diaframma si abbassa e il VOLUME dei polmoni aumenta. Cosa succede alla pressione dentro i polmoni, e perché entra l'aria?",
+    "choices": ["La pressione dentro sale e spinge fuori l'aria", "La pressione dentro scende, così l'aria entra da sola dall'esterno", "Non cambia niente: il volume non c'entra con il respiro", "Il diaframma 'tira' l'aria dentro come una cannuccia"],
+    "answer": 1,
+    "explain": "P e V sono come due amici su un'altalena: se il volume sale, la pressione scende. Più spazio nei polmoni = meno pressione dentro. Essendoci meno pressione dentro che fuori, l'aria entra da sola, dall'alta verso la bassa pressione. Non la 'tiri': fai più spazio e lei entra.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-26-3", "topicId": "chim-u1-26", "materia": "chimica", "unita": 1, "type": "open",
+    "q": "Spiega con parole tue: quando inspiri non 'aspiri' l'aria come da una cannuccia. Allora come fa l'aria a entrare nei polmoni?",
+    "answer": "Il diaframma (un muscolo sotto i polmoni) si abbassa e il torace si allarga, quindi il VOLUME dei polmoni aumenta. In PV = nRT, a parità delle altre cose, se il volume sale la pressione dentro scende. Ora dentro il polmone c'è meno pressione che nell'aria esterna: e i gas si spostano sempre dalla pressione alta a quella bassa. Così l'aria entra da sola, dall'esterno (pressione alta) verso l'interno (pressione bassa). Quando espiri è il contrario: il diaframma risale, il volume diminuisce, la pressione dentro sale sopra quella esterna e l'aria esce.",
+    "explain": "Da ricordare: respiri controllando il VOLUME. Più volume → meno pressione → l'aria entra da sola.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-26-4", "topicId": "chim-u1-26", "materia": "chimica", "unita": 1, "type": "mc",
+    "q": "A 0 °C e 1 atm (le condizioni 'standard', STP) una mole di qualsiasi gas occupa sempre 22,4 litri. Che volume occupano 2,5 moli di cloro gassoso (Cl₂) nelle stesse condizioni?",
+    "choices": ["5,6 litri", "56,0 litri", "22,4 litri", "112,0 litri", "2,7 litri"],
+    "answer": 1,
+    "explain": "Basta moltiplicare: 2,5 mol x 22,4 L/mol = 56,0 litri. Le trappole: '5,6 litri' è l'OPPOSTO (hai diviso invece di moltiplicare, 22,4/4); '22,4 litri' è il volume di UNA sola mole (ti sei dimenticato il x2,5); '112,0 litri' è il doppio di troppo (come se le moli fossero 5). Attento: il fatto che sia Cl₂ (due atomi) non cambia nulla, il volume molare a STP è 22,4 L per QUALSIASI gas. '2,7 litri' è un filler senza senso.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-26-5", "topicId": "chim-u1-26", "materia": "chimica", "unita": 1, "type": "mc",
+    "q": "Un recipiente RIGIDO (volume fisso) contiene 1 mole di argon. Tramite una valvola aggiungi altre 2 moli dello stesso gas, arrivando a 3 moli. Per far restare la pressione COSTANTE, la temperatura assoluta (in kelvin) dovrà:",
+    "choices": ["Diventare un terzo di quella iniziale", "Triplicare rispetto a quella iniziale", "Rimanere costante", "Raddoppiare rispetto a quella iniziale", "Dipende dal colore del recipiente"],
+    "answer": 0,
+    "explain": "Da PV = nRT, con P e V fissi, il prodotto n x T deve restare costante. Le moli passano da 1 a 3 (triplicano): per compensare, T deve diventare un terzo. Le trappole: 'triplicare' è l'OPPOSTO esatto (segue n invece di compensarlo); 'rimanere costante' è la misconcezione di chi dimentica che ha aggiunto gas; 'raddoppiare' confonde 'aggiungo 2 moli' con 'raddoppio' (ma le moli totali triplicano, non raddoppiano). L'ultima è un filler assurdo.",
+    "tags": ["prova d'esame"]
+  }
+]

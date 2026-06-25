@@ -1,0 +1,81 @@
+[
+  {
+    "id": "fc-bio-u4-10-1",
+    "topicId": "bio-u4-10",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "I cromosomi sono come collane di perle (i geni). A volte la collana si rompe e si riattacca in modo sbagliato. Questi errori cambiano il NUMERO dei cromosomi o la loro STRUTTURA interna?",
+    "choices": [
+      "Cambiano solo la struttura interna, non il numero di cromosomi",
+      "Cambiano solo il numero di cromosomi, non la struttura",
+      "Cambiano sempre sia il numero che la struttura",
+      "Non cambiano nulla, i cromosomi sono intatti"
+    ],
+    "answer": 0,
+    "explain": "Le alterazioni strutturali (delezione, inserzione, inversione, traslocazione) riorganizzano i geni dentro i cromosomi ma il NUMERO totale di cromosomi resta lo stesso. Cambiare il numero e un problema diverso (aneuploidia), che riguarda un altro argomento.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-10-2",
+    "topicId": "bio-u4-10",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: una persona che porta un'inversione cromosomica (il segmento e stato rimesso al contrario) e quasi sempre malata, perche le mancano dei geni.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 1,
+    "explain": "Falso. In un'inversione il segmento viene capovolto ma RESTA nello stesso cromosoma: tutti i geni ci sono, solo orientati al contrario. Il portatore e di solito fenotipicamente normale. Il problema emerge nella meiosi: puo produrre spermatozoi o cellule uovo con cromosomi sbilanciati, rischiando di trasmettere difetti ai figli.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-10-3",
+    "topicId": "bio-u4-10",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "open",
+    "q": "Spiega con parole tue i 4 tipi di alterazione strutturale dei cromosomi (delezione, duplicazione/inserzione, inversione, traslocazione). Per ognuno usa l'analogia della collana di perle.",
+    "answer": "Immagina un cromosoma come una collana con le perle A-B-C-D-E nell'ordine. 1) DELEZIONE: togli e perdi la perla C → la collana diventa A-B-D-E. I geni di quel tratto spariscono. Esempio reale: la sindrome del cri du chat nasce dalla delezione di un pezzo del cromosoma 5. 2) DUPLICAZIONE/INSERZIONE: la perla C si copia e appare due volte → A-B-C-C-D-E, oppure un pezzo si sposta in un altro punto. La copia in piu puo dare ai discendenti nuove funzioni: e uno dei motori dell'evoluzione. 3) INVERSIONE: stacchi il blocco C-D e lo rimetti al contrario → A-B-D-C-E. Tutti i geni ci sono ma sono orientati al rovescio. Se il pezzo capovolto include il centromero si chiama pericentrica, altrimenti paracentrica. Il portatore e spesso sano, ma la meiosi puo produrre combinazioni sbilanciate. 4) TRASLOCAZIONE: un pezzo cambia collana, si attacca a un cromosoma diverso. Se due cromosomi si scambiano un pezzo a vicenda e traslocazione reciproca (portatore spesso sano, ma figli a rischio). Un caso speciale e la traslocazione robertsoniana: due cromosomi si fondono in uno solo, abbassando il numero totale a 45 anziche 46, e puo causare la sindrome di Down ereditaria.",
+    "explain": "Da ricordare: delezione = si perde; duplicazione = si raddoppia; inversione = si capovolge (stesso cromosoma); traslocazione = cambia cromosoma.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u4-10-4",
+    "topicId": "bio-u4-10",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "L'analisi del cariotipo di un uomo fenotipicamente normale permette di evidenziare se egli:",
+    "choices": [
+      "e portatore di una traslocazione cromosomica bilanciata",
+      "e eterozigote per una malattia dovuta a una mutazione genica",
+      "avra un figlio con cariotipo normale",
+      "e affetto da una malattia ereditaria legata al sesso",
+      "e figlio di genitori eterozigoti per mutazioni geniche"
+    ],
+    "answer": 0,
+    "explain": "Il cariotipo mostra la STRUTTURA e il NUMERO dei cromosomi, non la sequenza dei singoli geni. Una traslocazione bilanciata riorganizza i cromosomi in modo visibile al microscopio: il cariotipo la rivela anche se la persona e sana. Le trappole: una mutazione genica (opzioni B, D, E) e una variazione nella sequenza del DNA, troppo piccola per vedersi al microscopio nel cariotipo; 'avra un figlio normale' (opzione C) non si puo dedurre solo dal cariotipo del padre, perche dipende anche dal cariotipo della madre e dalla fortuna della meiosi. La firma dell'esame: distingui cosa vede il cariotipo (struttura/numero cromosomi) da cosa richiederebbe un sequenziamento (mutazioni geniche).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u4-10-5",
+    "topicId": "bio-u4-10",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Un individuo ha 45 cromosomi invece di 46, ma e completamente sano e ha tutti i geni. Quale evento lo spiega meglio?",
+    "choices": [
+      "Una delezione che ha eliminato un intero cromosoma",
+      "Una traslocazione robertsoniana in cui due cromosomi acrocentrici si sono fusi in uno solo",
+      "Un'inversione pericentrica che ha dimezzato il numero di cromosomi",
+      "Una duplicazione che ha compensato la perdita di un cromosoma",
+      "Una mutazione puntiforme che riduce il conto dei cromosomi"
+    ],
+    "answer": 1,
+    "explain": "La traslocazione robertsoniana fonde due cromosomi acrocentrici (come il 14 e il 21) in un unico cromosoma ibrido: il numero totale scende a 45, ma il materiale genetico e quasi tutto presente (si perdono solo piccole regioni ribosomiali non essenziali), per cui la persona e sana. Le trappole: una delezione di un intero cromosoma lascerebbe l'individuo con grossissimi problemi perche perderebbe migliaia di geni; un'inversione non cambia mai il numero di cromosomi, riorganizza solo un segmento interno; una duplicazione aggiungerebbe materiale, non lo compenserebbe; una mutazione puntiforme agisce su singoli nucleotidi e non ha nessun effetto sul conteggio dei cromosomi. Aggancio biomedico: il portatore sano di questa traslocazione rischia di trasmettere una trisomia 21 (sindrome di Down) ai figli.",
+    "tags": ["prova d'esame"]
+  }
+]

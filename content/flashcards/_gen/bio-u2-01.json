@@ -1,0 +1,81 @@
+[
+  {
+    "id": "fc-bio-u2-01-1",
+    "topicId": "bio-u2-01",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un cromosoma eucariotico (come i tuoi) ha tre parti fondamentali senza cui non funziona. Quale delle seguenti NON è una di queste tre parti essenziali?",
+    "choices": [
+      "Il centromero (il gancio centrale per la divisione cellulare)",
+      "I telomeri (le cappette alle estremità)",
+      "Le origini di replicazione (i punti di partenza per copiare il DNA)",
+      "Il ribosoma (la macchina che produce proteine)"
+    ],
+    "answer": 3,
+    "explain": "Le tre parti obbligatorie sono: centromero (aggancio al fuso mitotico), telomeri (protezione delle estremità) e origini di replicazione (avvio della copia del DNA). Il ribosoma è una struttura cellulare che produce proteine: non è una componente del cromosoma.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u2-01-2",
+    "topicId": "bio-u2-01",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: i telomeri sono sequenze di DNA alle estremità del cromosoma che si accorciano a ogni divisione cellulare e proteggono i geni importanti dalla degradazione.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 0,
+    "explain": "Vero. I telomeri funzionano come le puntine di plastica in fondo ai lacci delle scarpe: proteggono le estremità del cromosoma. Ad ogni divisione la DNA polimerasi non riesce a copiare fino in fondo, quindi si perde un pezzo di telomero — ma i geni veri restano al sicuro finché c'è abbastanza 'cuscinetto'. Con il tempo questo accorciamento è una delle cause dell'invecchiamento cellulare.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u2-01-3",
+    "topicId": "bio-u2-01",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "open",
+    "q": "Immagina di costruire un cromosoma artificiale da zero e di inserirlo in una cellula eucariotica. Quali tre elementi deve contenere perché sopravviva e funzioni? Spiega brevemente il ruolo di ognuno.",
+    "answer": "Il cromosoma artificiale deve contenere: 1) Un CENTROMERO: è il 'gancio' centrale a cui si attacca il cinetocore e, da lì, i filamenti del fuso mitotico durante la divisione. Senza centromero i filamenti non riescono ad agganciare il cromosoma e quindi non lo trascinano verso i poli: il cromosoma resta indietro e va perso nelle cellule figlie. 2) I TELOMERI (alle due estremità): sono le 'cappette' protettive fatte di sequenze di DNA molto ripetute (ad esempio TTAGGG negli umani). Senza telomeri le estremità si degradano ad ogni divisione: si perde DNA vero e la cellula accumula danni. 3) Almeno un'ORIGINE DI REPLICAZIONE (ORI): è il punto dove inizia la copia del DNA. Senza di essa il cromosoma non viene duplicato e si 'diluisce' nelle divisioni successive fino a sparire. Questa è la definizione operativa di cromosoma artificiale eucariotico: i tre elementi sono il minimo necessario per esistere in una cellula.",
+    "explain": "Da ricordare: centromero = segregazione, telomeri = protezione estremità, ORI = replicazione. Mancandone uno, il cromosoma non funziona.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u2-01-4",
+    "topicId": "bio-u2-01",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Classifica le seguenti strutture in ordine crescente di massa (dalla più piccola alla più grande): 1. il gene CFTR umano; 2. il cromosoma Y umano; 3. un nucleotide; 4. la timina; 5. il cromosoma X umano.",
+    "choices": [
+      "4, 3, 1, 2, 5",
+      "1, 3, 2, 4, 5",
+      "3, 4, 1, 2, 5",
+      "3, 4, 1, 5, 2",
+      "4, 3, 1, 5, 2"
+    ],
+    "answer": 0,
+    "explain": "La logica è pensare alla gerarchia delle dimensioni. La TIMINA (4) è solo una base azotata, la molecola più piccola del gruppo. Il NUCLEOTIDE (3) è più grande: contiene la base + uno zucchero + un fosfato. Il gene CFTR (1) è una sequenza di nucleotidi (il gene è lungo ~190.000 basi): molto più grande di un singolo nucleotide. Il CROMOSOMA Y (2) contiene milioni di basi e molti geni, ma è il più piccolo dei cromosomi sessuali umani. Il CROMOSOMA X (5) è decisamente più grande e massiccio del Y: contiene circa 2,6 volte più DNA (e molti più geni). Ordine corretto: timina → nucleotide → gene CFTR → cromosoma Y → cromosoma X, cioè 4, 3, 1, 2, 5. Trappola: confondere cromosoma X e Y supponendo che siano uguali o che Y sia il più grande — in realtà X è molto più grande. Un'altra trappola comune è mettere il nucleotide prima della timina, dimenticando che il nucleotide include la timina più altri componenti.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u2-01-5",
+    "topicId": "bio-u2-01",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un ricercatore distrugge il centromero di un cromosoma in una cellula che si sta dividendo. Qual è la conseguenza più diretta e immediata?",
+    "choices": [
+      "Le estremità del cromosoma si degradano ad ogni divisione",
+      "Il DNA non viene copiato e il cromosoma si diluisce nelle generazioni successive",
+      "I filamenti del fuso mitotico non riescono ad agganciare il cromosoma, che non viene distribuito alle cellule figlie",
+      "La telomerasi smette di funzionare e i telomeri si accorciano più velocemente",
+      "Le origini di replicazione vengono bloccate e la sintesi del DNA si ferma"
+    ],
+    "answer": 2,
+    "explain": "Il centromero è il punto di aggancio del cinetocore, la struttura proteica a cui si attaccano i microtubuli del fuso mitotico. Senza centromero il fuso non riesce ad agganciare il cromosoma e tirarlo verso i poli: il cromosoma resta in mezzo e non viene distribuito — la cellula figlia lo perde. Le trappole: 'le estremità si degradano' descrive cosa succede senza TELOMERI (non il centromero): è l'opposto esatto del componente giusto. 'Il DNA non viene copiato' descrive la mancanza di ORIGINI DI REPLICAZIONE: errore di componente. 'La telomerasi si blocca' confonde il centromero con la telomerasi: termini scambiati. 'Le origini di replicazione si bloccano' è un altro errore di componente, fuori tema.",
+    "tags": ["prova d'esame"]
+  }
+]

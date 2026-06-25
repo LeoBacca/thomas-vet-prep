@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u2-12-1",
+    "topicId": "chim-u2-12",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: nell'osmosi, l'acqua si sposta attraverso la membrana semipermeabile verso il lato con MENO soluto disciolto.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'acqua va verso il lato PIU concentrato (con piu soluto), non verso quello meno concentrato. E come se l'acqua volesse 'diluire' la parte piu affollata di particelle. La membrana lascia passare solo l'acqua, non il soluto.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-12-2",
+    "topicId": "chim-u2-12",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Il sale da cucina NaCl si scioglie in acqua e si rompe in 2 ioni. Lo zucchero si scioglie ma non si rompe. Se prepari due soluzioni alla STESSA concentrazione e temperatura, quale ha la pressione osmotica piu alta?",
+    "choices": [
+      "Quella di NaCl, perche in soluzione ci sono il doppio delle particelle (i = 2 contro i = 1)",
+      "Quella di zucchero, perche le molecole sono piu grandi e pesano di piu",
+      "Sono uguali: a stessa concentrazione la pressione osmotica e sempre la stessa",
+      "Quella di NaCl solo se la temperatura supera i 25°C"
+    ],
+    "answer": 0,
+    "explain": "La pressione osmotica dipende dal NUMERO di particelle in soluzione (formula: π = i·M·R·T). NaCl ha i = 2 (si rompe in Na⁺ e Cl⁻), lo zucchero ha i = 1 (resta intero). Stessa M e stessa T → conta solo i → la pressione del sale e doppia. Le dimensioni o il peso delle molecole non c'entrano: contano solo i pezzi in cui si dividono.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-12-3",
+    "topicId": "chim-u2-12",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "open",
+    "q": "Un veterinario deve fare una flebo a un cane. Spiega: (1) perche la soluzione della flebo deve avere la stessa concentrazione del sangue; (2) cosa succederebbe ai globuli rossi se la flebo fosse troppo diluita; (3) cosa succederebbe se fosse troppo concentrata.",
+    "answer": "Le cellule del sangue (globuli rossi) sono circondate da una membrana semipermeabile, proprio come i sacchetti dell'osmosi. Per questo la concentrazione della flebo e fondamentale: (1) Se la flebo ha la STESSA concentrazione del sangue (e detta isotonica), non c'e differenza osmotica: l'acqua non si sposta ne dentro ne fuori le cellule, e tutto va bene. (2) Se la flebo e TROPPO DILUITA (ipotonica), la concentrazione fuori dalle cellule e piu bassa di quella dentro: l'acqua entra in massa nei globuli rossi per 'diluirli'. I globuli rossi si gonfiano sempre di piu finche scoppiano (emolisi). (3) Se la flebo e TROPPO CONCENTRATA (ipertonica), la concentrazione fuori e piu alta di quella dentro: l'acqua esce dalle cellule verso il liquido piu concentrato. I globuli rossi perdono acqua, si raggrinziscono e non funzionano piu. E lo stesso motivo per cui bere acqua di mare disidrata: il sale estrae l'acqua dalle cellule.",
+    "explain": "Parola chiave: isotonica = stessa concentrazione = nessun flusso osmotico. Ipotonica → le cellule scoppiano; ipertonica → le cellule si raggrinziscono.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u2-12-4",
+    "topicId": "chim-u2-12",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Le costanti di dissociazione dell'acido acetico e dell'acido formico a 25°C sono rispettivamente 1,8×10⁻⁵ M e 1,8×10⁻⁴ M. Quale considerazione e corretta riguardo alle loro soluzioni 0,1 M?",
+    "choices": [
+      "La soluzione 0,1 M di acido acetico ha pressione osmotica INFERIORE rispetto a quella di acido formico",
+      "La soluzione 0,1 M di acido acetico ha pressione osmotica SUPERIORE rispetto a quella di acido formico",
+      "Le due soluzioni hanno la stessa pressione osmotica perche sono entrambi acidi deboli con la stessa concentrazione iniziale",
+      "La soluzione di acido acetico ha pressione di vapore superiore a quella di acido formico",
+      "Nessuna considerazione e possibile senza conoscere la temperatura esatta"
+    ],
+    "answer": 0,
+    "explain": "La pressione osmotica dipende dal numero TOTALE di particelle in soluzione (π = i·M·R·T). Entrambi sono acidi deboli: si dissociano solo in parte, generando piu particelle (HA ⇌ H⁺ + A⁻). L'acido formico (Ka = 1,8×10⁻⁴) si dissocia DI PIU dell'acido acetico (Ka = 1,8×10⁻⁵, dieci volte piu piccola). Piu dissociazione = piu particelle = fattore i piu alto = pressione osmotica piu alta. Quindi l'acetico ha pressione osmotica INFERIORE al formico. Trappola 'sono uguali': sbagliato, la costante Ka diversa cambia il grado di dissociazione e quindi il numero reale di particelle. Trappola 'superiore': inverte il ragionamento sul Ka.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u2-12-5",
+    "topicId": "chim-u2-12",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Cos'e la 'pressione osmotica' di una soluzione? Scegli la definizione piu precisa.",
+    "choices": [
+      "La pressione che dobbiamo applicare per FERMARE il passaggio dell'acqua attraverso la membrana semipermeabile",
+      "La pressione esercitata dal soluto sulle pareti del contenitore",
+      "La forza con cui l'acqua spinge fuori il soluto attraverso la membrana",
+      "La pressione che fa scoppiare la membrana semipermeabile",
+      "La differenza di temperatura tra i due lati della membrana"
+    ],
+    "answer": 0,
+    "explain": "La pressione osmotica (π) e la pressione minima da applicare sul lato piu concentrato per BLOCCARE l'osmosi, cioe per impedire all'acqua di passare. Piu e alta la concentrazione, piu alta e questa pressione. Non e una forza del soluto sulle pareti (quella e la pressione idrostatica), ne ha nulla a che fare con la temperatura. Trappola 'fa scoppiare la membrana': no, e la pressione che impedisce il flusso, non che rompe nulla. Trappola 'spinge fuori il soluto': la membrana non lascia mai passare il soluto.",
+    "tags": ["impara"]
+  }
+]

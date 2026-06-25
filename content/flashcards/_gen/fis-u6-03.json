@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u6-03-1",
+    "topicId": "fis-u6-03",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: il potenziale elettrico in un punto dipende da quanto è grande la carica che metti in quel punto.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il potenziale V = Ep / q è proprio 'energia per unità di carica': dividendo per q si elimina la dipendenza dalla carica di prova. Il potenziale descrive il punto nello spazio, non la carica che ci metti — come la quota di una collina che non dipende da quanto pesa la pallina.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-03-2",
+    "topicId": "fis-u6-03",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Una batteria AA da 1,5 V. Cosa indica esattamente quel '1,5 V'?",
+    "choices": [
+      "La quantità totale di carica contenuta nella batteria",
+      "La differenza di potenziale tra i due poli: la 'spinta' che fa muovere le cariche nel circuito",
+      "L'energia totale immagazzinata nella batteria, indipendentemente dalla carica",
+      "Il potenziale assoluto del polo positivo"
+    ],
+    "answer": 1,
+    "explain": "1,5 V è una differenza di potenziale (ΔV = V+ − V−): misura la 'spinta' disponibile per far muovere le cariche, come il dislivello tra due serbatoi d'acqua. Non dice quanta carica c'è (quello sarebbe i mAh), né l'energia totale, né un potenziale assoluto.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-03-3",
+    "topicId": "fis-u6-03",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra 'energia potenziale elettrica' e 'potenziale elettrico'. Perché ne abbiamo bisogno di entrambi?",
+    "answer": "L'energia potenziale elettrica (Ep) è l'energia che UNA CERTA carica q ha in un dato punto del campo elettrico: dipende sia dal punto sia da quanto è grande q. Il potenziale elettrico (V = Ep / q) è invece una proprietà del PUNTO nello spazio, ottenuta dividendo per q per eliminare la dipendenza dalla carica di prova. Abbiamo bisogno di entrambi: Ep ci dice l'energia concreta di quella carica; V ci permette di confrontare punti diversi dello spazio indipendentemente dalla carica usata. Analogia: l'energia potenziale gravitazionale dipende dalla massa della pallina; la quota della collina (analoga a V) è una proprietà del punto, indipendente dalla massa.",
+    "explain": "Il passaggio chiave: V = Ep / q 'normalizza' l'energia rispetto alla carica, rendendo il potenziale una mappa del campo elettrico indipendente da chi ci stai mettendo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u6-03-4",
+    "topicId": "fis-u6-03",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Un sistema è formato da due cariche puntiformi uguali e opposte (+q e −q) a una certa distanza. Cosa si può dire del potenziale elettrico generato da tale sistema in un punto P qualsiasi?",
+    "choices": [
+      "È dato dalla somma algebrica dei potenziali prodotti dalle singole cariche",
+      "È dato dalla differenza dei potenziali delle singole cariche (si sottrae il modulo)",
+      "È dappertutto nullo perché le due cariche si annullano",
+      "È identico al potenziale di una singola carica pari a metà della carica negativa",
+      "È dato dal valor medio dei potenziali delle singole cariche"
+    ],
+    "answer": 0,
+    "explain": "Il potenziale è una grandezza SCALARE e si somma algebricamente: V_tot = V(+q) + V(−q). In un punto equidistante da entrambe le cariche i contributi si annullano — ma in punti generici il risultato non è zero. La trappola 'è dappertutto nullo' confonde la somma scalare con la cancellazione vettoriale del campo elettrico. 'Differenza dei moduli', 'valor medio' e 'metà carica' non hanno senso fisico per il principio di sovrapposizione.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u6-03-5",
+    "topicId": "fis-u6-03",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Le superfici equipotenziali in un campo elettrico sono:",
+    "choices": [
+      "Le superfici dove il campo elettrico è massimo",
+      "Le superfici dove il potenziale elettrico è costante",
+      "Le superfici dove il campo magnetico è costante",
+      "Le superfici dove il campo elettrico è minimo",
+      "Le superfici che contengono cariche elettriche isolate"
+    ],
+    "answer": 1,
+    "explain": "Equipotenziale = stesso potenziale: su queste superfici V non cambia, quindi spostare una carica lungo di esse non richiede lavoro. L'errore classico è confonderle con le linee di campo (che invece vanno perpendicolari alle superfici equipotenziali, dal potenziale alto al basso). Non c'entrano il campo magnetico né la posizione delle cariche.",
+    "tags": ["prova d'esame"]
+  }
+]

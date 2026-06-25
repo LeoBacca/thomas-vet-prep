@@ -1,0 +1,122 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u3-03">
+
+## Cos'è il principio di Pascal?
+
+Il **principio di Pascal** dice una cosa semplice ma potente:
+
+> Se premi su un liquido in un punto qualsiasi, quella pressione si trasmette **uguale** in tutte le direzioni e in ogni punto del liquido.
+
+Immagina di stringere un tubetto di dentifricio: il dentifricio non esce solo dal punto che premi, esce dal beccuccio perché la pressione si trasmette ovunque dentro al tubetto. Ecco Pascal in azione.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Schiaccia un liquido in un punto e la spinta arriva uguale dappertutto — come stringere un palloncino pieno d'acqua.</div>
+
+---
+
+## La formula della pressione (ripasso rapido)
+
+La pressione è la forza divisa per la superficie su cui agisce:
+
+**P = F / A**
+
+- **P** = pressione (in Pascal, Pa)
+- **F** = forza applicata (in Newton, N)
+- **A** = area della superficie (in m²)
+
+Se A è grande, serve più forza per ottenere la stessa pressione. Se A è piccola, anche una piccola forza crea tanta pressione.
+
+---
+
+## Il torchio idraulico: moltiplicare la forza
+
+Il torchio idraulico è l'applicazione più famosa di Pascal. Funziona così:
+
+1. Hai due pistoni collegati da un liquido: uno **piccolo** (A₁) e uno **grande** (A₂).
+2. Spingi con una piccola forza sul pistone piccolo.
+3. La pressione si trasmette al pistone grande, che spinge con una forza **molto maggiore**.
+
+La formula che collega i due lati è:
+
+**F₁ / A₁ = F₂ / A₂**
+
+**Esempio concreto:** Se il pistone grande ha superficie 10 volte più grande di quello piccolo, la forza sul pistone grande è 10 volte più grande di quella che hai applicato. Con 10 N spingi, ottieni 100 N dall'altra parte.
+
+Questo è il principio del **cric idraulico** in officina: un meccanico spinge con poco sforzo e solleva un'intera automobile.
+
+<Diagram caption="Come funziona il torchio idraulico: forza piccola su area piccola, forza grande su area grande" code={`flowchart LR
+  A["Pistone piccolo<br/>Forza F1 piccola<br/>Area A1 piccola"] -->|"Trasmette pressione<br/>P = F1/A1"| B["Liquido<br/>(incomprimibile)"]
+  B -->|"Stessa pressione P<br/>su area più grande"| C["Pistone grande<br/>Forza F2 grande<br/>Area A2 grande"]`} />
+
+<Diagram caption="Relazione tra forze e aree: più grande è il pistone, più grande è la forza in uscita" code={`flowchart TB
+  A["Pressione applicata<br/>P = F1 diviso A1"] --> B["Principio di Pascal:<br/>la pressione si trasmette<br/>uguale ovunque nel fluido"]
+  B --> C["Sul pistone grande:<br/>F2 = P moltiplicato A2"]
+  C --> D["Se A2 è 10 volte A1<br/>allora F2 è 10 volte F1"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="cKiqxOFeVKk" title="IL PRINCIPIO DI PASCAL E IL TORCHIO IDRAULICO - la pressione applicata ai fluidi" />
+<VideoVisto id="fis-u3-03" />
+
+---
+
+## Da ricordare
+
+- Il principio di Pascal: una pressione applicata a un fluido si trasmette **uguale e invariata** in tutte le direzioni.
+- La formula del torchio idraulico è **F₁/A₁ = F₂/A₂**: puoi moltiplicare la forza aumentando l'area del pistone.
+- Applicazioni reali: cric dell'auto in officina, freni idraulici della bici, escavatori.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un liquido in un contenitore chiuso viene compresso in un punto. Secondo il principio di Pascal, cosa succede alla pressione nel resto del liquido?"
+  opzioni={[
+    "Aumenta solo vicino al punto di compressione",
+    "Si trasmette uguale in tutte le direzioni e in ogni punto",
+    "Diminuisce nelle zone lontane dal punto di compressione",
+    "Non cambia nulla, la pressione rimane zero ovunque"
+  ]}
+  corretta={1}
+  spiegazione="Il principio di Pascal afferma proprio che la pressione applicata a un fluido incomprimibile si trasmette invariata in tutte le direzioni e in ogni punto del fluido."
+/>
+
+<Quiz
+  domanda="In un torchio idraulico, il pistone piccolo ha area A₁ = 2 cm² e quello grande ha area A₂ = 20 cm². Si applica una forza F₁ = 5 N sul pistone piccolo. Quanto vale la forza F₂ sul pistone grande?"
+  opzioni={[
+    "5 N",
+    "10 N",
+    "50 N",
+    "100 N"
+  ]}
+  corretta={2}
+  spiegazione="Usando F₁/A₁ = F₂/A₂, si ha F₂ = F₁ × (A₂/A₁) = 5 × (20/2) = 5 × 10 = 50 N. L'area è 10 volte più grande, quindi la forza è 10 volte più grande."
+/>
+
+<Quiz
+  domanda="Quale di queste applicazioni reali sfrutta il principio di Pascal?"
+  opzioni={[
+    "Una leva di metallo usata come piede di porco",
+    "Un piano inclinato usato per spostare casse",
+    "Il cric idraulico usato in officina per sollevare auto",
+    "Una carrucola fissa agganciata al soffitto"
+  ]}
+  corretta={2}
+  spiegazione="Il cric idraulico è l'applicazione classica del principio di Pascal: una piccola forza su un pistone piccolo genera una grande forza su un pistone grande, abbastanza da sollevare un'intera automobile."
+/>
+
+<Esercizio
+  problema="In un sistema idraulico, il pistone piccolo ha area A₁ = 5 cm² e si applica una forza F₁ = 20 N. Il pistone grande ha area A₂ = 100 cm². Calcola la forza F₂ generata sul pistone grande e spiega perché questo sistema è utile."
+  soluzione="Usando il principio di Pascal: F₁/A₁ = F₂/A₂, quindi F₂ = F₁ × (A₂/A₁) = 20 × (100/5) = 20 × 20 = 400 N. Con soli 20 N di forza si ottengono 400 N — venti volte di più! Questo sistema è utile perché permette di sollevare o spostare carichi pesanti con uno sforzo molto piccolo, come avviene nei cric delle auto o nei freni idraulici."
+/>
+
+</section>
+
+</RisorsaLayout>

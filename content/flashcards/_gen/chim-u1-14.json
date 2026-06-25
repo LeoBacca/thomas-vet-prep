@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-14-1",
+    "topicId": "chim-u1-14",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Nel legame covalente, che cosa fanno i due atomi per stare insieme?",
+    "choices": [
+      "Un atomo ruba un elettrone all'altro",
+      "Mettono in comune (condividono) una coppia di elettroni",
+      "Si scambiano i protoni del nucleo",
+      "Si attaccano grazie a un magnete"
+    ],
+    "answer": 1,
+    "explain": "Covalente vuol dire 'condividere'. I due atomi prendono in mano la stessa coppia di elettroni: quella coppia condivisa e' la colla che li tiene uniti e li aiuta a raggiungere l'ottetto (8 elettroni esterni, stabili). Rubare un elettrone invece e' un'altra storia: e' il legame ionico, non covalente.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-14-2",
+    "topicId": "chim-u1-14",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: in un legame covalente PURO (tra due atomi uguali, come O2) gli elettroni condivisi stanno esattamente in mezzo ai due atomi.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Atomi uguali hanno la stessa 'golosita' di elettroni (stessa elettronegativita), quindi tirano la coppia con la stessa forza: come due bambini ugualmente forti che tirano una corda, questa resta al centro. Per questo il legame e' puro (o non polare), senza un lato piu' negativo dell'altro.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-14-3",
+    "topicId": "chim-u1-14",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue: che cos'e' un legame covalente DATIVO (di coordinazione) e in cosa e' diverso da un normale legame covalente?",
+    "answer": "Anche nel dativo c'e' una coppia di elettroni condivisa tra due atomi, esattamente come in un covalente normale. La differenza sta in CHI mette gli elettroni: nel covalente normale ognuno dei due atomi mette un elettrone (uno a testa); nel dativo, invece, un solo atomo mette ENTRAMBI gli elettroni della coppia, mentre l'altro offre soltanto un posto vuoto dove riceverli. E' come dividere due caramelle: di solito ognuno ne porta una, ma nel dativo un amico le porta tutte e due e le condivide lo stesso. Una volta formato, il legame dativo e' identico a un covalente normale: cambia solo chi ha portato gli elettroni. Esempio classico: lo ione ammonio (l'azoto dell'ammoniaca dona la sua coppia libera a uno ione H+); in biologia un legame dativo tiene il ferro dentro l'emoglobina, la proteina che trasporta l'ossigeno nel sangue.",
+    "explain": "Da ricordare: nel dativo la coppia condivisa la fornisce un SOLO atomo; l'altro mette solo il posto vuoto.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-14-4",
+    "topicId": "chim-u1-14",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Nella molecola di cloro (Cl2) i due atomi sono identici. Che tipo di legame li tiene uniti?",
+    "choices": [
+      "Covalente polare",
+      "Ionico (come in Na+ e Cl-)",
+      "Covalente puro (non polare)",
+      "Dativo, perche' un atomo mette tutta la coppia",
+      "Legame a ponte di idrogeno"
+    ],
+    "answer": 2,
+    "explain": "I due atomi di cloro sono uguali, quindi hanno la stessa elettronegativita (stessa golosita): tirano la coppia di elettroni con la stessa forza e questa resta in mezzo. E' un covalente puro (non polare). 'Covalente polare' (distrattore opposto) sarebbe vero solo tra atomi DIVERSI, dove uno tira piu' dell'altro. 'Ionico' e' la trappola classica: niente ioni qui, gli elettroni sono condivisi non ceduti. 'Dativo' e' un termine scambiato: la coppia la mettono in due, non uno solo. Il 'ponte di idrogeno' e' il filler fuori tema: e' un'attrazione tra molecole diverse, non il legame dentro Cl2.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-14-5",
+    "topicId": "chim-u1-14",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Nell'acido bromidrico (HBr) l'idrogeno e il bromo sono atomi diversi e il bromo e' piu' goloso di elettroni (piu' elettronegativo). Che legame c'e' tra H e Br?",
+    "choices": [
+      "Ionico, formato da H+ e Br-",
+      "Covalente puro, con gli elettroni in mezzo",
+      "Covalente polare (semplice)",
+      "Legame a idrogeno tra le molecole",
+      "Doppio legame covalente"
+    ],
+    "answer": 2,
+    "explain": "Atomi diversi con golosita diversa: il bromo tira la coppia verso di se', quindi il legame ha due poli (Br un po' negativo, delta meno; H un po' positivo, delta piu'). E' un covalente polare semplice (singolo). 'Covalente puro' e' l'opposto esatto: vale solo tra atomi uguali. 'Ionico H+/Br-' e' la trappola: gli elettroni qui sono condivisi (anche se sbilanciati), non ceduti del tutto. 'Legame a idrogeno' e' lo scambio di termine: e' un'attrazione tra molecole, non il legame interno H-Br. 'Doppio legame' e' il filler fuori tema: H e Br condividono una sola coppia, quindi e' semplice.",
+    "tags": ["prova d'esame"]
+  }
+]

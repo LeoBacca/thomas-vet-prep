@@ -1,0 +1,25 @@
+{
+ "id": "fis-u3-05",
+ "titolo": "Misura della pressione (esperimento di Torricelli, manometro)",
+ "materia": "fisica",
+ "unita": 3,
+ "slug": "05-misura-della-pressione-esperimento-di-torricelli",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u3/05-misura-della-pressione-esperimento-di-torricelli.mdx",
+ "examQuestions": [
+  {
+   "year": "2012",
+   "q": "Per misurare la pressione atmosferica, Torricelli utilizzò un tubo di vetro riempito di mercurio. La scelta del mercurio è dovuta principalmente:",
+   "choices": [
+    "alla sua densità (un liquido meno denso avrebbe richiesto un tubo più lungo)",
+    "al suo colore (un liquido trasparente avrebbe reso difficoltosa la lettura del livello raggiunto)",
+    "alla sua elevata conducibilità termica (un liquido termicamente isolante sarebbe stato meno sensibile alle variazioni meteorologiche)",
+    "alla sua bassa temperatura di fusione (altri liquidi non sarebbero utilizzabili nelle giornate molto fredde)",
+    "alla sua bassa resistività elettrica (un liquido elettricamente isolante non consentirebbe di scaricare a terra le cariche in eccesso in caso di avverse condizioni atmosferiche)"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "id": "chim-u1-08",
+ "titolo": "La tavola periodica: come è organizzata",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "08-la-tavola-periodica-come-e-organizzata",
+ "freq": 6,
+ "risorseMdx": "src/pages/risorse/chimica/u1/08-la-tavola-periodica-come-e-organizzata.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Elementi che hanno lo stesso numero di elettroni nella configurazione elettronica esterna:",
+   "choices": [
+    "fanno parte dello stesso gruppo della tavola periodica",
+    "hanno la stessa affinità elettronica",
+    "hanno la stessa energia di ionizzazione",
+    "occupano lo stesso periodo della tavola periodica",
+    "hanno la stessa elettronegatività"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2007",
+   "q": "I non metalli:",
+   "choices": [
+    "sono pessimi conduttori di calore e di elettricità",
+    "sono tutti incolori",
+    "sono buoni conduttori di calore ma non di elettricità",
+    "sono tutti gassosi",
+    "hanno tutti bassa elettronegatività"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2010",
+   "q": "Lo iodio è un:",
+   "choices": [
+    "alogeno",
+    "gas nobile",
+    "metallo alcalino",
+    "metallo alcalino-terroso",
+    "semi-metallo"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2015",
+   "q": "L'isotopo di un elemento è 27/13 X (numero di massa 27, numero atomico 13). Qual è la posizione dell'elemento X nella Tavola Periodica?",
+   "choices": [
+    "Periodo: 3; Gruppo: 13",
+    "Periodo: 2; Gruppo: 13",
+    "Periodo: 3; Gruppo: 9",
+    "Periodo: 4; Gruppo: 9",
+    "Periodo: 5; Gruppo: 1"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2017",
+   "q": "Il magnesio è un metallo alcalino-terroso; pertanto nella tavola periodica si colloca:",
+   "choices": [
+    "tra gli elementi del secondo gruppo",
+    "tra i metalli di transizione",
+    "tra i lantanidi",
+    "tra gli alogeni",
+    "tra i gas nobili"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Indicare quale dei seguenti elementi si trova nel primo gruppo (IA) e nel secondo periodo della tavola periodica.",
+   "choices": [
+    "Litio",
+    "Sodio",
+    "Carbonio",
+    "Francio",
+    "Magnesio"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

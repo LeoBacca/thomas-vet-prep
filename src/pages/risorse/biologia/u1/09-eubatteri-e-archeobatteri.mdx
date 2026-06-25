@@ -1,0 +1,125 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-09">
+
+## Due famiglie di procarioti
+
+Hai già visto che i procarioti sono cellule **senza nucleo**: il DNA galleggia libero nel citoplasma. Ma non tutti i procarioti sono uguali. La biologia li divide in **due grandi domini** (pensa ai domini come ai "rami principali" dell'albero della vita):
+
+- **Eubatteri** (o semplicemente "Batteri") — il gruppo che ti viene in mente quando senti la parola "batterio"
+- **Archeobatteri** (o "Archea") — un gruppo antico e strano, scoperto tardi proprio perché vive in posti estremi
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Eubatteri e archeobatteri si somigliano in superficie (niente nucleo, piccoli, unicellulari) ma sono distanti quanto un uomo da un fungo: hanno origini evolutive diverse e molecole costruite in modo diverso.</div>
+
+---
+
+## Gli eubatteri: i "batteri di tutti i giorni"
+
+Gli **eubatteri** sono i procarioti che incontriamo ovunque: nell'intestino, nello yogurt, nell'aria, nel suolo.
+
+Caratteristiche principali:
+
+- **Parete cellulare** fatta di **peptidoglicano** — una rete di zuccheri e proteine intrecciati come una maglia. Pensa a un cestino di vimini che avvolge la cellula e la protegge.
+- Membrana cellulare con **acidi grassi normali** (catena diritta).
+- DNA circolare libero nel citoplasma.
+- Esempi: *Escherichia coli* (nel tuo intestino), *Lactobacillus* (nello yogurt), *Staphylococcus* (sulla pelle).
+
+---
+
+## Gli archeobatteri: i "sopravvissuti dell'estremo"
+
+Gli **archeobatteri** vivono spesso in ambienti che noi definiremmo inospitali: sorgenti bollenti, laghi salati, paludi maleodoranti. Ma si trovano anche nell'intestino e nel mare.
+
+Caratteristiche principali:
+
+- **Parete cellulare senza peptidoglicano** — usano altre molecole, diverse da quelle dei batteri.
+- Membrana cellulare con **lipidi ramificati** (catene con diramazioni) — più stabili alle temperature estreme.
+- RNA polimerasi (l'enzima che legge il DNA) **simile a quella degli eucarioti**, non dei batteri.
+- Esempi: metanogeni (producono metano nelle paludi), alofili (vivono nel sale), termofili (vivono a 80–120 °C).
+
+---
+
+## Perché sono in domini separati?
+
+Fino agli anni '70 tutti i procarioti erano messi nello stesso sacco. Poi il biologo Carl Woese confrontò le sequenze di RNA ribosomiale (una molecola presente in tutte le cellule) e scoprì che archeobatteri ed eubatteri sono **così diversi a livello molecolare** da meritare domini separati. È come confrontare le "impronte digitali" del DNA: sembrano simili a occhio nudo, ma la firma chimica è completamente diversa.
+
+I tre domini della vita oggi riconosciuti sono:
+1. **Bacteria** (eubatteri)
+2. **Archaea** (archeobatteri)
+3. **Eukarya** (tutto il resto: funghi, piante, animali, noi)
+
+---
+
+## Confronto diretto
+
+<Diagram caption="Eubatteri vs Archeobatteri: differenze strutturali chiave" code={`flowchart TB
+  P["Procarioti<br/>(senza nucleo)"]
+  P --> E["EUBATTERI<br/>(dominio Bacteria)"]
+  P --> A["ARCHEOBATTERI<br/>(dominio Archaea)"]
+  E --> E1["Parete: peptidoglicano"]
+  E --> E2["Lipidi di membrana: catene dritte"]
+  E --> E3["RNA polim.: tipo batterico"]
+  E --> E4["Es: E. coli, Lactobacillus"]
+  A --> A1["Parete: no peptidoglicano"]
+  A --> A2["Lipidi di membrana: catene ramificate"]
+  A --> A3["RNA polim.: simile agli eucarioti"]
+  A --> A4["Es: metanogeni, termofili, alofili"]`} />
+
+<Diagram caption="Come Woese separò i tre domini della vita tramite l'RNA ribosomiale" code={`flowchart LR
+  DNA["DNA della cellula"]
+  DNA --> RNA["RNA ribosomiale<br/>(sequenza confrontata)"]
+  RNA --> W["Woese: analisi anni '70"]
+  W --> B["Dominio Bacteria<br/>(eubatteri)"]
+  W --> AR["Dominio Archaea<br/>(archeobatteri)"]
+  W --> EU["Dominio Eukarya<br/>(cellule con nucleo)"]
+  AR --> EU2["Archaea + Eukarya<br/>condividono antenato comune"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="mVx7HKSWfX0" title="I PROCARIOTI: BATTERI e ARCHEOBATTERI — Biologia con Giulia" />
+<VideoVisto id="bio-u1-09" />
+
+## Da ricordare
+- Gli **eubatteri** hanno la parete di peptidoglicano e lipidi a catena diritta; sono i batteri "classici".
+- Gli **archeobatteri** mancano di peptidoglicano, hanno lipidi ramificati e un macchinario genico più simile agli eucarioti.
+- Sono due **domini separati** (Bacteria e Archaea) perché le loro sequenze di RNA ribosomiale sono profondamente diverse, come scoprì Carl Woese negli anni '70.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale molecola è presente nella parete cellulare degli eubatteri ma ASSENTE negli archeobatteri?"
+  opzioni={["Cellulosa", "Peptidoglicano", "Chitina", "Lipopolisaccaride"]}
+  corretta={1}
+  spiegazione="Il peptidoglicano è la molecola caratteristica della parete dei batteri (eubatteri). Gli archeobatteri non lo possiedono e usano altri tipi di molecole per la parete, oppure ne sono completamente privi."
+/>
+
+<Quiz
+  domanda="Su quale base Carl Woese propose di separare eubatteri e archeobatteri in due domini distinti?"
+  opzioni={["La forma della cellula", "La presenza o assenza del nucleo", "Il confronto delle sequenze di RNA ribosomiale", "La capacità di produrre metano"]}
+  corretta={2}
+  spiegazione="Woese confrontò le sequenze di RNA ribosomiale (rRNA) di molti organismi e scoprì che archeobatteri e batteri differiscono profondamente a livello molecolare, tanto da giustificare domini separati."
+/>
+
+<Quiz
+  domanda="Quale affermazione sugli archeobatteri è CORRETTA?"
+  opzioni={["Sono eucarioti perché vivono in ambienti estremi", "Hanno lipidi di membrana a catene dritte come i batteri", "Il loro RNA polimerasi assomiglia a quello degli eucarioti più che a quello dei batteri", "Possiedono peptidoglicano nella parete cellulare"]}
+  corretta={2}
+  spiegazione="Una delle somiglianze molecolari tra archeobatteri ed eucarioti è proprio l'RNA polimerasi. Questa è una delle ragioni per cui Archaea ed Eukarya sono considerati più imparentati tra loro che con i Bacteria."
+/>
+
+<Esercizio
+  problema="Immagina di analizzare due campioni di procarioti ignoti. Il campione A ha la parete cellulare ricca di peptidoglicano e lipidi di membrana a catena diritta. Il campione B non ha peptidoglicano, ha lipidi ramificati e vive in una sorgente a 95 °C. A quale dominio appartiene ciascun campione? Giustifica la risposta."
+  soluzione="Il campione A è un eubatterio (dominio Bacteria): peptidoglicano e lipidi dritti sono le caratteristiche distintive dei batteri classici. Il campione B è un archeobatterio (dominio Archaea): l'assenza di peptidoglicano, i lipidi ramificati (che resistono meglio al calore) e l'ambiente estremo (termofilo) sono tratti tipici degli Archaea, in particolare dei termofili come Sulfolobus o Pyrococcus."
+/>
+
+</section>
+
+</RisorsaLayout>

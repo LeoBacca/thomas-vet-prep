@@ -1,0 +1,107 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-01">
+
+## Cos'è la membrana cellulare?
+
+Immagina una cellula come una bolla di sapone: la "pellicola" che la delimita è la **membrana cellulare** (o plasmatica). Questa pellicola non è rigida come una parete, ma è più simile a un film d'olio sull'acqua — si muove, si richiude, si riorganizza in continuazione.
+
+Il suo compito principale è fare da **confine selettivo**: lascia entrare quello che serve alla cellula e butta fuori quello che non serve, un po' come un buttafuori all'ingresso di un locale.
+
+---
+
+## Il doppio strato di fosfolipidi
+
+Il materiale di base della membrana è il **fosfolipide**. Un fosfolipide è una molecola con:
+- una **testa idrofila** (ama l'acqua) — la parte esterna
+- due **code idrofobe** (odiano l'acqua) — la parte interna
+
+Mettine milioni uno accanto all'altro, disposti in due file con le code rivolte verso l'interno e le teste verso l'esterno (verso l'acqua), e ottieni il **doppio strato lipidico** — la struttura portante della membrana.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La membrana è come un panino: due "fette di pane" (le teste idrofile) e un ripieno oleoso (le code idrofobe). Niente acqua nel mezzo.</div>
+
+---
+
+## Il modello a mosaico fluido (Singer e Nicolson, 1972)
+
+Nel 1972 i biologi Singer e Nicolson descrissero la membrana con un modello rimasto valido ancora oggi: il **modello a mosaico fluido**.
+
+Due parole chiave:
+
+- **Mosaico** — la membrana non è una superficie uniforme: è costellata di proteine di vario tipo, come le tessere colorate di un mosaico.
+- **Fluido** — i fosfolipidi non sono incollati: scivolano lateralmente l'uno accanto all'altro, come iceberg che galleggiano nel mare. Le proteine "nuotano" nel doppio strato.
+
+### Le proteine di membrana
+
+Le proteine possono essere:
+- **Integrali (transmembrana):** attraversano tutto il doppio strato; spesso formano canali o trasportatori.
+- **Periferiche:** stanno agganciate alla superficie esterna o interna; hanno ruoli strutturali o di segnalazione.
+
+<Diagram caption="Il modello a mosaico fluido: struttura del doppio strato e ruolo delle componenti principali" code={`flowchart TB
+  A["Doppio strato fosfolipidico<br/>(base strutturale)"]
+  A --> B["Teste idrofile<br/>(rivolte verso l'acqua)"]
+  A --> C["Code idrofobe<br/>(rivolte verso l'interno)"]
+  A --> D["Proteine integrali<br/>(attraversano tutta la membrana)"]
+  A --> E["Proteine periferiche<br/>(agganciate alla superficie)"]
+  D --> F["Canali di trasporto<br/>e recettori"]
+  E --> G["Supporto strutturale<br/>e segnalazione"]`} />
+
+---
+
+## Il glicocalice
+
+All'esterno della membrana c'è uno strato "peloso" fatto di catene di zuccheri (carboidrati) attaccate a proteine e lipidi. Questo strato si chiama **glicocalice** (dal greco: "calice di zucchero").
+
+A cosa serve?
+- **Riconoscimento cellulare** — le cellule del sistema immunitario riconoscono le cellule "amiche" grazie al glicocalice (come un cartellino identificativo).
+- **Adesione** — aiuta le cellule a tenersi insieme nei tessuti.
+- **Protezione** — fa da cuscinetto meccanico contro urti e agenti chimici.
+
+---
+
+## L'asimmetria della membrana
+
+La membrana non è uguale sui due lati. Il foglietto esterno e quello interno hanno composizioni diverse — diversi tipi di fosfolipidi, glicoproteine solo all'esterno, ecc.
+
+Questa **asimmetria** non è un caso: ogni lato ha compiti diversi. Il lato esterno comunica con l'ambiente (glicocalice, recettori), il lato interno interagisce con le proteine del citoplasma e con il citoscheletro.
+
+<Diagram caption="Asimmetria della membrana: differenze tra il foglietto esterno e quello interno" code={`flowchart LR
+  EXT["LATO ESTERNO<br/>(verso l'ambiente)"]
+  INT["LATO INTERNO<br/>(verso il citoplasma)"]
+  EXT --> G["Glicocalice<br/>(zuccheri su proteine e lipidi)"]
+  EXT --> R["Recettori di membrana<br/>(captano segnali esterni)"]
+  INT --> C["Collegamento al citoscheletro<br/>(mantiene la forma)"]
+  INT --> S["Proteine di segnalazione<br/>(trasmettono messaggi interni)"]
+  EXT -. "composizione fosfolipidica diversa" .-> INT`} />
+
+---
+
+## Guarda il video
+<YouTube id="NiuFEB4MRsQ" title="Membrana cellulare - struttura e funzioni" />
+<VideoVisto id="bio-u5-01" />
+
+## Da ricordare
+- La membrana è un **doppio strato di fosfolipidi fluido**, con teste idrofile all'esterno e code idrofobe all'interno.
+- Il **modello a mosaico fluido** descrive la membrana come un mare lipidico in cui "nuotano" proteine integrali e periferiche.
+- Il **glicocalice** (catene di zuccheri sul lato esterno) serve al riconoscimento, all'adesione e alla protezione; l'**asimmetria** dei due foglietti riflette i diversi ruoli dei due lati.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la struttura di base della membrana cellulare?" opzioni={["Un singolo strato di proteine","Un doppio strato di fosfolipidi","Un reticolo di fibre di collagene","Un singolo strato di glicerofosfolipidi con una sola coda"]} corretta={1} spiegazione="La membrana è formata da un doppio strato fosfolipidico: ogni fosfolipide ha una testa idrofila rivolta verso l'acqua e due code idrofobe rivolte verso l'interno." />
+
+<Quiz domanda="Cosa si intende con 'fluido' nel modello a mosaico fluido?" opzioni={["La membrana è permeabile a qualsiasi sostanza","I fosfolipidi e le proteine possono spostarsi lateralmente nella membrana","La membrana si scioglie a temperature elevate","Le proteine transmembrana sono liquide"]} corretta={1} spiegazione="Fluido significa che i fosfolipidi (e molte proteine) non sono fissi: scivolano lateralmente l'uno rispetto all'altro, rendendo la membrana dinamica e flessibile." />
+
+<Quiz domanda="Qual è la funzione principale del glicocalice?" opzioni={["Produrre energia per la cellula","Sintetizzare nuovi fosfolipidi","Riconoscimento cellulare, adesione e protezione","Pompare ioni attraverso la membrana"]} corretta={2} spiegazione="Il glicocalice è lo strato di carboidrati sul lato esterno della membrana. Consente alle cellule di riconoscersi tra loro (es. sistema immunitario), di aderire nei tessuti e offre protezione meccanica e chimica." />
+
+<Esercizio problema="Spiega con parole tue perché la membrana è definita 'asimmetrica'. Fai almeno un esempio concreto di questa asimmetria." soluzione="La membrana è asimmetrica perché il foglietto esterno e quello interno hanno composizioni diverse e svolgono funzioni diverse. Esempio concreto: il glicocalice (catene di zuccheri su proteine e lipidi) si trova solo sul foglietto esterno, dove serve al riconoscimento tra cellule e alla comunicazione con l'ambiente esterno. Il foglietto interno, invece, è collegato alle proteine del citoscheletro e alle proteine di segnalazione interna. Se la membrana fosse simmetrica, non potrebbe distinguere il 'fuori' dal 'dentro' della cellula." />
+
+</section>
+
+</RisorsaLayout>

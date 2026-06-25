@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-chim-u1-04-1",
+    "topicId": "chim-u1-04",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Perché il nucleo di certi atomi (come quello dell'idrogeno) si comporta come una mini calamita?",
+    "choices": [
+      "Perche e fatto di ferro, un metallo magnetico",
+      "Perche gira su se stesso (spin) ed e carico elettricamente: una carica che gira genera un campo magnetico",
+      "Perche e molto pesante e attira altri nuclei vicini",
+      "Perche assorbe luce e la riemette come campo magnetico"
+    ],
+    "answer": 1,
+    "explain": "Pensa a una trottola carica di elettricita: girando crea un piccolo campo magnetico attorno a se. Il nucleo fa la stessa cosa: lo spin (la rotazione) piu la carica = mini calamita. Non c'entra il ferro.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-04-2",
+    "topicId": "chim-u1-04",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Un veterinario vuole studiare il cervello di un cane senza usare radiazioni. Spiega, in 3 passi, come funziona la risonanza magnetica e perche e adatta a questo caso.",
+    "answer": "1) Il cervello e ricco d'acqua, e l'acqua contiene idrogeno: i nuclei di idrogeno hanno spin e si comportano come mini calamite. 2) La macchina RMN usa una calamita gigante per mettere questi nuclei in riga, poi invia un'onda radio con il 'ritmo giusto' (risonanza): i nuclei si spostano e, quando l'onda finisce, tornano indietro rimandando un segnale. Il computer trasforma quel segnale in un'immagine dettagliata dei tessuti molli. 3) La RMN non usa raggi X, quindi non espone il cane a radiazioni pericolose: e la scelta giusta per tessuti molli come il cervello.",
+    "explain": "I tre concetti chiave: spin dell'idrogeno = mini calamita; campo magnetico + onda radio = risonanza; niente raggi X = sicura per tessuti molli.",
+    "tags": ["risposta aperta"]
+  }
+]

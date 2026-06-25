@@ -1,0 +1,134 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u4-07">
+
+## Genotipo ≠ fenotipo (sempre)
+
+Fino ad ora abbiamo visto la genetica come una formula semplice: hai il gene, esprimi il carattere. Punto.
+
+Ma nella realtà biologica le cose sono più sfumate. Lo stesso genotipo (la "ricetta" nel DNA) può produrre fenotipi (l'aspetto fisico osservabile) molto diversi, a seconda dell'ambiente, della storia parentale e di quanti geni cooperano insieme.
+
+Questo capitolo spiega **quattro concetti** che descrivono queste variazioni:
+
+1. **Penetranza** — quante persone col gene lo esprimono davvero
+2. **Espressività** — con quanta intensità lo esprimono
+3. **Caratteri poligenici** — quando molti geni collaborano per un unico carattere
+4. **Imprinting genomico** — quando conta da quale genitore viene il gene
+
+---
+
+## 1. Penetranza — "il gene c'è, ma si vede?"
+
+La **penetranza** è la percentuale di individui che, avendo un certo genotipo, mostrano effettivamente il fenotipo corrispondente.
+
+**Esempio concreto:** immagina che 100 persone abbiano tutte lo stesso allele dominante per una malattia genetica. Se solo 80 di loro sviluppano la malattia, la penetranza è dell'**80%**.
+
+- **Penetranza completa (100%):** chi ha il gene, ha il carattere. Sempre.
+- **Penetranza incompleta (&lt;100%):** alcune persone con il gene non mostrano il carattere. L'ambiente, altri geni o il caso "spengono" l'effetto.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La penetranza risponde alla domanda "quanti dei portatori del gene si ammalano davvero?"</div>
+
+---
+
+## 2. Espressività — "il gene si vede, ma quanto?"
+
+L'**espressività** descrive il grado con cui un genotipo si manifesta fisicamente. Anche quando il gene "si accende" in tutti (penetranza alta), la sua intensità può variare da persona a persona.
+
+**Esempio:** la neurofibromatosi di tipo 1. Tutti coloro che hanno la mutazione sviluppano la malattia (penetranza quasi completa), ma c'è chi ha pochissime macchie cutanee e chi ne ha centinaia e sviluppa tumori benigni. L'espressività è molto variabile.
+
+- **Espressività uniforme:** tutti i portatori mostrano lo stesso grado del carattere.
+- **Espressività variabile:** i portatori mostrano il carattere con intensità diversa.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'espressività risponde alla domanda "chi ha il gene, lo mostra molto o poco?"</div>
+
+---
+
+## 3. Caratteri poligenici — "molti geni, un solo carattere"
+
+Alcuni caratteri non dipendono da un unico gene (come il colore dei piselli di Mendel), ma dalla somma di tanti geni che contribuiscono ciascuno un piccolo pezzo.
+
+Si chiamano **caratteri poligenici** (dal greco *poly* = molti).
+
+**Esempi classici:**
+- Altezza umana (stimati oltre 400 geni coinvolti)
+- Colore della pelle
+- Intelligenza
+- Peso corporeo
+
+Ogni gene contribuisce un piccolo effetto **additivo**: più alleli "positivi" hai, più il carattere è espresso. Il risultato è una **distribuzione a campana** nella popolazione: pochi individui agli estremi (molto alti, molto bassi), la maggioranza in posizioni intermedie.
+
+L'**ambiente amplifica** questa variabilità: due gemelli identici (stesso genotipo!) possono avere altezze diverse se cresciuti con diete diverse.
+
+---
+
+## 4. Imprinting genomico — "conta anche chi te lo ha dato"
+
+In genetica classica, un allele materno e un allele paterno dello stesso gene valgono uguale. Con l'**imprinting genomico** questo principio cade.
+
+**Imprinting** significa che certi geni vengono **silenziati** (spenti tramite marcature chimiche sul DNA, non modificando la sequenza) in modo diverso a seconda che vengano dalla madre o dal padre. Il silenziamento avviene per **metilazione del DNA** — una modifica chimica reversibile che non cambia le basi ma blocca la lettura.
+
+**Esempio classico — due sindromi, stesso cromosoma:**
+- **Sindrome di Prader-Willi:** la copia paterna del cromosoma 15 è danneggiata (o assente). Quella materna è silenziata dall'imprinting. Risultato: nessuna copia attiva → sindrome.
+- **Sindrome di Angelman:** la copia materna del cromosoma 15 è danneggiata. Quella paterna è silenziata dall'imprinting. Risultato: nessuna copia attiva → sindrome diversa.
+
+Stessa regione cromosomica, stesso tipo di danno, fenotipo completamente diverso perché ciò che conta è l'**origine parentale** del cromosoma mancante.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Con l'imprinting, il DNA "ricorda" da quale genitore viene e può essere acceso o spento in base a questo — come un post-it invisibile sul gene.</div>
+
+---
+
+<Diagram caption="Penetranza vs Espressività: come differiscono" code={`flowchart TB
+  G["Individuo con genotipo X"]
+  G --> P{"Penetranza:<br/>Il carattere si manifesta?"}
+  P -->|"Sì (penetranza)"| E{"Espressività:<br/>Con quale intensità?"}
+  P -->|"No (penetranza incompleta)"| N["Fenotipo normale:<br/>il gene non si esprime"]
+  E -->|"Alta"| EA["Fenotipo marcato<br/>(es. molti sintomi)"]
+  E -->|"Bassa"| EB["Fenotipo lieve<br/>(es. pochi sintomi)"]`} />
+
+<Diagram caption="Imprinting genomico: Prader-Willi vs Angelman (cromosoma 15)" code={`flowchart LR
+  subgraph Normale["Individuo sano"]
+    PM["Copia paterna<br/>cromosoma 15<br/>(ATTIVA)"]
+    MM["Copia materna<br/>cromosoma 15<br/>(SILENZIATA)"]
+  end
+  subgraph PW["Sindrome Prader-Willi"]
+    PP["Copia paterna<br/>ASSENTE o mutata"]
+    MP["Copia materna<br/>SILENZIATA<br/>dall'imprinting"]
+    PP --> RW["Nessuna copia attiva<br/>→ Prader-Willi"]
+    MP --> RW
+  end
+  subgraph AN["Sindrome Angelman"]
+    PA["Copia paterna<br/>SILENZIATA<br/>dall'imprinting"]
+    MA["Copia materna<br/>ASSENTE o mutata"]
+    PA --> RA["Nessuna copia attiva<br/>→ Angelman"]
+    MA --> RA
+  end`} />
+
+## Guarda il video
+<YouTube id="1uzaM4jdiA4" title="GENETICA 4: Eccezioni alle leggi di Mendel — Penetranza, Epistasi, Poligenia e Pleiotropia" />
+<VideoVisto id="bio-u4-07" />
+
+## Da ricordare
+- La **penetranza** dice quanti individui col gene mostrano il carattere; l'**espressività** dice quanto intensamente lo mostrano.
+- I **caratteri poligenici** sono determinati da molti geni con effetto additivo e mostrano distribuzione continua nella popolazione (curva a campana).
+- Con l'**imprinting genomico**, certi geni vengono silenziati dalla metilazione a seconda che vengano dal padre o dalla madre — lo stesso danno cromosomico dà sindromi diverse in base all'origine parentale.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una malattia autosomica dominante ha penetranza del 60%. Su 200 individui che portano l'allele dominante, quanti svilupperanno la malattia?" opzioni={["60","80","120","200"]} corretta={2} spiegazione="Il 60% di 200 è 120. La penetranza incompleta significa che solo una parte dei portatori manifesta il fenotipo, in questo caso 120 su 200." />
+
+<Quiz domanda="Due gemelli identici hanno lo stesso allele per una malattia con espressività variabile. Uno ha sintomi gravi, l'altro lievi. Questo dimostra che:" opzioni={["La malattia non è genetica","Il genotipo è uguale ma l'espressività può differire per fattori ambientali","Uno dei due non ha davvero l'allele","La penetranza è incompleta"] } corretta={1} spiegazione="Gemelli identici hanno lo stesso genotipo, quindi la differenza di intensità dei sintomi è dovuta a espressività variabile, influenzata da fattori ambientali o stocastici, non a differenze nel DNA." />
+
+<Quiz domanda="Nella sindrome di Angelman, qual è la causa molecolare del fenotipo patologico?" opzioni={["Mutazione nel cromosoma paterno, con la copia materna silenziata dall'imprinting","Trisomia del cromosoma 15","Mutazione nel cromosoma materno, con la copia paterna silenziata dall'imprinting","Delezione di entrambe le copie del cromosoma 15"] } corretta={2} spiegazione="Nella sindrome di Angelman, la copia materna del cromosoma 15 (regione 15q11-q13) è assente o mutata. Quella paterna è silenziata dall'imprinting genomico. Risultato: nessuna copia attiva del gene UBE3A → sindrome di Angelman." />
+
+<Esercizio problema="L'altezza umana è un carattere poligenico con forte componente ambientale. Spiega perché la distribuzione dell'altezza in una popolazione forma una curva a campana (distribuzione normale) e non una distribuzione discreta come nel colore dei semi di pisello di Mendel." soluzione="Con un singolo gene a due alleli (come nei piselli di Mendel) si ottengono poche classi distinte: ad esempio 3/4 giallo e 1/4 verde. Con molti geni (poligenici), ogni gene aggiunge un piccolo contributo additivo al carattere. Chi eredita molti alleli 'alti' sarà molto alto, chi ne eredita pochi sarà basso, ma la maggior parte della popolazione eredita un mix intermedio. Più geni partecipano, più classi intermedie esistono, fino a ottenere una variazione continua. L'ambiente (nutrizione, salute, sport) aggiunge ulteriore variabilità. Il risultato è la curva a campana: pochi individui agli estremi, la maggioranza attorno alla media." />
+
+</section>
+
+</RisorsaLayout>

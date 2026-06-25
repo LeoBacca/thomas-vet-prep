@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u1-01-1",
+    "topicId": "fis-u1-01",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: in notazione scientifica il numero 0,00042 si scrive come 4,2 × 10⁻⁴.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. 0,00042 e un numero piccolo (sotto 1), quindi l'esponente e negativo. Sposti la virgola di 4 posti a destra fino ad arrivare al 4 → esponente −4. Risultato: 4,2 × 10⁻⁴. Regola: numero piccolo → esponente negativo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u1-01-2",
+    "topicId": "fis-u1-01",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un globulo rosso misura circa 0,000007 m di diametro. Cosa significa l'esponente negativo nella sua notazione scientifica (7 × 10⁻⁶ m)?",
+    "choices": [
+      "Il numero e molto piccolo: la virgola e stata spostata di 6 posti verso destra per arrivare al 7",
+      "Il numero e molto grande: la virgola e stata spostata di 6 posti verso sinistra",
+      "L'esponente negativo indica che il numero e un valore negativo (sotto lo zero)",
+      "Non e possibile: in notazione scientifica l'esponente puo essere solo positivo"
+    ],
+    "answer": 0,
+    "explain": "Esponente negativo = numero piccolo (sotto 1). Immagina di spostare la virgola a destra di 6 posti: da 0,000007 arrivi a 7 → esponente −6. Non significa che il numero sia negativo: il globulo rosso ha un diametro positivo, solo molto piccolo! Aggancio veterinario: i batteri patogeni hanno dimensioni simili (10⁻⁶ m = micrometro), per questo non li vedi a occhio nudo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u1-01-3",
+    "topicId": "fis-u1-01",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega a voce (o per iscritto) come si converte il numero 3 800 000 in notazione scientifica. Quanti posti sposti la virgola, in quale direzione, e perche l'esponente ha quel segno?",
+    "answer": "3 800 000 e un numero grande. Per scriverlo in notazione scientifica devo avere una sola cifra prima della virgola. Sposto la virgola verso sinistra di 6 posti: 3 800 000 → 3,8. Quei 6 posti diventano l'esponente. Siccome sono partita da un numero grande (ho spostato la virgola a sinistra), l'esponente e positivo: +6. Risultato: 3,8 × 10⁶. Verifica: 3,8 × 10⁶ = 3,8 × 1 000 000 = 3 800 000. Corretto!",
+    "explain": "Regola d'oro: numero grande → sposto la virgola a sinistra → esponente positivo. Numero piccolo → sposto a destra → esponente negativo. L'esponente e sempre il numero di posti spostati.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u1-01-4",
+    "topicId": "fis-u1-01",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti uguaglianze e corretta? (domanda reale esame 2024 Maggio)",
+    "choices": [
+      "3000 J = 3 × 10³ J",
+      "3000 J = 3 × 10² J",
+      "3000 J = 3 × 10⁴ J",
+      "3000 J = 3 × 10⁵ J",
+      "3000 J = 2 × 10³ J"
+    ],
+    "answer": 0,
+    "explain": "Risposta corretta: 3 × 10³ J. Ragionamento: 3000 ha una sola cifra significativa (il 3) seguita da 3 zeri → l'esponente e 3. Verifica: 3 × 10³ = 3 × 1000 = 3000. Perche le altre sono trappole? 3 × 10² = 300 (un zero di meno → trappola 'segno sbagliato'). 3 × 10⁴ = 30 000 (uno zero di troppo → opposto esatto). 3 × 10⁵ = 300 000 (due zeri di troppo → filler facile). 2 × 10³ = 2000 (cifra sbagliata, non 3 → trappola misconcezione sulla cifra).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u1-01-5",
+    "topicId": "fis-u1-01",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sulla notazione scientifica e FALSA?",
+    "choices": [
+      "Un numero in notazione scientifica puo avere piu di una cifra intera prima della virgola (es. 38 × 10⁵)",
+      "L'esponente indica di quanti posti e stata spostata la virgola",
+      "Se l'esponente e negativo, il numero originale era piu piccolo di 1",
+      "Per convertire 0,005 in notazione scientifica si scrive 5 × 10⁻³",
+      "10⁰ vale 1"
+    ],
+    "answer": 0,
+    "explain": "La frase FALSA e la prima: in notazione scientifica la parte davanti alla virgola deve essere SEMPRE compresa tra 1 e 9 (una sola cifra intera). Scrivere 38 × 10⁵ non e notazione scientifica corretta: si deve scrivere 3,8 × 10⁶. Le altre sono tutte vere: l'esponente e il numero di posti spostati (vero); esponente negativo = numero piccolo (vero); 0,005 = 5 × 10⁻³ perche sposti la virgola di 3 posti a destra (vero); 10⁰ = 1 per definizione (vero).",
+    "tags": ["prova d'esame"]
+  }
+]

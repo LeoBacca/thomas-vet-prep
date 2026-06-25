@@ -1,0 +1,104 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-05">
+
+Gli **elettroni** girano intorno al nucleo dell'atomo, ma non lo fanno come pianeti su un binario preciso. Sono troppo piccoli e veloci per saperne la posizione esatta. Allora la chimica fa una cosa furba: invece di dire "l'elettrone è qui", dice "l'elettrone si trova **molto probabilmente** in questa zona". Queste zone di probabilità si chiamano **orbitali**.
+
+Per descrivere ogni orbitale (quanto è grande, che forma ha, come è orientato) servono dei "codici" numerici: i **numeri quantici**. Sono come l'**indirizzo di casa** di un elettrone: ti dicono in quale palazzo, a che piano e in quale stanza vive.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> non sappiamo dove sia esattamente l'elettrone. Sappiamo solo la <strong>zona</strong> dove lo troviamo quasi sempre. Quella zona è l'orbitale, e i numeri quantici sono il suo indirizzo.</div>
+
+<Diagram caption="L'orbitale è una zona di probabilità, non un binario fisso" code={`flowchart LR
+  N["Nucleo<br/>(centro dell'atomo)"] --> O["Orbitale<br/>zona dove l'elettrone<br/>si trova quasi sempre"]
+  O --> E["Elettrone<br/>(non sappiamo il punto esatto,<br/>solo la zona)"]`} />
+
+## I numeri quantici: l'indirizzo dell'elettrone
+
+Ogni elettrone ha tre numeri quantici principali che lo descrivono. Pensa a un grande condominio.
+
+- **n (numero principale)** = il **piano** del palazzo. Più n è alto (1, 2, 3, 4...), più l'orbitale è grande e lontano dal nucleo, e più l'elettrone ha energia. È come stare al primo piano o all'attico.
+- **l (numero secondario)** = la **forma** della stanza. Decide se l'orbitale è una sfera, un manubrio o una forma più complicata. A ogni valore di l corrisponde una lettera: s, p, d, f.
+- **m (numero magnetico)** = l'**orientamento** della stanza nello spazio. Dice se l'orbitale "punta" in alto-basso, destra-sinistra o avanti-indietro.
+
+C'è anche un quarto numero, lo **spin (ms)**: immagina che l'elettrone giri su se stesso come una trottola, o in un verso o nell'altro. In ogni orbitale ci stanno al massimo **2 elettroni**, e devono avere spin opposti (uno "su" e uno "giù").
+
+<Diagram caption="I numeri quantici descrivono piano, forma e orientamento dell'orbitale" code={`flowchart TB
+  Q["Numeri quantici<br/>(l'indirizzo dell'elettrone)"] --> A["n = piano del palazzo<br/>grandezza ed energia"]
+  Q --> B["l = forma della stanza<br/>s, p, d, f"]
+  Q --> C["m = orientamento<br/>verso dove punta"]
+  Q --> D["spin = la trottola<br/>verso su o giu"]`} />
+
+## Le forme degli orbitali: s e p
+
+La cosa più importante da ricordare sono le **forme**. Bastano due per partire.
+
+- **Orbitale s**: ha la forma di una **sfera**, come una pallina o una bolla di sapone, con il nucleo al centro. È la forma più semplice. L'elettrone può stare in qualunque direzione intorno al nucleo, sempre alla stessa distanza.
+- **Orbitale p**: ha la forma di un **manubrio** (i due pesi della palestra uniti dal manico), oppure di un **otto** allungato, con il nucleo proprio in mezzo. Ci sono tre orbitali p, uno per ogni direzione dello spazio: uno in piedi, uno orizzontale, uno in profondità.
+
+Gli orbitali **d** sono ancora più elaborati (spesso a forma di "quadrifoglio"), ma per ora ti basta sapere che esistono e che sono più complessi.
+
+<Diagram caption="Schema concettuale delle forme: s sferico, p a manubrio" code={`flowchart TB
+  ORB["Forme degli orbitali"] --> S["s = SFERA<br/>come una pallina<br/>nucleo al centro"]
+  ORB --> P["p = MANUBRIO<br/>come un otto allungato<br/>nucleo in mezzo"]
+  P --> P1["px punta a destra-sinistra"]
+  P --> P2["py punta su-giu"]
+  P --> P3["pz punta avanti-indietro"]`} />
+
+## Perché conta per medicina e veterinaria
+
+Sembra un argomento astratto, ma è la **base di tutto**. Il modo in cui gli elettroni si dispongono negli orbitali decide come gli atomi si **legano** tra loro. E sono i legami a costruire ogni molecola del corpo: l'acqua, gli zuccheri, le proteine, il **DNA**.
+
+Per esempio, gli orbitali del carbonio gli permettono di legarsi a quattro atomi diversi: per questo il carbonio è lo "scheletro" di tutte le molecole della vita. Anche il modo in cui l'**ossigeno** si attacca all'emoglobina nel sangue, o come un **farmaco** si incastra nel suo bersaglio, dipende in fondo da dove stanno gli elettroni. Capire gli orbitali oggi ti rende molto più facile capire la biochimica domani.
+
+## Guarda il video
+
+<YouTube id="8j0XjHOTU6w" title="Numeri quantici e orbitali — spiegazione semplice per principianti" />
+
+<VideoVisto id="chim-u1-05" />
+
+## Da ricordare
+
+- L'**orbitale** è una **zona di probabilità**: dice dove troviamo quasi sempre l'elettrone, non il punto esatto.
+- I **numeri quantici** sono l'indirizzo dell'elettrone: **n** = grandezza/energia, **l** = forma, **m** = orientamento, **spin** = verso di rotazione.
+- L'orbitale **s** è una **sfera**; l'orbitale **p** è un **manubrio** (a otto).
+- In ogni orbitale ci stanno al massimo **2 elettroni**, con spin opposti.
+- Gli orbitali decidono come gli atomi si legano: è la base di acqua, DNA, proteine e farmaci.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Che cos'è un orbitale?"
+  opzioni={["Il binario preciso su cui corre l'elettrone", "La zona dove l'elettrone si trova molto probabilmente", "Il nucleo dell'atomo", "Un tipo di particella"]}
+  corretta={1}
+  spiegazione="L'orbitale è una zona di probabilità: non conosciamo il punto esatto dell'elettrone, solo la regione dove lo troviamo quasi sempre."
+/>
+
+<Quiz
+  domanda="Quale numero quantico ti dice la FORMA dell'orbitale (s, p, d)?"
+  opzioni={["n (principale)", "l (secondario)", "m (magnetico)", "lo spin"]}
+  corretta={1}
+  spiegazione="Il numero quantico l decide la forma: a esso corrispondono le lettere s, p, d, f. n riguarda grandezza ed energia, m l'orientamento."
+/>
+
+<Quiz
+  domanda="Che forma ha un orbitale di tipo s?"
+  opzioni={["Un manubrio (otto allungato)", "Un quadrifoglio", "Una sfera (pallina)", "Una linea retta"]}
+  corretta={2}
+  spiegazione="L'orbitale s è sferico, come una pallina o una bolla con il nucleo al centro. Il manubrio è invece la forma dell'orbitale p."
+/>
+
+<Esercizio
+  problema="Spiega con parole tue, usando l'analogia del condominio, che cosa indicano i numeri quantici n, l e m."
+  soluzione="Immagina l'atomo come un grande condominio dove vivono gli elettroni. Il numero n indica il PIANO: più è alto, più l'orbitale è grande, lontano dal nucleo e con piu energia. Il numero l indica la FORMA della stanza: sfera (s), manubrio (p) o forme piu complesse (d, f). Il numero m indica l'ORIENTAMENTO della stanza, cioe verso quale direzione dello spazio punta l'orbitale. Insieme formano l'indirizzo completo dell'elettrone."
+/>
+
+</section>
+
+</RisorsaLayout>

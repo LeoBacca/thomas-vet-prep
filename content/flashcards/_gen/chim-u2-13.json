@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u2-13-1",
+    "topicId": "chim-u2-13",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: l'osmosi e il movimento spontaneo dell'ACQUA attraverso una membrana verso il lato che ha PIU particelle disciolte.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. L'acqua si sposta sempre verso il lato piu 'affollato' di particelle (sali, zuccheri...) per diluirlo. Non servono pompe: e un movimento spontaneo. L'osmolarita misura proprio quante particelle ci sono per litro di soluzione.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-13-2",
+    "topicId": "chim-u2-13",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un globulo rosso viene messo in una soluzione ipotonica (meno sali fuori che dentro). Cosa gli succede?",
+    "choices": [
+      "Si gonfia perche l'acqua entra, e puo scoppiare (emolisi)",
+      "Si raggrinzisce perche l'acqua esce",
+      "Non cambia nulla: la membrana blocca tutto",
+      "Assorbe sali dall'esterno per pareggiare la concentrazione"
+    ],
+    "answer": 0,
+    "explain": "Nella soluzione ipotonica fuori c'e MENO roba disciolta che dentro: l'acqua entra nel globulo per 'diluire' l'interno. Il globulo si gonfia e, se la differenza e grande (es. acqua pura), scoppia: questa rottura si chiama emolisi. Il raggrinzimento (risposta 2) e invece quello che succede in soluzione IPERTONICA, quando l'acqua esce.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-13-3",
+    "topicId": "chim-u2-13",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "open",
+    "q": "Un veterinario deve fare una flebo a un cane. Ha due opzioni: acqua distillata pura oppure soluzione fisiologica (acqua con 0,9% di sale, isotonica col sangue). Quale sceglie e perche? Spiega anche cosa succederebbe con quella sbagliata.",
+    "answer": "Deve scegliere la soluzione fisiologica, perche e isotonica rispetto al sangue: la concentrazione di particelle dentro e fuori i globuli rossi e la stessa, quindi l'acqua entra ed esce in pari quantita e le cellule restano sane. Se usasse acqua distillata pura (ipotonica), fuori dai globuli ci sarebbero quasi zero particelle disciolte mentre dentro ce ne sono tante: l'acqua entrerebbe in massa nei globuli, che si gonfierebbero fino a scoppiare. Questa rottura dei globuli rossi si chiama emolisi ed e pericolosa perche rilascia nell'organismo il contenuto interno delle cellule. Lo stesso principio vale per gli edemi: quando l'equilibrio osmotico tra dentro e fuori le cellule si rompe, l'acqua si accumula dove non dovrebbe e il tessuto si gonfia.",
+    "explain": "Chiave: isotonica = uguale dentro e fuori = cellula sana. Ipotonica = acqua entra = emolisi. Ipertonica = acqua esce = raggrinzimento.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u2-13-4",
+    "topicId": "chim-u2-13",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "La soluzione S1 e ipertonica rispetto alla soluzione S2. Quale delle seguenti affermazioni e CORRETTA?",
+    "choices": [
+      "La tensione di vapore di S2 e maggiore della tensione di vapore di S1 (nelle stesse condizioni di temperatura)",
+      "S2 esercita una pressione osmotica maggiore rispetto a S1",
+      "S1 bolle a temperatura piu bassa rispetto a S2",
+      "S1 congela a temperatura piu alta rispetto a S2",
+      "S2 e la soluzione piu concentrata"
+    ],
+    "answer": 0,
+    "explain": "S1 e ipertonica = ha PIU particelle disciolte di S2. Le particelle disciolte abbassano la tensione di vapore (proprieta colligativa): piu particelle → tensione di vapore piu bassa. Quindi S1, piu concentrata, ha tensione di vapore piu BASSA, e S2 (meno concentrata) ha tensione di vapore piu ALTA. Risposta 0 corretta. Trappole: risposta 1 e l'opposto esatto (e S1 la piu concentrata, quindi e S1 a esercitare piu pressione osmotica, non S2); risposta 2 e falsa per lo stesso motivo del punto d'ebollizione: piu soluto alza il punto di ebollizione, quindi S1 bolle a temperatura piu ALTA, non piu bassa; risposta 3 e la classica confusione ebollizione/congelamento: piu soluto ABBASSA il punto di congelamento, quindi S1 congela a temperatura piu BASSA, non piu alta; risposta 4 e l'opposto: e S1 la piu concentrata, non S2.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u2-13-5",
+    "topicId": "chim-u2-13",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sull'osmolarita e FALSA?",
+    "choices": [
+      "L'osmolarita dipende dal tipo di particelle disciolte (zucchero o sale fanno differenza a parita di numero)",
+      "Una soluzione con osmolarita piu alta attira piu acqua attraverso una membrana semipermeabile",
+      "L'osmolalita misura le particelle disciolte per chilogrammo di solvente (acqua)",
+      "In una soluzione isotonica l'acqua si sposta ugualmente in entrambe le direzioni attraverso la membrana",
+      "L'acqua si sposta spontaneamente verso il lato con osmolarita piu alta"
+    ],
+    "answer": 0,
+    "explain": "La risposta FALSA e la prima: l'osmolarita NON dipende dal tipo di particelle, conta solo quante sono. Che siano molecole di zucchero o ioni di sale e irrilevante: 1 mole di glucosio e 1 mole di ioni danno lo stesso contributo all'osmolarita. Questa e la definizione stessa di osmolarita (e una proprieta colligativa). Tutte le altre sono vere: piu osmolarita = piu attira acqua (vera); osmolalita = particelle per kg di solvente (vera); soluzione isotonica = flusso netto nullo (vera); acqua va verso il lato piu concentrato (vera).",
+    "tags": ["prova d'esame"]
+  }
+]

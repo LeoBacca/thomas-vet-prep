@@ -1,0 +1,28 @@
+[
+  {
+    "id": "fc-fis-u2-15-1",
+    "topicId": "fis-u2-15",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: una forza conservativa (come la gravita) compie un lavoro che dipende solo dal punto di partenza e dal punto di arrivo, non da quanto strada hai fatto nel mezzo.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 0,
+    "explain": "Vero. Pensa a un conto in banca senza commissioni: qualunque strada prendi, alla fine ti viene restituita tutta l'energia che la forza aveva 'preso'. L'attrito invece e l'opposto: piu strada fai, piu energia perdi — quella e una forza NON conservativa.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-15-2",
+    "topicId": "fis-u2-15",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Spingi una scatola da A a B sul pavimento (con attrito) e poi la riporti da B ad A lungo lo stesso percorso. Alla fine sei tornato al punto di partenza: l'energia meccanica e la stessa di prima? Perche si o perche no?",
+    "answer": "No, l'energia meccanica e diminuita. L'attrito e una forza non conservativa: ogni volta che la scatola si muove, sottrae energia e la converte in calore. Sul percorso di andata perdi energia, sul percorso di ritorno ne perdi ancora. Al ritorno al punto di partenza hai percorso piu strada in totale, quindi hai perso piu energia — non recuperi nulla. Con una forza conservativa (es. gravita) invece torneresti con la stessa energia di prima.",
+    "explain": "Forze non conservative (attrito, resistenza dell'aria) dissipano energia come calore: il lavoro su un percorso chiuso e diverso da zero (negativo). Forze conservative: lavoro su percorso chiuso = zero, energia meccanica totale conservata.",
+    "tags": ["risposta aperta"]
+  }
+]

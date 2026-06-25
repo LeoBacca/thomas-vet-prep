@@ -1,0 +1,134 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-03">
+
+## Cos'è l'accelerazione?
+
+Immagina di guidare una macchina. Quando premi il gas, la velocità **aumenta**. Quando freni, la velocità **diminuisce**. Questa variazione di velocità nel tempo si chiama **accelerazione**.
+
+In fisica, l'accelerazione misura **quanto cambia la velocità** (e in che direzione) **ogni secondo**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'accelerazione non è "quanto sei veloce", ma "quanto in fretta stai cambiando velocità".</div>
+
+---
+
+## Accelerazione media
+
+L'**accelerazione media** è il rapporto tra la **variazione di velocità** e il **tempo impiegato** per quella variazione.
+
+La formula è:
+
+**a_media = (v_finale − v_iniziale) / (t_finale − t_iniziale)**
+
+O più in breve:
+
+**a = Δv / Δt**
+
+Dove:
+- **Δv** = differenza di velocità (in m/s)
+- **Δt** = intervallo di tempo (in s)
+- **a** = accelerazione media (in m/s²)
+
+**Esempio pratico:** Se una macchina passa da 0 a 20 m/s in 4 secondi, la sua accelerazione media è:
+a = 20 / 4 = **5 m/s²**
+
+Vuol dire: ogni secondo la velocità aumenta di 5 m/s.
+
+---
+
+## Accelerazione istantanea
+
+L'accelerazione media descrive un intervallo di tempo. Ma spesso vogliamo sapere l'accelerazione in **un preciso istante**, non su un intero tratto.
+
+L'**accelerazione istantanea** è l'accelerazione in un singolo momento: si calcola facendo diventare l'intervallo di tempo sempre più piccolo, fino a "zero".
+
+In pratica, sul **grafico velocità–tempo**, l'accelerazione istantanea in un punto è la **pendenza della tangente** alla curva in quel punto.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Accelerazione media = media su un percorso; accelerazione istantanea = valore esatto in un momento.</div>
+
+---
+
+## Segno dell'accelerazione
+
+L'accelerazione può essere **positiva o negativa**:
+
+- **Positiva** → la velocità sta aumentando (accelerazione nel senso del moto)
+- **Negativa** → la velocità sta diminuendo (decelerazione, o "frenata")
+
+Non è un valore "buono o cattivo": dipende solo dal verso della variazione.
+
+---
+
+## Unità di misura
+
+L'accelerazione si misura in **m/s²** (metri al secondo quadrato).
+
+Significa: quanti m/s di velocità guadagni (o perdi) ogni secondo.
+
+---
+
+<Diagram caption="Schema concettuale: dalla velocità all'accelerazione" code={`flowchart TB
+  A["Velocità iniziale v₁<br/>al tempo t₁"] --> C["Variazione di velocità<br/>Δv = v₂ − v₁"]
+  B["Velocità finale v₂<br/>al tempo t₂"] --> C
+  C --> D["Intervallo di tempo<br/>Δt = t₂ − t₁"]
+  D --> E["Accelerazione media<br/>a = Δv / Δt"]
+  E --> F["Se Δt → 0<br/>si ottiene l'accelerazione istantanea"]`} />
+
+<Diagram caption="Grafico velocità–tempo: come leggere l'accelerazione" code={`flowchart LR
+  A["Grafico v-t<br/>(velocità nel tempo)"] --> B["Tratto rettilineo<br/>pendenza costante"]
+  A --> C["Tratto curvo<br/>pendenza variabile"]
+  B --> D["Accelerazione media<br/>= accelerazione istantanea<br/>(moto uniformemente accelerato)"]
+  C --> E["Accelerazione istantanea<br/>= pendenza della tangente<br/>in quel punto"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="P92MS-zvk_A" title="ACCELERAZIONE MEDIA E ISTANTANEA — YouPhysics (Loris Fato)" />
+<VideoVisto id="fis-u2-03" />
+
+---
+
+## Da ricordare
+
+- L'accelerazione misura **quanto cambia la velocità** ogni secondo (Δv / Δt), non la velocità stessa.
+- L'**accelerazione media** riguarda un intervallo di tempo; l'**accelerazione istantanea** riguarda un singolo istante (pendenza della tangente sul grafico v–t).
+- L'unità di misura è **m/s²**; il segno indica se la velocità sta aumentando (positivo) o diminuendo (negativo).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un'auto accelera da 10 m/s a 30 m/s in 5 secondi. Qual è la sua accelerazione media?"
+  opzioni={["2 m/s²", "4 m/s²", "6 m/s²", "8 m/s²"]}
+  corretta={1}
+  spiegazione="Δv = 30 − 10 = 20 m/s; Δt = 5 s; a = 20 / 5 = 4 m/s²."
+/>
+
+<Quiz
+  domanda="Un ciclista rallenta da 12 m/s a 0 m/s in 4 secondi. Qual è il segno e il valore della sua accelerazione media?"
+  opzioni={["−3 m/s²", "+3 m/s²", "−48 m/s²", "+48 m/s²"]}
+  corretta={0}
+  spiegazione="Δv = 0 − 12 = −12 m/s; Δt = 4 s; a = −12 / 4 = −3 m/s². Negativa perché la velocità diminuisce."
+/>
+
+<Quiz
+  domanda="Sul grafico velocità–tempo, cosa rappresenta la pendenza della tangente in un punto della curva?"
+  opzioni={["La velocità media in quell'istante", "Lo spazio percorso fino a quel punto", "L'accelerazione istantanea in quell'istante", "L'accelerazione media sull'intero percorso"]}
+  corretta={2}
+  spiegazione="La pendenza della tangente al grafico v–t in un punto dà proprio l'accelerazione istantanea in quell'istante."
+/>
+
+<Esercizio
+  problema="Una moto parte da ferma (v₀ = 0) e dopo 8 secondi raggiunge una velocità di 24 m/s. Calcola l'accelerazione media. Poi immagina che tra il secondo 3 e il secondo 5 la velocità passi da 9 m/s a 15 m/s: calcola l'accelerazione media in quell'intervallo. Le due accelerazioni sono uguali?"
+  soluzione="Accelerazione media totale: a = (24 − 0) / 8 = 3 m/s². Accelerazione nell'intervallo [3 s, 5 s]: a = (15 − 9) / (5 − 3) = 6 / 2 = 3 m/s². In questo caso sono uguali, il che suggerisce che il moto è uniformemente accelerato (accelerazione costante). Se non fossero uguali, significherebbe che l'accelerazione varia nel tempo."
+/>
+
+</section>
+
+</RisorsaLayout>

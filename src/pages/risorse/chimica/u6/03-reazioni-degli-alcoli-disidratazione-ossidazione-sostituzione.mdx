@@ -1,0 +1,110 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u6-03">
+
+Un **alcol** è una molecola che porta un gruppo **-OH** (un ossigeno legato a un idrogeno) attaccato a una catena di carbonio. L'esempio più famoso è l'**etanolo**, cioè l'alcol che si beve. Questo gruppo -OH è la "porta" della molecola: è il punto in cui avvengono quasi tutte le reazioni. Conoscere le reazioni degli alcoli vuol dire capire come l'-OH si può trasformare in altre cose.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il gruppo -OH è come una maniglia. Tutte le reazioni dell'alcol "tirano" quella maniglia in modi diversi: a volte la tolgono (disidratazione), a volte la cambiano in qualcos'altro (ossidazione), a volte la sostituiscono (sostituzione).</div>
+
+Ci sono **tre famiglie** di reazioni da ricordare. Vediamole una alla volta, con calma.
+
+<Diagram caption="Le tre reazioni principali degli alcoli, tutte sul gruppo -OH" code={`flowchart TB
+  A["Alcol<br/>(catena con -OH)"] --> D["Disidratazione<br/>tolgo acqua → si forma un alchene"]
+  A --> O["Ossidazione<br/>l'-OH diventa C=O → aldeide o acido"]
+  A --> S["Sostituzione<br/>l'-OH viene sostituito (es. da un alogeno)"]`} />
+
+## Disidratazione: togliere acqua
+
+**Disidratare** significa "togliere acqua". Pensa a un panno bagnato che strizzi: esce l'acqua. Qui succede una cosa simile alla molecola: scaldando l'alcol con un acido, la molecola **perde una molecola d'acqua** (l'-OH e un idrogeno vicino se ne vanno insieme come H₂O).
+
+Quello che resta è un **alchene**, cioè una molecola con un doppio legame carbonio-carbonio. In pratica, dove prima c'era l'-OH, ora si forma un legame "doppio" tra due carboni.
+
+- L'etanolo scaldato con acido solforico perde acqua e diventa **etene** (un alchene).
+- Serve **calore** e un **acido** che fa da aiutante (catalizzatore).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> disidratazione = strizzo via l'acqua dall'alcol e ottengo un alchene (una molecola con un doppio legame).</div>
+
+## Ossidazione: l'-OH diventa C=O
+
+Questa è la reazione più importante, anche per la medicina. **Ossidare** un alcol vuol dire trasformare il gruppo -OH in un gruppo **C=O** (carbonio legato due volte all'ossigeno). È un po' come "bruciare in modo controllato" l'-OH.
+
+L'ossidazione di un **alcol primario** (cioè con l'-OH all'estremità della catena, come l'etanolo) **avviene a tappe**, una dopo l'altra:
+
+1. L'**alcol** si ossida e diventa **aldeide** (gruppo -CHO).
+2. L'**aldeide** si ossida ancora e diventa **acido carbossilico** (gruppo -COOH).
+
+<Diagram caption="L'ossidazione a tappe: alcol → aldeide → acido" code={`flowchart LR
+  AL["Alcol<br/>R-CH2-OH"] -->|"ossidazione"| AD["Aldeide<br/>R-CHO"]
+  AD -->|"ossidazione"| AC["Acido carbossilico<br/>R-COOH"]`} />
+
+Un buon paragone è la **mela tagliata** che lasci all'aria: prima cambia un po' (diventa scura), poi cambia ancora. L'ossidazione procede per gradi, un passo alla volta.
+
+**Rilevanza per medicina e veterinaria.** Questo è esattamente ciò che fa il corpo con l'alcol che beviamo. Nel fegato, l'**etanolo** viene ossidato in due tappe:
+
+1. l'enzima **alcol deidrogenasi (ADH)** trasforma l'etanolo in **acetaldeide** (un'aldeide);
+2. l'enzima **aldeide deidrogenasi (ALDH)** trasforma l'acetaldeide in **acido acetico** (l'acido dell'aceto), che il corpo poi smaltisce.
+
+L'**acetaldeide** (lo stadio di mezzo) è tossica: è la principale responsabile del mal di testa e della nausea del "dopo sbornia". Quindi la chimica dell'ossidazione che studi sul foglio è la stessa che avviene dentro un fegato. Bello, no?
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ossidare l'alcol = farlo salire una scala a gradini. Primo gradino: aldeide. Secondo gradino: acido. Nel tuo fegato l'etanolo sale proprio questi due gradini.</div>
+
+## Sostituzione: cambiare l'-OH con qualcos'altro
+
+Nella **sostituzione**, il gruppo -OH viene **rimpiazzato** da un altro gruppo. È come staccare una maniglia e attaccarne un'altra al suo posto: la catena resta uguale, cambia solo il "pezzo" finale.
+
+L'esempio classico: l'-OH viene sostituito da un **alogeno** (come il cloro). Così l'alcol diventa un **alogenuro alchilico** (per esempio un cloruro). La catena di carbonio non si rompe; semplicemente al posto dell'-OH ora c'è un altro atomo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> sostituzione = scambio. Tolgo l'-OH e ci metto un altro gruppo (spesso un alogeno) al suo posto.</div>
+
+## Guarda il video
+
+<YouTube id="fRGPbVyaf5s" title="Reazioni degli alcoli in 5 minuti (riepilogo) — Prof. Atzeni" />
+
+<VideoVisto id="chim-u6-03" />
+
+## Da ricordare
+
+- Negli alcoli quasi tutto succede sul gruppo **-OH** (la "maniglia" della molecola).
+- **Disidratazione**: si toglie acqua e si forma un **alchene** (doppio legame); serve calore e acido.
+- **Ossidazione**: l'-OH diventa **C=O**, a tappe: **alcol → aldeide → acido carbossilico**.
+- **Sostituzione**: l'-OH viene rimpiazzato da un altro gruppo (spesso un **alogeno**).
+- L'**etanolo** nel fegato segue proprio l'ossidazione: etanolo → **acetaldeide** (tossica) → **acido acetico**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Nella disidratazione di un alcol, cosa si forma?"
+  opzioni={["un acido carbossilico", "un alchene (molecola con doppio legame)", "un altro alcol", "un sale"]}
+  corretta={1}
+  spiegazione="Disidratare = togliere acqua. L'alcol perde una molecola d'acqua e si forma un alchene, cioè una molecola con un doppio legame carbonio-carbonio."
+/>
+
+<Quiz
+  domanda="Ossidando un alcol primario, qual è l'ordine corretto dei prodotti?"
+  opzioni={["alcol → acido → aldeide", "alcol → aldeide → acido carbossilico", "alcol → alchene → acido", "alcol → sale → aldeide"]}
+  corretta={1}
+  spiegazione="L'ossidazione avviene a tappe: prima l'alcol diventa aldeide, poi l'aldeide diventa acido carbossilico."
+/>
+
+<Quiz
+  domanda="Nel fegato, l'etanolo viene prima trasformato in:"
+  opzioni={["acido acetico", "acetaldeide", "acqua e ossigeno", "un alchene"]}
+  corretta={1}
+  spiegazione="L'enzima alcol deidrogenasi (ADH) trasforma l'etanolo in acetaldeide, lo stadio di mezzo (tossico). Solo dopo si arriva all'acido acetico."
+/>
+
+<Esercizio
+  problema="Un alcol viene fatto reagire e l'atomo di -OH viene rimpiazzato da un atomo di cloro, senza rompere la catena di carbonio. Di che tipo di reazione si tratta e che tipo di molecola si ottiene?"
+  soluzione="È una reazione di sostituzione: l'-OH viene scambiato con un altro gruppo. Sostituendolo con un cloro si ottiene un alogenuro alchilico (un cloruro). La catena di carbonio resta intatta, cambia solo il gruppo finale."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,10 @@
+{
+ "id": "chim-u7-12",
+ "titolo": "I dinucleotidi redox (NAD+/NADH, FAD/FADH2)",
+ "materia": "chimica",
+ "unita": 7,
+ "slug": "12-i-dinucleotidi-redox-nad-nadh-fad",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/chimica/u7/12-i-dinucleotidi-redox-nad-nadh-fad.mdx",
+ "examQuestions": []
+}

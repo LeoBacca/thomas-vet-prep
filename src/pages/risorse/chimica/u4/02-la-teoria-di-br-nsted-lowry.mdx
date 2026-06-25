@@ -1,0 +1,112 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-02">
+
+Cosa sono davvero un **acido** e una **base**? La risposta più semplice e potente la danno due scienziati, Brønsted e Lowry. La loro idea è una sola: gli acidi e le basi si "scambiano" una pallina, chiamata **ione idrogeno** (si scrive **H+**). L'acido la regala, la base la prende. Tutto qui. Capire questo scambio ti serve tantissimo, perché il nostro sangue, lo stomaco e ogni cellula del corpo vivono proprio facendo questo gioco di passa-mano con gli H+.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> l'<strong>acido dona</strong> uno ione H+ (lo regala). La <strong>base accetta</strong> uno ione H+ (lo prende). È un passaggio di mano: uno dà, l'altro riceve.</div>
+
+Prima di tutto, cos'è questo **H+**? È un atomo di idrogeno a cui hanno tolto il suo unico elettrone: resta solo il nocciolo, cioè un **protone**. Per questo lo H+ viene spesso chiamato anche **protone**. È piccolissimo e carico positivamente, e tutta la teoria gira attorno a chi lo dona e chi lo riceve.
+
+<Diagram caption="Il cuore della teoria: l'acido passa un H+ alla base" code={`flowchart LR
+  A["ACIDO<br/>(dona H+)"] -->|"passa lo ione H+"| B["BASE<br/>(accetta H+)"]`} />
+
+## Acido e base: chi dona e chi riceve
+
+Immagina due amici a tavola. Uno ha il sale e lo **passa** all'altro che lo **prende**. Nella chimica di Brønsted-Lowry succede la stessa cosa, ma al posto del sale c'è uno ione H+.
+
+- **Acido** = chi **dona** lo ione H+ (il donatore).
+- **Base** = chi **accetta** lo ione H+ (il ricevente).
+
+Nota una cosa importante: per esistere uno scambio servono **tutti e due**. Non puoi "passare il sale" se non c'è nessuno che lo prende. Quindi acido e base lavorano sempre **in coppia**, mai da soli.
+
+**Perché conta per la medicina?** Il tuo stomaco produce **acido cloridrico (HCl)**, un acido forte che dona H+ in grande quantità: serve a spezzettare il cibo e uccidere i microbi. Quando hai "acidità di stomaco", un antiacido fa la **base**: accetta gli H+ in eccesso e ti dà sollievo. Hai appena visto Brønsted-Lowry in farmacia.
+
+## Le coppie coniugate: andata e ritorno
+
+Qui c'è l'idea più bella, e ti spiego con calma.
+
+Quando un acido dona il suo H+, **cosa resta**? Resta qualcosa che ha appena perso un H+. E quella cosa, se ne avesse l'occasione, potrebbe **riprenderselo**. Cioè è diventata una **base**! Si chiama **base coniugata** dell'acido di partenza.
+
+Allo stesso modo, quando una base accetta un H+, **diventa** una cosa che ora un H+ ce l'ha, e che potrebbe ri-donarlo: è un **acido coniugato**.
+
+Pensa a un mazzo di chiavi che ti passi tra le mani:
+
+- Chi ha le chiavi e le dà = **acido**. Dopo averle date, ha le mani vuote ma pronte a riprenderle = **base coniugata**.
+- Chi riceve le chiavi = **base**. Dopo averle prese, le tiene e potrebbe ridarle = **acido coniugato**.
+
+Una **coppia coniugata** è quindi una coppia di "gemelli" che differiscono **solo per un H+**: uno ce l'ha, l'altro no. Esempio classico: l'acido acetico (quello dell'aceto) dona un H+ e diventa lo ione acetato, sua base coniugata.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> due sostanze sono una <strong>coppia coniugata</strong> se sono identiche tranne per <strong>un solo ione H+</strong> di differenza. Una lo possiede, l'altra l'ha appena ceduto.</div>
+
+<Diagram caption="Andata e ritorno: si formano due coppie coniugate" code={`flowchart TB
+  AC["ACIDO<br/>(ha lo H+)"] -->|"dona H+"| BC["la sua BASE coniugata<br/>(senza H+)"]
+  BA["BASE<br/>(senza H+)"] -->|"accetta H+"| ACO["il suo ACIDO coniugato<br/>(ora ha lo H+)"]`} />
+
+**Aggancio al corpo umano:** il tuo sangue deve restare sempre quasi neutro, mai troppo acido. Ci riesce grazie a una coppia coniugata che fa da "ammortizzatore" (si chiama tampone): l'**acido carbonico** e lo ione **bicarbonato** sono una coppia coniugata che si scambia H+ di continuo, tenendo stabile l'acidità del sangue. Senza questo gioco di coppie, non potremmo vivere.
+
+## Un passo oltre: cenni sulla teoria di Lewis
+
+Brønsted-Lowry guarda chi si scambia lo **ione H+**. C'è un altro scienziato, **Lewis**, che guarda la stessa scena ma più da vicino, concentrandosi sugli **elettroni**.
+
+Per Lewis:
+
+- **Acido** = chi **accetta una coppia di elettroni**.
+- **Base** = chi **dona una coppia di elettroni**.
+
+Sembra il contrario, ma è solo un altro punto di vista, ancora più ampio. Pensala così: Brønsted-Lowry segue la "pallina" H+; Lewis segue gli elettroni che fanno da "colla" per agganciarla. La teoria di Lewis è più generale, perché funziona anche in casi dove non c'è proprio nessuno ione H+ in giro.
+
+Per ora a te basta tenere a mente la frase chiave: **base di Lewis = dona elettroni, acido di Lewis = accetta elettroni**. Lo studierai più a fondo, ma adesso sai già che esiste e a cosa serve.
+
+## Guarda il video
+
+<YouTube id="FLAE6aVqYj4" title="Acidi e basi secondo Brønsted e Lowry — spiegazione per principianti" />
+
+<VideoVisto id="chim-u4-02" />
+
+## Da ricordare
+
+- **Acido** = dona uno ione **H+** (un protone). **Base** = accetta uno ione **H+**.
+- Acido e base lavorano sempre **in coppia**: uno dona, l'altro riceve.
+- Una **coppia coniugata** sono due sostanze che differiscono **solo per un H+**.
+- Quando l'acido dona H+ diventa la sua **base coniugata**; quando la base accetta H+ diventa il suo **acido coniugato**.
+- Cenno su **Lewis**: base = **dona** una coppia di **elettroni**, acido = **accetta** una coppia di elettroni (visione più generale).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Secondo Brønsted-Lowry, un acido è una sostanza che:"
+  opzioni={["accetta uno ione H+", "dona uno ione H+", "non scambia niente", "dona elettroni"]}
+  corretta={1}
+  spiegazione="Per Brønsted-Lowry l'acido è il donatore di ioni H+ (protoni): li regala. La base invece li accetta."
+/>
+
+<Quiz
+  domanda="Due sostanze formano una coppia coniugata quando differiscono:"
+  opzioni={["per un elettrone", "per un solo ione H+", "per il colore", "per la temperatura"]}
+  corretta={1}
+  spiegazione="Una coppia coniugata è fatta da due 'gemelli' identici tranne che per un singolo ione H+: uno ce l'ha, l'altro l'ha ceduto."
+/>
+
+<Quiz
+  domanda="Quando una base accetta uno ione H+, si trasforma nel suo:"
+  opzioni={["acido coniugato", "elettrone", "sale da cucina", "gas"]}
+  corretta={0}
+  spiegazione="Avendo preso un H+, la base diventa una sostanza che ora quel H+ ce l'ha e potrebbe ri-donarlo: è il suo acido coniugato."
+/>
+
+<Esercizio
+  problema="L'acido acetico (quello dell'aceto) dona uno ione H+ a una base. Dopo aver ceduto l'H+, l'acido acetico diventa lo ione acetato. Come si chiama il ruolo dello ione acetato rispetto all'acido acetico?"
+  soluzione="Lo ione acetato è la BASE coniugata dell'acido acetico. Infatti differiscono solo per un ione H+: l'acido acetico lo possiede, lo ione acetato l'ha appena ceduto e potrebbe riprenderselo. Insieme formano una coppia coniugata."
+/>
+
+</section>
+
+</RisorsaLayout>

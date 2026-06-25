@@ -1,0 +1,61 @@
+[
+  {
+    "id": "fc-chim-u1-22-1",
+    "topicId": "chim-u1-22",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Hai un pezzo di ferro puro (Fe), tutto fatto solo di atomi di ferro, senza nient'altro attaccato. Qual è il numero di ossidazione del ferro?",
+    "choices": ["+2", "+3", "0", "-1"],
+    "answer": 2,
+    "explain": "Quando un elemento sta 'da solo', cioè legato solo a copie identiche di se stesso (Fe, O2, Na), non ruba né cede elettroni a nessuno di diverso: i conti sono in pari e il numero di ossidazione vale 0. È come due gemelli che si dividono una caramella esattamente a metà: nessuno guadagna e nessuno perde.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-22-2",
+    "topicId": "chim-u1-22",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: in quasi tutti i composti l'idrogeno vale +1 e l'ossigeno vale −2, e in una molecola neutra la somma di tutti i numeri di ossidazione deve fare zero.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. H (+1) e O (−2) sono i tuoi 'punti fissi' di partenza, salvo rare eccezioni (idruri e perossidi). La regola d'oro: in una molecola neutra i conti tornano in pari, quindi tutti i n.o. sommati fanno 0. Funziona come una bilancia: se conosci tutti gli altri pesi, ricavi quello che manca.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-22-3",
+    "topicId": "chim-u1-22",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Trova il numero di ossidazione dello zolfo (S) nella molecola neutra SO2 (1 zolfo e 2 ossigeni). Spiega i passaggi che fai.",
+    "answer": "Parto dal punto fisso: ogni ossigeno vale −2, e ce ne sono due, quindi i due ossigeni danno 2 × (−2) = −4. Chiamo x il numero di ossidazione dello zolfo, che non conosco. Siccome la molecola è neutra, la somma di tutti i n.o. deve fare zero: x + (−4) = 0, quindi x = +4. Lo zolfo in SO2 ha numero di ossidazione +4.",
+    "explain": "Da ricordare: fissa l'ossigeno a −2, poi usa la somma = 0 come un'equazione per ricavare l'atomo sconosciuto.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-22-4",
+    "topicId": "chim-u1-22",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Qual è il numero di ossidazione del cloro (Cl) nel composto HClO4? (ricorda: H vale +1, ogni O vale −2, e la somma fa 0)",
+    "choices": ["−1", "+5", "+7", "+1", "Uguale al numero di protoni del cloro"],
+    "answer": 2,
+    "explain": "Imposti la bilancia: H = +1, i 4 ossigeni danno 4 × (−2) = −8. Chiami x il cloro: +1 + x + (−8) = 0, quindi x = +7 (giusta). +5 e +1 sono trappole plausibili: sono numeri di ossidazione veri del cloro in ALTRI ossoacidi (HClO3 e HClO), ma non in questo, dove ci sono 4 ossigeni. −1 è l'opposto: è il cloro quando RUBA un elettrone (come nello ione cloruro Cl⁻), il contrario di qui dove lo 'cede' a tanti ossigeni. 'Il numero di protoni' è fuori tema: quello è il numero atomico, una cosa diversa.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-22-5",
+    "topicId": "chim-u1-22",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale tra questi ossidi di metallo contiene lo stesso metallo in DUE stati di ossidazione diversi nella stessa formula?",
+    "choices": ["FeO", "Fe2O3", "Fe3O4", "Al2O3", "NiO"],
+    "answer": 2,
+    "explain": "In Fe3O4 i 4 ossigeni danno −8, quindi i 3 ferri insieme devono fare +8: ma 8 non si divide in modo intero per 3. La soluzione è che NON sono tutti uguali: c'è un Fe a +2 e due Fe a +3 (+2 +3 +3 = +8). Per questo è la giusta. Le trappole FeO (tutto Fe a +2) e Fe2O3 (tutto Fe a +3) hanno un solo stato ciascuna: sembrano simili ma il ferro è 'uniforme'. Al2O3 (Al a +3) e NiO (Ni a +2) sono filler: un solo metallo, un solo stato. Il trucco è controllare se i conti si dividono in modo intero tra tutti gli atomi del metallo.",
+    "tags": ["prova d'esame"]
+  }
+]

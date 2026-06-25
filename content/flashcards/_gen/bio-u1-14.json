@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fc-bio-u1-14-1", "topicId": "bio-u1-14", "materia": "biologia", "unita": 1, "type": "mc",
+    "q": "Qual è la caratteristica che accomuna TUTTI i lipidi (grassi, oli, colesterolo...)?",
+    "choices": ["Sono sempre solidi a temperatura ambiente", "Non si sciolgono in acqua (sono idrofobi)", "Contengono sempre azoto", "Sono fatti di catene di aminoacidi"],
+    "answer": 1,
+    "explain": "Il tratto comune a tutti i lipidi e' uno solo: fuggono dall'acqua (sono idrofobi). Come l'olio che galleggia sull'acqua e non si mescola. Non sono sempre solidi (gli oli sono liquidi), l'azoto sta nelle proteine, e gli aminoacidi sono i mattoni delle proteine, non dei grassi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-14-2", "topicId": "bio-u1-14", "materia": "biologia", "unita": 1, "type": "tf",
+    "q": "Vero o falso: un trigliceride e' formato da una molecola di glicerolo a cui si attaccano tre acidi grassi.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Immagina il glicerolo come una spina dorsale a 3 carboni (un piccolo gancio a 3 posti): a ciascun posto si attacca una lunga catena di acido grasso. Tre ganci, tre catene: ecco perche' si chiama TRI-gliceride. E' la forma in cui il corpo immagazzina energia (9 kcal per grammo, piu' del doppio dello zucchero).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-14-3", "topicId": "bio-u1-14", "materia": "biologia", "unita": 1, "type": "open",
+    "q": "Perche' i fosfolipidi, messi in acqua, si dispongono da soli a formare il doppio strato della membrana cellulare?",
+    "answer": "Perche' ogni fosfolipide ha due parti opposte: una TESTA con il gruppo fosfato che ama l'acqua (idrofila) e due CODE di acidi grassi che fuggono l'acqua (idrofobe). In acqua le code cercano di nascondersi mentre le teste vogliono restare a contatto con l'acqua. La soluzione che si organizza spontaneamente sono due file affiancate: teste rivolte verso l'acqua (fuori e dentro la cellula) e code nascoste al centro, code contro code. Questo doppio strato e' proprio la membrana che separa l'interno della cellula dall'esterno.",
+    "explain": "Da ricordare: e' la doppia natura del fosfolipide (testa che ama l'acqua + code che la fuggono) a costruire da sola la membrana.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-14-4", "topicId": "bio-u1-14", "materia": "biologia", "unita": 1, "type": "mc",
+    "q": "Quale dei seguenti composti NON e' un lipide?",
+    "choices": ["Colesterolo", "Testosterone", "Chitina", "Un trigliceride", "Vitamina A"],
+    "answer": 2,
+    "explain": "La chitina e' il polisaccaride (uno zucchero complesso) che forma l'esoscheletro di insetti e crostacei: NON e' un grasso. Tutti gli altri sono lipidi: il colesterolo e' uno steroide, il testosterone e' un ormone che deriva dal colesterolo, il trigliceride e' il grasso di riserva, e la vitamina A e' liposolubile (viaggia nei grassi). Trappola: testosterone e colesterolo sembrano 'troppo diversi dall'olio' per essere grassi, ma sono steroidi a tutti gli effetti.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-14-5", "topicId": "bio-u1-14", "materia": "biologia", "unita": 1, "type": "mc",
+    "q": "Un acido grasso SATURO ha tutti legami singoli e il massimo di idrogeni: la sua formula segue lo schema CnH2nO2. Quale di queste formule e' quindi di un acido grasso saturo?",
+    "choices": ["C12H24O2", "C18H32O2", "C18H30O2", "C17H32O2", "C6H12O6"],
+    "answer": 0,
+    "explain": "Regola: in un acido grasso saturo gli idrogeni sono esattamente il doppio dei carboni (CnH2nO2). In C12H24O2 i carboni sono 12 e gli idrogeni 24 = il doppio: saturo. C18H32O2 e C18H30O2 hanno meno idrogeni del doppio di 18 (=36): mancano idrogeni perche' ci sono doppi legami, quindi sono INSATURI (trappola: stesso numero di carboni ma controlla gli H). C17H32O2: per essere saturo con 17 carboni servirebbero 34 idrogeni (2x17), ma ce ne sono solo 32, quindi e' INSATURO (basta sempre controllare gli H, anche con un numero dispari di carboni). C6H12O6 e' fuori tema: e' il glucosio, uno zucchero (ha 6 ossigeni, non 2), non un acido grasso.",
+    "tags": ["prova d'esame"]
+  }
+]

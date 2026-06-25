@@ -1,0 +1,39 @@
+{
+ "id": "fis-u1-02",
+ "titolo": "Grandezze fisiche e unità di misura (Sistema Internazionale)",
+ "materia": "fisica",
+ "unita": 1,
+ "slug": "02-grandezze-fisiche-e-unita-di-misura",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/fisica/u1/02-grandezze-fisiche-e-unita-di-misura.mdx",
+ "examQuestions": [
+  {
+   "year": "2014",
+   "q": "Qual è l'unità di misura della costante G usata nella legge di gravitazione universale F = G·m1·m2/r2?",
+   "choices": [
+    "N m2 kg-2",
+    "m2 kg-1",
+    "kg m-2",
+    "N m-2 kg2",
+    "kg3 m-2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Quali delle seguenti coppie di grandezze fisiche non hanno la stessa equazione dimensionale?",
+   "choices": [
+    "Forza e pressione",
+    "Lavoro ed energia meccanica",
+    "Impulso e quantità di moto",
+    "Peso e forza elastica",
+    "Energia elettrica e quantità di calore"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

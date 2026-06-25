@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u1-02-1",
+    "topicId": "fis-u1-02",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: dire che un corridore ha percorso '5' e una misura completa e corretta della sua distanza.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Una misura non e' MAI solo un numero: deve essere sempre numero + unita'. '5' non dice nulla (5 metri? 5 km? 5 centimetri?). La risposta corretta sarebbe '5 metri' oppure '5 km'. Scrivi sempre l'unita', o la misura non ha senso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u1-02-2",
+    "topicId": "fis-u1-02",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Il Sistema Internazionale (SI) ha 7 grandezze fondamentali. Quale di queste NON e' una grandezza fondamentale del SI?",
+    "choices": [
+      "Massa (chilogrammo, kg)",
+      "Velocita' (m/s)",
+      "Tempo (secondo, s)",
+      "Temperatura (kelvin, K)"
+    ],
+    "answer": 1,
+    "explain": "La velocita' e' una grandezza DERIVATA: nasce dividendo lunghezza per tempo (m/s). Non e' fondamentale perche' non ha una propria unita' 'base' nel SI. Le altre tre (massa, tempo, temperatura) sono invece tra le 7 grandezze fondamentali. Analogia: come la parola 'nonno' e' derivata da 'padre', la velocita' e' derivata da altre grandezze.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u1-02-3",
+    "topicId": "fis-u1-02",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue: cos'e' una grandezza fisica e come si misura? Fai un esempio con una grandezza fondamentale e una derivata.",
+    "answer": "Una grandezza fisica e' tutto cio' che si puo' misurare con un numero e un'unita'. Misurare vuol dire confrontare quella cosa con un campione di riferimento (l'unita' di misura): ad esempio, confronto la lunghezza di un tavolo con il metro campione e dico '2 metri'. Un esempio di grandezza fondamentale e' la massa, che nel SI si misura in chilogrammi (kg): e' 'di base', non si costruisce da altre. Un esempio di grandezza derivata e' la velocita' (m/s): non ha una propria unita' base, ma si ottiene dividendo lunghezza (m) per tempo (s). In veterinaria, la velocita' di infusione di un farmaco (mL/h) e' anch'essa una grandezza derivata: volume diviso tempo.",
+    "explain": "Da ricordare: misura = numero + unita'; fondamentale = base del SI; derivata = combinazione di fondamentali.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u1-02-4",
+    "topicId": "fis-u1-02",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Nella legge di gravitazione universale F = G·m1·m2/r², la costante G ha un'unita' di misura precisa. Quale?",
+    "choices": [
+      "N m² kg⁻²",
+      "m² kg⁻¹",
+      "kg m⁻²",
+      "N m⁻² kg²",
+      "kg³ m⁻²"
+    ],
+    "answer": 0,
+    "explain": "Per trovare l'unita' di G si isola dalla formula: G = F·r²/(m1·m2). Sostituendo le unita': F in Newton (N = kg·m·s⁻²), r² in m², m1 e m2 in kg. Risultato: G ha unita' N·m²·kg⁻² = kg·m³·s⁻²·kg⁻² = m³·kg⁻¹·s⁻². In forma compatta: N m² kg⁻². Le trappole: 'm² kg⁻¹' dimentica il newton; 'kg m⁻²' inverte le potenze e scambia grandezze; 'N m⁻² kg²' inverte TUTTI i segni degli esponenti (l'opposto esatto); 'kg³ m⁻²' e' un filler senza senso fisico.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u1-02-5",
+    "topicId": "fis-u1-02",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quali delle seguenti coppie di grandezze fisiche NON hanno la stessa equazione dimensionale (cioe' non si misurano nelle stesse unita')?",
+    "choices": [
+      "Forza e pressione",
+      "Lavoro ed energia meccanica",
+      "Impulso e quantita' di moto",
+      "Peso e forza elastica",
+      "Energia elettrica e quantita' di calore"
+    ],
+    "answer": 0,
+    "explain": "La forza si misura in Newton (N = kg·m·s⁻²). La pressione si misura in Pascal (Pa = N/m² = kg·m⁻¹·s⁻²). Sono DIVERSE: la pressione e' forza divisa per area, non la stessa cosa. Le altre coppie hanno invece la stessa equazione dimensionale: lavoro ed energia si misurano entrambi in Joule (kg·m²·s⁻²); impulso e quantita' di moto sono entrambi kg·m·s⁻¹; peso e forza elastica sono entrambi forze (Newton); energia elettrica e calore sono entrambi in Joule. Trappola: 'peso e forza elastica' sembrano diverse perche' una e' gravita' e l'altra e' una molla, ma dimensionalmente sono entrambe forze.",
+    "tags": ["prova d'esame"]
+  }
+]

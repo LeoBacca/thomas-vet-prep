@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u3-04-1",
+    "topicId": "chim-u3-04",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: l'ordine di reazione e la molecolarità sono la stessa cosa — entrambi si ricavano guardando la formula chimica della reazione.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Sono due cose diverse. La MOLECOLARITÀ conta quante particelle si scontrano in un singolo passaggio (1, 2 o 3 — sempre un intero) ed è una proprietà di quel singolo stadio. L'ORDINE si misura sperimentalmente in laboratorio e può essere 0, 1, 2 o persino un numero non intero: non lo puoi indovinare dalla formula.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-04-2",
+    "topicId": "chim-u3-04",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Una reazione avviene in tre stadi: il primo dura 5 secondi, il secondo dura 2 secondi, il terzo dura 40 secondi. Quanto dura complessivamente la reazione, e quale stadio la 'comanda'?",
+    "choices": [
+      "Circa 40 secondi; è il terzo stadio (il più lento) a decidere la velocità totale",
+      "Circa 47 secondi; tutti gli stadi contribuiscono in eguale misura",
+      "Circa 5 secondi; è il primo stadio a comandare perché è quello che parte per primo",
+      "Circa 2 secondi; è il secondo stadio, quello intermedio"
+    ],
+    "answer": 0,
+    "explain": "È il collo di bottiglia: come la fila al supermercato con una cassa lentissima, non importa quanto sei veloce agli altri passaggi. Lo stadio più lento — il terzo, 40 secondi — decide il tempo totale. In biologia vale lo stesso: nella catena metabolica, l'enzima più lento comanda il ritmo di tutta la catena.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-04-3",
+    "topicId": "chim-u3-04",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "open",
+    "q": "Per la reazione 2NO(g) + O₂(g) → 2NO₂(g), gli esperimenti mostrano che raddoppiando solo NO la velocità quadruplica (×4), mentre raddoppiando sia NO sia O₂ la velocità aumenta di 8 volte (×8). Scrivi la legge cinetica e spiega passo per passo come hai trovato gli ordini.",
+    "answer": "Passo 1 — ordine rispetto a NO: se [NO] raddoppia (×2) e la velocità diventa ×4, significa che 2 elevato a qualcosa dà 4. Poiché 2² = 4, l'ordine rispetto a NO è 2. Passo 2 — ordine rispetto a O₂: raddoppiando entrambi ([NO]×2 e [O₂]×2) la velocità aumenta di ×8. L'effetto di NO da solo era già ×4; quindi l'effetto aggiuntivo di O₂ deve valere ×8 ÷ ×4 = ×2. Poiché 2¹ = 2, l'ordine rispetto a O₂ è 1. Passo 3 — legge cinetica: v = k·[NO]²·[O₂]. L'ordine totale è 2 + 1 = 3. Nota importante: questi ordini vengono dall'esperimento, non dai coefficienti stechiometrici (NO ha coefficiente 2 nella formula ma avrebbe potuto avere ordine diverso).",
+    "explain": "Schema da ricordare: se raddoppiare un reagente moltiplica v per 2^n, allora l'ordine rispetto a quel reagente è n. Isola gli effetti uno alla volta.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u3-04-4",
+    "topicId": "chim-u3-04",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "In laboratorio studi la reazione 2NO(g) + O₂(g) → 2NO₂(g). Raddoppiando SOLO [NO] la velocità aumenta di 4 volte; raddoppiando SIA [NO] SIA [O₂] la velocità aumenta di 8 volte. Qual è la legge cinetica della reazione?",
+    "choices": [
+      "v = k·[NO]²·[O₂]",
+      "v = k·[NO]²·[O₂]²",
+      "v = k·[NO]·[O₂]",
+      "v = k·[NO]²",
+      "v = k·[NO]·[O₂] / [NO₂]²"
+    ],
+    "answer": 0,
+    "explain": "Ragionamento a due passi. (1) Raddoppiando [NO] la velocità va ×4 = 2²: ordine 2 rispetto a NO. (2) Raddoppiando entrambi si ottiene ×8 totale; l'effetto di NO da solo era ×4, quindi O₂ aggiunge un fattore ×2 = 2¹: ordine 1 rispetto a O₂. Legge: v = k·[NO]²·[O₂]. Trappole: 'v = k·[NO]²·[O₂]²' è la trappola più insidiosa — darebbe un fattore ×4·×4 = ×16 quando si raddoppiano entrambi, non ×8; 'v = k·[NO]·[O₂]' dimentica che NO è di ordine 2 (darebbe solo ×2 raddoppiando NO, non ×4); 'v = k·[NO]²' ignora completamente O₂ — ma se O₂ non contasse, raddoppiare anche O₂ non cambierebbe niente, invece cambia (×8 vs ×4); la formula con [NO₂]² al denominatore non ha base sperimentale ed è un filler.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u3-04-5",
+    "topicId": "chim-u3-04",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "La reazione globale A + B → 2C avviene in più stadi successivi. Quale tra le seguenti scritture NON può rappresentare la sua legge di velocità?",
+    "choices": [
+      "v = k·[C]²",
+      "v = k·[A]·[B]",
+      "v = k·[A]",
+      "v = k·[A]^(3/2)·[B]",
+      "v = k·[A]·[B]²"
+    ],
+    "answer": 0,
+    "explain": "La legge di velocità dipende dallo stadio LENTO (il collo di bottiglia), che mette in gioco i REAGENTI (o eventuali INTERMEDI), cioè le sostanze che ci sono PRIMA del passaggio lento. C è il prodotto finale: si forma solo DOPO lo stadio lento, quindi non può comparire come 'v = k·[C]²'. Trappola 'v = k·[A]·[B]': sembra ovvia ma è lecita — lo stadio lento potrebbe scontrare A e B. Trappola 'v = k·[A]': ordine 1 rispetto ad A, lecito se lo stadio lento coinvolge solo A (ad es. unimolecolare). Trappola 'v = k·[A]^(3/2)·[B]': l'ordine frazionario 3/2 sembra strano ma è possibile in meccanismi complessi con passi di equilibrio veloci — è lecito. Trappola 'v = k·[A]·[B]²': lecita se lo stadio lento coinvolge A e due molecole di B. L'unica impossibile è quella con il PRODOTTO C.",
+    "tags": ["prova d'esame"]
+  }
+]

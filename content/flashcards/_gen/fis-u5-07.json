@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u5-07-1",
+    "topicId": "fis-u5-07",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale grandezza rimane COSTANTE in ciascuna trasformazione? Abbina correttamente: isoterma / isocora / isobara / adiabatica.",
+    "choices": [
+      "Isoterma → T costante; Isocora → V costante; Isobara → P costante; Adiabatica → Q = 0",
+      "Isoterma → P costante; Isocora → T costante; Isobara → V costante; Adiabatica → Q = 0",
+      "Isoterma → V costante; Isocora → P costante; Isobara → T costante; Adiabatica → Q = 0",
+      "Isoterma → T costante; Isocora → P costante; Isobara → V costante; Adiabatica → Q = 0"
+    ],
+    "answer": 0,
+    "explain": "Il prefisso 'iso' significa 'uguale': isoterma = T uguale, isocora = V uguale (contenitore rigido), isobara = P uguale. L'adiabatica non tiene fissa P, V o T, ma impedisce lo scambio di calore (Q = 0).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-07-2",
+    "topicId": "fis-u5-07",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "tf",
+    "q": "In una trasformazione ISOCORA, il gas NON compie lavoro perché il volume non cambia — quindi tutta l'energia fornita come calore va ad aumentare la temperatura interna del gas.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il lavoro meccanico di un gas richiede che il volume cambi (il pistone si muova). Se V è fisso, W = 0, e dalla legge del primo principio Q = ΔU + W si ottiene Q = ΔU: tutto il calore diventa energia interna (cioè temperatura). Esempio: una pentola a pressione con pareti rigide.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-07-3",
+    "topicId": "fis-u5-07",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "open",
+    "q": "Una pompa da bicicletta viene usata velocemente per gonfiare uno pneumatico. Il cilindro della pompa si scalda al tatto. Che tipo di trasformazione è avvenuta dentro la pompa, e perché si scalda se non hai messo calore dall'esterno?",
+    "answer": "Dentro la pompa si comprime rapidamente l'aria: si tratta di una trasformazione ADIABATICA (o quasi-adiabatica). In un processo adiabatico Q = 0: il gas non scambia calore con l'esterno perché tutto avviene troppo velocemente. Il primo principio della termodinamica dice ΔU = -W: se il gas viene compresso (il pistone fa lavoro SUL gas, quindi W è negativo per il gas → il gas riceve energia), l'energia interna ΔU aumenta. Un aumento di energia interna corrisponde a un aumento di temperatura. Ecco perché il cilindro si scalda: non hai fornito calore, ma hai fornito lavoro meccanico che si è trasformato in calore interno al gas.",
+    "explain": "Parola chiave: adiabatica → Q = 0 → ΔU = -W. Comprimere = fornire energia → T sale. Espandere = sottrarre energia → T scende (principio del frigorifero).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u5-07-4",
+    "topicId": "fis-u5-07",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Vuoi comprimere un gas in un cilindro mantenendo la sua temperatura COSTANTE (trasformazione isoterma). Cosa DEVI fare durante la compressione?",
+    "choices": [
+      "Sottrarre calore al gas, raffreddandolo attivamente",
+      "Fornire calore al gas riscaldandolo",
+      "Isolare termicamente il cilindro in modo che non esca né entri calore",
+      "Non fare nulla: la temperatura resta costante automaticamente durante qualsiasi compressione",
+      "Trasferire la massima quantità di energia possibile al gas"
+    ],
+    "answer": 0,
+    "explain": "In un'isoterma T = costante → l'energia interna del gas non cambia (ΔU = 0). Dal primo principio: Q = ΔU + W = 0 + W. Comprimendo il gas, il pistone fa lavoro positivo SUL gas (W > 0 ricevuto): per mantenere ΔU = 0 il gas DEVE cedere calore verso l'esterno → devi raffreddarlo, sottraendo calore. Trappola B: fornire calore farebbe salire T (sbagliato). Trappola C: isolare = adiabatica, non isoterma. Trappola D: senza raffreddamento attivo la T salirebbe. Trappola E: trasferire il massimo di energia farebbe aumentare T, non mantenerla costante. (Domanda reale d'esame 2006.)",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u5-07-5",
+    "topicId": "fis-u5-07",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un gas perfetto subisce una trasformazione ISOBARA (pressione costante). Quale affermazione descrive correttamente il comportamento delle grandezze?",
+    "choices": [
+      "Volume e temperatura variano entrambi in modo direttamente proporzionale (se T raddoppia, V raddoppia)",
+      "Volume e temperatura variano in modo inversamente proporzionale (se T raddoppia, V si dimezza)",
+      "Pressione e temperatura variano in modo direttamente proporzionale",
+      "Pressione e volume variano in modo inversamente proporzionale",
+      "Nessuna grandezza varia perché la pressione è costante"
+    ],
+    "answer": 0,
+    "explain": "Trasformazione isobara → P costante. La legge di Charles dice V/T = costante (T in Kelvin): se scaldiamo il gas la temperatura sale e il volume cresce nella stessa proporzione. Esempio: il palloncino che si gonfia in estate. Trappola B: inversamente proporzionali sarebbe Boyle (isoterma P-V), non isobara V-T. Trappola C: pressione e temperatura in proporzione diretta è la legge di Gay-Lussac (isocora), non isobara. Trappola D: P-V inversamente proporzionali è ancora Boyle (isoterma). Trappola E: nella isobara P è fissa ma V e T variano. (Domanda reale d'esame 2017.)",
+    "tags": ["prova d'esame"]
+  }
+]

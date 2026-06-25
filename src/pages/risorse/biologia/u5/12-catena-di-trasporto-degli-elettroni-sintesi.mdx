@@ -1,0 +1,126 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-12">
+
+## Dove avviene tutto questo?
+
+Siamo nel mitocondrio — la "centrale elettrica" della cellula. La parte che ci interessa è la **membrana interna** del mitocondrio: una membrana molto ripiegata (le ripiegature si chiamano **creste**) su cui sono montati i macchinari che producono ATP.
+
+L'ATP è la moneta energetica della cellula: ogni volta che serve energia per fare qualcosa (muovere un muscolo, costruire una proteina, mandare un segnale nervoso), la cellula spende ATP.
+
+---
+
+## La catena di trasporto degli elettroni
+
+Pensa a una catena di montaggio in una fabbrica. I pezzi (gli **elettroni**) vengono passati da un operaio all'altro, perdendo energia a ogni passaggio. Quell'energia viene usata per fare un lavoro preciso.
+
+Gli elettroni arrivano qui legati a due "navette" molecolari: **NADH** e **FADH₂**, prodotte nelle tappe precedenti (glicolisi e ciclo di Krebs). Queste navette "consegnano" i loro elettroni al primo componente della catena.
+
+La catena è composta da **quattro grandi complessi proteici** (I, II, III, IV) incastonati nella membrana interna:
+
+- **Complesso I** — riceve gli elettroni da NADH e pompa protoni (H⁺) fuori dalla matrice
+- **Complesso II** — riceve gli elettroni da FADH₂, ma NON pompa protoni
+- **Complesso III** — passa gli elettroni e pompa altri H⁺
+- **Complesso IV** — passa gli elettroni all'ossigeno (O₂), che diventa acqua (H₂O); pompa altri H⁺
+
+Tra un complesso e l'altro gli elettroni viaggiano su due piccole molecole "navetta": **ubichinone (Q)** (tra I/II e III) e **citocromo c** (tra III e IV).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> i complessi I, III e IV sono come pompe acqua: usano l'energia degli elettroni che passano per spingere ioni H⁺ fuori dalla matrice, creando un "accumulo" di H⁺ nello spazio intermembrana — esattamente come riempire un serbatoio d'acqua mettendolo in quota.</div>
+
+---
+
+## Il gradiente protonico: il serbatoio carico
+
+Dopo il lavoro dei complessi, lo spazio tra le due membrane del mitocondrio è pieno di H⁺ (protoni). Dall'altra parte — nella matrice — ci sono pochissimi H⁺. Si crea così un **gradiente di concentrazione** (e di carica elettrica, perché H⁺ è carico positivo).
+
+È come avere acqua accumulata in quota: ha energia potenziale. I protoni "vogliono" tornare nella matrice, ma la membrana è impermeabile agli ioni. L'unico varco è una proteina speciale: l'**ATP sintasi**.
+
+---
+
+## L'ATP sintasi: la turbina molecolare
+
+L'ATP sintasi è una molecola straordinaria: funziona letteralmente come una **turbina**. Quando i protoni la attraversano (dal lato ad alta concentrazione verso la matrice), la parte centrale della proteina ruota fisicamente — circa 100 giri al secondo — e quella rotazione meccanica aziona la sintesi di ATP da ADP + fosfato.
+
+Questo meccanismo si chiama **chemiosmosi**: il flusso di ioni guida la sintesi chimica.
+
+<Diagram caption="La catena di trasporto degli elettroni sulla membrana interna mitocondriale" code={`flowchart LR
+  NADH["NADH / FADH₂<br/>(portatori di elettroni)"]
+  C1["Complesso I<br/>(NADH deidrogenasi)<br/>pompa H⁺"]
+  C2["Complesso II<br/>(succinato deidrogenasi)<br/>non pompa H⁺"]
+  Q["Ubichinone Q<br/>(navetta lipidica)"]
+  C3["Complesso III<br/>(citocromo bc1)<br/>pompa H⁺"]
+  Cytc["Citocromo c<br/>(navetta proteica)"]
+  C4["Complesso IV<br/>(citocromo ossidasi)<br/>pompa H⁺"]
+  O2["O₂ + H⁺<br/>→ H₂O"]
+
+  NADH --> C1
+  NADH --> C2
+  C1 --> Q
+  C2 --> Q
+  Q --> C3
+  C3 --> Cytc
+  Cytc --> C4
+  C4 --> O2`} />
+
+<Diagram caption="Dal gradiente protonico alla sintesi di ATP: chemiosmosi e ATP sintasi" code={`flowchart TB
+  GR["Gradiente protonico<br/>accumulo di H⁺<br/>nello spazio intermembrana"]
+  AS["ATP sintasi<br/>(canale + turbina)"]
+  ROT["Rotazione meccanica<br/>del rotore proteico"]
+  SIN["Sintesi di ATP<br/>ADP + Pi → ATP"]
+  MAT["H⁺ ritorna nella matrice<br/>(gradiente si scarica)"]
+
+  GR --> AS
+  AS --> ROT
+  ROT --> SIN
+  AS --> MAT`} />
+
+---
+
+## Il bilancio energetico complessivo
+
+Partendo da **una molecola di glucosio**, la respirazione cellulare produce:
+
+- **Glicolisi** → 2 ATP (netti)
+- **Ciclo di Krebs** → 2 ATP
+- **Catena di trasporto + ATP sintasi** → circa 28–30 ATP
+
+**Totale: circa 30–32 ATP per molecola di glucosio.**
+
+La gran parte dell'energia si ricava proprio dall'ultima tappa — la catena di trasporto e la chemiosmosi — grazie all'ossigeno che "accetta" gli elettroni alla fine. Ecco perché la respirazione aerobica è così più efficiente della fermentazione (che produce solo 2 ATP).
+
+L'ossigeno che respiriamo serve esattamente a questo: è l'accettore finale degli elettroni al Complesso IV. Senza ossigeno la catena si blocca, i protoni non vengono più pompati, e la cellula non produce quasi più ATP.
+
+---
+
+## Guarda il video
+<YouTube id="1aJO73420cQ" title="Catena di trasporto degli elettroni + ATP sintasi, spiegazione semplice e dettagliata | Medicenna" />
+<VideoVisto id="bio-u5-12" />
+
+---
+
+## Da ricordare
+
+- La catena di trasporto degli elettroni usa NADH e FADH₂ per pompare H⁺ nello spazio intermembrana, creando un gradiente protonico.
+- L'ATP sintasi sfrutta il flusso di H⁺ che rientra nella matrice (chemiosmosi) per ruotare e sintetizzare ATP da ADP + fosfato.
+- Il bilancio finale della respirazione aerobica è circa 30–32 ATP per glucosio; la maggior parte proviene dalla fosforilazione ossidativa, con l'ossigeno come accettore finale degli elettroni.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è il ruolo dell'ossigeno nella catena di trasporto degli elettroni?" opzioni={["Pompa i protoni nello spazio intermembrana","Viene ridotto accettando gli elettroni al Complesso IV formando acqua","Fornisce gli elettroni al Complesso I insieme a NADH","Aziona meccanicamente l'ATP sintasi"]} corretta={1} spiegazione="L'ossigeno (O₂) è l'accettore finale degli elettroni: al Complesso IV riceve gli elettroni e si combina con H⁺ per formare acqua (H₂O). Senza O₂ la catena si blocca e la produzione di ATP cessa." />
+
+<Quiz domanda="Come produce ATP l'ATP sintasi?" opzioni={["Bruciando glucosio direttamente","Sfruttando la rotazione meccanica causata dal flusso di H⁺ attraverso il suo canale","Usando l'energia liberata dalla rottura dell'acqua","Ricevendo elettroni dal citocromo c"]} corretta={1} spiegazione="L'ATP sintasi funziona come una turbina: il flusso di H⁺ dal gradiente protonico fa ruotare fisicamente la sua subunità centrale, e questa rotazione guida la sintesi di ATP da ADP + fosfato inorganico. Questo meccanismo si chiama chemiosmosi." />
+
+<Quiz domanda="Quanti ATP vengono prodotti approssimativamente dall'intera ossidazione di una molecola di glucosio?" opzioni={["2 ATP","8 ATP","18 ATP","30–32 ATP"]} corretta={3} spiegazione="La respirazione aerobica completa (glicolisi + ciclo di Krebs + fosforilazione ossidativa) produce circa 30–32 ATP per molecola di glucosio. La quasi totalità (28–30 ATP) proviene dalla catena di trasporto degli elettroni e dall'ATP sintasi." />
+
+<Esercizio problema="Immagina che un veleno blocchi il Complesso I della catena di trasporto degli elettroni. Quali conseguenze ti aspetti sulla produzione di ATP e sul consumo di ossigeno della cellula?" soluzione="Se il Complesso I è bloccato, gli elettroni provenienti da NADH non possono entrare nella catena. Di conseguenza: (1) il pompaggio di H⁺ da parte del Complesso I si ferma, il gradiente protonico si riduce e l'ATP sintasi produce molto meno ATP; (2) gli elettroni da FADH₂ possono ancora entrare dal Complesso II e raggiungere l'ossigeno, ma il contributo è minore; (3) il consumo di ossigeno cala drasticamente perché meno elettroni raggiungono il Complesso IV. La cellula va in grave crisi energetica. (Questo è il meccanismo di alcuni veleni reali, come il rotenone.)" />
+
+</section>
+
+</RisorsaLayout>

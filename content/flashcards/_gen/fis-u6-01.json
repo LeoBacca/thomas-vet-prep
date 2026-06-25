@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u6-01-1",
+    "topicId": "fis-u6-01",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: un oggetto che ha perso elettroni rispetto alla sua condizione neutra acquista una carica negativa.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Gli elettroni sono cariche NEGATIVE. Se un oggetto ne perde, gli restano piu protoni (positivi) che elettroni → diventa POSITIVO. Il contrario: se guadagna elettroni → diventa negativo. Regola facile: tanti elettroni = negativo, pochi elettroni = positivo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-01-2",
+    "topicId": "fis-u6-01",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Hai due palloncini strofinati sulla stessa maglietta: entrambi si caricano negativamente. Cosa succede se li avvicini?",
+    "choices": [
+      "Si respingono, perche cariche dello stesso segno si respingono",
+      "Si attraggono, perche entrambi sono carichi",
+      "Non si influenzano, perche hanno la stessa carica",
+      "Prima si attraggono, poi si neutralizzano"
+    ],
+    "answer": 0,
+    "explain": "Cariche dello stesso segno (- e -) si respingono sempre. Funziona come due poli nord di una calamita: stessa 'faccia' → si spingono lontano. Solo cariche di segno OPPOSTO (+ e -) si attraggono. Utile in vet: le molecole cariche nelle membrane e nei farmaci interagiscono esattamente cosi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u6-01-3",
+    "topicId": "fis-u6-01",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "open",
+    "q": "Spiega con parole tue la legge di Coulomb: cosa descrive, quali sono le variabili che la governano e come cambia la forza se raddoppi la distanza tra due cariche?",
+    "answer": "La legge di Coulomb descrive la forza elettrica F tra due cariche q1 e q2 separate da una distanza r. La formula e: F = k · |q1 · q2| / r², dove k = 9 × 10⁹ N·m²/C². Ci dice due cose fondamentali: 1) PIU GRANDI sono le cariche, piu forte e la forza (proporzionalita diretta con il prodotto delle cariche). 2) PIU LONTANE sono le cariche, piu debole e la forza — e cala velocemente perche dipende da r² (quadrato della distanza). Se raddoppi r, al denominatore hai (2r)² = 4r², quindi la forza diventa 4 volte piu piccola, non solo 2 volte. E come il volume di uno speaker bluetooth: allontanandolo di poco il suono cala molto piu di quanto ti aspetteresti.",
+    "explain": "Il punto chiave per l'esame e la dipendenza da r²: raddoppiare la distanza → forza diventa 1/4, non 1/2. E la trappola classica dei test.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u6-01-4",
+    "topicId": "fis-u6-01",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Due sfere cariche a distanza di 3 m si attraggono con una forza di 1 N. Se le sfere vengono portate a distanza di 1 m, quale forza si esercita tra loro? (le cariche non cambiano)",
+    "choices": [
+      "9 N",
+      "3 N",
+      "1/9 N",
+      "6 N",
+      "Nessuna delle altre risposte e corretta"
+    ],
+    "answer": 0,
+    "explain": "La legge di Coulomb dice F ∝ 1/r². Passiamo da r = 3 m a r = 1 m: la distanza diventa 3 volte minore, quindi r² diventa 9 volte minore, quindi F diventa 9 volte MAGGIORE → 1 N × 9 = 9 N. TRAPPOLA '3 N': chi divide solo per r (non per r²) ottiene 3 N — e il classico errore di dimenticare il quadrato. TRAPPOLA '1/9 N': e l'opposto esatto — chi inverte il ragionamento e crede che avvicinare le sfere diminuisca la forza. TRAPPOLA '6 N': numero plausibile senza logica fisica. La risposta 'Nessuna' e il filler da scartare subito se sai calcolare.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u6-01-5",
+    "topicId": "fis-u6-01",
+    "materia": "fisica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Nella formula di Coulomb F = k · |q1 · q2| / r², cosa succede alla forza F se RADDOPPIO sia q1 che q2 mantenendo invariata la distanza r?",
+    "choices": [
+      "F rimane uguale perche le cariche si bilanciano",
+      "F raddoppia",
+      "F quadruplica (diventa 4 volte piu grande)",
+      "F dimezza",
+      "F diventa 16 volte piu grande"
+    ],
+    "answer": 2,
+    "explain": "F e proporzionale al PRODOTTO q1 · q2. Se q1 → 2q1 e q2 → 2q2, il prodotto diventa 2q1 · 2q2 = 4 · q1q2 → F quadruplica. TRAPPOLA 'F raddoppia': errore tipico di chi pensa che contino separatamente (2+2 invece di 2×2). TRAPPOLA 'F rimane uguale': confonde il bilanciamento con la neutralizzazione. TRAPPOLA 'F dimezza': opposto esatto, inverte la relazione. TRAPPOLA '16 volte': confonde la regola del quadrato della distanza con quella delle cariche.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,95 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-01">
+
+Tutto ciò che ti circonda e che ha un **peso** e occupa **spazio** si chiama **materia**: l'acqua, l'aria, il tuo telefono, perfino il tuo corpo. La domanda di fondo della chimica è semplice: **di che cosa è fatta la materia?** La risposta, scoperta circa 200 anni fa da uno scienziato di nome **John Dalton**, è che ogni cosa è fatta di mattoncini piccolissimi e tutti uguali tra loro, gli **atomi**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina i mattoncini delle costruzioni. Con pochi tipi di mattoncini puoi costruire migliaia di oggetti diversi. Gli <strong>atomi</strong> sono i mattoncini della materia: ne esistono pochi tipi, ma combinandoli ottieni tutto l'universo.</div>
+
+## Cos'è un atomo (e perché non lo vedi)
+
+Un **atomo** è la particella più piccola di materia che mantiene ancora le sue caratteristiche. È talmente minuscolo che non puoi vederlo nemmeno con una lente: in un solo granello di sabbia ci sono più atomi di quante stelle ci siano nel cielo.
+
+Quando più atomi si **uniscono** tra loro formano una **molecola**. La molecola è come una "squadra" di atomi tenuti insieme. Per esempio, una goccia d'acqua è fatta di tantissime molecole d'acqua identiche, e ogni molecola d'acqua è una squadretta di **2 atomi di idrogeno + 1 atomo di ossigeno** (è il famoso H₂O).
+
+Quindi se prendi un oggetto e lo "ingrandisci" sempre di più, arrivi prima alle molecole e poi agli atomi. Vediamolo con uno zoom.
+
+<Diagram caption="Lo zoom dalla materia all'atomo: partiamo da un oggetto e rimpiccioliamo" code={`flowchart LR
+  O["Oggetto<br/>(es. un bicchiere d'acqua)"] -->|"zoom"| M["Molecole<br/>(squadre di atomi, es. H2O)"]
+  M -->|"zoom ancora"| A["Atomi<br/>(i mattoncini più piccoli)"]`} />
+
+## Cos'è un elemento chimico
+
+Gli atomi **non sono tutti dello stesso tipo**. Esistono diversi "tipi" di atomo, e ogni tipo si chiama **elemento chimico**.
+
+Pensa all'alfabeto: con sole 21 lettere scrivi tutte le parole italiane. Allo stesso modo, in natura esistono poco più di un centinaio di **elementi** (i "tipi di atomo"), e combinandoli ottieni tutte le sostanze che esistono. L'**ossigeno** è un elemento, il **ferro** è un elemento, l'**oro** è un elemento: ciascuno è fatto di un solo tipo di atomo, tutti uguali tra loro.
+
+Questo conta moltissimo in **medicina e veterinaria**: il tuo corpo (e quello di un cane o di un cavallo) è costruito quasi tutto con pochi elementi. **Carbonio, idrogeno, ossigeno e azoto** formano la maggior parte dei tuoi tessuti; il **calcio** è il mattoncino delle ossa; il **ferro** è dentro il sangue e serve a trasportare l'ossigeno. Capire gli elementi è il primo passo per capire come funziona un organismo vivente.
+
+<Diagram caption="Atomi uguali = un elemento; tipi diversi di atomo = elementi diversi" code={`flowchart TB
+  At["Tipi di atomo"] --> E1["Tutti atomi di ossigeno<br/>= elemento OSSIGENO"]
+  At --> E2["Tutti atomi di ferro<br/>= elemento FERRO"]
+  At --> E3["Tutti atomi di carbonio<br/>= elemento CARBONIO"]`} />
+
+## La teoria atomica di Dalton in 3 idee
+
+Dalton non aveva microscopi potenti, eppure intuì tutto questo con il ragionamento. Le sue idee principali, dette in modo semplice, sono:
+
+- La materia è fatta di **atomi**, piccolissimi e che non si possono spezzare a metà (per la chimica di base li trattiamo come "indivisibili").
+- Tutti gli atomi di uno **stesso elemento** sono **uguali** tra loro (stessa massa, stesse caratteristiche); atomi di elementi diversi sono diversi.
+- Gli atomi si **combinano** tra loro in numeri precisi per formare le sostanze, e in una trasformazione chimica non si creano né si distruggono: si **riorganizzano** soltanto, come mattoncini smontati e rimontati in un altro modo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> in una reazione chimica gli atomi non spariscono e non nascono dal nulla. Sono sempre gli stessi mattoncini: cambia solo il modo in cui sono incastrati. Per questo il peso totale non cambia mai.</div>
+
+## Guarda il video
+
+<YouTube id="-KBZbsnzEYM" title="La teoria atomica di Dalton spiegata in modo semplice" />
+
+<VideoVisto id="chim-u1-01" />
+
+## Da ricordare
+
+- **Materia** = tutto ciò che ha peso e occupa spazio; è fatta di **atomi**.
+- L'**atomo** è il mattoncino più piccolo; più atomi uniti formano una **molecola**.
+- Un **elemento chimico** è un "tipo" di atomo: tutti i suoi atomi sono uguali (ossigeno, ferro, carbonio…).
+- Nel corpo (umano e animale) pochi elementi fanno quasi tutto: **C, H, O, N**, più calcio nelle ossa e ferro nel sangue.
+- Nelle reazioni chimiche gli atomi **non si creano né si distruggono**: si riorganizzano soltanto.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è la particella più piccola che mantiene le caratteristiche della materia?"
+  opzioni={["la molecola", "l'atomo", "l'elemento", "la goccia"]}
+  corretta={1}
+  spiegazione="È l'atomo: il mattoncino più piccolo. Quando più atomi si uniscono formano una molecola, ma il mattoncino di base resta l'atomo."
+/>
+
+<Quiz
+  domanda="Che cos'è un elemento chimico?"
+  opzioni={["una miscela di sostanze diverse", "un tipo di atomo (i suoi atomi sono tutti uguali)", "una molecola gigante", "uno strumento da laboratorio"]}
+  corretta={1}
+  spiegazione="Un elemento è un 'tipo' di atomo: per esempio l'ossigeno è fatto solo di atomi di ossigeno, tutti uguali tra loro. Come una lettera dell'alfabeto degli atomi."
+/>
+
+<Quiz
+  domanda="Secondo Dalton, durante una reazione chimica gli atomi:"
+  opzioni={["spariscono nel nulla", "nascono dal nulla", "non si creano né si distruggono, si riorganizzano", "diventano più grandi"]}
+  corretta={2}
+  spiegazione="Gli atomi sono sempre gli stessi: cambiano solo il modo in cui sono uniti, come mattoncini smontati e rimontati. Per questo il peso totale non cambia."
+/>
+
+<Esercizio
+  problema="La molecola dell'acqua è fatta da 2 atomi di idrogeno e 1 atomo di ossigeno. Quanti elementi chimici diversi sono coinvolti nell'acqua? E quanti atomi in tutto ci sono in una molecola d'acqua?"
+  soluzione="Gli elementi diversi sono 2: l'idrogeno e l'ossigeno. Gli atomi in tutto in una molecola sono 3 (cioè 2 di idrogeno + 1 di ossigeno). Attenzione alla differenza: gli elementi sono i 'tipi' di atomo, gli atomi sono i pezzi effettivi."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u4-08-1",
+    "topicId": "chim-u4-08",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: sciogli il sale da cucina (NaCl) in acqua e la soluzione diventa acida, perche tutti i sali rendono acida l'acqua.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. NaCl e figlio di HCl (acido forte) e NaOH (base forte): entrambi i genitori sono forti, quindi nessuno dei due ioni e affamato. L'acqua resta neutra (pH circa 7). Non tutti i sali cambiano il pH: dipende dai genitori.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-08-2",
+    "topicId": "chim-u4-08",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Immagina un sale come il figlio di un acido e di una base. Quale regola ti dice subito se la sua soluzione in acqua e acida, basica o neutra?",
+    "choices": [
+      "Vince sempre il genitore forte: se la base e forte → basica; se l'acido e forte → acida; forti entrambi → neutra",
+      "Vince sempre il genitore debole: se l'acido e debole → acida; se la base e debole → basica",
+      "Dipende solo dalla quantita di sale che sciogli, non dai genitori",
+      "Tutti i sali danno sempre una soluzione neutra"
+    ],
+    "answer": 0,
+    "explain": "La regola d'oro e: vince il genitore forte. Lo ione che viene da un genitore DEBOLE e affamato e reagisce con l'acqua cambiandone il pH; lo ione da genitore forte sta tranquillo. Esempi: NaHCO3 (acido debole + base forte) → basica; NH4Cl (acido forte + base debole) → acida; NaCl (forti entrambi) → neutra.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-08-3",
+    "topicId": "chim-u4-08",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "Il cloruro di ammonio (NH4Cl) e figlio dell'acido cloridrico HCl (acido forte) e dell'ammoniaca NH3 (base debole). Sciogliendolo in acqua, la soluzione sara acida, basica o neutra? Spiega passo per passo.",
+    "answer": "La soluzione sara ACIDA (pH minore di 7). Ragionamento: il catione NH4+ viene dalla base debole (NH3), quindi e affamato e cede un H+ all'acqua. Piu ioni H+ in giro = soluzione acida. L'anione Cl- viene dall'acido forte HCl ed e tranquillo, non disturba l'acqua. Regola lampo: vince il genitore forte, che qui e l'acido → soluzione acida.",
+    "explain": "Da ricordare: lo ione da genitore debole e quello che cambia il pH. Nel NH4Cl il genitore debole e la base (NH3), quindi il catione NH4+ acidifica.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u4-08-4",
+    "topicId": "chim-u4-08",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Indica, tra i seguenti composti, quello che in soluzione acquosa da idrolisi BASICA (cioe rende l'acqua basica).",
+    "choices": [
+      "CH3COONa (acetato di sodio: figlio dell'acido acetico debole e di NaOH forte)",
+      "NaCl (figlio di HCl forte e NaOH forte)",
+      "NaBr (figlio di HBr forte e NaOH forte)",
+      "KCl (figlio di HCl forte e KOH forte)",
+      "NH4Cl (figlio di HCl forte e NH3 debole)"
+    ],
+    "answer": 0,
+    "explain": "CH3COONa e figlio dell'acido acetico (acido DEBOLE) e di NaOH (base forte): l'anione acetato CH3COO- viene dal genitore debole, e affamato e ruba un H+ all'acqua, lasciando OH- in giro → soluzione basica. Trappola 'NaCl/NaBr/KCl': sono tutti figli di acido forte + base forte → idrolisi nulla, soluzione neutra (questo e l'opposto esatto dell'idrolisi basica). Trappola 'NH4Cl': e il caso opposto, acido forte + base debole → idrolisi ACIDA, non basica.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u4-08-5",
+    "topicId": "chim-u4-08",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Al punto equivalente di una titolazione di un acido debole HA con una base forte, il pH della soluzione risultante avra un valore:",
+    "choices": [
+      "superiore a 7, perche il sale prodotto reagisce con l'acqua e libera ioni OH-",
+      "superiore a 7, perche l'acido debole non viene neutralizzato del tutto dalla base forte",
+      "uguale a 7, perche e una neutralizzazione completa",
+      "inferiore a 7, perche il sale prodotto reagisce con l'acqua e libera ioni H3O+",
+      "impossibile da prevedere senza dati aggiuntivi"
+    ],
+    "answer": 0,
+    "explain": "Al punto equivalente tutto l'acido debole e stato neutralizzato dalla base forte: si forma un sale figlio di acido debole + base forte. Quel sale fa idrolisi BASICA: l'anione (ex acido debole, affamato) ruba H+ all'acqua e produce OH-, quindi pH > 7. Trappola 'l'acido non viene neutralizzato del tutto': sbagliata, al punto equivalente la neutralizzazione e completa; la ragione del pH alto e l'idrolisi del sale, non una neutralizzazione incompleta. Trappola 'pH = 7': varrebbe solo se entrambi i genitori fossero forti (NaCl), non qui. Trappola 'pH < 7 con ioni H3O+': e l'opposto esatto, descriverebbe il caso acido forte + base debole.",
+    "tags": ["prova d'esame"]
+  }
+]

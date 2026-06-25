@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-chim-u6-12-1",
+    "topicId": "chim-u6-12",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "mc",
+    "q": "Un acido carbossilico reagisce con un alcol: cosa si forma (e cosa viene 'buttato fuori')?",
+    "choices": [
+      "Si forma un estere e viene liberata acqua (H2O)",
+      "Si forma un estere e viene liberata anidride carbonica (CO2)",
+      "Si forma un alcol e viene liberata acqua",
+      "Si forma un sale e non viene liberato niente"
+    ],
+    "answer": 0,
+    "explain": "Acido + alcol → estere + acqua. E' come due mattoncini Lego che si incastrano e nel farlo buttano fuori un pezzettino (l'acqua). Il corpo usa questa stessa reazione per costruire i grassi (trigliceridi), che sono appunto esteri.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-12-2",
+    "topicId": "chim-u6-12",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "open",
+    "q": "Esterificazione e idrolisi sono due reazioni degli acidi carbossilici. In che senso sono 'la stessa strada percorsa nei due sensi'? Fai un esempio concreto per ciascuna.",
+    "answer": "Esterificazione: acido carbossilico + alcol → estere + acqua. I due pezzi si 'montano' insieme e liberano acqua. Esempio concreto: acidi grassi + glicerolo → trigliceridi (i grassi che immagazzini nel corpo). Idrolisi: estere + acqua → acido + alcol. E' esattamente il contrario: l'acqua si infila nel legame e 'smonta' l'estere nei suoi pezzi originali. Esempio concreto: la digestione dei grassi, in cui gli enzimi lipasi spezzano i trigliceridi per assorbirli, oppure l'attivazione dell'aspirina nell'organismo. Sono la stessa reazione perche usano gli stessi reagenti e producono gli stessi prodotti, ma in direzione opposta: montare (e perdo acqua) contro smontare (e uso acqua).",
+    "explain": "La coppia esterificazione/idrolisi e reversibile: la direzione dipende dalle condizioni. Ricorda: grassi del corpo = esteri; digestione dei grassi = idrolisi.",
+    "tags": ["risposta aperta"]
+  }
+]

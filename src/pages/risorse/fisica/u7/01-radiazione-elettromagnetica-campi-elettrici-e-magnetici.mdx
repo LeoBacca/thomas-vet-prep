@@ -1,0 +1,77 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u7-01">
+
+## Cos'è una radiazione elettromagnetica?
+
+Immagina di scuotere una corda: il movimento si propaga come un'onda. Le onde elettromagnetiche funzionano in modo simile, ma invece di una corda fisica, ciò che oscilla sono due **campi invisibili**: il campo elettrico e il campo magnetico.
+
+Una **radiazione elettromagnetica** è quindi un'onda formata da un campo elettrico e un campo magnetico che oscillano insieme e si propagano nello spazio.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un'onda elettromagnetica è come due "onde invisibili" — una elettrica e una magnetica — che viaggiano sempre insieme, perpendicolari tra loro e perpendicolari alla direzione di viaggio.</div>
+
+## Come nasce un'onda elettromagnetica?
+
+Tutto parte da una carica elettrica in movimento. Quando una carica **accelera** (cioè cambia velocità o direzione), produce un campo elettrico che cambia nel tempo. Un campo elettrico variabile genera a sua volta un campo magnetico variabile. E un campo magnetico variabile rigenera un campo elettrico variabile. Il ciclo si autoalimenta e l'onda si propaga.
+
+In pratica:
+- **Carica che oscilla** → campo elettrico oscillante
+- **Campo elettrico oscillante** → genera campo magnetico oscillante
+- **Campo magnetico oscillante** → rigenera campo elettrico oscillante
+- … e così via: l'onda viaggia senza bisogno di un mezzo fisico
+
+Questo significa che le onde elettromagnetiche possono viaggiare anche nel **vuoto** (ad esempio, la luce solare ci raggiunge attraverso il vuoto dello spazio).
+
+## Come sono fatti i due campi?
+
+I due campi oscillano sempre:
+1. **Perpendicolari tra loro** — se il campo elettrico oscilla in verticale, il campo magnetico oscilla in orizzontale
+2. **Perpendicolari alla direzione di propagazione** — l'onda avanza in avanti, i campi oscillano "di lato"
+
+Questo tipo di onda si chiama **onda trasversale**.
+
+## La velocità della luce
+
+Nel vuoto, tutte le onde elettromagnetiche viaggiano alla stessa velocità: circa **300 000 km/s** (la velocità della luce, indicata con la lettera *c*). È la velocità più alta raggiungibile in natura.
+
+<Diagram caption="Struttura di un'onda elettromagnetica: campo elettrico (E) e campo magnetico (B) oscillano perpendicolarmente tra loro e alla direzione di propagazione." code={`flowchart LR
+  A["Carica<br/>oscillante"] --> B["Campo elettrico<br/>oscillante (E)"]
+  B --> C["Campo magnetico<br/>oscillante (B)"]
+  C --> D["Campo elettrico<br/>oscillante (E)"]
+  D --> E["Onda si propaga<br/>a velocità c"]`} />
+
+<Diagram caption="Relazioni tra le grandezze di un'onda elettromagnetica." code={`flowchart TB
+  F["Frequenza (f)"] --> L["Lunghezza d'onda (λ)"]
+  L --> V["Velocità = c<br/>(costante nel vuoto)"]
+  F --> E2["Energia dell'onda<br/>(cresce con f)"]
+  V --> N["Nessun mezzo<br/>necessario: viaggia nel vuoto"]`} />
+
+## Guarda il video
+<YouTube id="dXx5uZiMILs" title="LA FISICA FACILE - Lezione 24 - Le onde elettromagnetiche" />
+<VideoVisto id="fis-u7-01" />
+
+## Da ricordare
+- Un'onda elettromagnetica è formata da un campo elettrico e un campo magnetico che oscillano perpendicolarmente tra loro e alla direzione di propagazione.
+- Le onde elettromagnetiche si autogenerano: campo elettrico variabile crea campo magnetico variabile, e viceversa.
+- Nel vuoto viaggiano tutte alla velocità della luce (circa 300 000 km/s) e non hanno bisogno di un mezzo fisico per propagarsi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="In un'onda elettromagnetica, come sono orientati il campo elettrico (E) e il campo magnetico (B) tra loro?" opzioni={["Sono paralleli e oscillano nella stessa direzione","Sono perpendicolari tra loro e perpendicolari alla direzione di propagazione","Sono paralleli alla direzione di propagazione","Sono perpendicolari tra loro ma paralleli alla direzione di propagazione"]} corretta={1} spiegazione="In un'onda elettromagnetica, E e B oscillano sempre perpendicolarmente l'uno all'altro e perpendicolarmente alla direzione in cui l'onda si propaga. Per questo si dice che è un'onda trasversale." />
+
+<Quiz domanda="Cosa succede se raddoppi la frequenza di un'onda elettromagnetica nel vuoto?" opzioni={["La velocità raddoppia","La lunghezza d'onda raddoppia","La lunghezza d'onda si dimezza, la velocità resta uguale","La velocità si dimezza"]} corretta={2} spiegazione="Nel vuoto la velocità è sempre c (costante). Poiché c = f × λ, se la frequenza f raddoppia la lunghezza d'onda λ si deve dimezzare per mantenere il prodotto costante." />
+
+<Quiz domanda="Cosa genera un campo elettrico variabile nel tempo?" opzioni={["Un campo gravitazionale","Un campo magnetico variabile","Una carica elettrica ferma","Un aumento di temperatura"]} corretta={1} spiegazione="Secondo le equazioni di Maxwell, un campo elettrico che varia nel tempo genera un campo magnetico variabile, e viceversa. È questo meccanismo che permette all'onda di propagarsi da sola, senza bisogno di un mezzo fisico." />
+
+<Esercizio problema="La luce visibile ha una frequenza di circa 5 × 10^14 Hz. Sapendo che la velocità della luce nel vuoto è c = 3 × 10^8 m/s, calcola la lunghezza d'onda corrispondente." soluzione="Usa la formula: λ = c / f. Sostituisci: λ = (3 × 10^8 m/s) / (5 × 10^14 Hz) = 6 × 10^-7 m = 600 nm. Questo corrisponde alla luce arancione/rossa, che è nel range della luce visibile (400–700 nm)." />
+
+</section>
+
+</RisorsaLayout>

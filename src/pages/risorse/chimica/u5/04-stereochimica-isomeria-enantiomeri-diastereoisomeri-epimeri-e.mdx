@@ -1,0 +1,104 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u5-04">
+
+A volte due molecole hanno gli **stessi atomi**, nelle stesse quantità, ma sono **molecole diverse**. È come avere gli stessi mattoncini Lego: con gli stessi pezzi puoi costruire una macchinina o un aeroplano. Queste molecole "con gli stessi pezzi ma montati in modo diverso" si chiamano **isomeri**, e lo studio di come sono disposti nello spazio si chiama **stereochimica**.
+
+Sembra un dettaglio da pignoli, ma nel corpo non lo è per niente: spesso una molecola "funziona" e la sua gemella diversa **non funziona** o fa male. Per questo gli isomeri sono fondamentali quando parli di zuccheri, amminoacidi, farmaci e ormoni.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> isomeri = stessi atomi, ma <strong>montati diversamente</strong>. A volte cambia proprio lo "scheletro" (isomeri di struttura), altre volte cambia solo come sono girati nello spazio (stereoisomeri). E nel corpo anche un piccolo "giro" diverso può cambiare tutto.</div>
+
+## L'albero dell'isomeria
+
+Partiamo dall'alto e scendiamo, un passo alla volta. Prima ci chiediamo: gli atomi sono **collegati** nello stesso ordine oppure no?
+
+<Diagram caption="Mappa generale: dai un nome a ogni tipo di isomero scendendo l'albero" code={`flowchart TB
+  I["ISOMERI<br/>stessi atomi, molecole diverse"] --> ST["Isomeri di STRUTTURA<br/>atomi collegati in ordine diverso"]
+  I --> ST2["STEREOISOMERI<br/>stesso ordine, diversa<br/>disposizione nello spazio"]
+  ST2 --> EN["ENANTIOMERI<br/>immagini allo specchio<br/>NON sovrapponibili"]
+  ST2 --> DI["DIASTEROISOMERI<br/>NON sono immagini speculari"]
+  DI --> EP["EPIMERI<br/>differiscono in UN solo punto"]
+  EN --> RA["RACEMO = miscela 50/50<br/>dei due enantiomeri"]`} />
+
+Tieni a mente solo questa logica: **prima** distinguo struttura da stereoisomeria; **poi**, dentro gli stereoisomeri, distinguo enantiomeri da diastereoisomeri. Tutto il resto sono solo nomi per casi particolari.
+
+## Struttura contro stereoisomeria
+
+Gli **isomeri di struttura** (o costituzionali) hanno gli atomi **attaccati in ordine diverso**. È come una collana di perline: stesse perline, ma infilate in sequenza diversa. Cambiando l'ordine cambia proprio la "catena".
+
+Gli **stereoisomeri**, invece, hanno gli atomi collegati **nello stesso ordine**: cambia solo **come sono orientati nello spazio**. Stessa collana, stesso ordine di perline, ma una è girata in un modo e l'altra nell'altro.
+
+<Diagram caption="La prima domanda da farsi sempre" code={`flowchart LR
+  Q["Gli atomi sono collegati<br/>nello stesso ordine?"] -->|"NO, ordine diverso"| A["Isomeri di STRUTTURA"]
+  Q -->|"SI, stesso ordine"| B["STEREOISOMERI<br/>cambia solo lo spazio"]`} />
+
+## Enantiomeri, racemi, diastereoisomeri ed epimeri
+
+Ora entriamo negli stereoisomeri. Pensa alle tue **due mani**: sono uguali, ma una è l'**immagine allo specchio** dell'altra, e per quanto provi non riesci a **sovrapporle** (il pollice va da parti opposte). In chimica si dice che sono **chirali** (dal greco "mano").
+
+- **Enantiomeri**: sono proprio come la mano destra e la mano sinistra. Uno è l'immagine speculare dell'altro e **non sono sovrapponibili**. Tutto il resto è identico.
+- **Racemo**: una **miscela 50 e 50** dei due enantiomeri. Come avere nel mucchio metà guanti destri e metà guanti sinistri, mischiati.
+- **Diastereoisomeri**: stereoisomeri che **non** sono immagini allo specchio l'uno dell'altro. Non sono "mano destra e sinistra", sono proprio diversi pur restando parenti.
+- **Epimeri**: due diastereoisomeri che differiscono in **un solo punto** della molecola. Pensa a due foto identiche tranne un dettaglio.
+
+Perché a un futuro veterinario interessa? Perché il corpo è pieno di "mani". I tuoi **amminoacidi** sono quasi tutti della forma "L" (come una mano sola), gli **zuccheri** del sangue sono della forma "D". I recettori delle cellule sono come **guanti**: accettano solo la mano giusta. Il **glucosio** e il **galattosio** sono epimeri (cambia un solo punto) eppure il corpo li gestisce in modo diverso. E molti **farmaci**: un enantiomero cura, l'altro può essere inutile o tossico. Ecco perché questo "dettaglio" salva o rovina una terapia.
+
+<Diagram caption="Dentro gli stereoisomeri: come si chiamano i vari casi" code={`flowchart TB
+  S["STEREOISOMERI"] --> Q["Sono immagini allo specchio<br/>non sovrapponibili?"]
+  Q -->|"SI"| E["ENANTIOMERI<br/>come mano destra e sinistra"]
+  Q -->|"NO"| D["DIASTEROISOMERI"]
+  E --> R["Miscela 50/50 = RACEMO"]
+  D --> P["Differiscono in 1 solo punto = EPIMERI"]`} />
+
+## Guarda il video
+
+<YouTube id="lhjlZRKCpSo" title="Stereochimica: isomeri costituzionali, stereoisomeri, diastereoisomeri ed enantiomeri" />
+
+<VideoVisto id="chim-u5-04" />
+
+## Da ricordare
+
+- **Isomeri** = stessi atomi, molecole diverse (stessi mattoncini, costruzioni diverse).
+- **Isomeri di struttura**: atomi collegati in **ordine diverso**. **Stereoisomeri**: stesso ordine, diversa disposizione **nello spazio**.
+- **Enantiomeri**: immagini allo specchio **non sovrapponibili** (come le due mani). Un **racemo** è la miscela **50/50** dei due.
+- **Diastereoisomeri**: stereoisomeri che **non** sono immagini speculari. Gli **epimeri** ne sono un caso: differiscono in **un solo punto**.
+- Nel corpo conta davvero: recettori, zuccheri, amminoacidi e farmaci "sentono" la differenza tra una mano e l'altra.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Due molecole hanno gli stessi atomi ma collegati in ordine diverso. Sono:"
+  opzioni={["enantiomeri", "isomeri di struttura", "diastereoisomeri", "la stessa molecola"]}
+  corretta={1}
+  spiegazione="Se cambia l'ordine in cui gli atomi sono collegati (lo scheletro), sono isomeri di struttura. Gli stereoisomeri invece hanno lo stesso ordine e cambiano solo nello spazio."
+/>
+
+<Quiz
+  domanda="Due stereoisomeri che sono l'uno l'immagine allo specchio dell'altro, e non si possono sovrapporre, si chiamano:"
+  opzioni={["epimeri", "isomeri di struttura", "enantiomeri", "racemi"]}
+  corretta={2}
+  spiegazione="Sono enantiomeri: come la mano destra e la mano sinistra. Uguali ma speculari e non sovrapponibili."
+/>
+
+<Quiz
+  domanda="Una miscela con il 50 per cento di un enantiomero e il 50 per cento del suo speculare si chiama:"
+  opzioni={["racemo", "epimero", "diastereoisomero", "isomero di struttura"]}
+  corretta={0}
+  spiegazione="È un racemo: metà di una 'mano' e metà dell'altra, mescolate in parti uguali."
+/>
+
+<Esercizio
+  problema="Il glucosio e il galattosio sono due zuccheri che hanno gli stessi atomi, lo stesso ordine di legami, e differiscono solo per come è orientato un gruppo in UN unico punto della molecola. Che tipo di isomeri sono, con il nome più preciso possibile?"
+  soluzione="Sono stereoisomeri (stesso ordine, cambia lo spazio). Non sono immagini speculari l'uno dell'altro, quindi sono diastereoisomeri. E poiché differiscono in un solo punto, il nome più preciso è epimeri. Per questo, pur essendo quasi gemelli, il corpo li tratta in modo diverso."
+/>
+
+</section>
+
+</RisorsaLayout>

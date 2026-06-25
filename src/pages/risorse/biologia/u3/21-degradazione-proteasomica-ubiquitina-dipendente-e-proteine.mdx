@@ -1,0 +1,157 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-21">
+
+## Perché la cellula "butta via" le proteine?
+
+Le proteine non durano per sempre. Alcune si rovinano (si ripiegano male, vengono danneggiate da radicali liberi), altre servono solo in certi momenti e poi vanno smontate. La cellula ha bisogno di un sistema per riconoscere queste proteine e distruggerle in modo controllato, senza rovinare quelle sane vicine.
+
+Il sistema che fa questo lavoro si chiama **via ubiquitina-proteasoma**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'ubiquitina è il "bollino rosso" che la cellula attacca sulle proteine da eliminare. Il proteasoma è il "tritacarne" che le distrugge dopo aver letto il bollino.</div>
+
+---
+
+## Cos'è l'ubiquitina?
+
+L'**ubiquitina** è una piccola proteina (76 aminoacidi) presente in tutte le cellule eucariote. Il suo nome viene da *ubiquitous* = "ovunque", perché si trova in ogni cellula.
+
+Da sola non fa nulla di pericoloso. Il suo unico compito è attaccarsi ad altre proteine per segnalarle: "questa va distrutta".
+
+---
+
+## Come funziona la marcatura (ubiquitinazione)?
+
+Per attaccare l'ubiquitina sulla proteina bersaglio servono **tre enzimi in cascata**, chiamati E1, E2 ed E3:
+
+1. **E1** (enzima attivante): "carica" l'ubiquitina consumando ATP. La prepara all'uso.
+2. **E2** (enzima coniugante): riceve l'ubiquitina da E1 e la passa avanti.
+3. **E3** (ubiquitina ligasi): riconosce la proteina da eliminare e ci attacca l'ubiquitina.
+
+Questo ciclo si ripete più volte: si formano **catene di ubiquitina** (poliubiquitinazione). La catena legata alla lisina 48 (K48) dell'ubiquitina è il segnale classico che dice "mandami al proteasoma".
+
+---
+
+## Il proteasoma: il tritacarne molecolare
+
+Il **proteasoma 26S** è un grande complesso proteico con due parti:
+
+- **Subunità 20S** (il "barile"): contiene le proteasi, cioè gli enzimi che tagliano la proteina in piccoli frammenti (peptidi di 7-8 aminoacidi).
+- **Subunità 19S** (il "coperchio"): riconosce la catena di ubiquitina, rimuove le ubiquitine (che vengono riciclate), spiega la proteina e la introduce nel barile.
+
+Il risultato è che la proteina viene ridotta a piccoli pezzi. Questi pezzi vengono poi ulteriormente degradati da altre proteasi del citosol fino ad aminoacidi liberi, che la cellula può riutilizzare.
+
+---
+
+## Proteine ubiquitin-like (UBL)
+
+Oltre all'ubiquitina classica, esistono altre piccole proteine con struttura simile chiamate **proteine ubiquitin-like (UBL)**. Le più importanti sono:
+
+- **SUMO** (Small Ubiquitin-like Modifier): si attacca alle proteine nucleari e regola la loro attività o localizzazione, ma di solito NON porta alla degradazione. Influenza trascrizione, riparazione del DNA, divisione cellulare.
+- **NEDD8**: lega e attiva le ubiquitina ligasi E3 (le culline). Regola quindi l'intero sistema di ubiquitinazione.
+- **ISG15**: viene prodotta in risposta a infezioni virali e partecipa alla risposta immunitaria innata.
+
+Il meccanismo di attacco di queste proteine usa sempre una cascata E1-E2-E3, analoga a quella dell'ubiquitina, ma con enzimi dedicati.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le proteine ubiquitin-like usano lo stesso "linguaggio" dell'ubiquitina (si attaccano con lo stesso meccanismo) ma inviano messaggi diversi: non sempre "distruggimi", a volte "cambia la mia funzione" o "spostami nel nucleo".</div>
+
+---
+
+## Diagramma 1 — La cascata di ubiquitinazione e degradazione proteasomica
+
+<Diagram caption="Cascata E1-E2-E3 e degradazione al proteasoma 26S" code={`flowchart TB
+  A["Ubiquitina libera<br/>+ ATP"] -->|"E1 (enzima attivante)<br/>consuma ATP"| B["Ubiquitina attivata<br/>legata a E1"]
+  B -->|"Trasferimento<br/>a E2"| C["Ubiquitina legata a E2<br/>(enzima coniugante)"]
+  C -->|"E3 (ubiquitina ligasi)<br/>riconosce la proteina bersaglio"| D["Ubiquitina attaccata<br/>alla proteina bersaglio"]
+  D -->|"Ciclo ripetuto<br/>più volte"| E["Catena di poliubiquitina<br/>sulla proteina (segnale K48)"]
+  E -->|"Riconoscimento<br/>dal cappuccio 19S"| F["Proteasoma 26S"]
+  F -->|"Le ubiquitine<br/>vengono staccate e riciclate"| G["Ubiquitina riciclata"]
+  F -->|"Proteina srotolata<br/>ed introdotta nel barile 20S"| H["Peptidi di 7-8 aa<br/>(proteina degradata)"]
+  H --> I["Aminoacidi liberi<br/>riutilizzati dalla cellula"]`} />
+
+---
+
+## Diagramma 2 — Proteine ubiquitin-like: stessa struttura, messaggi diversi
+
+<Diagram caption="Confronto tra ubiquitina e le principali proteine ubiquitin-like (UBL)" code={`flowchart LR
+  A["Proteine<br/>Ubiquitin-like (UBL)"] --> B["Ubiquitina<br/>(76 aa)"]
+  A --> C["SUMO"]
+  A --> D["NEDD8"]
+  A --> E["ISG15"]
+
+  B --> B1["Catena K48:<br/>segnale di degradazione<br/>al proteasoma"]
+  B --> B2["Catena K63:<br/>segnale di riparazione DNA<br/>o traffico vescicolare"]
+
+  C --> C1["Si lega a proteine nucleari<br/>Regola trascrizione e<br/>riparazione DNA<br/>NON porta a degradazione"]
+
+  D --> D1["Attiva le culline (E3 ligasi)<br/>Regola l'intero sistema<br/>di ubiquitinazione"]
+
+  E --> E1["Indotta da interferone<br/>Risposta antivirale<br/>e immunitaria innata"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="_4mSGPpZZnA" title="Folding proteine e degradazione via proteasoma" />
+<VideoVisto id="bio-u3-21" />
+
+---
+
+## Da ricordare
+
+- L'ubiquitina è un "bollino rosso" molecolare: si attacca alla proteina da eliminare grazie a una cascata E1→E2→E3. La catena di poliubiquitina legata a K48 è il segnale di degradazione.
+- Il proteasoma 26S è formato da un barile catalitico (20S) e due cappucci di riconoscimento (19S): riconosce la catena di ubiquitina, srotola la proteina e la taglia in piccoli peptidi.
+- Le proteine ubiquitin-like (SUMO, NEDD8, ISG15) hanno la stessa struttura dell'ubiquitina e usano lo stesso meccanismo E1-E2-E3, ma regolano funzioni diverse (localizzazione, attività enzimatica, risposta virale) senza necessariamente portare a degradazione.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è la funzione dell'enzima E3 (ubiquitina ligasi) nel processo di ubiquitinazione?"
+  opzioni={[
+    "Attiva l'ubiquitina consumando ATP",
+    "Trasporta l'ubiquitina da E1 a E3",
+    "Riconosce la proteina bersaglio e trasferisce la catena di ubiquitina su di essa",
+    "Degrada la proteina ubiquitinata nel barile del proteasoma"
+  ]}
+  corretta={2}
+  spiegazione="E3 è l'enzima che conferisce specificità: riconosce la proteina da eliminare e ci attacca l'ubiquitina. E1 attiva l'ubiquitina con ATP, E2 la trasporta, ma è E3 che sceglie il bersaglio giusto."
+/>
+
+<Quiz
+  domanda="Quale tipo di catena di poliubiquitina è il segnale classico per la degradazione al proteasoma?"
+  opzioni={[
+    "Catena legata alla lisina 63 (K63)",
+    "Catena legata alla lisina 48 (K48)",
+    "Catena legata alla lisina 11 (K11) solo nei lieviti",
+    "Una singola ubiquitina (monoubiquitinazione)"
+  ]}
+  corretta={1}
+  spiegazione="La catena di poliubiquitina legata tramite la lisina 48 (K48) è il segnale canonico di degradazione proteasomica. La catena K63 invece segnala altri processi come la riparazione del DNA o il traffico endosomiale."
+/>
+
+<Quiz
+  domanda="Quale affermazione su SUMO (una proteina ubiquitin-like) è CORRETTA?"
+  opzioni={[
+    "SUMO porta sempre alla degradazione proteasomica della proteina bersaglio",
+    "SUMO usa un meccanismo di attacco completamente diverso da quello dell'ubiquitina",
+    "SUMO si lega preferenzialmente a proteine nucleari e regola funzioni come trascrizione e riparazione del DNA senza causarne la degradazione",
+    "SUMO è presente solo nei procarioti"
+  ]}
+  corretta={2}
+  spiegazione="SUMO (Small Ubiquitin-like Modifier) ha struttura simile all'ubiquitina e usa lo stesso tipo di cascata E1-E2-E3, ma il suo effetto è regolatorio: modifica la localizzazione o l'attività delle proteine nucleari bersaglio senza destinarle alla degradazione."
+/>
+
+<Esercizio
+  problema="Immagina che una proteina venga mutata in modo da non poter essere riconosciuta dall'enzima E3. Che cosa succederà a questa proteina anche se è danneggiata o non più necessaria alla cellula? Spiega il ragionamento."
+  soluzione="Se E3 non riesce a riconoscere la proteina bersaglio, non può attaccarle l'ubiquitina. Senza catena di poliubiquitina, il proteasoma non riceve il segnale di degradazione e non smonta la proteina. La proteina danneggiata o inutile si accumula nel citoplasma. Questo può essere tossico: proteine mal ripiegate che si accumulano formano aggregati insolubili, meccanismo alla base di malattie neurodegenerative come il morbo di Parkinson (accumulo di alfa-sinucleina)."
+/>
+
+</section>
+
+</RisorsaLayout>

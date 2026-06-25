@@ -1,0 +1,97 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u3-03">
+
+La **cinetica chimica** studia una cosa sola: **quanto in fretta** avviene una reazione. Alcune reazioni sono velocissime (un fiammifero che si accende), altre lentissime (il ferro che arrugginisce in mesi). La **velocità di reazione** ci dice quanto reagente sparisce, o quanto prodotto si forma, in un certo tempo.
+
+Pensa a una ricetta in cucina: non conta solo *se* la torta viene, ma anche *in quanto tempo*. La chimica è uguale: contano sia il risultato sia la velocità.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la velocità di reazione è quanto è "veloce" una trasformazione. Più reagenti si trasformano in poco tempo, più la reazione è veloce.</div>
+
+<Diagram caption="I quattro fattori che fanno andare più veloce una reazione" code={`flowchart TB
+  V["Velocità di reazione<br/>(quanto è veloce la trasformazione)"]
+  T["Temperatura più alta<br/>= particelle più agitate"] --> V
+  C["Concentrazione più alta<br/>= più particelle vicine"] --> V
+  S["Superficie più grande<br/>= più punti di contatto"] --> V
+  K["Catalizzatore<br/>= aiutante che accelera"] --> V`} />
+
+## Perché le reazioni avvengono: gli urti
+
+Perché due sostanze reagiscano, le loro particelle devono **scontrarsi** (urtarsi). E non basta un urto qualsiasi: deve essere abbastanza **forte**. È come accendere un fiammifero: se lo sfreghi piano non succede niente, se lo sfreghi con forza si accende.
+
+Quindi una reazione è più veloce quando gli urti tra particelle sono **più numerosi** e **più forti**. Tutti i fattori qui sotto agiscono proprio su questo.
+
+## I fattori che accelerano una reazione
+
+Vediamo i tre fattori principali, uno alla volta.
+
+**1. La temperatura.** Più scaldi, più le particelle si muovono in fretta. Particelle veloci si scontrano più spesso e con più forza, quindi la reazione accelera. È il motivo per cui il latte fuori dal frigo va a male in fretta, mentre in frigo dura: il freddo **rallenta** le reazioni che lo guastano.
+
+**2. La concentrazione.** Più reagente metti nello stesso spazio, più particelle ci sono vicine, più urti avvengono. Immagina una pista da ballo: con poche persone è raro scontrarsi, con la pista piena ci si urta di continuo.
+
+**3. La superficie di contatto.** A parità di quantità, una sostanza tritata fine reagisce più in fretta di un blocco intero, perché offre più "punti di contatto". Una zolletta di zucchero si scioglie piano nell'acqua, lo zucchero in polvere quasi subito. Per lo stesso motivo mastichiamo il cibo: lo riduciamo in pezzetti per offrire più superficie agli enzimi digestivi.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> tutto ciò che fa scontrare le particelle <strong>più spesso</strong> o <strong>più forte</strong> rende la reazione più veloce.</div>
+
+## Un aiuto in più: il catalizzatore (e gli enzimi)
+
+Un **catalizzatore** è una sostanza che **accelera** la reazione senza consumarsi: a fine reazione è ancora lì, intatto. È come una scorciatoia che fa arrivare prima a destinazione, senza che la strada si consumi.
+
+Questo conta tantissimo in medicina e veterinaria. Nel nostro corpo i catalizzatori si chiamano **enzimi**: sono proteine che fanno avvenire in pochi istanti reazioni che altrimenti richiederebbero anni. Senza enzimi non potremmo digerire un pasto né respirare. Capire la cinetica vuol dire capire come lavora il corpo di un animale (e il nostro).
+
+<Diagram caption="Come ogni fattore agisce sugli urti tra particelle" code={`flowchart LR
+  F["Fattore"] --> U["Cambia gli urti tra particelle"]
+  U --> R["Cambia la velocità di reazione"]`} />
+
+## Guarda il video
+
+<YouTube id="CyClSZQYSRg" title="Fattori che influenzano la velocità di reazione — Edizioni Atlas" />
+
+<VideoVisto id="chim-u3-03" />
+
+## Da ricordare
+
+- La **cinetica chimica** studia la **velocità** delle reazioni (quanto in fretta avvengono).
+- Le reazioni avvengono grazie agli **urti** tra particelle: più urti e più forti = più veloce.
+- **Temperatura** più alta → reazione più veloce (particelle più agitate).
+- Più **concentrazione** e più **superficie di contatto** → reazione più veloce (più urti).
+- Il **catalizzatore** accelera senza consumarsi; nel corpo sono gli **enzimi**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa studia la cinetica chimica?"
+  opzioni={["se una reazione avviene o no", "quanto in fretta avviene una reazione", "il colore dei reagenti", "il peso dei prodotti"]}
+  corretta={1}
+  spiegazione="La cinetica chimica si occupa della velocità delle reazioni, cioè di quanto in fretta avvengono."
+/>
+
+<Quiz
+  domanda="Se alzo la temperatura, in genere la velocità di reazione:"
+  opzioni={["diminuisce", "aumenta", "resta uguale", "si annulla"]}
+  corretta={1}
+  spiegazione="Col calore le particelle si muovono più in fretta, si scontrano più spesso e con più forza: la reazione accelera. Per questo il freddo del frigo conserva i cibi."
+/>
+
+<Quiz
+  domanda="Perché lo zucchero in polvere si scioglie più in fretta di una zolletta?"
+  opzioni={["perché è più dolce", "perché offre più superficie di contatto", "perché è più freddo", "perché pesa di più"]}
+  corretta={1}
+  spiegazione="A parità di quantità, la polvere ha molta più superficie esposta all'acqua: più punti di contatto, più urti, reazione più veloce."
+/>
+
+<Esercizio
+  problema="Un catalizzatore accelera una reazione. Alla fine della reazione, dove finisce il catalizzatore? E nel nostro corpo, come si chiamano i catalizzatori?"
+  soluzione="Il catalizzatore non si consuma: alla fine è ancora lì, intatto e pronto a essere riutilizzato. Nel corpo i catalizzatori si chiamano enzimi (sono proteine) e ci permettono di digerire, respirare e svolgere in pochi istanti reazioni che altrimenti richiederebbero anni."
+/>
+
+</section>
+
+</RisorsaLayout>

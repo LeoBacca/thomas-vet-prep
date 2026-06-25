@@ -1,0 +1,25 @@
+{
+ "id": "chim-u1-28",
+ "titolo": "Lo stato liquido: ebollizione, tensione superficiale e pressione di vapore",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "28-lo-stato-liquido-ebollizione-tensione-superficiale",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u1/28-lo-stato-liquido-ebollizione-tensione-superficiale.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "L'acqua può bollire a 70 °C?",
+   "choices": [
+    "Sì, diminuendo la pressione del sistema",
+    "Sì, quando se ne scalda una quantità piccolissima",
+    "Sì, aumentando la pressione del sistema",
+    "No, l'acqua bolle solamente a 100 °C",
+    "No, l'acqua può bollire anche a temperature diverse, ma sempre maggiori di 100 °C"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

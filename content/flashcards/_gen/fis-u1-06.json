@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-fis-u1-06-1",
+    "topicId": "fis-u1-06",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "In un triangolo rettangolo, il seno di un angolo θ e uguale a:",
+    "choices": [
+      "cateto opposto diviso ipotenusa",
+      "cateto adiacente diviso ipotenusa",
+      "cateto opposto diviso cateto adiacente",
+      "ipotenusa diviso cateto opposto"
+    ],
+    "answer": 0,
+    "explain": "Ricorda la filastrocca SOH-CAH-TOA: Seno = Opposto/Ipotenusa. Immagina di 'salire' una scala appoggiata al muro: il seno e quanto e alta la scala rispetto alla sua lunghezza totale (l'ipotenusa e la scala, il cateto opposto e il muro).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u1-06-2",
+    "topicId": "fis-u1-06",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "open",
+    "q": "Un vettore velocita ha modulo V e forma un angolo θ con l'orizzontale. Come si calcolano la sua componente orizzontale e quella verticale usando seno e coseno? Spiega il ragionamento.",
+    "answer": "Il vettore 'storto' si puo spezzare in due pezzi che puntano in direzioni semplici (orizzontale e verticale), come i lati di un triangolo rettangolo. La componente orizzontale e V · cos θ (usa il coseno perche l'orizzontale e il cateto 'adiacente' all'angolo). La componente verticale e V · sin θ (usa il seno perche la verticale e il cateto 'opposto' all'angolo). In pratica: cos θ da la 'larghezza', sin θ da l''altezza' del vettore.",
+    "explain": "Seno → componente verticale (opposto); coseno → componente orizzontale (adiacente). Questo e l'uso principale della trigonometria in fisica.",
+    "tags": ["risposta aperta"]
+  }
+]

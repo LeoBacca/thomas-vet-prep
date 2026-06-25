@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u3-02-1",
+    "topicId": "fis-u3-02",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Sei immerso in una piscina a 2 metri di profondità. Da cosa dipende la pressione che senti sulle orecchie? (scegli la risposta COMPLETA e corretta)",
+    "choices": [
+      "Dalla profondità in cui sei, dalla densità dell'acqua e dalla gravità",
+      "Dalla forma della piscina e da quanta acqua contiene in totale",
+      "Solo dalla densità dell'acqua, non dalla profondità",
+      "Dal volume totale d'acqua nella piscina e dalla sua temperatura"
+    ],
+    "answer": 0,
+    "explain": "La Legge di Stevino dice che la pressione idrostatica (la parte aggiunta rispetto alla superficie) vale ρ·g·h: dipende dalla densità del liquido (ρ), dalla gravità (g) e dalla profondità (h). La forma del contenitore e la quantità totale di liquido NON contano: è il 'paradosso idrostatico'. A 2 m in un secchio o in un oceano, la pressione è identica.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-02-2",
+    "topicId": "fis-u3-02",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: un tubo stretto e un secchio largo, entrambi riempiti d'acqua fino a 30 cm di altezza, hanno pressioni diverse sul fondo — il secchio spinge di più perché contiene più acqua.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso! Questo è il 'paradosso idrostatico': la pressione sul fondo dipende solo da profondità (h), densità (ρ) e gravità (g) — NON dalla quantità di acqua né dalla forma del contenitore. Stessa altezza d'acqua = stessa pressione sul fondo, sempre. È come dire che la pressione di una colonna sulla tua testa dipende da quanto è alta, non da quanto è larga.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-02-3",
+    "topicId": "fis-u3-02",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "open",
+    "q": "Spiega con parole tue la Legge di Stevino: cos'è la pressione idrostatica, da cosa dipende, e perché un sub sente le orecchie sempre più schiacciate scendendo in profondità?",
+    "answer": "La pressione idrostatica è la forza che un liquido esercita su qualsiasi oggetto immerso in esso. Nasce dal peso della colonna di liquido che sta sopra: più scendi, più liquido hai sopra la testa, e più questo pesa e spinge. La formula di Stevino è P = P₀ + ρ·g·h, dove P₀ è la pressione di partenza (in superficie, quella atmosferica), ρ è la densità del liquido, g è la gravità e h è la profondità. La pressione cresce in modo regolare: ogni metro in più aggiunge sempre la stessa quantità (ρ·g). Per il sub: a 10 m ha una colonna d'acqua doppia rispetto a 5 m, quindi sente una pressione molto maggiore — ecco perché le orecchie si 'tappano' sempre di più. Importante: non conta la forma della vasca né quanta acqua c'è in totale, solo la profondità.",
+    "explain": "Da ricordare: P = P₀ + ρ·g·h. Pressione cresce con la profondità, non con la forma o il volume del contenitore.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u3-02-4",
+    "topicId": "fis-u3-02",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Una bollicina di gas sale dal fondo di un bicchiere di bibita frizzante (la temperatura del liquido è costante). Cosa succede alla pressione e al volume del gas dentro la bollicina mentre sale verso la superficie?",
+    "choices": [
+      "La pressione diminuisce e il volume aumenta",
+      "La pressione aumenta e il volume diminuisce",
+      "La temperatura e la pressione aumentano entrambe",
+      "La temperatura e il volume aumentano entrambi",
+      "Il volume e la temperatura diminuiscono entrambi"
+    ],
+    "answer": 0,
+    "explain": "Salendo verso la superficie la bollicina si trova a profondità h sempre minore: per la Legge di Stevino (P = P₀ + ρ·g·h) la pressione del liquido intorno DIMINUISCE. Il gas dentro la bollicina si 'decomprime' e si espande: il volume AUMENTA. La temperatura resta costante (tutta la bibita è in equilibrio termico), quindi non cambia. La risposta 'pressione aumenta e volume diminuisce' è l'opposto esatto: descriverebbe la bollicina che SCENDE, non che sale. Le altre mischiano temperatura e volume in modo non corretto: la temperatura non cambia per ipotesi.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u3-02-5",
+    "topicId": "fis-u3-02",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "L'acqua di mare ha densità 1,03 kg/dm³ (cioè 1,03 × 10³ kg/m³). Sul fondo del mare, che dista 3 km dalla superficie, quanto vale la VARIAZIONE di pressione rispetto alla superficie? (usa g = 9,8 m/s²; 1 Pa = 1 kg/(m·s²))",
+    "choices": [
+      "ρ·g·h = 1,03 × 10³ × 9,8 × 3 × 10³ = 3,0 × 10⁷ Pa",
+      "ρ·g·h = 1,03 × 9,8 × 3 × 10³ = 3,0 × 10⁴ Pa",
+      "ρ·g·h = 1,03 × 9,8 × 3 = 30 Pa",
+      "ρ·g·h = 1,03 × 10³ × 3 × 10³ = 3,0 × 10⁶ Pa (senza gravità)",
+      "ρ·g·h = 1,03 × 10⁴ × 9,8 × 3 × 10³ = 3,0 × 10⁸ Pa"
+    ],
+    "answer": 0,
+    "explain": "Prima converti le unità: densità 1,03 kg/dm³ = 1,03 × 10³ kg/m³, e profondità h = 3 km = 3 × 10³ m. Poi Δp = ρ·g·h = 1,03 × 10³ × 9,8 × 3 × 10³ = 3,0 × 10⁷ Pa (circa 300 atmosfere!). Le trappole: '1,03 × 9,8 × 3 × 10³ = 3,0 × 10⁴' dimentica di convertire la densità da kg/dm³ a kg/m³ (manca un × 10³). '1,03 × 9,8 × 3 = 30' dimentica DUE conversioni: densità e km in m. '1,03 × 10³ × 3 × 10³' omette la gravità g. L'ultima usa una densità sbagliata, 10⁴ invece di 10³ (un fattore 10 di troppo). Regola: converti SEMPRE tutto in unità SI (kg/m³ e m) prima di moltiplicare.",
+    "tags": ["prova d'esame"]
+  }
+]

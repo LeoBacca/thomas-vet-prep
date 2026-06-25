@@ -1,0 +1,98 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u6-01">
+
+Le molecole organiche sono fatte quasi tutte di **carbonio e idrogeno**: una specie di "scheletro" un po' noioso, che da solo fa poco. La parte interessante è un **piccolo pezzetto attaccato a questo scheletro**: si chiama **gruppo funzionale**. È proprio quel pezzetto a decidere come si comporta la molecola, cosa fa e con chi reagisce.
+
+Pensa a tante magliette bianche tutte uguali (lo scheletro). Quello che cambia tutto è la **scritta o il simbolo stampato sopra**: una è da medico, una da pompiere, una da arbitro. Il gruppo funzionale è quel simbolo: cambia il "ruolo" della molecola.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il gruppo funzionale è il "pezzo speciale" della molecola. Lo scheletro di carbonio cambia poco; è il gruppo funzionale a decidere proprietà e reattività. Stesso gruppo → comportamento simile.</div>
+
+<Diagram caption="Tabella dei principali gruppi funzionali e di cosa si occupano" code={`flowchart TB
+  T["Principali gruppi funzionali"] --> OH["Ossidrile -OH<br/>famiglia: alcoli<br/>es. etanolo (l'alcol del vino)"]
+  T --> CO["Carbonile C=O<br/>famiglia: aldeidi e chetoni<br/>es. acetone, zuccheri"]
+  T --> COOH["Carbossile -COOH<br/>famiglia: acidi carbossilici<br/>es. acido acetico (aceto)"]
+  T --> NH2["Amminico -NH2<br/>famiglia: ammine<br/>es. amminoacidi"]`} />
+
+## Cos'è davvero un gruppo funzionale
+
+Un **gruppo funzionale** è un piccolo gruppo di atomi (per esempio -OH oppure -COOH) che si attacca allo scheletro di carbonio della molecola. Quel gruppetto è la **parte attiva**: è lì che avvengono le reazioni.
+
+La cosa più utile è questa: **molecole diverse, ma con lo stesso gruppo funzionale, si comportano in modo simile**. Una volta imparato cosa fa il gruppo -OH, lo riconosci in mille molecole diverse e sai già cosa aspettarti.
+
+È un po' come la **patente**: due persone molto diverse, se hanno entrambe la patente, sanno entrambe guidare. Il "saper guidare" è la proprietà che dà la patente, non la persona.
+
+## Perché contano (e dove li trovi nel corpo)
+
+I gruppi funzionali contano perché spiegano **due cose**: le **proprietà** (per esempio se una sostanza si scioglie in acqua) e la **reattività** (con chi e come reagisce). Sono la chiave per capire la chimica organica senza imparare ogni molecola a memoria.
+
+E sono ovunque nel **corpo**, ecco perché ti servono per medicina e veterinaria:
+
+- Gli **amminoacidi**, i mattoni delle proteine, hanno **due** gruppi funzionali: un gruppo amminico (-NH2) e un gruppo carbossilico (-COOH). Sono proprio loro a permettere agli amminoacidi di legarsi tra loro e costruire le proteine.
+- Il gruppo **-OH** (ossidrile) rende le molecole più "amiche dell'acqua", cioè più solubili: per questo gli zuccheri, pieni di -OH, si sciolgono bene nel sangue.
+- Il gruppo **carbonile (C=O)** lo trovi negli zuccheri e in moltissime molecole del metabolismo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> impari pochi gruppi funzionali e capisci tantissime molecole, comprese quelle del corpo. È il "trucco" per studiare meno e capire di più.</div>
+
+## Come leggere la tabella
+
+Non devi imparare tutto subito. Parti dai **quattro più importanti**: ossidrile (-OH), carbonile (C=O), carbossile (-COOH) e amminico (-NH2). Per ognuno tieni a mente tre cose: **com'è fatto**, **come si chiama la famiglia** che lo contiene e **un esempio della vita di tutti i giorni**.
+
+<Diagram caption="I quattro gruppi funzionali di base: simbolo, famiglia ed esempio" code={`flowchart LR
+  A["-OH ossidrile"] --> A2["alcoli<br/>esempio: etanolo"]
+  B["C=O carbonile"] --> B2["aldeidi e chetoni<br/>esempio: acetone"]
+  C["-COOH carbossile"] --> C2["acidi carbossilici<br/>esempio: aceto"]
+  D["-NH2 amminico"] --> D2["ammine<br/>esempio: amminoacidi"]`} />
+
+## Guarda il video
+
+<YouTube id="KAPMZ68Rdu4" title="I gruppi funzionali — Chimica Organica (La Chimica per Tutti!)" />
+
+<VideoVisto id="chim-u6-01" />
+
+## Da ricordare
+
+- Il **gruppo funzionale** è il "pezzo speciale" attaccato allo scheletro di carbonio: decide tutto.
+- Determina **proprietà** (es. solubilità in acqua) e **reattività** (con chi reagisce la molecola).
+- Stesso gruppo funzionale → **comportamento simile**, anche in molecole diverse.
+- I quattro di base: **-OH** (alcoli), **C=O** (aldeidi e chetoni), **-COOH** (acidi), **-NH2** (ammine).
+- Sono ovunque nel **corpo**: gli amminoacidi delle proteine hanno sia -NH2 sia -COOH.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Che cos'è un gruppo funzionale?"
+  opzioni={["L'intero scheletro di carbonio della molecola", "Un piccolo gruppo di atomi che determina proprietà e reattività della molecola", "Il nome scientifico di una molecola", "Un tipo di legame chimico"]}
+  corretta={1}
+  spiegazione="Il gruppo funzionale è il pezzetto attivo attaccato allo scheletro: è lui a decidere come si comporta e reagisce la molecola."
+/>
+
+<Quiz
+  domanda="Due molecole diverse hanno lo stesso gruppo funzionale -OH. Cosa possiamo aspettarci?"
+  opzioni={["Che siano la stessa molecola", "Che abbiano proprietà e reattività simili", "Che non reagiscano mai", "Che non c'entrino nulla tra loro"]}
+  corretta={1}
+  spiegazione="Lo stesso gruppo funzionale dà un comportamento simile: è proprio questo che rende utili i gruppi funzionali per studiare la chimica organica."
+/>
+
+<Quiz
+  domanda="Quali gruppi funzionali ha un amminoacido, il mattone delle proteine?"
+  opzioni={["Solo -OH", "Un gruppo amminico (-NH2) e un gruppo carbossilico (-COOH)", "Solo C=O", "Nessun gruppo funzionale"]}
+  corretta={1}
+  spiegazione="Ogni amminoacido ha sia il gruppo amminico (-NH2) sia il gruppo carbossilico (-COOH): grazie a questi si lega agli altri amminoacidi e forma le proteine."
+/>
+
+<Esercizio
+  problema="L'aceto deve il suo sapore acido all'acido acetico. Sapendo che il gruppo funzionale tipico degli acidi è il carbossile, indica quale gruppo funzionale contiene l'acido acetico e a quale famiglia appartiene."
+  soluzione="L'acido acetico contiene il gruppo carbossile (-COOH) e appartiene alla famiglia degli acidi carbossilici. È proprio questo gruppo a rendere la molecola un acido, e quindi a dare all'aceto il suo sapore aspro."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,123 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-11">
+
+Il tuo sangue ha un **pH**, cioè un valore che dice quanto è acido o basico. Nel sangue questo numero deve restare quasi fisso, intorno a **7,4** (cioè un pizzico basico). Se si sposta anche solo di poco, stai male sul serio. Per tenerlo fermo il corpo usa dei **tamponi**: delle squadre di pronto intervento chimiche che assorbono acidi e basi in eccesso. Qui vediamo come funzionano, in modo semplice.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un <strong>tampone</strong> è come l'ammortizzatore di un'auto. La strada ha buche (acidi e basi in arrivo), ma l'ammortizzatore assorbe i colpi e tu dentro l'auto quasi non li senti. Così il pH del sangue resta liscio, vicino a 7,4.</div>
+
+## Cos'è il pH (in due parole)
+
+Il **pH** è una scala da 0 a 14 che misura quanto è acido qualcosa:
+
+- numeri **bassi** (0–6) = **acido** (succo di limone, aceto, succhi gastrici dello stomaco);
+- numero **7** = **neutro** (acqua pura);
+- numeri **alti** (8–14) = **basico** (sapone, bicarbonato).
+
+Il sangue sta a **7,4**: appena sopra il neutro. La cosa importante non è il numero in sé, ma che **non si muova**. La finestra buona è strettissima: circa da 7,35 a 7,45. Fuori da lì, gli enzimi del corpo (i piccoli operai che fanno funzionare le cellule) smettono di lavorare bene.
+
+## Cos'è un tampone e perché serve
+
+Un **tampone** è una coppia di sostanze che lavorano in squadra: una pronta a **catturare acido**, l'altra pronta a **catturare base**. Qualunque cosa arrivi, una delle due la neutralizza, e il pH resta quasi uguale.
+
+Il corpo non usa un solo tampone, ma più squadre insieme:
+
+- **bicarbonato** (la squadra principale del sangue, legata al respiro);
+- **fosfato** (lavora soprattutto dentro le cellule e nelle urine, dove i reni buttano fuori l'acido);
+- **proteine** (per esempio l'emoglobina nei globuli rossi: sono tante e tamponano in continuazione).
+
+<Diagram caption="Un tampone è una coppia che assorbe sia acidi che basi" code={`flowchart TB
+  T["TAMPONE = coppia che fa da ammortizzatore"]
+  T --> A["Arriva ACIDO in piu<br/>la base della coppia lo cattura"]
+  T --> B["Arriva BASE in piu<br/>l'acido della coppia la cattura"]
+  A --> R["Risultato: il pH resta vicino a 7,4"]
+  B --> R`} />
+
+## Il tampone bicarbonato: la squadra del respiro
+
+Questa è la più importante del sangue, e ha un trucco geniale: è collegata a **polmoni** e **reni**, quindi il corpo la può regolare in tempo reale.
+
+Funziona così. La **CO2** (l'anidride carbonica, lo scarto che produci respirando) si scioglie nel sangue e diventa **acido carbonico**, che a sua volta si spezza in **bicarbonato** + uno **ione acido** (H+). È tutto un equilibrio che va avanti e indietro:
+
+`CO2 + H2O <-> H2CO3 <-> HCO3- + H+`
+
+(letto a parole: anidride carbonica più acqua danno acido carbonico, che dà bicarbonato più ione acido).
+
+Il bello è che il corpo controlla i due lati di questa bilancia con due organi diversi:
+
+- i **polmoni** comandano la **CO2**: se respiri più in fretta butti fuori più CO2 (togli acido); se respiri piano la trattieni (aggiungi acido). È una manopola **veloce**, agisce in pochi minuti.
+- i **reni** comandano il **bicarbonato**: lo trattengono o lo buttano nelle urine, e possono anche eliminare l'acido. È una manopola **lenta ma potente**, agisce in ore o giorni.
+
+<Diagram caption="Il tampone bicarbonato regolato da polmoni (CO2) e reni (bicarbonato)" code={`flowchart LR
+  P["POLMONI<br/>regolano la CO2<br/>(veloce, minuti)"] -->|"piu respiro = meno acido"| EQ["CO2 + H2O <-> bicarbonato + acido<br/>pH del sangue ~ 7,4"]
+  R["RENI<br/>regolano il bicarbonato<br/>(lenti, ore-giorni)"] -->|"trattengono o eliminano"| EQ`} />
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina una bilancia. Da un piatto c'è la CO2 (gestita dai polmoni col respiro), dall'altro il bicarbonato (gestito dai reni). Finché i due piatti restano in proporzione, il pH del sangue sta a 7,4.</div>
+
+## Acidosi e alcalosi: quando la bilancia si sposta
+
+Se il pH del sangue scende **sotto 7,35** (troppo acido), si chiama **acidosi**. Se sale **sopra 7,45** (troppo basico), si chiama **alcalosi**. Sono entrambe pericolose.
+
+Ricorda i due nomi con un trucco: **acid**osi = troppo **acido**; **alcal**osi = troppo **alcalino** (cioè basico).
+
+Esempi semplici e molto "veterinari/medici":
+
+- respiri **troppo poco** (per esempio un problema ai polmoni) → la CO2 si accumula → più acido → **acidosi**;
+- respiri **troppo in fretta** (iperventili per ansia o paura) → butti via troppa CO2 → meno acido → **alcalosi**;
+- **vomito** prolungato → perdi acido dallo stomaco → il sangue diventa più basico → **alcalosi**;
+- **diarrea** forte → perdi bicarbonato dall'intestino → meno difese contro l'acido → **acidosi**.
+
+Per questo, quando un animale o una persona stanno male (vomito, problemi di respiro, reni che non funzionano), una delle prime cose che si controllano è proprio l'equilibrio acido-base del sangue. Capire i tamponi ti aiuta a leggere quei valori.
+
+## Guarda il video
+
+<YouTube id="76ljrYjhKP8" title="Le soluzioni tampone e i sali: il tampone bicarbonato nel sangue — Biologia con Giulia" />
+
+<VideoVisto id="chim-u4-11" />
+
+## Da ricordare
+
+- Il pH del sangue deve restare quasi fermo a **7,4** (finestra stretta: circa 7,35–7,45).
+- Un **tampone** è una coppia di sostanze che assorbe sia acidi che basi, come un ammortizzatore.
+- I tamponi principali del corpo sono **bicarbonato** (nel sangue), **fosfato** (cellule e urine) e **proteine** (es. emoglobina).
+- Il tampone **bicarbonato** è regolato dai **polmoni** (CO2, veloci) e dai **reni** (bicarbonato, lenti).
+- **Acidosi** = sangue troppo acido (pH basso); **alcalosi** = sangue troppo basico (pH alto).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Intorno a quale valore deve restare il pH del sangue?"
+  opzioni={["1", "7,4", "10", "14"]}
+  corretta={1}
+  spiegazione="Il pH del sangue sta vicino a 7,4 (un pizzico sopra il neutro). Deve muoversi pochissimo, circa tra 7,35 e 7,45."
+/>
+
+<Quiz
+  domanda="Nel tampone bicarbonato, quale organo regola soprattutto la CO2, ed è la manopola veloce?"
+  opzioni={["i reni", "i polmoni", "lo stomaco", "il fegato"]}
+  corretta={1}
+  spiegazione="I polmoni regolano la CO2 col respiro, in pochi minuti. I reni invece regolano il bicarbonato, ma sono piu lenti."
+/>
+
+<Quiz
+  domanda="Come si chiama la condizione in cui il sangue diventa troppo acido (pH sotto 7,35)?"
+  opzioni={["alcalosi", "acidosi", "neutralita", "ipertensione"]}
+  corretta={1}
+  spiegazione="Si chiama acidosi (acid- = acido). Quando invece il sangue e troppo basico, pH sopra 7,45, si chiama alcalosi."
+/>
+
+<Esercizio
+  problema="Una persona iperventila per la paura, cioè respira molto in fretta e butta fuori tantissima CO2. La CO2 è il lato 'acido' del tampone bicarbonato. Il suo sangue diventerà più acido o più basico? E come si chiama questa condizione?"
+  soluzione="Buttando fuori troppa CO2 toglie acido dal sangue, quindi il pH sale: il sangue diventa piu basico. Questa condizione si chiama alcalosi (in questo caso respiratoria, perche causata dal respiro)."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,25 @@
+{
+ "id": "chim-u2-11",
+ "titolo": "Innalzamento ebullioscopico e abbassamento crioscopico",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "11-innalzamento-ebullioscopico-e-abbassamento-crioscopico",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u2/11-innalzamento-ebullioscopico-e-abbassamento-crioscopico.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Quale dei seguenti composti, a concentrazione 1 M in acqua, provoca il maggiore incremento del punto di ebollizione della soluzione?",
+   "choices": [
+    "CaCl2",
+    "NaCl",
+    "KCl",
+    "Glucosio",
+    "Saccarosio"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

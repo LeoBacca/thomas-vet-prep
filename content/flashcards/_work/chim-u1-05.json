@@ -1,0 +1,39 @@
+{
+ "id": "chim-u1-05",
+ "titolo": "I numeri quantici e gli orbitali",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "05-i-numeri-quantici-e-gli-orbitali",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u1/05-i-numeri-quantici-e-gli-orbitali.mdx",
+ "examQuestions": [
+  {
+   "year": "2019",
+   "q": "Quale delle seguenti serie di numeri quantici riferite a un elettrone è possibile?",
+   "choices": [
+    "n = 4; l = 2; m = -2; ms = +1/2",
+    "n = 3; l = 3; m = +2; ms = +1/2",
+    "n = 4; l = 1; m = -2; ms = -1/2",
+    "n = 2; l = 2; m = -2; ms = -1/2",
+    "n = 3; l = 0; m = 1; ms = +1/2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Quale delle seguenti quaterne di numeri quantici riferite a un elettrone è possibile?",
+   "choices": [
+    "n = 3; l = 1; m = 0; ms = -1/2",
+    "n = 3; l = 1; m = -1/2; ms = 0",
+    "n = 2; l = 3; m = 0; ms = +1/2",
+    "n = 2; l = 3; m = +1/2; ms = 0",
+    "n = 3; l = 1; m = 4; ms = +1/2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "id": "bio-u3-09",
+ "titolo": "Livelli di controllo dell'espressione genica negli eucarioti",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "09-livelli-di-controllo-dellespressione-genica-negli",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u3/09-livelli-di-controllo-dellespressione-genica-negli.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "Il differenziamento di una cellula eucariotica è dovuto a:",
+   "choices": [
+    "espressione selettiva di geni specifici",
+    "delezione selettiva di geni specifici",
+    "amplificazione selettiva di geni specifici",
+    "espressione simultanea di tutti i geni",
+    "inibizione della mitosi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

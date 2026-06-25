@@ -1,0 +1,95 @@
+{
+ "id": "bio-u1-01",
+ "titolo": "L'albero della vita, gli organismi e la teoria cellulare",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "01-lalbero-della-vita-gli-organismi-e",
+ "freq": 6,
+ "risorseMdx": "src/pages/risorse/biologia/u1/01-lalbero-della-vita-gli-organismi-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Indicare la frase corretta.",
+   "choices": [
+    "Gli animali ed i funghi sono eterotrofi",
+    "Gli animali ed i funghi sono autotrofi",
+    "Le piante sono eterotrofe",
+    "Tutti i batteri sono eterotrofi",
+    "Le piante sono eterotrofe di notte"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2010",
+   "q": "Quale delle seguenti affermazioni è corretta?",
+   "choices": [
+    "Gli autotrofi possono nutrirsi a partire da CO2 e da altre sostanze inorganiche",
+    "Solo gli eterotrofi hanno bisogno di assumere composti chimici dall'ambiente",
+    "La respirazione cellulare è presente soltanto negli eterotrofi",
+    "Soltanto gli autotrofi contengono mitocondri",
+    "Soltanto gli eterotrofi richiedono la presenza di ossigeno"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2018",
+   "q": "I lieviti sono:",
+   "choices": [
+    "funghi",
+    "piante",
+    "animali",
+    "protisti",
+    "eubatteri"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2019",
+   "q": "Per quale motivo i protisti e i batteri sono classificati in domini differenti?",
+   "choices": [
+    "I protisti sono eucarioti, i batteri sono procarioti",
+    "I protisti sono pluricellulari, i batteri sono unicellulari",
+    "I protisti sono autotrofi, i batteri sono eterotrofi",
+    "I protisti e i batteri si trovano a un diverso livello della catena alimentare",
+    "I protisti sono organismi decompositori, i batteri no"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Quale tra le componenti dell'elenco presenta dimensioni maggiori?",
+   "choices": [
+    "Ovulo",
+    "Piastrina",
+    "Mitocondrio",
+    "Globulo rosso",
+    "Ribosoma"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Secondo la teoria cellulare:",
+   "choices": [
+    "le cellule sono le unità fondamentali degli organismi viventi",
+    "tutti gli organismi viventi sono pluricellulari",
+    "tutti gli organismi derivano dall'unione di due cellule",
+    "le cellule possono formarsi a partire da anidride carbonica e acqua",
+    "le cellule prive di organuli non sono viventi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u3-01-1",
+    "topicId": "chim-u3-01",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "In una reazione chimica, le sostanze di partenza si chiamano reagenti e quelle che ottieni alla fine prodotti. Cosa succede agli atomi durante la reazione?",
+    "choices": [
+      "Spariscono e poi se ne creano di nuovi dal nulla",
+      "Sono sempre gli stessi: si staccano e si riattaccano in combinazioni diverse",
+      "Diventano più pesanti man mano che la reazione procede",
+      "Si trasformano in un elemento chimico completamente diverso"
+    ],
+    "answer": 1,
+    "explain": "Gli atomi sono come mattoncini LEGO: in una reazione li smonti e li rimonti in una forma nuova, ma i pezzi restano gli stessi. Non si creano e non si distruggono, cambiano solo partner. Reagenti → prodotti.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-01-2",
+    "topicId": "chim-u3-01",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: secondo la legge di Lavoisier, se fai reagire 4 g di idrogeno con 32 g di ossigeno in un contenitore chiuso, ottieni esattamente 36 g di acqua.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. La legge di Lavoisier dice che la massa dei reagenti è uguale alla massa dei prodotti: nulla si crea, nulla si distrugge. 4 + 32 = 36 g. Pensa a una bilancia: il peso totale prima e dopo è identico, purché nulla scappi via (per questo serve il contenitore chiuso).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-01-3",
+    "topicId": "chim-u3-01",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "open",
+    "q": "Quando bruci della legna all'aria aperta, alla fine resta solo un po' di cenere che pesa molto meno della legna di partenza. Questo viola la legge di Lavoisier (conservazione della massa)? Spiega.",
+    "answer": "No, non la viola. La massa sembra diminuita solo perché parte dei prodotti se ne va nell'aria sotto forma di fumo e gas (soprattutto anidride carbonica e vapore acqueo) che non riesci a pesare. Se facessi bruciare la legna in un contenitore chiuso, raccogliendo anche tutti i gas, il peso totale prima e dopo sarebbe identico: la massa si conserva sempre. Gli atomi della legna non spariscono, si riarrangiano in nuove sostanze, alcune delle quali volano via.",
+    "explain": "Da ricordare: la massa si conserva sempre, ma solo in un sistema chiuso la vedi 'tornare', perché niente sfugge.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u3-01-4",
+    "topicId": "chim-u3-01",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Una reazione chimica comporta sempre la trasformazione di:",
+    "choices": [
+      "una specie atomica (un elemento) in un'altra specie atomica diversa",
+      "una o più sostanze chimiche in altre sostanze nuove e diverse",
+      "almeno una sostanza che passa solo da solida a liquida o gassosa",
+      "un composto con legami ionici in uno con legami covalenti",
+      "un atomo che diventa progressivamente più pesante"
+    ],
+    "answer": 1,
+    "explain": "La giusta è la 2: una reazione trasforma certe sostanze (reagenti) in sostanze nuove (prodotti), riarrangiando gli stessi atomi. Trappola 1 (e 5): un elemento NON si trasforma in un altro elemento, né un atomo diventa più pesante: questa sarebbe una reazione nucleare, non chimica. Trappola 3: il semplice cambio di stato (solido→liquido→gas) è una trasformazione fisica, non chimica, perché la sostanza resta la stessa. Trappola 4 (fuori tema): cambiare tipo di legame non è il requisito di una reazione, è solo un caso particolare.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u3-01-5",
+    "topicId": "chim-u3-01",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Per la reazione 2 Ca + O2 → 2 CaO, indica l'unica affermazione ERRATA (occhio alla conservazione della massa).",
+    "choices": [
+      "2 atomi di Ca reagiscono con 1 molecola di O2 per dare 2 molecole di CaO",
+      "2 g di Ca reagiscono con 1 g di O2 per dare 2 g di CaO",
+      "2 moli di Ca reagiscono con 1 mole di O2 per dare 2 moli di CaO",
+      "1 mole di Ca reagisce con 0,5 mole di O2 per dare 1 mole di CaO",
+      "4 moli di Ca reagiscono con 2 moli di O2 per dare 4 moli di CaO"
+    ],
+    "answer": 1,
+    "explain": "L'errata è la 2. I numeri davanti alle formule (i coefficienti) contano MOLI o particelle, non grammi: dire '2 g + 1 g danno 2 g' viola perfino la legge di Lavoisier, perché 2 + 1 = 3 e non 2 (la massa non torna!). Le altre sono tutte corrette: la 1 legge i coefficienti come atomi/molecole (giusto); la 3 li legge come moli (giusto); la 4 e la 5 sono solo la stessa reazione moltiplicata o divisa, e i rapporti 2:1:2 restano. Trappola da capire: i coefficienti NON sono grammi.",
+    "tags": ["prova d'esame"]
+  }
+]

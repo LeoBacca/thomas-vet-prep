@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u3-07-1",
+    "topicId": "chim-u3-07",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: all'equilibrio chimico la reazione si ferma del tutto, cioè non succede più niente dentro il becher.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'equilibrio è DINAMICO: la reazione continua nei due sensi (avanti e indietro) alla stessa velocità. Quello che si ferma non è il movimento, ma le quantità di reagenti e prodotti, che restano costanti. È come una scala mobile: tu cammini, lei scende, ma rispetto al pavimento non ti sposti.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-07-2",
+    "topicId": "chim-u3-07",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Una reazione raggiunge l'equilibrio e la sua Keq vale 0,001 (molto minore di 1). All'equilibrio, cosa troveremo dentro il becher?",
+    "choices": [
+      "Soprattutto reagenti: la reazione è andata poco in avanti",
+      "Soprattutto prodotti: la reazione è andata quasi tutta in avanti",
+      "Metà reagenti e metà prodotti, in perfetto pareggio",
+      "Solo acqua, perché i reagenti si sono consumati"
+    ],
+    "answer": 0,
+    "explain": "Keq = prodotti divisi reagenti. Se Keq è molto piccola (0,001), il numeratore (prodotti) è molto più piccolo del denominatore (reagenti): ci sono pochissimi prodotti e tantissimi reagenti. La reazione 'non ce l'ha fatta' ad andare fino in fondo. Metà e metà si avrebbe con Keq vicina a 1. Un aggancio vet: l'emoglobina lega l'ossigeno con una Keq calibrata: né troppo stretta (non lo lascia) né troppo lenta (non lo prende abbastanza).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-07-3",
+    "topicId": "chim-u3-07",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "open",
+    "q": "Spiega con parole tue: cos'è la legge d'azione di massa e cosa ci dice il valore della costante di equilibrio Keq? Fai un esempio di cosa significa Keq grande e Keq piccola.",
+    "answer": "La legge d'azione di massa dice che, quando una reazione raggiunge l'equilibrio, il rapporto tra le concentrazioni dei prodotti (sopra, al numeratore) e quelle dei reagenti (sotto, al denominatore) è sempre lo stesso numero a una certa temperatura: questo numero è la Keq. Per la reazione A + B ⇌ C + D la formula è: Keq = [C] × [D] / ([A] × [B]). Se Keq è grande (molto maggiore di 1) il numeratore è grande: all'equilibrio ci sono soprattutto prodotti, la reazione è andata quasi tutta in avanti. Se Keq è piccola (molto minore di 1) il denominatore è grande: ci sono soprattutto reagenti, la reazione è andata poco in avanti. Keq dipende SOLO dalla temperatura: cambiare le quantità di partenza non cambia questo numero.",
+    "explain": "Da ricordare: Keq = prodotti/reagenti. Grande → tanti prodotti; piccola → tanti reagenti. Cambia solo con la temperatura.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u3-07-4",
+    "topicId": "chim-u3-07",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Si dice che una reazione raggiunge lo stato di equilibrio chimico quando:",
+    "choices": [
+      "la velocità della reazione diretta è uguale alla velocità della reazione inversa",
+      "inizia ad avvenire la reazione inversa",
+      "la velocità della reazione diretta si riduce a zero",
+      "si esauriscono completamente tutti i reagenti",
+      "la temperatura del sistema scende fino a zero"
+    ],
+    "answer": 0,
+    "explain": "L'equilibrio non significa stop: significa PAREGGIO di velocità. La reazione continua in avanti e indietro, ma alla stessa velocità, quindi le concentrazioni non cambiano più. Trappola 'inizia la reazione inversa': quella parte subito, molto prima dell'equilibrio, non è il momento in cui si raggiunge l'equilibrio. Trappola 'velocità diretta a zero': è l'opposto esatto, vorrebbe dire che la reazione si ferma del tutto (non è equilibrio, sarebbe una reazione completa). 'Reagenti esauriti' è il filler: una reazione all'equilibrio ha ancora reagenti presenti. La temperatura è fuori tema: non definisce l'equilibrio.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u3-07-5",
+    "topicId": "chim-u3-07",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "La reazione in fase acquosa A + B ⇌ AB ha una costante di equilibrio Kc = 50. Se all'equilibrio le concentrazioni molari di A e AB sono uguali (chiamiamole entrambe 'x'), quale sarà la concentrazione molare di B?",
+    "choices": [
+      "0,02 M",
+      "0,2 M",
+      "50 M",
+      "25 M",
+      "7,07 M"
+    ],
+    "answer": 0,
+    "explain": "Scrivi la Kc con la legge d'azione di massa: Kc = [AB] / ([A] × [B]). Sostituiamo: [AB] = x e [A] = x, quindi 50 = x / (x × [B]). La x al numeratore e quella dentro al denominatore si cancellano, resta 50 = 1 / [B], da cui [B] = 1/50 = 0,02 M. Trappola 0,2 M: chi divide per 5 invece che per 50 (calcolo sbagliato). Trappola 50 M: chi copia direttamente il valore di Kc come concentrazione, senza fare il conto. Trappola 25 M: chi divide Kc per 2 senza motivo. Trappola 7,07 M: chi calcola la radice quadrata di 50 (confonde con un'altra formula). Il trucco: quando [A] = [AB] si cancellano e basta invertire Kc.",
+    "tags": ["prova d'esame"]
+  }
+]

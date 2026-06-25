@@ -1,0 +1,128 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u3-10">
+
+## Cos'è la tensione superficiale?
+
+Immagina di appoggiare delicatamente un ago su dell'acqua: invece di affondare, galleggia. Questo succede per la **tensione superficiale**.
+
+Le molecole di un liquido si attraggono tra loro (forze di coesione). Quelle al centro del liquido sono tirate in tutte le direzioni e si bilanciano. Quelle in superficie, però, hanno vicine solo le molecole sotto e di lato: vengono tirate verso il basso e di lato, formando una specie di **pellicola elastica tesa** sulla superficie.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La superficie del liquido si comporta come una pelle tesa: può sostenere oggetti leggeri e fa formare gocce sferiche.</div>
+
+La tensione superficiale si indica con la lettera greca **γ** (gamma) e si misura in **N/m** (newton al metro), oppure in J/m² (energia per unità di area).
+
+---
+
+## Perché le gocce sono tonde?
+
+Una goccia d'acqua nell'aria tende a diventare **sferica**. Il motivo è semplice: la sfera è la forma che ha la **minore superficie possibile** per un dato volume. La tensione superficiale cerca sempre di ridurre l'area della superficie al minimo.
+
+---
+
+## La legge di Laplace
+
+Dentro una bolla o una goccia, la pressione interna è **maggiore** di quella esterna. Questo perché la pellicola superficiale tesa "schiaccia" il fluido verso l'interno.
+
+La **legge di Laplace** dice esattamente di quanto è più grande la pressione interna rispetto all'esterna.
+
+Per una **goccia sferica** (una sola superficie):
+
+**ΔP = 2γ / R**
+
+Per una **bolla di sapone** (ha due superfici, quella interna e quella esterna):
+
+**ΔP = 4γ / R**
+
+Dove:
+- **ΔP** = differenza di pressione interno/esterno (Pa)
+- **γ** = tensione superficiale (N/m)
+- **R** = raggio della bolla o della goccia (m)
+
+**Cosa dice in pratica?** Più la bolla è **piccola** (R piccolo), più la pressione interna è **alta**. Ecco perché gonfiare un palloncino è difficile all'inizio (quando è piccolo) e diventa più facile man mano che si allarga.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le bolle piccole hanno più pressione dentro; le bolle grandi ne hanno meno. La legge di Laplace collega il raggio alla differenza di pressione.</div>
+
+<Diagram caption="Legge di Laplace: pressione e raggio in una goccia e in una bolla di sapone" code={`flowchart TB
+  A["Tensione superficiale γ<br/>pellicola tesa sulla superficie"] --> B["Goccia sferica<br/>una sola superficie"]
+  A --> C["Bolla di sapone<br/>due superfici"]
+  B --> D["ΔP = 2γ / R"]
+  C --> E["ΔP = 4γ / R"]
+  D --> F["R piccolo → ΔP grande<br/>R grande → ΔP piccolo"]
+  E --> F`} />
+
+---
+
+## Cos'è la capillarità?
+
+Prendi un tubicino molto stretto (capillare) e mettilo in un bicchiere d'acqua: il liquido **sale** nel tubo, sopra il livello del bicchiere. È la **capillarità**.
+
+Succede per la combinazione di due forze:
+- **Coesione**: le molecole d'acqua si attraggono tra loro.
+- **Adesione**: le molecole d'acqua sono attratte dalle pareti del tubo (es. vetro).
+
+Se l'adesione è più forte della coesione (come tra acqua e vetro), il liquido **sale** e forma un menisco concavo (bordi alti, centro basso).
+
+Se invece la coesione è più forte dell'adesione (come col mercurio e il vetro), il liquido **scende** e forma un menisco convesso (bordi bassi, centro alto).
+
+### Quanto sale il liquido?
+
+L'altezza h raggiunta nel capillare è:
+
+**h = 2γ cosθ / (ρ g r)**
+
+Dove:
+- **γ** = tensione superficiale
+- **θ** = angolo di contatto tra liquido e parete
+- **ρ** = densità del liquido
+- **g** = accelerazione di gravità
+- **r** = raggio del capillare
+
+**Regola pratica:** Tubo più **stretto** → liquido sale più **in alto**.
+
+<Diagram caption="Capillarità: confronto tra liquido che sale (adesione forte) e liquido che scende (coesione forte)" code={`flowchart LR
+  A["Tubo capillare stretto"] --> B["Adesione maggiore della coesione<br/>es. acqua e vetro"]
+  A --> C["Coesione maggiore dell'adesione<br/>es. mercurio e vetro"]
+  B --> D["Liquido SALE<br/>menisco concavo"]
+  C --> E["Liquido SCENDE<br/>menisco convesso"]
+  D --> F["h = 2γ cosθ / ρgr<br/>più stretto → più alto"]`} />
+
+---
+
+## Perché è importante in veterinaria?
+
+- La **capillarità** è fondamentale nei tessuti biologici: il sangue scorre nei capillari sanguigni anche contro la gravità.
+- La **tensione superficiale** conta nei polmoni: il surfattante polmonare riduce γ e permette agli alveoli di non collassare.
+- La legge di Laplace spiega perché gli alveoli più piccoli tenderebbero a svuotarsi in quelli più grandi (instabilità alveolare), meccanismo chiave in patologie respiratorie.
+
+---
+
+## Guarda il video
+<YouTube id="iWnxJ455aNY" title="Legge di Laplace con Dimostrazione. Tensione Superficiale e Bolle di Sapone" />
+<VideoVisto id="fis-u3-10" />
+
+## Da ricordare
+- La tensione superficiale è la "pelle elastica" sulla superficie di un liquido, causata dalle forze di coesione tra molecole.
+- La legge di Laplace: ΔP = 2γ/R per una goccia, ΔP = 4γ/R per una bolla; più piccola è la bolla, più alta è la pressione interna.
+- La capillarità fa salire (o scendere) i liquidi nei tubi stretti: tubo più stretto significa salita maggiore, e ha un ruolo chiave nei tessuti biologici.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una bolla di sapone ha raggio R e tensione superficiale γ. Qual è la differenza di pressione tra interno ed esterno?" opzioni={["ΔP = γ / R", "ΔP = 2γ / R", "ΔP = 4γ / R", "ΔP = 8γ / R"]} corretta={2} spiegazione="La bolla di sapone ha due superfici (interna ed esterna), quindi si applica ΔP = 4γ/R. La formula ΔP = 2γ/R vale per una goccia sferica con una sola superficie." />
+
+<Quiz domanda="In un tubo capillare immerso in acqua, se si dimezza il raggio del tubo, l'altezza raggiunta dall'acqua:" opzioni={["rimane uguale", "si dimezza", "raddoppia", "si quadruplica"]} corretta={2} spiegazione="Dalla formula h = 2γ cosθ / (ρ g r), l'altezza h è inversamente proporzionale al raggio r. Se r si dimezza, h raddoppia." />
+
+<Quiz domanda="Quale fenomeno spiega perché gli insetti come il ragno d'acqua riescono a camminare sulla superficie dell'acqua senza affondarci?" opzioni={["Galleggiamento (spinta di Archimede)", "Tensione superficiale", "Capillarità", "Legge di Pascal"]} corretta={1} spiegazione="È la tensione superficiale: la pellicola elastica sulla superficie dell'acqua, generata dalle forze di coesione tra le molecole, può sostenere oggetti leggeri come gli insetti." />
+
+<Esercizio problema="Una goccia sferica di acqua ha raggio R = 0,5 mm = 0,0005 m. La tensione superficiale dell'acqua è γ = 0,072 N/m. Calcola la differenza di pressione tra l'interno e l'esterno della goccia." soluzione="Per una goccia sferica si usa ΔP = 2γ / R. Sostituendo: ΔP = 2 × 0,072 / 0,0005 = 0,144 / 0,0005 = 288 Pa. La pressione interna è quindi 288 Pa maggiore di quella esterna." />
+
+</section>
+
+</RisorsaLayout>

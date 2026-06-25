@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u3-06-1",
+    "topicId": "fis-u3-06",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: quando un tubo si restringe, il fluido al suo interno rallenta perché c'è meno spazio.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. È il contrario: quando il tubo si restringe, il fluido ACCELERA. Pensa al pollice sul rubinetto — stringi il foro e il getto schizza più forte. È l'equazione di continuità: A·v = costante. Sezione piccola → velocità alta, per far passare la stessa quantità d'acqua al secondo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-06-2",
+    "topicId": "fis-u3-06",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Il sangue nei capillari sani scorre in modo silenzioso e ordinato, in strati paralleli che non si mescolano. Come si chiama questo tipo di moto?",
+    "choices": [
+      "Moto laminare: gli strati del fluido scivolano uno sull'altro senza turbolenze",
+      "Moto turbolento: si formano vortici e il moto è caotico",
+      "Moto stazionario: la velocità non cambia nel tempo in nessun punto",
+      "Moto di Poiseuille: dipende solo dalla viscosità del fluido"
+    ],
+    "answer": 0,
+    "explain": "Moto laminare = fluido ordinato in 'lamine' (strati) paralleli che scivolano senza mischiarsi, come le corsie di un'autostrada a velocità costante. Il sangue nei capillari sani è laminare e silenzioso. Quando un'arteria si restringe (stenosi), il sangue può diventare turbolento — ed è lì che si sentono i soffi cardiaci. Il moto stazionario (opzione C) è una proprietà diversa: dice che le grandezze non cambiano nel tempo, ma non dice nulla sull'ordine del moto.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u3-06-3",
+    "topicId": "fis-u3-06",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "open",
+    "q": "Cos'è la portata Q e come si calcola? Spiega anche cosa succede alla velocità del sangue quando un'arteria si restringe per una placca (stenosi), usando l'equazione di continuità.",
+    "answer": "La portata Q è 'quanta quantità di fluido passa attraverso una sezione in un secondo'. Si misura in m³/s e si calcola con: Q = A · v, dove A è l'area della sezione del tubo (m²) e v è la velocità del fluido (m/s). L'equazione di continuità dice che, se il tubo non perde fluido, la portata resta la stessa ovunque: A₁ · v₁ = A₂ · v₂. Applicata all'arteria con stenosi: la placca restringe la sezione (A₂ < A₁), quindi per mantenere la stessa portata la velocità deve aumentare (v₂ > v₁). Se l'arteria si restringe a un quarto della sezione, la velocità quadruplica. Questo aumento brusco di velocità può innescare moto turbolento — ed è il meccanismo fisico alla base dei soffi cardiaci.",
+    "explain": "Da ricordare: Q = A·v; se A diminuisce, v aumenta. Stenosi → velocità alta → possibile turbolenza → soffi cardiaci.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u3-06-4",
+    "topicId": "fis-u3-06",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Qual è il termine usato per descrivere il flusso continuo a traiettorie rettilinee di un fluido senza turbolenze nemmeno a livello microscopico?",
+    "choices": [
+      "Flusso laminare",
+      "Flusso turbolento",
+      "Flusso viscoso",
+      "Flusso di Poiseuille",
+      "Flusso stazionario"
+    ],
+    "answer": 0,
+    "explain": "Il flusso laminare è il flusso ordinato per definizione: traiettorie rettilinee, strati paralleli, nessun vortice anche a livello microscopico. È la risposta giusta. Le trappole: 'flusso turbolento' è l'opposto esatto — caotico, con vortici; 'flusso viscoso' descrive una proprietà del fluido (la sua resistenza interna) ma non il tipo di moto; 'flusso di Poiseuille' è il profilo di velocità a parabola tipico del moto laminare in tubi cilindrici, è un caso specifico non la definizione generale; 'flusso stazionario' indica che le grandezze non cambiano nel tempo in un punto fisso, ma un flusso stazionario può essere sia laminare che turbolento — non è la risposta alla domanda.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u3-06-5",
+    "topicId": "fis-u3-06",
+    "materia": "fisica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Un fluido si muove in un tubo con una velocità di 5 m/s. Se l'area della sezione trasversale è di 0,2 m², quanto vale la portata volumetrica Q?",
+    "choices": [
+      "1 m³/s",
+      "0,5 m³/s",
+      "10 m³/s",
+      "5 m³/s",
+      "2 m³/s"
+    ],
+    "answer": 0,
+    "explain": "La formula è Q = A · v = 0,2 m² × 5 m/s = 1 m³/s. Risposta corretta: 1 m³/s. Le trappole: '0,5 m³/s' è la metà del risultato giusto, l'errore di chi non moltiplica bene per un numero minore di 1 (per esempio scambia 0,2 con 0,1: 0,1 × 5 = 0,5); '10 m³/s' viene da chi legge 0,2 come se fosse 2 (2 × 5 = 10); '5 m³/s' è chi copia la velocità senza inserirla nella formula; '2 m³/s' è un valore-trappola senza un calcolo corretto dietro. Regola: portata = area × velocità, e il risultato è in m³/s.",
+    "tags": ["prova d'esame"]
+  }
+]

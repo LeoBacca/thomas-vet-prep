@@ -1,0 +1,95 @@
+{
+ "id": "chim-u1-20",
+ "titolo": "Le interazioni deboli: legame a idrogeno e forze di van der Waals",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "20-le-interazioni-deboli-legame-a-idrogeno",
+ "freq": 6,
+ "risorseMdx": "src/pages/risorse/chimica/u1/20-le-interazioni-deboli-legame-a-idrogeno.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "Il legame idrogeno:",
+   "choices": [
+    "è un legame di natura elettrostatica",
+    "si forma solo tra due atomi di idrogeno",
+    "si forma solo tra idrogeno ed ossigeno",
+    "si forma tra idrogeno ed un altro atomo molto elettropositivo",
+    "è un legame forte"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2015",
+   "q": "Date le tre coppie di sostanze indicate di seguito, si identifichi per ogni coppia quale sostanza presenta forze intermolecolari maggiori. 1. CH4 e CBr4; 2. N2 e NO; 3. CH3CH2CH2NH2 e (CH3)3N. [Si assumano temperatura e pressione standard (STP)]",
+   "choices": [
+    "1: CBr4, 2: NO, 3: CH3CH2CH2NH2",
+    "1: CBr4, 2: N2, 3: (CH3)3N",
+    "1: CBr4, 2: N2, 3: CH3CH2CH2NH2",
+    "1: CH4, 2: NO, 3: (CH3)3N",
+    "1: CH4, 2: N2, 3: (CH3)3N"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2015",
+   "q": "L'ammoniaca (NH3) ha un punto di ebollizione pari a -33 °C. La fosfina (PH3) ha invece un punto di ebollizione pari a -88 °C. Quale delle seguenti affermazioni spiega perché hanno punti di ebollizione così differenti?",
+   "choices": [
+    "La NH3 forma ponti idrogeno intermolecolari più facilmente della PH3",
+    "La NH3 è una molecola più grande della PH3",
+    "La NH3 è un composto ionico. La PH3 è un composto molecolare",
+    "La NH3 ha una massa inferiore alla PH3",
+    "La NH3 ha una struttura molto grande. La PH3 ha una struttura molecolare semplice"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2018",
+   "q": "I ponti idrogeno che determinano elevata coesione tra molecole di acqua si formano tra:",
+   "choices": [
+    "un atomo di idrogeno e un atomo di ossigeno di molecole diverse",
+    "due atomi di idrogeno della stessa molecola",
+    "due atomi di idrogeno di molecole diverse",
+    "due atomi di ossigeno di molecole diverse",
+    "un atomo di idrogeno e uno di ossigeno della stessa molecola"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "In quale delle seguenti coppie di molecole un membro può stabilire interazioni intermolecolari con l'altro membro esclusivamente attraverso la formazione di un dipolo istantaneo e di un dipolo istantaneo indotto (forze di London tra molecole apolari)?",
+   "choices": [
+    "I2, Li2",
+    "CO, CO2",
+    "CO, CH4",
+    "CCl4, SO2",
+    "SO2, SO2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2022",
+   "q": "Quale dei seguenti elenchi contiene esclusivamente elementi che, legati covalentemente all'idrogeno, possono originare un gruppo donatore di legami a idrogeno?",
+   "choices": [
+    "Ossigeno, azoto, fluoro",
+    "Sodio, cloro",
+    "Tutti gli elementi del gruppo 16",
+    "Ossigeno, azoto, boro",
+    "Cloro, alluminio"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

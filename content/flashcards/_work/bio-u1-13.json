@@ -1,0 +1,95 @@
+{
+ "id": "bio-u1-13",
+ "titolo": "Gli zuccheri e i carboidrati",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "13-gli-zuccheri-e-i-carboidrati",
+ "freq": 6,
+ "risorseMdx": "src/pages/risorse/biologia/u1/13-gli-zuccheri-e-i-carboidrati.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Il glucosio differisce dal saccarosio perché:",
+   "choices": [
+    "è un monosaccaride",
+    "ha dimensioni maggiori",
+    "è un disaccaride",
+    "è formato esclusivamente da carbonio, idrogeno e ossigeno",
+    "ha maggiore peso molecolare"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2010",
+   "q": "Nei ruminanti la presenza della flora batterica intestinale è importante in quanto gli enzimi batterici e non quelli dei ruminanti sono capaci di:",
+   "choices": [
+    "scindere i legami covalenti tra le molecole di glucosio della cellulosa",
+    "scindere i legami idrogeno tra le molecole di glucosio della cellulosa",
+    "scindere i legami covalenti tra le molecole degli amminoacidi delle proteine vegetali",
+    "facilitare l'assorbimento intestinale del glucosio",
+    "ossidare i monomeri derivati dall'idrolisi della cellulosa"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2015",
+   "q": "Quale/i dei seguenti composti è/sono un carboidrato/i? 1. Deossiribosio; 2. Glicogeno; 3. Maltosio.",
+   "choices": [
+    "Tutti",
+    "Solo 1 e 3",
+    "Solo 2 e 3",
+    "Solo 1 e 2",
+    "Solo 3"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2019",
+   "q": "Quale tra le seguenti affermazioni, riguardanti i polisaccaridi, è corretta?",
+   "choices": [
+    "L'amilopectina e il glicogeno hanno entrambi una struttura ramificata",
+    "La cellulosa ha prevalentemente funzione di riserva energetica",
+    "L'amido è formato prevalentemente da amilopectina, che ha struttura lineare, e da amilosio, che ha struttura ramificata",
+    "Dall'idrolisi dell'amilosio si ottengono molecole di glucosio e dall'idrolisi dell'amilopectina si ottengono molecole di fruttosio",
+    "Il glicogeno è formato da lunghe catene lineari di molecole di glucosio, unite tra loro mediante legami a idrogeno"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2020",
+   "q": "Amido, cellulosa e glicogeno sono:",
+   "choices": [
+    "polimeri del glucosio con diversi livelli di ramificazione",
+    "sostanze di riserva contenute nelle cellule vegetali",
+    "sostanze di riserva presenti nelle cellule animali",
+    "costituiti da carbonio, idrogeno, ossigeno e azoto",
+    "molecole con funzione strutturale e di sostegno"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Il fruttosio è un:",
+   "choices": [
+    "esoso",
+    "trioso",
+    "pentoso",
+    "disaccaride",
+    "tetroso"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

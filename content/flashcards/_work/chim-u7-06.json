@@ -1,0 +1,25 @@
+{
+ "id": "chim-u7-06",
+ "titolo": "I carboidrati e i monosaccaridi: struttura e stereochimica",
+ "materia": "chimica",
+ "unita": 7,
+ "slug": "06-i-carboidrati-e-i-monosaccaridi-struttura",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u7/06-i-carboidrati-e-i-monosaccaridi-struttura.mdx",
+ "examQuestions": [
+  {
+   "year": "2018",
+   "q": "Nella molecola del glucosio:",
+   "choices": [
+    "è presente un gruppo funzionale diverso dal gruppo alcolico",
+    "tutti i gruppi funzionali alcolici sono primari",
+    "tutti i gruppi funzionali alcolici sono secondari",
+    "non ci sono gruppi alcolici",
+    "tutti i gruppi funzionali sono alcolici"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

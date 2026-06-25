@@ -1,0 +1,10 @@
+{
+ "id": "bio-u3-05",
+ "titolo": "Telomeri, telomerasi e senescenza replicativa",
+ "materia": "biologia",
+ "unita": 3,
+ "slug": "05-telomeri-telomerasi-e-senescenza-replicativa",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/biologia/u3/05-telomeri-telomerasi-e-senescenza-replicativa.mdx",
+ "examQuestions": []
+}

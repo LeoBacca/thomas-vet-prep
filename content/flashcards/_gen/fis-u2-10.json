@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-10-1",
+    "topicId": "fis-u2-10",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: se raddoppi la forza applicata su un oggetto (mantenendo la stessa massa), la sua accelerazione raddoppia.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Dalla formula a = F / m: se F raddoppia e m non cambia, anche a raddoppia. Forza e accelerazione sono direttamente proporzionali, come il gas sul pedale dell'acceleratore di un'auto: piede doppio, spinta doppia, accelerazione doppia.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-10-2",
+    "topicId": "fis-u2-10",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Hai due carrelli del supermercato: uno vuoto (massa piccola) e uno stracolmo (massa grande). Li spingi con la STESSA forza. Quale dei due accelera di meno?",
+    "choices": [
+      "Quello vuoto, perche e piu leggero",
+      "Quello stracolmo, perche ha massa maggiore",
+      "Accelerano uguale, la forza e la stessa",
+      "Dipende dalla direzione in cui li spingi"
+    ],
+    "answer": 1,
+    "explain": "Dalla formula a = F / m: a parita di forza, piu e grande la massa, piu piccola e l'accelerazione. Il carrello pieno offre piu resistenza al cambiamento di moto (inerzia). In veterinaria e lo stesso principio: spostare un bovino da 600 kg richiede molta piu forza di un gatto da 4 kg per ottenere la stessa accelerazione.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-10-3",
+    "topicId": "fis-u2-10",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega con parole tue cosa dice la formula F = m · a e come si usa in due situazioni diverse: (1) vuoi sapere che forza serve per accelerare un oggetto; (2) vuoi sapere che accelerazione ottieni applicando una certa forza.",
+    "answer": "F = m · a dice che la forza applicata a un oggetto e uguale alla sua massa moltiplicata per l'accelerazione che acquista. Le tre variabili si possono ricavare l'una dall'altra: (1) Se so la massa e voglio un certa accelerazione, uso F = m · a per trovare la forza necessaria. Esempio: un cane da 20 kg deve accelerare a 2 m/s² → servono F = 20 × 2 = 40 N. (2) Se conosco la forza e la massa e voglio sapere che accelerazione ottengo, giro la formula: a = F / m. Esempio: spingo con 100 N un trolley da 25 kg → a = 100 / 25 = 4 m/s². La direzione della forza e quella dell'accelerazione sono sempre le stesse: se spingi a destra, il corpo accelera a destra.",
+    "explain": "Da ricordare: F = m · a si puo girare in a = F / m o m = F / a. Forza e accelerazione puntano sempre nella stessa direzione.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-10-4",
+    "topicId": "fis-u2-10",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un blocco di 2 kg e spinto da una forza F = 2 N orizzontale ma accelera solo a 0,5 m/s². Cosa puoi concludere sulla forza d'attrito?",
+    "choices": [
+      "Vale 1 N, diretta in senso opposto al moto",
+      "E nulla, perche il blocco si muove",
+      "E ortogonale al piano di appoggio (cioe verticale)",
+      "E uguale a F = 2 N nella stessa direzione",
+      "Cambia continuamente lungo il percorso"
+    ],
+    "answer": 0,
+    "explain": "Applico F = m · a: la forza RISULTANTE (netta) e m · a = 2 × 0,5 = 1 N. Ma la forza applicata e 2 N. Qualcosa manca: 2 N − 1 N = 1 N di attrito, che si oppone al moto. Trappole: 'attrito nullo' e l'opposto esatto, se fosse zero il blocco accelererebbe a pieno (a = 2/2 = 1 m/s², non 0,5). 'Ortogonale al piano' (cioe verticale) non puo frenare il moto orizzontale: l'attrito e sempre parallelo alla superficie. 'Uguale e nella stessa direzione di F' farebbe accelerare ancora di piu, non di meno. 'Varia lungo il percorso' descrive l'attrito dinamico variabile: qui niente ci dice che cambia.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-10-5",
+    "topicId": "fis-u2-10",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Una persona di 65 kg e su una bilancia dentro un ascensore fermo: la bilancia segna 637 N (circa 65 × 9,8). Quando l'ascensore parte e accelera VERSO L'ALTO, la bilancia segna:",
+    "choices": [
+      "Un valore maggiore di 637 N, a causa dell'accelerazione verso l'alto",
+      "Un valore minore di 637 N, a causa dell'accelerazione verso l'alto",
+      "Sempre 637 N, perche la massa non cambia",
+      "Sempre 637 N, perche l'accelerazione e costante",
+      "Sempre 637 N, perche la superficie a contatto col corpo non cambia"
+    ],
+    "answer": 0,
+    "explain": "Quando l'ascensore accelera verso l'alto, la bilancia deve spingere la persona verso l'alto oltre al semplice sostenerla: la forza normale (quella che la bilancia misura) aumenta. Con F = m · a: la forza netta verso l'alto e m · a, quindi la bilancia segna m · g + m · a = m(g + a), un valore maggiore di 637 N. E la stessa sensazione di 'peso' che senti partendo in ascensore rapido o in aereo al decollo. Trappola opposta: 'valore minore' sarebbe vero se l'ascensore accelerasse VERSO IL BASSO (caduta). Le tre risposte '637 N invariato' ignorano tutte che F = m · a dipende dalla forza netta, non solo dalla massa.",
+    "tags": ["prova d'esame"]
+  }
+]

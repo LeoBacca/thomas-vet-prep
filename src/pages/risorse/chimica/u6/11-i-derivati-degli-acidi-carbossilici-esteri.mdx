@@ -1,0 +1,104 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u6-11">
+
+Gli **acidi carbossilici** sono molecole che hanno un pezzo speciale chiamato **gruppo carbossilico** (lo si scrive **-COOH**). Da questo "stampo" la natura costruisce tante molecole simili, cambiando solo l'ultimo pezzettino: sono i **derivati degli acidi carbossilici**. I più importanti sono **esteri**, **tioesteri**, **ammidi** e **anidridi**. Sono fondamentali perché il tuo corpo li usa di continuo: i grassi, le proteine e l'energia delle cellule passano tutti da qui.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina l'acido carbossilico come un attacco LEGO (la parte -CO-). Tieni fisso l'attacco e cambi solo il pezzo che ci agganci sopra: ottieni esteri, tioesteri, ammidi o anidridi. Stessa base, "code" diverse.</div>
+
+Tutti questi derivati hanno in comune lo stesso cuore: un carbonio legato a un ossigeno con doppio legame (si chiama **gruppo acilico**, scritto **-CO-**). A cambiare è solo l'atomo o il gruppo attaccato di fianco. Quel "pezzo che cambia" decide il nome e il carattere della molecola.
+
+<Diagram caption="La famiglia dei derivati acilici: stesso cuore (-CO-), code diverse" code={`flowchart TB
+  ACIDO["Acido carbossilico<br/>-CO-OH<br/>(la molecola di partenza)"] --> CUORE["Tengo fisso il cuore acilico -CO-<br/>e cambio solo il pezzo di fianco"]
+  CUORE --> ESTERE["ESTERE<br/>-CO-O-R<br/>(c'è un Ossigeno + carbonio)"]
+  CUORE --> TIO["TIOESTERE<br/>-CO-S-R<br/>(c'è uno Zolfo, S)"]
+  CUORE --> AMM["AMMIDE<br/>-CO-N<br/>(c'è un Azoto, N)"]
+  CUORE --> ANI["ANIDRIDE<br/>-CO-O-CO-<br/>(due cuori acilici uniti)"]`} />
+
+## Cosa cambia da un derivato all'altro
+
+Il trucco per non confonderti: guarda **quale atomo** sta accanto al cuore acilico.
+
+- **Estere**: accanto c'è un **ossigeno legato a un carbonio** (-O-R). Gli esteri danno spesso un buon profumo: l'odore di banana, ananas e di tanti frutti viene proprio da esteri. In più, i **grassi** che mangi sono esteri (acidi grassi attaccati al glicerolo).
+- **Tioestere**: come l'estere, ma al posto dell'ossigeno c'è uno **zolfo** (-S-R). Pensa allo zolfo come a un cugino "più reattivo" dell'ossigeno.
+- **Ammide**: accanto c'è un **azoto** (-N). È il legame più stabile e robusto della famiglia.
+- **Anidride**: sono **due cuori acilici uniti** da un ossigeno. Come due "mezze molecole" appiccicate insieme.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> per riconoscerli, chiediti solo "chi c'è di fianco al cuore?". Ossigeno-carbonio → estere. Zolfo → tioestere. Azoto → ammide. Un altro cuore acilico → anidride.</div>
+
+## Perché contano in medicina e veterinaria
+
+Questi non sono nomi da imparare a memoria e basta: sono i mattoni della vita.
+
+- **Le ammidi tengono insieme le proteine.** Il legame che unisce un amminoacido all'altro nelle proteine si chiama **legame peptidico**, ed è proprio un legame ammidico. Quindi muscoli, enzimi e anticorpi del corpo sono tenuti insieme da ammidi. La loro **stabilità** (sono il derivato più robusto) è perfetta: il corpo non vuole che le proteine si rompano da sole.
+- **I tioesteri sono la "moneta energetica" delle cellule.** Una molecola fondamentale, l'**acetil-CoA**, è un tioestere. Quando bruci zuccheri e grassi per ricavare energia, passi sempre da lì. Lo zolfo rende il legame **più facile da rompere**, così l'energia si libera quando serve.
+- **Gli esteri sono i grassi.** I trigliceridi (il grasso del corpo e quello del cibo) sono esteri. Anche l'**aspirina** è un estere.
+
+<Diagram caption="Stabilità e ruolo biologico: chi è robusto e chi è reattivo" code={`flowchart LR
+  AMM["AMMIDE<br/>molto stabile/robusta"] --> PROT["Tiene insieme le PROTEINE<br/>(legame peptidico)"]
+  TIO["TIOESTERE<br/>reattivo, energia pronta"] --> ENE["ENERGIA della cellula<br/>(acetil-CoA)"]
+  EST["ESTERE<br/>via di mezzo"] --> GRA["GRASSI e trigliceridi<br/>(riserva di energia)"]`} />
+
+## Una piccola scala di reattività
+
+"Reattivo" vuol dire **quanto facilmente** quel derivato reagisce e si trasforma in un altro. Pensa a quanto è facile staccare il pezzo finale.
+
+- Le **anidridi** sono molto reattive (si trasformano facilmente).
+- I **tioesteri** sono abbastanza reattivi (per questo danno energia pronta).
+- Gli **esteri** stanno nel mezzo.
+- Le **ammidi** sono le più stabili e pigre: reagiscono con difficoltà.
+
+Non serve impararla a memoria adesso. Tienila come idea di fondo: **più è stabile un legame, meno reagisce** (ed è per questo che il corpo usa le ammidi per costruire cose che devono durare, come le proteine).
+
+## Guarda il video
+
+<YouTube id="dJDCanTUfDY" title="Derivati degli acidi carbossilici: gli ESTERI — spiegazione" />
+
+<VideoVisto id="chim-u6-11" />
+
+## Da ricordare
+
+- I derivati degli acidi carbossilici hanno tutti lo **stesso cuore** (-CO-) e cambiano solo il **pezzo di fianco**.
+- **Estere** → ossigeno (-O-R); **tioestere** → zolfo (-S-R); **ammide** → azoto (-N); **anidride** → due cuori acilici uniti.
+- Le **ammidi** sono robuste e formano il **legame peptidico** delle proteine.
+- I **tioesteri** (come l'acetil-CoA) sono la **moneta energetica** delle cellule.
+- Gli **esteri** sono i **grassi** e profumi; più un legame è stabile, meno reagisce.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa hanno in comune tutti i derivati degli acidi carbossilici?"
+  opzioni={["Hanno tutti un atomo di zolfo", "Hanno lo stesso cuore acilico -CO- e cambia solo il pezzo di fianco", "Sono tutti dei profumi", "Non reagiscono mai"]}
+  corretta={1}
+  spiegazione="Il cuore acilico (-CO-) resta sempre uguale: a cambiare è solo l'atomo o gruppo legato accanto (ossigeno, zolfo, azoto...)."
+/>
+
+<Quiz
+  domanda="Quale derivato si trova nel legame peptidico che tiene insieme le proteine?"
+  opzioni={["L'estere", "L'anidride", "L'ammide", "Il tioestere"]}
+  corretta={2}
+  spiegazione="Il legame peptidico è un legame ammidico (azoto, -N): molto stabile, perfetto per tenere insieme le proteine senza che si rompano da sole."
+/>
+
+<Quiz
+  domanda="Il tioestere si distingue da un estere perché al posto dell'ossigeno ha:"
+  opzioni={["un azoto (N)", "uno zolfo (S)", "un altro cuore acilico", "un idrogeno"]}
+  corretta={1}
+  spiegazione="Tio- significa zolfo. Nel tioestere c'è uno zolfo (S) al posto dell'ossigeno: questo lo rende più reattivo, utile per liberare energia (acetil-CoA)."
+/>
+
+<Esercizio
+  problema="Hai tre molecole. Nella prima, accanto al cuore -CO-, c'è un azoto. Nella seconda c'è uno zolfo. Nella terza c'è un ossigeno legato a un carbonio. Dai il nome di ciascun derivato e di' quale userebbe il corpo per costruire una proteina."
+  soluzione="La prima (azoto) è un'ammide. La seconda (zolfo) è un tioestere. La terza (ossigeno-carbonio) è un estere. Per costruire una proteina il corpo usa l'ammide: il legame peptidico tra gli amminoacidi è infatti un legame ammidico, stabile e robusto."
+/>
+
+</section>
+
+</RisorsaLayout>

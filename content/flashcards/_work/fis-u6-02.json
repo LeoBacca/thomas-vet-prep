@@ -1,0 +1,10 @@
+{
+ "id": "fis-u6-02",
+ "titolo": "Campo elettrico e linee di forza",
+ "materia": "fisica",
+ "unita": 6,
+ "slug": "02-campo-elettrico-e-linee-di-forza",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u6/02-campo-elettrico-e-linee-di-forza.mdx",
+ "examQuestions": []
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fc-bio-u7-07-1",
+    "topicId": "bio-u7-07",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "L'APC/C e il 'demolitore molecolare' che fa finire la mitosi. Qual e la sua azione piu importante?",
+    "choices": [
+      "Attacca il cartellino ubiquitina su securina e ciclina B, mandando entrambe al proteasoma per la degradazione",
+      "Duplica il DNA prima che la cellula si divida",
+      "Forma l'anello contrattile di actina e miosina durante la citodieresi",
+      "Aggancia i cromosomi al fuso mitotico durante la metafase"
+    ],
+    "answer": 0,
+    "explain": "L'APC/C e un ubiquitina-ligasi: mette un cartellino (ubiquitina) su due bersagli chiave. 1) La securina — teneva bloccata la separasi; demolita la securina, la separasi si libera e taglia la coesina, separando i cromatidi fratelli (inizio anafase). 2) La ciclina B — teneva acceso il motore Cdk1; demolita la ciclina B, Cdk1 si spegne e la cellula esce dalla mitosi (telofase). Pensa all'APC/C come a un addetto che rimuove i lucchetti: tolti entrambi, la macchina della mitosi si ferma in ordine.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-bio-u7-07-2",
+    "topicId": "bio-u7-07",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "open",
+    "q": "Spiega in breve: dopo che il nucleo si e diviso, come fa la cellula a dividersi fisicamente in due? C'e differenza tra cellule animali e vegetali?",
+    "answer": "Il processo che divide il citoplasma si chiama citodieresi. Nelle cellule animali si forma un anello contrattile fatto di actina e miosina che stringe la cellula a meta come un laccio (il punto di strozzatura si chiama solco di clivaggio), fino a staccarla in due. Nelle cellule vegetali non e possibile stringere perche c'e una parete cellulare rigida: invece, vescicole del Golgi si fondono al centro della cellula formando una struttura chiamata piastra cellulare, che cresce verso l'esterno finche non taglia la cellula in due e diventa la nuova parete tra le cellule figlie.",
+    "explain": "Citodieresi = divisione del citoplasma. Animali: anello contrattile actina+miosina. Vegetali: piastra cellulare dal Golgi (la parete rigida impedisce la strozzatura).",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-16-1",
+    "topicId": "bio-u1-16",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: un enzima viene consumato durante la reazione che catalizza, quindi alla fine della reazione non e piu disponibile.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'enzima e un catalizzatore: non viene consumato. Dopo aver trasformato il substrato in prodotto, il sito attivo si libera ed e subito pronto per la molecola successiva. Pensa a un meccanico che ripara auto: non scompare dopo ogni riparazione, ricomincia dal prossimo cliente.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-16-2",
+    "topicId": "bio-u1-16",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Una chinasi e una fosfatasi controllano l'attivita di una proteina cellulare. Cosa fa ciascuna?",
+    "choices": [
+      "La chinasi toglie un gruppo fosfato (interruttore OFF), la fosfatasi lo aggiunge (interruttore ON)",
+      "La chinasi aggiunge un gruppo fosfato (interruttore ON), la fosfatasi lo toglie (interruttore OFF)",
+      "Entrambe aggiungono fosfato, ma su siti diversi della proteina",
+      "La chinasi taglia la proteina, la fosfatasi la riassembla"
+    ],
+    "answer": 1,
+    "explain": "Chinasi → aggiunge fosfato (ON). Fosfatasi → toglie fosfato (OFF). Lavorano in coppia come un interruttore: una accende, l'altra spegne l'attivita della proteina. Attenzione alla trappola classica: invertire i due ruoli (la prima opzione) e l'errore piu comune.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-16-3",
+    "topicId": "bio-u1-16",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Una cellula ha una proteina difettosa che deve essere eliminata. Descrivi i passaggi che portano alla sua distruzione usando i termini: ubiquitinasi, ubiquitina, proteasoma. Poi spiega cosa succederebbe se una deubiquitinasi intervenisse prima del proteasoma.",
+    "answer": "1) L'ubiquitinasi riconosce la proteina difettosa e le attacca una catena di ubiquitina, come mettere un'etichetta 'da buttare'. 2) La proteina etichettata viene riconosciuta dal proteasoma, una specie di tritacarne cellulare. 3) Il proteasoma smonta la proteina in piccoli frammenti di amminoacidi che la cellula puo riutilizzare. Se invece una deubiquitinasi stacca l'etichetta di ubiquitina prima che arrivi il proteasoma, la proteina viene 'graziata' e sfugge alla distruzione: rimane nella cellula anche se e difettosa. Questo meccanismo e importante in veterinaria perche alcune malattie neurodegenerative nei cani (come l'equivalente del morbo di Alzheimer) sono associate ad accumuli di proteine difettose che sfuggono proprio a questa via di degradazione.",
+    "explain": "Percorso chiave: ubiquitinasi etichetta → proteasoma distrugge. La deubiquitinasi e la 'grazia': rimuove l'etichetta e salva la proteina dalla degradazione.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-16-4",
+    "topicId": "bio-u1-16",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Gli enzimi possono accelerare una reazione chimica. Come ci riescono?",
+    "choices": [
+      "Abbassano l'energia di attivazione necessaria perche la reazione parta",
+      "Modificano la variazione di energia libera totale della reazione",
+      "Forniscono energia chimica direttamente al substrato",
+      "Rendono spontanea una reazione che senza enzima non lo sarebbe mai",
+      "Rendono piu stabili le molecole del substrato cosi reagiscono meno"
+    ],
+    "answer": 0,
+    "explain": "Gli enzimi abbassano l'energia di attivazione: e come aiutare a spingere un'auto ferma, che poi riparte da sola. NON cambiano la variazione di energia libera della reazione (ΔG), che rimane la stessa: decidono solo la VELOCITA, non se la reazione e possibile o no. Non forniscono energia (sarebbero consumati), non rendono spontanee reazioni impossibili, e non stabilizzano il substrato (farebbero l'opposto: lo destabilizzano per abbassare la barriera).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-16-5",
+    "topicId": "bio-u1-16",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un farmaco antagonista ha una forma complementare al sito attivo di un enzima e vi si lega saldamente. Cosa succedera probabilmente alla quantita di prodotto della reazione enzimatica?",
+    "choices": [
+      "Diminuira, perche il farmaco occupa il sito attivo e compete con il substrato reale",
+      "Diminuira, perche il farmaco si lega al substrato e lo deforma",
+      "Aumentera, perche il farmaco favorisce il legame tra enzima e substrato",
+      "Aumentera, perche il farmaco funziona come cofattore dell'enzima",
+      "Restera invariata, perche i farmaci non attraversano mai la membrana cellulare"
+    ],
+    "answer": 0,
+    "explain": "Il farmaco occupa il sito attivo (la 'tasca' dove di solito entra il substrato), bloccandolo. Il substrato reale non riesce piu ad agganciarsi: la reazione rallenta o si ferma, e si produce meno prodotto. E inibizione competitiva: il farmaco e il substrato gareggiano per lo stesso posto. Le trappole: 'il farmaco si lega al substrato' e sbagliato, il testo dice che si lega al SITO ATTIVO dell'enzima. 'Favorisce il legame enzima-substrato' e l'esatto opposto (un agonista lo farebbe, non un antagonista). 'Funziona da cofattore' scambia il ruolo: un cofattore aiuta l'enzima, il contrario di bloccarlo. 'I farmaci non attraversano la membrana' e un filler falso: molti farmaci entrano nelle cellule.",
+    "tags": ["prova d'esame"]
+  }
+]

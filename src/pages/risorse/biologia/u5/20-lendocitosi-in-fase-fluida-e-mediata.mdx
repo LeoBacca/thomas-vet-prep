@@ -1,0 +1,111 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-20">
+
+## Cos'è l'endocitosi?
+
+La cellula non può lasciar entrare tutto liberamente attraverso la membrana: alcune molecole sono troppo grandi o troppo idrofiliche. Per risolvere il problema, la membrana plasmatica si **incurva verso l'interno**, abbraccia il materiale da ingerire e forma una **vescicola** che si stacca e finisce nel citoplasma.
+
+Questo processo si chiama **endocitosi** (dal greco *endon* = dentro).
+
+Esistono due modalità principali, molto diverse tra loro:
+
+1. **Endocitosi in fase fluida** (detta anche pinocitosi aspecifica)
+2. **Endocitosi mediata da recettori** (selettiva)
+
+---
+
+## 1. Endocitosi in fase fluida — "aspiro tutto"
+
+Immagina un aspirapolvere che risucchia un po' di tutto senza scegliere: acqua, piccole molecole disciolte, detriti. La cellula fa la stessa cosa.
+
+- La membrana forma piccole **invaginazioni** (come piccole fossette)
+- Queste si chiudono formando **vescicole minuscole**
+- All'interno c'è semplicemente del **liquido extracellulare** con tutto quello che contiene
+- Non c'è selezione: la cellula prende quello che capita
+
+Questo processo è **continuo** e serve per campionare l'ambiente esterno. È **aspecifico**: non importa cosa c'è nel liquido.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'endocitosi in fase fluida è come bere un sorso d'acqua di fiume — prendi tutto quello che c'è dentro, senza scegliere.</div>
+
+---
+
+## 2. Endocitosi mediata da recettori — "prendo solo quello che mi serve"
+
+Questa è la versione intelligente. La cellula ha sulla membrana dei **recettori specifici** — proteine che riconoscono solo un certo tipo di molecola (il **ligando**). Quando il ligando si lega al recettore, parte il processo di internalizzazione selettiva.
+
+### Come funziona, passo per passo:
+
+1. Il ligando (es. LDL, transferrina, EGF) si lega al proprio recettore sulla membrana
+2. I complessi recettore-ligando si concentrano in zone speciali chiamate **fossette rivestite di clatrina** (la clatrina è una proteina che forma una rete a cestino)
+3. La fossetta si invagina e si chiude formando una **vescicola rivestita di clatrina**
+4. La clatrina si stacca e la vescicola si fonde con un **endosoma precoce**
+5. Nell'endosoma, il pH diventa acido: il ligando si separa dal recettore
+6. Il recettore torna sulla membrana (**riciclo**); il ligando va ai lisosomi per essere degradato o usato
+
+<Diagram caption="Endocitosi mediata da recettori: dal legame alla degradazione" code={`flowchart TB
+  A["Ligando (es. LDL) si lega<br/>al recettore sulla membrana"] --> B["Concentrazione nelle<br/>fossette rivestite di clatrina"]
+  B --> C["Invaginazione della membrana<br/>→ vescicola rivestita di clatrina"]
+  C --> D["Perdita del rivestimento<br/>di clatrina"]
+  D --> E["Fusione con<br/>endosoma precoce (pH acido)"]
+  E --> F["Dissociazione:<br/>ligando si stacca dal recettore"]
+  F --> G["Recettore riciclato<br/>→ torna alla membrana"]
+  F --> H["Ligando → lisosoma<br/>→ degradazione o utilizzo"]`} />
+
+---
+
+## I tre esempi classici
+
+### LDL (lipoproteine a bassa densità)
+Le LDL trasportano il **colesterolo** nel sangue. Le cellule che hanno bisogno di colesterolo esprimono sulla membrana il **recettore per LDL**. Dopo l'endocitosi, il colesterolo viene liberato nei lisosomi e usato per costruire membrane. Se il recettore è difettoso (come nella **ipercolesterolemia familiare**), il colesterolo rimane nel sangue e si deposita nelle arterie.
+
+### Transferrina
+La transferrina è una proteina del sangue che trasporta il **ferro** (Fe³⁺). Le cellule che hanno bisogno di ferro (soprattutto i globuli rossi in formazione) esprimono il **recettore per la transferrina**. Dopo l'internalizzazione, il ferro viene rilasciato nell'endosoma (grazie al pH acido), e la transferrina *senza ferro* (apotransferrina) torna sulla membrana insieme al recettore per un altro giro.
+
+### EGF (fattore di crescita epidermico)
+L'EGF è un segnale che dice alla cellula di proliferare. Si lega al proprio recettore (**EGFR**) sulla membrana. A differenza di LDL e transferrina, qui il recettore non viene riciclato: dopo l'endocitosi, sia il ligando che il recettore vengono **degradati nei lisosomi**. Questo è un modo per "spegnere" il segnale di crescita dopo che è stato ricevuto.
+
+<Diagram caption="Confronto tra i tre esempi: destino del recettore dopo l'endocitosi" code={`flowchart LR
+  A["LDL + recettore LDL"] --> B["Endosoma"]
+  B --> B1["Colesterolo → lisosoma<br/>(usato per membrane)"]
+  B --> B2["Recettore LDL → membrana<br/>(riciclato)"]
+
+  C["Transferrina + recettore Tf"] --> D["Endosoma (pH acido)"]
+  D --> D1["Fe liberato → citoplasma"]
+  D --> D2["Apotransferrina + recettore<br/>→ membrana (riciclati)"]
+
+  E["EGF + EGFR"] --> F["Endosoma → lisosoma"]
+  F --> F1["EGF degradato"]
+  F --> F2["EGFR degradato<br/>(segnale spento)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="_q-dqppyJ5s" title="ENDOCITOSI ED ESOCITOSI | Pillole di Scienza" />
+<VideoVisto id="bio-u5-20" />
+
+## Da ricordare
+- L'endocitosi in fase fluida è **aspecifica**: la cellula inghiotte liquido extracellulare con tutto il suo contenuto, senza scegliere.
+- L'endocitosi mediata da recettori è **selettiva**: solo le molecole che si legano ai recettori vengono internalizzate, tramite fossette rivestite di clatrina.
+- Il destino del recettore dopo l'endocitosi dipende dal tipo: LDL e transferrina riciclano il recettore; EGF lo manda alla degradazione per spegnere il segnale.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la differenza principale tra endocitosi in fase fluida e endocitosi mediata da recettori?" opzioni={["La fase fluida usa la clatrina, quella mediata da recettori no","La fase fluida è aspecifica e inghiotte liquido extracellulare; quella mediata da recettori è selettiva e riconosce molecole specifiche","La fase fluida avviene solo nelle cellule animali; quella mediata da recettori anche nelle cellule vegetali","La fase fluida richiede ATP; quella mediata da recettori no"]} corretta={1} spiegazione="L'endocitosi in fase fluida (pinocitosi) cattura liquido extracellulare senza selezionare nulla. L'endocitosi mediata da recettori è selettiva: riconosce ligandi specifici tramite recettori di membrana e usa le fossette rivestite di clatrina." />
+
+<Quiz domanda="Nella via di internalizzazione della transferrina, cosa succede al recettore dopo che il ferro è stato rilasciato nell'endosoma?" opzioni={["Viene degradato nei lisosomi","Rimane intrappolato nell'endosoma","Viene riciclato e torna sulla membrana plasmatica","Viene secreto all'esterno della cellula"]} corretta={2} spiegazione="Nell'endosoma, il pH acido fa rilasciare il ferro dalla transferrina. La apotransferrina (senza ferro) rimane legata al recettore, e il complesso viene riciclato tornando sulla membrana. È un esempio di riciclo efficiente del recettore." />
+
+<Quiz domanda="Perché nell'endocitosi mediata dal recettore per EGF il recettore non viene riciclato?" opzioni={["Perché l'EGFR è troppo grande per tornare sulla membrana","Perché la degradazione del recettore serve a spegnere il segnale di proliferazione cellulare","Perché l'EGF blocca fisicamente il riciclo del recettore","Perché l'endosoma non riesce ad acidificarsi"]} corretta={1} spiegazione="Per il recettore dell'EGF, sia il ligando che il recettore vengono inviati ai lisosomi per la degradazione. Questo serve a terminare il segnale di crescita: se il recettore fosse riciclato, la cellula potrebbe ricevere segnali di proliferazione in modo incontrollato." />
+
+<Esercizio problema="Una cellula viene trattata con un farmaco che blocca l'acidificazione degli endosomi. Descrivi cosa succederebbe all'internalizzazione della transferrina e all'utilizzo del ferro." soluzione="Senza il pH acido nell'endosoma, il ferro non si stacca dalla transferrina (la dissociazione ligando-recettore richiede un ambiente acido). Il ferro non verrebbe rilasciato nel citoplasma e la cellula non potrebbe usarlo. Inoltre, il recettore non potrebbe essere riciclato correttamente (perché la separazione dal ligando è necessaria per il riciclo), riducendo nel tempo il numero di recettori disponibili sulla membrana. Il risultato finale è una carenza di ferro intracellulare anche in presenza di transferrina nel liquido extracellulare." />
+
+</section>
+
+</RisorsaLayout>

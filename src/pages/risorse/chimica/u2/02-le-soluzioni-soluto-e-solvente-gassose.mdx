@@ -1,0 +1,89 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-02">
+
+Quando sciogli un cucchiaino di zucchero nel caffè, ottieni una **soluzione**. Una soluzione è semplicemente un **miscuglio uniforme**: due (o più) cose mescolate così bene che a occhio sembrano una cosa sola. Le soluzioni sono ovunque, anche dentro di te: il sangue, ad esempio, è una soluzione.
+
+In ogni soluzione ci sono due ruoli:
+
+- il **soluto**: la cosa che si **scioglie** (è in quantità piccola). È lo zucchero nel caffè.
+- il **solvente**: la cosa che **scioglie**, in cui il soluto si "sparpaglia" (è in quantità grande). È il caffè (cioè l'acqua).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il <strong>soluto</strong> è l'ospite (poco, sparisce dentro), il <strong>solvente</strong> è la casa che lo accoglie (tanto). Soluto + solvente = soluzione.</div>
+
+<Diagram caption="Il sale che si scioglie nell'acqua: soluto + solvente diventano una soluzione" code={`flowchart LR
+  A["Soluto<br/>(sale, poco)"] --> C["Soluzione<br/>(acqua salata)"]
+  B["Solvente<br/>(acqua, tanta)"] --> C`} />
+
+## Chi è il soluto e chi il solvente?
+
+La regola facile: il **solvente è quello che c'è in quantità maggiore**, il **soluto è quello in quantità minore**. Nel caffè zuccherato l'acqua è tantissima e lo zucchero pochissimo: quindi l'acqua è il solvente e lo zucchero è il soluto.
+
+L'acqua è il solvente più famoso al mondo. La chiamano il **solvente della vita** proprio perché scioglie tantissime sostanze. Non a caso il nostro corpo è fatto per circa il **60% di acqua**: dentro questa acqua viaggiano disciolti zuccheri, sali, ossigeno e farmaci.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> guarda chi è di più. Quello che abbonda è il solvente, quello che è poco e si nasconde dentro è il soluto.</div>
+
+## Le soluzioni non sono solo liquide
+
+Siamo abituati a pensare alle soluzioni come acqua + qualcosa, quindi liquide. Ma una soluzione può avere **tre stati**: gassosa, liquida e solida. Conta solo che il miscuglio sia **uniforme**.
+
+- **Soluzione gassosa**: gas mescolati tra loro. L'esempio perfetto è l'**aria** che respiri: è azoto, ossigeno e altri gas mescolati in modo uniforme. L'ossigeno che arriva ai tuoi polmoni viene proprio da questa "soluzione gassosa".
+- **Soluzione liquida**: la più comune. Acqua + sale, acqua + zucchero, ma anche le **bibite gassate** (gas sciolto nel liquido).
+- **Soluzione solida**: sembra strano, ma esiste. Le **leghe metalliche** sono soluzioni solide. L'**oro** dei gioielli o l'**acciaio** delle pinze del veterinario sono metalli mescolati tra loro in modo uniforme.
+
+<Diagram caption="Una soluzione può essere gassosa, liquida o solida" code={`flowchart TB
+  S["Soluzione<br/>(miscuglio uniforme)"] --> G["Gassosa<br/>es. aria"]
+  S --> L["Liquida<br/>es. acqua e sale"]
+  S --> D["Solida<br/>es. leghe metalliche"]`} />
+
+## Guarda il video
+
+<YouTube id="a_15rrgcJwY" title="Le soluzioni: soluto, solvente, solubilità e saturazione — spiegazione semplice" />
+
+<VideoVisto id="chim-u2-02" />
+
+## Da ricordare
+
+- Una **soluzione** è un **miscuglio uniforme** di due o più sostanze.
+- Il **soluto** si scioglie (è in quantità minore); il **solvente** lo scioglie (è in quantità maggiore).
+- L'**acqua** è il solvente più comune: è il "solvente della vita" e il nostro corpo ne è fatto in gran parte.
+- Le soluzioni possono essere **gassose** (aria), **liquide** (acqua e sale) o **solide** (leghe metalliche).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="In un bicchiere di acqua con un cucchiaino di sale, chi è il soluto?"
+  opzioni={["l'acqua", "il sale", "il bicchiere", "l'aria"]}
+  corretta={1}
+  spiegazione="Il soluto è quello che si scioglie ed è in quantità minore: il sale. L'acqua, che è di più e lo scioglie, è il solvente."
+/>
+
+<Quiz
+  domanda="Come si capisce qual è il solvente in una soluzione?"
+  opzioni={["è quello in quantità minore", "è quello in quantità maggiore", "è sempre un solido", "è sempre un gas"]}
+  corretta={1}
+  spiegazione="Il solvente è la sostanza presente in quantità maggiore: è la 'casa' che accoglie il soluto."
+/>
+
+<Quiz
+  domanda="L'aria che respiriamo è un esempio di soluzione:"
+  opzioni={["liquida", "solida", "gassosa", "non è una soluzione"]}
+  corretta={2}
+  spiegazione="L'aria è azoto, ossigeno e altri gas mescolati in modo uniforme: è una soluzione gassosa."
+/>
+
+<Esercizio
+  problema="In una tazza di tè zuccherato indica chi è il soluto, chi è il solvente e di che tipo di soluzione si tratta."
+  soluzione="Il solvente è l'acqua del tè (quantità maggiore), il soluto è lo zucchero (quantità minore, si scioglie). È una soluzione liquida."
+/>
+
+</section>
+
+</RisorsaLayout>

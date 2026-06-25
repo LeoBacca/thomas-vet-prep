@@ -1,0 +1,29 @@
+---
+const { caption = "Un vettore V scomposto nelle componenti orizzontale (Vx) e verticale (Vy)" } = Astro.props;
+---
+<figure class="diagram figura">
+  <svg viewBox="0 0 400 270" role="img" aria-label="Vettore su assi cartesiani con le sue componenti orizzontale e verticale e l'angolo theta" style="max-width:440px;width:100%;height:auto">
+    <defs>
+      <marker id="frecciaAsse" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#555" /></marker>
+      <marker id="frecciaV" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7 Z" fill="#c0392b" /></marker>
+    </defs>
+    <!-- assi -->
+    <line x1="60" y1="220" x2="365" y2="220" stroke="#555" stroke-width="1.5" marker-end="url(#frecciaAsse)" />
+    <line x1="60" y1="220" x2="60" y2="35" stroke="#555" stroke-width="1.5" marker-end="url(#frecciaAsse)" />
+    <text x="352" y="240" font-size="14">x</text>
+    <text x="42" y="46" font-size="14">y</text>
+    <!-- componenti (tratteggiate) -->
+    <line x1="60" y1="220" x2="280" y2="220" stroke="#2f7d62" stroke-width="4" stroke-dasharray="7 4" />
+    <line x1="280" y1="220" x2="280" y2="90" stroke="#d98324" stroke-width="4" stroke-dasharray="7 4" />
+    <!-- vettore -->
+    <line x1="60" y1="220" x2="280" y2="90" stroke="#c0392b" stroke-width="4" marker-end="url(#frecciaV)" />
+    <!-- angolo theta -->
+    <path d="M 112 220 A 52 52 0 0 0 96 197" fill="none" stroke="#333" stroke-width="1.5" />
+    <text x="98" y="213" font-size="16" font-style="italic">θ</text>
+    <!-- etichette -->
+    <text x="250" y="78" font-size="17" fill="#c0392b" font-weight="700">V</text>
+    <text x="120" y="240" font-size="14" fill="#2f7d62" font-weight="600">Vx = V · cos θ</text>
+    <text x="290" y="160" font-size="14" fill="#d98324" font-weight="600">Vy = V · sin θ</text>
+  </svg>
+  <figcaption>{caption}</figcaption>
+</figure>

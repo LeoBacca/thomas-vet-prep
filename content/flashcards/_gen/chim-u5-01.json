@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-chim-u5-01-1",
+    "topicId": "chim-u5-01",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: il carbonio forma 4 legami perche ha 4 elettroni nel guscio esterno e gliene servono 8 per stare stabile (regola dell'ottetto), quindi li condivide tutti e 4 con altri atomi.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il carbonio ha 4 elettroni esterni e ne servono 8: condividendone 4 con altri atomi (un legame per ogni condivisione) arriva all'ottetto. Sono proprio quelle 4 'braccia' che permettono al carbonio di costruire catene e anelli, base di zuccheri, grassi, proteine e DNA.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-01-2",
+    "topicId": "chim-u5-01",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "open",
+    "q": "Cos'e l'ibridazione sp3 del carbonio e perche i suoi 4 legami formano un tetraedro invece di stare tutti sullo stesso piano?",
+    "answer": "L'ibridazione sp3 e il 'frullare insieme' un orbitale s e tre orbitali p del carbonio: si ottengono 4 orbitali ibridi tutti identici (come mescolare tuorlo e albume: parti da due cose diverse e ottieni un composto omogeneo). Questi 4 orbitali identici sono le 4 'braccia' con cui il carbonio fa i suoi 4 legami. Formano un tetraedro perche gli elettroni hanno carica negativa e si respingono: per stare il piu lontani possibile le 4 braccia si dispongono verso i 4 vertici di un tetraedro (una piramide a base triangolare), con un angolo di circa 109,5 gradi tra una e l'altra. Il metano CH4 e l'esempio piu semplice: un carbonio al centro, 4 idrogeni ai 4 vertici del tetraedro.",
+    "explain": "Ibridazione sp3 = 4 orbitali identici da s+p+p+p. I 4 legami puntano ai vertici di un tetraedro (angolo ~109,5 gradi) perche gli elettroni si respingono e cercano di stare il piu lontano possibile.",
+    "tags": ["risposta aperta"]
+  }
+]

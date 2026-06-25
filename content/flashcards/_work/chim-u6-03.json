@@ -1,0 +1,67 @@
+{
+ "id": "chim-u6-03",
+ "titolo": "Reazioni degli alcoli: disidratazione, ossidazione, sostituzione; l'etanolo",
+ "materia": "chimica",
+ "unita": 6,
+ "slug": "03-reazioni-degli-alcoli-disidratazione-ossidazione-sostituzione",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/chimica/u6/03-reazioni-degli-alcoli-disidratazione-ossidazione-sostituzione.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "L'ossidazione di un alcool secondario porta a:",
+   "choices": [
+    "un chetone",
+    "un'aldeide",
+    "un acido carbossilico",
+    "un alcool terziario",
+    "un'anidride mista"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2016",
+   "q": "Per disidratazione degli alcoli si possono ottenere:",
+   "choices": [
+    "alcheni",
+    "chetoni",
+    "alcani",
+    "acidi carbossilici",
+    "alchini"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2019",
+   "q": "Quale delle seguenti reazioni trasforma un alcol in un acido carbossilico?",
+   "choices": [
+    "Ossidazione",
+    "Riduzione",
+    "Sostituzione",
+    "Addizione",
+    "Eliminazione"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Quale delle seguenti affermazioni sulla reattività degli alcoli è falsa?",
+   "choices": [
+    "L'ossidazione del gruppo ossidrilico di un alcol dà sempre luogo alla formazione di un chetone o di un'aldeide",
+    "L'ossidazione del gruppo ossidrilico di un alcol secondario non necessariamente determina la rottura della catena carboniosa",
+    "L'ossidazione del gruppo ossidrilico di un alcol primario può dar luogo alla formazione di un acido carbossilico",
+    "L'ossidazione del gruppo ossidrilico di un alcol può dare luogo alla formazione di un chetone",
+    "L'ossidazione del gruppo ossidrilico di un alcol può dare luogo alla formazione di un'aldeide"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "chim-u3-09",
+ "titolo": "Equilibrio eterogeneo e prodotto di solubilità (calcoli renali)",
+ "materia": "chimica",
+ "unita": 3,
+ "slug": "09-equilibrio-eterogeneo-e-prodotto-di-solubilita",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u3/09-equilibrio-eterogeneo-e-prodotto-di-solubilita.mdx",
+ "examQuestions": [
+  {
+   "year": "2020",
+   "q": "Qual è la concentrazione di ioni Sr2+ in una soluzione satura di SrSO3, sapendo che il prodotto di solubilità di SrSO3 è 4,0x10-8?",
+   "choices": [
+    "2,0x10-4 mol/L",
+    "2,0x10-8 mol/L",
+    "4,0x10-4 mol/L",
+    "1,4x10-2 mol/L",
+    "1,6x10-16 mol/L"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2021Agg",
+   "q": "La costante di solubilità del solfuro di stagno è Kps = [Sn2+][S2-] = 1,0 x 10^-26. Qual è la concentrazione degli ioni Sn2+ in una soluzione satura di SnS?",
+   "choices": [
+    "1,0 x 10^-13 M",
+    "1,0 x 10^-26 M",
+    "0,5 x 10^-26 M",
+    "0,5 x 10^-13 M",
+    "1,0 x 10^-52 M"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

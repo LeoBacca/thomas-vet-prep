@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fc-fis-u5-01-1",
+    "topicId": "fis-u5-01",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un thermos ben chiuso e isolato termicamente: che tipo di sistema termodinamico e?",
+    "choices": [
+      "Sistema aperto: scambia sia energia che materia con l'ambiente",
+      "Sistema chiuso: scambia energia ma non materia con l'ambiente",
+      "Sistema isolato: non scambia ne energia ne materia con l'ambiente",
+      "Ambiente termodinamico: non e un sistema"
+    ],
+    "answer": 2,
+    "explain": "I sistemi termodinamici si dividono in tre tipi: APERTO (scambia energia e materia — es. pentolino senza coperchio), CHIUSO (scambia solo energia — es. pentolino con coperchio), ISOLATO (non scambia nulla — es. thermos). Pensa alla tua stanza: finestra aperta = sistema aperto, finestra chiusa ma radiatore acceso = sistema chiuso, stanza perfettamente isolata = sistema isolato.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-fis-u5-01-2",
+    "topicId": "fis-u5-01",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "open",
+    "q": "Cos'e una 'funzione di stato'? Fai un esempio di una grandezza che lo e e di una che non lo e, spiegando il perche con parole tue.",
+    "answer": "Una funzione di stato e una grandezza il cui valore dipende SOLO dallo stato attuale del sistema, non da come ci sei arrivato (cioe non dipende dal percorso). Esempio che LO e: l'energia interna U (o l'entalpia H, o l'entropia S). Se un gas e a una certa temperatura, la sua energia interna ha quel valore, indipendentemente da come il gas e stato riscaldato o raffreddato per arrivarci. E come la quota su una montagna: se sei a 1500 m, la tua altitudine e 1500 m, qualunque sentiero tu abbia preso. Esempio che NON lo e: il calore Q e il lavoro W. Questi dipendono dal percorso seguito durante la trasformazione: un gas puo passare dallo stato A allo stato B in molti modi diversi, e in ciascuno scambia una quantita diversa di calore. Il punto di arrivo e lo stesso, ma il 'quanto calore hai usato' cambia a seconda della strada.",
+    "explain": "Funzione di stato = dipende solo dallo stato attuale, non dal percorso. Funzioni di stato: U, H, S. NON funzioni di stato: Q (calore) e W (lavoro).",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

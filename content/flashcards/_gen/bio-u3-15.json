@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-bio-u3-15-1",
+    "topicId": "bio-u3-15",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: i miRNA sono piccole molecole di RNA (~22 nucleotidi) che non codificano proteine ma silenziano altri geni, legandosi agli mRNA bersaglio tramite il complesso RISC.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "I miRNA sono prodotti dalla cellula stessa (endogeni), hanno circa 22 nucleotidi e non producono nessuna proteina. Il loro unico lavoro e silenziare: si associano al complesso RISC, che usa il miRNA come 'indirizzo' per trovare e bloccare (o distruggere) l'mRNA bersaglio. Pensa al miRNA come al numero di canale di un telecomando: il RISC e il telecomando, e il canale (mRNA) viene spento.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-15-2",
+    "topicId": "bio-u3-15",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Qual e la differenza tra miRNA e siRNA? Da dove viene ciascuno e cosa fanno al bersaglio?",
+    "answer": "Origine: i miRNA sono prodotti endogenamente dalla cellula stessa, a partire da geni specifici; i siRNA originano invece da RNA a doppio filamento esterno alla cellula, spesso di provenienza virale o introdotto sperimentalmente. Meccanismo: entrambi usano la stessa macchina molecolare (Dicer li processa, poi entrano nel complesso RISC). Effetto sul bersaglio: con complementarita perfetta (tipica dei siRNA) il RISC taglia e distrugge l'mRNA; con complementarita parziale (tipica dei miRNA animali) il RISC blocca la traduzione senza tagliare l'mRNA. In sintesi: stessa macchina, origine diversa, grado di complementarita diverso.",
+    "explain": "Da ricordare: miRNA = endogeno (fatto dalla cellula); siRNA = da dsRNA esterno. Entrambi usano RISC. Complementarita perfetta = mRNA distrutto; parziale = traduzione bloccata.",
+    "tags": ["risposta aperta"]
+  }
+]

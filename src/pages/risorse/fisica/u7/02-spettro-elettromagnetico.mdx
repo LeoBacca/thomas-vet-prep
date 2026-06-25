@@ -1,0 +1,81 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u7-02">
+
+## Che cos'è lo spettro elettromagnetico?
+
+La luce che vediamo con gli occhi è solo una piccola parte di qualcosa di molto più grande: lo **spettro elettromagnetico**.
+
+Lo spettro elettromagnetico è l'insieme di tutte le **onde elettromagnetiche** ordinate in base alla loro **frequenza** (o, equivalentemente, alla loro **lunghezza d'onda**).
+
+Tutte queste onde hanno la stessa natura fisica — sono oscillazioni di campi elettrici e magnetici — e viaggiano nel vuoto alla stessa velocità: la **velocità della luce**, circa 300.000 km/s.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Lo spettro elettromagnetico è come una scala musicale, ma invece di note ci sono onde: le più "gravi" (bassa frequenza) sono le onde radio, le più "acute" (alta frequenza) sono i raggi gamma.</div>
+
+## Le regioni dello spettro
+
+Lo spettro si divide in sette regioni principali, ordinate dalla frequenza più bassa alla più alta:
+
+1. **Onde radio** — frequenza bassissima, lunghezza d'onda fino a chilometri. Le usa la radio, la TV, il Wi-Fi.
+2. **Microonde** — le usa il forno a microonde e il telefono cellulare.
+3. **Infrarosso** — le sentiamo come **calore**. Il telecomando del TV usa raggi infrarossi.
+4. **Luce visibile** — l'unica parte che l'occhio umano percepisce. Va dal rosso al violetto (arcobaleno).
+5. **Ultravioletto (UV)** — invisibile, ma abbronza la pelle. Prodotto dal Sole.
+6. **Raggi X** — attraversano i tessuti molli ma non le ossa: usati in radiologia.
+7. **Raggi gamma** — la frequenza più alta e l'energia più elevata. Prodotti da reazioni nucleari e usati in radioterapia.
+
+## Frequenza e lunghezza d'onda
+
+Frequenza e lunghezza d'onda sono inversamente proporzionali: quando una sale, l'altra scende.
+
+La formula che le lega è:
+
+**c = f × λ**
+
+dove **c** è la velocità della luce (≈ 3 × 10⁸ m/s), **f** è la frequenza (Hz) e **λ** (lambda) è la lunghezza d'onda (m).
+
+Più alta è la frequenza, più alta è l'energia dell'onda — per questo i raggi gamma sono i più pericolosi.
+
+<Diagram caption="Le sette regioni dello spettro elettromagnetico, dalla frequenza più bassa alla più alta" code={`flowchart LR
+  A["Onde radio<br/>(freq. bassissima)"] --> B["Microonde"]
+  B --> C["Infrarosso<br/>(calore)"]
+  C --> D["Luce visibile<br/>(rosso → violetto)"]
+  D --> E["Ultravioletto<br/>(UV)"]
+  E --> F["Raggi X"]
+  F --> G["Raggi gamma<br/>(freq. altissima)"]`} />
+
+<Diagram caption="Relazione tra frequenza, lunghezza d'onda ed energia" code={`flowchart TB
+  A["Frequenza aumenta →"] --> B["Lunghezza d'onda diminuisce"]
+  A --> C["Energia dell'onda aumenta"]
+  B --> D["Onde radio → Raggi gamma"]
+  C --> D`} />
+
+## Guarda il video
+<YouTube id="b5LROOAPEzg" title="Lo spettro elettromagnetico [lezione di fisica] — Fisica Fast" />
+<VideoVisto id="fis-u7-02" />
+
+## Da ricordare
+- Lo spettro elettromagnetico comprende sette regioni: onde radio, microonde, infrarosso, luce visibile, ultravioletto, raggi X e raggi gamma.
+- Tutte le onde elettromagnetiche viaggiano nel vuoto alla stessa velocità (velocità della luce ≈ 3 × 10⁸ m/s).
+- All'aumentare della frequenza aumenta l'energia e diminuisce la lunghezza d'onda; i raggi gamma sono i più energetici.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale regione dello spettro elettromagnetico ha la frequenza più BASSA?" opzioni={["Raggi gamma","Raggi X","Onde radio","Ultravioletto"]} corretta={2} spiegazione="Le onde radio hanno la frequenza più bassa (e la lunghezza d'onda più lunga) di tutto lo spettro elettromagnetico." />
+
+<Quiz domanda="Un telecomando TV usa quale tipo di radiazione elettromagnetica?" opzioni={["Luce visibile","Microonde","Raggi X","Infrarosso"]} corretta={3} spiegazione="I telecomandi usano raggi infrarossi (IR): sono onde elettromagnetiche con frequenza appena sotto la luce visibile, invisibili all'occhio umano." />
+
+<Quiz domanda="Se la frequenza di un'onda elettromagnetica raddoppia, cosa succede alla sua lunghezza d'onda?" opzioni={["Raddoppia","Rimane uguale","Si dimezza","Quadruplica"]} corretta={2} spiegazione="Dalla formula c = f × λ, a velocità costante, se f raddoppia allora λ si dimezza: frequenza e lunghezza d'onda sono inversamente proporzionali." />
+
+<Esercizio problema="Un'onda radio ha frequenza f = 100 MHz (= 1 × 10⁸ Hz). Calcola la sua lunghezza d'onda sapendo che la velocità della luce è c = 3 × 10⁸ m/s." soluzione="Dalla formula c = f × λ ricaviamo λ = c / f = (3 × 10⁸ m/s) / (1 × 10⁸ Hz) = 3 m. La lunghezza d'onda è 3 metri — tipica delle onde radio FM." />
+
+</section>
+
+</RisorsaLayout>

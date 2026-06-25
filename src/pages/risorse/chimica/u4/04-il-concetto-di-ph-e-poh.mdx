@@ -1,0 +1,107 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-04">
+
+Il **pH** è un numero che ti dice se una cosa è **acida** (come il succo di limone), **neutra** (come l'acqua pura) o **basica** (come il sapone). È un "termometro dell'acidità": invece di misurare il caldo, misura quanto una soluzione è acida o basica. Conta tantissimo perché il nostro corpo funziona bene solo se il pH del sangue resta dentro un piccolo intervallo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il pH è un numero da 0 a 14. Numero basso = acido (aggressivo, "pizzica"). Numero in mezzo (7) = neutro. Numero alto = basico (scivoloso, "saponoso").</div>
+
+<Diagram caption="La scala del pH da 0 a 14 con esempi di tutti i giorni" code={`flowchart LR
+  Z["0<br/>(molto acido)"] --> L["2<br/>limone"]
+  L --> C["5<br/>caffè"]
+  C --> N["7<br/>acqua pura<br/>NEUTRO"]
+  N --> S["7,4<br/>sangue"]
+  S --> P["10<br/>sapone"]
+  P --> Q["14<br/>(molto basico)"]`} />
+
+## Come si legge la scala (0-14)
+
+Immagina un righello che va da 0 a 14. Il **centro** è il **7**: è il punto **neutro**, dove sta l'acqua pura. Tutto quello che è a **sinistra** del 7 (numeri più piccoli) è **acido**. Tutto quello che è a **destra** del 7 (numeri più grandi) è **basico** (si dice anche "alcalino").
+
+- pH **minore di 7** → **acido** (limone, aceto, succhi gastrici dello stomaco)
+- pH **uguale a 7** → **neutro** (acqua pura)
+- pH **maggiore di 7** → **basico** (sapone, bicarbonato, candeggina)
+
+Una cosa importante: ogni passo sulla scala vale **dieci volte**. Un pH 3 non è "un pochino" più acido di un pH 4: è **dieci volte** più acido. Da pH 3 a pH 5 sono **cento volte**. È come i terremoti: un piccolo numero in più significa un salto enorme.
+
+## Acido, neutro, basico: che vuol dire davvero
+
+Una soluzione è **acida** quando contiene tanti **ioni idrogeno** (li chiamiamo H+, sono particelle minuscole con carica positiva). Più ioni H+ ci sono, più è acida, e più il **numero del pH è basso**.
+
+Sembra strano che "tanti H+" dia un "numero piccolo", ma è proprio così: il pH funziona al contrario della quantità di acido. Tu per ora ricorda solo il risultato finale: **più acido = numero più basso**.
+
+<Diagram caption="Le tre famiglie: acido, neutro, basico" code={`flowchart TB
+  PH["Valore di pH"] --> A["MINORE di 7<br/>ACIDO<br/>(es. limone, aceto)"]
+  PH --> NE["UGUALE a 7<br/>NEUTRO<br/>(acqua pura)"]
+  PH --> B["MAGGIORE di 7<br/>BASICO<br/>(es. sapone, bicarbonato)"]`} />
+
+## Il pOH: il fratello gemello del pH
+
+Oltre agli ioni H+, in una soluzione ci sono anche gli **ioni idrossido** (li chiamiamo OH-). Il **pOH** misura questi, come il pH misura gli H+. Sono due facce della stessa medaglia.
+
+C'è una regola comodissima da ricordare: il pH e il pOH, **sommati insieme, danno sempre 14**.
+
+In formula: **pH + pOH = 14**.
+
+Quindi se conosci uno, trovi subito l'altro con una sottrazione. Hai pH = 3? Allora pOH = 14 − 3 = 11. È come una bilancia a due piatti: se uno scende, l'altro sale, ma il totale resta sempre 14.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> pH e pOH sono come due fette della stessa torta: insieme fanno sempre 14. Se ne conosci una, l'altra si trova sottraendo da 14.</div>
+
+## Perché conta per medicina e veterinaria
+
+Il nostro **sangue** ha un pH di circa **7,4**: leggermente basico. Il corpo lavora di continuo per tenerlo lì. Se scende troppo (sangue troppo acido) si parla di **acidosi**; se sale troppo (troppo basico) si parla di **alcalosi**. Tutte e due sono pericolose, anche con variazioni piccolissime.
+
+Anche gli organi hanno il loro pH: lo **stomaco** è molto acido (pH intorno a 1-2) per digerire il cibo e uccidere i microbi, mentre le **urine** cambiano pH a seconda di cosa mangi. In veterinaria, controllare il pH del sangue o delle urine di un animale aiuta a capire se qualcosa non va. Ecco perché vale la pena impararlo bene.
+
+## Guarda il video
+
+<YouTube id="ByagicfDHcM" title="Il pH e il pOH: come misuriamo acidità e basicità di una soluzione — Biologia con Giulia" />
+
+<VideoVisto id="chim-u4-04" />
+
+## Da ricordare
+
+- Il **pH** è un numero da **0 a 14** che misura l'acidità: basso = acido, **7 = neutro**, alto = basico.
+- **pH minore di 7** = acido, **pH uguale a 7** = neutro, **pH maggiore di 7** = basico.
+- Ogni passo sulla scala vale **dieci volte**: pH 4 è dieci volte più acido di pH 5.
+- Il **pOH** è il gemello del pH: insieme fanno sempre **14** (pH + pOH = 14).
+- Il **sangue** ha pH circa **7,4**: il corpo lo tiene costante, perché anche piccole variazioni sono pericolose.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Una soluzione con pH = 2 è:"
+  opzioni={["neutra", "acida", "basica", "non si può sapere"]}
+  corretta={1}
+  spiegazione="2 è un numero più piccolo di 7, quindi la soluzione è acida (come il succo di limone)."
+/>
+
+<Quiz
+  domanda="Qual è il pH dell'acqua pura, il punto neutro della scala?"
+  opzioni={["0", "7", "10", "14"]}
+  corretta={1}
+  spiegazione="Il 7 è il centro esatto della scala: né acido né basico. L'acqua pura sta lì."
+/>
+
+<Quiz
+  domanda="Se una soluzione ha pH = 5, quanto vale il suo pOH?"
+  opzioni={["5", "7", "9", "14"]}
+  corretta={2}
+  spiegazione="Vale la regola pH + pOH = 14. Quindi pOH = 14 − 5 = 9."
+/>
+
+<Esercizio
+  problema="Il sangue ha un pH di circa 7,4. È leggermente acido, neutro o leggermente basico? E quanto vale circa il suo pOH?"
+  soluzione="7,4 è un po' più grande di 7, quindi il sangue è leggermente basico. Il pOH si trova con la regola pH + pOH = 14, perciò pOH = 14 − 7,4 = 6,6."
+/>
+
+</section>
+
+</RisorsaLayout>

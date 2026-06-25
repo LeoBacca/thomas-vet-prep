@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u7-04-1",
+    "topicId": "bio-u7-04",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: p53 è chiamato 'il guardiano del genoma' perché stimola le cellule a dividersi più in fretta quando il DNA è danneggiato.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso — è l'esatto contrario. p53 FERMA la divisione cellulare (o ordina il suicidio della cellula) quando trova danno al DNA. Chi stimola la divisione sono i proto-oncogeni. p53 è un freno, non un acceleratore.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-04-2",
+    "topicId": "bio-u7-04",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Un proto-oncogene è come un acceleratore del motore di una cellula. Cosa succede se quell'acceleratore si rompe e rimane bloccato al massimo (cioè il gene subisce una mutazione)?",
+    "choices": [
+      "Diventa un oncogene: la cellula riceve in modo continuo il segnale 'dividi!' anche quando non dovrebbe",
+      "La cellula si blocca e non si divide più",
+      "La cellula va in apoptosi immediatamente",
+      "Il gene diventa un oncosoppressore e frena la divisione"
+    ],
+    "answer": 0,
+    "explain": "Un proto-oncogene mutato diventa un oncogene: il segnale 'cresci e dividiti' resta sempre acceso, come un acceleratore inceppato sul massimo. Basta UNA sola copia mutata su due per scatenare il problema (dominante). Esempi classici: RAS e MYC. Il risultato finale è proliferazione incontrollata → rischio tumore.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-04-3",
+    "topicId": "bio-u7-04",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "open",
+    "q": "Spiega la differenza tra proto-oncogeni e geni oncosoppressori nel controllo della divisione cellulare. Perché per inattivare un oncosoppressore servono DUE mutazioni, mentre per attivare un oncogene ne basta UNA?",
+    "answer": "I proto-oncogeni sono gli 'acceleratori' della cellula: in condizioni normali stimolano la divisione quando serve. Se una mutazione li trasforma in oncogeni, l'acceleratore rimane bloccato al massimo e la cellula si divide senza sosta. Basta UNA sola copia mutata perché la proteina anomala prodotta da quella copia 'sovrasta' quella normale: si dice che agisce in modo dominante (guadagno di funzione). I geni oncosoppressori (come p53 e RB) sono invece i 'freni': bloccano la divisione o inducono l'apoptosi. Per perdere la loro funzione servono DUE mutazioni (una su ciascuno dei due cromosomi omologhi), perché basta che anche solo UNA copia sia intatta perché la proteina frenante venga prodotta e il controllo mantenuto. Si chiama effetto recessivo (perdita di funzione). Questa è la teoria dei 'two hits' di Knudson: due colpi separati sullo stesso gene oncosoppressore per abbattere completamente il freno.",
+    "explain": "Ricorda la regola chiave: oncogene = dominante (1 mutazione basta); oncosoppressore = recessivo (servono 2 mutazioni, teoria dei two hits).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u7-04-4",
+    "topicId": "bio-u7-04",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Una mutazione che converte un proto-oncogene in oncogene è causa diretta di:",
+    "choices": [
+      "Cancro (divisione cellulare incontrollata)",
+      "Diabete mellito",
+      "Fibrosi cistica",
+      "Resistenza agli antibiotici",
+      "Risposta immunitaria esagerata"
+    ],
+    "answer": 0,
+    "explain": "Un oncogene manda in modo costante il segnale 'dividi!' → le cellule proliferano senza controllo → tumore/cancro. Le altre opzioni riguardano meccanismi completamente diversi: il diabete è un problema ormonale (insulina), la fibrosi cistica è causata da un gene difettoso nella proteina CFTR per il trasporto del cloro, la resistenza agli antibiotici riguarda i batteri (non la proliferazione delle cellule dell'organismo), e la risposta immunitaria esagerata è un fenomeno immunologico distinto.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u7-04-5",
+    "topicId": "bio-u7-04",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Il virus HPV favorisce lo sviluppo del cancro della cervice uterina. Quale meccanismo spiega questo effetto oncogeno?",
+    "choices": [
+      "HPV inserisce direttamente un oncogene virale dentro il gene p53, attivandolo",
+      "Le proteine virali E6 ed E7 inattivano rispettivamente p53 e RB, togliendo i freni alla divisione cellulare",
+      "HPV produce una proteina che aumenta MDM2, stabilizzando p53 e bloccando l'apoptosi",
+      "HPV muta entrambe le copie di un proto-oncogene trasformandole in oncogeni",
+      "HPV attiva i checkpoint del ciclo cellulare, impedendo alla cellula di rispondere ai danni"
+    ],
+    "answer": 1,
+    "explain": "HPV usa due proteine (E6 e E7) come chiavi false: E6 si lega a p53 e la fa degradare (togli il guardiano del genoma), E7 si lega a RB e la inattiva (togli il secondo freno). Con entrambi i freni fuori uso, la cellula infettata non riesce più a bloccare la divisione né a suicidarsi quando necessario. Trappola 1: HPV non inserisce il suo materiale dentro p53 — non modifica il gene, blocca la proteina. Trappola 2: aumentare MDM2 degraderebbe p53, ma questo è il risultato opposto a 'stabilizzare'; in ogni caso HPV non agisce su MDM2 direttamente. Trappola 3: HPV non colpisce proto-oncogeni ma oncosoppressori. Trappola 4 (filler): HPV non attiva i checkpoint — li bypassa.",
+    "tags": ["prova d'esame"]
+  }
+]

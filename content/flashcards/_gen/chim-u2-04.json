@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u2-04-1",
+    "topicId": "chim-u2-04",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: l'acqua pura conduce la corrente elettrica tanto quanto l'acqua salata.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'acqua pura ha pochissimi ioni e conduce la corrente molto male. L'acqua salata, invece, contiene tanti ioni (Na+ e Cl−) liberi di muoversi: sono loro che trasportano le cariche e fanno passare la corrente. Senza ioni non c'e corrente.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-04-2",
+    "topicId": "chim-u2-04",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Cosa succede quando il cloruro di sodio (NaCl) si scioglie in acqua?",
+    "choices": [
+      "Si spezza in due ioni: Na+ (positivo) e Cl− (negativo), e questo processo si chiama dissociazione",
+      "Rimane intero come molecola NaCl, semplicemente disperso nell'acqua",
+      "Si spezza in Na− (negativo) e Cl+ (positivo): il sodio e quello carico negativamente",
+      "Si trasforma in un gas e scompare"
+    ],
+    "answer": 0,
+    "explain": "Appena il sale tocca l'acqua, le molecole d'acqua separano il sodio dal cloro. Il sodio perde un elettrone e diventa Na+ (positivo); il cloro lo guadagna e diventa Cl− (negativo). Questo spezzarsi in ioni si chiama dissociazione. E come una coppia che viene separata dalla folla: ognuno va per conto suo. Opzione B e sbagliata: il sale NON resta intero. Opzione C scambia i segni: e il sodio quello positivo, non il cloro.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-04-3",
+    "topicId": "chim-u2-04",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "open",
+    "q": "Un cane arriva allo studio veterinario molto disidratato dopo giorni di vomito e diarrea. Il veterinario decide di mettergli una flebo di soluzione fisiologica (acqua + cloruro di sodio). Spiega: 1) cosa ha perso l'animale; 2) perche proprio la flebo di NaCl; 3) cosa c'entrano gli elettroliti con nervi e muscoli.",
+    "answer": "1) Con vomito e diarrea il cane ha perso sia acqua sia elettroliti, cioe gli ioni Na+, K+ e Cl−. Senza questi ioni l'equilibrio dei liquidi nell'organismo e compromesso. 2) La flebo di soluzione fisiologica (NaCl in acqua) si dissocia in Na+ e Cl−, gli stessi ioni persi. Cosi l'organismo riacquista gli ioni mancanti e torna a regolare correttamente la quantita d'acqua dentro e fuori le cellule. 3) Nervi e muscoli (compreso il cuore) funzionano come piccoli circuiti elettrici: per trasmettere un segnale le cellule spostano ioni Na+ e K+ attraverso la loro membrana. Quel movimento di cariche e il segnale elettrico (impulso nervoso). Senza i giusti elettroliti, questi segnali si bloccano: il cuore non batte regolarmente e i muscoli non si contraggono. La flebo rimette a posto gli ioni e ripristina il corretto funzionamento.",
+    "explain": "Concetto chiave: gli elettroliti non sono solo 'sali sciolti', ma le batterie degli impulsi nervosi e muscolari. Perderli e perdere la capacita di muovere segnali elettrici nel corpo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u2-04-4",
+    "topicId": "chim-u2-04",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quale dei seguenti composti e un elettrolita?",
+    "choices": [
+      "Nitrato di potassio (KNO3)",
+      "Glucosio (C6H12O6)",
+      "Esano (C6H14)",
+      "Butano (C4H10)",
+      "Fenolo (C6H5OH)"
+    ],
+    "answer": 0,
+    "explain": "Il nitrato di potassio e un sale: in acqua si dissocia in K+ e NO3−, producendo ioni liberi che conducono la corrente → e un elettrolita. Glucosio, esano, butano e fenolo si sciolgono in acqua (glucosio e fenolo) o non si sciolgono (esano, butano), ma in ogni caso NON si dissociano in ioni: quindi non conducono la corrente e NON sono elettroliti. Trappola classica: il glucosio si scioglie benissimo in acqua, ma sciogliersi non significa dissociarsi in ioni. Un elettrolita deve spezzarsi in ioni, non solo disperdersi.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u2-04-5",
+    "topicId": "chim-u2-04",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quale affermazione sugli elettroliti e FALSA?",
+    "choices": [
+      "Un elettrolita, sciolto in acqua, produce ioni che rendono la soluzione conduttrice di elettricita",
+      "L'acqua pura e gia un ottimo conduttore di corrente anche senza aggiunta di sali",
+      "Il sodio (Na+) e il potassio (K+) sono elettroliti fondamentali per il funzionamento dei nervi",
+      "La dissociazione e il processo con cui un composto si spezza in ioni quando si scioglie in acqua",
+      "Una flebo di soluzione fisiologica serve a reintegrare elettroliti persi con disidratazione"
+    ],
+    "answer": 1,
+    "explain": "L'affermazione FALSA e la B: l'acqua pura conduce la corrente molto male, perche ha pochissimi ioni. Sono proprio gli ioni degli elettroliti disciolti (come Na+ e Cl−) a rendere la soluzione conduttrice. Trappola: si potrebbe pensare che l'acqua 'di per se' conduca, ma senza ioni non c'e corrente. Tutte le altre affermazioni sono vere e corrette secondo le Risorse.",
+    "tags": ["prova d'esame"]
+  }
+]

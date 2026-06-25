@@ -1,0 +1,94 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-21">
+
+Hai presente quando provi a mescolare **olio e acqua**? Per quanto agiti, l'olio si raccoglie sempre in gocce e non si mescola. Questo comportamento ha un nome: si chiama **interazione idrofobica**. "Idrofobico" vuol dire letteralmente "che ha paura dell'acqua". Capire questo fenomeno è importante perché è proprio così che si tengono insieme le membrane delle nostre cellule e che molte proteine prendono la loro forma.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> le molecole di olio non si uniscono perché "si attraggono". Si uniscono perché è <strong>l'acqua a spingerle insieme</strong>, per restare libera di fare i suoi legami. Stare in gruppo conviene: meno superficie a contatto con l'acqua.</div>
+
+<Diagram caption="In acqua, le gocce d'olio si uniscono in una goccia più grande" code={`flowchart LR
+  A["Tante goccioline<br/>d'olio sparse in acqua"] -->|"l'acqua le spinge insieme"| B["Una sola goccia<br/>d'olio piu grande"]`} />
+
+## Polare e apolare: chi va d'accordo con l'acqua
+
+Per capire tutto, serve una sola idea di base: **il simile scioglie il simile**.
+
+- L'**acqua** è una molecola **polare**: ha una parte un po' positiva e una un po' negativa, come una piccola calamita. Per questo le molecole d'acqua si tengono per mano tra loro (i famosi legami a idrogeno).
+- L'**olio** (e i grassi in generale) è **apolare**: non ha cariche, non è una calamita. Non sa "tenere per mano" l'acqua.
+
+Quindi le molecole apolari non riescono a inserirsi nella rete dell'acqua. Risultato: l'acqua le "esclude" e le costringe a stare tutte insieme da una parte.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina una festa dove tutti si tengono per mano (l'acqua). Chi non sa tenere la mano (l'olio) viene spinto verso un angolo, dove finisce per stare con gli altri come lui.</div>
+
+## Perché si raggruppano: meno superficie, meno fastidio
+
+Quando una molecola apolare è in acqua, l'acqua intorno è costretta a disporsi in modo ordinato e "rigido" attorno ad essa, come una gabbietta. All'acqua questa cosa non piace: preferisce essere libera e disordinata.
+
+Se le goccioline di olio si **uniscono in una goccia sola**, la superficie totale a contatto con l'acqua diventa **più piccola**. Così l'acqua deve costruire meno "gabbiette" e torna più libera. È l'acqua a guadagnarci, e per questo il raggruppamento avviene spontaneamente.
+
+<Diagram caption="Tante gocce piccole hanno piu superficie a contatto con l'acqua di una goccia grande" code={`flowchart TB
+  P["Tante gocce piccole separate"] --> P1["TANTA superficie<br/>a contatto con l'acqua"]
+  P1 --> P2["L'acqua costruisce<br/>tante gabbiette: poco libera"]
+  G["Una goccia grande unica"] --> G1["POCA superficie<br/>a contatto con l'acqua"]
+  G1 --> G2["L'acqua e piu libera:<br/>situazione preferita"]`} />
+
+## Perché conta per il corpo (medicina e veterinaria)
+
+Questo non è un dettaglio da laboratorio: è uno dei mattoni della vita.
+
+- **Membrane delle cellule.** Ogni cellula è avvolta da una membrana fatta di molecole con una "testa" che ama l'acqua e una "coda" grassa che la teme. Le code grasse, idrofobiche, si nascondono al centro per fuggire dall'acqua, e così si forma da sola una barriera che tiene la cellula chiusa e protetta.
+- **Forma delle proteine.** Una proteina è una lunga catena che si ripiega su se stessa. Le parti grasse, idrofobiche, si infilano verso l'interno per stare lontane dall'acqua. È proprio questo ripiegamento che dà alla proteina la forma giusta per funzionare (ad esempio un enzima o un anticorpo).
+- **Sapone e farmaci.** Il sapone lava il grasso perché ha una parte che afferra l'olio e una che si lega all'acqua, e tanti farmaci entrano nelle cellule proprio sfruttando le zone idrofobiche.
+
+## Guarda il video
+
+<YouTube id="D-JfqqIaFMM" title="Acqua: interazioni idrofiliche, idrofobiche e molecole anfipatiche" />
+
+<VideoVisto id="chim-u1-21" />
+
+## Da ricordare
+
+- **Idrofobico** = "che teme l'acqua". Sono le molecole **apolari**, come l'olio e i grassi.
+- Non si uniscono perché si attraggono: è **l'acqua a spingerle insieme** per restare libera.
+- Unendosi in una goccia sola riducono la **superficie** a contatto con l'acqua: situazione più comoda per l'acqua.
+- Regola d'oro: **il simile scioglie il simile** (polare con polare, apolare con apolare).
+- Nel corpo guidano la formazione delle **membrane cellulari** e il **ripiegamento delle proteine**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa vuol dire che una molecola è 'idrofobica'?"
+  opzioni={["Che si scioglie benissimo in acqua", "Che 'teme' l'acqua ed è apolare, come l'olio", "Che è una molecola d'acqua", "Che è acida"]}
+  corretta={1}
+  spiegazione="'Idrofobico' significa 'che ha paura dell'acqua': sono molecole apolari (senza cariche), come l'olio e i grassi, che non si mescolano con l'acqua."
+/>
+
+<Quiz
+  domanda="Perché le gocce d'olio in acqua tendono a unirsi in una sola goccia?"
+  opzioni={["Perché l'olio è attratto fortemente da sé stesso", "Perché così riducono la superficie a contatto con l'acqua e l'acqua resta più libera", "Perché l'acqua le scalda", "Perché diventano più pesanti"]}
+  corretta={1}
+  spiegazione="Unendosi riducono la superficie esposta all'acqua. Così l'acqua costruisce meno 'gabbiette' ordinate e resta più libera: è l'acqua a guadagnarci, perciò avviene spontaneamente."
+/>
+
+<Quiz
+  domanda="Nella membrana di una cellula, dove si nascondono le 'code' grasse e idrofobiche?"
+  opzioni={["All'esterno, verso l'acqua", "Al centro della membrana, lontano dall'acqua", "Dentro il nucleo", "Non ci sono parti grasse nella membrana"]}
+  corretta={1}
+  spiegazione="Le code grasse fuggono dall'acqua e si infilano al centro della membrana. Così si forma da sola una barriera che protegge la cellula."
+/>
+
+<Esercizio
+  problema="Hai un bicchiere con acqua e tante piccole goccioline d'olio sparse. Le lasci ferme. Cosa succede dopo un po' e perché?"
+  soluzione="Le goccioline si uniscono lentamente fino a formare poche gocce grandi (o un unico strato d'olio in superficie). Questo accade perché unendosi riducono la superficie totale a contatto con l'acqua: l'acqua deve disporsi in modo ordinato (le 'gabbiette') attorno a meno superficie, quindi resta più libera. È la situazione che l'acqua preferisce, perciò il raggruppamento avviene da solo."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-fis-u5-03-1",
+    "topicId": "fis-u5-03",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: il calore e la temperatura sono la stessa cosa — se un corpo e caldo, significa che 'contiene' molto calore.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Sono due cose diverse. La temperatura misura quanto sono agitate le molecole del corpo (e una sua proprieta interna). Il calore invece e energia in transito: e quello che si trasferisce da un corpo piu caldo a uno piu freddo. Analogia: la temperatura e come la velocita di un'auto; il calore e come l'energia spesa per accelerare. Correlate, ma non identiche.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-03-2",
+    "topicId": "fis-u5-03",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "open",
+    "q": "L'acqua ha un calore specifico di ~4186 J/(kg·°C), il ferro solo ~450 J/(kg·°C). Usando la formula Q = m · c · ΔT, spiega: a) perche l'acqua impiega molto piu tempo a scaldarsi del ferro (a parita di massa e calore fornito); b) che differenza c'e tra 'calore specifico' e 'capacita termica'.",
+    "answer": "a) Dalla formula Q = m · c · ΔT, la variazione di temperatura e ΔT = Q / (m · c). A parita di massa m e di calore Q fornito, un calore specifico c piu alto produce un ΔT piu piccolo. L'acqua ha c quasi 10 volte piu grande del ferro: quindi con la stessa energia si scalda circa 10 volte meno. Ecco perche la pentola d'acqua sulla cucina impiega un'eternita rispetto a un blocco di metallo uguale. b) Il calore specifico (simbolo c, minuscolo) e una proprieta del materiale: dice quanti Joule servono per scaldare di 1°C esattamente 1 kg di quella sostanza — vale per tutta l'acqua del mondo, per tutto il ferro del mondo. La capacita termica (simbolo C, maiuscolo) e invece la proprieta di un oggetto specifico con la sua massa: C = m · c. Es. 'questa pentola da 2 kg d'acqua ha C = 2 × 4186 = 8372 J/°C'. Analogia: il calore specifico e il 'consumo per km' del modello di auto (caratteristica del tipo); la capacita termica e il 'pieno totale' di quella precisa auto con quel serbatoio.",
+    "explain": "Chiave: ΔT = Q/(m·c) → c alto = scalda poco. Calore specifico = proprieta del materiale (J/kg·°C); capacita termica = proprieta dell'oggetto, C = m·c (J/°C).",
+    "tags": ["risposta aperta"]
+  }
+]

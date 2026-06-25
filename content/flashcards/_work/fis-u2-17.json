@@ -1,0 +1,67 @@
+{
+ "id": "fis-u2-17",
+ "titolo": "Conservazione dell'energia meccanica",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "17-conservazione-dellenergia-meccanica",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/fisica/u2/17-conservazione-dellenergia-meccanica.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Acqua scorre entro un tubo lungo circa dieci metri e posto verticalmente. Alla sommità, lo alimenta un grande serbatoio. L'acqua in uscita dal tubo cade sulle pale di una ruota da mulino che è così indotta a ruotare facendo muovere i meccanismi della macina. Quale delle affermazioni seguenti è più adatta per identificare la conservazione dell'energia nel sistema descritto?",
+   "choices": [
+    "Energia potenziale viene trasformata in energia cinetica e quindi in lavoro",
+    "La massa d'acqua si conserva e quindi si conserva la sua energia potenziale",
+    "L'energia cinetica dell'acqua rimane costante e quindi trasformata in lavoro",
+    "L'acqua acquista energia potenziale cadendo",
+    "Si conserva l'energia perché la temperatura dell'acqua resta costante"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2011",
+   "q": "Marco lancia verso l'alto una biglia, che cade al suolo descrivendo una parabola. Enrico lascia cadere un'altra biglia, identica alla prima, direttamente a terra, con traiettoria verticale. Trascurando la resistenza dell'aria, e supponendo che le biglie lascino le mani dei ragazzi alla stessa altezza, si può ragionevolmente affermare che, quando le biglie sono a 1 mm dal suolo:",
+   "choices": [
+    "la variazione di energia cinetica rispetto al momento del lancio è uguale per entrambe le biglie",
+    "la velocità della biglia di Marco è uguale a quella della biglia di Enrico",
+    "la variazione di energia potenziale della biglia di Marco, rispetto al momento del lancio, è maggiore di quella della biglia di Enrico",
+    "l'energia meccanica totale della biglia di Marco è uguale a quella della biglia di Enrico",
+    "la forza alla quale è sottoposta la biglia di Marco durante il moto è maggiore di quella che subisce la biglia di Enrico"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2018",
+   "q": "Un oggetto, inizialmente in quiete, scivola su un piano inclinato da una altezza di 10 cm, percorre un tratto orizzontale e risale su un piano inclinato con pendenza di 30°. Quanti centimetri percorre sul secondo piano prima di fermarsi se l'oggetto durante tutto il suo moto non incontra alcun attrito?",
+   "choices": [
+    "20",
+    "10",
+    "5",
+    "8,660",
+    "17,321"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2020",
+   "q": "Un oggetto si muove con energia cinetica E su un piano orizzontale, poi sale su un piano inclinato liscio. Trascurando l'attrito, qual è l'energia potenziale dell'oggetto quando sul piano inclinato la velocità dell'oggetto è metà di quella che aveva sul piano orizzontale?",
+   "choices": [
+    "3E/4",
+    "E/2",
+    "E/4",
+    "E/8",
+    "E"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

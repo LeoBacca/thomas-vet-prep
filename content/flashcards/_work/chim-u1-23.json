@@ -1,0 +1,249 @@
+{
+ "id": "chim-u1-23",
+ "titolo": "Nomenclatura dei composti inorganici (ossidi, idrossidi, acidi, sali)",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "23-nomenclatura-dei-composti-inorganici-ossidi-idrossidi",
+ "freq": 17,
+ "risorseMdx": "src/pages/risorse/chimica/u1/23-nomenclatura-dei-composti-inorganici-ossidi-idrossidi.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Cosa sono le anidridi?",
+   "choices": [
+    "Composti binari formati da un non metallo con ossigeno",
+    "Composti binari formati da uno ione metallico e dall'anione OH-",
+    "Composti binari formati da metallo e ossigeno",
+    "Composti binari formati da idrogeno e un non metallo",
+    "Composti ternari formati da idrogeno, non metallo e ossigeno"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2008",
+   "q": "Il composto formato dagli ioni Fe3+ e SO4^2- ha formula:",
+   "choices": [
+    "Fe2(SO4)3",
+    "Fe2(SO4)2",
+    "Fe2SO4",
+    "FeSO4",
+    "Fe(SO4)2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "formula"
+  },
+  {
+   "year": "2010",
+   "q": "La formula HPO3 rappresenta:",
+   "choices": [
+    "l'acido metafosforico",
+    "l'acido metafosforoso",
+    "l'acido ortofosforico",
+    "l'acido pirofosforico",
+    "l'acido ipofosforico"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2011",
+   "q": "Quale delle formule seguenti è errata?",
+   "choices": [
+    "CaOH",
+    "Ca(OH)2",
+    "CaCl2",
+    "CaO",
+    "CaSO3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "formula"
+  },
+  {
+   "year": "2011",
+   "q": "Indicare quale tra le seguenti formule rappresenta il solfato di alluminio.",
+   "choices": [
+    "Al2(SO4)3",
+    "AlSO4",
+    "Al2(SO3)3",
+    "Al3(SO4)2",
+    "AlSO3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2011",
+   "q": "Indicare quale delle seguenti formule è errata.",
+   "choices": [
+    "H2ClO4",
+    "NH4H2PO4",
+    "K2SO4",
+    "KHSO4",
+    "KH2PO4"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "formula"
+  },
+  {
+   "year": "2012",
+   "q": "Qual è la formula bruta del solfito d'ammonio?",
+   "choices": [
+    "(NH4)2SO3",
+    "(NH3)2SO4",
+    "NH3SO4",
+    "NH3SO3",
+    "(NH)4SO4"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2012",
+   "q": "Quanti atomi di ossigeno sono presenti in una molecola di fosfato calcico [Ca3(PO4)2]?",
+   "choices": [
+    "8",
+    "10",
+    "9",
+    "12",
+    "6"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2012",
+   "q": "La formula bruta del bicarbonato di potassio è:",
+   "choices": [
+    "KHCO3",
+    "KHCO4",
+    "KHSO3",
+    "KCO3",
+    "K2CO3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2012",
+   "q": "Quale tra le seguenti formule chimiche NON è corretta?",
+   "choices": [
+    "LiS",
+    "CaCl2",
+    "Al2O3",
+    "CO",
+    "KNO2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2018",
+   "q": "Quale tra le seguenti scritture indica lo ione bromato?",
+   "choices": [
+    "BrO5-",
+    "BrO7-",
+    "BrO3-",
+    "BrO-",
+    "Br-"
+   ],
+   "correct": 2,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2019",
+   "q": "Quale tra i seguenti composti è un idruro?",
+   "choices": [
+    "CaH2",
+    "HBr",
+    "HCN",
+    "Mg(OH)2",
+    "CuSO4·5H2O"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2019",
+   "q": "Dalla reazione di quale delle seguenti coppie di sostanze si ottiene come prodotto un sale?",
+   "choices": [
+    "Li2O + CO2",
+    "Al + O2",
+    "CaO + H2O",
+    "Li + H2O",
+    "FeO + K"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2020",
+   "q": "LiF, KOH, FeO e HCl sono, rispettivamente:",
+   "choices": [
+    "un sale, un idrossido, un ossido, un acido",
+    "un acido, un ossido, un idrossido, un sale",
+    "un sale, un alcol, un ossido, un acido",
+    "un acido, un alcol, un ossido, un sale",
+    "un sale, un idrossido, un chetone, un acido"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Individuare la formula chimica dello ione ipobromito.",
+   "choices": [
+    "BrO-",
+    "Br2O-",
+    "BrO2-",
+    "HBrO-",
+    "BrO3-"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Tra i seguenti composti del fosforo, qual è l'acido ortofosforico?",
+   "choices": [
+    "H3PO4",
+    "H2PO4",
+    "HPO4",
+    "H3PO3",
+    "H4P2O4"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Il composto HClO2 è:",
+   "choices": [
+    "acido cloroso",
+    "acido ipocloroso",
+    "acido clorico",
+    "acido perclorico",
+    "acido cloridrico"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  }
+ ]
+}

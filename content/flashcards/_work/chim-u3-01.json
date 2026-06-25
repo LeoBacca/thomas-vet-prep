@@ -1,0 +1,137 @@
+{
+ "id": "chim-u3-01",
+ "titolo": "Le reazioni chimiche e le leggi di conservazione",
+ "materia": "chimica",
+ "unita": 3,
+ "slug": "01-le-reazioni-chimiche-e-le-leggi",
+ "freq": 9,
+ "risorseMdx": "src/pages/risorse/chimica/u3/01-le-reazioni-chimiche-e-le-leggi.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Una reazione chimica comporta sempre la trasformazione:",
+   "choices": [
+    "di una o più specie chimiche in altre",
+    "di una specie atomica in un'altra",
+    "di almeno una stessa sostanza da solida a liquida o gassosa",
+    "di un composto ionico in uno covalente",
+    "di un elemento in un altro"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2012",
+   "q": "Qual è la reazione che avviene nello stomaco a seguito della ingestione di bicarbonato di sodio come antiacido?",
+   "choices": [
+    "NaHCO3 + HCl -> NaCl + CO2 + H2O",
+    "Na2CO3 + HCl -> Na2Cl + CO2 + OH-",
+    "Na2CO3 + 2 HCl -> 2 NaClO3 + CO + HO",
+    "NaH2CO3 + HCl -> NaCl + H3CO3",
+    "NaHCO3 + HCl -> NaClO + CO2 + H2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2012",
+   "q": "Indicare l'unica affermazione errata tra quelle riferite alla seguente equazione chimica: 2 Ca + O2 -> 2 CaO",
+   "choices": [
+    "2 g di Ca reagiscono con 1 g di O2 per dare 2 g di CaO",
+    "2 moli di Ca reagiscono con 22,41 litri di O2 (STP) per dare 2 moli di CaO",
+    "2 atomi di Ca reagiscono con 1 molecola di O2 per dare 2 molecole di CaO",
+    "6 moli di Ca reagiscono con 3 moli di O2 per dare 6 moli di CaO",
+    "1 mole di Ca reagisce con 0,5 mole di O2 per dare 1 mole di CaO"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2012",
+   "q": "Data la seguente reazione chimica: 4 NH3 (g) + 5 O2 (g) -> 4 NO (g) + 6 H2O (g). Individuare quante moli di ossigeno sono necessarie affinché 200 moli di ammoniaca reagiscano completamente.",
+   "choices": [
+    "250 mol",
+    "300 mol",
+    "200 mol",
+    "100 mol",
+    "160 mol"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2016",
+   "q": "La combustione dell'idrogeno in aria produce prevalentemente:",
+   "choices": [
+    "acqua",
+    "ossidi di azoto",
+    "ossidi di zolfo",
+    "ammoniaca",
+    "anidride carbonica"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2017",
+   "q": "Individuare la reazione di decomposizione.",
+   "choices": [
+    "CaCO3 -> CaO + CO2",
+    "H2 + Br2 -> 2 HBr",
+    "CaCl2 -> Ca2+ + 2 Cl-",
+    "HCl + H2O -> H3O+ + Cl-",
+    "Ni + 2 HCl -> NiCl2 + H2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2019",
+   "q": "Zolfo e ferro reagiscono completamente con un rapporto in peso di 1:1,74 e producono solfuro di ferro (II) (FeS). Che cosa succede mettendo a reagire 0,5 g di zolfo con 1,74 g di ferro?",
+   "choices": [
+    "Si ottengono 1,37 g di FeS e 0,87 g di ferro non reagiscono",
+    "Si ottengono 1,37 g di FeS e 0,87 g di zolfo non reagiscono",
+    "Ferro e zolfo non reagiscono",
+    "Si ottengono 2,24 g di FeS2",
+    "Si ottengono 2,24 g di FeS"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2020",
+   "q": "In un volume di 100 mL di una soluzione 2,5 M di HCl vengono messi 10 g di CaCO3(s) (Massa molare = 100 g/mol). La reazione che si sviluppa è la seguente: CaCO3(s) + 2HCl(aq) -> CaCl2(aq) + CO2(g) + H2O. Individuare il reagente limitante della reazione e le moli di CO2 che verranno effettivamente prodotte.",
+   "choices": [
+    "CaCO3 ; 0,1 moli di CO2",
+    "HCl ; 0,25 moli di CO2",
+    "HCl ; 0,1 moli di CO2",
+    "CaCO3 ; 0,2 moli di CO2",
+    "CaCO3 ; 0,25 moli di CO2"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Quale tra le seguenti reazioni chimiche è una reazione di scambio semplice (o spostamento)?",
+   "choices": [
+    "2Na + 2H2O -> H2 + 2NaOH",
+    "SO3 + H2O -> H2SO4",
+    "CaCO3 -> CaO + CO2",
+    "NiO + 2HNO3 -> Ni(NO3)2 + H2O",
+    "2KOH + H2SO4 -> K2SO4 + 2H2O"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

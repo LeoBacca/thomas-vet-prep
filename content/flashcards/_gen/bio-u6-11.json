@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-bio-u6-11-1",
+    "topicId": "bio-u6-11",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: un oncogene e un gene normale che aiuta la cellula a crescere in modo controllato.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Quello che hai descritto e un PROTO-oncogene (il gene normale, come un acceleratore che premi solo quando serve). L'ONCOGENE e la versione mutata: e come se l'acceleratore si bloccasse a tavoletta — la cellula riceve un segnale di crescita continuo e non riesce piu a fermarsi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u6-11-2",
+    "topicId": "bio-u6-11",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "open",
+    "q": "La proteina PTEN viene inattivata da una mutazione. Cosa succede alla via PI3K/AKT e perche la cellula diventa pericolosa?",
+    "answer": "In condizioni normali PTEN funziona da freno: toglie il fosfato a PIP3 e lo riconverte in PIP2, spegnendo il segnale. Senza PTEN funzionante, PIP3 si accumula in eccesso sulla membrana. PIP3 in eccesso attira e attiva AKT in modo permanente. AKT attiva a sua volta mTOR, che stimola la sintesi proteica e la crescita, e blocca le proteine che causerebbero la morte programmata della cellula (apoptosi). Il risultato: la cellula cresce, si divide e non muore mai — esattamente il comportamento di una cellula tumorale. PTEN e quindi un oncosoppressore: il suo ruolo normale e spegnere questo interruttore.",
+    "explain": "Da ricordare: PTEN = freno di PI3K/AKT. PTEN inattivo → PIP3 sempre alto → AKT sempre attiva → cellula non muore mai.",
+    "tags": ["risposta aperta"]
+  }
+]

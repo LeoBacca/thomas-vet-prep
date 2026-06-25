@@ -1,0 +1,10 @@
+{
+ "id": "fis-u1-06",
+ "titolo": "Funzioni trigonometriche elementari (seno, coseno, tangente)",
+ "materia": "fisica",
+ "unita": 1,
+ "slug": "06-funzioni-trigonometriche-elementari-seno-coseno-tangente",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u1/06-funzioni-trigonometriche-elementari-seno-coseno-tangente.mdx",
+ "examQuestions": []
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-19-1",
+    "topicId": "chim-u1-19",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: una molecola che ha legami polari (cioè con dipoli) è SEMPRE una molecola polare.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Conta anche la FORMA della molecola. Se i dipoli si cancellano tra loro (come in CO2, dritta), la somma è zero e la molecola è apolare — anche se i singoli legami sono polari. È come due persone che tirano la stessa corda in versi opposti con uguale forza: nessuno vince.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-19-2",
+    "topicId": "chim-u1-19",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "L'acqua (H₂O) è polare e l'olio è apolare. Quale regola spiega perché acqua e olio NON si mescolano?",
+    "choices": [
+      "Il simile scioglie il simile: polare si scioglie con polare, apolare con apolare",
+      "Liquidi più densi non si sciolgono in liquidi meno densi",
+      "L'acqua non scioglie mai nessun liquido, solo i solidi",
+      "I legami dell'olio sono troppo forti per essere spezzati dall'acqua"
+    ],
+    "answer": 0,
+    "explain": "La regola d'oro è 'il simile scioglie il simile': una sostanza polare trova 'affinità' con solventi polari, una apolare con solventi apolari. Acqua (polare) e olio (apolare) sono 'due mondi' diversi e non si attraggono. In veterinaria questo spiega anche perché le vitamine liposolubili (A, D, E, K) viaggiano nei grassi e quelle idrosolubili (C, gruppo B) nel sangue.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-19-3",
+    "topicId": "chim-u1-19",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue: perché la CO₂ (O=C=O) è una molecola APOLARE, anche se i legami C=O sono polari? Confrontala con l'acqua (H₂O), che invece è polare.",
+    "answer": "In CO₂ il carbonio centrale è al centro di una molecola perfettamente dritta: l'ossigeno a sinistra tira gli elettroni verso di sé (freccia → sinistra) e l'ossigeno a destra tira ugualmente verso di sé (freccia → destra). Le due frecce sono uguali e opposte: si cancellano. Il momento dipolare totale è zero → la molecola è APOLARE. Nell'acqua invece la molecola è piegata a 'V': i due legami O–H non sono allineati e le loro frecce (che puntano entrambe verso l'ossigeno) NON si cancellano — restano una freccia netta verso l'ossigeno. Quindi l'acqua è POLARE. La forma conta quanto (o più) dei singoli legami.",
+    "explain": "Concetto chiave: anche con legami polari una molecola può essere apolare se la sua forma è simmetrica e i dipoli si annullano.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-19-4",
+    "topicId": "chim-u1-19",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Perché CCl₄ non è una molecola polare, pur avendo quattro legami C–Cl (che sono polari)?",
+    "choices": [
+      "Perché CCl₄ ha forma tetraedrica simmetrica: i quattro dipoli si annullano completamente",
+      "Perché carbonio e cloro hanno la stessa elettronegatività, quindi i legami non sono polari",
+      "Perché il cloro è più elettronegativo del carbonio, e questo rende la molecola apolare",
+      "Perché il carbonio è un atomo piccolo e non crea dipoli con il cloro",
+      "Perché il carbonio forma quattro legami e ogni legame multiplo annulla la polarità"
+    ],
+    "answer": 0,
+    "explain": "La risposta giusta è la forma tetraedrica simmetrica: i quattro legami C–Cl SONO polari (il cloro è più elettronegativo del carbonio), ma essendo disposti simmetricamente ai quattro vertici di un tetraedro, i loro dipoli si cancellano a vicenda → somma zero → molecola apolare. Trappola B: C e Cl hanno elettronegatività DIVERSA (Cl è molto più elettronegativo), quindi i legami sono polari — ma questo non basta a rendere polare la molecola. Trappola C: il fatto che Cl sia più elettronegativo di C crea i dipoli, ma da solo non determina la polarità della molecola. Trappola E: il numero di legami e la molteplicità non c'entrano; conta la geometria.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-19-5",
+    "topicId": "chim-u1-19",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti molecole è APOLARE?",
+    "choices": [
+      "NH₃ (piramidale, con un doppietto libero sull'azoto)",
+      "H₂S (piegata, come l'acqua)",
+      "BH₃ (trigonale planare, perfettamente simmetrica)",
+      "HBr (un atomo di H e uno di Br, diversi tra loro)",
+      "CO (un atomo di C e uno di O, con elettronegatività diverse)"
+    ],
+    "answer": 2,
+    "explain": "BH₃ è trigonale planare: i tre legami B–H partono dal boro in modo perfettamente simmetrico (angoli di 120°) e i tre dipoli si annullano → apolare. NH₃ ha forma piramidale per il doppietto libero sull'azoto: i dipoli NON si annullano → polare. H₂S è piegata come l'acqua → polare. HBr e CO uniscono atomi con diversa elettronegatività e non hanno simmetria che li bilanci → polari. Regola: guarda sempre la GEOMETRIA, non solo i tipi di atomi.",
+    "tags": ["prova d'esame"]
+  }
+]

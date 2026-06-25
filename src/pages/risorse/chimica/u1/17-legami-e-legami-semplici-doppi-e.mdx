@@ -1,0 +1,103 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-17">
+
+Quando due atomi si **legano**, in realtà mettono in comune degli elettroni. Ma non tutti i legami si "agganciano" allo stesso modo. Esistono due tipi di aggancio: il **legame sigma (σ)** e il **legame pi greco (π)**. Capire la differenza ti aiuta a leggere subito una molecola e a sapere quanto è robusta: e nei composti del corpo (zuccheri, grassi, proteine) questo conta moltissimo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il legame <strong>sigma</strong> è una stretta di mano frontale, testa contro testa. Il legame <strong>pi greco</strong> è un abbraccio laterale, che avvolge il primo sopra e sotto.</div>
+
+<Diagram caption="I due modi in cui gli atomi si agganciano" code={`flowchart TB
+  L["Legame tra due atomi"] --> S["SIGMA (σ)<br/>aggancio frontale, testa-testa<br/>lungo la linea tra i nuclei"]
+  L --> P["PI GRECO (π)<br/>aggancio laterale<br/>sopra e sotto la linea"]`} />
+
+## Sigma: l'aggancio frontale (testa-testa)
+
+Immagina due persone che si danno la mano stando una di fronte all'altra: le mani si incontrano **proprio in mezzo**, sulla linea che le unisce. Questo è il legame **sigma**.
+
+Gli elettroni si sovrappongono **lungo la linea che collega i due nuclei** (la "spina dorsale" del legame). Per questo il sigma è il legame **più forte e stabile**: è ben piantato in mezzo.
+
+Una cosa importante: con il solo sigma, i due atomi possono **ruotare liberamente** uno rispetto all'altro, come una maniglia che gira. La stretta di mano regge anche se ti giri.
+
+C'è sempre **un solo sigma** per ogni coppia di atomi legati. È la base: ogni legame parte da un sigma.
+
+## Pi greco: l'abbraccio laterale (sopra e sotto)
+
+Ora immagina che, oltre a darsi la mano, le due persone si **abbraccino di lato**. Le braccia non passano in mezzo, ma **sopra e sotto**. Questo aggancio in più è il legame **pi greco**.
+
+Gli elettroni si sovrappongono **lateralmente**, in due "nuvole" parallele: una sopra e una sotto la linea dei nuclei. Il pi greco è **più debole** del sigma, perché l'aggancio non è frontale ma di fianco.
+
+E attenzione: appena c'è un pi greco, gli atomi **non possono più ruotare** liberamente. L'abbraccio li blocca in una posizione. Questo è enorme in biologia: la forma rigida di certi legami decide come si incastrano le molecole, per esempio nella **retina** dell'occhio una molecola cambia forma con la luce e ci fa vedere.
+
+<Diagram caption="Schema concettuale: dove stanno gli elettroni nei due legami" code={`flowchart TB
+  N1["Nucleo A"] -->|"SIGMA: elettroni in mezzo, sulla linea"| N2["Nucleo B"]
+  SU["nuvola PI sopra"] -.->|"lateralmente"| GIU["nuvola PI sotto"]`} />
+
+## Semplici, doppi e tripli: contiamo gli agganci
+
+Adesso il bello: ti basta **contare gli agganci** per sapere che tipo di legame hai.
+
+- **Legame semplice** = 1 sigma. Solo la stretta di mano. (esempio: H-H, oppure i legami C-H nei grassi)
+- **Legame doppio** = 1 sigma + 1 pi greco. Stretta di mano **più** un abbraccio. (esempio: O=O, oppure il C=O degli zuccheri)
+- **Legame triplo** = 1 sigma + 2 pi greco. Mano **più** due abbracci. È il più forte e corto. (esempio: l'azoto N≡N dell'aria, fortissimo)
+
+Più agganci = legame **più forte e più corto**, ma anche **più rigido** (niente rotazione).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il primo aggancio è sempre sigma. Tutti gli agganci in più sono pi greco. Doppio = uno e uno; triplo = uno e due.</div>
+
+<Diagram caption="Quanti sigma e pi greco in ogni tipo di legame" code={`flowchart TB
+  T["Tipo di legame"] --> SE["SEMPLICE<br/>1 sigma"]
+  T --> DO["DOPPIO<br/>1 sigma + 1 pi greco"]
+  T --> TR["TRIPLO<br/>1 sigma + 2 pi greco"]`} />
+
+## Guarda il video
+
+<YouTube id="5P5ZwVHDks0" title="Teoria VB: legami sigma e pi greco — le teorie del legame" />
+
+<VideoVisto id="chim-u1-17" />
+
+## Da ricordare
+
+- **Sigma (σ)**: aggancio frontale testa-testa, sulla linea tra i nuclei. È il **più forte** e c'è sempre un solo sigma.
+- **Pi greco (π)**: aggancio laterale, sopra e sotto. È **più debole** e **blocca la rotazione**.
+- **Semplice** = 1 sigma. **Doppio** = 1 sigma + 1 pi greco. **Triplo** = 1 sigma + 2 pi greco.
+- Più agganci = legame **più forte, più corto e più rigido**.
+- Il primo aggancio è sempre sigma; tutti quelli in più sono pi greco.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è il legame più forte, con sovrapposizione frontale (testa-testa) lungo la linea tra i nuclei?"
+  opzioni={["il legame pi greco", "il legame sigma", "nessuno dei due", "sono uguali"]}
+  corretta={1}
+  spiegazione="Il sigma è l'aggancio frontale, in mezzo ai due nuclei: per questo è il più forte. Il pi greco è laterale e più debole."
+/>
+
+<Quiz
+  domanda="Da quanti legami è fatto un legame DOPPIO?"
+  opzioni={["2 sigma", "1 sigma + 1 pi greco", "2 pi greco", "1 sigma + 2 pi greco"]}
+  corretta={1}
+  spiegazione="Il doppio è una stretta di mano più un abbraccio: 1 sigma + 1 pi greco. Il primo aggancio è sempre sigma."
+/>
+
+<Quiz
+  domanda="Cosa succede agli atomi quando c'è un legame pi greco?"
+  opzioni={["ruotano più velocemente", "non possono più ruotare liberamente", "si allontanano", "perdono gli elettroni"]}
+  corretta={1}
+  spiegazione="L'abbraccio laterale del pi greco blocca la rotazione: gli atomi restano fissi in quella posizione. Con il solo sigma, invece, potevano girare."
+/>
+
+<Esercizio
+  problema="L'azoto dell'aria è una molecola N≡N, cioè con un legame TRIPLO. Quanti legami sigma e quanti pi greco ci sono tra i due atomi di azoto? E ti aspetti che sia un legame forte o debole?"
+  soluzione="Un legame triplo è fatto da 1 sigma + 2 pi greco. Quindi: 1 sigma e 2 pi greco. È un legame molto forte e corto (è proprio per questo che l'azoto dell'aria è così stabile e poco reattivo)."
+/>
+
+</section>
+
+</RisorsaLayout>

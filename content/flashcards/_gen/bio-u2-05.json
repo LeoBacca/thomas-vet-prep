@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u2-05-1",
+    "topicId": "bio-u2-05",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: gli istoni sono solo un supporto passivo che tiene compresso il DNA, senza influenzare quali geni vengono letti.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Gli istoni hanno delle 'code' che ricevono etichette chimiche (acetilazione, metilazione...). Quelle etichette aprono o chiudono la cromatina, decidendo quali geni vengono letti e quali tacciono — sono un interruttore attivo, non un rocchetto passivo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u2-05-2",
+    "topicId": "bio-u2-05",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quando l'enzima HAT aggiunge un gruppo acetile (-COCH₃) alla coda di un istone, cosa succede alla cromatina?",
+    "choices": [
+      "La cromatina si apre: il gene può essere trascritto",
+      "La cromatina si chiude: il gene viene silenziato",
+      "Il DNA viene tagliato e rimosso",
+      "L'istone viene degradato dal proteasoma"
+    ],
+    "answer": 0,
+    "explain": "Il gruppo acetile è neutro: neutralizza la carica positiva della lisina della coda istonica. L'abbraccio con il DNA (carico negativamente) si allenta, la cromatina si apre (eucromatina) e i fattori di trascrizione possono avvicinarsi al gene. È come togliere il lucchetto a un cassetto: i documenti (geni) diventano leggibili.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u2-05-3",
+    "topicId": "bio-u2-05",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "open",
+    "q": "Una cellula muscolare e una cellula nervosa di un cane hanno esattamente lo stesso DNA. Eppure si comportano in modo totalmente diverso. Come è possibile? Spiega il ruolo delle modificazioni istoniche.",
+    "answer": "Le due cellule hanno lo stesso genoma, ma leggono geni diversi grazie a diversi pattern epigenetici sulle code degli istoni. In una cellula muscolare, i geni per le proteine contrattili (actina, miosina) sono aperti (le loro code istoniche sono acetilate o metilate in modo attivante), mentre i geni neuronali sono silenziati. Nella cellula nervosa è il contrario. Queste etichette chimiche (acetilazione, metilazione, fosforilazione) formano il codice istonico: un linguaggio che dice alla cellula quali geni leggere, quando e quanto. La cosa sorprendente è che questi pattern possono essere copiati quando la cellula si divide, quindi le cellule figlie 'ricordano' il tipo cellulare del genitore — senza che la sequenza del DNA cambi mai.",
+    "explain": "Da ricordare: stessa sequenza DNA + diversi pattern epigenetici = diversi tipi cellulari. L'epigenetica spiega la differenziazione cellulare.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u2-05-4",
+    "topicId": "bio-u2-05",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Le modificazioni epigenetiche (come l'acetilazione degli istoni):",
+    "choices": [
+      "non determinano cambiamenti nella sequenza del DNA",
+      "determinano cambiamenti nella sequenza del DNA",
+      "esistono soltanto nelle cellule germinali",
+      "riguardano soltanto i mammiferi",
+      "modificano la struttura del gene ma non la sua espressione"
+    ],
+    "answer": 0,
+    "explain": "Le modificazioni epigenetiche CAMBIANO COME il DNA viene letto, NON la sequenza del DNA stesso. I brani della playlist (geni) restano identici; cambia solo quali vengono 'suonati'. La scelta B è l'opposto esatto ed è la trappola più frequente: non confondere 'modificazione dell'espressione' con 'mutazione della sequenza'. La C è falsa: l'epigenetica esiste in tutti i tessuti di tutti gli eucarioti (muscolo, fegato, neuroni...). La D è falsa: presente in molti organismi, non solo mammiferi. La E è una contraddizione: modificare l'accessibilità della cromatina significa direttamente modificare l'espressione del gene.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u2-05-5",
+    "topicId": "bio-u2-05",
+    "materia": "biologia",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un farmaco blocca completamente l'enzima HDAC (istone deacetilasi) in una cellula. Quale effetto ti aspetti sull'espressione genica?",
+    "choices": [
+      "I geni vengono silenziati perché la cromatina si compatta",
+      "L'espressione genica aumenta perché la cromatina resta in stato aperto",
+      "Nessun effetto: HDAC non influenza la trascrizione",
+      "Il DNA viene degradato perché i gruppi acetile si accumulano",
+      "Solo i geni delle cellule germinali vengono attivati"
+    ],
+    "answer": 1,
+    "explain": "HDAC rimuove i gruppi acetile dalle code istoniche, facendo richiudere la cromatina. Se HDAC viene bloccato, i gruppi acetile non vengono mai tolti: le code restano neutre (non positive), la cromatina rimane aperta (eucromatina) e i fattori di trascrizione continuano ad accedere ai promotori → aumento della trascrizione. La A è l'opposto esatto: è la trappola più insidiosa (confonde 'bloccare l'enzima che CHIUDE' con 'chiudere'). La C è falsa: HDAC è fondamentale per il ciclo di attivazione/silenziamento. La D è inventata: i gruppi acetile non degradano il DNA. La E è fuori tema. Nota biomedica: questo principio è usato in oncologia — farmaci inibitori di HDAC riattivano geni oncosoppressori silenziati nelle cellule tumorali.",
+    "tags": ["prova d'esame"]
+  }
+]

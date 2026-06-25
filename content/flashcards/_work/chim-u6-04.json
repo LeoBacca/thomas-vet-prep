@@ -1,0 +1,39 @@
+{
+ "id": "chim-u6-04",
+ "titolo": "Tioli, eteri, tioeteri ed epossidi",
+ "materia": "chimica",
+ "unita": 6,
+ "slug": "04-tioli-eteri-tioeteri-ed-epossidi",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u6/04-tioli-eteri-tioeteri-ed-epossidi.mdx",
+ "examQuestions": [
+  {
+   "year": "2016",
+   "q": "La formula generale R-O-R' è caratteristica:",
+   "choices": [
+    "degli eteri",
+    "delle aldeidi",
+    "dei chetoni",
+    "degli esteri",
+    "degli alcoli"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "formula"
+  },
+  {
+   "year": "2018",
+   "q": "Quale delle seguenti affermazioni relative agli eteri è corretta?",
+   "choices": [
+    "Contengono un atomo di ossigeno legato a due atomi di carbonio",
+    "Sono derivati degli acidi carbossilici",
+    "Non contengono atomi di ossigeno",
+    "Possono essere ottenuti per condensazione di un alcol e di un acido carbossilico",
+    "Devono contenere un gruppo funzionale ossidrilico"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

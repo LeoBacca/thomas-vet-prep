@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-06-1",
+    "topicId": "fis-u2-06",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: nel moto parabolico, la gravità rallenta anche la velocità orizzontale del proiettile.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. La gravità agisce SOLO in verticale: tira il proiettile verso il basso e basta. La velocità orizzontale rimane sempre la stessa dall'inizio alla fine, come una macchina in rettilineo senza attrito. I due moti sono completamente indipendenti: il verticale non influenza l'orizzontale e viceversa.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-06-2",
+    "topicId": "fis-u2-06",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Immagina di lanciare una palla in diagonale. Che tipo di moto fa la palla in senso ORIZZONTALE (cioè in avanti)?",
+    "choices": [
+      "Moto rettilineo uniforme: la velocità orizzontale resta costante perché nessuna forza agisce in orizzontale",
+      "Moto accelerato: la velocità aumenta perché la spinta iniziale continua a spingere",
+      "Moto frenato: la gravità frena anche la componente orizzontale",
+      "Moto oscillante: la palla va avanti e indietro mentre sale e scende"
+    ],
+    "answer": 0,
+    "explain": "In orizzontale non c'è nessuna forza (ignoriamo l'aria): la palla va avanti sempre alla stessa velocità. È come una macchina in rettilineo su una strada perfettamente liscia. Tutta la 'fatica' di accelerare viene fatta dalla gravità, ma solo in verticale (verso il basso).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-06-3",
+    "topicId": "fis-u2-06",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega con parole tue perché la traiettoria di un proiettile lanciato in diagonale è una parabola, e cosa succede alla velocità del proiettile nel punto più alto della traiettoria (l'apice).",
+    "answer": "La traiettoria è una parabola perché il moto parabolico è la somma di DUE moti indipendenti che avvengono contemporaneamente: orizzontalmente la palla avanza a velocità costante (nessuna forza in quella direzione), verticalmente invece la gravità la fa accelerare verso il basso. Combinando un moto uniforme in una direzione e un moto accelerato nell'altra, la traiettoria risultante ha la forma matematica di una parabola. All'apice (il punto più alto) la componente verticale della velocità è zero: la palla ha finito di salire e sta per iniziare a scendere. MA la componente orizzontale non è mai zero, perché nulla la ferma: la palla continua a muoversi in avanti anche in quel momento. Quindi all'apice il proiettile non è fermo: si muove ancora orizzontalmente a velocità vx costante.",
+    "explain": "Chiave: all'apice vy = 0 (finisce la salita) ma vx è ancora presente e costante. La velocità totale in quel punto è solo la componente orizzontale.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-06-4",
+    "topicId": "fis-u2-06",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Due sferette identiche A e B vengono lasciate cadere contemporaneamente dalla stessa altezza: A con velocità iniziale zero (cade giù dritta), B con una spinta orizzontale (parte in avanti e poi cade). Trascurando l'attrito, quale tocca terra per prima?",
+    "choices": [
+      "Le due sferette arrivano al suolo contemporaneamente",
+      "La sferetta A arriva prima, perché va dritta verso il basso senza deviare",
+      "La sferetta B arriva prima, perché ha più velocità di partenza",
+      "La sferetta B arriva prima, ma solo se la sua velocità orizzontale è maggiore di 9,8 m/s",
+      "Non si può sapere senza conoscere la velocità esatta di B"
+    ],
+    "answer": 0,
+    "explain": "I due moti (orizzontale e verticale) sono INDIPENDENTI: la velocità orizzontale di B non cambia nulla su come cade verticalmente. Entrambe partono dalla stessa altezza, entrambe hanno velocità verticale iniziale zero, entrambe sono accelerate verso il basso dalla stessa gravità → cadono in verticale nello stesso identico modo e arrivano insieme. Trappola 'A per prima': sembra logico perché A va dritta, ma ignora che la gravità agisce allo stesso modo su entrambe. Trappola 'B per prima': confonde velocità orizzontale con velocità di caduta (la spinta orizzontale non aiuta a cadere più in fretta). Trappola 'solo se v > 9,8 m/s': il numero 9,8 è g (l'accelerazione di gravità), non una soglia: non c'entra nulla con la questione. L'ultima trappola confonde la 'velocità' in gioco: solo quella verticale conta per determinare quando si tocca terra.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-06-5",
+    "topicId": "fis-u2-06",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un proiettile viene lanciato su terreno piano e senza attrito. A quale angolo di lancio la distanza orizzontale percorsa (gittata) è MASSIMA?",
+    "choices": [
+      "30°, perché è un angolo intermedio non troppo alto",
+      "45°, perché bilancia al meglio le componenti orizzontale e verticale",
+      "60°, perché una traiettoria più alta permette di andare più lontano",
+      "90°, perché lanciare in verticale dà la massima altezza e quindi la massima gittata",
+      "0°, perché lanciare perfettamente in orizzontale evita di sprecare energia in salita"
+    ],
+    "answer": 1,
+    "explain": "La gittata è massima a 45°: è il punto in cui la combinazione di distanza orizzontale e tempo di volo (dato dall'altezza raggiunta) è ottimale. Trappola '90°' (opposto esatto): a 90° il proiettile sale dritto e ricade nello stesso punto, gittata zero. Trappola '0°': a 0° il proiettile parte in orizzontale, vola poco prima di toccare terra (nessuna altezza, pochissimo tempo di volo), gittata molto ridotta. Trappola '60°': funziona bene ma non è il massimo; per simmetria, 60° e 30° danno la stessa gittata (complementari a 90°), e 45° fa meglio di entrambi. Regola: la gittata vale R = (v₀² · sin(2θ)) / g; il seno è massimo quando 2θ = 90°, cioè θ = 45°.",
+    "tags": ["prova d'esame"]
+  }
+]

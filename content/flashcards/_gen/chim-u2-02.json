@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u2-02-1",
+    "topicId": "chim-u2-02",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: in una soluzione di acqua e zucchero, lo zucchero e il solvente perche si scioglie dentro l'acqua.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. E l'opposto: lo zucchero e il SOLUTO (l'ospite, in quantita piccola), l'acqua e il SOLVENTE (la casa, in quantita grande). Il solvente e sempre quello che c'e di piu.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-02-2",
+    "topicId": "chim-u2-02",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "L'aria che respiriamo (un mix di azoto, ossigeno e altri gas mescolati in modo uniforme) e un esempio di soluzione di che tipo?",
+    "choices": [
+      "Soluzione solida, come le leghe metalliche",
+      "Soluzione liquida, come l'acqua salata",
+      "Soluzione gassosa, perche i componenti sono tutti gas mescolati uniformemente",
+      "Non e una soluzione: per essere tale ci vuole almeno un liquido"
+    ],
+    "answer": 2,
+    "explain": "Una soluzione e un miscuglio UNIFORME: non importa lo stato fisico, conta che i componenti siano mescolati in modo omogeneo. L'aria e una soluzione gassosa. Aggancio vet: l'ossigeno che arriva ai polmoni di un cane durante un'anestesia proviene proprio da questa 'soluzione gassosa'.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-02-3",
+    "topicId": "chim-u2-02",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "open",
+    "q": "Immagina di avere una tazza di brodo salato. Indica: chi e il soluto, chi e il solvente, di che tipo di soluzione si tratta. Poi spiega come fai a riconoscere sempre chi dei due e il solvente.",
+    "answer": "Il soluto e il sale (e in quantita minore, si scioglie dentro). Il solvente e l'acqua del brodo (e in quantita maggiore, scioglie il sale). E una soluzione LIQUIDA. Per riconoscere il solvente basta guardare chi c'e di piu: quello che abbonda e il solvente, quello che si 'nasconde' dentro e il soluto. L'acqua e chiamata il 'solvente della vita' perche il nostro corpo (e quello degli animali) e fatto per circa il 60% di acqua, in cui viaggiano disciolti sali, zuccheri, farmaci e tante altre sostanze.",
+    "explain": "Regola d'oro: solvente = il piu abbondante. Soluto = il meno abbondante. Soluzione liquida = almeno un componente e liquido.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u2-02-4",
+    "topicId": "chim-u2-02",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Indicare quale delle seguenti affermazioni e vera. Se una soluzione e SATURA di un soluto X:",
+    "choices": [
+      "Non si puo sciogliervi altro soluto X alla stessa temperatura",
+      "Non si puo sciogliervi altri soluti diversi da X",
+      "Si puo sciogliervi altro soluto X se si rimuove il corpo di fondo",
+      "Se si aggiunge altro soluto X questo inizia a reagire con il solvente",
+      "Non si puo sciogliervi altro soluto X nemmeno aumentando la temperatura"
+    ],
+    "answer": 0,
+    "explain": "Una soluzione satura ha gia sciolto tutto il soluto X che puo a quella temperatura: aggiungerne altro non si scioglie (resta sul fondo come 'corpo di fondo'). Le trappole: 'non si sciolgono altri soluti diversi da X' e falso, la saturazione riguarda SOLO il soluto X, altri soluti diversi possono ancora sciogliersi; 'si puo aggiungere se si rimuove il corpo di fondo' e una trappola insidiosa: rimuovere il corpo di fondo non cambia la saturazione, la soluzione e ancora satura; 'inizia a reagire' e fuori tema; 'nemmeno aumentando la temperatura' e l'opposto esatto: di solito riscaldando si scioglie di piu (la solubilita dei solidi aumenta con la temperatura).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u2-02-5",
+    "topicId": "chim-u2-02",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Le pinze chirurgiche del veterinario sono fatte di acciaio (una lega di ferro e carbonio mescolati in modo uniforme). Che tipo di soluzione e l'acciaio?",
+    "choices": [
+      "Non e una soluzione perche e un solido",
+      "E una soluzione liquida perche i metalli si fondono",
+      "E una soluzione solida perche i componenti sono mescolati uniformemente in fase solida",
+      "E una soluzione gassosa perche i metalli evaporano ad alta temperatura",
+      "E una soluzione satura di carbonio in acqua"
+    ],
+    "answer": 2,
+    "explain": "Le soluzioni possono esistere in tutti e tre gli stati: gassoso, liquido e SOLIDO. L'acciaio e una lega metallica, cioe un miscuglio uniforme di metalli (ferro + carbonio) allo stato solido: e una soluzione solida. Trappola 'non e una soluzione perche e solido': e la misconcezione piu comune, ma lo stato fisico non esclude la soluzione, conta solo l'uniformita del miscuglio. 'Soluzione liquida' e sbagliato: l'acciaio a temperatura ambiente e solido. 'Soluzione gassosa' e fuori tema (i metalli evaporano solo a temperature altissime, non e lo stato normale). 'Satura di carbonio in acqua' e un filler: l'acqua non c'entra nulla con l'acciaio.",
+    "tags": ["prova d'esame"]
+  }
+]

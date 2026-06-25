@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u3-06-1",
+    "topicId": "chim-u3-06",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: un catalizzatore si consuma durante la reazione, come la legna che brucia in un camino.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il catalizzatore NON si consuma: a fine reazione lo ritrovi intatto, pronto a lavorare di nuovo. Non e' un ingrediente (non finisce nei prodotti), e' una guida di montagna che accompagna il gruppo e poi e' ancora li per il gruppo successivo. La legna che brucia e' l'opposto: lei e' il reagente, scompare.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-06-2",
+    "topicId": "chim-u3-06",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Immagina una reazione come un masso da spingere oltre una collina: solo chi ce la fa a scollinare produce il prodotto. Cosa fa esattamente un catalizzatore in questa immagine?",
+    "choices": [
+      "Abbassa la collina da scollinare (riduce l'energia di attivazione)",
+      "Sposta il masso di partenza piu in alto, dandogli piu energia",
+      "Sposta la valle di arrivo piu in basso, cambiando i prodotti",
+      "Fa partire il masso senza nessuna spinta"
+    ],
+    "answer": 0,
+    "explain": "Il catalizzatore scava una scorciatoia piu bassa: abbassa l'energia di attivazione (la 'collina'). Con una collina piu bassa, molte piu particelle riescono a superarla e la reazione va piu veloce. Il punto di partenza (reagenti) e il punto di arrivo (prodotti) restano identici: cambia solo quanto e' facile arrivarci. Nei tuoi animali gli enzimi fanno esattamente questo, migliaia di volte al secondo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u3-06-3",
+    "topicId": "chim-u3-06",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "open",
+    "q": "Spiega con parole tue le tre cose che un catalizzatore FA e le due cose che NON fa. Poi dai un esempio di catalizzatore biologico e spiega perche e' utile per un futuro veterinario saperlo.",
+    "answer": "COSA FA: 1) Rende la reazione piu veloce. 2) Abbassa l'energia di attivazione (la 'collina' da scollinare). 3) Modifica il meccanismo della reazione (cioe il percorso che le molecole seguono per trasformarsi). COSA NON FA: 1) Non si consuma: alla fine della reazione lo ritrovi intatto. 2) Non cambia la costante di equilibrio ne la quantita di prodotto all'equilibrio: aiuta ad arrivarci prima, non ad ottenere di piu. Esempio biologico: gli enzimi sono i catalizzatori del corpo, quasi sempre proteine. L'amilasi della saliva comincia a digerire l'amido in bocca, spezzandolo in zuccheri piu piccoli. Per un veterinario: quando nelle analisi del sangue di un cane trovi enzimi del fegato (come ALT o AST) a valori alti, e' un segnale che quelle cellule sono danneggiate e stanno rilasciando enzimi in circolo. Conoscere gli enzimi vuol dire saper leggere quei segnali.",
+    "explain": "Da ricordare: accelera e non si consuma SI; cambia equilibrio e prodotti NO.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u3-06-4",
+    "topicId": "chim-u3-06",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Indica quale, tra quelle elencate, e' la funzione svolta da un enzima che catalizza una reazione reversibile del tipo A + B ⇌ C + D:",
+    "choices": [
+      "Sposta l'equilibrio della reazione verso i prodotti C e D",
+      "Aumenta il valore della costante di equilibrio",
+      "Accelera la velocita della reazione (sia in avanti che all'indietro)",
+      "Apporta energia alla reazione",
+      "Diminuisce il valore della costante di equilibrio"
+    ],
+    "answer": 2,
+    "explain": "L'enzima (catalizzatore biologico) accelera la velocita con cui la reazione raggiunge l'equilibrio, ma NON cambia dove si trova quell'equilibrio. Quindi la costante di equilibrio resta identica (non aumenta ne diminuisce). 'Sposta l'equilibrio verso i prodotti' e' la trappola piu insidiosa: suona ragionevole, ma e' falso — il catalizzatore aiuta la reazione ad arrivare prima all'equilibrio, non a spostarlo. 'Aumenta la costante' e 'Diminuisce la costante' sono l'opposto esatto l'uno dell'altro e entrambi sbagliati: la costante dipende dalla differenza di energia tra reagenti e prodotti, non dalla velocita. 'Apporta energia' e' il filler fuori tema: il catalizzatore non e' una fonte di energia, abbassa solo la barriera.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u3-06-5",
+    "topicId": "chim-u3-06",
+    "materia": "chimica",
+    "unita": 3,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sui catalizzatori NON e' corretta?",
+    "choices": [
+      "Accelerano il raggiungimento dell'equilibrio di reazione",
+      "Spostano l'equilibrio della reazione verso i prodotti",
+      "Diminuiscono l'energia di attivazione della reazione",
+      "Non si consumano nel corso della reazione",
+      "Modificano il meccanismo della reazione"
+    ],
+    "answer": 1,
+    "explain": "'Spostano l'equilibrio verso i prodotti' e' FALSA: e' la risposta giusta (cioe quella da trovare come errata). Il catalizzatore fa arrivare PIU IN FRETTA all'equilibrio, ma non sposta dove si trova quell'equilibrio. La quantita di prodotti all'equilibrio rimane la stessa con o senza catalizzatore. Le altre quattro sono tutte vere: accelerano (si), abbassano l'energia di attivazione (si), non si consumano (si), modificano il meccanismo cioe il percorso (si). La trappola di questa domanda e' confondere 'raggiungo l'equilibrio piu in fretta' (vero) con 'ottengo piu prodotto all'equilibrio' (falso).",
+    "tags": ["prova d'esame"]
+  }
+]

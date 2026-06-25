@@ -1,0 +1,135 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u6-05">
+
+## Come comunicano le cellule?
+
+Le cellule del tuo corpo devono coordinarsi continuamente: quando hai fame, quando combatti un'infezione, quando un muscolo si contrae. Per farlo si "parlano" usando segnali chimici — un po' come messaggi che viaggiano a distanze diverse.
+
+La distanza tra chi manda il segnale e chi lo riceve è la chiave per distinguere i **cinque tipi di segnalazione cellulare**.
+
+---
+
+## 1. Segnalazione da contatto diretto
+
+La cellula A tocca fisicamente la cellula B. Il segnale passa attraverso **giunzioni comunicanti** (piccoli canali che collegano le due cellule) oppure tramite proteine che sporgono dalla superficie.
+
+- Distanza: zero — le cellule si toccano.
+- Esempio: lo sviluppo embrionale, dove una cellula dice alla vicina "diventa questo tipo di tessuto".
+
+---
+
+## 2. Segnalazione autocrina
+
+La cellula manda un segnale **a se stessa**. Produce una sostanza chimica e ha anche i recettori (le "antenne") per riceverla.
+
+- Distanza: zero — stesso mittente e destinatario.
+- Esempio: alcune cellule del sistema immunitario si attivano da sole durante un'infezione.
+- Analogia: è come mandarsi un promemoria sul proprio telefono.
+
+---
+
+## 3. Segnalazione paracrina
+
+La cellula rilascia una sostanza chimica che agisce sulle **cellule vicine**, nel raggio di pochi micrometri. Il segnale viene degradato rapidamente e non arriva lontano.
+
+- Distanza: breve, locale.
+- Esempio: i **neurotrasmettitori** tra due neuroni adiacenti; i fattori di crescita che stimolano le cellule intorno a una ferita a riprodursi.
+- Analogia: è come parlare sottovoce — senti solo tu e chi ti sta accanto.
+
+---
+
+## 4. Segnalazione endocrina
+
+Una ghiandola specializzata (es. il pancreas, la tiroide) rilascia un **ormone** nel sangue. L'ormone viaggia in tutto il corpo e raggiunge cellule bersaglio lontane, che hanno il recettore giusto per riconoscerlo.
+
+- Distanza: lunga, tutto il corpo.
+- Esempio: l'insulina prodotta dal pancreas raggiunge le cellule muscolari e del fegato per regolare il glucosio.
+- Analogia: è come una circolare inviata a tutta l'azienda via email.
+
+---
+
+## 5. Segnalazione sinaptica
+
+È un caso speciale di segnalazione paracrina usata dai **neuroni** (cellule nervose). Il neurone rilascia neurotrasmettitori in uno spazio microscopico chiamato **sinapsi** (fessura sinaptica). Il segnale arriva rapidissimo e preciso al neurone o al muscolo bersaglio.
+
+- Distanza: brevissima (fessura sinaptica ~20 nm), ma la risposta è molto veloce e mirata.
+- Esempio: il segnale dal cervello che fa contrarre un muscolo della mano.
+- Differenza dalla paracrina: la sinaptica è più rapida, più precisa e i neurotrasmettitori vengono subito rimossi o degradati.
+
+---
+
+<div class="callout">💡 <strong>In parole semplici:</strong> più la distanza tra mittente e destinatario è grande, più il segnale deve viaggiare nel sangue (endocrina); meno è grande, più il segnale è locale e veloce (paracrina, sinaptica, da contatto).</div>
+
+---
+
+## Schema riassuntivo dei 5 tipi
+
+<Diagram caption="Cinque tipi di segnalazione cellulare a confronto" code={`flowchart TB
+  S["Segnalazione cellulare"]
+  S --> C["Da contatto diretto<br/>Le cellule si toccano<br/>Es. sviluppo embrionale"]
+  S --> A["Autocrina<br/>La cellula segnala a se stessa<br/>Es. cellule immunitarie"]
+  S --> P["Paracrina<br/>Segnale a cellule vicine<br/>Es. fattori di crescita"]
+  S --> E["Endocrina<br/>Ormone nel sangue<br/>Es. insulina del pancreas"]
+  S --> SY["Sinaptica<br/>Neurotrasmettitore nella sinapsi<br/>Es. segnale muscolare"]`} />
+
+## Come viaggia un segnale endocrino
+
+<Diagram caption="Percorso di un ormone: dalla ghiandola alla cellula bersaglio" code={`flowchart LR
+  G["Ghiandola<br/>(es. pancreas)"] -->|"secerne ormone<br/>nel sangue"| B["Circolo sanguigno<br/>(trasporto a lunga distanza)"]
+  B -->|"ormone raggiunge<br/>solo le cellule<br/>con il recettore giusto"| R["Cellula bersaglio<br/>(es. cellula muscolare)"]
+  R --> RI["Risposta cellulare<br/>(es. assorbimento glucosio)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="McRzEuubdHc" title="La TRASMISSIONE del SEGNALE - paracrina, autocrina, endocrina e per contatto diretto" />
+<VideoVisto id="bio-u6-05" />
+
+---
+
+## Da ricordare
+- I cinque tipi di segnalazione si distinguono in base alla **distanza** tra la cellula che manda il segnale e quella che lo riceve.
+- La segnalazione **endocrina** usa il sangue come "autostrada" e può raggiungere cellule lontane; la **paracrina** e la **sinaptica** agiscono in zona locale.
+- Ogni tipo richiede che la cellula ricevente abbia il **recettore specifico** per quel segnale — senza recettore, il messaggio non viene "letto".
+
+---
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="L'insulina prodotta dal pancreas raggiunge le cellule muscolari viaggiando nel sangue. Di che tipo di segnalazione si tratta?"
+  opzioni={["Paracrina", "Sinaptica", "Endocrina", "Autocrina"]}
+  corretta={2}
+  spiegazione="L'insulina è un ormone che viene rilasciato nel circolo sanguigno e raggiunge cellule bersaglio lontane: questo è il meccanismo tipico della segnalazione endocrina."
+/>
+
+<Quiz
+  domanda="Un neurone rilascia neurotrasmettitori nella fessura sinaptica per attivare il muscolo vicino. Che tipo di segnalazione è?"
+  opzioni={["Endocrina", "Da contatto diretto", "Autocrina", "Sinaptica"]}
+  corretta={3}
+  spiegazione="La segnalazione sinaptica avviene quando un neurone rilascia neurotrasmettitori nella sinapsi (spazio tra il neurone e la cellula bersaglio). È rapidissima e molto precisa."
+/>
+
+<Quiz
+  domanda="Una cellula produce una molecola segnale e possiede anche i recettori per quella stessa molecola, rispondendo al proprio segnale. Come si chiama questo tipo di segnalazione?"
+  opzioni={["Paracrina", "Autocrina", "Endocrina", "Da contatto diretto"]}
+  corretta={1}
+  spiegazione="Nella segnalazione autocrina la cellula emette un segnale e risponde ad esso tramite i propri recettori — mittente e destinatario coincidono."
+/>
+
+<Esercizio
+  problema="Immagina di essere un ormone dello stress (il cortisolo) appena secreto dalla ghiandola surrenale. Descrivi in 3 passaggi il percorso che fai per raggiungere una cellula del fegato e quale tipo di segnalazione stai compiendo."
+  soluzione="1) Vieni rilasciato dalla ghiandola surrenale direttamente nel sangue. 2) Viaggi attraverso il circolo sanguigno fino a raggiungere il fegato (distanza lunga). 3) Entri solo nelle cellule epatiche che possiedono il recettore specifico per il cortisolo, dove induci una risposta (es. aumento della produzione di glucosio). Questo è un esempio di segnalazione ENDOCRINA: un ormone che viaggia nel sangue per agire su cellule bersaglio lontane."
+/>
+
+</section>
+
+</RisorsaLayout>

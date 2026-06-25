@@ -1,0 +1,105 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u5-02">
+
+Le molecole organiche sono fatte di atomi (soprattutto **carbonio** e **idrogeno**) legati tra loro. Per disegnarle i chimici usano dei "ritratti" chiamati **formule di struttura**. Esistono tre modi di disegnare la **stessa** molecola: quello completo (esteso), uno più corto (condensato) e uno super veloce (a scheletro, quello a zig-zag). Imparare a leggerli serve perché tutta la chimica del corpo (zuccheri, grassi, vitamine, farmaci) è scritta proprio così.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> è come scrivere "buongiorno", "buongi" o "bg". Cambia quanto sei dettagliato, ma il messaggio (la molecola) è sempre lo stesso. Più la formula è corta, più velocemente la disegni... ma devi saperla rileggere.</div>
+
+<Diagram caption="La stessa molecola (etanolo, l'alcol del vino) disegnata in tre modi" code={`flowchart TB
+  X["Stessa molecola: ETANOLO"] --> E["ESTESA<br/>disegno OGNI atomo<br/>e OGNI legame"]
+  X --> C["CONDENSATA<br/>raggruppo gli H<br/>vicino al loro carbonio"]
+  X --> S["A SCHELETRO (zig-zag)<br/>solo le linee dei legami<br/>C e H quasi tutti nascosti"]`} />
+
+## La formula estesa: il disegno completo
+
+Nella formula **estesa** disegni proprio tutto: ogni atomo con la sua lettera (C per carbonio, H per idrogeno, O per ossigeno) e ogni legame come un trattino.
+
+Pensala come una **foto di gruppo** in cui si vedono tutte le persone, una per una. È la più chiara per capire, ma è anche la più lunga da disegnare.
+
+Per esempio l'etanolo (l'alcol delle bevande) esteso si scrive così: ogni C ha attaccati i suoi H con un trattino, e in fondo c'è il gruppo O-H. Lo riconosci perche vedi scritti tutti gli idrogeni.
+
+## La formula condensata: lo stesso, ma più corto
+
+Nella formula **condensata** smetti di disegnare i trattini verso gli idrogeni: scrivi semplicemente quanti H ha ogni carbonio, con un piccolo numero in basso.
+
+Esempio, sempre l'etanolo: `CH3-CH2-OH`.
+
+Leggiamola insieme, da sinistra:
+- `CH3` = un carbonio con **3** idrogeni attaccati.
+- `CH2` = un carbonio con **2** idrogeni.
+- `OH` = un ossigeno legato a un idrogeno (il gruppo che rende la molecola un "alcol").
+
+È come scrivere "3 mele, 2 pere" invece di disegnare ogni singolo frutto: più rapido, e capisci lo stesso quanti ne hai.
+
+## La formula a scheletro: solo le linee (lo zig-zag)
+
+La formula **a scheletro** (o topologica) è quella a zig-zag che vedi sui libri. Qui le regole sono due, semplici:
+
+1. Ogni **punta** e ogni **estremità** della linea spezzata è un atomo di **carbonio** (non scrivi la lettera C).
+2. Gli **idrogeni** attaccati ai carboni **non si disegnano**: si danno per sottintesi.
+
+Si scrivono **solo** gli atomi diversi da carbonio e idrogeno (come O, N, Cl): quelli che danno alla molecola le sue proprietà.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ogni angolo dello zig-zag è un carbonio nascosto, e gli idrogeni ci sono ma non si vedono (come l'aria: c'è anche se non la disegni). Conti gli angoli, conti i carboni.</div>
+
+È il modo che useranno i tuoi professori e i testi di medicina, perché permette di disegnare in pochi secondi anche molecole enormi come il **colesterolo** o gli **ormoni**. Quando vedrai la struttura di un farmaco o di una vitamina, sarà quasi sempre disegnata a scheletro.
+
+<Diagram caption="Come si legge lo scheletro: angoli ed estremità = carboni" code={`flowchart LR
+  A["Linea a zig-zag"] --> B["Ogni ANGOLO = 1 carbonio"]
+  A --> C["Ogni ESTREMITA = 1 carbonio"]
+  A --> D["Gli H sui carboni<br/>sono nascosti (non disegnati)"]
+  A --> E["O, N, Cl ecc.<br/>questi SI scrivono"]`} />
+
+## Guarda il video
+
+<YouTube id="NZ1ODqUoPy4" title="Formule di struttura: estesa, condensata e a scheletro — Chimica Organica per Biologia" />
+
+<VideoVisto id="chim-u5-02" />
+
+## Da ricordare
+
+- La **stessa** molecola si può disegnare in tre modi: **estesa**, **condensata**, **a scheletro**.
+- **Estesa**: disegni ogni atomo e ogni legame (la più dettagliata).
+- **Condensata**: raggruppi gli idrogeni vicino al loro carbonio, es. `CH3-CH2-OH`.
+- **A scheletro (zig-zag)**: ogni **angolo** o **estremità** è un **carbonio**, gli **idrogeni** sui carboni sono nascosti; scrivi solo gli altri atomi (O, N...).
+- È lo scheletro il modo usato in medicina e biologia per disegnare velocemente molecole grandi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Nella formula a scheletro (zig-zag), cosa rappresenta ogni angolo della linea?"
+  opzioni={["un atomo di idrogeno", "un atomo di carbonio", "un atomo di ossigeno", "un legame doppio"]}
+  corretta={1}
+  spiegazione="Ogni angolo e ogni estremità della linea spezzata è un atomo di carbonio, anche se la lettera C non viene scritta."
+/>
+
+<Quiz
+  domanda="Nella formula a scheletro, perché di solito non si disegnano gli atomi di idrogeno legati ai carboni?"
+  opzioni={["perché non ci sono davvero", "perché si danno per sottintesi, per disegnare più in fretta", "perché sono troppo pesanti", "perché diventano ossigeno"]}
+  corretta={1}
+  spiegazione="Gli idrogeni sui carboni ci sono, ma si sottintendono: ometterli rende il disegno molto più rapido, utile per le molecole grandi."
+/>
+
+<Quiz
+  domanda="La scrittura CH3-CH2-OH è una formula:"
+  opzioni={["estesa", "condensata", "a scheletro", "molecolare"]}
+  corretta={1}
+  spiegazione="È condensata: gli idrogeni sono raggruppati col loro carbonio (CH3, CH2) invece di disegnare ogni singolo legame C-H."
+/>
+
+<Esercizio
+  problema="Guardi una formula a scheletro a forma di linea a zig-zag con 4 angoli/estremità in tutto e nessuna lettera scritta. Quanti atomi di carbonio contiene la molecola?"
+  soluzione="4 atomi di carbonio. Nella formula a scheletro ogni angolo e ogni estremità corrisponde a un carbonio: se ne contiamo 4, allora ci sono 4 carboni (gli idrogeni, non disegnati, completano i legami di ciascuno)."
+/>
+
+</section>
+
+</RisorsaLayout>

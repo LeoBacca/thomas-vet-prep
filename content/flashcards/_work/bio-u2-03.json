@@ -1,0 +1,25 @@
+{
+ "id": "bio-u2-03",
+ "titolo": "Eucromatina, eterocromatina e metilazione del DNA",
+ "materia": "biologia",
+ "unita": 2,
+ "slug": "03-eucromatina-eterocromatina-e-metilazione-del-dna",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u2/03-eucromatina-eterocromatina-e-metilazione-del-dna.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Maggio",
+   "q": "Nei gatti, il gene per il colore arancio del pelo si trova sul cromosoma X. È un gene recessivo, il cui allele dominante dà pelo nero. Le gatte eterozigoti per questo gene però non sono nere, ma hanno un pelame a chiazze nere e arancio. Come si spiega questo fatto?",
+   "choices": [
+    "Nelle femmine, un cromosoma X a caso viene inattivato durante lo sviluppo",
+    "In certe zone della pelle è l'allele arancio a dominare sul nero",
+    "Ci sono altri geni che influenzano il comportamento di questa coppia di alleli",
+    "I due geni sono codominanti nelle femmine",
+    "Nelle femmine, un cromosoma X a caso viene perduto durante lo sviluppo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

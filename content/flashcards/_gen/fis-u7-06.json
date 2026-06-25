@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fc-fis-u7-06-1",
+    "topicId": "fis-u7-06",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: i raggi X sono una radiazione ionizzante perche hanno abbastanza energia da strappare elettroni dagli atomi.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 0,
+    "explain": "Vero. I raggi X hanno energia nell'ordine dei keV, molto oltre la soglia di circa 10 eV necessaria per ionizzare un atomo. Pensa a un atomo come a una cipolla: i raggi X sono abbastanza forti da strappare via uno strato (un elettrone), creando un ione reattivo che puo danneggiare il DNA.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-fis-u7-06-2",
+    "topicId": "fis-u7-06",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "open",
+    "q": "Un medico usa i raggi X per una radiografia e poi usa una lampada a infrarossi per riscaldare un muscolo dolorante. Classifica ognuna delle due radiazioni (ionizzante o non ionizzante) e spiega brevemente perche.",
+    "answer": "I raggi X sono radiazioni ionizzanti: la loro energia (nell'ordine dei keV) supera di gran lunga la soglia di circa 10 eV necessaria per strappare elettroni dagli atomi. Questo puo danneggiare le molecole biologiche, incluso il DNA. La lampada a infrarossi emette invece radiazioni non ionizzanti: la loro energia e troppo bassa per ionizzare gli atomi; l'unico effetto biologico e termico, cioe riscaldamento dei tessuti.",
+    "explain": "Chiave: la soglia e ~10 eV. Sopra = ionizzante (raggi X, gamma, alfa, beta). Sotto = non ionizzante (infrarosso, luce visibile, microonde, onde radio). UV sta al confine.",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

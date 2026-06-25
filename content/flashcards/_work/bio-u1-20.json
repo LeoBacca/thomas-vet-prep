@@ -1,0 +1,25 @@
+{
+ "id": "bio-u1-20",
+ "titolo": "Aspetti di base del metabolismo: anabolismo, catabolismo, condensazione e idrolisi",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "20-aspetti-di-base-del-metabolismo-anabolismo",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u1/20-aspetti-di-base-del-metabolismo-anabolismo.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "Quale delle seguenti affermazioni relativa alla molecola di ATP è corretta?",
+   "choices": [
+    "Contiene lo zucchero ribosio",
+    "Contiene la base azotata adenosina",
+    "Non è utilizzata dai batteri",
+    "Il distacco dei gruppi fosfato è altamente endoergonico",
+    "La base azotata lega direttamente i tre gruppi fosfato"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

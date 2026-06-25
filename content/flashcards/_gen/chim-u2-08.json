@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u2-08-1",
+    "topicId": "chim-u2-08",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: la mole e l'equivalente misurano la stessa cosa — entrambi contano quante particelle ci sono in una soluzione.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. La mole conta le 'teste' (numero di particelle). L'equivalente conta le 'mani' (la carica elettrica portata). Per uno ione con carica 2+, come il calcio Ca2+, 1 mole vale già 2 equivalenti, perché ogni particella porta 2 cariche.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-08-2",
+    "topicId": "chim-u2-08",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Nelle analisi del sangue i valori degli elettroliti (sodio, potassio, calcio) si esprimono in mEq/L e non in mol/L. Qual è il motivo principale?",
+    "choices": [
+      "Perché il corpo bilancia le cariche elettriche degli ioni, e l'equivalente misura proprio la carica",
+      "Perché le moli sono troppo grandi per essere usate in medicina",
+      "Perché mEq/L e mol/L sono la stessa cosa, è solo una convenzione storica",
+      "Perché gli elettroliti non hanno una carica definita"
+    ],
+    "answer": 0,
+    "explain": "Il corpo regola l'equilibrio tra cariche positive (Na+, K+, Ca2+) e cariche negative (Cl-). Misurare in mEq/L parla direttamente la 'lingua delle cariche': se le mEq di cariche positive non bilanciano quelle negative, c'è uno squilibrio che può colpire cuore, muscoli e nervi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-08-3",
+    "topicId": "chim-u2-08",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "open",
+    "q": "In un litro di soluzione hai 3 moli di ioni sodio Na+ (carica 1) e 2 moli di ioni calcio Ca2+ (carica 2). Quanti equivalenti di carica positiva ci sono in totale? Spiega il ragionamento.",
+    "answer": "La formula chiave è: equivalenti = moli × carica dello ione. Per il sodio Na+ (carica 1): 3 moli × 1 = 3 equivalenti. Per il calcio Ca2+ (carica 2): 2 moli × 2 = 4 equivalenti. Totale = 3 + 4 = 7 equivalenti. Nota importante: il calcio, pur essendo presente in meno moli (2 contro 3), contribuisce con più equivalenti (4 contro 3), perché ogni suo ione porta il doppio della carica.",
+    "explain": "La trappola classica è sommare le moli direttamente (3 + 2 = 5). Bisogna invece pesare ogni ione per la sua carica prima di sommare.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u2-08-4",
+    "topicId": "chim-u2-08",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Il numero di equivalenti di soluto contenuti in 1 litro di soluzione si chiama:",
+    "choices": [
+      "Normalità",
+      "Molarità",
+      "Molalità",
+      "Concentrazione percentuale in massa",
+      "Concentrazione percentuale in volume"
+    ],
+    "answer": 0,
+    "explain": "La Normalità (N) esprime quanti equivalenti ci sono per litro di soluzione. La Molarità (M) invece conta le moli per litro — misura diversa. La Molalità usa i kg di solvente, non il litro di soluzione. Le percentuali in massa e in volume sono unità ancora diverse e non parlano di equivalenti.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u2-08-5",
+    "topicId": "chim-u2-08",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Vuoi neutralizzare 25 mL di soluzione 0,04 M di KOH (base monovalente). Quale delle seguenti quantità di acido è sufficiente?",
+    "choices": [
+      "50 mL di soluzione di H2SO4 0,01 M",
+      "50 mL di soluzione di H2SO4 0,04 M",
+      "25 mL di soluzione di H2SO4 0,04 M",
+      "10 mL di soluzione di HCl 0,02 M",
+      "50 mL di soluzione di HCl 0,01 M"
+    ],
+    "answer": 0,
+    "explain": "Regola della neutralizzazione: equivalenti acido = equivalenti base. KOH monovalente: 0,025 L × 0,04 mol/L × 1 = 0,001 equivalenti di base. H2SO4 è DIPROTICO (fornisce 2 H+ per molecola, quindi il fattore è 2): per la risposta A, 0,050 L × 0,01 mol/L × 2 = 0,001 equivalenti. Perfetto! Perché le altre sono trappole? La B e la C usano H2SO4 ma con la stessa molarità di KOH senza tenere conto del fattore 2 — eccesso di acido. La D e la E usano HCl (monoprotico, fattore 1) ma le quantità sono insufficienti. La trappola principale è dimenticare che H2SO4 è diprotico: 0,01 M di H2SO4 'vale' 0,02 M in equivalenti.",
+    "tags": ["prova d'esame"]
+  }
+]

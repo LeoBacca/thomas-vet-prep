@@ -1,0 +1,67 @@
+{
+ "id": "chim-u5-09",
+ "titolo": "Alcani e cicloalcani: struttura, proprietà e reazioni",
+ "materia": "chimica",
+ "unita": 5,
+ "slug": "09-alcani-e-cicloalcani-struttura-proprieta-e",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/chimica/u5/09-alcani-e-cicloalcani-struttura-proprieta-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Nel GPL usato come carburante per motori a scoppio la lettera P sta per:",
+   "choices": [
+    "propano",
+    "propene",
+    "propanolo",
+    "propandiolo",
+    "propantriolo"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2011",
+   "q": "Qual è la formula bruta del cicloesano?",
+   "choices": [
+    "C6H12",
+    "C6H8",
+    "C6H10",
+    "C6H14",
+    "C6H6"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "formula"
+  },
+  {
+   "year": "2017",
+   "q": "La combustione completa di un alcano in eccesso di ossigeno produce:",
+   "choices": [
+    "anidride carbonica e acqua",
+    "un alchene e monossido di carbonio",
+    "un alchino e acqua",
+    "un chetone e un'aldeide",
+    "anidride carbonica e monossido di carbonio"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Indicare quale tra le seguenti formule è quella del butano:",
+   "choices": [
+    "C4H10",
+    "C4H12",
+    "C3H8",
+    "C6H12",
+    "C2H6"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "formula"
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-19">
+
+Dentro una molecola gli atomi si "tirano" gli elettroni con forze diverse. Se un atomo tira più forte, da una parte si crea un piccolo "+" e dall'altra un piccolo "−". Quando questi due poli non si annullano, la molecola è **polare**. Quando si annullano, la molecola è **apolare**. Questa piccola differenza decide cose enormi: per esempio se una sostanza si scioglie nell'acqua oppure no.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> una molecola polare è come una piccola calamita con un lato "+" e un lato "−". Una molecola apolare non ha lati: è "neutra" in tutte le direzioni.</div>
+
+## Da dove nasce il "+" e il "−"
+
+Ogni atomo ha una forza con cui attira gli elettroni del legame: si chiama **elettronegatività**. Pensala come la forza con cui due bambini tirano la stessa corda.
+
+- Se uno tira più forte (più elettronegativo), gli elettroni si spostano verso di lui: quel lato diventa un po' **negativo** (lo segniamo con δ−, "delta meno") e l'altro un po' **positivo** (δ+).
+- Questa coppia "+ e −" su un legame si chiama **dipolo**. Lo immaginiamo come una piccola freccia che punta verso il lato negativo.
+
+Una molecola può avere più legami, quindi più frecce. Il **momento dipolare** della molecola è la **somma di tutte queste frecce** (è una somma tra vettori, come le frecce-forza in fisica). Il risultato dice se alla fine resta una freccia (polare) o se le frecce si cancellano (apolare).
+
+<Diagram caption="Polare o apolare: dipende dalla somma delle frecce (dipoli)" code={`flowchart TB
+  M["Molecola con legami polari<br/>(ogni legame = una freccia)"] --> D["Sommo tutte le frecce"]
+  D --> P["Restano frecce, somma diversa da zero<br/>→ molecola POLARE"]
+  D --> A["Le frecce si annullano, somma uguale a zero<br/>→ molecola APOLARE"]`} />
+
+## Il caso chiave: acqua (polare) contro CO2 (apolare)
+
+Qui c'è il trucco più importante: **conta anche la forma** della molecola, non solo i legami.
+
+- L'**acqua (H2O)** è **piegata**, a forma di "V". L'ossigeno tira più forte degli idrogeni, quindi le due frecce puntano verso l'ossigeno. Essendo piegata, le frecce **non si annullano**: ne resta una verso l'alto. L'acqua è **polare**.
+- L'**anidride carbonica (CO2)** è **dritta**, una linea: O=C=O. Anche qui ci sono due frecce, ma essendo perfettamente opposte (una a destra, una a sinistra) si **annullano**, proprio come due persone che tirano la corda con uguale forza in versi opposti. La CO2 è **apolare**.
+
+<Diagram caption="H2O piegata (frecce che restano) vs CO2 dritta (frecce che si annullano)" code={`flowchart TB
+  H["ACQUA H2O - forma a V (piegata)"] --> H2["Le due frecce puntano verso l'ossigeno<br/>e NON si annullano"]
+  H2 --> H3["Resta una freccia<br/>→ POLARE"]
+  C["CO2 - forma dritta O=C=O"] --> C2["Le due frecce sono opposte<br/>e si annullano"]
+  C2 --> C3["Somma uguale a zero<br/>→ APOLARE"]`} />
+
+## Perché conta: la solubilità ("simile scioglie simile")
+
+La regola d'oro è semplice: **il simile scioglie il simile**. Le sostanze **polari** si sciolgono bene in liquidi **polari** (come l'acqua); le sostanze **apolari** si sciolgono bene in liquidi **apolari** (come l'olio e i grassi).
+
+Per questo **acqua e olio non si mescolano**: l'acqua è polare, l'olio è apolare, sono "due mondi" diversi. Il sale invece sparisce subito nell'acqua, perché è fatto di cariche e l'acqua polare lo "abbraccia".
+
+Nel corpo questo è fondamentale:
+
+- Il **sangue** è quasi tutto acqua, quindi è un ambiente **polare**. Una sostanza polare (come il glucosio, lo zucchero del sangue) ci viaggia bene sciolta.
+- Le **membrane delle cellule** sono fatte di grassi, cioè **apolari**: lasciano passare facilmente i farmaci apolari, mentre quelli polari fanno più fatica e spesso hanno bisogno di "trasportatori".
+- Le **vitamine** seguono la stessa logica: quelle del gruppo B e la C sono polari (idrosolubili, si sciolgono nell'acqua), mentre A, D, E, K sono apolari (liposolubili, si sciolgono nei grassi e si accumulano).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> "polare" sta con "polare", "apolare" sta con "apolare". Capire questo ti spiega da solo perché certi farmaci entrano nelle cellule e altri no.</div>
+
+## Guarda il video
+
+<YouTube id="GxTU4wGHsRM" title="Molecole polari e apolari (polarità e apolarità di una molecola) — lezione di chimica" />
+
+<VideoVisto id="chim-u1-19" />
+
+## Da ricordare
+
+- Quando un atomo tira più forte gli elettroni, si crea un lato δ+ e un lato δ−: questo è un **dipolo** (una piccola freccia).
+- Il **momento dipolare** è la **somma di tutte le frecce** dei legami: se non è zero la molecola è **polare**, se è zero è **apolare**.
+- **Conta anche la forma**: l'acqua è piegata e resta polare; la CO2 è dritta e le frecce si annullano, quindi è apolare.
+- Regola d'oro: **il simile scioglie il simile** (polare con polare, apolare con apolare).
+- Per questo acqua e olio non si mescolano, e per questo certe vitamine sono idrosolubili (polari) e altre liposolubili (apolari).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Una molecola è POLARE quando:"
+  opzioni={["non ha nessun legame", "la somma delle sue frecce-dipolo è diversa da zero", "è sempre dritta", "non contiene ossigeno"]}
+  corretta={1}
+  spiegazione="È polare quando le frecce dei dipoli non si annullano: la loro somma è diversa da zero e resta un lato '+' e un lato '−'."
+/>
+
+<Quiz
+  domanda="Perché la CO2 (O=C=O) è apolare, pur avendo legami polari?"
+  opzioni={["perché è piegata a V", "perché è dritta e le due frecce opposte si annullano", "perché non ha elettroni", "perché è un gas"]}
+  corretta={1}
+  spiegazione="La CO2 è una linea dritta: le due frecce puntano in versi opposti con uguale forza e si cancellano. La somma è zero, quindi è apolare."
+/>
+
+<Quiz
+  domanda="Secondo la regola 'il simile scioglie il simile', una sostanza polare si scioglie meglio in:"
+  opzioni={["olio (apolare)", "acqua (polare)", "qualsiasi liquido allo stesso modo", "nessun liquido"]}
+  corretta={1}
+  spiegazione="Polare con polare: una sostanza polare si scioglie bene nell'acqua, che è polare. Nell'olio (apolare) invece fa fatica."
+/>
+
+<Esercizio
+  problema="Versi un cucchiaio di olio in un bicchiere d'acqua e mescoli: dopo poco l'olio torna a galleggiare separato. Spiega perché, usando le parole polare e apolare."
+  soluzione="L'acqua è polare e l'olio è apolare: sono 'mondi' diversi e non si attraggono. Per la regola 'il simile scioglie il simile', un liquido polare non scioglie una sostanza apolare, così l'olio resta separato e galleggia (è anche meno denso dell'acqua)."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-11-1",
+    "topicId": "chim-u1-11",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: una molecola di acqua (H₂O) ha una carica elettrica totale diversa da zero, cioè non è neutra.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Una molecola nel suo insieme è NEUTRA: gli atomi condividono gli elettroni e i conti tornano a zero. È come una squadra in cui ogni giocatore porta lo stesso numero di punti positivi e negativi: il punteggio totale è zero. Chi è carico è lo ione, non la molecola.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-11-2",
+    "topicId": "chim-u1-11",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un atomo di sodio PERDE un elettrone. Cosa diventa e come si chiama?",
+    "choices": [
+      "Diventa un catione (ione positivo): Na⁺",
+      "Diventa un anione (ione negativo): Na⁻",
+      "Diventa una molecola neutra",
+      "Diventa un altro elemento"
+    ],
+    "answer": 0,
+    "explain": "Perdendo un elettrone (una carica negativa) restano più protoni positivi del dovuto: l'atomo diventa carico positivamente, cioè un catione. Trucco: ca-T-ione ha la T come 'T-ira via' elettroni. Al contrario, se l'atomo ne PRENDE diventa un anione (negativo). Nel corpo il Na⁺ è l'elettrolita che guida i segnali nervosi e fa battere il cuore.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-11-3",
+    "topicId": "chim-u1-11",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra uno ione semplice e uno ione poliatomico. Fai un esempio di ciascuno e, se riesci, aggiungi perché quello poliatomico è importante in biologia.",
+    "answer": "Uno ione semplice è un SINGOLO atomo che ha perso o acquistato elettroni e quindi è carico. Esempio: il cloruro Cl⁻ (cloro che ha preso un elettrone) o il sodio Na⁺ (sodio che ne ha perso uno). Uno ione poliatomico è invece un GRUPPO di atomi legati insieme che, tutti insieme, portano una carica unica: non si separano, si muovono come una squadra. Esempio: il bicarbonato HCO₃⁻ è formato da cinque atomi (un idrogeno, un carbonio e tre ossigeni) ma la sua carica complessiva è meno uno e si comporta come un'unica 'unità carica'. In biologia il bicarbonato è fondamentale: è il 'tampone' del sangue, cioè il sistema che mantiene stabile l'acidità (pH) nel corpo degli animali. Un altro esempio importante è il fosfato PO₄³⁻ che si trova nelle ossa, nel DNA e nell'ATP (la 'batteria' delle cellule).",
+    "explain": "Chiave: ione semplice = 1 atomo carico; ione poliatomico = gruppo di atomi con carica di squadra. Il bicarbonato HCO₃⁻ è il tampone del sangue.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-11-4",
+    "topicId": "chim-u1-11",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Qual è la definizione CORRETTA di molecola?",
+    "choices": [
+      "La più piccola quantità di una sostanza chimica che ne conserva le caratteristiche chimiche",
+      "La più piccola quantità di un elemento che permette di riconoscerlo",
+      "La più piccola quantità di un elemento o composto che conserva tutte le caratteristiche fisiche e chimiche",
+      "La più piccola quantità con cui un elemento entra a far parte di un composto",
+      "La più piccola quantità di una sostanza che ne conserva solo le caratteristiche fisiche"
+    ],
+    "answer": 0,
+    "explain": "La definizione giusta parla di 'sostanza chimica' (non solo elemento) e di 'caratteristiche chimiche' che vengono conservate. Le trappole da smontare: 'elemento' (opzione B e D) è sbagliato perché la molecola può essere un composto (es. H₂O, non è un elemento); 'tutte le caratteristiche fisiche E chimiche' (opzione C) suona plausibile ma aggiunge le fisiche che non reggono a quel livello; 'solo le caratteristiche fisiche' (opzione E) è l'opposto esatto: ciò che conta è la chimica, non la fisica. La logica: la molecola è la più piccola unità che mantiene l'identità CHIMICA della sostanza.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-11-5",
+    "topicId": "chim-u1-11",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Qual è il numero minimo di atomi di idrogeno presenti in una molecola di fosfato d'ammonio (NH₄)₃PO₄?",
+    "choices": [
+      "12",
+      "4",
+      "8",
+      "9",
+      "6"
+    ],
+    "answer": 0,
+    "explain": "La formula (NH₄)₃PO₄ si legge così: il gruppo NH₄ (ammonio) compare 3 volte. Ogni NH₄ contiene 4 atomi di idrogeno, quindi in totale gli idrogeni sono 3 × 4 = 12. Il PO₄ (fosfato) non ha idrogeni. Trappola '4': è il numero di H in UN SOLO gruppo NH₄, senza moltiplicare per 3. Trappola '9': chi conta 3 × 3 sbagliando il numero di H nell'ammonio. Trappola '8': metà del risultato corretto (come se dimenticasse un gruppo NH₄). Trappola '6': nessun calcolo rigoroso. Regola: guarda la parentesi con l'indice fuori (3), moltiplica per gli atomi dentro.",
+    "tags": ["prova d'esame"]
+  }
+]

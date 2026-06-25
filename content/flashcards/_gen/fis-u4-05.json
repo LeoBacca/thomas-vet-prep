@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-fis-u4-05-1",
+    "topicId": "fis-u4-05",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Sei a 1 metro da un altoparlante e senti un certo volume. Ti sposti a 2 metri (distanza doppia). L'intensita del suono diventa:",
+    "choices": [
+      "La meta (1/2)",
+      "Un quarto (1/4)",
+      "Un terzo (1/3)",
+      "Uguale, la distanza non cambia l'intensita"
+    ],
+    "answer": 1,
+    "explain": "Legge dell'inverso del quadrato: raddoppi la distanza → l'area della sfera su cui si spalma l'energia diventa 4 volte piu grande (2² = 4) → l'intensita si divide per 4, non per 2. Analogia: e come spalmare la stessa quantita di burro su una fetta 4 volte piu grande — lo strato diventa 4 volte piu sottile.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u4-05-2",
+    "topicId": "fis-u4-05",
+    "materia": "fisica",
+    "unita": 4,
+    "type": "open",
+    "q": "Cosa si intende per 'intensita' di un'onda e come si calcola? Spiega anche perche l'intensita diminuisce allontanandosi dalla sorgente.",
+    "answer": "L'intensita (I) e la potenza trasportata dall'onda per unita di area: I = P / A, si misura in W/m². Un'onda che si propaga in tutte le direzioni si espande come una sfera; la sua superficie vale 4πr². Piu ci si allontana (r cresce), piu grande diventa questa sfera, e la stessa potenza P si distribuisce su un'area sempre maggiore → l'intensita cala. Per la legge dell'inverso del quadrato: se la distanza si moltiplica per n, l'intensita si divide per n².",
+    "explain": "Concetto chiave: I = P / (4πr²). Distanza doppia → intensita un quarto. Distanza tripla → intensita un nono.",
+    "tags": ["risposta aperta"]
+  }
+]

@@ -1,0 +1,106 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u6-08">
+
+Alcune molecole hanno una specie di "doppia personalità": sono **la stessa molecola**, ma cambiano un pochino la loro forma spostando un solo atomo di idrogeno. Questo gioco di spostamento si chiama **tautomeria cheto-enolica**, e succede vicino a un gruppo molto importante: il **carbonile** (il pezzo C=O, cioè un carbonio legato a un ossigeno con doppio legame). Capire questo trucco ti serve davvero, perché è alla base di come il corpo costruisce e smonta gli **zuccheri** e tante molecole nel **metabolismo**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina una persona che salta da un piede all'altro. È sempre la stessa persona, cambia solo dove appoggia il peso. La molecola fa lo stesso: sposta un idrogeno da una parte all'altra e basta. Le due "pose" si chiamano forma <strong>cheto</strong> e forma <strong>enolo</strong>.</div>
+
+## Cos'è il carbonile e cos'è "l'idrogeno in α"
+
+Il **carbonile** è il pezzo C=O. Lo trovi nelle aldeidi e nei chetoni (per esempio nell'acetone, che è il solvente dello smalto per unghie).
+
+Il carbonio **subito accanto** al carbonile si chiama carbonio **in α** (alfa, una lettera greca). Pensa al carbonile come a una porta: il carbonio in α è quello "della stanza accanto".
+
+Gli idrogeni attaccati a quel carbonio in α sono speciali: sono un po' "ballerini", si staccano più facilmente degli altri. Proprio loro sono i protagonisti di tutta la storia.
+
+<Diagram caption="Dove si trova il carbonio in alfa rispetto al carbonile" code={`flowchart LR
+  A["Carbonio in alfa<br/>(la stanza accanto)"] --> C["Carbonile C=O<br/>(la porta)"]
+  A -.->|"ha gli idrogeni<br/>ballerini"| H["H in alfa"]`} />
+
+## La tautomeria cheto-enolica: l'idrogeno che salta
+
+Ecco il cuore del discorso. La molecola può stare in due forme, in continuo equilibrio (cioè passa da una all'altra avanti e indietro):
+
+- Forma **cheto** (chetonica): c'è il carbonile C=O e l'idrogeno sta sul carbonio in α.
+- Forma **enolo**: l'idrogeno si è spostato sull'ossigeno (diventa un O-H), il doppio legame si è spostato tra i due carboni (diventa C=C). Il nome "enolo" è proprio "ene" (doppio legame C=C) + "olo" (gruppo O-H).
+
+Due cose si muovono insieme: **un idrogeno** che cambia posto e **un doppio legame** che scivola accanto. Niente di più.
+
+<Diagram caption="Equilibrio cheto-enolico: l'H e il doppio legame si spostano" code={`flowchart LR
+  K["Forma CHETO<br/>C=O e H sul carbonio in alfa"] -->|"H salta sull'ossigeno"| E["Forma ENOLO<br/>O-H e doppio legame C=C"]
+  E -->|"H torna sul carbonio"| K`} />
+
+Di solito la forma **cheto** è la più comoda e quindi la più presente: l'equilibrio "pende" da quella parte. Ma la forma **enolo**, anche se è poca, è importantissima perché è quella **reattiva**, quella che fa partire le reazioni.
+
+**Perché conta in biologia e medicina?** Nel tuo corpo gli zuccheri si trasformano in continuazione passando proprio per queste forme. Per esempio, nella **glicolisi** (il processo con cui ricavi energia dal glucosio) un enzima trasforma uno zucchero in un altro passando per un intermedio **enediolo**, che è un cugino stretto dell'enolo. Senza la tautomeria, il tuo metabolismo dello zucchero non funzionerebbe.
+
+## La condensazione aldolica: due molecole che si uniscono
+
+Ora arriva la parte bella. Visto che il carbonio in α (grazie alla forma enolo) è reattivo, può **attaccare** il carbonile di un'altra molecola. Risultato: due molecole si **incollano** e ne formano una più grande.
+
+Questa reazione si chiama **condensazione aldolica**. Il prodotto si chiama **aldolo** perché contiene sia un pezzo da **ald**eide sia un pezzo alc**ol** (il gruppo O-H): aldolo.
+
+Pensala come due mattoncini Lego: il "gancio" di uno (il carbonio in α attivato) si aggancia all'"incastro" dell'altro (il carbonile). Da due pezzi piccoli ne ottieni uno grande.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la condensazione aldolica è il modo della chimica di <strong>allungare le molecole</strong>, unendo due pezzi piccoli per farne uno grande. È così che la natura costruisce catene di carbonio sempre più lunghe.</div>
+
+<Diagram caption="Condensazione aldolica: due molecole si uniscono in una più grande" code={`flowchart TB
+  M1["Molecola 1<br/>(forma enolo, carbonio in alfa attivo)"] --> U["Si uniscono"]
+  M2["Molecola 2<br/>(con il carbonile C=O)"] --> U
+  U --> P["ALDOLO<br/>una molecola più grande<br/>con O-H e C=O"]`} />
+
+**Perché conta in biologia e medicina?** La condensazione aldolica non è solo roba da laboratorio: è esattamente il tipo di reazione che il corpo usa per **costruire e smontare gli zuccheri**. Nella **glicolisi** un enzima chiamato **aldolasi** spezza uno zucchero a 6 atomi di carbonio in due pezzi da 3 (è l'aldolica fatta al contrario). Insomma, questo meccanismo è dentro di te ogni volta che usi energia.
+
+## Guarda il video
+
+<YouTube id="utUR5VMKYok" title="Acetone e tautomeria cheto-enolica (1^ parte) — Mauro Tonellato" />
+
+<VideoVisto id="chim-u6-08" />
+
+## Da ricordare
+
+- Il **carbonile** è il pezzo C=O; il carbonio **in α** è quello subito accanto, e i suoi idrogeni sono "ballerini".
+- **Tautomeria cheto-enolica**: la stessa molecola passa dalla forma **cheto** (C=O) alla forma **enolo** (O-H più doppio legame C=C) spostando un idrogeno e il doppio legame.
+- L'equilibrio di solito pende verso la forma **cheto**, ma è la forma **enolo** quella **reattiva**.
+- La **condensazione aldolica** unisce due molecole in una più grande (l'**aldolo**), agganciando il carbonio in α al carbonile di un'altra molecola.
+- È pura biologia: zuccheri, **glicolisi** e **metabolismo** funzionano grazie a questi meccanismi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa cambia tra la forma cheto e la forma enolo della stessa molecola?"
+  opzioni={["cambia il numero di atomi", "si spostano un idrogeno e un doppio legame", "diventano due molecole diverse", "cambia il peso totale"]}
+  corretta={1}
+  spiegazione="È sempre la stessa molecola: si spostano solo un atomo di idrogeno e la posizione del doppio legame. Niente atomi in più o in meno."
+/>
+
+<Quiz
+  domanda="Il carbonio 'in α' (alfa) è quello che si trova:"
+  opzioni={["dentro il doppio legame C=O", "subito accanto al carbonile", "all'estremità opposta della molecola", "solo negli zuccheri"]}
+  corretta={1}
+  spiegazione="Il carbonio in alfa è quello immediatamente vicino al carbonile (la 'stanza accanto'). I suoi idrogeni sono quelli reattivi."
+/>
+
+<Quiz
+  domanda="A cosa serve la condensazione aldolica?"
+  opzioni={["a spezzare un atomo", "a unire due molecole in una più grande", "a colorare una sostanza", "a far evaporare l'acqua"]}
+  corretta={1}
+  spiegazione="La condensazione aldolica aggancia il carbonio in alfa di una molecola al carbonile di un'altra: da due pezzi piccoli si ottiene una molecola più grande (l'aldolo)."
+/>
+
+<Esercizio
+  problema="Nella forma enolo c'è un gruppo O-H e un doppio legame C=C. Nella forma cheto, dove si trova invece il doppio legame e dove sta l'idrogeno che prima era sull'ossigeno?"
+  soluzione="Nella forma cheto il doppio legame torna tra carbonio e ossigeno (C=O, il carbonile) e l'idrogeno si sposta sul carbonio in alfa. In pratica si fa il percorso inverso dell'enolo: l'H torna sul carbonio e il doppio legame si riposiziona sull'ossigeno."
+/>
+
+</section>
+
+</RisorsaLayout>

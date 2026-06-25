@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u7-08-1",
+    "topicId": "chim-u7-08",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: amido e cellulosa sono fatti dello stesso mattoncino (glucosio), ma differiscono per il tipo di legame che unisce i mattoncini.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Sia l'amido che la cellulosa sono catene di glucosio. La differenza è solo nel legame glicosidico: alfa nell'amido (noi lo digeriamo) e beta nella cellulosa (noi non lo digeriamo). Stesso mattone, gancio diverso → risultati totalmente diversi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-08-2",
+    "topicId": "chim-u7-08",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Dove si trovano le scorte di glucosio (glicogeno) nel corpo di un animale come il cane?",
+    "choices": [
+      "Soprattutto in fegato e muscoli",
+      "Solo nel sangue",
+      "Nelle ossa",
+      "Nelle cellule adipose (grasso)"
+    ],
+    "answer": 0,
+    "explain": "Il glicogeno è la 'dispensa di emergenza' degli animali: viene immagazzinato principalmente nel fegato (per regolare la glicemia del sangue) e nei muscoli (per dare energia rapida durante lo sforzo). Ha tanti rami per rilasciare glucosio molto in fretta quando serve.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-08-3",
+    "topicId": "chim-u7-08",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Un cavallo mangia fieno (ricco di cellulosa) e ne ricava energia. Tu mangi dello stesso fieno e non ne ricavi quasi nulla. Spiega — in parole semplici — da cosa dipende questa differenza e cosa c'entra il legame glicosidico.",
+    "answer": "La cellulosa è una catena di glucosio tenuta insieme da legami glicosidici di tipo BETA. Il nostro corpo (e quello del cavallo, in realtà) non produce enzimi capaci di tagliare i legami beta. La differenza sta nei batteri: il cavallo ospita nel suo intestino (cieco e colon) miliardi di batteri che producono l'enzima giusto (cellulasi) e rompono quei legami beta, liberando glucosio utilizzabile. Noi umani non abbiamo questi batteri nel posto giusto, quindi la cellulosa ci attraversa come fibra senza fornirci energia. In sintesi: stesso mattoncino (glucosio), stesso tipo di gancio (beta), ma solo chi ha i 'meccanici' giusti (batteri) riesce a smontarlo.",
+    "explain": "Il punto chiave: non e' il glucosio a mancare, e' la capacita' di TAGLIARE il legame beta. I batteri simbionti degli erbivori sono l'unica chiave per quella serratura.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u7-08-4",
+    "topicId": "chim-u7-08",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "L'amido:",
+    "choices": [
+      "e' una miscela dei polisaccaridi amilosio e amilopectina",
+      "e' un altro nome della cellulosa",
+      "e' un altro nome del glicogeno",
+      "e' un polisaccaride composto da saccarosio e amilosio",
+      "e' un componente delle membrane cellulari"
+    ],
+    "answer": 0,
+    "explain": "L'amido e' formato da DUE componenti: l'amilosio (catena lineare di glucosio con legami alfa) e l'amilopectina (catena ramificata). NON e' la stessa cosa della cellulosa (quella ha legami beta e non e' digeribile), ne' del glicogeno (quello e' la riserva degli animali, molto piu' ramificato). Il saccarosio non c'entra: e' un disaccaride (glucosio + fruttosio). Le membrane cellulari sono fatte di fosfolipidi, non di amido.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u7-08-5",
+    "topicId": "chim-u7-08",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Idrolizzando molecole di lattosio si ottengono:",
+    "choices": [
+      "glucosio e galattosio",
+      "glucosio e fruttosio",
+      "solo glucosio",
+      "solo galattosio",
+      "saccarosio e galattosio"
+    ],
+    "answer": 0,
+    "explain": "Il lattosio e' il disaccaride del latte: e' formato da glucosio + galattosio uniti da un legame glicosidico beta-1,4. Idrolizzarlo significa aggiungere acqua e spezzare quel legame, ottenendo i due monosaccaridi originali. TRAPPOLA classica: confonderlo con il saccarosio (glucosio + fruttosio, il comune zucchero da tavola). Chi e' intollerante al lattosio non ha l'enzima lattasi per rompere questo legame.",
+    "tags": ["prova d'esame"]
+  }
+]

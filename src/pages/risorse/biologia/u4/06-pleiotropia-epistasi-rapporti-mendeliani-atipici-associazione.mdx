@@ -1,0 +1,122 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u4-06">
+
+## Quando Mendel non basta
+
+Mendel ha scoperto le leggi di base dell'ereditarietà: un gene, un carattere, rapporti fissi (3:1, 1:2:1…). Ma nella realtà molti caratteri non seguono esattamente quelle regole. Questo non significa che Mendel sbagliasse — significa che i geni interagiscono tra loro in modi più complessi.
+
+In questa scheda vediamo quattro fenomeni che "rompono" i rapporti mendeliani attesi:
+
+1. **Pleiotropia** — un gene influenza più caratteri
+2. **Epistasi** — un gene "spegne" un altro gene
+3. **Associazione (linkage)** — due geni stanno sullo stesso cromosoma e tendono a stare insieme
+4. **Mappe genetiche** — come si misura la distanza tra geni sullo stesso cromosoma
+
+---
+
+## Pleiotropia: un gene, tanti effetti
+
+La parola viene dal greco *pleion* (molti) + *tropos* (effetto). Un gene è pleiotropico quando la sua proteina agisce in più organi o processi contemporaneamente.
+
+**Esempio classico — anemia falciforme:**
+Il gene che produce l'emoglobina (proteina che trasporta ossigeno nel sangue) è mutato. Conseguenze:
+- I globuli rossi diventano a falce (forma di mezzaluna)
+- Si incastrano nei capillari → dolori e infarti tissutali
+- Si rompono facilmente → anemia
+- Il midollo osseo lavora di più → malformazioni ossee
+
+Una sola mutazione genetica causa tutto questo. È pleiotropia.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un gene pleiotropico è come un responsabile di reparto che gestisce più uffici: se lui si assenta, si bloccano tante cose diverse contemporaneamente.</div>
+
+<Diagram caption="Pleiotropia: un gene mutato causa effetti multipli (esempio anemia falciforme)" code={`flowchart TB
+  A["Gene HBB mutato<br/>(emoglobina difettosa)"] --> B["Globuli rossi a falce"]
+  B --> C["Occlusione dei capillari<br/>→ dolori, infarti tissutali"]
+  B --> D["Emolisi (distruzione GR)<br/>→ anemia"]
+  B --> E["Iperattività midollo osseo<br/>→ alterazioni ossee"]
+  B --> F["Minor resistenza alle infezioni<br/>(specie malaria)"]`} />
+
+---
+
+## Epistasi: un gene che "silenzia" un altro
+
+**Epistasi** (dal greco: stare sopra) è quando il gene A interferisce con l'espressione del gene B. Il gene che fa tacere l'altro si chiama **epistatico**; quello che viene silenziato si chiama **ipostatico**.
+
+Risultato pratico: i rapporti fenotipici attesi in un diibrido (9:3:3:1) cambiano. Per esempio possono diventare 9:3:4 oppure 12:3:1 o altri ancora.
+
+**Esempio — colore del mantello nei Labrador:**
+- Gene B: determina il colore (B = nero, b = marrone)
+- Gene E: "permette" la deposizione del colore nel pelo (E = colore depositato, ee = nessun colore → giallo)
+
+Se il cane ha genotipo ee, qualunque cosa faccia il gene B, il pelo è giallo. Il gene E è epistatico su B.
+
+<Diagram caption="Epistasi: il gene E controlla se il gene B viene espresso nel mantello del Labrador" code={`flowchart TB
+  A["Gene E (permissivo)"] --> |"E_ (almeno un E)"| B["Gene B viene espresso"]
+  A --> |"ee (doppio recessivo)"| C["Gene B NON viene espresso<br/>→ mantello GIALLO"]
+  B --> |"B_ (almeno un B)"| D["Mantello NERO"]
+  B --> |"bb (doppio recessivo)"| E["Mantello MARRONE"]`} />
+
+Incrociando due Labrador neri entrambi eterozigoti (BbEe × BbEe) ci aspettiamo 9:3:3:1, ma otteniamo 9 neri : 3 marroni : 4 gialli (rapporto 9:3:4 per via dell'epistasi).
+
+---
+
+## Associazione (linkage): geni sullo stesso cromosoma
+
+Mendel usò geni su cromosomi diversi → assortivano in modo indipendente (3a legge). Ma se due geni stanno sullo stesso cromosoma si chiamano **geni associati** (in inglese: *linked genes*).
+
+Geni associati tendono a essere ereditati insieme, perché stanno "sullo stesso pezzo di filo" cromosomico.
+
+**Però:** il crossing over (scambio di segmenti tra cromosomi omologhi durante la meiosi) può separarli. Più i due geni sono lontani sul cromosoma, più è probabile che un crossing over avvenga tra di loro e li separi.
+
+---
+
+## Frequenza di ricombinazione e mappe genetiche
+
+La **frequenza di ricombinazione** (FR) misura quanto spesso due geni associati vengono separati dal crossing over:
+
+> FR = (numero di individui ricombinanti) / (totale discendenti) × 100
+
+L'unità di misura della distanza genetica è il **centimorgan (cM)**, detto anche unità di mappa (UM):
+- 1 cM = 1% di frequenza di ricombinazione
+- Se FR = 10%, i due geni distano 10 cM
+
+**Come si costruisce una mappa genetica:**
+1. Si fanno incroci test (testcross) tra individui
+2. Si contano i discendenti ricombinanti
+3. Si calcolano le FR tra coppie di geni
+4. Si mettono i geni in ordine sul cromosoma secondo le distanze
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La mappa genetica è come una mappa stradale del cromosoma: la distanza tra due geni non si misura in chilometri, ma in percentuale di probabilità che il crossing over li separi.</div>
+
+---
+
+## Guarda il video
+<YouTube id="1uzaM4jdiA4" title="GENETICA 4: Eccezioni alle leggi di Mendel — Penetranza, Epistasi, Poligenia e Pleiotropia" />
+<VideoVisto id="bio-u4-06" />
+
+## Da ricordare
+- **Pleiotropia**: un solo gene produce effetti su più caratteri diversi (es. anemia falciforme)
+- **Epistasi**: un gene (epistatico) "spegne" l'espressione di un altro gene, alterando i rapporti mendeliani attesi (es. 9:3:4 invece di 9:3:3:1)
+- **Associazione + mappe genetiche**: geni sullo stesso cromosoma si ereditano insieme; la frequenza di ricombinazione misura la loro distanza in centimorgan (1% ricombinazione = 1 cM)
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un individuo porta una mutazione in un gene che produce una proteina strutturale presente in ossa, occhi e reni. La mutazione causa contemporaneamente fragilità ossea, miopia e malformazioni renali. Questo fenomeno si chiama:" opzioni={["Epistasi", "Pleiotropia", "Associazione genetica", "Crossing over"]} corretta={1} spiegazione="La pleiotropia è proprio quando un singolo gene (o la sua mutazione) influenza più caratteri fenotipici distinti contemporaneamente. Epistasi invece riguarda l'interazione tra due geni diversi." />
+
+<Quiz domanda="Due Labrador entrambi con genotipo BbEe vengono incrociati. Quanti cuccioli su 16 attesi avranno il mantello giallo (genotipo ee per il gene E, qualunque genotipo per B)?" opzioni={["1 su 16", "3 su 16", "4 su 16", "9 su 16"]} corretta={2} spiegazione="Il genotipo ee ha probabilità 1/4. Con 16 cuccioli attesi: 1/4 × 16 = 4. Questi 4 avranno mantello giallo indipendentemente dal gene B, perché ee è epistatico su B." />
+
+<Quiz domanda="In un testcross tra due geni associati si ottengono 200 discendenti: 82 con fenotipo parentale AB, 78 con fenotipo parentale ab, 20 con ricombinante Ab, 20 con ricombinante aB. Qual è la frequenza di ricombinazione?" opzioni={["10%", "20%", "40%", "50%"]} corretta={1} spiegazione="I ricombinanti sono 20 + 20 = 40 su 200 totali. FR = 40/200 × 100 = 20%. Quindi i due geni distano 20 cM sulla mappa genetica." />
+
+<Esercizio problema="Un ricercatore incrocia due piante di pisello con genotipo AaBb (diibrido). Si aspettava il rapporto 9:3:3:1. Invece ottiene 9:3:4. Come si spiega? Quale dei due geni è epistatico? Fai un esempio di quale combinazione genotipica produce il fenotipo 'extra' che sposta il rapporto da 3+1 a 4." soluzione="Il rapporto 9:3:4 è tipico di epistasi recessiva: il genotipo omozigote recessivo (bb) per il gene B nasconde l'espressione del gene A. Siccome è il gene B (in forma bb) a fare da 'interruttore' e a silenziare l'altro, il gene B è quello epistatico, mentre il gene A è quello ipostatico (cioè quello che viene silenziato). Esempio numerico: il gruppo da 4 si forma sommando i 3 individui A_bb e l'1 individuo aabb: in entrambi i casi c'è bb, quindi il gene A non si vede e tutti mostrano lo stesso fenotipo. Da qui 3 + 1 = 4." />
+
+</section>
+
+</RisorsaLayout>

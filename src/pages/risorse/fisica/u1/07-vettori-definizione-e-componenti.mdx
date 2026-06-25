@@ -1,0 +1,73 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+import FigVettoreComponenti from '@/components/FigVettoreComponenti.astro';
+
+<RisorsaLayout id="fis-u1-07">
+
+Hai già visto che un **vettore** è una freccia con modulo, direzione e verso. Ora impariamo a **scomporlo**: cioè a vedere ogni vettore "storto" come somma di due vettori più comodi, uno **orizzontale** (lungo l'asse x) e uno **verticale** (lungo l'asse y). Questi due pezzi sono le **componenti**.
+
+## Come si calcolano le componenti
+
+Se il vettore ha modulo **V** e forma un angolo **θ** con l'asse orizzontale:
+
+- componente orizzontale: **Vx = V · cos θ**
+- componente verticale: **Vy = V · sin θ**
+
+<div class="callout">💡 <strong>In parole semplici:</strong> scomporre un vettore è come dire "per andare lì in diagonale, quanto cammino verso destra (x) e quanto verso l'alto (y)?". Coseno ti dà la parte orizzontale, seno quella verticale.</div>
+
+Nella figura, la freccia **rossa** è il vettore V; la sua "ombra" sull'asse orizzontale (in **verde**) è la componente **Vx**, quella sull'asse verticale (in **arancione**) è **Vy**. L'angolo θ è quello tra il vettore e l'asse x.
+
+<FigVettoreComponenti />
+
+<Diagram caption="Perché conviene scomporre" code={`flowchart LR
+  P["Vettori 'storti'<br/>difficili da sommare"] -->|"scompongo in x e y"| E["Conti facili:<br/>sommo tutte le x,<br/>poi tutte le y"]`} />
+
+## Guarda il video
+
+<YouTube id="72nYwBIHVlM" title="Componenti cartesiane di un vettore — scomposizione" />
+
+<VideoVisto id="fis-u1-07" />
+
+## Da ricordare
+
+- Ogni vettore si **scompone** in una parte orizzontale (x) e una verticale (y).
+- **Vx = V · cos θ**, **Vy = V · sin θ**.
+- Si scompone per rendere **facili i calcoli** (specie le somme).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="La componente orizzontale (x) di un vettore di modulo V e angolo θ è:"
+  opzioni={["V · sin θ", "V · cos θ", "V / θ", "V + θ"]}
+  corretta={1}
+  spiegazione="L'orizzontale usa il coseno: Vx = V · cos θ. La verticale usa il seno."
+/>
+
+<Quiz
+  domanda="Scomporre un vettore significa:"
+  opzioni={["allungarlo", "dividerlo nelle sue componenti x e y", "cancellarlo", "misurarne la massa"]}
+  corretta={1}
+  spiegazione="Significa vederlo come somma di una parte orizzontale e una verticale."
+/>
+
+<Quiz
+  domanda="Perché si scompongono i vettori?"
+  opzioni={["per colorarli", "per rendere più facili i calcoli (somme, ecc.)", "per misurare il tempo", "per contarli"]}
+  corretta={1}
+  spiegazione="Con le componenti si sommano separatamente le x e le y: molto più semplice."
+/>
+
+<Esercizio
+  problema="Un vettore è perfettamente orizzontale (angolo 0° con l'asse x). Quanto vale la sua componente verticale Vy?"
+  soluzione="Vy = V · sin 0° = 0. Essendo tutto orizzontale, non ha componente verticale."
+/>
+
+</section>
+
+</RisorsaLayout>

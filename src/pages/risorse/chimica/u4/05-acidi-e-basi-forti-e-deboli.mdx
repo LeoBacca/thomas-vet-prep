@@ -1,0 +1,103 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-05">
+
+Un **acido** è una sostanza che, sciolta in acqua, libera ioni **H+** (idrogeno con carica positiva). Una **base** fa il contrario: libera ioni **OH-** (ossidrile). Ma non tutti gli acidi sono uguali: alcuni sono **forti**, altri **deboli**. La differenza è semplice: quanti di loro si "rompono" davvero in acqua. Capire questo ti serve per tantissime cose, dal pH del sangue allo stomaco.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina di buttare delle zollette di zucchero in acqua. Se si sciolgono <strong>tutte</strong> → è "forte". Se se ne scioglie solo <strong>qualcuna</strong> e le altre restano intere → è "debole". Acido forte = si rompe tutto. Acido debole = si rompe solo un po'.</div>
+
+## Forte vs debole: la differenza è "quanto si dissocia"
+
+**Dissociarsi** vuol dire spezzarsi nei suoi pezzi carichi (ioni). Quando un acido si dissocia, libera H+.
+
+- **Acido forte**: in acqua si dissocia **al 100%**. Non resta niente di intero. È una freccia a senso unico: parte e basta.
+- **Acido debole**: in acqua si dissocia solo **un pochino** (magari l'1%). Quasi tutto resta intero. Si crea un **equilibrio**: una parte si rompe, una parte si riforma di continuo, come un'altalena che va avanti e indietro. Per questo si usa la doppia freccia.
+
+Esempio quotidiano: l'acido dello **stomaco** (acido cloridrico, HCl) è **forte**, ecco perché è così aggressivo nella digestione. L'**aceto** (acido acetico) è **debole**: è acido, ma gentile, lo puoi mettere sull'insalata.
+
+<Diagram caption="Acido forte (dissociazione totale) vs acido debole (equilibrio parziale)" code={`flowchart TB
+  F["ACIDO FORTE<br/>(es. HCl)"] -->|"freccia a senso unico"| FD["Si dissocia al 100%<br/>tanti H+ liberi"]
+  D["ACIDO DEBOLE<br/>(es. acido acetico)"] -->|"doppia freccia = equilibrio"| DD["Si dissocia solo un po'<br/>pochi H+ liberi"]`} />
+
+## Ka e Kb: il "voto" della forza
+
+Per misurare con un numero quanto un acido debole si dissocia, si usa la **costante di dissociazione acida**, chiamata **Ka**. Pensala come un voto: dice quanto l'acido "spinge" a rompersi.
+
+- **Ka grande** → l'acido si dissocia molto → acido **più forte**.
+- **Ka piccola** → l'acido si dissocia poco → acido **più debole**.
+
+Per le **basi** esiste l'equivalente: la **Kb** (costante di dissociazione basica). Stessa idea: Kb grande = base più forte.
+
+Gli acidi veramente forti hanno una Ka enorme (molto maggiore di 1), quindi spesso non serve nemmeno calcolarla: si dissociano e basta. La Ka serve soprattutto per i **deboli**, perché lì conta sapere "quanto poco" si rompono.
+
+<Diagram caption="Come leggere la costante Ka" code={`flowchart LR
+  K["Costante Ka<br/>(il voto della forza)"] --> G["Ka grande<br/>acido FORTE"]
+  K --> P["Ka piccola<br/>acido DEBOLE"]`} />
+
+## pKa e pKb: numeri più comodi da maneggiare
+
+I valori di Ka possono essere numeri scomodissimi, tipo 0,0000000056. Per non impazzire con tutti quegli zeri, i chimici usano il **pKa**, che è solo un modo più comodo di scrivere la stessa informazione (è il logaritmo cambiato di segno, ma non ti spaventare: ti basta sapere come si legge).
+
+La regola da ricordare è **al contrario** rispetto alla Ka:
+
+- **pKa basso** → acido **forte** (si dissocia molto).
+- **pKa alto** → acido **debole** (si dissocia poco).
+
+Allo stesso modo, per le basi c'è il **pKb**: pKb basso = base forte.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> con la Ka, <strong>grande = forte</strong>. Con il pKa è il contrario: <strong>piccolo = forte</strong>. È come la classifica a scuola: voto alto è meglio, ma posizione bassa (1°, 2°) è meglio. Sono due modi di dire la stessa cosa.</div>
+
+**Perché conta in medicina e veterinaria?** Il nostro corpo è pieno di acidi e basi deboli: lavorano in coppia per fare i **sistemi tampone**, quelli che tengono il pH del sangue stabile intorno a 7,4. Se cambiasse di poco, staremmo male. I farmaci stessi sono spesso acidi o basi deboli, e il loro pKa decide se vengono assorbiti bene dall'intestino o dallo stomaco. Capire forti e deboli è quindi un mattone di base della fisiologia.
+
+## Guarda il video
+
+<YouTube id="aAh5rvKYDlY" title="Equilibrio e Ka: la costante di dissociazione acida spiegata semplice" />
+
+<VideoVisto id="chim-u4-05" />
+
+## Da ricordare
+
+- **Acido forte**: si dissocia al **100%** (freccia a senso unico). Esempio: HCl, l'acido dello stomaco.
+- **Acido debole**: si dissocia solo **un po'**, si crea un **equilibrio** (doppia freccia). Esempio: aceto.
+- **Ka** = costante di dissociazione acida: **grande = forte**, piccola = debole. **Kb** è l'equivalente per le basi.
+- **pKa** è la versione comoda: qui è al contrario, **piccolo = forte**, grande = debole.
+- Acidi e basi deboli fanno i **sistemi tampone** che tengono stabile il pH del sangue (circa 7,4).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un acido FORTE in acqua si comporta così:"
+  opzioni={["si dissocia solo un po' e resta in equilibrio", "si dissocia completamente (al 100%)", "non si dissocia mai", "diventa una base"]}
+  corretta={1}
+  spiegazione="L'acido forte si dissocia del tutto: si rompe al 100% liberando tutti i suoi H+. Per questo si usa una freccia a senso unico, non l'equilibrio."
+/>
+
+<Quiz
+  domanda="Hai due acidi: uno con Ka grande e uno con Ka piccola. Quale è più forte?"
+  opzioni={["quello con Ka piccola", "quello con Ka grande", "sono uguali", "nessuno dei due è un acido"]}
+  corretta={1}
+  spiegazione="Con la Ka vale grande = forte: una Ka grande significa che l'acido si dissocia molto, quindi è più forte."
+/>
+
+<Quiz
+  domanda="Un acido ha un pKa basso. Cosa puoi dire?"
+  opzioni={["è un acido debole", "è un acido forte", "non è un acido", "è per forza una base"]}
+  corretta={1}
+  spiegazione="Con il pKa è al contrario rispetto alla Ka: pKa basso = acido forte. Ricorda l'analogia della classifica: posizione bassa (1°, 2°) è la migliore."
+/>
+
+<Esercizio
+  problema="L'aceto contiene acido acetico, che in acqua si dissocia solo per circa l'1 per cento. Si tratta di un acido forte o debole? E che tipo di freccia useresti per descrivere la sua reazione?"
+  soluzione="È un acido DEBOLE, perché si dissocia solo un pochino (l'1 per cento): quasi tutte le molecole restano intere. Si descrive con la doppia freccia, perché si crea un equilibrio tra la parte dissociata e quella indissociata."
+/>
+
+</section>
+
+</RisorsaLayout>

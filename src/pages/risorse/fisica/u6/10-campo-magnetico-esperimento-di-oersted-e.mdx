@@ -1,0 +1,97 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u6-10">
+
+## Cos'è il campo magnetico?
+
+Il campo magnetico è una regione dello spazio in cui una carica in moto (o un magnete) sente una forza.
+
+Puoi immaginarlo come il "territorio di influenza" di un magnete o di un filo percorso da corrente: chi entra in quella zona sente una spinta.
+
+Il campo magnetico si indica con la lettera **B** e si misura in **Tesla (T)**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il campo magnetico è invisibile, ma se una carica si muove dentro di esso, la sente eccome — riceve una forza di lato rispetto alla sua direzione di moto.</div>
+
+---
+
+## L'esperimento di Oersted (1820)
+
+Hans Christian Oersted stava facendo lezione quando notò una cosa strana: ogni volta che accendeva un filo elettrico, l'ago di una bussola vicina si spostava.
+
+Questo era enorme: significava che **la corrente elettrica genera un campo magnetico** intorno al filo.
+
+Come è fatto questo campo? È fatto di cerchi concentrici attorno al filo. Più sei lontano dal filo, più il campo è debole.
+
+**La regola della mano destra** ti dice il verso:
+- Punta il pollice destro nella direzione della corrente.
+- Le altre dita si arrotolano: indicano il verso del campo magnetico attorno al filo.
+
+<Diagram caption="L'esperimento di Oersted: la corrente nel filo crea un campo magnetico circolare" code={`flowchart TB
+  A["Generatore acceso<br/>corrente nel filo"] --> B["Campo magnetico B<br/>si forma attorno al filo"]
+  B --> C["Ago della bussola<br/>si gira"]
+  C --> D["Conclusione: corrente = sorgente di campo magnetico"]`} />
+
+---
+
+## La forza di Lorentz
+
+Supponi di avere una particella carica (per esempio un elettrone o un protone) che si muove dentro un campo magnetico B.
+
+La particella sente una forza. Questa si chiama **forza di Lorentz** ed è data da:
+
+**F = q · v · B · sin(θ)**
+
+Dove:
+- **q** = carica della particella (in Coulomb)
+- **v** = velocità della particella (in m/s)
+- **B** = intensità del campo magnetico (in Tesla)
+- **θ** = angolo tra la velocità e il campo magnetico
+
+**Tre casi importanti:**
+1. Se la carica si muove **parallela** a B (θ = 0°): forza **zero**, la carica non sente niente.
+2. Se la carica si muove **perpendicolare** a B (θ = 90°): forza **massima**, uguale a q·v·B.
+3. La forza è sempre **perpendicolare** sia alla velocità sia al campo: la carica curva, non accelera.
+
+**Come trovare la direzione della forza?** Si usa la **regola della mano destra**:
+- Dita puntate nella direzione di **v** (velocità).
+- Dita piegate verso **B** (campo magnetico).
+- Il pollice indica la direzione di **F** (forza) — ma solo per cariche positive. Per cariche negative, inverti.
+
+<Diagram caption="Forza di Lorentz: come interagiscono velocità, campo magnetico e forza risultante" code={`flowchart LR
+  A["Carica q<br/>in moto con velocità v"] --> B["Entra nel campo<br/>magnetico B"]
+  B --> C{"Angolo tra v e B?"}
+  C -->|"θ = 0° parallelo"| D["Forza = 0<br/>nessun effetto"]
+  C -->|"θ = 90° perpendicolare"| E["Forza massima F = qvB<br/>carica curva"]
+  E --> F["Moto circolare<br/>se B è uniforme"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="NP_h-5xmwEs" title="FISICA Tappabuchi #1 - CAMPO MAGNETICO, FORZA di LORENTZ, SPETTROMETRO di MASSA, SELETTORE" />
+<VideoVisto id="fis-u6-10" />
+
+## Da ricordare
+- La corrente elettrica genera un campo magnetico circolare attorno al filo (esperimento di Oersted, 1820).
+- La forza di Lorentz agisce su una carica in moto dentro un campo magnetico: F = q·v·B·sin(θ).
+- La forza di Lorentz è sempre perpendicolare alla velocità, quindi curva la traiettoria ma non cambia la velocità della particella.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un filo percorso da corrente elettrica genera attorno a sé:" opzioni={["Un campo elettrico radiale","Un campo magnetico circolare","Un campo gravitazionale","Nessun campo"]} corretta={1} spiegazione="L'esperimento di Oersted dimostrò che una corrente elettrica genera un campo magnetico con linee di campo circolari concentriche attorno al filo." />
+
+<Quiz domanda="Una carica positiva si muove parallelamente alle linee di un campo magnetico uniforme. Quale forza di Lorentz subisce?" opzioni={["Una forza massima pari a qvB","Una forza diretta lungo il campo","Forza zero","Una forza diretta contro il moto"]} corretta={2} spiegazione="La forza di Lorentz è F = qvB·sin(θ). Se la velocità è parallela a B, θ = 0° e sin(0°) = 0, quindi F = 0." />
+
+<Quiz domanda="Un elettrone (carica negativa) entra perpendicolare in un campo magnetico B. Rispetto a una carica positiva nelle stesse condizioni, la forza di Lorentz che sente è:" opzioni={["Uguale in direzione e verso","Uguale in modulo ma opposta in verso","Più grande perché ha meno massa","Zero perché è un elettrone"]} corretta={1} spiegazione="La forza di Lorentz dipende dal segno della carica: F = qvB. Per una carica negativa il segno di q è negativo, quindi la forza ha lo stesso modulo ma verso opposto rispetto a una carica positiva." />
+
+<Esercizio problema="Un protone (q = 1,6 × 10⁻¹⁹ C) si muove a v = 2 × 10⁶ m/s perpendicolare a un campo magnetico B = 0,5 T. Calcola il modulo della forza di Lorentz." soluzione="Si applica F = q·v·B·sin(θ). Poiché θ = 90°, sin(90°) = 1. Quindi: F = 1,6 × 10⁻¹⁹ C × 2 × 10⁶ m/s × 0,5 T = 1,6 × 10⁻¹³ N." />
+
+</section>
+
+</RisorsaLayout>

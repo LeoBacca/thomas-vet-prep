@@ -1,0 +1,167 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-08">
+
+## Cos'è l'importazione nucleare?
+
+Il nucleo è il "caveau" della cellula: non si entra senza un lasciapassare. Le proteine prodotte nel citoplasma non possono entrare nel nucleo come vogliono — devono portare un segnale specifico chiamato **NLS** (Nuclear Localization Signal, cioè "segnale di localizzazione nucleare"). È come un codice QR sul badge di un dipendente: senza di esso, la guardia di sicurezza (le **importine**) non ti lascia passare dal **poro nucleare**.
+
+Il processo funziona così:
+1. Una proteina nel citoplasma porta una sequenza NLS (una piccola zona ricca di aminoacidi carichi positivamente).
+2. Le importine riconoscono l'NLS e formano un complesso con la proteina.
+3. Il complesso attraversa il poro nucleare.
+4. Dentro il nucleo, la proteina **RanGTP** si lega alle importine e le fa "mollare" il carico.
+5. Le importine escono dal nucleo e sono pronte per un altro ciclo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le importine sono come i corrieri che consegnano pacchi nel nucleo: riconoscono il "codice di spedizione" (NLS), portano il pacco dentro, lo lasciano cadere e tornano a prenderne un altro.</div>
+
+---
+
+## Esempio 1: recettore degli ormoni steroidei
+
+Gli **ormoni steroidei** (es. cortisolo, estrogeni, testosterone) sono molecole grasse che attraversano la membrana cellulare senza problemi. Una volta dentro la cellula, si legano al loro **recettore** specifico, che di solito se ne sta nel citoplasma bloccato da proteine "chaperon" (le **Hsp90**, che fungono da coperchio).
+
+Quando l'ormone si lega al recettore:
+- Le Hsp90 si staccano.
+- Il recettore cambia forma e **espone il suo NLS** (prima era nascosto).
+- Le importine lo riconoscono e lo portano nel nucleo.
+- Dentro il nucleo, il recettore si lega al DNA e attiva la trascrizione di geni specifici.
+
+Quindi la cellula non lascia entrare il recettore nel nucleo finché non c'è l'ormone: è una porta che si apre solo quando arriva la chiave giusta.
+
+---
+
+## Esempio 2: NF-kB — il fattore "bloccato finché non serve"
+
+**NF-kB** è un fattore di trascrizione (una proteina che attiva geni infiammatori e di sopravvivenza). Di solito è tenuto fermo nel citoplasma da un "inibitore" chiamato **IkB**, che copre il suo NLS.
+
+Quando la cellula riceve un segnale di pericolo (es. infezione, stress):
+1. IkB viene fosforilato (gli viene aggiunto un gruppo fosfato, come un bollino "da eliminare").
+2. IkB viene degradato dal proteasoma (il "tritarifiuti" della cellula).
+3. NF-kB è libero: il suo NLS è scoperto.
+4. Le importine lo portano nel nucleo.
+5. NF-kB attiva i geni dell'infiammazione e della risposta immunitaria.
+
+---
+
+## Esempio 3: SREBP1 — il sensore dei grassi
+
+**SREBP1** (Sterol Regulatory Element-Binding Protein 1) è un fattore di trascrizione che controlla la sintesi dei grassi e del colesterolo. Ma non è libero nel citoplasma: è **ancorato alla membrana del reticolo endoplasmatico** (una struttura interna della cellula).
+
+Quando il colesterolo nella cellula è basso:
+1. SREBP1 viene tagliato da due proteasi (enzimi che "sforbiciano" le proteine) chiamate S1P e S2P.
+2. Il pezzo attivo di SREBP1 si stacca dalla membrana.
+3. Ha un NLS: le importine lo portano nel nucleo.
+4. Attiva i geni che producono colesterolo e acidi grassi.
+
+Quando il colesterolo è alto, il taglio non avviene: SREBP1 resta sulla membrana e non entra nel nucleo. La cellula si autoregola.
+
+---
+
+## Export degli RNA: uscire dal nucleo
+
+Anche uscire dal nucleo richiede un segnale. Gli **mRNA** (messaggi genetici) prodotti nel nucleo devono raggiungere i ribosomi nel citoplasma per essere tradotti in proteine. Questo trasporto è regolato anch'esso.
+
+**Come funziona l'export dell'mRNA:**
+1. L'mRNA viene prodotto e modificato nel nucleo (aggiunta del cappuccio 5', della coda di poly-A, e splicing per togliere gli introni).
+2. Si assemblano le proteine **EJC** (exon junction complex) e il complesso **TREX** sull'mRNA maturo.
+3. Il complesso mRNA + proteine si lega al canale di esportazione del poro nucleare tramite i fattori **NXF1/NXT1**.
+4. L'mRNA attraversa il poro.
+5. Nel citoplasma le proteine di export si staccano, l'mRNA è libero per la traduzione.
+
+Questo sistema assicura che escano solo mRNA **completi e corretti**: un mRNA non ancora spliciato non viene esportato.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'mRNA è come un documento ufficiale — deve prima passare per tutti i controlli (timbrature, firma, togliere le parti sbagliate), poi un corriere specifico (NXF1) lo porta fuori dall'ufficio (nucleo) fino alla catena di montaggio (ribosomi).</div>
+
+---
+
+<Diagram caption="Importazione nucleare: meccanismo generale con importine e RanGTP" code={`flowchart TB
+  A["Proteina con NLS nel citoplasma"] --> B["Importina riconosce l'NLS<br/>e forma un complesso"]
+  B --> C["Complesso attraversa<br/>il poro nucleare"]
+  C --> D["Nel nucleo: RanGTP si lega<br/>all'importina"]
+  D --> E["Importina rilascia la proteina<br/>nel nucleo"]
+  E --> F["La proteina agisce nel nucleo<br/>(es. attiva geni)"]
+  D --> G["Importina + RanGTP escono<br/>dal nucleo e si riciclano"]`} />
+
+<Diagram caption="Tre esempi di importazione nucleare regolata: ormoni steroidei, NF-kB e SREBP1" code={`flowchart TB
+  subgraph Steroidi["Recettore ormoni steroidei"]
+    S1["Ormone entra nella cellula"] --> S2["Si lega al recettore<br/>bloccato da Hsp90"]
+    S2 --> S3["Hsp90 si stacca<br/>NLS esposto"]
+    S3 --> S4["Importine portano<br/>il recettore nel nucleo"]
+    S4 --> S5["Recettore attiva<br/>trascrizione genica"]
+  end
+  subgraph NFkB["NF-kB"]
+    N1["Segnale di pericolo<br/>(infezione, stress)"] --> N2["IkB fosforilato<br/>e degradato"]
+    N2 --> N3["NLS di NF-kB scoperto"]
+    N3 --> N4["NF-kB entra nel nucleo"]
+    N4 --> N5["Attiva geni infiammatori"]
+  end
+  subgraph SREBP["SREBP1"]
+    R1["Colesterolo basso<br/>nella cellula"] --> R2["Proteasi S1P e S2P<br/>tagliano SREBP1"]
+    R2 --> R3["Frammento attivo<br/>si stacca dalla membrana"]
+    R3 --> R4["Entra nel nucleo<br/>con NLS"]
+    R4 --> R5["Attiva sintesi<br/>di colesterolo e grassi"]
+  end`} />
+
+## Guarda il video
+<YouTube id="_iPg2U5inhc" title="Citologia - Lezione 15: Nucleo" />
+<VideoVisto id="bio-u5-08" />
+
+## Da ricordare
+- Per entrare nel nucleo una proteina deve avere un segnale NLS che viene riconosciuto dalle importine; la regolazione avviene nascondendo o scoprendo questo segnale (es. Hsp90 che blocca il recettore steroideo, IkB che blocca NF-kB).
+- SREBP1 è ancorato alla membrana del reticolo e viene tagliato (attivato) solo quando il colesterolo intracellulare è basso.
+- L'export degli mRNA dal nucleo richiede che l'mRNA sia completamente maturo (spliciato, con cappuccio e poly-A); il complesso NXF1/NXT1 guida il trasporto attraverso il poro nucleare.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa succede al recettore degli ormoni steroidei quando l'ormone NON è presente nella cellula?"
+  opzioni={[
+    "È nel nucleo e attiva la trascrizione",
+    "È nel citoplasma bloccato dalle proteine Hsp90 con NLS nascosto",
+    "È degradato dal proteasoma",
+    "È ancorato alla membrana plasmatica"
+  ]}
+  corretta={1}
+  spiegazione="In assenza dell'ormone, il recettore steroideo si trova nel citoplasma legato alle proteine chaperon Hsp90, che tengono nascosto il segnale NLS. Solo quando l'ormone si lega, le Hsp90 si staccano e il recettore può essere importato nel nucleo."
+/>
+
+<Quiz
+  domanda="Quale molecola è responsabile del rilascio del carico dalle importine all'interno del nucleo?"
+  opzioni={[
+    "IkB",
+    "Hsp90",
+    "RanGTP",
+    "NXF1"
+  ]}
+  corretta={2}
+  spiegazione="Dentro il nucleo, dove la concentrazione di RanGTP è alta, RanGTP si lega alle importine e le fa rilasciare il carico proteico. Questo garantisce che il trasporto sia unidirezionale: le importine scaricano nel nucleo, non nel citoplasma."
+/>
+
+<Quiz
+  domanda="Perché SREBP1 NON entra nel nucleo quando la cellula ha già molto colesterolo?"
+  opzioni={[
+    "Perché IkB lo blocca nel citoplasma",
+    "Perché le importine non riconoscono il suo NLS quando il colesterolo è alto",
+    "Perché le proteasi S1P e S2P non lo tagliano e rimane ancorato alla membrana del reticolo",
+    "Perché viene esportato dal nucleo subito dopo l'ingresso"
+  ]}
+  corretta={2}
+  spiegazione="SREBP1 è ancorato alla membrana del reticolo endoplasmatico. Solo quando il colesterolo intracellulare è basso, le proteasi S1P e S2P vengono attivate e tagliano SREBP1 liberando il frammento attivo con NLS. Se il colesterolo è abbondante, questo taglio non avviene e SREBP1 resta bloccato sulla membrana, inattivo."
+/>
+
+<Esercizio
+  problema="Un ricercatore tratta delle cellule con un farmaco che blocca permanentemente IkB, impedendo la sua fosforilazione e degradazione. Che cosa succederà all'attività di NF-kB anche in presenza di un forte segnale infiammatorio? Spiega il perché."
+  soluzione="Se IkB non può essere fosforilato né degradato, rimarrà sempre legato a NF-kB, coprendo il suo NLS. Di conseguenza, le importine non potranno riconoscere NF-kB e questo non potrà entrare nel nucleo. La cellula non riuscirà ad attivare i geni infiammatori controllati da NF-kB, anche se riceve segnali di pericolo. In pratica, il farmaco blocca la risposta infiammatoria a valle di quel segnale — un meccanismo simile a quello di alcuni farmaci antinfiammatori reali."
+/>
+
+</section>
+
+</RisorsaLayout>

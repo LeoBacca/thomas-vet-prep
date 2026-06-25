@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-bio-u5-17-1",
+    "topicId": "bio-u5-17",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: nel reticolo endoplasmatico, calnexina e calreticulina si legano a una proteina nascente perche riconoscono un singolo glucosio rimasto sulla sua catena di zuccheri, e la trattengono finche non e piegata correttamente.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Le glucosidasi tagliano 2 dei 3 glucosi iniziali: rimane 1 glucosio solitario che funge da 'etichetta'. Calnexina e calreticulina la riconoscono, agganciano la proteina e l'assistono nel folding. Solo quando la glucosidasi II rimuove anche quest'ultimo glucosio la proteina e libera di andare al Golgi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-17-2",
+    "topicId": "bio-u5-17",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Una proteina entra nel RE, viene glicosilata, passa piu volte per il ciclo calnexina/calreticulina ma non riesce a piegarsi bene. Cosa succede alla fine? Descrivi il destino della proteina e il ruolo di UGGT e di ERAD.",
+    "answer": "Se la proteina non si piega correttamente dopo ripetuti cicli, l'enzima UGGT la 'controlla': finche e ancora mal piegata, UGGT rimette un glucosio sulla catena di zuccheri e il ciclo con calnexina/calreticulina riparte da capo. Se pero la proteina continua a fallire il folding, entra in gioco ERAD (ER-Associated Degradation): la proteina viene segnalata per lo scarto (le mannosidasi rimuovono mannosio come ulteriore segnale), retrotraslocata fuori dal RE nel citosol, marcata con ubiquitina e infine distrutta dal proteasoma. E il sistema di controllo qualita del RE: nessuna proteina difettosa puo uscire verso il Golgi.",
+    "explain": "Schema chiave: folding OK → glucosio rimosso → libera verso Golgi. Folding NON OK → UGGT rimette glucosio → ciclo riparte. Fallimento cronico → ERAD → proteasoma.",
+    "tags": ["risposta aperta"]
+  }
+]

@@ -1,0 +1,151 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u6-11">
+
+## Che cos'è l'induzione elettromagnetica?
+
+Hai mai mosso una calamita vicino a un filo e visto accendersi una lampadina? Questo è esattamente l'induzione elettromagnetica.
+
+Il punto chiave è questo: **non basta avere un campo magnetico — deve cambiare nel tempo.** Un magnete fermo non genera corrente. Un magnete in movimento, sì.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un campo magnetico che cambia "spinge" gli elettroni nel filo e crea corrente elettrica — anche senza una batteria.</div>
+
+---
+
+## Il flusso magnetico: cosa misura?
+
+Prima di capire la legge di Faraday, devi sapere cos'è il **flusso magnetico** (simbolo: Φ, si legge "phi").
+
+Immagina di avere una rete da pesca immersa in un fiume. L'acqua che passa attraverso la rete è il "flusso". Allo stesso modo:
+
+- Il **campo magnetico** è il fiume.
+- La **spira** (il cerchio di filo) è la rete.
+- Il **flusso** è quanta parte del campo magnetico "attraversa" la spira.
+
+**Formula del flusso:**
+
+Φ = B · A · cos(θ)
+
+Dove:
+- **B** = intensità del campo magnetico (in Tesla)
+- **A** = area della spira (in m²)
+- **θ** = angolo tra il campo e la normale alla spira
+
+Il flusso cambia se cambia B, oppure se cambia A, oppure se la spira ruota (cambia θ).
+
+---
+
+## La legge di Faraday-Neumann
+
+La legge dice una cosa precisa: **la forza elettromotrice (f.e.m.) indotta è uguale alla variazione del flusso nel tempo, cambiata di segno.**
+
+**Formula:**
+
+ε = − ΔΦ / Δt
+
+Dove:
+- **ε** (epsilon) = forza elettromotrice indotta, cioè la "spinta" che mette in moto la corrente (in Volt)
+- **ΔΦ** = variazione del flusso magnetico
+- **Δt** = intervallo di tempo in cui avviene la variazione
+- **Il segno meno** → arriva dalla legge di Lenz (vedi sotto)
+
+**Esempio pratico:** se in 0,1 secondi il flusso attraverso una spira cambia di 0,5 Wb (Weber), la f.e.m. indotta è:
+
+ε = 0,5 / 0,1 = 5 V
+
+---
+
+## La legge di Lenz: perché il segno meno?
+
+Il segno meno nella formula non è un caso: rappresenta la **legge di Lenz**.
+
+La legge di Lenz dice: **la corrente indotta si oppone sempre alla causa che la genera.**
+
+Pensa a un freno: quando cerchi di cambiare il flusso in una spira, la corrente che si genera crea a sua volta un campo magnetico che "frena" quel cambiamento. È come la natura che dice "aspetta, non ti lascio cambiare le cose senza resistenza".
+
+Questa è anche una conseguenza della **conservazione dell'energia**: se la corrente indotta aiutasse il cambiamento invece di ostacolarlo, si genererebbe energia dal nulla, cosa impossibile.
+
+---
+
+<Diagram caption="Come varia il flusso magnetico in una spira e genera corrente indotta" code={`flowchart TB
+  A["Magnete in movimento<br/>(o campo B che cambia)"] --> B["Flusso magnetico Φ<br/>attraverso la spira cambia"]
+  B --> C["Variazione ΔΦ/Δt<br/>diversa da zero"]
+  C --> D["Forza elettromotrice indotta<br/>ε = −ΔΦ/Δt"]
+  D --> E["Corrente indotta<br/>nel circuito"]
+  E --> F["Campo magnetico opposto<br/>(legge di Lenz)"]
+  F --> G["Si oppone alla variazione<br/>che l'ha generata"]`} />
+
+<Diagram caption="I tre modi per cambiare il flusso e indurre corrente" code={`flowchart LR
+  A["Cambiare il flusso Φ"] --> B["1. Variare B<br/>(muovere il magnete)"]
+  A --> C["2. Variare l'area A<br/>(deformare la spira)"]
+  A --> D["3. Variare l'angolo θ<br/>(ruotare la spira)"]
+  B --> E["Corrente indotta ε"]
+  C --> E
+  D --> E`} />
+
+---
+
+## Guarda il video
+<YouTube id="tKJ9VJEF0Bc" title="La legge di Faraday Neumann Lenz — Fisica Fast" />
+<VideoVisto id="fis-u6-11" />
+
+---
+
+## Da ricordare
+- La corrente si induce **solo se il flusso magnetico cambia** nel tempo: un campo statico non basta.
+- La f.e.m. indotta vale **ε = −ΔΦ/Δt**: più rapida è la variazione, più alta è la tensione generata.
+- Il segno meno (legge di Lenz) dice che la corrente indotta **si oppone sempre** alla variazione che l'ha causata.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Una spira è immersa in un campo magnetico costante e immobile. Cosa succede?"
+  opzioni={[
+    "Si genera una corrente costante proporzionale al campo",
+    "Non si genera alcuna corrente indotta",
+    "Si genera una corrente solo se il campo è molto intenso",
+    "Si genera una corrente inversamente proporzionale all'area della spira"
+  ]}
+  corretta={1}
+  spiegazione="La corrente indotta esiste solo se il flusso magnetico varia nel tempo. Se campo e spira sono fermi, il flusso è costante (ΔΦ/Δt = 0) e quindi ε = 0: nessuna corrente."
+/>
+
+<Quiz
+  domanda="Il flusso magnetico attraverso una spira passa da 0,8 Wb a 0,2 Wb in 0,3 secondi. Qual è il valore assoluto della f.e.m. indotta?"
+  opzioni={[
+    "0,24 V",
+    "2,0 V",
+    "0,6 V",
+    "1,8 V"
+  ]}
+  corretta={1}
+  spiegazione="ΔΦ = 0,8 − 0,2 = 0,6 Wb; Δt = 0,3 s. Quindi |ε| = ΔΦ/Δt = 0,6/0,3 = 2,0 V."
+/>
+
+<Quiz
+  domanda="Cosa afferma la legge di Lenz riguardo alla corrente indotta?"
+  opzioni={[
+    "La corrente indotta ha sempre lo stesso verso del campo magnetico esterno",
+    "La corrente indotta è proporzionale alla resistenza del circuito",
+    "La corrente indotta si oppone alla variazione del flusso che l'ha generata",
+    "La corrente indotta è nulla se il circuito ha resistenza alta"
+  ]}
+  corretta={2}
+  spiegazione="La legge di Lenz stabilisce che la corrente indotta crea un campo magnetico tale da opporsi alla variazione del flusso che l'ha generata. Questo è il significato fisico del segno meno nella formula di Faraday-Neumann."
+/>
+
+<Esercizio
+  problema="Una bobina di 50 spire ha un'area di 0,02 m². Il campo magnetico perpendicolare alla bobina varia da 0,1 T a 0,5 T in 0,4 secondi. Calcola la f.e.m. indotta totale nella bobina."
+  soluzione="Prima calcola la variazione del flusso su una singola spira: ΔΦ = ΔB · A = (0,5 − 0,1) · 0,02 = 0,4 · 0,02 = 0,008 Wb. Per N spire la formula diventa ε = N · ΔΦ/Δt = 50 · 0,008/0,4 = 50 · 0,02 = 1,0 V. La f.e.m. indotta è 1,0 V."
+/>
+
+</section>
+
+</RisorsaLayout>

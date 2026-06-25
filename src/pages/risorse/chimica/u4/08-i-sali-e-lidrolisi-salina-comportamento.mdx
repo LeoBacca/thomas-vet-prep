@@ -1,0 +1,103 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-08">
+
+Un **sale** è quella roba che nasce quando un acido e una base si "incontrano" e si neutralizzano. L'esempio più famoso è il sale da cucina (NaCl). Verrebbe da pensare che tutti i sali, sciolti in acqua, diano una soluzione neutra. E invece no: alcuni sali rendono l'acqua un po' **acida**, altri un po' **basica**, altri la lasciano **neutra**. Questo fenomeno si chiama **idrolisi salina** ("idro" = acqua, "lisi" = rottura: il sale rompe un po' l'equilibrio dell'acqua).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> quando sciogli un sale, si spezza in due pezzi (ioni). Se uno di questi pezzi è un "ex acido debole" o un "ex base debole", quel pezzo ruba o regala particelle all'acqua e la rende basica o acida. Se i pezzi vengono entrambi da roba "forte", non succede niente: resta neutra.</div>
+
+<Diagram caption="Un sale si scioglie in acqua e si separa in due ioni" code={`flowchart LR
+  S["Sale solido<br/>(es. NaCl)"] -->|"si scioglie in acqua"| C["Catione (+)<br/>es. Na+"]
+  S -->|"si scioglie in acqua"| A["Anione (-)<br/>es. Cl-"]
+  C --> R["Questi ioni possono<br/>reagire con l'acqua"]
+  A --> R`} />
+
+## Da dove arriva ogni pezzo del sale
+
+Ogni sale è figlio di **un acido** e di **una base**. Il catione (il pezzo positivo) arriva dalla base; l'anione (il pezzo negativo) arriva dall'acido. La domanda chiave è una sola: questi "genitori" erano **forti** o **deboli**?
+
+- Un **acido forte** o una **base forte** è uno che in acqua si spezza tutto, senza ripensamenti. Il suo ione, una volta nel sale, è "soddisfatto" e non reagisce più con l'acqua.
+- Un **acido debole** o una **base debole** è uno timido, che in acqua si spezza solo a metà. Il suo ione, nel sale, è ancora "affamato": cerca di ricomporsi rubando o cedendo particelle all'acqua. Ed è proprio questo che cambia il pH.
+
+Pensa a una molla: la molla forte, una volta tirata, resta tirata e sta lì tranquilla. La molla debole tende sempre a tornare indietro: è quel "tornare indietro" che disturba l'acqua.
+
+<Diagram caption="Lo ione che viene da un genitore DEBOLE è quello che reagisce con l'acqua" code={`flowchart TB
+  P["Da dove viene lo ione?"] --> F["Da un genitore FORTE<br/>(acido forte o base forte)"]
+  P --> D["Da un genitore DEBOLE<br/>(acido debole o base debole)"]
+  F --> N["Ione tranquillo<br/>NON reagisce con l'acqua"]
+  D --> X["Ione affamato<br/>REAGISCE con l'acqua e cambia il pH"]`} />
+
+## Le tre regole pratiche (questa è la parte che conta)
+
+Per sapere come si comporta un sale, guardi i suoi due "genitori" e applichi una di tre regole. Niente conti, solo il ragionamento.
+
+- **Acido forte + base forte → soluzione NEUTRA** (pH circa 7). Nessuno dei due ioni è affamato, l'acqua resta in pace. Esempio: NaCl (figlio di HCl, acido forte, e NaOH, base forte). Per questo l'acqua salata da cucina è neutra.
+- **Acido debole + base forte → soluzione BASICA** (pH maggiore di 7). L'anione viene dall'acido debole, è affamato e ruba un H+ all'acqua. Togliendo H+ all'acqua restano in giro ioni OH-, e gli OH- rendono basico. Esempio: il bicarbonato di sodio (NaHCO3) sciolto in acqua è leggermente basico.
+- **Acido forte + base debole → soluzione ACIDA** (pH minore di 7). Stavolta è il catione, figlio della base debole, ad essere affamato: cede un H+ all'acqua. Più H+ in giro = più acido. Esempio: il cloruro di ammonio (NH4Cl) rende l'acqua acida.
+
+Il trucco per ricordarla: **vince sempre il genitore forte**. Se il genitore forte è la base, la soluzione è basica; se il genitore forte è l'acido, la soluzione è acida; se sono forti entrambi, pareggio (neutra).
+
+<Diagram caption="Le tre situazioni: guarda i genitori del sale e decidi" code={`flowchart TB
+  Sale["Sale sciolto in acqua"] --> FF["Acido forte + Base forte"]
+  Sale --> DF["Acido debole + Base forte"]
+  Sale --> FD["Acido forte + Base debole"]
+  FF --> NEU["NEUTRA<br/>pH circa 7<br/>(es. NaCl)"]
+  DF --> BAS["BASICA<br/>pH maggiore di 7<br/>(es. NaHCO3)"]
+  FD --> ACI["ACIDA<br/>pH minore di 7<br/>(es. NH4Cl)"]`} />
+
+## Perché interessa a chi farà Veterinaria
+
+Il corpo degli animali (e il nostro) è pieno di sali sciolti nei liquidi: nel sangue, nelle urine, nei succhi digestivi. Il pH di questi liquidi deve restare in un intervallo strettissimo, altrimenti le cellule non funzionano. Uno dei guardiani principali è proprio un sale: il **bicarbonato** (HCO3-), che essendo "figlio di un acido debole" tende a rendere basico e così frena l'acidità del sangue. È il cuore del cosiddetto **sistema tampone**. Anche l'urina può essere più acida o più basica a seconda dei sali presenti, e il veterinario lo legge negli esami per capire come sta funzionando il rene dell'animale. Insomma: capire l'idrolisi salina ti aiuta a capire perché un fluido del corpo è acido o basico.
+
+## Guarda il video
+
+<YouTube id="AYNWk_Ybro4" title="Idrolisi salina: neutra, acida e basica — spiegazione semplice" />
+
+<VideoVisto id="chim-u4-08" />
+
+## Da ricordare
+
+- **Idrolisi salina** = un sale sciolto in acqua può rendere la soluzione acida, basica o neutra.
+- A reagire con l'acqua è lo ione che viene da un **genitore debole** (acido debole o base debole); lo ione da genitore forte sta tranquillo.
+- **Acido forte + base forte → NEUTRA** (es. NaCl).
+- **Acido debole + base forte → BASICA** (es. NaHCO3); **acido forte + base debole → ACIDA** (es. NH4Cl).
+- Regola lampo: **vince il genitore forte**. Forte la base → basica; forte l'acido → acida; forti entrambi → neutra.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Il cloruro di sodio NaCl (figlio di HCl, acido forte, e NaOH, base forte) sciolto in acqua dà una soluzione:"
+  opzioni={["acida", "basica", "neutra", "dipende dalla quantità"]}
+  corretta={2}
+  spiegazione="Entrambi i genitori sono forti, quindi nessun ione è affamato: la soluzione resta neutra (pH circa 7). Per questo l'acqua salata da cucina non è né acida né basica."
+/>
+
+<Quiz
+  domanda="Un sale figlio di un acido debole e di una base forte rende la soluzione:"
+  opzioni={["acida", "basica", "neutra", "esplosiva"]}
+  corretta={1}
+  spiegazione="L'anione viene dall'acido debole, è affamato e ruba un H+ all'acqua: restano OH- liberi, quindi la soluzione diventa basica. Vince il genitore forte, che qui è la base."
+/>
+
+<Quiz
+  domanda="Nel sale, quale ione tende a reagire con l'acqua e a cambiare il pH?"
+  opzioni={["lo ione che viene da un acido o base FORTE", "lo ione che viene da un acido o base DEBOLE", "tutti gli ioni allo stesso modo", "nessun ione, mai"]}
+  corretta={1}
+  spiegazione="È lo ione che arriva da un genitore debole ad essere affamato: cerca di ricomporsi rubando o cedendo H+ all'acqua. Lo ione da genitore forte invece resta tranquillo."
+/>
+
+<Esercizio
+  problema="Il cloruro di ammonio NH4Cl è figlio dell'acido cloridrico HCl (acido forte) e dell'ammoniaca NH3 (base debole). Sciogliendolo in acqua, la soluzione sarà acida, basica o neutra? Spiega perché."
+  soluzione="Sarà ACIDA (pH minore di 7). Il catione NH4+ viene dalla base debole (NH3): è affamato e cede un H+ all'acqua. Più ioni H+ in giro vuol dire più acidità. L'anione Cl- viene invece dall'acido forte HCl ed è tranquillo, non interferisce. Regola lampo: vince il genitore forte, che qui è l'acido, quindi soluzione acida."
+/>
+
+</section>
+
+</RisorsaLayout>

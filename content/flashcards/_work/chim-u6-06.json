@@ -1,0 +1,67 @@
+{
+ "id": "chim-u6-06",
+ "titolo": "Aldeidi e chetoni: struttura, nomenclatura e proprietà",
+ "materia": "chimica",
+ "unita": 6,
+ "slug": "06-aldeidi-e-chetoni-struttura-nomenclatura-e",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/chimica/u6/06-aldeidi-e-chetoni-struttura-nomenclatura-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "Qual è la formula bruta dell'etanale?",
+   "choices": [
+    "C2H4O",
+    "C2H3O",
+    "C3H2O2",
+    "C3HO2",
+    "C3H2O"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "nomenclatura"
+  },
+  {
+   "year": "2017",
+   "q": "L'acetone può essere ossidato a:",
+   "choices": [
+    "acido carbossilico",
+    "alogenuro alchilico",
+    "alcol secondario",
+    "alcano",
+    "alchene"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2020",
+   "q": "Quali composti organici contengono sicuramente un doppio legame?",
+   "choices": [
+    "Aldeidi",
+    "Ammine",
+    "Alcoli",
+    "Alcani",
+    "Eteri"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Quali molecole organiche contengono sempre gruppo carbonilico?",
+   "choices": [
+    "Le aldeidi",
+    "I cloruri alchilici",
+    "Le ammine",
+    "Gli alcani",
+    "I composti aromatici"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

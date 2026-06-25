@@ -1,0 +1,53 @@
+{
+ "id": "fis-u6-07",
+ "titolo": "Potenza elettrica ed effetto Joule",
+ "materia": "fisica",
+ "unita": 6,
+ "slug": "07-potenza-elettrica-ed-effetto-joule",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/fisica/u6/07-potenza-elettrica-ed-effetto-joule.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Una stufetta elettrica assorbe dalla rete una potenza P = 2 kW se sottoposta alla differenza di potenziale di 200 V in corrente continua. Se si potesse aumentare la tensione dell'alimentatore al valore di 400 V senza mutare la struttura della stufa, la potenza assorbita risulterebbe:",
+   "choices": [
+    "4P",
+    "2P",
+    "P",
+    "P/2",
+    "P^2"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2011",
+   "q": "Un pannello fotovoltaico è un generatore di corrente elettrica continua. Supponiamo che la potenza della radiazione luminosa solare incidente sia di circa 500 W/m2, che, dopo opportune trasformazioni mediante apparati elettronici, sia disponibile una corrente incognita, alla tensione continua di 200 V, e che globalmente si abbia un rendimento energetico del 20%. Possiamo dedurre che:",
+   "choices": [
+    "la corrente ottenibile da 1 metro quadro di pannello è circa 0,5 A",
+    "la corrente ottenibile da 1 metro quadro di pannello è circa 2,5 A",
+    "la resistenza elettrica di un metro quadro di pannello è circa 80 Ohm",
+    "la resistenza elettrica di un metro quadro di pannello è circa 320 Ohm",
+    "i dati forniti non consentono di calcolare la corrente disponibile"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2017",
+   "q": "Matteo acquista un nuovo trapano da collegare alla rete domestica (220 V). L'etichetta, che segnala la potenza assorbita dall'utilizzatore, riporta \"0,66 kW\". Quale sarà la corrente che circola nel trapano?",
+   "choices": [
+    "3 A",
+    "66 A",
+    "3 mA",
+    "333 A",
+    "0,33 A"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

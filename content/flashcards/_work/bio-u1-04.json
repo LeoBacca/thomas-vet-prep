@@ -1,0 +1,39 @@
+{
+ "id": "bio-u1-04",
+ "titolo": "Ciclo litico e lisogenico di un virus batterico (batteriofago)",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "04-ciclo-litico-e-lisogenico-di-un",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/biologia/u1/04-ciclo-litico-e-lisogenico-di-un.mdx",
+ "examQuestions": [
+  {
+   "year": "2012",
+   "q": "Un fago infetta una cellula di E. coli e compie un ciclo lisogeno. Ciò significa che, subito dopo aver trasferito il proprio DNA nella cellula ospite...",
+   "choices": [
+    "ha integrato il proprio DNA nel cromosoma batterico",
+    "ha indotto immediatamente la lisi della cellula batterica",
+    "ha inibito la duplicazione del DNA della cellula ospite",
+    "ha trasferito anche il capside all'interno della cellula batterica",
+    "ha trasferito anche l'enzima trascrittasi inversa all'interno della cellula batterica"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Il ciclo litico di un batteriofago:",
+   "choices": [
+    "provoca la rottura della cellula ospite",
+    "è una fase di quiescenza del virus",
+    "prevede l'inserimento del DNA virale nel cromosoma batterico",
+    "prevede che si duplichi il cromosoma con il DNA fagico integrato",
+    "disattiva i geni virali dopo l'ingresso nella cellula ospite"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

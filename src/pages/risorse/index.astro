@@ -1,0 +1,37 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Mascotte from '@/components/Mascotte.astro';
+const base = import.meta.env.BASE_URL;
+const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
+
+const materie = [
+  { key: 'fisica', nome: 'Fisica', emoji: '🧲', pronto: true, desc: '7 unità · 73 argomenti' },
+  { key: 'biologia', nome: 'Biologia', emoji: '🧬', pronto: true, desc: '7 unità · 109 argomenti' },
+  { key: 'chimica', nome: 'Chimica e Propedeutica Biochimica', emoji: '⚗️', pronto: true, desc: '7 unità · 105 argomenti' },
+];
+---
+<BaseLayout title="Risorse">
+  <h1>📚 Risorse</h1>
+  <p>Tutti i concetti spiegati semplici, in ordine, con diagrammi e video. Scegli una materia.</p>
+
+  <!-- mascotte sparse ai lati (decorative, nascoste su schermi stretti) -->
+  <Mascotte src="dog-koni.png" class="mascotte-scatter" style="top:20px;left:-100px;" decorative />
+  <Mascotte src="dog-chi.png" class="mascotte-scatter flip" style="top:150px;right:-96px;" decorative />
+  <Mascotte src="dog-border.png" class="mascotte-scatter" style="top:300px;left:-92px;" decorative />
+
+  <div class="cards">
+    {materie.map((m) => (
+      m.pronto
+        ? <a class="card" href={u(`risorse/${m.key}/`)}>
+            <div class="emoji">{m.emoji}</div>
+            <h3>{m.nome}</h3>
+            <p>{m.desc}</p>
+          </a>
+        : <div class="card soon">
+            <div class="emoji">{m.emoji}</div>
+            <h3>{m.nome} <span class="badge-soon">in arrivo</span></h3>
+            <p>{m.desc}</p>
+          </div>
+    ))}
+  </div>
+</BaseLayout>

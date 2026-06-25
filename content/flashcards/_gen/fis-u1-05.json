@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u1-05-1",
+    "topicId": "fis-u1-05",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: la temperatura corporea di un cane (38,5 °C) è una grandezza vettoriale, perché descrive qualcosa di preciso.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. La temperatura è scalare: basta un numero + unità (38,5 °C). Per essere vettoriale dovrebbe avere anche una direzione e un verso, ma chiedere 'in che direzione è 38,5 °C?' non ha senso. Le grandezze scalari descrivono 'quanto', non 'verso dove'.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u1-05-2",
+    "topicId": "fis-u1-05",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un veterinario spinge un cane sul lettino con una forza di 20 N verso sinistra. Questa informazione descrive una grandezza vettoriale. Quante cose servono per descriverla completamente?",
+    "choices": [
+      "Solo il numero (20 N): basta sapere quanto forte",
+      "Numero + direzione + verso: tutte e tre insieme (la forza è vettoriale)",
+      "Solo la direzione: non importa quanto forte ma solo da che parte",
+      "Solo il verso: da sinistra o destra è tutto ciò che conta"
+    ],
+    "answer": 1,
+    "explain": "La forza è vettoriale: serve il modulo (20 N, cioè 'quanto forte'), la direzione (orizzontale, verticale…) e il verso (verso sinistra o destra). Se manca anche solo uno dei tre, la descrizione è incompleta. Pensa alla freccia: la sua lunghezza è il modulo, la retta su cui sta è la direzione, la punta indica il verso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u1-05-3",
+    "topicId": "fis-u1-05",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra grandezza scalare e grandezza vettoriale. Fai un esempio di ciascuna e di' qual è il test rapido per capire a quale famiglia appartiene una grandezza.",
+    "answer": "Una grandezza scalare è descritta completamente da un numero e un'unità di misura: non ha direzione. Esempi: massa (5 kg), tempo (10 s), temperatura (37 °C), energia. Una grandezza vettoriale invece ha bisogno di tre informazioni: modulo (quanto è intensa), direzione (su quale retta sta) e verso (da che parte punta). Si rappresenta come una freccia. Esempi: forza, velocità, spostamento. Il test rapido: chiediti 'ha senso domandare in che direzione?'. Se la risposta è sì → vettoriale. 'La temperatura è 38 °C verso nord?' → non ha senso → scalare. 'La forza è 10 N verso destra?' → ha senso → vettoriale.",
+    "explain": "La chiave è il test della direzione: se chiedere 'verso dove?' ha senso, è vettoriale. Scalare = solo numero + unità. Vettoriale = modulo + direzione + verso (= freccia).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u1-05-4",
+    "topicId": "fis-u1-05",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti grandezze è vettoriale?",
+    "choices": [
+      "Forza",
+      "Lavoro",
+      "Massa",
+      "Tempo",
+      "Temperatura"
+    ],
+    "answer": 0,
+    "explain": "La forza è vettoriale: ha modulo, direzione e verso (si disegna come freccia). Il lavoro è scalare: è il prodotto scalare forza × spostamento, il risultato è solo un numero (in Joule). Massa, tempo e temperatura sono scalari classici: descrivono solo 'quanto', senza nessuna direzione. La trappola più comune è il lavoro, perché sembra legato alla forza (vettoriale), ma il prodotto scalare di due vettori dà sempre uno scalare.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u1-05-5",
+    "topicId": "fis-u1-05",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni su scalari e vettori è FALSA?",
+    "choices": [
+      "La velocità è una grandezza vettoriale perché ha direzione e verso",
+      "La massa è una grandezza scalare perché è descritta solo da un numero e un'unità",
+      "Il modulo di un vettore è la sua 'lunghezza', cioè quanto è intenso",
+      "La temperatura è vettoriale perché può essere alta o bassa (ha due 'versi')",
+      "Lo spostamento è un vettore: serve sapere di quanto ti sei mosso E in che direzione"
+    ],
+    "answer": 3,
+    "explain": "Falsa è la D: 'alto o basso' non significa vettoriale. Avere un valore grande o piccolo ce l'hanno anche gli scalari. La temperatura è scalare: non ha una direzione nello spazio. Le trappole: la C ('modulo = lunghezza della freccia') è vera e corretta. La A e la E sono entrambe vere (velocità e spostamento sono vettori classici). La B è vera. Solo la D confonde 'avere due valori possibili' con 'avere un verso spaziale': sono due cose completamente diverse.",
+    "tags": ["prova d'esame"]
+  }
+]

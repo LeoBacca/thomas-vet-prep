@@ -1,0 +1,120 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u4-02">
+
+## Il DNA si può rompere — e la cellula sa come ripararlo
+
+Il DNA è la "ricetta" della cellula. Se si danneggia, la cellula rischia di funzionare male o di diventare cancerosa. Per questo esistono sistemi di riparazione che agiscono come una squadra di operai pronti a tappare i buchi.
+
+I danni possono essere di due tipi principali:
+- **Danni su un singolo filamento** — un solo "nastro" del DNA è intaccato, l'altro serve da modello per la riparazione.
+- **Danni su entrambi i filamenti (doppio taglio)** — il DNA si spezza completamente, come tagliare un nastro con le forbici. Più pericoloso e più difficile da riparare.
+
+---
+
+## Cos'è l'espansione di sequenze ripetute?
+
+Nel DNA esistono zone dove una piccola sequenza di basi si ripete più volte di fila. Esempio: CAG CAG CAG CAG... Queste si chiamano **sequenze ripetute in tandem**.
+
+Il numero di ripetizioni varia da persona a persona, ma rimane stabile. Quando però la cellula copia il DNA può fare un errore: si "perde" tra le ripetizioni e ne aggiunge di nuove. Questo processo si chiama **espansione di sequenze ripetute**.
+
+Immagina di ricopiare a mano la parola "banana" venti volte: a un certo punto potresti per sbaglio scriverne ventuno. Se l'errore viene tramandato di generazione in generazione, le ripetizioni crescono sempre di più.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'espansione di triplette è come un disco che si inceppa — la cellula ripete lo stesso pezzo di DNA troppe volte, causando malattie gravi come la corea di Huntington o la sindrome dell'X fragile.</div>
+
+### Come avviene l'espansione?
+
+Durante la replicazione del DNA, il filamento nuovo può formare una struttura a **forcina** (un anello ripiegato su se stesso) nella zona delle ripetizioni. La DNA-polimerasi — l'enzima che copia il DNA — "salta" sopra quella forcina e ricopia la sequenza due volte. Risultato: più ripetizioni nel figlio che nel genitore.
+
+### Perché è pericolosa?
+
+Più ripetizioni = proteina alterata o gene silenziato. Alcune malattie genetiche compaiono solo quando le ripetizioni superano una certa soglia:
+- **Sindrome dell'X fragile**: ripetizioni CGG nel gene FMR1 (normale: fino a ~55; malattia: oltre 200)
+- **Corea di Huntington**: ripetizioni CAG nel gene HTT (normale: fino a 35; malattia: oltre 36)
+- **Distrofia miotonica**: ripetizioni CTG nel gene DMPK
+
+---
+
+## I meccanismi di riparazione del DNA
+
+### Riparazione su singolo filamento
+
+Quando un solo filamento è danneggiato, la cellula usa l'altro come modello. Esistono tre strategie principali:
+
+**1. Riparazione per escissione di basi (BER — Base Excision Repair)**
+- Un enzima (glicosilasi) riconosce la base danneggiata e la "taglia via".
+- Un altro enzima taglia lo scheletro zuccherino vicino al buco.
+- La DNA-polimerasi inserisce la base corretta.
+- La DNA-ligasi "ricuce" il filo.
+
+**2. Riparazione per escissione di nucleotidi (NER — Nucleotide Excision Repair)**
+- Rimuove un tratto più lungo di filamento (circa 25-30 nucleotidi) attorno alla lesione.
+- Utile per danni grandi, come i legami tra basi adiacenti causati dai raggi UV (dimeri di timina).
+- Lo spazio viene riempito dalla DNA-polimerasi e chiuso dalla ligasi.
+
+**3. Riparazione dei mismatch (MMR — Mismatch Repair)**
+- Corregge gli errori di appaiamento fatti dalla DNA-polimerasi durante la replicazione (es. G accoppiata con T invece di C).
+- Proteine speciali riconoscono il "gobbo" nella doppia elica.
+- Il filamento sbagliato viene rimosso e riscritto.
+
+### Riparazione su doppio filamento (DSB — Double-Strand Break)
+
+Quando si rompe il DNA su entrambi i filamenti, la cellula ha due possibili strade:
+
+**1. Ricombinazione omologa (HR — Homologous Recombination)**
+- Usa il cromosoma omologo (la copia sana) come modello per ricostruire la sequenza mancante.
+- Precisa, ma funziona solo quando la copia esiste (di solito nelle fasi S e G2 del ciclo cellulare).
+
+**2. Giunzione di estremità non omologhe (NHEJ — Non-Homologous End Joining)**
+- Le due estremità rotte vengono semplicemente riattaccate insieme.
+- Rapido, ma impreciso: può lasciare piccole delezioni o inserzioni.
+- Funziona in qualsiasi fase del ciclo cellulare.
+
+---
+
+<Diagram caption="Come avviene l'espansione di triplette durante la replicazione del DNA" code={`flowchart TB
+  A["DNA genitore con triplette normali<br/>es. CAG ripetuta 20 volte"] --> B["Apertura della doppia elica<br/>durante la replicazione"]
+  B --> C["Il filamento ritardato forma<br/>una FORCINA (loop) sulle ripetizioni"]
+  C --> D["La DNA-polimerasi 'salta'<br/>e ricopia la zona due volte"]
+  D --> E["DNA figlio con triplette espanse<br/>es. CAG ripetuta 25 volte"]
+  E --> F["Se la soglia critica viene superata:<br/>MALATTIA (es. Huntington, X fragile)"]`} />
+
+<Diagram caption="Riparazione del DNA: singolo filamento vs doppio filamento" code={`flowchart TB
+  A["DANNO AL DNA"] --> B{"Quanti filamenti<br/>sono colpiti?"}
+  B -->|"Singolo filamento"| C["Usa il filamento sano<br/>come modello"]
+  B -->|"Doppio filamento<br/>(rottura completa)"| D["Nessun modello locale"]
+  C --> E["BER: rimuove base<br/>danneggiata singola"]
+  C --> F["NER: rimuove tratto<br/>lungo (raggi UV)"]
+  C --> G["MMR: corregge<br/>appaiamenti sbagliati"]
+  D --> H["HR: usa cromosoma<br/>omologo — precisa"]
+  D --> I["NHEJ: ricuce le estremità<br/>direttamente — rapida"]`} />
+
+## Guarda il video
+<YouTube id="dUGGNVH2lA4" title="Genetica, RNA, meccanismi di danno e riparo al DNA" />
+<VideoVisto id="bio-u4-02" />
+
+## Da ricordare
+- L'espansione di sequenze ripetute avviene quando la DNA-polimerasi forma una forcina durante la replicazione e copia troppo volte la stessa tripletta; superate certe soglie causa malattie genetiche gravi.
+- La riparazione su singolo filamento (BER, NER, MMR) sfrutta il filamento intatto come modello ed è molto precisa.
+- La riparazione su doppio filamento usa la ricombinazione omologa (precisa, serve una copia) oppure il NHEJ (rapido ma impreciso).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale meccanismo corregge i dimeri di timina causati dai raggi UV?" opzioni={["Base Excision Repair (BER)","Nucleotide Excision Repair (NER)","Mismatch Repair (MMR)","Non-Homologous End Joining (NHEJ)"]} corretta={1} spiegazione="I dimeri di timina sono lesioni voluminose che distorcono la doppia elica. Vengono rimossi dal NER, che taglia via un tratto lungo (~25-30 nucleotidi) attorno alla lesione, a differenza del BER che rimuove solo una singola base alterata." />
+
+<Quiz domanda="Perché l'espansione di triplette tende ad aggravarsi di generazione in generazione?" opzioni={["Perché i raggi UV danneggiano il gene ad ogni generazione","Perché la DNA-polimerasi forma forcine sulle sequenze ripetute, aggiungendo nuove copie ad ogni replicazione","Perché la ricombinazione omologa duplica le triplette durante la meiosi","Perché il MMR non riconosce le triplette ripetute e le moltiplica"]} corretta={1} spiegazione="Durante la replicazione, le sequenze ripetute favoriscono la formazione di strutture a forcina nel filamento ritardato. La polimerasi ricopia la zona due volte, aggiungendo nuove ripetizioni. Se questo accade nelle cellule germinali, il numero aumenta ad ogni generazione." />
+
+<Quiz domanda="Qual è la differenza principale tra HR e NHEJ nella riparazione dei doppi tagli?" opzioni={["HR è più veloce; NHEJ è più preciso","HR richiede un cromosoma omologo come modello ed è preciso; NHEJ ricuce le estremità senza modello ed è impreciso","HR funziona solo in fase G1; NHEJ funziona solo in fase S","HR usa la ligasi; NHEJ usa la glicosilasi"]} corretta={1} spiegazione="La ricombinazione omologa (HR) usa il cromosoma omologo intatto come stampo, garantendo la sequenza corretta. Il NHEJ unisce direttamente le estremità rotte senza modello, per cui può introdurre piccole delezioni o inserzioni. HR è più preciso ma richiede che la copia omologa sia disponibile." />
+
+<Esercizio problema="Un paziente viene diagnosticato con corea di Huntington. L'analisi genetica mostra 52 ripetizioni CAG nel gene HTT (la soglia per la malattia è >36). Spiega: (a) come si è potuto formare questo numero anomalo di ripetizioni, (b) se i figli del paziente potrebbero avere un numero ancora maggiore di ripetizioni, e perché." soluzione="(a) Durante la replicazione del DNA, il filamento contenente le triplette CAG ha formato strutture a forcina. La DNA-polimerasi ha replicato la regione della forcina più volte del necessario, aggiungendo nuove copie di CAG ad ogni replicazione. Questo processo si chiama espansione di sequenze ripetute. (b) Sì, è possibile (fenomeno dell'anticipazione genetica). Se l'espansione avviene anche nelle cellule germinali del paziente, i gameti trasmessi ai figli potrebbero portare un numero ancora più alto di ripetizioni CAG. Più le ripetizioni sono numerose, più è probabile una nuova espansione alla generazione successiva, causando una malattia più grave e a esordio più precoce." />
+
+</section>
+
+</RisorsaLayout>

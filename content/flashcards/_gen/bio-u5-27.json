@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u5-27-1",
+    "topicId": "bio-u5-27",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Le proteine della famiglia Rho (come Rac1, Cdc42, RhoA) funzionano come interruttori molecolari. In quale stato si trovano quando legano il GTP?",
+    "choices": [
+      "Stato ATTIVO: la proteina e accesa e manda segnali alla cellula",
+      "Stato INATTIVO: la proteina e spenta e non fa nulla",
+      "Stato di standby: la proteina e bloccata nel citoplasma dal GDI",
+      "Stato degradato: la proteina viene distrutta dopo aver legato il GTP"
+    ],
+    "answer": 0,
+    "explain": "GTP = luce accesa (proteina attiva), GDP = luce spenta (proteina inattiva). Il GEF accende scambiando GDP con GTP; il GAP spegne accelerando l'idrolisi del GTP a GDP. E come un interruttore: ON con GTP, OFF con GDP.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-27-2",
+    "topicId": "bio-u5-27",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Un neutrofilo sta inseguendo un batterio. Spiega cosa succede ai due lati della cellula (anteriore e posteriore) in termini di GTPasi Rho attivate e strutture di actina formate.",
+    "answer": "Sul lato ANTERIORE (verso il batterio): i recettori GPCR rilevano la concentrazione piu alta di chemoattrattore (es. fMLP). Questo attiva Rac1 e Cdc42, che tramite il complesso Arp2/3 polimerizzano actina ramificata, formando lamellipodi (veli piatti) e filopodi (dita esploratrici). La cellula si espande in avanti. Sul lato POSTERIORE: RhoA e attiva, attiva ROCK (una chinasi) che fosforila la miosina II. La miosina interagisce con i filamenti di actina formando fibre da stress che si contraggono, tirando il corpo cellulare in avanti e staccando le adesioni posteriori. Risultato: il neutrofilo avanza verso il batterio come un bruco che si allunga in avanti e poi raccoglie il retro.",
+    "explain": "Da ricordare: anteriore = Rac1/Cdc42 → lamellipodi/filopodi (spingono avanti); posteriore = RhoA → contrazione miosina (tirano il retro). Insieme = migrazione direzionale.",
+    "tags": ["risposta aperta"]
+  }
+]

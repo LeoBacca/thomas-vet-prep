@@ -1,0 +1,109 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u3-01">
+
+## Solidi, liquidi e gas: chi è un fluido?
+
+Un **solido** mantiene la sua forma da solo — pensa a un mattone.
+Un **liquido** e un **gas** invece non hanno forma propria: si adattano al contenitore in cui si trovano.
+Liquidi e gas si chiamano **fluidi** perché *scorrono*.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un fluido è qualsiasi sostanza che scorre — acqua, olio, aria, persino il miele (lentamente!).</div>
+
+---
+
+## Cos'è la densità?
+
+La **densità** misura quanto è "pesante" una sostanza per ogni litro (o metro cubo) di volume.
+
+Formula:
+
+**ρ = m / V**
+
+- ρ (rho) = densità [kg/m³]
+- m = massa [kg]
+- V = volume [m³]
+
+**Esempio pratico:** Un litro d'acqua pesa circa 1 kg → densità dell'acqua ≈ 1000 kg/m³.
+Un litro d'olio pesa meno → densità dell'olio ≈ 900 kg/m³. Ecco perché l'olio galleggia sull'acqua!
+
+---
+
+## Cos'è la pressione?
+
+La **pressione** misura quanta forza viene esercitata su una certa area.
+
+Formula:
+
+**P = F / A**
+
+- P = pressione [Pascal, Pa]
+- F = forza [Newton, N]
+- A = area della superficie [m²]
+
+**Esempio pratico:** Camminare sulla neve con le ciaspole distribuisce il peso su una superficie grande → pressione bassa, non affondi. Senza ciaspole, peso su area piccola → pressione alta, affondi.
+
+---
+
+## Come varia la pressione in un fluido?
+
+Più vai in profondità in un liquido, più la colonna di liquido sopra di te ti "preme".
+Questo si chiama **pressione idrostatica** e aumenta con la profondità.
+
+Formula di Stevino:
+
+**P = P₀ + ρ · g · h**
+
+- P₀ = pressione in superficie (es. pressione atmosferica)
+- ρ = densità del fluido
+- g = accelerazione di gravità (≈ 9,8 m/s²)
+- h = profondità
+
+**Esempio:** A 10 metri sott'acqua la pressione raddoppia rispetto alla superficie. I sub lo sanno bene!
+
+---
+
+<Diagram caption="Dalla forza alla pressione: schema concettuale" code={`flowchart TB
+  A["Forza F (Newton)"] --> C["Pressione P = F / A"]
+  B["Area A (m²)"] --> C
+  C --> D["Unità: Pascal (Pa)"]
+  D --> E["Più grande l'area,<br/>minore la pressione"]`} />
+
+<Diagram caption="Densità e galleggiamento" code={`flowchart TB
+  A["Densità = massa / volume"] --> B["Alta densità"]
+  A --> C["Bassa densità"]
+  B --> D["Affonda nel liquido<br/>più leggero"]
+  C --> E["Galleggia sul liquido<br/>più pesante"]
+  E --> F["Es: olio sull'acqua"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="47hAn7SU1oY" title="Lezioni di Fisica: Equilibrio dei fluidi - La pressione" />
+<VideoVisto id="fis-u3-01" />
+
+## Da ricordare
+- I **fluidi** (liquidi e gas) non hanno forma propria e scorrono; i solidi sì.
+- La **densità** (ρ = m/V) dice quanto pesa un materiale per unità di volume — l'olio galleggia sull'acqua perché è meno denso.
+- La **pressione** (P = F/A) aumenta con la profondità in un fluido: più si scende, più la colonna di liquido preme dall'alto.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un cubo di ferro ha massa 790 g e volume 100 cm³. Qual è la sua densità?" opzioni={["0,79 g/cm³","7,9 g/cm³","79 g/cm³","790 g/cm³"]} corretta={1} spiegazione="La densità è ρ = m/V = 790 g / 100 cm³ = 7,9 g/cm³. Il ferro è circa 8 volte più denso dell'acqua." />
+
+<Quiz domanda="Una forza di 100 N agisce su una superficie di 2 m². Qual è la pressione esercitata?" opzioni={["200 Pa","50 Pa","100 Pa","20 Pa"]} corretta={1} spiegazione="P = F/A = 100 N / 2 m² = 50 Pa. Dividere la forza per l'area dà la pressione in Pascal." />
+
+<Quiz domanda="Due oggetti hanno lo stesso volume ma densità diversa. Quale affonda in acqua (densità 1000 kg/m³)?" opzioni={["Quello con densità 800 kg/m³","Quello con densità 1200 kg/m³","Entrambi galleggiano","Entrambi affondano"]} corretta={1} spiegazione="Un oggetto affonda se la sua densità è maggiore di quella del liquido. 1200 kg/m³ > 1000 kg/m³ → affonda. 800 kg/m³ < 1000 kg/m³ → galleggia." />
+
+<Esercizio problema="Una scatola pesa 50 N e ha una base di 0,25 m². Che pressione esercita sul pavimento? E se la stessa scatola venisse appoggiata su un lato con base 0,10 m²?" soluzione="Caso 1: P = F/A = 50 N / 0,25 m² = 200 Pa. Caso 2: P = 50 N / 0,10 m² = 500 Pa. Con base più piccola la pressione è maggiore — la stessa forza si concentra su meno superficie." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-09-1",
+    "topicId": "bio-u1-09",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: eubatteri e archeobatteri sono due sottogruppi dello stesso dominio, come due razze dello stesso cane.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Sono due DOMINI separati (Bacteria e Archaea): rami distinti dell'albero della vita, distanti quanto un uomo da un fungo. Si somigliano in superficie (niente nucleo, piccoli) ma le loro molecole interne sono costruite in modo profondamente diverso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-09-2",
+    "topicId": "bio-u1-09",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "La parete cellulare degli eubatteri è fatta di peptidoglicano — una rete di zuccheri e proteine. Gli archeobatteri ce l'hanno?",
+    "choices": [
+      "Sì, identica agli eubatteri",
+      "No, non hanno peptidoglicano: usano altre molecole o non hanno affatto quella parete",
+      "Sì, ma solo i termofili che vivono a temperature elevate",
+      "No, perché gli archeobatteri non hanno pareti cellulari di nessun tipo"
+    ],
+    "answer": 1,
+    "explain": "Il peptidoglicano è la firma degli eubatteri (i batteri 'classici'): è come il cestino di vimini che avvolge la cellula. Gli archeobatteri non ce l'hanno: usano altri tipi di molecole. Alcuni archeobatteri hanno comunque una qualche parete, ma costruita in modo diverso — non con peptidoglicano.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-09-3",
+    "topicId": "bio-u1-09",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Carl Woese negli anni '70 propose di separare eubatteri e archeobatteri in due domini distinti. Su quale base scientifica lo fece, e perché questo fu rivoluzionario rispetto a come si pensava prima?",
+    "answer": "Woese confrontò le sequenze di RNA ribosomiale (rRNA), una molecola presente in tutte le cellule e che funge da 'impronta digitale' molecolare. Scoprì che le sequenze di rRNA di archeobatteri e batteri sono profondamente diverse: tanto diverse quanto quelle tra batteri ed eucarioti. Prima degli anni '70 tutti i procarioti (senza nucleo) venivano messi nello stesso sacco come un unico gruppo chiamato Monera. Woese dimostrò che questa classificazione era sbagliata: i procarioti sembrano uguali a occhio nudo (stessa taglia, stesso assetto senza nucleo) ma la loro firma chimica interna — l'RNA ribosomiale — racconta una storia evolutiva completamente diversa. Oggi i tre domini della vita sono: Bacteria (eubatteri), Archaea (archeobatteri) e Eukarya (tutto ciò che ha il nucleo: funghi, piante, animali).",
+    "explain": "Da ricordare: Woese usò l'RNA ribosomiale come 'impronta digitale' molecolare → tre domini (Bacteria, Archaea, Eukarya).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-09-4",
+    "topicId": "bio-u1-09",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale gruppo di organismi tra i seguenti NON fa parte del dominio Eukarya?",
+    "choices": [
+      "Archaea",
+      "Plantae",
+      "Fungi",
+      "Animalia",
+      "Protista"
+    ],
+    "answer": 0,
+    "explain": "Gli Archaea (archeobatteri) sono procarioti: non hanno il nucleo e appartengono al proprio dominio, separato da Eukarya. Plantae, Fungi, Animalia e Protista sono tutti eucarioti (cellule con nucleo) e fanno quindi parte di Eukarya. La trappola classica è pensare che 'strano = eucariota': gli archeobatteri sono stravaganti (vivono in ambienti estremi) ma restano procarioti con un dominio tutto loro.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-09-5",
+    "topicId": "bio-u1-09",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Certi batteri vivono in sorgenti geotermiche a oltre 90 °C senza morire. Qual è la spiegazione corretta?",
+    "choices": [
+      "I loro enzimi funzionano normalmente anche a temperature molto elevate",
+      "I loro enzimi sono completamente insensibili alla temperatura e non cambiano mai",
+      "Riescono a mantenere la temperatura interna più bassa di quella dell'acqua bollente circostante",
+      "A quelle temperature le reazioni avvengono senza enzimi, quindi non ne hanno bisogno",
+      "Usano come catalizzatori solo molecole non proteiche, non enzimi"
+    ],
+    "answer": 0,
+    "explain": "Questi batteri (termofili, in particolare archeobatteri) hanno enzimi che si sono evoluti per lavorare a temperature elevate: le loro proteine sono strutturate in modo da non denaturarsi con il calore. È come avere utensili da cucina fatti di materiale resistente al fuoco. Le trappole: 'completamente insensibili alla temperatura' è falso — anche i loro enzimi hanno un intervallo di temperatura ottimale, non sono magicamente imperturbabili; 'mantengono la temperatura interna più bassa' è impossibile per una cellula procariote senza meccanismi di termoregolazione attiva; 'reazioni senza enzimi' è sbagliato — le reazioni biochimiche hanno comunque bisogno di catalizzatori; 'solo molecole non proteiche' è un filler fuori tema, la maggior parte degli enzimi sono proteine.",
+    "tags": ["prova d'esame"]
+  }
+]

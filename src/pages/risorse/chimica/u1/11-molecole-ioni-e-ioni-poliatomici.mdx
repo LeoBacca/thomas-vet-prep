@@ -1,0 +1,110 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-11">
+
+Gli atomi quasi mai se ne stanno da soli: si **uniscono** tra loro o si **caricano** di elettricità. Da qui nascono due parole che incontrerai sempre: **molecole** e **ioni**. Capire la differenza è facile, e ti serve da subito: l'acqua che bevi è una molecola, il sale che mangi è fatto di ioni, e i segnali nei tuoi muscoli e nervi viaggiano grazie a ioni.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> una <strong>molecola</strong> è un gruppetto di atomi tenuti insieme (come due mani che si stringono). Uno <strong>ione</strong> è un atomo che ha <strong>perso o preso</strong> qualche elettrone, e così è diventato carico (come un palloncino strofinato che attira i capelli).</div>
+
+## Cos'è una molecola
+
+Un **atomo** è il mattoncino più piccolo della materia. Una **molecola** è ciò che ottieni quando **due o più atomi si legano** insieme.
+
+Pensa ai mattoncini delle costruzioni: un singolo pezzo è l'atomo, due pezzi incastrati sono una molecola. Esempi che già conosci:
+
+- **acqua**: due atomi di idrogeno + uno di ossigeno → la scrivi `H2O`.
+- **ossigeno** che respiri: due atomi di ossigeno uniti → `O2`.
+- **anidride carbonica** che butti fuori respirando → `CO2`.
+
+Il punto chiave: una molecola **nel suo insieme non è carica**. Gli atomi condividono gli elettroni e restano "in pari", elettricamente neutri.
+
+## Cos'è uno ione (cationi e anioni)
+
+Normalmente un atomo è **neutro**: ha tanti elettroni (cariche negative) quanti protoni (cariche positive), quindi il conto torna a zero.
+
+Uno **ione** è un atomo che ha **perso o acquistato** uno o più elettroni. Appena cambia il numero di elettroni, il conto non torna più e l'atomo diventa **carico**:
+
+- se **perde** elettroni → restano più cariche positive → diventa uno ione **positivo**, detto **catione**.
+- se **acquista** elettroni → ci sono più cariche negative → diventa uno ione **negativo**, detto **anione**.
+
+Un trucchetto per ricordarli: ca**T**ione ha la **T** come "**T**ira via" elettroni (positivo), l'a**N**ione la **N** come "**N**e prende" elettroni (negativo).
+
+<Diagram caption="Molecola (neutra) contro ione (atomo che perde o acquista elettroni)" code={`flowchart TB
+  A["Atomo neutro<br/>(conti in pari)"] -->|"si lega a un altro atomo"| MOL["MOLECOLA<br/>nel complesso NEUTRA (es. H2O)"]
+  A -->|"PERDE elettroni"| CAT["CATIONE<br/>ione POSITIVO (es. Na+)"]
+  A -->|"ACQUISTA elettroni"| AN["ANIONE<br/>ione NEGATIVO (es. Cl-)"]`} />
+
+Esempio classico: il **sale da cucina**. Il sodio perde un elettrone e diventa `Na+` (catione), il cloro lo prende e diventa `Cl-` (anione). I due si attraggono perché hanno cariche opposte (più e meno si attirano, come due calamite) e formano il sale.
+
+**Perché conta in medicina e veterinaria:** il corpo è pieno di ioni, e li chiamiamo **elettroliti**. Sodio (`Na+`), potassio (`K+`), calcio (`Ca2+`) e cloro (`Cl-`) fanno battere il cuore, contrarre i muscoli e viaggiare gli impulsi nervosi. Quando un animale o una persona è disidratato, si "reintegrano i sali": stai rimettendo a posto proprio questi ioni.
+
+## Gli ioni poliatomici
+
+A volte non è un singolo atomo a essere carico, ma **un gruppetto di atomi legati insieme che, tutti insieme, hanno una carica**. Questo si chiama **ione poliatomico** ("poli" vuol dire "molti": molti atomi).
+
+In pratica è una piccola molecola che però **porta una carica** (più o meno), quindi si comporta come uno ione.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> uno ione poliatomico è una <strong>squadra</strong> di atomi che si muove insieme e ha <strong>un'unica carica</strong> di squadra. Non separi i giocatori: si spostano in blocco.</div>
+
+Alcuni che incontrerai spesso:
+
+- **bicarbonato** `HCO3-` (carica meno): è il "tampone" del sangue, aiuta a tenere stabile l'acidità.
+- **fosfato** `PO4` con carica `3-`: è dentro le ossa, nel DNA e nell'energia delle cellule.
+- **ammonio** `NH4+` (carica più): legato a come il corpo smaltisce le scorie dell'azoto.
+
+<Diagram caption="Ione singolo contro ione poliatomico" code={`flowchart LR
+  S["Ione SEMPLICE<br/>1 solo atomo carico<br/>(es. Cl-)"]
+  P["Ione POLIATOMICO<br/>piu atomi legati,<br/>carica unica di gruppo<br/>(es. HCO3-)"]`} />
+
+## Guarda il video
+
+<YouTube id="aZqcQH5B6p0" title="Com'è fatto l'atomo, cosa sono gli ioni e gli isotopi — spiegazione semplice" />
+
+<VideoVisto id="chim-u1-11" />
+
+## Da ricordare
+
+- **Molecola** = due o più atomi legati; nel complesso è **neutra** (es. acqua `H2O`).
+- **Ione** = atomo che ha **perso o acquistato** elettroni, quindi è **carico**.
+- **Catione** = ione **positivo** (ha **perso** elettroni). **Anione** = ione **negativo** (ha **acquistato** elettroni).
+- **Ione poliatomico** = un gruppo di atomi legati che, tutti insieme, ha **una carica** (es. bicarbonato `HCO3-`).
+- Nel corpo gli ioni si chiamano **elettroliti**: fanno funzionare cuore, muscoli e nervi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un atomo che PERDE un elettrone diventa:"
+  opzioni={["un anione (ione negativo)", "un catione (ione positivo)", "una molecola", "un atomo neutro"]}
+  corretta={1}
+  spiegazione="Perdendo un elettrone (una carica negativa) restano più cariche positive: l'atomo diventa positivo, cioè un catione."
+/>
+
+<Quiz
+  domanda="Qual è la differenza principale tra una molecola e uno ione?"
+  opzioni={["la molecola è più grande", "lo ione è carico, la molecola nel complesso è neutra", "sono la stessa cosa", "lo ione è fatto solo di idrogeno"]}
+  corretta={1}
+  spiegazione="La molecola nel suo insieme non ha carica (è neutra), mentre lo ione ha una carica perché ha perso o acquistato elettroni."
+/>
+
+<Quiz
+  domanda="Il bicarbonato HCO3- è un esempio di:"
+  opzioni={["molecola neutra", "atomo singolo", "ione poliatomico", "catione formato da un solo atomo"]}
+  corretta={2}
+  spiegazione="È un gruppo di più atomi legati insieme che porta una carica unica (meno): si chiama proprio ione poliatomico."
+/>
+
+<Esercizio
+  problema="Il cloro acquista un elettrone. Diventa uno ione positivo o negativo? Come si chiama questo tipo di ione e come lo scrivi?"
+  soluzione="Acquistando un elettrone (una carica negativa in più) il cloro diventa uno ione negativo, cioè un anione. Lo scrivi Cl- (il segno meno indica la carica negativa)."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,95 @@
+{
+ "id": "bio-u1-14",
+ "titolo": "I lipidi",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "14-i-lipidi",
+ "freq": 6,
+ "risorseMdx": "src/pages/risorse/biologia/u1/14-i-lipidi.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Quale dei seguenti composti NON è di natura lipidica?",
+   "choices": [
+    "Chitina",
+    "Tripalmitina",
+    "Vitamina A",
+    "Colesterolo",
+    "Testosterone"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2011",
+   "q": "La molecola di un trigliceride è costituita da:",
+   "choices": [
+    "una molecola di glicerolo e tre molecole di un acido grasso",
+    "tre molecole di glicerolo e tre molecole di un acido grasso",
+    "una molecola di glicerolo e due di un acido grasso",
+    "tre molecole di glicerolo",
+    "tre molecole di glicerolo ed una molecola di acido grasso"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2012",
+   "q": "Volendo verificare la presenza di fosforo radioattivo in un ecosistema si può analizzare...",
+   "choices": [
+    "la membrana cellulare di un paramecio",
+    "la cellulosa del fusto di una pianta erbacea",
+    "la chitina dell'esoscheletro di un insetto",
+    "la sericina di una ragnatela",
+    "i carotenoidi estratti da un frutto"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2014",
+   "q": "Si consideri un fosfolipide costituito da una testa e da una doppia coda. Quale delle seguenti affermazioni NON è corretta?",
+   "choices": [
+    "La testa è carica positivamente",
+    "La testa è idrofilica",
+    "La testa contiene un gruppo fosfato",
+    "Le code sono idrofobiche",
+    "La testa contiene una molecola di glicerolo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2015",
+   "q": "Trigliceridi e fosfolipidi possono contenere: 1. Catene di acidi grassi; 2. Legami estere; 3. Legami semplici e doppi.",
+   "choices": [
+    "Tutti",
+    "Solo 1 e 2",
+    "Solo 1 e 3",
+    "Solo 2 e 3",
+    "Nessuno"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Quale delle seguenti formule chimiche corrisponde a quella di un acido grasso saturo?",
+   "choices": [
+    "C12H24O2",
+    "C17H32O2",
+    "C14H26O2",
+    "C18H32O2",
+    "C18H30O2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "formula"
+  }
+ ]
+}

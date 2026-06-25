@@ -1,0 +1,121 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-12">
+
+## Cos'è l'endosimbiosi?
+
+**Endosimbiosi** significa "vivere insieme dentro". È il processo per cui un organismo entra dentro un altro e, invece di essere digerito, ci rimane a vivere stabilmente. I due organismi si aiutano a vicenda: uno fornisce riparo e nutrimento, l'altro fornisce energia o altra funzione utile.
+
+Pensa a come certi pesci pilota nuotano vicino agli squali per mangiare gli avanzi: qui il rapporto è esterno. Nell'endosimbiosi invece il "pesce pilota" vive proprio dentro lo squalo.
+
+## Come sono nati i mitocondri?
+
+Circa **2 miliardi di anni fa**, le cellule sulla Terra erano tutte piccole e semplici (procarioti, cioè senza nucleo). Poi accadde qualcosa di straordinario:
+
+1. Una cellula grande inghiottì un batterio più piccolo che sapeva usare l'ossigeno per produrre energia.
+2. Invece di digerirlo, lo tenne vivo dentro di sé.
+3. Il batterio continuò a produrre energia; la cellula grande gli fornì protezione e cibo.
+4. Nel tempo, il batterio perse la capacità di sopravvivere da solo e divenne parte permanente della cellula: il **mitocondrio**.
+
+Questa teoria si chiama **teoria endosimbiotica** ed è stata sviluppata dalla biologa americana **Lynn Margulis** negli anni '60-'70.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> I mitocondri sono batteri addomesticati che vivono dentro le nostre cellule da 2 miliardi di anni e ci producono l'energia.</div>
+
+## Le prove che i mitocondri erano batteri
+
+I mitocondri non sembrano solo batteri: conservano ancora tracce del loro passato procariotico:
+
+- Hanno il **proprio DNA** circolare, esattamente come i batteri (le cellule eucariotiche invece hanno DNA lineare nel nucleo).
+- Si riproducono per **scissione binaria**, proprio come i batteri, non come le cellule in cui vivono.
+- Hanno la propria **doppia membrana**: la membrana esterna è quella della cellula che li inghiottì, quella interna era la membrana originale del batterio.
+- I loro ribosomi (macchine per fare proteine) sono simili a quelli batterici, non a quelli delle cellule eucariotiche.
+
+<Diagram caption="Come un batterio diventa mitocondrio: i passaggi dell'endosimbiosi" code={`flowchart TB
+  A["Batterio procariote aerobico<br/>(sa usare l'ossigeno per produrre energia)"]
+  B["Viene inghiottito da una cellula grande<br/>(fagocitosi, cioè 'mangiato' senza essere distrutto)"]
+  C["Il batterio sopravvive dentro la cellula<br/>(rapporto vantaggioso per entrambi)"]
+  D["Il batterio produce energia (ATP)<br/>La cellula gli dà protezione e nutrienti"]
+  E["Nel tempo il batterio perde l'autonomia<br/>e diventa parte permanente della cellula"]
+  F["Risultato: la cellula eucariotica<br/>con il suo MITOCONDRIO"]
+  A --> B --> C --> D --> E --> F`} />
+
+## Le prove a confronto: batterio vs mitocondrio
+
+| Caratteristica | Batterio | Mitocondrio |
+|---|---|---|
+| DNA | Circolare | Circolare |
+| Membrana | Doppia | Doppia |
+| Riproduzione | Scissione binaria | Scissione binaria |
+| Ribosomi | Tipo procariotico | Tipo procariotico |
+| Dimensioni | ~1-2 micrometri | ~1-2 micrometri |
+
+## Dal singolo batterio... alla cellula eucariotica
+
+Grazie all'endosimbiosi nacquero le **cellule eucariotiche** (con nucleo e organelli). Queste cellule erano molto più efficienti di quelle procariotiche perché:
+
+- Avevano più energia disponibile (grazie ai mitocondri).
+- Erano più grandi e più organizzate internamente.
+
+Ma la storia non finisce qui. Con cellule eucariotiche disponibili, fu possibile il passo successivo.
+
+## Il passaggio alla pluricellularità
+
+**Pluricellulare** = organismo fatto di molte cellule. Oggi sembra ovvio, ma per miliardi di anni sulla Terra esistevano solo organismi unicellulari (fatti di una sola cellula).
+
+Come avvenne il passaggio? In modo graduale, circa **600-800 milioni di anni fa**:
+
+1. Alcune cellule eucariotiche rimasero attaccate dopo la divisione invece di separarsi.
+2. Queste "colonie" di cellule erano più vantaggiose: alcune cellule si specializzarono in compiti diversi.
+3. La specializzazione portò a cellule sempre più diverse: alcune per muoversi, altre per nutrirsi, altre ancora per riprodursi.
+4. Nacquero così i primi organismi pluricellulari veri.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La pluricellularità nacque quando le cellule scoprirono che stare insieme e dividersi i compiti era più vantaggioso che fare tutto da soli.</div>
+
+<Diagram caption="Dal procariote all'organismo pluricellulare: la grande storia evolutiva" code={`flowchart LR
+  A["Procarioti<br/>(batteri semplici,<br/>~3,5 miliardi di anni fa)"]
+  B["Endosimbiosi:<br/>batterio entra in<br/>cellula grande"]
+  C["Cellula eucariotica<br/>con mitocondri<br/>(~2 miliardi di anni fa)"]
+  D["Cellule eucariotiche<br/>rimangono unite<br/>dopo la divisione"]
+  E["Colonie di cellule<br/>(alcune si specializzano)"]
+  F["Organismi pluricellulari<br/>(~600-800 milioni di anni fa)"]
+  A --> B --> C --> D --> E --> F`} />
+
+## Il vantaggio della divisione del lavoro
+
+Negli organismi pluricellulari ogni cellula fa una cosa sola e la fa bene. È come una fabbrica: invece di avere un operaio che fa tutto (come la cellula unicellulare), hai reparti specializzati. Risultato: produzione molto più efficiente.
+
+Negli animali, questa specializzazione ha portato a:
+- Cellule muscolari (si contraggono per muoversi)
+- Cellule nervose (trasmettono segnali)
+- Cellule epiteliali (proteggono la superficie)
+- Cellule del sangue (trasportano ossigeno)
+
+## Guarda il video
+<YouTube id="5uoVFsFF-_Y" title="Teoria dell'Endosimbionte | Pillole di Scienza" />
+<VideoVisto id="bio-u1-12" />
+
+## Da ricordare
+- I mitocondri derivano da antichi batteri aerobici inghiottiti per endosimbiosi circa 2 miliardi di anni fa: il loro DNA circolare, la doppia membrana e la scissione binaria ne sono la prova.
+- La teoria endosimbiotica fu formulata da Lynn Margulis: oggi è accettata da tutta la comunità scientifica.
+- La pluricellularità nacque quando le cellule eucariotiche rimasero unite dopo la divisione e si specializzarono, rendendo l'organismo molto più efficiente grazie alla divisione del lavoro.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale delle seguenti è una prova che i mitocondri derivano da antichi batteri?" opzioni={["I mitocondri hanno DNA circolare proprio, come i batteri","I mitocondri si trovano solo nelle cellule vegetali","I mitocondri producono proteine nel nucleo della cellula","I mitocondri si riproducono per mitosi come le cellule eucariotiche"]} corretta={0} spiegazione="I mitocondri possiedono un proprio DNA circolare, identico nella struttura a quello dei batteri procarioti. Le altre opzioni sono false: i mitocondri si trovano in quasi tutte le cellule eucariotiche (animali e vegetali), non producono proteine nel nucleo e si riproducono per scissione binaria (come i batteri), non per mitosi." />
+
+<Quiz domanda="Chi propose per prima la teoria endosimbiotica in modo sistematico?" opzioni={["Charles Darwin","Gregor Mendel","Lynn Margulis","Louis Pasteur"]} corretta={2} spiegazione="Lynn Margulis, biologa americana, sviluppò e difese la teoria endosimbiotica negli anni '60-'70. All'epoca fu molto contestata, ma oggi è universalmente accettata grazie alle prove molecolari." />
+
+<Quiz domanda="Qual è il vantaggio principale che permise la comparsa degli organismi pluricellulari?" opzioni={["Le cellule pluricellulari hanno un nucleo più grande","La divisione del lavoro: cellule specializzate svolgono funzioni diverse in modo più efficiente","Le cellule pluricellulari non hanno bisogno di mitocondri","La pluricellularità permetteva di fare la fotosintesi"]} corretta={1} spiegazione="Il vantaggio chiave della pluricellularità è la specializzazione cellulare (divisione del lavoro): ogni cellula si specializza in un compito specifico, rendendo l'intero organismo molto più efficiente rispetto a una singola cellula che deve fare tutto." />
+
+<Esercizio problema="Elenca almeno tre caratteristiche strutturali o funzionali che accomunano i mitocondri ai batteri e spiega perché ciascuna costituisce una prova a favore della teoria endosimbiotica." soluzione="1. DNA circolare: i mitocondri hanno il proprio genoma circolare, come i batteri procarioti, mentre le cellule eucariotiche hanno DNA lineare nel nucleo. Questo suggerisce un'origine batterica indipendente. 2. Doppia membrana: la membrana esterna del mitocondrio corrisponde alla membrana della cellula che inglobò il batterio per fagocitosi; quella interna è la membrana originale del batterio. 3. Scissione binaria: i mitocondri si dividono esattamente come i batteri (non con la mitosi eucariotica), il che indica che conservano un meccanismo di riproduzione ancestrale. 4. Ribosomi di tipo procariotico: i ribosomi mitocondriali sono simili per dimensioni e struttura a quelli batterici, non a quelli presenti nel citoplasma eucariotico." />
+
+</section>
+
+</RisorsaLayout>

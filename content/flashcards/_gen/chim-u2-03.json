@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u2-03-1",
+    "topicId": "chim-u2-03",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: la molecola d'acqua è 'polare' perché ha un lato un po' negativo (vicino all'ossigeno) e un lato un po' positivo (vicino agli idrogeni), proprio come una mini-calamita.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. L'ossigeno tira gli elettroni di più degli idrogeni: risultato, un lato resta un po' negativo e l'altro un po' positivo. Due poli → molecola polare. È questa la chiave per capire perché l'acqua scioglie certe cose e non altre.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-03-2",
+    "topicId": "chim-u2-03",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Perché lo zucchero si scioglie in acqua ma l'olio NO? Scegli la risposta che usa la regola giusta.",
+    "choices": [
+      "Lo zucchero è polare (ha zone + e -) come l'acqua, quindi 'simile scioglie simile'; l'olio è apolare e non ha poli a cui attaccarsi",
+      "Lo zucchero si scioglie perché è più leggero dell'acqua, l'olio no perché galleggia",
+      "L'olio non si scioglie perché è troppo denso e l'acqua non riesce a penetrarlo",
+      "Lo zucchero è ionico come il sale, per questo si scioglie"
+    ],
+    "answer": 0,
+    "explain": "Regola d'oro: simile scioglie simile. L'acqua è polare: scioglie ciò che è polare (sale, zucchero con i suoi gruppi -OH) e non scioglie ciò che è apolare (olio, grassi). Il peso o la densità non c'entrano con la solubilità. Lo zucchero poi non è ionico: non ha ioni carichi, ma ha zone polari (-OH) che l'acqua riconosce come simili. In veterinaria questo conta: le vitamine A, D, E, K sono apolari e viaggiano nei grassi, non nel sangue acquoso.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-03-3",
+    "topicId": "chim-u2-03",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega con parole tue come fa l'acqua a sciogliere il sale da cucina (NaCl). Usa il termine 'solvatazione' e spiega perché le molecole d'acqua si girano in un certo modo attorno agli ioni.",
+    "answer": "Il sale è fatto di ioni: il sodio (Na+) è carico positivamente e il cloro (Cl-) è carico negativamente. Quando butti il sale in acqua, le molecole d'acqua (che sono mini-calamite con un lato negativo e uno positivo) accorrono attorno agli ioni. Il lato negativo dell'acqua (vicino all'ossigeno) si gira verso il sodio positivo, e il lato positivo (vicino agli idrogeni) si gira verso il cloro negativo: i poli opposti si attraggono, come calamite. L'acqua circonda ogni ione e lo stacca dagli altri, portandolo via in soluzione. Questo 'abbraccio' delle molecole d'acqua attorno a uno ione si chiama solvatazione. In pratica l'acqua smonta il cristallo di sale un pezzo alla volta, avvolgendo ogni ione in una piccola nuvola di molecole.",
+    "explain": "Da ricordare: solvatazione = le molecole d'acqua (polari) circondano gli ioni orientando il polo giusto verso la carica giusta e li staccano dal cristallo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u2-03-4",
+    "topicId": "chim-u2-03",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quale di queste sostanze è poco o per nulla solubile in acqua?",
+    "choices": [
+      "Solido covalente apolare (es. cera, grasso)",
+      "Gas biatomici polari",
+      "Solido covalente polare",
+      "Solido ionico (es. sale da cucina NaCl)",
+      "Liquido covalente polare (es. alcol etilico)"
+    ],
+    "answer": 0,
+    "explain": "L'acqua è polare: scioglie bene le sostanze polari (solidi ionici come NaCl, solidi covalenti polari come lo zucchero, liquidi polari come l'alcol) e i gas polari. NON scioglie le sostanze apolari: un solido covalente apolare (cera, grassi, paraffina) non ha poli a cui le molecole d'acqua possano attaccarsi, quindi resta separato. Trappola 'solido ionico': il sale si scioglie benissimo grazie alla solvatazione (vedi NaCl in acqua). Trappola 'liquido covalente polare': l'alcol etilico è miscibile con l'acqua proprio perché ha zone polari. Regola: apolare + acqua polare = insolubile; polare/ionico + acqua = solubile.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u2-03-5",
+    "topicId": "chim-u2-03",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quale dei seguenti liquidi è miscibile con l'acqua (cioè si mescola formando un'unica fase, senza separarsi)?",
+    "choices": [
+      "Alcol metilico (CH₃OH)",
+      "Etere etilico",
+      "Olio di paraffina",
+      "Cloroformio",
+      "Etere di petrolio"
+    ],
+    "answer": 0,
+    "explain": "L'alcol metilico (metanolo, CH₃OH) è polare: ha un gruppo -OH che gli permette di fare legami con le molecole d'acqua. Per 'simile scioglie simile', si mescola completamente. Le trappole: l'etere etilico è pochissimo polare e si separa dall'acqua in due strati; olio di paraffina e etere di petrolio sono apolari, formano uno strato separato sull'acqua; il cloroformio (CHCl₃) è poco polare e non si miscela. In laboratorio e in farmacologia questa distinzione è fondamentale: un farmaco 'idrosolubile' (polare) si distribuisce nel sangue (acquoso), mentre uno 'liposolubile' (apolare) si accumula nei tessuti grassi.",
+    "tags": ["prova d'esame"]
+  }
+]

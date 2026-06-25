@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u2-11-1",
+    "topicId": "chim-u2-11",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: se sciogli del sale nell'acqua, la soluzione bollirà a una temperatura PIU ALTA di 100 °C e congelera a una temperatura PIU BASSA di 0 °C.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Aggiungere un soluto 'intralcia' le molecole d'acqua: per bollire devono essere scaldate di piu (innalzamento ebullioscopico) e per congelare devono essere raffreddate di piu (abbassamento crioscopico). Stesso motivo per cui si butta il sale sul ghiaccio delle strade.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-11-2",
+    "topicId": "chim-u2-11",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Hai un bicchiere con zucchero disciolto e uno con sale NaCl disciolto, stessa quantita. Quale dei due abbassera di piu il punto di congelamento? (Il sale NaCl in acqua si divide in 2 particelle: Na+ e Cl-; lo zucchero resta in 1 pezzo.)",
+    "choices": [
+      "Quello con il sale, perche mette in giro il doppio delle particelle",
+      "Quello con lo zucchero, perche le sue molecole sono piu grandi",
+      "Sono uguali: conta il peso, non il numero di particelle",
+      "Quello con lo zucchero, perche e piu dolce e interagisce di piu con l'acqua"
+    ],
+    "answer": 0,
+    "explain": "Le proprieta colligative dipendono dal NUMERO di particelle disciolte, non dal tipo ne dalla massa. Il sale si spezza in 2 particelle (Na+ e Cl-), quindi a parita di quantita crea il doppio delle particelle dello zucchero. Piu particelle = effetto piu forte. E lo stesso principio dell'antigelo nelle auto e delle flebo fisiologiche: conta sempre quante particelle ci sono, non cosa sono.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-11-3",
+    "topicId": "chim-u2-11",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega con parole tue: cosa sono le proprieta colligative e perche il fatto che il NaCl si divida in ioni e importante per capire il suo effetto su ebollizione e congelamento?",
+    "answer": "Le proprieta colligative sono quelle caratteristiche di una soluzione (come il punto di ebollizione e di congelamento) che dipendono SOLO dal numero di particelle disciolte, non da che cosa sono. E come un buttafuori che conta le teste senza guardare in faccia nessuno. Il fatto che il NaCl si divida in ioni (Na+ e Cl-) e fondamentale perche vuol dire che 1 formula di NaCl sciolta in acqua produce 2 particelle separate, non 1. Quindi a parita di moli, il NaCl disturba il doppio rispetto a una sostanza come il glucosio che rimane intera. Risultato: la soluzione di NaCl bolle piu tardi e congela piu tardi di quella di glucosio alla stessa concentrazione.",
+    "explain": "Da ricordare: proprieta colligative = conta le particelle, non il tipo. NaCl → 2 particelle per formula → effetto doppio rispetto a sostanze non dissocianti.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u2-11-4",
+    "topicId": "chim-u2-11",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quale dei seguenti composti, disciolto in acqua a concentrazione 1 M, provoca il maggiore innalzamento del punto di ebollizione?",
+    "choices": [
+      "Glucosio (rimane 1 particella in soluzione)",
+      "NaCl (si divide in 2 particelle: Na+ e Cl-)",
+      "Saccarosio (rimane 1 particella in soluzione)",
+      "KCl (si divide in 2 particelle: K+ e Cl-)",
+      "CaCl2 (si divide in 3 particelle: Ca2+, Cl-, Cl-)"
+    ],
+    "answer": 4,
+    "explain": "L'innalzamento ebullioscopico e una proprieta colligativa: dipende dal numero totale di particelle in soluzione. A 1 M: glucosio e saccarosio danno 1 particella ciascuno; NaCl e KCl ne danno 2; CaCl2 si dissocia in Ca2+ + 2 Cl-, cioe 3 particelle. Piu particelle = effetto piu forte. Quindi CaCl2 vince. Trappola 'NaCl o KCl': vero che danno piu effetto del glucosio, ma si fermano a 2 particelle contro le 3 del CaCl2 (scambio di termine: si guarda quante particelle, non quale sale). Trappola 'glucosio o saccarosio': non si dissociano, restano 1 particella sola, effetto minimo. Trappola sottile: NaCl e KCl sono equivalenti tra loro (entrambi danno 2 particelle), ma nessuno dei due batte il CaCl2.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u2-11-5",
+    "topicId": "chim-u2-11",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sulle proprieta colligative e FALSA?",
+    "choices": [
+      "L'abbassamento crioscopico dipende dal numero di particelle disciolte, non dal tipo",
+      "Il NaCl abbassa il punto di congelamento dell'acqua",
+      "A parita di concentrazione, il glucosio abbassa il punto di congelamento piu del NaCl perche ha molecole piu grandi",
+      "Sciogliere qualcosa in acqua alza il punto di ebollizione",
+      "Le proprieta colligative si chiamano cosi perche dipendono dalla 'collezione' di particelle"
+    ],
+    "answer": 2,
+    "explain": "La FALSA e la terza: il glucosio abbassa il punto di congelamento MENO del NaCl, non di piu. Le proprieta colligative non guardano la dimensione delle molecole ma solo quante ne hai. Il glucosio resta 1 particella per molecola; il NaCl si divide in 2 particelle (Na+ e Cl-). Con piu particelle in giro, il NaCl produce un abbassamento crioscopico doppio rispetto al glucosio alla stessa concentrazione. Trappola classica: confondere 'molecola piu grande' con 'piu effetto' — e proprio l'opposto di come funzionano le proprieta colligative. Le altre affermazioni sono tutte corrette.",
+    "tags": ["prova d'esame"]
+  }
+]

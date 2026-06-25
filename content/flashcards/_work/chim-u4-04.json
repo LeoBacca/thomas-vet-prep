@@ -1,0 +1,53 @@
+{
+ "id": "chim-u4-04",
+ "titolo": "Il concetto di pH e pOH",
+ "materia": "chimica",
+ "unita": 4,
+ "slug": "04-il-concetto-di-ph-e-poh",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/chimica/u4/04-il-concetto-di-ph-e-poh.mdx",
+ "examQuestions": [
+  {
+   "year": "2012",
+   "q": "Individuare la successione corretta che ordina, in base al pH crescente, le seguenti soluzioni acquose: a) NH3 0,1 M; b) HNO3 0,1 M; c) KOH 0,1 M; d) HNO3 0,001 M; e) HCl 1 M.",
+   "choices": [
+    "e, b, d, a, c",
+    "e, b, a, c, d",
+    "e, b, d, c, a",
+    "c, a, d, e, b",
+    "a, c, d, b, e"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2015",
+   "q": "Quale delle seguenti espressioni matematiche mostra come calcolare il pH di una soluzione acquosa di acido solforico 0,002 M?",
+   "choices": [
+    "pH = -log10(0,004)",
+    "pH = log10(0,004)",
+    "pH = -log10(0,001)",
+    "pH = -log10(0,002)",
+    "pH = log10(0,002)"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "La scala del pH va da 0 a 14. Quando una soluzione ha pH = 12 è:",
+   "choices": [
+    "fortemente basica",
+    "fortemente acida",
+    "a pH neutro",
+    "a pH fisiologico",
+    "ricca di ioni H+"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

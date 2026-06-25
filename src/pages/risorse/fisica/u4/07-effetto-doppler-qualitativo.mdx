@@ -1,0 +1,95 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u4-07">
+
+## Cos'è l'effetto Doppler?
+
+Hai mai sentito una macchina della polizia passarti vicino con la sirena accesa?
+Mentre si avvicina la sirena suona più **acuta** (frequenza più alta).
+Appena supera e si allontana, la sirena suona più **grave** (frequenza più bassa).
+Eppure la sirena non è cambiata: è sempre la stessa. Sei tu che la percepisci diversa.
+
+Questo fenomeno si chiama **effetto Doppler**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Quando una sorgente di suono si muove verso di te, senti un tono più alto; quando si allontana, senti un tono più basso. La sorgente non cambia — cambia come arrivano le onde alle tue orecchie.</div>
+
+## Come funziona: le onde si "comprimono" o si "allargano"
+
+Pensa al suono come a una serie di cerchi che si espandono nell'acqua quando butti un sasso.
+Se il sasso è fermo, i cerchi sono tutti ugualmente distanziati.
+
+Se invece la sorgente **si muove**, le onde davanti a lei si **avvicinano tra loro** (frequenza più alta = suono più acuto), mentre quelle dietro si **allargano** (frequenza più bassa = suono più grave).
+
+La **frequenza** è il numero di onde che arrivano al tuo orecchio ogni secondo.
+- Più onde al secondo → suono più acuto.
+- Meno onde al secondo → suono più grave.
+
+<Diagram caption="Sorgente ferma: le onde si espandono in modo uniforme in tutte le direzioni." code={`flowchart TB
+  S["Sorgente ferma"]
+  S --> O1["Onda 1 — distanza uguale"]
+  S --> O2["Onda 2 — distanza uguale"]
+  S --> O3["Onda 3 — distanza uguale"]
+  O1 --> AS["Ascoltatore<br/>— frequenza normale"]
+  O2 --> AS
+  O3 --> AS`} />
+
+<Diagram caption="Sorgente in movimento: davanti le onde si comprimono (suono acuto), dietro si allargano (suono grave)." code={`flowchart LR
+  A["Ascoltatore davanti<br/>— onde compresse<br/>— suono ACUTO"]
+  S["Sorgente in<br/>movimento →"]
+  B["Ascoltatore dietro<br/>— onde allargate<br/>— suono GRAVE"]
+  A --> S --> B`} />
+
+## Quando succede nella vita reale?
+
+- **Ambulanza o polizia** che passa a tutta velocità: la sirena cambia tono chiaramente.
+- **Formula 1**: il rombo del motore è più acuto quando l'auto si avvicina, più grave quando si allontana.
+- **Radar della velocità**: la polizia usa l'effetto Doppler con le onde radio per misurare la velocità dei veicoli.
+- **Ecografia medica**: i medici usano l'effetto Doppler con gli ultrasuoni per misurare la velocità del sangue.
+
+## Guarda il video
+<YouTube id="TBouge5adK8" title="Cos'è l'effetto Doppler? - Spiegazione ed esempi" />
+<VideoVisto id="fis-u4-07" />
+
+## Da ricordare
+- L'effetto Doppler è la variazione di frequenza percepita quando sorgente e osservatore sono in moto relativo tra loro.
+- Sorgente in avvicinamento → frequenza percepita **più alta** (suono più acuto).
+- Sorgente in allontanamento → frequenza percepita **più bassa** (suono più grave).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un'ambulanza con la sirena accesa si sta avvicinando a te ad alta velocità. Come percepisci il suono della sirena rispetto a quando l'ambulanza è ferma?"
+  opzioni={["Uguale, perché la sirena non cambia", "Più grave, perché le onde si allargano", "Più acuto, perché le onde si comprimono davanti alla sorgente", "Prima acuto poi grave, indipendentemente dal movimento"]}
+  corretta={2}
+  spiegazione="Quando la sorgente si avvicina, le creste delle onde sonore si 'accumulano' davanti ad essa, riducendo la distanza tra un'onda e l'altra. Questo significa più onde al secondo che arrivano al tuo orecchio: frequenza più alta, suono più acuto."
+/>
+
+<Quiz
+  domanda="Un treno fischia mentre si allontana da te. Che cosa succede alla frequenza del fischio che percepisci?"
+  opzioni={["La frequenza aumenta", "La frequenza diminuisce", "La frequenza rimane identica", "La frequenza prima aumenta poi si azzera"]}
+  corretta={1}
+  spiegazione="Quando la sorgente si allontana, le onde si 'allargano' dietro di essa: arrivano meno onde al secondo all'ascoltatore. Frequenza più bassa significa suono più grave."
+/>
+
+<Quiz
+  domanda="L'effetto Doppler si verifica solo con il suono?"
+  opzioni={["Sì, riguarda solo le onde sonore", "No, riguarda qualsiasi tipo di onda, inclusa la luce", "No, ma solo per le onde nell'acqua", "Sì, ma unicamente se la sorgente supera la velocità del suono"]}
+  corretta={1}
+  spiegazione="L'effetto Doppler vale per qualsiasi onda: sonora, luminosa, radio. Per esempio, gli astronomi lo usano con la luce delle stelle per capire se una galassia si avvicina o si allontana dalla Terra (redshift e blueshift)."
+/>
+
+<Esercizio
+  problema="Sei in piedi sul bordo di una pista. Una macchina da corsa passa davanti a te a tutta velocità con il motore che romba. Descrivi in poche frasi cosa senti prima che arrivi, nel momento in cui ti passa accanto, e dopo che si è allontanata. Spiega perché."
+  soluzione="Mentre la macchina si avvicina senti un rombo sempre più acuto, perché le onde sonore si comprimono davanti alla sorgente in movimento (più onde al secondo = frequenza più alta). Nel momento esatto in cui ti passa accanto percepisci la frequenza reale del motore per un istante. Subito dopo, mentre la macchina si allontana, il rombo diventa più grave: le onde si allargano dietro la sorgente (meno onde al secondo = frequenza più bassa). È l'effetto Doppler in azione."
+/>
+
+</section>
+
+</RisorsaLayout>

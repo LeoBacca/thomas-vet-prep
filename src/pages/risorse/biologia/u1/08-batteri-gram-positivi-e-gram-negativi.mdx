@@ -1,0 +1,92 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-08">
+
+## Cos'è un batterio, in breve
+
+I batteri sono organismi unicellulari **privi di nucleo** (procarioti). Sono ovunque: nell'aria, nel suolo, negli animali, in noi. Per studiarli, i microbiologi devono prima **classificarli**. Uno dei metodi più usati è la **colorazione di Gram**.
+
+## La parete batterica: il muro che circonda il batterio
+
+Immagina il batterio come una casa. La membrana cellulare è il muro interno, ma fuori c'è anche una struttura rigida chiamata **parete cellulare**. La parete serve a proteggere il batterio e a mantenerlo in forma.
+
+Tutti i batteri hanno la parete, ma **non tutti ce l'hanno uguale**. La differenza principale sta in un materiale chiamato **peptidoglicano** (un intreccio di zuccheri e proteine, come una rete rinforzata).
+
+### Gram positivi: parete spessa
+
+I batteri **Gram positivi** hanno uno strato di peptidoglicano **molto spesso** (fino a 80 nm). È come un muro di mattoni massiccio. Non hanno la membrana esterna.
+
+Esempi: *Staphylococcus aureus* (causa infezioni della pelle), *Streptococcus* (mal di gola).
+
+### Gram negativi: parete sottile + doppio strato
+
+I batteri **Gram negativi** hanno uno strato di peptidoglicano **sottile**, ma sono avvolti da una **seconda membrana esterna**. Questa membrana contiene una sostanza chiamata **lipopolisaccaride (LPS)**, che può causare infiammazione nei mammiferi.
+
+Esempi: *Escherichia coli* (intestino), *Salmonella* (intossicazioni alimentari).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> i Gram positivi hanno un muro spesso ma semplice; i Gram negativi hanno un muro sottile ma con una seconda "barriera" esterna.</div>
+
+## La colorazione di Gram: come si distinguono al microscopio
+
+La colorazione di Gram è una tecnica inventata nel 1884 dal medico danese **Hans Christian Gram**. Permette di colorare i batteri in modi diversi a seconda della loro parete, così li puoi riconoscere al microscopio.
+
+Si usano 4 reagenti in sequenza:
+
+1. **Cristalvioletto** (colorante viola) — colora tutti i batteri di viola.
+2. **Lugol** (soluzione di iodio) — fissa il colore dentro la parete.
+3. **Alcol-acetone** (decolorante) — "lava via" il viola dai Gram negativi, ma non dai Gram positivi (la parete spessa lo trattiene).
+4. **Safranina** (colorante rosso/rosa) — colora di rosa i batteri che sono rimasti incolori.
+
+**Risultato finale:**
+- Gram positivi → **viola/blu** (hanno trattenuto il cristalvioletto)
+- Gram negativi → **rosa/rosso** (hanno perso il viola e si sono colorati con la safranina)
+
+<Diagram caption="Struttura della parete batterica: Gram positivi vs Gram negativi" code={`flowchart TB
+  subgraph GP["GRAM POSITIVO"]
+    direction TB
+    A["Membrana cellulare interna"]
+    B["Strato spesso di peptidoglicano<br/>(fino a 80 nm)"]
+    A --> B
+  end
+  subgraph GN["GRAM NEGATIVO"]
+    direction TB
+    C["Membrana cellulare interna"]
+    D["Strato sottile di peptidoglicano<br/>(2–7 nm)"]
+    E["Membrana esterna<br/>(contiene LPS)"]
+    C --> D --> E
+  end`} />
+
+<Diagram caption="I 4 passaggi della colorazione di Gram" code={`flowchart LR
+  A["1. Cristalvioletto<br/>tutti i batteri<br/>diventano VIOLA"] --> B["2. Lugol<br/>il colore si fissa<br/>dentro la parete"]
+  B --> C["3. Alcol-acetone<br/>Gram NEG perdono il viola<br/>Gram POS lo trattengono"]
+  C --> D["4. Safranina<br/>Gram NEG diventano ROSA<br/>Gram POS restano VIOLA"]`} />
+
+## Guarda il video
+<YouTube id="qT4pup5LXpE" title="Batteri GRAM positivi e GRAM negativi: che significa? — DNA a colazione" />
+<VideoVisto id="bio-u1-08" />
+
+## Da ricordare
+- I Gram positivi hanno una parete spessa di peptidoglicano e si colorano di **viola** con la colorazione di Gram.
+- I Gram negativi hanno una parete sottile più una membrana esterna con LPS e si colorano di **rosa**.
+- La colorazione di Gram è fondamentale in clinica perché aiuta a scegliere l'antibiotico giusto.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale struttura è responsabile della ritenzione del cristalvioletto nei batteri Gram positivi?" opzioni={["La membrana esterna ricca di LPS","Lo spesso strato di peptidoglicano","La membrana cellulare interna","Il flagello batterico"]} corretta={1} spiegazione="Lo strato spesso di peptidoglicano dei Gram positivi trattiene il complesso cristalvioletto-iodio durante il lavaggio con alcol-acetone, mantenendo il colore viola." />
+
+<Quiz domanda="Qual è il colore finale dei batteri Gram negativi dopo la colorazione di Gram completa?" opzioni={["Verde","Viola","Rosa/rosso","Arancione"]} corretta={2} spiegazione="I Gram negativi perdono il cristalvioletto durante la decolorazione con alcol-acetone (la loro parete sottile non lo trattiene) e si colorano di rosa/rosso grazie alla safranina, il colorante di contrasto." />
+
+<Quiz domanda="Quale componente della membrana esterna dei Gram negativi può scatenare una risposta infiammatoria nei mammiferi?" opzioni={["Peptidoglicano","Cristalvioletto","Lipopolisaccaride (LPS)","Safranina"]} corretta={2} spiegazione="Il lipopolisaccaride (LPS) è una molecola presente nella membrana esterna dei Gram negativi. Se entra nel sangue può attivare il sistema immunitario e causare infiammazione anche grave (shock settico)." />
+
+<Esercizio problema="Un veterinario preleva un campione da una lesione cutanea di un cane e lo analizza con la colorazione di Gram. Al microscopio vede batteri colorati di viola disposti a grappolo. Come si classificano questi batteri e quali informazioni fornisce questo risultato?" soluzione="I batteri colorati di viola sono Gram positivi (hanno trattenuto il cristalvioletto grazie alla parete spessa di peptidoglicano). La disposizione a grappolo è tipica del genere Staphylococcus. Questo risultato aiuta il veterinario a orientarsi nella scelta dell'antibiotico, poiché i Gram positivi e negativi rispondono spesso in modo diverso ai farmaci." />
+
+</section>
+
+</RisorsaLayout>

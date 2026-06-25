@@ -1,0 +1,39 @@
+{
+ "id": "bio-u1-19",
+ "titolo": "Gli RNA: struttura, funzioni; RNA codificanti e non codificanti",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "19-gli-rna-struttura-funzioni-rna-codificanti",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/biologia/u1/19-gli-rna-struttura-funzioni-rna-codificanti.mdx",
+ "examQuestions": [
+  {
+   "year": "2015",
+   "q": "Quale/i dei seguenti acidi nucleici è/sono coinvolto/i sia nella trascrizione che nella traduzione? 1. DNA; 2. mRNA; 3. tRNA.",
+   "choices": [
+    "Solo 2",
+    "Solo 1",
+    "Solo 3",
+    "Solo 1 e 2",
+    "Tutti"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2018",
+   "q": "Quale delle seguenti affermazioni relative all'RNA NON è corretta?",
+   "choices": [
+    "Gli rRNA sono i prodotti del processo di traduzione",
+    "I tRNA sono coinvolti nella traduzione",
+    "Il DNA codifica per mRNA, rRNA, tRNA",
+    "Gli mRNA vengono sintetizzati su stampo di DNA a singola elica",
+    "Gli rRNA sono trascritti nel nucleolo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

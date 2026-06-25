@@ -1,0 +1,10 @@
+{
+ "id": "fis-u5-01",
+ "titolo": "Sistema e ambiente, variabili e funzioni di stato",
+ "materia": "fisica",
+ "unita": 5,
+ "slug": "01-sistema-e-ambiente-variabili-e-funzioni",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u5/01-sistema-e-ambiente-variabili-e-funzioni.mdx",
+ "examQuestions": []
+}

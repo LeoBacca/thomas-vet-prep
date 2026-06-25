@@ -1,0 +1,25 @@
+{
+ "id": "bio-u2-06",
+ "titolo": "Il genoma umano: organizzazione, sequenze singole e famiglie geniche",
+ "materia": "biologia",
+ "unita": 2,
+ "slug": "06-il-genoma-umano-organizzazione-sequenze-singole",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u2/06-il-genoma-umano-organizzazione-sequenze-singole.mdx",
+ "examQuestions": [
+  {
+   "year": "2012",
+   "q": "Per libreria genomica si intende:",
+   "choices": [
+    "l'insieme dei frammenti di DNA ottenuti dal genoma di un organismo e inseriti in opportuni vettori",
+    "l'insieme delle sequenze nucleotidiche del genoma di un organismo inserite in banche dati",
+    "l'insieme di tutte le proteine che possono essere prodotte da un organismo in seguito allo splicing alternativo dei trascritti primari",
+    "l'insieme di tutti i geni degli organismi della stessa specie",
+    "l'insieme di tutti gli mRNA estratti dalle cellule di un organismo"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

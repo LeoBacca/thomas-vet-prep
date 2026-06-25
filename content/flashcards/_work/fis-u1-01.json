@@ -1,0 +1,25 @@
+{
+ "id": "fis-u1-01",
+ "titolo": "Notazione scientifica (potenze di 10)",
+ "materia": "fisica",
+ "unita": 1,
+ "slug": "01-notazione-scientifica-potenze-di-10",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u1/01-notazione-scientifica-potenze-di-10.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Maggio",
+   "q": "Quale delle seguenti uguaglianze è corretta?",
+   "choices": [
+    "3000 J = 3 × 10^3 J",
+    "3000 J = 3 × 10^2 J",
+    "3000 J = 3 × 10^4 J",
+    "3000 J = 3 × 10^5 J",
+    "3000 J = 2 × 10^3 J"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "calcolo"
+  }
+ ]
+}

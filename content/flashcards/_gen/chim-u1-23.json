@@ -1,0 +1,53 @@
+[
+  {
+    "id": "fc-chim-u1-23-1", "topicId": "chim-u1-23", "materia": "chimica", "unita": 1, "type": "mc",
+    "q": "Un elemento si lega all'ossigeno e forma un nuovo composto. A quale famiglia appartiene questo composto?",
+    "choices": ["A un acido", "A un ossido", "A un sale", "A un idrossido"],
+    "answer": 1,
+    "explain": "Tutto parte dall'ossigeno: quando un elemento (metallo o non-metallo) si attacca all'ossigeno nasce un ossido. Pensa all'ossigeno come a un compagno molto socievole che si lega a quasi tutti. Da metallo + ossigeno si ha un ossido basico; da non-metallo + ossigeno un ossido acido (anidride). Il sale e l'idrossido arrivano dopo, solo aggiungendo acqua o facendo reagire acidi e basi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-23-2", "topicId": "chim-u1-23", "materia": "chimica", "unita": 1, "type": "tf",
+    "q": "Vero o falso: un acido è una sostanza che in acqua libera ioni H+ (idrogeno), mentre un idrossido (base) libera il gruppo OH.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Acido e base sono due squadre opposte: l'acido rilascia H+ (come l'HCl dello stomaco, che serve a digerire), la base / idrossido rilascia OH (come l'NaOH). Quando si incontrano si neutralizzano a vicenda e nasce un sale piu acqua.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-23-3", "topicId": "chim-u1-23", "materia": "chimica", "unita": 1, "type": "open",
+    "q": "Spiega con parole tue la 'catena' che collega ossidi, idrossidi, acidi e sali: come si passa dall'uno all'altro?",
+    "answer": "Si parte sempre dall'ossigeno. Un elemento + ossigeno da un ossido: se l'elemento e un metallo si ottiene un ossido basico, se e un non-metallo un ossido acido (anidride). Aggiungendo acqua, l'ossido basico diventa un idrossido (contiene OH, e una base) e l'ossido acido diventa un acido (libera H+). Infine, quando un acido e un idrossido reagiscono insieme si neutralizzano e producono un sale piu acqua. Esempio: HCl (acido) + NaOH (idrossido) danno NaCl, il sale da cucina, piu acqua.",
+    "explain": "Da ricordare: ossigeno -> ossido; + acqua -> idrossido (da metallo) o acido (da non-metallo); acido + base -> sale + acqua.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-23-4", "topicId": "chim-u1-23", "materia": "chimica", "unita": 1, "type": "mc",
+    "q": "Cosa sono le anidridi (chiamate anche ossidi acidi)?",
+    "choices": [
+      "Composti formati da un metallo legato all'ossigeno",
+      "Composti formati da un non-metallo legato all'ossigeno",
+      "Composti formati da uno ione metallico e dal gruppo OH-",
+      "Composti formati da idrogeno e un non-metallo",
+      "Composti ternari formati da idrogeno, carbonio e azoto"
+    ],
+    "answer": 1,
+    "explain": "Anidride = ossido acido = NON-metallo + ossigeno (es. CO2, l'anidride carbonica che espiri). La trappola 'metallo + ossigeno' descrive invece l'ossido BASICO, il suo opposto esatto: stessa parola ossido ma elemento sbagliato. 'Ione metallico + OH-' e la definizione di idrossido (una base, non un ossido), 'idrogeno + non-metallo' e un idruro/acido binario, e l'ultima opzione (composto con azoto) e un filler fuori tema che non c'entra nulla con gli ossidi.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-23-5", "topicId": "chim-u1-23", "materia": "chimica", "unita": 1, "type": "mc",
+    "q": "I composti LiF, KOH, FeO e HCl sono, rispettivamente:",
+    "choices": [
+      "un acido, un ossido, un idrossido, un sale",
+      "un sale, un idrossido, un ossido, un acido",
+      "un sale, un idrossido, un chetone, un acido",
+      "un sale, un alcol, un ossido, un acido",
+      "un ossido, un idrossido, un sale, un acido"
+    ],
+    "answer": 1,
+    "explain": "Si riconosce ogni famiglia dai pezzi che la compongono: LiF e un metallo + non-metallo = sale; KOH ha il gruppo OH = idrossido (base); FeO e metallo + ossigeno = ossido; HCl libera H+ = acido. Quindi: sale, idrossido, ossido, acido. La prima opzione e l'opposto esatto (mette acido e sale agli estremi sbagliati). Le opzioni con 'chetone' e 'alcol' sono trappole con termini scambiati: chetoni e alcol sono composti del carbonio (chimica organica), non c'entrano con FeO ne con KOH. L'ultima opzione confonde ossido e sale invertendo LiF e FeO.",
+    "tags": ["prova d'esame"]
+  }
+]

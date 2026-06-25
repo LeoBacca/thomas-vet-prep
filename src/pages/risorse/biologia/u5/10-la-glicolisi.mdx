@@ -1,0 +1,85 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-10">
+
+## Cos'è la glicolisi?
+
+**Glicolisi** significa letteralmente "scioglimento dello zucchero" (dal greco *glykys* = dolce, *lysis* = rottura). È la prima tappa con cui la cellula ricava energia dal glucosio.
+
+Pensa al glucosio come a una banconota da 10 euro. La glicolisi è l'operazione con cui la cellula "spezza" quella banconota per avere spiccioli (ATP) da usare subito.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La glicolisi trasforma 1 molecola di glucosio in 2 molecole di piruvato, ricavando un guadagno netto di 2 ATP e 2 NADH — il tutto nel citoplasma, senza bisogno di ossigeno.</div>
+
+## Dove avviene?
+
+La glicolisi avviene nel **citoplasma** (citosol) della cellula — non nei mitocondri. Questo è importante: non ha bisogno di ossigeno e può funzionare anche in condizioni di anaerobiosi (quando l'ossigeno scarseggia).
+
+## Le due fasi della glicolisi
+
+La glicolisi si divide in **10 reazioni** raggruppabili in due grandi fasi:
+
+### Fase 1 — Investimento energetico (reazioni 1–5)
+La cellula "spende" 2 ATP per attivare il glucosio e spezzarlo a metà. Il risultato sono 2 molecole di **gliceraldeide-3-fosfato (G3P)**, ciascuna con 3 carboni.
+
+### Fase 2 — Rendimento energetico (reazioni 6–10)
+Le 2 molecole di G3P vengono ossidate e trasformate in **piruvato**. In questa fase si producono 4 ATP e 2 NADH.
+
+**Bilancio netto:**
+- ATP spesi: 2
+- ATP prodotti: 4
+- Guadagno netto: **2 ATP**
+- NADH prodotti: **2 NADH** (portatori di elettroni usati in seguito nei mitocondri)
+
+## Cosa succede al piruvato?
+
+Il destino del piruvato dipende dalla disponibilità di ossigeno:
+- **Con ossigeno** (aerobiosi): il piruvato entra nei mitocondri e viene ulteriormente ossidato (ciclo di Krebs + catena di trasporto degli elettroni).
+- **Senza ossigeno** (anaerobiosi): il piruvato viene trasformato in lattato (nei muscoli sotto sforzo) o in etanolo (nei lieviti) — processo chiamato **fermentazione**.
+
+<Diagram caption="Le due fasi della glicolisi: dal glucosio al piruvato" code={`flowchart TB
+  A["Glucosio<br/>(6 carboni, 1 molecola)"]
+  B["Fruttosio-1,6-bisfosfato<br/>(6 carboni, attivato)"]
+  C["2× Gliceraldeide-3-fosfato<br/>(G3P — 3 carboni ciascuna)"]
+  D["2× Piruvato<br/>(3 carboni ciascuno)"]
+
+  A -->|"FASE 1: si spendono 2 ATP"| B
+  B -->|"La molecola si spezza a metà"| C
+  C -->|"FASE 2: si producono 4 ATP + 2 NADH"| D`} />
+
+<Diagram caption="Bilancio energetico netto della glicolisi" code={`flowchart LR
+  G["1 Glucosio"] --> P["2 Piruvato"]
+  G --> ATP2["– 2 ATP investiti"]
+  P --> ATP4["+ 4 ATP prodotti"]
+  P --> NADH["+ 2 NADH prodotti"]
+  ATP4 --> NET["Guadagno netto:<br/>2 ATP + 2 NADH"]
+  ATP2 --> NET`} />
+
+## Guarda il video
+<YouTube id="0CNhMcpwrAk" title="Glicolisi Semplificata | Biochimica — House of Topics" />
+<VideoVisto id="bio-u5-10" />
+
+## Da ricordare
+- La glicolisi avviene nel **citoplasma** e non richiede ossigeno: converte 1 glucosio in 2 piruvati con un guadagno netto di **2 ATP** e **2 NADH**.
+- Si divide in due fasi: **investimento** (si spendono 2 ATP per attivare il glucosio) e **rendimento** (si producono 4 ATP e 2 NADH).
+- Il piruvato prodotto ha due destini: entra nei mitocondri se c'è ossigeno, oppure va in **fermentazione** se l'ossigeno manca.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Dove avviene la glicolisi nella cellula?" opzioni={["Nel nucleo","Nei mitocondri","Nel citoplasma (citosol)","Nel reticolo endoplasmatico"]} corretta={2} spiegazione="La glicolisi avviene nel citoplasma (citosol), non nei mitocondri. Questo le permette di funzionare anche senza ossigeno." />
+
+<Quiz domanda="Qual è il guadagno netto di ATP per ogni molecola di glucosio nella glicolisi?" opzioni={["4 ATP","2 ATP","38 ATP","1 ATP"]} corretta={1} spiegazione="La glicolisi produce 4 ATP ma ne consuma 2 nella fase di investimento: il guadagno netto è quindi 2 ATP. I 38 ATP si ottengono solo completando l'intera respirazione cellulare nei mitocondri." />
+
+<Quiz domanda="Quale molecola è il prodotto finale della glicolisi?" opzioni={["Glucosio-6-fosfato","Acetil-CoA","Piruvato","Lattato"]} corretta={2} spiegazione="La glicolisi termina con la produzione di 2 molecole di piruvato (3 carboni ciascuna). Il lattato è un possibile destino successivo del piruvato in assenza di ossigeno, ma non è il prodotto diretto della glicolisi." />
+
+<Esercizio problema="Un muscolo in forte sforzo fisico produce lattato invece di continuare la respirazione aerobica. Spiega in 2-3 frasi perché questo accade e che ruolo ha la glicolisi in questo processo." soluzione="Durante uno sforzo intenso, i muscoli consumano ossigeno più velocemente di quanto il sangue riesca a fornirlo. In queste condizioni di anaerobiosi il piruvato prodotto dalla glicolisi non può entrare nei mitocondri e viene invece convertito in lattato dalla fermentazione lattica. In questo modo la cellula riesce a rigenerare il NAD+ necessario per far continuare la glicolisi e produrre almeno i 2 ATP netti di cui ha bisogno." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,241 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u4-04">
+
+## Chi era Mendel e cosa ha scoperto?
+
+Gregor Mendel era un monaco austriaco dell'Ottocento che coltivava piselli nel giardino del convento. Incrociando piante con caratteristiche diverse (ad esempio semi gialli e semi verdi), scoprì che i caratteri si trasmettono dai genitori ai figli seguendo regole precise e prevedibili. Queste regole le chiamiamo **leggi di Mendel**.
+
+Per capire le sue leggi, devi conoscere tre parole chiave:
+
+- **Allele** — una delle due "versioni" di un gene. Ogni individuo ha due alleli per ogni carattere (uno dalla mamma, uno dal papà).
+- **Dominante** — l'allele che "vince" e si vede nel fenotipo (aspetto). Si scrive con lettera maiuscola (es. **G** per giallo).
+- **Recessivo** — l'allele che "perde" e rimane nascosto se c'è il dominante. Si scrive con lettera minuscola (es. **g** per verde).
+
+---
+
+## Prima legge: la Segregazione
+
+Mendel incrociò piante di linea pura con semi gialli (GG) e piante di linea pura con semi verdi (gg). Si aspettava magari un giallo sbiadito. Invece ottenne **tutti semi gialli** nella generazione F1.
+
+Poi incrociò queste piante F1 tra loro e ottenne circa **3 piante con semi gialli ogni 1 con semi verdi** (rapporto 3:1) nella generazione F2.
+
+La spiegazione: ogni individuo ha **due alleli** per ogni gene, ma quando forma i gameti (cellule riproduttive: spermatozoo o ovulo) li **separa** — ciascun gamete riceve **un solo allele**. Questo processo si chiama **segregazione**. I due alleli si "dividono" come due carte che distribuite una per mano.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Ogni genitore passa solo uno dei suoi due alleli a ciascun figlio — come pescare una carta alla cieca da un mazzo di due sole carte.</div>
+
+<Diagram caption="Prima legge di Mendel: segregazione. Incrocio tra pianta a semi gialli (GG) e pianta a semi verdi (gg)." code={`flowchart TB
+  A["Genitore 1<br/>Semi gialli<br/>Genotipo: GG"] --> C["Gameti: G e G"]
+  B["Genitore 2<br/>Semi verdi<br/>Genotipo: gg"] --> D["Gameti: g e g"]
+  C --> E["F1: tutti Gg<br/>Fenotipo: semi gialli"]
+  D --> E
+  E --> F["F1 x F1<br/>Gg x Gg"]
+  F --> G["F2: 1 GG (giallo)"]
+  F --> H["F2: 2 Gg (giallo)"]
+  F --> I["F2: 1 gg (verde)"]
+  G --> J["Rapporto fenotipico 3 gialli : 1 verde"]
+  H --> J
+  I --> J`} />
+
+---
+
+## Seconda legge: l'Assortimento Indipendente
+
+Mendel non si fermò a un solo carattere. Incrociò piante che differivano per **due caratteri** contemporaneamente: colore del seme (giallo G o verde g) e forma del seme (liscio L o rugoso l).
+
+Partì da: GGLL (giallo liscio) x ggll (verde rugoso). In F1 ottenne tutti GgLl (giallo liscio, entrambi dominanti). Incrociando poi le F1 tra loro, ottenne **quattro fenotipi diversi** nella proporzione **9:3:3:1**.
+
+Cosa vuol dire? Che i geni per il colore e quelli per la forma si **distribuiscono nei gameti in modo del tutto indipendente** l'uno dall'altro. Il gene "colore" non trascina con sé nessuna preferenza sul gene "forma". È come mescolare due mazzi di carte separatamente: il risultato di uno non dipende dall'altro.
+
+**Attenzione:** questa legge vale solo se i due geni si trovano su **cromosomi diversi** (o molto distanti sullo stesso cromosoma). Se stanno sullo stesso cromosoma vicini, tendono a "viaggiare insieme" (fenomeno del linkage, che va oltre Mendel).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Ogni coppia di alleli si separa e si distribuisce nei gameti in modo indipendente dalle altre coppie — come lanciare due monete contemporaneamente: il risultato dell'una non influenza l'altra.</div>
+
+<Diagram caption="Seconda legge di Mendel: assortimento indipendente. Quadrato di Punnett per l'incrocio F1 x F1 (GgLl x GgLl)." code={`flowchart TB
+  A["Genitore F1: GgLl"] --> B["4 tipi di gameti:<br/>GL, Gl, gL, gl"]
+  B --> C["Quadrato di Punnett 4x4<br/>16 combinazioni totali"]
+  C --> D["9 G_L_ — giallo liscio"]
+  C --> E["3 G_ll — giallo rugoso"]
+  C --> F["3 ggL_ — verde liscio"]
+  C --> G["1 ggll — verde rugoso"]
+  D --> H["Rapporto fenotipico<br/>9 : 3 : 3 : 1"]
+  E --> H
+  F --> H
+  G --> H`} />
+
+---
+
+## Come si usa il Quadrato di Punnett?
+
+Il quadrato di Punnett è uno strumento grafico per calcolare le probabilità dei genotipi dei figli. Si mettono i gameti di un genitore in riga e quelli dell'altro in colonna; ogni cella è l'unione di un gamete di ciascun genitore.
+
+Esempio semplice: Aa x Aa
+
+- Gameti del primo: A, a
+- Gameti del secondo: A, a
+- Risultato: 1 AA, 2 Aa, 1 aa → rapporto genotipico 1:2:1 → rapporto fenotipico 3:1
+
+---
+
+## Come si calcola la probabilità in un incrocio
+
+Negli esami questa è la cosa più chiesta in assoluto. La buona notizia è che servono solo due regole, più la tabellina dei tre incroci-base.
+
+### Le due regole d'oro
+
+- **Regola del prodotto (eventi che capitano INSIEME, "E").** Se due eventi sono indipendenti, la probabilità che si verifichino entrambi è il **prodotto** delle singole probabilità. Parola-spia: **E**. Esempio: figlio affetto E maschio → probabilità(affetto) × probabilità(maschio).
+- **Regola della somma (eventi alternativi, "O").** Se due esiti si escludono a vicenda, la probabilità che capiti l'uno **oppure** l'altro è la **somma** delle probabilità. Parola-spia: **O**. Esempio: in Aa × Aa, probabilità di fenotipo dominante = probabilità(AA) + probabilità(Aa) = 1/4 + 2/4 = 3/4.
+
+<div class="callout">💡 <strong>Trucco mnemonico:</strong> "E" come "moltiplicarE" (prodotto), "O" come "sOmma" (somma).</div>
+
+### I tre incroci-base da sapere a memoria
+
+Per un singolo gene con A dominante su a, esistono solo tre situazioni che producono fenotipi diversi nella prole:
+
+- **Aa × aa** → metà prole Aa (dominante), metà aa (recessivo) → rapporto fenotipico **50% : 50%** (cioè 1:1).
+- **Aa × Aa** → 1 AA : 2 Aa : 1 aa → rapporto fenotipico **3 dominanti : 1 recessivo** (75% : 25%).
+- **un genitore omozigote** (AA × qualunque cosa, oppure aa × aa) → **prole tutta uguale** nel fenotipo. AA × aa dà tutti Aa (100% fenotipo dominante); aa × aa dà tutti aa (100% recessivo).
+
+### Leggere i genotipi dei genitori DAL rapporto della prole
+
+Spesso l'esame fa il percorso inverso: ti dà i numeri della prole e chiede i genotipi dei genitori. Si legge a ritroso la tabellina sopra:
+
+- prole **50% dominante : 50% recessivo** → un genitore è eterozigote e l'altro è omozigote recessivo: **Aa × aa**.
+- prole **3 dominanti : 1 recessivo** (75% : 25%) → entrambi eterozigoti: **Aa × Aa**.
+- prole **tutta uguale** → almeno un genitore è omozigote (per esempio una linea pura AA o aa). Se compare anche il recessivo, quel genitore omozigote è aa; se compaiono solo dominanti, c'è un genitore AA.
+
+<div class="callout">💡 <strong>Regola pratica:</strong> ogni volta che nella prole spunta un individuo recessivo (aa), <strong>entrambi</strong> i genitori devono possedere almeno un allele a. Quindi un genitore a fenotipo dominante che genera figli recessivi è per forza eterozigote (Aa), non omozigote (AA).</div>
+
+### Incroci con più geni: scomponi e moltiplica
+
+Quando i geni sono indipendenti (su cromosomi diversi), si tratta **un gene alla volta** e poi si moltiplicano le probabilità (regola del prodotto). Esempio classico: Bbtt × BbTt, probabilità di prole "nera E coda corta".
+
+- Gene colore: Bb × Bb → nero (B_) = 3/4.
+- Gene coda: tt × Tt → coda corta (Tt) = 1/2.
+- Insieme: 3/4 × 1/2 = **3/8**.
+
+Anche il **numero di tipi di gameti** si calcola così: 2 elevato al numero di geni eterozigoti. Per AABbCc gli eterozigoti sono due (Bb e Cc), quindi 2 × 2 = **4 tipi di gameti** (AA è omozigote e non aggiunge varietà).
+
+<Diagram caption="Metodo per calcolare la probabilità di un fenotipo con piu geni indipendenti: un gene alla volta, poi prodotto." code={`flowchart TB
+  A["Incrocio con piu geni<br/>Bbtt x BbTt"] --> B["Gene 1 colore<br/>Bb x Bb<br/>nero = 3/4"]
+  A --> C["Gene 2 coda<br/>tt x Tt<br/>coda corta = 1/2"]
+  B --> D["Regola del prodotto<br/>3/4 x 1/2"]
+  C --> D
+  D --> E["Risultato<br/>3/8"]`} />
+
+---
+
+## Malattie autosomiche recessive e portatori
+
+Molte malattie genetiche umane (fibrosi cistica, albinismo, anemia falciforme...) sono **autosomiche recessive**: si manifestano solo nell'omozigote recessivo (aa). Chi ha un solo allele alterato (Aa) è un **portatore sano**: non è malato, ma può trasmettere l'allele ai figli.
+
+### Il caso tipico: due portatori sani (Aa × Aa)
+
+Due genitori sani che hanno già avuto un figlio affetto sono entrambi, per forza, portatori: **Aa × Aa**. Dal quadrato di Punnett:
+
+- 1/4 AA (sano non portatore)
+- 2/4 Aa (sano portatore)
+- 1/4 aa (affetto)
+
+Da qui le probabilità che escono sempre all'esame:
+
+- probabilità di figlio **affetto** = 1/4 = **25%**.
+- probabilità di figlio **sano** = 3/4 = **75%** (è 1 − 1/4: regola della somma sui due esiti sani, oppure il complementare dell'affetto).
+- ogni figlio è indipendente: aver già avuto un figlio affetto **non** cambia la probabilità del figlio successivo (resta 25% affetto, 75% sano).
+
+### Il dettaglio che frega tutti: "2/3 dei sani sono portatori"
+
+Attenzione alla differenza tra due domande diverse:
+
+- "probabilità che un figlio sia portatore" (prima della nascita, senza altre informazioni) = 2/4 = **1/2**.
+- "probabilità che un figlio **già sano** sia portatore" = qui sappiamo che NON è aa, quindi i casi possibili sono solo 1 AA e 2 Aa (tre casi). I portatori sono 2 su 3 → **2/3**.
+
+<div class="callout">💡 <strong>Perché 2/3 e non 1/2:</strong> appena sai che l'individuo è sano, elimini il caso aa. Restano 1 AA + 2 Aa = 3 casi, di cui 2 sono portatori. È lo stesso ragionamento del "muore l'omozigote recessivo": quando un gruppo sparisce, le proporzioni dei restanti si ricalcolano sul nuovo totale.</div>
+
+### Quando l'omozigote recessivo muore (letale): le proporzioni alla nascita
+
+Se l'allele recessivo è **letale** (l'embrione aa non si sviluppa, oppure la piantina senza clorofilla muore), gli aa spariscono dal conteggio. Da Aa × Aa restano solo gli individui vivi: 1 AA : 2 Aa. Quindi:
+
+- probabilità di omozigote dominante (AA) tra i **nati/adulti vivi** = 1/3 ≈ **33%**.
+- probabilità di eterozigote (Aa) tra i vivi = 2/3 ≈ **67%**.
+
+È esattamente lo stesso meccanismo del "2/3 sono portatori": si toglie il gruppo che non c'è più e si ricalcola sulla nuova base.
+
+### Probabilità composte nei pedigree
+
+Negli alberi genealogici la probabilità di essere portatore va **trascinata di generazione in generazione** con la regola del prodotto. Schema generale:
+
+probabilità(figlio affetto) = probabilità(la madre è portatrice) × probabilità(il padre è portatore) × 1/4.
+
+Il fattore 1/4 c'è solo se **entrambi** i genitori sono portatori (Aa × Aa). Se di un genitore non si sa nulla e in famiglia non risultano casi, la probabilità che sia portatore (e quindi che il figlio sia affetto) è considerata **trascurabile**: senza informazioni sulla popolazione non si può quantificare e all'esame la risposta è "praticamente nulla".
+
+---
+
+## Il test-cross (reincrocio di prova)
+
+Problema: hai un individuo con **fenotipo dominante** (per esempio pisello a seme giallo). Il suo genotipo può essere **AA (omozigote)** oppure **Aa (eterozigote)**: a occhio non li distingui, perché entrambi sono gialli. Come scoprirlo?
+
+**Soluzione: incrocialo con un omozigote recessivo (aa).** Questo incrocio si chiama **test-cross** (o reincrocio di prova). Il partner aa produce solo gameti a, quindi il fenotipo dei figli "smaschera" subito il genotipo del genitore in esame:
+
+- se l'individuo è **AA**: AA × aa → **tutta la prole è dominante** (tutti Aa, gialli).
+- se l'individuo è **Aa**: Aa × aa → **metà prole dominante e metà recessiva** (50% Aa giallo, 50% aa verde).
+
+In pratica: **basta che compaia anche un solo figlio recessivo per sapere che il genitore in esame era eterozigote (Aa)**. Se sono tutti dominanti, era (con ottima probabilità) omozigote AA.
+
+<div class="callout">💡 <strong>Perché proprio aa:</strong> serve un partner che porti SOLO l'allele recessivo, così il fenotipo dei figli dipende unicamente dall'allele che riceve dall'individuo misterioso. Con un partner AA o Aa il segnale si "sporcherebbe" e non distingueresti i casi.</div>
+
+<Diagram caption="Test-cross: si incrocia l'individuo dominante ignoto con un omozigote recessivo aa e si legge il fenotipo della prole." code={`flowchart TB
+  A["Individuo dominante<br/>genotipo ignoto<br/>AA oppure Aa"] --> B["Test-cross<br/>con omozigote recessivo aa"]
+  B --> C["Prole tutta dominante"]
+  B --> D["Prole 50 percento dominante<br/>50 percento recessiva"]
+  C --> E["Era omozigote AA"]
+  D --> F["Era eterozigote Aa"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="oH2CSLPADro" title="Le leggi di Mendel — Edizioni Atlas" />
+<VideoVisto id="bio-u4-04" />
+
+## Da ricordare
+- La **prima legge (segregazione)**: i due alleli di un gene si separano durante la formazione dei gameti; ogni gamete porta un solo allele.
+- La **seconda legge (assortimento indipendente)**: i geni su cromosomi diversi si distribuiscono nei gameti in modo casuale e indipendente l'uno dall'altro, producendo nuove combinazioni.
+- Il rapporto **3:1** (F2 monoibrido) e il rapporto **9:3:3:1** (F2 diibrido) sono i risultati attesi negli incroci mendeliani classici.
+- **Regola del prodotto** per eventi che capitano insieme ("E" → moltiplica), **regola della somma** per esiti alternativi ("O" → somma).
+- I tre incroci-base: **Aa × aa → 50% : 50%**; **Aa × Aa → 3 : 1** (75% dominanti, 25% recessivi); **un genitore omozigote → prole tutta uguale**. Si leggono anche a ritroso, dai rapporti della prole ai genotipi dei genitori.
+- **Malattie autosomiche recessive**: due portatori sani (Aa × Aa) → **25% affetti, 75% sani**; tra i figli **già sani**, **2/3 sono portatori** (si toglie il caso aa e si ricalcola). Stesso meccanismo quando l'aa è letale: tra i vivi **1/3 AA e 2/3 Aa**.
+- Per **più geni indipendenti**: calcola un gene alla volta e moltiplica (es. nero E coda corta = 3/4 × 1/2 = 3/8). Numero di tipi di gameti = 2 elevato al numero di geni eterozigoti.
+- **Test-cross**: incrocio con omozigote recessivo (aa) per scoprire se un dominante è AA o Aa. Se compare anche un solo figlio recessivo, il genitore era **eterozigote (Aa)**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una pianta con genotipo Gg produce gameti. Quali gameti produce?" opzioni={["Solo gameti G", "Solo gameti g", "Gameti G e gameti g in ugual proporzione", "Gameti GG e gameti gg"]} corretta={2} spiegazione="Per la prima legge di Mendel (segregazione), i due alleli G e g si separano durante la formazione dei gameti. Ogni gamete riceve un solo allele, quindi metà dei gameti sarà G e metà sarà g." />
+
+<Quiz domanda="Nell'incrocio Aa x Aa, qual è il rapporto fenotipico atteso nella progenie, sapendo che A è dominante su a?" opzioni={["1:1", "1:2:1", "3:1", "9:3:3:1"]} corretta={2} spiegazione="Dal quadrato di Punnett si ottengono 1 AA, 2 Aa, 1 aa. AA e Aa mostrano entrambi il fenotipo dominante (3 individui su 4), mentre aa mostra il fenotipo recessivo (1 su 4). Il rapporto fenotipico è quindi 3:1." />
+
+<Quiz domanda="La seconda legge di Mendel (assortimento indipendente) vale con certezza solo quando i due geni in esame si trovano:" opzioni={["Sullo stesso cromosoma, molto vicini tra loro", "Su cromosomi diversi (o molto distanti sullo stesso cromosoma)", "Sempre, indipendentemente dalla loro posizione", "Solo nei vegetali come i piselli"]} corretta={1} spiegazione="L'assortimento indipendente funziona perché i cromosomi si distribuiscono in modo casuale durante la meiosi. Se i due geni sono sullo stesso cromosoma e vicini, tendono a segregare insieme (linkage) e il rapporto 9:3:3:1 non si osserva." />
+
+<Esercizio problema="Una pianta di pisello con semi gialli (dominante, G) e lisci (dominante, L) ha genotipo GgLl. Viene incrociata con una pianta con semi verdi e rugosi (ggll). Quanti tipi di gameti produce la pianta GgLl? Quali fenotipi ti aspetti nella progenie e in che proporzione?" soluzione="La pianta GgLl produce 4 tipi di gameti: GL, Gl, gL, gl (ciascuno con probabilità 1/4 per la seconda legge di Mendel). La pianta ggll produce un solo tipo di gamete: gl. Incrociando i 4 tipi di gameti di GgLl con gl si ottengono: 1 GgLl (giallo liscio), 1 Ggll (giallo rugoso), 1 ggLl (verde liscio), 1 ggll (verde rugoso). La proporzione fenotipica è 1:1:1:1 — quattro fenotipi in ugual misura. Questo incrocio si chiama testcross (o reincrocio) ed è usato per scoprire il genotipo di un individuo con fenotipo dominante." />
+
+<Esercizio problema="Incrociando due piante si ottiene una progenie con il 50% di fiori rossi e il 50% di fiori bianchi (il rosso A è dominante sul bianco a). Quali sono i genotipi più probabili dei due genitori? Spiega il ragionamento." soluzione="Si legge il rapporto a ritroso. Il rapporto 50% : 50% (cioè 1:1) tra dominante e recessivo è la firma dell'incrocio Aa × aa. Verifica: il genitore Aa produce metà gameti A e metà a; il genitore aa produce solo gameti a. La prole è quindi metà Aa (rossa) e metà aa (bianca), cioè 50% : 50%. Inoltre il fatto che compaiano figli bianchi (aa) impone che entrambi i genitori portino almeno un allele a: il genitore rosso non può essere AA, deve essere Aa. Risposta: Aa × aa. (Aa × Aa darebbe 3:1, non 1:1; AA × aa darebbe tutti rossi.)" />
+
+<Esercizio problema="Due genitori sani hanno un primo figlio affetto da una malattia autosomica recessiva. (a) Qual è la probabilità che un secondo figlio sia sano? (b) Sapendo che il secondo figlio è nato sano, qual è la probabilità che sia portatore?" soluzione="(a) Poiché hanno avuto un figlio affetto (aa), entrambi i genitori sono per forza portatori: Aa × Aa. Dal Punnett: 1/4 AA, 2/4 Aa, 1/4 aa. La probabilità di figlio sano è 1/4 + 2/4 = 3/4 = 75% (regola della somma sui due esiti sani). Ogni gravidanza è indipendente: il fatto di aver già avuto un figlio affetto non cambia nulla. (b) Sapendo che il figlio è sano, escludiamo il caso aa: restano 1 AA e 2 Aa, cioè 3 casi possibili. I portatori sono 2 su 3 → probabilità 2/3. Attenzione: senza la condizione 'sano' la probabilità di essere portatore sarebbe stata 2/4 = 1/2." />
+
+<Esercizio problema="Nei topi il pelo nero (B) è dominante sul marrone (b) e la coda corta (T) è dominante sulla coda lunga (t); i due geni sono indipendenti. Dall'incrocio Bbtt × BbTt, con quale probabilità nasce un topo con pelo nero e coda corta?" soluzione="Si scompone gene per gene e si moltiplica (regola del prodotto). Gene colore: Bb × Bb → nero (B_) = 3/4. Gene coda: tt × Tt → coda corta (Tt) = 1/2 (metà della prole è Tt corta, metà tt lunga). Probabilità del fenotipo combinato 'nero E coda corta' = 3/4 × 1/2 = 3/8." />
+
+<Quiz domanda="Un albino non ha pigmenti nella pelle a causa dell'allele autosomico recessivo a. Un uomo di colorito normale, figlio e nipote di persone tutte normali, sposa una donna normale che ha però un genitore albino. Qual è la probabilità che il loro primo figlio sia albino?" opzioni={["Praticamente nulla", "1/2 (50%)", "1/4 (25%)", "3/4 (75%)", "1/8 (12,5%)"]} corretta={0} spiegazione="Perché un figlio sia albino (aa) serve un allele a da CIASCUN genitore. La donna ha un genitore albino (aa), quindi ha ereditato di sicuro un allele a: è portatrice (Aa), e trasmette a con probabilità 1/2. L'uomo, invece, proviene da una famiglia senza alcun caso noto e senza dati sulla popolazione: la probabilità che sia portatore non è quantificabile ed è considerata trascurabile. Senza un allele a da parte sua, il figlio non può essere aa: la probabilità è praticamente nulla. Le risposte 1/2, 1/4, 1/8 sono trappole di chi assume (senza motivo) che anche l'uomo sia portatore." />
+
+<Quiz domanda="Da un incrocio tra due individui eterozigoti (Aa × Aa) per un carattere autosomico recessivo LETALE, che impedisce lo sviluppo dell'embrione omozigote recessivo, qual è la probabilità di avere ALLA NASCITA individui omozigoti dominanti?" opzioni={["1/3", "1/4", "1/2", "3/4", "0"]} corretta={0} spiegazione="Da Aa × Aa ci si aspetterebbe 1/4 AA, 2/4 Aa, 1/4 aa. Ma gli aa non nascono (letali): scompaiono dal conteggio. Restano solo i vivi, in rapporto 1 AA : 2 Aa, cioè 3 individui in tutto. Gli omozigoti dominanti sono 1 su 3 → 1/3. La trappola è 1/4: vale solo se si conta anche l'omozigote recessivo, che però qui non sopravvive. Stesso meccanismo del 'tra i sani, 2/3 sono portatori'." />
+
+<Quiz domanda="Per stabilire se una pianta di pisello a seme giallo (carattere dominante Y) è omozigote YY o eterozigote Yy, con quale individuo conviene incrociarla (test-cross) e cosa ti dice il risultato?" opzioni={["Con un omozigote recessivo yy: se compare anche un solo figlio verde, era Yy", "Con un omozigote dominante YY: se i figli sono tutti gialli era YY", "Con un eterozigote Yy: dal rapporto 3:1 si capisce il genotipo", "Con sé stessa per autofecondazione: il rapporto non è informativo", "Con un individuo a fenotipo verde dominante: i figli saranno tutti uguali"]} corretta={0} spiegazione="Il test-cross usa sempre l'omozigote recessivo (yy), perché produce solo gameti y: così il fenotipo dei figli dipende unicamente dall'allele dato dalla pianta misteriosa. Se è YY → tutti i figli sono gialli (Yy); se è Yy → metà gialli (Yy) e metà verdi (yy). Quindi basta un solo figlio verde per concludere che era eterozigote. Incrociare con YY o Yy 'sporca' il segnale e non distingue i casi; il verde non è un fenotipo dominante." />
+
+</section>
+
+</RisorsaLayout>

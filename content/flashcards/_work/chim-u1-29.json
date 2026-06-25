@@ -1,0 +1,53 @@
+{
+ "id": "chim-u1-29",
+ "titolo": "Diagrammi di fase e cambiamenti di stato; sudore e termoregolazione",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "29-diagrammi-di-fase-e-cambiamenti-di",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/chimica/u1/29-diagrammi-di-fase-e-cambiamenti-di.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "La temperatura alla quale il solido e il liquido di una data sostanza hanno la stessa tensione di vapore si chiama:",
+   "choices": [
+    "punto triplo della sostanza",
+    "punto di fusione della sostanza",
+    "punto di ebollizione della sostanza",
+    "punto di congelamento della sostanza",
+    "punto di sublimazione della sostanza"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2010",
+   "q": "Se 1 kg di etilbenzene fonde a -95 °C, 500 g della stessa sostanza:",
+   "choices": [
+    "Fondono a -95 °C",
+    "Fondono a -47,5 °C",
+    "Bollono a +95 °C",
+    "Bollono a +47,5 °C",
+    "Fondono a 89 K"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Quale fra le seguenti affermazioni riguardanti il diagramma di stato dell'anidride carbonica (CO2) è corretta?",
+   "choices": [
+    "Le curve rappresentano i luoghi in cui coesistono due stati della materia all'equilibrio",
+    "È possibile l'equilibrio fra stato solido ed aeriforme solo ad una temperatura superiore a quella del punto triplo",
+    "Il punto triplo rappresenta valori di temperatura e pressione ai quali la CO2 sublima tre volte più velocemente del normale",
+    "La temperatura critica rappresenta la temperatura al di sotto della quale il vapore non può essere mai portato allo stato liquido",
+    "La temperatura di 100 °C è la temperatura alla quale la pressione di vapore della CO2 uguaglia la pressione atmosferica"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

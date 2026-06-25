@@ -1,0 +1,121 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-25">
+
+## I microtubuli come strade della cellula
+
+Immagina la cellula come una grande città. Le strade sono i **microtubuli**: lunghi tubi proteici che attraversano il citoplasma in tutte le direzioni. Su queste strade si muovono dei "camion molecolari" che trasportano merci (proteine, vescicole, organelli) da un posto all'altro. Questi camion sono le **proteine motrici**.
+
+I microtubuli sono formati da una proteina chiamata **tubulina** (alfa e beta), che si assembla a formare un cilindro cavo. Ogni microtubulo ha due estremità diverse:
+- **Estremità + (plus):** quella che punta verso la periferia della cellula (si allunga più facilmente)
+- **Estremità − (minus):** quella vicina al centro, ancorata al centrosoma
+
+<div class="callout">💡 <strong>In parole semplici:</strong> I microtubuli sono le autostrade della cellula, con un senso di marcia preciso: le proteine motrici sanno se andare verso il centro o verso la periferia.</div>
+
+## Le MAP: i cartelli stradali
+
+Le **MAP** (Microtubule-Associated Proteins, cioè "proteine associate ai microtubuli") non trasportano nulla da sole, ma **stabilizzano e organizzano** i microtubuli. Sono come i guard-rail e i cartelli stradali: tengono la strada in ordine e ne regolano la costruzione e la demolizione.
+
+Alcune MAP importanti:
+- **Tau:** stabilizza i microtubuli nei neuroni. Se funziona male, contribuisce alla malattia di Alzheimer.
+- **MAP2:** presente nei dendriti dei neuroni, organizza i fasci di microtubuli.
+
+## Le chinesine: i camion che vanno verso la periferia
+
+Le **chinesine** sono proteine motrici che si muovono verso l'**estremità +** del microtubulo, cioè verso la periferia della cellula. Questo movimento si chiama **trasporto anterogrado** (dal centro verso l'esterno).
+
+Come funzionano? Ogni chinesina ha due "teste" (domini motori) che si muovono in modo alternato, come due piedi che camminano. Usano l'**ATP** come carburante: ogni passo consuma una molecola di ATP.
+
+Cosa trasportano le chinesine?
+- Vescicole con materiale da esportare
+- Organelli (es. mitocondri)
+- Segnali chimici verso le terminazioni nervose
+
+## Le dineine: i camion che tornano al centro
+
+Le **dineine** si muovono in direzione opposta: verso l'**estremità −**, cioè verso il centro della cellula. Questo si chiama **trasporto retrogrado** (dall'esterno verso il centro).
+
+Esistono due tipi principali:
+- **Dineina citoplasmatica:** trasporta materiale verso il centro della cellula (es. organelli da riciclare, segnali di ritorno dai neuroni)
+- **Dineina assonemale:** presente dentro ciglia e flagelli (nell'assonema), fa scorrere i microtubuli per generare il movimento
+
+Le dineine sono molto più grandi e complesse delle chinesine; hanno bisogno di un "assistente" chiamato **dinattina** per legarsi al carico giusto.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Chinesina = camion in uscita (centro → periferia). Dineina = camion in entrata (periferia → centro). Entrambi usano ATP come benzina.</div>
+
+<Diagram caption="Trasporto lungo i microtubuli: direzioni e proteine motrici" code={`flowchart LR
+  C["Centrosoma<br/>(estremità −)"]
+  P["Periferia cellulare<br/>(estremità +)"]
+  K["Chinesina<br/>trasporto anterogrado →"]
+  D["Dineina citoplasmatica<br/>← trasporto retrogrado"]
+  ATP["ATP<br/>(carburante)"]
+  C -- microtubulo --> P
+  K -- "si muove verso +" --> P
+  D -- "si muove verso −" --> C
+  ATP -- "alimenta" --> K
+  ATP -- "alimenta" --> D`} />
+
+## Ciglia e flagelli: strutture mosse dai microtubuli
+
+Le **ciglia** e i **flagelli** sono appendici filiformi che sporgono dalla superficie di alcune cellule. Servono per muovere la cellula stessa o per spostare fluidi e particelle vicino alla cellula.
+
+**Differenze pratiche:**
+- **Ciglia:** corte e numerose (es. nell'epitelio delle vie respiratorie, dove eliminano muco e polvere; nelle tube uterine, dove spostano l'ovocita)
+- **Flagelli:** lunghi e solitamente uno solo per cellula (es. lo spermatozoo usa il flagello per nuotare)
+
+### La struttura interna: l'assonema
+
+Sia ciglia che flagelli hanno al loro interno una struttura chiamata **assonema**, formata da microtubuli in uno schema preciso chiamato **"9+2"**:
+- **9 coppie di microtubuli** (doppietti) disposte a cerchio
+- **1 coppia centrale** al centro
+
+I doppietti periferici sono collegati tra loro da **bracci di dineina** (la dineina assonale). Quando questi bracci usano l'ATP per far scorrere i doppietti uno sull'altro, la struttura si piega e si genera il movimento ondulatorio della ciglia o del flagello.
+
+<Diagram caption="Struttura dell'assonema (schema 9+2) e meccanismo di movimento" code={`flowchart TB
+  A["Membrana plasmatica<br/>avvolge tutto"]
+  B["9 doppietti di microtubuli<br/>disposti a cerchio"]
+  C["2 microtubuli centrali<br/>(coppia centrale)"]
+  D["Bracci di dineina<br/>tra i doppietti"]
+  E["Dineina usa ATP"]
+  F["Doppietti scorrono<br/>uno sull'altro"]
+  G["La ciglia/flagello<br/>si piega e si muove"]
+  A --> B
+  A --> C
+  B --> D
+  D --> E
+  E --> F
+  F --> G`} />
+
+### La sindrome di Kartagener: quando le ciglia non funzionano
+
+Se i bracci di dineina sono difettosi, le ciglia non si muovono. Questa malattia si chiama **sindrome di Kartagener** (o discinesia ciliare primaria). I pazienti hanno problemi respiratori cronici (le vie aeree non puliscono il muco) e gli uomini sono spesso sterili (gli spermatozoi non nuotano bene).
+
+## Guarda il video
+<YouTube id="bQCW0iVIp9A" title="I Motori Molecolari: CHINESINE, DINEINE E MIOSINE — AboutBiology" />
+<VideoVisto id="bio-u5-25" />
+
+## Da ricordare
+- Le **chinesine** trasportano verso la periferia (estremità +), le **dineine** verso il centro (estremità −): entrambe usano ATP come carburante.
+- Ciglia e flagelli hanno un'assonema con schema **9+2** di microtubuli; i **bracci di dineina** generano il movimento facendo scorrere i doppietti.
+- Le **MAP** (es. Tau, MAP2) non trasportano ma stabilizzano e organizzano i microtubuli; alterazioni di Tau sono legate all'Alzheimer.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una vescicola deve essere trasportata dal corpo cellulare di un neurone verso la terminazione nervosa periferica. Quale proteina motrice compie principalmente questo trasporto?" opzioni={["Dineina citoplasmatica", "Chinesina", "Miosina II", "Proteina Tau"]} corretta={1} spiegazione="La chinesina si muove verso l'estremità + del microtubulo, cioè verso la periferia della cellula. Il trasporto dal corpo cellulare alla terminazione nervosa (trasporto anterogrado) è quindi mediato dalla chinesina, non dalla dineina." />
+
+<Quiz domanda="Qual è la disposizione dei microtubuli nell'assonema di una ciglia mobile?" opzioni={["7 singoletti disposti a spirale", "9 doppietti periferici + 2 microtubuli centrali", "6 doppietti + 1 tripletto centrale", "9 tripletti senza microtubuli centrali"]} corretta={1} spiegazione="L'assonema delle ciglia e dei flagelli mobili ha sempre lo schema 9+2: nove doppietti di microtubuli disposti in cerchio e una coppia di microtubuli singoli al centro. I bracci di dineina collegano i doppietti periferici e generano il movimento." />
+
+<Quiz domanda="Un paziente presenta infezioni respiratorie ricorrenti, bronchiectasie e sterilità maschile. La causa è un difetto nei bracci di dineina delle ciglia. Come si chiama questa condizione?" opzioni={["Sindrome di Marfan", "Sindrome di Kartagener (discinesia ciliare primaria)", "Malattia di Alzheimer", "Sindrome di Down"]} corretta={1} spiegazione="La sindrome di Kartagener (discinesia ciliare primaria) è causata da un difetto nei bracci di dineina delle ciglia. Le ciglia non si muovono correttamente: le vie respiratorie non eliminano il muco (infezioni ricorrenti) e gli spermatozoi non nuotano (sterilità maschile)." />
+
+<Esercizio problema="Spiega con parole tue la differenza tra trasporto anterogrado e retrogrado lungo un assone neuronale, indicando quale proteina motrice è responsabile di ciascuno e fornendo un esempio di carico trasportato in ciascuna direzione." soluzione="Il trasporto anterogrado va dal corpo cellulare (centrosoma, estremità −) verso la terminazione nervosa periferica (estremità +): è mediato dalla chinesina e trasporta, ad esempio, vescicole con neurotrasmettitori o mitocondri verso la sinapsi. Il trasporto retrogrado va invece dalla periferia verso il corpo cellulare: è mediato dalla dineina citoplasmatica e trasporta, ad esempio, organelli da riciclare (lisosomi) o segnali trofici come il NGF (nerve growth factor) che arriva dalla periferia e deve raggiungere il nucleo." />
+
+</section>
+
+</RisorsaLayout>

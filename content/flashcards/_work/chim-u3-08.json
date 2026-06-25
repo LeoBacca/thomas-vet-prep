@@ -1,0 +1,25 @@
+{
+ "id": "chim-u3-08",
+ "titolo": "Principio di Le Chatelier (equilibrio mobile)",
+ "materia": "chimica",
+ "unita": 3,
+ "slug": "08-principio-di-le-chatelier-equilibrio-mobile",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u3/08-principio-di-le-chatelier-equilibrio-mobile.mdx",
+ "examQuestions": [
+  {
+   "year": "2018",
+   "q": "Secondo il principio di Le Chatelier:",
+   "choices": [
+    "una reazione endotermica viene favorita da un aumento di temperatura",
+    "una reazione endotermica viene favorita da un aumento di concentrazione dei prodotti",
+    "l'aggiunta di un reagente riduce la quantità di prodotti all'equilibrio",
+    "una reazione che procede con aumento del numero di moli viene favorita da un aumento di pressione",
+    "l'aggiunta di un catalizzatore aumenta la quantità di prodotti all'equilibrio"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

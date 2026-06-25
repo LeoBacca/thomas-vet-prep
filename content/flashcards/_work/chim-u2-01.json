@@ -1,0 +1,81 @@
+{
+ "id": "chim-u2-01",
+ "titolo": "Miscele omogenee ed eterogenee: soluzioni, sospensioni, colloidi e aerosol",
+ "materia": "chimica",
+ "unita": 2,
+ "slug": "01-miscele-omogenee-ed-eterogenee-soluzioni-sospensioni",
+ "freq": 5,
+ "risorseMdx": "src/pages/risorse/chimica/u2/01-miscele-omogenee-ed-eterogenee-soluzioni-sospensioni.mdx",
+ "examQuestions": [
+  {
+   "year": "2008",
+   "q": "Quale è la differenza tra miscugli e composti?",
+   "choices": [
+    "I miscugli sono formati da sostanze mescolate in proporzioni variabili, e i composti sono costituiti da due o più elementi presenti in proporzioni fisse",
+    "I miscugli sono formati da sostanze mescolate e i composti da elementi mescolati",
+    "I miscugli sono formati da sostanze mescolate in proporzioni fisse, e i composti sono costituiti da due o più elementi presenti in proporzioni fisse",
+    "I miscugli sono formati da sostanze mescolate in proporzioni fisse, e i composti sono costituiti da due o più elementi presenti in proporzioni variabili",
+    "Non vi è nessuna differenza tra miscugli e composti"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2015",
+   "q": "Un campione d'aria è chiuso in un contenitore a temperatura ambiente (20 °C) e viene portato a una temperatura di -100 °C alla quale sia l'acqua che l'anidride carbonica sono allo stato solido. Quale delle seguenti righe mostra il tipo di miscuglio che si ottiene a 20 °C e a -100 °C in questo esperimento?",
+   "choices": [
+    "Riga 1",
+    "Riga 2",
+    "Riga 3",
+    "Riga 4",
+    "Riga 5"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2017",
+   "q": "Acqua ed esano non sono miscibili tra loro. Qualora vengano posti nello stesso recipiente si ottiene:",
+   "choices": [
+    "un sistema eterogeneo",
+    "un'unica fase",
+    "un sistema omogeneo",
+    "una soluzione",
+    "un colloide"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2020",
+   "q": "Quale dei seguenti sistemi è eterogeneo?",
+   "choices": [
+    "Latte",
+    "Vodka",
+    "Acqua potabile",
+    "Saccarosio",
+    "Olio di semi di arachidi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2022",
+   "q": "Si scioglie del saccarosio in un certo volume di acqua pura fino a raggiungere la saturazione e quindi si aggiunge ulteriore saccarosio. Il sistema così ottenuto è:",
+   "choices": [
+    "bicomponente e bifasico",
+    "bicomponente e monofasico",
+    "monocomponente e trifasico",
+    "monocomponente e bifasico",
+    "monocomponente e monofasico"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

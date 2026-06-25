@@ -1,0 +1,53 @@
+{
+ "id": "chim-u5-10",
+ "titolo": "Alcheni: struttura, dieni coniugati e addizione elettrofila",
+ "materia": "chimica",
+ "unita": 5,
+ "slug": "10-alcheni-struttura-dieni-coniugati-e-addizione",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/chimica/u5/10-alcheni-struttura-dieni-coniugati-e-addizione.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "C5H10 è la formula bruta del:",
+   "choices": [
+    "pentene",
+    "pentano",
+    "pentadiene",
+    "isopentano",
+    "ciclopentene"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "formula"
+  },
+  {
+   "year": "2012",
+   "q": "Qual è la formula dell'etilene?",
+   "choices": [
+    "C2H4",
+    "C2H6",
+    "C2H2",
+    "C3H6",
+    "C3H8"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "formula"
+  },
+  {
+   "year": "2017",
+   "q": "Gli alcheni sono composti contenenti almeno un:",
+   "choices": [
+    "doppio legame tra atomi di carbonio",
+    "triplo legame tra atomi di carbonio",
+    "doppio legame carbonio-azoto",
+    "legame singolo tra atomi di carbonio",
+    "triplo legame carbonio-azoto"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u3-01-1",
+    "topicId": "bio-u3-01",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: dopo la replicazione, ogni nuova molecola di DNA e composta per meta da filamento vecchio e per meta da filamento nuovo.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero: e proprio questo che significa 'semiconservativa'. Immagina una cerniera lampo che si apre: ciascuna meta fa da stampo e attira i pezzi nuovi. Risultato: 2 molecole identiche, ognuna con una meta originale e una appena costruita.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-01-2",
+    "topicId": "bio-u3-01",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Un batterio ha UNA sola origine di replicazione. Una cellula umana ne ha MIGLIAIA. Perche questa differenza?",
+    "choices": [
+      "Perche il DNA umano e molto piu lungo: migliaia di punti di partenza simultanei riducono i tempi di copia",
+      "Perche i batteri hanno un DNA circolare che non ha bisogno di essere copiato del tutto",
+      "Perche le cellule umane copiano il DNA piu lentamente, quindi servono meno punti di partenza",
+      "Perche negli eucarioti la replicazione non e semiconservativa"
+    ],
+    "answer": 0,
+    "explain": "E come costruire un'autostrada: aprire decine di cantieri in parallelo e molto piu veloce che partire da un solo punto. Il DNA umano e lunghissimo (3 miliardi di basi); senza migliaia di origini simultanee la copia richiederebbe settimane. I batteri hanno un DNA circolare molto piu corto: basta un'unica origine.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-01-3",
+    "topicId": "bio-u3-01",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Descrivi cosa succede nella forcella replicativa: quali proteine lavorano, che lavoro fa ognuna, e perche uno dei due filamenti si sintetizza 'a pezzi'?",
+    "answer": "Nella forcella replicativa lavorano quattro protagonisti. L'elicasi apre la doppia elica rompendo i legami a idrogeno tra le basi azotate. La primasi costruisce un corto primer di RNA che serve come punto di attacco, perche la DNA polimerasi non puo partire da zero. La DNA polimerasi aggiunge i nuovi nucleotidi costruendo il filamento complementare, ma puo lavorare SOLO in direzione 5'→3'. La ligasi incolla insieme i frammenti prodotti sul filamento in ritardo. Perche a pezzi? I due filamenti stampo hanno orientamenti opposti. Sul filamento guida (3'→5') la polimerasi lavora in modo continuo seguendo l'apertura della forcella. Sull'altro filamento (in ritardo, orientamento 5'→3') la polimerasi deve procedere nella direzione opposta all'apertura: copia a tratti, producendo i frammenti di Okazaki, che la ligasi unisce alla fine.",
+    "explain": "Da ricordare: elicasi apre, primasi innesca, DNA polimerasi copia solo 5'→3', ligasi incolla. Il filamento in ritardo e discontinuo perche la polimerasi non puo invertire la direzione.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-01-4",
+    "topicId": "bio-u3-01",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Si definisce semiconservativa la replicazione del DNA in quanto:",
+    "choices": [
+      "entrambi i filamenti della doppia elica figlia sono neosintetizzati, mentre la molecola di partenza resta intatta",
+      "avviene soltanto in circa la meta delle cellule di un individuo",
+      "ogni singolo filamento della doppia elica contiene per meta materiale genetico originale e per meta materiale di nuova sintesi mescolati sullo stesso filamento",
+      "ogni nuova doppia elica conserva intatto uno dei due filamenti originali, affiancato da un filamento di nuova sintesi",
+      "si realizza solo in individui a ciclo vitale aploide"
+    ],
+    "answer": 3,
+    "explain": "La risposta corretta spiega l'etimologia: 'semi' (meta) + 'conservativa' (mantiene). Ogni molecola figlia conserva UNO dei due filamenti parentali intero, il secondo e di nuova sintesi. La trappola piu insidiosa e la scelta 2 ('per meta mescolati sullo stesso filamento'): descrive la replicazione DISPERSIVA, un modello ipotetico che non esiste in natura. La scelta 0 descrive invece la replicazione CONSERVATIVA (la doppia elica originale resterebbe tutta intera e quella figlia sarebbe tutta nuova): anche questo modello e stato escluso dall'esperimento di Meselson e Stahl. 'Solo meta delle cellule' e fuori tema. 'Aploide' riguarda la ploidia, non la replicazione: filler.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-01-5",
+    "topicId": "bio-u3-01",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Batteri con tutto il DNA marcato con azoto pesante (¹⁵N) vengono trasferiti in azoto leggero (¹⁴N) e fatti dividere per TRE generazioni. Dopo la terza divisione, che percentuale di molecole di DNA contiene sia ¹⁵N che ¹⁴N?",
+    "choices": [
+      "25%",
+      "50%",
+      "12,5%",
+      "100%",
+      "0%"
+    ],
+    "answer": 0,
+    "explain": "Ragiona cos: parti da 1 molecola con entrambi i filamenti ¹⁵N. Dopo la 1a divisione: 2 molecole, entrambe ibride (¹⁵N/¹⁴N) → 100%. Dopo la 2a: 4 molecole = 2 ibride + 2 pure ¹⁴N → 50% ibride. Dopo la 3a: 8 molecole = 2 ibride + 6 pure ¹⁴N → 2/8 = 25%. I due filamenti ¹⁵N originali si 'diluiscono' nel tempo: nelle generazioni successive le molecole ibride restano sempre 2 (i due filamenti stampo originali non spariscono mai, si separano in molecole diverse), il totale raddoppia ogni volta. La trappola '12,5%' e sbagliata perche sarebbe il risultato alla QUARTA divisione. '50%' e il risultato alla seconda. '100%' e il risultato alla prima. '0%' sarebbe il caso di replicazione conservativa (che non esiste).",
+    "tags": ["prova d'esame"]
+  }
+]

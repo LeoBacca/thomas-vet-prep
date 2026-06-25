@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fc-chim-u5-07-1",
+    "topicId": "chim-u5-07",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un nucleofilo e una specie chimica che... (scegli la risposta giusta)",
+    "choices": [
+      "e povera di elettroni e li cerca disperatamente",
+      "e ricca di elettroni e li dona al partner: e il generoso della reazione",
+      "non ha cariche e non reagisce mai",
+      "attira gli elettroni verso di se come il fluoro o il cloro"
+    ],
+    "answer": 1,
+    "explain": "Nucleofilo = 'amico del nucleo' (positivo): e ricco di elettroni (negativo) e li dona. L'elettrofilo e il contrario: e povero di elettroni e li cerca. Ricco attacca povero, sempre.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-chim-u5-07-2",
+    "topicId": "chim-u5-07",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "open",
+    "q": "Hai due molecole: la specie A e ricca di elettroni (carica negativa); la specie B e povera di elettroni (carica positiva). Quale e il nucleofilo e quale l'elettrofilo? Cosa succede quando si incontrano? Aggiungi: come si chiama il fenomeno per cui certi atomi (come fluoro o ossigeno) tirano gli elettroni dei legami verso di se?",
+    "answer": "La specie A (ricca di elettroni, negativa) e il NUCLEOFILO: e il 'generoso', dona i suoi elettroni. La specie B (povera di elettroni, positiva) e l'ELETTROFILO: e il 'bisognoso', cerca elettroni. Quando si incontrano, il nucleofilo A attacca l'elettrofilo B e gli dona i suoi elettroni: nasce un nuovo legame chimico. Il verso e sempre ricco → povero. Il fenomeno per cui certi atomi (fluoro, ossigeno, cloro) attirano verso di se gli elettroni dei legami si chiama EFFETTO INDUTTIVO: e come un tiro alla fune in cui l'atomo piu 'forte' sposta la corda (gli elettroni) dalla sua parte, rendendo la zona vicina piu povera. L'effetto si smorza man mano che ci si allontana dall'atomo tiratore.",
+    "explain": "Nucleofilo = ricco, dona; elettrofilo = povero, cerca. Il nucleofilo attacca sempre l'elettrofilo. Effetto induttivo = tiro alla fune degli elettroni lungo i legami, si smorza con la distanza.",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

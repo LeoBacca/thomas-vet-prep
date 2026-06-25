@@ -1,0 +1,104 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-12">
+
+## Cos'è la trascrizione?
+
+La trascrizione è il processo con cui la cellula **legge un gene del DNA** e produce una copia in RNA. Pensa al DNA come a un libro originale conservato in biblioteca (il nucleo): non puoi portarlo fuori, quindi ne fai una fotocopia — quella fotocopia è l'RNA messaggero (mRNA).
+
+Il macchinario che fa tutto questo si chiama **RNA polimerasi II** (negli eucarioti è quella responsabile degli mRNA). A differenza della DNA polimerasi, l'RNA polimerasi non ha bisogno di un primer per partire.
+
+La trascrizione si divide in **tre fasi**: inizio, allungamento, terminazione.
+
+---
+
+## Fase 1 — Inizio
+
+L'RNA polimerasi da sola non sa dove attaccarsi al DNA. Ha bisogno di indicazioni precise, fornite da proteine speciali chiamate **fattori di trascrizione generali (GTF)**.
+
+Come funziona:
+
+1. I fattori di trascrizione si assemblano sul **promotore**, una sequenza di DNA a monte del gene (la più famosa è la **TATA box**, circa 25 basi prima dell'inizio).
+2. Formano il **complesso di pre-inizio (PIC)**.
+3. L'RNA polimerasi II si unisce al complesso.
+4. Il DNA viene aperto in un piccolo tratto (bolla di trascrizione) e la sintesi dell'RNA può cominciare.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> i fattori di trascrizione sono come i navigatori GPS che portano l'RNA polimerasi esattamente al punto di partenza del gene.</div>
+
+---
+
+## Fase 2 — Allungamento
+
+Una volta avviata, l'RNA polimerasi si muove lungo il filamento stampo del DNA nella direzione 3'→5' e sintetizza il nuovo filamento di RNA nella direzione **5'→3'**, aggiungendo un ribonucleotide alla volta.
+
+Cosa succede durante l'allungamento:
+
+- La **bolla di trascrizione** avanza con l'enzima: il DNA si apre davanti e si richiude dietro.
+- Vengono aggiunti nucleotidi complementari al filamento stampo (A→U, T→A, G→C, C→G — ricorda che nell'RNA la timina è sostituita dall'**uracile**).
+- Il filamento di RNA neosintetizzato viene rilasciato via via che si forma.
+
+Negli eucarioti, mentre l'allungamento è ancora in corso, l'RNA viene già modificato al suo estremo 5' con il **cap di 7-metilguanosina** (una specie di cappuccio protettivo).
+
+---
+
+## Fase 3 — Terminazione
+
+La trascrizione deve fermarsi. Negli eucarioti la terminazione è legata alla **poliadenilazione**:
+
+1. L'RNA polimerasi trascrive una sequenza segnale: **AAUAAA** sull'mRNA.
+2. Enzimi specifici tagliano l'RNA in quel punto.
+3. Viene aggiunta una coda di ~200 adenine chiamata **coda poli-A** all'estremità 3'.
+4. L'RNA polimerasi alla fine si stacca dal DNA.
+
+La coda poli-A e il cap 5' proteggono l'mRNA dalla degradazione e aiutano la sua esportazione dal nucleo al citoplasma.
+
+---
+
+<Diagram caption="Le tre fasi della trascrizione eucariotica" code={`flowchart TB
+  A["INIZIO<br/>Fattori di trascrizione si legano al promotore (TATA box)<br/>Formazione del complesso di pre-inizio (PIC)<br/>RNA polimerasi II si posiziona al sito +1"]
+  B["ALLUNGAMENTO<br/>RNA polimerasi avanza 3'→5' sul filamento stampo<br/>Sintesi dell'RNA 5'→3'<br/>Aggiunta del cap 7-metilguanosina all'estremità 5'"]
+  C["TERMINAZIONE<br/>Riconoscimento del segnale AAUAAA<br/>Taglio dell'RNA e aggiunta della coda poli-A<br/>Distacco dell'RNA polimerasi dal DNA"]
+  A --> B --> C`} />
+
+<Diagram caption="Struttura del promotore e assemblaggio del complesso di pre-inizio" code={`flowchart LR
+  P["Promotore<br/>(regione a monte del gene)"]
+  T["TATA box<br/>(~-25 rispetto al sito +1)"]
+  TF["Fattori di trascrizione<br/>generali (GTF)<br/>es. TFIID, TFIIB, TFIIH"]
+  POL["RNA polimerasi II"]
+  PIC["Complesso di pre-inizio<br/>(PIC)"]
+  INI["Inizio della trascrizione<br/>al sito +1"]
+  P --> T
+  T --> TF
+  TF --> PIC
+  POL --> PIC
+  PIC --> INI`} />
+
+## Guarda il video
+<YouTube id="w0nf13ArkjY" title="La TRASCRIZIONE - da DNA a RNA — Biologia con Giulia" />
+<VideoVisto id="bio-u3-12" />
+
+## Da ricordare
+- La trascrizione ha tre fasi: **inizio** (i fattori di trascrizione guidano l'RNA polimerasi al promotore), **allungamento** (l'RNA polimerasi copia il DNA in RNA), **terminazione** (il segnale AAUAAA porta al taglio e alla coda poli-A).
+- Negli eucarioti l'RNA polimerasi II non si lega da sola al DNA: ha bisogno dei **fattori di trascrizione generali** che si assemblano sulla **TATA box**.
+- L'mRNA eucariotico viene modificato co-trascrizionalmente con un **cap 5'** e una **coda poli-A 3'**, che lo proteggono e ne permettono l'esportazione dal nucleo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione principale dei fattori di trascrizione generali (GTF) nella fase di inizio?" opzioni={["Sintetizzano direttamente il filamento di RNA","Guidano l'RNA polimerasi II al promotore e aiutano a formare il complesso di pre-inizio","Aggiungono la coda poli-A all'estremità 3' dell'mRNA","Rimuovono gli introni dall'RNA pre-messaggero"]} corretta={1} spiegazione="I GTF non sintetizzano RNA: il loro ruolo è riconoscere il promotore (in particolare la TATA box) e reclutare l'RNA polimerasi II per formare il complesso di pre-inizio, rendendo possibile l'avvio della trascrizione." />
+
+<Quiz domanda="In quale direzione l'RNA polimerasi II legge il filamento stampo del DNA durante l'allungamento?" opzioni={["5'→3'","3'→5'","In entrambe le direzioni contemporaneamente","La direzione dipende dal tipo di gene"]} corretta={1} spiegazione="L'RNA polimerasi legge il filamento stampo nella direzione 3'→5' e sintetizza il nuovo filamento di RNA nella direzione 5'→3'. Questa regola è la stessa di tutti gli enzimi che sintetizzano acidi nucleici." />
+
+<Quiz domanda="Quale sequenza segnale nell'mRNA eucariotico indica il sito di taglio e poliadenilazione durante la terminazione?" opzioni={["TATA box","AAUAAA","Cap di 7-metilguanosina","Sequenza di Shine-Dalgarno"]} corretta={1} spiegazione="La sequenza AAUAAA (nella versione RNA del segnale di poliadenilazione) viene riconosciuta da enzimi specifici che tagliano l'mRNA e aggiungono la coda poli-A. La TATA box è un elemento del promotore; il cap è all'estremità 5'; la sequenza di Shine-Dalgarno appartiene ai procarioti." />
+
+<Esercizio problema="Immagina di bloccare con un farmaco la TATA box di un gene: cosa succederebbe alla trascrizione di quel gene? Spiega il ragionamento passaggio per passaggio." soluzione="Se la TATA box è bloccata, il primo fattore di trascrizione generale (TFIID, tramite la sua subunità TBP) non riesce a legarsi al promotore. Di conseguenza il complesso di pre-inizio non si forma, l'RNA polimerasi II non viene reclutata al sito di inizio e la trascrizione del gene non può partire. Il risultato finale è che quel gene non produce mRNA e quindi nessuna proteina codificata da quel gene viene sintetizzata." />
+
+</section>
+
+</RisorsaLayout>

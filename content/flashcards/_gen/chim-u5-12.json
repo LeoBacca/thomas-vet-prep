@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-chim-u5-12-1",
+    "topicId": "chim-u5-12",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: le pirimidine hanno un solo anello (come una ciambella singola), mentre le purine ne hanno due fusi insieme (come due bolle di sapone unite).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Pirimidina = 1 anello a sei posti con 2 azoti → basi C, T, U. Purina = 2 anelli fusi (uno a sei + uno a cinque posti) → basi A, G. Trucco: puri-na rima con 'doppia'. Insieme danno le 5 lettere del codice genetico.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-12-2",
+    "topicId": "chim-u5-12",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "open",
+    "q": "Cos'e un composto aromatico eterociclico? Fai un esempio di base azotata pirimidinica e una purinica, e spiega in breve perche certi aromatici sono tossici.",
+    "answer": "Un composto aromatico eterociclico e un anello aromatico (stabile, come il benzene) in cui almeno un atomo di carbonio e sostituito da un atomo diverso, di solito azoto (N). 'Etero' = diverso, 'ciclico' = ad anello. Esempio pirimidinico: Citosina (C) o Timina (T) o Uracile (U) — hanno un solo anello a sei posti con due azoti. Esempio purinico: Adenina (A) o Guanina (G) — hanno due anelli fusi. Tossicita: gli anelli aromatici sono molto stabili, quindi il corpo fa fatica a smontarli e a eliminarli. Cosi si accumulano e possono risultare tossici o cancerogeni. Un esempio e il benzene, presente nel fumo di sigaretta, tossico per il midollo osseo.",
+    "explain": "Chiave: eterociclico = anello con azoto. Pirimidina (1 anello): C, T, U. Purina (2 anelli fusi): A, G. Aromatici tossici = troppo stabili per essere eliminati.",
+    "tags": ["risposta aperta"]
+  }
+]

@@ -1,0 +1,155 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-23">
+
+## Cos'è l'autofagia?
+
+Immagina di avere in casa una serie di oggetti rotti, mobili vecchi e spazzatura accumulata. Prima o poi devi fare pulizia: butti il rotto, recuperi i materiali ancora usabili e liberi spazio. La cellula fa esattamente la stessa cosa — e questo processo si chiama **autofagia** (dal greco: *auto* = sé stesso, *phagein* = mangiare).
+
+L'autofagia è il sistema con cui la cellula **smonta e ricicla i propri componenti difettosi o in eccesso**: proteine mal ripiegate, organelli danneggiati, patogeni intrappolati. I "rottami" vengono portati al **lisosoma** (il "cassonetto" della cellula, pieno di enzimi digestivi) che li scompone in mattoni riutilizzabili come aminoacidi, lipidi e zuccheri.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'autofagia è la raccolta differenziata interna della cellula: raccoglie i "rifiuti", li porta al centro di riciclaggio (il lisosoma) e recupera il materiale utile.</div>
+
+---
+
+## I tre tipi principali di autofagia
+
+Esistono tre modalità con cui il materiale arriva al lisosoma. Funzionano in modo diverso ma arrivano allo stesso risultato.
+
+### 1. Macroautofagia
+
+È la forma più comune e la più studiata. Funziona così:
+
+1. Attorno al materiale da eliminare si forma una **membrana a doppio strato** chiamata **fagoforo** (o membrana di isolamento).
+2. Il fagoforo si chiude su sé stesso formando un **autofagosoma** — una sorta di sacchetto sigillato con il "rifiuto" dentro.
+3. L'autofagosoma si fonde con un lisosoma, creando un **autolisosoma**.
+4. Gli enzimi lisosomali degradano il contenuto e i componenti utili vengono rilasciati nel citoplasma.
+
+### 2. Microautofagia
+
+Molto più semplice: il lisosoma "ingoia" direttamente piccole porzioni di citoplasma **invaginando** (piegando verso l'interno) la propria membrana, come una bocca che aspira. Niente sacchetti intermedi.
+
+### 3. Autofagia mediata da chaperon (CMA)
+
+Questa è la più selettiva delle tre. Funziona solo su **proteine specifiche** che portano una sequenza amminoacidica riconoscibile (il cosiddetto motivo KFERQ). Ecco il meccanismo:
+
+1. Una proteina chiamata **Hsc70** (una chaperon, cioè una "proteina assistente") riconosce la sequenza KFERQ sulla proteina da eliminare.
+2. Il complesso Hsc70 + proteina-bersaglio viene guidato fino alla **membrana del lisosoma**.
+3. Il recettore **LAMP-2A** sul lisosoma lega il complesso e "tira dentro" la proteina, che viene degradata.
+
+> **Chaperon** = proteine "accompagnatrici" che aiutano altre proteine a piegarsi correttamente o le portano dove devono andare.
+
+---
+
+## La mitofagia: riciclare i mitocondri
+
+I **mitocondri** sono le "centrali elettriche" della cellula. Quando invecchiano o si danneggiano, smettono di funzionare bene e possono addirittura diventare tossici (rilasciano segnali che innescano la morte cellulare). La **mitofagia** è una forma specializzata di macroautofagia che elimina selettivamente i mitocondri difettosi.
+
+Il meccanismo principale coinvolge due proteine:
+- **PINK1**: una chinasi che si accumula sui mitocondri danneggiati (normalmente viene degradata in fretta da quelli sani).
+- **Parkina**: un'ubiquitina-ligasi reclutata da PINK1 che "marca" il mitocondrio con ubiquitina, segnalando agli adattatori dell'autofagosoma di venire a raccoglierlo.
+
+> **Ubiquitina** = piccola proteina usata come "etichetta rossa" per dire alla cellula: "questo va smontato".
+
+---
+
+## I diagrammi
+
+<Diagram caption="Macroautofagia: dal fagoforo all'autolisosoma" code={`flowchart TB
+  A["Danno cellulare o<br/>carenza di nutrienti"] --> B["Formazione del fagoforo<br/>(membrana di isolamento)"]
+  B --> C["Il fagoforo si chiude:<br/>autofagosoma formato"]
+  C --> D["Fusione con il lisosoma:<br/>autolisosoma"]
+  D --> E["Enzimi lisosomali<br/>degradano il contenuto"]
+  E --> F["Mattoni riciclati rilasciati<br/>nel citoplasma (aa, lipidi...)"]`} />
+
+<Diagram caption="I quattro percorsi dell'autofagia a confronto" code={`flowchart LR
+  MAT["Materiale da eliminare"]
+  MAT --> MA["MACROAUTOFAGIA<br/>Fagoforo avvolge il cargo<br/>→ autofagosoma → lisosoma"]
+  MAT --> MI["MICROAUTOFAGIA<br/>Lisosoma invagina<br/>e ingoia direttamente"]
+  MAT --> CMA["CMA<br/>Hsc70 riconosce motivo KFERQ<br/>→ LAMP-2A → dentro il lisosoma"]
+  MAT --> MF["MITOFAGIA<br/>PINK1 accumula sul mit. danneggiato<br/>→ Parkina ubiquitina → autofagosoma"]
+  MA --> L["LISOSOMA<br/>(digestione + riciclo)"]
+  MI --> L
+  CMA --> L
+  MF --> L`} />
+
+---
+
+## Cosa succede quando l'autofagia va storta?
+
+L'autofagia difettosa ha conseguenze gravi. Ecco i principali scenari:
+
+| Problema | Conseguenza |
+|---|---|
+| Autofagia **insufficiente** | Si accumulano proteine mal ripiegate e organelli danneggiati → neurodegenerazione (Parkinson, Alzheimer) |
+| Mitofagia **difettosa** | Mitocondri vecchi non vengono rimossi → stress ossidativo → danni al DNA |
+| Autofagia **eccessiva** | La cellula si "mangia" troppo → morte cellulare (autofagica) |
+| Disfunzione CMA | Proteine tossiche non vengono smaltite → aggregati proteici (es. alfa-sinucleina nel Parkinson) |
+
+<div class="callout">💡 <strong>Da ricordare:</strong> Il Premio Nobel 2016 per la Medicina è stato assegnato a Yoshinori Ohsumi proprio per la scoperta dei meccanismi molecolari dell'autofagia.</div>
+
+---
+
+## Guarda il video
+<YouTube id="oasgwgZu-0k" title="Autofagia e accumuli lisosomali — Agora Scienze Biomediche" />
+<VideoVisto id="bio-u5-23" />
+
+## Da ricordare
+
+- L'autofagia è il sistema di riciclo cellulare: raccoglie componenti danneggiati e li porta al lisosoma per la digestione e il recupero di molecole utili.
+- Esistono tre tipi: **macroautofagia** (autofagosoma), **microautofagia** (invaginazione diretta) e **CMA** (chaperon Hsc70 + recettore LAMP-2A per proteine con motivo KFERQ).
+- Un'autofagia difettosa porta ad accumulo di proteine tossiche e organelli danneggiati, ed è associata a malattie neurodegenerative come Parkinson e Alzheimer.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale struttura si forma nella macroautofagia quando il fagoforo si chiude completamente attorno al materiale da degradare?"
+  opzioni={[
+    "Autolisosoma",
+    "Autofagosoma",
+    "Endosoma tardivo",
+    "Perossisoma"
+  ]}
+  corretta={1}
+  spiegazione="Quando il fagoforo (membrana di isolamento) si chiude, forma l'autofagosoma — un compartimento a doppia membrana che contiene il materiale da degradare. L'autolisosoma si forma solo in seguito, quando l'autofagosoma si fonde con il lisosoma."
+/>
+
+<Quiz
+  domanda="Nell'autofagia mediata da chaperon (CMA), quale recettore presente sulla membrana lisosomale è indispensabile per traslocare le proteine bersaglio nel lume del lisosoma?"
+  opzioni={[
+    "Hsc70",
+    "PINK1",
+    "LAMP-2A",
+    "Parkina"
+  ]}
+  corretta={2}
+  spiegazione="LAMP-2A (Lysosome-Associated Membrane Protein 2A) è il recettore sulla membrana del lisosoma che lega il complesso Hsc70-proteina bersaglio e permette la traslocazione della proteina all'interno del lisosoma. Hsc70 è la chaperon citoplasmatica che riconosce il motivo KFERQ, non il recettore lisosomale."
+/>
+
+<Quiz
+  domanda="In quale malattia neurodegenerativa è stata documentata una disfunzione della mitofagia, con accumulo di mitocondri danneggiati e aggregati di alfa-sinucleina?"
+  opzioni={[
+    "Sclerosi multipla",
+    "Malattia di Parkinson",
+    "Sclerosi laterale amiotrofica (SLA)",
+    "Malattia di Huntington"
+  ]}
+  corretta={1}
+  spiegazione="Nel Parkinson, mutazioni nelle proteine PINK1 e Parkina compromettono la mitofagia, causando accumulo di mitocondri disfunzionali. Inoltre, la disfunzione della CMA porta ad accumulo di alfa-sinucleina, proteina che forma gli aggregati tossici (corpi di Lewy) caratteristici della malattia."
+/>
+
+<Esercizio
+  problema="Descrivi il percorso di una proteina difettosa con motivo KFERQ dalla sua identificazione nel citoplasma fino alla sua degradazione nel lisosoma, specificando i protagonisti molecolari coinvolti ad ogni tappa."
+  soluzione="1) La chaperon citoplasmatica Hsc70 (heat shock cognate 70 kDa) riconosce e si lega alla sequenza KFERQ sulla proteina difettosa. 2) Il complesso Hsc70-proteina viene guidato verso la membrana del lisosoma. 3) Il complesso si lega al recettore LAMP-2A sulla membrana lisosomale; LAMP-2A si oligomerizza per formare il canale di traslocazione. 4) La proteina viene 'srotolata' e traslocata nel lume del lisosoma, mentre Hsc70 rimane sul lato citosolico. 5) All'interno del lisosoma, le proteasi (come la catepsina D) degradano la proteina in aminoacidi che vengono rilasciati nel citoplasma e riutilizzati."
+/>
+
+</section>
+
+</RisorsaLayout>

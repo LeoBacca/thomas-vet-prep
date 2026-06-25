@@ -1,0 +1,10 @@
+{
+ "id": "chim-u3-03",
+ "titolo": "La cinetica chimica: velocità di reazione e fattori che la influenzano",
+ "materia": "chimica",
+ "unita": 3,
+ "slug": "03-la-cinetica-chimica-velocita-di-reazione",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/chimica/u3/03-la-cinetica-chimica-velocita-di-reazione.mdx",
+ "examQuestions": []
+}

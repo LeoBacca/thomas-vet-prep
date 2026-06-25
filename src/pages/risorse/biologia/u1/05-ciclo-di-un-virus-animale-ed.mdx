@@ -1,0 +1,149 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-05">
+
+## Cos'è un virus (in breve)
+
+Un virus non è una cellula. È un pacchetto minuscolo che contiene solo due cose:
+- del **materiale genetico** (DNA o RNA, cioè le "istruzioni")
+- un **guscio proteico** chiamato capside che le protegge
+
+Alcuni virus hanno anche un involucro esterno di lipidi (grassi), chiamato **envelope**, rubato dalla membrana della cellula ospite. I virus non si riproducono da soli: devono **entrare in una cellula** e usare i suoi macchinari per fare copie di sé stessi.
+
+---
+
+## Le tappe del ciclo replicativo
+
+Il ciclo di un virus animale si divide in **7 fasi** ben precise. Pensa a una fabbrica abusiva che si installa in una fabbrica altrui.
+
+### 1. Adsorbimento (attacco)
+
+Il virus riconosce la cellula giusta grazie a **recettori specifici** sulla superficie cellulare. È come una chiave che cerca solo una serratura compatibile. Se la cellula non ha quel recettore, il virus non può entrare.
+
+### 2. Penetrazione (ingresso)
+
+Il virus entra nella cellula. Esistono tre modalità principali:
+- **Fusione dell'envelope** con la membrana cellulare (per i virus con envelope)
+- **Endocitosi**: la cellula "inghiotte" il virus come se fosse cibo, formando una vescicola
+- **Iniezione diretta** del materiale genetico (più rara negli animali)
+
+### 3. Decapsidazione (spogliazione)
+
+Una volta dentro, il capside viene smontato dagli enzimi cellulari. Il materiale genetico viene liberato nel citoplasma (o nel nucleo). È come aprire il pacco e tirare fuori le istruzioni.
+
+### 4. Replicazione del genoma
+
+Il virus usa la cellula ospite per copiare il proprio materiale genetico, producendo tante copie del suo DNA o RNA.
+
+### 5. Sintesi delle proteine virali
+
+Con le stesse istruzioni, la cellula produce le proteine che servono a costruire nuovi virus: le proteine del capside, gli enzimi virali e — se serve — le proteine dell'envelope.
+
+### 6. Assemblaggio
+
+Le copie del genoma e le proteine si assemblano insieme per formare nuove particelle virali complete. Come rimontare tanti pacchi uguali in serie.
+
+### 7. Uscita (rilascio)
+
+I nuovi virus escono dalla cellula in due modi:
+- **Lisi**: la cellula si rompe e libera tutti i virus in una volta (la cellula muore)
+- **Gemmazione (budding)**: i virus escono uno alla volta, avvolgendosi nella membrana cellulare e portandosela dietro come envelope. La cellula può sopravvivere più a lungo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il virus entra, "sequestra" la fabbrica cellulare, produce migliaia di copie di sé stesso, poi esce — distruggendo o indebolendo la cellula ospite.</div>
+
+---
+
+## Diagramma 1 — Le 7 tappe del ciclo virale
+
+<Diagram caption="Ciclo replicativo completo di un virus animale" code={`flowchart TB
+  A["1. Adsorbimento<br/>Il virus si lega al recettore<br/>sulla membrana cellulare"] --> B["2. Penetrazione<br/>Fusione envelope oppure<br/>endocitosi"]
+  B --> C["3. Decapsidazione<br/>Il capside si smonta,<br/>il genoma viene liberato"]
+  C --> D["4. Replicazione del genoma<br/>Copie del DNA/RNA virale<br/>prodotte dalla cellula ospite"]
+  D --> E["5. Sintesi proteica<br/>Ribosomi cellulari producono<br/>proteine del capside ed enzimi"]
+  E --> F["6. Assemblaggio<br/>Genoma + proteine si uniscono<br/>in nuove particelle virali"]
+  F --> G["7. Uscita<br/>Lisi (cellula muore)<br/>oppure gemmazione (budding)"]`} />
+
+---
+
+## Diagramma 2 — Ingresso e uscita a confronto
+
+<Diagram caption="Modalità di ingresso e uscita del virus dalla cellula animale" code={`flowchart LR
+  subgraph INGRESSO["Modalità di ingresso"]
+    I1["Fusione envelope<br/>con membrana"] 
+    I2["Endocitosi<br/>(vescicola)"]
+    I3["Iniezione diretta<br/>del genoma"]
+  end
+  subgraph USCITA["Modalità di uscita"]
+    U1["Lisi<br/>La cellula si rompe<br/>e muore"]
+    U2["Gemmazione<br/>Il virus si avvolge<br/>nella membrana<br/>e la cellula sopravvive"]
+  end
+  INGRESSO --> CICLO["Ciclo<br/>replicativo<br/>interno"]
+  CICLO --> USCITA`} />
+
+---
+
+## Guarda il video
+<YouTube id="CTcZe80W4E0" title="I virus: ciclo replicativo spiegato in modo semplice." />
+<VideoVisto id="bio-u1-05" />
+
+---
+
+## Da ricordare
+
+- Il virus entra solo nelle cellule che hanno il **recettore specifico** compatibile con le sue proteine di superficie.
+- All'interno della cellula ospite il virus non fa nulla da solo: usa i **ribosomi e gli enzimi** della cellula per replicarsi.
+- L'uscita può avvenire per **lisi** (la cellula muore) o per **gemmazione** (il virus si porta via un pezzo di membrana e la cellula può restare viva).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è la prima tappa del ciclo replicativo di un virus animale?"
+  opzioni={[
+    "Decapsidazione: il capside viene smontato dagli enzimi cellulari",
+    "Replicazione: il genoma virale viene copiato nel nucleo",
+    "Adsorbimento: il virus si lega a recettori specifici sulla superficie cellulare",
+    "Gemmazione: il virus fuoriesce avvolgendosi nella membrana plasmatica"
+  ]}
+  corretta={2}
+  spiegazione="L'adsorbimento è il primo passo: il virus riconosce e si lega a recettori specifici presenti sulla membrana della cellula ospite. Senza questo riconoscimento il ciclo non può iniziare."
+/>
+
+<Quiz
+  domanda="Un virus dotato di envelope (involucro lipidico) può entrare nella cellula animale per:"
+  opzioni={[
+    "Solo per lisi della cellula bersaglio",
+    "Fusione del proprio envelope con la membrana plasmatica della cellula",
+    "Trasporto attivo attraverso canali proteici",
+    "Sintesi diretta del capside all'esterno della cellula"
+  ]}
+  corretta={1}
+  spiegazione="I virus con envelope possono fondersi direttamente con la membrana plasmatica, liberando il contenuto virale nel citoplasma. In alternativa possono anche entrare per endocitosi, ma la fusione dell'envelope è la modalità caratteristica di questa categoria."
+/>
+
+<Quiz
+  domanda="Qual è la differenza principale tra la lisi e la gemmazione come meccanismi di uscita virale?"
+  opzioni={[
+    "La lisi avviene solo nei virus a DNA, la gemmazione solo nei virus a RNA",
+    "Nella gemmazione il virus acquista l'envelope, nella lisi no; inoltre nella lisi la cellula muore mentre nella gemmazione può sopravvivere",
+    "La gemmazione distrugge immediatamente la cellula ospite, la lisi no",
+    "Lisi e gemmazione sono due nomi dello stesso processo"
+  ]}
+  corretta={1}
+  spiegazione="Nella gemmazione il virus si avvolge in un pezzo di membrana cellulare (acquisendo l'envelope) e fuoriesce senza rompere la cellula, che può continuare a vivere e a produrre nuovi virus. Nella lisi la cellula si rompe e muore, rilasciando tutti i virus in una sola volta."
+/>
+
+<Esercizio
+  problema="Elenca in ordine le 7 tappe del ciclo replicativo di un virus animale e per ognuna scrivi in una parola cosa succede alla cellula ospite (es. 'viene usata', 'muore', 'non è coinvolta' ecc.)."
+  soluzione="1. Adsorbimento — la cellula viene riconosciuta (recettori usati come aggancio). 2. Penetrazione — la cellula viene 'invasa' (il virus entra per fusione o endocitosi). 3. Decapsidazione — la cellula smonta il capside con i propri enzimi. 4. Replicazione del genoma — la cellula viene sfruttata per copiare il DNA/RNA virale. 5. Sintesi proteica — i ribosomi cellulari producono proteine virali. 6. Assemblaggio — la cellula ospita l'assemblaggio dei nuovi virioni. 7. Uscita — la cellula muore (lisi) oppure perde pezzi di membrana ma sopravvive (gemmazione)."
+/>
+
+</section>
+
+</RisorsaLayout>

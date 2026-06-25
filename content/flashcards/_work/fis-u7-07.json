@@ -1,0 +1,25 @@
+{
+ "id": "fis-u7-07",
+ "titolo": "Ottica: riflessione, rifrazione, indice di rifrazione e lenti",
+ "materia": "fisica",
+ "unita": 7,
+ "slug": "07-ottica-riflessione-rifrazione-indice-di-rifrazione",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u7/07-ottica-riflessione-rifrazione-indice-di-rifrazione.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Perché esiste il fenomeno della dispersione della luce bianca quando questa attraversa un prisma di vetro?",
+   "choices": [
+    "Perché l'indice di rifrazione del mezzo dipende dalla frequenza delle radiazioni elementari incidenti",
+    "Perché la luce ha velocità costante e molto elevata sia nel vuoto che nei mezzi",
+    "Perché in un mezzo trasparente la luce non va in linea retta",
+    "Perché il vetro è un mezzo più denso dell'aria",
+    "In realtà è un fenomeno dovuto ad una percezione distorta dell'occhio"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

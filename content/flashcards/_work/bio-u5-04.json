@@ -1,0 +1,53 @@
+{
+ "id": "bio-u5-04",
+ "titolo": "Potenziale di membrana e potenziale d'azione",
+ "materia": "biologia",
+ "unita": 5,
+ "slug": "04-potenziale-di-membrana-e-potenziale-dazione",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/biologia/u5/04-potenziale-di-membrana-e-potenziale-dazione.mdx",
+ "examQuestions": [
+  {
+   "year": "2011",
+   "q": "L'aumento della velocità di propagazione dell'impulso nervoso lungo l'assone di un neurone motorio è legato:",
+   "choices": [
+    "alla presenza dei nodi di Ranvier",
+    "alla presenza di una guaina mielinica ininterrotta",
+    "alla presenza di ramificazioni dendritiche",
+    "all'assenza della guaina mielinica",
+    "all'aumento del valore soglia di depolarizzazione"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2014",
+   "q": "Nell'uomo che cosa accelera la trasmissione di un segnale in un neurone sensoriale? 1. L'aumento dell'intensità dello stimolo; 2. La riduzione del diametro dell'assone; 3. La mielinizzazione dell'assone",
+   "choices": [
+    "Solo 3",
+    "Solo 1",
+    "Solo 2",
+    "Solo 1 e 3",
+    "Solo 2 e 3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2015",
+   "q": "Quale dei seguenti valori è più vicino al picco di potenziale di azione di un tipico neurone sensoriale umano?",
+   "choices": [
+    "+40 mV",
+    "-30 mV",
+    "0 mV",
+    "-70 mV",
+    "+110 mV"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

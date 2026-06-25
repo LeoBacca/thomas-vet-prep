@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-19-1",
+    "topicId": "bio-u1-19",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: l'RNA è un filamento doppio, proprio come il DNA.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'RNA ha un solo filamento; il DNA ne ha due (doppia elica). Altra differenza chiave: l'RNA usa uracile (U) al posto della timina (T) del DNA.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-19-2",
+    "topicId": "bio-u1-19",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale RNA svolge il ruolo di 'fattorino' che porta i mattoni (amminoacidi) uno per uno al cantiere dove si costruisce la proteina?",
+    "choices": [
+      "mRNA (RNA messaggero)",
+      "tRNA (RNA di trasferimento)",
+      "rRNA (RNA ribosomiale)",
+      "miRNA (micro RNA)"
+    ],
+    "answer": 1,
+    "explain": "Il tRNA è il fattorino: ha un anticodone che si accoppia al codone dell'mRNA e porta uno specifico amminoacido al ribosoma. L'mRNA porta il messaggio genetico (le istruzioni), l'rRNA forma la struttura del ribosoma (il cantiere), il miRNA regola l'espressione genica silenziando certi messaggi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-19-3",
+    "topicId": "bio-u1-19",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Immagina che nella cellula venga bloccata completamente la produzione di rRNA. Cosa succede alla sintesi proteica e perché? (Ragiona ad alta voce, poi confronta con la risposta.)",
+    "answer": "Senza rRNA non si possono formare nuovi ribosomi (o rinnovare quelli esistenti). Il ribosoma e' la 'macchina' che legge l'mRNA e assembla gli amminoacidi in proteina; senza di esso la traduzione si ferma del tutto. Eppure l'rRNA e' classificato come RNA non codificante: dimostra che 'non codificante' non significa 'inutile', ma solo che non viene tradotto direttamente in proteina. Tutte le funzioni cellulari che dipendono dalle proteine (enzimi, struttura, segnali) ne risentirebbero gravemente.",
+    "explain": "Punto chiave: rRNA non codificante non significa non essenziale. E' strutturalmente e cataliticamente indispensabile per la sintesi proteica.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-19-4",
+    "topicId": "bio-u1-19",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale/i dei seguenti acidi nucleici e' coinvolto/a sia nella TRASCRIZIONE che nella TRADUZIONE?\n1. DNA\n2. mRNA\n3. tRNA",
+    "choices": [
+      "Solo il 2 (mRNA)",
+      "Solo il 1 (DNA)",
+      "Solo il 3 (tRNA)",
+      "Solo 1 e 2 (DNA e mRNA)",
+      "Tutti e tre"
+    ],
+    "answer": 0,
+    "explain": "L'mRNA e' l'unico dei tre coinvolto in ENTRAMBI i processi: viene prodotto durante la trascrizione (come copia del DNA) ed e' il protagonista della traduzione (viene letto dal ribosoma per costruire la proteina). Il DNA serve solo come stampo per la trascrizione ma non entra nella traduzione. Il tRNA partecipa solo alla traduzione, non alla trascrizione. Trappola classica: pensare che anche il DNA 'partecipi' alla traduzione perche' contiene l'informazione di partenza — ma fisicamente non lascia il nucleo ne' interagisce col ribosoma.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-19-5",
+    "topicId": "bio-u1-19",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sull'RNA e' FALSA?",
+    "choices": [
+      "Gli rRNA sono componenti strutturali e catalitici del ribosoma",
+      "Gli rRNA sono i prodotti diretti della traduzione, come le proteine",
+      "Il DNA codifica per mRNA, rRNA e tRNA",
+      "I tRNA sono coinvolti nella traduzione portando amminoacidi al ribosoma",
+      "Gli rRNA vengono trascritti nel nucleolo"
+    ],
+    "answer": 1,
+    "explain": "FALSA: gli rRNA NON sono prodotti della traduzione. La traduzione produce PROTEINE leggendo l'mRNA; l'rRNA e' invece un tipo di RNA che forma il ribosoma stesso. Confondere rRNA con proteine e' una trappola classica. Le altre sono tutte vere: il DNA stampo produce tutti i tipi di RNA (trascrizione); i tRNA portano amminoacidi (traduzione); gli rRNA si trascrivono nel nucleolo e formano i ribosomi.",
+    "tags": ["prova d'esame"]
+  }
+]

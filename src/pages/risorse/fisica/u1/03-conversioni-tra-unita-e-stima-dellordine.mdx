@@ -1,0 +1,88 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u1-03">
+
+La stessa quantità si può scrivere con unità diverse: 1 metro = 100 centimetri = 1000 millimetri. **Convertire** vuol dire passare da un'unità all'altra senza cambiare la quantità reale.
+
+## I prefissi: scorciatoie per moltiplicare per 10
+
+Davanti a un'unità si mette un **prefisso** che dice "per quanto moltiplicare":
+
+| Prefisso | Simbolo | Vale |
+|---|---|---|
+| kilo | k | 1000 = 10³ |
+| etto | h | 100 = 10² |
+| deca | da | 10 = 10¹ |
+| deci | d | 0,1 = 10⁻¹ |
+| centi | c | 0,01 = 10⁻² |
+| milli | m | 0,001 = 10⁻³ |
+| micro | µ | 10⁻⁶ |
+| nano | n | 10⁻⁹ |
+
+<div class="callout">💡 <strong>In parole semplici:</strong> convertire = moltiplicare o dividere per una potenza di 10. Vai verso un'unità più piccola? Il numero diventa più grande (moltiplichi). Verso una più grande? Il numero diventa più piccolo (dividi).</div>
+
+<Diagram caption="Scendendo verso unità più piccole si moltiplica" code={`flowchart LR
+  km["km"] -->|"× 1000"| m["m"]
+  m -->|"× 100"| cm["cm"]
+  cm -->|"× 10"| mm["mm"]`} />
+
+<Diagram caption="Esempio: da chilometri a metri" code={`flowchart LR
+  A["2,5 km"] -->|"× 1000"| B["2500 m"]`} />
+
+## Ordine di grandezza
+
+L'**ordine di grandezza** è la potenza di 10 più vicina a un numero: serve per **stimare** velocemente, senza calcoli precisi.
+
+- 0,0042 ≈ 4 × 10⁻³ → ordine di grandezza **10⁻³**
+- 730 ≈ 7 × 10² → ordine di grandezza **10²** (quasi 1000)
+
+## Guarda il video
+
+<YouTube id="FkElaunE4P4" title="Conversione tra unità di misura" />
+
+<VideoVisto id="fis-u1-03" />
+
+## Da ricordare
+
+- Convertire = **moltiplicare/dividere per potenze di 10**.
+- Unità più piccola → numero più grande (e viceversa).
+- Ordine di grandezza = la **potenza di 10 più vicina** (per stimare al volo).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quanti metri sono 3 km?"
+  opzioni={["30 m", "300 m", "3000 m", "0,003 m"]}
+  corretta={2}
+  spiegazione="1 km = 1000 m, quindi 3 km = 3 × 1000 = 3000 m."
+/>
+
+<Quiz
+  domanda="Il prefisso 'milli' (come in millimetro) vale:"
+  opzioni={["10³", "10⁻³", "10⁶", "10⁻⁶"]}
+  corretta={1}
+  spiegazione="'Milli' = un millesimo = 0,001 = 10⁻³."
+/>
+
+<Quiz
+  domanda="Qual è l'ordine di grandezza di 0,0042?"
+  opzioni={["10⁻³", "10³", "10⁻²", "10²"]}
+  corretta={0}
+  spiegazione="0,0042 ≈ 4 × 10⁻³: la potenza di 10 più vicina è 10⁻³."
+/>
+
+<Esercizio
+  problema="Converti 250 cm in metri."
+  soluzione="2,5 m — per passare da cm a m si divide per 100 (250 ÷ 100 = 2,5)."
+/>
+
+</section>
+
+</RisorsaLayout>

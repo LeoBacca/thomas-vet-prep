@@ -1,0 +1,25 @@
+{
+ "id": "chim-u6-01",
+ "titolo": "I gruppi funzionali: cosa sono e perché contano",
+ "materia": "chimica",
+ "unita": 6,
+ "slug": "01-i-gruppi-funzionali-cosa-sono-e",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u6/01-i-gruppi-funzionali-cosa-sono-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2008",
+   "q": "Che cosa si verifica se nella catena di un idrocarburo saturo si sostituisce un atomo di idrogeno con un gruppo funzionale?",
+   "choices": [
+    "Cambiano le proprietà chimiche e fisiche della sostanza e la massa della molecola",
+    "Cambia la massa della molecola, ma le proprietà fisiche della sostanza restano invariate",
+    "Cambia la massa della molecola, ma le proprietà chimiche della sostanza restano invariate",
+    "Cambiano le proprietà fisiche della sostanza, ma non la massa della molecola",
+    "Cambiano le proprietà chimiche della sostanza, ma non la massa della molecola"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

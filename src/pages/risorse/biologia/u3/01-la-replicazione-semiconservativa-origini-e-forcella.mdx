@@ -1,0 +1,96 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-01">
+
+## Cos'è la replicazione del DNA?
+
+Prima di ogni divisione cellulare, la cellula deve copiare tutto il suo DNA. In questo modo ogni cellula figlia riceve una copia completa del patrimonio genetico.
+
+Questo processo si chiama **replicazione del DNA**, e avviene in modo preciso e controllato.
+
+## Perché si dice "semiconservativa"?
+
+Immagina che il DNA sia come una cerniera lampo: due filamenti intrecciati insieme. Quando la cellula replica il DNA:
+
+1. La "cerniera" si apre — i due filamenti si separano.
+2. Ciascun filamento vecchio funge da **stampo** (cioè da modello).
+3. Su ciascuno stampo viene costruito un filamento nuovo, complementare.
+4. Risultato: si ottengono **due molecole di DNA identiche**, ognuna con un filamento vecchio e uno nuovo.
+
+Si chiama **semiconservativa** perché ogni nuova molecola *conserva metà* dell'originale (un filamento su due è quello vecchio).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> È come fotocopiare un foglio scritto su due metà incollate: le stacchi, usi ciascuna metà come modello, e ottieni due fogli completi — ognuno con una metà originale e una nuova.</div>
+
+## Dove inizia la replicazione? Le origini di replicazione
+
+La replicazione non parte da un punto qualsiasi: inizia in punti specifici chiamati **origini di replicazione** (abbreviate *ori*).
+
+- Nei **batteri** (organismi procarioti) c'è **una sola** origine di replicazione — il DNA è circolare e più corto.
+- Negli **eucarioti** (come noi) il DNA è lunghissimo e ci sono **migliaia** di origini di replicazione che partono tutte in contemporanea — altrimenti ci vorrebbero giorni per copiare tutto.
+
+<Diagram caption="Origini di replicazione negli eucarioti: più punti di partenza sulla stessa molecola di DNA" code={`flowchart LR
+  A["DNA parentale (doppia elica)"] --> B["Origine 1 (ori)"]
+  A --> C["Origine 2 (ori)"]
+  A --> D["Origine 3 (ori)"]
+  B --> E["Forcella replicativa 1<br/>si apre in entrambe le direzioni"]
+  C --> F["Forcella replicativa 2<br/>si apre in entrambe le direzioni"]
+  D --> G["Forcella replicativa 3<br/>si apre in entrambe le direzioni"]
+  E --> H["Le forcelle si fondono<br/>quando si incontrano"]
+  F --> H
+  G --> H
+  H --> I["Due molecole di DNA complete"]`} />
+
+## La forcella replicativa
+
+Ogni origine di replicazione si apre in **due direzioni opposte**, formando una struttura a Y chiamata **forcella replicativa** (o forca di replicazione).
+
+Dentro la forcella lavorano diverse proteine, ciascuna con un compito preciso:
+
+- **Elicasi**: separa i due filamenti del DNA (è la "cerniera" che si apre). Rompe i legami a idrogeno tra le basi azotate.
+- **Primasi**: costruisce un breve primer (un piccolo pezzetto di RNA) che serve come punto di attacco per iniziare la sintesi.
+- **DNA polimerasi**: aggiunge i nuovi nucleotidi, costruendo il nuovo filamento. Lavora solo in direzione 5'→3'.
+- **Ligasi**: "incolla" insieme i frammenti di DNA sintetizzati in modo discontinuo (i frammenti di Okazaki).
+
+Poiché la DNA polimerasi lavora solo in un senso (5'→3'), uno dei due filamenti viene sintetizzato in modo continuo (**filamento guida**), l'altro a pezzi (**filamento in ritardo**, con i frammenti di Okazaki).
+
+<Diagram caption="Dettaglio della forcella replicativa: le proteine che lavorano e i due filamenti sintetizzati" code={`flowchart TB
+  A["Elicasi<br/>apre la doppia elica"] --> B["Due filamenti stampo separati"]
+  B --> C["Filamento stampo 3'→5'<br/>(filamento guida)"]
+  B --> D["Filamento stampo 5'→3'<br/>(filamento in ritardo)"]
+  C --> E["Primasi aggiunge primer<br/>poi DNA polimerasi continua"]
+  E --> F["Sintesi CONTINUA 5'→3'<br/>filamento guida"]
+  D --> G["Primasi aggiunge primer<br/>a ogni frammento"]
+  G --> H["Sintesi DISCONTINUA<br/>frammenti di Okazaki 5'→3'"]
+  H --> I["Ligasi unisce i frammenti"]
+  F --> L["Due molecole di DNA<br/>identiche (semiconservative)"]
+  I --> L`} />
+
+## Guarda il video
+<YouTube id="otr2DKsqvxU" title="Il MECCANISMO di REPLICAZIONE del DNA — Biologia con Giulia" />
+<VideoVisto id="bio-u3-01" />
+
+## Da ricordare
+- La replicazione è **semiconservativa**: ogni nuova molecola ha un filamento vecchio e uno nuovo.
+- La replicazione parte dalle **origini di replicazione** (*ori*): una nei batteri, migliaia negli eucarioti.
+- Nella **forcella replicativa** lavorano elicasi, primasi, DNA polimerasi e ligasi; il filamento guida è sintetizzato in modo continuo, quello in ritardo a frammenti (frammenti di Okazaki).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Perché la replicazione del DNA è detta 'semiconservativa'?" opzioni={["Perché si conserva solo la metà del DNA originale e l'altra viene degradata","Perché ogni nuova molecola di DNA è composta da un filamento vecchio e uno nuovo","Perché la replicazione avviene solo a metà del ciclo cellulare","Perché si conservano solo i geni più importanti"] } corretta={1} spiegazione="Semiconservativa significa che ogni nuova doppia elica mantiene (conserva) uno dei due filamenti originali, affiancato da un filamento di nuova sintesi. Non si perde né si degrada alcuna metà." />
+
+<Quiz domanda="Qual è la principale differenza tra batteri ed eucarioti riguardo alle origini di replicazione?" opzioni={["I batteri hanno migliaia di origini, gli eucarioti una sola","Batteri ed eucarioti hanno entrambi una sola origine di replicazione","I batteri hanno una sola origine di replicazione, gli eucarioti ne hanno migliaia","Gli eucarioti non hanno origini di replicazione definite"] } corretta={2} spiegazione="I batteri hanno un DNA circolare più corto: basta un'unica origine di replicazione. Gli eucarioti hanno cromosomi molto lunghi: servono migliaia di origini che partono in contemporanea per completare la copia in tempi ragionevoli." />
+
+<Quiz domanda="Qual è il ruolo dell'elicasi nella replicazione del DNA?" opzioni={["Aggiunge i nuovi nucleotidi al filamento in crescita","Unisce i frammenti di Okazaki tra loro","Costruisce il primer di RNA necessario alla DNA polimerasi","Separa i due filamenti della doppia elica rompendo i legami a idrogeno"] } corretta={3} spiegazione="L'elicasi è l'enzima che 'apre' la doppia elica: rompe i legami a idrogeno tra le basi azotate dei due filamenti, permettendo a ciascuno di diventare uno stampo per la sintesi di un filamento complementare." />
+
+<Esercizio problema="Una cellula di lievito ha 16 cromosomi. Devi spiegare a un compagno perché la replicazione negli eucarioti è molto più veloce di quanto ci si aspetterebbe se ci fosse una sola origine di replicazione per cromosoma. Che cosa gli dici?" soluzione="In ogni cromosoma eucariotico ci sono molte origini di replicazione (non una sola). Tutte si attivano quasi contemporaneamente, così la replicazione avanza su molti tratti del DNA in parallelo. È come costruire un'autostrada aprendo contemporaneamente decine di cantieri lungo il percorso invece di partire solo da un capo: si finisce molto prima. Senza questo sistema, copiare il DNA umano (circa 3 miliardi di coppie di basi) richiederebbe settimane anziché poche ore." />
+
+</section>
+
+</RisorsaLayout>

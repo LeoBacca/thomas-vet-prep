@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-fis-u1-07-1",
+    "topicId": "fis-u1-07",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Scomporre un vettore in componenti significa:",
+    "choices": [
+      "Vederlo come somma di una parte orizzontale (x) e una verticale (y), piu comode da usare nei calcoli",
+      "Dividere il suo modulo per due",
+      "Trovare l'angolo che forma con l'asse x",
+      "Invertire il suo verso"
+    ],
+    "answer": 0,
+    "explain": "Immagina di dover raggiungere un posto in diagonale: anziche muoverti storto, ti chiedi 'quanti passi verso destra (x) e quanti verso l'alto (y)?' Quelle due distanze sono le componenti. La formula: Vx = V · cos θ (orizzontale) e Vy = V · sin θ (verticale). Si scompone proprio per semplificare i conti.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u1-07-2",
+    "topicId": "fis-u1-07",
+    "materia": "fisica",
+    "unita": 1,
+    "type": "open",
+    "q": "Un vettore V ha modulo 10 e forma un angolo θ = 30° con l'asse orizzontale. Quanto valgono la componente orizzontale Vx e quella verticale Vy? (cos 30° ≈ 0,87; sin 30° = 0,5)",
+    "answer": "Vx = V · cos θ = 10 · 0,87 = 8,7. Vy = V · sin θ = 10 · 0,5 = 5. Il vettore 'storto' si traduce in 8,7 unita verso destra e 5 unita verso l'alto: i due pezzi insieme ricostruiscono il vettore originale.",
+    "explain": "Regola chiave: orizzontale → coseno, verticale → seno. L'angolo θ si misura sempre rispetto all'asse x.",
+    "tags": ["risposta aperta"]
+  }
+]

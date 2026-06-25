@@ -1,0 +1,85 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u1-02">
+
+Una **grandezza fisica** è tutto ciò che si può **misurare**: la lunghezza, la massa, il tempo, la temperatura… Il colore o la simpatia non sono grandezze fisiche perché non si misurano con un numero.
+
+**Misurare** vuol dire confrontare una cosa con un campione di riferimento, l'**unità di misura**. Per questo una misura non è mai solo un numero: è sempre **numero + unità**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> "2" non dice niente. "2 metri" sì. Scrivere l'unità accanto al numero è obbligatorio, sempre.</div>
+
+<Diagram caption="Misurare = associare un numero e un'unità a una grandezza" code={`flowchart LR
+  G["Grandezza fisica<br/>(es. lunghezza)"] -->|"la misuro"| M["Numero + Unità<br/>(es. 2 metri)"]`} />
+
+## Il Sistema Internazionale (SI)
+
+Per capirsi in tutto il mondo si usa lo stesso "vocabolario" di unità: il **Sistema Internazionale**. Ha **7 grandezze fondamentali**, da cui nascono tutte le altre.
+
+<Diagram caption="Le 7 grandezze fondamentali del SI e le loro unità" code={`flowchart TB
+  S["Sistema Internazionale (SI)"] --> F["7 grandezze fondamentali"]
+  F --> L["lunghezza → metro (m)"]
+  F --> M["massa → chilogrammo (kg)"]
+  F --> T["tempo → secondo (s)"]
+  F --> K["temperatura → kelvin (K)"]
+  F --> A["corrente elettrica → ampere (A)"]
+  F --> N["quantità di sostanza → mole (mol)"]
+  F --> C["intensità luminosa → candela (cd)"]`} />
+
+## Grandezze derivate
+
+Tutte le altre grandezze si ottengono **combinando** quelle fondamentali, e si chiamano **derivate**:
+
+- **velocità** = lunghezza ÷ tempo → si misura in **m/s**
+- **area** = lunghezza × lunghezza → **m²**
+- **volume** = lunghezza × lunghezza × lunghezza → **m³**
+
+## Guarda il video
+
+<YouTube id="jm0LCEjOwOo" title="Grandezze e unità di misura — spiegazione semplice" />
+
+<VideoVisto id="fis-u1-02" />
+
+## Da ricordare
+
+- Grandezza fisica = qualcosa che si può **misurare**.
+- Una misura è **sempre** numero **+** unità.
+- Il SI ha **7 grandezze fondamentali**; le altre sono **derivate**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è l'unità di misura della massa nel Sistema Internazionale?"
+  opzioni={["il metro", "il chilogrammo", "il litro", "il newton"]}
+  corretta={1}
+  spiegazione="La massa nel SI si misura in chilogrammi (kg). Il metro è la lunghezza, il litro non è del SI, il newton è la forza."
+/>
+
+<Quiz
+  domanda="Quale di queste misure è scritta in modo corretto?"
+  opzioni={["5", "5 metri", "metri", "cinque"]}
+  corretta={1}
+  spiegazione="Una misura ha sempre numero + unità: '5 metri'. Il numero da solo non basta."
+/>
+
+<Quiz
+  domanda="La velocità (m/s) è una grandezza:"
+  opzioni={["fondamentale", "derivata", "senza unità", "non misurabile"]}
+  corretta={1}
+  spiegazione="È derivata: nasce combinando lunghezza e tempo (metri diviso secondi)."
+/>
+
+<Esercizio
+  problema="Indica grandezza fondamentale e unità SI del tempo."
+  soluzione="Il tempo è una grandezza fondamentale e nel SI si misura in secondi (s)."
+/>
+
+</section>
+
+</RisorsaLayout>

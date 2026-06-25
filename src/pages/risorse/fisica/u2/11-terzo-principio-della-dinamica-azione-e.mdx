@@ -1,0 +1,127 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-11">
+
+## Cos'è il terzo principio della dinamica?
+
+Il terzo principio della dinamica si chiama anche **principio di azione e reazione**.
+
+Lo ha formulato Isaac Newton e dice una cosa semplice:
+
+> Quando un corpo esercita una forza su un altro corpo, quel secondo corpo esercita una forza uguale e contraria sul primo.
+
+In pratica: le forze non esistono mai da sole. Arrivano sempre in coppia.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Se spingi un muro, il muro spinge te con la stessa forza — solo nella direzione opposta.</div>
+
+---
+
+## Come funziona, step by step
+
+- **Corpo A** esercita una forza su **Corpo B** → questa è la forza di **azione**.
+- **Corpo B** esercita una forza su **Corpo A** → questa è la forza di **reazione**.
+- Le due forze hanno lo **stesso modulo** (stessa intensità) e la **stessa direzione**, ma **verso opposto**.
+- Le due forze agiscono su corpi **diversi**: non si annullano tra loro.
+
+---
+
+## Esempi di tutti i giorni
+
+**Camminare:**
+Spingi il pavimento all'indietro con il piede (azione). Il pavimento spinge te in avanti con la stessa forza (reazione). Ecco perché avanzi.
+
+**Nuotare:**
+Le braccia spingono l'acqua all'indietro (azione). L'acqua spinge il corpo in avanti (reazione).
+
+**Razzo nello spazio:**
+Il motore espelle gas verso il basso (azione). Il gas spinge il razzo verso l'alto (reazione). Funziona anche nel vuoto, perché non ha bisogno di "appoggiarsi" a niente.
+
+**Pallone che rimbalza:**
+Il pallone colpisce il pavimento (azione). Il pavimento spinge il pallone verso l'alto (reazione).
+
+---
+
+## Attenzione: le forze agiscono su corpi diversi!
+
+Un errore comune è pensare che azione e reazione si annullino. **Non è così.**
+
+Per annullarsi, due forze devono agire sullo **stesso** corpo. Qui invece:
+- la forza di azione agisce sul corpo B
+- la forza di reazione agisce sul corpo A
+
+Sono su corpi diversi, quindi non si cancellano.
+
+<Diagram caption="Azione e reazione tra due corpi" code={`flowchart LR
+  A["Corpo A<br/>applica forza →"] -->|"Forza di AZIONE"| B["Corpo B"]
+  B -->|"Forza di REAZIONE"| A["Corpo A<br/>← riceve forza"]`} />
+
+<Diagram caption="Esempio: piede e pavimento mentre cammini" code={`flowchart TB
+  P["Piede<br/>spinge il pavimento INDIETRO"] -->|"Azione"| F["Pavimento"]
+  F -->|"Reazione"| P2["Corpo in avanti<br/>spinto dal pavimento"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="rEeY3fOFNJU" title="Il terzo principio della dinamica (azione e reazione)" />
+<VideoVisto id="fis-u2-11" />
+
+---
+
+## Da ricordare
+- Ogni forza ha una forza uguale e contraria: mai una senza l'altra.
+- Azione e reazione hanno stesso modulo e stessa direzione, ma verso opposto.
+- Le due forze agiscono su corpi **diversi**, quindi non si annullano.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un nuotatore spinge l'acqua all'indietro con le braccia. Cosa succede secondo il terzo principio della dinamica?"
+  opzioni={[
+    "L'acqua non reagisce perché è un liquido",
+    "L'acqua spinge il nuotatore in avanti con una forza uguale e contraria",
+    "L'acqua spinge il nuotatore in avanti con una forza maggiore",
+    "Le due forze si annullano e il nuotatore resta fermo"
+  ]}
+  corretta={1}
+  spiegazione="Secondo il terzo principio, l'acqua esercita sul nuotatore una forza uguale in modulo e opposta in verso rispetto a quella che il nuotatore esercita sull'acqua. Per questo il nuotatore avanza."
+/>
+
+<Quiz
+  domanda="Azione e reazione si annullano tra loro?"
+  opzioni={[
+    "Sì, sempre, per questo i corpi restano spesso fermi",
+    "Sì, ma solo se i corpi hanno la stessa massa",
+    "No, perché agiscono su corpi diversi",
+    "No, perché hanno intensità diverse"
+  ]}
+  corretta={2}
+  spiegazione="Due forze si annullano solo se agiscono sullo stesso corpo. Azione e reazione agiscono su corpi diversi (A su B e B su A), quindi non si annullano mai tra loro."
+/>
+
+<Quiz
+  domanda="Un razzo nello spazio espelle gas verso il basso. Qual è la forza di reazione?"
+  opzioni={[
+    "Il gas che spinge il razzo verso il basso",
+    "L'aria esterna che frena il razzo",
+    "Il gas che spinge il razzo verso l'alto",
+    "La gravità che attira il razzo verso la Terra"
+  ]}
+  corretta={2}
+  spiegazione="Il razzo espelle gas verso il basso (azione). Per il terzo principio, il gas esercita sul razzo una forza uguale e contraria, cioè verso l'alto (reazione). Ecco come funziona la propulsione a razzo."
+/>
+
+<Esercizio
+  problema="Sei su un pattino a rotelle e spingi un muro con le mani. Descrivi la coppia azione-reazione e spiega perché tu ti allontani dal muro."
+  soluzione="Quando spingi il muro con le mani, eserciti una forza sul muro (azione) diretta verso il muro. Per il terzo principio della dinamica, il muro esercita su di te una forza uguale in modulo ma di verso opposto (reazione), cioè diretta lontano dal muro. Poiché sei su pattini (poco attrito), questa forza di reazione ti accelera e ti fa allontanare dal muro."
+/>
+
+</section>
+
+</RisorsaLayout>

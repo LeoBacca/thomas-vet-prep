@@ -1,0 +1,25 @@
+{
+ "id": "fis-u4-01",
+ "titolo": "Onde meccaniche e oscillatore armonico",
+ "materia": "fisica",
+ "unita": 4,
+ "slug": "01-onde-meccaniche-e-oscillatore-armonico",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u4/01-onde-meccaniche-e-oscillatore-armonico.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "Due lampadari di una cattedrale, di peso e forma diversi, sono appesi a due catene di lunghezza disuguale. Nello spolverarli il sacrestano li fa leggermente oscillare e ne cronometra i periodi di oscillazione. Cosa ne può dedurre?",
+   "choices": [
+    "I periodi di oscillazione dipendono dalla lunghezza delle catene",
+    "I periodi di oscillazione dipendono dal peso dei lampadari",
+    "I periodi di oscillazione dipendono dalla lunghezza delle catene e dal peso dei lampadari",
+    "I periodi di oscillazione dipendono dalla forma e dal peso dei lampadari",
+    "I periodi di oscillazione dipendono solo dalla spinta iniziale"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

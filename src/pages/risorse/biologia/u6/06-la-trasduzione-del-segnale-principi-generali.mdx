@@ -1,0 +1,126 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u6-06">
+
+## Cos'è la trasduzione del segnale?
+
+Immagina di ricevere un SMS. Il telefono vibra (il segnale arriva), tu lo leggi e decidi di alzarti per aprire la porta (la risposta). Tra la vibrazione e l'azione c'è tutta una catena di eventi dentro di te.
+
+Nelle cellule funziona esattamente così. Un segnale arriva dall'esterno (una molecola, un ormone, un neurotrasmettitore), colpisce la cellula e scatena una serie di reazioni interne che portano a una risposta concreta: produrre una proteina, dividersi, spostarsi, morire.
+
+Questa catena di reazioni interne si chiama **trasduzione del segnale** ("trasdurre" = convertire un segnale da una forma a un'altra).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La trasduzione del segnale è il modo in cui la cellula "legge" un messaggio esterno e lo trasforma in un'azione concreta al suo interno.</div>
+
+---
+
+## I tre passi fondamentali
+
+Ogni trasduzione del segnale segue sempre tre fasi:
+
+1. **Ricezione** — Una molecola segnale (il **ligando**, es. un ormone) si lega a un **recettore** sulla superficie cellulare o all'interno della cellula. Il recettore è come la serratura, il ligando è la chiave.
+
+2. **Trasduzione** — Il recettore attivato passa il messaggio a una serie di proteine intermediarie, una dopo l'altra. Questa catena si chiama **cascata di segnalazione**. Ogni proteina attiva la successiva, spesso attaccandole sopra un gruppo fosfato (questo passaggio si chiama **fosforilazione**).
+
+3. **Risposta** — Alla fine della cascata, la cellula esegue un'azione: attiva un gene, produce un enzima, modifica il proprio comportamento.
+
+---
+
+## Perché una cascata e non un segnale diretto?
+
+Sembra un giro lungo, ma serve a due cose fondamentali:
+
+- **Amplificazione**: ogni step della cascata può attivare decine o centinaia di molecole. Un solo segnale esterno diventa un'azione potente. È come una valanga: una piccola spinta in cima scatena tonnellate di neve a valle.
+
+- **Regolazione fine**: la cellula può accelerare, frenare o spegnere il segnale in molti punti diversi della cascata.
+
+---
+
+## I protagonisti principali: proteine chinasi e secondi messaggeri
+
+### Proteine chinasi (kinasi)
+
+Le **chinasi** sono enzimi che trasferiscono un gruppo fosfato (da una molecola di ATP) su un'altra proteina, **attivandola**. Sono le "staffette" della cascata. Una chinasi attivata ne attiva un'altra, e via così.
+
+### Secondi messaggeri
+
+Alcune cascate usano piccole molecole che si diffondono rapidamente nel citoplasma, dette **secondi messaggeri**. Amplificano il segnale molto velocemente.
+
+I più importanti sono:
+- **cAMP** (adenosina monofosfato ciclico): prodotto dall'enzima adenilato ciclasi, attiva la proteina chinasi A (PKA).
+- **IP3 e DAG**: derivano dal taglio di un fosfolipide di membrana; IP3 libera calcio dal reticolo endoplasmatico.
+- **Ca²⁺** (ioni calcio): veri e propri interruttori biologici; attivano moltissimi processi.
+
+---
+
+## La via della proteina G: un esempio classico
+
+Una delle cascate più studiate parte dai **recettori accoppiati a proteina G** (GPCR). Funziona così:
+
+1. Il ligando si lega al recettore GPCR sulla membrana.
+2. Il recettore attiva la **proteina G** (una proteina che lega GTP).
+3. La proteina G attiva l'enzima **adenilato ciclasi**.
+4. L'adenilato ciclasi produce tantissime molecole di **cAMP** (amplificazione!).
+5. Il cAMP attiva la **PKA** (proteina chinasi A).
+6. La PKA fosforila proteine bersaglio → risposta cellulare.
+
+<Diagram caption="La via della proteina G: dal ligando alla risposta cellulare" code={`flowchart TB
+  A["Ligando (es. adrenalina)<br/>si lega al recettore GPCR"] --> B["Il recettore attiva<br/>la Proteina G"]
+  B --> C["La Proteina G attiva<br/>l'Adenilato Ciclasi"]
+  C --> D["Produzione di cAMP<br/>(secondo messaggero)"]
+  D --> E["Attivazione della<br/>Proteina Chinasi A (PKA)"]
+  E --> F["Fosforilazione di proteine bersaglio"]
+  F --> G["Risposta cellulare<br/>(es. aumento glicemia, contrazione)"]`} />
+
+---
+
+## La cascata delle MAP chinasi: un altro esempio importante
+
+Molti fattori di crescita usano la **via delle MAP chinasi** (anche detta via RAS-MAPK). È fondamentale per la proliferazione cellulare.
+
+1. Un fattore di crescita si lega al recettore tirosin-chinasico (RTK) in membrana.
+2. Il recettore si **autofosforila** (si attiva da solo).
+3. Viene attivata la piccola proteina **RAS**.
+4. RAS avvia una cascata: **RAF → MEK → ERK** (tutte chinasi).
+5. ERK entra nel nucleo e attiva geni per la divisione cellulare.
+
+<Diagram caption="Cascata RAS-MAPK: dal recettore tirosin-chinasico all'attivazione genica" code={`flowchart TB
+  A["Fattore di crescita<br/>lega il recettore RTK"] --> B["Autofosforilazione del recettore<br/>(attivazione)"]
+  B --> C["Attivazione di RAS<br/>(proteina legante GTP)"]
+  C --> D["RAF viene fosforilata<br/>(prima chinasi della cascata)"]
+  D --> E["MEK viene fosforilata<br/>(seconda chinasi)"]
+  E --> F["ERK viene fosforilata<br/>(terza chinasi)"]
+  F --> G["ERK entra nel nucleo"]
+  G --> H["Attivazione di geni<br/>per crescita e divisione"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="pX4uPnBk6u8" title="La TRASDUZIONE del SEGNALE - Biologia con Giulia" />
+<VideoVisto id="bio-u6-06" />
+
+## Da ricordare
+- La trasduzione del segnale converte un messaggio esterno in una risposta cellulare attraverso tre fasi: ricezione, trasduzione, risposta.
+- Le cascate di segnalazione amplificano il segnale e permettono una regolazione precisa: le chinasi fosforilano (attivano) proteine a catena, mentre i secondi messaggeri (cAMP, Ca²⁺) diffondono rapidamente il segnale nel citoplasma.
+- Due vie fondamentali da conoscere: la via della proteina G (usa cAMP come secondo messaggero) e la via RAS-MAPK (RAF → MEK → ERK), cruciale per la divisione cellulare.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione principale di un secondo messaggero nella trasduzione del segnale?" opzioni={["Legare il ligando sulla superficie cellulare","Trasportare il segnale verso cellule vicine","Amplificare e diffondere rapidamente il segnale all'interno del citoplasma","Degradare il recettore dopo l'attivazione"]} corretta={2} spiegazione="I secondi messaggeri (come cAMP o Ca²⁺) sono piccole molecole prodotte all'interno della cellula che si diffondono rapidamente nel citoplasma amplificando il segnale originale. Non legano il ligando (lo fa il recettore) e non trasportano segnali verso altre cellule." />
+
+<Quiz domanda="Nella via della proteina G, quale enzima produce il cAMP?" opzioni={["Proteina chinasi A (PKA)","Fosfolipasi C","Adenilato ciclasi","Proteina G stessa"]} corretta={2} spiegazione="L'adenilato ciclasi è l'enzima che, attivato dalla proteina G, converte l'ATP in cAMP (adenosina monofosfato ciclico). Il cAMP è il secondo messaggero che poi attiva la PKA." />
+
+<Quiz domanda="Nella cascata RAS-MAPK, qual è l'ordine corretto delle chinasi attivate?" opzioni={["MEK → RAF → ERK","ERK → MEK → RAF","RAF → MEK → ERK","RAS → ERK → RAF"]} corretta={2} spiegazione="L'ordine corretto è RAF → MEK → ERK. RAS attiva RAF (prima chinasi), RAF fosforila MEK (seconda chinasi), MEK fosforila ERK (terza chinasi) che poi entra nel nucleo per attivare geni della proliferazione cellulare." />
+
+<Esercizio problema="Un farmaco blocca la proteina G impedendole di attivare l'adenilato ciclasi. Quali conseguenze avrà sulla via di segnalazione? In che modo questo potrebbe essere utile in medicina?" soluzione="Se la proteina G è bloccata, l'adenilato ciclasi non viene attivata e non produce cAMP. Senza cAMP, la PKA rimane inattiva e non fosforila le sue proteine bersaglio, quindi la cascata di segnalazione si blocca a monte. La risposta cellulare non avviene. In medicina questo è utile per bloccare segnali indesiderati: ad esempio, alcuni farmaci antipertensivi e betabloccanti agiscono proprio inibendo recettori accoppiati a proteina G (come i recettori beta-adrenergici) per ridurre la frequenza cardiaca e la pressione arteriosa." />
+
+</section>
+
+</RisorsaLayout>

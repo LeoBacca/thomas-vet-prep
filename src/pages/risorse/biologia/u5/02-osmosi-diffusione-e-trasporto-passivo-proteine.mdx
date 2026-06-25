@@ -1,0 +1,108 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-02">
+
+## Come passano le sostanze attraverso la membrana?
+
+La membrana cellulare è come il cancello di una villa: lascia entrare e uscire alcune cose, non tutte. Le sostanze possono attraversarla in due modi principali: **senza consumare energia** (trasporto passivo) o consumandola (trasporto attivo). In questa scheda parliamo solo del primo caso.
+
+Il trasporto passivo si divide in tre meccanismi: **diffusione semplice**, **diffusione facilitata** e **osmosi**.
+
+---
+
+## Diffusione semplice
+
+Immagina di versare una goccia di colorante in un bicchiere d'acqua: il colorante si distribuisce da solo, da dove ce n'è di più verso dove ce n'è di meno. Questo è esattamente ciò che succede in biologia.
+
+La **diffusione semplice** è il movimento spontaneo di molecole **da una zona ad alta concentrazione verso una zona a bassa concentrazione** — seguono il cosiddetto **gradiente di concentrazione** (= la differenza di concentrazione tra i due lati della membrana).
+
+Non serve energia: le molecole si muovono da sole, come l'acqua che scende da un piano alto.
+
+**Chi passa con la diffusione semplice?**
+- Molecole piccole e non polari (senza cariche): O₂, CO₂, lipidi semplici
+- Molecole talmente piccole da sgusciare tra i fosfolipidi della membrana
+
+**Chi NON passa:** ioni (Na⁺, K⁺, Cl⁻), glucosio, proteine — troppo grandi o carichi.
+
+---
+
+## Osmosi — la diffusione dell'acqua
+
+L'osmosi è un caso speciale di diffusione: riguarda **solo l'acqua**.
+
+L'acqua si muove attraverso la membrana da dove c'è **più acqua** (soluzione meno concentrata = ipotonica) verso dove c'è **meno acqua** (soluzione più concentrata = ipertonica). Si muove attraverso canali proteici specializzati chiamati **acquaporine**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> l'acqua va sempre verso il lato "più salato", cercando di bilanciare le concentrazioni. È come quando metti il sale su una fetta di cetriolo: l'acqua esce dal cetriolo verso il sale.</div>
+
+**Tre scenari per una cellula:**
+- **Soluzione isotonica** (stessa concentrazione dentro e fuori): nessun movimento netto di acqua, la cellula sta bene.
+- **Soluzione ipotonica** (meno soluti fuori): l'acqua entra nella cellula — la cellula si gonfia e può scoppiare (lisi).
+- **Soluzione ipertonica** (più soluti fuori): l'acqua esce dalla cellula — la cellula si raggrinzisce (plasmolisi).
+
+---
+
+## Diffusione facilitata — servono le proteine
+
+Alcune molecole importanti (glucosio, aminoacidi, ioni) non riescono a passare da sole attraverso il doppio strato lipidico: sono troppo grandi o troppo polari. Hanno bisogno di un "aiuto" proteico.
+
+Esistono due tipi di proteine di trasporto:
+
+**1. Proteine canale (o canali ionici)**
+Sono come tunnel fissi nella membrana. Lasciano passare specifici ioni (Na⁺, K⁺, Cl⁻) in modo selettivo. Alcuni canali sono sempre aperti (canali "leak"), altri si aprono solo su stimolo (canali "gate" — si aprono come una porta a dondolo quando arriva il segnale giusto).
+
+**2. Proteine trasportatrici (carrier)**
+Funzionano come un taxi: la molecola si lega alla proteina, la proteina cambia forma (si "piega"), e rilascia la molecola dall'altro lato. Non consumano energia — la molecola segue comunque il gradiente. Esempi: GLUT1 e GLUT4 per il trasporto del glucosio.
+
+**Differenza chiave:**
+- Canale = tunnel sempre (o quasi sempre) aperto, passaggio rapido
+- Carrier = cambio di forma, passaggio più lento ma selettivo
+
+---
+
+<Diagram caption="I tre meccanismi di trasporto passivo attraverso la membrana" code={`flowchart TB
+  A["Trasporto passivo<br/>(nessun consumo di ATP)"] --> B["Diffusione semplice<br/>es. O₂, CO₂"]
+  A --> C["Osmosi<br/>solo acqua — tramite acquaporine"]
+  A --> D["Diffusione facilitata<br/>es. glucosio, ioni"]
+  D --> E["Proteine canale<br/>tunnel selettivo per ioni"]
+  D --> F["Proteine carrier<br/>cambio di forma, trasporta molecole polari"]
+  B --> G["Direzione: da alta a bassa concentrazione"]
+  C --> G
+  E --> G
+  F --> G`} />
+
+<Diagram caption="Cosa succede a una cellula animale in soluzioni con diverse concentrazioni (osmosi)" code={`flowchart LR
+  A["Soluzione isotonica<br/>concentrazione uguale<br/>dentro e fuori"] --> B["Cellula normale<br/>nessun movimento netto di acqua"]
+  C["Soluzione ipotonica<br/>più diluita fuori"] --> D["Acqua entra nella cellula<br/>cellula si gonfia — rischio lisi"]
+  E["Soluzione ipertonica<br/>più concentrata fuori"] --> F["Acqua esce dalla cellula<br/>cellula si raggrinzisce — plasmolisi"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="ELSZbDGMoAM" title="Trasporti passivi: diffusione semplice, facilitata e osmosi" />
+<VideoVisto id="bio-u5-02" />
+
+## Da ricordare
+- Il trasporto passivo non consuma energia: le molecole seguono sempre il gradiente, cioè si spostano da dove sono di più verso dove sono di meno.
+- L'osmosi è la diffusione dell'acqua: entra nella cellula se fuori c'è più soluto (ipertonico), esce se fuori c'è meno soluto (ipotonico).
+- Le proteine canale formano tunnel per ioni; i carrier cambiano forma per traghettare molecole più grandi come il glucosio — entrambi senza consumare ATP.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una cellula viene immersa in una soluzione ipertonica. Cosa succede?" opzioni={["L'acqua entra nella cellula e la fa gonfiare","L'acqua esce dalla cellula e la fa raggrinzire","Non avviene nessun movimento di acqua","La cellula consuma ATP per espellere l'acqua"]} corretta={1} spiegazione="In una soluzione ipertonica ci sono più soluti fuori che dentro la cellula, quindi la concentrazione di acqua è più alta dentro. L'acqua esce per osmosi seguendo il gradiente, e la cellula si raggrinzisce (plasmolisi)." />
+
+<Quiz domanda="Quale delle seguenti molecole attraversa la membrana per diffusione semplice?" opzioni={["Glucosio","Ione sodio (Na⁺)","Anidride carbonica (CO₂)","Aminoacido"]} corretta={2} spiegazione="CO₂ è una molecola piccola e apolare: riesce a sgusciare tra i fosfolipidi senza bisogno di proteine di trasporto. Il glucosio e gli aminoacidi sono polari e usano carrier; gli ioni come Na⁺ usano canali ionici." />
+
+<Quiz domanda="Qual è la differenza principale tra una proteina canale e una proteina carrier (trasportatrice)?" opzioni={["Il canale consuma ATP, il carrier no","Il canale forma un tunnel e il passaggio è rapido; il carrier cambia forma ed è più lento","Il carrier trasporta solo ioni, il canale trasporta solo glucosio","Sono la stessa cosa, solo con nomi diversi"]} corretta={1} spiegazione="La proteina canale forma un tunnel fisso attraverso la membrana, permettendo il passaggio rapido di ioni specifici. La proteina carrier si lega alla molecola, cambia conformazione e la rilascia dall'altro lato: meccanismo più lento ma efficace per molecole polari come il glucosio. Nessuno dei due consuma ATP." />
+
+<Esercizio problema="Spiega con parole tue perché una cellula vegetale immersa in acqua distillata (soluzione ipotonica) non scoppia come farebbe una cellula animale nelle stesse condizioni." soluzione="L'acqua distillata è ipotonica rispetto al contenuto della cellula, quindi l'acqua entra per osmosi e la cellula si gonfia. La cellula animale, priva di parete cellulare, può arrivare a scoppiare (lisi osmotica). La cellula vegetale invece è circondata da una parete cellulare rigida di cellulosa: quando la cellula si gonfia, la parete oppone resistenza (pressione di turgore) e impedisce la rottura. La cellula diventa semplicemente turgida — anzi, questa condizione è normale e necessaria per mantenere il turgore dei tessuti vegetali." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-bio-u3-05-1",
+    "topicId": "bio-u3-05",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: i telomeri sono sequenze di DNA ripetute alle estremita dei cromosomi che proteggono i geni dall'accorciamento, ma non contengono informazioni genetiche utili.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Esatto. I telomeri sono come i cappuccini di plastica alle estremita di una stringa da scarpe: si consumano un po' ad ogni divisione cellulare (50-200 basi perse ogni volta), proteggendo il 'tessuto importante' (i geni veri) dal disfacimento. La sequenza ripetuta negli umani e TTAGGG.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-05-2",
+    "topicId": "bio-u3-05",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Un ricercatore studia due tipi di cellule umane: cellule muscolari adulte e cellule staminali. Quale delle due ha la telomerasi attiva e perche? Cosa succederebbe a una cellula muscolare che perdesse completamente i telomeri?",
+    "answer": "Le cellule staminali hanno la telomerasi attiva: devono dividersi molte volte per rinnovare i tessuti, quindi hanno bisogno di un meccanismo che riallunga i telomeri dopo ogni divisione. La telomerasi usa un proprio RNA interno come stampo per aggiungere nuove ripetizioni TTAGGG all'estremita del cromosoma. Le cellule muscolari adulte invece hanno pochissima o nessuna telomerasi: i loro telomeri si accorciano ad ogni divisione. Quando i telomeri raggiungono una lunghezza critica, la cellula percepisce il segnale come 'danno al DNA' e entra in senescenza replicativa: smette definitivamente di dividersi ma non muore subito (a differenza dell'apoptosi). Questo fenomeno, detto limite di Hayflick, spiega perche le cellule normali si dividono al massimo 50-70 volte.",
+    "explain": "Telomerasi attiva = cellule staminali, germinali e tumorali. Telomero critico = senescenza replicativa (blocco divisione, non morte). Senescenza ≠ apoptosi.",
+    "tags": ["risposta aperta"]
+  }
+]

@@ -1,0 +1,103 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u5-05">
+
+## Il calore si sposta: come?
+
+Quando tocchi una padella calda, la mano si scalda subito. Quando apri il forno, senti il caldo arrivare da lontano senza toccare nulla. Quando l'acqua in pentola bolle, muove continuamente in su e in giù.
+
+Questi tre esempi rappresentano i **tre modi in cui il calore si trasferisce**: conduzione, convezione e irraggiamento. Non si può scegliere uno solo: la natura li usa tutti e tre, spesso insieme.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il calore passa sempre da dove fa più caldo a dove fa più freddo — e lo fa in tre modi diversi a seconda di cosa c'è in mezzo.</div>
+
+---
+
+## 1. Conduzione
+
+La conduzione avviene nei **solidi** (e in parte nei liquidi fermi). Il calore si trasmette di molecola in molecola, come una staffetta: la molecola calda vibra forte, urta quella vicina, e le passa energia.
+
+**Esempio concreto:** tieni un cucchiaio di metallo in una tazza di tè caldo. Dopo un po' anche il manico si scalda, anche se non era nell'acqua.
+
+- I **metalli** conducono bene il calore (buoni conduttori).
+- Il **legno, la plastica, l'aria** conducono male (isolanti termici).
+- Per questo le pentole hanno il manico di plastica e non di acciaio.
+
+<Diagram caption="Conduzione: il calore si propaga molecola per molecola nel solido" code={`flowchart LR
+  A["Estremità calda<br/>(alta T)"] --> B["Molecole<br/>che vibrano forte"]
+  B --> C["Urto tra<br/>molecole vicine"]
+  C --> D["Molecole<br/>che vibrano meno"]
+  D --> E["Estremità fredda<br/>(bassa T)"]`} />
+
+---
+
+## 2. Convezione
+
+La convezione avviene nei **fluidi** (liquidi e gas). Qui le molecole si spostano fisicamente: il fluido caldo sale (è meno denso), quello freddo scende, si scalda a sua volta, sale di nuovo. Si crea una **corrente ciclica**.
+
+**Esempio concreto:** guarda l'acqua in pentola — si vede muovere. Il fondo si scalda, l'acqua calda sale, quella fredda scende a scaldarsi. Questo è il moto convettivo.
+
+- In natura, le **correnti di aria calda** che salgono in estate sono convezione.
+- I **radiatori di casa** scaldano l'aria vicina, che sale e mescola l'ambiente.
+
+<Diagram caption="Convezione: il fluido caldo sale, quello freddo scende — si crea un ciclo" code={`flowchart TB
+  A["Fluido freddo<br/>scende"] --> B["Fonte di calore<br/>(es. fondo pentola)"]
+  B --> C["Fluido si scalda<br/>e diventa meno denso"]
+  C --> D["Fluido caldo<br/>sale"]
+  D --> E["Fluido si raffredda<br/>in alto"]
+  E --> A`} />
+
+---
+
+## 3. Irraggiamento
+
+L'irraggiamento è il più speciale: **non ha bisogno di materia**. Il calore viaggia sotto forma di **onde elettromagnetiche** (radiazione infrarossa). Può attraversare anche il vuoto.
+
+**Esempio concreto:** il calore del Sole arriva fino a noi attraverso milioni di km di vuoto spaziale. Lo stesso avviene davanti a un caminetto acceso: senti caldo in faccia anche senza toccare niente.
+
+- Tutti i corpi emettono radiazione termica — anche tu stai irraggiando calore in questo momento.
+- I corpi **scuri e opachi** assorbono e emettono più calore; quelli **chiari e lucidi** riflettono la radiazione.
+- Per questo in estate si consiglia di vestirsi di bianco.
+
+---
+
+## I tre meccanismi a confronto
+
+<Diagram caption="Confronto tra i tre modi di trasmissione del calore" code={`flowchart TB
+  A["TRASMISSIONE<br/>DEL CALORE"] --> B["Conduzione<br/>(solidi)"]
+  A --> C["Convezione<br/>(fluidi)"]
+  A --> D["Irraggiamento<br/>(onde EM, anche nel vuoto)"]
+  B --> E["Le molecole vibrano<br/>e si passano energia"]
+  C --> F["Il fluido si muove<br/>fisicamente in cicli"]
+  D --> G["Onde infrarosse<br/>senza materia"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="ScD9VOVnkoA" title="Propagazione del calore: conduzione, convezione, irraggiamento - Termologia p.5" />
+<VideoVisto id="fis-u5-05" />
+
+## Da ricordare
+- **Conduzione**: il calore passa molecola per molecola nei solidi; i metalli conducono bene, il legno no.
+- **Convezione**: il calore si trasferisce nei fluidi tramite moto del fluido stesso — il caldo sale, il freddo scende.
+- **Irraggiamento**: il calore viaggia come onde elettromagnetiche e non ha bisogno di materia (funziona anche nel vuoto).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale meccanismo di trasmissione del calore è l'unico che funziona nel vuoto?" opzioni={["Conduzione", "Convezione", "Irraggiamento", "Tutti e tre funzionano nel vuoto"]} corretta={2} spiegazione="L'irraggiamento trasmette il calore sotto forma di onde elettromagnetiche (infrarosse), che non hanno bisogno di materia. Per questo il calore del Sole arriva sulla Terra attraverso il vuoto spaziale. Conduzione e convezione richiedono materia." />
+
+<Quiz domanda="Una padella di acciaio si scalda rapidamente sul fuoco. Quando la tocchi, ti bruci. Quale meccanismo ha portato il calore dal fuoco alla tua mano attraverso il metallo della padella?" opzioni={["Convezione", "Irraggiamento", "Conduzione", "Convezione e irraggiamento insieme"]} corretta={2} spiegazione="Nei solidi come l'acciaio il calore si propaga per conduzione: le molecole calde vibrano e trasmettono energia alle molecole vicine, una dopo l'altra, fino al manico e poi alla tua mano." />
+
+<Quiz domanda="Perché l'acqua in una pentola sul fuoco inizia a muoversi verso l'alto dal fondo?" opzioni={["Perché il fondo è più duro e spinge l'acqua", "Perché l'acqua calda è meno densa e sale, mentre quella fredda più densa scende", "Perché il vapore la spinge verso l'alto", "Per conduzione termica tra gli strati d'acqua"]} corretta={1} spiegazione="Questo è il meccanismo della convezione: l'acqua vicina al fondo si scalda, diventa meno densa e sale. L'acqua più fredda (e più densa) in alto scende per rimpiazzarla, si scalda a sua volta e risale. Si crea un ciclo continuo detto moto convettivo." />
+
+<Esercizio problema="Una sbarra di alluminio ha un'estremità tenuta a 100 °C e l'altra a 20 °C. Un pezzo di legno delle stesse dimensioni è nelle stesse condizioni. Dopo qualche minuto, quale delle due conduce meglio il calore e perché? Quale delle due estremità fredde sarà più calda?" soluzione="L'alluminio è un metallo e ha altissima conducibilità termica (circa 237 W/m·K), mentre il legno è un isolante (circa 0,1–0,2 W/m·K). Nella sbarra di alluminio il calore fluisce molto più velocemente molecola per molecola. L'estremità fredda della sbarra di alluminio sarà decisamente più calda di quella del legno dopo lo stesso tempo. In pratica: l'alluminio conduce il calore circa 1000 volte meglio del legno." />
+
+</section>
+
+</RisorsaLayout>

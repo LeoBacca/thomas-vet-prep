@@ -1,0 +1,25 @@
+{
+ "id": "fis-u1-05",
+ "titolo": "Grandezze scalari e vettoriali",
+ "materia": "fisica",
+ "unita": 1,
+ "slug": "05-grandezze-scalari-e-vettoriali",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u1/05-grandezze-scalari-e-vettoriali.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Maggio",
+   "q": "Quale delle seguenti grandezze è vettoriale:",
+   "choices": [
+    "Forza",
+    "Lavoro",
+    "Massa",
+    "Tempo",
+    "Temperatura"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

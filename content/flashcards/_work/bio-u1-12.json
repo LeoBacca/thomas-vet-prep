@@ -1,0 +1,53 @@
+{
+ "id": "bio-u1-12",
+ "titolo": "L'endosimbiosi (mitocondri) e il passaggio agli organismi pluricellulari",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "12-lendosimbiosi-mitocondri-e-il-passaggio-agli",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/biologia/u1/12-lendosimbiosi-mitocondri-e-il-passaggio-agli.mdx",
+ "examQuestions": [
+  {
+   "year": "2009",
+   "q": "La teoria endosimbionte sostiene che cloroplasti e mitocondri si siano evoluti da organismi unicellulari procarioti. Indica quale delle seguenti affermazioni è a sostegno di tale teoria:",
+   "choices": [
+    "entrambi gli organuli contengono molecole di DNA",
+    "entrambi gli organuli sono dotati di microtubuli",
+    "entrambi gli organuli contengono molecole di tRNA",
+    "entrambi gli organuli contengono molecole di DNA e di RNA",
+    "entrambi gli organuli contengono molecole di RNA"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2020",
+   "q": "Secondo la teoria endosimbiontica, formulata alla fine degli anni 80 del secolo scorso dalla genetista americana Lynn Margulis, quali dei seguenti organelli presenti nella cellula eucariotica vegetale deriverebbero dalla simbiosi con un procariote ancestrale?",
+   "choices": [
+    "Cloroplasti",
+    "Nucleo",
+    "Apparato di Golgi",
+    "Reticolo endoplasmatico liscio",
+    "Lisosomi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Quale fra le seguenti entità biologiche non possiede i mitocondri?",
+   "choices": [
+    "Batteri aerobi",
+    "Funghi filamentosi",
+    "Diatomee",
+    "Lievito di birra",
+    "Amebe"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

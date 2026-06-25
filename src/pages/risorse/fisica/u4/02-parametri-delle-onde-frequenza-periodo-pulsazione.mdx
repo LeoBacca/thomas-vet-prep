@@ -1,0 +1,130 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u4-02">
+
+## Cosa sono i parametri di un'onda?
+
+Un'onda è una perturbazione che si propaga nello spazio nel tempo. Per descriverla completamente usiamo cinque parametri. Impararli uno per uno è semplice: ognuno risponde a una domanda precisa sull'onda.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> i parametri di un'onda sono come le "carte d'identità" dell'onda — ogni numero racconta qualcosa di diverso su come oscilla e quanto veloce va.</div>
+
+---
+
+## 1. Periodo (T)
+
+Il **periodo** è il tempo che impiega l'onda a compiere un'oscillazione completa.
+
+- Si misura in **secondi (s)**.
+- Esempio: se un'onda del mare torna nella stessa posizione ogni 4 secondi, il periodo è T = 4 s.
+
+---
+
+## 2. Frequenza (f)
+
+La **frequenza** è quante oscillazioni complete avvengono in un secondo.
+
+- Si misura in **Hertz (Hz)**, dove 1 Hz = 1 oscillazione al secondo.
+- È l'inverso del periodo:
+
+**f = 1 / T**
+
+- Esempio: se T = 4 s, allora f = 1/4 = 0,25 Hz (un quarto di oscillazione al secondo).
+
+---
+
+## 3. Pulsazione (ω)
+
+La **pulsazione** (o frequenza angolare) misura quanto velocemente l'onda "gira" in termini di angoli.
+
+- Si misura in **rad/s** (radianti al secondo).
+- Si calcola così:
+
+**ω = 2π · f = 2π / T**
+
+- È utile perché i fenomeni ondulatori si descrivono spesso con funzioni seno e coseno, che lavorano in radianti.
+
+---
+
+## 4. Lunghezza d'onda (λ)
+
+La **lunghezza d'onda** (lambda, λ) è la distanza tra due creste consecutive (o due qualsiasi punti identici) dell'onda.
+
+- Si misura in **metri (m)**.
+- È la "taglia spaziale" di un'oscillazione completa.
+
+---
+
+## 5. Velocità di propagazione (v)
+
+La **velocità di propagazione** è quanto veloce avanza il fronte dell'onda nello spazio.
+
+- Si misura in **m/s**.
+- La formula chiave che collega tutti i parametri spaziali e temporali è:
+
+**v = λ · f = λ / T**
+
+- Esempio: se λ = 2 m e f = 3 Hz, allora v = 6 m/s.
+
+---
+
+## Come si collegano tutti i parametri
+
+<Diagram caption="Relazioni tra i parametri di un'onda" code={`flowchart TB
+  T["Periodo T (s)"] -->|"f = 1/T"| F["Frequenza f (Hz)"]
+  F -->|"ω = 2π · f"| W["Pulsazione ω (rad/s)"]
+  F -->|"v = λ · f"| V["Velocità v (m/s)"]
+  L["Lunghezza d'onda λ (m)"] -->|"v = λ · f"| V`} />
+
+<Diagram caption="Una singola onda: cosa misura ogni parametro" code={`flowchart LR
+  A["Cresta 1"] -->|"← λ (distanza) →"| B["Cresta 2"]
+  B -->|"← T (tempo per tornare qui) →"| C["Cresta 1 dopo un periodo"]
+  A -->|"f = quante creste al secondo"| D["Frequenza"]
+  D -->|"ω = 2π · f"| E["Pulsazione"]`} />
+
+## Guarda il video
+<YouTube id="qvgbnafA9-M" title="FISICA LIVE - Cos'è un'onda, Lunghezza d'Onda, Frequenza, Velocità, Funzione d'Onda - con ESERCIZI" />
+<VideoVisto id="fis-u4-02" />
+
+## Da ricordare
+- Il **periodo T** e la **frequenza f** sono inversi l'uno dell'altro: f = 1/T.
+- La **pulsazione ω = 2π · f** serve quando si usano seno e coseno per descrivere l'onda.
+- La **velocità dell'onda v = λ · f** lega insieme distanza (λ) e tempo (T o f).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un'onda ha periodo T = 0,5 s. Qual è la sua frequenza?"
+  opzioni={["f = 0,5 Hz", "f = 2 Hz", "f = 5 Hz", "f = 0,2 Hz"]}
+  corretta={1}
+  spiegazione="f = 1/T = 1/0,5 = 2 Hz. Il periodo e la frequenza sono inversi: più breve è il periodo, più alta è la frequenza."
+/>
+
+<Quiz
+  domanda="Un'onda ha frequenza f = 50 Hz. Quanto vale la sua pulsazione ω?"
+  opzioni={["ω = 50 rad/s", "ω = 100 rad/s", "ω ≈ 314 rad/s", "ω ≈ 7,96 rad/s"]}
+  corretta={2}
+  spiegazione="ω = 2π · f = 2 · 3,14159 · 50 ≈ 314 rad/s. Basta moltiplicare la frequenza per 2π."
+/>
+
+<Quiz
+  domanda="Un'onda sonora ha lunghezza d'onda λ = 0,4 m e si propaga a v = 340 m/s. Qual è la sua frequenza?"
+  opzioni={["f = 136 Hz", "f = 850 Hz", "f = 340 Hz", "f = 0,0012 Hz"]}
+  corretta={1}
+  spiegazione="Da v = λ · f si ricava f = v / λ = 340 / 0,4 = 850 Hz."
+/>
+
+<Esercizio
+  problema="Un'onda su una corda ha periodo T = 0,02 s e velocità di propagazione v = 8 m/s. Calcola: la frequenza f, la pulsazione ω e la lunghezza d'onda λ."
+  soluzione="f = 1/T = 1/0,02 = 50 Hz. ω = 2π · f = 2 · 3,14159 · 50 ≈ 314 rad/s. λ = v/f = 8/50 = 0,16 m."
+/>
+
+</section>
+
+</RisorsaLayout>

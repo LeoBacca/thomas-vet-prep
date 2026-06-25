@@ -1,0 +1,11 @@
+---
+interface Props { problema: string; soluzione: string; }
+const { problema, soluzione } = Astro.props;
+---
+<div class="esercizio">
+  <p class="problema"><strong>Esercizio.</strong> {problema}</p>
+  <details>
+    <summary>Mostra soluzione</summary>
+    <div class="soluzione">{soluzione}</div>
+  </details>
+</div>

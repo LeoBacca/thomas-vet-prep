@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u4-06-1",
+    "topicId": "bio-u4-06",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: la pleiotropia significa che UN SOLO gene influenza piu caratteri diversi allo stesso tempo (ad esempio forma dei globuli rossi, resistenza delle ossa e funzione del midollo osseo).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Pleiotropia = un gene, tanti effetti. Il caso classico e l'anemia falciforme: un solo gene mutato (quello per l'emoglobina) causa globuli rossi a falce, anemia, dolori da ostruzione dei capillari e alterazioni ossee. E come un responsabile di reparto che gestisce piu uffici: se lui manca, si bloccano tante cose diverse.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-06-2",
+    "topicId": "bio-u4-06",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Nei Labrador il gene E permette al colore di depositarsi nel pelo; se il cane e 'ee' (doppio recessivo), il pelo e giallo qualunque cosa faccia il gene B (nero/marrone). Come si chiama questo fenomeno, in cui un gene 'spegne' l'espressione di un altro?",
+    "choices": [
+      "Epistasi: il gene E e epistatico su B",
+      "Pleiotropia: il gene E produce piu effetti contemporaneamente",
+      "Associazione (linkage): i geni E e B stanno sullo stesso cromosoma",
+      "Crossing over: il crossing over scambia i geni E e B"
+    ],
+    "answer": 0,
+    "explain": "Epistasi (= stare sopra): il gene epistatico (qui E in forma ee) silenzia il gene ipostatico (B). Risultato: invece del rapporto diibrido atteso 9:3:3:1, si ottiene 9 neri : 3 marroni : 4 gialli (9:3:4). Non confondere con la pleiotropia (un gene, piu effetti) ne con l'associazione (geni sullo stesso cromosoma).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-06-3",
+    "topicId": "bio-u4-06",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "open",
+    "q": "Spiega con parole tue: cos'e la frequenza di ricombinazione e come si usa per costruire una mappa genetica? Fai anche un esempio numerico semplice.",
+    "answer": "La frequenza di ricombinazione (FR) misura quanto spesso due geni associati (sullo stesso cromosoma) vengono separati dal crossing over durante la meiosi. Si calcola cosi: FR = (numero di discendenti ricombinanti / totale discendenti) x 100. L'unita di distanza genetica e il centimorgan (cM): 1 cM equivale a 1% di ricombinazione. Esempio: se su 200 figli di un testcross 40 hanno un fenotipo ricombinante, FR = 40/200 x 100 = 20%, quindi i due geni distano 20 cM. Per costruire la mappa si fanno piu incroci-test tra coppie di geni, si calcolano tutte le FR e si dispongono i geni sul cromosoma in ordine, usando le distanze come chilometri su una carta stradale.",
+    "explain": "Chiave: FR = ricombinanti/totale x 100; 1% FR = 1 cM. Piu i geni sono lontani, piu e probabile che il crossing over li separi.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u4-06-4",
+    "topicId": "bio-u4-06",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "E stato possibile iniziare a costruire una mappa cromosomica (cioe stabilire la posizione dei geni su un cromosoma) grazie a quale osservazione?",
+    "choices": [
+      "Associando la frequenza del crossing-over alla distanza relativa dei geni sui cromosomi",
+      "Esaminando il numero totale di cromosomi presenti nel cariotipo di un individuo",
+      "Verificando come avviene la meiosi nei gameti maschili",
+      "Analizzando il tipo di cromosomi presenti nel maschio e nella femmina (sessuali vs. autosomi)",
+      "Esaminando i gameti di piu generazioni successive"
+    ],
+    "answer": 0,
+    "explain": "La freccia logica e: piu due geni sono lontani sul cromosoma, piu spesso il crossing over avviene tra di loro e li separa → FR alta = geni lontani. Misurando la FR in tanti incroci si risale alla distanza in centimorgan e si costruisce la mappa. Trappola 1 (numero di cromosomi): il cariotipo dice quanti cromosomi ci sono, non dove stanno i geni. Trappola 2 (meiosi maschile): si studia la meiosi per capire la divisione, non per misurare distanze. Trappola 3 (cromosomi sessuali): riguarda il sesso dell'individuo, non le mappe. Trappola 4 (gameti di piu generazioni): generica e imprecisa, non basta guardare i gameti senza contare la ricombinazione.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u4-06-5",
+    "topicId": "bio-u4-06",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "I gatti dell'isola di Man sono ETEROZIGOTI per una mutazione dominante che elimina la coda. La forma OMOZIGOTE e letale in fase embrionale. Incrociando due gatti di Man (entrambi eterozigoti), qual e il rapporto fenotipico atteso TRA I NATI VIVI?",
+    "choices": [
+      "2 gatti di Man (senza coda) : 1 gatto con coda normale",
+      "3 gatti di Man : 1 gatto con coda normale",
+      "2 gatti con coda normale : 1 gatto di Man",
+      "Tutti i nati sono gatti di Man",
+      "Tutti i nati hanno la coda normale"
+    ],
+    "answer": 0,
+    "explain": "Ragionamento passo per passo. Chiama M l'allele mutante (dominante, senza coda) e m l'allele normale. I genitori sono entrambi Mm. L'incrocio Mm x Mm produce in teoria: 1 MM (omozigote letale, non nasce), 2 Mm (gatti di Man vivi), 1 mm (coda normale, vivo). Tra i nati vivi restano 2 Mm e 1 mm → rapporto 2:1 a favore dei gatti di Man. Trappola 3:1: e il rapporto mendeliano classico PRIMA di togliere i letali; dopo averli esclusi diventa 2:1. Trappola '2 normali:1 di Man': inverte il verso, e l'opposto esatto. 'Tutti di Man' o 'tutti normali': entrambi ignorano la genetica dell'incrocio.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-chim-u5-08-1",
+    "topicId": "chim-u5-08",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: nella reazione SN2, il nucleofilo e il gruppo uscente agiscono nello stesso momento, senza nessuna pausa in mezzo.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "SN2 = un solo passaggio, tutto in un colpo: il nucleofilo attacca da dietro e, nello stesso istante, il gruppo uscente se ne va. E come una porta girevole: qualcuno entra e spinge fuori chi era dentro, tutto in un unico movimento. La SN1 invece ha una pausa: prima esce il gruppo uscente (si forma il carbocatione), poi entra il nucleofilo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-08-2",
+    "topicId": "chim-u5-08",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "open",
+    "q": "Un carbonio e circondato da tanti gruppi ingombranti (molto ramificato). Quando reagisce con un nucleofilo, quale meccanismo e piu probabile: SN1 o SN2? Spiega il perche con parole semplici.",
+    "answer": "E piu probabile SN1. Nella SN2 il nucleofilo deve arrivare da dietro, dall'altra parte rispetto al gruppo uscente: se il carbonio e troppo affollato, non riesce a infilarsi, quella strada e bloccata. La SN1 invece non richiede quell'attacco frontale: parte con il gruppo uscente che se ne va da solo, formando un carbocatione (un carbonio con carica positiva). Un carbonio molto ramificato forma un carbocatione piu stabile, quindi la via SN1 a due tappe e quella favorita. In sintesi: tanto ingombro = SN2 impossibile = si va di SN1.",
+    "explain": "La chiave e l'ingombro sterico: blocca l'attacco da dietro della SN2, ma favorisce la stabilita del carbocatione nella SN1.",
+    "tags": ["risposta aperta"]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u3-17-1",
+    "topicId": "bio-u3-17",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Ci sono tre tipi di RNA coinvolti nella traduzione. Quale dei tre ha il ruolo di 'cameriere' che porta l'aminoacido giusto al ribosoma?",
+    "choices": [
+      "Il mRNA, perché porta il messaggio dal nucleo",
+      "Il tRNA, perché ha un anticodone da un lato e l'aminoacido dall'altro",
+      "Il rRNA, perché è la struttura del ribosoma",
+      "Tutti e tre portano aminoacidi, si alternano"
+    ],
+    "answer": 1,
+    "explain": "Il tRNA è l'adattatore-cameriere: da un lato ha l'anticodone (legge il codone dell'mRNA) e dall'altro porta l'aminoacido corretto. L'mRNA è la 'ricetta' (messaggio), l'rRNA è la 'macchina cucina' (struttura del ribosoma). Nessun altro RNA porta aminoacidi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-17-2",
+    "topicId": "bio-u3-17",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: nel ribosoma il sito A è dove entra il nuovo aminoacil-tRNA, il sito P è dove si allunga la catena e il sito E è dove il tRNA scarico esce.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Pensa a una catena di montaggio: A (Aminoacidil) = porta d'ingresso per il tRNA carico; P (Peptidil) = banco di lavoro dove si forma il legame peptidico e cresce la catena; E (Exit) = porta d'uscita per il tRNA ormai vuoto. Il ribosoma scorre avanti di un codone a ogni ciclo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-17-3",
+    "topicId": "bio-u3-17",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Descrivi il ruolo di ciascuno dei tre tipi di RNA (mRNA, tRNA, rRNA) nella traduzione, usando una sola frase per ciascuno. Poi spiega cos'è un 'aminoacil-tRNA' e perché il suo caricamento richiede ATP.",
+    "answer": "mRNA: porta la sequenza di codoni (triplette di basi) copiata dal gene e fa da nastro che scorre nel ribosoma, indicando quali aminoacidi inserire. tRNA: è l'adattatore tra il linguaggio dei codoni e il linguaggio degli aminoacidi; con il suo anticodone si appaia al codone dell'mRNA e con l'estremità opposta porta l'aminoacido corrispondente al ribosoma. rRNA: costituisce la struttura portante del ribosoma e svolge attività catalitica, cioè catalizza la formazione del legame peptidico tra i due aminoacidi nel sito A e nel sito P. Un aminoacil-tRNA è un tRNA già 'carico', cioè a cui è stato agganciato l'aminoacido specifico da un enzima chiamato aminoacil-tRNA sintetasi. Il caricamento richiede ATP perché creare il legame tra l'aminoacido e il tRNA è una reazione che non avviene spontaneamente: l'energia chimica dell'ATP serve per 'attivare' l'aminoacido e renderlo pronto ad aggiungersi alla catena polipeptidica.",
+    "explain": "Da ricordare: mRNA = ricetta, tRNA = cameriere con adattatore, rRNA = macchina del ribosoma che catalizza il legame peptidico. Il tRNA carico (aminoacil-tRNA) costa ATP.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-17-4",
+    "topicId": "bio-u3-17",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Durante la traduzione, dentro il ribosoma, un codone dell'mRNA si appaia all'anticodone del tRNA. Che tipo di legame si forma tra i due?",
+    "choices": [
+      "Legami idrogeno (tra le basi azotate complementari)",
+      "Legami fosfodiesterici (quelli che tengono insieme il filamento di RNA)",
+      "Legami peptidici (quelli che uniscono gli aminoacidi)",
+      "Legami glicosidici (quelli tra zucchero e base)",
+      "Legami covalenti forti e permanenti"
+    ],
+    "answer": 0,
+    "explain": "L'appaiamento codone-anticodone funziona esattamente come il doppio filamento del DNA: basi complementari si attraggono con legami idrogeno (A-U e G-C). I legami fosfodiesterici tengono insieme lo scheletro del filamento di RNA, non i due filamenti tra loro. Il legame peptidico lega gli aminoacidi (proteina), non le basi. Il legame glicosidico unisce base e zucchero all'interno di ogni nucleotide. I legami covalenti permanenti sarebbero troppo forti: il tRNA deve potersi sganciare e uscire dal ribosoma dopo aver consegnato l'aminoacido.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-17-5",
+    "topicId": "bio-u3-17",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Nelle cellule eucariotiche, quali delle seguenti affermazioni su trascrizione e traduzione sono entrambe VERE? 1. Entrambe implicano reazioni di polimerizzazione. 2. Entrambe avvengono nel nucleo. 3. Entrambe richiedono l'appaiamento di basi complementari.",
+    "choices": [
+      "Solo 1 e 3",
+      "Solo 1",
+      "Solo 1 e 2",
+      "Solo 2 e 3",
+      "Tutte e tre (1, 2 e 3)"
+    ],
+    "answer": 0,
+    "explain": "Affermazione 1 (vera): sia la trascrizione (sintesi di RNA) sia la traduzione (sintesi di una catena polipeptidica) sono polimerizzazioni, cioè incatenano unità più piccole in un polimero. Affermazione 2 (FALSA): nelle eucariotiche la trascrizione avviene nel nucleo, ma la traduzione avviene nel CITOPLASMA (al ribosoma), non nel nucleo. Questa è la trappola principale. Affermazione 3 (vera): la trascrizione usa lo stampo di DNA appaiando basi complementari; la traduzione usa l'appaiamento codone-anticodone tra mRNA e tRNA. Quindi sono corrette solo 1 e 3.",
+    "tags": ["prova d'esame"]
+  }
+]

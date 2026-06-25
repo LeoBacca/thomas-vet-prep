@@ -1,0 +1,114 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u5-08">
+
+In tante molecole c'è un atomo "ospite" che se ne può andare e lasciare il suo posto a un altro. Quando arriva una molecola che vuole "prendere quel posto", avviene una **reazione di sostituzione**: una specie entra, un'altra esce. È un po' come quando in un parcheggio una macchina se ne va e subito un'altra occupa il posto libero. Capire come avviene questo scambio è importante perché è proprio così che il corpo costruisce, modifica e smonta molte molecole.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> qualcuno entra, qualcuno esce. Il "qualcuno che entra" si chiama <strong>nucleofilo</strong> (ama le cariche positive), il "qualcuno che esce" si chiama <strong>gruppo uscente</strong>. La domanda chiave è solo una: entrano e escono <strong>nello stesso momento</strong> (SN2) oppure <strong>uno alla volta</strong> (SN1)?</div>
+
+## Le due parole chiave: nucleofilo e gruppo uscente
+
+Prima dei meccanismi, capiamo i due protagonisti.
+
+- Il **nucleofilo** è la molecola che attacca. "Nucleo-filo" vuol dire "amico del nucleo", cioè ama le zone con carica **positiva**. Ha elettroni in più da offrire (pensa a una persona generosa che porta un regalo).
+- Il **gruppo uscente** è il pezzo che se ne va portandosi via la coppia di elettroni del legame. Un buon gruppo uscente è uno "che non fa storie ad andarsene" (come gli alogeni: cloro, bromo, iodio).
+
+C'è poi una "vittima" al centro: un atomo di **carbonio** legato al gruppo uscente. È lì che avviene lo scambio.
+
+## SN2: tutto in un colpo solo (attacco da dietro)
+
+SN2 vuol dire **sostituzione nucleofila bimolecolare**. "Bimolecolare" perché alla scena cruciale partecipano **due molecole insieme**: il nucleofilo che entra e il substrato.
+
+Qui non c'è pausa: il nucleofilo attacca **da dietro**, esattamente dalla parte opposta al gruppo uscente, e mentre lui spinge per entrare l'altro è già costretto a uscire. Tutto nello stesso istante.
+
+Immagina una porta girevole: una persona entra da un lato e, con la stessa spinta, fa uscire dall'altro lato chi era dentro. Un solo movimento, un solo passaggio.
+
+Un effetto curioso: il carbonio si "rovescia" come un ombrello al vento. Si chiama **inversione di configurazione**: i tre legami che restano si ribaltano dall'altra parte.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> SN2 = colpo unico. Il nuovo arriva da dietro e butta fuori il vecchio nello stesso momento. Se il carbonio è troppo "affollato" di gruppi attorno, il nucleofilo non riesce a passare da dietro: per questo SN2 va meglio sui carboni poco ingombrati.</div>
+
+<Diagram caption="SN2: un solo passaggio, attacco da dietro e inversione" code={`flowchart LR
+  N["Nucleofilo<br/>(entra da dietro)"] --> C["Carbonio centrale<br/>(con gruppo uscente)"]
+  C --> U["Gruppo uscente<br/>(esce nello stesso istante)"]
+  C --> R["Risultato:<br/>carbonio rovesciato<br/>(inversione)"]`} />
+
+## SN1: due tappe separate (prima esce uno, poi entra l'altro)
+
+SN1 vuol dire **sostituzione nucleofila monomolecolare**. "Monomolecolare" perché nella tappa che decide la velocità conta **una sola molecola**: il substrato che si rompe da solo.
+
+Qui c'è una pausa tra i due eventi. La storia è in due tempi:
+
+1. **Tappa 1 (lenta):** il gruppo uscente se ne va **da solo**, senza aspettare nessuno. Resta un carbonio con carica positiva, chiamato **carbocatione**. È il momento difficile e lento, come staccare il primo mattoncino incastrato.
+2. **Tappa 2 (veloce):** il carbocatione è "scoperto" e instabile, quindi il nucleofilo arriva al volo e si attacca subito.
+
+Siccome il carbocatione è piatto, il nucleofilo può arrivare **da entrambi i lati**: per questo SN1 spesso produce un **miscuglio** delle due forme speculari (una **miscela racemica**), mentre SN2 ne dava una sola.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> SN1 = due puntate. Prima il vecchio esce e lascia il posto vuoto (il carbocatione), poi il nuovo entra. SN1 va meglio quando il carbocatione è "robusto", cioè quando attorno al carbonio ci sono tanti gruppi che lo sostengono (carboni molto ramificati).</div>
+
+<Diagram caption="SN1: due tappe distinte, con il carbocatione in mezzo" code={`flowchart TB
+  S["Substrato<br/>(carbonio + gruppo uscente)"] -->|"Tappa 1: LENTA"| K["Carbocatione<br/>(carbonio con carica +)<br/>+ gruppo uscente andato via"]
+  K -->|"Tappa 2: VELOCE"| P["Prodotto finale<br/>(nucleofilo attaccato<br/>da uno dei due lati)"]`} />
+
+## E l'eliminazione? Quando invece di sostituire si "butta via"
+
+A volte il nucleofilo non ha voglia di entrare nel posto: si comporta da **base** e, invece di attaccare il carbonio, **strappa un atomo di idrogeno** vicino. Il risultato non è una sostituzione, ma la nascita di un **doppio legame** (un alchene). Questa è la reazione di **eliminazione**.
+
+Pensa così: nella sostituzione qualcuno **prende il posto**; nell'eliminazione, invece, due pezzi vengono **buttati fuori** dalla molecola (un idrogeno da un lato e il gruppo uscente dall'altro) e quello che resta si "stringe" formando un doppio legame.
+
+- Anche l'eliminazione ha due versioni: **E2** (tutto in un colpo, come SN2) ed **E1** (in due tappe con il carbocatione, come SN1).
+- Sostituzione ed eliminazione sono **rivali**: spesso competono nella stessa pentola. Cosa vince dipende da quanto è "aggressiva" la specie che arriva, dalla temperatura e da quanto è ingombrato il carbonio. In generale, basi forti e calore spingono verso l'eliminazione.
+
+**Perché a un veterinario o a un medico interessa?** Questi scambi sul carbonio sono il cuore della **chimica organica**, cioè la chimica delle molecole della vita. Capire come un gruppo entra o esce da una molecola è la base per capire come funzionano i **farmaci**: molti principi attivi agiscono proprio attaccandosi a una molecola bersaglio nel corpo, o vengono trasformati dal fegato attraverso reazioni di questo tipo. È il primo passo per capire, più avanti, come un farmaco viene assorbito, modificato ed eliminato dall'organismo.
+
+## Guarda il video
+
+<YouTube id="DrjQzHVdAg8" title="SN1 e SN2 — Meccanismo di sostituzione nucleofila spiegato semplice (Nettuno)" />
+
+<VideoVisto id="chim-u5-08" />
+
+## Da ricordare
+
+- **Sostituzione**: un **nucleofilo** entra, un **gruppo uscente** esce, su un atomo di **carbonio**.
+- **SN2** = un solo passaggio: il nucleofilo entra **da dietro** e caccia il gruppo uscente **nello stesso momento** (porta girevole). Dà **inversione**; preferisce carboni **poco ingombrati**.
+- **SN1** = due tappe: prima esce il gruppo uscente e si forma il **carbocatione** (tappa lenta), poi entra il nucleofilo (tappa veloce). Spesso dà una **miscela** delle due forme speculari.
+- **Eliminazione** (E1, E2): il nucleofilo fa da **base**, strappa un idrogeno e nasce un **doppio legame** (alchene), invece della sostituzione.
+- Sostituzione ed eliminazione **competono**: basi forti e calore spingono verso l'**eliminazione**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Nella reazione SN2 il nucleofilo entra e il gruppo uscente esce:"
+  opzioni={["uno alla volta, con una pausa in mezzo", "nello stesso momento, in un solo passaggio", "solo dopo aver formato un carbocatione", "senza che il gruppo uscente vada via"]}
+  corretta={1}
+  spiegazione="SN2 avviene in un colpo solo: il nucleofilo attacca da dietro e, nello stesso istante, il gruppo uscente se ne va. Niente pause, niente carbocatione. È come una porta girevole."
+/>
+
+<Quiz
+  domanda="Che cosa si forma nella prima tappa (lenta) di una reazione SN1?"
+  opzioni={["un doppio legame", "un carbocatione (carbonio con carica positiva)", "una nuova unità di misura", "un legame ionico"]}
+  corretta={1}
+  spiegazione="Nella SN1 la prima tappa è la fuga del gruppo uscente, che lascia un carbocatione: un carbonio con carica positiva, instabile. Solo dopo (tappa veloce) arriva il nucleofilo."
+/>
+
+<Quiz
+  domanda="Quando invece di una sostituzione avviene una eliminazione, che cosa otteniamo?"
+  opzioni={["un nuovo gruppo uscente", "un doppio legame (alchene)", "un carbonio più affollato", "un nucleofilo più forte"]}
+  corretta={1}
+  spiegazione="Nell'eliminazione il reagente si comporta da base: strappa un idrogeno vicino e, al posto della sostituzione, nasce un doppio legame (un alchene). Basi forti e calore favoriscono questa strada."
+/>
+
+<Esercizio
+  problema="Hai un carbonio molto 'affollato', circondato da tanti gruppi ingombranti, e lo fai reagire con un nucleofilo. Secondo te è più probabile un meccanismo SN2 o SN1? Spiega il perché in modo semplice."
+  soluzione="È più probabile SN1. Nella SN2 il nucleofilo deve passare da dietro: se il carbonio è troppo affollato, non riesce a infilarsi, quindi quella strada è bloccata. La SN1, invece, parte facendo uscire prima il gruppo uscente e formando un carbocatione; e un carbonio molto ramificato forma un carbocatione più stabile (più 'robusto'). Quindi tanto ingombro più carbocatione stabile favoriscono la via SN1 a due tappe."
+/>
+
+</section>
+
+</RisorsaLayout>

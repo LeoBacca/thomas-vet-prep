@@ -1,0 +1,2593 @@
+{
+  "materia": "Biologia",
+  "unita": [
+    {
+      "key": "u1",
+      "num": 1,
+      "titolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "cfu": 0.5,
+      "ready": true,
+      "topicIds": [
+        "bio-u1-01",
+        "bio-u1-02",
+        "bio-u1-03",
+        "bio-u1-04",
+        "bio-u1-05",
+        "bio-u1-06",
+        "bio-u1-07",
+        "bio-u1-08",
+        "bio-u1-09",
+        "bio-u1-10",
+        "bio-u1-11",
+        "bio-u1-12",
+        "bio-u1-13",
+        "bio-u1-14",
+        "bio-u1-15",
+        "bio-u1-16",
+        "bio-u1-17",
+        "bio-u1-18",
+        "bio-u1-19",
+        "bio-u1-20"
+      ]
+    },
+    {
+      "key": "u2",
+      "num": 2,
+      "titolo": "I meccanismi cellulari di trasmissione e controllo dell'informazione genetica e epigenetica",
+      "cfu": 0.5,
+      "ready": true,
+      "topicIds": [
+        "bio-u2-01",
+        "bio-u2-02",
+        "bio-u2-03",
+        "bio-u2-04",
+        "bio-u2-05",
+        "bio-u2-06",
+        "bio-u2-07"
+      ]
+    },
+    {
+      "key": "u3",
+      "num": 3,
+      "titolo": "Il flusso dell'informazione",
+      "cfu": 1,
+      "ready": true,
+      "topicIds": [
+        "bio-u3-01",
+        "bio-u3-02",
+        "bio-u3-03",
+        "bio-u3-04",
+        "bio-u3-05",
+        "bio-u3-06",
+        "bio-u3-07",
+        "bio-u3-08",
+        "bio-u3-09",
+        "bio-u3-10",
+        "bio-u3-11",
+        "bio-u3-12",
+        "bio-u3-13",
+        "bio-u3-14",
+        "bio-u3-15",
+        "bio-u3-16",
+        "bio-u3-17",
+        "bio-u3-18",
+        "bio-u3-19",
+        "bio-u3-20",
+        "bio-u3-21"
+      ]
+    },
+    {
+      "key": "u4",
+      "num": 4,
+      "titolo": "I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati",
+      "cfu": 0.75,
+      "ready": true,
+      "topicIds": [
+        "bio-u4-01",
+        "bio-u4-02",
+        "bio-u4-03",
+        "bio-u4-04",
+        "bio-u4-05",
+        "bio-u4-06",
+        "bio-u4-07",
+        "bio-u4-08",
+        "bio-u4-09",
+        "bio-u4-10",
+        "bio-u4-11"
+      ]
+    },
+    {
+      "key": "u5",
+      "num": 5,
+      "titolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "cfu": 1.75,
+      "ready": true,
+      "topicIds": [
+        "bio-u5-01",
+        "bio-u5-02",
+        "bio-u5-03",
+        "bio-u5-04",
+        "bio-u5-05",
+        "bio-u5-06",
+        "bio-u5-07",
+        "bio-u5-08",
+        "bio-u5-09",
+        "bio-u5-10",
+        "bio-u5-11",
+        "bio-u5-12",
+        "bio-u5-13",
+        "bio-u5-14",
+        "bio-u5-15",
+        "bio-u5-16",
+        "bio-u5-17",
+        "bio-u5-18",
+        "bio-u5-19",
+        "bio-u5-20",
+        "bio-u5-21",
+        "bio-u5-22",
+        "bio-u5-23",
+        "bio-u5-24",
+        "bio-u5-25",
+        "bio-u5-26",
+        "bio-u5-27",
+        "bio-u5-28"
+      ]
+    },
+    {
+      "key": "u6",
+      "num": 6,
+      "titolo": "La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale",
+      "cfu": 0.75,
+      "ready": true,
+      "topicIds": [
+        "bio-u6-01",
+        "bio-u6-02",
+        "bio-u6-03",
+        "bio-u6-04",
+        "bio-u6-05",
+        "bio-u6-06",
+        "bio-u6-07",
+        "bio-u6-08",
+        "bio-u6-09",
+        "bio-u6-10",
+        "bio-u6-11"
+      ]
+    },
+    {
+      "key": "u7",
+      "num": 7,
+      "titolo": "Il controllo della proliferazione e della sopravvivenza cellulare",
+      "cfu": 0.75,
+      "ready": true,
+      "topicIds": [
+        "bio-u7-01",
+        "bio-u7-02",
+        "bio-u7-03",
+        "bio-u7-04",
+        "bio-u7-05",
+        "bio-u7-06",
+        "bio-u7-07",
+        "bio-u7-08",
+        "bio-u7-09",
+        "bio-u7-10",
+        "bio-u7-11"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "bio-u1-01",
+      "titolo": "L'albero della vita, gli organismi e la teoria cellulare",
+      "obiettivo": "Capire come gli organismi sono classificati in un albero comune e che la cellula è l'unità di base della vita.",
+      "difficolta": 1,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [],
+      "correlati": [
+        "bio-u1-02",
+        "bio-u1-09"
+      ],
+      "slug": "01-lalbero-della-vita-gli-organismi-e",
+      "url": "risorse/biologia/u1/01-lalbero-della-vita-gli-organismi-e/",
+      "prev": null,
+      "next": "bio-u1-02",
+      "diagramma": "albero filogenetico con i tre domini",
+      "video": true
+    },
+    {
+      "id": "bio-u1-02",
+      "titolo": "Le proprietà fondamentali della materia vivente",
+      "obiettivo": "Riconoscere le proprietà comuni a tutti gli esseri viventi (metabolismo, riproduzione, ecc.).",
+      "difficolta": 1,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-01"
+      ],
+      "correlati": [
+        "bio-u1-03",
+        "bio-u1-07",
+        "bio-u1-11",
+        "bio-u1-13",
+        "bio-u1-14",
+        "bio-u1-15",
+        "bio-u1-18"
+      ],
+      "slug": "02-le-proprieta-fondamentali-della-materia-vivente",
+      "url": "risorse/biologia/u1/02-le-proprieta-fondamentali-della-materia-vivente/",
+      "prev": "bio-u1-01",
+      "next": "bio-u1-03",
+      "diagramma": "elenco delle proprietà del vivente",
+      "video": false
+    },
+    {
+      "id": "bio-u1-03",
+      "titolo": "I virus: caratteristiche generali e struttura (acido nucleico, capside, involucro) e classi",
+      "obiettivo": "Capire cos'è un virus, descriverne le componenti e come si classificano i virus animali.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-02"
+      ],
+      "correlati": [
+        "bio-u1-04",
+        "bio-u1-05"
+      ],
+      "slug": "03-i-virus-caratteristiche-generali-e-struttura",
+      "url": "risorse/biologia/u1/03-i-virus-caratteristiche-generali-e-struttura/",
+      "prev": "bio-u1-02",
+      "next": "bio-u1-04",
+      "diagramma": "schema di un virione + tabella di classificazione",
+      "video": true
+    },
+    {
+      "id": "bio-u1-04",
+      "titolo": "Ciclo litico e lisogenico di un virus batterico (batteriofago)",
+      "obiettivo": "Distinguere il ciclo che distrugge la cellula (litico) da quello latente (lisogenico).",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-03"
+      ],
+      "correlati": [],
+      "slug": "04-ciclo-litico-e-lisogenico-di-un",
+      "url": "risorse/biologia/u1/04-ciclo-litico-e-lisogenico-di-un/",
+      "prev": "bio-u1-03",
+      "next": "bio-u1-05",
+      "diagramma": "confronto ciclo litico vs lisogenico di un fago",
+      "video": true
+    },
+    {
+      "id": "bio-u1-05",
+      "titolo": "Ciclo di un virus animale ed entrata/uscita dalla cellula",
+      "obiettivo": "Descrivere le tappe di replicazione di un virus animale e i meccanismi di ingresso e uscita.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-03"
+      ],
+      "correlati": [
+        "bio-u1-06"
+      ],
+      "slug": "05-ciclo-di-un-virus-animale-ed",
+      "url": "risorse/biologia/u1/05-ciclo-di-un-virus-animale-ed/",
+      "prev": "bio-u1-04",
+      "next": "bio-u1-06",
+      "diagramma": "ciclo del virus animale con ingresso e gemmazione",
+      "video": true
+    },
+    {
+      "id": "bio-u1-06",
+      "titolo": "Il ciclo di un retrovirus e la trascrittasi inversa",
+      "obiettivo": "Capire come un retrovirus converte il suo RNA in DNA e lo integra nel genoma ospite.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-05"
+      ],
+      "correlati": [],
+      "slug": "06-il-ciclo-di-un-retrovirus-e",
+      "url": "risorse/biologia/u1/06-il-ciclo-di-un-retrovirus-e/",
+      "prev": "bio-u1-05",
+      "next": "bio-u1-07",
+      "diagramma": "ciclo del retrovirus con retrotrascrizione e integrazione",
+      "video": true
+    },
+    {
+      "id": "bio-u1-07",
+      "titolo": "La cellula procariotica: membrana, parete e strutture esterne (capsula, fimbrie, pili, flagelli)",
+      "obiettivo": "Descrivere le strutture di rivestimento e le appendici di una cellula procariotica.",
+      "difficolta": 1,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-02"
+      ],
+      "correlati": [
+        "bio-u1-08",
+        "bio-u1-09",
+        "bio-u1-10"
+      ],
+      "slug": "07-la-cellula-procariotica-membrana-parete-e",
+      "url": "risorse/biologia/u1/07-la-cellula-procariotica-membrana-parete-e/",
+      "prev": "bio-u1-06",
+      "next": "bio-u1-08",
+      "diagramma": "schema di cellula procariotica con appendici",
+      "video": true
+    },
+    {
+      "id": "bio-u1-08",
+      "titolo": "Batteri Gram positivi e Gram negativi e la colorazione di Gram",
+      "obiettivo": "Distinguere i due tipi di parete batterica e capire il fondamento della colorazione di Gram.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-07"
+      ],
+      "correlati": [],
+      "slug": "08-batteri-gram-positivi-e-gram-negativi",
+      "url": "risorse/biologia/u1/08-batteri-gram-positivi-e-gram-negativi/",
+      "prev": "bio-u1-07",
+      "next": "bio-u1-09",
+      "diagramma": "confronto parete Gram+ vs Gram-",
+      "video": true
+    },
+    {
+      "id": "bio-u1-09",
+      "titolo": "Eubatteri e archeobatteri",
+      "obiettivo": "Capire la distinzione tra eubatteri e archeobatteri come due domini di procarioti.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-01",
+        "bio-u1-07"
+      ],
+      "correlati": [],
+      "slug": "09-eubatteri-e-archeobatteri",
+      "url": "risorse/biologia/u1/09-eubatteri-e-archeobatteri/",
+      "prev": "bio-u1-08",
+      "next": "bio-u1-10",
+      "diagramma": "confronto eubatteri vs archea",
+      "video": false
+    },
+    {
+      "id": "bio-u1-10",
+      "titolo": "Trasferimento genico orizzontale: trasformazione, coniugazione e trasduzione",
+      "obiettivo": "Descrivere i tre modi con cui i batteri scambiano materiale genetico e la loro importanza.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-07"
+      ],
+      "correlati": [],
+      "slug": "10-trasferimento-genico-orizzontale-trasformazione-coniugazione-e",
+      "url": "risorse/biologia/u1/10-trasferimento-genico-orizzontale-trasformazione-coniugazione-e/",
+      "prev": "bio-u1-09",
+      "next": "bio-u1-11",
+      "diagramma": "schema dei tre meccanismi di trasferimento orizzontale",
+      "video": true
+    },
+    {
+      "id": "bio-u1-11",
+      "titolo": "La cellula eucariotica, il sistema delle endomembrane e l'origine del nucleo",
+      "obiettivo": "Capire l'organizzazione interna compartimentata della cellula eucariotica e l'origine del nucleo.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-02"
+      ],
+      "correlati": [
+        "bio-u1-12",
+        "bio-u5-05",
+        "bio-u5-06",
+        "bio-u5-14",
+        "bio-u5-15",
+        "bio-u5-24",
+        "bio-u5-26",
+        "bio-u5-28",
+        "bio-u6-01",
+        "bio-u7-10"
+      ],
+      "slug": "11-la-cellula-eucariotica-il-sistema-delle",
+      "url": "risorse/biologia/u1/11-la-cellula-eucariotica-il-sistema-delle/",
+      "prev": "bio-u1-10",
+      "next": "bio-u1-12",
+      "diagramma": "schema di cellula eucariotica con organelli",
+      "video": true
+    },
+    {
+      "id": "bio-u1-12",
+      "titolo": "L'endosimbiosi (mitocondri) e il passaggio agli organismi pluricellulari",
+      "obiettivo": "Capire l'origine endosimbiotica dei mitocondri e l'evoluzione verso la pluricellularità.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-11"
+      ],
+      "correlati": [
+        "bio-u4-11",
+        "bio-u5-09",
+        "bio-u6-03",
+        "bio-u6-05"
+      ],
+      "slug": "12-lendosimbiosi-mitocondri-e-il-passaggio-agli",
+      "url": "risorse/biologia/u1/12-lendosimbiosi-mitocondri-e-il-passaggio-agli/",
+      "prev": "bio-u1-11",
+      "next": "bio-u1-13",
+      "diagramma": "schema dell'endosimbiosi",
+      "video": true
+    },
+    {
+      "id": "bio-u1-13",
+      "titolo": "Gli zuccheri e i carboidrati",
+      "obiettivo": "Conoscere struttura e ruolo dei carboidrati come macromolecole biologiche.",
+      "difficolta": 1,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-02"
+      ],
+      "correlati": [
+        "bio-u1-20"
+      ],
+      "slug": "13-gli-zuccheri-e-i-carboidrati",
+      "url": "risorse/biologia/u1/13-gli-zuccheri-e-i-carboidrati/",
+      "prev": "bio-u1-12",
+      "next": "bio-u1-14",
+      "diagramma": "monosaccaride, disaccaride e polisaccaride",
+      "video": true
+    },
+    {
+      "id": "bio-u1-14",
+      "titolo": "I lipidi",
+      "obiettivo": "Conoscere struttura e funzioni dei principali lipidi.",
+      "difficolta": 1,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-02"
+      ],
+      "correlati": [
+        "bio-u5-01"
+      ],
+      "slug": "14-i-lipidi",
+      "url": "risorse/biologia/u1/14-i-lipidi/",
+      "prev": "bio-u1-13",
+      "next": "bio-u1-15",
+      "diagramma": "trigliceride e fosfolipide",
+      "video": true
+    },
+    {
+      "id": "bio-u1-15",
+      "titolo": "Amminoacidi, legame peptidico, struttura delle proteine, domini e siti attivi",
+      "obiettivo": "Capire come gli amminoacidi formano le proteine e come queste si organizzano in domini e siti attivi.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-02"
+      ],
+      "correlati": [
+        "bio-u1-16",
+        "bio-u3-17",
+        "bio-u3-20"
+      ],
+      "slug": "15-amminoacidi-legame-peptidico-struttura-delle-proteine",
+      "url": "risorse/biologia/u1/15-amminoacidi-legame-peptidico-struttura-delle-proteine/",
+      "prev": "bio-u1-14",
+      "next": "bio-u1-16",
+      "diagramma": "legame peptidico e livelli strutturali (1°-4°)",
+      "video": true
+    },
+    {
+      "id": "bio-u1-16",
+      "titolo": "Gli enzimi: concetti di base e classi principali",
+      "obiettivo": "Capire cos'è un enzima e riconoscere classi come chinasi/fosfatasi, ubiquitinasi/deubiquitinasi, acetilasi/deacetilasi.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-15"
+      ],
+      "correlati": [
+        "bio-u1-17",
+        "bio-u3-21",
+        "bio-u6-10",
+        "bio-u7-01",
+        "bio-u7-10"
+      ],
+      "slug": "16-gli-enzimi-concetti-di-base-e",
+      "url": "risorse/biologia/u1/16-gli-enzimi-concetti-di-base-e/",
+      "prev": "bio-u1-15",
+      "next": "bio-u1-17",
+      "diagramma": "enzima che abbassa l'energia di attivazione + tabella classi",
+      "video": true
+    },
+    {
+      "id": "bio-u1-17",
+      "titolo": "Modificazioni post-traduzionali delle proteine (fosforilazione, acetilazione, glicosilazione, lipidazione)",
+      "obiettivo": "Capire come le proteine vengono modificate dopo la sintesi per regolarne funzione.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-16"
+      ],
+      "correlati": [
+        "bio-u2-05",
+        "bio-u3-21",
+        "bio-u5-17"
+      ],
+      "slug": "17-modificazioni-post-traduzionali-delle-proteine-fosforilazione",
+      "url": "risorse/biologia/u1/17-modificazioni-post-traduzionali-delle-proteine-fosforilazione/",
+      "prev": "bio-u1-16",
+      "next": "bio-u1-18",
+      "diagramma": "proteina con gruppi aggiunti (fosfato, acetile, zucchero, lipide)",
+      "video": true
+    },
+    {
+      "id": "bio-u1-18",
+      "titolo": "Nucleotidi, acidi nucleici e la doppia elica del DNA (Watson e Crick)",
+      "obiettivo": "Conoscere il nucleotide e capire la struttura a doppia elica con appaiamento complementare.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-02"
+      ],
+      "correlati": [
+        "bio-u1-19",
+        "bio-u2-01",
+        "bio-u3-01",
+        "bio-u3-06",
+        "bio-u4-01"
+      ],
+      "slug": "18-nucleotidi-acidi-nucleici-e-la-doppia",
+      "url": "risorse/biologia/u1/18-nucleotidi-acidi-nucleici-e-la-doppia/",
+      "prev": "bio-u1-17",
+      "next": "bio-u1-19",
+      "diagramma": "nucleotide + doppia elica con appaiamento A-T, G-C",
+      "video": true
+    },
+    {
+      "id": "bio-u1-19",
+      "titolo": "Gli RNA: struttura, funzioni; RNA codificanti e non codificanti",
+      "obiettivo": "Distinguere i tipi di RNA e la differenza tra RNA codificanti e non codificanti.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-18"
+      ],
+      "correlati": [
+        "bio-u3-10",
+        "bio-u3-15",
+        "bio-u3-17"
+      ],
+      "slug": "19-gli-rna-struttura-funzioni-rna-codificanti",
+      "url": "risorse/biologia/u1/19-gli-rna-struttura-funzioni-rna-codificanti/",
+      "prev": "bio-u1-18",
+      "next": "bio-u1-20",
+      "diagramma": "tabella dei tipi di RNA",
+      "video": true
+    },
+    {
+      "id": "bio-u1-20",
+      "titolo": "Aspetti di base del metabolismo: anabolismo, catabolismo, condensazione e idrolisi",
+      "obiettivo": "Distinguere reazioni che costruiscono da quelle che demoliscono, e condensazione da idrolisi.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 1,
+      "unitaTitolo": "Le basi dell'organizzazione biologica e molecolare della vita",
+      "prereq": [
+        "bio-u1-13"
+      ],
+      "correlati": [
+        "bio-u5-10"
+      ],
+      "slug": "20-aspetti-di-base-del-metabolismo-anabolismo",
+      "url": "risorse/biologia/u1/20-aspetti-di-base-del-metabolismo-anabolismo/",
+      "prev": "bio-u1-19",
+      "next": "bio-u2-01",
+      "diagramma": "anabolismo vs catabolismo + condensazione vs idrolisi",
+      "video": true
+    },
+    {
+      "id": "bio-u2-01",
+      "titolo": "I cromosomi eucariotici lineari e l'organizzazione minimale (centromero, telomeri)",
+      "obiettivo": "Capire come il DNA eucariotico è organizzato in cromosomi e riconoscerne gli elementi essenziali.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 2,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dell'informazione genetica e epigenetica",
+      "prereq": [
+        "bio-u1-18"
+      ],
+      "correlati": [
+        "bio-u2-02",
+        "bio-u2-06",
+        "bio-u3-05",
+        "bio-u4-08"
+      ],
+      "slug": "01-i-cromosomi-eucariotici-lineari-e-lorganizzazione",
+      "url": "risorse/biologia/u2/01-i-cromosomi-eucariotici-lineari-e-lorganizzazione/",
+      "prev": "bio-u1-20",
+      "next": "bio-u2-02",
+      "diagramma": "cromosoma con centromero, telomeri e origini",
+      "video": true
+    },
+    {
+      "id": "bio-u2-02",
+      "titolo": "I nucleosomi e l'impaccamento del DNA con gli istoni (istone H1, fibra da 30 nm)",
+      "obiettivo": "Capire come il DNA si avvolge sugli istoni e si compatta progressivamente.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 2,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dell'informazione genetica e epigenetica",
+      "prereq": [
+        "bio-u2-01"
+      ],
+      "correlati": [
+        "bio-u2-03",
+        "bio-u2-04"
+      ],
+      "slug": "02-i-nucleosomi-e-limpaccamento-del-dna",
+      "url": "risorse/biologia/u2/02-i-nucleosomi-e-limpaccamento-del-dna/",
+      "prev": "bio-u2-01",
+      "next": "bio-u2-03",
+      "diagramma": "da collana di nucleosomi a fibra da 30 nm",
+      "video": true
+    },
+    {
+      "id": "bio-u2-03",
+      "titolo": "Eucromatina, eterocromatina e metilazione del DNA",
+      "obiettivo": "Distinguere cromatina aperta (attiva) e chiusa (inattiva) e il ruolo della metilazione.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 2,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dell'informazione genetica e epigenetica",
+      "prereq": [
+        "bio-u2-02"
+      ],
+      "correlati": [
+        "bio-u2-05",
+        "bio-u4-07"
+      ],
+      "slug": "03-eucromatina-eterocromatina-e-metilazione-del-dna",
+      "url": "risorse/biologia/u2/03-eucromatina-eterocromatina-e-metilazione-del-dna/",
+      "prev": "bio-u2-02",
+      "next": "bio-u2-04",
+      "diagramma": "eucromatina vs eterocromatina + metilazione",
+      "video": true
+    },
+    {
+      "id": "bio-u2-04",
+      "titolo": "Rimodellamento della cromatina e condensine",
+      "obiettivo": "Capire come complessi proteici riposizionano i nucleosomi e ripiegano la cromatina.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 2,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dell'informazione genetica e epigenetica",
+      "prereq": [
+        "bio-u2-02"
+      ],
+      "correlati": [
+        "bio-u7-05"
+      ],
+      "slug": "04-rimodellamento-della-cromatina-e-condensine",
+      "url": "risorse/biologia/u2/04-rimodellamento-della-cromatina-e-condensine/",
+      "prev": "bio-u2-03",
+      "next": "bio-u2-05",
+      "diagramma": "complesso di rimodellamento + condensine",
+      "video": false
+    },
+    {
+      "id": "bio-u2-05",
+      "titolo": "Modificazioni degli istoni ed epigenetica (l'esempio dell'acetilazione)",
+      "obiettivo": "Capire come le modifiche delle code istoniche costituiscono un codice epigenetico.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 2,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dell'informazione genetica e epigenetica",
+      "prereq": [
+        "bio-u2-03",
+        "bio-u1-17"
+      ],
+      "correlati": [],
+      "slug": "05-modificazioni-degli-istoni-ed-epigenetica-lesempio",
+      "url": "risorse/biologia/u2/05-modificazioni-degli-istoni-ed-epigenetica-lesempio/",
+      "prev": "bio-u2-04",
+      "next": "bio-u2-06",
+      "diagramma": "code istoniche acetilate e effetti sulla cromatina",
+      "video": true
+    },
+    {
+      "id": "bio-u2-06",
+      "titolo": "Il genoma umano: organizzazione, sequenze singole e famiglie geniche",
+      "obiettivo": "Avere una visione d'insieme del genoma umano e distinguere geni singoli da famiglie geniche.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 2,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dell'informazione genetica e epigenetica",
+      "prereq": [
+        "bio-u2-01"
+      ],
+      "correlati": [
+        "bio-u2-07"
+      ],
+      "slug": "06-il-genoma-umano-organizzazione-sequenze-singole",
+      "url": "risorse/biologia/u2/06-il-genoma-umano-organizzazione-sequenze-singole/",
+      "prev": "bio-u2-05",
+      "next": "bio-u2-07",
+      "diagramma": "torta delle componenti del genoma umano",
+      "video": true
+    },
+    {
+      "id": "bio-u2-07",
+      "titolo": "Sequenze ripetute in tandem (minisatelliti, microsatelliti) e intersperse (LINE, SINE, retrovirus endogeni)",
+      "obiettivo": "Capire i tipi di sequenze ripetute del genoma e il concetto di elementi mobili del DNA.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 2,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dell'informazione genetica e epigenetica",
+      "prereq": [
+        "bio-u2-06"
+      ],
+      "correlati": [
+        "bio-u4-02"
+      ],
+      "slug": "07-sequenze-ripetute-in-tandem-minisatelliti-microsatelliti",
+      "url": "risorse/biologia/u2/07-sequenze-ripetute-in-tandem-minisatelliti-microsatelliti/",
+      "prev": "bio-u2-06",
+      "next": "bio-u3-01",
+      "diagramma": "ripetizioni in tandem e intersperse nel genoma",
+      "video": true
+    },
+    {
+      "id": "bio-u3-01",
+      "titolo": "La replicazione semiconservativa, origini e forcella replicativa",
+      "obiettivo": "Capire il meccanismo semiconservativo e dove/come inizia la replicazione.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u1-18"
+      ],
+      "correlati": [
+        "bio-u3-02",
+        "bio-u7-01"
+      ],
+      "slug": "01-la-replicazione-semiconservativa-origini-e-forcella",
+      "url": "risorse/biologia/u3/01-la-replicazione-semiconservativa-origini-e-forcella/",
+      "prev": "bio-u2-07",
+      "next": "bio-u3-02",
+      "diagramma": "bolla di replicazione con due forcelle",
+      "video": true
+    },
+    {
+      "id": "bio-u3-02",
+      "titolo": "Srotolamento del DNA: elicasi e topoisomerasi",
+      "obiettivo": "Capire come gli enzimi aprono la doppia elica e risolvono le tensioni torsionali.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-01"
+      ],
+      "correlati": [
+        "bio-u3-03"
+      ],
+      "slug": "02-srotolamento-del-dna-elicasi-e-topoisomerasi",
+      "url": "risorse/biologia/u3/02-srotolamento-del-dna-elicasi-e-topoisomerasi/",
+      "prev": "bio-u3-01",
+      "next": "bio-u3-03",
+      "diagramma": "elicasi + topoisomerasi alla forcella",
+      "video": true
+    },
+    {
+      "id": "bio-u3-03",
+      "titolo": "Primasi, DNA polimerasi e correzione degli errori (proofreading)",
+      "obiettivo": "Capire l'innesco con primer di RNA e la sintesi/correzione del DNA da parte della polimerasi.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-02"
+      ],
+      "correlati": [
+        "bio-u3-04"
+      ],
+      "slug": "03-primasi-dna-polimerasi-e-correzione-degli",
+      "url": "risorse/biologia/u3/03-primasi-dna-polimerasi-e-correzione-degli/",
+      "prev": "bio-u3-02",
+      "next": "bio-u3-04",
+      "diagramma": "primasi + DNA polimerasi con proofreading",
+      "video": true
+    },
+    {
+      "id": "bio-u3-04",
+      "titolo": "Filamento continuo e discontinuo, frammenti di Okazaki, rimozione RNA e DNA ligasi",
+      "obiettivo": "Capire perché un filamento è sintetizzato a frammenti e come vengono uniti.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-03"
+      ],
+      "correlati": [
+        "bio-u3-05"
+      ],
+      "slug": "04-filamento-continuo-e-discontinuo-frammenti-di",
+      "url": "risorse/biologia/u3/04-filamento-continuo-e-discontinuo-frammenti-di/",
+      "prev": "bio-u3-03",
+      "next": "bio-u3-05",
+      "diagramma": "leading/lagging strand con frammenti di Okazaki",
+      "video": true
+    },
+    {
+      "id": "bio-u3-05",
+      "titolo": "Telomeri, telomerasi e senescenza replicativa",
+      "obiettivo": "Capire il problema delle estremità, il ruolo della telomerasi e la senescenza.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-04",
+        "bio-u2-01"
+      ],
+      "correlati": [],
+      "slug": "05-telomeri-telomerasi-e-senescenza-replicativa",
+      "url": "risorse/biologia/u3/05-telomeri-telomerasi-e-senescenza-replicativa/",
+      "prev": "bio-u3-04",
+      "next": "bio-u3-06",
+      "diagramma": "accorciamento dei telomeri e azione della telomerasi",
+      "video": true
+    },
+    {
+      "id": "bio-u3-06",
+      "titolo": "Il concetto e l'anatomia del gene (procariotico ed eucariotico); geni mono/policistronici",
+      "obiettivo": "Capire cos'è un gene, confrontarne la struttura nei due regni e distinguere geni mono/policistronici.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u1-18"
+      ],
+      "correlati": [
+        "bio-u3-07",
+        "bio-u4-03"
+      ],
+      "slug": "06-il-concetto-e-lanatomia-del-gene",
+      "url": "risorse/biologia/u3/06-il-concetto-e-lanatomia-del-gene/",
+      "prev": "bio-u3-05",
+      "next": "bio-u3-07",
+      "diagramma": "confronto gene procariote vs eucariote (esoni/introni)",
+      "video": true
+    },
+    {
+      "id": "bio-u3-07",
+      "titolo": "Promotori ed elementi regolativi in cis",
+      "obiettivo": "Capire cosa sono promotori e sequenze regolatrici che controllano l'espressione genica.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-06"
+      ],
+      "correlati": [
+        "bio-u3-08",
+        "bio-u3-09",
+        "bio-u3-10"
+      ],
+      "slug": "07-promotori-ed-elementi-regolativi-in-cis",
+      "url": "risorse/biologia/u3/07-promotori-ed-elementi-regolativi-in-cis/",
+      "prev": "bio-u3-06",
+      "next": "bio-u3-08",
+      "diagramma": "gene con promotore ed elementi in cis",
+      "video": true
+    },
+    {
+      "id": "bio-u3-08",
+      "titolo": "La trascrizione nei procarioti e l'operone Lac",
+      "obiettivo": "Capire la trascrizione procariotica e la sua regolazione col modello dell'operone Lac.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-07"
+      ],
+      "correlati": [],
+      "slug": "08-la-trascrizione-nei-procarioti-e-loperone",
+      "url": "risorse/biologia/u3/08-la-trascrizione-nei-procarioti-e-loperone/",
+      "prev": "bio-u3-07",
+      "next": "bio-u3-09",
+      "diagramma": "schema dell'operone Lac",
+      "video": true
+    },
+    {
+      "id": "bio-u3-09",
+      "titolo": "Livelli di controllo dell'espressione genica negli eucarioti",
+      "obiettivo": "Avere una visione d'insieme dei controlli trascrizionale, post-trascrizionale, traduzionale e post-traduzionale.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-07"
+      ],
+      "correlati": [],
+      "slug": "09-livelli-di-controllo-dellespressione-genica-negli",
+      "url": "risorse/biologia/u3/09-livelli-di-controllo-dellespressione-genica-negli/",
+      "prev": "bio-u3-08",
+      "next": "bio-u3-10",
+      "diagramma": "schema dei livelli di regolazione genica",
+      "video": true
+    },
+    {
+      "id": "bio-u3-10",
+      "titolo": "La trascrizione eucariotica: le tre RNA polimerasi, fattori generali e TATA box",
+      "obiettivo": "Conoscere le tre RNA polimerasi e l'assemblaggio del complesso di inizio sul promotore.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u1-19",
+        "bio-u3-07"
+      ],
+      "correlati": [
+        "bio-u3-11",
+        "bio-u3-12"
+      ],
+      "slug": "10-la-trascrizione-eucariotica-le-tre-rna",
+      "url": "risorse/biologia/u3/10-la-trascrizione-eucariotica-le-tre-rna/",
+      "prev": "bio-u3-09",
+      "next": "bio-u3-11",
+      "diagramma": "complesso di pre-inizio con TATA box",
+      "video": true
+    },
+    {
+      "id": "bio-u3-11",
+      "titolo": "Promotori prossimali/distali (enhancer, silencer) e fattori specifici (recettori ormoni steroidei)",
+      "obiettivo": "Distinguere elementi regolatori vicini e lontani e capire i fattori di trascrizione specifici.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-10"
+      ],
+      "correlati": [],
+      "slug": "11-promotori-prossimali-distali-enhancer-silencer-e",
+      "url": "risorse/biologia/u3/11-promotori-prossimali-distali-enhancer-silencer-e/",
+      "prev": "bio-u3-10",
+      "next": "bio-u3-12",
+      "diagramma": "ansa del DNA che avvicina l'enhancer al promotore",
+      "video": true
+    },
+    {
+      "id": "bio-u3-12",
+      "titolo": "Inizio, allungamento e terminazione della trascrizione negli eucarioti",
+      "obiettivo": "Conoscere le tre fasi del processo di trascrizione eucariotica.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-10"
+      ],
+      "correlati": [
+        "bio-u3-13",
+        "bio-u3-16"
+      ],
+      "slug": "12-inizio-allungamento-e-terminazione-della-trascrizione",
+      "url": "risorse/biologia/u3/12-inizio-allungamento-e-terminazione-della-trascrizione/",
+      "prev": "bio-u3-11",
+      "next": "bio-u3-13",
+      "diagramma": "le tre fasi della trascrizione lungo il gene",
+      "video": false
+    },
+    {
+      "id": "bio-u3-13",
+      "titolo": "Maturazione dell'mRNA: capping e poliadenilazione",
+      "obiettivo": "Capire l'aggiunta del cappuccio in 5' e della coda poli-A in 3'.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-12"
+      ],
+      "correlati": [
+        "bio-u3-14",
+        "bio-u3-15"
+      ],
+      "slug": "13-maturazione-dellmrna-capping-e-poliadenilazione",
+      "url": "risorse/biologia/u3/13-maturazione-dellmrna-capping-e-poliadenilazione/",
+      "prev": "bio-u3-12",
+      "next": "bio-u3-14",
+      "diagramma": "pre-mRNA con cap 5' e coda poli-A 3'",
+      "video": true
+    },
+    {
+      "id": "bio-u3-14",
+      "titolo": "Splicing e splicing alternativo, spliceosoma, snRNA e ribozimi",
+      "obiettivo": "Capire la rimozione degli introni, come lo splicing alternativo genera proteine diverse e il concetto di ribozima.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-13"
+      ],
+      "correlati": [],
+      "slug": "14-splicing-e-splicing-alternativo-spliceosoma-snrna",
+      "url": "risorse/biologia/u3/14-splicing-e-splicing-alternativo-spliceosoma-snrna/",
+      "prev": "bio-u3-13",
+      "next": "bio-u3-15",
+      "diagramma": "rimozione introni + varianti di splicing alternativo",
+      "video": true
+    },
+    {
+      "id": "bio-u3-15",
+      "titolo": "Editing dell'RNA e regolazione della stabilità del messaggero (miRNA, RNA interference)",
+      "obiettivo": "Capire l'editing e come la durata di vita dell'mRNA è regolata, inclusi i miRNA.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-13",
+        "bio-u1-19"
+      ],
+      "correlati": [],
+      "slug": "15-editing-dellrna-e-regolazione-della-stabilita",
+      "url": "risorse/biologia/u3/15-editing-dellrna-e-regolazione-della-stabilita/",
+      "prev": "bio-u3-14",
+      "next": "bio-u3-16",
+      "diagramma": "miRNA che silenzia l'mRNA bersaglio",
+      "video": true
+    },
+    {
+      "id": "bio-u3-16",
+      "titolo": "Maturazione di rRNA e tRNA",
+      "obiettivo": "Capire come gli RNA ribosomiali e di trasporto vengono processati.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-12"
+      ],
+      "correlati": [],
+      "slug": "16-maturazione-di-rrna-e-trna",
+      "url": "risorse/biologia/u3/16-maturazione-di-rrna-e-trna/",
+      "prev": "bio-u3-15",
+      "next": "bio-u3-17",
+      "diagramma": "taglio del precursore degli rRNA",
+      "video": false
+    },
+    {
+      "id": "bio-u3-17",
+      "titolo": "La traduzione: attori (rRNA, tRNA, mRNA), aminoacil-tRNA e ribosomi",
+      "obiettivo": "Capire come l'mRNA viene tradotto in proteina e il ruolo dei vari RNA e del ribosoma.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u1-15",
+        "bio-u1-19"
+      ],
+      "correlati": [
+        "bio-u3-18",
+        "bio-u3-19",
+        "bio-u5-16"
+      ],
+      "slug": "17-la-traduzione-attori-rrna-trna-mrna",
+      "url": "risorse/biologia/u3/17-la-traduzione-attori-rrna-trna-mrna/",
+      "prev": "bio-u3-16",
+      "next": "bio-u3-18",
+      "diagramma": "ribosoma su mRNA con tRNA nei siti A, P, E",
+      "video": true
+    },
+    {
+      "id": "bio-u3-18",
+      "titolo": "Il codice genetico: codoni, anticodoni e sue proprietà",
+      "obiettivo": "Capire come le triplette codificano gli amminoacidi e le proprietà del codice (degenerazione, universalità).",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-17"
+      ],
+      "correlati": [],
+      "slug": "18-il-codice-genetico-codoni-anticodoni-e",
+      "url": "risorse/biologia/u3/18-il-codice-genetico-codoni-anticodoni-e/",
+      "prev": "bio-u3-17",
+      "next": "bio-u3-19",
+      "diagramma": "tabella del codice genetico",
+      "video": true
+    },
+    {
+      "id": "bio-u3-19",
+      "titolo": "Fasi della traduzione (inizio, allungamento, terminazione) e regioni UTR dell'mRNA",
+      "obiettivo": "Conoscere le fasi della traduzione e il ruolo regolatorio delle regioni non tradotte.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u3-17"
+      ],
+      "correlati": [],
+      "slug": "19-fasi-della-traduzione-inizio-allungamento-terminazione",
+      "url": "risorse/biologia/u3/19-fasi-della-traduzione-inizio-allungamento-terminazione/",
+      "prev": "bio-u3-18",
+      "next": "bio-u3-20",
+      "diagramma": "le tre fasi della traduzione + 5'UTR e 3'UTR",
+      "video": true
+    },
+    {
+      "id": "bio-u3-20",
+      "titolo": "Maturazione delle proteine: folding, proteine chaperon ed errori di ripiegamento",
+      "obiettivo": "Capire l'importanza del ripiegamento corretto, il ruolo degli chaperon e le conseguenze del misfolding.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u1-15"
+      ],
+      "correlati": [
+        "bio-u5-18"
+      ],
+      "slug": "20-maturazione-delle-proteine-folding-proteine-chaperon",
+      "url": "risorse/biologia/u3/20-maturazione-delle-proteine-folding-proteine-chaperon/",
+      "prev": "bio-u3-19",
+      "next": "bio-u3-21",
+      "diagramma": "chaperon che assiste il folding della proteina",
+      "video": true
+    },
+    {
+      "id": "bio-u3-21",
+      "titolo": "Degradazione proteasomica ubiquitina-dipendente e proteine ubiquitin-like",
+      "obiettivo": "Capire come le proteine da eliminare vengono marcate con ubiquitina e degradate dal proteasoma.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 3,
+      "unitaTitolo": "Il flusso dell'informazione",
+      "prereq": [
+        "bio-u1-16",
+        "bio-u1-17"
+      ],
+      "correlati": [
+        "bio-u7-07"
+      ],
+      "slug": "21-degradazione-proteasomica-ubiquitina-dipendente-e-proteine",
+      "url": "risorse/biologia/u3/21-degradazione-proteasomica-ubiquitina-dipendente-e-proteine/",
+      "prev": "bio-u3-20",
+      "next": "bio-u4-01",
+      "diagramma": "proteina poliubiquitinata nel proteasoma",
+      "video": true
+    },
+    {
+      "id": "bio-u4-01",
+      "titolo": "Variazioni del genoma: sostituzioni, inserzioni, delezioni; mutazioni geniche e cromosomiche",
+      "obiettivo": "Riconoscere i tipi di variazione della sequenza e distinguere mutazioni geniche da cromosomiche.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 4,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati",
+      "prereq": [
+        "bio-u1-18"
+      ],
+      "correlati": [
+        "bio-u4-02"
+      ],
+      "slug": "01-variazioni-del-genoma-sostituzioni-inserzioni-delezioni",
+      "url": "risorse/biologia/u4/01-variazioni-del-genoma-sostituzioni-inserzioni-delezioni/",
+      "prev": "bio-u3-21",
+      "next": "bio-u4-02",
+      "diagramma": "esempi di sostituzione, inserzione, delezione",
+      "video": true
+    },
+    {
+      "id": "bio-u4-02",
+      "titolo": "Espansione di sequenze ripetute e riparazione del danno al DNA",
+      "obiettivo": "Capire l'espansione di triplette e i principi della riparazione su singolo e doppio filamento.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 4,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati",
+      "prereq": [
+        "bio-u4-01",
+        "bio-u2-07"
+      ],
+      "correlati": [
+        "bio-u7-04"
+      ],
+      "slug": "02-espansione-di-sequenze-ripetute-e-riparazione",
+      "url": "risorse/biologia/u4/02-espansione-di-sequenze-ripetute-e-riparazione/",
+      "prev": "bio-u4-01",
+      "next": "bio-u4-03",
+      "diagramma": "espansione di ripetizioni + schema di riparazione",
+      "video": true
+    },
+    {
+      "id": "bio-u4-03",
+      "titolo": "Gli alleli: omozigosi, eterozigosi, dominanza/recessività, genotipo e fenotipo",
+      "obiettivo": "Capire cos'è un allele, gli stati omo/eterozigote e la differenza tra genotipo e fenotipo.",
+      "difficolta": 1,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 4,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati",
+      "prereq": [
+        "bio-u3-06"
+      ],
+      "correlati": [
+        "bio-u4-04",
+        "bio-u4-07",
+        "bio-u4-11"
+      ],
+      "slug": "03-gli-alleli-omozigosi-eterozigosi-dominanza-recessivita",
+      "url": "risorse/biologia/u4/03-gli-alleli-omozigosi-eterozigosi-dominanza-recessivita/",
+      "prev": "bio-u4-02",
+      "next": "bio-u4-04",
+      "diagramma": "coppia di alleli su cromosomi omologhi",
+      "video": true
+    },
+    {
+      "id": "bio-u4-04",
+      "titolo": "Le leggi di Mendel: segregazione e assortimento indipendente",
+      "obiettivo": "Capire le leggi di Mendel sulla trasmissione dei caratteri.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 4,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati",
+      "prereq": [
+        "bio-u4-03"
+      ],
+      "correlati": [
+        "bio-u4-05",
+        "bio-u4-06"
+      ],
+      "slug": "04-le-leggi-di-mendel-segregazione-e",
+      "url": "risorse/biologia/u4/04-le-leggi-di-mendel-segregazione-e/",
+      "prev": "bio-u4-03",
+      "next": "bio-u4-05",
+      "diagramma": "quadrato di Punnett per incrocio mendeliano",
+      "video": true
+    },
+    {
+      "id": "bio-u4-05",
+      "titolo": "Dominanza incompleta, codominanza, alleli multipli (sistema AB0)",
+      "obiettivo": "Distinguere i casi in cui gli alleli si fondono o coesistono, con l'esempio dei gruppi sanguigni.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 4,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati",
+      "prereq": [
+        "bio-u4-04"
+      ],
+      "correlati": [],
+      "slug": "05-dominanza-incompleta-codominanza-alleli-multipli-sistema",
+      "url": "risorse/biologia/u4/05-dominanza-incompleta-codominanza-alleli-multipli-sistema/",
+      "prev": "bio-u4-04",
+      "next": "bio-u4-06",
+      "diagramma": "alleli A, B, 0 e fenotipi dei gruppi sanguigni",
+      "video": true
+    },
+    {
+      "id": "bio-u4-06",
+      "titolo": "Pleiotropia, epistasi (rapporti mendeliani atipici), associazione e mappe genetiche",
+      "obiettivo": "Capire le interazioni geniche che alterano i rapporti mendeliani e come si costruiscono le mappe.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 4,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati",
+      "prereq": [
+        "bio-u4-04"
+      ],
+      "correlati": [],
+      "slug": "06-pleiotropia-epistasi-rapporti-mendeliani-atipici-associazione",
+      "url": "risorse/biologia/u4/06-pleiotropia-epistasi-rapporti-mendeliani-atipici-associazione/",
+      "prev": "bio-u4-05",
+      "next": "bio-u4-07",
+      "diagramma": "epistasi + geni associati e ricombinazione",
+      "video": false
+    },
+    {
+      "id": "bio-u4-07",
+      "titolo": "Espressione modulata dall'ambiente: penetranza, espressività, caratteri poligenici, imprinting",
+      "obiettivo": "Capire come l'ambiente e l'origine parentale influenzano l'espressione del genotipo.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 4,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati",
+      "prereq": [
+        "bio-u4-03",
+        "bio-u2-03"
+      ],
+      "correlati": [],
+      "slug": "07-espressione-modulata-dallambiente-penetranza-espressivita-caratteri",
+      "url": "risorse/biologia/u4/07-espressione-modulata-dallambiente-penetranza-espressivita-caratteri/",
+      "prev": "bio-u4-06",
+      "next": "bio-u4-08",
+      "diagramma": "penetranza/espressività + curva di un carattere quantitativo",
+      "video": true
+    },
+    {
+      "id": "bio-u4-08",
+      "titolo": "Cromosomi umani, cariotipo, diploidia, omologhi e bandeggio",
+      "obiettivo": "Capire l'assetto cromosomico umano, la diploidia, i cromosomi omologhi e la tecnica del bandeggio.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 4,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati",
+      "prereq": [
+        "bio-u2-01"
+      ],
+      "correlati": [
+        "bio-u4-09",
+        "bio-u4-10",
+        "bio-u7-08"
+      ],
+      "slug": "08-cromosomi-umani-cariotipo-diploidia-omologhi-e",
+      "url": "risorse/biologia/u4/08-cromosomi-umani-cariotipo-diploidia-omologhi-e/",
+      "prev": "bio-u4-07",
+      "next": "bio-u4-09",
+      "diagramma": "cariotipo umano con 23 coppie e bande",
+      "video": true
+    },
+    {
+      "id": "bio-u4-09",
+      "titolo": "Alterazioni del numero dei cromosomi: aneuploidia e poliploidia (trisomia 21)",
+      "obiettivo": "Distinguere le variazioni di numero cromosomico, con l'esempio della trisomia 21.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 4,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati",
+      "prereq": [
+        "bio-u4-08"
+      ],
+      "correlati": [
+        "bio-u7-09"
+      ],
+      "slug": "09-alterazioni-del-numero-dei-cromosomi-aneuploidia",
+      "url": "risorse/biologia/u4/09-alterazioni-del-numero-dei-cromosomi-aneuploidia/",
+      "prev": "bio-u4-08",
+      "next": "bio-u4-10",
+      "diagramma": "cariotipo con tre copie del cromosoma 21",
+      "video": true
+    },
+    {
+      "id": "bio-u4-10",
+      "titolo": "Alterazioni della struttura dei cromosomi (traslocazioni, inversioni, delezioni, inserzioni)",
+      "obiettivo": "Riconoscere i principali riarrangiamenti strutturali dei cromosomi.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 4,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati",
+      "prereq": [
+        "bio-u4-08"
+      ],
+      "correlati": [],
+      "slug": "10-alterazioni-della-struttura-dei-cromosomi-traslocazioni",
+      "url": "risorse/biologia/u4/10-alterazioni-della-struttura-dei-cromosomi-traslocazioni/",
+      "prev": "bio-u4-09",
+      "next": "bio-u4-11",
+      "diagramma": "schema delle aberrazioni strutturali cromosomiche",
+      "video": true
+    },
+    {
+      "id": "bio-u4-11",
+      "titolo": "Gli alberi genealogici e i pattern di ereditarietà (autosomica, X-linked, Y-linked, mitocondriale)",
+      "obiettivo": "Saper leggere un pedigree e riconoscere i diversi pattern di trasmissione dei caratteri.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 4,
+      "unitaTitolo": "I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati",
+      "prereq": [
+        "bio-u4-03",
+        "bio-u1-12"
+      ],
+      "correlati": [],
+      "slug": "11-gli-alberi-genealogici-e-i-pattern",
+      "url": "risorse/biologia/u4/11-gli-alberi-genealogici-e-i-pattern/",
+      "prev": "bio-u4-10",
+      "next": "bio-u5-01",
+      "diagramma": "pedigree dei vari tipi di ereditarietà",
+      "video": true
+    },
+    {
+      "id": "bio-u5-01",
+      "titolo": "Le membrane e il modello a mosaico fluido (glicocalice, asimmetria)",
+      "obiettivo": "Capire la struttura della membrana come doppio strato fluido asimmetrico di lipidi e proteine.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u1-14"
+      ],
+      "correlati": [
+        "bio-u5-02",
+        "bio-u5-20"
+      ],
+      "slug": "01-le-membrane-e-il-modello-a",
+      "url": "risorse/biologia/u5/01-le-membrane-e-il-modello-a/",
+      "prev": "bio-u4-11",
+      "next": "bio-u5-02",
+      "diagramma": "modello a mosaico fluido con glicocalice",
+      "video": true
+    },
+    {
+      "id": "bio-u5-02",
+      "titolo": "Osmosi, diffusione e trasporto passivo (proteine canale e trasportatori)",
+      "obiettivo": "Capire i meccanismi di passaggio spontaneo delle sostanze attraverso la membrana.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-01"
+      ],
+      "correlati": [
+        "bio-u5-03"
+      ],
+      "slug": "02-osmosi-diffusione-e-trasporto-passivo-proteine",
+      "url": "risorse/biologia/u5/02-osmosi-diffusione-e-trasporto-passivo-proteine/",
+      "prev": "bio-u5-01",
+      "next": "bio-u5-03",
+      "diagramma": "diffusione, osmosi, canale vs trasportatore",
+      "video": true
+    },
+    {
+      "id": "bio-u5-03",
+      "titolo": "Il trasporto attivo: pompe ATPasi e trasportatori ABC",
+      "obiettivo": "Capire il trasporto contro gradiente che consuma energia, con esempi delle pompe ATPasi e ABC.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-02"
+      ],
+      "correlati": [
+        "bio-u5-04"
+      ],
+      "slug": "03-il-trasporto-attivo-pompe-atpasi-e",
+      "url": "risorse/biologia/u5/03-il-trasporto-attivo-pompe-atpasi-e/",
+      "prev": "bio-u5-02",
+      "next": "bio-u5-04",
+      "diagramma": "pompa Na/K-ATPasi che usa ATP",
+      "video": true
+    },
+    {
+      "id": "bio-u5-04",
+      "titolo": "Potenziale di membrana e potenziale d'azione",
+      "obiettivo": "Capire gli aspetti biologici del potenziale di membrana a riposo e del potenziale d'azione.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-03"
+      ],
+      "correlati": [],
+      "slug": "04-potenziale-di-membrana-e-potenziale-dazione",
+      "url": "risorse/biologia/u5/04-potenziale-di-membrana-e-potenziale-dazione/",
+      "prev": "bio-u5-03",
+      "next": "bio-u5-05",
+      "diagramma": "tracciato del potenziale d'azione con fasi",
+      "video": true
+    },
+    {
+      "id": "bio-u5-05",
+      "titolo": "Smistamento delle proteine: compartimenti cellulari e segnali di indirizzamento",
+      "obiettivo": "Capire come le proteine vengono indirizzate ai vari compartimenti tramite segnali specifici.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u1-11"
+      ],
+      "correlati": [
+        "bio-u5-13",
+        "bio-u5-14"
+      ],
+      "slug": "05-smistamento-delle-proteine-compartimenti-cellulari-e",
+      "url": "risorse/biologia/u5/05-smistamento-delle-proteine-compartimenti-cellulari-e/",
+      "prev": "bio-u5-04",
+      "next": "bio-u5-06",
+      "diagramma": "mappa dei compartimenti e relative sequenze segnale",
+      "video": true
+    },
+    {
+      "id": "bio-u5-06",
+      "titolo": "Il nucleo: involucro, nucleolo, condensati nucleari, pori e nucleoporine",
+      "obiettivo": "Descrivere la struttura del nucleo e del complesso del poro nucleare.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u1-11"
+      ],
+      "correlati": [
+        "bio-u5-07"
+      ],
+      "slug": "06-il-nucleo-involucro-nucleolo-condensati-nucleari",
+      "url": "risorse/biologia/u5/06-il-nucleo-involucro-nucleolo-condensati-nucleari/",
+      "prev": "bio-u5-05",
+      "next": "bio-u5-07",
+      "diagramma": "sezione del nucleo con involucro, nucleolo e pori",
+      "video": true
+    },
+    {
+      "id": "bio-u5-07",
+      "titolo": "Il trasporto nucleare: segnali NLS/NES, importine, esportine e sistema Ran",
+      "obiettivo": "Capire come proteine e RNA entrano/escono dal nucleo e come il sistema Ran dà direzionalità.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-06"
+      ],
+      "correlati": [
+        "bio-u5-08"
+      ],
+      "slug": "07-il-trasporto-nucleare-segnali-nls-nes",
+      "url": "risorse/biologia/u5/07-il-trasporto-nucleare-segnali-nls-nes/",
+      "prev": "bio-u5-06",
+      "next": "bio-u5-08",
+      "diagramma": "importina/esportina al poro + gradiente di RanGTP",
+      "video": true
+    },
+    {
+      "id": "bio-u5-08",
+      "titolo": "Regolazione dell'importazione nucleare (recettore ormoni steroidei, NFkB, SREBP1) ed export degli RNA",
+      "obiettivo": "Capire come l'ingresso nel nucleo di fattori chiave è regolato e come gli RNA vengono esportati.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-07"
+      ],
+      "correlati": [],
+      "slug": "08-regolazione-dellimportazione-nucleare-recettore-ormoni-steroidei",
+      "url": "risorse/biologia/u5/08-regolazione-dellimportazione-nucleare-recettore-ormoni-steroidei/",
+      "prev": "bio-u5-07",
+      "next": "bio-u5-09",
+      "diagramma": "fattore trattenuto nel citosol che entra nel nucleo su segnale",
+      "video": false
+    },
+    {
+      "id": "bio-u5-09",
+      "titolo": "I mitocondri: struttura, funzioni e genoma mitocondriale",
+      "obiettivo": "Descrivere la struttura del mitocondrio, la sua funzione energetica e il suo DNA proprio.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u1-12"
+      ],
+      "correlati": [
+        "bio-u5-13",
+        "bio-u7-11"
+      ],
+      "slug": "09-i-mitocondri-struttura-funzioni-e-genoma",
+      "url": "risorse/biologia/u5/09-i-mitocondri-struttura-funzioni-e-genoma/",
+      "prev": "bio-u5-08",
+      "next": "bio-u5-10",
+      "diagramma": "mitocondrio con membrane, creste, matrice e DNA circolare",
+      "video": true
+    },
+    {
+      "id": "bio-u5-10",
+      "titolo": "La glicolisi",
+      "obiettivo": "Capire la glicolisi come prima tappa della demolizione del glucosio nel citoplasma.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u1-20"
+      ],
+      "correlati": [
+        "bio-u5-11"
+      ],
+      "slug": "10-la-glicolisi",
+      "url": "risorse/biologia/u5/10-la-glicolisi/",
+      "prev": "bio-u5-09",
+      "next": "bio-u5-11",
+      "diagramma": "schema della glicolisi (glucosio -> piruvato)",
+      "video": true
+    },
+    {
+      "id": "bio-u5-11",
+      "titolo": "Il ciclo degli acidi tricarbossilici (ciclo di Krebs)",
+      "obiettivo": "Capire il ruolo del ciclo di Krebs nell'ossidazione e nella produzione di trasportatori ridotti.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-10"
+      ],
+      "correlati": [
+        "bio-u5-12"
+      ],
+      "slug": "11-il-ciclo-degli-acidi-tricarbossilici-ciclo",
+      "url": "risorse/biologia/u5/11-il-ciclo-degli-acidi-tricarbossilici-ciclo/",
+      "prev": "bio-u5-10",
+      "next": "bio-u5-12",
+      "diagramma": "schema del ciclo di Krebs nella matrice",
+      "video": true
+    },
+    {
+      "id": "bio-u5-12",
+      "titolo": "Catena di trasporto degli elettroni, sintesi di ATP e bilancio energetico",
+      "obiettivo": "Capire come la catena respiratoria e l'ATP sintasi producono ATP e il bilancio complessivo.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-11"
+      ],
+      "correlati": [],
+      "slug": "12-catena-di-trasporto-degli-elettroni-sintesi",
+      "url": "risorse/biologia/u5/12-catena-di-trasporto-degli-elettroni-sintesi/",
+      "prev": "bio-u5-11",
+      "next": "bio-u5-13",
+      "diagramma": "catena respiratoria con gradiente protonico e ATP sintasi",
+      "video": true
+    },
+    {
+      "id": "bio-u5-13",
+      "titolo": "Dinamica mitocondriale (fusione, fissione) e importazione delle proteine (TOM, TIM, SAM, OXA)",
+      "obiettivo": "Capire la rete dinamica dei mitocondri e come le proteine vengono importate nei loro compartimenti.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-09",
+        "bio-u5-05"
+      ],
+      "correlati": [],
+      "slug": "13-dinamica-mitocondriale-fusione-fissione-e-importazione",
+      "url": "risorse/biologia/u5/13-dinamica-mitocondriale-fusione-fissione-e-importazione/",
+      "prev": "bio-u5-12",
+      "next": "bio-u5-14",
+      "diagramma": "fusione/fissione + traslocatori TOM/TIM",
+      "video": false
+    },
+    {
+      "id": "bio-u5-14",
+      "titolo": "I perossisomi: struttura, funzioni, biogenesi e patologie (sindrome di Zellweger)",
+      "obiettivo": "Descrivere i perossisomi, l'importazione delle loro proteine e un esempio patologico.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u1-11",
+        "bio-u5-05"
+      ],
+      "correlati": [],
+      "slug": "14-i-perossisomi-struttura-funzioni-biogenesi-e",
+      "url": "risorse/biologia/u5/14-i-perossisomi-struttura-funzioni-biogenesi-e/",
+      "prev": "bio-u5-13",
+      "next": "bio-u5-15",
+      "diagramma": "perossisoma e importazione mediata da segnale e perossine",
+      "video": false
+    },
+    {
+      "id": "bio-u5-15",
+      "titolo": "La via secretoria: reticolo endoplasmatico (liscio e ruvido) e apparato di Golgi",
+      "obiettivo": "Descrivere i compartimenti della via secretoria e il loro ruolo nel processamento delle proteine.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u1-11"
+      ],
+      "correlati": [
+        "bio-u5-16",
+        "bio-u5-19",
+        "bio-u5-21"
+      ],
+      "slug": "15-la-via-secretoria-reticolo-endoplasmatico-liscio",
+      "url": "risorse/biologia/u5/15-la-via-secretoria-reticolo-endoplasmatico-liscio/",
+      "prev": "bio-u5-14",
+      "next": "bio-u5-16",
+      "diagramma": "RE -> Golgi (cis/trans) -> superficie",
+      "video": true
+    },
+    {
+      "id": "bio-u5-16",
+      "titolo": "Trasporto al reticolo endoplasmatico (SRP, traslocone, peptidasi del segnale)",
+      "obiettivo": "Capire come le proteine destinate alla secrezione sono importate nel RE durante la traduzione.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-15",
+        "bio-u3-17"
+      ],
+      "correlati": [
+        "bio-u5-17"
+      ],
+      "slug": "16-trasporto-al-reticolo-endoplasmatico-srp-traslocone",
+      "url": "risorse/biologia/u5/16-trasporto-al-reticolo-endoplasmatico-srp-traslocone/",
+      "prev": "bio-u5-15",
+      "next": "bio-u5-17",
+      "diagramma": "SRP che porta il ribosoma al traslocone sul RE",
+      "video": true
+    },
+    {
+      "id": "bio-u5-17",
+      "titolo": "Glicosilazione nel RE, folding (calnexina/calreticulina) e controllo di qualità",
+      "obiettivo": "Capire il ruolo della glicosilazione e degli chaperon del RE nel folding e nel controllo qualità.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-16",
+        "bio-u1-17"
+      ],
+      "correlati": [
+        "bio-u5-18"
+      ],
+      "slug": "17-glicosilazione-nel-re-folding-calnexina-calreticulina",
+      "url": "risorse/biologia/u5/17-glicosilazione-nel-re-folding-calnexina-calreticulina/",
+      "prev": "bio-u5-16",
+      "next": "bio-u5-18",
+      "diagramma": "ciclo calnexina/calreticulina nel RE",
+      "video": false
+    },
+    {
+      "id": "bio-u5-18",
+      "titolo": "Risposta UPR, sistema ERAD (fibrosi cistica) e secrezione costitutiva/regolata",
+      "obiettivo": "Capire la risposta alle proteine mal ripiegate, la loro degradazione e i tipi di secrezione.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-17",
+        "bio-u3-20"
+      ],
+      "correlati": [],
+      "slug": "18-risposta-upr-sistema-erad-fibrosi-cistica",
+      "url": "risorse/biologia/u5/18-risposta-upr-sistema-erad-fibrosi-cistica/",
+      "prev": "bio-u5-17",
+      "next": "bio-u5-19",
+      "diagramma": "proteina mal ripiegata degradata via ERAD",
+      "video": false
+    },
+    {
+      "id": "bio-u5-19",
+      "titolo": "Il traffico vescicolare: formazione, rivestimento, attracco e fusione (SNARE, RAB, fosfoinositidi)",
+      "obiettivo": "Capire come si formano le vescicole e come riconoscono e si fondono col compartimento bersaglio.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-15"
+      ],
+      "correlati": [],
+      "slug": "19-il-traffico-vescicolare-formazione-rivestimento-attracco",
+      "url": "risorse/biologia/u5/19-il-traffico-vescicolare-formazione-rivestimento-attracco/",
+      "prev": "bio-u5-18",
+      "next": "bio-u5-20",
+      "diagramma": "gemmazione vescicola + appaiamento v-SNARE/t-SNARE",
+      "video": true
+    },
+    {
+      "id": "bio-u5-20",
+      "titolo": "L'endocitosi in fase fluida e mediata da recettori (transferrina, LDL, EGF)",
+      "obiettivo": "Distinguere l'internalizzazione aspecifica da quella selettiva mediata da recettori, con esempi.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-01"
+      ],
+      "correlati": [
+        "bio-u5-21",
+        "bio-u5-22"
+      ],
+      "slug": "20-lendocitosi-in-fase-fluida-e-mediata",
+      "url": "risorse/biologia/u5/20-lendocitosi-in-fase-fluida-e-mediata/",
+      "prev": "bio-u5-19",
+      "next": "bio-u5-21",
+      "diagramma": "fossette rivestite + destini di transferrina/LDL/EGF",
+      "video": true
+    },
+    {
+      "id": "bio-u5-21",
+      "titolo": "Endosomi, lisosomi, trasporto via mannosio-6-fosfato e malattie da accumulo",
+      "obiettivo": "Capire la maturazione endosomiale, l'indirizzamento ai lisosomi e le patologie da disfunzione lisosomiale.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-20",
+        "bio-u5-15"
+      ],
+      "correlati": [
+        "bio-u5-23"
+      ],
+      "slug": "21-endosomi-lisosomi-trasporto-via-mannosio-6",
+      "url": "risorse/biologia/u5/21-endosomi-lisosomi-trasporto-via-mannosio-6/",
+      "prev": "bio-u5-20",
+      "next": "bio-u5-22",
+      "diagramma": "endosoma -> lisosoma + marcatura M6P",
+      "video": true
+    },
+    {
+      "id": "bio-u5-22",
+      "titolo": "Transcitosi (immunoglobuline) e fagocitosi",
+      "obiettivo": "Capire il trasporto attraverso una cellula polarizzata e l'inglobamento di particelle grandi.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-20"
+      ],
+      "correlati": [],
+      "slug": "22-transcitosi-immunoglobuline-e-fagocitosi",
+      "url": "risorse/biologia/u5/22-transcitosi-immunoglobuline-e-fagocitosi/",
+      "prev": "bio-u5-21",
+      "next": "bio-u5-23",
+      "diagramma": "transcitosi di IgG + fagocito che ingloba un batterio",
+      "video": true
+    },
+    {
+      "id": "bio-u5-23",
+      "titolo": "L'autofagia (macro/micro/mediata da chaperon, mitofagia) e le sue alterazioni",
+      "obiettivo": "Capire come la cellula degrada e ricicla i propri componenti e le conseguenze di un'autofagia difettosa.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-21"
+      ],
+      "correlati": [],
+      "slug": "23-lautofagia-macro-micro-mediata-da-chaperon",
+      "url": "risorse/biologia/u5/23-lautofagia-macro-micro-mediata-da-chaperon/",
+      "prev": "bio-u5-22",
+      "next": "bio-u5-24",
+      "diagramma": "formazione dell'autofagosoma e fusione col lisosoma",
+      "video": true
+    },
+    {
+      "id": "bio-u5-24",
+      "titolo": "Il citoscheletro - microtubuli: struttura, dinamica, ruolo del GTP, centrosoma e gamma-TuRC",
+      "obiettivo": "Capire la struttura dei microtubuli, la loro instabilità dinamica e la nucleazione dal centrosoma.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u1-11"
+      ],
+      "correlati": [
+        "bio-u5-25",
+        "bio-u5-28",
+        "bio-u7-06"
+      ],
+      "slug": "24-il-citoscheletro-microtubuli-struttura-dinamica-ruolo",
+      "url": "risorse/biologia/u5/24-il-citoscheletro-microtubuli-struttura-dinamica-ruolo/",
+      "prev": "bio-u5-23",
+      "next": "bio-u5-25",
+      "diagramma": "microtubulo con dimeri di tubulina + centrosoma",
+      "video": true
+    },
+    {
+      "id": "bio-u5-25",
+      "titolo": "Motori dei microtubuli (MAP, dineine, chinesine), ciglia e flagelli",
+      "obiettivo": "Capire il trasporto lungo i microtubuli e la struttura a microtubuli di ciglia e flagelli.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-24"
+      ],
+      "correlati": [],
+      "slug": "25-motori-dei-microtubuli-map-dineine-chinesine",
+      "url": "risorse/biologia/u5/25-motori-dei-microtubuli-map-dineine-chinesine/",
+      "prev": "bio-u5-24",
+      "next": "bio-u5-26",
+      "diagramma": "dineina/chinesina sul microtubulo + assonema 9+2",
+      "video": true
+    },
+    {
+      "id": "bio-u5-26",
+      "titolo": "I microfilamenti di actina: polimerizzazione (ATP, Arp2/3), miosine e proteine accessorie (distrofina, sarcomero)",
+      "obiettivo": "Capire la struttura e la dinamica dell'actina e il ruolo di miosine e proteine accessorie.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u1-11"
+      ],
+      "correlati": [
+        "bio-u5-27",
+        "bio-u5-28",
+        "bio-u6-02"
+      ],
+      "slug": "26-i-microfilamenti-di-actina-polimerizzazione-atp",
+      "url": "risorse/biologia/u5/26-i-microfilamenti-di-actina-polimerizzazione-atp/",
+      "prev": "bio-u5-25",
+      "next": "bio-u5-27",
+      "diagramma": "polimerizzazione actina via Arp2/3 + sarcomero",
+      "video": true
+    },
+    {
+      "id": "bio-u5-27",
+      "titolo": "Regolazione dell'actina (famiglia Rho) e migrazione cellulare (chemiotassi dei neutrofili)",
+      "obiettivo": "Capire come le GTPasi Rho regolano l'actina e come una cellula migra seguendo un gradiente.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u5-26"
+      ],
+      "correlati": [],
+      "slug": "27-regolazione-dellactina-famiglia-rho-e-migrazione",
+      "url": "risorse/biologia/u5/27-regolazione-dellactina-famiglia-rho-e-migrazione/",
+      "prev": "bio-u5-26",
+      "next": "bio-u5-28",
+      "diagramma": "neutrofilo polarizzato che migra verso il gradiente",
+      "video": true
+    },
+    {
+      "id": "bio-u5-28",
+      "titolo": "I filamenti intermedi (cheratine, lamina nucleare) e le connessioni del citoscheletro",
+      "obiettivo": "Capire il ruolo strutturale dei filamenti intermedi e i collegamenti tra elementi del citoscheletro e col nucleo.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 5,
+      "unitaTitolo": "Le strutture cellulari: biogenesi, morfologia e funzioni",
+      "prereq": [
+        "bio-u1-11",
+        "bio-u5-24",
+        "bio-u5-26"
+      ],
+      "correlati": [],
+      "slug": "28-i-filamenti-intermedi-cheratine-lamina-nucleare",
+      "url": "risorse/biologia/u5/28-i-filamenti-intermedi-cheratine-lamina-nucleare/",
+      "prev": "bio-u5-27",
+      "next": "bio-u6-01",
+      "diagramma": "rete di lamine + complesso LINC nucleo-citoscheletro",
+      "video": false
+    },
+    {
+      "id": "bio-u6-01",
+      "titolo": "La matrice extracellulare: struttura, funzioni e degradazione",
+      "obiettivo": "Capire composizione, ruolo e rimodellamento della matrice extracellulare.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 6,
+      "unitaTitolo": "La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale",
+      "prereq": [
+        "bio-u1-11"
+      ],
+      "correlati": [
+        "bio-u6-02"
+      ],
+      "slug": "01-la-matrice-extracellulare-struttura-funzioni-e",
+      "url": "risorse/biologia/u6/01-la-matrice-extracellulare-struttura-funzioni-e/",
+      "prev": "bio-u5-28",
+      "next": "bio-u6-02",
+      "diagramma": "componenti della matrice extracellulare",
+      "video": true
+    },
+    {
+      "id": "bio-u6-02",
+      "titolo": "Ancoraggio alla matrice tramite integrine e meccanotrasduzione (fibronectina)",
+      "obiettivo": "Capire come le integrine collegano la cellula alla matrice e trasducono le forze meccaniche.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 6,
+      "unitaTitolo": "La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale",
+      "prereq": [
+        "bio-u6-01",
+        "bio-u5-26"
+      ],
+      "correlati": [],
+      "slug": "02-ancoraggio-alla-matrice-tramite-integrine-e",
+      "url": "risorse/biologia/u6/02-ancoraggio-alla-matrice-tramite-integrine-e/",
+      "prev": "bio-u6-01",
+      "next": "bio-u6-03",
+      "diagramma": "integrina che collega matrice e citoscheletro",
+      "video": true
+    },
+    {
+      "id": "bio-u6-03",
+      "titolo": "Riconoscimento tra cellule (caderine, CAM) e formazione dei tessuti",
+      "obiettivo": "Capire come le cellule si riconoscono e aderiscono per formare i tessuti.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 6,
+      "unitaTitolo": "La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale",
+      "prereq": [
+        "bio-u1-12"
+      ],
+      "correlati": [
+        "bio-u6-04"
+      ],
+      "slug": "03-riconoscimento-tra-cellule-caderine-cam-e",
+      "url": "risorse/biologia/u6/03-riconoscimento-tra-cellule-caderine-cam-e/",
+      "prev": "bio-u6-02",
+      "next": "bio-u6-04",
+      "diagramma": "caderine che legano cellule adiacenti",
+      "video": true
+    },
+    {
+      "id": "bio-u6-04",
+      "titolo": "I tipi di giunzioni cellulari (occludenti, aderenti, desmosomi, emidesmosomi, comunicanti)",
+      "obiettivo": "Distinguere i diversi tipi di giunzioni tra cellule e le loro funzioni.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 6,
+      "unitaTitolo": "La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale",
+      "prereq": [
+        "bio-u6-03"
+      ],
+      "correlati": [],
+      "slug": "04-i-tipi-di-giunzioni-cellulari-occludenti",
+      "url": "risorse/biologia/u6/04-i-tipi-di-giunzioni-cellulari-occludenti/",
+      "prev": "bio-u6-03",
+      "next": "bio-u6-05",
+      "diagramma": "schema delle giunzioni in una cellula epiteliale",
+      "video": true
+    },
+    {
+      "id": "bio-u6-05",
+      "titolo": "Tipi di segnalazione cellulare (da contatto, autocrina, paracrina, endocrina, sinaptica)",
+      "obiettivo": "Distinguere le modalità con cui le cellule comunicano in base alla distanza.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 6,
+      "unitaTitolo": "La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale",
+      "prereq": [
+        "bio-u1-12"
+      ],
+      "correlati": [
+        "bio-u6-06"
+      ],
+      "slug": "05-tipi-di-segnalazione-cellulare-da-contatto",
+      "url": "risorse/biologia/u6/05-tipi-di-segnalazione-cellulare-da-contatto/",
+      "prev": "bio-u6-04",
+      "next": "bio-u6-06",
+      "diagramma": "confronto dei tipi di segnalazione cellulare",
+      "video": true
+    },
+    {
+      "id": "bio-u6-06",
+      "titolo": "La trasduzione del segnale: principi generali e cascate regolative",
+      "obiettivo": "Capire come un segnale esterno viene trasmesso e amplificato all'interno della cellula.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 6,
+      "unitaTitolo": "La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale",
+      "prereq": [
+        "bio-u6-05"
+      ],
+      "correlati": [
+        "bio-u6-07",
+        "bio-u6-08",
+        "bio-u6-10"
+      ],
+      "slug": "06-la-trasduzione-del-segnale-principi-generali",
+      "url": "risorse/biologia/u6/06-la-trasduzione-del-segnale-principi-generali/",
+      "prev": "bio-u6-05",
+      "next": "bio-u6-07",
+      "diagramma": "schema generale di una cascata di trasduzione",
+      "video": true
+    },
+    {
+      "id": "bio-u6-07",
+      "titolo": "Recettori intracellulari (ossido nitrico, ormoni lipidici) e accoppiati a canali ionici",
+      "obiettivo": "Capire come agiscono i recettori interni per segnali liposolubili e i recettori-canale.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 6,
+      "unitaTitolo": "La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale",
+      "prereq": [
+        "bio-u6-06"
+      ],
+      "correlati": [],
+      "slug": "07-recettori-intracellulari-ossido-nitrico-ormoni-lipidici",
+      "url": "risorse/biologia/u6/07-recettori-intracellulari-ossido-nitrico-ormoni-lipidici/",
+      "prev": "bio-u6-06",
+      "next": "bio-u6-08",
+      "diagramma": "ormone lipidico al recettore interno + recettore-canale",
+      "video": false
+    },
+    {
+      "id": "bio-u6-08",
+      "titolo": "Recettori accoppiati a proteine G (monomeriche e trimeriche) e proteine regolatorie GEF/GAP",
+      "obiettivo": "Capire il funzionamento dei GPCR, il ruolo delle proteine G e il ciclo delle GTPasi.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 6,
+      "unitaTitolo": "La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale",
+      "prereq": [
+        "bio-u6-06"
+      ],
+      "correlati": [
+        "bio-u6-09"
+      ],
+      "slug": "08-recettori-accoppiati-a-proteine-g-monomeriche",
+      "url": "risorse/biologia/u6/08-recettori-accoppiati-a-proteine-g-monomeriche/",
+      "prev": "bio-u6-07",
+      "next": "bio-u6-09",
+      "diagramma": "GPCR che attiva la proteina G + ciclo GDP/GTP",
+      "video": true
+    },
+    {
+      "id": "bio-u6-09",
+      "titolo": "Secondi messaggeri, amplificazione del segnale e desensitizzazione (la visione)",
+      "obiettivo": "Capire il ruolo dei secondi messaggeri nell'amplificare il segnale e l'adattamento del recettore.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 6,
+      "unitaTitolo": "La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale",
+      "prereq": [
+        "bio-u6-08"
+      ],
+      "correlati": [],
+      "slug": "09-secondi-messaggeri-amplificazione-del-segnale-e",
+      "url": "risorse/biologia/u6/09-secondi-messaggeri-amplificazione-del-segnale-e/",
+      "prev": "bio-u6-08",
+      "next": "bio-u6-10",
+      "diagramma": "amplificazione a cascata tramite secondi messaggeri",
+      "video": true
+    },
+    {
+      "id": "bio-u6-10",
+      "titolo": "Recettori tirosin-chinasici e la via Ras-MAP chinasi",
+      "obiettivo": "Capire i recettori con attività enzimatica e la cascata Ras-MAPK.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 6,
+      "unitaTitolo": "La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale",
+      "prereq": [
+        "bio-u6-06",
+        "bio-u1-16"
+      ],
+      "correlati": [
+        "bio-u6-11",
+        "bio-u7-02"
+      ],
+      "slug": "10-recettori-tirosin-chinasici-e-la-via",
+      "url": "risorse/biologia/u6/10-recettori-tirosin-chinasici-e-la-via/",
+      "prev": "bio-u6-09",
+      "next": "bio-u6-11",
+      "diagramma": "RTK -> Ras -> cascata MAP chinasi",
+      "video": true
+    },
+    {
+      "id": "bio-u6-11",
+      "titolo": "Oncogeni, segnalazione di insulina ed EGF e segnalazione dei fosfoinositidi",
+      "obiettivo": "Capire come alterazioni della segnalazione causano oncogeni, con esempi rilevanti di vie di segnalazione.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 6,
+      "unitaTitolo": "La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale",
+      "prereq": [
+        "bio-u6-10"
+      ],
+      "correlati": [
+        "bio-u7-04"
+      ],
+      "slug": "11-oncogeni-segnalazione-di-insulina-ed-egf",
+      "url": "risorse/biologia/u6/11-oncogeni-segnalazione-di-insulina-ed-egf/",
+      "prev": "bio-u6-10",
+      "next": "bio-u7-01",
+      "diagramma": "vie di insulina/EGF + PIP2 scisso in IP3 e DAG",
+      "video": false
+    },
+    {
+      "id": "bio-u7-01",
+      "titolo": "Il ciclo cellulare: fasi, punti di controllo, cicline e CDK",
+      "obiettivo": "Conoscere le fasi del ciclo, i checkpoint e come le coppie ciclina-CDK ne guidano l'avanzamento.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 7,
+      "unitaTitolo": "Il controllo della proliferazione e della sopravvivenza cellulare",
+      "prereq": [
+        "bio-u3-01",
+        "bio-u1-16"
+      ],
+      "correlati": [
+        "bio-u7-02",
+        "bio-u7-03",
+        "bio-u7-04",
+        "bio-u7-05"
+      ],
+      "slug": "01-il-ciclo-cellulare-fasi-punti-di",
+      "url": "risorse/biologia/u7/01-il-ciclo-cellulare-fasi-punti-di/",
+      "prev": "bio-u6-11",
+      "next": "bio-u7-02",
+      "diagramma": "ruota del ciclo cellulare + oscillazione delle cicline",
+      "video": true
+    },
+    {
+      "id": "bio-u7-02",
+      "titolo": "Punto di restrizione: fattori di crescita, ciclina D-Cdk4/6, fosforilazione di Rb ed E2F",
+      "obiettivo": "Capire come i fattori di crescita spingono la cellula in fase S liberando E2F.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 7,
+      "unitaTitolo": "Il controllo della proliferazione e della sopravvivenza cellulare",
+      "prereq": [
+        "bio-u7-01",
+        "bio-u6-10"
+      ],
+      "correlati": [],
+      "slug": "02-punto-di-restrizione-fattori-di-crescita",
+      "url": "risorse/biologia/u7/02-punto-di-restrizione-fattori-di-crescita/",
+      "prev": "bio-u7-01",
+      "next": "bio-u7-03",
+      "diagramma": "fattori di crescita -> ciclina D-Cdk4/6 -> Rb fosforilato -> E2F",
+      "video": true
+    },
+    {
+      "id": "bio-u7-03",
+      "titolo": "Inibitori del complesso ciclina-CDK",
+      "obiettivo": "Capire il ruolo delle proteine inibitrici nel frenare il ciclo cellulare.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 7,
+      "unitaTitolo": "Il controllo della proliferazione e della sopravvivenza cellulare",
+      "prereq": [
+        "bio-u7-01"
+      ],
+      "correlati": [],
+      "slug": "03-inibitori-del-complesso-ciclina-cdk",
+      "url": "risorse/biologia/u7/03-inibitori-del-complesso-ciclina-cdk/",
+      "prev": "bio-u7-02",
+      "next": "bio-u7-04",
+      "diagramma": "inibitore che blocca il complesso ciclina-CDK",
+      "video": false
+    },
+    {
+      "id": "bio-u7-04",
+      "titolo": "Danno al DNA, p53, proto-oncogeni, oncosoppressori e virus oncogeni",
+      "obiettivo": "Capire come p53 risponde al danno al DNA e distinguere oncogeni e geni oncosoppressori nei tumori.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 7,
+      "unitaTitolo": "Il controllo della proliferazione e della sopravvivenza cellulare",
+      "prereq": [
+        "bio-u7-01",
+        "bio-u4-02",
+        "bio-u6-11"
+      ],
+      "correlati": [],
+      "slug": "04-danno-al-dna-p53-proto-oncogeni",
+      "url": "risorse/biologia/u7/04-danno-al-dna-p53-proto-oncogeni/",
+      "prev": "bio-u7-03",
+      "next": "bio-u7-05",
+      "diagramma": "p53 attivata -> arresto/riparazione/apoptosi",
+      "video": true
+    },
+    {
+      "id": "bio-u7-05",
+      "titolo": "Le fasi della mitosi e la condensazione dei cromosomi",
+      "obiettivo": "Conoscere le fasi della mitosi e come i cromosomi si condensano per la divisione.",
+      "difficolta": 2,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 7,
+      "unitaTitolo": "Il controllo della proliferazione e della sopravvivenza cellulare",
+      "prereq": [
+        "bio-u7-01",
+        "bio-u2-04"
+      ],
+      "correlati": [
+        "bio-u7-06",
+        "bio-u7-07",
+        "bio-u7-08"
+      ],
+      "slug": "05-le-fasi-della-mitosi-e-la",
+      "url": "risorse/biologia/u7/05-le-fasi-della-mitosi-e-la/",
+      "prev": "bio-u7-04",
+      "next": "bio-u7-06",
+      "diagramma": "le fasi della mitosi (profase -> telofase)",
+      "video": true
+    },
+    {
+      "id": "bio-u7-06",
+      "titolo": "Il fuso mitotico (microtubuli astrali/cinetocore/interpolari, NDC80) e i meccanoenzimi",
+      "obiettivo": "Capire come si forma il fuso, come i cromosomi vi si attaccano e si muovono.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 7,
+      "unitaTitolo": "Il controllo della proliferazione e della sopravvivenza cellulare",
+      "prereq": [
+        "bio-u7-05",
+        "bio-u5-24"
+      ],
+      "correlati": [],
+      "slug": "06-il-fuso-mitotico-microtubuli-astrali-cinetocore",
+      "url": "risorse/biologia/u7/06-il-fuso-mitotico-microtubuli-astrali-cinetocore/",
+      "prev": "bio-u7-05",
+      "next": "bio-u7-07",
+      "diagramma": "fuso mitotico con i tre tipi di microtubuli + cinetocore",
+      "video": true
+    },
+    {
+      "id": "bio-u7-07",
+      "titolo": "Completamento della mitosi: APC/C, degradazione di cicline e securina, citodieresi e mitosi asimmetrica",
+      "obiettivo": "Capire come l'APC/C innesca la separazione dei cromatidi e l'uscita dalla mitosi, fino alla citodieresi.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 7,
+      "unitaTitolo": "Il controllo della proliferazione e della sopravvivenza cellulare",
+      "prereq": [
+        "bio-u7-05",
+        "bio-u3-21"
+      ],
+      "correlati": [],
+      "slug": "07-completamento-della-mitosi-apc-c-degradazione",
+      "url": "risorse/biologia/u7/07-completamento-della-mitosi-apc-c-degradazione/",
+      "prev": "bio-u7-06",
+      "next": "bio-u7-08",
+      "diagramma": "APC/C degrada securina -> separazione cromatidi + anello contrattile",
+      "video": true
+    },
+    {
+      "id": "bio-u7-08",
+      "titolo": "La meiosi, il crossing over e le differenze con la mitosi",
+      "obiettivo": "Capire le tappe della meiosi, come il crossing over genera variabilità e il confronto con la mitosi.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 7,
+      "unitaTitolo": "Il controllo della proliferazione e della sopravvivenza cellulare",
+      "prereq": [
+        "bio-u7-05",
+        "bio-u4-08"
+      ],
+      "correlati": [
+        "bio-u7-09"
+      ],
+      "slug": "08-la-meiosi-il-crossing-over-e",
+      "url": "risorse/biologia/u7/08-la-meiosi-il-crossing-over-e/",
+      "prev": "bio-u7-07",
+      "next": "bio-u7-09",
+      "diagramma": "crossing over tra omologhi + tabella mitosi vs meiosi",
+      "video": true
+    },
+    {
+      "id": "bio-u7-09",
+      "titolo": "Cause di aneuploidia, gametogenesi umana e cellula staminale",
+      "obiettivo": "Capire come errori meiotici causano aneuploidie, la gametogenesi nei due sessi e il concetto di staminale.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 7,
+      "unitaTitolo": "Il controllo della proliferazione e della sopravvivenza cellulare",
+      "prereq": [
+        "bio-u7-08",
+        "bio-u4-09"
+      ],
+      "correlati": [],
+      "slug": "09-cause-di-aneuploidia-gametogenesi-umana-e",
+      "url": "risorse/biologia/u7/09-cause-di-aneuploidia-gametogenesi-umana-e/",
+      "prev": "bio-u7-08",
+      "next": "bio-u7-10",
+      "diagramma": "non disgiunzione meiotica + spermatogenesi vs oogenesi",
+      "video": true
+    },
+    {
+      "id": "bio-u7-10",
+      "titolo": "La morte cellulare: necrosi e apoptosi (vie intrinseca ed estrinseca, caspasi)",
+      "obiettivo": "Distinguere necrosi e apoptosi e capire le due vie di attivazione e il ruolo delle caspasi.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 7,
+      "unitaTitolo": "Il controllo della proliferazione e della sopravvivenza cellulare",
+      "prereq": [
+        "bio-u1-11",
+        "bio-u1-16"
+      ],
+      "correlati": [
+        "bio-u7-11"
+      ],
+      "slug": "10-la-morte-cellulare-necrosi-e-apoptosi",
+      "url": "risorse/biologia/u7/10-la-morte-cellulare-necrosi-e-apoptosi/",
+      "prev": "bio-u7-09",
+      "next": "bio-u7-11",
+      "diagramma": "vie apoptotiche intrinseca ed estrinseca",
+      "video": true
+    },
+    {
+      "id": "bio-u7-11",
+      "titolo": "MOMP, citocromo C, apoptosoma, famiglia BCL2 e recettori di morte",
+      "obiettivo": "Capire i meccanismi molecolari dell'apoptosi e l'equilibrio tra proteine pro- e anti-apoptotiche.",
+      "difficolta": 3,
+      "materia": "Biologia",
+      "materiaKey": "biologia",
+      "unita": 7,
+      "unitaTitolo": "Il controllo della proliferazione e della sopravvivenza cellulare",
+      "prereq": [
+        "bio-u7-10",
+        "bio-u5-09"
+      ],
+      "correlati": [],
+      "slug": "11-momp-citocromo-c-apoptosoma-famiglia-bcl2",
+      "url": "risorse/biologia/u7/11-momp-citocromo-c-apoptosoma-famiglia-bcl2/",
+      "prev": "bio-u7-10",
+      "next": null,
+      "diagramma": "rilascio di citocromo C -> apoptosoma + bilancia BCL2",
+      "video": false
+    }
+  ]
+}

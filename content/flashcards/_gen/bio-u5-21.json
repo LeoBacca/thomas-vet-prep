@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u5-21-1",
+    "topicId": "bio-u5-21",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: il lisosoma è l'organello che digerisce e ricicla materiale indesiderato dentro la cellula, grazie a enzimi che funzionano meglio in ambiente acido.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il lisosoma è l'impianto di riciclo della cellula: contiene idrolasi acide (enzimi digestivi) attive a pH 4,5-5, simile all'aceto. Questo ambiente acido attiva gli enzimi e protegge il resto della cellula da danni accidentali.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-21-2",
+    "topicId": "bio-u5-21",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Il mannosio-6-fosfato (M6P) è il 'cartellino' che guida gli enzimi verso il lisosoma. Chi aggiunge questo cartellino e dove viene poi rimosso?",
+    "choices": [
+      "Viene aggiunto nel reticolo endoplasmatico e rimosso dal lisosoma",
+      "Viene aggiunto nel Golgi cis e rimosso dal pH acido dell'endosoma tardivo",
+      "Viene aggiunto nell'endosoma precoce e rimosso dal lisosoma",
+      "Viene aggiunto nel Golgi trans e rimosso di nuovo nel Golgi trans"
+    ],
+    "answer": 1,
+    "explain": "Il Golgi cis aggiunge il tag M6P all'enzima. Il recettore MPR nella rete trans-Golgi (TGN) riconosce il cartellino e porta l'enzima verso l'endosoma tardivo in una vescicola rivestita di clatrina. Nell'endosoma tardivo il pH acido (~5,5) stacca l'enzima dal recettore: l'enzima resta e va al lisosoma, il recettore torna al Golgi per un nuovo ciclo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-21-3",
+    "topicId": "bio-u5-21",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Un gattino nasce con una mutazione che disattiva la glucocerebrosidasi lisosomiale. Spiega: (1) perché questo enzima non arriva al lisosoma, (2) cosa succede di conseguenza nelle cellule, (3) come funziona la terapia enzimatica sostitutiva per curare questa situazione (malattia di Gaucher).",
+    "answer": "(1) La glucocerebrosidasi è un enzima lisosomiale: viene sintetizzata nel reticolo endoplasmatico, taggata con mannosio-6-fosfato nel Golgi, e trasportata al lisosoma tramite i recettori MPR. Se il gene è mutato, la proteina prodotta è difettosa o assente: non arriva al lisosoma perché non si forma correttamente o non viene riconosciuta dal sistema di smistamento. (2) I glucocerebrosidi sono lipidi delle membrane cellulari delle cellule del sangue. Quando queste vengono smontate, i lipidi arrivano al lisosoma per essere digeriti. Senza l'enzima, i glucocerebrosidi non vengono spezzati e si accumulano nei lisosomi — soprattutto nei macrofagi di fegato e milza, che si gonfiano e smettono di funzionare. (3) Nella terapia sostitutiva si produce in laboratorio la glucocerebrosidasi funzionante con il tag M6P sulla superficie. Iniettata in vena, viene captata dai macrofagi per endocitosi: il recettore MPR riconosce il tag e dirige l'enzima ai lisosomi, dove può digerire i lipidi accumulati. Non guarisce la causa genetica, ma controlla i sintomi.",
+    "explain": "Punto chiave: senza l'enzima lisosomiale il substrato si accumula → la cellula si gonfia e smette di funzionare. La terapia usa lo stesso sistema M6P per recapitare l'enzima sostitutivo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u5-21-4",
+    "topicId": "bio-u5-21",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sui lisosomi NON è corretta?",
+    "choices": [
+      "Contengono enzimi idrolitici attivi a pH acido",
+      "Contengono enzimi ad azione perossidasica",
+      "Sono prodotti dall'apparato di Golgi",
+      "Al loro interno il valore di pH è circa 5",
+      "Sono coinvolti nei processi di autofagia"
+    ],
+    "answer": 1,
+    "explain": "Gli enzimi perossidasici (che usano perossido di idrogeno per ossidare sostanze) sono caratteristici dei PEROSSISOMI, non dei lisosomi. I lisosomi contengono idrolasi acide, cioè enzimi che spezzano molecole usando acqua in ambiente acido — non hanno attività perossidasica. Tutte le altre affermazioni sono corrette: il pH interno è circa 4,5-5 (opzione D); gli enzimi idrolitici sono attivi in quell'ambiente acido (opzione A); il Golgi produce le vescicole lisosomiali tramite il sistema M6P (opzione C); l'autofagia è il processo con cui la cellula digerisce i propri organelli danneggiati attraverso i lisosomi (opzione E). 'Perossidasica' al posto di 'idrolitica' è la trappola classica per chi confonde lisosomi e perossisomi.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u5-21-5",
+    "topicId": "bio-u5-21",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Quale tipo di cellule è più adatto per studiare i lisosomi in laboratorio, e perché?",
+    "choices": [
+      "I granulociti neutrofili, perché fagocitano batteri e materiale estraneo in continuazione e hanno lisosomi abbondanti e attivi",
+      "I globuli rossi, perché sono le cellule più numerose del sangue",
+      "Le cellule muscolari lisce, perché sono molto attive nel produrre energia",
+      "Le cellule cardiache, perché battono continuamente e hanno bisogno di molti organelli",
+      "Le cellule degli stomi fogliari, perché sono ricche di cloroplasti con molti enzimi"
+    ],
+    "answer": 0,
+    "explain": "I granulociti neutrofili sono cellule immunitarie che fagocitano (inghiottono) batteri, funghi e detriti cellulari in modo professionale: devono digerire tutto ciò che catturano, quindi hanno lisosomi abbondanti, grandi e molto attivi — ideali per studiarli. Le altre opzioni sono trappole: i globuli rossi sono numerosi ma NON hanno nucleo né organelli, quindi sono privi di lisosomi; le cellule muscolari lisce usano molti mitocondri per l'energia ma non sono specializzate nella digestione; le cellule cardiache e le cellule fogliari sono fuori tema (cuore e piante non sono specializzati nella fagocitosi). La logica è: più una cellula 'mangia' materiale estraneo, più ha lisosomi attivi.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u6-07-1",
+    "topicId": "bio-u6-07",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "mc",
+    "q": "Gli ormoni steroidei (come il testosterone) riescono ad entrare direttamente nella cellula senza bussare dall'esterno. Perche?",
+    "choices": [
+      "Perche sono liposolubili e si sciolgono nella membrana come il burro in una padella calda",
+      "Perche si legano a recettori sulla superficie della membrana che li 'inghiottono'",
+      "Perche sono gassosi come l'ossido nitrico e attraversano qualsiasi barriera",
+      "Perche vengono trasportati da proteine speciali che aprono dei pori nella membrana"
+    ],
+    "answer": 0,
+    "explain": "Gli ormoni steroidei sono liposolubili: si sciolgono nei lipidi della membrana plasmatica e la attraversano da soli. Trovano il loro recettore gia dentro la cellula (citoplasma o nucleo) e attivano direttamente i geni — risposta lenta ma duratura (ore o giorni).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u6-07-2",
+    "topicId": "bio-u6-07",
+    "materia": "biologia",
+    "unita": 6,
+    "type": "open",
+    "q": "Descrivi brevemente come funziona la via dell'ossido nitrico (NO) e come si differenzia dalla via degli ormoni steroidei in termini di velocita della risposta e meccanismo.",
+    "answer": "L'ossido nitrico (NO) e un gas prodotto da cellule vicine (es. cellule endoteliali dei vasi sanguigni) tramite l'enzima NOS. Diffonde liberamente attraverso la membrana della cellula bersaglio (e un gas minuscolo) e si lega alla guanilato ciclasi solubile, un enzima intracellulare. La guanilato ciclasi attivata converte GTP in cGMP (un secondo messaggero). Il cGMP attiva proteinchinasi che rilassano le cellule muscolari lisce dei vasi: il risultato e la vasodilatazione. La risposta dura solo pochi secondi perche l'NO viene degradato rapidissimamente. Differenza con gli ormoni steroidei: entrambi agiscono dentro la cellula (recettori intracellulari), ma gli ormoni steroidei attivano i GENI (risposta lenta: ore o giorni, con sintesi di nuove proteine), mentre l'NO attiva un ENZIMA gia presente nella cellula (risposta rapida: secondi, senza sintesi proteica). I recettori-canale invece aprono fisicamente un canale ionico (risposta istantanea: millisecondi).",
+    "explain": "NO → guanilato ciclasi → cGMP → vasodilatazione (secondi). Steroidi → recettore nucleare → geni → nuove proteine (ore). Canali ionici → risposta istantanea (ms).",
+    "tags": ["risposta aperta"]
+  }
+]

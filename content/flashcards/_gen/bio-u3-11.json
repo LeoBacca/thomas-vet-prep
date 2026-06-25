@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u3-11-1",
+    "topicId": "bio-u3-11",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: un enhancer puo regolare un gene anche se si trova migliaia di basi di distanza da esso.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il DNA si piega come un gomitolo, quindi una sequenza lontana puo avvicinarsi fisicamente al promotore. L'enhancer funziona grazie a questo ripiegamento, da qualsiasi distanza e in entrambe le direzioni sul filamento di DNA.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-11-2",
+    "topicId": "bio-u3-11",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Immagina che il promotore prossimale sia il cruscotto di un'auto: senza di lui il motore non parte. Cosa sono invece gli enhancer e i silencer rispetto a questa analogia?",
+    "choices": [
+      "Il motore stesso: senza di loro non c'e nemmeno il cruscotto",
+      "Pedale dell'acceleratore (enhancer) e freno (silencer): modificano la velocita ma il cruscotto c'e gia",
+      "Il carburante: senza di loro l'auto non ha energia",
+      "I finestrini: non cambiano la guida, servono solo per vedere fuori"
+    ],
+    "answer": 1,
+    "explain": "Il promotore prossimale (cruscotto) e la base indispensabile per far partire la trascrizione. Gli enhancer e i silencer sono elementi distali che modulano la velocita: l'enhancer 'preme l'acceleratore' reclutando attivatori, il silencer 'frena' reclutando repressori. Entrambi agiscono dopo che la macchina di base e gia montata sul promotore.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-11-3",
+    "topicId": "bio-u3-11",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Thomas studia che il gene per una proteina del fegato si esprime solo negli epatociti (cellule del fegato) e non nei neuroni, pur avendo le stesse identiche sequenze di DNA. Come e possibile? Spiega il ruolo degli enhancer e dei fattori di trascrizione specifici.",
+    "answer": "Tutte le cellule hanno lo stesso DNA, ma ogni tipo cellulare produce un insieme diverso di fattori di trascrizione specifici. Gli epatociti producono certi fattori che si legano agli enhancer del gene epatico e ne attivano la trascrizione. I neuroni non producono quegli stessi fattori, quindi anche se l'enhancer e presente nel DNA, nessuna proteina vi si lega per attivarlo — il gene rimane silenziato. Il 'cosa si accende' dipende non dal DNA, ma da quali fattori specifici sono disponibili in quella cellula. E come avere la stessa partitura musicale distribuita a tutti: se in un'orchestra mancano i violinisti, quella parte della musica non suona, anche se le note ci sono.",
+    "explain": "Stesso DNA in tutte le cellule → tessuti diversi perche ogni cellula ha fattori di trascrizione diversi che attivano (o non attivano) gli enhancer dei geni specifici.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-11-4",
+    "topicId": "bio-u3-11",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Negli Eucarioti, i fattori trascrizionali regolano l'espressione genica grazie all'interazione con:",
+    "choices": [
+      "Brevi sequenze regolatrici di DNA (promotori, enhancer, silencer)",
+      "Brevi sequenze regolatrici di mRNA gia trascritto",
+      "Sequenze regolatrici dello splicing dell'introne",
+      "Domini regolatori dell'attivita delle primasi",
+      "Sequenze mobili di DNA (trasposoni)"
+    ],
+    "answer": 0,
+    "explain": "I fattori di trascrizione si legano a SEQUENZE DI DNA: il promotore prossimale (scatola TATA e dintorni), gli enhancer e i silencer. Non agiscono sull'mRNA (gia trascritto, e troppo tardi per decidere se partire), non sullo splicing (meccanismo diverso), non sulle primasi (enzimi del DNA, non della trascrizione), non sui trasposoni (elementi mobili, fuori tema). La trappola classica e confondere 'sequenza di mRNA' con 'sequenza di DNA': i fattori trascrizionali devono legare il DNA PRIMA che l'RNA venga prodotto.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-11-5",
+    "topicId": "bio-u3-11",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Un ormone steroideo (es. testosterone) entra nella cellula muscolare. Qual e la sequenza corretta degli eventi che porta all'attivazione della trascrizione?",
+    "choices": [
+      "Si lega al recettore di membrana → secondi messaggeri → RNA polimerasi si attiva",
+      "Attraversa la membrana → si lega al recettore intracellulare → il complesso entra nel nucleo → si lega agli HRE nell'enhancer → trascrizione attivata",
+      "Attraversa la membrana → si lega direttamente alla scatola TATA → RNA polimerasi si attiva",
+      "Attraversa la membrana → degrada il silencer del gene bersaglio → trascrizione attivata",
+      "Rimane fuori dalla cellula → segnala tramite recettore di membrana → il recettore entra nel nucleo"
+    ],
+    "answer": 1,
+    "explain": "Gli ormoni steroidei sono lipofili (idrofobici): attraversano liberamente la membrana (non hanno bisogno di recettori di membrana — trappola A). Si legano al recettore intracellulare, il complesso cambia forma (modificazione conformazionale) ed entra nel nucleo. Li' riconosce gli HRE (Hormone Response Elements) posizionati negli enhancer dei geni bersaglio, recluta altri fattori e attiva la trascrizione. Le trappole da smontare: A = confonde steroidi con ormoni peptidici (es. insulina) che usano recettori di membrana e secondi messaggeri; C = nessun ormone si lega direttamente alla scatola TATA; D = non c'e degradazione di silencer; E = gli steroidi entrano nella cellula, non restano fuori.",
+    "tags": ["prova d'esame"]
+  }
+]

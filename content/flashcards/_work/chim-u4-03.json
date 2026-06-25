@@ -1,0 +1,53 @@
+{
+ "id": "chim-u4-03",
+ "titolo": "Autoprotolisi dell'acqua e la costante Kw",
+ "materia": "chimica",
+ "unita": 4,
+ "slug": "03-autoprotolisi-dellacqua-e-la-costante-kw",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/chimica/u4/03-autoprotolisi-dellacqua-e-la-costante-kw.mdx",
+ "examQuestions": [
+  {
+   "year": "2014",
+   "q": "In una soluzione, la concentrazione di ioni H3O+ è 1,0x10-8 mol dm-3. Qual è la concentrazione di ioni OH- nella soluzione espressa in mol dm-3?",
+   "choices": [
+    "1,0x10-6",
+    "1,0x10-2",
+    "1,0x10-4",
+    "1,0x10-8",
+    "1,0x10-10"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2016",
+   "q": "Qual è la concentrazione molare degli ioni OH- in una soluzione acquosa 10^-3 M di glucosio?",
+   "choices": [
+    "10^-7 M",
+    "10^-3 M",
+    "7 M",
+    "10^-5 M",
+    "10^-11 M"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2020",
+   "q": "A 60 °C, il prodotto ionico dell'acqua (Kw) ha un valore pari a 9,5x10-14. A questa temperatura l'acqua pura:",
+   "choices": [
+    "avrà pH minore di 7 e sarà neutra",
+    "avrà pH minore di 7 e sarà acida",
+    "avrà pH maggiore di 7 e sarà neutra",
+    "avrà pH maggiore di 7 e sarà basica",
+    "avrà pH uguale a 7 e sarà neutra"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

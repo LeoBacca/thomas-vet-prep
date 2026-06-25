@@ -1,0 +1,109 @@
+{
+ "id": "chim-u1-14",
+ "titolo": "Il legame covalente: puro, polare e dativo",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "14-il-legame-covalente-puro-polare-e",
+ "freq": 7,
+ "risorseMdx": "src/pages/risorse/chimica/u1/14-il-legame-covalente-puro-polare-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "In un legame covalente omopolare gli elettroni sono distribuiti:",
+   "choices": [
+    "in egual misura tra atomi uguali",
+    "in diversa misura tra atomi diversi",
+    "in egual misura tra atomi diversi",
+    "in diversa misura tra atomi uguali",
+    "solo su un atomo e non sull'altro"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2008",
+   "q": "Il legame covalente polarizzato si può formare tra:",
+   "choices": [
+    "atomi a diversa elettronegatività",
+    "atomi dello stesso elemento",
+    "atomi con la stessa configurazione elettronica",
+    "ioni con carica di segno opposto",
+    "atomi che possono cedere ed acquistare elettroni"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2013",
+   "q": "Il fosforo (Gruppo 15) e il cloro (Gruppo 17) reagiscono per formare il composto PCl3. In una molecola di PCl3 quanti doppietti elettronici non condivisi (NC) e quante coppie di elettroni di legame (EL) ci sono nel livello di valenza del fosforo?",
+   "choices": [
+    "NC = 1 EL = 3",
+    "NC = 1 EL = 1",
+    "NC = 1 EL = 2",
+    "NC = 2 EL = 2",
+    "NC = 2 EL = 3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2016",
+   "q": "Quale legame tiene uniti l'atomo di bromo e l'atomo di idrogeno nel composto HBr?",
+   "choices": [
+    "Covalente polare",
+    "Ionico",
+    "Dativo",
+    "Idrogeno",
+    "Covalente puro"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "L'ossido di azoto (NO) è un composto neutro formato da un atomo di azoto ed un atomo di ossigeno. Pertanto questa molecola includerà:",
+   "choices": [
+    "un elettrone spaiato",
+    "due elettroni spaiati",
+    "nessun elettrone spaiato",
+    "un legame covalente singolo",
+    "un legame covalente puro"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Il composto che ha formula bruta HBr è:",
+   "choices": [
+    "formato da molecole contenenti un legame covalente semplice polare",
+    "un composto ionico formato da H+ e Br-",
+    "formato da molecole contenenti un legame covalente doppio",
+    "formato da molecole che formano tra loro legami a idrogeno",
+    "chiamato acido bromico"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Il legame presente nella molecola di Cloro (Cl2) è:",
+   "choices": [
+    "covalente non polare",
+    "covalente polare",
+    "covalente dativo",
+    "ionico",
+    "a ponte di idrogeno"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

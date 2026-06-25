@@ -1,0 +1,61 @@
+[
+  {
+    "id": "fc-bio-u4-05-1",
+    "topicId": "bio-u4-05",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Incroci una bocca di leone a fiore ROSSO (RR) con una a fiore BIANCO (BB) e i figli vengono tutti ROSA (RB). Che tipo di dominanza e?",
+    "choices": ["Dominanza completa del rosso", "Dominanza incompleta", "Codominanza", "Nessuna dominanza, e un errore"],
+    "answer": 1,
+    "explain": "Il figlio mostra un colore INTERMEDIO, una via di mezzo tra i due genitori: nessun allele vince sull'altro. E' la dominanza incompleta. Come mescolare vernice rossa e bianca: ottieni il rosa, un colore nuovo. Diverso dalla codominanza, dove vedresti peli rossi E peli bianchi separati, non un colore mescolato.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-05-2",
+    "topicId": "bio-u4-05",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: nella codominanza i due alleli si fondono in una via di mezzo, come accade per il fiore rosa.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Nella CODOMINANZA i due alleli si esprimono entrambi, completamente e separatamente, senza mescolarsi: pensa al bovino roano con peli rossi E peli bianchi a chiazze, o al gruppo sanguigno AB (antigeni A e B insieme). La 'via di mezzo' (il rosa) e invece la dominanza INCOMPLETA: sono due cose diverse.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u4-05-3",
+    "topicId": "bio-u4-05",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "open",
+    "q": "Nel sistema ABO ci sono TRE alleli (I^A, I^B, i) per lo stesso gene. Come fanno solo tre alleli a produrre i quattro gruppi sanguigni A, B, AB e 0? Spiega le regole di dominanza.",
+    "answer": "Un individuo ha sempre solo DUE alleli (uno per cromosoma), ma puo pescarli da tre versioni disponibili. Le regole: I^A produce l'antigene A, I^B produce l'antigene B, i non produce nulla. I^A e I^B dominano entrambi su i; tra loro invece sono codominanti. Cosi: I^A I^A o I^A i danno gruppo A; I^B I^B o I^B i danno gruppo B; I^A I^B da gruppo AB (codominanza: si vedono entrambi gli antigeni); ii da gruppo 0 (servono due i, perche e recessivo). Tre alleli, quattro gruppi.",
+    "explain": "Punto chiave: I^A e I^B codominanti tra loro (AB), i recessivo (serve ii per il gruppo 0).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u4-05-4",
+    "topicId": "bio-u4-05",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Una mamma ha gruppo sanguigno 0 e il papa ha gruppo sanguigno AB. Quali gruppi sanguigni possono avere i figli?",
+    "choices": ["A oppure B", "tutti AB", "AB oppure 0", "tutti 0", "A, B, AB oppure 0 (uno qualsiasi)"],
+    "answer": 0,
+    "explain": "La mamma 0 e ii: puo passare solo un i. Il papa AB e I^A I^B: passa I^A oppure I^B. I figli saranno I^A i (gruppo A) o I^B i (gruppo B): solo A o B. Le trappole: 'tutti AB' o 'AB oppure 0' sembrano logiche (somigliano ai genitori) ma sono impossibili, perche servirebbe un I^A insieme a un I^B nello stesso figlio, e la mamma da solo i; 'tutti 0' e l'errore opposto (ignora che il papa da sempre A o B); l'ultima e un filler che butta dentro tutti i gruppi a caso.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u4-05-5",
+    "topicId": "bio-u4-05",
+    "materia": "biologia",
+    "unita": 4,
+    "type": "mc",
+    "q": "Il gruppo sanguigno ABO dipende da tre alleli (I^A, I^B, i), con I^A e I^B codominanti e i recessivo. Quanti FENOTIPI (gruppi sanguigni) diversi si ottengono?",
+    "choices": ["4 fenotipi", "6 fenotipi", "8 fenotipi", "4 genotipi", "3 fenotipi"],
+    "answer": 0,
+    "explain": "I fenotipi (i gruppi visibili) sono 4: A, B, AB, 0. Attenzione a non confondere fenotipi e genotipi: i genotipi sono invece 6 (I^A I^A, I^A i, I^B I^B, I^B i, I^A I^B, ii). La trappola '4 genotipi' scambia proprio le due parole (la risposta giusta come numero ma riferita alla cosa sbagliata); '6 fenotipi' usa il numero dei genotipi al posto dei fenotipi; '8' e un filler fuori scala; '3 fenotipi' confonde i gruppi con il numero degli alleli (3).",
+    "tags": ["prova d'esame"]
+  }
+]

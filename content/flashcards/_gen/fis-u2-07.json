@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-07-1",
+    "topicId": "fis-u2-07",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Un'auto percorre una curva circolare a velocità COSTANTE. In quel momento non sta subendo nessuna accelerazione, perché la rapidità non cambia.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "FALSO. La velocità è un vettore: ha modulo (quanto veloce) e direzione (verso dove). In curva la direzione cambia continuamente, quindi il vettore velocità cambia, e questo basta per definire un'accelerazione — anche se la rapidità resta costante. Si chiama accelerazione centripeta.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-07-2",
+    "topicId": "fis-u2-07",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Tieni una pallina legata a uno spago e la fai girare in cerchio. Verso dove punta l'accelerazione centripeta della pallina?",
+    "choices": [
+      "Verso il centro del cerchio (lungo lo spago, verso la tua mano)",
+      "Verso l'esterno del cerchio (nella direzione in cui vorresti 'scappare')",
+      "Nella direzione del moto della pallina (tangente al cerchio)",
+      "Verso il basso (gravità)"
+    ],
+    "answer": 0,
+    "explain": "L'accelerazione centripeta punta SEMPRE verso il centro del cerchio — cioè lungo il raggio, verso la mano che tiene lo spago. Non è verso l'esterno: quella 'forza centrifuga' che senti è solo un effetto percepito, non una forza reale. Senza lo spago (= senza la forza centripeta) la pallina vola via in linea retta.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-07-3",
+    "topicId": "fis-u2-07",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega a parole tue: in una curva stretta ad alta velocità, perché l'accelerazione centripeta è molto più grande che in una curva larga alla stessa velocità? Usa la formula e un esempio di vita reale.",
+    "answer": "La formula dell'accelerazione centripeta è a = v² / r. Il raggio r compare al denominatore: più è piccolo (curva stretta), maggiore è a. La velocità compare al quadrato: raddoppiando v, a quadruplica. Esempio: in auto, una rotatoria piccola ti 'sbatte' sul sedile molto più di un'ampia curva autostradale alla stessa velocità. In clinica veterinaria: un cavallo che gira stretto in un maneggio subisce un'accelerazione centripeta maggiore rispetto a uno che gira su un percorso ampio — ecco perché i cavalli con problemi articolari faticano sui cerchi stretti.",
+    "explain": "Il punto chiave è che v è al quadrato (effetto amplificato) e r è al denominatore (relazione inversa): curva stretta + velocità alta = accelerazione centripeta grande.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-07-4",
+    "topicId": "fis-u2-07",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Qual è la forza centripeta necessaria per far muovere un corpo di massa m = 3,0 kg su di una circonferenza di raggio r = 2,0 m con velocità v = 4,0 m/s?",
+    "choices": [
+      "6 N",
+      "24 N",
+      "12 N",
+      "5 N",
+      "48 N"
+    ],
+    "answer": 1,
+    "explain": "La forza centripeta è F = m · a = m · v² / r. Calcolo: F = 3,0 × (4,0)² / 2,0 = 3,0 × 16 / 2,0 = 3,0 × 8 = 24 N. TRAPPOLE: '6 N' viene da chi dimentica di elevare al quadrato la velocità e fa 3 × 4 / 2 = 6. '12 N' viene da chi non quadra v e dimentica di dividere per r, facendo 3 × 4 = 12 (oppure da 24 / 2, dividendo il risultato giusto per r una volta di troppo). '48 N' viene da chi quadra v ma dimentica di dividere per r: 3 × 16 = 48. '5 N' è un numero senza senso, filler facile da scartare.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-07-5",
+    "topicId": "fis-u2-07",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Una fionda fa girare un sasso 3 volte al secondo lungo un cerchio di raggio r = 1,5 m. Quando il sasso viene svincolato, quale velocità ha?",
+    "choices": [
+      "Circa 28 m/s",
+      "3 m/s",
+      "4,5 m/s",
+      "Diversa per sassi di massa diversa",
+      "Pari alla velocità del suono (circa 340 m/s)"
+    ],
+    "answer": 0,
+    "explain": "In un giro completo il sasso percorre 2πr = 2π × 1,5 ≈ 9,42 m. Fa 3 giri al secondo, quindi v = 3 × 9,42 ≈ 28 m/s. Quando viene svincolato, il sasso continua in linea retta con QUELLA velocità (tangente al cerchio). TRAPPOLE: '3 m/s' confonde la frequenza (giri/s) con la velocità. '4,5 m/s' viene da 3 × r invece di 3 × 2πr (dimentica che la circonferenza vale 2πr, non r). 'Diversa per sassi di massa diversa' è la trappola più insidiosa: la massa NON compare nella formula della velocità v = 2πr·f — la velocità è la stessa per qualsiasi massa. '340 m/s' è il filler fuori tema.",
+    "tags": ["prova d'esame"]
+  }
+]

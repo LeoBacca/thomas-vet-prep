@@ -1,0 +1,268 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Mascotte from '@/components/Mascotte.astro';
+import '@/styles/studio.css';
+const base = import.meta.env.BASE_URL;
+const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
+---
+<BaseLayout title="Studio">
+  <div class="studio">
+    <h1>🎯 Studio</h1>
+    <p style="color:var(--muted,#666);margin-top:0">Ripasso intelligente (FSRS) + sfide + medaglie. I progressi restano nel tuo browser.</p>
+
+    <!-- Buggy ti accoglie con una frase motivazionale (stile Duolingo) -->
+    <div class="buggy-dash">
+      <Mascotte src="buggy-bubble.png" alt="Buggy" class="buggy" loading="eager" />
+      <div class="speech-bubble" id="buggyText">Ciurma! Si salpa verso il camice ⚓</div>
+    </div>
+
+    <div class="s-panel s-hero">
+      <div>
+        <div class="s-level" id="level">Livello 1 <small id="levelName">Aspirante</small></div>
+        <div class="bar xp" style="margin:.5rem 0 .2rem"><span id="xpFill"></span></div>
+        <small style="color:var(--muted,#666)" id="xpLabel">0 XP</small>
+      </div>
+      <div style="text-align:right">
+        <div class="s-streak">🔥 <span id="streak">0</span><small>giorni di fila</small></div>
+        <small style="color:var(--muted,#666)">Oggi: <span id="today">0</span>/<span id="goal">20</span></small>
+      </div>
+    </div>
+
+    <div class="s-actions">
+      <a class="s-cta primary" href={u('studio/sessione/')}>
+        <span class="big">📚</span> Studia oggi
+        <small style="display:block;color:var(--muted,#666)" id="dueLabel">—</small>
+      </a>
+      <a class="s-cta alt" href={u('studio/sfida/')}>
+        <span class="big">⚔️</span> Sfida
+        <small style="display:block;color:var(--muted,#666)">Rapida, a tempo, con combo</small>
+      </a>
+    </div>
+
+    <div class="s-panel goal-panel">
+      <h2>🎯 Obiettivo</h2>
+      <p class="goal-intro">Quando vuoi essere pronto? Metti la <b>data della prova</b> (o usa una scorciatoia) e calcolo io quante card nuove studiare ogni giorno per arrivarci in tempo.</p>
+      <div class="goal-row">
+        <label for="targetDate" class="goal-datelbl">📅 Data:
+          <input type="date" id="targetDate" class="goal-date" />
+        </label>
+        <button class="btn goal-preset" data-months="1">tra 1 mese</button>
+        <button class="btn goal-preset" data-months="3">tra 3 mesi</button>
+        <button class="btn goal-preset" data-months="6">tra 6 mesi</button>
+        <button class="btn goal-clear" id="clearDate" title="Togli la data">✕ togli</button>
+      </div>
+      <div id="goalCalc" class="goal-result">—</div>
+      <p class="goal-note">💡 Più di <b>15-20 card nuove al giorno</b> col tempo diventano pesanti: si accumulano i ripassi dei giorni prima. Meglio una data realistica e un ritmo costante.</p>
+    </div>
+
+    <div class="s-panel">
+      <h2>📅 Calendario dello studio
+        <span class="help" tabindex="0" aria-label="Cos'è">?
+          <span class="help-bubble">
+            <b>📅 Calendario dello studio</b><br>
+            Ogni quadratino è un <b>giorno</b> (ultimi 6 mesi, da sinistra a destra).
+            Più è <b>verde scuro</b>, più card hai studiato quel giorno; <b>grigio</b> = giorno
+            saltato. Serve a vedere a colpo d'occhio la tua <b>costanza</b>: l'obiettivo è
+            riempirlo senza lasciare buchi! 🔥
+          </span>
+        </span>
+      </h2>
+      <p class="panel-sub">Ogni quadratino è un <b>giorno</b>: più è verde, più card hai studiato. Studia ogni giorno per tenere la fila accesa 🔥</p>
+      <div class="heatmap" id="heatmap"></div>
+      <div class="heat-legend">😴 0 card
+        <span class="cell"></span><span class="cell l1"></span><span class="cell l2"></span>
+        <span class="cell l3"></span><span class="cell l4"></span> tante 💪</div>
+    </div>
+
+    <div class="s-panel">
+      <h2>🏆 Padronanza</h2>
+      <div id="mastery"></div>
+    </div>
+
+    <div class="s-panel">
+      <h2>🎖️ Medaglie <small style="color:var(--muted,#666)">(<span id="achCount">0</span>/<span id="achTotal">0</span>)</small></h2>
+      <div class="medals" id="medals"></div>
+    </div>
+
+    <div class="s-panel">
+      <h2>💾 Dati</h2>
+      <p style="font-size:.85rem;color:var(--muted,#666);margin-top:0">Salva un backup o spostalo su un altro dispositivo.</p>
+      <div class="s-tools">
+        <button class="btn" id="exportBtn">⬇️ Esporta</button>
+        <label class="btn" for="importFile">⬆️ Importa</label>
+        <input id="importFile" type="file" accept="application/json" class="hidden" />
+        <button class="btn" id="resetBtn">🗑️ Azzera</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import { load, save, exportJSON, importJSON, reset, localDay } from '../scripts/studio/store.js';
+    import { getLevel, computeMastery, evaluatePassive } from '../scripts/studio/game.js';
+    import { CARDS_META, countDue, MATERIE, recommendedNewPerDay, daysUntil } from '../scripts/studio/cards.js';
+    import { ACHIEVEMENTS, ACH_BY_ID } from '../scripts/studio/achievements.js';
+    import { buggyMotivazionali, frasaRandom } from '../data/frasi-mascotte.js';
+
+    const $ = (id) => document.getElementById(id);
+
+    function render() {
+      const state = load();
+      // sblocca medaglie già meritate (es. dopo un import) e salva
+      evaluatePassive(state, CARDS_META);
+      save(state);
+
+      // livello / xp
+      const lv = getLevel(state.xp);
+      $('level').childNodes[0].nodeValue = 'Livello ' + lv.level + ' ';
+      $('levelName').textContent = lv.name;
+      $('xpFill').style.width = lv.pct + '%';
+      $('xpLabel').textContent = state.xp + ' XP · ' + lv.intoLevel + '/' + lv.span + ' al prossimo livello';
+
+      // streak / oggi
+      $('streak').textContent = state.streak.current;
+      const today = (state.days[localDay()] || {}).reviews || 0;
+      $('today').textContent = today;
+      $('goal').textContent = state.settings.goalPerDay;
+
+      // dovute
+      const { due, fresh } = countDue(state);
+      const newToday = (state.days[localDay()] || {}).newCards || 0;
+      const perDay = recommendedNewPerDay(state).perDay;
+      const newAvail = Math.max(0, perDay - newToday);
+      const newShown = Math.min(fresh, newAvail);
+      $('dueLabel').textContent = due + ' dovute · ' + newShown + ' nuove';
+
+      renderGoal(state);
+      renderHeatmap(state);
+      renderMastery(state);
+      renderMedals(state);
+    }
+
+    function renderGoal(state) {
+      const input = $('targetDate');
+      input.value = state.settings.targetDate || '';
+      input.min = localDay();
+      const rec = recommendedNewPerDay(state);
+      const calc = $('goalCalc');
+
+      // livello di carico (colore) in base alle card/giorno
+      let cls = 'ok', tip = 'Ritmo sostenibile 👍';
+      if (rec.perDay > 20) { cls = 'hot'; tip = '⚠️ Sono tante! Valuta una data un po’ più in là.'; }
+      else if (rec.perDay > 15) { cls = 'warn'; tip = 'Ritmo impegnativo ma fattibile.'; }
+
+      const big = '<div class="goal-big ' + cls + '">📚 <b>' + rec.perDay + '</b> card nuove al giorno</div>';
+
+      if (rec.fromDate) {
+        const d = daysUntil(state.settings.targetDate);
+        calc.innerHTML = big +
+          '<div class="goal-sub">Per essere pronto entro <b>' + fmtDate(state.settings.targetDate) + '</b>' +
+          ' · ' + rec.remaining + ' card da imparare in ' + d + ' giorni · <span class="goal-tip ' + cls + '">' + tip + '</span></div>';
+      } else if (state.settings.targetDate) {
+        calc.innerHTML = big +
+          '<div class="goal-sub">⚠️ La data è oggi o già passata: scegli una data <b>futura</b> per il calcolo automatico. (' + rec.remaining + ' card ancora da imparare)</div>';
+      } else {
+        calc.innerHTML = big +
+          '<div class="goal-sub">Nessuna data impostata: ritmo predefinito. Imposta una data sopra per calcolarlo in automatico. (' + rec.remaining + ' card ancora da imparare)</div>';
+      }
+    }
+
+    // oggi + N mesi -> 'YYYY-MM-DD'
+    function datePlusMonths(months) {
+      const d = new Date(); d.setHours(12, 0, 0, 0); d.setMonth(d.getMonth() + months);
+      return localDay(d);
+    }
+    function setTargetDate(value) {
+      const state = load();
+      state.settings.targetDate = value || null;
+      save(state);
+      render();
+    }
+
+    function fmtDate(iso) {
+      try { return new Date(iso + 'T00:00:00').toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' }); }
+      catch { return iso; }
+    }
+
+    function renderHeatmap(state) {
+      const box = $('heatmap'); box.innerHTML = '';
+      const DAYS = 182;
+      const end = new Date(); end.setHours(12, 0, 0, 0);
+      const start = new Date(end); start.setDate(start.getDate() - (DAYS - 1));
+      start.setDate(start.getDate() - start.getDay()); // arretra a domenica
+      const max = Math.max(1, ...Object.values(state.days).map((d) => d.reviews || 0));
+      for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+        const key = localDay(d);
+        const n = (state.days[key] || {}).reviews || 0;
+        const lvl = n === 0 ? 0 : n >= 20 ? 4 : n >= 10 ? 3 : n >= 5 ? 2 : 1;
+        const cell = document.createElement('div');
+        cell.className = 'cell' + (lvl ? ' l' + lvl : '');
+        const human = new Date(d).toLocaleDateString('it-IT', { weekday: 'long', day: 'numeric', month: 'long' });
+        cell.title = human + ' · ' + (n === 0 ? 'niente studiato' : n + ' card studiate');
+        box.appendChild(cell);
+      }
+    }
+
+    function renderMastery(state) {
+      const box = $('mastery'); box.innerHTML = '';
+      const m = computeMastery(state, CARDS_META);
+      let any = false;
+      for (const mat of MATERIE) {
+        const e = m.byMateria[mat.key];
+        if (!e || !e.total) continue;
+        any = true;
+        const pct = Math.round((e.mastered / e.total) * 100);
+        const row = document.createElement('div');
+        row.className = 'mastery-item';
+        row.innerHTML = '<span class="lbl">' + mat.emoji + ' ' + mat.nome + '</span>' +
+          '<div class="bar"><span style="width:' + pct + '%"></span></div>' +
+          '<span class="num">' + e.mastered + '/' + e.total + ' card</span>';
+        box.appendChild(row);
+      }
+      if (!any) box.innerHTML = '<p style="color:var(--muted,#666);margin:0">Studia qualche card per vedere qui i progressi di padronanza.</p>';
+    }
+
+    function renderMedals(state) {
+      const box = $('medals'); box.innerHTML = '';
+      let got = 0;
+      for (const a of ACHIEVEMENTS) {
+        const has = !!state.achievements[a.id];
+        if (has) got++;
+        const el = document.createElement('div');
+        el.className = 'medal' + (has ? ' got' : '');
+        el.innerHTML = '<span class="ic">' + a.icon + '</span><span class="nm">' + a.name + '</span><span class="ds">' + a.desc + '</span>';
+        box.appendChild(el);
+      }
+      $('achCount').textContent = got;
+      $('achTotal').textContent = ACHIEVEMENTS.length;
+    }
+
+    // obiettivo / data prova
+    $('targetDate').addEventListener('change', (e) => setTargetDate(e.target.value));
+    $('clearDate').addEventListener('click', () => setTargetDate(null));
+    document.querySelectorAll('.goal-preset').forEach((b) => {
+      b.addEventListener('click', () => setTargetDate(datePlusMonths(parseInt(b.dataset.months, 10))));
+    });
+
+    // tools
+    $('exportBtn').addEventListener('click', () => {
+      const blob = new Blob([exportJSON()], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'studio-thomas-' + localDay() + '.json';
+      a.click();
+    });
+    $('importFile').addEventListener('change', async (e) => {
+      const f = e.target.files[0]; if (!f) return;
+      try { importJSON(await f.text()); render(); alert('Backup importato!'); }
+      catch { alert('File non valido.'); }
+    });
+    $('resetBtn').addEventListener('click', () => {
+      if (confirm('Sicuro? Cancella tutti i progressi dello Studio (le card, XP, streak, medaglie).')) { reset(); render(); }
+    });
+
+    render();
+
+    // Buggy dice una frase motivazionale a caso a ogni apertura della dashboard
+    { const bt = $('buggyText'); if (bt) bt.textContent = frasaRandom(buggyMotivazionali); }
+  </script>
+</BaseLayout>

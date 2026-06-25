@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u7-04-1",
+    "topicId": "chim-u7-04",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "tf",
+    "q": "Vero o falso: quando due amminoacidi si uniscono per formare un legame peptidico, viene AGGIUNTA una molecola d'acqua alla reazione.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Avviene esattamente il contrario: nella reazione di condensazione (o disidratazione) si ELIMINA una molecola d'acqua. Il gruppo -OH del -COOH di un amminoacido e il gruppo -H del -NH2 dell'altro si staccano e formano H2O. L'operazione inversa (idrolisi, la digestione) aggiunge acqua per spezzare il legame.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-04-2",
+    "topicId": "chim-u7-04",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Il legame peptidico (-CO-NH-) si forma tra quali due gruppi degli amminoacidi? Pensa ai due amminoacidi come a persone che si danno la mano.",
+    "choices": [
+      "Il gruppo carbossilico -COOH di un amminoacido e il gruppo amminico -NH2 dell'altro",
+      "Il gruppo amminico -NH2 di entrambi gli amminoacidi",
+      "Il gruppo carbossilico -COOH di entrambi gli amminoacidi",
+      "I due gruppi -R (le catene laterali) dei due amminoacidi"
+    ],
+    "answer": 0,
+    "explain": "Il legame peptidico nasce sempre dall'incontro della 'mano destra' (-COOH) di un amminoacido con la 'mano sinistra' (-NH2) dell'altro. Da quell'unione esce una molecola d'acqua e si forma il ponte -CO-NH- che li tiene uniti. I gruppi -R (catene laterali) non partecipano alla formazione del legame: determinano invece la 'personalita' dell'amminoacido.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-04-3",
+    "topicId": "chim-u7-04",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Immagina di avere 4 amminoacidi separati da unire in fila (per formare un tetrapeptide). Quanti legami peptidici si formano e quante molecole d'acqua vengono liberate? Spiega il ragionamento.",
+    "answer": "Si formano 3 legami peptidici e si liberano 3 molecole d'acqua. Il ragionamento e il seguente: ogni legame peptidico unisce due amminoacidi vicini e libera 1 molecola d'acqua. Per mettere 4 amminoacidi in fila servono 3 'giunzioni': 1°-2°, 2°-3°, 3°-4°, cioe 3 legami. Ogni legame libera 1 H2O, quindi in totale 3 molecole d'acqua. Regola generale: con N amminoacidi in catena si formano N meno 1 legami peptidici e si liberano N meno 1 molecole d'acqua. In vet, le proteine degli animali sono catene di centinaia o migliaia di amminoacidi: la digestione (idrolisi) deve aggiungere altrettante molecole d'acqua per smontarle tutte.",
+    "explain": "Regola chiave: N amminoacidi → N-1 legami peptidici → N-1 molecole d'acqua liberate.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u7-04-4",
+    "topicId": "chim-u7-04",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "L'indicazione Ala-Ala (alanina-alanina) corrisponde a:",
+    "choices": [
+      "Un dipeptide",
+      "Un disaccaride",
+      "Un diestere",
+      "Un'ammina",
+      "Un composto aromatico"
+    ],
+    "answer": 0,
+    "explain": "Ala-Ala indica due amminoacidi (alanina + alanina) uniti da un legame peptidico: il risultato di due amminoacidi uniti si chiama DIPEPTIDE (prefisso 'di' = due). Le trappole: un disaccaride e formato da due zuccheri uniti (es. il saccarosio), non da amminoacidi — il suffisso '-saccaride' tradisce lo zucchero; un diestere e un composto con due legami estere (-CO-O-), tipico dei grassi, non delle proteine; un'ammina ha solo il gruppo -NH2 libero e non e il prodotto di due amminoacidi uniti; un composto aromatico contiene un anello di benzene e non ha nulla a che fare con la struttura peptidica.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u7-04-5",
+    "topicId": "chim-u7-04",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Quale delle seguenti affermazioni sul legame peptidico e CORRETTA?",
+    "choices": [
+      "E un legame fragile che si rompe facilmente a temperatura corporea",
+      "E rigido e planare: gli atomi attorno al legame stanno sullo stesso piano e ruotano poco",
+      "Si forma aggiungendo acqua alla reazione (idrolisi)",
+      "Unisce il gruppo -NH2 di un amminoacido con il gruppo -NH2 dell'altro",
+      "E un legame di tipo estere, identico a quello dei grassi"
+    ],
+    "answer": 1,
+    "explain": "Il legame peptidico e rigido (planare): gli atomi che lo circondano stanno tutti sullo stesso piano e la rotazione e limitata. Questo costringe la proteina ad assumere forme precise, e nelle proteine la forma decide la funzione (pensiero chiave per vet). Le trappole da smontare: 'fragile' e l'opposto esatto — il legame peptidico e stabile e non si rompe da solo, altrimenti le proteine dei muscoli si sfalderebbero; 'aggiungendo acqua' descrive l'IDROLISI, cioe la rottura del legame, non la sua formazione (che invece ELIMINA acqua, condensazione); 'NH2 con NH2' scambia i gruppi reagenti — uno deve portare -COOH e l'altro -NH2, non entrambi -NH2; 'legame estere' confonde il legame peptidico (-CO-NH-, tipo ammidico) con il legame estere (-CO-O-) tipico dei trigliceridi.",
+    "tags": ["prova d'esame"]
+  }
+]

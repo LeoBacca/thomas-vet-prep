@@ -1,0 +1,223 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-17">
+
+## Cos'è l'energia meccanica?
+
+L'**energia meccanica** di un oggetto è la somma di due tipi di energia:
+
+- **Energia cinetica (Ec):** l'energia del movimento. Più vai veloce, più ne hai.
+- **Energia potenziale (Ep):** l'energia della posizione. Più sei in alto (o più una molla è compressa), più ne hai.
+
+La formula è semplice:
+
+**E_mec = Ec + Ep**
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Pensa a una montagna russa — in cima sei lento ma in alto (tanta Ep, poca Ec); in fondo vai fortissimo ma sei in basso (poca Ep, tanta Ec). La somma rimane sempre la stessa.</div>
+
+## Il principio di conservazione
+
+In un sistema **ideale** (senza attrito, senza aria) l'energia meccanica totale **non cambia mai**.
+
+Quando l'oggetto scende, l'energia potenziale si trasforma in energia cinetica.
+Quando risale, l'energia cinetica si ritrasforma in energia potenziale.
+
+È come scambiare monete tra due tasche: il totale nel portafoglio resta uguale.
+
+**Matematicamente:**
+
+Ec₁ + Ep₁ = Ec₂ + Ep₂
+
+Dove i pedici 1 e 2 indicano due momenti diversi del moto.
+
+## Le formule da usare
+
+| Grandezza | Formula | Unità |
+|---|---|---|
+| Energia cinetica | Ec = ½ m v² | Joule (J) |
+| Energia potenziale gravitazionale | Ep = m g h | Joule (J) |
+| Conservazione | Ec₁ + Ep₁ = Ec₂ + Ep₂ | — |
+
+Dove: **m** = massa (kg), **v** = velocità (m/s), **g** = 9,8 m/s², **h** = altezza (m).
+
+## Quando si applica?
+
+La conservazione dell'energia meccanica vale **solo** quando:
+- Non c'è attrito (o lo trascuriamo)
+- Non c'è resistenza dell'aria
+- Le uniche forze che agiscono sono **conservative** (gravità, forza elastica)
+
+Se c'è attrito, parte dell'energia si disperde come calore e il totale cambia.
+
+<Diagram caption="Come l'energia si trasforma durante la caduta di un oggetto" code={`flowchart TB
+  A["In alto — fermo<br/>Ep alta, Ec = 0"] --> B["A metà strada<br/>Ep a metà, Ec a metà"]
+  B --> C["In basso — veloce<br/>Ep = 0, Ec alta"]
+  A -- "E_mec costante" --> C`} />
+
+<Diagram caption="Schema del principio di conservazione dell'energia meccanica" code={`flowchart LR
+  S["Sistema ideale<br/>(no attrito)"] --> M["E_mec = Ec + Ep"]
+  M --> T1["Ec aumenta"]
+  M --> T2["Ep diminuisce"]
+  T1 -- "compensano" --> K["E_mec rimane uguale"]
+  T2 -- "compensano" --> K`} />
+
+## Il metodo: imposta E_iniziale = E_finale e risolvi
+
+Quasi tutti i problemi d'esame su questo argomento si risolvono con **un solo schema mentale**, sempre lo stesso. Imparalo a memoria:
+
+1. **Scegli due istanti** del moto: uno "iniziale" (1) e uno "finale" (2). Di solito uno dei due è comodo perché lì Ec = 0 (oggetto fermo) oppure Ep = 0 (oggetto al livello più basso, h = 0).
+2. **Scrivi l'energia totale** in ciascun istante: E = Ec + Ep = ½ m v² + m g h.
+3. **Imponi l'uguaglianza** E₁ = E₂, cioè ½ m v₁² + m g h₁ = ½ m v₂² + m g h₂.
+4. **Cancella ciò che è zero** e **risolvi** per l'incognita (spesso v oppure h).
+
+<div class="callout">💡 <strong>Trucco fondamentale:</strong> quando un oggetto parte da fermo (v₁ = 0) e arriva al livello h = 0, l'uguaglianza diventa m g h = ½ m v². La massa <strong>m è in entrambi i membri e si cancella</strong>. Risultato: <strong>v = √(2 g h)</strong>. La velocità a terra <strong>non dipende dalla massa</strong>: una piuma e un sasso (senza aria) arrivano alla stessa velocità.</div>
+
+**Esempio pulito.** Un sasso parte da fermo da h = 5 m. Velocità a terra (g = 10 m/s²)?
+m g h = ½ m v² → g h = ½ v² → v² = 2 g h = 2 × 10 × 5 = 100 → v = √100 = **10 m/s**. Nota: la massa non serve nemmeno per calcolare.
+
+**Stesso metodo all'incontrario (altezza massima).** Lancio una pallina verso l'alto a v = 20 m/s. Fin dove sale?
+½ m v² = m g h → h = v² / (2 g) = (20 × 20) / (2 × 10) = 400 / 20 = **20 m**. In cima Ec = 0: tutta la cinetica è diventata potenziale.
+
+### Caso speciale: la risalita (l'altezza si conserva, non la distanza)
+
+Se un oggetto scende da un'altezza h e poi **risale** su un altro piano senza attrito, torna esattamente alla **stessa altezza h** (lì la velocità è di nuovo zero, quindi tutta l'energia è di nuovo potenziale). Attenzione: si conserva l'**altezza** h, non la lunghezza del tratto percorso lungo il piano. Se il piano è inclinato di un angolo, la distanza lungo il piano è d = h / sin(angolo) e può essere più lunga di h.
+
+## Quando c'è attrito: l'energia "persa"
+
+L'attrito (e la resistenza dell'aria) sono **forze non conservative**: trasformano una parte dell'energia meccanica in **calore**, che si disperde nell'ambiente. Quel calore non torna più indietro come movimento o quota. Quindi **con attrito l'energia meccanica NON si conserva**: diminuisce.
+
+L'energia totale dell'universo si conserva sempre (calore compreso), ma la sola energia **meccanica** no. In formula:
+
+E_iniziale = E_finale + E_dissipata(calore)
+
+cioè: m g h₁ + ½ m v₁² = m g h₂ + ½ m v₂² + (energia persa per attrito).
+
+**Esempio numerico.** Una slitta di 10 kg parte da ferma da h = 4 m. Arriva in fondo (h = 0) a v = 6 m/s. Quanta energia ha "perso" per attrito? (g = 10 m/s²)
+- Energia all'inizio: E₁ = m g h = 10 × 10 × 4 = 400 J.
+- Energia in fondo: E₂ = ½ m v² = ½ × 10 × 6² = ½ × 10 × 36 = 180 J.
+- Dispersa per attrito: E₁ − E₂ = 400 − 180 = **220 J** trasformati in calore.
+
+Senza attrito sarebbe arrivata a v = √(2 g h) = √(2 × 10 × 4) = √80 ≈ 8,9 m/s; l'attrito l'ha rallentata a 6 m/s.
+
+<Diagram caption="Con attrito una parte dell'energia meccanica diventa calore e non torna più" code={`flowchart LR
+  A["In alto<br/>E mec = 400 J"] --> B["In basso<br/>E mec = 180 J"]
+  A -- "attrito" --> C["Calore disperso<br/>220 J"]`} />
+
+## Guarda il video
+<YouTube id="zBFNl1FAc9o" title="Lezione di fisica su ENERGIA MECCANICA e PRINCIPIO DI CONSERVAZIONE dell'energia" />
+<VideoVisto id="fis-u2-17" />
+
+## Da ricordare
+- L'energia meccanica è la somma di energia cinetica e energia potenziale: E_mec = Ec + Ep
+- In assenza di attrito, l'energia meccanica si conserva: Ec₁ + Ep₁ = Ec₂ + Ep₂
+- Le due forme di energia si trasformano l'una nell'altra, ma il totale non cambia mai
+- Metodo universale: imposta E_iniziale = E_finale, cancella ciò che è zero e risolvi per l'incognita
+- Caduta da fermo al livello h = 0: m g h = ½ m v², la massa si cancella, quindi v = √(2 g h)
+- La velocità a terra (senza aria) NON dipende dalla massa: piuma e sasso arrivano alla stessa velocità
+- Altezza massima di un lancio verso l'alto: h = v² / (2 g) (in cima Ec = 0)
+- Nella risalita senza attrito si conserva l'ALTEZZA h, non la distanza lungo il piano (d = h / sin angolo)
+- Quando v si dimezza, l'energia cinetica diventa un quarto (Ec dipende da v², non da v)
+- Con attrito l'energia meccanica NON si conserva: una parte diventa calore. E_in = E_fin + E_dissipata
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Una palla di 2 kg è ferma in cima a uno scivolo alto 5 m. Qual è la sua energia meccanica totale in quel punto? (g = 10 m/s²)"
+  opzioni={[
+    "50 J",
+    "100 J",
+    "25 J",
+    "200 J"
+  ]}
+  corretta={1}
+  spiegazione="In cima la palla è ferma, quindi Ec = 0. L'energia meccanica è tutta potenziale: Ep = m × g × h = 2 × 10 × 5 = 100 J. In fondo allo scivolo (h = 0) tutta questa energia diventerà cinetica."
+/>
+
+<Quiz
+  domanda="Una pallina scende da 10 m di altezza senza attrito. Quale velocità raggiunge in fondo? (g = 10 m/s²)"
+  opzioni={[
+    "10 m/s",
+    "14 m/s",
+    "20 m/s",
+    "100 m/s"
+  ]}
+  corretta={1}
+  spiegazione="Usiamo la conservazione: m×g×h = ½×m×v². La massa si cancella: v² = 2×g×h = 2×10×10 = 200, quindi v = √200 ≈ 14,1 m/s. La risposta più vicina è 14 m/s."
+/>
+
+<Quiz
+  domanda="In quale situazione NON possiamo applicare la conservazione dell'energia meccanica?"
+  opzioni={[
+    "Un oggetto che cade nel vuoto",
+    "Un pendolo che oscilla senza attrito",
+    "Una slitta che scivola su una superficie con attrito",
+    "Una molla compressa che lancia un oggetto in assenza di attrito"
+  ]}
+  corretta={2}
+  spiegazione="L'attrito è una forza non conservativa: trasforma parte dell'energia meccanica in calore. Quando c'è attrito, l'energia meccanica totale diminuisce nel tempo e il principio di conservazione non si applica."
+/>
+
+<Esercizio
+  problema="Un ciclista (massa totale 80 kg, bici inclusa) parte da fermo in cima a una collina alta 20 m. Arriva in fondo senza pedalare e senza attrito. Che velocità ha in fondo alla discesa? (g = 10 m/s²)"
+  soluzione="Usiamo la conservazione dell'energia meccanica. In cima: Ec₁ = 0 (fermo), Ep₁ = m×g×h = 80×10×20 = 16 000 J. In fondo: h = 0, quindi Ep₂ = 0 e tutta l'energia è cinetica. Ec₂ = 16 000 J → ½×m×v² = 16 000 → v² = (2×16 000)/80 = 400 → v = 20 m/s."
+/>
+
+<Esercizio
+  problema="Un oggetto parte da fermo e scivola senza attrito da un'altezza di 10 cm, percorre un tratto orizzontale e poi risale su un secondo piano inclinato di 30°. Quanti centimetri percorre LUNGO il secondo piano prima di fermarsi? (g = 10 m/s²)"
+  soluzione="Senza attrito l'energia meccanica si conserva, quindi l'oggetto risale fino a tornare alla STESSA altezza da cui era partito: h = 10 cm. Attenzione: si conserva l'altezza, non la lunghezza del tratto. La distanza d percorsa lungo il piano è legata all'altezza dall'angolo: h = d × sin(30°). Poiché sin(30°) = 0,5: d = h / sin(30°) = 10 / 0,5 = 20 cm. La massa e g non servono nemmeno, perché compaiono in entrambi i membri e si cancellano."
+/>
+
+<Esercizio
+  problema="Un oggetto si muove su un piano orizzontale liscio con energia cinetica E. Poi sale su un piano inclinato senza attrito. Quando la sua velocità è diventata METÀ di quella iniziale, quanto vale la sua energia potenziale? (esprimila in funzione di E)"
+  soluzione="Sul piano orizzontale tutta l'energia è cinetica: E_tot = E (h = 0). Salendo, l'energia si conserva: E = Ec' + Ep'. Quando la velocità è v/2, l'energia cinetica diventa Ec' = ½ m (v/2)² = ½ m v² / 4 = (½ m v²)/4 = E/4 (perché l'energia cinetica dipende da v², quindi dimezzare v la riduce a un quarto). Allora Ep' = E_tot − Ec' = E − E/4 = 3E/4. Trappola classica: pensare che dimezzando v si dimezzi l'energia (sarebbe E/2) — è sbagliato perché conta v², non v."
+/>
+
+<Quiz
+  domanda="Marco lancia una biglia verso l'alto: descrive una parabola e ricade a terra. Enrico lascia cadere una biglia identica, dalla stessa altezza, in verticale. Trascurando l'aria, quando le due biglie sono a 1 mm dal suolo, quale affermazione è corretta?"
+  opzioni={[
+    "La variazione di energia cinetica rispetto al lancio è uguale per entrambe le biglie",
+    "La biglia di Marco arriva con velocità maggiore perché ha fatto più strada",
+    "L'energia meccanica totale della biglia di Marco è maggiore di quella di Enrico",
+    "La biglia di Enrico arriva con velocità maggiore perché va dritta",
+    "La forza di gravità sulla biglia di Marco è maggiore perché si muove più a lungo"
+  ]}
+  corretta={0}
+  spiegazione="Le biglie sono identiche (stessa massa) e partono dalla stessa altezza. La gravità è una forza conservativa: il lavoro che compie dipende solo dalla differenza di quota, NON dal percorso. Quindi la variazione di energia cinetica (uguale al lavoro della gravità) è la stessa per entrambe, anche se Marco la lancia su una parabola più lunga. Le trappole: 'più strada = più velocità' (falso, conta solo il dislivello); 'la forza dipende dal percorso' (falso, la gravità è sempre m×g); l'energia meccanica dipende dalle condizioni di partenza, non dalla forma della traiettoria."
+/>
+
+<Quiz
+  domanda="Un oggetto si muove su un piano orizzontale liscio con energia cinetica E, poi sale su un piano inclinato senza attrito. Quando sul piano la sua velocità è la metà di quella iniziale, quanto vale la sua energia potenziale?"
+  opzioni={[
+    "3E/4",
+    "E/2",
+    "E/4",
+    "E/8",
+    "E"
+  ]}
+  corretta={0}
+  spiegazione="L'energia si conserva: E = Ec' + Ep'. Con velocità dimezzata, Ec' = ½ m (v/2)² = E/4 (l'energia cinetica dipende da v², quindi metà velocità significa un quarto di energia). Quindi Ep' = E − E/4 = 3E/4. Trappole: E/2 (chi crede che dimezzare v dimezzi l'energia, dimenticando il quadrato); E/4 (chi confonde l'energia cinetica residua con quella potenziale); E (chi dimentica che resta ancora del moto)."
+/>
+
+<Quiz
+  domanda="L'acqua scende lungo un tubo verticale da un serbatoio in alto e cade sulle pale di una ruota da mulino, facendola girare. Quale affermazione descrive meglio la conservazione dell'energia in questo sistema?"
+  opzioni={[
+    "L'energia potenziale dell'acqua si trasforma in energia cinetica e poi in lavoro sulla ruota",
+    "L'energia cinetica dell'acqua resta costante e si trasforma direttamente in lavoro",
+    "L'acqua acquista energia potenziale mentre cade verso il basso",
+    "La massa dell'acqua si conserva, quindi si conserva la sua energia potenziale",
+    "L'energia si conserva solo perché la temperatura dell'acqua resta costante"
+  ]}
+  corretta={0}
+  spiegazione="In alto l'acqua ha molta energia potenziale (m g h). Cadendo, l'altezza diminuisce e quell'energia potenziale si trasforma in energia cinetica (l'acqua accelera). Quando colpisce le pale, l'energia cinetica compie lavoro sulla ruota mettendola in rotazione: è la catena Ep → Ec → lavoro. Trappole: 'acquista energia potenziale cadendo' (è il contrario, la perde scendendo); 'l'energia cinetica resta costante' (no, aumenta durante la caduta); 'la massa si conserva quindi anche l'energia potenziale' (la massa si conserva ma l'energia potenziale cala perché cala h); la temperatura non c'entra con questa trasformazione."
+/>
+
+</section>
+
+</RisorsaLayout>

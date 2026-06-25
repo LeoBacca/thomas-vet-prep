@@ -1,0 +1,102 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u5-08">
+
+## Perché certe cose vanno sempre in un verso solo?
+
+Pensa a una tazza di caffè caldo sul tavolo: si raffredda da sola. Ma hai mai visto una tazza fredda riscaldarsi da sola assorbendo calore dall'aria più fredda intorno? No. Eppure il primo principio della termodinamica non lo vieterebbe — l'energia si conserverebbe lo stesso. Allora perché non succede?
+
+Risponde a questa domanda il **secondo principio della termodinamica**.
+
+---
+
+## Il concetto di processo irreversibile
+
+Un processo si dice **irreversibile** quando avviene spontaneamente in un solo verso e non torna indietro da solo.
+
+Esempi di processi irreversibili:
+- Il ghiaccio si scioglie in un bicchiere caldo (non si riforma da solo)
+- Il profumo di un fiore si diffonde nell'aria (non si riconcentra da solo)
+- Una palla che rimbalza perde energia a ogni rimbalzo e si ferma (non rimbalza sempre più in alto da sola)
+
+Un processo **reversibile**, invece, è un'idealizzazione: avviene così lentamente e in equilibrio che potrebbe — in teoria — essere invertito senza lasciare tracce. In realtà nessun processo reale è perfettamente reversibile.
+
+---
+
+## Il secondo principio: cosa dice
+
+Il secondo principio ha due enunciati famosi che dicono la stessa cosa in modo diverso:
+
+**Enunciato di Clausius:**
+"Il calore non passa spontaneamente da un corpo freddo a uno caldo."
+
+In pratica: il calore va sempre dal più caldo al più freddo, mai al contrario, da solo.
+
+**Enunciato di Kelvin-Planck:**
+"È impossibile costruire una macchina che trasformi tutto il calore assorbito in lavoro, senza nessun altro effetto."
+
+In pratica: nessun motore è al 100% efficiente. Una parte del calore viene sempre "sprecata" verso un serbatoio freddo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il secondo principio dice che l'energia si degrada: i processi spontanei vanno sempre verso il disordine, mai verso l'ordine. Non puoi recuperare tutto, c'è sempre una perdita.</div>
+
+---
+
+## L'entropia: la misura del disordine
+
+I fisici hanno inventato una grandezza per misurare questa "tendenza al disordine": si chiama **entropia** (simbolo **S**).
+
+Regola d'oro:
+- In un processo spontaneo (irreversibile), l'entropia totale del sistema e dell'ambiente **aumenta sempre**.
+- In un processo reversibile ideale, l'entropia totale **rimane costante**.
+- L'entropia totale non può mai diminuire da sola.
+
+È come il disordine in camera: se non la sistemi, tende ad aumentare da sola. Sistemarla richiede lavoro (energia) dall'esterno.
+
+---
+
+## Diagramma 1 — Il verso spontaneo del calore
+
+<Diagram caption="Il calore fluisce sempre dal corpo caldo al corpo freddo, mai al contrario da solo." code={`flowchart LR
+  A["Corpo CALDO<br/>(alta temperatura)"] -->|"Calore Q"| B["Corpo FREDDO<br/>(bassa temperatura)"]
+  B -. "Impossibile<br/>spontaneamente" .-> A`} />
+
+---
+
+## Diagramma 2 — Entropia e processi irreversibili
+
+<Diagram caption="In ogni processo reale l'entropia totale aumenta: il sistema tende al disordine." code={`flowchart TB
+  A["Stato ordinato<br/>(bassa entropia)"] -->|"Processo spontaneo<br/>irreversibile"| B["Stato disordinato<br/>(alta entropia)"]
+  B -->|"Per tornare indietro<br/>serve lavoro esterno"| A
+  C["Entropia totale<br/>universo"] -->|"Aumenta sempre<br/>nei processi reali"| D["Entropia totale<br/>maggiore"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="NbZdmEW2LnM" title="SECONDO PRINCIPIO della termodinamica" />
+<VideoVisto id="fis-u5-08" />
+
+## Da ricordare
+- Il secondo principio spiega **perché** i processi spontanei vanno in un solo verso: il calore passa sempre dal caldo al freddo, mai al contrario da solo.
+- L'**entropia** misura il disordine: nei processi reali aumenta sempre (o al limite rimane costante nei processi reversibili ideali).
+- Nessuna macchina termica reale può avere rendimento del 100%: una parte del calore viene sempre ceduta all'esterno senza produrre lavoro utile.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Una tazza di tè caldo si raffredda a contatto con l'aria della stanza. Questo processo è:" opzioni={["Reversibile, perché l'energia si conserva", "Irreversibile, perché avviene spontaneamente in un solo verso", "Impossibile secondo il primo principio della termodinamica", "Reversibile, perché il calore può tornare indietro"]} corretta={1} spiegazione="Il raffreddamento spontaneo è un processo irreversibile: il calore passa dal corpo caldo (tè) al corpo freddo (aria), e non torna indietro da solo. L'energia si conserva (primo principio), ma il verso è imposto dal secondo principio." />
+
+<Quiz domanda="Cosa afferma l'enunciato di Clausius del secondo principio?" opzioni={["Il calore non può essere convertito in lavoro", "Il lavoro può essere convertito completamente in calore", "Il calore non passa spontaneamente da un corpo freddo a uno caldo", "L'entropia di un sistema isolato rimane sempre costante"]} corretta={2} spiegazione="L'enunciato di Clausius afferma proprio che il calore non si trasferisce spontaneamente da un corpo a temperatura più bassa a uno a temperatura più alta. Il contrario richiederebbe lavoro esterno (come fa un frigorifero)." />
+
+<Quiz domanda="In un processo spontaneo e irreversibile, cosa succede all'entropia totale del sistema più l'ambiente?" opzioni={["Rimane costante", "Diminuisce", "Aumenta", "Prima aumenta poi diminuisce"]} corretta={2} spiegazione="Il secondo principio stabilisce che l'entropia totale (sistema + ambiente) aumenta sempre nei processi spontanei irreversibili. Solo in un processo reversibile ideale rimane costante. Non può mai diminuire da sola." />
+
+<Esercizio problema="Un frigorifero sposta calore da dentro (corpo freddo) verso la cucina (corpo caldo). Questo viola il secondo principio della termodinamica?" soluzione="No, non lo viola. L'enunciato di Clausius dice che il calore non passa spontaneamente dal freddo al caldo. Il frigorifero non è spontaneo: usa lavoro elettrico per spostare il calore. Il secondo principio impone che, per trasferire calore dal freddo al caldo, sia necessario fornire lavoro dall'esterno — e il frigorifero lo fa esattamente. L'entropia totale dell'universo (sistema + ambiente) comunque aumenta, perché il frigorifero dissipa calore nella cucina in quantità maggiore del calore prelevato dall'interno." />
+
+</section>
+
+</RisorsaLayout>

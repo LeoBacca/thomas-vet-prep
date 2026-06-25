@@ -1,0 +1,10 @@
+{
+ "id": "fis-u4-05",
+ "titolo": "Energia, intensità delle onde e legge dell'inverso del quadrato",
+ "materia": "fisica",
+ "unita": 4,
+ "slug": "05-energia-intensita-delle-onde-e-legge",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u4/05-energia-intensita-delle-onde-e-legge.mdx",
+ "examQuestions": []
+}

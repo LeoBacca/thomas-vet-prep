@@ -1,0 +1,93 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-15">
+
+Gli atomi non amano stare da soli: si "attaccano" tra loro formando **legami chimici**. Il **legame ionico** è il modo più semplice di legarsi: un atomo **regala** uno o più elettroni a un altro atomo. Capirlo è importante perché il sale che mangi, e tanti minerali del tuo corpo (come il sodio e il cloro nel sangue), nascono proprio così.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> nel legame ionico un atomo <strong>cede</strong> un elettrone e l'altro lo <strong>prende</strong>. Diventano due cariche opposte (una positiva e una negativa) che si attraggono, come due calamite.</div>
+
+## Perché un atomo regala un elettrone?
+
+Gli atomi sono "felici" quando hanno l'ultimo guscio di elettroni **pieno** (di solito 8 elettroni esterni). È come una valigia: la vuoi chiusa bene, non mezza aperta.
+
+Prendiamo il **sodio (Na)**: ha **1 solo** elettrone esterno di troppo. Per lui è più facile **buttarlo via** che trovarne altri 7. Il **cloro (Cl)**, invece, ha **7** elettroni esterni: gliene manca **uno solo** per fare 8. Quindi è felicissimo di **prendere** quell'elettrone che il sodio vuole regalare.
+
+Risultato: il sodio dà, il cloro prende. Tutti e due ora hanno il guscio pieno e sono contenti.
+
+<Diagram caption="Il sodio cede un elettrone al cloro: nascono due ioni di carica opposta" code={`flowchart LR
+  Na["Na<br/>(ha 1 elettrone di troppo)"] -->|"cede 1 elettrone"| Cl["Cl<br/>(ne vuole 1)"]
+  Na --> NaPiu["Na+<br/>(ione positivo)"]
+  Cl --> ClMeno["Cl-<br/>(ione negativo)"]
+  NaPiu -->|"si attraggono"| ClMeno`} />
+
+## Cosa sono gli "ioni" (le calamite)
+
+Quando un atomo perde un elettrone (che è negativo), rimane con **più cariche positive**: diventa uno **ione positivo**, scritto **Na+**. Quando un atomo prende un elettrone in più, diventa uno **ione negativo**, scritto **Cl-**.
+
+Positivo e negativo si attirano: questa attrazione è il **legame ionico**. Per questo `Na+` e `Cl-` restano incollati e formano il **cloruro di sodio**, cioè il comune **sale da cucina**.
+
+Aggancio al corpo: nel tuo sangue ci sono tantissimi ioni `Na+` (sodio) e `Cl-` (cloro) sciolti nell'acqua. Servono per far funzionare i nervi e i muscoli. Quando sudi tanto ne perdi un po', ed è per questo che lo sport drink è "salato".
+
+## Cenni sul legame metallico: il mare di elettroni
+
+Nei **metalli** (come il rame di un filo elettrico o il ferro) succede una cosa diversa. Gli atomi metallici **non regalano** gli elettroni a un singolo vicino: li **mettono in comune tutti insieme**.
+
+Immagina tante palline ferme (gli ioni positivi del metallo) immerse in un **"mare" di elettroni** che scorrono liberi tra di loro, come l'acqua intorno ai sassi. Questo mare di elettroni tiene tutto unito ed è il motivo per cui i metalli **conducono la corrente** e il calore: gli elettroni liberi possono spostarsi facilmente.
+
+<Diagram caption="Legame metallico: ioni positivi immersi in un mare di elettroni liberi" code={`flowchart TB
+  M["Metallo (es. rame, ferro)"] --> I["Tanti ioni positivi fermi"]
+  M --> E["Mare di elettroni liberi<br/>che scorrono tra gli ioni"]
+  E --> P["Per questo i metalli<br/>conducono corrente e calore"]`} />
+
+## Guarda il video
+
+<YouTube id="5h-yoTBCk7A" title="Legame ionico spiegato semplice — Lezioni di Chimica" />
+
+<VideoVisto id="chim-u1-15" />
+
+## Da ricordare
+
+- Nel **legame ionico** un atomo **cede** elettroni e l'altro li **prende**.
+- Chi perde elettroni diventa **ione positivo** (es. `Na+`); chi li prende diventa **ione negativo** (es. `Cl-`).
+- Le cariche opposte si **attraggono**: ecco il legame (es. `Na+` e `Cl-` formano il sale).
+- Nel **legame metallico** gli elettroni sono in comune: un **mare di elettroni** liberi tiene unito il metallo.
+- Quel mare di elettroni rende i metalli capaci di **condurre corrente e calore**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Nel legame ionico, cosa succede agli elettroni?"
+  opzioni={["Vengono condivisi a metà", "Un atomo li cede e un altro li prende", "Spariscono", "Restano fermi senza muoversi"]}
+  corretta={1}
+  spiegazione="Nel legame ionico c'è un vero trasferimento: un atomo cede elettroni e l'altro li acquista. Non è una condivisione."
+/>
+
+<Quiz
+  domanda="Il sodio (Na) cede 1 elettrone. Che ione diventa?"
+  opzioni={["Na- (negativo)", "Na+ (positivo)", "Resta neutro", "Cl-"]}
+  corretta={1}
+  spiegazione="Perdendo un elettrone (negativo), il sodio rimane con una carica positiva in più: diventa lo ione Na+."
+/>
+
+<Quiz
+  domanda="Perché i metalli conducono bene la corrente elettrica?"
+  opzioni={["Perché sono pesanti", "Perché hanno un mare di elettroni liberi che si possono muovere", "Perché sono fatti di sale", "Perché non hanno elettroni"]}
+  corretta={1}
+  spiegazione="Nel legame metallico gli elettroni sono liberi di muoversi (il mare di elettroni): per questo trasportano facilmente la corrente."
+/>
+
+<Esercizio
+  problema="Il cloro (Cl) ha 7 elettroni nell'ultimo guscio e gliene manca 1 per arrivare a 8. Quando incontra il sodio, prende o cede elettroni? E quale ione diventa?"
+  soluzione="Il cloro PRENDE 1 elettrone (quello che il sodio cede) per completare il guscio a 8. Acquistando un elettrone negativo, diventa lo ione negativo Cl-. Insieme a Na+ forma il cloruro di sodio, cioè il sale da cucina."
+/>
+
+</section>
+
+</RisorsaLayout>

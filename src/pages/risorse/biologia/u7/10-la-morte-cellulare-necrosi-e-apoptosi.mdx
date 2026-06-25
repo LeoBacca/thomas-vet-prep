@@ -1,0 +1,156 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u7-10">
+
+## Perché le cellule muoiono?
+
+Le cellule del tuo corpo non vivono per sempre. A volte muoiono per un incidente (come quando ti tagli), altre volte si "suicidano" in modo programmato e ordinato. Questi due scenari si chiamano **necrosi** e **apoptosi**.
+
+---
+
+## Necrosi: la morte caotica
+
+La **necrosi** è una morte accidentale e violenta. Immagina una cellula che viene improvvisamente privata di ossigeno, attaccata da una tossina o schiacciata da un trauma fisico.
+
+Cosa succede:
+- La cellula si **gonfia** perché non riesce più a regolare l'ingresso di acqua.
+- La membrana cellulare si **rompe**.
+- Il contenuto interno si **riversa fuori**, come uno zaino che esplode.
+- Questo innesca una **risposta infiammatoria** intensa: i tessuti vicini vengono danneggiati.
+
+La necrosi non è controllata: è disordinata e causa danno collaterale ai tessuti circostanti.
+
+---
+
+## Apoptosi: la morte programmata
+
+L'**apoptosi** (dal greco: "caduta delle foglie") è una morte pulita, ordinata e silenziosa. La cellula si smonta da sola senza fare danni ai vicini.
+
+Cosa succede:
+- La cellula si **restringe** (al contrario della necrosi).
+- Il DNA viene tagliato in frammenti precisi.
+- La cellula si divide in piccoli "pacchetti" detti **corpi apoptotici**.
+- I corpi apoptotici vengono riconosciuti e mangiati da cellule spazzino (**macrofagi**) senza infiammazione.
+
+L'apoptosi è fondamentale durante lo sviluppo (forma le dita eliminando la membrana interdigitale), per eliminare cellule danneggiate o potenzialmente tumorali.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La necrosi è come un palazzo che crolla e fa macerie ovunque; l'apoptosi è come uno stabile demolito con controllo, mattone dopo mattone, senza disturbare i vicini.</div>
+
+---
+
+## Le caspasi: le forbici dell'apoptosi
+
+Le **caspasi** sono proteine-enzima che tagliano altre proteine (come forbici molecolari). Sono i principali esecutori dell'apoptosi.
+
+Esistono due tipi:
+- **Caspasi iniziatrici** (es. caspasi-8, caspasi-9): ricevono il segnale di morte e "accendono" il processo.
+- **Caspasi effettrici** (es. caspasi-3): eseguono la demolizione vera e propria — tagliano il DNA, smontano il citoscheletro, ecc.
+
+Le caspasi sono tenute inattive (come una pistola con la sicura) finché non arriva il segnale giusto.
+
+---
+
+## Le due vie dell'apoptosi
+
+L'apoptosi può essere attivata da due percorsi distinti:
+
+### Via estrinseca (segnale dall'esterno)
+
+Il segnale arriva **da fuori della cellula**. Alcune molecole esterne si legano a recettori di morte sulla superficie cellulare (es. **FAS** o **TNFR**). Questo attiva la **caspasi-8** (iniziatrice), che poi attiva le caspasi effettrici.
+
+### Via intrinseca (segnale dall'interno)
+
+Il segnale nasce **dentro la cellula**: danno al DNA, stress ossidativo, mancanza di fattori di sopravvivenza. Il centro di controllo è il **mitocondrio**.
+
+- Proteine pro-apoptotiche (es. **BAX**, **BAK**) formano pori nella membrana mitocondriale.
+- Dal mitocondrio fuoriesce il **citocromo c**.
+- Il citocromo c si assembla con altre proteine formando l'**apoptosoma**.
+- L'apoptosoma attiva la **caspasi-9** (iniziatrice), che attiva le caspasi effettrici.
+
+Le proteine **BCL-2** fanno da contrappeso: bloccano BAX/BAK e proteggono il mitocondrio. Se BCL-2 prevale, la cellula sopravvive; se BAX prevale, la cellula muore.
+
+---
+
+<Diagram caption="Necrosi vs Apoptosi: differenze chiave" code={`flowchart TB
+  A["Stimolo dannoso"] --> B["NECROSI"]
+  C["Segnale di morte programmata"] --> D["APOPTOSI"]
+
+  B --> B1["Gonfiamento cellulare"]
+  B1 --> B2["Rottura della membrana"]
+  B2 --> B3["Contenuto riversato fuori"]
+  B3 --> B4["Infiammazione e danno ai tessuti vicini"]
+
+  D --> D1["Restringimento cellulare"]
+  D1 --> D2["Frammentazione del DNA"]
+  D2 --> D3["Formazione di corpi apoptotici"]
+  D3 --> D4["Fagocitosi da macrofagi — nessuna infiammazione"]`} />
+
+<Diagram caption="Via intrinseca ed estrinseca dell'apoptosi" code={`flowchart TB
+  E["VIA ESTRINSECA<br/>Segnale esterno"] --> R["Recettori di morte<br/>es. FAS, TNFR"]
+  R --> C8["Caspasi-8 iniziatrice"]
+
+  I["VIA INTRINSECA<br/>Danno interno alla cellula"] --> BAX["Proteine pro-apoptotiche<br/>BAX / BAK"]
+  BAX --> MIT["Pori nel mitocondrio"]
+  MIT --> CYT["Rilascio citocromo c"]
+  CYT --> APO["Apoptosoma"]
+  APO --> C9["Caspasi-9 iniziatrice"]
+
+  C8 --> CE["Caspasi effettrici<br/>es. caspasi-3"]
+  C9 --> CE
+  CE --> MORTE["Demolizione ordinata della cellula<br/>Apoptosi completata"]
+
+  BCL["BCL-2 antiapoptotica"] -. blocca .-> BAX`} />
+
+---
+
+## Guarda il video
+<YouTube id="x9WyI94zj-E" title="Apoptosi e Necrosi - Lezioni di Biologia - Samuele Corbetta" />
+<VideoVisto id="bio-u7-10" />
+
+---
+
+## Da ricordare
+- La **necrosi** è morte accidentale e caotica: la cellula si gonfia, esplode e causa infiammazione; l'**apoptosi** è morte programmata e ordinata: la cellula si smonta in silenzio senza danni ai tessuti vicini.
+- L'apoptosi ha due vie: la **via estrinseca** (recettori di morte → caspasi-8) e la **via intrinseca** (danno interno → mitocondrio → citocromo c → apoptosoma → caspasi-9).
+- Le **caspasi** sono le proteine esecutrici dell'apoptosi: quelle **iniziatrici** (8, 9) ricevono il segnale e attivano le **effettrici** (3), che demoliscono fisicamente la cellula.
+
+---
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Una cellula muore a causa di un'ischemia (mancanza di ossigeno). Si gonfia, la membrana si rompe e i tessuti vicini si infiammano. Di che tipo di morte cellulare si tratta?"
+  opzioni={["Apoptosi via intrinseca", "Apoptosi via estrinseca", "Necrosi", "Fagocitosi"]}
+  corretta={2}
+  spiegazione="Il gonfiamento, la rottura della membrana e l'infiammazione circostante sono i segni caratteristici della necrosi, che è una morte accidentale e non controllata."
+/>
+
+<Quiz
+  domanda="Nella via intrinseca dell'apoptosi, qual è la molecola rilasciata dal mitocondrio che innesca la formazione dell'apoptosoma?"
+  opzioni={["Caspasi-8", "BCL-2", "Citocromo c", "BAX"]}
+  corretta={2}
+  spiegazione="Il citocromo c viene rilasciato dal mitocondrio quando BAX/BAK formano pori nella membrana mitocondriale. Una volta nel citoplasma, si assembla con altre proteine per formare l'apoptosoma, che attiva la caspasi-9."
+/>
+
+<Quiz
+  domanda="Qual è la funzione della proteina BCL-2 nell'apoptosi?"
+  opzioni={["Attiva la caspasi-3 per demolire la cellula", "Forma pori nel mitocondrio per rilasciare il citocromo c", "Inibisce le proteine pro-apoptotiche come BAX, proteggendo la cellula dalla morte", "È un recettore di morte sulla superficie cellulare"]}
+  corretta={2}
+  spiegazione="BCL-2 è una proteina antiapoptotica: blocca l'azione di BAX e BAK, impedendo la formazione di pori nel mitocondrio e quindi il rilascio del citocromo c. Se BCL-2 è abbondante, la cellula sopravvive."
+/>
+
+<Esercizio
+  problema="Descrivi in 4-5 passi cosa succede nella via estrinseca dell'apoptosi, partendo dal segnale esterno fino alla demolizione della cellula."
+  soluzione="1) Un ligando esterno (es. FasL) si lega al recettore di morte (es. FAS) sulla superficie della cellula. 2) Il recettore attivato recluta proteine adattatrici che attivano la caspasi-8 (iniziatrice). 3) La caspasi-8 attiva le caspasi effettrici, in particolare la caspasi-3. 4) Le caspasi effettrici tagliano proteine strutturali, frammentano il DNA e smontano la cellula. 5) La cellula si divide in corpi apoptotici che vengono fagocitati dai macrofagi senza innescare infiammazione."
+/>
+
+</section>
+
+</RisorsaLayout>

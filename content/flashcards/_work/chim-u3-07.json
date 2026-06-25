@@ -1,0 +1,39 @@
+{
+ "id": "chim-u3-07",
+ "titolo": "L'equilibrio chimico: reazioni reversibili, Keq e legge d'azione di massa",
+ "materia": "chimica",
+ "unita": 3,
+ "slug": "07-lequilibrio-chimico-reazioni-reversibili-keq-e",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u3/07-lequilibrio-chimico-reazioni-reversibili-keq-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2008",
+   "q": "Si dice che una reazione raggiunge lo stato di equilibrio chimico quando:",
+   "choices": [
+    "la velocità della reazione diretta è uguale alla velocità della reazione inversa",
+    "inizia ad avvenire la reazione inversa",
+    "la velocità della reazione diretta inizia a diminuire",
+    "la velocità della reazione inversa inizia a diminuire",
+    "la velocità della reazione diretta si riduce a zero"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2022",
+   "q": "La reazione in fase acquosa A + B -> AB ha una costante di equilibrio Kc = 50. Se all'equilibrio le concentrazioni molari di A e AB sono uguali, quale sarà la concentrazione molare di B?",
+   "choices": [
+    "0,02 M",
+    "0,2 M",
+    "50 M",
+    "25 M",
+    "7,07 M"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

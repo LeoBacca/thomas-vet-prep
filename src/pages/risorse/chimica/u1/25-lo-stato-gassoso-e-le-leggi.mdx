@@ -1,0 +1,100 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-25">
+
+Un **gas** è la materia nella sua forma più "libera": le particelle volano dappertutto e riempiono tutto lo spazio che hanno a disposizione, come il profumo che in pochi secondi si sente in tutta la stanza. Per descrivere un gas guardiamo **tre cose**: quanto è schiacciato (**pressione**), quanto spazio occupa (**volume**) e quanto è caldo (**temperatura**). Le **leggi dei gas** dicono come queste tre cose sono legate: se ne cambi una, le altre rispondono.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> pressione, volume e temperatura di un gas sono come tre amici sull'altalena: se uno si muove, gli altri due reagiscono. Le tre leggi ci dicono esattamente come.</div>
+
+## Prima però: la temperatura assoluta (kelvin)
+
+Per le leggi dei gas non si usano i gradi Celsius (°C) ma i **kelvin (K)**, detta **temperatura assoluta**. Perché? Perché esiste una temperatura **minima possibile**, sotto la quale non si può scendere: è lo **zero assoluto**, dove le particelle sono ferme del tutto. Quel punto vale **0 K**, cioè **-273 °C** circa.
+
+Convertire è facilissimo: **K = °C + 273**.
+
+- 0 °C (acqua che ghiaccia) → 273 K
+- 37 °C (il nostro corpo) → 310 K
+- 100 °C (acqua che bolle) → 373 K
+
+<div class="callout">💡 <strong>In parole semplici:</strong> i kelvin sono i gradi che partono "dal vero zero". Per passare da °C a K aggiungi 273. Nelle leggi dei gas la temperatura va SEMPRE in kelvin, altrimenti i conti escono sbagliati.</div>
+
+## Le tre leggi dei gas, una alla volta
+
+Ogni legge tiene **ferma una grandezza** e guarda come si comportano le altre due.
+
+**Legge di Boyle** (temperatura ferma): se **schiacci** il gas (volume giù), la **pressione sale**. Pensa a una siringa col buco tappato: spingi lo stantuffo, l'aria dentro si comprime e fa più resistenza. Pressione e volume sono **inversamente proporzionali**: uno sale, l'altro scende. In formula: **P x V = costante**.
+
+**Legge di Charles** (pressione ferma): se **scaldi** il gas, il **volume aumenta**. È il palloncino che, lasciato al sole, si gonfia. Volume e temperatura (in kelvin) crescono insieme, sono **direttamente proporzionali**: **V / T = costante**.
+
+**Legge di Gay-Lussac** (volume fermo): se **scaldi** un gas chiuso in un recipiente rigido (che non può espandersi), la **pressione aumenta**. È il motivo per cui sulla bomboletta spray c'è scritto "non esporre al calore": scaldandola, dentro la pressione sale e può scoppiare. Pressione e temperatura crescono insieme: **P / T = costante**.
+
+<Diagram caption="Le tre leggi dei gas: cosa tieni fermo e cosa succede" code={`flowchart TB
+  G["Gas: pressione (P), volume (V), temperatura (T)"] --> B["BOYLE<br/>tengo ferma T<br/>schiaccio V giu' -> P su<br/>P x V = costante"]
+  G --> C["CHARLES<br/>tengo ferma P<br/>scaldo T su -> V su<br/>V / T = costante"]
+  G --> GL["GAY-LUSSAC<br/>tengo fermo V<br/>scaldo T su -> P su<br/>P / T = costante"]`} />
+
+Per ricordare la **forma dei grafici** (cosa disegna ogni legge se metti due grandezze sugli assi):
+
+<Diagram caption="La forma del grafico di ognuna delle tre leggi" code={`flowchart LR
+  B["BOYLE: grafico P-V<br/>curva che scende<br/>(piu' V, meno P)"]
+  C["CHARLES: grafico V-T<br/>linea retta in salita<br/>(piu' T, piu' V)"]
+  GL["GAY-LUSSAC: grafico P-T<br/>linea retta in salita<br/>(piu' T, piu' P)"]`} />
+
+## Perché conta in medicina e veterinaria
+
+Queste leggi non sono solo teoria: sono **dentro la respirazione**. Quando il torace si allarga, lo spazio nei polmoni aumenta (volume su): per la legge di Boyle la pressione dell'aria nei polmoni **scende** sotto quella esterna, e così l'aria entra da sola. Quando il torace si stringe, succede il contrario e l'aria esce. Respirare è Boyle in azione, in ogni cane, gatto o persona.
+
+E c'è di più: le bombole di **ossigeno** in clinica, l'**anestesia** con i gas, persino come si comporta un **palloncino-sonda** dentro il corpo a temperatura corporea (310 K) si capiscono con queste tre leggi. Capirle ora ti servirà davvero in corsia e in ambulatorio.
+
+## Guarda il video
+
+<YouTube id="KDfx9LHgMW8" title="Lo stato gassoso: legge di Boyle, di Charles e di Gay-Lussac — spiegazione semplice" />
+
+<VideoVisto id="chim-u1-25" />
+
+## Da ricordare
+
+- La temperatura nei gas si usa in **kelvin (K)**: **K = °C + 273**. Lo zero assoluto è 0 K (circa -273 °C).
+- **Boyle** (T ferma): schiacci il volume, la pressione sale. **P x V = costante** (inversamente proporzionali).
+- **Charles** (P ferma): scaldi, il volume cresce. **V / T = costante** (direttamente proporzionali).
+- **Gay-Lussac** (V fermo): scaldi un recipiente rigido, la pressione cresce. **P / T = costante**.
+- Respirare è la legge di Boyle al lavoro: più spazio nei polmoni significa meno pressione, e l'aria entra.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Secondo la legge di Boyle, se comprimi un gas (riduci il volume) mantenendo la temperatura costante, la pressione:"
+  opzioni={["aumenta", "diminuisce", "resta uguale", "diventa zero"]}
+  corretta={0}
+  spiegazione="Boyle: a temperatura costante, volume e pressione sono inversamente proporzionali. Se il volume scende, la pressione sale. È come spingere lo stantuffo di una siringa tappata."
+/>
+
+<Quiz
+  domanda="A quanti kelvin corrisponde la temperatura del corpo, circa 37 °C?"
+  opzioni={["37 K", "273 K", "310 K", "37 000 K"]}
+  corretta={2}
+  spiegazione="K = °C + 273, quindi 37 + 273 = 310 K. Ricorda: nelle leggi dei gas la temperatura va sempre in kelvin."
+/>
+
+<Quiz
+  domanda="Un gas è chiuso in un recipiente rigido (volume fisso) e viene scaldato. Quale legge descrive cosa succede e cosa aumenta?"
+  opzioni={["Boyle: aumenta il volume", "Charles: aumenta la pressione", "Gay-Lussac: aumenta la pressione", "Nessuna: non cambia niente"]}
+  corretta={2}
+  spiegazione="A volume costante vale la legge di Gay-Lussac: scaldando, la pressione aumenta. È il motivo per cui le bombolette spray non vanno esposte al calore."
+/>
+
+<Esercizio
+  problema="Trasforma in kelvin queste tre temperature: 0 °C (ghiaccio), 100 °C (acqua che bolle) e -273 °C (zero assoluto). Usa la regola K = °C + 273."
+  soluzione="Basta aggiungere 273 a ogni valore. 0 °C diventa 0 + 273 = 273 K. 100 °C diventa 100 + 273 = 373 K. -273 °C diventa -273 + 273 = 0 K, cioè lo zero assoluto: la temperatura più bassa possibile, dove le particelle sono ferme."
+/>
+
+</section>
+
+</RisorsaLayout>

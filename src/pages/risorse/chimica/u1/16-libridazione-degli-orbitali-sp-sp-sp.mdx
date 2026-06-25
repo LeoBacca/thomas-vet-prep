@@ -1,0 +1,100 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-16">
+
+Un atomo ha degli **orbitali**: sono le "zone" dove si trovano i suoi elettroni. Alcune di queste zone hanno forme diverse tra loro (alcune tonde, altre allungate). Quando l'atomo si lega ad altri atomi, però, gli conviene avere zone tutte **uguali** e ben distribuite. Così le **mescola** e ne ottiene di nuove, tutte identiche: questa mescolanza si chiama **ibridazione**. E indovina un po': la forma in cui si dispongono queste nuove zone decide la **forma della molecola**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ibridare vuol dire <strong>frullare insieme</strong> orbitali diversi per ottenerne di nuovi tutti uguali. Quanti ne frulli decide la <strong>geometria</strong> della molecola: tetraedro, piano o linea.</div>
+
+## Perché un atomo "frulla" i suoi orbitali
+
+Pensa a un frullato. Hai una banana e due fragole (frutti diversi). Se li frulli ottieni un bicchiere di frullato tutto uguale: ogni sorso ha lo stesso sapore. L'atomo fa la stessa cosa con i suoi orbitali: parte da forme diverse (una "s" tonda e delle "p" allungate) e le frulla in nuovi orbitali tutti identici, gli **orbitali ibridi**.
+
+Perché lo fa? Perché orbitali tutti uguali si possono allontanare il più possibile l'uno dall'altro, come persone in ascensore che cercano ognuna il proprio angolo. Più sono lontani, più la molecola è stabile. E il modo in cui si allontanano dà alla molecola la sua forma nello spazio.
+
+Una regola comoda: **il numero di orbitali che frulli resta lo stesso anche dopo**. Frulli 4 orbitali? Ottieni 4 orbitali ibridi. Ne frulli 3? Ottieni 3. Ne frulli 2? Ottieni 2. Niente si crea e niente si distrugge, cambia solo la forma.
+
+<Diagram caption="I tre tipi di ibridazione e la forma che danno alla molecola" code={`flowchart TB
+  O["Atomo che sta per legarsi:<br/>frulla i suoi orbitali"] --> SP3["sp3<br/>frullo 1 s + 3 p = 4 ibridi"]
+  O --> SP2["sp2<br/>frullo 1 s + 2 p = 3 ibridi"]
+  O --> SP["sp<br/>frullo 1 s + 1 p = 2 ibridi"]
+  SP3 --> G3["Geometria TETRAEDRICA<br/>angoli di 109,5 gradi"]
+  SP2 --> G2["Geometria PIANA (triangolo)<br/>angoli di 120 gradi"]
+  SP --> G1["Geometria LINEARE<br/>angolo di 180 gradi"]`} />
+
+## Le tre forme: tetraedro, piano, linea
+
+Il nome dell'ibridazione ti dice già quanti orbitali sono stati frullati. La "s" all'inizio è sempre 1 sola; il numerino accanto alla "p" conta le "p". Quindi:
+
+- **sp3** = 1 s + 3 p = **4 orbitali** ibridi. Quattro zone che si allontanano il più possibile puntano verso i 4 vertici di un **tetraedro** (una piramide a base triangolare). Angoli di circa **109,5 gradi**. Esempio classico: il metano (CH4).
+- **sp2** = 1 s + 2 p = **3 orbitali** ibridi. Tre zone su uno stesso **piano**, disposte come un triangolo, angoli di **120 gradi**. Esempio: l'etilene.
+- **sp** = 1 s + 1 p = **2 orbitali** ibridi. Due zone in **linea retta**, una di fronte all'altra, angolo di **180 gradi**. Esempio: l'acetilene.
+
+Un'immagine per ricordarli: **sp3** è come le **4 gambe di uno sgabello** ben aperte; **sp2** è come il simbolo della Mercedes (3 raggi su un piano); **sp** è come un **bastoncino dritto** con un puntino a ogni estremità.
+
+<Diagram caption="Schema concettuale: quante zone e che forma prendono" code={`flowchart LR
+  A["sp3<br/>4 zone"] --> A2["TETRAEDRO<br/>(forma a piramide, 3D)"]
+  B["sp2<br/>3 zone"] --> B2["PIANO<br/>(triangolo, tutto su un foglio)"]
+  C["sp<br/>2 zone"] --> C2["LINEA<br/>(retta, 180 gradi)"]`} />
+
+## Perché conta per medicina e veterinaria
+
+Sembra teoria astratta, ma è la base della **forma delle molecole della vita**. Il **carbonio**, l'atomo di cui siamo fatti, usa l'ibridazione di continuo:
+
+- Nei **grassi** e in tante catene del corpo il carbonio è **sp3**: forma tetraedrica, catene che si piegano in modo flessibile.
+- Nei **doppi legami** (come nel DNA, in molti ormoni e in tanti farmaci) compare il carbonio **sp2**, piatto e rigido.
+
+La forma decide tutto: un **farmaco** funziona solo se la sua molecola ha la **geometria giusta** per incastrarsi nel suo bersaglio, come una chiave nella sua serratura. E quella geometria nasce proprio dall'ibridazione degli orbitali. Capire questo concetto, quindi, è capire perché le molecole del corpo hanno la forma che hanno.
+
+## Guarda il video
+
+<YouTube id="DYLmar4uIOg" title="IBRIDIZZAZIONE sp sp2 sp3 — spiegazione per principianti (Chimica con Jessica)" />
+
+<VideoVisto id="chim-u1-16" />
+
+## Da ricordare
+
+- **Ibridare** = frullare orbitali diversi per ottenerne di nuovi tutti **uguali**.
+- Il numero di orbitali **non cambia**: ne frulli 4 e ne ottieni 4, ecc.
+- **sp3** → 4 ibridi → **tetraedro** (109,5 gradi). **sp2** → 3 ibridi → **piano/triangolo** (120 gradi). **sp** → 2 ibridi → **linea** (180 gradi).
+- Il tipo di ibridazione decide la **geometria** della molecola nello spazio.
+- È la base della forma delle molecole della vita: la geometria giusta fa funzionare i **farmaci** (chiave-serratura).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quanti orbitali ibridi ottieni con l'ibridazione sp3?"
+  opzioni={["2 orbitali", "3 orbitali", "4 orbitali", "5 orbitali"]}
+  corretta={2}
+  spiegazione="sp3 vuol dire 1 orbitale s + 3 orbitali p = 4 orbitali ibridi. Il numero totale non cambia: ne frulli 4 e ne ottieni 4."
+/>
+
+<Quiz
+  domanda="A quale geometria corrisponde l'ibridazione sp2?"
+  opzioni={["lineare", "piana (triangolo), angoli di 120 gradi", "tetraedrica", "a forma di cubo"]}
+  corretta={1}
+  spiegazione="Con sp2 hai 3 zone che si dispongono tutte su uno stesso piano, come un triangolo, con angoli di 120 gradi."
+/>
+
+<Quiz
+  domanda="Un carbonio con ibridazione sp ha i suoi due legami disposti:"
+  opzioni={["a 90 gradi", "in linea retta, a 180 gradi", "a 109,5 gradi", "in cerchio"]}
+  corretta={1}
+  spiegazione="sp dà solo 2 zone: per stare il più lontane possibile si mettono una di fronte all'altra, in linea retta, cioè a 180 gradi."
+/>
+
+<Esercizio
+  problema="Il metano (CH4) ha un atomo di carbonio centrale legato a 4 atomi di idrogeno, tutti uguali e distribuiti il più lontano possibile tra loro. Quale ibridazione ha il carbonio e che forma ha la molecola?"
+  soluzione="Quattro zone identiche e ben distribuite significano 4 orbitali ibridi, quindi ibridazione sp3. La forma è tetraedrica (una piccola piramide), con angoli di circa 109,5 gradi tra un legame e l'altro."
+/>
+
+</section>
+
+</RisorsaLayout>

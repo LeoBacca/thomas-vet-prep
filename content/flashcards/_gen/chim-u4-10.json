@@ -1,0 +1,81 @@
+[
+  {
+    "id": "fc-chim-u4-10-1",
+    "topicId": "chim-u4-10",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Il sangue degli animali ha un pH fisso intorno a 7,4. Cosa lo tiene stabile anche quando mangiamo cibi acidi o facciamo sport?",
+    "choices": [
+      "Una soluzione tampone: una coppia acido debole + base coniugata che assorbe acidi e basi in eccesso",
+      "Il cuore che pompa il sangue e 'diluisce' l'acido",
+      "Il sale (NaCl) disciolto nel sangue che neutralizza tutto",
+      "Il pH del sangue in realta cambia molto, ma noi non lo sentiamo"
+    ],
+    "answer": 0,
+    "explain": "Il sangue e una soluzione tampone: la coppia acido carbonico/bicarbonato agisce come due spugne, una assorbe gli H+ in eccesso, l'altra assorbe gli OH- in eccesso. Il cuore, il sale NaCl e l'idea che il pH 'cambi senza farsi sentire' sono tutti fuori strada: e proprio il tampone chimico il meccanismo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-10-2",
+    "topicId": "chim-u4-10",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: nell'equazione di Henderson-Hasselbalch (pH = pKa + log([base coniugata] / [acido debole])), se le due concentrazioni sono uguali, il pH del tampone e uguale al pKa.",
+    "choices": [
+      "Vero",
+      "Falso"
+    ],
+    "answer": 0,
+    "explain": "Vero. Se [base coniugata] = [acido debole], la loro divisione fa 1. E log(1) = 0. Quindi pH = pKa + 0 = pKa. E il caso piu semplice e da ricordare a memoria: quantita uguali → pH = pKa.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-10-3",
+    "topicId": "chim-u4-10",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "Un tampone e fatto da un acido debole e dalla sua base coniugata. Spiega, con parole semplici, cosa succede dentro il tampone quando aggiungi un po' di acido forte (tanti H+ in piu) e perche il pH cambia pochissimo.",
+    "answer": "Quando aggiungi acido forte, i nuovi H+ non restano liberi in soluzione (dove alzerebbero il pH). La base coniugata del tampone li 'cattura' e li assorbe: reagisce con gli H+ in arrivo trasformandosi nella sua forma acida. E' come una spugna che beve l'acqua prima che inumidisca il pavimento. La quantita di H+ liberi che cambierebbe il pH diventa minima, e il pH si sposta solo di pochissimo. Il tampone funziona finche la sua 'capacita di assorbimento' non e esaurita (cioe finche non si esaurisce la base coniugata disponibile). Per questo occorrono quantita simili dei due ingredienti: se uno dei due finisce, il tampone smette di funzionare.",
+    "explain": "La chiave: la base coniugata 'cattura' gli H+ in arrivo prima che cambino il pH. Il tampone assorbe l'urto, come un ammortizzatore.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u4-10-4",
+    "topicId": "chim-u4-10",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Un tampone (1 litro) ha pH = 4. Lo diluisci con acqua fino a 10 litri. Quanto vale circa il pH dopo la diluizione?",
+    "choices": [
+      "4 (quasi invariato)",
+      "0,4 (il pH si divide per 10 come il volume)",
+      "7 (diventa neutro perche l'acqua ha pH 7)",
+      "9 (si inverte e diventa basico)",
+      "5 (aumenta di 1 perche hai moltiplicato il volume per 10)"
+    ],
+    "answer": 0,
+    "explain": "Questa e la proprieta fondamentale del tampone: la diluizione cambia pochissimo il pH. Secondo Henderson-Hasselbalch, pH = pKa + log([base coniugata]/[acido debole]). Quando diluisci, ENTRAMBE le concentrazioni scendono dello stesso fattore (10x): il loro RAPPORTO resta uguale, e quindi il pH resta uguale al pKa. 'pH = 0,4' e la trappola di chi confonde il pH con una concentrazione da dividere. 'Diventa 7' e la misconcezione classica: 'diluire = neutralizzare' e falso per un tampone. '9 (basico)' e l'opposto esatto. '5 (aumenta di 1)' e il filler: sarebbe il ragionamento giusto per un ACIDO FORTE (es. HCl diluito 10x → pH +1), ma un tampone non si comporta cosi.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u4-10-5",
+    "topicId": "chim-u4-10",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Quale di queste coppie di sostanze disciolte in acqua forma una vera soluzione tampone?",
+    "choices": [
+      "CH3COOH (acido acetico) e CH3COONa (acetato di sodio)",
+      "CH3COOH (acido acetico) e HCl (acido cloridrico)",
+      "NaOH (base forte) e CH3COONa (acetato di sodio)",
+      "NaOH (base forte) e HCl (acido forte)",
+      "CH3COONa (acetato di sodio) e NH4Cl (cloruro di ammonio)"
+    ],
+    "answer": 0,
+    "explain": "Un tampone richiede ESATTAMENTE: 1) un acido debole, 2) la sua base coniugata. CH3COOH e l'acido acetico (debole) e CH3COO- (l'acetato) e la sua base coniugata: coppia perfetta, tampone funzionante. Le trappole: 'acido acetico + HCl' e sbagliata perche hai DUE ACIDI (manca la base coniugata); 'NaOH + acetato' e sbagliata perche NaOH e una BASE FORTE, non un acido debole (una base forte distrugge il tampone invece di costruirlo); 'NaOH + HCl' e la trappola opposto-esatto: due forti che si neutralizzano a vicenda, non formano un tampone. 'Acetato + NH4Cl' e il filler furbo: qui l'acetato e una base debole, mentre lo ione ammonio (NH4+) e un acido debole, ma appartengono a due sistemi diversi e non sono parenti (coniugati) tra loro; manca quindi la coppia acido debole/base coniugata dello stesso sistema.",
+    "tags": ["prova d'esame"]
+  }
+]

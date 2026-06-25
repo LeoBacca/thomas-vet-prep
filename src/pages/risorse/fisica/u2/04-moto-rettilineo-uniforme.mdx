@@ -1,0 +1,96 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-04">
+
+## Cos'è il moto rettilineo uniforme?
+
+Il **moto rettilineo uniforme** (MRU) è il moto più semplice che esista in fisica.
+Ha due caratteristiche precise:
+
+- il corpo si muove **in linea retta** (rettilineo)
+- il corpo si muove a **velocità costante** (uniforme), cioè non accelera e non frena
+
+Pensa a un'auto in autostrada che viaggia sempre a 100 km/h su un rettilineo: è esattamente il MRU.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> velocità costante + traiettoria dritta = moto rettilineo uniforme.</div>
+
+---
+
+## La formula chiave
+
+La formula che descrive il MRU è:
+
+**s = v · t**
+
+- **s** = spazio percorso (in metri, m)
+- **v** = velocità (in metri al secondo, m/s) — rimane sempre uguale
+- **t** = tempo trascorso (in secondi, s)
+
+È come calcolare quanta strada fai in macchina: se vai a 30 m/s per 10 secondi, percorri 300 m.
+
+Puoi ricavare anche le altre due grandezze:
+
+- **v = s / t** (velocità = spazio diviso tempo)
+- **t = s / v** (tempo = spazio diviso velocità)
+
+---
+
+## La posizione nel tempo
+
+Se il corpo non parte dall'origine (cioè parte già a una certa distanza), la formula diventa:
+
+**x = x₀ + v · t**
+
+- **x** = posizione finale
+- **x₀** = posizione di partenza (detta "posizione iniziale")
+- **v · t** = spazio percorso nel tempo t
+
+---
+
+## Come appare sui grafici?
+
+Nel MRU ci sono due grafici importanti:
+
+**Grafico spazio-tempo (s-t):** è una **retta inclinata**. Più è ripida, più la velocità è alta.
+
+**Grafico velocità-tempo (v-t):** è una **retta orizzontale**. La velocità non cambia, quindi la linea è piatta.
+
+<Diagram caption="Schema del moto rettilineo uniforme: velocità costante produce una traiettoria dritta" code={`flowchart LR
+  A["Punto di partenza<br/>posizione x₀"] -->|"velocità v costante"| B["Punto di arrivo<br/>posizione x"]
+  B -->|"spazio percorso: s = v · t"| C["Risultato"]`} />
+
+<Diagram caption="I due grafici del MRU: spazio-tempo (retta inclinata) e velocità-tempo (retta piatta)" code={`flowchart TB
+  G1["Grafico spazio-tempo<br/>s cresce nel tempo<br/>→ retta inclinata"] --> R1["Pendenza = velocità v"]
+  G2["Grafico velocità-tempo<br/>v non cambia<br/>→ retta orizzontale"] --> R2["Area sotto la retta = spazio s"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="bxxyEdl0Tos" title="Il moto rettilineo uniforme - Spiegazione e esempi" />
+<VideoVisto id="fis-u2-04" />
+
+## Da ricordare
+- Nel MRU la velocità è **costante**: non ci sono accelerazioni né frenate.
+- La formula base è **s = v · t**; se conosci due grandezze puoi sempre trovare la terza.
+- Sul grafico spazio-tempo il MRU è una **retta** (non una curva): se vedi una curva, la velocità sta cambiando.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un'auto percorre 150 m in 5 secondi a velocità costante. Qual è la sua velocità?" opzioni={["15 m/s","30 m/s","750 m/s","25 m/s"]} corretta={1} spiegazione="v = s / t = 150 m / 5 s = 30 m/s. Si divide sempre lo spazio per il tempo." />
+
+<Quiz domanda="Come appare il grafico velocità-tempo di un moto rettilineo uniforme?" opzioni={["Una curva che sale","Una retta inclinata verso l'alto","Una retta orizzontale","Un punto fermo"] } corretta={2} spiegazione="Nel MRU la velocità è costante, quindi sul grafico v-t si ottiene una retta orizzontale: il valore di v non cambia mai." />
+
+<Quiz domanda="Un ciclista va a 5 m/s per 20 secondi. Quanto spazio percorre?" opzioni={["4 m","25 m","100 m","15 m"]} corretta={2} spiegazione="s = v · t = 5 m/s × 20 s = 100 m. Si moltiplica velocità per tempo." />
+
+<Esercizio problema="Un treno viaggia a velocità costante di 40 m/s. Parte dalla posizione x₀ = 200 m. Dove si trova dopo 15 secondi?" soluzione="Usiamo la formula x = x₀ + v · t. x = 200 m + 40 m/s × 15 s = 200 m + 600 m = 800 m. Il treno si trova alla posizione 800 m dall'origine." />
+
+</section>
+
+</RisorsaLayout>

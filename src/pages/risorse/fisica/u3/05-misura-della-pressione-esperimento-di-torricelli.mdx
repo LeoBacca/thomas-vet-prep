@@ -1,0 +1,98 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u3-05">
+
+## Cos'è la pressione e come si misura?
+
+La pressione è la forza che un fluido (liquido o gas) esercita su una superficie.
+La formula è semplice: **P = F / A** (forza divisa per l'area).
+
+Ma come misuriamo la pressione dell'aria intorno a noi, o quella dentro un tubo?
+Ci sono due strumenti classici: il **barometro** (per l'atmosfera) e il **manometro** (per i fluidi in pressione).
+
+---
+
+## L'esperimento di Torricelli
+
+Nel 1644, il fisico italiano Evangelista Torricelli fece un esperimento molto intelligente.
+
+**Come funziona:**
+1. Prendi un tubo di vetro lungo circa 1 metro, chiuso a un'estremità.
+2. Riempilo completamente di **mercurio** (un metallo liquido, molto pesante).
+3. Tappalo con il dito, rovescialo e immergi l'estremità aperta in una vaschetta di mercurio.
+4. Togli il dito: il mercurio nel tubo scende un po', poi si ferma a circa **76 cm** dal livello della vaschetta.
+
+**Perché si ferma a 76 cm?**
+L'aria fuori preme sulla superficie del mercurio nella vaschetta.
+Quella pressione atmosferica "spinge su" il mercurio nel tubo.
+Il mercurio sale finché il suo peso bilancia esattamente la spinta dell'aria.
+A 76 cm il sistema è in equilibrio: pressione dell'aria = peso della colonna di mercurio.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> L'atmosfera preme su tutto ciò che la circonda. Torricelli ha usato una colonna di mercurio come "bilancia" per misurarne la forza — più pesa l'aria, più il mercurio sale nel tubo.</div>
+
+La pressione atmosferica standard vale quindi:
+
+**P₀ = ρ · g · h = 13 600 kg/m³ × 9,8 m/s² × 0,76 m ≈ 101 325 Pa ≈ 1 atm**
+
+Questo strumento si chiama **barometro a mercurio**.
+
+---
+
+## Il manometro
+
+Il manometro misura la pressione di un fluido (per esempio l'aria in un pallone, l'olio in un motore, l'acqua in un tubo).
+
+Il tipo più semplice è il **manometro a U**:
+- Un tubo a forma di U contiene un liquido (spesso mercurio o acqua colorata).
+- Un'estremità è collegata al fluido di cui vuoi misurare la pressione.
+- L'altra estremità è aperta all'aria.
+- La differenza di altezza tra i due lati del liquido ti dà la pressione in eccesso rispetto all'atmosfera (**pressione relativa** o **manometrica**).
+
+**Pressione assoluta = pressione atmosferica + pressione manometrica**
+
+---
+
+<Diagram caption="Schema dell'esperimento di Torricelli: l'aria preme sulla vaschetta e tiene su la colonna di mercurio nel tubo." code={`flowchart TB
+  A["Atmosfera<br/>preme verso il basso"] --> B["Vaschetta di mercurio"]
+  B --> C["Mercurio risale nel tubo chiuso"]
+  C --> D["Colonna di mercurio: ~76 cm"]
+  D --> E["Vuoto di Torricelli<br/>(sopra il mercurio)"]
+  B --- F["Equilibrio:<br/>P_atm = peso colonna di mercurio"]`} />
+
+<Diagram caption="Schema del manometro a U: la differenza di altezza tra i due lati misura la pressione relativa del fluido." code={`flowchart LR
+  A["Fluido in pressione<br/>(es. gas)"] --> B["Lato sinistro tubo U<br/>livello basso"]
+  C["Aria atmosferica<br/>(pressione nota)"] --> D["Lato destro tubo U<br/>livello alto"]
+  B --- E["Differenza di altezza h<br/>→ P_relativa = ρ·g·h"]
+  D --- E`} />
+
+---
+
+## Guarda il video
+<YouTube id="WhcsZzBXjAc" title="PRESSIONE ATMOSFERICA - Spiegazione Esperimento Torricelli...e non solo!" />
+<VideoVisto id="fis-u3-05" />
+
+## Da ricordare
+- L'esperimento di Torricelli dimostra che l'aria ha un peso: la pressione atmosferica standard equivale a sostenere una colonna di mercurio alta 76 cm (101 325 Pa = 1 atm).
+- Il barometro misura la pressione atmosferica; il manometro misura la pressione di un fluido rispetto all'atmosfera.
+- Pressione assoluta = pressione atmosferica + pressione manometrica (quella letta sul manometro).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Nell'esperimento di Torricelli, cosa sostiene la colonna di mercurio nel tubo?" opzioni={["La tensione superficiale del vetro","La pressione atmosferica che preme sulla vaschetta","Il vuoto che attira il mercurio verso l'alto","Il peso stesso del mercurio"]} corretta={1} spiegazione="La pressione atmosferica preme sulla superficie libera del mercurio nella vaschetta e spinge il liquido verso l'alto nel tubo. Il vuoto sopra la colonna non attira nulla — è proprio l'assenza di pressione. L'equilibrio si raggiunge quando il peso della colonna uguaglia la spinta dell'aria dall'esterno." />
+
+<Quiz domanda="La pressione atmosferica standard a livello del mare vale circa:" opzioni={["76 Pa","101 325 Pa","13 600 Pa","9,8 Pa"]} corretta={1} spiegazione="La pressione atmosferica standard è circa 101 325 Pa, equivalente a 1 atm. Questo valore si ricava proprio dall'esperimento di Torricelli: P = ρ_mercurio × g × 0,76 m ≈ 101 325 Pa." />
+
+<Quiz domanda="Un manometro a U mostra una differenza di altezza di 20 cm tra i due lati (liquido: acqua, densità 1000 kg/m³, g = 9,8 m/s²). Quale pressione relativa indica?" opzioni={["1960 Pa","19 600 Pa","980 Pa","196 000 Pa"]} corretta={0} spiegazione="P_relativa = ρ · g · h = 1000 × 9,8 × 0,20 = 1960 Pa. Attenzione a convertire cm in metri: 20 cm = 0,20 m." />
+
+<Esercizio problema="Un barometro a mercurio misura un'altezza di 75 cm. Calcola la pressione atmosferica in quel momento. (Densità del mercurio: 13 600 kg/m³; g = 9,8 m/s²)" soluzione="Usa la formula P = ρ · g · h. Converti prima l'altezza: 75 cm = 0,75 m. Poi calcola: P = 13 600 × 9,8 × 0,75 = 99 960 Pa ≈ 1,0 × 10⁵ Pa. È leggermente inferiore alla pressione standard (101 325 Pa), il che può indicare una giornata con bassa pressione atmosferica." />
+
+</section>
+
+</RisorsaLayout>

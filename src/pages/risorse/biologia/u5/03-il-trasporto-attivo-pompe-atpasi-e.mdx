@@ -1,0 +1,114 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-03">
+
+## Cos'è il trasporto attivo?
+
+Immagina di dover spingere un masso pesante su per una salita: ci vuole energia. Il trasporto attivo è esattamente questo — la cellula sposta molecole **contro il loro gradiente di concentrazione**, cioè dalla zona dove sono meno concentrate verso quella dove sono di più. È il contrario di ciò che accade spontaneamente (che sarebbe come rotolare in discesa).
+
+Per farlo la cellula usa **energia chimica sotto forma di ATP** (adenosin-trifosfato), la "moneta energetica" della cellula.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il trasporto attivo è come pompare acqua in salita: serve una pompa (la proteina), serve carburante (ATP), e si va contro natura (contro gradiente).</div>
+
+---
+
+## Le pompe ATPasi: le "pompe a motore" della cellula
+
+Le **ATPasi** (si legge "ATP-asi") sono proteine di membrana che idrolizzano (= spezzano) l'ATP per ricavare energia e usarla per spostare ioni attraverso la membrana. Sono vere e proprie pompe molecolari.
+
+### La pompa sodio-potassio (Na⁺/K⁺-ATPasi)
+
+È la pompa più famosa ed è fondamentale nelle cellule nervose e muscolari. Funziona così:
+
+1. La pompa lega **3 ioni sodio (Na⁺)** all'interno della cellula.
+2. Idrolizza **1 molecola di ATP** — l'energia libera fa cambiare forma alla proteina.
+3. I 3 Na⁺ vengono **espulsi fuori** dalla cellula.
+4. La pompa lega **2 ioni potassio (K⁺)** all'esterno.
+5. Rilascia il fosfato, torna alla forma originale e i 2 K⁺ entrano **dentro** la cellula.
+
+Risultato: la cellula mantiene una concentrazione alta di K⁺ dentro e bassa di Na⁺ dentro (e il contrario fuori). Questo **differenziale di concentrazione** è essenziale per il potenziale di membrana (base del segnale nervoso).
+
+### La pompa protonica (H⁺-ATPasi)
+
+Funziona in modo simile ma sposta **protoni (H⁺)** invece di sodio/potassio. È cruciale nei mitocondri (dove genera il gradiente protonico usato per produrre ATP) e nelle cellule dello stomaco (dove acidifica il succo gastrico).
+
+---
+
+## I trasportatori ABC: cassette che usano ATP
+
+**ABC** sta per **ATP-Binding Cassette** (cassetta che lega l'ATP). Sono un'enorme famiglia di proteine di trasporto presenti in tutti gli organismi viventi, dai batteri agli esseri umani.
+
+Struttura base di un trasportatore ABC:
+- **2 domini transmembrana (T)**: attraversano la membrana e formano il canale per il substrato.
+- **2 domini leganti ATP (A, detti NBD — Nucleotide Binding Domain)**: si trovano nel citoplasma e "leggono" l'ATP.
+
+Come funzionano:
+1. Il substrato (la molecola da trasportare) entra nel canale.
+2. L'ATP si lega ai domini NBD.
+3. L'idrolisi dell'ATP provoca un cambio conformazionale (= la proteina cambia forma).
+4. Il substrato viene spinto attraverso la membrana e rilasciato dall'altro lato.
+
+### Esempi importanti di trasportatori ABC
+
+- **P-glicoproteina (MDR1)**: presente nelle cellule tumorali; espelle i farmaci chemioterapici fuori dalla cellula — per questo alcune terapie diventano resistenti.
+- **CFTR**: il suo malfunzionamento causa la **fibrosi cistica**, una malattia genetica grave.
+- **TAP**: trasporta frammenti di proteine (peptidi) nel reticolo endoplasmatico per la presentazione immunitaria.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> I trasportatori ABC sono come tornelli a motore — usano ATP per aprirsi, fanno passare la molecola giusta, e poi si richiudono.</div>
+
+---
+
+## Differenza tra ATPasi e ABC: schema rapido
+
+| | Pompe ATPasi | Trasportatori ABC |
+|---|---|---|
+| Energia | Idrolisi ATP | Idrolisi ATP |
+| Substrati tipici | Ioni (Na⁺, K⁺, H⁺, Ca²⁺) | Molecole organiche, farmaci, lipidi, ioni |
+| Meccanismo | Fosforilazione della pompa | Cambio conformazionale NBD |
+| Esempio | Na⁺/K⁺-ATPasi | P-glicoproteina, CFTR |
+
+---
+
+<Diagram caption="Ciclo della pompa Na⁺/K⁺-ATPasi: 3 passi principali" code={`flowchart TB
+  A["1. La pompa lega 3 Na⁺<br/>all'interno della cellula"] --> B["2. L'ATP viene idrolizzato<br/>→ la pompa si fosforila<br/>e cambia forma"]
+  B --> C["3. I 3 Na⁺ vengono espulsi<br/>fuori dalla cellula"]
+  C --> D["4. La pompa lega 2 K⁺<br/>all'esterno della cellula"]
+  D --> E["5. Il fosfato viene rilasciato<br/>→ la pompa torna alla forma originale<br/>e i 2 K⁺ entrano dentro"]
+  E --> A`} />
+
+<Diagram caption="Meccanismo di un trasportatore ABC: dal legame ATP al rilascio del substrato" code={`flowchart LR
+  S["Substrato si lega<br/>al dominio transmembrana (T)"] --> N["ATP si lega ai<br/>domini NBD (A)"]
+  N --> H["Idrolisi ATP:<br/>ADP + Pi liberati"]
+  H --> C["Cambio conformazionale:<br/>il canale si apre verso l'esterno"]
+  C --> R["Substrato rilasciato<br/>dall'altro lato della membrana"]
+  R --> Reset["La proteina torna<br/>alla conformazione iniziale"]`} />
+
+## Guarda il video
+<YouTube id="3Uq4wCGEzZo" title="Il TRASPORTO ATTIVO - pompa sodio-potassio, pompa protonica, cotrasporto, esocitosi ed endocitosi" />
+<VideoVisto id="bio-u5-03" />
+
+## Da ricordare
+- Il trasporto attivo sposta molecole **contro gradiente** usando energia (ATP) — sempre tramite proteine specifiche di membrana.
+- Le **pompe ATPasi** (come la Na⁺/K⁺-ATPasi) si fosforilano grazie all'ATP e cambiano forma per spostare ioni; mantengono il potenziale di membrana vitale per nervi e muscoli.
+- I **trasportatori ABC** usano due domini NBD che idrolizzano ATP per aprire un canale e spingere attraverso substrati molto vari (da farmaci a peptidi); la loro disfunzione causa malattie gravi come la fibrosi cistica.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="La pompa Na⁺/K⁺-ATPasi, per ogni ciclo completo, pompa:" opzioni={["2 Na⁺ fuori e 3 K⁺ dentro", "3 Na⁺ fuori e 2 K⁺ dentro", "3 Na⁺ dentro e 2 K⁺ fuori", "2 Na⁺ dentro e 3 K⁺ fuori"]} corretta={1} spiegazione="La pompa Na⁺/K⁺-ATPasi espelle sempre 3 ioni sodio (Na⁺) fuori dalla cellula e introduce 2 ioni potassio (K⁺) dentro, consumando 1 ATP per ciclo. Questo crea il gradiente ionico essenziale per il potenziale di membrana." />
+
+<Quiz domanda="Cosa significa che un trasporto è 'contro gradiente di concentrazione'?" opzioni={["Le molecole si muovono dalla zona a bassa concentrazione verso quella ad alta concentrazione", "Le molecole si muovono dalla zona ad alta concentrazione verso quella a bassa concentrazione", "Le molecole attraversano la membrana senza usare energia", "Le molecole si muovono solo quando la cellula è in fase G2"]} corretta={0} spiegazione="Contro gradiente significa andare 'in salita': dalla zona dove la molecola è meno concentrata verso quella dove è più concentrata. Questo richiede energia (ATP), al contrario del trasporto passivo che va 'in discesa' (da alta a bassa concentrazione) spontaneamente." />
+
+<Quiz domanda="La fibrosi cistica è causata dal malfunzionamento di quale proteina?" opzioni={["Na⁺/K⁺-ATPasi", "P-glicoproteina (MDR1)", "CFTR", "H⁺-ATPasi mitocondriale"]} corretta={2} spiegazione="CFTR (Cystic Fibrosis Transmembrane conductance Regulator) è un trasportatore ABC che funziona anche come canale per gli ioni cloruro (Cl⁻). La sua mutazione provoca fibrosi cistica, una malattia che causa accumulo di muco denso nei polmoni e in altri organi." />
+
+<Esercizio problema="Un farmaco blocca selettivamente l'idrolisi dell'ATP nella P-glicoproteina (MDR1). Quale effetto ti aspetti sulle cellule tumorali che esprimono questa proteina, e perché?" soluzione="La P-glicoproteina (MDR1) è un trasportatore ABC che usa l'energia dell'idrolisi dell'ATP per espellere i farmaci chemioterapici fuori dalla cellula tumorale — è il principale meccanismo di resistenza ai farmaci. Se blocchi l'idrolisi dell'ATP, la proteina non riesce più a cambiare conformazione e non può pompare fuori il farmaco. Risultato: il chemioterapico si accumula dentro la cellula tumorale e può esercitare il suo effetto tossico. Questo è esattamente il principio su cui si basano alcuni approcci per superare la farmacoresistenza nei tumori." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,122 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u4-04">
+
+## Cosa succede quando due onde si incontrano?
+
+Immagina di buttare due sassi in uno stagno contemporaneamente. Le onde circolari che si formano si avvicinano, si incrociano e poi… continuano ognuna per conto suo, come se nulla fosse successo. Ma nel punto in cui si sovrappongono, qualcosa di interessante accade.
+
+Questo fenomeno si chiama **principio di sovrapposizione**: quando due onde si trovano nello stesso punto nello stesso istante, la perturbazione risultante è la **somma** delle due perturbazioni singole.
+
+In parole ancora più semplici: se un'onda spinge su e l'altra spinge su, il risultato spinge ancora di più su. Se una spinge su e l'altra spinge giù, si cancellano a vicenda.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Due onde che si incontrano si "sommano" punto per punto. Possono amplificarsi o annullarsi — dipende da come sono sfasate tra loro.</div>
+
+---
+
+## Interferenza costruttiva: le onde si aiutano
+
+Quando due onde arrivano **in fase** — cioè i loro massimi coincidono e i loro minimi coincidono — la loro somma produce un'onda con **ampiezza maggiore**. È come due persone che spingono insieme nella stessa direzione: la forza raddoppia.
+
+Questo si chiama **interferenza costruttiva**.
+
+Esempio concreto: due altoparlanti che emettono lo stesso suono alla stessa frequenza, posizionati vicini, possono produrre un suono più forte in certi punti della stanza.
+
+---
+
+## Interferenza distruttiva: le onde si annullano
+
+Quando due onde arrivano **in opposizione di fase** — cioè il massimo di una coincide con il minimo dell'altra — la loro somma vale zero. Le onde si cancellano.
+
+Questo si chiama **interferenza distruttiva**.
+
+Esempio concreto: le cuffie **noise-cancelling** usano proprio questo principio. Il microfono capta il rumore esterno e il chip produce un'onda identica ma capovolta. Le due onde si annullano — e tu senti il silenzio.
+
+---
+
+## Niente si distrugge davvero
+
+Una cosa importante: dopo che le onde si sono sovrapposte e si sono separate, **ogni onda riprende la sua forma originale**. Non si danneggiano a vicenda. La sovrapposizione è temporanea. Questo vale per le onde sonore, per le onde sull'acqua, per la luce.
+
+<Diagram caption="Interferenza costruttiva: due onde in fase si sommano e l'ampiezza aumenta" code={`flowchart LR
+  A["Onda 1 (cresta in alto)"] --> C["Punto di incontro"]
+  B["Onda 2 (cresta in alto)"] --> C
+  C --> D["Onda risultante<br/>ampiezza DOPPIA"]
+  style D fill:#c8f0c8`} />
+
+<Diagram caption="Interferenza distruttiva: due onde in opposizione di fase si annullano" code={`flowchart LR
+  A["Onda 1 (cresta in alto)"] --> C["Punto di incontro"]
+  B["Onda 2 (cresta in basso)"] --> C
+  C --> D["Onda risultante<br/>ampiezza = 0"]
+  style D fill:#f0c8c8`} />
+
+---
+
+## Guarda il video
+
+<YouTube id="5njwoXwkV2w" title="Il principio di sovrapposizione e l'interferenza — HUB Scuola" />
+<VideoVisto id="fis-u4-04" />
+
+---
+
+## Da ricordare
+
+- Il **principio di sovrapposizione** dice che quando due onde si incontrano, la perturbazione totale è la somma delle due perturbazioni.
+- **Interferenza costruttiva**: le onde sono in fase → l'ampiezza aumenta.
+- **Interferenza distruttiva**: le onde sono in opposizione di fase → le ampiezze si annullano.
+
+---
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Due onde sonore identiche si incontrano nello stesso punto esattamente in fase (massimo su massimo). Cosa succede all'ampiezza dell'onda risultante?"
+  opzioni={[
+    "L'ampiezza si dimezza",
+    "L'ampiezza rimane uguale",
+    "L'ampiezza raddoppia",
+    "L'ampiezza diventa zero"
+  ]}
+  corretta={2}
+  spiegazione="Quando due onde identiche si incontrano perfettamente in fase, le loro ampiezze si sommano: se ciascuna ha ampiezza A, l'onda risultante ha ampiezza 2A. Questo è il caso di interferenza costruttiva."
+/>
+
+<Quiz
+  domanda="Le cuffie noise-cancelling riducono il rumore sfruttando:"
+  opzioni={[
+    "L'interferenza costruttiva tra il rumore e un'onda amplificata",
+    "L'interferenza distruttiva tra il rumore e un'onda in opposizione di fase",
+    "Il principio di riflessione delle onde sonore",
+    "L'assorbimento delle onde da parte del materiale delle cuffie"
+  ]}
+  corretta={1}
+  spiegazione="Le cuffie noise-cancelling producono un'onda con la stessa frequenza del rumore ma sfasata di 180° (in opposizione di fase). Le due onde si sovrappongono e si annullano per interferenza distruttiva."
+/>
+
+<Quiz
+  domanda="Dopo che due onde si sono sovrapposte e poi separate, cosa succede alle onde?"
+  opzioni={[
+    "Entrambe perdono parte della loro ampiezza",
+    "Si fondono in un'unica onda",
+    "Ciascuna riprende la sua forma originale come se nulla fosse successo",
+    "La più debole viene assorbita dalla più forte"
+  ]}
+  corretta={2}
+  spiegazione="Il principio di sovrapposizione vale solo nel momento in cui le onde si trovano nello stesso punto. Dopo essersi incrociate, ogni onda continua a propagarsi con la propria ampiezza e forma originale, senza alterazioni permanenti."
+/>
+
+<Esercizio
+  problema="Due altoparlanti emettono lo stesso suono puro (stessa frequenza, stessa ampiezza). In un punto della stanza, l'onda del primo altoparlante ha ampiezza A = 3 unità e quella del secondo ha ampiezza A = 3 unità, e arrivano perfettamente in fase. Qual è l'ampiezza dell'onda risultante in quel punto? E se arrivassero in perfetta opposizione di fase?"
+  soluzione="In fase (interferenza costruttiva): le ampiezze si sommano → A_risultante = 3 + 3 = 6 unità. In opposizione di fase (interferenza distruttiva): le ampiezze si sottraggono → A_risultante = 3 − 3 = 0 unità. Nel secondo caso il suono si annulla completamente in quel punto."
+/>
+
+</section>
+
+</RisorsaLayout>

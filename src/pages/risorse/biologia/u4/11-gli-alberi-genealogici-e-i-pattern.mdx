@@ -1,0 +1,150 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u4-11">
+
+## Cos'è un albero genealogico (pedigree)?
+
+Un **pedigree** è un diagramma che mostra come un carattere (o una malattia) si trasmette di generazione in generazione in una famiglia. È lo strumento principale dei genetisti per capire **come viene ereditato un gene**.
+
+Si usa una simbologia standard:
+- **Cerchio** = femmina
+- **Quadrato** = maschio
+- **Simbolo pieno** = individuo affetto (ha il carattere/malattia)
+- **Simbolo vuoto** = individuo non affetto
+- **Simbolo metà pieno** = portatore sano (ha una copia del gene mutato ma non mostra la malattia)
+- Una **linea orizzontale** unisce due genitori; una **linea verticale** scende verso i figli
+
+<div class="callout">💡 <strong>In parole semplici:</strong> il pedigree è come l'albero genealogico di una famiglia, ma con i simboli della biologia al posto dei nomi — ti permette di capire "da dove viene" una malattia e chi rischia di trasmetterla.</div>
+
+---
+
+## I quattro grandi pattern di ereditarietà
+
+### 1. Autosomica dominante
+
+Il gene mutato sta su un **autosoma** (cromosoma non sessuale) ed è **dominante**: basta **una sola copia** del gene per manifestare il carattere.
+
+Come si riconosce nel pedigree:
+- Il carattere compare in **ogni generazione** (nonno → padre → figlio)
+- Gli individui affetti hanno **almeno un genitore affetto**
+- Maschi e femmine sono colpiti in egual misura
+- Esempio: Corea di Huntington, acondroplasia (nanismo)
+
+### 2. Autosomica recessiva
+
+Il gene mutato sta su un autosoma ma è **recessivo**: servono **due copie** del gene mutato per manifestare la malattia. Chi ne ha solo una è **portatore sano**.
+
+Come si riconosce nel pedigree:
+- Il carattere può **saltare una generazione** (i genitori sono sani ma portatori)
+- Due genitori sani possono avere un figlio malato
+- Maschi e femmine colpiti in egual misura
+- Esempio: fibrosi cistica, fenilchetonuria
+
+### 3. X-linked recessiva
+
+Il gene mutato è sul **cromosoma X** ed è recessivo. Poiché i maschi hanno un solo X (XY), basta una copia mutata per ammalarsi. Le femmine (XX) di solito sono portatrici sane.
+
+Come si riconosce nel pedigree:
+- I maschi sono colpiti molto più spesso delle femmine
+- La malattia si trasmette attraverso madri portatrici sane ai figli maschi
+- Non si trasmette da padre a figlio maschio (il padre dà Y al figlio, non X)
+- Esempio: emofilia A, daltonismo, distrofia di Duchenne
+
+### 4. X-linked dominante
+
+Il gene mutato è sull'X ed è dominante: anche le femmine con una sola copia mutata si ammalano.
+
+Come si riconosce:
+- Tutte le figlie di un padre affetto sono malate (lui dà sempre il suo X alle figlie)
+- I figli maschi di un padre affetto sono sempre sani (ricevono Y)
+- Esempio: rachitismo ipofosfatemico
+
+### 5. Y-linked (oloandrica)
+
+Il gene mutato è sul **cromosoma Y**: si trasmette solo da padre a **tutti** i figli maschi, mai alle femmine.
+
+Come si riconosce:
+- Solo maschi colpiti
+- **Tutti** i figli maschi di un padre affetto sono affetti
+- Nessuna femmina è mai colpita
+- Esempio: alcune forme di infertilità maschile
+
+### 6. Ereditarietà mitocondriale
+
+I mitocondri hanno il **proprio DNA** (mtDNA) e vengono trasmessi solo dalla **madre** (perché l'uovo porta i mitocondri, lo spermatozoo no).
+
+Come si riconosce:
+- Solo la madre trasmette il carattere
+- Tutti i figli (maschi e femmine) di una madre affetta sono affetti
+- I figli maschi affetti **non trasmettono** il carattere ai propri figli
+- Esempio: sindrome di Leber (malattia degli occhi), MELAS
+
+---
+
+## Come leggere un pedigree: metodo pratico
+
+1. **Guarda il sesso colpito**: solo maschi? Probabile X-linked o Y-linked. Maschi e femmine? Autosomica o mitocondriale.
+2. **Conta le generazioni saltate**: se il carattere salta, è recessivo. Se compare a ogni generazione, è dominante.
+3. **Guarda la trasmissione materna**: se solo la madre trasmette, pensa al mtDNA.
+4. **Verifica il padre**: se un padre affetto trasmette solo alle figlie, è X-linked dominante. Se trasmette solo ai figli maschi, è Y-linked.
+
+<div class="callout">💡 <strong>Trucco pratico:</strong> inizia sempre chiedendoti "ci sono più maschi o più femmine colpiti?" — se i maschi dominano, il gene è quasi certamente sul cromosoma X.</div>
+
+---
+
+<Diagram caption="Albero di decisione: dove si trova il gene e come si comporta in ciascun pattern di ereditarietà" code={`flowchart TB
+  A["Gene su autosoma?"] -->|"Sì"| B["Dominante o recessivo?"]
+  A -->|"No"| C["Gene su X, Y o mtDNA?"]
+
+  B -->|"Dominante"| D["Autosomica dominante<br/>— compare ogni generazione<br/>— maschi = femmine"]
+  B -->|"Recessivo"| E["Autosomica recessiva<br/>— può saltare generazioni<br/>— portatori sani"]
+
+  C -->|"Cromosoma X"| F["X-linked<br/>— maschi più colpiti (recessiva)<br/>— padre non trasmette ai figli maschi"]
+  C -->|"Cromosoma Y"| G["Y-linked<br/>— SOLO maschi<br/>— tutti i figli maschi affetti"]
+  C -->|"mtDNA"| H["Mitocondriale<br/>— solo la madre trasmette<br/>— tutti i figli colpiti"]`} />
+
+<Diagram caption="Come leggere un pedigree passo per passo" code={`flowchart TB
+  S["Osserva il pedigree"] --> Q1["Maschi e femmine<br/>colpiti in egual misura?"]
+  Q1 -->|"Sì"| Q2["Trasmette<br/>solo la madre?"]
+  Q1 -->|"No — più maschi"| Q3["Il padre trasmette<br/>ai figli maschi?"]
+
+  Q2 -->|"No"| Q5["Il carattere<br/>salta una generazione?"]
+  Q2 -->|"Sì — tutti i figli colpiti"| R4["Mitocondriale"]
+
+  Q5 -->|"No — ogni gen."| R1["Autosomica dominante"]
+  Q5 -->|"Sì — salta"| R2["Autosomica recessiva"]
+
+  Q3 -->|"Sì — tutti i figli maschi"| R3["Y-linked"]
+  Q3 -->|"No — passa da madre portatrice"| R5["X-linked recessiva"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="4awJZc5LkCs" title="GENETICA UMANA e ANALISI degli ALBERI GENEALOGICI — Biologia con Giulia" />
+<VideoVisto id="bio-u4-11" />
+
+## Da ricordare
+- In un pedigree, il pattern autosomica dominante si riconosce perché il carattere compare a ogni generazione senza saltare; quello recessivo può saltare una generazione con genitori portatori sani.
+- L'ereditarietà X-linked recessiva colpisce quasi esclusivamente i maschi, perché hanno un solo cromosoma X e non hanno una seconda copia che possa "coprire" il gene difettoso.
+- L'ereditarietà mitocondriale viene trasmessa esclusivamente dalla madre: tutti i figli di una madre affetta sono affetti, ma i figli maschi non trasmettono il carattere alla loro discendenza.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="In un pedigree, due genitori sani hanno tre figli: due sani e uno malato. Quale pattern è compatibile con questa osservazione?" opzioni={["Autosomica dominante", "Autosomica recessiva", "Y-linked", "Mitocondriale"]} corretta={1} spiegazione="Se entrambi i genitori sono sani ma hanno un figlio malato, il carattere deve essere recessivo: i genitori sono portatori sani (Aa × Aa) e il figlio malato ha ereditato entrambe le copie difettose (aa). L'autosomica dominante richiederebbe almeno un genitore affetto." />
+
+<Quiz domanda="Una malattia colpisce solo maschi e si trasmette da padre a tutti i figli maschi, mai alle figlie. Qual è il pattern di ereditarietà?" opzioni={["X-linked recessiva", "Autosomica dominante", "Y-linked", "Mitocondriale"]} corretta={2} spiegazione="Il cromosoma Y passa dal padre a tutti e soli i figli maschi. Se la malattia segue esattamente questa trasmissione (100% dei figli maschi colpiti, 0% delle femmine), il gene mutato è sul cromosoma Y: ereditarietà Y-linked (oloandrica)." />
+
+<Quiz domanda="Una donna affetta da una malattia mitocondriale ha tre figli (due femmine e un maschio). Quanti di questi figli saranno affetti?" opzioni={["Nessuno", "Solo il maschio", "Solo le femmine", "Tutti e tre"]} corretta={3} spiegazione="Il DNA mitocondriale si trasmette esclusivamente attraverso l'ovulo materno. Poiché tutti i figli ricevono i mitocondri dalla madre affetta, tutti e tre — maschio e femmine — saranno affetti. Nessun figlio maschio però trasmetterà la malattia ai propri figli." />
+
+<Esercizio problema="Osservi un pedigree in cui: la nonna materna è affetta, il nonno materno è sano, la madre è sana, il padre è sano, e due fratelli su tre sono affetti (entrambi maschi). Le sorelle sono tutte sane. Qual è il pattern più probabile? Spiega il ragionamento." soluzione="Il pattern più probabile è X-linked recessivo. Ecco il ragionamento: (1) Solo i maschi sono colpiti → il gene è probabilmente sul cromosoma X. (2) La nonna materna è affetta (genotipo X^a X^a), quindi la madre ha ereditato un X mutato dalla nonna ed è portatrice sana (X^A X^a). (3) I figli maschi che ricevono l'X mutato dalla madre (probabilità 1/2) manifestano la malattia perché il loro secondo cromosoma sessuale è Y, non hanno una copia 'normale' che copra il difetto. (4) Le figlie ricevono anche l'X sano del padre e risultano sane (anche se alcune possono essere portatrici). Questo schema — nonna affetta, madre portatrice sana, figli maschi colpiti, figlie sane — è il classico pattern X-linked recessivo." />
+
+</section>
+
+</RisorsaLayout>

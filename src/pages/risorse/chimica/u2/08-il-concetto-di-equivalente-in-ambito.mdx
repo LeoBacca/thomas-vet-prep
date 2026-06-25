@@ -1,0 +1,95 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-08">
+
+Quando in chimica conti le particelle usi la **mole**. Ma per gli **ioni** (le particelle con una carica elettrica, tipo il sodio o il calcio) spesso conta di più la **carica** che porta ciascuno. Per questo i medici usano una misura diversa: l'**equivalente**. Un equivalente ti dice quanta **carica** stai mettendo in gioco, non solo quante particelle ci sono.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> la mole conta le "teste" (quante particelle). L'equivalente conta le "mani" (quanta carica). Uno ione con 2 cariche è come una persona con 2 mani: a parità di numero, lavora il doppio.</div>
+
+<Diagram caption="Un solo ione calcio porta 2 cariche, quindi vale 2 equivalenti" code={`flowchart LR
+  N["1 ione Calcio<br/>(1 mole)"] -->|"ha carica 2+"| C["Porta 2 cariche"]
+  C --> E["Vale 2 equivalenti<br/>(2 Eq)"]`} />
+
+## Perché non basta contare le particelle
+
+Immagina di dover bilanciare le cariche in una soluzione, come quella nel nostro sangue. Una particella di sodio (Na+) porta **1 sola carica**. Una particella di calcio (Ca2+) porta **2 cariche**.
+
+Se conti solo "quante particelle ci sono", il sodio e il calcio sembrano uguali. Ma dal punto di vista **elettrico** il calcio "pesa" il doppio, perché porta il doppio della carica.
+
+L'**equivalente** risolve proprio questo: tiene conto della carica. La regola è semplice:
+
+- numero di equivalenti = numero di moli × carica dello ione
+
+Quindi 1 mole di sodio (carica 1) = 1 equivalente. Ma 1 mole di calcio (carica 2) = 2 equivalenti.
+
+<Diagram caption="Da moli a equivalenti: si moltiplica per la carica" code={`flowchart TB
+  M["Quante moli ho?"] --> X["Moltiplico per la carica dello ione"]
+  X --> S["Sodio Na+ → carica 1 → x1"]
+  X --> C["Calcio Ca2+ → carica 2 → x2"]
+  S --> R["Numero di equivalenti"]
+  C --> R`} />
+
+## I mEq/L negli esami del sangue
+
+Nelle analisi del sangue i valori degli **elettroliti** (sodio, potassio, calcio, cloro) si scrivono quasi sempre in **mEq/L**, cioè **milliequivalenti per litro**. Il "milli" significa solo "millesimi", come i millimetri rispetto ai metri: serve perché le quantità sono piccole.
+
+Perché i medici usano gli equivalenti e non le moli? Perché nel corpo ciò che davvero conta è l'**equilibrio delle cariche**: le cariche positive (come sodio, potassio, calcio) devono bilanciare quelle negative (come il cloro). Misurare in equivalenti rende il conto immediato, perché parla già la lingua delle cariche.
+
+Per esempio, se in un litro di sangue ci sono cariche positive in eccesso, il corpo è in squilibrio e questo può influire su cuore, muscoli e nervi. Ecco perché un valore di potassio fuori norma (in mEq/L) è un dato importante per un medico o un veterinario.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> mEq/L è come dire "quante cariche per litro". È la misura preferita in medicina perché il corpo lavora bilanciando cariche, non particelle.</div>
+
+## Un esempio concreto col calcio
+
+Prendiamo il **calcio Ca2+**. Ha carica 2+. Questo vuol dire che **ogni particella di calcio conta doppio** quando parliamo di cariche.
+
+Se hai 1 mole di ioni calcio, hai 2 equivalenti. Se ne hai 2 moli, hai 4 equivalenti. Si moltiplica sempre per 2, perché 2 è la sua carica.
+
+Lo stesso ragionamento vale al contrario: lo ione cloro (Cl-) ha carica 1, quindi per il cloro 1 mole = 1 equivalente. È il modo che ha la chimica per mettere tutti gli ioni "sullo stesso piano elettrico".
+
+## Da ricordare
+
+- L'**equivalente** misura la **carica**, non il numero di particelle.
+- Formula chiave: **equivalenti = moli × carica** dello ione.
+- Sodio Na+ (carica 1): 1 mole = 1 equivalente. Calcio Ca2+ (carica 2): 1 mole = 2 equivalenti.
+- Negli esami del sangue gli elettroliti si misurano in **mEq/L** (milliequivalenti per litro).
+- Si usano gli equivalenti perché nel corpo conta l'**equilibrio delle cariche**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Che cosa misura un equivalente?"
+  opzioni={["Il numero di particelle", "La carica elettrica in gioco", "La temperatura della soluzione", "Il volume del sangue"]}
+  corretta={1}
+  spiegazione="L'equivalente tiene conto della carica dello ione, non solo di quante particelle ci sono. Per questo si usa per gli elettroliti."
+/>
+
+<Quiz
+  domanda="Quanti equivalenti corrispondono a 1 mole di ioni calcio (Ca2+, carica 2)?"
+  opzioni={["1 equivalente", "2 equivalenti", "0,5 equivalenti", "4 equivalenti"]}
+  corretta={1}
+  spiegazione="Equivalenti = moli x carica. Per il calcio la carica è 2, quindi 1 mole x 2 = 2 equivalenti."
+/>
+
+<Quiz
+  domanda="Cosa significa la sigla mEq/L che trovi negli esami del sangue?"
+  opzioni={["Moli per litro", "Milligrammi per litro", "Milliequivalenti per litro", "Millilitri di equivalente"]}
+  corretta={2}
+  spiegazione="mEq/L vuol dire milliequivalenti per litro: è la misura usata per gli elettroliti, perche parla la lingua delle cariche."
+/>
+
+<Esercizio
+  problema="In un litro di soluzione hai 3 moli di ioni sodio (Na+, carica 1) e 2 moli di ioni calcio (Ca2+, carica 2). Quanti equivalenti di carica positiva hai in tutto?"
+  soluzione="Per ogni ione: equivalenti = moli x carica. Sodio: 3 moli x 1 = 3 equivalenti. Calcio: 2 moli x 2 = 4 equivalenti. In totale 3 + 4 = 7 equivalenti di carica positiva. Nota che il calcio, pur essendo meno in numero di moli, porta piu equivalenti perche ogni suo ione vale doppio."
+/>
+
+</section>
+
+</RisorsaLayout>

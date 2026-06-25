@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u3-21-1",
+    "topicId": "bio-u3-21",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "La cellula deve eliminare una proteina danneggiata. Quale sistema usa per segnalarla e distruggerla?",
+    "choices": [
+      "Attacca alla proteina una catena di ubiquitine (bollino rosso) tramite gli enzimi E1-E2-E3, poi il proteasoma 26S la riconosce e la tritura in piccoli frammenti",
+      "La proteina viene espulsa direttamente fuori dalla cellula tramite esocitosi",
+      "Il lisosoma inglobola la proteina e la distrugge con enzimi acidi (come nella digestione cellulare di organelli interi)",
+      "La proteina si auto-distrugge quando si ripiega male, senza bisogno di segnali esterni"
+    ],
+    "answer": 0,
+    "explain": "Il sistema ubiquitina-proteasoma e il sistema di smaltimento controllato per singole proteine danneggiate: ubiquitina = bollino rosso, proteasoma = tritacarne. Il lisosoma (opzione C) degrada organelli e materiale extracellulare, non le singole proteine citosoliche.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-21-2",
+    "topicId": "bio-u3-21",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Spiega il percorso completo che porta una proteina danneggiata alla degradazione: chi la 'marca', con cosa, come funziona la cascata enzimatica e cosa fa il proteasoma. Poi di' una differenza tra ubiquitina classica e le proteine ubiquitin-like (es. SUMO).",
+    "answer": "1) Marcatura: tre enzimi lavorano in sequenza. E1 (enzima attivante) carica l'ubiquitina usando ATP. E2 (enzima coniugante) la riceve e la passa. E3 (ubiquitina ligasi) riconosce la proteina bersaglio e ci attacca l'ubiquitina. Il ciclo si ripete piu volte formando una catena di poliubiquitina legata alla lisina 48 (K48): e questo il segnale 'mandami al proteasoma'. 2) Degradazione: il proteasoma 26S e formato da un cappuccio 19S (riconosce la catena di ubiquitina, stacca le ubiquitine per riciclarle e srotola la proteina) e da un barile catalitico 20S (taglia la proteina in peptidi di 7-8 aminoacidi, poi ridotti ad aminoacidi liberi riusabili). 3) Differenza con proteine ubiquitin-like: SUMO ha struttura simile all'ubiquitina e usa la stessa cascata E1-E2-E3, ma il suo messaggio e diverso: NON porta alla degradazione. Si attacca a proteine nucleari per regolarne la localizzazione o l'attivita (es. trascrizione, riparazione del DNA). In breve: ubiquitina = 'distruggimi'; SUMO = 'cambia la mia funzione'.",
+    "explain": "Parole chiave: E1 (attiva, ATP) → E2 (trasporta) → E3 (sceglie il bersaglio) → catena K48 → proteasoma 26S (19S riconosce + 20S taglia). SUMO = stessa struttura, segnale diverso (non degradazione).",
+    "tags": ["risposta aperta"]
+  }
+]

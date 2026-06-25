@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u3-09-1",
+    "topicId": "bio-u3-09",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "tf",
+    "q": "Vero o falso: tutte le cellule del tuo corpo (muscolo, fegato, neuroni) contengono lo stesso DNA, ma producono proteine diverse perche attivano geni diversi.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Ogni cellula ha lo stesso ricettario (DNA identico), ma sceglie quali ricette cucinare in base al suo ruolo. Questa scelta si chiama regolazione dell'espressione genica ed e il motivo per cui esistono tipi cellulari diversi nello stesso organismo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-09-2",
+    "topicId": "bio-u3-09",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "I 'fattori di trascrizione' sono proteine che decidono se un gene viene copiato in mRNA. A quale livello di controllo appartengono?",
+    "choices": [
+      "Controllo trascrizionale: agiscono prima che la copia del gene inizi",
+      "Controllo post-traduzionale: agiscono sulla proteina gia prodotta",
+      "Controllo traduzionale: agiscono sui ribosomi nel citoplasma",
+      "Controllo post-trascrizionale: rimuovono gli introni dall'mRNA"
+    ],
+    "answer": 0,
+    "explain": "I fattori di trascrizione agiscono sul DNA e decidono se avviare o bloccare la copia (trascrizione) del gene in mRNA. E il livello 'piu economico': se il gene non viene nemmeno trascritto, non si spreca energia a fare mRNA o proteine inutili. Analogia: e come decidere se stampare un documento prima ancora di cominciare a scriverlo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u3-09-3",
+    "topicId": "bio-u3-09",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "open",
+    "q": "Una cellula produce molto mRNA di un certo gene, ma pochissima proteina corrispondente. Il blocco NON e al livello trascrizionale. A quale livello (o livelli) potrebbe avvenire? Fai almeno due esempi concreti di meccanismi.",
+    "answer": "Se l'mRNA e abbondante ma la proteina e scarsa, il blocco e a valle della trascrizione. Possibili meccanismi: (1) Controllo traduzionale: proteine regolatrici si legano all'mRNA nel citoplasma e impediscono ai ribosomi di iniziare la traduzione — e come avere la ricetta in mano ma decidere di non cucinare. (2) Controllo post-traduzionale: la proteina viene sintetizzata ma il proteasoma (una specie di tritacarne molecolare) la degrada subito prima che possa agire. (3) Controllo post-trascrizionale: microRNA (miRNA) si legano all'mRNA e ne bloccano la traduzione o ne accelerano la degradazione. Tutti e tre i meccanismi spiegano perche un mRNA alto non porta automaticamente a tanta proteina.",
+    "explain": "Concetto chiave: mRNA alto + proteina bassa = blocco a livello traduzionale o post-traduzionale (oppure i miRNA nel post-trascrizionale).",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u3-09-4",
+    "topicId": "bio-u3-09",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Il differenziamento di una cellula eucariotica (cioe il fatto che diventa un neurone invece di una cellula muscolare) e dovuto a:",
+    "choices": [
+      "Espressione selettiva di geni specifici: ogni tipo cellulare accende solo i geni che servono al suo ruolo",
+      "Delezione selettiva di geni specifici: ogni cellula elimina i geni che non usa",
+      "Amplificazione selettiva di geni specifici: le cellule specializzate copiano piu volte i geni che usano di piu",
+      "Espressione simultanea di tutti i geni: tutte le cellule producono tutte le proteine nello stesso momento",
+      "Inibizione permanente della mitosi: smettendo di dividersi la cellula si specializza automaticamente"
+    ],
+    "answer": 0,
+    "explain": "Il differenziamento avviene perche ogni tipo cellulare ACCENDE solo certi geni (espressione selettiva), non perche elimina o copia i geni. Il DNA rimane identico in tutte le cellule. Le trappole da smontare: 'delezione selettiva' e l'errore classico — le cellule non buttano via il DNA, altrimenti non potrebbero mai tornare indietro (e alcune cellule staminali lo fanno!); 'amplificazione selettiva' confonde la regolazione con la replicazione del DNA; 'tutti i geni insieme' e l'opposto esatto (se fossero tutti accesi, tutte le cellule sarebbero uguali); 'inibizione della mitosi' e un filler fuori tema, smettere di dividersi non basta a specializzarsi.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u3-09-5",
+    "topicId": "bio-u3-09",
+    "materia": "biologia",
+    "unita": 3,
+    "type": "mc",
+    "q": "Lo splicing alternativo e un meccanismo con cui dallo stesso gene si ottengono proteine diverse. A quale livello di controllo appartiene, e come funziona?",
+    "choices": [
+      "Controllo post-trascrizionale: dopo la trascrizione, gli esoni del pre-mRNA vengono combinati in modo diverso, producendo mRNA maturi differenti",
+      "Controllo trascrizionale: i fattori di trascrizione scelgono quale parte del gene copiare",
+      "Controllo traduzionale: i ribosomi saltano alcune parti dell'mRNA durante la sintesi proteica",
+      "Controllo post-traduzionale: la proteina viene tagliata in punti diversi per dare varianti attive differenti",
+      "Non e un livello di controllo: e solo un errore che avviene durante la copia del DNA"
+    ],
+    "answer": 0,
+    "explain": "Lo splicing avviene sull'mRNA appena prodotto (pre-mRNA), prima che esca dal nucleo: e quindi post-trascrizionale. Il meccanismo: gli introni (pezzi inutili) vengono rimossi e gli esoni (pezzi utili) vengono uniti, ma in combinazioni diverse. Da un solo gene si possono ottenere mRNA diversi e quindi proteine diverse — aumentando enormemente la complessita degli eucarioti senza aumentare il numero di geni. Le trappole: 'i fattori di trascrizione scelgono quale parte copiare' descrive il controllo trascrizionale, non lo splicing; 'i ribosomi saltano' confonde lo splicing con il controllo traduzionale; 'il taglio della proteina' e il controllo post-traduzionale (es. insulina), un meccanismo diverso; dire che e un errore e completamente sbagliato: e un processo regolato e preciso.",
+    "tags": ["prova d'esame"]
+  }
+]

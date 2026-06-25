@@ -1,0 +1,53 @@
+{
+ "id": "fis-u2-10",
+ "titolo": "Secondo principio della dinamica (F = m·a)",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "10-secondo-principio-della-dinamica-f-m",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/fisica/u2/10-secondo-principio-della-dinamica-f-m.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Un blocco di materiale di massa 2 kg è sottoposto ad una forza F = 2 N costante e parallela al piano di appoggio; si verifica che il moto risultante è uniformemente accelerato con accelerazione pari a 0,5 m/s^2. Se ne conclude che la forza d'attrito:",
+   "choices": [
+    "vale 1 N",
+    "è nulla",
+    "è ortogonale al piano di appoggio",
+    "è metà della forza F ed ha la stessa direzione e verso",
+    "varia lungo il percorso"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2008",
+   "q": "Il Titanic aveva una massa di 6 x 10^7 chilogrammi. Quale forza applicata era necessaria per imprimere un'accelerazione di 0,1 metri al secondo per secondo (senza tener conto degli attriti a cui poteva essere sottoposto)?",
+   "choices": [
+    "6 x 10^7 x 0,1 = 6 x 10^6 Newton",
+    "6 x 10^7 / 0,1 = 6 x 10^8 Newton",
+    "6 x 10^7 x 9,8 = 5,9 x 10^8 Newton",
+    "6 x 10^7 x 9,8 x 0,1 = 5,9 x 10^7 Newton",
+    "Una forza pari al suo peso"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2008",
+   "q": "Una persona è in piedi su una bilancia a molla posta su di un ascensore. Prima che l'ascensore cominci a salire la bilancia segna 637 Newton. Quando l'ascensore accelererà verso l'alto la bilancia segnerà:",
+   "choices": [
+    "un valore maggiore a causa dell'accelerazione verso l'alto",
+    "un valore minore a causa dell'accelerazione verso l'alto",
+    "lo stesso valore perché la massa non varia",
+    "lo stesso valore perché l'accelerazione è costante",
+    "lo stesso valore perché la superficie a contatto col corpo non varia"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-31">
+
+Alcune cose succedono **da sole**, altre no. Un cubetto di ghiaccio lasciato sul tavolo si scioglie da solo; l'acqua versata si sparge da sola. Ma il contrario non accade mai da solo: l'acqua sparsa non torna su nel bicchiere. In chimica diciamo che una reazione è **spontanea** quando può avvenire da sola, senza che dobbiamo spingerla. In questa pagina capiamo **chi decide** se una reazione è spontanea o no.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> "spontaneo" non vuol dire "veloce". Vuol dire "può andare da solo, in discesa". A decidere se è davvero in discesa è un'unica grandezza: l'energia libera di Gibbs, scritta G.</div>
+
+## L'entropia: la misura del disordine
+
+L'**entropia** (simbolo S) è una misura del **disordine**. Più una cosa è disordinata e sparpagliata, più la sua entropia è alta.
+
+Pensa alla tua stanza. Lasciata a sé, tende a diventare disordinata da sola; per riordinarla devi fare fatica. La natura funziona così: le cose tendono **da sole** verso il disordine, cioè verso entropia più alta.
+
+Qualche esempio quotidiano:
+
+- Una goccia di inchiostro in un bicchiere d'acqua si sparge ovunque (disordine in aumento): l'entropia cresce.
+- Un solido che diventa liquido, e un liquido che diventa gas, sono sempre più disordinati: l'entropia cresce.
+- Lo zucchero in una zolla è ordinato; sciolto nel tè è sparpagliato: entropia più alta.
+
+Quando in una reazione l'entropia aumenta, scriviamo che la **variazione di entropia** è positiva: `DeltaS > 0` (più disordine alla fine che all'inizio).
+
+<div class="callout">💡 <strong>Aggancio al corpo:</strong> il tuo corpo è ordinatissimo (cellule, organi, molecole tutte al posto giusto). Mantenere quest'ordine costa energia: per questo devi mangiare ogni giorno. Restare ordinati va "contro corrente" rispetto alla tendenza naturale al disordine.</div>
+
+## Eso ed endo: l'energia che entra o esce
+
+C'è poi il **calore**. La **variazione di entalpia** (simbolo DeltaH) ci dice se una reazione **rilascia** o **assorbe** calore:
+
+- Reazione **esotermica**: rilascia calore (scalda l'ambiente). Qui `DeltaH < 0`. Pensa a una fiamma o alla legna che brucia.
+- Reazione **endotermica**: assorbe calore (raffredda l'ambiente). Qui `DeltaH > 0`. Pensa a quei sacchetti del freddo istantaneo per le distorsioni: si raffreddano perché "succhiano" calore.
+
+La natura preferisce le situazioni a **bassa energia** (come una pallina che rotola in fondo alla valle). Quindi `DeltaH < 0` aiuta la spontaneità (ma, come vedremo, da solo non basta a deciderla).
+
+Ma attenzione: né il disordine da solo, né l'energia da sola bastano a decidere. Servono **tutti e due insieme**. Ed è proprio qui che entra in gioco Gibbs.
+
+## L'energia libera di Gibbs: il giudice finale
+
+Per mettere insieme i due effetti (calore e disordine) usiamo una sola formula, l'**energia libera di Gibbs**:
+
+`DeltaG = DeltaH - T*DeltaS`
+
+Dove T è la **temperatura** (in kelvin, quindi sempre un numero positivo). La regola del giudice è semplice:
+
+- Se `DeltaG < 0` → la reazione è **spontanea** (può andare da sola, in discesa). Queste reazioni si chiamano **esoergoniche**.
+- Se `DeltaG > 0` → la reazione **non** è spontanea (da sola non parte; semmai va al contrario). Queste reazioni si chiamano **endoergoniche**.
+- Se `DeltaG = 0` → siamo in **equilibrio** (la reazione è in pareggio, non si sposta).
+
+<div class="callout">⚠️ <strong>Non confondere:</strong> "esotermico/endotermico" parla di <strong>calore</strong> (segno di DeltaH); "esoergonico/endoergonico" parla di <strong>spontaneità</strong> (segno di DeltaG). Sono cose diverse: una reazione può rilasciare calore (esotermica) ma non essere spontanea, e viceversa.</div>
+
+<Diagram caption="La formula di Gibbs e cosa succede a seconda del segno di DeltaG" code={`flowchart TB
+  F["DeltaG = DeltaH - T*DeltaS"] --> G{"Che segno ha DeltaG?"}
+  G -->|"DeltaG minore di 0"| S["SPONTANEA<br/>va da sola, in discesa"]
+  G -->|"DeltaG uguale a 0"| E["EQUILIBRIO<br/>in pareggio"]
+  G -->|"DeltaG maggiore di 0"| N["NON spontanea<br/>da sola non parte"]`} />
+
+Guarda bene la formula `DeltaG = DeltaH - T*DeltaS`. Ci sono due "spinte" verso la spontaneità:
+
+- L'energia che esce (`DeltaH < 0`) abbassa DeltaG: aiuta.
+- Il disordine che cresce (`DeltaS > 0`) abbassa DeltaG, perché viene **sottratto** (c'è un meno davanti): aiuta.
+
+Quando entrambe spingono nello stesso verso, la reazione è **sempre** spontanea. Quando litigano (una aiuta e l'altra frena), decide la **temperatura T**: scaldando, si dà più peso al termine del disordine.
+
+<Diagram caption="I quattro casi: combinazione di DeltaH e DeltaS" code={`flowchart TB
+  A["DeltaH minore di 0<br/>+ DeltaS maggiore di 0"] --> A2["Sempre spontanea<br/>a ogni temperatura"]
+  B["DeltaH maggiore di 0<br/>+ DeltaS minore di 0"] --> B2["Mai spontanea<br/>a nessuna temperatura"]
+  C["DeltaH minore di 0<br/>+ DeltaS minore di 0"] --> C2["Spontanea solo<br/>a bassa temperatura"]
+  D["DeltaH maggiore di 0<br/>+ DeltaS maggiore di 0"] --> D2["Spontanea solo<br/>ad alta temperatura"]`} />
+
+<div class="callout">💡 <strong>Aggancio a medicina:</strong> nel corpo le molecole come l'ATP servono proprio a fornire energia "in discesa" (DeltaG negativo) per far avvenire reazioni che da sole non andrebbero. È come usare una batteria carica per accendere qualcosa che da solo resterebbe spento.</div>
+
+## Guarda il video
+
+<YouTube id="3PAO51Hh4pA" title="Energia delle reazioni chimiche: entropia ed energia libera di Gibbs — spiegazione semplice" />
+
+<VideoVisto id="chim-u1-31" />
+
+## Da ricordare
+
+- **Entropia (S)** = misura del **disordine**. La natura tende da sola verso più disordine: `DeltaS > 0`.
+- **Entalpia (DeltaH)**: negativa se la reazione **rilascia** calore (esotermica), positiva se lo **assorbe** (endotermica). La spontaneità invece la decide DeltaG (esoergonica/endoergonica).
+- La formula del giudice è `DeltaG = DeltaH - T*DeltaS`.
+- `DeltaG < 0` → **spontanea**; `DeltaG > 0` → **non** spontanea; `DeltaG = 0` → **equilibrio**.
+- "Spontaneo" vuol dire "può andare da solo", **non** "veloce".
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa misura l'entropia (S)?"
+  opzioni={["la velocità di una reazione", "il disordine di un sistema", "il peso delle molecole", "la temperatura"]}
+  corretta={1}
+  spiegazione="L'entropia misura il disordine: più le cose sono sparpagliate e disordinate, più la sua entropia è alta. La natura tende da sola verso più disordine."
+/>
+
+<Quiz
+  domanda="Una reazione è spontanea (va da sola) quando l'energia libera di Gibbs è:"
+  opzioni={["DeltaG maggiore di 0", "DeltaG minore di 0", "DeltaG uguale a T", "DeltaG sempre positiva"]}
+  corretta={1}
+  spiegazione="Una reazione è spontanea quando DeltaG è minore di 0 (negativa): la reazione è in discesa e può avvenire da sola. Se DeltaG è uguale a 0 si è in equilibrio."
+/>
+
+<Quiz
+  domanda="Nella formula DeltaG = DeltaH - T*DeltaS, quale combinazione rende la reazione spontanea a QUALSIASI temperatura?"
+  opzioni={["DeltaH positiva e DeltaS negativa", "DeltaH negativa e DeltaS positiva", "DeltaH positiva e DeltaS positiva", "DeltaH negativa e DeltaS negativa"]}
+  corretta={1}
+  spiegazione="Se DeltaH è negativa (energia che esce) e DeltaS è positiva (disordine che cresce), entrambe abbassano DeltaG: la reazione è sempre spontanea, a ogni temperatura."
+/>
+
+<Esercizio
+  problema="Una reazione ha DeltaH negativa (rilascia energia) e DeltaS positiva (il disordine aumenta). Senza fare conti, è spontanea? E a quali temperature?"
+  soluzione="Sì, è spontanea. Guardando DeltaG = DeltaH - T*DeltaS: DeltaH è negativa (aiuta) e il termine -T*DeltaS è anch'esso negativo perché DeltaS è positiva (aiuta). Entrambe le spinte abbassano DeltaG, quindi DeltaG è negativa a qualsiasi temperatura: la reazione è spontanea sempre."
+/>
+
+</section>
+
+</RisorsaLayout>

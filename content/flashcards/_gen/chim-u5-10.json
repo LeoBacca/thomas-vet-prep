@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u5-10-1",
+    "topicId": "chim-u5-10",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: un alchene ha un doppio legame tra due atomi di carbonio, ed è per questo più reattivo di un alcano (che ha solo legami singoli).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il doppio legame C=C è una zona ricca di elettroni (il legame pi greco, la 'nuvoletta' sopra e sotto), molto più reattiva di un semplice legame singolo. Gli alcani, con soli legami singoli, sono molto meno reattivi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-10-2",
+    "topicId": "chim-u5-10",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "In un diene coniugato i due doppi legami sono disposti come? (Pensa alla sequenza lungo la catena carboniosa.)",
+    "choices": [
+      "Doppio, singolo, doppio: alternati — gli elettroni si 'spalmano' lungo tutta la zona",
+      "Doppio, doppio, di seguito — due doppi legami uno accanto all'altro",
+      "Separati da due o più legami singoli — ognuno fa per sé",
+      "Non ci sono doppi legami: sono tutti tripli"
+    ],
+    "answer": 0,
+    "explain": "Coniugato = doppio, singolo, doppio in fila. Come due magneti vicini: le loro nuvole di elettroni si tengono per mano e scorrono lungo la catena. Questo rende la molecola più stabile. Esempio biologico: il retinale (parente della vitamina A, nel nostro occhio) è un diene coniugato e grazie a questo assorbe la luce.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u5-10-3",
+    "topicId": "chim-u5-10",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "open",
+    "q": "Descrivi passo per passo cosa succede durante una reazione di addizione elettrofila su un alchene. Perché alla fine il doppio legame non c'è più?",
+    "answer": "Il doppio legame C=C è fatto di due parti: un legame sigma (robusto, la 'corda' diretta tra i due carboni) e un legame pi (la nuvoletta di elettroni sopra e sotto, più debole). Nell'addizione elettrofila: 1) arriva l'elettrofilo (una specie che ha bisogno di elettroni, come H+) e si avvicina al doppio legame che è ricco di elettroni; 2) il legame pi si apre e regala una coppia di elettroni all'elettrofilo — si forma un carbocatione (un carbonio con carica positiva, molto instabile); 3) arriva il nucleofilo (carico negativamente) che si attacca al carbocatione. Risultato finale: resta solo il legame sigma, cioè un legame singolo C-C, con due nuovi pezzi (elettrofilo e nucleofilo) attaccati uno per ciascun carbonio. Il doppio legame è diventato singolo perché il legame pi ha usato i suoi elettroni per fare attaccare i due nuovi pezzi.",
+    "explain": "Ordine da ricordare: 1) elettrofilo attacca per primo il doppio legame (zona ricca di e-), 2) si forma il carbocatione, 3) nucleofilo chiude la reazione.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u5-10-4",
+    "topicId": "chim-u5-10",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "C5H10 è la formula bruta di quale composto?",
+    "choices": [
+      "Pentene",
+      "Pentano",
+      "Pentadiene",
+      "Isopentano",
+      "Ciclopentene"
+    ],
+    "answer": 0,
+    "explain": "Gli alcheni con n carboni hanno formula CnH2n. Per n=5: C5H10 → pentene. Pentano (C5H12) ha due idrogeni in più (è un alcano, solo legami singoli: CnH2n+2). Pentadiene (C5H8) ha due idrogeni in meno (due doppi legami). Isopentano è un alcano ramificato (C5H12). Ciclopentene (C5H8) è un anello con un doppio legame — stessa formula del pentadiene ma struttura diversa. La trappola più comune è confondere pentene con pentano (una lettera di differenza, ma due idrogeni in meno).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u5-10-5",
+    "topicId": "chim-u5-10",
+    "materia": "chimica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Nell'addizione elettrofila di un alchene, qual è l'ORDINE CORRETTO degli eventi?",
+    "choices": [
+      "Prima arriva il nucleofilo sul doppio legame, poi si forma il carbocatione, poi arriva l'elettrofilo",
+      "Prima arriva l'elettrofilo sul doppio legame, si forma un carbocatione, poi arriva il nucleofilo",
+      "Elettrofilo e nucleofilo arrivano insieme, contemporaneamente, ai due carboni",
+      "Il doppio legame non si apre mai: i due pezzi si aggiungono restando fuori dalla molecola",
+      "L'elettrofilo si attacca solo se è presente un catalizzatore; senza catalizzatore non reagisce"
+    ],
+    "answer": 1,
+    "explain": "L'ordine giusto è: 1) elettrofilo (cerca elettroni) → attacca il doppio legame (ricco di elettroni) → 2) il legame pi si apre, si forma il carbocatione (carbonio con carica +, instabile) → 3) nucleofilo (carico negativamente) → chiude la reazione sul carbocatione. La trappola classica è invertire l'ordine e mettere il nucleofilo per primo (opzione A): sbagliato, il nucleofilo non avrebbe motivo di avvicinarsi al doppio legame neutro. L'arrivo simultaneo (opzione C) non corrisponde al meccanismo a due fasi. Le opzioni D ed E sono fuori tema per l'addizione elettrofila di base.",
+    "tags": ["prova d'esame"]
+  }
+]

@@ -1,0 +1,25 @@
+{
+ "id": "bio-u5-20",
+ "titolo": "L'endocitosi in fase fluida e mediata da recettori (transferrina, LDL, EGF)",
+ "materia": "biologia",
+ "unita": 5,
+ "slug": "20-lendocitosi-in-fase-fluida-e-mediata",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/biologia/u5/20-lendocitosi-in-fase-fluida-e-mediata.mdx",
+ "examQuestions": [
+  {
+   "year": "2019",
+   "q": "L'introduzione di gocce di liquidi all'interno della cellula mediante la formazione di vescicole per invaginazione della membrana plasmatica prende il nome di:",
+   "choices": [
+    "pinocitosi",
+    "osmosi",
+    "fagocitosi",
+    "adsorbimento",
+    "imbibizione"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

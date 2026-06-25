@@ -1,0 +1,95 @@
+{
+ "id": "bio-u4-11",
+ "titolo": "Gli alberi genealogici e i pattern di ereditarietà (autosomica, X-linked, Y-linked, mitocondriale)",
+ "materia": "biologia",
+ "unita": 4,
+ "slug": "11-gli-alberi-genealogici-e-i-pattern",
+ "freq": 6,
+ "risorseMdx": "src/pages/risorse/biologia/u4/11-gli-alberi-genealogici-e-i-pattern.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "La Corea di Huntington è una malattia genetica degenerativa ereditaria che colpisce il sistema nervoso. La causa è la mutazione di un gene, che si trova sul braccio corto del cromosoma 4; quando alterato contiene una serie di ripetizioni della tripletta Citosina-Adenina-Guanina (CAG). L'alterazione si trasmette come carattere dominante. Dopo la lettura del brano, individuare l'affermazione ERRATA:",
+   "choices": [
+    "la mutazione viene ereditata con maggior probabilità dai figli maschi",
+    "non esistono portatori sani",
+    "se il gene alterato è presente in entrambi i genitori, solo il 25% dei figli ha la probabilità di essere sano",
+    "se un genitore è ammalato, i figli hanno il 50% di probabilità di ereditare la malattia",
+    "se nessun figlio è ammalato, nessuno delle generazioni successive sarà colpito"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2008",
+   "q": "Si consideri l'albero genealogico di una famiglia in cui è presente un gene recessivo legato al sesso che determina una malattia genetica. Quale sarà il genotipo della femmina di F3?",
+   "choices": [
+    "Sicuramente eterozigote",
+    "Probabilmente eterozigote",
+    "Sicuramente omozigote",
+    "Probabilmente omozigote",
+    "Sicuramente recessivo"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2010",
+   "q": "La maggior parte dei gatti con mantello arancione è di sesso maschile in quanto:",
+   "choices": [
+    "il gene per il colore arancione del mantello si trova sul cromosoma X",
+    "il gene per il colore arancione del mantello si trova sul cromosoma Y",
+    "il colore del mantello è influenzato dagli ormoni maschili",
+    "il gene per il colore arancione del mantello è recessivo",
+    "l'espressione del gene per il colore arancione del mantello è diversa tra i due sessi"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2010",
+   "q": "Nei mammiferi, una malattia ereditaria dovuta a un difetto di un gene mitocondriale:",
+   "choices": [
+    "viene ereditata soltanto per via materna",
+    "viene ereditata soltanto dai figli maschi",
+    "viene ereditata soltanto dalle figlie femmine",
+    "si trasmette con un salto di generazione",
+    "si trasmette come un gene recessivo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2016",
+   "q": "In una famiglia, da genitori con orecchie normali, nascono una figlia con orecchie deformi e un figlio con orecchie normali. Dopo aver stabilito che non si tratta di un carattere poligenico, né di una mutazione de novo, si può ipotizzare che:",
+   "choices": [
+    "il carattere orecchie deformi sia un carattere autosomico recessivo",
+    "il carattere orecchie deformi sia un carattere autosomico dominante",
+    "solo il padre sia portatore del carattere",
+    "il carattere orecchie deformi sia un carattere autosomico e che solo la madre ne sia portatrice",
+    "il carattere orecchie deformi sia un carattere determinato da un gene presente nel cromosoma Y"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2020",
+   "q": "L'albero genealogico riportato in figura rappresenta un carattere a trasmissione mendeliana nell'uomo: \"capacità di arrotolare la lingua\". Qual è l'allele dominante?",
+   "choices": [
+    "\"NON sa arrotolare la lingua\" perché dagli individui II1 e II2 nasce un figlio (III2) che sa arrotolare la lingua",
+    "\"SA arrotolare la lingua\" perché una mutazione ha fatto perdere questa capacità",
+    "\"NON sa arrotolare la lingua\" perché si presenta in un numero maggiore di individui",
+    "Non è possibile definirlo perché non conosciamo il fenotipo degli individui I1, I2 e I3",
+    "Non è possibile definirlo perché l'albero non è significativo"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

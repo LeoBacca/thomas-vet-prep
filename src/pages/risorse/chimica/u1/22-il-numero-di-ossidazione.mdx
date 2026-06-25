@@ -1,0 +1,101 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u1-22">
+
+Il **numero di ossidazione** (si scrive anche **n.o.**) è un piccolo numero, con il **segno più o meno**, che mettiamo accanto a ogni atomo dentro un composto. Ci dice se quell'atomo, stando insieme agli altri, "tira a sé" gli elettroni oppure li "lascia andare". Serve tantissimo: senza il numero di ossidazione non riusciresti a dare il nome giusto ai composti né a capire le reazioni in cui qualcosa **si ossida** o **si riduce**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina gli elettroni come una coperta tirata da due persone a letto. Il numero di ossidazione è una "contabilità": conta quanti pezzi di coperta un atomo ha guadagnato (segno -) o ceduto (segno +) rispetto a quando era da solo.</div>
+
+Non è una carica vera: è una **carica finta ma utile**, calcolata fingendo che, in ogni legame, gli elettroni vadano tutti all'atomo più "egoista" (quello che li attira di più).
+
+<Diagram caption="Le regole per assegnare il numero di ossidazione, in ordine" code={`flowchart TB
+  Start["Devo dare il n.o. a un atomo"] --> R1["1. Elemento da solo<br/>(O2, Fe, Na) → n.o. = 0"]
+  R1 --> R2["2. Ione semplice<br/>n.o. = sua carica<br/>(Na+ → +1, Cl- → -1)"]
+  R2 --> R3["3. Idrogeno H → quasi sempre +1<br/>(tranne negli idruri come NaH → -1)"]
+  R3 --> R4["4. Ossigeno O → quasi sempre -2<br/>(tranne nei perossidi → -1)"]
+  R4 --> R5["5. Metalli del gruppo 1 → +1<br/>Metalli del gruppo 2 → +2"]
+  R5 --> R6["6. La SOMMA di tutti i n.o.<br/>= 0 in una molecola neutra<br/>= carica in uno ione"]`} />
+
+## Cosa significano il segno + e il segno -
+
+Pensa a due bambini che si contendono una caramella (l'elettrone). Quello più prepotente la prende: lui "guadagna" e prende segno **meno** (perché l'elettrone è carico negativo, quindi chi se lo prende diventa più negativo). Quello che la cede prende segno **più**.
+
+- Segno **meno** (es. -2) → l'atomo **attira** gli elettroni a sé. Tipico dell'**ossigeno**.
+- Segno **più** (es. +1) → l'atomo **cede** gli elettroni. Tipico dei **metalli** come il sodio.
+
+Nel corpo umano questo conta davvero. Il ferro nel tuo sangue (dentro l'emoglobina) passa da Fe con n.o. **+2** a **+3** e viceversa: è proprio questo cambio che gli permette di **agganciare e rilasciare l'ossigeno** che respiri. Il numero di ossidazione non è teoria astratta: è quello che ti tiene vivo a ogni respiro.
+
+## Le regole pratiche, una alla volta
+
+Non serve impararle a memoria tutte insieme. Vai in ordine, come una ricetta:
+
+- Un elemento **da solo**, non legato ad altri diversi da sé (come `O2`, il ferro Fe, il sodio Na), ha sempre n.o. **0**. È "neutro perché sta con i suoi simili".
+- L'**idrogeno** vale quasi sempre **+1**.
+- L'**ossigeno** vale quasi sempre **-2**. Questi due sono i tuoi "punti fissi" di partenza.
+- I **metalli del gruppo 1** (sodio, potassio) valgono **+1**; quelli del **gruppo 2** (calcio, magnesio) valgono **+2**.
+- Regola d'oro finale: in una molecola neutra, **la somma di tutti i numeri di ossidazione fa zero**. Se conosci tutti gli altri, ricavi quello che ti manca come in un'equazione.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> fissa H (+1) e O (-2), poi usa la somma = 0 come una bilancia: l'atomo sconosciuto è il peso che fa tornare in pari i conti.</div>
+
+## Un esempio fatto con calma: l'acqua H2O
+
+Prendiamo `H2O`. Ci sono 2 idrogeni e 1 ossigeno.
+
+- Ogni idrogeno vale +1, e ce ne sono due → 2 x (+1) = **+2** in totale.
+- L'ossigeno è uno solo e vale **-2**.
+- Somma: (+2) + (-2) = **0**. Torna! La molecola è neutra, come deve essere.
+
+Hai appena verificato i numeri di ossidazione dell'acqua, la molecola di cui sei fatto per circa il 60%.
+
+## Guarda il video
+
+<YouTube id="Sl3sWe53YXk" title="Le 10 regole per assegnare il numero di ossidazione — spiegazione passo passo" />
+
+<VideoVisto id="chim-u1-22" />
+
+## Da ricordare
+
+- Il numero di ossidazione è una **carica finta ma utile**: dice se un atomo attira (segno -) o cede (segno +) elettroni.
+- Punti fissi: **idrogeno = +1**, **ossigeno = -2** (salvo rare eccezioni).
+- Un **elemento da solo** ha sempre n.o. **0**.
+- Regola d'oro: in una molecola neutra **la somma di tutti i n.o. fa zero**; in uno ione fa la sua carica.
+- Esempio biomedico: il ferro del sangue passa da **+2** a **+3** per trasportare l'ossigeno.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Qual è il numero di ossidazione del ferro nel metallo puro (Fe da solo)?"
+  opzioni={["+2", "+3", "0", "-1"]}
+  corretta={2}
+  spiegazione="Un elemento da solo, non legato ad atomi diversi da sé, ha sempre numero di ossidazione 0. Quindi Fe puro vale 0."
+/>
+
+<Quiz
+  domanda="In quasi tutti i composti, l'ossigeno ha numero di ossidazione:"
+  opzioni={["+2", "-2", "0", "+1"]}
+  corretta={1}
+  spiegazione="L'ossigeno è uno dei 'punti fissi': vale quasi sempre -2 perché attira fortemente gli elettroni. Fa eccezione solo nei perossidi (-1)."
+/>
+
+<Quiz
+  domanda="In una molecola neutra, la somma di tutti i numeri di ossidazione deve essere:"
+  opzioni={["sempre positiva", "uguale a zero", "sempre negativa", "uguale al numero di atomi"]}
+  corretta={1}
+  spiegazione="Regola d'oro: in una molecola neutra i conti devono tornare in pari, quindi la somma di tutti i n.o. fa zero."
+/>
+
+<Esercizio
+  problema="Trova il numero di ossidazione dello zolfo (S) nella molecola neutra SO2 (1 zolfo e 2 ossigeni). Suggerimento: l'ossigeno vale -2 e la somma totale deve fare zero."
+  soluzione="I due ossigeni danno 2 x (-2) = -4. Chiamiamo x il n.o. dello zolfo. La somma deve fare zero: x + (-4) = 0, quindi x = +4. Lo zolfo in SO2 ha numero di ossidazione +4."
+/>
+
+</section>
+
+</RisorsaLayout>

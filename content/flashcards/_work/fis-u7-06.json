@@ -1,0 +1,10 @@
+{
+ "id": "fis-u7-06",
+ "titolo": "Radiazioni ionizzanti e non ionizzanti",
+ "materia": "fisica",
+ "unita": 7,
+ "slug": "06-radiazioni-ionizzanti-e-non-ionizzanti",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u7/06-radiazioni-ionizzanti-e-non-ionizzanti.mdx",
+ "examQuestions": []
+}

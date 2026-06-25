@@ -1,0 +1,10 @@
+{
+ "id": "fis-u6-05",
+ "titolo": "Corrente elettrica, generatore e differenza di potenziale",
+ "materia": "fisica",
+ "unita": 6,
+ "slug": "05-corrente-elettrica-generatore-e-differenza-di",
+ "freq": 0,
+ "risorseMdx": "src/pages/risorse/fisica/u6/05-corrente-elettrica-generatore-e-differenza-di.mdx",
+ "examQuestions": []
+}

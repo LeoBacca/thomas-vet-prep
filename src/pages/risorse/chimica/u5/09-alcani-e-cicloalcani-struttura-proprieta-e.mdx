@@ -1,0 +1,114 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u5-09">
+
+Gli **alcani** sono le molecole più semplici della chimica organica: sono fatte solo di **carbonio (C)** e **idrogeno (H)**, uniti tutti da legami singoli. Niente di esotico: il gas che accendi sotto la pentola (metano) è un alcano, e così la cera di una candela. Contano tantissimo perché sono il "mattone di base" da cui partono molecole più complesse, comprese quelle del nostro corpo.
+
+Un **cicloalcano** è lo stesso identico tipo di molecola, ma con gli atomi di carbonio chiusi ad **anello**, come un girotondo invece che una fila.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> un alcano è una <strong>collana di perle</strong> di carbonio in fila. Un cicloalcano è la stessa collana chiusa ad <strong>anello</strong>. Le "perle" sono i carboni; gli idrogeni sono attaccati tutto intorno per riempire i posti liberi.</div>
+
+<Diagram caption="Alcano = catena aperta; cicloalcano = catena chiusa ad anello" code={`flowchart LR
+  subgraph ALCANO["Alcano (catena aperta)"]
+    direction LR
+    A1["C"] --- A2["C"] --- A3["C"] --- A4["C"]
+  end
+  subgraph CICLO["Cicloalcano (anello chiuso)"]
+    direction LR
+    C1["C"] --- C2["C"]
+    C2 --- C3["C"]
+    C3 --- C4["C"]
+    C4 --- C1
+  end`} />
+
+## Come sono fatti e come si chiamano
+
+Ogni carbonio ha **4 legami** disponibili (immagina 4 mani). Negli alcani queste mani sono tutte usate per tenersi con altri carboni o con idrogeni: per questo si dicono **saturi**, cioè "pieni", non c'è più posto per aggiungere altri atomi.
+
+La formula degli alcani segue una regola semplice: **CnH2n+2**. Vuol dire che se hai `n` carboni, hai `2n+2` idrogeni. Esempi:
+
+- **metano**: 1 carbonio → CH4 (il gas di cucina)
+- **etano**: 2 carboni → C2H6
+- **propano**: 3 carboni → C3H8 (quello delle bombole)
+- **butano**: 4 carboni → C4H10 (gli accendini)
+
+I nomi finiscono tutti in **-ano**. I cicloalcani hanno solo il prefisso **ciclo-** (ciclopropano, cicloesano) e una formula con 2 idrogeni in meno: **CnH2n**, perché chiudere l'anello "usa" due posti.
+
+## La tensione di anello: perché alcuni anelli sono nervosi
+
+Qui c'è l'unica idea un po' nuova, ma è intuitiva. I quattro legami del carbonio non stanno come capita: vogliono distanziarsi il più possibile, formando angoli di circa **109,5 gradi** (immagina le braccia aperte in modo comodo). Questo è l'angolo "felice" del carbonio.
+
+Quando chiudi un anello **molto piccolo**, sei costretto a piegare questi legami con angoli sbagliati. È come obbligare le braccia in una posizione scomoda: la molecola resta "tesa", sotto sforzo. Questo sforzo si chiama **tensione di anello**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> più l'anello è piccolo, più i legami sono piegati a forza, più la molecola è "nervosa" e reattiva. Il <strong>ciclopropano</strong> (3 carboni) è il più teso; il <strong>cicloesano</strong> (6 carboni) è rilassato e comodissimo.</div>
+
+Curiosità biomedica: il **ciclopropano** è stato davvero usato in passato come **anestetico**, e il cicloesano a 6 atomi è la forma preferita in natura. Tanti zuccheri del nostro corpo, come il **glucosio**, formano un anello a sei posti proprio perché è quello senza tensione, quindi stabile.
+
+<Diagram caption="Anello piccolo = molta tensione; anello a 6 = poca tensione" code={`flowchart TB
+  P["Anello piccolo<br/>(ciclopropano, 3 C)"] --> T["Legami piegati a forza<br/>= MOLTA tensione<br/>= molto reattivo"]
+  G["Anello a 6 carboni<br/>(cicloesano)"] --> R["Angoli quasi perfetti<br/>= POCA tensione<br/>= molto stabile"]`} />
+
+## Proprietà e la reazione che conta: la combustione
+
+Gli alcani sono poco reattivi e **non si sciolgono in acqua** (sono "grassi", apolari): è lo stesso motivo per cui l'olio in cucina non si mescola con l'acqua. Nel corpo, le membrane delle nostre cellule hanno proprio lunghe "code" di tipo alcano che fanno da barriera contro l'acqua.
+
+La reazione più importante è la **combustione** (una **ossidazione**): l'alcano reagisce con l'**ossigeno** e libera tanta **energia** sotto forma di calore. È quello che succede quando accendi il fornello. I prodotti sono sempre due: **anidride carbonica (CO2)** e **acqua (H2O)**.
+
+Lo schema generale, per il metano, è:
+
+`CH4 + 2 O2 → CO2 + 2 H2O + energia`
+
+Aggancio al corpo: anche noi, in fondo, "bruciamo" i grassi e gli zuccheri con l'ossigeno che respiriamo per ricavare energia, e produciamo anidride carbonica (che espiriamo) e acqua. È una combustione lenta e controllata, ma la logica chimica di base è la stessa: **molecola + ossigeno → CO2 + H2O + energia**.
+
+## Guarda il video
+
+<YouTube id="s7VeuoT5PVg" title="Le reazioni degli alcani: ossidazione (combustione) e alogenazione" />
+
+<VideoVisto id="chim-u5-09" />
+
+## Da ricordare
+
+- **Alcani** = solo C e H con legami singoli, **saturi** (pieni), formula **CnH2n+2**; i nomi finiscono in **-ano**.
+- **Cicloalcani** = stessi atomi ma chiusi ad **anello**, formula **CnH2n** (2 idrogeni in meno).
+- **Tensione di anello**: gli anelli piccoli hanno legami piegati a forza e sono più reattivi; l'anello a **6 carboni** è il più stabile (come il glucosio).
+- Gli alcani **non si sciolgono in acqua** (sono apolari, come l'olio).
+- La **combustione** è un'ossidazione: alcano **+ ossigeno → CO2 + acqua + energia**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Da quali atomi sono fatti gli alcani?"
+  opzioni={["Solo carbonio e idrogeno", "Carbonio, idrogeno e ossigeno", "Solo idrogeno", "Carbonio e azoto"]}
+  corretta={0}
+  spiegazione="Gli alcani contengono soltanto carbonio (C) e idrogeno (H), uniti da legami singoli. Per questo si chiamano idrocarburi saturi."
+/>
+
+<Quiz
+  domanda="Quale di questi anelli ha la MAGGIORE tensione di anello (è il più 'nervoso' e reattivo)?"
+  opzioni={["cicloesano (6 carboni)", "ciclopentano (5 carboni)", "ciclopropano (3 carboni)", "non hanno mai tensione"]}
+  corretta={2}
+  spiegazione="Più l'anello è piccolo, più i legami sono piegati a forza. Il ciclopropano (3 carboni) è il più teso e reattivo; il cicloesano (6 carboni) è il più rilassato."
+/>
+
+<Quiz
+  domanda="Quali prodotti si ottengono dalla combustione completa di un alcano?"
+  opzioni={["Anidride carbonica e acqua", "Solo ossigeno", "Idrogeno e azoto", "Solo acqua"]}
+  corretta={0}
+  spiegazione="La combustione (ossidazione) di un alcano con ossigeno produce sempre anidride carbonica (CO2) e acqua (H2O), liberando energia sotto forma di calore."
+/>
+
+<Esercizio
+  problema="Il propano è un alcano con 3 atomi di carbonio. Usando la regola CnH2n+2, quanti atomi di idrogeno ha? E qual è la sua formula?"
+  soluzione="Con n = 3 carboni, gli idrogeni sono 2n+2 = (2 per 3) + 2 = 8. Quindi il propano ha 8 idrogeni e la sua formula è C3H8."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,86 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-01">
+
+Alcune sostanze sciolte nell'acqua diventano **acide** (come il succo di limone o l'aceto), altre diventano **basiche** (come il sapone o la candeggina). Ma cosa rende una cosa acida o basica? La prima risposta semplice e geniale la diede un chimico, **Arrhenius**, più di cent'anni fa. Capirla è il primo passo per capire tutta la chimica di acidi e basi.
+
+L'idea di Arrhenius parte da un punto chiave: tutto succede **nell'acqua**. Una sostanza, appena la sciogli in acqua, può "rompersi" e liberare delle particelle cariche, chiamate **ioni**. A seconda di quale ione libera, la chiamiamo acido o base.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> in acqua, un <strong>acido</strong> libera particelle <strong>H+</strong> (idrogeno), una <strong>base</strong> libera particelle <strong>OH-</strong> (ossidrile). Tutto qui: guardi cosa libera e sai cos'è.</div>
+
+<Diagram caption="Cosa libera in acqua un acido e cosa libera una base, secondo Arrhenius" code={`flowchart TB
+  AC["ACIDO sciolto in acqua"] --> H["libera H+<br/>(ione idrogeno)"]
+  BA["BASE sciolta in acqua"] --> O["libera OH-<br/>(ione ossidrile)"]`} />
+
+## Cosa vuol dire "liberare uno ione"
+
+Immagina lo zucchero che si scioglie nel caffè: sparisce nel liquido ma resta zucchero. Certe sostanze, invece, quando si sciolgono in acqua fanno qualcosa di più: si **spezzano in due pezzi carichi**. Questi pezzi carichi si chiamano **ioni**.
+
+Pensa al sale da cucina, l'acido cloridrico `HCl`. In acqua si spezza in due: da una parte lo ione **H+** (positivo), dall'altra lo ione **Cl-** (negativo). Visto che ha liberato **H+**, secondo Arrhenius è un **acido**.
+
+Una base classica è la soda, `NaOH`. In acqua si spezza in **Na+** e **OH-**. Visto che libera **OH-**, è una **base**.
+
+<Diagram caption="Due esempi concreti: HCl è acido, NaOH è base" code={`flowchart LR
+  HCL["HCl in acqua"] --> HC["H+ e Cl-<br/>-> ACIDO (c'è H+)"]
+  NAOH["NaOH in acqua"] --> NA["Na+ e OH-<br/>-> BASE (c'è OH-)"]`} />
+
+## Perché conta per il corpo e per la medicina
+
+Questa non è teoria lontana dalla vita: il tuo corpo è pieno di acidi e basi al lavoro. Nello **stomaco** c'è acido cloridrico (`HCl`, proprio lui) che serve a digerire il cibo e a uccidere i germi. Quando hai "acidità di stomaco" e prendi un antiacido, stai dando una **base** che neutralizza l'acido di troppo.
+
+Anche il **sangue** ha bisogno di un equilibrio preciso tra H+ e OH-: se diventa troppo acido o troppo basico, le cellule smettono di funzionare. Per questo, in medicina e veterinaria, misurare quanto una soluzione è acida o basica è fondamentale. La teoria di Arrhenius è il primo mattone per capire tutto questo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> più <strong>H+</strong> in giro = più acido. Più <strong>OH-</strong> in giro = più basico. Il corpo lavora di continuo per tenere questo equilibrio al punto giusto.</div>
+
+## Guarda il video
+
+<YouTube id="nIWFpD06sRM" title="Acidi e basi: introduzione e teoria di Arrhenius — spiegazione per principianti" />
+
+<VideoVisto id="chim-u4-01" />
+
+## Da ricordare
+
+- La teoria di Arrhenius funziona **in acqua**: guardi cosa libera la sostanza una volta sciolta.
+- **Acido** = sostanza che in acqua libera ioni **H+** (idrogeno). Esempio: `HCl`.
+- **Base** = sostanza che in acqua libera ioni **OH-** (ossidrile). Esempio: `NaOH`.
+- "Liberare uno ione" vuol dire che la sostanza si **spezza in pezzi carichi** quando entra in acqua.
+- Acidi e basi sono ovunque nel corpo: l'acido dello stomaco aiuta a digerire, e il sangue tiene un equilibrio preciso tra H+ e OH-.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Secondo Arrhenius, un acido è una sostanza che in acqua libera:"
+  opzioni={["ioni OH-", "ioni H+", "zucchero", "ioni Na+"]}
+  corretta={1}
+  spiegazione="Per Arrhenius l'acido libera ioni H+ (idrogeno) quando viene sciolto in acqua. Chi libera OH- è invece una base."
+/>
+
+<Quiz
+  domanda="L'idrossido di sodio NaOH, sciolto in acqua, libera Na+ e OH-. Allora è:"
+  opzioni={["un acido", "una base", "né l'uno né l'altra", "uno zucchero"]}
+  corretta={1}
+  spiegazione="Libera ioni OH- (ossidrile), quindi secondo Arrhenius è una base."
+/>
+
+<Quiz
+  domanda="La teoria di Arrhenius descrive cosa succede soprattutto:"
+  opzioni={["nell'aria", "in acqua", "nel ghiaccio", "sotto vuoto"]}
+  corretta={1}
+  spiegazione="Arrhenius guarda cosa libera la sostanza quando è sciolta in acqua: è proprio nell'acqua che si formano gli ioni H+ oppure OH-."
+/>
+
+<Esercizio
+  problema="L'acido cloridrico HCl, sciolto in acqua, si spezza in H+ e Cl-. Secondo la teoria di Arrhenius, è un acido o una base? Spiega il perché in una frase."
+  soluzione="È un ACIDO, perché in acqua libera ioni H+ (idrogeno). Per Arrhenius è proprio la liberazione di H+ a rendere acida una sostanza. Curiosità: è lo stesso HCl che si trova nel tuo stomaco e aiuta a digerire."
+/>
+
+</section>
+
+</RisorsaLayout>

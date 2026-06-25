@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-chim-u1-21-1",
+    "topicId": "chim-u1-21",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o Falso: le molecole d'olio si raggruppano in acqua perché si attraggono fortemente tra loro.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Le molecole apolari come l'olio non si attraggono in modo speciale tra loro. E l'acqua a spingerle insieme: l'acqua preferisce essere libera di fare i suoi legami, e le molecole apolari la 'disturbano'. Raggruppandosi riducono la superficie a contatto con l'acqua — conviene all'acqua, non all'olio. Immagina una festa dove tutti si tengono per mano (l'acqua): chi non sa tenere la mano viene spinto verso un angolo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-21-2",
+    "topicId": "chim-u1-21",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega cos'e un'interazione idrofobica e dai due esempi biologici in cui e fondamentale.",
+    "answer": "Un'interazione idrofobica e il fenomeno per cui le molecole apolari (come l'olio e i grassi) si raggruppano in acqua, non perche si attraggono tra loro, ma perche l'acqua le 'esclude'. L'acqua e polare: le sue molecole si tengono tra loro con legami a idrogeno. Le molecole apolari non sanno inserirsi in questa rete, quindi l'acqua le spinge tutte insieme in un angolo. Raggruppandosi, le molecole apolari riducono la superficie a contatto con l'acqua: cosi l'acqua deve costruire meno strutture ordinate ('gabbiette') attorno a loro e resta piu libera. Due esempi biologici fondamentali: 1) Membrane cellulari — le molecole che le formano hanno una testa che ama l'acqua e una coda grassa (idrofobica). Le code fuggono dall'acqua e si nascondono al centro, formando da sole la doppia barriera che protegge la cellula. 2) Ripiegamento delle proteine — una proteina e una catena che si arrotola: le parti idrofobiche si infilano verso l'interno, lontano dall'acqua, e cosi la proteina prende la forma giusta per funzionare (ad esempio un enzima).",
+    "explain": "Idrofobico = apolare, non si mescola con l'acqua. E l'acqua a spingere le molecole apolari insieme (non una loro attrazione). Regola d'oro: il simile scioglie il simile. Importanza biologica: membrane cellulari e ripiegamento delle proteine.",
+    "tags": ["risposta aperta"]
+  }
+]

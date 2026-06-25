@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-10-1",
+    "topicId": "bio-u1-10",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: il trasferimento genico orizzontale (TGO) permette a un batterio di passare DNA a un altro batterio GIA' adulto, senza aspettare la riproduzione.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. E' proprio il punto chiave del TGO: i batteri possono scambiarsi geni anche senza riprodursi. E' come due persone che si scambiano appunti senza essere parenti. Questo e' uno dei motivi principali per cui la resistenza agli antibiotici si diffonde cosi' in fretta.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-10-2",
+    "topicId": "bio-u1-10",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Nella coniugazione batterica, attraverso quale struttura passa il plasmide dal batterio donatore al ricevente?",
+    "choices": [
+      "Il pilo sessuale (un tubicino proteico che collega i due batteri)",
+      "Un batteriofago (virus) che fa da corriere",
+      "Il DNA si libera nell'ambiente e il ricevente lo assorbe",
+      "Il flagello batterico"
+    ],
+    "answer": 0,
+    "explain": "Il pilo sessuale e' il 'ponte' fisico che il batterio donatore (F+) forma verso il ricevente (F-). Attraverso questo tubicino proteico passa una copia del plasmide. Senza pilo sessuale la coniugazione non puo' avvenire. Il batteriofago e' il corriere della TRASDUZIONE, non della coniugazione; assorbire DNA libero e' la TRASFORMAZIONE; il flagello serve a muoversi, non a trasferire geni.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-10-3",
+    "topicId": "bio-u1-10",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "In un allevamento veterinario, un batterio risulta resistente a un antibiotico. Nelle ore successive, anche altri batteri della stessa coltura diventano resistenti, pur non essendosi ancora riprodotti. Proponi UN meccanismo di trasferimento genico orizzontale che spieghi questa rapida diffusione e descrivi i passaggi chiave.",
+    "answer": "Il meccanismo piu' probabile e' la CONIUGAZIONE. Il batterio resistente possiede un plasmide con il gene di resistenza. 1) Forma il pilo sessuale, un tubicino proteico, verso un batterio vicino sensibile. 2) Il plasmide viene replicato e una copia transita attraverso il pilo nel ricevente. 3) Il ricevente acquisisce il gene di resistenza e diventa anch'esso un donatore potenziale, pronto a trasferire il plasmide ad altri. In questo modo la resistenza si diffonde a cascata nell'intera coltura in tempi brevi, senza aspettare la divisione batterica. Non si esclude anche la trasformazione (i batteri morti rilasciano DNA di resistenza che altri assorbono), ma la coniugazione e' il meccanismo piu' efficiente e rapido in questo scenario.",
+    "explain": "Da ricordare: coniugazione = contatto fisico + pilo sessuale + trasferimento plasmide. E' il motore principale della diffusione della resistenza agli antibiotici negli allevamenti.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-10-4",
+    "topicId": "bio-u1-10",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Individuare l'affermazione FALSA sui batteri e sul trasferimento genico.",
+    "choices": [
+      "I batteri possono scambiarsi materiale genetico mediante trasformazione, coniugazione e trasduzione",
+      "I batteri possono scambiarsi materiale genetico mediante trasmigrazione, partenogenesi e coniugazione",
+      "Le cellule batteriche sono generalmente circondate da una parete cellulare",
+      "I batteri si possono riprodurre per scissione binaria",
+      "I batteriofagi sono virus che infettano i batteri e possono trasportare DNA da un batterio all'altro"
+    ],
+    "answer": 1,
+    "explain": "L'affermazione FALSA e' la seconda: 'trasmigrazione' e 'partenogenesi' non sono meccanismi di trasferimento genico batterico. I tre meccanismi reali sono trasformazione (assorbimento di DNA libero), coniugazione (contatto fisico tramite pilo) e trasduzione (trasporto via batteriofago). 'Trasmigrazione' e' un termine inventato/fuori contesto per questa domanda; 'partenogenesi' riguarda la riproduzione negli animali (sviluppo di un uovo non fecondato), non i batteri. Le altre affermazioni sono tutte vere: la parete cellulare e' caratteristica dei batteri, la scissione binaria e' la loro riproduzione principale, e i batteriofagi sono effettivamente i corrieri della trasduzione.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-10-5",
+    "topicId": "bio-u1-10",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "I plasmidi, elementi fondamentali nella coniugazione batterica, sono:",
+    "choices": [
+      "Piccoli frammenti lineari di DNA batterico",
+      "Piccoli frammenti circolari di DNA virale",
+      "Batteri anaerobici che vivono nel suolo",
+      "Piccoli frammenti circolari di DNA batterico, separati dal cromosoma principale",
+      "Piccoli frammenti lineari di DNA virale"
+    ],
+    "answer": 3,
+    "explain": "I plasmidi sono piccoli anelli di DNA (forma CIRCOLARE) che appartengono al batterio (non a un virus), e sono SEPARATI dal cromosoma principale: e' come un foglio di appunti extra rispetto al quaderno principale. Nella coniugazione e' proprio il plasmide (spesso quello che porta il fattore F o geni di resistenza) a essere trasferito. 'Frammenti lineari di DNA batterico' e' sbagliato perche' i plasmidi sono CIRCOLARI, non lineari. 'DNA virale' confonde il plasmide con il genoma di un virus (come quello di un batteriofago): sono cose diverse. 'Batteri anaerobici' e' il filler totalmente fuori tema. 'Frammenti lineari di DNA virale' sbaglia sia la forma (lineare) sia l'origine (virale).",
+    "tags": ["prova d'esame"]
+  }
+]

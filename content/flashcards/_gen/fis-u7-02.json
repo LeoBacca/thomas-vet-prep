@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-fis-u7-02-1",
+    "topicId": "fis-u7-02",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Lo spettro elettromagnetico e come una scala musicale: dalla nota piu grave alla piu acuta. Quale regione corrisponde alla nota piu 'grave' (frequenza piu bassa)?",
+    "choices": [
+      "Onde radio",
+      "Raggi gamma",
+      "Luce visibile",
+      "Raggi X"
+    ],
+    "answer": 0,
+    "explain": "Le onde radio hanno la frequenza piu bassa (e la lunghezza d'onda piu lunga) di tutto lo spettro. All'estremo opposto ci sono i raggi gamma, i piu 'acuti' e i piu energetici. In mezzo, nell'ordine: microonde → infrarosso → luce visibile → ultravioletto → raggi X → raggi gamma.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u7-02-2",
+    "topicId": "fis-u7-02",
+    "materia": "fisica",
+    "unita": 7,
+    "type": "open",
+    "q": "Spiega in parole tue cos'e lo spettro elettromagnetico, elenca (nell'ordine corretto) le sue sette regioni principali dalla frequenza piu bassa alla piu alta, e di' cosa succede all'energia e alla lunghezza d'onda man mano che la frequenza aumenta.",
+    "answer": "Lo spettro elettromagnetico e l'insieme di tutte le onde elettromagnetiche ordinate per frequenza. Sono tutte della stessa natura fisica (oscillazioni di campi elettrici e magnetici) e viaggiano nel vuoto alla stessa velocita: la velocita della luce, circa 300.000 km/s (3 × 10⁸ m/s). Le sette regioni, dalla frequenza piu bassa alla piu alta, sono: 1) Onde radio, 2) Microonde, 3) Infrarosso (calore), 4) Luce visibile (l'unica che l'occhio vede, dal rosso al violetto), 5) Ultravioletto (UV), 6) Raggi X, 7) Raggi gamma. Man mano che la frequenza aumenta: la lunghezza d'onda DIMINUISCE (sono inversamente proporzionali: c = f × λ) e l'energia dell'onda AUMENTA. I raggi gamma sono quindi i piu energetici e i piu pericolosi; le onde radio sono le piu 'tranquille'.",
+    "explain": "Da ricordare: 7 regioni in ordine (radio → micro → IR → visibile → UV → X → gamma); frequenza ↑ = lunghezza d'onda ↓ = energia ↑. Tutte viaggiano alla stessa velocita nel vuoto.",
+    "tags": ["risposta aperta"]
+  }
+]

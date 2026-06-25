@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u1-08-1",
+    "topicId": "bio-u1-08",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un batterio viene colorato con la tecnica di Gram e al microscopio appare VIOLA. Che cosa significa?",
+    "choices": [
+      "E un Gram positivo: ha uno strato spesso di peptidoglicano che ha trattenuto il cristalvioletto durante il lavaggio",
+      "E un Gram negativo: la membrana esterna con LPS ha intrappolato il colorante viola",
+      "E un Gram positivo: la safranina lo ha colorato di viola alla fine della procedura",
+      "Non si puo dire nulla: il colore dipende solo dal colorante usato, non dalla struttura della parete"
+    ],
+    "answer": 0,
+    "explain": "Gram positivo = parete spessa di peptidoglicano (fino a 80 nm) → trattiene il cristalvioletto anche dopo il lavaggio con alcol-acetone → rimane VIOLA. I Gram negativi hanno la parete sottile, perdono il viola e si colorano di ROSA con la safranina.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-08-2",
+    "topicId": "bio-u1-08",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Descrivi la differenza strutturale tra un batterio Gram positivo e uno Gram negativo, e spiega perche i due tipi danno colori diversi nella colorazione di Gram.",
+    "answer": "I batteri Gram positivi hanno uno strato di peptidoglicano molto spesso (fino a 80 nm) e nessuna membrana esterna. I batteri Gram negativi hanno invece uno strato di peptidoglicano sottile (2-7 nm) piu una seconda membrana esterna che contiene il lipopolisaccaride (LPS). Nella colorazione di Gram: 1) tutti i batteri vengono prima colorati di viola col cristalvioletto e poi trattati con Lugol che fissa il colore; 2) il lavaggio con alcol-acetone rimuove il viola solo dai Gram negativi, perche la loro parete sottile non lo trattiene; 3) la safranina finale colora di rosa i batteri che hanno perso il viola. Risultato: Gram positivi = VIOLA (parete spessa ha trattenuto il cristalvioletto); Gram negativi = ROSA (parete sottile lo ha perso, si sono colorati con la safranina).",
+    "explain": "Chiave: parete spessa (Gram +) = viola; parete sottile + membrana esterna (Gram -) = rosa. La colorazione e utile in clinica per scegliere l'antibiotico giusto.",
+    "tags": ["risposta aperta"]
+  }
+]

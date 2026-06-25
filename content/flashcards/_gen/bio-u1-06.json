@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-06-1",
+    "topicId": "bio-u1-06",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: i retrovirus si chiamano 'retro' perché fanno l'OPPOSTO del flusso normale dell'informazione genetica, cioè convertono l'RNA in DNA invece del contrario.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Il percorso normale è DNA → RNA → Proteina. I retrovirus lo invertono nel primo passaggio: partono dall'RNA e lo riscrivono come DNA, grazie alla trascrittasi inversa. 'Retro' significa proprio 'al contrario'.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-06-2",
+    "topicId": "bio-u1-06",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Pensa a un nastro di cassetta. Di solito registri dalla partitura (DNA) al nastro (RNA). La trascrittasi inversa fa il contrario: ricostruisce la partitura partendo dal nastro. In termini molecolari, cosa produce questo enzima?",
+    "choices": [
+      "Converte il DNA dell'ospite in RNA virale",
+      "Copia l'RNA virale e produce DNA a doppio filamento",
+      "Traduce le proteine virali nei ribosomi della cellula",
+      "Inserisce il provirus nel cromosoma dell'ospite"
+    ],
+    "answer": 1,
+    "explain": "La trascrittasi inversa legge l'RNA virale e sintetizza prima un filamento di DNA, poi un secondo: il prodotto finale è DNA a doppio filamento (dsDNA). Solo dopo questo passaggio il DNA può entrare nel nucleo. L'inserimento nel cromosoma è invece compito di un altro enzima: l'integrasi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-06-3",
+    "topicId": "bio-u1-06",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Immagina che un farmaco blocchi completamente la trascrittasi inversa di HIV. Spiega passo per passo cosa succederebbe al ciclo del virus: a quale stadio si fermerebbe e perché i nuovi virus non potrebbero formarsi?",
+    "answer": "Il ciclo si fermerebbe al secondo passaggio, subito dopo che il virus entra nella cellula. Senza la trascrittasi inversa, l'RNA virale non può essere convertito in DNA a doppio filamento. Senza quel DNA, il virus non può entrare nel nucleo, non può creare il provirus (il DNA virale integrato nel genoma della cellula), e quindi la cellula non produce né nuove proteine virali né nuove copie di RNA virale. Non ci sono pezzi con cui assemblare nuovi virioni: il ciclo muore sul nascere. Questo è esattamente il meccanismo di farmaci come la zidovudina (AZT), che si 'infilano' nel processo di costruzione del DNA e bloccano la trascrittasi inversa.",
+    "explain": "Punto chiave: senza trascrittasi inversa → niente DNA virale → niente provirus → niente nuovi virus. L'intera catena si spezza al secondo anello.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-06-4",
+    "topicId": "bio-u1-06",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Il 'dogma centrale' della biologia sosteneva che l'informazione passa dal DNA all'RNA e da quest'ultimo alle proteine. Oggi è stato parzialmente rivisto, dal momento che:",
+    "choices": [
+      "l'informazione negli eucarioti passa sempre dalle proteine direttamente al DNA",
+      "l'informazione nei procarioti è contenuta nelle proteine",
+      "l'informazione nei virus può passare dall'RNA al DNA",
+      "la duplicazione del DNA comporta la duplicazione delle proteine",
+      "la mutazione casuale di una proteina comporta un cambiamento anche nel DNA"
+    ],
+    "answer": 2,
+    "explain": "Il dogma centrale (DNA → RNA → Proteina) ha dovuto essere rivisto perché i retrovirus, come HIV, fanno esattamente il contrario nel primo passaggio: usano la trascrittasi inversa per convertire il loro RNA in DNA. Trappole da smontare: 'proteine → DNA' non avviene in nessun organismo (le proteine non portano informazione genetica codificata); 'informazione nei procarioti nelle proteine' è falso (nei procarioti il materiale genetico è sempre DNA); 'duplicazione DNA → duplicazione proteine' è un filler fuori tema; 'mutazione di una proteina → cambiamento nel DNA' è un errore classico che inverte il senso della trasmissione dell'informazione.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-06-5",
+    "topicId": "bio-u1-06",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Qual è la sequenza CORRETTA dei passaggi nel ciclo di replicazione di HIV all'interno della cellula ospite?",
+    "choices": [
+      "Integrazione nel DNA → trascrizione inversa → gemmazione → attacco alla cellula",
+      "Attacco alla cellula → trascrizione inversa (RNA→DNA) → integrazione (provirus) → gemmazione di nuovi virus",
+      "Attacco alla cellula → traduzione delle proteine → integrazione → gemmazione",
+      "Trascrizione inversa → attacco alla cellula → integrazione → produzione di RNA virale",
+      "Attacco alla cellula → integrazione diretta dell'RNA → produzione proteica → gemmazione"
+    ],
+    "answer": 1,
+    "explain": "L'ordine corretto è: 1) il virus si aggancia ai recettori della cellula bersaglio (attacco e ingresso); 2) la trascrittasi inversa converte l'RNA virale in DNA a doppio filamento (trascrizione inversa); 3) l'integrasi inserisce quel DNA nel cromosoma dell'ospite, formando il provirus (integrazione); 4) la cellula trascrive il provirus, si producono nuovi virioni che gemmano via. Trappole: la prima opzione inverte l'integrazione e la trascrizione inversa (impossibile integrare prima di avere il DNA); la terza salta la trascrizione inversa (l'RNA non si integra direttamente); la quarta mette la trascrizione inversa prima dell'attacco (il virus non è ancora dentro); la quinta dice che l'RNA si integra direttamente, ma l'RNA virale non può mai integrarsi nel DNA dell'ospite: serve prima il passaggio RNA → DNA.",
+    "tags": ["prova d'esame"]
+  }
+]

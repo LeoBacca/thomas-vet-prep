@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u7-06-1",
+    "topicId": "bio-u7-06",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Il fuso mitotico ha tre tipi di microtubuli. Quale tipo aggancia direttamente il cromosoma e lo trascina verso il polo durante l'anafase?",
+    "choices": [
+      "I microtubuli astrali, che ancorano il fuso alla corteccia della cellula",
+      "I microtubuli del cinetocore, che si attaccano al disco proteico sul cromosoma e lo tirano verso il polo",
+      "I microtubuli interpolari, che si sovrappongono al centro e allungano la cellula",
+      "Tutti e tre i tipi agiscono insieme sullo stesso cromosoma allo stesso modo"
+    ],
+    "answer": 1,
+    "explain": "Analogia del trasloco: i microtubuli astrali tengono fermo il camion (i poli), quelli del cinetocore agganciano i mobili (cromosomi) e li trascinano, quelli interpolari tengono aperto il vano di carico (allungano la cellula). Solo i microtubuli del cinetocore si attaccano fisicamente al cromosoma tramite il complesso NDC80.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-06-2",
+    "topicId": "bio-u7-06",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "open",
+    "q": "Cos'e il biorientamento di un cromosoma e perche e fondamentale prima che la cellula entri in anafase? Menziona il ruolo del cinetocore e del checkpoint del fuso.",
+    "answer": "Il biorientamento e la condizione in cui i due cinetocori di un cromosoma (uno per ciascun cromatidio fratello) sono agganciati a microtubuli provenienti da poli OPPOSTI. Il cinetocore e un disco proteico che si assembla sul centromero (la 'strozzatura' del cromosoma a X); al suo interno il complesso NDC80 funziona come un moschettone che tiene agganciato il microtubulo. Quando entrambi i cinetocori sono occupati dai rispettivi poli, il cromosoma e sotto tensione, tirato da entrambe le parti come un osso conteso da due cani. Questa tensione e il segnale che il checkpoint del fuso (SAC) controlla: solo se TUTTI i cromosomi sono correttamente biorientati il checkpoint si spegne e la cellula procede all'anafase. Se anche un solo cinetocore e libero o senza tensione, il SAC blocca tutto per evitare errori nella distribuzione dei cromosomi.",
+    "explain": "Biorientamento = ogni cromatidio agganciato al polo opposto → tensione → checkpoint OK → anafase. NDC80 e il 'gancio' molecolare sul cinetocore.",
+    "tags": ["risposta aperta"]
+  }
+]

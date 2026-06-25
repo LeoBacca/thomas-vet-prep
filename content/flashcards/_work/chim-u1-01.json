@@ -1,0 +1,39 @@
+{
+ "id": "chim-u1-01",
+ "titolo": "Materia, atomi ed elementi (teoria atomica di Dalton)",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "01-materia-atomi-ed-elementi-teoria-atomica",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/chimica/u1/01-materia-atomi-ed-elementi-teoria-atomica.mdx",
+ "examQuestions": [
+  {
+   "year": "2008",
+   "q": "Quale tra le seguenti sostanze non è un elemento:",
+   "choices": [
+    "ammoniaca",
+    "argento",
+    "idrogeno",
+    "mercurio",
+    "ferro"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2015",
+   "q": "Quale/i delle seguenti affermazioni su elementi, miscele e composti è/sono corretta/e? 1. Le miscele devono contenere almeno due composti. 2. I composti devono contenere almeno due elementi. 3. Due elementi diversi reagiscono tra di loro per dare sempre lo stesso composto binario.",
+   "choices": [
+    "Solo 2",
+    "Solo 3",
+    "Solo 1 e 2",
+    "Solo 2 e 3",
+    "Solo 1"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

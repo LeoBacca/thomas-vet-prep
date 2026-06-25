@@ -1,0 +1,128 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-16">
+
+## Il problema: dove vanno le proteine secretorie?
+
+La cellula produce migliaia di proteine diverse. Alcune devono restare nel citoplasma, altre devono essere **secrete all'esterno** oppure finire nelle membrane o negli organelli della via secretoria (reticolo endoplasmatico, Golgi, lisosomi, vescicole).
+
+Come fa la cellula a capire quale proteina deve entrare nel **reticolo endoplasmatico rugoso (RER)**?
+
+La risposta è semplice: ogni proteina destinata al RER porta una **sequenza segnale** — una specie di etichetta scritta direttamente nella sua sequenza di amminoacidi, di solito all'estremità N-terminale (l'inizio della catena).
+
+---
+
+## Il segnale di indirizzo: la sequenza segnale
+
+La **sequenza segnale** (o peptide segnale) è un tratto corto di amminoacidi — di solito 15–30 amminoacidi — con caratteristiche precise:
+
+- contiene molti amminoacidi **idrofobici** (che "odiano" l'acqua), in particolare al centro
+- si trova all'**estremità N-terminale** della proteina, cioè viene sintetizzata per prima dal ribosoma
+- viene **rimossa** dopo l'ingresso nel RER (non fa parte della proteina matura)
+
+Pensa alla sequenza segnale come all'indirizzo scritto su un pacco: appena il corriere (SRP) lo vede, sa dove consegnarlo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La sequenza segnale è l'etichetta "destinatario: reticolo endoplasmatico" cucita sulla proteina. Senza quell'etichetta, la proteina finisce altrove.</div>
+
+---
+
+## Step 1 — L'SRP riconosce la sequenza segnale
+
+La traduzione inizia normalmente nel citoplasma, sul ribosoma. Non appena la **sequenza segnale** esce dal ribosoma, viene riconosciuta da una proteina speciale chiamata **SRP** (*Signal Recognition Particle*, Particella di Riconoscimento del Segnale).
+
+L'SRP è un complesso fatto di proteine e un piccolo RNA. Funziona come un "radar" che sorvola continuamente i ribosomi in cerca di sequenze segnale.
+
+Quando l'SRP si lega alla sequenza segnale, succedono due cose quasi contemporaneamente:
+1. **La traduzione si ferma** (pausa): l'SRP blocca temporaneamente il ribosoma per evitare che la proteina venga sintetizzata nel posto sbagliato.
+2. **Il complesso ribosoma + SRP + catena nascente** si sposta verso la membrana del RER.
+
+---
+
+## Step 2 — Aggancio alla membrana del RER
+
+Sulla membrana del RER ci sono dei recettori specifici per l'SRP, chiamati **recettori SRP** (o docking protein). Sono proteine di membrana che aspettano esattamente questo momento.
+
+Quando il complesso SRP–ribosoma arriva alla membrana, l'SRP si lega al suo recettore. Questo provoca due effetti:
+- L'SRP si stacca dal ribosoma (e viene riciclato nel citoplasma per un nuovo ciclo).
+- La traduzione **riprende**.
+
+Ora il ribosoma è ancorato alla membrana del RER e la proteina viene sintetizzata direttamente dentro (o attraverso) la membrana.
+
+---
+
+## Step 3 — Il traslocone: il canale di ingresso
+
+L'SRP, mentre aggancia il ribosoma al recettore, lo posiziona di fronte a un complesso proteico chiamato **traslocone** (o canale di traslocazione, formato principalmente dalla proteina Sec61).
+
+Il traslocone è un **canale proteico** nella membrana del RER. Funziona come un tunnel: la catena polipeptidica nascente viene spinta dentro il canale man mano che il ribosoma la sintetizza, passando direttamente nel **lume del RER** (l'interno dell'organello) senza mai toccare il citoplasma.
+
+Questo processo si chiama **traslocazione co-traduzionale**: avviene *mentre* la proteina viene tradotta, non dopo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il traslocone è come un tornello all'ingresso del RER: il ribosoma si appoggia sopra e la proteina viene spinta dentro come pasta attraverso un torchio, amminoacido per amminoacido.</div>
+
+---
+
+## Step 4 — La peptidasi del segnale taglia l'etichetta
+
+Una volta che la sequenza segnale ha attraversato la membrana del RER ed è dentro il lume, il suo lavoro è finito. A questo punto entra in gioco la **peptidasi del segnale** (*signal peptidase*): un enzima situato sul lato luminale della membrana del RER.
+
+La peptidasi del segnale **taglia** la sequenza segnale dalla proteina nascente. La sequenza segnale rimossa viene poi degradata.
+
+Il risultato finale: la proteina matura (senza l'etichetta iniziale) si trova nel lume del RER, pronta per essere modificata, ripiegata e instradata verso la sua destinazione finale (Golgi, membrana, secrezione).
+
+---
+
+<Diagram caption="Le 4 tappe del trasporto co-traduzionale al RER: da sequenza segnale a proteina nel lume" code={`flowchart TB
+  A["Inizio traduzione nel citoplasma<br/>— la sequenza segnale esce dal ribosoma"] --> B["SRP riconosce la sequenza segnale<br/>e si lega al ribosoma<br/>— traduzione in PAUSA"]
+  B --> C["Il complesso ribosoma + SRP<br/>si sposta alla membrana del RER<br/>e si aggancia al recettore SRP"]
+  C --> D["SRP si stacca e viene riciclato<br/>— il ribosoma si posiziona<br/>sul TRASLOCONE (Sec61)<br/>— traduzione RIPRENDE"]
+  D --> E["La catena polipeptidica attraversa<br/>il traslocone ed entra nel LUME del RER<br/>mentre viene ancora sintetizzata"]
+  E --> F["La PEPTIDASI DEL SEGNALE<br/>taglia e rimuove la sequenza segnale"]
+  F --> G["Proteina matura nel lume del RER<br/>— pronta per ripiegamento e smistamento"]`} />
+
+<Diagram caption="I tre protagonisti proteici: SRP, traslocone e peptidasi del segnale — dove agiscono" code={`flowchart LR
+  subgraph CITOPLASMA["CITOPLASMA"]
+    A["SRP<br/>(radar + freno)"]
+    B["Recettore SRP<br/>(docking protein)"]
+  end
+  subgraph MEMBRANA["MEMBRANA del RER"]
+    C["Traslocone Sec61<br/>(canale di ingresso)"]
+    D["Peptidasi del segnale<br/>(forbice luminale)"]
+  end
+  subgraph LUME["LUME del RER"]
+    E["Proteina matura<br/>senza sequenza segnale"]
+  end
+  A -- "riconosce sequenza segnale<br/>e porta il ribosoma" --> B
+  B -- "posiziona il ribosoma<br/>sul canale" --> C
+  C -- "la catena passa nel lume" --> D
+  D -- "taglia il peptide segnale" --> E`} />
+
+## Guarda il video
+<YouTube id="wylRsLj3cZ4" title="Il RETICOLO ENDOPLASMATICO — Citologia Lezione 4 (AboutBiology)" />
+<VideoVisto id="bio-u5-16" />
+
+## Da ricordare
+- La **sequenza segnale** (N-terminale, idrofobica) è l'etichetta che destina una proteina al RER; l'**SRP** la riconosce, blocca la traduzione e porta il ribosoma alla membrana del RER.
+- Il **traslocone (Sec61)** è il canale di membrana attraverso cui la proteina nascente viene spinta nel lume del RER durante la traduzione (traslocazione co-traduzionale).
+- La **peptidasi del segnale** taglia la sequenza segnale una volta che è entrata nel lume del RER: la proteina matura rimane dentro il RER, pronta per le modifiche successive.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Cosa fa l'SRP (Signal Recognition Particle) non appena riconosce la sequenza segnale sul ribosoma?" opzioni={["Taglia immediatamente la sequenza segnale dalla proteina nascente","Ferma temporaneamente la traduzione e porta il ribosoma alla membrana del RER","Apre il canale del traslocone nella membrana del RER","Degrada il ribosoma per liberare la proteina nel citoplasma"]} corretta={1} spiegazione="L'SRP riconosce la sequenza segnale appena esce dal ribosoma, blocca temporaneamente la traduzione (pausa) e poi guida il complesso ribosoma–catena nascente verso il recettore SRP sulla membrana del RER. Solo dopo aver agganciato il recettore l'SRP si stacca e la traduzione riprende." />
+
+<Quiz domanda="Qual è la funzione del traslocone (Sec61) nella membrana del RER?" opzioni={["Produrre GTP per fornire energia alla traslocazione","Formare un canale proteico che permette alla catena polipeptidica di passare nel lume del RER durante la traduzione","Riconoscere la sequenza segnale nel citoplasma prima dell'SRP","Aggiungere il segnale NLS alle proteine destinate al nucleo"]} corretta={1} spiegazione="Il traslocone Sec61 è un complesso proteico che forma un canale idrofilo nella membrana del RER. Il ribosoma vi si appoggia sopra e la catena polipeptidica nascente viene spinta attraverso il canale nel lume del RER man mano che viene sintetizzata (co-traduzionalmente)." />
+
+<Quiz domanda="Dove si trova la peptidasi del segnale e quando agisce?" opzioni={["Nel citoplasma; taglia la sequenza segnale prima che il ribosoma raggiunga il RER","Sul lato luminale della membrana del RER; taglia la sequenza segnale dopo che essa ha attraversato il traslocone","Nel lume del Golgi; taglia la sequenza segnale durante la glicosilazione","Sulla superficie esterna del RER; taglia la sequenza segnale mentre il ribosoma si aggancia al recettore SRP"]} corretta={1} spiegazione="La peptidasi del segnale è un enzima associato al lato del lume della membrana del RER. Agisce sulla sequenza segnale solo dopo che essa è entrata nel lume attraverso il traslocone, liberando la proteina matura priva dell'etichetta di indirizzo iniziale." />
+
+<Esercizio problema="Una proteina secretoria ha una mutazione che rende la sua sequenza segnale completamente idrofilica (tutti gli amminoacidi idrofobici sono stati sostituiti con amminoacidi carichi). Cosa succede alla traduzione e dove si troverà la proteina alla fine?" soluzione="La sequenza segnale mutata non viene riconosciuta dall'SRP, perché l'SRP identifica proprio il tratto idrofobico centrale del peptide segnale. Senza il legame dell'SRP, non avviene la pausa della traduzione, il ribosoma non viene portato alla membrana del RER e la proteina viene tradotta per intero nel citoplasma. Il risultato è una proteina solubile nel citoplasma invece che nel lume del RER: non verrà secreta e probabilmente sarà mal ripiegata o degradata dal proteasoma." />
+
+</section>
+
+</RisorsaLayout>

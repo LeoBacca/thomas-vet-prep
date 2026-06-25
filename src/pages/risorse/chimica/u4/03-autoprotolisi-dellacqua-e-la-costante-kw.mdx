@@ -1,0 +1,104 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u4-03">
+
+L'acqua sembra una sostanza tranquilla e "neutra". In realtà, anche un bicchiere d'acqua pulitissima non sta del tutto ferma: ogni tanto due molecole d'acqua si "scambiano un pezzettino" e si trasformano in particelle cariche, gli **ioni**. Questo scambio si chiama **autoprotolisi** (o autoionizzazione) dell'acqua. È piccolissimo, ma esiste sempre, ed è la base per capire più avanti gli acidi, le basi e il pH.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> l'acqua si "morde un po' da sola". Due molecole d'acqua si passano una particella e diventano due ioni: uno positivo (H3O+) e uno negativo (OH-). Succede pochissimo, ma succede sempre.</div>
+
+<Diagram caption="L'autoprotolisi: due molecole d'acqua diventano uno ione positivo e uno negativo" code={`flowchart LR
+  A["2 H2O<br/>(due molecole d'acqua)"] -->|"si scambiano un H+"| B["H3O+<br/>(ione positivo)"]
+  A --> C["OH-<br/>(ione negativo)"]`} />
+
+## Cosa succede davvero: lo scambio di un H+
+
+Una molecola d'acqua è fatta da due idrogeni e un ossigeno (H2O). L'idrogeno, quando "parte" da solo, lascia un pezzettino carico positivo chiamato **H+** (in pratica un protone, da qui il nome auto**protol**isi).
+
+Quando due molecole d'acqua si incontrano, può capitare questo:
+
+- una molecola **cede** un H+ → quello che resta è **OH-** (ione idrossido, carico negativo);
+- l'altra molecola **prende** quell'H+ → diventa **H3O+** (ione idronio, carico positivo).
+
+Pensa a due persone che si passano una pallina: chi la dà rimane con le mani vuote (OH-), chi la prende ne ha una in più (H3O+). Nessuna pallina si perde: per ogni ione positivo che si forma, si forma anche **un** ione negativo. Quindi in acqua pura ci sono **sempre la stessa quantità** di H3O+ e di OH-.
+
+La doppia freccia `⇌` ci dice che la reazione va in **tutte e due le direzioni**: gli ioni si formano e poi tornano spesso a riunirsi in acqua. È un **equilibrio**, come un'altalena che oscilla intorno a un punto.
+
+<Diagram caption="Lo scambio del protone H+ tra due molecole d'acqua" code={`flowchart TB
+  H["H2O + H2O"] --> S["Una cede un H+, l'altra lo prende"]
+  S --> D["H3O+ (positivo) + OH- (negativo)<br/>in quantità uguali"]`} />
+
+## La costante Kw = 10^-14
+
+Gli scienziati hanno misurato **quanti** ioni si formano in acqua pura. Il risultato è sorprendentemente piccolo e sempre lo stesso (a temperatura ambiente):
+
+- concentrazione di H3O+ = 10^-7 (cioè 0,0000001 moli per litro)
+- concentrazione di OH- = 10^-7 (stessa identica quantità)
+
+Se **moltiplichi** queste due quantità ottieni un numero fisso, che si chiama **Kw**, la **costante (o prodotto ionico) dell'acqua**:
+
+`Kw = [H3O+] x [OH-] = 10^-7 x 10^-7 = 10^-14`
+
+(le parentesi quadre vogliono dire "concentrazione di"). Per moltiplicare le potenze di dieci basta sommare gli esponenti: -7 e -7 fanno -14.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> in qualsiasi soluzione acquosa, se moltiplichi la quantità di ioni positivi per quella di ioni negativi, ottieni sempre 10^-14. È una specie di "regola fissa" dell'acqua.</div>
+
+La cosa potente è questa: Kw resta **10^-14 sempre**, anche quando l'acqua non è pura. Se aggiungi qualcosa che fa salire gli H3O+ (un acido), gli OH- devono **scendere** per tenere il prodotto fermo a 10^-14, e viceversa. È come una bilancia: se da un lato sale, dall'altro deve scendere. Su questa idea si costruisce tutto il discorso su acidi, basi e pH.
+
+## Perché conta per il corpo e per la veterinaria
+
+Il sangue, la saliva, l'urina, il liquido dentro le cellule: sono quasi tutti **soluzioni acquose**. Tutte seguono questa regola di Kw. Il sangue di un cane, di un gatto o di una persona deve restare in un intervallo strettissimo di acidità (un pH intorno a 7,4): bastano piccole variazioni nel rapporto tra H3O+ e OH- per far stare male l'animale.
+
+Per questo in medicina e veterinaria si controlla spesso l'**equilibrio acido-base** del sangue: capire che H3O+ e OH- sono legati tra loro (uno sale, l'altro scende, ma il prodotto resta 10^-14) è il primo mattone per capire gli esami del sangue e le terapie con flebo.
+
+## Guarda il video
+
+<YouTube id="PmDfF2OFbJA" title="Il prodotto ionico dell'acqua e l'autoprotolisi — spiegazione semplice" />
+
+<VideoVisto id="chim-u4-03" />
+
+## Da ricordare
+
+- **Autoprotolisi**: anche l'acqua pura forma un po' di ioni da sola, scambiando un H+ tra due molecole.
+- Si formano **H3O+** (positivo) e **OH-** (negativo) sempre in **quantità uguali** in acqua pura.
+- In acqua pura ci sono 10^-7 di H3O+ e 10^-7 di OH-: pochissimi.
+- **Kw = [H3O+] x [OH-] = 10^-14**, ed è una costante: vale sempre, in tutte le soluzioni acquose.
+- Se uno ione sale, l'altro deve scendere, perché il loro prodotto resta fisso a 10^-14.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Nell'autoprotolisi dell'acqua, due molecole d'acqua si scambiano:"
+  opzioni={["un elettrone", "un protone H+", "un atomo di ossigeno", "una molecola intera"]}
+  corretta={1}
+  spiegazione="Una molecola cede un H+ (un protone) e l'altra lo prende: per questo si chiama auto-protol-isi. Restano OH- e H3O+."
+/>
+
+<Quiz
+  domanda="In acqua pura, le quantità di H3O+ e di OH- sono:"
+  opzioni={["sempre uguali tra loro", "sempre H3O+ molto maggiore", "sempre OH- molto maggiore", "diverse a caso"]}
+  corretta={0}
+  spiegazione="Per ogni H3O+ che si forma si forma anche un OH-, quindi in acqua pura sono identiche: entrambe 10^-7."
+/>
+
+<Quiz
+  domanda="Quanto vale la costante Kw dell'acqua a temperatura ambiente?"
+  opzioni={["10^-7", "10^-14", "14", "1"]}
+  corretta={1}
+  spiegazione="Kw = [H3O+] x [OH-] = 10^-7 x 10^-7 = 10^-14. Si sommano gli esponenti: -7 e -7 fanno -14."
+/>
+
+<Esercizio
+  problema="In una soluzione la concentrazione di H3O+ vale 10^-4. Sapendo che il prodotto [H3O+] x [OH-] deve restare uguale a 10^-14, quanto vale la concentrazione di OH-?"
+  soluzione="Deve valere 10^-10. Infatti 10^-4 x 10^-10 = 10^-14 (si sommano gli esponenti: -4 e -10 fanno -14). Nota che, essendo H3O+ più alto del normale, questa è una soluzione acida: gli OH- sono scesi per tenere fermo il prodotto a 10^-14."
+/>
+
+</section>
+
+</RisorsaLayout>

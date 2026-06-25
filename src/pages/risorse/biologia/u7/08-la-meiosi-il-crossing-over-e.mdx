@@ -1,0 +1,212 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u7-08">
+
+## Che cos'è la meiosi?
+
+La meiosi è un tipo speciale di divisione cellulare che serve a produrre i **gameti** — cioè le cellule sessuali: ovuli e spermatozoi. Il risultato finale sono 4 cellule figlie, ciascuna con **metà** del patrimonio genetico della cellula di partenza.
+
+Perché metà? Perché quando due gameti si fondono (fecondazione), i loro patrimoni genetici si sommano. Se ognuno portasse il corredo completo, la cellula uovo fecondata avrebbe il doppio dei cromosomi: un disastro.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La meiosi è come tagliare un mazzo di carte in due metà uguali — ognuno dei due figli riceve metà, così quando si uniscono tornano al numero giusto.</div>
+
+## Le due fasi principali: Meiosi I e Meiosi II
+
+La meiosi si divide in **due round** di divisione, uno dopo l'altro.
+
+### Meiosi I — la divisione "riduttiva"
+
+Qui i cromosomi omologhi (le coppie) si separano. Partiamo con una cellula con 46 cromosomi (nell'uomo) e otteniamo due cellule con 23 cromosomi ciascuna.
+
+Le tappe principali:
+
+- **Profase I** — i cromosomi omologhi si appaiano e avviene il **crossing over** (vedi sotto). È la fase più lunga e importante.
+- **Metafase I** — le coppie di cromosomi si allineano al centro della cellula.
+- **Anafase I** — i cromosomi omologhi vengono tirati verso i poli opposti della cellula.
+- **Telofase I** — si formano due cellule figlie, ognuna con 23 cromosomi (ma ogni cromosoma è ancora formato da due cromatidi).
+
+### Meiosi II — simile alla mitosi
+
+Nelle due cellule appena formate, ogni cromosoma si divide nei suoi due cromatidi. Risultato finale: **4 cellule** con 23 cromosomi ciascuna, tutte diverse tra loro.
+
+<Diagram caption="Le tappe della Meiosi I e Meiosi II" code={`flowchart TB
+  A["Cellula di partenza<br/>46 cromosomi (2n)"] --> B["Profase I<br/>Appaiamento omologhi<br/>Crossing over"]
+  B --> C["Metafase I<br/>Coppie al centro"]
+  C --> D["Anafase I<br/>Omologhi separati"]
+  D --> E["Telofase I<br/>2 cellule con 23 cromosomi (n)"]
+  E --> F["Meiosi II<br/>Ogni cromatide si separa"]
+  F --> G["4 gameti<br/>23 cromosomi ciascuno (n)<br/>tutti geneticamente diversi"]`} />
+
+## Il crossing over: la fonte di variabilità
+
+Il crossing over avviene durante la **Profase I**, quando i cromosomi omologhi (uno ereditato dal padre, uno dalla madre) si avvicinano e si "abbracciano". In quel momento, pezzi di cromosoma vengono scambiati tra di loro.
+
+Immagina due matite intrecciate: un pezzo della matita rossa passa sulla blu, e viceversa. Il risultato sono due matite con colori mescolati — cromosomi con combinazioni di geni nuove, che non esistevano prima.
+
+Questo processo avviene in punti detti **chiasmi**. Ogni volta è diverso: per questo ogni gamete è unico.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il crossing over è come scambiare un pezzo di puzzle tra due insiemi diversi — ottieni combinazioni nuove che non esistevano in nessuno dei due originali.</div>
+
+### Perché è importante?
+
+Senza crossing over, ogni generazione erediterebbe blocchi di geni sempre identici. Con il crossing over, le combinazioni possibili sono praticamente infinite — è uno dei motori principali della **variabilità genetica**, che permette all'evoluzione di funzionare.
+
+<Diagram caption="Come funziona il crossing over tra due cromosomi omologhi" code={`flowchart LR
+  A["Cromosoma omologo 1<br/>(eredità materna)<br/>Geni: A - B - C"] --> C["Si appaiano e<br/>si forma il chiasma"]
+  B["Cromosoma omologo 2<br/>(eredità paterna)<br/>Geni: a - b - c"] --> C
+  C --> D["Scambio di segmenti<br/>nel punto di chiasma"]
+  D --> E["Cromosoma ricombinato 1<br/>Geni: A - b - C"]
+  D --> F["Cromosoma ricombinato 2<br/>Geni: a - B - c"]`} />
+
+## Meiosi vs Mitosi: le differenze chiave
+
+La **mitosi** è la divisione cellulare "normale": una cellula si divide e produce 2 cellule figlie identiche alla madre (stesso numero di cromosomi). Serve per la crescita, la riparazione dei tessuti, la riproduzione asessuata.
+
+La **meiosi** invece produce 4 cellule figlie con metà cromosomi e tutte diverse. Serve solo per fare i gameti.
+
+Ecco le differenze in sintesi:
+
+| Caratteristica | Mitosi | Meiosi |
+|---|---|---|
+| Divisioni | 1 | 2 (Meiosi I + II) |
+| Duplicazioni del DNA | 1 (in fase S, prima) | 1 sola (prima della Meiosi I) |
+| Cellule prodotte | 2 | 4 |
+| Cromosomi nelle figlie | Uguale alla madre (2n, diploidi) | Metà (n, aploidi) |
+| Cellule figlie identiche tra loro e alla madre? | Sì, geneticamente identiche | No, tutte geneticamente diverse |
+| Crossing over (chiasmi) | No | Sì (Profase I) |
+| Appaiamento degli omologhi | No | Sì (Profase I) |
+| Cosa si separa in anafase | Cromatidi fratelli | Omologhi (Meiosi I), poi cromatidi (Meiosi II) |
+| Scopo | Crescita / riparazione / riproduzione asessuata | Produzione di gameti |
+| Dove avviene | Cellule somatiche | Cellule della linea germinale (gonadi) |
+
+Attenzione a un errore frequente d'esame: la meiosi NON è "due divisioni con una duplicazione del DNA in mezzo". Il DNA viene duplicato **una sola volta**, prima della Meiosi I; le due divisioni successive avvengono **senza** una nuova fase di sintesi. È proprio questa la chiave per cui da una cellula 2n si arriva a quattro cellule n.
+
+## Divisione riduzionale e divisione equazionale
+
+I due round della meiosi hanno nomi tecnici che ricorrono spesso negli esami:
+
+- **Meiosi I = divisione RIDUZIONALE.** Qui il numero di cromosomi si dimezza: da 2n a n. Si separano i **cromosomi omologhi**. È questo il passaggio che riduce il corredo.
+- **Meiosi II = divisione EQUAZIONALE.** Il numero di cromosomi NON cambia (resta n): si separano soltanto i **cromatidi fratelli** di ciascun cromosoma. È del tutto simile a una mitosi.
+
+Quindi la sequenza corretta è: **prima la riduzionale, poi l'equazionale**. Mai il contrario, mai due riduzionali di fila.
+
+<div class="callout">💡 <strong>Trucco per ricordare:</strong> RIDUZIONALE = si Riduce il numero (omologhi che si separano, 2n → n). EQUAZIONALE = resta uguale, "in equilibrio" (cromatidi fratelli che si separano, n → n).</div>
+
+## Chi si separa, e quando
+
+Questo è uno dei punti più discriminanti agli esami. Bisogna tenere distinti due eventi:
+
+- **Separazione dei cromosomi OMOLOGHI** (le due copie di una coppia, una paterna e una materna). Avviene **solo in Anafase I** della meiosi. È ciò che dimezza il corredo.
+- **Separazione dei CROMATIDI FRATELLI** (le due metà identiche di uno stesso cromosoma, unite al centromero). Avviene in **Anafase II** della meiosi e in **Anafase della mitosi**. Comporta la divisione/separazione dei centromeri.
+
+Da qui una conseguenza spesso chiesta: la **separazione dei centromeri** (cioè dei cromatidi fratelli) è un evento **comune a mitosi e meiosi**, mentre la **formazione dei chiasmi** (crossing over) e l'appaiamento degli omologhi avvengono **solo nella meiosi** (Profase I).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> omologhi = due fratelli diversi della stessa famiglia (si separano in Meiosi I). Cromatidi fratelli = due gemelli identici (si separano in Meiosi II e in mitosi).</div>
+
+## Le due fonti di variabilità genetica
+
+Spesso si pensa solo al crossing over, ma la meiosi mescola i geni in **due** modi indipendenti, entrambi nella Meiosi I:
+
+1. **Crossing over (Profase I)** — scambio di segmenti tra cromosomi omologhi nei chiasmi. Crea cromosomi nuovi, "ricombinati", con combinazioni di alleli mai viste prima.
+2. **Assortimento (o segregazione) indipendente in Metafase I** — quando le coppie di omologhi si allineano al centro, ogni coppia si dispone a caso, indipendentemente dalle altre. Così ogni gamete riceve un mix casuale di cromosomi paterni e materni. Con 23 coppie, le combinazioni possibili sono 2²³, cioè oltre 8 milioni — già prima del crossing over.
+
+A queste due fonti, legate al rimescolamento meiotico, si aggiungono le **mutazioni** (geniche e cromosomiche), che introducono varianti nuove, e poi la **fecondazione**, che combina a caso due gameti già unici.
+
+Attenzione a una trappola classica: la **selezione naturale** NON è una fonte di variabilità. La selezione non crea nuove varianti, le filtra: agisce *dopo*, scegliendo tra la variabilità già prodotta da crossing over, assortimento indipendente e mutazioni.
+
+## Gameti, corredo aploide e ritorno al diploide
+
+Le cellule del corpo (**somatiche**) sono **diploidi** (2n): hanno i cromosomi in coppie di omologhi, quindi una doppia dose di geni. I **gameti** prodotti dalla meiosi sono **aploidi** (n): contengono **uno solo** dei due cromosomi omologhi di ciascuna coppia.
+
+La riproduzione nella specie umana è **gamica** (sessuata): un gamete maschile (n) e uno femminile (n) si fondono nella **fecondazione**, e lo zigote torna **diploide** (2n). È così che il numero cromosomico della specie resta costante di generazione in generazione: la meiosi dimezza, la fecondazione raddoppia.
+
+<div class="callout">💡 <strong>Da notare:</strong> in uno stesso individuo le cellule somatiche hanno tutte lo stesso corredo (2n), mentre i gameti ne hanno la metà (n). Nessuna cellula "perde" del tutto i cromosomi: l'affermazione "alcune cellule hanno la metà" è vera (i gameti), ma "alcune cellule hanno perso i cromosomi" è falsa.</div>
+
+## Guarda il video
+<YouTube id="a-DLVCQ2h14" title="MEIOSI E CROSSING OVER" />
+<VideoVisto id="bio-u7-08" />
+
+## Da ricordare
+
+- La meiosi produce 4 gameti aploidi (n), con metà cromosomi, attraverso due divisioni successive ma una **sola** duplicazione del DNA (prima della Meiosi I).
+- Meiosi I = divisione **riduzionale** (separa gli omologhi, 2n → n); Meiosi II = divisione **equazionale** (separa i cromatidi fratelli, n → n). Prima la riduzionale, poi l'equazionale.
+- Gli **omologhi** si separano solo in Anafase I (meiosi). I **cromatidi fratelli** si separano in Anafase II (meiosi) e in Anafase della mitosi: la separazione dei centromeri è quindi comune a mitosi e meiosi.
+- Due fonti di variabilità, entrambe in Meiosi I: **crossing over** (Profase I, chiasmi) e **assortimento indipendente** degli omologhi (Metafase I). Si aggiungono le **mutazioni**. La **selezione naturale** NON crea variabilità: la filtra.
+- Le cellule figlie della meiosi NON sono identiche alla madre (sono diverse e aploidi); quelle della mitosi sì (identiche e 2n). Già **dopo la Meiosi I** le due cellule sono geneticamente diverse.
+- Le cellule somatiche sono diploidi (2n, doppia dose di geni), i gameti aploidi (n, un solo omologo per coppia). La fecondazione (riproduzione **gamica**) ripristina il corredo 2n.
+- Il crossing over avviene **solo** in Profase I: mai in Profase/Anafase II, mai in mitosi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quante cellule figlie produce la meiosi, e con quanti cromosomi ciascuna (nell'uomo)?"
+  opzioni={["2 cellule con 46 cromosomi", "4 cellule con 46 cromosomi", "4 cellule con 23 cromosomi", "2 cellule con 23 cromosomi"]}
+  corretta={2}
+  spiegazione="La meiosi produce 4 gameti, ognuno con 23 cromosomi (corredo aploide, n). Questo permette che alla fecondazione si torni a 46 cromosomi (2n)."
+/>
+
+<Quiz
+  domanda="In quale fase della meiosi avviene il crossing over?"
+  opzioni={["Metafase II", "Anafase I", "Profase I", "Telofase II"]}
+  corretta={2}
+  spiegazione="Il crossing over avviene durante la Profase I, quando i cromosomi omologhi si appaiano formando i chiasmi e scambiano segmenti di DNA tra loro."
+/>
+
+<Quiz
+  domanda="Qual è la differenza principale tra mitosi e meiosi riguardo al risultato finale?"
+  opzioni={["La mitosi produce 4 cellule aploidi, la meiosi 2 diploidi", "La mitosi produce 2 cellule diploidi identiche, la meiosi 4 cellule aploidi diverse", "Entrambe producono cellule identiche alla cellula madre", "La meiosi avviene solo nelle cellule somatiche"]}
+  corretta={1}
+  spiegazione="La mitosi genera 2 cellule figlie con lo stesso corredo cromosomico della madre (diploidi, 2n) e identiche tra loro. La meiosi genera 4 cellule con metà cromosomi (aploidi, n) e tutte geneticamente diverse."
+/>
+
+<Esercizio
+  problema="Una cellula con 8 cromosomi (2n=8) entra in meiosi. Quanti cromosomi avranno i gameti prodotti? E quanti gameti saranno prodotti in totale? Il crossing over aumenta o diminuisce la variabilità genetica tra questi gameti?"
+  soluzione="I gameti avranno 4 cromosomi ciascuno (n=4), perché la meiosi dimezza il corredo cromosomico. Saranno prodotti 4 gameti in totale. Il crossing over AUMENTA la variabilità genetica: scambiando segmenti di cromosomi omologhi in Profase I, crea nuove combinazioni di geni che non esistevano nei cromosomi originali, rendendo ogni gamete unico."
+/>
+
+<Esercizio
+  problema="Lo Zonkey è un ibrido sterile, figlio di una zebra (2n=44) e di un'asina (2n=62). Quanti cromosomi hanno le cellule somatiche dello Zonkey? E perché l'ibrido è sterile (collega la risposta alla meiosi)?"
+  soluzione="Lo Zonkey ha 53 cromosomi nelle cellule somatiche. Ragionamento: ogni genitore mette nel gamete metà del proprio corredo. La zebra produce gameti con 44÷2 = 22 cromosomi; l'asina gameti con 62÷2 = 31 cromosomi. Lo zigote somma i due gameti: 22 + 31 = 53. Quindi NON si fa la media dei due 2n, si sommano i due corredi aploidi. La sterilità nasce proprio in meiosi: con 53 cromosomi spaiati, i cromosomi non trovano un omologo con cui appaiarsi correttamente in Profase I, quindi la meiosi non può produrre gameti bilanciati."
+/>
+
+<Esercizio
+  problema="Durante la gametogenesi umana, un oocita secondario è fermo alla metafase della SECONDA divisione meiotica. Quanti cromosomi e quanti cromatidi contiene? Spiega il ragionamento."
+  soluzione="Contiene 23 cromosomi e 46 cromatidi. Ragionamento: la Meiosi I (riduzionale) ha già separato gli omologhi, quindi l'oocita secondario è aploide (n = 23 cromosomi). Ma la Meiosi II non è ancora avvenuta: ogni cromosoma è ancora formato da 2 cromatidi fratelli uniti al centromero. Quindi 23 cromosomi × 2 = 46 cromatidi. La trappola è contare 46 cromosomi: il numero di cromosomi si determina contando i centromeri (23), non i cromatidi (46)."
+/>
+
+<Esercizio
+  problema="Spiega a parole tue perché la meiosi è la principale fonte di variabilità genetica nella riproduzione sessuata, citando almeno due meccanismi distinti che agiscono durante la Meiosi I. La selezione naturale è uno di questi meccanismi?"
+  soluzione="Due meccanismi distinti, entrambi nella Meiosi I: (1) il CROSSING OVER in Profase I, che scambia segmenti tra omologhi creando cromosomi ricombinati con combinazioni nuove di alleli; (2) l'ASSORTIMENTO INDIPENDENTE in Metafase I, per cui ogni coppia di omologhi si dispone a caso e in modo indipendente dalle altre, così ogni gamete riceve un mix casuale di cromosomi paterni e materni (2²³ combinazioni nell'uomo). A questi si sommano le mutazioni e, dopo, la fecondazione che combina due gameti già unici. La selezione naturale NON è una fonte di variabilità: non crea varianti nuove, ma filtra quelle già esistenti, agendo dopo che la variabilità è stata prodotta."
+/>
+
+<Quiz
+  domanda="PROVA D'ESAME — In merito alla meiosi, quale delle seguenti affermazioni è ERRATA?"
+  opzioni={["Le cellule figlie sono geneticamente identiche alla cellula madre", "Il numero di cromosomi nelle cellule figlie è dimezzato rispetto alla madre", "Assicura la variabilità genetica della specie", "Non avviene crossing over in profase II", "Prevede una sola duplicazione del DNA"]}
+  corretta={0}
+  spiegazione="L'affermazione FALSA è la prima: le cellule figlie della meiosi NON sono identiche alla madre, sono geneticamente diverse (per crossing over e assortimento indipendente) e aploidi. Le altre sono tutte vere: il corredo si dimezza (n), la meiosi è motore di variabilità, il crossing over avviene solo in Profase I (non in profase II), e c'è una sola duplicazione del DNA per due divisioni. Trappola da evitare: 'identiche alla madre' descrive la MITOSI, non la meiosi."
+/>
+
+<Quiz
+  domanda="PROVA D'ESAME — La variabilità in una specie a riproduzione sessuata dipende da tutti i processi seguenti TRANNE uno. Quale?"
+  opzioni={["La selezione naturale", "Il crossing over in profase I", "L'assortimento (segregazione casuale) degli omologhi in metafase I", "Le mutazioni geniche", "Le mutazioni cromosomiche"]}
+  corretta={0}
+  spiegazione="La selezione naturale NON genera variabilità: non crea nuove varianti, agisce DOPO filtrando quelle già prodotte. Le vere fonti di variabilità sono il crossing over (Profase I), l'assortimento/segregazione casuale degli omologhi (Metafase I) e le mutazioni (geniche e cromosomiche). Trappola: la selezione 'agisce sulla' variabilità, ma non la produce."
+/>
+
+<Quiz
+  domanda="PROVA D'ESAME — Quali tra queste caratteristiche sono comuni SIA alla mitosi SIA alla meiosi? 1) Sono precedute da una duplicazione del DNA; 2) i cromatidi fratelli restano identici tra loro; 3) avviene separazione dei centromeri (cromatidi fratelli); 4) si formano i chiasmi."
+  opzioni={["Solo 1 e 3", "Solo 1 e 2", "Solo 2 e 4", "Solo 2 e 3", "Solo 3 e 4"]}
+  corretta={0}
+  spiegazione="Comuni a entrambe sono il punto 1 (entrambe partono da una cellula che ha duplicato il DNA) e il punto 3 (la separazione dei centromeri, cioè dei cromatidi fratelli, avviene in Anafase mitotica e in Anafase II meiotica). Il punto 4 (chiasmi/crossing over) è ESCLUSIVO della meiosi (Profase I). Il punto 2 è una trappola: i cromatidi fratelli sono identici alla formazione, ma dopo il crossing over della meiosi possono NON restare identici, quindi non è una caratteristica davvero comune a entrambe. Risposta: 1 e 3."
+/>
+
+</section>
+
+</RisorsaLayout>

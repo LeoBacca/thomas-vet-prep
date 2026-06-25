@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u1-05-1",
+    "topicId": "bio-u1-05",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Un virus entra in una cellula animale. Cosa succede subito dopo che e entrato, prima ancora che cominci a riprodursi?",
+    "choices": [
+      "Il capside viene smontato dagli enzimi cellulari e il materiale genetico viene liberato (decapsidazione)",
+      "Il virus si replica immediatamente usando i propri enzimi portati dall'esterno",
+      "Il virus si fonde con il nucleo cellulare e diventa parte del DNA dell'ospite",
+      "La cellula riconosce il virus e lo distrugge prima che possa agire"
+    ],
+    "answer": 0,
+    "explain": "Dopo l'ingresso, la cellula smonta involontariamente il capside virale con i propri enzimi: e la decapsidazione, come aprire un pacco e tirar fuori le istruzioni. Solo dopo il materiale genetico e libero di usare i macchinari cellulari.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-05-2",
+    "topicId": "bio-u1-05",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega la differenza tra lisi e gemmazione come modi in cui un virus esce dalla cellula ospite. Quale dei due e piu 'gentile' con la cellula e perche?",
+    "answer": "Nella lisi la cellula si rompe e muore, liberando tutti i nuovi virus in una volta sola, come una bomba che esplode. Nella gemmazione (budding) i virus escono uno alla volta avvolgendosi in un pezzo della membrana plasmatica della cellula: cosi il virus si porta via un involucro lipidico (envelope) ma la cellula puo sopravvivere piu a lungo e continuare a produrre virus. La gemmazione e piu 'gentile' con la cellula ospite: invece di distruggerla subito, la sfrutta nel tempo come una fabbrica che rimane in piedi.",
+    "explain": "Lisi = cellula muore, tutti i virus escono insieme. Gemmazione = virus esce avvolgendosi nella membrana, la cellula sopravvive piu a lungo.",
+    "tags": ["risposta aperta"]
+  }
+]

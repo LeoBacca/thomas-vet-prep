@@ -1,0 +1,137 @@
+{
+ "id": "bio-u5-02",
+ "titolo": "Osmosi, diffusione e trasporto passivo (proteine canale e trasportatori)",
+ "materia": "biologia",
+ "unita": 5,
+ "slug": "02-osmosi-diffusione-e-trasporto-passivo-proteine",
+ "freq": 9,
+ "risorseMdx": "src/pages/risorse/biologia/u5/02-osmosi-diffusione-e-trasporto-passivo-proteine.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Immergendo una foglia di insalata avvizzita in acqua dolce, subito avviene che le sue cellule:",
+   "choices": [
+    "si gonfiano perché l'acqua entra per osmosi",
+    "si sgonfiano perché l'acqua esce per plasmolisi",
+    "non variano di dimensioni perché l'acqua entra ed esce in ugual misura",
+    "scoppiano con fuoriuscita del citoplasma e dei cloroplasti",
+    "perdono i sali minerali contenuti nel citoplasma"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2009",
+   "q": "La rottura della membrana plasmatica e il rigonfiamento del nucleo si ottengono trattando le cellule con una soluzione:",
+   "choices": [
+    "ipotonica",
+    "ipertonica",
+    "isotonica",
+    "isosmotica",
+    "di NaCl al 9 per mille"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2010",
+   "q": "Quando si immerge una cellula vegetale in una soluzione ipotonica:",
+   "choices": [
+    "si ha un iniziale flusso netto di acqua verso l'interno della cellula",
+    "si ha un iniziale flusso di acqua verso l'esterno della cellula",
+    "la cellula scoppia",
+    "la cellula perde turgore",
+    "si ha la plasmolisi"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2011",
+   "q": "Quale completamento è corretto per la frase seguente? \"La diffusione facilitata attraverso le membrane cellulari ......\"",
+   "choices": [
+    "sfrutta il gradiente di concentrazione",
+    "richiede l'ATP come fonte di energia per il movimento delle sostanze",
+    "è una forma di trasporto attivo",
+    "non è mediata da proteine",
+    "è un processo che avviene contro gradiente di concentrazione"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  },
+  {
+   "year": "2012",
+   "q": "In quale tra le seguenti cellule si può verificare la plasmolisi?",
+   "choices": [
+    "Cellula del mesofillo",
+    "Globulo rosso",
+    "Paramecio",
+    "Lievito",
+    "Plasmacellula"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2013",
+   "q": "Quale/i delle seguenti sostanze chimiche puo/possono attraversare facilmente la membrana cellulare senza l'ausilio di proteine di trasporto? 1. Glucosio; 2. O2; 3. Na+.",
+   "choices": [
+    "Solo 2",
+    "Solo 1",
+    "Solo 3",
+    "Solo 1 e 2",
+    "Solo 2 e 3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2017",
+   "q": "Quale tra le seguenti specie chimiche NON può attraversare liberamente la membrana cellulare mediante trasporto passivo?",
+   "choices": [
+    "Lo ione calcio",
+    "L'ossigeno",
+    "L'anidride carbonica",
+    "L'acqua",
+    "L'urea"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2020",
+   "q": "Se prepariamo due vetrini, uno con cellule di epidermide di cipolla e uno con globuli rossi immersi entrambi in una soluzione ipertonica, cosa si osserva al microscopio?",
+   "choices": [
+    "Per osmosi nelle cellule vegetali la membrana cellulare si stacca dalla parete e i globuli rossi si raggrinziscono",
+    "Per osmosi nelle cellule vegetali la membrana cellulare si stacca dalla parete e i globuli rossi scoppiano",
+    "Per trasporto attivo nelle cellule vegetali la membrana cellulare si stacca dalla parete e i globuli rossi si raggrinziscono",
+    "Per osmosi entrambe le cellule scoppiano",
+    "Per trasporto attivo nelle cellule vegetali aumenta il turgore e i globuli rossi si raggrinziscono"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2022",
+   "q": "Quale tipo di trasporto può essere studiato attraverso una membrana sintetica costituita esclusivamente da un doppio strato lipidico?",
+   "choices": [
+    "Diffusione semplice",
+    "Diffusione facilitata",
+    "Trasporto attivo primario",
+    "Simporto",
+    "Antiporto"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

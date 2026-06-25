@@ -1,0 +1,83 @@
+[
+  {
+    "id": "fc-bio-u7-05-1",
+    "topicId": "bio-u7-05",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "La mitosi serve soprattutto a una cosa. Quale frase la descrive meglio?",
+    "choices": [
+      "Una cellula si divide in due cellule figlie identiche alla madre, come una fotocopia",
+      "Una cellula si divide in quattro cellule tutte diverse tra loro",
+      "Due cellule si fondono insieme per formarne una sola",
+      "Una cellula produce energia bruciando lo zucchero"
+    ],
+    "answer": 0,
+    "explain": "La mitosi e' la 'fotocopia' della cellula: da una cellula madre nascono due cellule figlie con lo stesso identico patrimonio genetico. Le quattro cellule diverse sono invece il risultato della meiosi (quella che fa gli spermatozoi e le cellule uovo); la fusione di due cellule e' la fecondazione; bruciare lo zucchero e' la respirazione cellulare, un'altra cosa.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-05-2",
+    "topicId": "bio-u7-05",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Prima di smistarsi, il lungo filo di DNA si avvolge stretto in bastoncini compatti (i cromosomi). Perche' la cellula lo fa?",
+    "choices": [
+      "Per spostarlo senza aggrovigliarlo, come avvolgere un filo lunghissimo in una bobina compatta",
+      "Per allungare ancora di piu' il DNA e renderlo piu' sottile",
+      "Perche' cosi' il DNA puo' essere letto piu' facilmente dai geni",
+      "Per trasformare il DNA in proteine"
+    ],
+    "answer": 0,
+    "explain": "Un filo lungo e sfilacciato si aggroviglia facilmente: arrotolandolo stretto (grazie a proteine come istoni e condensine) diventa un bastoncino maneggevole da smistare senza errori. Attenzione alle trappole: il DNA viene compattato, non allungato; e il DNA condensato si legge male, infatti durante il normale lavoro resta disteso proprio per essere letto. Trasformare il DNA in proteine e' un altro processo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u7-05-3",
+    "topicId": "bio-u7-05",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "open",
+    "q": "Spiega con parole tue cosa sono i 'cromatidi fratelli' e in quale fase della mitosi si separano.",
+    "answer": "Quando la cellula duplica il suo DNA (nella fase S, prima della mitosi), ogni cromosoma diventa formato da due copie identiche unite al centro in un punto chiamato centromero: quelle due copie identiche sono i cromatidi fratelli, ed e' per questo che il cromosoma duplicato ha la classica forma a X. I cromatidi fratelli restano uniti durante profase e metafase, e si separano nell'anafase, quando i cavi del fuso si accorciano e tirano un cromatidio verso un polo e l'altro verso il polo opposto. Cosi' ogni cellula figlia riceve una copia completa e identica del genoma.",
+    "explain": "Chiave: cromatidi fratelli = due copie IDENTICHE dello stesso cromosoma, uniti al centromero; si separano in ANAFASE.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u7-05-4",
+    "topicId": "bio-u7-05",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "Qual e' la sequenza CORRETTA delle fasi della mitosi?",
+    "choices": [
+      "Metafase → anafase → telofase → profase",
+      "Profase → metafase → anafase → telofase",
+      "Telofase → anafase → metafase → profase",
+      "Interfase → metafase → anafase → telofase",
+      "Anafase → profase → telofase → metafase"
+    ],
+    "answer": 1,
+    "explain": "L'ordine giusto e' Profase → Metafase → Anafase → Telofase (acronimo PMAT). Smontiamo le trappole: la prima opzione e' la sequenza giusta ma a cui hanno staccato la profase e l'hanno buttata in fondo (parte da meta'); la terza e' l'esatto contrario, l'ordine letto al rovescio (telofase per prima); la quarta mette l'interfase tra le fasi della mitosi, ma l'interfase e' la fase PREPARATORIA che viene PRIMA della mitosi, non una sua fase; l'ultima e' solo un mescolamento a caso. Memorizza la storia: prima si riordina (profase), poi ci si allinea (metafase), poi si separa (anafase), infine si ripristina (telofase).",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u7-05-5",
+    "topicId": "bio-u7-05",
+    "materia": "biologia",
+    "unita": 7,
+    "type": "mc",
+    "q": "A quale fase appartiene questa descrizione: 'la membrana del nucleo si dissolve e i nucleoli diventano poco visibili o scompaiono'?",
+    "choices": [
+      "Alla metafase",
+      "Alla telofase, quando i nuclei si riformano",
+      "Alla profase",
+      "All'anafase, durante la separazione",
+      "All'interfase, prima che la mitosi inizi"
+    ],
+    "answer": 2,
+    "explain": "E' la profase: il DNA si condensa, il fuso inizia a formarsi e l'involucro del nucleo si dissolve per liberare i cromosomi. Attenzione alle trappole: la telofase e' l'esatto OPPOSTO, perche' li' l'involucro nucleare si RIFORMA (non si dissolve); nella metafase e nell'anafase l'involucro e' gia' sparito da un pezzo, quindi non e' il momento in cui 'si dissolve'; l'interfase e' la fase preparatoria che precede la mitosi e ha il nucleo ancora intero. Il segnale chiave da riconoscere e' 'l'involucro si DISSOLVE' = inizio, cioe' profase.",
+    "tags": ["prova d'esame"]
+  }
+]

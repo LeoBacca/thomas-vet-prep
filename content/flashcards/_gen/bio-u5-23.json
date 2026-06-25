@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-bio-u5-23-1",
+    "topicId": "bio-u5-23",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "mc",
+    "q": "Immagina che la tua cellula sia un appartamento: ogni tanto accumuli mobili rotti e spazzatura. L'autofagia e il sistema che fa pulizia. Dove finisce tutta questa 'spazzatura' cellulare per essere smontata e riciclata?",
+    "choices": [
+      "Nel nucleo, dove il DNA controlla la distruzione",
+      "Nel lisosoma, il 'cassonetto' pieno di enzimi digestivi",
+      "Nel mitocondrio, che brucia i rifiuti per fare energia",
+      "Nel reticolo endoplasmatico, che li smembra e li rilascia fuori dalla cellula"
+    ],
+    "answer": 1,
+    "explain": "Il lisosoma e il centro di riciclaggio della cellula: contiene enzimi digestivi che scompongono proteine danneggiate e organelli in mattoni riutilizzabili (aminoacidi, lipidi, zuccheri). Tutti e tre i tipi di autofagia (macro, micro, CMA) portano il materiale al lisosoma.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-23-2",
+    "topicId": "bio-u5-23",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Nella macroautofagia, come fa la cellula a 'imbustare' un organello danneggiato prima di portarlo al lisosoma? Descrivi i passaggi con parole semplici, nominando le strutture che si formano.",
+    "answer": "Attorno all'organello danneggiato si forma una membrana a doppio strato chiamata fagoforo (o membrana di isolamento), che avvolge il materiale come un sacchetto. Il fagoforo si chiude su se stesso e diventa un autofagosoma — una sorta di pacco sigillato. L'autofagosoma si fonde poi con un lisosoma, formando un autolisosoma: qui gli enzimi digeriscono il contenuto e i mattoni utili (aminoacidi, lipidi) vengono rilasciati nel citoplasma.",
+    "explain": "Sequenza chiave: fagoforo → autofagosoma → fusione col lisosoma → autolisosoma → digestione e riciclo.",
+    "tags": ["risposta aperta"]
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "fc-chim-u4-06-1", "topicId": "chim-u4-06", "materia": "chimica", "unita": 4, "type": "mc",
+    "q": "Il pH e' il 'termometro' dell'acidita' e va da 0 a 14. Una soluzione con pH = 2 com'e'?",
+    "choices": ["Molto basica, come il sapone", "Neutra, come l'acqua pura", "Molto acida, come il succo gastrico dello stomaco", "Non si puo' dire dal solo pH"],
+    "answer": 2,
+    "explain": "Piu' il pH e' basso (vicino a 0), piu' la soluzione e' acida. pH 2 e' molto acido, come il succo gastrico. A meta' scala, intorno a 7, e' neutra (acqua pura); verso 14 e' basica (sapone). Il nostro sangue sta quasi sempre a 7,4.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-06-2", "topicId": "chim-u4-06", "materia": "chimica", "unita": 4, "type": "mc",
+    "q": "Un acido FORTE (come HCl) si dissocia al 100% in acqua, come zucchero che si scioglie tutto nel te'. Quanto vale allora la concentrazione di ioni H+?",
+    "choices": ["E' uguale alla concentrazione dell'acido che hai messo", "E' sempre zero", "E' la radice quadrata della concentrazione", "E' uguale a 14"],
+    "answer": 0,
+    "explain": "L'acido forte libera tutti i suoi H+: ogni molecola ne cede uno. Quindi [H+] e' proprio uguale alla concentrazione di acido messa, e ti basta fare pH = -log[H+]. La radice quadrata serve solo per gli acidi DEBOLI, quelli che entrano in piscina 'solo con i piedi' e si dissociano poco.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-06-3", "topicId": "chim-u4-06", "materia": "chimica", "unita": 4, "type": "tf",
+    "q": "Vero o falso: per calcolare il pH di una BASE forte (come NaOH), trovi prima il pOH dagli ioni OH- e poi fai pH = pOH.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Con le basi calcoli prima pOH = -log[OH-], ma poi devi fare pH = 14 - pOH, non pH = pOH. Il 14 e' la 'lunghezza' totale della scala: pH e pOH se la dividono e la loro somma fa sempre 14.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-06-open", "topicId": "chim-u4-06", "materia": "chimica", "unita": 4, "type": "open",
+    "q": "Spiega con parole tue: perche' per un acido FORTE e uno DEBOLE alla stessa concentrazione il conto del pH e' diverso? E perche' nel sangue i tamponi sono fatti apposta di acidi/basi DEBOLI?",
+    "answer": "Un acido forte si dissocia al 100%: tutte le sue molecole liberano l'H+, quindi [H+] e' uguale alla concentrazione messa e pH = -log[H+]. Un acido debole si dissocia solo un pochino: non possiamo dire che [H+] sia uguale alla concentrazione (sarebbe troppo), e serve la costante Ka per calcolare quanto poco si dissocia: [H+] = radice di (Ka per C), poi pH = -log[H+]. I tamponi del sangue (come il bicarbonato) sono fatti apposta di acidi e basi DEBOLI perche' reagiscono 'con calma': cosi' tengono il pH stabile a 7,4 senza farlo oscillare troppo se arriva un po' di acido o di base.",
+    "explain": "Da ricordare: forte = [H+] uguale a C; debole = [H+] = radice di (Ka per C). I tamponi sono deboli apposta, per ammortizzare.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u4-06-exam1", "topicId": "chim-u4-06", "materia": "chimica", "unita": 4, "type": "mc",
+    "q": "Il pH di una soluzione 0,1 M di HBr (acido bromidrico, un acido FORTE) vale:",
+    "choices": ["7,0 (e' neutro)", "1,0", "0,1", "14,0", "2,5"],
+    "answer": 1,
+    "explain": "HBr e' forte: si dissocia al 100%, quindi [H+] = 0,1 = 10⁻¹. Allora pH = -log(10⁻¹) = 1. Le trappole: '7,0' e' chi crede che un acido dia comunque pH neutro (sbagliato, un acido sta SOTTO 7); '0,1' e' chi confonde il pH con la concentrazione e dimentica il logaritmo; '14,0' e' l'estremo BASICO, l'esatto opposto di un acido forte; '2,5' e' un numero buttato li' che non viene da nessun conto.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u4-06-exam2", "topicId": "chim-u4-06", "materia": "chimica", "unita": 4, "type": "mc",
+    "q": "Una soluzione di HBr (acido forte) ha pH = 2. Se la diluisci con acqua 100 volte, il pH diventa circa:",
+    "choices": ["4", "7 (diventa neutro)", "2 (non varia)", "0,02", "2 + 10⁻²"],
+    "answer": 0,
+    "explain": "Diluire 100 volte (cioe' 10²) divide [H+] per 100, e nei logaritmi dividere per 100 vuol dire AGGIUNGERE 2 al pH: 2 + 2 = 4. Le trappole: '7' e' la misconcezione classica, cioe' credere che diluire un acido lo renda neutro (no: diventa solo MENO acido, il pH sale ma resta sotto 7); '2 non varia' ignora del tutto l'effetto della diluizione; '0,02' e' un numero che sembra giusto ma confonde la concentrazione col pH; '2 + 10⁻²' e' la trappola 'quasi giusta' che somma il numero sbagliato (10⁻² invece di 2).",
+    "tags": ["prova d'esame"]
+  }
+]

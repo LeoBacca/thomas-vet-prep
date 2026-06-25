@@ -1,0 +1,123 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u5-05">
+
+Guarda le tue due mani. Sono fatte delle stesse parti (cinque dita, un palmo), eppure sono diverse: la destra non è uguale alla sinistra, è la sua **immagine allo specchio**. Prova a metterle una sopra l'altra con i palmi nello stesso verso: non si sovrappongono mai. In chimica esistono molecole che si comportano proprio così: sono uguali in tutto, ma una è l'immagine speculare dell'altra e non si possono sovrapporre. Questa proprietà si chiama **chiralità** (dal greco *cheir*, che vuol dire proprio "mano").
+
+<div class="callout">💡 <strong>In parole semplici:</strong> una molecola è <strong>chirale</strong> se è come una mano: esiste in versione "destra" e versione "sinistra", e le due non sono sovrapponibili. Queste due versioni si chiamano <strong>enantiomeri</strong>.</div>
+
+<Diagram caption="Due enantiomeri = come la mano destra e la mano sinistra: immagini allo specchio, non sovrapponibili" code={`flowchart LR
+  M["Molecola chirale"] --> D["Versione 'destra'<br/>(come la mano destra)"]
+  M --> S["Versione 'sinistra'<br/>(come la mano sinistra)"]
+  D <-->|"immagini allo specchio<br/>NON sovrapponibili"| S`} />
+
+## Cosa rende una molecola chirale
+
+Quasi sempre basta un solo atomo di carbonio "speciale", detto **centro chirale**: è un carbonio che ha attaccati **quattro gruppi tutti diversi** tra loro. Quando questo succede, i quattro gruppi si possono disporre nello spazio in due modi diversi, ed escono fuori le due "mani" specchiate.
+
+Pensa a una vite: puoi avvitarla girando a destra o a sinistra. Stessa vite, due "versi" diversi. Il centro chirale fa la stessa cosa con la molecola.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> centro chirale = un carbonio con <strong>4 cose diverse</strong> attaccate. Se anche solo due fossero uguali, lo specchio darebbe la stessa molecola e la chiralità sparirebbe.</div>
+
+## La convenzione R / S: dare un nome alle due mani
+
+Le due mani vanno distinte con un nome preciso, così tutti i chimici del mondo si capiscono. Si usa la convenzione **R / S** (dal latino *Rectus* = destra, *Sinister* = sinistra). Funziona in passaggi semplici:
+
+1. Guardo i 4 gruppi attaccati al centro chirale e do a ognuno una **priorità**, da 1 (più importante) a 4 (meno importante). La regola di base: vince l'atomo più "pesante", cioè con numero atomico più grande.
+2. Giro la molecola in modo da mandare il gruppo numero 4 (il meno importante) **dietro**, lontano da me, come se nascondessi un dito dietro la mano.
+3. Guardo i tre gruppi rimasti e seguo l'ordine 1 → 2 → 3.
+   - Se vado in **senso orario** (come le lancette dell'orologio): è **R**.
+   - Se vado in **senso antiorario**: è **S**.
+
+<Diagram caption="I passaggi per assegnare R o S a un centro chirale" code={`flowchart TB
+  A["Centro chirale<br/>(4 gruppi diversi)"] --> B["Do una priorità da 1 a 4<br/>(vince il numero atomico maggiore)"]
+  B --> C["Metto il gruppo 4 dietro,<br/>lontano da me"]
+  C --> D["Seguo 1 → 2 → 3"]
+  D --> R["Senso ORARIO = R"]
+  D --> S["Senso ANTIORARIO = S"]`} />
+
+## Destrogiro e levogiro: il potere ottico
+
+Gli enantiomeri sono quasi gemelli: hanno lo stesso peso, lo stesso punto di fusione, gli stessi colori. C'è però **una** cosa che li distingue: il modo in cui trattano la luce.
+
+Esiste una luce "ordinata" detta **luce polarizzata** (immagina onde che vibrano tutte sullo stesso piano, come tante corde tirate parallele). Quando questa luce attraversa un enantiomero, il piano di vibrazione viene **ruotato** un po', come se la molecola le desse una piccola torsione. Questo si chiama **potere ottico** (o potere rotatorio).
+
+- Se la molecola ruota la luce verso **destra**, si dice **destrogira** e si segna con **(+)**.
+- Se la ruota verso **sinistra**, si dice **levogira** e si segna con **(-)**.
+
+I due enantiomeri ruotano la luce della stessa quantità ma in **versi opposti**: uno (+) e l'altro (-). Sono come due viti identiche ma avvitate al contrario.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> R/S descrive <strong>la forma</strong> nello spazio (lo guardi e lo deduci). Destrogiro/levogiro descrive <strong>cosa fa alla luce</strong> (lo misuri in laboratorio). Sono due cose diverse: una molecola R può essere (+) oppure (-), non c'è una regola fissa che le lega.</div>
+
+### Perché conta in medicina e veterinaria
+
+Il nostro corpo è fatto di molecole chirali (gli amminoacidi delle proteine, gli zuccheri, il DNA). I nostri recettori sono come **guanti**: un guanto destro accoglie solo la mano destra. Per questo i due enantiomeri di uno stesso farmaco possono comportarsi in modo molto diverso nel corpo: uno può curare e l'altro essere inutile o addirittura dannoso. L'esempio storico più noto è la **talidomide**: un enantiomero calmava la nausea, l'altro causava gravi malformazioni. Ecco perché chi prepara farmaci per persone e animali deve sapere benissimo quale "mano" sta usando.
+
+## La proiezione di Fischer: disegnare le mani su carta
+
+Le molecole sono in 3D, ma il foglio è in 2D. Serviva un modo semplice per disegnarle senza sbagliare. Lo ha inventato Emil Fischer, e si chiama **proiezione di Fischer**. È solo una regola di disegno con una **croce**:
+
+- Il **centro chirale** è il punto dove i due bracci della croce si incrociano.
+- Le linee **orizzontali** (sinistra e destra) sono i legami che vengono **verso di te**, escono dal foglio.
+- Le linee **verticali** (alto e basso) sono i legami che vanno **dietro il foglio**, si allontanano da te.
+
+Pensa a una persona che sta in piedi a braccia aperte e ti abbraccia: le braccia (orizzontali) vengono verso di te, la testa e i piedi (verticali) vanno indietro. La catena principale della molecola si mette in **verticale**, con il gruppo più "importante" in alto.
+
+<Diagram caption="La croce di Fischer: orizzontale = verso di te, verticale = dietro il foglio" code={`flowchart TB
+  ALTO["ALTO: legame che va DIETRO"] --> C["Centro chirale<br/>(incrocio della croce)"]
+  SIN["SINISTRA: legame VERSO di te"] --> C
+  C --> DES["DESTRA: legame VERSO di te"]
+  C --> BAS["BASSO: legame che va DIETRO"]`} />
+
+## Guarda il video
+
+<YouTube id="SugKu4Rx0sw" title="Configurazione assoluta R ed S spiegata semplice — HUB Scuola" />
+
+<VideoVisto id="chim-u5-05" />
+
+## Da ricordare
+
+- **Chiralità** = una molecola esiste in due versioni specchiate (come mano destra e sinistra) che non si sovrappongono. Le due versioni si chiamano **enantiomeri**.
+- Serve un **centro chirale**: un carbonio con **4 gruppi tutti diversi**.
+- **R / S** descrive la forma: assegno priorità ai 4 gruppi, metto il 4 dietro, e leggo 1→2→3 (orario = **R**, antiorario = **S**).
+- **Destrogiro (+)** ruota la luce a destra, **levogiro (-)** a sinistra: è il **potere ottico**, e si misura.
+- La **proiezione di Fischer** è la croce per disegnarli su carta: orizzontale = verso di te, verticale = dietro.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quando una molecola si dice chirale?"
+  opzioni={["quando è molto grande", "quando la sua immagine allo specchio NON è sovrapponibile a lei", "quando contiene ossigeno", "quando è colorata"]}
+  corretta={1}
+  spiegazione="Chirale vuol dire 'come una mano': la molecola e la sua immagine allo specchio sono diverse e non si possono sovrapporre. Le due versioni sono gli enantiomeri."
+/>
+
+<Quiz
+  domanda="Cosa serve, di solito, per avere un centro chirale?"
+  opzioni={["un carbonio con 4 gruppi tutti diversi", "un carbonio con 2 gruppi uguali", "un atomo di ossigeno", "due doppi legami"]}
+  corretta={0}
+  spiegazione="Il centro chirale è un carbonio con quattro gruppi tutti diversi tra loro: solo così esistono le due 'mani' specchiate."
+/>
+
+<Quiz
+  domanda="Nella convenzione R/S, dopo aver messo il gruppo a priorità più bassa dietro, leggo 1 → 2 → 3 in senso ORARIO. La configurazione è:"
+  opzioni={["S", "R", "destrogira", "levogira"]}
+  corretta={1}
+  spiegazione="Senso orario (come le lancette dell'orologio) = R, dal latino Rectus (destra). Senso antiorario = S. Attenzione: R/S è la forma, non c'entra direttamente con destrogiro/levogiro."
+/>
+
+<Esercizio
+  problema="Due enantiomeri dello stesso composto vengono messi davanti a un fascio di luce polarizzata. Il primo ruota il piano della luce di +30 gradi (verso destra). Di quanto, e in che verso, lo ruoterà il secondo enantiomero? Come si chiamano i due in base a questo?"
+  soluzione="Il secondo enantiomero ruota la luce della stessa quantità ma nel verso opposto: -30 gradi (verso sinistra). Il primo è destrogiro, indicato con (+); il secondo è levogiro, indicato con (-). Sono come due viti identiche avvitate al contrario: stessa intensità, verso opposto."
+/>
+
+</section>
+
+</RisorsaLayout>

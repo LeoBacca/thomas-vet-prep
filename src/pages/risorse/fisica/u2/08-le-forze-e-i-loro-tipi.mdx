@@ -1,0 +1,145 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-08">
+
+## Che cos'è una forza?
+
+Una **forza** è qualcosa che può mettere in moto un oggetto, fermarlo, o cambiarne la forma.
+Puoi pensarla come una "spinta" o una "trazione".
+Si misura in **Newton (N)**.
+
+Le forze si dividono in due grandi famiglie:
+
+- **Forze a distanza** — agiscono senza toccare l'oggetto (es. la gravità).
+- **Forze di contatto** — agiscono solo quando due oggetti si toccano (es. l'attrito, la tensione).
+
+---
+
+## I principali tipi di forza
+
+### 1. Forza gravitazionale
+
+È l'attrazione che ogni massa esercita su ogni altra massa.
+La Terra attira la Luna, la Luna attira la Terra, tu attiri una penna (ma la Terra lo fa molto di più).
+
+La formula è: **F = G · m₁ · m₂ / d²**
+
+G è una costante universale, m₁ e m₂ sono le masse, d è la distanza tra i loro centri.
+
+### 2. Forza peso
+
+È la forza gravitazionale che la Terra esercita **su di te** (o su qualsiasi oggetto vicino alla sua superficie).
+
+Formula: **P = m · g**
+
+- m = massa dell'oggetto (in kg)
+- g = accelerazione di gravità ≈ 9,8 m/s²
+
+Esempio: un sacco di 10 kg pesa P = 10 × 9,8 = **98 N**.
+
+La forza peso punta sempre verso il basso, cioè verso il centro della Terra.
+
+### 3. Forze di contatto
+
+Si manifestano quando due superfici si toccano. Rientrano in questa categoria l'attrito, la tensione e la forza normale (la reazione del piano su cui stai).
+
+### 4. Forza di attrito
+
+Quando spingi un libro sul tavolo, qualcosa lo frena: è l'attrito.
+L'attrito si oppone sempre al movimento (o al tentativo di movimento).
+
+Esistono due tipi:
+- **Attrito statico** — tiene fermo un oggetto che non si muove ancora.
+- **Attrito dinamico (o cinetico)** — frena un oggetto già in movimento.
+
+Formula semplificata: **F_attrito = μ · N**
+- μ (mu) = coefficiente di attrito (dipende dai materiali)
+- N = forza normale (quanto il piano "spinge su" l'oggetto)
+
+### 5. Tensione
+
+Pensa a un secchio appeso a una corda. La corda è in tensione: trasmette la forza verso l'alto bilanciando il peso del secchio.
+La tensione è la forza che una fune, un filo o una catena trasmette lungo la propria lunghezza.
+
+### 6. Forza elastica e legge di Hooke
+
+Allungi una molla: lei vuole tornare alla posizione originale e ti spinge indietro.
+Questa forza di "rimbalzo" è la **forza elastica**.
+
+**Legge di Hooke:** la forza elastica è proporzionale all'allungamento.
+
+**F = k · x**
+
+- k = costante elastica della molla (in N/m) — quanto è "rigida"
+- x = allungamento (o compressione) rispetto alla posizione di riposo (in m)
+
+Se raddoppi l'allungamento, la forza raddoppia. Semplice!
+
+La forza elastica è sempre diretta nel verso opposto allo spostamento (vuole riportare la molla a riposo).
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Ogni forza è una spinta o una trazione. Il peso ti porta giù, l'attrito ti frena, la tensione tira lungo una fune, e la molla ti rispinge quanto più la allunghi — questo è Hooke.</div>
+
+---
+
+<Diagram caption="Le due famiglie di forze e i principali tipi" code={`flowchart TB
+  F["FORZA"] --> FD["Forza a distanza"]
+  F --> FC["Forza di contatto"]
+  FD --> FG["Forza gravitazionale<br/>(attrazione tra masse)"]
+  FD --> FP["Forza peso<br/>P = m · g"]
+  FC --> FA["Attrito<br/>F = μ · N"]
+  FC --> FT["Tensione<br/>(funi e corde)"]
+  FC --> FE["Forza elastica<br/>F = k · x  (Hooke)"]`} />
+
+<Diagram caption="Legge di Hooke: più allunghi, più la molla rispinge" code={`flowchart LR
+  A["Molla a riposo<br/>x = 0, F = 0"] --> B["Molla allungata<br/>x piccolo → F piccola"]
+  B --> C["Molla molto allungata<br/>x grande → F grande"]
+  C --> D["Forza elastica<br/>opposta allo spostamento"]`} />
+
+## Guarda il video
+<YouTube id="9JVY85PlQo4" title="FISICA Esercizi #6 A - FORZE (Peso, Elastica, Attrito, Vincolare) ed EQUILIBRIO" />
+<VideoVisto id="fis-u2-08" />
+
+## Da ricordare
+
+- La **forza peso** è P = m · g e punta sempre verso il basso; massa e peso sono cose diverse.
+- L'**attrito** frena il movimento e dipende dalla "ruvidità" delle superfici (coefficiente μ).
+- La **legge di Hooke** (F = k · x) dice che la forza di una molla è proporzionale a quanto la allunghi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Un oggetto ha massa 5 kg. Quanto vale la sua forza peso? (g = 9,8 m/s²)"
+  opzioni={["5 N", "9,8 N", "49 N", "50 N"]}
+  corretta={2}
+  spiegazione="P = m · g = 5 × 9,8 = 49 N. La massa si misura in kg, il peso in Newton: non sono la stessa cosa!"
+/>
+
+<Quiz
+  domanda="Una molla con costante elastica k = 200 N/m viene allungata di 0,1 m. Che forza elastica esercita?"
+  opzioni={["2 N", "20 N", "200 N", "0,2 N"]}
+  corretta={1}
+  spiegazione="Legge di Hooke: F = k · x = 200 × 0,1 = 20 N. Se raddoppi l'allungamento, la forza raddoppia."
+/>
+
+<Quiz
+  domanda="Quale affermazione sull'attrito è corretta?"
+  opzioni={["L'attrito agisce nella stessa direzione del moto", "L'attrito è sempre assente tra superfici lisce", "L'attrito si oppone al movimento o al tentativo di movimento", "L'attrito è una forza a distanza come la gravità"]}
+  corretta={2}
+  spiegazione="L'attrito è una forza di contatto che si oppone sempre al moto (o al tentativo di mettersi in moto). Non è mai una forza a distanza."
+/>
+
+<Esercizio
+  problema="Una cassa di 20 kg è ferma su un pavimento. Il coefficiente di attrito statico è μ = 0,4. Qual è la forza minima necessaria per farla scivolare? (g = 9,8 m/s²)"
+  soluzione="Prima calcolo la forza normale: N = P = m · g = 20 × 9,8 = 196 N. Poi applico la formula dell'attrito statico massimo: F_attrito = μ · N = 0,4 × 196 = 78,4 N. Devo applicare una forza maggiore di 78,4 N per vincere l'attrito e far muovere la cassa."
+/>
+
+</section>
+
+</RisorsaLayout>

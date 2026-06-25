@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-bio-u1-20-1",
+    "topicId": "bio-u1-20",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: l'anabolismo costruisce molecole grandi a partire da piccole e per farlo CONSUMA energia (ATP).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Anabolismo = costruisci e spendi. Pensa ai mattoncini Lego: assemblarli in un castello richiede fatica (= ATP). Il contrario, demolire, libera energia: quello e il catabolismo.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-20-2",
+    "topicId": "bio-u1-20",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "La digestione di un pezzo di pane nello stomaco e nell'intestino e un esempio di quale processo?",
+    "choices": [
+      "Anabolismo tramite condensazione",
+      "Anabolismo tramite idrolisi",
+      "Catabolismo tramite idrolisi",
+      "Catabolismo tramite condensazione"
+    ],
+    "answer": 2,
+    "explain": "La digestione rompe le molecole grandi dell'amido (polisaccaride) in glucosio (monomeri) aggiungendo acqua: e idrolisi. Poiche demolisce molecole complesse liberando energia, e un processo catabolico. Trappola frequente: confondere 'idrolisi' con 'costruire' — idro (acqua) + lisi (rottura) = rompere con l'acqua, non unire.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u1-20-3",
+    "topicId": "bio-u1-20",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue la differenza tra condensazione e idrolisi. Per ciascuna di' in quale processo metabolico viene usata (anabolismo o catabolismo) e cosa succede all'acqua.",
+    "answer": "La condensazione e la reazione che UNISCE due molecole formando un legame: mentre le due parti si attaccano, viene espulsa una molecola d'acqua come sottoprodotto (si perde acqua). Viene usata nell'anabolismo per costruire molecole grandi: ad esempio gli aminoacidi si uniscono cosi per formare le proteine. L'idrolisi e la reazione opposta: si AGGIUNGE acqua per spezzare un legame e separare due molecole. Viene usata nel catabolismo per demolire polimeri: la digestione degli alimenti (amido → glucosio, proteine → aminoacidi) e tutta idrolisi. In sintesi: condensazione = perdi acqua e costruisci; idrolisi = aggiungi acqua e demolisci.",
+    "explain": "Da ricordare: condensazione (= disidratazione) → perdi H2O → anabolismo. Idrolisi → aggiungi H2O → catabolismo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-bio-u1-20-4",
+    "topicId": "bio-u1-20",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "L'ATP e la 'moneta energetica' della cellula. Quale delle seguenti affermazioni su questa molecola e CORRETTA?",
+    "choices": [
+      "Contiene lo zucchero ribosio",
+      "Contiene la base azotata adenosina",
+      "Non e utilizzata dai batteri",
+      "Il distacco dei gruppi fosfato e altamente endoergonico",
+      "La base azotata lega direttamente i tre gruppi fosfato"
+    ],
+    "answer": 0,
+    "explain": "L'ATP (adenosina trifosfato) e formata da: base azotata adenina + zucchero ribosio + 3 gruppi fosfato. Quindi contiene il ribosio: opzione corretta. Le trappole: 'contiene adenosina' confonde il nome della molecola intera (adenosina = adenina + ribosio) con la base azotata da sola (che si chiama adenina, non adenosina); 'non usata dai batteri' e falsa perche l'ATP e universale in tutti gli organismi viventi; 'il distacco dei fosfati e endoergonico' e l'opposto esatto — e invece esoergonico, cioe libera energia (per questo e utile come fonte di energia); 'la base lega direttamente i fosfati' e sbagliato perche sono i fosfati ad essere legati allo zucchero, non alla base azotata.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-bio-u1-20-5",
+    "topicId": "bio-u1-20",
+    "materia": "biologia",
+    "unita": 1,
+    "type": "mc",
+    "q": "Una cellula muscolare di un cane sintetizza nuove proteine contrattili dopo l'allenamento. Quale delle seguenti affermazioni descrive CORRETTAMENTE questo processo?",
+    "choices": [
+      "E catabolismo: demolisce molecole grandi liberando ATP",
+      "E anabolismo: costruisce molecole grandi da aminoacidi consumando ATP",
+      "E idrolisi: aggiunge acqua per formare nuovi legami peptidici",
+      "E condensazione: demolisce le proteine rilasciando aminoacidi",
+      "Non richiede energia perche avviene spontaneamente"
+    ],
+    "answer": 1,
+    "explain": "Costruire proteine da aminoacidi e anabolismo: si formano molecole grandi (le proteine) a partire da molecole piccole (aminoacidi) mediante condensazione, consumando ATP. Le trappole: 'catabolismo' e l'opposto esatto — il catabolismo demolisce e libera energia, non costruisce; 'idrolisi' e sbagliato perche l'idrolisi aggiunge acqua per ROMPERE i legami, non per formarli (nella sintesi proteica avviene condensazione, cioe si PERDE acqua); 'condensazione che demolisce' scambia i termini — la condensazione COSTRUISCE, non demolisce; 'non richiede energia' e falsa perche l'anabolismo per definizione consuma energia (ATP).",
+    "tags": ["prova d'esame"]
+  }
+]

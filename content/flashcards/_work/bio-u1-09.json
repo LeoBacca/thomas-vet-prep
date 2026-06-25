@@ -1,0 +1,39 @@
+{
+ "id": "bio-u1-09",
+ "titolo": "Eubatteri e archeobatteri",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "09-eubatteri-e-archeobatteri",
+ "freq": 2,
+ "risorseMdx": "src/pages/risorse/biologia/u1/09-eubatteri-e-archeobatteri.mdx",
+ "examQuestions": [
+  {
+   "year": "2010",
+   "q": "Alcuni batteri possono vivere in sorgenti a temperature molto elevate in quanto:",
+   "choices": [
+    "i loro enzimi agiscono anche a temperature molto elevate",
+    "i loro enzimi sono insensibili alla temperatura",
+    "sono in grado di mantenere la loro temperatura interna a valori inferiori a quelli dell'acqua circostante",
+    "grazie alle alte temperature tutte le loro reazioni possono svolgersi in assenza di enzimi",
+    "utilizzano come catalizzatori solo molecole non proteiche"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Quale gruppo di organismi tra i seguenti NON fa parte del dominio eukaryota?",
+   "choices": [
+    "Archaea",
+    "Plantae",
+    "Fungi",
+    "Animalia",
+    "Protista"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "discriminazione"
+  }
+ ]
+}

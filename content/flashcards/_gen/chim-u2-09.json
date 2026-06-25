@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u2-09-1",
+    "topicId": "chim-u2-09",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: in una miscela di gas ogni gas si comporta come se fosse da solo nel recipiente, ignorando gli altri gas presenti.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Questo e il cuore della legge di Dalton: ogni gas spinge per conto suo, come se gli altri non esistessero. L'ossigeno dell'aria non 'sente' l'azoto. Per questo la pressione totale e semplicemente la somma di tutte le singole spinte.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-09-2",
+    "topicId": "chim-u2-09",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "L'aria e fatta circa di 78% azoto, 21% ossigeno e 1% altri gas. Se la pressione totale dell'aria e 760 mmHg, quale gas ha la pressione parziale piu alta?",
+    "choices": [
+      "L'ossigeno, perche e quello che usiamo per respirare",
+      "L'azoto, perche e il piu abbondante (78%)",
+      "L'anidride carbonica, perche e quella che espiriamo",
+      "Tutti i gas hanno la stessa pressione parziale"
+    ],
+    "answer": 1,
+    "explain": "Piu un gas e abbondante nella miscela, piu alta e la sua pressione parziale. L'azoto e il 78% dell'aria, quindi spinge molto di piu degli altri. L'ossigeno (21%) ha una pressione parziale di circa 160 mmHg, molto inferiore a quella dell'azoto (circa 593 mmHg). L'idea che 'quello che usiamo per respirare spinga di piu' e una trappola classica: il corpo usa l'O2, ma questo non lo rende il gas dominante in termini di pressione.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-09-3",
+    "topicId": "chim-u2-09",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "open",
+    "q": "Spiega: (1) cosa dice la legge di Dalton, (2) cosa significa 'pressione parziale', e (3) perche in alta montagna si fa piu fatica a respirare anche se la percentuale di ossigeno nell'aria e sempre 21%.",
+    "answer": "1) La legge di Dalton dice che la pressione totale di una miscela di gas e uguale alla SOMMA delle pressioni parziali di tutti i gas presenti. In formula: P totale = P(O2) + P(N2) + P(CO2) + ... E come un conto al ristorante: il totale e la somma di quello che ha consumato ciascuno. 2) La pressione parziale di un gas e la pressione che quel gas eserciterebbe se fosse DA SOLO nel recipiente, alla stessa temperatura e volume. Gli altri gas non contano: ogni gas spinge per conto suo. 3) In alta montagna la pressione TOTALE dell'aria e piu bassa (meno peso di aria sopra di te). Poiche la pressione parziale di ogni gas e una frazione della pressione totale, anche la pressione parziale dell'ossigeno scende, anche se la sua percentuale resta 21%. Meno spinta dell'O2 → meno ossigeno che passa dal polmone al sangue → meno ossigeno nei tessuti → affanno.",
+    "explain": "Il punto chiave da non dimenticare: il corpo non sente le percentuali, sente le pressioni parziali. La stessa percentuale di O2 puo dare pressioni parziali molto diverse se cambia la pressione totale.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u2-09-4",
+    "topicId": "chim-u2-09",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Chi formulo l'enunciato: 'La pressione totale di una miscela di gas e pari alla somma delle pressioni parziali dei singoli componenti', noto come legge delle pressioni parziali?",
+    "choices": [
+      "Dalton",
+      "Avogadro",
+      "Boyle",
+      "Henry",
+      "Charles"
+    ],
+    "answer": 0,
+    "explain": "La risposta e Dalton. Le trappole: Boyle e famoso per la relazione pressione-volume a temperatura costante (P·V = costante), non per le miscele. Avogadro e legato al numero di Avogadro e al fatto che volumi uguali di gas diversi contengono lo stesso numero di molecole. Henry riguarda la solubilita dei gas nei liquidi (fondamentale in fisiologia, ma diverso!). Charles descrive la relazione volume-temperatura. Ogni scienziato ha la SUA legge: importante non mescolarli.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u2-09-5",
+    "topicId": "chim-u2-09",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Confrontando l'aria inspirata con quella espirata, quale delle seguenti affermazioni e CORRETTA?",
+    "choices": [
+      "L'aria espirata ha meno O2 e piu CO2 rispetto all'aria inspirata",
+      "L'aria espirata ha piu O2 e meno CO2 rispetto all'aria inspirata",
+      "L'aria inspirata e l'aria espirata hanno la stessa composizione: cambiano solo le pressioni totali",
+      "L'aria espirata contiene solo CO2 e niente O2",
+      "L'aria espirata ha piu N2 perche il corpo produce azoto come scarto"
+    ],
+    "answer": 0,
+    "explain": "L'aria espirata ha MENO ossigeno (una parte e passata nel sangue nei polmoni) e PIU anidride carbonica (il corpo la produce come scarto del metabolismo e la elimina con il respiro). La trappola 'piu O2' inverte il ragionamento: e l'opposto esatto. 'Stessa composizione' e falsa: la composizione cambia eccome, e proprio il motivo per cui il respiro funziona. 'Solo CO2' e esagerata: usiamo solo parte dell'O2, non tutto. Il filler sull'azoto e fuori tema: il corpo non produce azoto gassoso come scarto.",
+    "tags": ["prova d'esame"]
+  }
+]

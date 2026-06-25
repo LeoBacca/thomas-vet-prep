@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-18-1",
+    "topicId": "fis-u2-18",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: una pallottola da 10 g che vola a 500 m/s può avere la stessa quantità di moto di un camion da 5.000 kg che si muove lentissimo a 1 mm/s.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. La quantità di moto è p = m × v. Pallottola: 0,01 kg × 500 m/s = 5 kg·m/s. Camion: 5.000 kg × 0,001 m/s = 5 kg·m/s. Uguale! Massa grande e velocità bassa si compensano, esattamente come massa piccola e velocità alta. Per questo 'fermare' non dipende solo dal peso né solo dalla velocità, ma dal prodotto dei due.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-18-2",
+    "topicId": "fis-u2-18",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un portiere para un pallone: applica una forza per una frazione di secondo e il pallone si ferma. Come si chiama il 'colpo' che la forza trasferisce al pallone, e qual è la sua formula?",
+    "choices": [
+      "Impulso: J = F × Δt (forza moltiplicata per il tempo di applicazione)",
+      "Energia cinetica: Ec = ½ m v²",
+      "Lavoro: L = F × s (forza per lo spazio percorso)",
+      "Potenza: P = L / Δt"
+    ],
+    "answer": 0,
+    "explain": "Quello che la forza trasferisce a un oggetto nel tempo si chiama impulso (J). La formula è J = F × Δt: conta sia quanto è grande la forza sia per quanto tempo agisce. L'impulso è uguale alla variazione di quantità di moto (Δp), quindi spiega perché una forza piccola ma applicata a lungo può cambiare molto la velocità di un oggetto, come in una spinta dolce prolungata. Energia cinetica, lavoro e potenza sono grandezze diverse.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-18-3",
+    "topicId": "fis-u2-18",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Due vagoni ferroviari identici (stessa massa m) si muovono su un binario senza attrito. Il vagone A va a velocità v₀, il vagone B è fermo. Si scontrano e restano attaccati (urto anelastico). Spiega a parole cosa succede alla quantità di moto totale e ricava la velocità finale del sistema unito. Poi dimmi: l'energia cinetica si conserva? Perché?",
+    "answer": "La quantità di moto totale si conserva, perché non ci sono forze esterne (il binario è senza attrito). Prima dell'urto: p_tot = m × v₀ + m × 0 = m·v₀. Dopo l'urto i due vagoni sono uniti e hanno massa totale 2m. Chiamo v_f la velocità finale: 2m × v_f = m·v₀, quindi v_f = v₀/2. I due vagoni si muovono insieme a metà della velocità iniziale. L'energia cinetica invece NON si conserva: prima era Ec = ½ m v₀², dopo è Ec = ½ (2m)(v₀/2)² = ¼ m v₀². Metà dell'energia cinetica iniziale è andata persa: si è trasformata in calore, suono e deformazione nel momento dell'aggancio. Questo è tipico degli urti anelastici.",
+    "explain": "Regola chiave: negli urti anelastici la quantità di moto si conserva SEMPRE (se non ci sono forze esterne), ma l'energia cinetica NO.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-18-4",
+    "topicId": "fis-u2-18",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Due biglie di metallo con peso diverso si muovono su un piano orizzontale l'una verso l'altra e si scontrano in modo elastico. Non ci sono forze esterne. Quale affermazione è corretta?",
+    "choices": [
+      "Si conservano sia la quantità di moto totale che l'energia cinetica totale",
+      "Si conserva solo l'energia cinetica totale, ma non la quantità di moto totale",
+      "Si conserva solo la quantità di moto totale, ma parte dell'energia cinetica viene dissipata",
+      "L'urto cambia sia la quantità di moto totale che l'energia cinetica totale",
+      "La quantità di moto totale cambia a seconda dell'angolo di impatto delle due sfere"
+    ],
+    "answer": 0,
+    "explain": "Nell'urto ELASTICO si conservano entrambe le grandezze: la quantità di moto totale (sempre, in assenza di forze esterne) e anche l'energia cinetica totale (solo negli urti elastici, non in quelli anelastici). La risposta 'si conserva solo l'energia cinetica' è l'opposto esatto: la quantità di moto si conserva in QUALSIASI urto senza forze esterne, non solo in quelli elastici. 'Parte dell'energia cinetica viene dissipata' descrive l'urto ANelastico, non l'elastico. 'Cambia entrambe' è completamente sbagliato: senza forze esterne la quantità di moto non cambia mai. 'Dipende dall'angolo' è fuori tema: la conservazione non dipende dalla geometria dell'impatto.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-18-5",
+    "topicId": "fis-u2-18",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Una palla da biliardo di 0,15 kg si muove a 1,6 m/s, colpisce la sponda e rimbalza nella direzione opposta a 1,4 m/s. La forza media sulla sponda è 30 N. Per quanto tempo la palla è rimasta a contatto con la sponda?",
+    "choices": [
+      "0,015 s",
+      "0,15 s",
+      "0,001 s",
+      "1,0 s",
+      "15 s"
+    ],
+    "answer": 0,
+    "explain": "Usa il teorema impulso-quantità di moto: J = Δp = F × Δt. Attenzione ai segni: prendi come positiva la direzione di arrivo. p_iniziale = +0,15 × 1,6 = +0,24 kg·m/s. Dopo il rimbalzo la palla va nella direzione opposta: p_finale = −0,15 × 1,4 = −0,21 kg·m/s. Variazione: Δp = −0,21 − 0,24 = −0,45 kg·m/s (il modulo è 0,45). Quindi F × Δt = 0,45, da cui Δt = 0,45 / 30 = 0,015 s. La trappola più frequente è dimenticare il cambio di verso e sottrarre le velocità invece di sommarle: con il rimbalzo le velocità vanno sommate come moduli (1,6 + 1,4 = 3,0 m/s), non sottratte (1,6 − 1,4 = 0,2 m/s). Chi sbaglia calcola Δp = 0,15 × 0,2 = 0,03 kg·m/s e ottiene Δt = 0,03 / 30 = 0,001 s: ecco perché 0,001 s è messo apposta come distrattore (opzione C). 0,15 s è un numero presente nel testo ma sbagliato (confonde la massa con il tempo). 1,0 s e 15 s sono troppo lontani dalla realtà fisica.",
+    "tags": ["prova d'esame"]
+  }
+]

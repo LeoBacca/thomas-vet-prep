@@ -1,0 +1,53 @@
+{
+ "id": "bio-u7-01",
+ "titolo": "Il ciclo cellulare: fasi, punti di controllo, cicline e CDK",
+ "materia": "biologia",
+ "unita": 7,
+ "slug": "01-il-ciclo-cellulare-fasi-punti-di",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/biologia/u7/01-il-ciclo-cellulare-fasi-punti-di.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Alcune cellule prelevate dalla cute sono state coltivate su un substrato nutritivo. Tramite un'opportuna tecnica si è potuto misurare la quantità di DNA che una cellula di questa coltura presentava al passare del tempo, come riporta il grafico. Si può dedurre che la cellula:",
+   "choices": [
+    "dopo 6 ore ha iniziato la mitosi",
+    "dopo 6 ore è morta",
+    "dopo 6 ore ha iniziato la meiosi",
+    "dopo 14 ore muore",
+    "dopo 4 ore è in anafase"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2011",
+   "q": "Quale dei seguenti eventi non si verifica mai nell'interfase del ciclo cellulare?",
+   "choices": [
+    "la citodieresi",
+    "il metabolismo cellulare",
+    "la sintesi proteica",
+    "lo splicing del trascritto primario",
+    "la duplicazione del DNA nucleare"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Che cosa comprende la fase M del ciclo cellulare di una cellula eucariotica?",
+   "choices": [
+    "Mitosi e citodieresi",
+    "Solo la mitosi",
+    "Fasi G1, S, G2 e mitosi",
+    "Fasi S, G2 e mitosi",
+    "Fase S e mitosi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "definizione"
+  }
+ ]
+}

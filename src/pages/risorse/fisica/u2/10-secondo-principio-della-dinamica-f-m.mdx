@@ -1,0 +1,111 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-10">
+
+## Cos'è il secondo principio della dinamica?
+
+Il secondo principio della dinamica — detto anche **seconda legge di Newton** — risponde a una domanda semplice:
+
+> Se spingi qualcosa, quanto velocemente si mette in moto?
+
+La risposta è racchiusa in una formula cortissima:
+
+**F = m · a**
+
+- **F** = forza applicata (si misura in Newton, N)
+- **m** = massa dell'oggetto (si misura in chilogrammi, kg)
+- **a** = accelerazione che acquista l'oggetto (si misura in m/s²)
+
+<div class="callout">💡 <strong>In parole semplici:</strong> più forza metti, più l'oggetto accelera. Ma se l'oggetto è pesante (massa grande), la stessa forza lo accelera meno.</div>
+
+---
+
+## Un esempio dalla vita di tutti i giorni
+
+Immagina di spingere un carrello del supermercato vuoto e poi uno pieno.
+
+- Con lo **stesso sforzo** (stessa forza), il carrello vuoto schizza via, quello pieno si muove appena.
+- Questo succede perché il carrello pieno ha una **massa maggiore**, quindi la stessa forza produce un'**accelerazione minore**.
+
+Oppure: vuoi far accelerare di più il carrello pieno? Ti basta **spingere più forte** (aumentare la forza).
+
+---
+
+## Come si leggono le tre variabili
+
+| Simbolo | Nome | Che cosa rappresenta |
+|---------|------|----------------------|
+| F | Forza | La "spinta" o la "trazione" applicata |
+| m | Massa | Quanto è "pesante" (quanta materia ha) l'oggetto |
+| a | Accelerazione | Quanto cambia la velocità nel tempo |
+
+La formula si può girare in due modi utili:
+
+- **a = F / m** → voglio sapere che accelerazione ottengo
+- **m = F / a** → voglio sapere la massa di un oggetto
+
+---
+
+## Lo schema logico
+
+<Diagram caption="Relazione tra forza, massa e accelerazione secondo F = m·a" code={`flowchart TB
+  F["Forza F (Newton)"] --> A["Accelerazione a (m/s²)"]
+  M["Massa m (kg)"] --> A
+  A --> R["Il corpo cambia velocità"]`} />
+
+<Diagram caption="Come cambia l'accelerazione al variare di forza e massa" code={`flowchart LR
+  F1["Forza doppia"] --> A1["Accelerazione doppia<br/>(stessa massa)"]
+  M1["Massa doppia"] --> A2["Accelerazione dimezzata<br/>(stessa forza)"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="PiTKlNIoRTU" title="Secondo principio della dinamica" />
+<VideoVisto id="fis-u2-10" />
+
+---
+
+## Da ricordare
+
+- **F = m · a**: la forza è uguale alla massa moltiplicata per l'accelerazione.
+- Forza e accelerazione vanno **nella stessa direzione**: se spingi a destra, l'oggetto accelera a destra.
+- A parità di forza, un oggetto più **massivo** accelera **meno**: la massa misura la resistenza al cambiamento di moto (inerzia).
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Una forza di 10 N agisce su un oggetto di massa 2 kg. Quale accelerazione acquista l'oggetto?"
+  opzioni={["2 m/s²", "5 m/s²", "20 m/s²", "0,2 m/s²"]}
+  corretta={1}
+  spiegazione="a = F / m = 10 / 2 = 5 m/s². Si divide la forza per la massa."
+/>
+
+<Quiz
+  domanda="Raddoppi la forza applicata su un oggetto di massa costante. Che cosa succede all'accelerazione?"
+  opzioni={["Rimane uguale", "Si dimezza", "Raddoppia", "Quadruplica"]}
+  corretta={2}
+  spiegazione="Dalla formula a = F / m, se F raddoppia e m resta costante, anche a raddoppia. Forza e accelerazione sono direttamente proporzionali."
+/>
+
+<Quiz
+  domanda="Un oggetto di massa 5 kg acquista un'accelerazione di 3 m/s². Qual è la forza applicata?"
+  opzioni={["1,67 N", "8 N", "15 N", "0,6 N"]}
+  corretta={2}
+  spiegazione="F = m · a = 5 · 3 = 15 N. Si moltiplica massa per accelerazione."
+/>
+
+<Esercizio
+  problema="Una macchina di massa 1000 kg passa da 0 a 20 m/s in 5 secondi. Calcola: (1) l'accelerazione della macchina, (2) la forza media che il motore deve esercitare."
+  soluzione="(1) Accelerazione: a = Δv / Δt = (20 - 0) / 5 = 4 m/s². (2) Forza: F = m · a = 1000 · 4 = 4000 N."
+/>
+
+</section>
+
+</RisorsaLayout>

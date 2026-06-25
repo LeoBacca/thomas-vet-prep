@@ -1,0 +1,106 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-06">
+
+I **carboidrati** sono gli **zuccheri**. Sono la prima benzina del corpo: quando mangi pane, pasta o frutta, è da qui che le tue cellule prendono energia. Il più importante è il **glucosio**, lo zucchero che gira nel sangue. I carboidrati più semplici, fatti di una sola "unità", si chiamano **monosaccaridi** ("mono" = uno, "saccaride" = zucchero).
+
+Un monosaccaride è una piccola catenella di atomi di carbonio con tanti gruppi **OH** (ossidrili) attaccati. La cosa importante è che questi OH possono "guardare" a destra o a sinistra: la stessa formula può dare molecole diverse a seconda di come sono orientate. Questo si chiama **stereochimica** ed è il cuore di questa pagina.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina le tue due mani. Hanno gli stessi pezzi (cinque dita, un pollice) ma sono l'una lo specchio dell'altra: la destra non entra nel guanto sinistro. Gli zuccheri funzionano così: stessi atomi, ma "mani" diverse. E il corpo, come il guanto, sa distinguerle.</div>
+
+<Diagram caption="Il glucosio in proiezione di Fischer: la croce in alto è il carbonio 1, quella in basso il carbonio 6" code={`flowchart TB
+  C1["C1 — gruppo CHO (aldeide)"] --> C2["C2 — OH a destra"]
+  C2 --> C3["C3 — OH a sinistra"]
+  C3 --> C4["C4 — OH a destra"]
+  C4 --> C5["C5 — OH a destra<br/>(questo decide D o L)"]
+  C5 --> C6["C6 — gruppo CH2OH"]`} />
+
+## La proiezione di Fischer: come si disegna uno zucchero
+
+Disegnare in 3D è difficile. Allora si usa un trucco semplice inventato dal chimico Fischer: si stira la molecola dritta come una **scaletta verticale** e si guardano gli OH che spuntano a destra o a sinistra.
+
+Le regole sono solo tre, facili da ricordare:
+
+- Si mette in **alto** il carbonio più "importante" (nel glucosio è il gruppo CHO, l'aldeide); in **basso** il CH2OH.
+- Ogni gruppo OH è scritto a **destra** o a **sinistra** della scaletta.
+- Le linee orizzontali (gli OH) vengono verso di te; quelle verticali vanno indietro.
+
+È come fotografare una persona in piedi, di fronte: testa in alto, piedi in basso, braccia che escono ai lati. Una volta fissata la posa, basta guardare la foto per sapere com'è fatta.
+
+## D e L: lo zucchero "destro" e quello "specchio"
+
+Guarda l'OH del **penultimo** carbonio in basso (nel glucosio è il C5).
+
+- Se quell'OH sta a **destra** → lo zucchero è della serie **D** (dal latino *dexter*, destra).
+- Se sta a **sinistra** → è della serie **L** (*laevus*, sinistra).
+
+D e L sono **immagini allo specchio** l'uno dell'altro, come la mano destra e la sinistra. Si chiamano **enantiomeri**.
+
+La cosa affascinante per medicina e veterinaria: in natura, e quindi nel tuo corpo, quasi tutti gli zuccheri sono nella forma **D**. Le cellule hanno enzimi (piccole macchine) costruiti apposta per la forma D, e ignorano la forma L. È lo stesso motivo per cui il guanto destro va solo sulla mano destra: la forma deve combaciare.
+
+<Diagram caption="D e L sono immagini allo specchio: cambia il lato dell'OH sul penultimo carbonio" code={`flowchart LR
+  M["Stesso zucchero, due 'mani'"] --> D["D-glucosio<br/>OH a DESTRA sul C5<br/>(la forma del corpo)"]
+  M --> L["L-glucosio<br/>OH a SINISTRA sul C5<br/>(l'immagine allo specchio)"]`} />
+
+## Isomeri, epimeri e anomeri: tre parole, una sola idea
+
+Sembrano paroloni, ma dicono tutti la stessa cosa: **stessa formula, posa diversa**. Cambia solo *quanto* è diversa la posa.
+
+- **Isomeri**: il termine generale. Stessi atomi, stesso numero, ma disposti in modo diverso. È la categoria grande che contiene le altre.
+- **Epimeri**: due zuccheri che differiscono per **un solo** OH. Cambia un solo "dito" e basta. Esempio classico: **glucosio** e **galattosio** sono epimeri (differiscono solo sul carbonio 4). Per questo il tuo fegato riesce a trasformare uno nell'altro con poche mosse: sono quasi gemelli.
+- **Anomeri**: quando lo zucchero si **chiude ad anello** (in acqua il glucosio non resta dritto, si arrotola in un cerchio), nasce un nuovo OH che può puntare in **giù** (forma **alfa**) o in **su** (forma **beta**). Le due versioni si chiamano anomeri. Sembra un dettaglio, ma decide come gli zuccheri si incastrano: la cellulosa (legno, fibra) è fatta di legami **beta** che non digeriamo, mentre l'amido (pane, patate) ha legami **alfa** che digeriamo benissimo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> <strong>epimeri</strong> = cambia un solo OH lungo la catena. <strong>Anomeri</strong> = cambia l'OH nuovo che si forma quando lo zucchero si chiude ad anello (alfa giù, beta su).</div>
+
+## Guarda il video
+
+<YouTube id="qDuJ5IHJpXo" title="Monosaccaridi: serie D ed L e proiezione di Fischer — HUB Scuola" />
+
+<VideoVisto id="chim-u7-06" />
+
+## Da ricordare
+
+- I **monosaccaridi** sono gli zuccheri più semplici (una sola unità); il più importante è il **glucosio**, energia delle cellule.
+- La **proiezione di Fischer** disegna lo zucchero come una scaletta dritta: gli OH spuntano a destra o a sinistra.
+- **D o L** si decide guardando l'OH del penultimo carbonio: a destra = **D**, a sinistra = **L**. Sono immagini allo specchio (enantiomeri); nel corpo dominano i **D**.
+- **Epimeri** = differiscono per **un solo** OH (es. glucosio e galattosio).
+- **Anomeri** = le due forme **alfa** (OH in giù) e **beta** (OH in su) che nascono quando lo zucchero si chiude ad anello.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Per stabilire se uno zucchero è della serie D o L, quale gruppo OH devi guardare nella proiezione di Fischer?"
+  opzioni={["quello del primo carbonio in alto", "l'OH del penultimo carbonio (il più in basso prima del CH2OH)", "un OH qualsiasi a caso", "il gruppo CHO"]}
+  corretta={1}
+  spiegazione="Si guarda l'OH del penultimo carbonio: se è a destra lo zucchero è D, se è a sinistra è L. Nel glucosio è il carbonio 5."
+/>
+
+<Quiz
+  domanda="Glucosio e galattosio differiscono per un solo gruppo OH lungo la catena. Come si chiamano due zuccheri così?"
+  opzioni={["enantiomeri", "anomeri", "epimeri", "identici"]}
+  corretta={2}
+  spiegazione="Gli epimeri differiscono per la configurazione di un solo carbonio. Glucosio e galattosio sono epimeri (differiscono sul C4)."
+/>
+
+<Quiz
+  domanda="Quando un monosaccaride si chiude ad anello, l'OH nuovo può puntare in giù o in su, dando due forme. Come si chiamano?"
+  opzioni={["isomeri di struttura", "anomeri (alfa e beta)", "enantiomeri", "epimeri"]}
+  corretta={1}
+  spiegazione="Le due forme che nascono dalla chiusura ad anello si chiamano anomeri: alfa (OH in giù) e beta (OH in su)."
+/>
+
+<Esercizio
+  problema="In una proiezione di Fischer hai due molecole con la stessa formula. Nella prima, l'OH del penultimo carbonio è a destra; nella seconda è a sinistra, e anche tutti gli altri OH sono ribaltati di lato. Sono lo stesso zucchero? E come si chiama questa coppia?"
+  soluzione="No, non sono lo stesso zucchero: sono uno l'immagine allo specchio dell'altro. Si chiamano enantiomeri (uno è la forma D, l'altro la forma L). Come la mano destra e la mano sinistra: stessi pezzi, ma non sovrapponibili."
+/>
+
+</section>
+
+</RisorsaLayout>

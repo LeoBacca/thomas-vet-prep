@@ -1,0 +1,30 @@
+[
+  {
+    "id": "fc-chim-u7-14-1",
+    "topicId": "chim-u7-14",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Un radicale libero e una molecola con un elettrone spaiato. Cosa fa per 'stare meglio'?",
+    "choices": [
+      "Dona un elettrone a un antiossidante e si neutralizza",
+      "Ruba un elettrone alla molecola vicina, danneggiandola e creando un nuovo radicale",
+      "Si divide in due molecole piu piccole e stabili",
+      "Assorbe ossigeno e si scioglie nell'acqua cellulare"
+    ],
+    "answer": 1,
+    "explain": "Come una persona senza coppia che strappa il partner a un'altra coppia: il radicale ruba un elettrone alla molecola vicina, la danneggia e la trasforma in un nuovo radicale. Parte cosi una reazione a catena (domino). L'antiossidante e il 'buono' che dona l'elettrone al radicale senza creare nuovi danni, fermando il domino.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u7-14-2",
+    "topicId": "chim-u7-14",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Descrivi cosa sono i radicali liberi, quale danno fanno al DNA (deaminazione) e come gli antiossidanti li fermano. Cita almeno due antiossidanti e dove agiscono.",
+    "answer": "I radicali liberi sono molecole con un elettrone spaiato: per accoppiarlo rubano un elettrone alla prima molecola che incontrano, rendendola a sua volta un radicale. Si innesca cosi una reazione a catena di danni. Un danno tipico al DNA e la deaminazione: il radicale toglie il gruppo amminico (NH2) da una 'lettera' del DNA. E come cancellare una letterina nel manuale di istruzioni della cellula: la lettera viene letta in modo sbagliato e puo generare una mutazione. Gli antiossidanti fermano la catena donando un elettrone al radicale senza diventare loro stessi pericolosi. Glutatione: lo produce la cellula stessa, agisce nella parte acquosa interna. Vitamina E: si scioglie nei grassi, protegge le membrane cellulari dall'ossidazione (l'irrancidimento). Carotenoidi (es. beta-carotene): pigmenti colorati di frutta e verdura, spengono anch'essi i radicali.",
+    "explain": "Radicale libero = elettrone spaiato → ruba → reazione a catena. Deaminazione = tolto NH2 dal DNA → possibile mutazione. Antiossidanti: glutatione (cellula), vitamina E (membrane di grasso), carotenoidi (frutta/verdura colorata).",
+    "tags": ["risposta aperta"]
+  }
+]

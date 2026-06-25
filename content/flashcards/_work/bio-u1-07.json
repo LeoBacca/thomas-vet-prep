@@ -1,0 +1,95 @@
+{
+ "id": "bio-u1-07",
+ "titolo": "La cellula procariotica: membrana, parete e strutture esterne (capsula, fimbrie, pili, flagelli)",
+ "materia": "biologia",
+ "unita": 1,
+ "slug": "07-la-cellula-procariotica-membrana-parete-e",
+ "freq": 6,
+ "risorseMdx": "src/pages/risorse/biologia/u1/07-la-cellula-procariotica-membrana-parete-e.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Dall'osservazione della figura si può dedurre che essa rappresenta:",
+   "choices": [
+    "una cellula procariotica",
+    "una cellula eucariotica",
+    "una cellula fungina",
+    "un lievito",
+    "una muffa"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2009",
+   "q": "Quale fra i seguenti organuli citoplasmatici è presente sia negli organismi procarioti sia in quelli eucarioti:",
+   "choices": [
+    "i ribosomi",
+    "i mitocondri",
+    "i lisosomi",
+    "l'apparato di Golgi",
+    "il reticolo endoplasmatico ruvido (RER)"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2014",
+   "q": "Quale delle seguenti affermazioni per il DNA dei procarioti NON è corretta?",
+   "choices": [
+    "È contenuto nel nucleolo",
+    "Solitamente non contiene proteine istoniche",
+    "Di solito ha una forma circolare",
+    "Si trova nel citoplasma",
+    "I plasmidi contengono DNA"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Quale delle seguenti caratteristiche è presente nelle cellule procariotiche?",
+   "choices": [
+    "Possiedono un nucleoide che contiene DNA circolare",
+    "Sono sempre sprovviste di una parete cellulare",
+    "Hanno un sistema di endomembrane",
+    "Contengono mitocondri piccoli",
+    "Hanno un nucleolo dove vengono assemblati i ribosomi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Quale delle seguenti strutture NON è presente nei batteri?",
+   "choices": [
+    "Nucleo",
+    "Capsula",
+    "Parete cellulare",
+    "Citosol",
+    "Ribosomi"
+   ],
+   "correct": 0,
+   "difficolta": 1,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2024Luglio",
+   "q": "Quale delle seguenti affermazioni sulla parete cellulare è FALSA?",
+   "choices": [
+    "È molto comune nelle cellule animali",
+    "Circonda la membrana cellulare",
+    "È presente nella maggior parte dei procarioti",
+    "Serve a proteggere la cellula da agenti esterni",
+    "Mantiene la forma e il turgore cellulare"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "id": "fis-u2-04",
+ "titolo": "Moto rettilineo uniforme",
+ "materia": "fisica",
+ "unita": 2,
+ "slug": "04-moto-rettilineo-uniforme",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/fisica/u2/04-moto-rettilineo-uniforme.mdx",
+ "examQuestions": [
+  {
+   "year": "2022",
+   "q": "Una pecora si allontana dal gregge lungo un sentiero rettilineo, muovendosi alla velocità costante di 1 m/s. Il cane pastore se ne accorge quando la pecora dista 90 m. Sapendo che il cane corre alla velocità costante di 36 km/h, quanti secondi impiegherà il cane a raggiungere la pecora?",
+   "choices": [
+    "10 s",
+    "12 s",
+    "24 s",
+    "36 s",
+    "8 s"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  }
+ ]
+}

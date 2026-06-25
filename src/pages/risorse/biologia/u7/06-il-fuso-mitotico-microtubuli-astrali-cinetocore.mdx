@@ -1,0 +1,153 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u7-06">
+
+## Cos'è il fuso mitotico?
+
+Il **fuso mitotico** è la "macchina" che la cellula costruisce per dividere i cromosomi in modo preciso durante la mitosi. Immagina un pallone da rugby: ha due punte (i poli) e al centro si allarga. Il fuso ha esattamente questa forma, fatto di lunghissime fibre proteiche chiamate **microtubuli**.
+
+I microtubuli sono come tubi cavi di proteina (tubulina). Si allungano, si accorciano e si smontano in continuazione: sono dinamici, non statici.
+
+---
+
+## I tre tipi di microtubuli del fuso
+
+Il fuso non è tutto uguale: ci sono tre categorie di microtubuli, ciascuna con un compito diverso.
+
+### 1. Microtubuli astrali
+Partono dal polo e si allargano verso l'esterno della cellula, come i raggi di un sole. Servono ad ancorare il fuso alla corteccia interna della cellula e a posizionare i poli nel posto giusto.
+
+### 2. Microtubuli del cinetocore
+Questi sono i "ganci". Partono dal polo e si attaccano a una struttura proteica sui cromosomi chiamata **cinetocore**. Ogni cromosoma ha due cinetocori (uno per ogni cromatidio fratello), uno rivolto verso un polo e l'altro verso il polo opposto. Quando si accorciano, tirano il cromosoma verso il polo.
+
+### 3. Microtubuli interpolari (o polari)
+Partono da un polo e si sovrappongono con quelli del polo opposto al centro del fuso. Si "spingono" a vicenda e servono ad allungare la cellula durante l'anafase.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il fuso è come un sistema di cavi da trasloco: i cavi astrali tengono fermo il camion, i cavi del cinetocore agganciano i mobili (cromosomi) e li trascinano, i cavi interpolari tengono aperto il vano di carico.</div>
+
+---
+
+## Il cinetocore: il punto di aggancio
+
+Il **cinetocore** è una struttura a forma di disco che si assembla sul centromero di ogni cromatidio. Il centromero è la "strozzatura" del cromosoma a forma di X — il punto dove i due cromatidi fratelli rimangono uniti.
+
+Sul cinetocore si trova un complesso proteico fondamentale: **NDC80**. NDC80 funziona come un moschettone che tiene agganciato il microtubulo al cinetocore. Se NDC80 è assente o difettoso, i cromosomi non riescono ad attaccarsi al fuso e la cellula non riesce a dividersi correttamente.
+
+---
+
+## I meccanoenzimi: i motori molecolari
+
+I microtubuli da soli non si muovono. Servono dei **motori molecolari** — proteine che usano ATP (energia) per camminare sui microtubuli. Si chiamano **meccanoenzimi** perché fanno lavoro meccanico (muovono cose) usando reazioni enzimatiche.
+
+I due principali sono:
+
+- **Chinesina**: cammina verso il polo positivo del microtubulo (verso l'esterno del fuso). Usa ATP per "fare passi" lungo il tubulo. Alcune chinesine spingono i microtubuli interpolari verso l'esterno, allungando la cellula.
+- **Dineina**: cammina verso il polo negativo (verso il centrosoma, cioè il polo). Tira i cromosomi verso i poli durante l'anafase A.
+
+Pensa alla chinesina come a un portantino che cammina verso il centro della strada, e alla dineina come uno che torna verso il marciapiede.
+
+---
+
+## Come si forma il fuso (passo per passo)
+
+All'inizio della mitosi, i due **centrosomi** (che sono stati duplicati nella fase S) si separano e migrano ai poli opposti della cellula. Ogni centrosoma è il punto di nucleazione (cioè di partenza) dei microtubuli: li fa crescere verso l'esterno come antenne.
+
+I microtubuli esplorano lo spazio interno della cellula in modo casuale: si allungano, si accorciano, si smontano — questo si chiama **instabilità dinamica**. Quando un microtubulo "trova" un cinetocore, ci si attacca e si stabilizza. Gli altri continuano a esplorare finché anche il secondo cinetocore del cromosoma viene catturato dall'altro polo.
+
+Quando un cromosoma è agganciato da entrambi i lati si dice che è in **biorientamento** — è in tensione tra i due poli, come un osso tirato da due cani. Questa tensione è il segnale che la cellula controlla (checkpoint del fuso) prima di procedere all'anafase.
+
+<Diagram caption="Struttura del fuso mitotico: i tre tipi di microtubuli e i loro ruoli" code={`flowchart TB
+  CP1["Centrosoma Polo 1<br/>(nuclea i microtubuli)"]
+  CP2["Centrosoma Polo 2<br/>(nuclea i microtubuli)"]
+
+  CP1 --> MA1["Microtubuli astrali<br/>ancoraggio alla corteccia"]
+  CP2 --> MA2["Microtubuli astrali<br/>ancoraggio alla corteccia"]
+
+  CP1 --> MC1["Microtubuli cinetocore<br/>si attaccano al cinetocore"]
+  CP2 --> MC2["Microtubuli cinetocore<br/>si attaccano al cinetocore"]
+
+  MC1 --> CIN["Cinetocore<br/>(complesso NDC80)<br/>su ogni cromatidio"]
+  MC2 --> CIN
+
+  CP1 --> MI1["Microtubuli interpolari<br/>si sovrappongono al centro"]
+  CP2 --> MI2["Microtubuli interpolari<br/>si sovrappongono al centro"]
+
+  MI1 --> OVL["Zona di sovrapposizione<br/>chinesine spingono i poli<br/>verso l'esterno"]
+  MI2 --> OVL`} />
+
+<Diagram caption="Dal biorientamento all'anafase: come il fuso separa i cromosomi" code={`flowchart LR
+  A["Centrosomi separati<br/>ai due poli"] --> B["Microtubuli crescono<br/>per instabilità dinamica"]
+  B --> C["Microtubulo cattura<br/>il cinetocore"]
+  C --> D["Biorientamento:<br/>cromosoma agganciato<br/>da entrambi i poli"]
+  D --> E["Tensione rilevata<br/>checkpoint del fuso OK"]
+  E --> F["Anafase A:<br/>dineina accorcia<br/>i microtubuli cinetocore<br/>e tira i cromatidi ai poli"]
+  F --> G["Anafase B:<br/>chinesine sui microtubuli<br/>interpolari allungano la cellula"]
+  G --> H["Cromatidi separati<br/>ai due poli"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="YPvvUcCPJuU" title="Centrosomi e centrioli: gli aiutanti della mitosi — Marco Franzoni" />
+<VideoVisto id="bio-u7-06" />
+
+---
+
+## Da ricordare
+
+- Il fuso mitotico ha tre tipi di microtubuli: **astrali** (ancoraggio), **del cinetocore** (tirano i cromosomi) e **interpolari** (allungano la cellula).
+- Il **cinetocore** è il disco proteico sul centromero che aggancia i microtubuli al cromosoma grazie al complesso **NDC80**; il **biorientamento** (aggancio da entrambi i poli) è la condizione necessaria per procedere all'anafase.
+- I **meccanoenzimi** chinesina e dineina sono i motori molecolari che usano ATP per muoversi sui microtubuli e separare fisicamente i cromatidi.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale tipo di microtubulo si attacca direttamente al cinetocore del cromosoma?"
+  opzioni={[
+    "Microtubulo astrale",
+    "Microtubulo interpolare",
+    "Microtubulo del cinetocore",
+    "Microtubulo corticale"
+  ]}
+  corretta={2}
+  spiegazione="I microtubuli del cinetocore partono dal polo del fuso e si agganciano al cinetocore tramite il complesso NDC80. I microtubuli astrali ancorano il polo alla corteccia cellulare, mentre quelli interpolari si sovrappongono al centro e spingono i poli."
+/>
+
+<Quiz
+  domanda="Cos'è il biorientamento di un cromosoma?"
+  opzioni={[
+    "Il cromosoma si duplica nei due cromatidi fratelli",
+    "Il cinetocore di ciascun cromatidio è agganciato a microtubuli provenienti da poli opposti",
+    "I microtubuli astrali ancorano il centrosoma a entrambi i poli",
+    "NDC80 si lega alla tubulina del microtubulo interpolare"
+  ]}
+  corretta={1}
+  spiegazione="Il biorientamento significa che i due cinetocori di un cromosoma (uno per cromatidio fratello) sono agganciati a microtubuli provenienti da poli opposti. Questa tensione bilanciata è il segnale che il checkpoint del fuso controlla prima di permettere l'anafase."
+/>
+
+<Quiz
+  domanda="Quale meccanoenzima cammina verso il polo negativo del microtubulo, contribuendo a tirare i cromatidi verso i poli durante l'anafase?"
+  opzioni={[
+    "Chinesina-5",
+    "Miosina II",
+    "Dineina",
+    "Chinesina-1"
+  ]}
+  corretta={2}
+  spiegazione="La dineina è un motore molecolare che si muove verso l'estremità negativa (meno) del microtubulo, cioè verso il centrosoma/polo. Durante l'anafase A, la dineina associata al cinetocore contribuisce a tirare i cromatidi verso i poli mentre i microtubuli si accorciano."
+/>
+
+<Esercizio
+  problema="Un ricercatore tratta delle cellule con un farmaco che blocca il complesso NDC80 impedendone il legame con i microtubuli. Descrivi che cosa accade durante la mitosi e perché la cellula non riesce a dividersi correttamente."
+  soluzione="NDC80 è il complesso proteico del cinetocore che tiene agganciato il microtubulo al cromosoma. Se NDC80 è bloccato, i microtubuli del cinetocore non riescono ad attaccarsi ai cinetocori. I cromosomi non vanno in biorientamento: non c'è tensione sui cinetocori. Il checkpoint del fuso (SAC, Spindle Assembly Checkpoint) percepisce cinetocori non occupati o senza tensione e blocca la cellula in metafase, impedendo l'ingresso in anafase. Il risultato finale è che la cellula non separa i cromatidi fratelli e non completa la divisione (o va incontro ad apoptosi)."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,121 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u7-03">
+
+## La luce non è un flusso continuo
+
+Per secoli si è pensato che la luce fosse come l'acqua che scorre: un flusso continuo, senza "pezzi" separati.
+
+Nel 1900 il fisico **Max Planck** scoprì qualcosa di strano: la luce non può avere qualsiasi quantità di energia. L'energia arriva solo in **pacchetti precisi**, come le monete invece che i liquidi.
+
+Nel 1905 **Albert Einstein** andò oltre: disse che questi pacchetti di energia sono particelle reali. Le chiamiamo **fotoni**.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un fotone è un "granello" di luce. Non puoi avere mezzo fotone, così come non puoi avere mezzo euro in moneta.</div>
+
+---
+
+## La formula E = h · f
+
+L'energia di un singolo fotone si calcola con questa formula:
+
+**E = h · f**
+
+Dove:
+- **E** = energia del fotone (in Joule, J)
+- **h** = costante di Planck = 6,626 × 10⁻³⁴ J·s (un numero piccolissimo, fisso in natura)
+- **f** = frequenza della luce (in Hertz, Hz) — quante volte l'onda oscilla al secondo
+
+**Cosa ci dice questa formula?**
+
+Più alta è la frequenza della luce, più energia ha ogni suo fotone.
+
+- La luce **viola** ha frequenza alta → fotoni molto energetici
+- La luce **rossa** ha frequenza bassa → fotoni meno energetici
+- I raggi **X** e i raggi **gamma** hanno frequenza altissima → fotoni pericolosi
+
+Pensa alle onde del mare: onde veloci e corte (alta frequenza) sono più "violente" di onde lente e lunghe.
+
+---
+
+## Frequenza e colore della luce
+
+La luce visibile è solo una piccola parte dello spettro elettromagnetico. Ogni colore corrisponde a una frequenza diversa, quindi a fotoni con energia diversa.
+
+<Diagram caption="Relazione tra frequenza e energia del fotone nello spettro visibile" code={`flowchart LR
+  A["Luce rossa<br/>f bassa<br/>E piccola"] --> B["Luce gialla<br/>f media<br/>E media"] --> C["Luce viola<br/>f alta<br/>E grande"]`} />
+
+---
+
+## Come nasce il fotone: Planck ed Einstein
+
+<Diagram caption="Dal problema del corpo nero alla scoperta del fotone" code={`flowchart TB
+  A["Problema:<br/>la luce emessa dai corpi caldi<br/>non si spiegava con la fisica classica"] --> B["Planck (1900):<br/>l'energia è quantizzata<br/>arriva a pacchetti E = h·f"]
+  B --> C["Einstein (1905):<br/>questi pacchetti sono<br/>particelle reali: i FOTONI"]
+  C --> D["Effetto fotoelettrico:<br/>prova sperimentale<br/>che i fotoni esistono"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="eEg5bbdadVU" title="Einstein completa la rivoluzione di Planck, con l'IPOTESI dei QUANTI di LUCE: I FOTONI" />
+<VideoVisto id="fis-u7-03" />
+
+---
+
+## Da ricordare
+- Un fotone è un pacchetto indivisibile di energia luminosa: la luce è "fatta" di questi granelli.
+- La sua energia si calcola con **E = h · f**: più alta la frequenza, più energetico il fotone.
+- La costante di Planck **h = 6,626 × 10⁻³⁴ J·s** è una delle costanti fondamentali della natura.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Cosa rappresenta 'f' nella formula E = h · f?"
+  opzioni={[
+    "La forza esercitata dal fotone",
+    "La frequenza della luce, cioè quante oscillazioni al secondo",
+    "La costante di Planck",
+    "La velocità della luce nel vuoto"
+  ]}
+  corretta={1}
+  spiegazione="'f' è la frequenza della radiazione elettromagnetica, misurata in Hertz (Hz). Indica quante volte l'onda compie un'oscillazione completa in un secondo. Più alta è f, più energetico è il fotone."
+/>
+
+<Quiz
+  domanda="Tra questi tipi di luce, quale ha i fotoni con MAGGIORE energia?"
+  opzioni={[
+    "Luce rossa (f ≈ 4,3 × 10¹⁴ Hz)",
+    "Luce verde (f ≈ 5,5 × 10¹⁴ Hz)",
+    "Luce viola (f ≈ 7,5 × 10¹⁴ Hz)",
+    "Raggi infrarossi (f ≈ 3 × 10¹³ Hz)"
+  ]}
+  corretta={2}
+  spiegazione="Dalla formula E = h · f, l'energia è direttamente proporzionale alla frequenza. La luce viola ha la frequenza più alta tra le opzioni nel visibile, quindi i suoi fotoni hanno l'energia maggiore."
+/>
+
+<Quiz
+  domanda="Se raddoppi la frequenza della luce, cosa succede all'energia del fotone?"
+  opzioni={[
+    "Rimane uguale",
+    "Si dimezza",
+    "Raddoppia",
+    "Aumenta di quattro volte"
+  ]}
+  corretta={2}
+  spiegazione="Dalla formula E = h · f, l'energia è proporzionale alla frequenza (h è costante). Se f diventa 2f, allora E diventa h · 2f = 2 · (h · f) = 2E. L'energia raddoppia."
+/>
+
+<Esercizio
+  problema="La luce gialla del sodio (usata nei lampioni stradali) ha una frequenza di circa 5,09 × 10¹⁴ Hz. Calcola l'energia di un singolo fotone. Usa h = 6,626 × 10⁻³⁴ J·s."
+  soluzione="Applica la formula E = h · f. E = 6,626 × 10⁻³⁴ J·s × 5,09 × 10¹⁴ Hz = 3,37 × 10⁻¹⁹ J. Ogni fotone di luce gialla trasporta circa 3,37 × 10⁻¹⁹ joule di energia: un valore minuscolo, ma reale e misurabile."
+/>
+
+</section>
+
+</RisorsaLayout>

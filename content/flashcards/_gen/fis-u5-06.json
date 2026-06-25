@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u5-06-1",
+    "topicId": "fis-u5-06",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: il primo principio della termodinamica dice che il calore fornito a un gas puo SOLO aumentare la sua temperatura interna, non puo fare altro.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Il calore puo fare DUE cose: aumentare l'energia interna (scaldare le molecole) OPPURE essere usato per compiere lavoro verso l'esterno (es. spingere un pistone), oppure entrambe insieme. La formula e ΔU = Q − W: il calore Q si divide tra ΔU e W.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-06-2",
+    "topicId": "fis-u5-06",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un gas e rinchiuso in un contenitore rigido (che non puo espandersi). Gli fornisci 300 J di calore. Quanto aumenta la sua energia interna?",
+    "choices": [
+      "0 J, perche il contenitore e rigido e il gas non si muove",
+      "150 J, meta del calore fornito",
+      "300 J, tutto il calore diventa energia interna",
+      "Piu di 300 J, grazie all'effetto del contenitore"
+    ],
+    "answer": 2,
+    "explain": "Contenitore rigido = volume costante = il gas NON puo espandersi, quindi NON compie lavoro (W = 0). Dalla formula ΔU = Q − W si ottiene ΔU = 300 − 0 = 300 J. Tutto il calore va ad aumentare l'energia interna: e come una pentola a pressione con il coperchio bloccato — tutto il calore scalda il gas, niente va 'fuori' come lavoro meccanico.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u5-06-3",
+    "topicId": "fis-u5-06",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "open",
+    "q": "Spiega con parole tue il primo principio della termodinamica: che cosa dice, quali sono i tre protagonisti e come si scrive la formula. Poi di' cosa succede all'energia interna di un gas perfetto che si espande LIBERAMENTE nel vuoto (niente calore, niente lavoro utile).",
+    "answer": "Il primo principio dice che l'energia non si crea ne si distrugge: e la conservazione dell'energia applicata al calore. I tre protagonisti sono: Q (calore), cioe l'energia che entra o esce dal sistema come calore (positivo se entra); W (lavoro), cioe l'energia che il sistema 'spende' verso l'esterno muovendo qualcosa (es. un pistone); ΔU (variazione di energia interna), cioe quanto cambia l'agitazione delle molecole dentro il sistema. La formula e ΔU = Q − W: la variazione di energia interna e uguale al calore assorbito meno il lavoro compiuto. Nel caso dell'espansione libera nel vuoto: non entra calore (Q = 0) e il gas non spinge nulla quindi non compie lavoro utile (W = 0). Di conseguenza ΔU = 0 − 0 = 0: l'energia interna NON cambia, e quindi la temperatura del gas rimane uguale.",
+    "explain": "Chiave: ΔU = Q − W. Espansione libera nel vuoto → Q = 0, W = 0 → ΔU = 0 → temperatura invariata.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u5-06-4",
+    "topicId": "fis-u5-06",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un gas ideale, contenuto in un contenitore isolato (nessuno scambio di calore con l'esterno), si espande liberamente in uno spazio vuoto adiacente, raddoppiando il suo volume. Alla fine, la sua temperatura e:",
+    "choices": [
+      "Uguale a quella iniziale",
+      "La meta di quella iniziale",
+      "Il doppio di quella iniziale",
+      "Impossibile da determinare senza conoscere il volume iniziale",
+      "Impossibile da determinare senza conoscere la pressione iniziale"
+    ],
+    "answer": 0,
+    "explain": "Questo e l'espansione libera nel vuoto. Il sistema e isolato (Q = 0) e il gas si espande nel vuoto senza spingere nessun pistone (W = 0, nessun lavoro utile compiuto). Applicando il primo principio: ΔU = Q − W = 0 − 0 = 0. Per un gas ideale l'energia interna dipende SOLO dalla temperatura: se ΔU = 0, la temperatura finale e uguale a quella iniziale. Trappola 'T/2': l'idea che il gas 'si raffreddi' espandendosi e valida solo quando compie lavoro su qualcosa (espansione adiabatica con pistone), non nel vuoto. Trappola '2T': l'opposto esatto, il gas non si scalda compiendo nessun lavoro. Le ultime due risposte ('non si puo rispondere') sono trappole tipiche dell'esame: il volume e la pressione iniziali non servono, perche l'unica cosa che conta e che Q = 0 e W = 0.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u5-06-5",
+    "topicId": "fis-u5-06",
+    "materia": "fisica",
+    "unita": 5,
+    "type": "mc",
+    "q": "Un gas ideale parte da uno stato di equilibrio e compie una serie di trasformazioni (anche irreversibili) senza MAI scambiare calore con l'esterno. Alla fine il volume e aumentato. Quale affermazione e corretta?",
+    "choices": [
+      "Non si possono determinare con certezza i valori finali di temperatura e pressione",
+      "La pressione finale e sicuramente uguale a quella iniziale",
+      "La temperatura finale e sicuramente maggiore di quella iniziale",
+      "Non avendo scambiato calore, la temperatura finale e sicuramente uguale a quella iniziale",
+      "La temperatura finale sara sicuramente maggiore o uguale a quella iniziale"
+    ],
+    "answer": 0,
+    "explain": "Questa e la domanda del 2011: il trucco e che le trasformazioni sono MISTE e alcune irreversibili. Sappiamo solo che Q = 0 (nessuno scambio di calore); ma il lavoro W fatto dal gas dipende dal percorso specifico delle trasformazioni — e con trasformazioni irreversibili non lo conosciamo. Poiche ΔU = Q − W = 0 − W = −W, e W non e determinato, anche ΔU non e determinato, e quindi non possiamo sapere la temperatura finale. Trappola 'T finale = T iniziale' (risposta D): e vero SOLO per l'espansione libera nel vuoto (dove W = 0 per definizione); qui il percorso e diverso e W puo essere non nullo. Trappola 'T finale ≥ T iniziale' (risposta E): sembra prudente ma non e giustificata: il gas potrebbe aver compiuto molto lavoro, raffreddandosi. Trappola 'pressione uguale' (B): niente giustifica questa conclusione. La risposta giusta e che con le informazioni date non si puo determinare univocamente temperatura e pressione finali.",
+    "tags": ["prova d'esame"]
+  }
+]

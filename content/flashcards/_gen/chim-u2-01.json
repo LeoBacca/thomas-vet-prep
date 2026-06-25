@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u2-01-1",
+    "topicId": "chim-u2-01",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: l'acqua zuccherata e il latte sono entrambi miscele omogenee, perche sembrano uniformi a occhio nudo.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. L'acqua zuccherata e omogenea (soluzione: lo zucchero sparisce davvero, la luce ci passa limpida). Il latte invece e un COLLOIDE, cioe una miscela eterogenea: sembra uniforme ma e' pieno di minuscole goccioline di grasso sospese. Se ci punti una luce, il raggio diventa visibile — nelle soluzioni vere non succede.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-01-2",
+    "topicId": "chim-u2-01",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "In una soluzione (miscela omogenea) ci sono due ruoli: il solvente e il soluto. Qual e la differenza?",
+    "choices": [
+      "Il solvente e la sostanza che viene sciolta (in quantita minore); il soluto e la sostanza che scioglie",
+      "Il solvente e la sostanza che scioglie (di solito quella in maggior quantita); il soluto e la sostanza che viene sciolta",
+      "Solvente e soluto sono la stessa cosa: nomi diversi per la stessa parte della soluzione",
+      "Il soluto e sempre un solido e il solvente e sempre un liquido"
+    ],
+    "answer": 1,
+    "explain": "Il solvente scioglie (come l'acqua nel caffe): di solito e la parte piu abbondante. Il soluto viene sciolto (come lo zucchero o il sale): di solito e in quantita minore. Aggancio veterinario: nelle flebo in ospedale l'acqua e il solvente, i sali o il glucosio sono i soluti.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u2-01-3",
+    "topicId": "chim-u2-01",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "open",
+    "q": "Come fai a capire, guardando una miscela sconosciuta, se e una soluzione, una sospensione o un colloide? Descrivi i tre trucchi pratici che usi.",
+    "answer": "Trucco 1 — guarda se e limpida: una soluzione e sempre limpida (la luce ci passa senza farsi vedere). Se e torbida, non e una soluzione. Trucco 2 — aspetta e guarda il fondo: se lasci ferma la miscela torbida e dopo un po' si deposita qualcosa sul fondo, e una sospensione (pezzi grossi che cadono, come acqua e sabbia). Agitarla la rimescola ma i pezzi cadono di nuovo. Trucco 3 — punta una luce: se la miscela e torbida ma non si deposita, e un colloide (latte, nebbia). Il segnale piu' diretto e l'effetto Tyndall: punta una torcia dentro il liquido e vedrai il raggio luminoso come nella nebbia di notte. In una soluzione vera la luce passa senza lasciar traccia.",
+    "explain": "Regola veloce: limpida e stabile → soluzione; torbida e cade sul fondo → sospensione; torbida e stabile con effetto Tyndall → colloide.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u2-01-4",
+    "topicId": "chim-u2-01",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Acqua ed esano non si mescolano tra loro. Se li metti nello stesso recipiente e agiti, che cosa ottieni?",
+    "choices": [
+      "Un sistema eterogeneo: due fasi separate che non si uniscono",
+      "Una soluzione limpida: l'esano si scioglie nell'acqua",
+      "Un sistema omogeneo: i due liquidi si fondono in uno solo",
+      "Un colloide stabile: le goccioline restano sospese per sempre",
+      "Un aerosol: si forma una nebbia di goccioline nell'aria"
+    ],
+    "answer": 0,
+    "explain": "Acqua ed esano sono immiscibili: non importa quanto agiti, formano sempre DUE fasi separate (due strati distinti), cioe un sistema eterogeneo. La risposta 'soluzione limpida' e l'opposto esatto: una soluzione richiede che i due componenti si sciolgano davvero, cosa che qui non avviene. 'Sistema omogeneo' e la stessa trappola: se ci fossero due fasi visibili non potrebbe mai essere omogeneo. 'Colloide stabile' e un termine scambiato: un colloide ha particelle piccolissime sospese, non due strati grossi; qui i due liquidi si separano nettamente. 'Aerosol' e il filler fuori tema: un aerosol riguarda goccioline in un GAS, non due liquidi nel recipiente.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u2-01-5",
+    "topicId": "chim-u2-01",
+    "materia": "chimica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Si scioglie del saccarosio in acqua fino a raggiungere la saturazione, poi si aggiunge altro saccarosio che non si scioglie piu. Il sistema ottenuto e:",
+    "choices": [
+      "bicomponente e bifasico",
+      "monocomponente e monofasico",
+      "bicomponente e monofasico",
+      "monocomponente e bifasico",
+      "monocomponente e trifasico"
+    ],
+    "answer": 0,
+    "explain": "Bicomponente: ci sono DUE sostanze diverse, acqua e saccarosio (due componenti). Bifasico: ci sono DUE fasi fisicamente distinte — la soluzione satura (liquido) e il saccarosio solido sul fondo (solido). Se vedi due strati/stati distinti = due fasi. 'Monofasico' (scelta C) e la trappola: sarebbe giusto finche tutto il saccarosio fosse sciolto, ma dopo la saturazione rimane del solido → non c'e piu una sola fase. 'Monocomponente' (scelte B e D) e sbagliato perche ci sono chiaramente due sostanze (acqua e saccarosio). 'Trifasico' (scelta E) e il filler: si arrivasse a tre fasi bisognerebbe avere tre stati distinti, ma qui ce ne sono solo due.",
+    "tags": ["prova d'esame"]
+  }
+]

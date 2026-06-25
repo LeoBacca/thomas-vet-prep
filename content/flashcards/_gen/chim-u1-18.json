@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u1-18-1",
+    "topicId": "chim-u1-18",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "tf",
+    "q": "Vero o falso: la forma di una molecola è decisa dal numero di gruppi di elettroni (legami + coppie solitarie) attorno all'atomo centrale, perché gli elettroni si respingono e cercano di stare il più lontano possibile.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. È la regola VSEPR in parole semplici: elettroni negativi si respingono come calamite uguali. Si allargano nello spazio finché non si trovano il più lontano possibile l'uno dall'altro. È esattamente come gonfiare dei palloncini legati allo stesso punto: si spingono da soli verso l'esterno. Il risultato di questa 'fuga' è la forma della molecola.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-18-2",
+    "topicId": "chim-u1-18",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "L'ossigeno in H₂O ha 2 legami con gli idrogeni E 2 coppie di elettroni solitarie (in totale 4 gruppi). Che forma ha la molecola d'acqua e qual è circa l'angolo di legame?",
+    "choices": [
+      "Angolare a V, circa 104,5°",
+      "Lineare, 180°",
+      "Tetraedrica, 109,5° esatti",
+      "Triangolare piatta, 120°"
+    ],
+    "answer": 0,
+    "explain": "Con 4 gruppi la base è tetraedrica, ma noi 'vediamo' solo i 2 idrogeni: la forma appare a V (angolare). Le coppie solitarie spingono più forte dei legami e schiacciano un po' l'angolo, portandolo da 109,5° a circa 104,5°. È questa piega che rende l'acqua polare e la fa sciogliere sali e zuccheri nel sangue degli animali.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-18-3",
+    "topicId": "chim-u1-18",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Spiega con parole tue come si prevede la forma di una molecola partendo dall'atomo centrale. Usa CO₂ e CH₄ come esempi e di' in che modo la forma di una molecola può influenzare come un farmaco agisce nel corpo.",
+    "answer": "Per prevedere la forma si contano i 'gruppi di elettroni' attorno all'atomo centrale: ogni legame con un altro atomo conta come un gruppo, e anche una coppia di elettroni solitaria conta come un gruppo. I gruppi si respingono e si sistemano il più lontano possibile nello spazio, come palloncini gonfiati legati insieme. CO₂: il carbonio ha 2 legami (con i due ossigeni) e nessuna coppia solitaria → 2 gruppi → si mettono ai lati opposti → forma lineare, angolo 180°, la molecola è dritta come uno stuzzicadenti. CH₄: il carbonio ha 4 legami (con 4 idrogeni) e zero coppie solitarie → 4 gruppi → si dispongono alle 4 punte di una piramide triangolare (tetraedro) → forma tetraedrica, angolo 109,5°. La forma è cruciale in medicina e veterinaria perché un farmaco funziona solo se ha la forma giusta per incastrarsi nel recettore o nell'enzima bersaglio, come una chiave nella sua serratura. Se la forma è sbagliata, la 'chiave' non gira e il farmaco non fa effetto.",
+    "explain": "Da ricordare: conta i gruppi (legami + coppie solitarie); 2 → lineare 180°; 3 → triangolare 120°; 4 → tetraedrica 109,5°. Le coppie solitarie non si 'vedono' ma contano nel conteggio e comprimono l'angolo.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-18-4",
+    "topicId": "chim-u1-18",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "La forma geometrica della molecola di fosfina PH₃ è:",
+    "choices": [
+      "piramidale trigonale",
+      "tetraedrica",
+      "angolare (a V)",
+      "trigonale planare",
+      "lineare"
+    ],
+    "answer": 0,
+    "explain": "Il fosforo in PH₃ ha 3 legami con gli idrogeni e 1 coppia di elettroni solitaria: totale 4 gruppi (ibridazione sp3). La base sarebbe tetraedrica, ma una delle 4 posizioni è occupata dalla coppia solitaria, invisibile ma presente: la forma risultante (quella degli atomi) è piramidale trigonale, come un ombrellino a 3 razze visto dall'alto. Trappola 'tetraedrica': è il numero di gruppi, non la forma vista (il CH₄ è tetraedrico perché ha 4 legami e zero coppie solitarie). Trappola 'angolare a V': quella è l'acqua H₂O, che ha 2 legami e 2 coppie solitarie. 'Trigonale planare' è la trappola dello scambio: sarebbe giusta se PH₃ avesse 3 gruppi totali (come BF₃), ma qui il quarto gruppo (la coppia solitaria) spinge verso il basso e piega la molecola fuori dal piano. 'Lineare' è il filler fuori tema.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-18-5",
+    "topicId": "chim-u1-18",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quale delle seguenti molecole o ioni ha la stessa forma (geometria molecolare) della fosfina PH₃?",
+    "choices": [
+      "H₃O⁺ (ione idronio)",
+      "BrF₃",
+      "CO₃²⁻",
+      "BF₃",
+      "NO₃⁻"
+    ],
+    "answer": 0,
+    "explain": "PH₃ è piramidale trigonale: 3 legami + 1 coppia solitaria = 4 gruppi. H₃O⁺ ha la stessa struttura: l'ossigeno forma 3 legami con gli idrogeni e porta 1 coppia solitaria, quindi è anch'esso piramidale trigonale. BrF₃ ha 3 legami + 2 coppie solitarie → forma a T, diversa. CO₃²⁻ e BF₃ hanno 3 gruppi e zero coppie solitarie → trigonale planare (piatta), non piramidale. NO₃⁻ uguale: trigonale planare. La trappola principale è BF₃ o NO₃⁻: tre legami sembra uguale a PH₃, ma BF₃ non ha coppie solitarie sull'atomo centrale, quindi è piatto, non piramidale. La coppia solitaria è la chiave: senza di essa la molecola è piatta, con essa è a piramide.",
+    "tags": ["prova d'esame"]
+  }
+]

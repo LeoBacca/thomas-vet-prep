@@ -1,0 +1,81 @@
+{
+ "id": "fis-u6-09",
+ "titolo": "Capacità e condensatori (serie/parallelo, energia)",
+ "materia": "fisica",
+ "unita": 6,
+ "slug": "09-capacita-e-condensatori-serie-parallelo-energia",
+ "freq": 5,
+ "risorseMdx": "src/pages/risorse/fisica/u6/09-capacita-e-condensatori-serie-parallelo-energia.mdx",
+ "examQuestions": [
+  {
+   "year": "2007",
+   "q": "Introducendo un dielettrico tra le armature di un condensatore, la sua capacità aumenta perché:",
+   "choices": [
+    "il dielettrico si polarizza",
+    "aumenta la differenza di potenziale tra le due armature",
+    "aumenta l'intensità del campo elettrico tra le due armature",
+    "il dielettrico non permette il passaggio delle cariche elettriche",
+    "per la presenza del dielettrico le armature sono più distanziate"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2013",
+   "q": "Un condensatore da 0,001 microF ed uno da 3000 pF vengono collegati in serie. Quale dei seguenti valori rappresenta la capacita equivalente dei due condensatori?",
+   "choices": [
+    "0,00075 microF",
+    "0,004 microF",
+    "3,001 microF",
+    "0,00099 microF",
+    "3001 microF"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2016",
+   "q": "Due condensatori con capacità pari a 12 microF e 4 microF sono collegati in serie; essi equivalgono a un unico condensatore di capacità pari a:",
+   "choices": [
+    "3 microF",
+    "0,33 microF",
+    "16 microF",
+    "8 microF",
+    "4 microF"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "calcolo"
+  },
+  {
+   "year": "2019",
+   "q": "Considerati due condensatori piani uguali, entrambi di capacità C, il primo viene riempito con materiale dielettrico di costante dielettrica relativa εr = 2. Come deve essere modificata la distanza fra le armature del secondo condensatore in modo che i due condensatori mantengano ancora la stessa capacità?",
+   "choices": [
+    "Deve essere dimezzata",
+    "Deve essere quadruplicata",
+    "Deve essere raddoppiata",
+    "Deve essere ridotta a un quarto della distanza iniziale",
+    "Non è possibile che i due condensatori abbiano ancora la stessa capacità"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2024Maggio",
+   "q": "Ponendo in parallelo due condensatori di capacità uguale a 80 microfarad ciascuno, la capacità totale vale:",
+   "choices": [
+    "160 microfarad",
+    "40 microfarad",
+    "80 microfarad",
+    "400 microfarad",
+    "64 microfarad"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "calcolo"
+  }
+ ]
+}

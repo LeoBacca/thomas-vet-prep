@@ -1,0 +1,446 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Mascotte from '@/components/Mascotte.astro';
+const base = import.meta.env.BASE_URL;
+const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
+---
+<BaseLayout title="Tutorial">
+
+  <!-- ════════════ HERO EPICO ════════════ -->
+  <section class="hero">
+    <!-- Buggy capitano con la sua ciurma di cani fedeli (posa imponente) -->
+    <Mascotte src="buggy-crew.png" class="hero-crew" alt="Buggy e la sua ciurma: i 3 cani di Thomas" loading="eager" />
+    <h1>La rotta per diventare il <span>Re dei Veterinari</span></h1>
+    <p class="hook">
+      Buggy è partito dal nulla, senza poteri da fenomeno — eppure è arrivato lontano perché aveva
+      la <strong>ciurma giusta</strong> e sapeva muoversi. Questo sito è la tua ciurma e la tua nave:
+      tutto quello che ti serve per superare il <strong>semestre filtro</strong> è già a bordo.
+    </p>
+    <p class="hook">
+      Non ti serve studiare 10 ore al giorno. Ti servono <strong>15–30 minuti, ma TUTTI i giorni</strong>,
+      fatti nel modo giusto. La costanza batte l'abbuffata. E si può fare pure divertendosi.
+    </p>
+    <p class="promise">⚓ Il tesoro qui è uno solo: il <strong>camice</strong>. Andiamo a prenderlo.</p>
+  </section>
+
+  <!-- ════════════ PREMESSA ONESTA ════════════ -->
+  <div class="obiettivo">
+    <p style="margin:.2rem 0;">
+      <strong>Due parole oneste prima di partire.</strong> Non so come studi tu, e ognuno ha il suo metodo:
+      alla fine studi come ti pare ed è giusto così. Ma voglio <strong>offrirti</strong> il modo in cui ho
+      studiato io e mi sono laureato. Non è un'opinione a caso: ci ho fatto la <strong>tesi di laurea
+      sull'SRS e sui metodi di apprendimento</strong>. So di cosa parlo — e ci sono un sacco di cose che
+      <em>tutti</em> credono utili ma sono solo spreco di tempo. Non voglio che tu le faccia.
+    </p>
+  </div>
+
+  <!-- ════════════ LE SEZIONI DEL SITO ════════════ -->
+  <h2>🗺️ La tua ciurma: le sezioni del sito</h2>
+  <div class="cards">
+    <a class="card" href={u('risorse/')}>
+      <div class="emoji">📚</div>
+      <h3>Risorse</h3>
+      <p>Qui si <strong>capisce</strong>. Ogni argomento spiegato semplice, con schema, video e quiz. In ordine.</p>
+    </a>
+    <a class="card" href={u('studio/')}>
+      <div class="emoji">🎯</div>
+      <h3>Studio <span class="badge-soon">in arrivo</span></h3>
+      <p>Qui si <strong>combatte e si fissa</strong>. Le flashcard SRS: il vero allenamento della memoria.</p>
+    </a>
+  </div>
+  <p>
+    Lavorano insieme, ma il loro ordine d'uso ti sorprenderà — perché è il <strong>contrario</strong> di
+    quello che pensi. Tieni duro fino in fondo: è lì il segreto.
+  </p>
+
+  <!-- ════════════ CAPIRE vs RICORDARE ════════════ -->
+  <h2>🧠 Studiare = due cose diverse: <em>capire</em> e <em>ricordare</em></h2>
+  <p>
+    Quasi tutti fanno cose a caso <strong>sperando</strong> di capire e <strong>sperando</strong> di ricordare,
+    e finiscono per non fare bene né l'una né l'altra. Sono due lavori diversi: separiamoli.
+  </p>
+
+  <h3>1) Capire → qui hai carta bianca 🎨</h3>
+  <p>
+    Per <strong>capire</strong> un argomento fai come ti trovi meglio: leggere, rileggere, sottolineare,
+    farti uno schema, guardare il <strong>video</strong>, provare i <strong>quiz</strong> che ti ho lasciato
+    nelle Risorse. Regola semplice: <strong>più tempo ci dedichi, più capisci</strong>.
+  </p>
+  <p>Ognuno è diverso, perciò nelle Risorse ho messo lo <strong>stesso concetto in 4 forme</strong> per farlo entrare meglio:</p>
+  <ul class="stimuli">
+    <li>📝 testo semplice</li>
+    <li>🗺️ schema / diagramma</li>
+    <li>🎬 video</li>
+    <li>❓ quiz</li>
+  </ul>
+  <div class="callout">
+    <p style="margin:.2rem 0;">
+      <strong>Trucco da campione:</strong> usa l'AI (Gemini) come tutor infinito. Se un argomento non ti entra,
+      <strong>martellala di domande</strong> finché non lo capisci. Chiedile «spiegamelo come a un bambino di 5 anni,
+      con un esempio». Segnati ciò che non capisci e non mollarlo finché non è chiaro.
+    </p>
+  </div>
+
+  <h3>2) Ricordare → qui sbagliano TUTTI ⚠️</h3>
+  <p>
+    Ecco l'errore numero uno: pensare che <strong>capire = ricordare</strong>. <strong>Falso.</strong>
+    Capisci un concetto oggi e tra una settimana è evaporato. Ricordare è un lavoro a parte — ed è
+    proprio quello che decide l'esame.
+  </p>
+  <p>Cose che <em>sembrano</em> studiare ma alla memoria servono pochissimo:</p>
+  <ul>
+    <li>Sottolineare ed evidenziare a tappeto.</li>
+    <li>Rileggere lo stesso paragrafo 10 volte.</li>
+    <li>
+      <strong>Ripetere ad alta voce fino allo sfinimento</strong> — la cosa che tutti credono "la migliore"
+      ed è invece la <strong>peggiore</strong>: noiosa, una rottura, devi pure chiuderti solo in una stanza…
+      e alla memoria <strong>non serve quasi a niente</strong>.
+    </li>
+  </ul>
+  <p>
+    La verità è una: la skill numero uno dello studente è il <strong>recall</strong> — la capacità di
+    <strong>tirare fuori</strong> l'informazione dalla testa quando ti serve. All'esame conta solo quanto
+    riesci a ricordare. Quindi devi <strong>allenare il recall</strong>, non rileggere.
+  </p>
+
+  <!-- ════════════ LE PROVE ════════════ -->
+  <h2>🔬 Non fidarti di me, fidati delle prove</h2>
+  <p>Non sono io a dirlo: è quello che esce ogni volta che gli scienziati mettono i metodi uno contro l'altro.</p>
+  <div class="proof">
+    <div class="proof-card">
+      <div class="big">2×</div>
+      <p>Studenti che dopo aver letto si sono <strong>auto-interrogati</strong> ricordavano circa l'<strong>80%</strong> a una settimana. Chi aveva solo <strong>riletto più volte</strong>? Circa il <strong>35–40%</strong>. Più del doppio, stesso tempo.</p>
+    </div>
+    <div class="proof-card">
+      <div class="big">+50%</div>
+      <p>Chi ha studiato <strong>provando a ricordare</strong> ha reso circa il <strong>50% in più</strong> di chi faceva <strong>schemi e mappe</strong> elaborate. Sforzarsi di richiamare batte il "bel riassunto".</p>
+    </div>
+    <div class="proof-card">
+      <div class="big">🏆</div>
+      <p>In una grande classifica dei metodi, <strong>sottolineare, rileggere e riassumere</strong> (le cose che fanno tutti) finiscono <strong>in fondo</strong>. In cima: <strong>auto-interrogarsi</strong> e <strong>distribuire il ripasso nel tempo</strong>.</p>
+    </div>
+  </div>
+  <p class="src">Testing effect e spacing — Roediger &amp; Karpicke; Karpicke &amp; Blunt 2011; revisione di Dunlosky et al. 2013.</p>
+
+  <!-- ════════════ COS'È L'SRS ════════════ -->
+  <h2>⚡ Cos'è l'SRS (la tua arma segreta)</h2>
+  <p>
+    <strong>SRS</strong> = <em>Spaced Repetition System</em> = <strong>ripasso a intervalli crescenti</strong>.
+    Il cervello <strong>non</strong> impara ripetendo 10 volte di fila oggi. Impara in modo furbo: studi oggi,
+    poi rivedi la stessa cosa <strong>dopo 3 giorni → dopo 10 → dopo 15…</strong>, sempre più distanti.
+  </p>
+
+  <div class="graphs">
+    <figure class="graph">
+      <svg viewBox="0 0 320 200" role="img" aria-label="Curva dell'oblio">
+        <line x1="40" y1="20" x2="40" y2="165" class="ax"/>
+        <line x1="40" y1="165" x2="305" y2="165" class="ax"/>
+        <path d="M40,30 C 80,120 150,158 305,162" class="curve bad"/>
+        <text x="22" y="34" class="lab">100%</text>
+        <text x="46" y="182" class="lab">giorni →</text>
+      </svg>
+      <figcaption><strong>La curva dell'oblio.</strong> Senza ripasso, in pochi giorni dimentichi quasi tutto. È normale, è così che funziona il cervello.</figcaption>
+    </figure>
+
+    <figure class="graph">
+      <svg viewBox="0 0 320 200" role="img" aria-label="Effetto del ripasso SRS">
+        <line x1="40" y1="20" x2="40" y2="165" class="ax"/>
+        <line x1="40" y1="165" x2="305" y2="165" class="ax"/>
+        <path d="M40,30 C 55,75 70,95 85,100 L85,30 C 110,70 135,82 160,85 L160,30 C 200,62 245,70 305,72" class="curve good"/>
+        <g class="dots">
+          <circle cx="85" cy="30" r="4"/><circle cx="160" cy="30" r="4"/>
+        </g>
+        <text x="22" y="34" class="lab">100%</text>
+        <text x="62" y="24" class="lab sm">↑ripasso</text>
+        <text x="138" y="24" class="lab sm">↑ripasso</text>
+        <text x="46" y="182" class="lab">giorni →</text>
+      </svg>
+      <figcaption><strong>L'effetto SRS.</strong> Ogni ripasso ti riporta in cima — e ogni volta scendi <strong>più lentamente</strong>. Per questo gli intervalli si allungano: la rivedi sempre meno, ma la sai sempre meglio.</figcaption>
+    </figure>
+  </div>
+
+  <p>
+    Ogni volta che <strong>fatichi a richiamare</strong> una cosa e ci riesci, quella memoria si <strong>rinforza</strong>.
+    Il sistema ti ripropone <strong>più spesso ciò che sbagli</strong> e lascia in pace ciò che sai già: <strong>zero tempo
+    sprecato</strong>. È il recall allenato ogni giorno — cioè esattamente la skill che ti serve all'esame.
+  </p>
+
+  <!-- ════════════ FLASHCARD = ANCHE CAPIRE ════════════ -->
+  <div class="callout big">
+    <p style="margin:.2rem 0 .6rem;"><strong>🤯 Il colpo di scena: le flashcard ti fanno anche CAPIRE.</strong></p>
+    <p style="margin:.2rem 0;">
+      Pensi: «prima capisco con le Risorse, poi memorizzo con le flashcard». <strong>No.</strong> Quando ti
+      sforzi di <strong>richiamare</strong> una risposta, in quel momento stai <strong>anche capendo</strong>:
+      lo sforzo collega i concetti tra loro e li consolida molto più della lettura passiva. Le flashcard non
+      servono solo a ricordare — sono <strong>anche un modo per capire</strong>. <strong>Due piccioni con una
+      fava.</strong> (E sì, anche questo è dimostrato: chi impara richiamando batte chi fa schemi <em>pure</em>
+      sulle domande di ragionamento, non solo su quelle a memoria.)
+    </p>
+  </div>
+
+  <!-- ════════════ LA ROTTA / LA TRAPPOLA ════════════ -->
+  <h2>🧭 Da dove inizio?! (la domanda da un milione)</h2>
+  <p>
+    Apri il sito, vedi <strong>centinaia di argomenti</strong> e ti blocchi. Normale. Qui c'è la trappola in
+    cui cascano in 99 su 100:
+  </p>
+  <div class="trap">
+    <div class="trap-x">❌</div>
+    <p style="margin:.2rem 0;">
+      <strong>«Prima mi studio TUTTE le Risorse, poi inizio le flashcard.»</strong><br/>
+      Non funziona così. Ci metti mesi a "prepararti", ti dimentichi l'inizio mentre arrivi alla fine, e non
+      hai allenato il recall nemmeno un secondo.
+    </p>
+  </div>
+
+  <h3>✅ La rotta giusta: parti dalle DOMANDE, non dalle Risorse</h3>
+  <p>
+    Sembra assurdo ma è questo il segreto: <strong>inizia SUBITO dalle flashcard</strong>, anche se all'inizio
+    è dura. Comincia da ciò che già <strong>intuisci</strong>. Quando sbagli una carta, il link ti porta alla
+    Risorsa → <strong>studi DA LÌ</strong>, mirato, solo quello che ti serve. Poi torni alla carta.
+  </p>
+  <div class="diagram">
+    <pre class="mermaid">
+flowchart TD
+  A([Apri una flashcard]) --> B&#123;La sai?&#125;
+  B -- Sì --> C[Bene / Facile<br/>la rivedi più avanti]
+  B -- No --> D[Apri la Risorsa collegata<br/>capisci il concetto]
+  D --> E[Torni alla carta<br/>ci riprovi]
+  E --> B
+  C --> F(((Recall allenato<br/>= studio FATTO)))
+    </pre>
+    <figcaption>Domande → verifica → Risorse. Non il contrario.</figcaption>
+  </div>
+  <p class="key">
+    🔑 <strong>Ricordatelo:</strong> il ripasso e il recall delle flashcard <strong>non sono un test dopo lo
+    studio. Sono LO studio.</strong>
+  </p>
+
+  <!-- ════════════ I TASTI ════════════ -->
+  <h2>🎮 Come si usa una flashcard (i tasti)</h2>
+  <p>Dopo aver provato a rispondere, giri la carta e ti <strong>autovaluti</strong> con onestà. Ecco cosa significano i tasti:</p>
+
+  <div class="fc-demo">
+    <div class="fc-card">
+      <div class="fc-tag">Fisica · U1</div>
+      <div class="fc-q">Qual è l'unità di misura della forza nel SI?</div>
+      <div class="fc-line"></div>
+      <div class="fc-a">Il <strong>newton</strong> (N). &nbsp;1 N = 1 kg·m/s²</div>
+    </div>
+    <div class="fc-btns">
+      <button type="button" class="fc-btn hard">Difficile <span>te la rivedo presto</span></button>
+      <button type="button" class="fc-btn good">Bene <span>tra qualche giorno</span></button>
+      <button type="button" class="fc-btn easy">Facile <span>tra parecchio</span></button>
+    </div>
+    <p class="fc-note">(esempio · i giorni esatti li calcola il sistema per te)</p>
+  </div>
+
+  <ul class="btns-expl">
+    <li><strong>Difficile</strong> — l'hai tirata fuori a fatica o quasi sbagliata → te la <strong>ripropone presto</strong>.</li>
+    <li><strong>Bene</strong> — l'hai ricordata con un po' di sforzo (è il caso normale!) → l'intervallo <strong>cresce</strong>.</li>
+    <li><strong>Facile</strong> — l'hai ricordata al volo → l'intervallo <strong>cresce molto</strong>, la rivedi tra parecchio.</li>
+  </ul>
+  <p>Più sei <strong>onesto</strong> nel valutarti, meglio il sistema lavora <em>per te</em>. Non barare: non stai fregando il prof, staresti fregando te stesso.</p>
+
+  <!-- ════════════ STUDIO DI OGGI vs SFIDA ════════════ -->
+  <h2>📅 «Studio di oggi» e la libertà di chiudere a ZERO</h2>
+  <p>
+    La tua tabella di marcia è <strong>già impostata in automatico</strong>: ogni giorno ti tocca un tot di carte.
+    Ti svegli e sai esattamente quanto fare — niente da decidere, niente ansia.
+  </p>
+  <div class="freedom">
+    <p style="margin:.2rem 0;">
+      🎉 Quando <strong>«Studio di oggi» arriva a 0</strong>, <strong>hai finito.</strong> Per davvero. Il cervello
+      farà il resto da solo, mentre tu vivi. Sei libero: vai al <strong>locale</strong>, stai su <strong>Discord</strong>,
+      fatti le tue partite sul <strong>SIM</strong>. «Oggi ho fatto il mio» — zero sensi di colpa.
+    </p>
+  </div>
+  <p>
+    E se proprio hai voglia di spaccare, c'è la sezione <strong>Sfida</strong>: sessioni <strong>extra</strong>,
+    facoltative, per divertirti, metterti alla prova e vedere a che punto sei. Ma il dovere quotidiano è solo
+    portare «Studio di oggi» a zero.
+  </p>
+
+  <div class="freedom">
+    <p style="margin:.2rem 0;">
+      🎧 <strong>Bonus libertà:</strong> il ripasso delle flashcard puoi farlo <strong>con la musica</strong> o un
+      <strong>podcast in sottofondo</strong> (senza esagerare). Non devi startene in religioso silenzio chiuso in
+      una stanza come col vecchio "ripetere ad alta voce". Lo fai in fila, sul divano, ovunque — basta che lo fai.
+    </p>
+  </div>
+
+  <div class="callout">
+    <p style="margin:.2rem 0;">
+      <strong>Non rattristarti MAI</strong> se non rispondi a una carta o se ci metti tanto. Quello sforzo
+      <strong>È lo studio</strong>, e vale <strong>più di ripetere 100 volte a pappagallo</strong> sul libro.
+      All'inizio ti sembrerà di rispondere "a memoria" ai quiz — ma a furia di rispondere a domande sullo stesso
+      argomento, tornare sulle Risorse diventerà facile e, <strong>senza accorgertene, avrai imparato l'argomento
+      davvero</strong>. Avanti e indietro tra Risorse e flashcard: è lì che diventi forte.
+    </p>
+  </div>
+
+  <!-- ════════════ PRIMI PASSI ════════════ -->
+  <h2>🚀 I tuoi primi passi (oggi)</h2>
+  <ol class="steps">
+    <li>Apri la sezione <strong>Studio</strong> e fai il <strong>primo giro di flashcard</strong>. Sì, subito, prima di "studiare".</li>
+    <li>Su ogni carta che <strong>sbagli</strong>, apri la <strong>Risorsa</strong> collegata e capisci quel pezzo.</li>
+    <li>Valuta ogni carta con onestà (Difficile / Bene / Facile) e <strong>porta «Studio di oggi» a 0</strong>.</li>
+    <li>Domani ripeti. <strong>15–30 minuti, tutti i giorni.</strong> Punto.</li>
+  </ol>
+
+  <!-- ════════════ IL BIVIO ════════════ -->
+  <h2 class="biv-title">⚓ Thomas, ora sei davanti a un bivio</h2>
+  <div class="crossroad">
+    <svg viewBox="0 0 200 90" role="img" aria-label="Bivio">
+      <path d="M100,88 L100,55" class="road"/>
+      <path d="M100,55 C 80,40 55,30 20,18" class="road"/>
+      <path d="M100,55 C 120,40 145,30 180,18" class="road"/>
+      <text x="6" y="14">🏠</text>
+      <text x="172" y="14">🏆</text>
+    </svg>
+  </div>
+  <div class="paths">
+    <div class="path p1">
+      <h3>🏠 La strada di sempre</h3>
+      <p>
+        Prendi queste risorse e usale come credi. Ho fatto il compitino: ho messo <strong>in ordine tutte le
+        materie</strong> come mi avevi chiesto — sono lì, pronte. Puoi usarle poco, alla tua maniera di sempre.
+        E va benissimo: sono contento se ti torneranno utili anche solo un po'. Io comunque <strong>mi sono
+        divertito un mondo a costruire tutto questo</strong>.
+      </p>
+    </div>
+    <div class="path p2">
+      <h3>🏆 La via del Re dei Veterinari</h3>
+      <p>
+        Segui <strong>alla lettera</strong> tutto quello che ti ho detto qui sopra: usa le flashcard a manetta,
+        vivi nella sezione <strong>Studio</strong>, impara a <strong>metterti in discussione</strong>, sii
+        <strong>costante ogni singolo giorno</strong>. È la strada più tosta all'inizio… ma è quella che ti porta
+        dritto al tesoro: il <strong>camice</strong>.
+      </p>
+    </div>
+  </div>
+
+  <div class="dedica">
+    <p>
+      Da qui in poi <strong>è nelle tue mani</strong>, Thomas. Io ti ho dato tutti gli strumenti che avrei voluto
+      avere io. Quale strada prendere non lo decido io: lo decidi tu, ogni mattina, con quei 20 minuti.
+    </p>
+    <p>
+      E se un giorno indosserai quel camice e qualcuno ti chiamerà <em>dottore</em>, sappi che sarà perché
+      <strong>questi</strong> strumenti li hai usati. Ora salpa. 🏴‍☠️
+    </p>
+    <p class="firma">— il tuo nakama</p>
+  </div>
+
+  <style>
+    .hero {
+      text-align: center;
+      background:
+        radial-gradient(120% 90% at 50% -10%, rgba(224,165,38,.20), transparent 60%),
+        linear-gradient(160deg, #0a2942 0%, #0e4d7a 100%);
+      color: #fff;
+      border-radius: var(--radius);
+      border: 2px solid var(--gold);
+      padding: 1.6rem 1.4rem 2.2rem;
+      margin: 0 0 1.6rem;
+      box-shadow: 0 14px 38px rgba(10,41,66,.30);
+    }
+    /* Buggy + ciurma: grande e imponente, riempie l'above-the-fold */
+    .hero-crew {
+      width: min(100%, 620px);
+      height: auto;
+      display: block;
+      margin: 0 auto .4rem;
+      filter: drop-shadow(0 10px 16px rgba(0,0,0,.38));
+    }
+    .hero .flag { display: none; }
+    .hero h1 {
+      color: #fff;
+      font-size: clamp(2.1rem, 5.4vw, 3.4rem);
+      line-height: 1.08;
+      margin: .3rem 0 .9rem;
+      text-shadow: 0 2px 0 rgba(0,0,0,.18);
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero .hook { color: #e7f1fb; font-size: clamp(1.05rem, 2.2vw, 1.28rem); max-width: 58ch; margin: .7rem auto; }
+    .hero .hook strong { color: #fff; }
+    .hero .promise { margin: 1.1rem auto 0; font-weight: 700; font-size: clamp(1.1rem, 2.6vw, 1.45rem); color: var(--gold); }
+
+    .stimuli { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+    .stimuli li { background: var(--brand-soft); color: var(--brand); font-weight: 600; padding: .35rem .8rem; border-radius: 999px; font-size: .95rem; }
+
+    .callout.big { background: #fff3e0; border-color: #f0cf9b; }
+    .callout.big strong { color: var(--accent); }
+
+    /* prove */
+    .proof { display: grid; gap: 1rem; grid-template-columns: 1fr; margin: 1.2rem 0 .4rem; }
+    @media (min-width: 640px) { .proof { grid-template-columns: repeat(3, 1fr); } }
+    .proof-card { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); padding: 1rem; text-align: center; }
+    .proof-card .big { font-size: 1.9rem; font-weight: 800; color: var(--brand); }
+    .proof-card p { font-size: .9rem; color: var(--ink); margin: .4rem 0 0; line-height: 1.5; }
+    .src { font-size: .78rem; color: var(--muted); text-align: center; margin-top: .2rem; }
+
+    /* grafici */
+    .graphs { display: grid; gap: 1rem; grid-template-columns: 1fr; margin: 1.4rem 0; }
+    @media (min-width: 640px) { .graphs { grid-template-columns: 1fr 1fr; } }
+    .graph { margin: 0; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); padding: 1rem; }
+    .graph svg { width: 100%; height: auto; }
+    .graph .ax { stroke: var(--muted); stroke-width: 1.5; }
+    .graph .curve { fill: none; stroke-width: 3.5; stroke-linecap: round; }
+    .graph .curve.bad { stroke: #d9534f; }
+    .graph .curve.good { stroke: var(--brand); }
+    .graph .dots circle { fill: var(--accent); }
+    .graph .lab { fill: var(--muted); font-size: 11px; font-weight: 600; }
+    .graph .lab.sm { fill: var(--accent); font-size: 9px; }
+    .graph figcaption { color: var(--muted); font-size: .85rem; margin-top: .6rem; line-height: 1.5; }
+    .graph figcaption strong { color: var(--ink); }
+
+    .key { background: var(--brand-soft); border-radius: 10px; padding: .8rem 1rem; font-size: 1.02rem; }
+
+    /* trappola */
+    .trap { display: flex; gap: .8rem; align-items: flex-start; background: #fbe9e9; border: 1px solid #e7b7b5; border-radius: var(--radius); padding: 1rem 1.1rem; margin: 1rem 0; }
+    .trap-x { font-size: 1.4rem; line-height: 1.4; }
+
+    /* flashcard demo */
+    .fc-demo { max-width: 460px; margin: 1.4rem auto; }
+    .fc-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.2rem 1.2rem 1.4rem; box-shadow: 0 6px 18px rgba(0,0,0,.06); text-align: center; }
+    .fc-tag { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 700; }
+    .fc-q { font-size: 1.1rem; font-weight: 700; margin: .6rem 0; }
+    .fc-line { height: 1px; background: var(--border); margin: .8rem 0; }
+    .fc-a { color: var(--brand); font-size: 1.05rem; }
+    .fc-btns { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; margin-top: .7rem; }
+    .fc-btn { border: 1px solid var(--border); border-radius: 10px; background: var(--surface); padding: .55rem .3rem; font: inherit; font-weight: 700; cursor: default; display: flex; flex-direction: column; gap: .15rem; line-height: 1.1; }
+    .fc-btn span { font-size: .66rem; font-weight: 500; color: var(--muted); }
+    .fc-btn.hard { border-color: #e0a3a1; color: #c0392b; }
+    .fc-btn.good { border-color: var(--brand); color: var(--brand); background: var(--brand-soft); }
+    .fc-btn.easy { border-color: #cfae7e; color: var(--accent); }
+    .fc-note { text-align: center; font-size: .78rem; color: var(--muted); margin: .5rem 0 0; }
+    .btns-expl { padding-left: 1.1rem; }
+    .btns-expl li { margin: .35rem 0; }
+
+    /* libertà */
+    .freedom { background: var(--brand-soft); border-left: 4px solid var(--brand); border-radius: 10px; padding: .9rem 1.1rem; margin: 1rem 0; }
+
+    .steps { padding-left: 1.2rem; }
+    .steps li { margin: .5rem 0; }
+
+    /* bivio */
+    .biv-title { text-align: center; margin-top: 2.6rem; }
+    .crossroad svg { display: block; width: 240px; max-width: 80%; margin: .2rem auto 1rem; }
+    .crossroad .road { fill: none; stroke: var(--muted); stroke-width: 4; stroke-linecap: round; stroke-dasharray: 2 7; }
+    .crossroad text { font-size: 16px; }
+    .paths { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+    @media (min-width: 640px) { .paths { grid-template-columns: 1fr 1fr; } }
+    .path { border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.2rem; background: var(--surface); }
+    .path h3 { margin: .2rem 0 .5rem; }
+    .path.p2 { border: 2px solid var(--brand); background: var(--brand-soft); }
+    .path p { margin: 0; font-size: .96rem; }
+
+    .dedica { margin: 2rem 0 .5rem; padding: 1.4rem 1.4rem; border-radius: var(--radius); background: linear-gradient(160deg, #1e5a46, #2f7d62); color: #eafff6; text-align: center; }
+    .dedica p { margin: .6rem auto; max-width: 56ch; }
+    .dedica strong { color: #fff; }
+    .dedica em { color: #ffd27a; font-style: normal; font-weight: 700; }
+    .dedica .firma { color: #ffd27a; font-weight: 700; margin-top: 1rem; }
+  </style>
+
+</BaseLayout>

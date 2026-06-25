@@ -1,0 +1,67 @@
+{
+ "id": "chim-u4-08",
+ "titolo": "I sali e l'idrolisi salina (comportamento acido o basico in acqua)",
+ "materia": "chimica",
+ "unita": 4,
+ "slug": "08-i-sali-e-lidrolisi-salina-comportamento",
+ "freq": 4,
+ "risorseMdx": "src/pages/risorse/chimica/u4/08-i-sali-e-lidrolisi-salina-comportamento.mdx",
+ "examQuestions": [
+  {
+   "year": "2006",
+   "q": "Il bicarbonato di sodio NaHCO3 in soluzione si comporta come:",
+   "choices": [
+    "una base debole",
+    "un acido debole",
+    "una base forte",
+    "un acido forte",
+    "un sale assolutamente neutro"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2011",
+   "q": "Indica, tra i seguenti composti, quello che in soluzione acquosa dà idrolisi basica:",
+   "choices": [
+    "CH3COONa",
+    "NaCl",
+    "NaBr",
+    "KCl",
+    "NH4Cl"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  },
+  {
+   "year": "2015",
+   "q": "Quale delle seguenti coppie di sostanze reagendo dà una soluzione con pH inferiore a 7?",
+   "choices": [
+    "CO2(g) + H2O(l)",
+    "CaO(s) + H2O(l)",
+    "K2CO3(s) + H2O(l)",
+    "Mg(s) + H2O(l)",
+    "NH3(g) + H2O(l)"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  },
+  {
+   "year": "2021Agg",
+   "q": "Al punto equivalente di una titolazione di un acido debole HA con una base forte BOH, il pH della soluzione risultante avrà un valore:",
+   "choices": [
+    "superiore a 7 perché il prodotto della reazione di neutralizzazione reagisce con l'acqua originando ioni OH-",
+    "superiore a 7 perché l'acido debole non viene completamente neutralizzato dalla base forte",
+    "uguale a 7 perché si tratta di una reazione di completa neutralizzazione",
+    "inferiore a 7 perché il prodotto della reazione di neutralizzazione reagisce con l'acqua originando ioni H3O+",
+    "i dati non sono sufficienti per fare una previsione di pH"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u2-05">
+
+Hai presente una bottiglia di acqua frizzante chiusa? Dentro c'è del gas (anidride carbonica) **sciolto** nell'acqua, proprio come lo zucchero si scioglie nel caffè. La **legge di Henry** ci dice una cosa semplice: più **schiacci** il gas sopra il liquido (più pressione), più gas riesce a entrare nel liquido. Questo conta tantissimo, perché è lo stesso meccanismo con cui l'**ossigeno** entra nel sangue quando respiriamo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> più premi un gas contro un liquido, più gas ci si "infila" dentro. Tanta pressione = tanto gas disciolto. Poca pressione = poco gas disciolto.</div>
+
+<Diagram caption="Più pressione sopra il liquido = più gas che si scioglie dentro" code={`flowchart LR
+  A["Poca pressione<br/>sopra il liquido"] -->|"poco gas entra"| B["Poco gas disciolto"]
+  C["Tanta pressione<br/>sopra il liquido"] -->|"tanto gas entra"| D["Tanto gas disciolto"]`} />
+
+## La bottiglia gassata: l'esempio perfetto
+
+In fabbrica, dentro la bottiglia di bibita spingono dentro tanta anidride carbonica ad **alta pressione**. Con tutta quella pressione, il gas è costretto a sciogliersi nel liquido: per questo la bibita chiusa sembra acqua liscia, senza bollicine.
+
+Quando **apri il tappo**, fai il movimento contrario: la pressione sopra il liquido crolla di colpo. Ora il liquido "tiene" molto meno gas, e tutto il gas in più scappa via formando le bollicine ("psss!").
+
+<div class="callout">💡 <strong>In parole semplici:</strong> tappo chiuso = alta pressione = gas intrappolato nel liquido. Tappo aperto = bassa pressione = il gas scappa e fa le bollicine.</div>
+
+<Diagram caption="Aprire la bottiglia abbassa la pressione e libera il gas" code={`flowchart TB
+  A["Bottiglia CHIUSA<br/>alta pressione"] --> B["Tanta CO2 disciolta<br/>niente bollicine"]
+  C["Apro il TAPPO"] --> D["La pressione crolla"]
+  D --> E["La CO2 in eccesso scappa<br/>= bollicine psss"]`} />
+
+## La legge in una frase (e con i numeri)
+
+La legge di Henry dice: a temperatura costante, la quantità di gas disciolto in un liquido è **proporzionale** alla pressione di quel gas sopra il liquido. "Proporzionale" vuol dire che vanno di pari passo: se raddoppi la pressione, raddoppia il gas disciolto.
+
+Si scrive così, come testo: **C = k x P**
+
+- **C** è quanto gas si scioglie (la concentrazione).
+- **P** è la pressione del gas sopra il liquido.
+- **k** è solo un numero fisso che dipende dal tipo di gas e dal liquido.
+
+Non serve fare conti complicati: l'idea da portare a casa è che **P più grande significa C più grande**. Più spingi, più gas entra.
+
+## Perché conta per il corpo: ossigeno e anidride carbonica nel sangue
+
+Questo è il punto bello per la veterinaria e la medicina. I nostri polmoni funzionano proprio grazie alla legge di Henry.
+
+- Nei **polmoni** l'aria che respiri ha una buona pressione di **ossigeno (O2)**. Quella pressione spinge l'ossigeno a sciogliersi nel sangue, esattamente come il gas entra nella bibita. Da lì l'ossigeno viaggia a tutto il corpo.
+- Nei **tessuti** del corpo, invece, c'è tanta **anidride carbonica (CO2)** prodotta dalle cellule: la sua pressione è alta lì, quindi la CO2 passa nel sangue e viene portata ai polmoni per essere buttata fuori con il respiro.
+
+Un esempio quotidiano: in **alta montagna** la pressione dell'ossigeno nell'aria è più bassa. Meno pressione significa meno ossigeno che si scioglie nel sangue: ecco perché in cima a una montagna alta si fa fatica a respirare e ci si stanca prima.
+
+Anche i **pesci** vivono grazie a questo: respirano l'ossigeno **disciolto** nell'acqua. E i sub conoscono bene questa legge: salire troppo in fretta fa scendere la pressione di colpo e l'azoto disciolto nel sangue forma bollicine (proprio come la bottiglia aperta). Per questo risalgono piano.
+
+## Guarda il video
+
+<YouTube id="Eqs0-GEkThI" title="Legge di Henry: solubilità dei gas nei liquidi spiegata semplice" />
+
+<VideoVisto id="chim-u2-05" />
+
+## Da ricordare
+
+- **Legge di Henry**: più pressione del gas sopra il liquido = più gas che si scioglie dentro.
+- Sono **proporzionali**: in formula **C = k x P** (raddoppi P, raddoppia C).
+- La **bibita gassata** lo mostra: tappo chiuso (alta pressione) tiene il gas dentro; aperto (bassa pressione) il gas scappa in bollicine.
+- Nel **corpo**: la pressione dell'O2 spinge l'ossigeno nel sangue nei polmoni; serve anche a smaltire la CO2.
+- In **alta montagna** c'è meno pressione di O2, quindi meno ossigeno nel sangue: ci si stanca prima.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Secondo la legge di Henry, se aumenti la pressione del gas sopra un liquido, la quantità di gas disciolto:"
+  opzioni={["diminuisce", "aumenta", "resta sempre uguale", "diventa zero"]}
+  corretta={1}
+  spiegazione="Pressione e gas disciolto vanno di pari passo: più premi il gas, più gas si scioglie nel liquido. Sono proporzionali."
+/>
+
+<Quiz
+  domanda="Perché quando apri una bottiglia di bibita gassata senti il 'psss' e vedi le bollicine?"
+  opzioni={["perché entra nuovo gas dall'esterno", "perché la pressione sopra il liquido crolla e il gas in eccesso scappa", "perché il liquido si scalda di colpo", "perché lo zucchero si scioglie"]}
+  corretta={1}
+  spiegazione="Aprendo il tappo la pressione cade: il liquido non riesce più a tenere tutto quel gas, che scappa via formando le bollicine."
+/>
+
+<Quiz
+  domanda="Perché in alta montagna si respira con più fatica?"
+  opzioni={["perché l'aria è più calda", "perché c'è meno pressione di ossigeno, quindi meno O2 si scioglie nel sangue", "perché c'è troppa anidride carbonica", "perché l'acqua bolle prima"]}
+  corretta={1}
+  spiegazione="In quota la pressione dell'ossigeno è più bassa: per la legge di Henry meno pressione vuol dire meno ossigeno disciolto nel sangue."
+/>
+
+<Esercizio
+  problema="In una bottiglia chiusa di acqua frizzante c'è una certa quantità di anidride carbonica disciolta. Cosa succede al gas disciolto se apri il tappo e lasci la bottiglia aperta sul tavolo? Spiega usando la legge di Henry."
+  soluzione="Aprendo il tappo, la pressione dell'anidride carbonica sopra il liquido crolla (passa a quella dell'aria normale). Per la legge di Henry, a pressione più bassa il liquido tiene disciolto meno gas: così la CO2 in eccesso esce dal liquido (le bollicine) e col tempo l'acqua diventa 'sgasata', cioè liscia."
+/>
+
+</section>
+
+</RisorsaLayout>

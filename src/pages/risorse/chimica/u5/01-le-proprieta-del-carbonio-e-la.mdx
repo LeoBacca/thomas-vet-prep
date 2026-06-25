@@ -1,0 +1,107 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u5-01">
+
+Il **carbonio** è l'atomo da cui è fatta tutta la vita: il tuo DNA, i muscoli, gli zuccheri, i grassi. Tutto pieno di carbonio. Ma perché proprio lui? Perché ha una caratteristica speciale: forma **4 legami** con altri atomi. Quattro "mani" per tenersi attaccato. E con quattro mani puoi costruire un numero infinito di molecole diverse, come con i mattoncini delle costruzioni.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> immagina il carbonio come un omino con <strong>4 braccia</strong>. Con così tante braccia può afferrare tanti altri atomi e collegarsi in catene lunghissime. Per questo esistono milioni di molecole della vita.</div>
+
+## Perché il carbonio forma proprio 4 legami
+
+Ogni atomo, nel suo "guscio" esterno, ha degli elettroni. Il carbonio ne ha **4** disponibili per fare legami. Un atomo è "felice" e stabile quando il suo guscio esterno arriva a **8** elettroni (è la regola dell'ottetto, come avere il posto pieno a tavola).
+
+Il carbonio ne ha 4 e gliene servono 8: gli mancano 4. La soluzione più comoda? **Condividere** 4 elettroni con altri atomi. Ogni elettrone condiviso è un legame. Ne servono 4 → **4 legami**. Non uno di più, non uno di meno. Per questo nel metano (il gas della cucina) trovi `CH4`: un carbonio che tiene per mano 4 idrogeni.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> al carbonio mancano 4 elettroni per stare comodo. Li ottiene condividendone 4: ogni condivisione è un legame, quindi <strong>4 braccia, 4 legami</strong>.</div>
+
+## L'ibridazione: come il carbonio dispone le sue 4 braccia
+
+Qui arriva la parte un po' più tecnica, ma te la spiego con calma. I 4 elettroni del carbonio stanno in "casette" diverse (gli orbitali): una si chiama **s** e tre si chiamano **p**. Da sole queste casette avrebbero forme e direzioni diverse, e i 4 legami verrebbero sbilanciati.
+
+Allora il carbonio fa una mossa furba: **mescola** la casetta s con le tre casette p e ottiene **4 casette nuove tutte identiche**. Questo mescolamento si chiama **ibridazione sp3** (s + p + p + p = 4 orbitali "ibridi" uguali).
+
+Pensa a quando in cucina mescoli tuorli e albume: parti da due cose diverse e ottieni un composto omogeneo. Uguale qui: 4 elettroni diversi diventano 4 braccia tutte uguali.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> <strong>ibridazione</strong> = il carbonio frulla insieme le sue casette di elettroni per ottenere <strong>4 braccia identiche</strong>, perfette per fare 4 legami uguali ed equilibrati.</div>
+
+## Il tetraedro: la forma delle 4 braccia
+
+Le 4 braccia uguali non stanno appiccicate: si **respingono** tra loro (gli elettroni hanno carica negativa e le cariche uguali si allontanano). Per stare il più lontane possibile si dispongono verso i 4 vertici di un **tetraedro** (una piramide a base triangolare), con un angolo di circa **109,5°** tra una e l'altra.
+
+Pensa a un palloncino con quattro palloncini legati al centro: si sistemano da soli a ventaglio nelle quattro direzioni più comode. Il carbonio fa lo stesso.
+
+<Diagram caption="Il carbonio con 4 legami diretti verso i vertici di un tetraedro" code={`flowchart TB
+  C["CARBONIO<br/>(al centro)"] --> L1["legame 1"]
+  C --> L2["legame 2"]
+  C --> L3["legame 3"]
+  C --> L4["legame 4"]
+  L1 --> N1["verso un vertice"]
+  L2 --> N2["verso un vertice"]
+  L3 --> N3["verso un vertice"]
+  L4 --> N4["verso un vertice<br/>angoli di circa 109,5 gradi"]`} />
+
+## Catene e anelli: ecco perché esistono milioni di molecole
+
+La cosa più potente del carbonio è che **si lega ad altri atomi di carbonio**. Un carbonio dà la mano a un altro carbonio, che ne afferra un altro, e un altro ancora. Così si formano **catene** lunghissime, oppure si chiudono ad **anello**.
+
+È esattamente come una collana: ogni perla è un carbonio, e le braccia libere rimaste possono attaccare idrogeno, ossigeno, azoto e tanto altro. Cambiando lunghezza della catena e atomi attaccati, ottieni molecole completamente diverse.
+
+Questo conta moltissimo per la **medicina e la veterinaria**: gli **zuccheri** (energia), i **grassi** (riserva e membrane delle cellule), le **proteine** e il **DNA** sono tutte lunghe strutture costruite su scheletri di carbonio. Capire come si lega il carbonio è il primo passo per capire come è fatto il corpo di un animale o di una persona.
+
+<Diagram caption="Dal singolo carbonio alle catene che formano le molecole della vita" code={`flowchart LR
+  A["1 carbonio<br/>4 braccia"] --> B["si lega ad altri carboni"]
+  B --> C["CATENA o ANELLO di carboni"]
+  C --> D["zuccheri, grassi,<br/>proteine, DNA"]`} />
+
+## Guarda il video
+
+<YouTube id="kRg4PidqJtw" title="Ibridazione del carbonio sp3, sp2 e sp — spiegazione per principianti (MnemoChimica)" />
+
+<VideoVisto id="chim-u5-01" />
+
+## Da ricordare
+
+- Il carbonio ha **4 elettroni** liberi e gliene servono **8**: condividendone 4 forma **4 legami** (4 braccia).
+- L'**ibridazione sp3** mescola gli orbitali del carbonio in **4 braccia tutte uguali**.
+- Le 4 braccia si respingono e puntano ai vertici di un **tetraedro** (angolo circa 109,5°).
+- Il carbonio si lega anche ad **altri carboni**, formando **catene e anelli**: ecco perché esistono milioni di molecole.
+- Zuccheri, grassi, proteine e DNA sono tutti costruiti su **scheletri di carbonio**: è la base della vita.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quanti legami forma di solito un atomo di carbonio?"
+  opzioni={["2", "4", "6", "8"]}
+  corretta={1}
+  spiegazione="Il carbonio ha 4 elettroni disponibili e ne condivide 4: forma quindi 4 legami, come avere 4 braccia."
+/>
+
+<Quiz
+  domanda="Che cos'è l'ibridazione sp3 del carbonio, detta in modo semplice?"
+  opzioni={["la rottura dell'atomo", "il mescolamento degli orbitali per ottenere 4 braccia identiche", "un tipo di metallo", "la perdita di tutti gli elettroni"]}
+  corretta={1}
+  spiegazione="L'ibridazione sp3 è il 'frullare insieme' una casetta s e tre casette p per ottenere 4 orbitali (braccia) tutti uguali."
+/>
+
+<Quiz
+  domanda="Verso quale forma puntano i 4 legami del carbonio ibridato sp3?"
+  opzioni={["un quadrato piatto", "una linea retta", "i vertici di un tetraedro (piramide)", "un cerchio"]}
+  corretta={2}
+  spiegazione="Le 4 braccia si respingono e si dispongono verso i 4 vertici di un tetraedro, con angoli di circa 109,5 gradi."
+/>
+
+<Esercizio
+  problema="Il metano è la molecola del gas di cucina e ha formula CH4. Spiega, usando l'idea delle '4 braccia' del carbonio, perché ci sono proprio 4 atomi di idrogeno."
+  soluzione="Il carbonio ha 4 braccia (4 legami da fare). Ogni braccio afferra un idrogeno, che ha bisogno di un solo legame. Quattro braccia che afferrano quattro idrogeni: ecco perché la formula è CH4. I quattro legami puntano verso i vertici di un tetraedro."
+/>
+
+</section>
+
+</RisorsaLayout>

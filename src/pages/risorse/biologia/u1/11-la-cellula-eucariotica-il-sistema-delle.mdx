@@ -1,0 +1,104 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u1-11">
+
+## Cos'è la cellula eucariotica?
+
+La cellula eucariotica è il "tipo avanzato" di cellula. A differenza di quella procariotica (come i batteri, che sono molto semplici), la cellula eucariotica ha un **nucleo vero**, circondato da una membrana, e al suo interno tanti compartimenti separati chiamati **organuli**.
+
+Pensa a una città: la cellula procariotica è un villaggio aperto, tutto in uno spazio unico. La cellula eucariotica è invece una città moderna, con quartieri recintati, ognuno con una funzione precisa — uffici, magazzini, centrali energetiche, laboratori.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La cellula eucariotica è organizzata a compartimenti: ogni "stanza" ha una membrana propria e un compito specifico. Il nucleo è la stanza principale, quella che contiene le istruzioni (il DNA).</div>
+
+---
+
+## Il nucleo: il quartier generale
+
+Il **nucleo** è separato dal resto della cellula da un doppio strato di membrana chiamato **involucro nucleare**. Questa doppia parete non è ermetica: è piena di **pori nucleari**, piccoli cancelli che lasciano passare solo certi messaggi (gli RNA) e certi operai (le proteine).
+
+Dentro il nucleo c'è il DNA, organizzato in **cromosomi**. Il DNA non esce mai dal nucleo — invece manda fuori delle copie di istruzioni, chiamate **mRNA** (RNA messaggero), che vengono lette dai ribosomi nel citoplasma.
+
+---
+
+## Il sistema delle endomembrane
+
+"Endo" significa "dentro". Il **sistema delle endomembrane** è una rete di membrane interne alla cellula che lavorano insieme per produrre, modificare e trasportare proteine e lipidi.
+
+I componenti principali sono:
+
+- **Reticolo endoplasmatico rugoso (RER):** è come una fabbrica. Ha ribosomi attaccati sulla superficie (ecco perché è "rugoso") e produce proteine destinate a essere esportate o inserite nella membrana.
+- **Reticolo endoplasmatico liscio (REL):** non ha ribosomi. Si occupa di produrre lipidi e di detossificare sostanze (es. alcol nel fegato).
+- **Apparato di Golgi:** è il "centro di smistamento postale". Riceve le proteine dal RER, le modifica (aggiunge etichette) e le spedisce dove servono: fuori dalla cellula, ai lisosomi, alla membrana.
+- **Lisosomi:** sono i "sacchi dell'immondizia" — vescicole piene di enzimi digestivi che scompongono materiali di scarto o batteri ingeriti.
+- **Vescicole:** piccole bollicine di membrana che trasportano materiali da un organulo all'altro, come furgoncini di consegna.
+
+---
+
+## Come comunicano questi compartimenti?
+
+I materiali non si muovono liberamente nel citoplasma: viaggiano dentro **vescicole** che si staccano da un organulo e si fondono con un altro. È come spedire un pacco in una busta: il contenuto non tocca l'esterno.
+
+Il percorso classico è:
+1. Le proteine vengono sintetizzate nel RER.
+2. Passano al Golgi in vescicole.
+3. Il Golgi le modifica e le smista.
+4. Arrivano a destinazione (lisosomi, membrana plasmatica, spazio extracellulare).
+
+---
+
+## L'origine del nucleo: dove è venuto fuori?
+
+Questa è una delle domande più affascinanti della biologia. Come mai le cellule eucariotiche hanno un nucleo e quelle procariotiche no?
+
+L'ipotesi più accreditata si chiama **invaginazione della membrana plasmatica**. In breve: in un antico batterio, la membrana esterna ha cominciato a "ripiegarsi" verso l'interno, avvolgendo lentamente il DNA e formando un doppio strato di membrana attorno ad esso. Nel tempo, questa struttura è diventata il nucleo.
+
+Non è andata in fretta — ci sono volute centinaia di milioni di anni. Ma il risultato è stato un organulo capace di proteggere il DNA e di controllare meglio quando e come leggere le istruzioni genetiche.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il nucleo si è formato quando la membrana di un batterio antico ha iniziato a ripiegarsi su se stessa, circondando il DNA. Come avvolgere un libro prezioso in una copertina rigida.</div>
+
+---
+
+<Diagram caption="Il percorso delle proteine nel sistema delle endomembrane" code={`flowchart LR
+  A["Ribosomi sul RER<br/>(sintesi della proteina)"] --> B["Reticolo Endoplasmatico<br/>Rugoso (RER)<br/>piega e prepara la proteina"]
+  B --> C["Vescicola di trasporto<br/>(stacca dal RER)"]
+  C --> D["Apparato di Golgi<br/>modifica ed etichetta"]
+  D --> E1["Lisosoma<br/>(digestione)"]
+  D --> E2["Vescicola secretoria<br/>(esce dalla cellula)"]
+  D --> E3["Membrana plasmatica<br/>(inserimento)"]`} />
+
+<Diagram caption="Origine del nucleo per invaginazione della membrana" code={`flowchart TB
+  A["Cellula procariotica antica<br/>DNA libero nel citoplasma"] --> B["La membrana plasmatica<br/>inizia a ripiegarsi verso l'interno"]
+  B --> C["Il DNA viene progressivamente<br/>circondato dalla membrana"]
+  C --> D["Si forma un doppio strato<br/>di membrana attorno al DNA"]
+  D --> E["Nucleo vero<br/>con involucro nucleare e pori"]
+  E --> F["Cellula eucariotica<br/>con DNA protetto e controllato"]`} />
+
+## Guarda il video
+<YouTube id="eHH5-SFI9yc" title="Le endomembrane biologia semplificata" />
+<VideoVisto id="bio-u1-11" />
+
+## Da ricordare
+- La cellula eucariotica è compartimentata: ogni organulo ha una membrana propria e una funzione specifica, come stanze in una casa.
+- Il sistema delle endomembrane (RER, REL, Golgi, lisosomi, vescicole) è una catena di montaggio e smistamento per proteine e lipidi.
+- Il nucleo si è probabilmente formato per invaginazione della membrana plasmatica di un'antica cellula procariotica, che ha avvolto il DNA proteggendolo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Quale organulo del sistema delle endomembrane riceve le proteine dal reticolo endoplasmatico rugoso, le modifica e le smista verso la destinazione finale?" opzioni={["Lisosoma","Reticolo endoplasmatico liscio","Apparato di Golgi","Nucleo"]} corretta={2} spiegazione="L'apparato di Golgi è il 'centro postale' della cellula: riceve le proteine dal RER tramite vescicole, aggiunge modifiche (come etichette di zucchero) e le spedisce a lisosomi, membrana plasmatica o spazio extracellulare." />
+
+<Quiz domanda="Qual è la principale differenza strutturale tra reticolo endoplasmatico rugoso (RER) e reticolo endoplasmatico liscio (REL)?" opzioni={["Il RER è più grande del REL","Il RER ha ribosomi attaccati sulla superficie, il REL no","Il REL produce proteine, il RER produce lipidi","Il REL si trova vicino al nucleo, il RER no"]} corretta={1} spiegazione="La caratteristica distintiva del RER sono i ribosomi attaccati alla sua membrana esterna, che gli danno l'aspetto 'rugoso'. Questi ribosomi sintetizzano proteine destinate alla secrezione o all'inserimento nelle membrane. Il REL è privo di ribosomi e si specializza nella sintesi di lipidi e nella detossificazione." />
+
+<Quiz domanda="Secondo l'ipotesi più accreditata, come si è formato il nucleo nelle cellule eucariotiche?" opzioni={["Un virus ha portato il DNA dentro la cellula procariotica","La membrana plasmatica di un'antica cellula procariotica si è ripiegata verso l'interno, avvolgendo il DNA","Due cellule procariotiche si sono fuse e una è diventata il nucleo dell'altra","Il nucleo si è formato per divisione di un mitocondrio"]} corretta={1} spiegazione="L'ipotesi dell'invaginazione della membrana sostiene che la membrana di un'antica cellula procariotica si sia ripiegata verso l'interno avvolgendo il DNA, formando nel tempo un doppio strato di membrana (l'involucro nucleare). Questa ipotesi è distinta dalla teoria endosimbiontica, che spiega l'origine di mitocondri e cloroplasti." />
+
+<Esercizio problema="Un medico veterinario studia una cellula di fegato di cane. Sa che questa cellula deve produrre ed esportare molte proteine (albumina) e deve anche metabolizzare farmaci e tossine. Quali due organuli del sistema delle endomembrane ti aspetteresti siano particolarmente sviluppati in questa cellula, e perché?" soluzione="Ti aspetteresti un abbondante Reticolo Endoplasmatico Rugoso (RER) perché è il sito di sintesi delle proteine destinate alla secrezione, come l'albumina — più proteine deve produrre una cellula, più RER le serve. In aggiunta, ti aspetteresti molto Reticolo Endoplasmatico Liscio (REL) perché il fegato è l'organo principale di detossificazione: il REL contiene enzimi (come il citocromo P450) che modificano e inattivano farmaci, tossine e altre sostanze estranee. L'apparato di Golgi sarebbe anch'esso molto sviluppato per smistare l'albumina verso la secrezione." />
+
+</section>
+
+</RisorsaLayout>

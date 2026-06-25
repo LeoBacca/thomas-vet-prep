@@ -1,0 +1,75 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="fis-u2-09">
+
+## Cos'è l'inerzia?
+
+Immagina di essere su un autobus che frena di colpo: il tuo corpo va avanti da solo, anche se l'autobus si è fermato. Questo accade perché ogni corpo tende a **mantenere il suo stato di moto**. Questa tendenza si chiama **inerzia**.
+
+L'inerzia non è una forza: è semplicemente la "resistenza" che un oggetto oppone a qualsiasi cambiamento del suo stato di moto. Più un oggetto è massiccio, più inerzia ha. Spingere un carrello vuoto è facile; spingere un carrello pieno di sacchi è molto più faticoso proprio per questo motivo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un oggetto fermo rimane fermo, un oggetto in moto continua a muoversi — a meno che qualcosa lo costringa a cambiare.</div>
+
+## Il primo principio della dinamica (Newton)
+
+Questo principio, formulato da Isaac Newton, dice esattamente questo:
+
+> **Se la forza risultante su un corpo è zero, il corpo rimane fermo oppure continua a muoversi in linea retta a velocità costante.**
+
+In simboli: se **ΣF = 0**, allora il corpo è in **equilibrio**.
+
+Ci sono due situazioni possibili:
+- Il corpo è **fermo** e non si muove → equilibrio **statico**
+- Il corpo si muove a **velocità costante in linea retta** → equilibrio **dinamico**
+
+In entrambi i casi la forza netta è zero. La differenza è solo se la velocità di partenza era zero oppure no.
+
+## Cosa significa "forza risultante zero"?
+
+Le forze raramente agiscono da sole. Su un libro appoggiato sul tavolo agiscono contemporaneamente:
+- La **gravità** (tira verso il basso)
+- La **reazione normale del tavolo** (spinge verso l'alto)
+
+Queste due forze sono uguali e opposte, quindi si annullano: la forza risultante è zero e il libro sta fermo. È in equilibrio statico.
+
+<Diagram caption="Equilibrio statico: le forze si annullano e il corpo rimane fermo" code={`flowchart TB
+  A["Forza peso (verso il basso)"] --> C["Corpo in equilibrio"]
+  B["Reazione normale (verso l'alto)"] --> C
+  C --> D["Forza risultante = 0<br/>Corpo fermo"]`} />
+
+## Equilibrio statico e dinamico a confronto
+
+<Diagram caption="Equilibrio statico vs equilibrio dinamico" code={`flowchart LR
+  A["Forza risultante = 0"] --> B["Il corpo era FERMO?"]
+  B -->|Sì| C["Rimane FERMO<br/>Equilibrio STATICO"]
+  B -->|No, era in moto| D["Continua in moto<br/>rettilineo uniforme<br/>Equilibrio DINAMICO"]`} />
+
+## Guarda il video
+<YouTube id="GpekGDZ5f0E" title="Il primo principio della dinamica o principio di inerzia - Spiegazione ed esempi." />
+<VideoVisto id="fis-u2-09" />
+
+## Da ricordare
+- Il primo principio di Newton dice che **se la forza risultante è zero, lo stato di moto non cambia**.
+- L'**inerzia** è la tendenza di un corpo a resistere ai cambiamenti di moto; dipende dalla massa dell'oggetto.
+- L'**equilibrio** può essere statico (corpo fermo) o dinamico (moto rettilineo uniforme), ma in entrambi i casi la forza netta è zero.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Un'astronave in orbita spegne i motori lontano da ogni pianeta. Cosa succede?" opzioni={["Rallenta subito e si ferma","Continua a muoversi in linea retta a velocità costante","Accelera perché non c'è attrito","Cambia direzione da sola"]} corretta={1} spiegazione="Senza forze esterne applicate (forza risultante zero), per il primo principio di Newton l'astronave mantiene il suo moto rettilineo uniforme indefinitamente." />
+
+<Quiz domanda="Un libro è appoggiato sul tavolo e non si muove. Quale affermazione è corretta?" opzioni={["Non agisce nessuna forza sul libro","La forza peso è maggiore della reazione del tavolo","La forza risultante sul libro è zero","Il libro ha inerzia zero perché è fermo"]} corretta={2} spiegazione="Il libro è in equilibrio statico: la forza peso verso il basso e la reazione normale verso l'alto sono uguali e opposte, quindi la forza risultante è zero." />
+
+<Quiz domanda="L'inerzia di un oggetto dipende principalmente da:" opzioni={["La sua velocità","La sua massa","Il materiale di cui è fatto","La temperatura dell'ambiente"]} corretta={1} spiegazione="L'inerzia misura la resistenza di un corpo al cambiamento di stato di moto ed è direttamente proporzionale alla sua massa: più è massiccio, più è difficile cambiare il suo stato di moto." />
+
+<Esercizio problema="Una scatola da 5 kg è ferma su un piano orizzontale. Sai che la forza peso vale circa 49 N verso il basso. Qual è il modulo della forza di reazione normale esercitata dal piano sulla scatola? La scatola è in equilibrio statico o dinamico?" soluzione="Poiché la scatola è ferma, la forza risultante deve essere zero (primo principio). Questo significa che la reazione normale deve bilanciare esattamente la forza peso: N = 49 N verso l'alto. Si tratta di equilibrio STATICO, perché il corpo era fermo e rimane fermo." />
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,126 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u7-05">
+
+## Cos'è la mitosi — in due parole
+
+La **mitosi** è il modo in cui una cellula si divide in due cellule figlie identiche. È come fotocopiare un documento: alla fine hai due copie uguali all'originale.
+
+Prima di dividersi, la cellula duplica tutto il suo DNA. Poi, durante la mitosi, "impacchetta" il DNA in strutture visibili chiamate **cromosomi**, le smista ai due lati opposti e si divide a metà.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> La mitosi è la "fotocopia" della cellula — una cellula madre produce due cellule figlie con lo stesso identico patrimonio genetico.</div>
+
+---
+
+## Perché i cromosomi si condensano?
+
+Nel normale lavoro quotidiano, il DNA è lungo e sfilacciato come un gomitolo disfatto: così può essere letto facilmente. Ma per dividersi senza fare pasticci, la cellula deve "arrotolare" il DNA in bastoncini compatti e maneggevoli: i **cromosomi condensati**.
+
+Immagina di dover spostare un rotolo di filo lungo chilometri: lo avvolgi stretto in una bobina piccola e compatta. I cromosomi funzionano così. Prima il DNA si avvolge attorno a proteine chiamate **istoni** (come il filo attorno a tanti rocchetti); poi altre proteine, le **condensine**, stringono ancora di più questa matassa fino a formare i bastoncini visibili al microscopio.
+
+---
+
+## Le fasi della mitosi — una per una
+
+La mitosi si divide in **4 fasi principali** (più la citodieresi finale).
+
+### 1. Profase — il riordino
+
+- Il DNA si avvolge e si condensa: appaiono i cromosomi.
+- Ogni cromosoma è già duplicato e si vede come una "X" (i due bracci si chiamano **cromatidi fratelli**, uniti al centro nel **centromero**).
+- Il **fuso mitotico** — un sistema di cavi proteici — inizia a formarsi tra i due poli della cellula.
+- L'involucro del nucleo si dissolve.
+
+### 2. Metafase — l'allineamento
+
+- I cromosomi si dispongono in fila al centro della cellula (sul cosiddetto **piano equatoriale**), come soldati sull'attenti.
+- I cavi del fuso si agganciano al centromero di ogni cromosoma.
+
+### 3. Anafase — la separazione
+
+- I cavi del fuso si accorciano e **tirano** i cromatidi fratelli verso i poli opposti.
+- Ogni polo della cellula riceve una copia completa del genoma.
+
+### 4. Telofase — il ripristino
+
+- I cromosomi arrivano ai poli e si **decondensano** (tornano filamentosi).
+- L'involucro nucleare si riforma attorno a ciascun gruppo di cromosomi: nascono due nuovi nuclei.
+
+### Citodieresi — la divisione del corpo
+
+- Dopo la mitosi, la cellula si "strizza" fisicamente a metà e dà origine a **due cellule figlie** indipendenti.
+
+---
+
+<Diagram caption="Le fasi della mitosi: dal DNA condensato alle due cellule figlie" code={`flowchart TB
+  A["INTERFASE<br/>DNA duplicato, cromatina distesa"] --> B["PROFASE<br/>DNA si condensa in cromosomi a X<br/>fuso mitotico si forma"]
+  B --> C["METAFASE<br/>Cromosomi allineati al centro<br/>cavi del fuso agganciati"]
+  C --> D["ANAFASE<br/>Cromatidi fratelli separati<br/>tirati verso i poli opposti"]
+  D --> E["TELOFASE<br/>Cromosomi ai poli, si decondensano<br/>due nuovi nuclei si riformano"]
+  E --> F["CITODIERESI<br/>Cellula si divide in due<br/>2 cellule figlie identiche"]`} />
+
+<Diagram caption="La condensazione del DNA: dal filo alla X" code={`flowchart LR
+  A["DNA nudo<br/>(doppia elica)"] --> B["Avvolto attorno<br/>agli istoni<br/>(nucleosoma)"]
+  B --> C["Fibra da 30 nm<br/>(solenoide)"]
+  C --> D["Ansa cromatinica<br/>(condensina)"]
+  D --> E["CROMOSOMA CONDENSATO<br/>visibile al microscopio<br/>forma a X"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="OF94qKntB38" title="DIVISIONE CELLULARE - MITOSI" />
+<VideoVisto id="bio-u7-05" />
+
+---
+
+## Da ricordare
+
+- La mitosi produce **2 cellule figlie geneticamente identiche** alla cellula madre — è una divisione conservativa del genoma.
+- I cromosomi si condensano grazie a proteine (**istoni** e **condensine**) che avvolgono il DNA stretto: servono compatti per essere smistati senza errori.
+- Le 4 fasi in ordine sono: **Profase → Metafase → Anafase → Telofase** (acronimo: **PMAT**).
+
+---
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="In quale fase della mitosi i cromosomi si allineano al centro della cellula (piano equatoriale)?"
+  opzioni={["Profase", "Metafase", "Anafase", "Telofase"]}
+  corretta={1}
+  spiegazione="Nella metafase i cromosomi si dispongono lungo il piano equatoriale della cellula e i microtubuli del fuso si agganciano ai centromeri. È la fase usata per contare i cromosomi al microscopio."
+/>
+
+<Quiz
+  domanda="Cosa sono i cromatidi fratelli?"
+  opzioni={[
+    "Due cromosomi di coppia omologa diversa",
+    "Le due copie identiche di un cromosoma duplicato, unite al centromero",
+    "I due filamenti del DNA prima della replicazione",
+    "Le proteine che formano il fuso mitotico"
+  ]}
+  corretta={1}
+  spiegazione="Dopo la duplicazione del DNA, ogni cromosoma è formato da due copie identiche (cromatidi fratelli) tenute insieme dal centromero. Si separano nell'anafase."
+/>
+
+<Quiz
+  domanda="Quale proteina è principalmente responsabile della condensazione del DNA in cromosomi durante la mitosi?"
+  opzioni={["Actina", "Tubulina", "Condensina", "Ciclina"]}
+  corretta={2}
+  spiegazione="Le condensine sono complessi proteici che compattano la cromatina in cromosomi ben definiti durante la profase. Le cicline regolano il ciclo cellulare; tubulina e actina fanno parte del citoscheletro."
+/>
+
+<Esercizio
+  problema="Metti in ordine le seguenti fasi e descrivi con una frase cosa succede ai cromosomi in ciascuna: Anafase, Telofase, Profase, Metafase."
+  soluzione="Ordine corretto: 1) Profase — il DNA si condensa in cromosomi visibili (forma a X) e l'involucro nucleare si dissolve. 2) Metafase — i cromosomi si allineano al centro della cellula sul piano equatoriale. 3) Anafase — i cromatidi fratelli vengono separati e tirati verso i poli opposti. 4) Telofase — i cromosomi ai poli si decondensano e si riformano due nuclei distinti."
+/>
+
+</section>
+
+</RisorsaLayout>

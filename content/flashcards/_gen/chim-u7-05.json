@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fc-chim-u7-05-1",
+    "topicId": "chim-u7-05",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "mc",
+    "q": "Una proteina ha 4 livelli strutturali. Quale livello descrive semplicemente l'ORDINE degli amminoacidi nella catena (come le lettere di una parola)?",
+    "choices": [
+      "Struttura primaria",
+      "Struttura secondaria",
+      "Struttura terziaria",
+      "Struttura quaternaria"
+    ],
+    "answer": 0,
+    "explain": "La struttura primaria e solo la sequenza (l'ordine) degli amminoacidi: il filo di perline prima che si arrotoli. Gli altri livelli descrivono i ripiegamenti successivi. Cambiar anche un solo amminoacido puo causare malattie, come nell'anemia falciforme.",
+    "tags": [
+      "impara"
+    ]
+  },
+  {
+    "id": "fc-chim-u7-05-2",
+    "topicId": "chim-u7-05",
+    "materia": "chimica",
+    "unita": 7,
+    "type": "open",
+    "q": "Descrivi i 4 livelli strutturali delle proteine in ordine, indicando per ognuno cosa lo tiene insieme. Includi almeno un esempio concreto (una proteina reale o un fenomeno che conosci).",
+    "answer": "1) Struttura PRIMARIA: la sequenza (ordine) degli amminoacidi nella catena, come le lettere di una parola. E tenuta insieme dai legami peptidici tra gli amminoacidi. Esempio: cambiare un solo amminoacido nell'emoglobina causa l'anemia falciforme. 2) Struttura SECONDARIA: i primi ripiegamenti locali del filo, cioe l'alfa-elica (come il cordone a spirale del vecchio telefono) e il foglietto beta (come carta piegata a fisarmonica). Sono tenuti da tanti legami a idrogeno, deboli ma numerosi. 3) Struttura TERZIARIA: la forma tridimensionale completa di UNA catena, il gomitolo finale. E stabilizzata da interazioni deboli (legami a idrogeno, cariche, effetto idrofobico che nasconde le parti 'che odiano l'acqua' all'interno) e dai ponti disolfuro, legami FORTI tra due atomi di zolfo (come bottoni automatici). Esempio: i capelli ricci li tengono i ponti disolfuro. 4) Struttura QUATERNARIA: l'unione di piu catene gia ripiegate (subunita) che lavorano in squadra. Non tutte le proteine ce l'hanno. Esempio: l'emoglobina e fatta da 4 subunita che insieme trasportano l'ossigeno meglio di quanto farebbe una catena sola.",
+    "explain": "Parola chiave: primaria=sequenza, secondaria=elica/foglietto (legami H), terziaria=forma 3D di UNA catena (ponti disolfuro forti + forze deboli), quaternaria=piu catene unite (es. emoglobina, 4 subunita).",
+    "tags": [
+      "risposta aperta"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+{
+ "id": "chim-u1-10",
+ "titolo": "La regola dell'ottetto",
+ "materia": "chimica",
+ "unita": 1,
+ "slug": "10-la-regola-dellottetto",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u1/10-la-regola-dellottetto.mdx",
+ "examQuestions": [
+  {
+   "year": "2024Luglio",
+   "q": "Quanti elettroni non condivisi sono presenti nello strato più esterno di un atomo di fluoro della molecola HF?",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "4",
+    "3"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "applicazione"
+  }
+ ]
+}

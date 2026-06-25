@@ -1,0 +1,61 @@
+[
+  {
+    "id": "fc-chim-u1-07-1",
+    "topicId": "chim-u1-07",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Gli elettroni di un atomo si sistemano negli orbitali partendo da quello a energia più bassa. Quale orbitale si riempie per PRIMO?",
+    "choices": ["Il 2p, perché è il più capiente", "L'1s, perché è il più vicino al nucleo", "Il 3s, in modo casuale", "Si riempiono tutti contemporaneamente"],
+    "answer": 1,
+    "explain": "Si parte sempre dal livello a energia più bassa, cioè il più vicino al nucleo: l'1s. È come riempire un bicchiere: l'acqua va prima sul fondo, non a metà. Solo dopo aver riempito l'1s si passa al 2s, poi al 2p e così via.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-07-2",
+    "topicId": "chim-u1-07",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Quanti posti per gli elettroni ha un orbitale di tipo s e quanti uno di tipo p?",
+    "choices": ["s tiene 6 posti, p ne tiene 2", "s tiene 2 posti, p ne tiene 6", "s e p tengono entrambi 8 posti", "s tiene 1 posto, p ne tiene 4"],
+    "answer": 1,
+    "explain": "L'orbitale s ha 2 posti, l'orbitale p ne ha 6. Il numero scritto in alto (l'apice, come in 2p⁴) dice quanti elettroni ci hai davvero messo, fino al massimo consentito. Confondere i due numeri è l'errore più comune quando si scrive una configurazione.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u1-07-3",
+    "topicId": "chim-u1-07",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "open",
+    "q": "Scrivi passo per passo la configurazione elettronica dell'ossigeno, che ha 8 elettroni. Poi spiega a parole cosa hai fatto.",
+    "answer": "Riempio prima l'orbitale più basso, l'1s, con 2 elettroni → 1s². Mi restano 6 elettroni. Passo al 2s e ci metto 2 elettroni → 2s². Mi restano 4 elettroni. Vanno nel 2p, che può tenerne fino a 6: ce ne metto 4 → 2p⁴. Configurazione finale: 1s² 2s² 2p⁴. In pratica ho riempito gli orbitali in ordine di energia, dal più vicino al nucleo verso l'esterno, fermandomi appena ho sistemato tutti gli 8 elettroni.",
+    "explain": "Regola chiave: si riempie dal basso (1s) verso l'alto, fermandosi quando finiscono gli elettroni. Per l'ossigeno: 1s² 2s² 2p⁴.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u1-07-4",
+    "topicId": "chim-u1-07",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Qual è la configurazione elettronica completa del cloro (Cl), che ha numero atomico 17 (quindi 17 elettroni)?",
+    "choices": ["1s² 2s² 2p⁶", "1s² 2s² 2p⁶ 3s² 3p⁵", "1s² 2s² 2p⁶ 3s² 3p⁶", "1s² 2s² 2p⁶ 3s³ 3p⁴", "1s² 2s² 2p⁵ 3s²"],
+    "answer": 1,
+    "explain": "Riempiendo in ordine: 1s² (2) + 2s² (2) + 2p⁶ (6) + 3s² (2) = 12 elettroni, ne restano 5, che vanno nel 3p → 3p⁵. Totale 17. ✔ La risposta '1s² 2s² 2p⁶' ferma a 10 elettroni: è un atomo diverso (neon), non il cloro. '3s² 3p⁶' arriva a 18 (un elettrone di troppo: sarebbe l'argon, l'opposto del cloro che ne ha 17). '3s³' è impossibile: l'orbitale s ha solo 2 posti, mai 3. '2p⁵ 3s²' salta dei posti del 2p (che ne tiene 6): conta sbagliato.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u1-07-5",
+    "topicId": "chim-u1-07",
+    "materia": "chimica",
+    "unita": 1,
+    "type": "mc",
+    "q": "Tra i seguenti elementi, quale NON è un bioelemento, cioè NON fa parte degli atomi di cui è fatto quasi tutto il corpo (CHONPS)?",
+    "choices": ["Azoto (N)", "Fosforo (P)", "Elio (He)", "Carbonio (C)", "Zolfo (S)"],
+    "answer": 2,
+    "explain": "I sei atomi della vita sono CHONPS: Carbonio, Idrogeno, Ossigeno, aZoto (N), Fosforo (P), zolfo (S). L'Elio (He) è un gas nobile inerte: non fa legami e non costruisce nessuna biomolecola, quindi è l'intruso. Le trappole N, P, C, S sembrano 'strani' o poco comuni ma sono tutti nel CHONPS (l'azoto è nelle proteine, il fosforo nel DNA, lo zolfo tiene insieme certe proteine): se ricordi la sigla li riconosci subito.",
+    "tags": ["prova d'esame"]
+  }
+]

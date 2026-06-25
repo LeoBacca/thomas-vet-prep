@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u4-01-1",
+    "topicId": "chim-u4-01",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: secondo Arrhenius, una sostanza viene chiamata 'base' se, sciolta in acqua, libera ioni OH- (ossidrile).",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Secondo Arrhenius la definizione e semplice: acido = libera H+ in acqua; base = libera OH- in acqua. L'NaOH (soda), sciolta in acqua, si spezza in Na+ e OH-, quindi e una base. Il sapone e la candeggina funzionano cosi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-01-2",
+    "topicId": "chim-u4-01",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "L'acido cloridrico (HCl) e lo stesso acido che lavora nello stomaco dei cani e dei gatti per digerire il cibo. Quando lo sciogli in acqua si spezza in H+ e Cl-. Secondo Arrhenius, HCl e...",
+    "choices": [
+      "un acido, perche libera ioni H+ in acqua",
+      "una base, perche libera ioni Cl- in acqua",
+      "ne acido ne base: non libera OH-",
+      "una base, perche il Cl- e negativo come OH-"
+    ],
+    "answer": 0,
+    "explain": "La regola di Arrhenius: se in acqua liberi H+, sei un acido. HCl libera H+ (e Cl-), quindi e un acido. Il Cl- non e un ossidrile: non conta per la definizione di base. Le opzioni 2 e 4 confondono uno ione negativo qualsiasi con OH-, che e l'unica cosa che conta per definire una base.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-01-3",
+    "topicId": "chim-u4-01",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "Spiega con parole tue la teoria di Arrhenius: cos'e un acido e cos'e una base? Poi porta un esempio concreto per ognuno e spiega perche quel comportamento conta nel corpo di un animale.",
+    "answer": "Secondo Arrhenius, tutto succede in acqua: sciogli una sostanza e guardi cosa libera. Se libera ioni H+ (idrogeno), e un ACIDO. Se libera ioni OH- (ossidrile), e una BASE. Esempio di acido: HCl (acido cloridrico) → in acqua libera H+ e Cl-. Esempio di base: NaOH (soda caustica) → in acqua libera Na+ e OH-. Perche conta in veterinaria: nello stomaco dei cani e dei gatti c'e HCl che aiuta a digerire e uccide i batteri ingeriti col cibo. Se un animale ha troppo acido si puo usare una base (un antiacido) per neutralizzarlo. Nel sangue bisogna sempre mantenere un equilibrio preciso tra H+ e OH-: se il sangue diventa troppo acido o troppo basico, le cellule smettono di funzionare.",
+    "explain": "Da ricordare: acido → H+ in acqua; base → OH- in acqua. La teoria vale SOLO in acqua.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u4-01-4",
+    "topicId": "chim-u4-01",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "Indica qual e il comportamento di un acido in soluzione acquosa:",
+    "choices": [
+      "libera protoni (ioni H+)",
+      "libera elettroni",
+      "accetta protoni",
+      "libera ioni ossidrile (OH-)",
+      "accetta elettroni"
+    ],
+    "answer": 0,
+    "explain": "Secondo Arrhenius un acido in acqua libera ioni H+ (protoni). Trappola classica: 'libera ioni ossidrile' e la definizione OPPOSTA, quella della base, non dell'acido. 'Accetta protoni' descrive invece una base secondo Bronsted-Lowry, una teoria diversa e piu avanzata. 'Libera elettroni' e 'accetta elettroni' sono comportamenti da reazioni redox, non da acido-base.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u4-01-5",
+    "topicId": "chim-u4-01",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "L'idrossido di sodio (NaOH) reagisce con l'acido cloridrico (HCl) in acqua. Quali prodotti si formano?",
+    "choices": [
+      "cloruro di sodio (NaCl) e acqua (H2O)",
+      "ipoclorito di sodio e acqua",
+      "ossido di sodio e acqua",
+      "cloro gassoso e acqua",
+      "ossido di sodio e cloro gassoso"
+    ],
+    "answer": 0,
+    "explain": "NaOH + HCl → NaCl + H2O. Gli ioni H+ dell'acido e gli ioni OH- della base si incontrano e formano acqua (H+ + OH- → H2O); il Na+ e il Cl- rimasti in soluzione formano il sale NaCl (sale da cucina). E la reazione di neutralizzazione: acido + base → sale + acqua. Trappole: 'ipoclorito di sodio' (NaOCl) e il prodotto di una reazione diversa (e la candeggina); 'ossido di sodio' richiede alte temperature, non una semplice soluzione acquosa; 'cloro gassoso' si formerebbe in una reazione di ossidazione, non qui.",
+    "tags": ["prova d'esame"]
+  }
+]

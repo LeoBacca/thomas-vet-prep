@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-bio-u5-25-1",
+    "topicId": "bio-u5-25",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "tf",
+    "q": "Vero o falso: la chinesina trasporta materiale verso la periferia della cellula (estremita +), mentre la dineina citoplasmatica trasporta verso il centro (estremita −). Entrambe usano ATP come carburante.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Pensa ai microtubuli come a un'autostrada: la chinesina e il camion in uscita (centro → periferia, estremita +), la dineina e il camion in entrata (periferia → centro, estremita −). Entrambi bruciano ATP ad ogni 'passo'.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-bio-u5-25-2",
+    "topicId": "bio-u5-25",
+    "materia": "biologia",
+    "unita": 5,
+    "type": "open",
+    "q": "Com'e fatta internamente una ciglia mobile e come riesce a muoversi? Cita lo schema numerico dei microtubuli e la proteina che genera il movimento.",
+    "answer": "All'interno di ogni ciglia (e flagello) c'e una struttura chiamata assonema, con uno schema detto '9+2': 9 coppie (doppietti) di microtubuli disposte a cerchio e 2 microtubuli singoli al centro. I doppietti periferici sono collegati tra loro da bracci di dineina assonale. Quando la dineina usa l'ATP, fa scorrere i doppietti uno sull'altro; siccome i doppietti sono ancorati, lo scorrimento si traduce in una piega — ed e cosi che la ciglia si muove a frusta. Se i bracci di dineina sono difettosi (sindrome di Kartagener), le ciglia non si muovono e il paziente ha infezioni respiratorie croniche e, negli uomini, sterilita.",
+    "explain": "Schema da ricordare: assonema 9+2. Motore: dineina assonale + ATP = scorrimento dei doppietti = movimento.",
+    "tags": ["risposta aperta"]
+  }
+]

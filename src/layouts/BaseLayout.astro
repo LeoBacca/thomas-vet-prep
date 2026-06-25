@@ -1,0 +1,120 @@
+---
+import '@/styles/global.css';
+import '@/styles/pirata.css';
+
+interface Props { title?: string; }
+const { title } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
+---
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title ? `${title} · ` : ''}Prep Veterinaria — Thomas</title>
+    <!-- font display "da insegna" solo per i titoli (1 famiglia, leggero) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="brand" href={u('')}>Prep <span>Veterinaria</span></a>
+        <nav class="nav">
+          <a href={u('tutorial/')}>Tutorial</a>
+          <a href={u('risorse/')}>Risorse</a>
+          <a href={u('studio/')}>Studio</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      Fatto con cura per Thomas · Semestre filtro · Fisica · Biologia · Chimica
+    </footer>
+
+    <!-- Diagrammi "disegnati a mano" (estetica Excalidraw) resi via Mermaid -->
+    <script type="module" is:inline>
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({
+        startOnLoad: true,
+        look: 'handDrawn',
+        theme: 'default',
+        securityLevel: 'loose',
+        fontFamily: 'ui-sans-serif, system-ui, sans-serif',
+      });
+    </script>
+
+    <!-- Progressi (Letto / Video visto) + quiz interattivi — stato locale nel browser -->
+    <script>
+      const KEY = 'prep:progress';
+      const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
+      const save = (s) => { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch {} };
+      const topic = (id) => load()[id] || {};
+      const setFlag = (id, flag, val) => { const s = load(); s[id] = s[id] || {}; s[id][flag] = val; save(s); };
+
+      function refreshToggles() {
+        document.querySelectorAll('[data-prog-toggle]').forEach((btn) => {
+          const on = !!topic(btn.dataset.id)[btn.dataset.flag];
+          btn.classList.toggle('on', on);
+          btn.setAttribute('aria-pressed', String(on));
+          const lbl = btn.querySelector('.lbl');
+          if (lbl && btn.dataset.on && btn.dataset.off) lbl.textContent = on ? btn.dataset.on : btn.dataset.off;
+        });
+      }
+      function refreshChecks() {
+        document.querySelectorAll('[data-prog-check]').forEach((c) => {
+          c.classList.toggle('on', !!topic(c.dataset.id).read);
+        });
+      }
+      function refreshBars() {
+        document.querySelectorAll('[data-unit-bar]').forEach((bar) => {
+          const ids = (bar.dataset.ids || '').split(',').filter(Boolean);
+          const done = ids.filter((id) => topic(id).read).length;
+          const pct = ids.length ? Math.round((done / ids.length) * 100) : 0;
+          const fill = bar.querySelector('.fill');
+          const lbl = bar.querySelector('.lbl');
+          if (fill) fill.style.width = pct + '%';
+          if (lbl) lbl.textContent = done + '/' + ids.length + ' letti';
+        });
+      }
+
+      document.addEventListener('click', (e) => {
+        const btn = e.target.closest('[data-prog-toggle]');
+        if (btn) {
+          setFlag(btn.dataset.id, btn.dataset.flag, !topic(btn.dataset.id)[btn.dataset.flag]);
+          refreshToggles(); refreshBars();
+          return;
+        }
+        const chk = e.target.closest('[data-prog-check]');
+        if (chk) {
+          e.preventDefault();
+          setFlag(chk.dataset.id, 'read', !topic(chk.dataset.id).read);
+          refreshChecks(); refreshBars();
+          return;
+        }
+        const opt = e.target.closest('.quiz .opt');
+        if (opt) {
+          const quiz = opt.closest('.quiz');
+          if (quiz.classList.contains('answered')) return;
+          quiz.classList.add('answered');
+          const correct = quiz.dataset.correct;
+          quiz.querySelectorAll('.opt').forEach((o) => {
+            if (o.dataset.i === correct) o.classList.add('correct');
+            else if (o === opt) o.classList.add('wrong');
+          });
+          const exp = quiz.querySelector('.spiegazione');
+          if (exp) exp.hidden = false;
+        }
+      });
+
+      refreshToggles(); refreshChecks(); refreshBars();
+    </script>
+  </body>
+</html>

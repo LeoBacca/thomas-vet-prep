@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-fis-u2-05-1",
+    "topicId": "fis-u2-05",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "tf",
+    "q": "Vero o falso: nel moto uniformemente accelerato la velocità aumenta di una quantità diversa ogni secondo (a volte di 2 m/s, a volte di 5, a volte di 10...).",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Proprio 'uniformemente' vuol dire che la velocità cambia di una quantità FISSA ogni secondo. Quella quantità fissa è l'accelerazione (m/s²). È come il pedale del gas tenuto sempre allo stesso punto: la velocità sale sempre dello stesso passo, non a sbalzi.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-05-2",
+    "topicId": "fis-u2-05",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un oggetto parte da fermo e cade liberamente (g = 10 m/s²). Che velocità ha dopo 3 secondi?",
+    "choices": [
+      "30 m/s",
+      "10 m/s",
+      "3 m/s",
+      "90 m/s"
+    ],
+    "answer": 0,
+    "explain": "Si usa la formula della caduta libera: v = g · t = 10 · 3 = 30 m/s. Ogni secondo la velocità cresce di 10 m/s, quindi dopo 3 secondi è 30 m/s. La trappola '10 m/s' è la velocità dopo solo 1 secondo. '3 m/s' confonde i secondi con la velocità. '90 m/s' è g · t² = 10 · 9: non è la velocità, e non è nemmeno lo spazio (lo spazio sarebbe ½ · g · t² = 45 m).",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-fis-u2-05-3",
+    "topicId": "fis-u2-05",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "open",
+    "q": "Galileo Galilei lasciò cadere due palle di cannone di peso molto diverso dalla torre di Pisa. Cosa successe? Spiega il perché con parole tue, e poi di' cosa cambierebbe se ci fosse aria vs se fossero nel vuoto.",
+    "answer": "Galileo osservò che le due palle toccavano terra quasi contemporaneamente, contrariamente a quanto pensava Aristotele (che il pesante cadesse prima). Il motivo è che la gravità accelera tutti i corpi con la stessa accelerazione g ≈ 9,8 m/s², indipendentemente dalla massa: un corpo doppio è anche doppio pesante, ma serve anche il doppio della forza per accelerarlo, e i due effetti si annullano esattamente. Nel vuoto (senza aria) la coincidenza è perfetta: piuma e martello toccano terra nello stesso istante. Con l'aria, la resistenza dell'aria (attrito) rallenta di più gli oggetti leggeri e di forma larga rispetto a quelli pesanti e compatti: per questo nella vita reale la piuma cade più lentamente. Ma la colpa è dell'aria, non della gravità.",
+    "explain": "Concetto chiave: g è uguale per tutti i corpi; l'aria introduce un attrito che disturba la caduta, ma non cambia l'accelerazione gravitazionale.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-fis-u2-05-4",
+    "topicId": "fis-u2-05",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un corpo di ferro da 5 kg e uno di piombo da 2 kg vengono lasciati cadere da 10 m di altezza (aria trascurabile). Nel secondo esperimento vengono legati insieme e lasciati cadere dalla stessa altezza. Quale affermazione è corretta?",
+    "choices": [
+      "I tre corpi seguono lo stesso moto di caduta",
+      "Il corpo leggero frena quello pesante perché pesa di meno",
+      "Il corpo pesante frena quello leggero perché ha maggiore inerzia",
+      "Il corpo composto cade in modo diverso a seconda di come è stato legato",
+      "I tre corpi seguono moti diversi perché i materiali sono diversi"
+    ],
+    "answer": 0,
+    "explain": "Nel vuoto (attrito trascurabile) tutti i corpi cadono con la stessa accelerazione g, indipendentemente da massa e materiale. I tre corpi — ferro da 5 kg, piombo da 2 kg e il corpo composto da 7 kg — cadono esattamente nello stesso modo. Le trappole: dire che il leggero 'frena' il pesante (o il contrario) è l'errore di Aristotele — la massa non conta. 'A seconda di come è stato legato' è fuori tema: la forma e l'attrito aerodinamico potrebbero essere diversi, ma il testo dice che l'attrito è trascurabile. 'Materiali diversi' non cambiano nulla: g vale per ferro, piombo e per qualsiasi altro materiale.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-fis-u2-05-5",
+    "topicId": "fis-u2-05",
+    "materia": "fisica",
+    "unita": 2,
+    "type": "mc",
+    "q": "Un vaso cade da 5 m di altezza. Trascurando l'attrito dell'aria (g = 10 m/s²), qual è la sua velocità al momento dell'impatto col suolo? Usa v² = 2 · g · s.",
+    "choices": [
+      "10 m/s",
+      "100 m/s",
+      "20 m/s",
+      "5 m/s",
+      "50 m/s"
+    ],
+    "answer": 0,
+    "explain": "Si usa la formula v² = 2 · g · s = 2 · 10 · 5 = 100, quindi v = √100 = 10 m/s. La trappola '100 m/s' è il valore di v² (dimenticare la radice quadrata). '50 m/s' è g · s senza il fattore 2. '20 m/s' raddoppia per errore il risultato corretto. '5 m/s' confonde l'altezza con la velocità. Ricorda: v² = 2gs → prendi sempre la radice!",
+    "tags": ["prova d'esame"]
+  }
+]

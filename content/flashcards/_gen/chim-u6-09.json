@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fc-chim-u6-09-1",
+    "topicId": "chim-u6-09",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "tf",
+    "q": "Vero o falso: quando il chinone acquista elettroni si trasforma in idrochinone, e questo processo si chiama riduzione.",
+    "choices": ["Vero", "Falso"],
+    "answer": 0,
+    "explain": "Vero. Acquistare elettroni = ridursi. Il chinone (spugna strizzata, forma ossidata) diventa idrochinone (spugna piena, forma ridotta) quando prende elettroni. Le due forme insieme formano una coppia redox reversibile.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u6-09-2",
+    "topicId": "chim-u6-09",
+    "materia": "chimica",
+    "unita": 6,
+    "type": "open",
+    "q": "Che cos'e l'ubichinone (coenzima Q) e che ruolo svolge nei mitocondri? Usa un'analogia per spiegarlo.",
+    "answer": "L'ubichinone (detto anche coenzima Q o CoQ10) e un chinone presente in tutte le cellule, soprattutto nella membrana dei mitocondri. Nei mitocondri avviene la respirazione cellulare: gli elettroni passano da una proteina all'altra come un testimone in una staffetta, liberando energia (ATP) ad ogni passaggio. Il coenzima Q fa da taxi per elettroni: prende gli elettroni da una proteina (diventando ubichinolo, la forma ridotta/carica), li trasporta nella membrana e li consegna alla proteina successiva (tornando ubichinone, la forma ossidata/scarica). Poi riparte e ripete il ciclo milioni di volte. Senza questo taxi la cellula non riuscirebbe a produrre l'energia necessaria per far battere il cuore, contrarre i muscoli e far funzionare tutti gli organi.",
+    "explain": "Da ricordare: coenzima Q = taxi per elettroni nei mitocondri; si alterna tra ubichinone (ossidata, scarica) e ubichinolo (ridotta, carica); produce energia (ATP) per la respirazione cellulare.",
+    "tags": ["risposta aperta"]
+  }
+]

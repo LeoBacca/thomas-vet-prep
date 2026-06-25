@@ -1,0 +1,91 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u3-07">
+
+## Cos'è un promotore?
+
+Immagina il DNA come un lunghissimo libro di istruzioni. Ogni gene è una "ricetta" dentro quel libro. Il **promotore** è la copertina di quella ricetta: dice alla cellula _dove inizia_ la ricetta e _come si apre_ il libro in quel punto.
+
+In parole tecniche, il promotore è una sequenza di DNA che si trova **subito prima** del gene (a monte, in direzione 5') e che permette all'enzima **RNA polimerasi** di agganciarsi al DNA per iniziare la trascrizione.
+
+Senza promotore, l'RNA polimerasi non sa dove attaccarsi: il gene non viene mai letto.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Il promotore è come il "tasto play" di un gene — senza di esso, il gene rimane silenzioso.</div>
+
+## Cosa vuol dire "in cis"?
+
+"Cis" viene dal latino e significa _"da questo lato"_. In biologia molecolare, un elemento **in cis** è una sequenza di DNA che agisce **sullo stesso filamento, sullo stesso cromosoma** su cui si trova il gene che controlla.
+
+Confronto rapido:
+- **Elementi in cis** = sequenze di DNA vicine al gene, sullo stesso cromosoma. Agiscono solo sul gene che hanno accanto.
+- **Elementi in trans** = proteine (fattori di trascrizione) che vengono prodotte altrove e poi si spostano fino al gene bersaglio.
+
+Pensa a un interruttore della luce: l'interruttore sul muro (in cis) accende solo la lampada di quella stanza. Un telecomando (in trans) invece può arrivare da un'altra stanza.
+
+## I principali elementi regolativi in cis
+
+### 1. Il promotore minimo (o core promotore)
+È la zona essenziale dove si aggancia l'RNA polimerasi. Negli eucarioti contiene spesso la sequenza **TATA box** (una serie di basi T e A) circa 25-30 basi prima dell'inizio della trascrizione.
+
+### 2. Gli enhancer (potenziatori)
+Sono sequenze di DNA che **aumentano** la trascrizione di un gene. Possono trovarsi anche a migliaia di basi di distanza dal gene, ma il DNA si piega e li avvicina fisicamente al promotore. Sono in cis perché agiscono solo sul gene dello stesso cromosoma.
+
+### 3. I silencer (silenziatori)
+Funzionano al contrario degli enhancer: **riducono o bloccano** la trascrizione. Anche loro sono sequenze in cis.
+
+### 4. Gli insulatori
+Fungono da "barriere": impediscono che un enhancer influenzi il gene sbagliato. Separano zone del genoma con comportamenti diversi.
+
+<Diagram caption="Struttura di un gene con i suoi elementi regolativi in cis" code={`flowchart LR
+  A["Silencer<br/>(blocca la trascrizione)"] -->|"regola"| D["Promotore<br/>(TATA box + sito +1)"]
+  B["Enhancer<br/>(attiva la trascrizione)"] -->|"potenzia"| D
+  C["Insulator<br/>(separa domini)"] -->|"protegge"| D
+  D -->|"aggancio RNA polimerasi"| E["Gene<br/>(sequenza codificante)"]
+  E --> F["mRNA prodotto"]`} />
+
+## Come funziona il promotore passo per passo?
+
+1. Le proteine **fattori di trascrizione generali** si legano alla TATA box del promotore.
+2. Formano un **complesso di pre-inizio** (una sorta di impalcatura proteica).
+3. L'**RNA polimerasi II** si aggancia al complesso.
+4. La doppia elica si apre localmente.
+5. Inizia la sintesi dell'mRNA a partire dal sito +1.
+
+Gli enhancer e i silencer modificano questo processo attirando o respingendo proteine regolatrici (fattori di trascrizione specifici) che parlano con il complesso di pre-inizio.
+
+<Diagram caption="Sequenza di eventi dall'enhancer alla produzione di mRNA" code={`flowchart TB
+  A["Fattori di trascrizione specifici<br/>si legano all'Enhancer"] --> B["Il DNA si piega:<br/>enhancer si avvicina al promotore"]
+  B --> C["Fattori generali si assemblano<br/>sulla TATA box del promotore"]
+  C --> D["RNA polimerasi II<br/>si aggancia al complesso"]
+  D --> E["Apertura locale del DNA<br/>(bolla di trascrizione)"]
+  E --> F["Sintesi dell'mRNA<br/>(trascrizione attiva)"]`} />
+
+## Guarda il video
+<YouTube id="GveZPuMeHD8" title="REGOLAZIONE DELL'ESPRESSIONE GENICA - LE BASI — Biologia con Giulia" />
+<VideoVisto id="bio-u3-07" />
+
+## Da ricordare
+- Il **promotore** è la sequenza in cis che indica all'RNA polimerasi dove iniziare la trascrizione; negli eucarioti spesso contiene la TATA box.
+- Gli elementi **in cis** (enhancer, silencer, insulatori) agiscono sullo stesso cromosoma e controllano quanto un gene viene espresso, anche da grande distanza.
+- Gli **enhancer** aumentano la trascrizione, i **silencer** la diminuiscono: entrambi funzionano attirando o respingendo proteine regolatrici che interagiscono con il promotore.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è la funzione principale del promotore?" opzioni={["Codificare una proteina regolatrice", "Indicare all'RNA polimerasi dove iniziare la trascrizione", "Degradare l'mRNA dopo la traduzione", "Legare i ribosomi all'mRNA"]} corretta={1} spiegazione="Il promotore è la sequenza di DNA a monte del gene che permette all'RNA polimerasi di riconoscere il punto d'inizio della trascrizione. Non codifica proteine né interagisce con i ribosomi." />
+
+<Quiz domanda="Cosa si intende con 'elemento in cis'?" opzioni={["Una proteina che si sposta da un cromosoma all'altro", "Una sequenza di DNA che agisce su geni di altri cromosomi", "Una sequenza di DNA che regola geni sullo stesso cromosoma in cui si trova", "Un enzima che taglia il DNA"]} corretta={2} spiegazione="Gli elementi in cis sono sequenze di DNA che agiscono sullo stesso cromosoma (e solitamente sullo stesso filamento) su cui si trovano. Diversamente, gli elementi in trans (come le proteine) possono raggiungere qualsiasi gene della cellula." />
+
+<Quiz domanda="Un enhancer si trova a 50.000 basi di distanza da un gene. Come può comunque influenzarne la trascrizione?" opzioni={["Non può: gli enhancer devono essere entro 100 basi dal gene", "Il DNA si piega in modo da avvicinare fisicamente l'enhancer al promotore", "L'enhancer produce una proteina che viaggia fino al gene", "L'enhancer sposta fisicamente il gene verso di sé"]} corretta={1} spiegazione="Il DNA non è un filo rigido: si piega e si compatta nello spazio. Questa flessibilità permette a un enhancer lontano di avvicinarsi al promotore del suo gene bersaglio, permettendo alle proteine legate all'enhancer di interagire con il complesso di pre-inizio." />
+
+<Esercizio problema="Una mutazione distrugge la TATA box di un gene. Cosa ti aspetti che succeda alla trascrizione di quel gene? Perché?" soluzione="La TATA box è la sequenza chiave del promotore minimo su cui si assembla il complesso di pre-inizio. Se viene distrutta, i fattori di trascrizione generali non riescono a legarsi correttamente e l'RNA polimerasi II non riesce ad agganciarsi nella posizione giusta. Il risultato è che la trascrizione di quel gene viene drasticamente ridotta o del tutto abolita, anche se enhancer e altri elementi regolativi sono intatti." />
+
+</section>
+
+</RisorsaLayout>

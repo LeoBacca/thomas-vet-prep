@@ -1,0 +1,25 @@
+{
+ "id": "chim-u5-06",
+ "titolo": "Rottura del legame: omolitica (radicali) ed eterolitica (carbocationi/carbanioni)",
+ "materia": "chimica",
+ "unita": 5,
+ "slug": "06-rottura-del-legame-omolitica-radicali-ed",
+ "freq": 1,
+ "risorseMdx": "src/pages/risorse/chimica/u5/06-rottura-del-legame-omolitica-radicali-ed.mdx",
+ "examQuestions": [
+  {
+   "year": "2012",
+   "q": "Quale dei seguenti è un radicale?",
+   "choices": [
+    "HO· (radicale ossidrile)",
+    "HO-",
+    "HOO-",
+    "H3O+",
+    "R-COO-"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}

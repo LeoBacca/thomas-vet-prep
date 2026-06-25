@@ -1,0 +1,78 @@
+[
+  {
+    "id": "fc-chim-u4-03-1",
+    "topicId": "chim-u4-03",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "tf",
+    "q": "Vero o falso: in acqua pura perfettamente pulita non ci sono mai ioni, perche l'acqua e una sostanza neutra che non si ionizza.",
+    "choices": ["Vero", "Falso"],
+    "answer": 1,
+    "explain": "Falso. Anche l'acqua pura forma un pochissimo di ioni da sola: due molecole si passano un H+ (un protone) e si trasformano in H3O+ e OH-. E l'autoprotolisi. Pochissimi ioni, ma ci sono sempre.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-03-2",
+    "topicId": "chim-u4-03",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "In acqua pura a temperatura ambiente, la concentrazione di H3O+ e quella di OH- sono:",
+    "choices": [
+      "Uguali tra loro: entrambe 10⁻⁷ mol/L",
+      "Diverse: H3O+ e molto piu alto di OH-",
+      "Diverse: OH- e molto piu alto di H3O+",
+      "Entrambe zero, perche l'acqua e neutra"
+    ],
+    "answer": 0,
+    "explain": "Nell'autoprotolisi ogni coppia di molecole produce UN H3O+ e UN OH-, sempre insieme: come la pallina che si passa tra due persone — chi la cede rimane con le mani vuote (OH-) e chi la prende ne ha una in piu (H3O+). Le quantita sono sempre identiche: 10⁻⁷ mol/L ciascuna. 'Entrambe zero' e falso: i pochi ioni esistono sempre, anche in acqua purissima.",
+    "tags": ["impara"]
+  },
+  {
+    "id": "fc-chim-u4-03-3",
+    "topicId": "chim-u4-03",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "open",
+    "q": "Spiega con parole tue cos'e la costante Kw e perche e utile: se aggiungi un acido all'acqua e gli ioni H3O+ salgono a 10⁻⁴, cosa succede agli OH-?",
+    "answer": "Kw e il 'prodotto ionico dell'acqua': e il risultato della moltiplicazione [H3O+] x [OH-] e vale sempre 10⁻¹⁴ in qualsiasi soluzione acquosa a temperatura ambiente. E come una bilancia fissa: il prodotto dei due lati non puo cambiare. Se aggiungo un acido e H3O+ sale a 10⁻⁴, devo trovare OH- tale che 10⁻⁴ x [OH-] = 10⁻¹⁴. Dividendo: [OH-] = 10⁻¹⁴ / 10⁻⁴ = 10⁻¹⁰. Quando H3O+ sale, OH- scende. La bilancia si sposta ma il prodotto resta fisso a 10⁻¹⁴. In veterinaria questo spiega perche il sangue acido (piu H3O+) contiene meno OH- e come le terapie con flebo correggono l'equilibrio acido-base.",
+    "explain": "Da ricordare: Kw = [H3O+] x [OH-] = 10⁻¹⁴ sempre. Se uno sale, l'altro scende per mantenere il prodotto costante.",
+    "tags": ["risposta aperta"]
+  },
+  {
+    "id": "fc-chim-u4-03-4",
+    "topicId": "chim-u4-03",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "In una soluzione la concentrazione di ioni H3O+ e 1,0x10⁻⁸ mol/L. Qual e la concentrazione di ioni OH- (in mol/L)? [Kw = 10⁻¹⁴]",
+    "choices": [
+      "1,0x10⁻⁶",
+      "1,0x10⁻⁸",
+      "1,0x10⁻¹⁰",
+      "1,0x10⁻²",
+      "1,0x10⁻⁴"
+    ],
+    "answer": 0,
+    "explain": "Si usa Kw: [OH-] = Kw / [H3O+] = 10⁻¹⁴ / 10⁻⁸ = 10⁻⁶ (per dividere le potenze si sottraggono gli esponenti: -14 meno -8 fa -6). Trappola '10⁻⁸': e chi pensa che OH- sia sempre uguale a H3O+ (vero solo in acqua PURA, dove entrambi sono 10⁻⁷; qui H3O+ e 10⁻⁸, non siamo in acqua pura). Trappola '10⁻¹⁰': e la risposta giusta di un altro problema, quello con H3O+ = 10⁻⁴; chi sbaglia il segno (-14 + (-8) invece di -14 - (-8)) o inverte la sottrazione finisce qui. Trappola '10⁻²': nasce dal sommare gli esponenti (-14 e -8 darebbero -22; oppure -14 + 8 = -6 col segno girato) invece di sottrarli come vuole la divisione: e un errore sulla regola delle potenze. Trappola '10⁻⁴': non viene da nessun calcolo corretto, e solo un valore messo li per confondere. Controllo finale: H3O+ = 10⁻⁸ e piu piccolo di 10⁻⁷ (acqua pura), quindi la soluzione e leggermente basica e OH- deve essere piu alto di 10⁻⁷: 10⁻⁶ ha senso.",
+    "tags": ["prova d'esame"]
+  },
+  {
+    "id": "fc-chim-u4-03-5",
+    "topicId": "chim-u4-03",
+    "materia": "chimica",
+    "unita": 4,
+    "type": "mc",
+    "q": "A 60 gradi C, il prodotto ionico dell'acqua (Kw) vale 9,5x10⁻¹⁴. A questa temperatura l'acqua pura:",
+    "choices": [
+      "Avra pH minore di 7 e sara neutra",
+      "Avra pH uguale a 7 e sara neutra",
+      "Avra pH maggiore di 7 e sara neutra",
+      "Avra pH minore di 7 e sara acida",
+      "Avra pH maggiore di 7 e sara basica"
+    ],
+    "answer": 0,
+    "explain": "Kw = 9,5x10⁻¹⁴ → [H3O+] = [OH-] = radice di 9,5x10⁻¹⁴ ≈ 3,08x10⁻⁷. Il pH = -log(3,08x10⁻⁷) ≈ 6,5, quindi minore di 7. Ma l'acqua RESTA NEUTRA perche H3O+ e OH- sono ancora UGUALI: neutralita non significa pH = 7, significa [H3O+] = [OH-]. Il pH = 7 vale come neutro SOLO a 25 gradi C. Trappola 'pH = 7 neutra': confonde la definizione di neutralita (H3O+ = OH-) con il valore 7 valido solo a temperatura standard. Trappola 'pH > 7 neutra/basica': va nella direzione sbagliata. Trappola 'acida': l'aggettivo sbagliato da abbinare al pH < 7 corretto, perche qui H3O+ = OH- e la soluzione e neutra, non acida.",
+    "tags": ["prova d'esame"]
+  }
+]

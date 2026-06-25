@@ -1,0 +1,106 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="chim-u7-01">
+
+Gli **amminoacidi** sono i mattoncini con cui il corpo costruisce le **proteine**. Pensali come i pezzi dei LEGO: ne esistono 20 tipi diversi e, incastrandoli in ordini diversi, ottieni cose diverse (un muscolo, un capello, un enzima). Capire com'è fatto un amminoacido è il primo passo per capire le proteine, che sono ovunque nel nostro corpo.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> ogni amminoacido ha sempre la stessa "base", uguale per tutti. A cambiare è solo un pezzetto, chiamato <strong>R</strong>. È quel pezzetto a rendere ogni amminoacido unico, proprio come la faccia rende unica ogni persona.</div>
+
+## Com'è fatto un amminoacido
+
+Al centro c'è un atomo di carbonio speciale, chiamato **carbonio alfa** (carbonio α). È come il perno di una giostra: a lui sono attaccate **quattro cose**.
+
+- un gruppo **amminico**, scritto **NH2** (è la parte "ammino" del nome)
+- un gruppo **acido**, scritto **COOH**, detto carbossilico (è la parte "acido" del nome)
+- un atomo di **idrogeno**, scritto **H**
+- una **catena laterale**, scritta **R**, che cambia da un amminoacido all'altro
+
+Vedi? Il nome stesso "ammino-acido" ti ricorda i due gruppi importanti: **ammino** (NH2) e **acido** (COOH).
+
+<Diagram caption="Struttura generale di un amminoacido: le 4 cose attaccate al carbonio alfa" code={`flowchart TB
+  CA["Carbonio alfa<br/>(il perno centrale)"] --> N["NH2<br/>gruppo amminico"]
+  CA --> CO["COOH<br/>gruppo acido (carbossilico)"]
+  CA --> H["H<br/>atomo di idrogeno"]
+  CA --> R["R<br/>catena laterale (cambia ogni volta)"]`} />
+
+Tutti i 20 amminoacidi hanno NH2, COOH e H sempre uguali. L'unica cosa che cambia è **R**. Per questo, per riconoscere un amminoacido, si guarda sempre la sua **R**.
+
+## La catena laterale R: il "tratto distintivo"
+
+La **R** è la parte che rende ogni amminoacido diverso dagli altri. È un po' come l'abbigliamento: il corpo (NH2, COOH, H) è uguale per tutti, ma i vestiti (la R) cambiano e ti fanno riconoscere.
+
+A seconda di com'è fatta la R, l'amminoacido si comporta in modo diverso. Per questo gli amminoacidi si **classificano** proprio guardando la R. Il modo più semplice li divide in **quattro gruppi**.
+
+- **R apolare** (o idrofobica): non ama l'acqua, la "respinge". Un po' come l'olio, che nell'acqua non si scioglie.
+- **R polare ma neutra**: ama l'acqua, ci si trova bene, ma non è né acida né basica.
+- **R acida**: tende a comportarsi come un acido (rilascia cariche negative).
+- **R basica**: tende a comportarsi come una base (prende cariche positive).
+
+<Diagram caption="Come si classificano gli amminoacidi guardando la catena laterale R" code={`flowchart TB
+  R["Catena laterale R"] --> AP["R apolare<br/>respinge l'acqua (come l'olio)"]
+  R --> PO["R polare neutra<br/>ama l'acqua, ma neutra"]
+  R --> AC["R acida<br/>si comporta da acido"]
+  R --> BA["R basica<br/>si comporta da base"]`} />
+
+<div class="callout">💡 <strong>In parole semplici:</strong> non devi imparare a memoria i 20 amminoacidi adesso. Devi solo capire l'idea: <strong>guardi la R</strong> e capisci in quale dei 4 gruppi sta. Tutto qui.</div>
+
+## Perché conta per medicina e veterinaria
+
+Questo non è un dettaglio inutile da chimici. Il tipo di R decide come si comporta una proteina nel corpo.
+
+Pensa a una proteina come a un gomitolo ripiegato. Gli amminoacidi con **R apolare** (che odiano l'acqua) tendono a nascondersi **dentro** il gomitolo, lontano dall'acqua del sangue. Quelli con **R polare o carica** stanno volentieri **fuori**, a contatto con l'acqua. È proprio questo gioco a dare alle proteine la loro forma. E la forma di una proteina è tutto: un enzima funziona solo se ha la forma giusta, come una chiave entra solo nella sua serratura.
+
+Tante malattie nascono quando un amminoacido sbagliato cambia la forma di una proteina. Un esempio famoso: nell'**anemia falciforme** basta un solo amminoacido cambiato nell'emoglobina (la proteina che porta l'ossigeno nel sangue) per far diventare i globuli rossi a forma di falce. Un pezzettino di R diverso, e cambia tutto.
+
+## Guarda il video
+
+<YouTube id="t6Ns565d5ss" title="La classificazione degli amminoacidi in 10 minuti (Chimeasy)" />
+
+<VideoVisto id="chim-u7-01" />
+
+## Da ricordare
+
+- Gli amminoacidi sono i **mattoncini delle proteine**: ne esistono 20.
+- Ogni amminoacido ha un **carbonio alfa** centrale con attaccate 4 cose: **NH2**, **COOH**, **H** e **R**.
+- NH2, COOH e H sono **uguali** per tutti; cambia solo la **R** (catena laterale).
+- La **R** è il tratto distintivo: per classificare un amminoacido si guarda sempre la R.
+- I 4 gruppi base secondo la R: **apolare**, **polare neutra**, **acida**, **basica**.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale parte di un amminoacido cambia da un amminoacido all'altro?"
+  opzioni={["il gruppo NH2", "il gruppo COOH", "la catena laterale R", "il carbonio alfa"]}
+  corretta={2}
+  spiegazione="NH2, COOH, H e il carbonio alfa sono uguali in tutti gli amminoacidi. L'unica cosa che cambia è la catena laterale R, ed è proprio lei a rendere ogni amminoacido unico."
+/>
+
+<Quiz
+  domanda="Al carbonio alfa di un amminoacido sono attaccati:"
+  opzioni={["solo NH2 e COOH", "NH2, COOH, H e R", "solo R e H", "due gruppi R"]}
+  corretta={1}
+  spiegazione="Il carbonio alfa è il perno centrale: a lui sono legati il gruppo amminico (NH2), il gruppo acido (COOH), un idrogeno (H) e la catena laterale (R)."
+/>
+
+<Quiz
+  domanda="Una catena laterale R 'apolare' (idrofobica) si comporta come:"
+  opzioni={["lo zucchero, che si scioglie in acqua", "l'olio, che respinge l'acqua", "il sale, che si scioglie in acqua", "un acido forte"]}
+  corretta={1}
+  spiegazione="Apolare (idrofobica) vuol dire che respinge l'acqua, proprio come fa l'olio: nell'acqua non si scioglie e tende a starle lontano."
+/>
+
+<Esercizio
+  problema="Un amminoacido ha una catena laterale R che si comporta come una base (tende a prendere cariche positive). In quale dei 4 gruppi lo classifichi?"
+  soluzione="Lo classifichi tra gli amminoacidi con R basica. I 4 gruppi sono: apolare, polare neutra, acida e basica; una R che si comporta da base rientra nel gruppo basico."
+/>
+
+</section>
+
+</RisorsaLayout>

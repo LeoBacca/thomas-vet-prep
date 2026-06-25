@@ -1,0 +1,153 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-19">
+
+## Cos'è il traffico vescicolare?
+
+La cellula è come una città con tanti quartieri (reticolo endoplasmatico, Golgi, lisosomi, membrana plasmatica). Le proteine e i lipidi devono spostarsi da un quartiere all'altro. Lo fanno a bordo di **vescicole**: piccole "buste" di membrana che si staccano da un compartimento e si fondono con quello di destinazione.
+
+Il traffico vescicolare ha tre fasi principali:
+1. **Formazione** della vescicola (gemmazione dal compartimento donatore)
+2. **Attracco** al compartimento bersaglio (riconoscimento della destinazione)
+3. **Fusione** delle membrane (consegna del contenuto)
+
+---
+
+## 1. Formazione della vescicola: il rivestimento proteico
+
+Immagina di dover imballare un pacco: hai bisogno di un contenitore rigido che dia forma alla busta. Nella cellula questo "imballaggio" è fatto da **proteine di rivestimento (coat proteins)**.
+
+Esistono tre tipi principali di rivestimento:
+
+- **COPII** — trasporta dal reticolo endoplasmatico (RE) al Golgi
+- **COPI** — trasporta dal Golgi al RE (traffico retrogrado) e tra le cisterne del Golgi
+- **Clatrina** — trasporta dal Golgi ai lisosomi e gestisce l'endocitosi (ingresso dall'esterno)
+
+### Come si forma la vescicola, passo per passo:
+
+1. Una **GTPasi ARF** (o SAR1 per COPII) viene attivata: lega il GTP e si inserisce nella membrana.
+2. Le proteine di rivestimento si assemblano intorno al cargo (le proteine da spedire), curvando la membrana.
+3. La membrana si stringe fino a formare una **vescicola rivestita**.
+4. Il rivestimento si smonta (idrolisi del GTP → GDP) e la vescicola diventa "nuda".
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le proteine di rivestimento sono come uno stampo per biscotti: danno la forma alla vescicola e selezionano quali proteine portare dentro.</div>
+
+---
+
+## 2. I fosfoinositidi: i segnali di indirizzo sulla membrana
+
+I **fosfoinositidi (PI)** sono lipidi speciali della membrana. Possono essere fosforilati in posizioni diverse del loro anello, creando "codici postali" diversi su ogni compartimento cellulare:
+
+- **PI(3)P** → marca gli endosomi precoci
+- **PI(4)P** → marca il Golgi
+- **PI(4,5)P2** → marca la membrana plasmatica
+- **PI(3,5)P2** → marca gli endosomi tardivi/lisosomi
+
+Le proteine che devono "leggere" l'indirizzo hanno domini speciali (come FYVE o PH) che si legano a questi fosfoinositidi. Così sanno dove andare.
+
+---
+
+## 3. Attracco: le proteine RAB
+
+Le proteine **RAB** sono le "guardie del traffico" della cellula. Appartengono alla famiglia delle GTPasi (piccole proteine che funzionano come interruttori: ON con GTP, OFF con GDP).
+
+Ogni compartimento ha la propria RAB specifica:
+- RAB1 → RE → Golgi
+- RAB5 → endosomi precoci
+- RAB7 → endosomi tardivi
+- RAB11 → endosomi di riciclo
+
+La RAB attivata (legata a GTP) recluta proteine chiamate **effettori RAB**, che formano ponti tra la vescicola e la membrana bersaglio. Questo passaggio si chiama **attracco (tethering)**.
+
+---
+
+## 4. Fusione: le proteine SNARE
+
+Una volta attraccata, la vescicola deve fondersi con la membrana bersaglio. Questo è il lavoro delle proteine **SNARE**.
+
+Ci sono due tipi:
+- **v-SNARE** (vesicle-SNARE) → sulla vescicola
+- **t-SNARE** (target-SNARE) → sulla membrana bersaglio
+
+Quando una v-SNARE incontra la t-SNARE giusta (compatibile), si avvolgono l'una sull'altra formando un **complesso a fascio a quattro eliche** (come un cerniera lampo che si chiude). Questa "chiusura" trascina le due membrane l'una verso l'altra finché si fondono.
+
+Dopo la fusione, una proteina chiamata **NSF** (con l'aiuto di alfa-SNAP) usa ATP per sciogliere il complesso SNARE e riciclare le proteine.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Le SNARE sono come velcro molecolare: la v-SNARE sulla vescicola si aggrappa alla t-SNARE sul bersaglio, tirando le due membrane insieme fino alla fusione.</div>
+
+---
+
+<Diagram caption="Formazione della vescicola: dal rivestimento alla gemmazione" code={`flowchart TB
+  A["GTPasi ARF/SAR1<br/>si attiva (lega GTP)<br/>si inserisce nella membrana"] --> B["Proteine di rivestimento<br/>(COPI / COPII / Clatrina)<br/>si assemblano sulla membrana"]
+  B --> C["Selezione del cargo:<br/>le proteine da trasportare<br/>vengono racchiuse"]
+  C --> D["La membrana si incurva<br/>e si stringe:<br/>nasce la vescicola rivestita"]
+  D --> E["Idrolisi GTP → GDP:<br/>il rivestimento si smonta"]
+  E --> F["Vescicola nuda<br/>pronta per il trasporto"]`} />
+
+<Diagram caption="Attracco e fusione: RAB e SNARE in azione" code={`flowchart TB
+  A["Vescicola nuda<br/>con v-SNARE e RAB-GTP"] --> B["RAB-GTP recluta<br/>proteine effettori:<br/>formazione del tether"]
+  B --> C["Attracco al compartimento<br/>bersaglio (tethering)"]
+  C --> D["v-SNARE si appaia<br/>con la t-SNARE compatibile"]
+  D --> E["Complesso SNARE<br/>a fascio a 4 eliche:<br/>le membrane si avvicinano"]
+  E --> F["Fusione delle membrane:<br/>contenuto consegnato"]
+  F --> G["NSF + alfa-SNAP<br/>sciolgono il complesso SNARE<br/>con idrolisi ATP"]`} />
+
+---
+
+## Guarda il video
+<YouTube id="oYu5QP9K07k" title="Il TRAFFICO VESCICOLARE - Citologia Lezione 7 (AboutBiology)" />
+<VideoVisto id="bio-u5-19" />
+
+## Da ricordare
+- Le proteine di rivestimento (COPII, COPI, Clatrina) danno forma alla vescicola e selezionano il cargo; si smontano prima della fusione.
+- Le proteine RAB (GTPasi) riconoscono il compartimento bersaglio e guidano l'attracco grazie ai loro effettori; i fosfoinositidi di membrana fungono da "codici postali" per i compartimenti.
+- Le SNARE (v-SNARE sulla vescicola, t-SNARE sul bersaglio) si avvolgono in un complesso che trascina le due membrane alla fusione; NSF le ricicla dopo.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz
+  domanda="Quale proteina di rivestimento è responsabile del trasporto anterogrado dal reticolo endoplasmatico all'apparato di Golgi?"
+  opzioni={["Clatrina", "COPI", "COPII", "Dinamina"]}
+  corretta={2}
+  spiegazione="COPII forma le vescicole che escono dal RE verso il Golgi (via anterograda). COPI gestisce il traffico retrogrado Golgi→RE e tra cisterne del Golgi. La clatrina opera principalmente al Golgi e nella endocitosi."
+/>
+
+<Quiz
+  domanda="Qual è il ruolo delle proteine RAB nel traffico vescicolare?"
+  opzioni={[
+    "Formano il rivestimento della vescicola durante la gemmazione",
+    "Mediano la fusione delle membrane tramite un fascio a quattro eliche",
+    "Guidano l'attracco della vescicola al compartimento bersaglio reclutando proteine effettori",
+    "Fosforilano i fosfoinositidi per creare i codici postali di membrana"
+  ]}
+  corretta={2}
+  spiegazione="Le RAB sono GTPasi che, in forma attiva (legata a GTP), reclutano effettori proteici che formano ponti (tether) tra la vescicola e la membrana bersaglio. La fusione vera e propria è invece compito delle SNARE."
+/>
+
+<Quiz
+  domanda="Cosa succede al complesso SNARE dopo la fusione della vescicola con la membrana bersaglio?"
+  opzioni={[
+    "Viene degradato dal proteasoma",
+    "Rimane permanentemente assemblato nella membrana fusa",
+    "Viene sciolto dalla proteina NSF (con alfa-SNAP) grazie all'idrolisi di ATP, e le SNARE vengono riciclate",
+    "Si dissocia spontaneamente senza bisogno di energia"
+  ]}
+  corretta={2}
+  spiegazione="Dopo la fusione, il complesso v-SNARE/t-SNARE è molto stabile e deve essere attivamente smontato. La proteina NSF (N-ethylmaleimide Sensitive Factor), assieme ad alfa-SNAP, idrolizza ATP per disassemblare il complesso e permettere il riutilizzo delle singole SNARE."
+/>
+
+<Esercizio
+  problema="Un ricercatore blocca sperimentalmente l'idrolisi del GTP da parte di ARF (la GTPasi che inizia la formazione di vescicole COPI). Qual è la conseguenza prevista sul traffico vescicolare e perché?"
+  soluzione="Se ARF non può idrolizzare il GTP, rimane bloccata nella forma attiva (ARF-GTP) e non si stacca dalla membrana. Le proteine di rivestimento COPI continuerebbero ad assemblarsi ma il rivestimento non si smonterebbe mai (lo smontaggio richiede che ARF idrolizzi GTP → GDP). Il risultato è l'accumulo di vescicole rivestite che non possono procedere né fondersi con il bersaglio, bloccando il traffico retrogrado Golgi→RE e il trasporto intra-Golgi."
+/>
+
+</section>
+
+</RisorsaLayout>

@@ -1,0 +1,87 @@
+import RisorsaLayout from '@/layouts/RisorsaLayout.astro';
+import Diagram from '@/components/Diagram.astro';
+import YouTube from '@/components/YouTube.astro';
+import VideoVisto from '@/components/VideoVisto.astro';
+import Quiz from '@/components/Quiz.astro';
+import Esercizio from '@/components/Esercizio.astro';
+
+<RisorsaLayout id="bio-u5-24">
+
+## Cos'è un microtubulo?
+
+Immagina un tubo cavo, come una cannuccia rigida, larga circa 25 nanometri. Questo è un microtubulo. È uno dei tre tipi di filamenti del **citoscheletro**, lo "scheletro interno" della cellula.
+
+I microtubuli sono costruiti con una proteina chiamata **tubulina**. La tubulina esiste in due versioni, chiamate **alfa-tubulina** e **beta-tubulina**. Le due si uniscono sempre in coppia, formando un **eterodimero** (un mattoncino doppio). Questi mattoncini si incastrano uno dopo l'altro formando filamenti lunghi detti **protofilamenti**. Tredici protofilamenti si dispongono in cerchio, come le doghe di un barile, e formano il tubo cavo del microtubulo.
+
+Il microtubulo ha due estremità diverse:
+- **Estremità (+) o "plus"**: cresce velocemente, è il capo "vivo" del filamento.
+- **Estremità (−) o "minus"**: cresce lentamente, di solito rimane ancorata al centrosoma.
+
+<div class="callout">💡 <strong>In parole semplici:</strong> Un microtubulo è una cannuccia di plastica fatta di mattoncini proteici doppi (alfa + beta tubulina). Un'estremità è "veloce" e si allunga, l'altra è "lenta" ed è bloccata al centro organizzatore.</div>
+
+---
+
+## Il ruolo del GTP: accensione e spegnimento
+
+Ogni mattoncino di beta-tubulina porta legata una molecola di **GTP** (guanosintrifosfato — pensa a una batteria carica). Quando un nuovo dimero si aggiunge all'estremità (+), porta GTP fresco.
+
+Dopo qualche istante, il GTP viene **idrolizzato** in **GDP** (guanosindifosfato — batteria scarica). Questo cambia leggermente la forma della tubulina, che diventa meno "agganciata" alle vicine.
+
+Cosa succede in pratica:
+- Se il microtubulo cresce velocemente, all'estremità (+) si accumula uno strato di dimeri con GTP ancora fresco → il microtubulo è stabile, continua a crescere.
+- Se la crescita rallenta, il GTP si idrolizza prima che arrivi altro materiale → l'estremità (+) si destabilizza e il microtubulo si sfalda rapidamente, perdendo dimeri proprio dall'estremità (+): questo crollo improvviso si chiama **catastrofe**.
+- Dopo la catastrofe, il microtubulo può ricominciare a crescere: è il **salvataggio**.
+
+Questo comportamento — crescita continua alternata a crolli improvvisi — si chiama **instabilità dinamica**. È utilissimo: la cellula può riorganizzare il citoscheletro molto in fretta, senza costruire tutto da zero.
+
+---
+
+## Il centrosoma e il gamma-TuRC: da dove nascono i microtubuli
+
+I microtubuli non partono dal nulla. Il loro punto di partenza si chiama **centrosoma**, un organulo vicino al nucleo che funge da "base di lancio". Il centrosoma è composto da due strutture cilindriche chiamate **centrioli**, circondate da un materiale proteico detto **PCM** (materiale pericentriolare).
+
+Nel PCM si trova la proteina chiave: la **gamma-tubulina** (la lettera greca gamma, γ). La gamma-tubulina non entra nel tubo del microtubulo, ma forma un anello detto **gamma-TuRC** (gamma-Tubulin Ring Complex — complesso ad anello di gamma-tubulina). L'anello funziona come uno stampo: i dimeri alfa-beta-tubulina si appoggiano su di esso e cominciano a impilare, dando il via alla formazione del microtubulo. Questo processo si chiama **nucleazione**.
+
+In sintesi: il gamma-TuRC è come uno stampo circolare che imposta le prime file di mattoncini, poi il microtubulo cresce da solo verso l'esterno con l'estremità (+) libera.
+
+<Diagram caption="Struttura del microtubulo: dai dimeri di tubulina al tubo cavo" code={`flowchart TB
+  A["alfa-tubulina + beta-tubulina<br/>(con GTP legato)"] --> B["Eterodimero alfa-beta"]
+  B --> C["Protofilamento<br/>(dimeri impilati in fila)"]
+  C --> D["13 protofilamenti in cerchio<br/>= Microtubulo (tubo cavo, ø 25 nm)"]
+  D --> E["Estremità MINUS (–)<br/>lenta, ancorata al centrosoma"]
+  D --> F["Estremità PLUS (+)<br/>veloce, cresce nel citoplasma"]`} />
+
+<Diagram caption="Instabilità dinamica: il ciclo di crescita e catastrofe di un microtubulo" code={`flowchart LR
+  A["Nucleazione dal gamma-TuRC<br/>nel centrosoma"] --> B["Crescita rapida all'estremità (+)<br/>dimeri con GTP fresco"]
+  B --> C["Cappuccio di GTP presente<br/>→ microtubulo STABILE"]
+  C --> D["Crescita rallenta?<br/>GTP si idrolizza in GDP"]
+  D --> E["Cappuccio di GTP perso<br/>→ CATASTROFE (depolimerizzazione)"]
+  E --> F["Salvataggio<br/>(nuovi dimeri GTP si legano)"]
+  F --> B`} />
+
+---
+
+## Guarda il video
+<YouTube id="jlVh_SFEwn4" title="CORSO DI BIOLOGIA GENERALE - LEZIONE 37 - CITOSCHELETRO - MICROTUBULI" />
+<VideoVisto id="bio-u5-24" />
+
+## Da ricordare
+- I microtubuli sono tubi cavi fatti di dimeri alfa-beta-tubulina; hanno un'estremità (+) veloce e una (−) lenta ancorata al centrosoma.
+- Il GTP legato alla beta-tubulina stabilizza il microtubulo; quando si idrolizza in GDP, il microtubulo crolla (catastrofe): questo ciclo si chiama instabilità dinamica.
+- Il centrosoma nucleia i microtubuli tramite il gamma-TuRC, un anello di gamma-tubulina che fa da stampo per la prima fila di dimeri.
+
+<section class="esercizi">
+
+## ✏️ Esercizi — prova tu
+
+<Quiz domanda="Qual è il ruolo del GTP nella dinamica dei microtubuli?" opzioni={["Fornisce energia per muovere i centrioli", "Stabilizza l'estremità (+) del microtubulo; la sua idrolisi in GDP porta alla catastrofe", "Si lega alla gamma-tubulina per avviare la nucleazione", "Regola la lunghezza dei protofilamenti durante la mitosi"]} corretta={1} spiegazione="I dimeri di beta-tubulina legati a GTP formano un 'cappuccio' stabile all'estremità (+). Quando la crescita rallenta, il GTP viene idrolizzato in GDP, la struttura si destabilizza e il microtubulo si depolimerizza rapidamente (catastrofe)." />
+
+<Quiz domanda="Da quanti protofilamenti è composto un microtubulo tipico?" opzioni={["7", "10", "13", "20"]} corretta={2} spiegazione="Un microtubulo è formato da 13 protofilamenti disposti a cerchio a formare un tubo cavo del diametro di circa 25 nm. Questo numero è costante nella grande maggioranza dei microtubuli cellulari." />
+
+<Quiz domanda="Qual è la funzione del gamma-TuRC nel centrosoma?" opzioni={["Idrolizza il GTP per innescare la catastrofe", "Forma un anello che funge da stampo per la nucleazione dei microtubuli", "Trasporta i dimeri di tubulina dal citoplasma al centrosoma", "Stabilizza l'estremità (+) durante la crescita rapida"]} corretta={1} spiegazione="Il gamma-TuRC (gamma-Tubulin Ring Complex) è un anello proteico composto da gamma-tubulina e proteine accessorie. Funge da stampo (template) nel materiale pericentriolare del centrosoma: i dimeri alfa-beta-tubulina si appoggiano sull'anello e iniziano la polimerizzazione — questo processo si chiama nucleazione." />
+
+<Esercizio problema="Un microtubulo sta crescendo rapidamente verso la membrana plasmatica. A un certo punto la crescita rallenta bruscamente. Descrivi, passo per passo, cosa succede al microtubulo nei secondi successivi e quale proteina è responsabile dell'innesco del processo." soluzione="Quando la crescita rallenta, i dimeri con GTP fresco non arrivano più velocemente di quanto il GTP già presente si idrolizzi. Il 'cappuccio di GTP' all'estremità (+) scompare: i dimeri con GDP sono meno stabili e si staccano rapidamente uno dopo l'altro proprio dall'estremità (+) (depolimerizzazione rapida = catastrofe). La proteina responsabile dell'innesco è la beta-tubulina, che porta il GTP idrolizzabile: è lei che, una volta legata al GDP, modifica la propria forma e indebolisce i legami tra i dimeri vicini. Se nuovi dimeri con GTP si legano prima che il microtubulo si smonti del tutto, avviene il 'salvataggio' e la crescita riprende." />
+
+</section>
+
+</RisorsaLayout>

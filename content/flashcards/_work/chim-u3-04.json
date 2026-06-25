@@ -1,0 +1,53 @@
+{
+ "id": "chim-u3-04",
+ "titolo": "Ordine di reazione e molecolarità; reazioni a più stadi",
+ "materia": "chimica",
+ "unita": 3,
+ "slug": "04-ordine-di-reazione-e-molecolarita-reazioni",
+ "freq": 3,
+ "risorseMdx": "src/pages/risorse/chimica/u3/04-ordine-di-reazione-e-molecolarita-reazioni.mdx",
+ "examQuestions": [
+  {
+   "year": "2019",
+   "q": "In una reazione di decomposizione di N2O5(g) la concentrazione iniziale del gas è pari a 0,1200 M. Dopo mezz'ora la concentrazione del gas è scesa a 0,0600 M. Sapendo che la reazione è del primo ordine rispetto a N2O5 quale sarà la concentrazione del reagente dopo due ore?",
+   "choices": [
+    "0,0075 M",
+    "0,0150 M",
+    "0,0300 M",
+    "0,0200 M",
+    "0,0100 M"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2020",
+   "q": "Raddoppiando la sola concentrazione di NO nella reazione 2NO(g) + O2(g) -> 2NO2(g) la velocità di reazione aumenta di 4 volte; raddoppiando la concentrazione sia di NO sia di O2, la velocità di reazione aumenta di 8 volte. Qual è la legge cinetica della reazione?",
+   "choices": [
+    "v = K[NO]2 [O2]",
+    "v = K[NO]2 [O2]2",
+    "v = K[NO]2",
+    "v = K[NO] [O2] / [NO2]2",
+    "v = K[NO] [O2]"
+   ],
+   "correct": 0,
+   "difficolta": 3,
+   "tipo": "multistep"
+  },
+  {
+   "year": "2021Agg",
+   "q": "L'equazione A + B -> 2C è una reazione che avviene in più stadi successivi. Quale tra le seguenti scritture non può rappresentarne la legge di velocità?",
+   "choices": [
+    "Velocità = k[C]^2",
+    "Velocità = k[A][B]",
+    "Velocità = k[A]",
+    "Velocità = k[A]^3/2[B]",
+    "Velocità = k[A][B]^2"
+   ],
+   "correct": 0,
+   "difficolta": 2,
+   "tipo": "discriminazione"
+  }
+ ]
+}
