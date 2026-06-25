@@ -11,6 +11,6 @@ import mdx from '@astrojs/mdx';
 //   gli URL assoluti/sitemap; non è critico).
 export default defineConfig({
   site: 'https://LeoBacca.github.io',
-  base: '/thomas-vet-prep',
+  base: '/thomas-vet-prep/',
   integrations: [mdx()],
 });
