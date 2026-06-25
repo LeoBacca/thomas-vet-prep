@@ -4,6 +4,9 @@ import '@/styles/pirata.css';
 
 interface Props { title?: string; }
 const { title } = Astro.props;
+// titolo completo calcolato qui: dentro <title> serve UNA sola espressione, altrimenti
+// Astro stacca il testo statico finale e finisce fuori dall'<head>.
+const pageTitle = title ? `${title} · Prep Veterinaria` : 'Prep Veterinaria';
 const base = import.meta.env.BASE_URL;
 const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
 ---
@@ -13,7 +16,7 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title ? `${title} · ` : ''}Prep Veterinaria — Thomas</title>
+    <title>{pageTitle}</title>
     <!-- font display "da insegna" solo per i titoli (1 famiglia, leggero) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
