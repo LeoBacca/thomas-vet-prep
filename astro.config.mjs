@@ -10,7 +10,7 @@ import mdx from '@astrojs/mdx';
 //  'site' viene riempito con lo username GitHub al primo deploy (serve solo per
 //   gli URL assoluti/sitemap; non è critico).
 export default defineConfig({
-  site: 'https://USERNAME.github.io',
+  site: 'https://LeoBacca.github.io',
   base: '/thomas-vet-prep',
   integrations: [mdx()],
 });

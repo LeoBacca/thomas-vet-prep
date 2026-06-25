@@ -3,8 +3,7 @@
 Sito statico (Astro) per preparare il **semestre filtro di Veterinaria** (Fisica, Biologia, Chimica).
 Tre sezioni: **Tutorial** (metodo di studio), **Risorse** (wiki di concetti) e **Studio** (flashcard + SRS + gamification).
 
-> 🔗 **Sito online (per Thomas):** `https://USERNAME.github.io/thomas-vet-prep/`
-> _(l'indirizzo viene riempito al primo deploy — vedi sotto)_
+> 🔗 **Sito online (per Thomas):** https://LeoBacca.github.io/thomas-vet-prep/
 
 ---
 
