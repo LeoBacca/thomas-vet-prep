@@ -1,44 +1,77 @@
-# Prep Veterinaria — sito di studio per Thomas
+<div align="center">
 
-Sito statico (Astro) per preparare il **semestre filtro di Veterinaria** (Fisica, Biologia, Chimica).
-Tre sezioni: **Tutorial** (metodo di studio), **Risorse** (wiki di concetti) e **Studio** (flashcard + SRS + gamification).
+<img src="public/mascotte/buggy-hero.png" alt="Buggy il Capitano" width="180" />
 
-> 🔗 **Sito online (per Thomas):** https://LeoBacca.github.io/thomas-vet-prep/
+# 🏴‍☠️ Prep Veterinaria ⚓
+
+### _La ciurma di Buggy salpa verso il camice!_ 🤡🩺
+
+**Il tesoro:** aiutare **Thomas** a superare il **semestre filtro di Veterinaria**
+
+🧲 **Fisica** · 🧬 **Biologia** · ⚗️ **Chimica**
+
+<br/>
+
+[![SALPA VERSO IL SITO](https://img.shields.io/badge/🌊_SALPA_VERSO_IL_SITO-29ABE2?style=for-the-badge&logoColor=white)](https://LeoBacca.github.io/thomas-vet-prep/)
+
+![Astro](https://img.shields.io/badge/costruito_con-Astro-FF5D01?style=flat-square&logo=astro&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/online_su-GitHub_Pages-121011?style=flat-square&logo=githubpages&logoColor=white)
+![Firebase](https://img.shields.io/badge/sync-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![Costo](https://img.shields.io/badge/bottino-0_€-2ECC71?style=flat-square)
+![Tema](https://img.shields.io/badge/tema-One_Piece_🃏-29ABE2?style=flat-square)
+
+</div>
 
 ---
 
-## 🟢 Per Thomas (l'utente)
+## 🗺️ La rotta — 3 sezioni (isole separate!)
 
-1. Apri il link qui sopra.
-2. Sul telefono: **«Aggiungi alla schermata Home»** → lo usi come un'app.
-3. Studia. **I progressi si salvano da soli** (niente "salva"/"esporta").
-4. Unica regola: usa **sempre lo stesso dispositivo/browser** e non cancellare i dati del browser, o riparti da zero. _(I dati vivono nel browser, non sul server.)_
+| 🏝️ Isola | A cosa serve |
+|---|---|
+| 📖 **Tutorial** | Come funziona il sito e **come si studia** (il metodo). |
+| 📚 **Risorse** | La wiki dei concetti: **1 pagina = 1 concetto**, spiegato semplice, con diagrammi a mano e video. _Qui si capisce._ |
+| 🎯 **Studio** | **Flashcard + ripasso intelligente (FSRS) + gamification** (XP, livelli, streak, medaglie, sfide). _Qui si allena la memoria._ |
+
+> 🪙 **Il ponte d'oro:** quando in *Studio* sbagli una flashcard, un link ti riporta dritto al concetto nelle *Risorse*. Imparare → ripassare → tornare a imparare. 🔁
 
 ---
 
-## 🔧 Per chi mantiene il sito (Leo)
+## 🃏 Per Thomas (la ciurma)
 
-### Le 3 regole d'oro — perché i progressi di Thomas NON si perdono mai
+1. ⚓ Apri il link: **https://LeoBacca.github.io/thomas-vet-prep/**
+2. 📱 Sul telefono: **«Aggiungi alla schermata Home»** → lo usi come un'app.
+3. 🧠 Studia. **I progressi si salvano da soli** — niente bottoni "salva".
+4. ☁️ Vuoi studiare su **telefono E PC**? In **Studio → 💾 Dati → «☁️ Sincronizza»** fai login con Google **una volta per dispositivo**: da lì in poi i progressi viaggiano da soli su tutte le tue navi. 🚢
 
-I progressi (flashcard SRS + spunte "letto") stanno nel **`localStorage` del browser di Thomas**, non nei
-file del sito. La build è solo "l'app": puoi ripubblicarla mille volte, i dati restano nel suo browser.
-Perché continui a funzionare, **non violare mai** questo:
+---
 
-1. **Stesso URL.** Non rinominare il repo `thomas-vet-prep` e non cambiare `base` in `astro.config.mjs`.
-   Cambiare l'indirizzo = i link si rompono (e anche il punto d'accesso che Thomas ha salvato).
-2. **Stesse chiavi `localStorage`:** `prep:studio` (Studio/SRS) e `prep:progress` (spunte Risorse).
-   Sono in [`src/scripts/studio/store.js`](src/scripts/studio/store.js) e
-   [`src/layouts/BaseLayout.astro`](src/layouts/BaseLayout.astro). Non rinominarle.
-3. **Se cambi la forma dei dati**, alza `SCHEMA_VERSION` ed estendi `migrate()` in `store.js`
-   (già fa merge non distruttivo): i salvataggi vecchi vengono *aggiornati*, non cancellati.
+## ☁️ Sincronizzazione tra dispositivi
 
-Rispettando queste 3 regole, puoi aggiungere materie, pagine, feature e fix all'infinito:
-**lo storico di Thomas resta invariato.**
+I progressi vivono nel **browser** (offline-first, velocissimi). Se accedi con Google diventano anche **cloud** e si **fondono** tra i dispositivi — senza perdere niente.
 
-### Pubblicare un aggiornamento
+- 🔑 **Login una volta** per device (Google) → poi è **automatico**: scarica all'apertura, ricarica dopo ogni modifica.
+- 🛟 **Merge sicuro:** un «letto» non sparisce mai, le card prendono il ripasso più recente, XP/streak/medaglie il massimo. Anche due dispositivi con progressi diversi si **uniscono**.
+- 🆓 **Gratis:** Firebase Firestore (free tier), dati minuscoli, niente carta di credito.
 
-Ogni `git push` su `main` ribuilda e ripubblica automaticamente (GitHub Actions →
-[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)).
+🔧 Dettagli tecnici: [`src/scripts/studio/sync.js`](src/scripts/studio/sync.js) (merge + orchestrazione), [`cloud.js`](src/scripts/studio/cloud.js) (wrapper Firebase), [`firebase-config.js`](src/scripts/studio/firebase-config.js) (chiavi pubbliche).
+
+---
+
+## ⚓ Per il Capitano Leo (manutenzione)
+
+### 🧭 Le 3 regole d'oro — perché i progressi di Thomas NON si perdono mai
+
+I progressi (flashcard SRS + spunte "letto") stanno nel **`localStorage` del browser di Thomas** (+ backup cloud Firebase). La build è solo "l'app": puoi ripubblicarla mille volte, i dati restano. Per non affondare il tesoro, **non violare mai**:
+
+1. 🧭 **Stesso URL.** Non rinominare il repo `thomas-vet-prep` né cambiare `base` in `astro.config.mjs`. Cambiare indirizzo = link rotti + punto d'accesso salvato da Thomas perso.
+2. 🔑 **Stesse chiavi `localStorage`:** `prep:studio` (Studio/SRS) e `prep:progress` (spunte Risorse), in [`store.js`](src/scripts/studio/store.js) e [`BaseLayout.astro`](src/layouts/BaseLayout.astro). Non rinominarle.
+3. 🧬 **Se cambi la forma dei dati**, alza `SCHEMA_VERSION` ed estendi `migrate()` in `store.js` (fa già merge non distruttivo): i salvataggi vecchi vengono *aggiornati*, non cancellati.
+
+> 💎 Rispettando queste 3 regole puoi aggiungere materie, pagine e feature all'infinito: **lo storico di Thomas resta invariato.**
+
+### 🚀 Pubblicare un aggiornamento
+
+Ogni `git push` su `main` ribuilda e ripubblica da solo (GitHub Actions → [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)).
 
 ```bash
 git add -A
@@ -46,47 +79,62 @@ git commit -m "descrizione modifica"
 git push            # ~1-2 min e il sito online è aggiornato; i progressi di Thomas restano
 ```
 
-## Avvio in locale
+### 🛠️ Avvio in locale
 
 ```bash
 npm install
-npm run dev      # apri l'indirizzo mostrato (di solito http://localhost:4321/thomas-vet-prep/)
+npm run dev      # di solito http://localhost:4321/thomas-vet-prep/
 npm run build    # genera il sito statico in dist/
 npm run preview  # anteprima del sito buildato
 ```
 
-## Come è organizzato
+### 🗂️ Come è organizzata la nave
 
 ```
 content/topics/<materia>.json   # FONTE DI VERITÀ: argomenti atomici per unità (id, obiettivo, prereq...)
 scripts/generate-unit.mjs       # genera indice + pagine skeleton da quel JSON
 src/data/<materia>-index.json   # indice generato (NON modificare a mano)
+src/data/flashcards/*.json      # i mazzi di flashcard (chimica/fisica/biologia)
 src/pages/risorse/...           # le pagine wiki (1 file MDX per concetto)
-src/pages/studio/...            # sezione Studio (flashcard/SRS)
-src/scripts/studio/             # logica SRS (fsrs.js) + salvataggio (store.js)
-src/layouts/  src/components/    # impaginazione + Diagram (Mermaid handDrawn), YouTube, RelatedLinks
+src/pages/studio/...            # sezione Studio (dashboard, sessione SRS, sfida)
+src/scripts/studio/             # SRS (fsrs.js), stato (store.js), gioco (game.js),
+                                #   medaglie, + sync cloud (cloud.js, sync.js, firebase-config.js)
+src/layouts/  src/components/    # impaginazione, Mascotte, Diagram (Mermaid), YouTube
+public/mascotte/                # Buggy + i 3 cani (🐶 la ciurma)
 ```
 
-### Aggiungere/rigenerare contenuti
+### ✍️ Aggiungere/rigenerare contenuti
 
-1. Modifica `content/topics/fisica.json` (argomenti, prerequisiti, `correlati`).
-2. `npm run gen:fisica` per rigenerare indice e skeleton (la 1ª scheda di ogni unità non viene sovrascritta).
-3. Scrivi il contenuto vero nei file `.mdx` (testo + `<Diagram>` + `<YouTube>`).
+1. Modifica `content/topics/<materia>.json` (argomenti, prerequisiti, `correlati`).
+2. `npm run gen:fisica` (o la materia) per rigenerare indice e skeleton (la 1ª scheda di ogni unità non viene sovrascritta).
+3. Scrivi il contenuto vero nei `.mdx` (testo + `<Diagram>` + `<YouTube>`).
 
-## Deploy su GitHub Pages (prima volta)
+---
 
-1. `gh auth login` (una volta sola).
-2. Crea il repo **pubblico** `thomas-vet-prep` e fai push (vedi sotto).
-3. Su GitHub: **Settings → Pages → Source: GitHub Actions**.
-4. Il workflow builda e pubblica a ogni push su `main`.
+## 🐶 La ciurma
 
-```bash
-gh repo create thomas-vet-prep --public --source=. --remote=origin --push
-```
+<div align="center">
 
-## Stato attuale
+<img src="public/mascotte/buggy-crew.png" alt="Buggy e i suoi cani" width="320" />
+
+**Capitan Buggy** 🤡 + i tre mozzi a quattro zampe 🐾 — accompagnano Thomas, lo incoraggiano quando sbaglia e festeggiano gli obiettivi.
+
+</div>
+
+---
+
+## 📊 Stato della nave
 
 - ✅ Scaffold completo + 3 sezioni (Tutorial / Risorse / Studio)
-- ✅ Fisica decomposta in 73 argomenti (7 unità); Biologia e Chimica indicizzate
-- ✅ Salvataggio automatico progressi (localStorage) con migrazione non distruttiva
-- ⬜ Completare le schede Risorse e le flashcard materia per materia
+- ✅ **Risorse complete** per Fisica, Biologia e Chimica (wiki di concetti con diagrammi + video)
+- ✅ **Flashcard** generate per tutte e 3 le materie
+- ✅ **Studio**: SRS (FSRS-5), XP/livelli, streak, medaglie, sfida a tempo + tema Buggy 🃏
+- ✅ Salvataggio automatico (localStorage) con migrazione non distruttiva
+- ✅ **Sync cloud** tra dispositivi (Firebase, login Google) 🆕
+- ⬜ Eventuali buchi di Biologia dei compiti d'esame (anatomia/fisiologia/ecologia) → prima Risorse, poi flashcard
+
+<div align="center">
+
+⚓ _Fatto con cura (e un po' di sale) per Thomas._ 🏴‍☠️
+
+</div>
