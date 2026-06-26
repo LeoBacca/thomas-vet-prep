@@ -69,7 +69,7 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
     import { applyReview } from '../../scripts/studio/game.js';
     import { buildQueue, CARDS_META, ripasso } from '../../scripts/studio/cards.js';
     import { isQuizTopic, quizTitle } from '../../data/quiz.js';
-    import { caneRandom, frasaRandom, caniIncoraggiamento } from '../../data/frasi-mascotte.js';
+    import { caneRandom, fraseCane } from '../../data/frasi-mascotte.js';
 
     const $ = (id) => document.getElementById(id);
     const state = load();
@@ -84,7 +84,7 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
       const img = $('dogPopImg');
       img.src = (MBASE + 'mascotte/' + dog.slug + '.png').replace(/\/{2,}/g, '/');
       img.alt = dog.nome;
-      $('dogPopText').textContent = frasaRandom(caniIncoraggiamento);
+      $('dogPopText').textContent = fraseCane(dog);
       pop.classList.remove('hidden');
       void pop.offsetWidth;                            // reflow per far partire la transizione
       pop.classList.add('show');

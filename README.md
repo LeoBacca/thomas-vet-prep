@@ -4,7 +4,7 @@
 
 # 🏴‍☠️ Prep Veterinaria ⚓
 
-### _La ciurma di Buggy salpa verso il camice!_ 🤡🩺
+### _La ciurma di Buggy salpa verso il camice — e kamoooon!_ 🤡🩺
 
 **Il tesoro:** aiutare **Thomas** a superare il **semestre filtro di Veterinaria**
 
@@ -19,6 +19,8 @@
 ![Firebase](https://img.shields.io/badge/sync-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 ![Costo](https://img.shields.io/badge/bottino-0_€-2ECC71?style=flat-square)
 ![Tema](https://img.shields.io/badge/tema-One_Piece_🃏-29ABE2?style=flat-square)
+![No faide](https://img.shields.io/badge/gossip-No_faide_🗣️-E74C3C?style=flat-square)
+![GOAT](https://img.shields.io/badge/capitano-Leo_il_GOAT_🐐-FFD700?style=flat-square)
 
 </div>
 
@@ -42,6 +44,8 @@
 2. 📱 Sul telefono: **«Aggiungi alla schermata Home»** → lo usi come un'app.
 3. 🧠 Studia. **I progressi si salvano da soli** — niente bottoni "salva".
 4. ☁️ Vuoi studiare su **telefono E PC**? In **Studio → 💾 Dati → «☁️ Sincronizza»** fai login con Google **una volta per dispositivo**: da lì in poi i progressi viaggiano da soli su tutte le tue navi. 🚢
+
+> 🏴‍☠️ **Niente Solani:** poco ma ogni giorno e diventi il GOAT. 🐐
 
 ---
 
@@ -75,7 +79,7 @@ Ogni `git push` su `main` ribuilda e ripubblica da solo (GitHub Actions → [`.g
 
 ```bash
 git add -A
-git commit -m "descrizione modifica"
+git commit -m "e kamoooon, aggiornamento"
 git push            # ~1-2 min e il sito online è aggiornato; i progressi di Thomas restano
 ```
 
@@ -117,7 +121,7 @@ public/mascotte/                # Buggy + i 3 cani (🐶 la ciurma)
 
 <img src="public/mascotte/buggy-crew.png" alt="Buggy e i suoi cani" width="320" />
 
-**Capitan Buggy** 🤡 + i tre mozzi a quattro zampe 🐾 — accompagnano Thomas, lo incoraggiano quando sbaglia e festeggiano gli obiettivi.
+**Capitan Buggy** 🤡 + i tre mozzi a quattro zampe 🐾 — accompagnano Thomas, lo incoraggiano quando sbaglia (e ogni tanto lo crepano per ridere) e festeggiano gli obiettivi. Un pazzo frate.
 
 </div>
 
@@ -135,6 +139,8 @@ public/mascotte/                # Buggy + i 3 cani (🐶 la ciurma)
 
 <div align="center">
 
-⚓ _Fatto con cura (e un po' di sale) per Thomas._ 🏴‍☠️
+⚓ _Fatto con cura (e un po' di sale) per Thomas — e kamoooon!_ 🏴‍☠️
+
+_Patternani approva. Official._ 🐐
 
 </div>
