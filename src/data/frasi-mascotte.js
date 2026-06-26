@@ -67,6 +67,57 @@ export const buggyMotivazionali = [
   "La rotta per il camice parte adesso, capitano. E kamoooon! 🗺️",
 ];
 
+// Buggy nella SFIDA lampo: hype pre-partita (schermata iniziale). Tema duello/combo.
+export const buggySfida = [
+  "⚔️ 10 domande a tempo, fatti sotto. E kamoooon!",
+  "Combo alle stelle e oggi sei il GOAT 🏆",
+  "Official: spacca tutto in modalità Focussani ⚔️",
+  "Sfida lampo, capitano: niente Solani, si combatte",
+  "Un pazzo frate, mostra chi comanda. Si parte!",
+  "Veloce e preciso: ogni risposta giusta è una sciabolata ⚔️",
+  "Che matto, pronto al duello? Yohohoho!",
+  "No faide 🗣️, solo combo: rispondi di fila e voli",
+  "Patternani in azione: trova la risposta e colpisci",
+  "Fatti sotto, mozzo: 10 domande e poi godiamo 🔥",
+  "Official che oggi il record lo spacchi tu",
+  "Sborrani sulle facili, ragiona su quelle toste ⚔️",
+  "Più veloce rispondi, più punti. Kamon, capitano!",
+  "Una sfida da Re dei Veterinari. Ciurma, all'arrembaggio! 🏴‍☠️",
+  "Niente paura del cronometro: un pazzo non trema. Vai!",
+];
+
+// Buggy a FINE SFIDA: gasato per record/perfetto/buon risultato.
+export const buggySfidaWin = [
+  "E KAMOON, un pazzo frate! 🏆",
+  "Gode tutta la ciurma, che matto 🔥",
+  "Pattern recognized: sei una bestia, capitano",
+  "Official: questo è da GOAT vero 🐐",
+  "Yohohoho! Hai spaccato. E kamoooon!",
+  "Un pazzo, che combo! Re dei Veterinari in arrivo 🏴‍☠️",
+  "Ammazza quanto godi oggi. Bravo, official 💎",
+  "Che matto, manco Pellons ci credeva. Top!",
+  "Sciabolate precise: tesoro conquistato ⚔️",
+  "GOAT confermato. Ta ta ta, insomma una bestia 🐐",
+  "E KAMOON! Sta sfida l'hai crepata tu 🔥",
+  "Gode, capitano: questa ce la ricordiamo a lungo",
+];
+
+// Buggy a FINE SFIDA: bonario/consolazione quando va maluccio.
+export const buggySfidaConsolazione = [
+  "e kamooon... rigiochiamo e la spacchiamo",
+  "No faide, capitano: la prossima è tua 🏴‍☠️",
+  "Ta ta ta... capita ai migliori pirati",
+  "Niente crepa: è solo XP, si riparte",
+  "Un pazzo, che sfortuna. Ma rosica e rigioca 🔥",
+  "Tranquillo, mozzo: niente Solani, ci riproviamo",
+  "Official che era dura. Respira e rigioca",
+  "Non fare il Puffo a pensarci troppo: prossima sfida e voli",
+  "Pace, capitano. Il GOAT si vede nelle rivincite 🐐",
+  "e kamooon... non era giornata. Ci sta, dai",
+  "Ta ta ta, insomma andata male. Rigiochiamo e gode",
+  "Niente faide con te stesso: la sfida torna, kamon!",
+];
+
 // Pesca un elemento a caso da un array.
 export function frasaRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)];

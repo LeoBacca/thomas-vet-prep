@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import Mascotte from '@/components/Mascotte.astro';
 import '@/styles/studio.css';
 const base = import.meta.env.BASE_URL;
 const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
@@ -25,6 +26,10 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
     </div>
 
     <div id="intro" class="s-panel" style="text-align:center">
+      <div class="buggy-dash" style="justify-content:center">
+        <Mascotte src="buggy-bubble.png" alt="Buggy" class="buggy" loading="eager" />
+        <div class="speech-bubble" id="sfidaBuggyText">⚔️ Pronti alla sfida?</div>
+      </div>
       <p style="font-size:1.4rem;margin:.2rem">⚔️ Sfida lampo</p>
       <p style="color:var(--muted,#666)">10 domande a risposta multipla, a tempo. Più sei veloce e di fila, più punti! Non intacca il ripasso SRS: è solo per divertirsi e fare XP. Dopo ogni risposta il timer si ferma, così leggi con calma.</p>
       <p style="margin:.6rem 0 .2rem">Materia:</p>
@@ -42,12 +47,21 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
         <div class="fc-explain hidden" id="explain"></div>
       </div>
       <div id="nextArea"></div>
+      <!-- Sull'errore: la testa di uno dei cani di Thomas incoraggia (fumetto a comparsa) -->
+      <div class="dog-pop hidden" id="dogPop">
+        <img class="dog" id="dogPopImg" src="" alt="" width="64" height="64" />
+        <div class="comic-bubble" id="dogPopText"></div>
+      </div>
     </div>
 
     <div id="end" class="s-panel s-summary hidden">
       <p class="big" id="endScore">0</p>
       <p id="endLine">—</p>
       <div id="endBadge" style="color:#a0780f;font-weight:600;margin:.4rem 0"></div>
+      <div class="buggy-dash" style="justify-content:center;margin-top:.6rem">
+        <Mascotte src="buggy-bubble.png" alt="Buggy" class="buggy" loading="eager" />
+        <div class="speech-bubble" id="endBuggyText"></div>
+      </div>
       <div id="endReport"></div>
       <div class="s-tools" style="justify-content:center;margin-top:1rem">
         <button class="btn primary" id="againBtn">🔁 Rigioca</button>
@@ -60,6 +74,7 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
     import { load, save } from '../../scripts/studio/store.js';
     import { applyChallenge } from '../../scripts/studio/game.js';
     import { challengePool, CARDS_META, MATERIE, ALL_CARDS, ripasso } from '../../scripts/studio/cards.js';
+    import { buggySfida, buggySfidaWin, buggySfidaConsolazione, frasaRandom, caneRandom, fraseCane } from '../../data/frasi-mascotte.js';
 
     const $ = (id) => document.getElementById(id);
     const TIME = 15; // secondi per RISPONDERE (poi il timer si ferma per leggere)
@@ -69,6 +84,30 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
     let toReview = [];   // argomenti sbagliati/scaduti -> report finale
     let timer = null, remaining = 0, answered = false;
 
+    // --- Mascotte: Buggy (intro/risultato) + cane sull'errore ---
+    const MBASE = import.meta.env.BASE_URL;
+    let dogShown = false;
+
+    // Buggy hype nella schermata iniziale (cambia a ogni ritorno all'intro).
+    function setSfidaBuggy() {
+      const bt = $('sfidaBuggyText'); if (bt) bt.textContent = frasaRandom(buggySfida);
+    }
+    setSfidaBuggy();
+
+    // Sull'errore: testa di un cane a caso + fumetto nella sua voce (una volta per domanda).
+    function showDogEncouragement() {
+      if (dogShown) return; dogShown = true;
+      const pop = $('dogPop'); if (!pop) return;
+      const dog = caneRandom();
+      const img = $('dogPopImg');
+      img.src = (MBASE + 'mascotte/' + dog.slug + '.png').replace(/\/{2,}/g, '/');
+      img.alt = dog.nome;
+      $('dogPopText').textContent = fraseCane(dog);
+      pop.classList.remove('hidden');
+      void pop.offsetWidth;                            // reflow per far partire la transizione
+      pop.classList.add('show');
+    }
+
     // popola materie disponibili (solo quelle con card a risposta multipla)
     const have = new Set(ALL_CARDS.filter((c) => c.type === 'mc' || c.type === 'tf').map((c) => c.materia));
     const sel = $('materia');
@@ -77,7 +116,7 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
     $('best').textContent = state.challenge.bestScore || 0;
 
     $('startBtn').addEventListener('click', start);
-    $('againBtn').addEventListener('click', () => { $('end').classList.add('hidden'); $('intro').classList.remove('hidden'); state = load(); $('best').textContent = state.challenge.bestScore || 0; });
+    $('againBtn').addEventListener('click', () => { $('end').classList.add('hidden'); $('intro').classList.remove('hidden'); state = load(); $('best').textContent = state.challenge.bestScore || 0; setSfidaBuggy(); });
 
     function start() {
       deck = challengePool(N, { materia: sel.value || null });
@@ -89,6 +128,8 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
 
     function renderCard() {
       answered = false;
+      dogShown = false;
+      const pop = $('dogPop'); if (pop) { pop.classList.remove('show'); pop.classList.add('hidden'); }
       const card = deck[i];
       $('progress').textContent = (i + 1) + '/' + deck.length;
       $('cardTag').textContent = (card.materia || '').toUpperCase();
@@ -166,6 +207,8 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
 
       $('score').textContent = score; $('combo').textContent = combo;
 
+      if (!isCorrect) showDogEncouragement();   // un cane incoraggia (anche su timeout, idx === -1)
+
       // NIENTE auto-avanzamento: tasto "Continua" così c'è tutto il tempo di leggere.
       const nb = document.createElement('button');
       nb.className = 'btn primary'; nb.style.marginTop = '.8rem';
@@ -190,6 +233,10 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
       if (res.leveledUp) badges.push('⬆️ Livello ' + res.level + '!');
       if (res.newAchievements.length) badges.push('🎖️ ' + res.newAchievements.length + ' nuova/e medaglia/e!');
       $('endBadge').innerHTML = badges.join('<br>');
+
+      // Buggy commenta il risultato: gasato se va bene, bonario se va maluccio.
+      const gasato = perfect || score > prevBest || correctCount >= Math.ceil(deck.length * 0.6);
+      $('endBuggyText').textContent = frasaRandom(gasato ? buggySfidaWin : buggySfidaConsolazione);
 
       renderReport();
     }
