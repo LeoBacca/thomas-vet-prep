@@ -54,11 +54,13 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
       });
     </script>
 
-    <!-- Progressi (Letto / Video visto) + quiz interattivi — stato locale nel browser -->
+    <!-- Progressi (Letto / Video visto) + quiz interattivi — stato locale nel browser + sync cloud -->
     <script>
+      import { engageSync, pushSoon } from '../scripts/studio/sync.js';
+
       const KEY = 'prep:progress';
       const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
-      const save = (s) => { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch {} };
+      const save = (s) => { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch {} pushSoon(); };
       const topic = (id) => load()[id] || {};
       const setFlag = (id, flag, val) => { const s = load(); s[id] = s[id] || {}; s[id][flag] = val; save(s); };
 
@@ -118,6 +120,11 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
       });
 
       refreshToggles(); refreshChecks(); refreshBars();
+
+      // Sync cloud: motore globale (no-op finché Firebase non è configurato / non sei loggato).
+      // Quando il merge arriva, riallinea le spunte di questa pagina.
+      engageSync();
+      window.addEventListener('prep:synced', () => { refreshToggles(); refreshChecks(); refreshBars(); });
     </script>
   </body>
 </html>

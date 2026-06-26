@@ -86,7 +86,11 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
 
     <div class="s-panel">
       <h2>💾 Dati</h2>
-      <p style="font-size:.85rem;color:var(--muted,#666);margin-top:0">Salva un backup o spostalo su un altro dispositivo.</p>
+      <p style="font-size:.85rem;color:var(--muted,#666);margin-top:0">Sincronizza tra cellulare e PC, oppure salva un backup manuale.</p>
+      <div class="s-tools" style="margin-bottom:.6rem">
+        <button class="btn primary" id="syncBtn">☁️ Sincronizza tra dispositivi</button>
+        <span id="syncStatus" style="font-size:.85rem;color:var(--muted,#666);align-self:center"></span>
+      </div>
       <div class="s-tools">
         <button class="btn" id="exportBtn">⬇️ Esporta</button>
         <label class="btn" for="importFile">⬆️ Importa</label>
@@ -102,6 +106,7 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
     import { CARDS_META, countDue, MATERIE, recommendedNewPerDay, daysUntil } from '../scripts/studio/cards.js';
     import { ACHIEVEMENTS, ACH_BY_ID } from '../scripts/studio/achievements.js';
     import { buggyMotivazionali, frasaRandom } from '../data/frasi-mascotte.js';
+    import { signInGoogle, signOutCloud, onUser, cloudConfigured } from '../scripts/studio/cloud.js';
 
     const $ = (id) => document.getElementById(id);
 
@@ -263,6 +268,41 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
     $('resetBtn').addEventListener('click', () => {
       if (confirm('Sicuro? Cancella tutti i progressi dello Studio (le card, XP, streak, medaglie).')) { reset(); render(); }
     });
+
+    // --- Sync cloud (login Google). Il motore di sync vero gira in BaseLayout (engageSync):
+    // qui gestiamo solo il bottone, lo stato e il ridisegno quando arriva un merge. ---
+    const syncBtn = $('syncBtn');
+    const syncStatus = $('syncStatus');
+    if (!cloudConfigured) {
+      syncBtn.disabled = true;
+      syncBtn.textContent = '☁️ Sync non ancora attivo';
+      syncStatus.textContent = 'Da configurare con le chiavi Firebase.';
+    } else {
+      let curUser = null;
+      onUser((user) => {
+        curUser = user;
+        if (user) {
+          syncBtn.textContent = '☁️ Esci dalla sincronizzazione';
+          syncStatus.textContent = 'Sincronizzato come ' + (user.email || user.displayName || 'utente') + ' ✓';
+        } else {
+          syncBtn.textContent = '☁️ Sincronizza tra dispositivi';
+          syncStatus.textContent = 'I progressi restano su questo dispositivo finché non accedi.';
+        }
+      });
+      syncBtn.addEventListener('click', async () => {
+        syncBtn.disabled = true;
+        try {
+          if (curUser) await signOutCloud();
+          else await signInGoogle();
+        } catch (e) {
+          alert('Sincronizzazione non riuscita: ' + (e && e.message ? e.message : e));
+        } finally {
+          syncBtn.disabled = false;
+        }
+      });
+      // Quando il merge cloud è pronto, ridisegna la dashboard coi dati aggiornati.
+      window.addEventListener('prep:synced', render);
+    }
 
     render();
 

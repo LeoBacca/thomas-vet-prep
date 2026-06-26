@@ -12,7 +12,8 @@
     "gen:quiz": "node scripts/gen-quiz-counts.mjs"
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.2.0",
     "astro": "^5.6.1",
-    "@astrojs/mdx": "^4.2.0"
+    "firebase": "^12.15.0"
   }
 }

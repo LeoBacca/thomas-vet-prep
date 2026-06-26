@@ -24,7 +24,13 @@ const defaultState = () => ({
   achievements: {},        // achId -> ISO data sblocco
   challenge: { plays: 0, bestScore: 0, bestStreak: 0, perfect: 0 },
   createdAt: new Date().toISOString(),
+  updatedAt: null,         // ISO ultimo salvataggio (tie-breaker per il merge cloud)
 });
+
+// Hook opzionale chiamato dopo ogni save() — usato dal sync cloud (sync.js) per il push.
+// Se nessuno lo registra, save() resta puro localStorage (sito identico offline).
+let _syncHook = null;
+export function setSyncHook(fn) { _syncHook = fn; }
 
 export function load() {
   try {
@@ -38,8 +44,10 @@ export function load() {
 
 export function save(state) {
   try {
+    state.updatedAt = new Date().toISOString();
     localStorage.setItem(KEY, JSON.stringify(state));
   } catch {}
+  try { if (_syncHook) _syncHook(state); } catch {}
   return state;
 }
 
