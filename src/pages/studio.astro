@@ -24,7 +24,7 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
       </div>
       <div style="text-align:right">
         <div class="s-streak">🔥 <span id="streak">0</span><small>giorni di fila</small></div>
-        <small style="color:var(--muted,#666)">Oggi: <span id="today">0</span>/<span id="goal">20</span></small>
+        <small style="color:var(--muted,#666)">Oggi: <span id="today">0</span>/<span id="goal">—</span></small>
       </div>
     </div>
 
@@ -118,19 +118,23 @@ const u = (p: string) => (base + p).replace(/\/{2,}/g, '/');
       $('xpFill').style.width = lv.pct + '%';
       $('xpLabel').textContent = state.xp + ' XP · ' + lv.intoLevel + '/' + lv.span + ' al prossimo livello';
 
-      // streak / oggi
+      // streak
       $('streak').textContent = state.streak.current;
-      const today = (state.days[localDay()] || {}).reviews || 0;
-      $('today').textContent = today;
-      $('goal').textContent = state.settings.goalPerDay;
 
-      // dovute
+      // dovute + nuove disponibili oggi (servono sia per la CTA che per l'obiettivo della barra)
       const { due, fresh } = countDue(state);
       const newToday = (state.days[localDay()] || {}).newCards || 0;
       const perDay = recommendedNewPerDay(state).perDay;
       const newAvail = Math.max(0, perDay - newToday);
       const newShown = Math.min(fresh, newAvail);
       $('dueLabel').textContent = due + ' dovute · ' + newShown + ' nuove';
+
+      // obiettivo "carico di oggi": card già fatte + ancora da fare (dovute + nuove). La barra si
+      // riempie quando finisci "Studia oggi". goal >= today sempre, quindi non va mai sopra il 100%.
+      const today = (state.days[localDay()] || {}).reviews || 0;
+      const goal = today + due + newShown;
+      $('today').textContent = today;
+      $('goal').textContent = goal;
 
       renderGoal(state);
       renderHeatmap(state);
