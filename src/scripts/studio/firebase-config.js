@@ -8,12 +8,12 @@
 // Finché i valori restano i placeholder "INCOLLA_...", il sync resta DISATTIVATO e il sito
 // funziona esattamente come prima (tutto in localStorage, niente cloud).
 export const firebaseConfig = {
-  apiKey: 'INCOLLA_API_KEY',
-  authDomain: 'INCOLLA_PROGETTO.firebaseapp.com',
-  projectId: 'INCOLLA_PROJECT_ID',
-  storageBucket: 'INCOLLA_PROGETTO.appspot.com',
-  messagingSenderId: 'INCOLLA_SENDER_ID',
-  appId: 'INCOLLA_APP_ID',
+  apiKey: 'AIzaSyC3TkEOfLqn2EZasbeSLw8EZnRmhkgSdX8',
+  authDomain: 'thomas-vet-prep.firebaseapp.com',
+  projectId: 'thomas-vet-prep',
+  storageBucket: 'thomas-vet-prep.firebasestorage.app',
+  messagingSenderId: '298476473334',
+  appId: '1:298476473334:web:f5a6d2d0772d67769e95d7',
 };
 
 // Vero solo quando le chiavi sono state davvero sostituite.
